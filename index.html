@@ -2,452 +2,235 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 <title>The $40 AI Agent · Maloha Coast</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
-
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --bg: #0a0e17;
-    --surface: #111827;
-    --surface2: #1a2335;
-    --border: #1e3048;
+    --bg: #020617;
+    --surface: #0f172a;
+    --surface2: #1e293b;
+    --border: #334155;
     --primary: #2a6a8a;
-    --primary-light: #3d8abf;
+    --primary-light: #22d3ee;
     --accent: #c4a86a;
-    --accent-light: #e0c88a;
-    --text: #e8edf5;
-    --text-muted: #8899b4;
+    --accent-light: #fbbf24;
+    --text: #f1f5f9;
+    --text-muted: #94a3b8;
     --green: #34d399;
-    --green-bg: rgba(52, 211, 153, 0.12);
-    --orange: #f59e0b;
-    --orange-bg: rgba(245, 158, 11, 0.12);
-    --red: #ef4444;
-    --violet: #8b5cf6;
-    --violet-bg: rgba(139, 92, 246, 0.12);
-    --radius: 16px;
+    --violet: #a78bfa;
+    --rose: #fb7185;
+    --radius: 14px;
     --radius-sm: 10px;
   }
 
-  html {
-    scroll-behavior: smooth;
-    -webkit-tap-highlight-color: transparent;
-  }
-
-  body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.6;
-    overflow-x: hidden;
-  }
+  html { scroll-behavior: smooth; -webkit-tap-highlight-color: transparent; }
+  body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); overflow: hidden; width: 100vw; height: 100vh; height: 100dvh; }
 
   /* ─── Slide Container ─── */
-  .slides { width: 100%; max-width: 100vw; }
-  .slide {
-    min-height: 100vh;
-    min-height: 100dvh;
+  .slides {
     display: flex;
     flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .slide {
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    padding: 60px 24px;
+    padding: 3vh 5vw;
     position: relative;
     overflow: hidden;
   }
-
-  .slide-content {
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    z-index: 2;
-  }
-
-  /* ─── Background Decorations ─── */
   .slide::before {
     content: '';
     position: absolute;
-    top: -50%;
-    right: -30%;
-    width: 600px;
-    height: 600px;
+    top: -50%; right: -20%;
+    width: 50vw; height: 50vw;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(42, 106, 138, 0.08) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(42,106,138,0.08) 0%, transparent 70%);
     pointer-events: none;
   }
 
-  /* ─── Typography ─── */
-  h1 {
-    font-size: clamp(2rem, 5vw, 3.2rem);
-    font-weight: 800;
-    line-height: 1.15;
-    letter-spacing: -0.02em;
-    margin-bottom: 0.4em;
+  .slide-content {
+    width: 100%;
+    max-width: 860px;
+    max-height: 88vh;
+    max-height: 88dvh;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  h2 {
-    font-size: clamp(1.5rem, 3.5vw, 2.2rem);
-    font-weight: 700;
-    letter-spacing: -0.015em;
-    margin-bottom: 0.6em;
-  }
-
-  h3 {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--accent);
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    margin-bottom: 0.5em;
-  }
-
-  .subtitle {
-    font-size: clamp(1.05rem, 2vw, 1.25rem);
-    color: var(--text-muted);
-    font-weight: 400;
-    max-width: 600px;
-  }
-
-  .highlight {
-    color: var(--accent);
-  }
-
+  /* ─── Typography (vh-scaled) ─── */
+  h1 { font-size: clamp(1.6rem, 3.8vh, 3rem); font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; }
+  h2 { font-size: clamp(1.2rem, 2.8vh, 2rem); font-weight: 700; letter-spacing: -0.015em; margin-bottom: 0.1em; }
+  h3 { font-size: clamp(0.7rem, 1.4vh, 0.9rem); font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.2em; }
+  p, .subtitle { font-size: clamp(0.75rem, 1.6vh, 1.05rem); color: var(--text-muted); line-height: 1.5; }
+  .subtitle { max-width: 600px; }
+  .highlight { color: var(--accent); }
+  .highlight-cyan { color: var(--primary-light); }
   .highlight-green { color: var(--green); }
-  .highlight-orange { color: var(--orange); }
-  .highlight-primary { color: var(--primary-light); }
+  .small { font-size: clamp(0.6rem, 1.2vh, 0.8rem); color: var(--text-muted); }
 
-  /* ─── Cards ─── */
+  /* ─── Divider ─── */
+  .divider { width: 50px; height: 3px; background: var(--accent); border-radius: 2px; margin: 1.4vh 0; flex-shrink: 0; }
+
+  /* ─── Card Grid ─── */
   .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 16px;
-    margin: 24px 0;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: clamp(8px, 1.2vh, 14px);
+    margin: 1.2vh 0;
+    flex-shrink: 0;
   }
-
   .card {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 24px;
-    transition: transform 0.2s;
+    padding: clamp(10px, 2vh, 20px);
   }
-
-  .card:hover { transform: translateY(-2px); }
-
-  .card .icon {
-    font-size: 1.8rem;
-    margin-bottom: 12px;
-  }
-
-  .card .value {
-    font-size: 1.6rem;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-  }
-
-  .card .label {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    margin-top: 4px;
-  }
-
-  .card .desc {
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    margin-top: 10px;
-    line-height: 1.5;
-  }
+  .card .icon { font-size: clamp(1.2rem, 2.5vh, 1.8rem); margin-bottom: 4px; }
+  .card .value { font-size: clamp(1rem, 2vh, 1.5rem); font-weight: 700; letter-spacing: -0.02em; }
+  .card .label { font-size: clamp(0.6rem, 1.2vh, 0.8rem); color: var(--text-muted); }
+  .card .desc { font-size: clamp(0.55rem, 1.1vh, 0.75rem); color: var(--text-muted); margin-top: 4px; line-height: 1.4; }
 
   /* ─── Big Number ─── */
-  .big-number {
-    font-size: clamp(3rem, 8vw, 5rem);
-    font-weight: 900;
-    letter-spacing: -0.03em;
-    line-height: 1;
-    margin: 16px 0;
-  }
-
-  .big-number .currency {
-    font-size: 0.5em;
-    vertical-align: super;
-    font-weight: 600;
-    color: var(--accent);
-  }
+  .big-number { font-size: clamp(2rem, 6vh, 4.5rem); font-weight: 900; letter-spacing: -0.03em; line-height: 1; }
+  .big-number .currency { font-size: 0.5em; vertical-align: super; font-weight: 600; color: var(--accent); }
 
   /* ─── Stat Row ─── */
-  .stat-row {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    padding: 16px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
-  }
+  .stat-row { display: flex; align-items: center; gap: 12px; padding: 0.8vh 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
   .stat-row:last-child { border: none; }
-
-  .stat-label { flex: 1; color: var(--text-muted); font-size: 0.95rem; }
-  .stat-value { font-weight: 600; font-size: 1.1rem; text-align: right; }
+  .stat-label { flex: 1; color: var(--text-muted); font-size: clamp(0.6rem, 1.2vh, 0.85rem); }
+  .stat-value { font-weight: 600; font-size: clamp(0.65rem, 1.3vh, 0.95rem); text-align: right; }
 
   /* ─── Bar Chart ─── */
-  .bar-chart { margin: 24px 0; }
-  .bar-row {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 14px;
-  }
-  .bar-label {
-    width: 100px;
-    flex-shrink: 0;
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    text-align: right;
-  }
-  .bar-track {
-    flex: 1;
-    height: 28px;
-    background: var(--surface2);
-    border-radius: 6px;
-    overflow: hidden;
-    position: relative;
-  }
-  .bar-fill {
-    height: 100%;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    padding-left: 12px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    transition: width 1s ease;
-    min-width: 40px;
-  }
-  .bar-fill.deepseek { background: linear-gradient(90deg, #2a6a8a, #3d8abf); }
+  .bar-chart { margin: 1vh 0; flex-shrink: 0; }
+  .bar-row { display: flex; align-items: center; gap: 10px; margin-bottom: 0.8vh; }
+  .bar-label { width: 70px; flex-shrink: 0; font-size: clamp(0.55rem, 1.1vh, 0.75rem); color: var(--text-muted); text-align: right; }
+  .bar-track { flex: 1; height: clamp(18px, 3vh, 26px); background: var(--surface2); border-radius: 5px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 5px; display: flex; align-items: center; padding-left: 10px; font-size: clamp(0.55rem, 1.1vh, 0.7rem); font-weight: 600; min-width: 40px; }
+  .bar-fill.deepseek { background: linear-gradient(90deg, #2a6a8a, #22d3ee); }
   .bar-fill.openai   { background: linear-gradient(90deg, #34d399, #6ee7b7); }
-  .bar-fill.vps      { background: linear-gradient(90deg, #c4a86a, #e0c88a); }
+  .bar-fill.vps      { background: linear-gradient(90deg, #c4a86a, #fbbf24); }
 
-  /* ─── List / Bullets ─── */
-  .insight-list {
-    list-style: none;
-    margin: 20px 0;
-  }
-  .insight-list li {
-    padding: 14px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
-    display: flex;
-    gap: 12px;
-    align-items: flex-start;
-  }
+  /* ─── Cost Table ─── */
+  .cost-table { width: 100%; border-collapse: collapse; font-size: clamp(0.6rem, 1.2vh, 0.85rem); flex-shrink: 0; }
+  .cost-table th { text-align: left; padding: 0.6vh 8px; border-bottom: 1px solid var(--border); color: var(--text-muted); font-weight: 500; font-size: clamp(0.5rem, 1vh, 0.7rem); text-transform: uppercase; letter-spacing: 0.04em; }
+  .cost-table td { padding: 0.6vh 8px; border-bottom: 1px solid rgba(255,255,255,0.04); }
+  .cost-table tr:last-child td { border: none; font-weight: 600; }
+
+  /* ─── Insight List ─── */
+  .insight-list { list-style: none; margin: 1vh 0; flex-shrink: 0; }
+  .insight-list li { padding: 0.8vh 0; border-bottom: 1px solid rgba(255,255,255,0.05); display: flex; gap: 10px; align-items: flex-start; }
   .insight-list li:last-child { border: none; }
-  .insight-list .bullet {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    margin-top: 8px;
-    flex-shrink: 0;
-  }
+  .insight-list .bullet { width: 6px; height: 6px; border-radius: 50%; margin-top: 6px; flex-shrink: 0; }
   .insight-list .bullet.gold { background: var(--accent); }
   .insight-list .bullet.green { background: var(--green); }
-  .insight-list .bullet.blue { background: var(--primary-light); }
+  .insight-list .bullet.cyan { background: var(--primary-light); }
   .insight-list .bullet.violet { background: var(--violet); }
+  .insight-list li strong { font-size: clamp(0.65rem, 1.3vh, 0.9rem); }
+  .insight-list li span { font-size: clamp(0.55rem, 1.1vh, 0.8rem); }
 
-  /* ─── Quote / Callout ─── */
+  /* ─── Callout ─── */
   .callout {
-    background: var(--surface2);
-    border-left: 3px solid var(--accent);
+    background: var(--surface2); border-left: 3px solid var(--accent);
     border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-    padding: 18px 20px;
-    margin: 20px 0;
-    font-size: 0.95rem;
-    line-height: 1.6;
+    padding: clamp(8px, 1.4vh, 14px) clamp(12px, 1.8vw, 18px);
+    font-size: clamp(0.6rem, 1.2vh, 0.85rem); line-height: 1.5; flex-shrink: 0;
   }
   .callout.green { border-left-color: var(--green); }
-  .callout.blue { border-left-color: var(--primary-light); }
+  .callout.cyan { border-left-color: var(--primary-light); }
 
-  /* ─── Architecture Diagram ─── */
-  .arch-diagram {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 24px;
-    margin: 20px 0;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.8rem;
-    line-height: 1.7;
-    overflow-x: auto;
-    white-space: pre;
-  }
-
-  /* ─── Tag Pills ─── */
-  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
-  .tag {
-    display: inline-block;
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: 500;
-    background: var(--surface2);
-    color: var(--text-muted);
-    border: 1px solid var(--border);
-  }
-  .tag.deepseek { border-color: var(--primary); color: var(--primary-light); }
+  /* ─── Tags ─── */
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 0.8vh 0; flex-shrink: 0; }
+  .tag { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: clamp(0.5rem, 1vh, 0.7rem); font-weight: 500; background: var(--surface2); color: var(--text-muted); border: 1px solid var(--border); }
+  .tag.cyan { border-color: var(--primary-light); color: var(--primary-light); }
   .tag.green { border-color: var(--green); color: var(--green); }
   .tag.gold { border-color: var(--accent); color: var(--accent); }
 
+  /* ─── Timeline ─── */
+  .timeline { position: relative; padding-left: 18px; margin: 0.8vh 0; flex-shrink: 0; }
+  .timeline::before { content: ''; position: absolute; left: 5px; top: 6px; bottom: 6px; width: 2px; background: var(--border); }
+  .timeline-item { position: relative; padding: 0.5vh 0 0.5vh 16px; }
+  .timeline-item::before { content: ''; position: absolute; left: -16px; top: 10px; width: 8px; height: 8px; border-radius: 50%; background: var(--primary); border: 2px solid var(--bg); }
+  .timeline-item .date { font-size: clamp(0.5rem, 1vh, 0.7rem); color: var(--text-muted); }
+  .timeline-item .title { font-size: clamp(0.6rem, 1.2vh, 0.85rem); font-weight: 600; }
+  .timeline-item .desc { font-size: clamp(0.5rem, 1vh, 0.75rem); color: var(--text-muted); }
+
+  /* ─── Architecture SVG Wrapper ─── */
+  .arch-svg-wrapper {
+    background: rgba(15,23,42,0.6);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: clamp(6px, 1.2vh, 14px);
+    overflow: hidden;
+    flex-shrink: 0;
+    margin: 0.5vh 0;
+  }
+  .arch-svg-wrapper svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 52vh;
+    max-height: 52dvh;
+  }
+
   /* ─── Navigation ─── */
   .nav-bar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    padding: 14px 20px;
-    background: rgba(10, 14, 23, 0.85);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border-top: 1px solid var(--border);
-    z-index: 100;
+    position: fixed; bottom: 0; left: 0; right: 0;
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    padding: 1.5vh 16px;
+    background: rgba(2,6,23,0.85); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+    border-top: 1px solid var(--border); z-index: 100;
   }
-
   .nav-btn {
-    background: var(--surface2);
-    border: 1px solid var(--border);
-    color: var(--text);
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 1.2rem;
-    transition: all 0.15s;
-    -webkit-user-select: none;
-    user-select: none;
+    background: var(--surface2); border: 1px solid var(--border); color: var(--text);
+    width: 40px; height: 40px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center; cursor: pointer;
+    font-size: 1.1rem; transition: all 0.15s; user-select: none; -webkit-user-select: none;
   }
-  .nav-btn:active { transform: scale(0.92); background: var(--primary); border-color: var(--primary); }
-  .nav-btn.disabled { opacity: 0.3; pointer-events: none; }
+  .nav-btn:active { transform: scale(0.9); background: var(--primary); border-color: var(--primary); }
+  .nav-btn.disabled { opacity: 0.25; pointer-events: none; }
+  .nav-dots { display: flex; gap: 5px; }
+  .nav-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--surface2); border: 1px solid var(--border); cursor: pointer; transition: all 0.2s; }
+  .nav-dot.active { background: var(--accent); border-color: var(--accent); transform: scale(1.4); }
+  .slide-number { font-size: clamp(0.55rem, 1.1vh, 0.7rem); color: var(--text-muted); font-weight: 500; min-width: 32px; text-align: center; }
 
-  .nav-dots {
-    display: flex;
-    gap: 6px;
+  /* ─── Responsive fine-tune ─── */
+  @media (max-width: 480px) {
+    .slide { padding: 2.5vh 4vw; }
+    .card-grid { grid-template-columns: 1fr 1fr; gap: 6px; }
+    .bar-label { width: 50px; }
+    .cost-table { font-size: clamp(0.5rem, 1.8vw, 0.7rem); }
   }
-  .nav-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--surface2);
-    border: 1px solid var(--border);
-    cursor: pointer;
-    transition: all 0.2s;
-  }
-  .nav-dot.active { background: var(--accent); border-color: var(--accent); transform: scale(1.3); }
-
-  .slide-number {
-    font-size: 0.75rem;
-    color: var(--text-muted);
-    font-weight: 500;
-    min-width: 36px;
-    text-align: center;
+  @media (orientation: landscape) and (max-height: 500px) {
+    .slide { padding: 1vh 4vw; }
+    .card-grid { grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 4px; }
+    h2 { font-size: clamp(0.9rem, 3vh, 1.3rem); }
+    .card { padding: 6px 10px; }
+    .nav-bar { padding: 4px 12px; }
+    .nav-btn { width: 30px; height: 30px; font-size: 0.9rem; }
   }
 
-  /* ─── Responsive ─── */
-  @media (max-width: 600px) {
-    .slide { padding: 40px 16px; }
-    .card-grid { grid-template-columns: 1fr; }
-    .bar-label { width: 70px; font-size: 0.75rem; }
-    .nav-bar { padding: 10px 12px; gap: 8px; }
-    .nav-btn { width: 38px; height: 38px; font-size: 1rem; }
-    .arch-diagram { font-size: 0.65rem; padding: 16px; }
-  }
-
-  /* ─── Divider ─── */
-  .divider {
-    width: 60px;
-    height: 3px;
-    background: var(--accent);
-    border-radius: 2px;
-    margin: 16px 0;
-  }
-
-  /* ─── Footer on slides ─── */
-  .slide-footer {
-    position: absolute;
-    bottom: 80px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    font-size: 0.7rem;
-    color: rgba(136, 153, 180, 0.4);
-  }
-
-  /* ─── Table ─── */
-  .cost-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-size: 0.9rem;
-  }
-  .cost-table th {
-    text-align: left;
-    padding: 10px 12px;
-    border-bottom: 1px solid var(--border);
-    color: var(--text-muted);
-    font-weight: 500;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-  }
-  .cost-table td {
-    padding: 10px 12px;
-    border-bottom: 1px solid rgba(255,255,255,0.04);
-  }
-  .cost-table tr:last-child td { border: none; }
-  .cost-table tr:last-child { font-weight: 600; }
-
-  /* ─── Timeline ─── */
-  .timeline { position: relative; padding-left: 24px; margin: 20px 0; }
-  .timeline::before {
-    content: '';
-    position: absolute;
-    left: 7px;
-    top: 8px;
-    bottom: 8px;
-    width: 2px;
-    background: var(--border);
-  }
-  .timeline-item {
-    position: relative;
-    padding: 10px 0 10px 20px;
-  }
-  .timeline-item::before {
-    content: '';
-    position: absolute;
-    left: -20px;
-    top: 16px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: var(--primary);
-    border: 2px solid var(--bg);
-  }
-  .timeline-item .date {
-    font-size: 0.8rem;
-    color: var(--text-muted);
-  }
-  .timeline-item .title {
-    font-weight: 600;
-    margin-top: 2px;
-  }
-  .timeline-item .desc {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    margin-top: 2px;
-  }
+  /* ─── Slide footer ─── */
+  .slide-footer { position: absolute; bottom: 7vh; left: 0; right: 0; text-align: center; font-size: clamp(0.5rem, 1vh, 0.65rem); color: rgba(148,163,184,0.3); pointer-events: none; }
 </style>
 </head>
 <body>
@@ -455,107 +238,63 @@
 <div class="slides" id="slides">
 
   <!-- ══════════════════════════════════════════
-       SLIDE 1: TITLE
+       SLIDE 1 : TITLE
        ══════════════════════════════════════════ -->
   <section class="slide" data-index="0">
-    <div class="slide-content" style="text-align:center">
+    <div class="slide-content" style="text-align:center;align-items:center">
       <h3 style="color:var(--text-muted);font-weight:400;letter-spacing:0.12em">MALOHA COAST SDN BHD</h3>
-      <h1 style="margin-top:0.25em">
-        The <span class="highlight">$40</span> AI Agent
-      </h1>
-      <p class="subtitle" style="margin:0 auto;font-size:clamp(1rem,2.5vw,1.3rem)">
-        Running a production-grade AI ecosystem on a shoestring budget —<br>
-        and what it means for your business.
+      <h1 style="margin-top:0.2em">The <span class="highlight">$40</span> AI Agent</h1>
+      <p class="subtitle" style="margin:0.5em auto 0;max-width:540px">
+        Running a production-grade AI ecosystem on a shoestring budget — and what it means for your business.
       </p>
-      <div class="divider" style="margin:24px auto"></div>
-      <div class="tags" style="justify-content:center;margin-top:8px">
-        <span class="tag deepseek">DeepSeek</span>
+      <div class="divider" style="margin:1.5vh auto"></div>
+      <div class="tags" style="justify-content:center">
+        <span class="tag gold">$10/yr VPS</span>
+        <span class="tag cyan">DeepSeek</span>
         <span class="tag green">OpenAI</span>
-        <span class="tag gold">$10/year VPS</span>
         <span class="tag">Hermes Agent</span>
       </div>
-      <p style="margin-top:40px;font-size:0.85rem;color:var(--text-muted)">
-        sayf &middot; Director, Maloha Coast
-      </p>
+      <p class="small" style="margin-top:3vh">sayf · Director, Maloha Coast</p>
     </div>
-    <div class="slide-footer">Swipe or tap arrows &middot; 10 slides</div>
+    <div class="slide-footer">Swipe · 10 slides</div>
   </section>
 
   <!-- ══════════════════════════════════════════
-       SLIDE 2: THE BIG PICTURE
+       SLIDE 2 : BIG PICTURE
        ══════════════════════════════════════════ -->
   <section class="slide" data-index="1">
     <div class="slide-content">
       <h3>Big Picture</h3>
-      <h2>Total cost of ownership:<br><span class="highlight">$40/year</span> — or <span class="highlight-green">$0.11/day</span></h2>
-      <p class="subtitle" style="margin-bottom:24px">
-        That's the entire infrastructure for a multi-agent AI system that runs 24/7, handles email, manages projects, creates content, and powers business operations.
+      <h2>$0.11/day · <span class="highlight">$40/year</span></h2>
+      <p class="subtitle" style="margin-bottom:0.5em">
+        Full multi-agent system — inbox, calendar, content, projects — running 24/7.
       </p>
-
       <div class="card-grid">
-        <div class="card">
-          <div class="icon">🖥️</div>
-          <div class="value">$10<span style="font-size:0.6em;color:var(--text-muted);font-weight:400">/yr</span></div>
-          <div class="label">VPS (Tencent Lighthouse)</div>
-          <div class="desc">Always-on server hosting the agent stack</div>
-        </div>
-        <div class="card">
-          <div class="icon">🧠</div>
-          <div class="value">$20</div>
-          <div class="label">DeepSeek Credits</div>
-          <div class="desc">$1.08 spent — the rest is runway</div>
-        </div>
-        <div class="card">
-          <div class="icon">🔤</div>
-          <div class="value">$10</div>
-          <div class="label">OpenAI Credits</div>
-          <div class="desc">$0.002 spent on gbrain embeddings</div>
-        </div>
+        <div class="card"><div class="icon">🖥️</div><div class="value">$10<span style="font-size:0.5em;color:var(--text-muted);font-weight:400">/yr</span></div><div class="label">VPS</div><div class="desc">Tencent Lighthouse always-on</div></div>
+        <div class="card"><div class="icon">🧠</div><div class="value">$20</div><div class="label">DeepSeek</div><div class="desc">$1.08 spent — rest is runway</div></div>
+        <div class="card"><div class="icon">🔤</div><div class="value">$10</div><div class="label">OpenAI</div><div class="desc">$0.002 spent on embeddings</div></div>
       </div>
-
       <div class="callout">
-        <strong>Compare this to:</strong> One ChatGPT Pro subscription costs <strong>$240/year</strong>.
-        This entire multi-agent ecosystem costs <strong>1/6th of a single user's ChatGPT subscription</strong> — and it runs autonomously, not as a chatbot.
+        <strong>Compare:</strong> ChatGPT Pro = <strong>$240/yr</strong>. This entire multi-agent system = <strong>1/6th</strong> — and it runs autonomously, not as a chatbot.
       </div>
     </div>
   </section>
 
   <!-- ══════════════════════════════════════════
-       SLIDE 3: BREAKDOWN
+       SLIDE 3 : BREAKDOWN
        ══════════════════════════════════════════ -->
   <section class="slide" data-index="2">
     <div class="slide-content">
       <h3>Cost Breakdown</h3>
       <h2>Where every dollar goes</h2>
-      <p class="subtitle" style="margin-bottom:20px">
-        The full cost structure is transparent — no hidden cloud bills, no surprise API spikes.
-      </p>
-
+      <p class="subtitle" style="margin-bottom:0.3em">No hidden cloud bills, no surprise API spikes.</p>
       <div class="bar-chart">
-        <div class="bar-row">
-          <div class="bar-label">VPS</div>
-          <div class="bar-track">
-            <div class="bar-fill vps" style="width:25%">$10/yr</div>
-          </div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-label">DeepSeek</div>
-          <div class="bar-track">
-            <div class="bar-fill deepseek" style="width:50%">$20</div>
-          </div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-label">OpenAI</div>
-          <div class="bar-track">
-            <div class="bar-fill openai" style="width:25%">$10</div>
-          </div>
-        </div>
+        <div class="bar-row"><div class="bar-label">VPS</div><div class="bar-track"><div class="bar-fill vps" style="width:25%">$10/yr</div></div></div>
+        <div class="bar-row"><div class="bar-label">DeepSeek</div><div class="bar-track"><div class="bar-fill deepseek" style="width:50%">$20</div></div></div>
+        <div class="bar-row"><div class="bar-label">OpenAI</div><div class="bar-track"><div class="bar-fill openai" style="width:25%">$10</div></div></div>
       </div>
-
       <table class="cost-table">
-        <thead>
-          <tr><th>Item</th><th>Cost</th><th>Spent So Far</th><th>What It Runs</th></tr>
-        </thead>
+        <thead><tr><th>Item</th><th>Cost</th><th>Spent</th><th>Runs</th></tr></thead>
         <tbody>
           <tr><td>Tencent Lighthouse VPS</td><td>$10/yr</td><td>$10/yr</td><td>24/7 agent host</td></tr>
           <tr><td>DeepSeek API credit</td><td>$20</td><td>$1.08</td><td>Primary LLM (reasoning)</td></tr>
@@ -563,418 +302,333 @@
           <tr><td><strong>Total</strong></td><td><strong>$40</strong></td><td><strong>~$11.08</strong></td><td><strong>Entire system</strong></td></tr>
         </tbody>
       </table>
-
-      <div class="callout green" style="margin-top:16px">
-        <strong>Key takeaway:</strong> 72% of committed budget is <em>unused runway</em>.
-        At the current burn rate, the DeepSeek credits would last <strong>~2 years</strong>.
-      </div>
+      <div class="callout green" style="margin-top:0.3em"><strong>72% unused runway</strong> — at current burn, DeepSeek credits last <strong>~2 years</strong>.</div>
     </div>
   </section>
 
   <!-- ══════════════════════════════════════════
-       SLIDE 4: DEEPSEEK USAGE
+       SLIDE 4 : DEEPSEEK
        ══════════════════════════════════════════ -->
   <section class="slide" data-index="3">
     <div class="slide-content">
       <h3>DeepSeek</h3>
       <h2>$1.08 of reasoning power</h2>
-      <p class="subtitle" style="margin-bottom:16px">
-        With just over a dollar spent, the DeepSeek API has driven the entire reasoning backbone of this system.
-      </p>
-
+      <p class="subtitle" style="margin-bottom:0.3em">The reasoning backbone of the entire agent system.</p>
       <div class="timeline">
-        <div class="timeline-item">
-          <div class="date">May 2025</div>
-          <div class="title">Hermes Agent configured with DeepSeek</div>
-          <div class="desc">First agent profiles created — MC (admin VA) and Sammy (content creator)</div>
-        </div>
-        <div class="timeline-item">
-          <div class="date">May–Jun 2025</div>
-          <div class="title">~$1.08 consumed across all sessions</div>
-          <div class="desc">Inbox triage, project management, content drafting, research, gateway orchestration</div>
-        </div>
-        <div class="timeline-item">
-          <div class="date">Jun 2025</div>
-          <div class="title">Multi-agent production system live</div>
-          <div class="desc">3 agents (falconhermes, MC, Sammy) running 24/7 via Telegram + Discord</div>
-        </div>
+        <div class="timeline-item"><div class="date">May 2025</div><div class="title">Hermes Agent configured with DeepSeek</div><div class="desc">MC (admin VA) + Sammy (content creator) profiles created</div></div>
+        <div class="timeline-item"><div class="date">May–Jun</div><div class="title">~$1.08 across all sessions</div><div class="desc">Inbox triage, projects, content, research, orchestration</div></div>
+        <div class="timeline-item"><div class="date">Jun 2025</div><div class="title">3-agent production system live</div><div class="desc">falconhermes + MC + Sammy · Telegram + Discord</div></div>
       </div>
-
-      <div class="card-grid" style="margin-top:12px">
-        <div class="card" style="text-align:center;padding:16px">
-          <div class="big-number" style="font-size:2rem">$0.054</div>
-          <div class="label">Per active day (30 days)</div>
+      <div class="card-grid" style="margin-top:0.3em">
+        <div class="card" style="text-align:center;padding:1.2vh">
+          <div style="font-size:clamp(1.2rem,3vh,2rem);font-weight:700">$0.054</div>
+          <div class="label">Per active day (30d)</div>
         </div>
-        <div class="card" style="text-align:center;padding:16px">
-          <div class="big-number" style="font-size:2rem">$0.036</div>
+        <div class="card" style="text-align:center;padding:1.2vh">
+          <div style="font-size:clamp(1.2rem,3vh,2rem);font-weight:700">$0.036</div>
           <div class="label">Avg. daily spend</div>
         </div>
-        <div class="card" style="text-align:center;padding:16px">
-          <div class="big-number" style="font-size:2rem">3.5¢</div>
-          <div class="label">Per typical interaction chain</div>
+        <div class="card" style="text-align:center;padding:1.2vh">
+          <div style="font-size:clamp(1.2rem,3vh,2rem);font-weight:700">3.5¢</div>
+          <div class="label">Per interaction chain</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ══════════════════════════════════════════
-       SLIDE 5: OPENAI — THE INVISIBLE LAYER
+       SLIDE 5 : OPENAI
        ══════════════════════════════════════════ -->
   <section class="slide" data-index="4">
     <div class="slide-content">
       <h3>OpenAI (gbrain Embeddings)</h3>
       <h2>Knowledge = $0.002</h2>
-      <p class="subtitle" style="margin-bottom:16px">
-        The $10 OpenAI credit is used exclusively for <strong>gbrain embeddings</strong> — the knowledge base that gives the agents long-term memory. Over the past month, the burn was <em>virtually nothing</em>.
-      </p>
-
+      <p class="subtitle" style="margin-bottom:0.5em">Used for persistent memory. The burn is virtually nothing.</p>
       <div class="card-grid">
-        <div class="card">
-          <div class="icon">📊</div>
-          <div class="value">$0.00092</div>
-          <div class="label">Jun 3 spend</div>
-          <div class="desc">First day gbrain embedding pipeline ran</div>
-        </div>
-        <div class="card">
-          <div class="icon">📊</div>
-          <div class="value">$0.00134</div>
-          <div class="label">Jun 4 spend</div>
-          <div class="desc">Second day — knowledge indexing</div>
-        </div>
-        <div class="card">
-          <div class="icon">📈</div>
-          <div class="value">$0.0023</div>
-          <div class="label">Total to date</div>
-          <div class="desc">Literally 0.2 cents</div>
-        </div>
+        <div class="card"><div class="icon">📊</div><div class="value">$0.00092</div><div class="label">Jun 3</div><div class="desc">First gbrain embedding run</div></div>
+        <div class="card"><div class="icon">📊</div><div class="value">$0.00134</div><div class="label">Jun 4</div><div class="desc">Knowledge indexing</div></div>
+        <div class="card"><div class="icon">📈</div><div class="value">$0.0023</div><div class="label">Total</div><div class="desc">0.2 cents</div></div>
       </div>
-
-      <div class="callout blue">
-        <strong>Insight:</strong> At this burn rate, the $10 OpenAI credit will last <strong>~12 years</strong>.
-        Embeddings are one of the cheapest AI operations available — yet they unlock the most powerful feature (persistent memory).
-      </div>
+      <div class="callout cyan"><strong>At this burn rate, $10 lasts ~12 years.</strong> Embeddings are the cheapest AI operation — yet unlock the most powerful feature: persistent memory.</div>
     </div>
   </section>
 
   <!-- ══════════════════════════════════════════
-       SLIDE 6: WHAT $40/YEAR ACTUALLY RUNS
+       SLIDE 6 : WHAT $40 BUYS
        ══════════════════════════════════════════ -->
   <section class="slide" data-index="5">
     <div class="slide-content">
       <h3>Value Delivered</h3>
       <h2>What $40/year actually buys</h2>
-      <p class="subtitle" style="margin-bottom:20px">
-        This isn't a demo or a toy. This is a production system handling real business workflows.
-      </p>
-
-      <div class="card-grid" style="grid-template-columns:1fr 1fr">
-        <div class="card">
-          <div class="icon">📥</div>
-          <div class="value" style="font-size:1.1rem">Inbox Zero</div>
-          <div class="desc">Auto-triage, reply drafting, priority flagging</div>
-        </div>
-        <div class="card">
-          <div class="icon">📅</div>
-          <div class="value" style="font-size:1.1rem">Calendar Ops</div>
-          <div class="desc">Meeting prep, scheduling, reminders</div>
-        </div>
-        <div class="card">
-          <div class="icon">📝</div>
-          <div class="value" style="font-size:1.1rem">Content Creation</div>
-          <div class="desc">LinkedIn, X, blog — brand voice consistent</div>
-        </div>
-        <div class="card">
-          <div class="icon">🧠</div>
-          <div class="value" style="font-size:1.1rem">Knowledge Base</div>
-          <div class="desc">gbrain: persistent memory, research, recall</div>
-        </div>
-        <div class="card">
-          <div class="icon">🤝</div>
-          <div class="value" style="font-size:1.1rem">Client Outreach</div>
-          <div class="desc">Cold lead responses tailored per vertical</div>
-        </div>
-        <div class="card">
-          <div class="icon">🔧</div>
-          <div class="value" style="font-size:1.1rem">Project Tracking</div>
-          <div class="desc">Task management, kanban, status updates</div>
-        </div>
-        <div class="card">
-          <div class="icon">🌐</div>
-          <div class="value" style="font-size:1.1rem">Multi-Channel</div>
-          <div class="desc">Telegram + Discord integration</div>
-        </div>
-        <div class="card">
-          <div class="icon">📡</div>
-          <div class="value" style="font-size:1.1rem">24/7 Operation</div>
-          <div class="desc">Gateway always-on, cron-scheduled tasks</div>
-        </div>
+      <p class="subtitle" style="margin-bottom:0.3em">Production system. Real business workflows. No demos.</p>
+      <div class="card-grid" style="grid-template-columns:1fr 1fr 1fr 1fr">
+        <div class="card" style="padding:1.2vh"><div class="icon">📥</div><div style="font-size:clamp(0.6rem,1.2vh,0.85rem);font-weight:600">Inbox Zero</div><div class="desc">Auto-triage, replies</div></div>
+        <div class="card" style="padding:1.2vh"><div class="icon">📅</div><div style="font-size:clamp(0.6rem,1.2vh,0.85rem);font-weight:600">Calendar Ops</div><div class="desc">Scheduling, prep</div></div>
+        <div class="card" style="padding:1.2vh"><div class="icon">📝</div><div style="font-size:clamp(0.6rem,1.2vh,0.85rem);font-weight:600">Content</div><div class="desc">LinkedIn, X, blog</div></div>
+        <div class="card" style="padding:1.2vh"><div class="icon">🧠</div><div style="font-size:clamp(0.6rem,1.2vh,0.85rem);font-weight:600">Knowledge</div><div class="desc">gbrain memory</div></div>
+        <div class="card" style="padding:1.2vh"><div class="icon">🤝</div><div style="font-size:clamp(0.6rem,1.2vh,0.85rem);font-weight:600">Outreach</div><div class="desc">Lead responses</div></div>
+        <div class="card" style="padding:1.2vh"><div class="icon">🔧</div><div style="font-size:clamp(0.6rem,1.2vh,0.85rem);font-weight:600">Projects</div><div class="desc">Kanban, tracking</div></div>
+        <div class="card" style="padding:1.2vh"><div class="icon">🌐</div><div style="font-size:clamp(0.6rem,1.2vh,0.85rem);font-weight:600">Multi-Channel</div><div class="desc">Telegram + Discord</div></div>
+        <div class="card" style="padding:1.2vh"><div class="icon">📡</div><div style="font-size:clamp(0.6rem,1.2vh,0.85rem);font-weight:600">24/7</div><div class="desc">Always-on gateway</div></div>
       </div>
     </div>
   </section>
 
   <!-- ══════════════════════════════════════════
-       SLIDE 7: ARCHITECTURE
+       SLIDE 7 : ARCHITECTURE (SVG)
        ══════════════════════════════════════════ -->
   <section class="slide" data-index="6">
     <div class="slide-content">
       <h3>Architecture</h3>
-      <h2>How it all fits together</h2>
-      <p class="subtitle" style="margin-bottom:16px">
-        A 3-agent hierarchy on a single VPS, orchestrated through a lightweight gateway.
-      </p>
+      <h2>3 agents · 1 VPS · $10/yr</h2>
+      <p class="subtitle" style="margin-bottom:0.2em">Lightweight gateway + specialised agents + persistent memory.</p>
+      <div class="arch-svg-wrapper">
+        <svg viewBox="0 0 860 420" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+              <polygon points="0 0, 8 3, 0 6" fill="#64748b"/>
+            </marker>
+            <marker id="arr-cyan" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+              <polygon points="0 0, 8 3, 0 6" fill="#22d3ee"/>
+            </marker>
+            <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+              <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e293b" stroke-width="0.4"/>
+            </pattern>
+          </defs>
 
-      <div class="arch-diagram">
-┌──────────────────────────────────────────────────┐
-│           💰 $10/yr · Tencent Lighthouse VPS       │
-│                                                    │
-│   ┌─────────────────────────────────────────┐     │
-│   │         Hermes Gateway (always-on)       │     │
-│   │   ┌─────────────┐  ┌─────────────────┐  │     │
-│   │   │  Telegram    │  │    Discord      │  │     │
-│   │   │  Bridge      │  │    Bridge       │  │     │
-│   │   └──────┬──────┘  └────────┬────────┘  │     │
-│   │          │                  │           │     │
-│   │   ┌──────┴──────────────────┴────────┐  │     │
-│   │   │         falconhermes             │  │     │
-│   │   │        (Orchestrator)            │  │     │
-│   │   └────────┬──────────┬─────────────┘  │     │
-│   │            │          │                │     │
-│   │   ┌────────┴──┐  ┌───┴────────┐       │     │
-│   │   │    MC     │  │   Sammy    │       │     │
-│   │   │ (Admin)   │  │ (Content)  │       │     │
-│   │   │ Inbox,    │  │ LinkedIn,  │       │     │
-│   │   │ Calendar, │  │ X, Blog,   │       │     │
-│   │   │ Projects  │  │ Articles   │       │     │
-│   │   └───────────┘  └────────────┘       │     │
-│   └─────────────────────────────────────────┘     │
-│                                                    │
-│   ┌────────────┐  ┌──────────────┐               │
-│   │  gbrain    │  │  Cron Jobs   │               │
-│   │ (Memory)   │  │ (Scheduled)  │               │
-│   └────────────┘  └──────────────┘               │
-└──────────────────────────────────────────────────┘
-      </div>
+          <!-- Background grid -->
+          <rect width="860" height="420" fill="url(#grid)"/>
 
-      <div class="tags" style="justify-content:center">
-        <span class="tag">⚡ All on <strong>1 CPU core · 2GB RAM · 80GB SSD</strong></span>
+          <!-- VPS Boundary -->
+          <rect x="15" y="10" width="830" height="400" rx="12" fill="rgba(120,53,15,0.06)" stroke="#fbbf24" stroke-width="1" stroke-dasharray="6,3"/>
+          <text x="26" y="27" fill="#fbbf24" font-size="10" font-weight="600" font-family="'JetBrains Mono',monospace">💰 Tencent Lighthouse VPS · $10/yr · 1 CPU · 2GB RAM</text>
+
+          <!-- External: Telegram -->
+          <rect x="30" y="70" width="105" height="42" rx="6" fill="rgba(30,41,59,0.5)" stroke="#94a3b8" stroke-width="1.5"/>
+          <text x="82" y="88" fill="white" font-size="11" font-weight="600" text-anchor="middle" font-family="'Inter',sans-serif">Telegram</text>
+          <text x="82" y="102" fill="#94a3b8" font-size="8" text-anchor="middle" font-family="'Inter',sans-serif">Messaging</text>
+
+          <!-- External: Discord -->
+          <rect x="30" y="130" width="105" height="42" rx="6" fill="rgba(30,41,59,0.5)" stroke="#94a3b8" stroke-width="1.5"/>
+          <text x="82" y="148" fill="white" font-size="11" font-weight="600" text-anchor="middle" font-family="'Inter',sans-serif">Discord</text>
+          <text x="82" y="162" fill="#94a3b8" font-size="8" text-anchor="middle" font-family="'Inter',sans-serif">Channels</text>
+
+          <!-- Hermes Gateway -->
+          <rect x="175" y="80" width="130" height="50" rx="8" fill="rgba(6,78,59,0.45)" stroke="#34d399" stroke-width="1.5"/>
+          <text x="240" y="101" fill="white" font-size="12" font-weight="600" text-anchor="middle" font-family="'Inter',sans-serif">Hermes Gateway</text>
+          <text x="240" y="118" fill="#94a3b8" font-size="9" text-anchor="middle" font-family="'Inter',sans-serif">always-on bridge</text>
+
+          <!-- Orbe: falconhermes -->
+          <rect x="350" y="60" width="145" height="55" rx="8" fill="rgba(8,51,68,0.5)" stroke="#22d3ee" stroke-width="1.5"/>
+          <circle cx="362" cy="73" r="5" fill="#22d3ee" opacity="0.6"/>
+          <text x="370" y="77" fill="white" font-size="11" font-weight="600" font-family="'Inter',sans-serif">falconhermes</text>
+          <text x="422" y="92" fill="#94a3b8" font-size="8" text-anchor="middle" font-family="'Inter',sans-serif">Orchestrator</text>
+          <text x="422" y="104" fill="#94a3b8" font-size="7" text-anchor="middle" font-family="'Inter',sans-serif">Strategy, Delegation, Planning</text>
+
+          <!-- MC -->
+          <rect x="350" y="130" width="145" height="50" rx="8" fill="rgba(76,29,149,0.4)" stroke="#a78bfa" stroke-width="1.5"/>
+          <text x="422" y="150" fill="white" font-size="11" font-weight="600" text-anchor="middle" font-family="'Inter',sans-serif">MC</text>
+          <text x="422" y="164" fill="#94a3b8" font-size="8" text-anchor="middle" font-family="'Inter',sans-serif">Admin · Inbox · Projects</text>
+
+          <!-- Sammy -->
+          <rect x="350" y="195" width="145" height="50" rx="8" fill="rgba(136,19,55,0.4)" stroke="#fb7185" stroke-width="1.5"/>
+          <text x="422" y="215" fill="white" font-size="11" font-weight="600" text-anchor="middle" font-family="'Inter',sans-serif">Sammy</text>
+          <text x="422" y="229" fill="#94a3b8" font-size="8" text-anchor="middle" font-family="'Inter',sans-serif">Content · LinkedIn · X · Blog</text>
+
+          <!-- gbrain -->
+          <rect x="555" y="80" width="125" height="48" rx="6" fill="rgba(76,29,149,0.35)" stroke="#a78bfa" stroke-width="1.5"/>
+          <text x="617" y="100" fill="white" font-size="11" font-weight="600" text-anchor="middle" font-family="'Inter',sans-serif">gbrain</text>
+          <text x="617" y="115" fill="#94a3b8" font-size="8" text-anchor="middle" font-family="'Inter',sans-serif">Knowledge Base</text>
+
+          <!-- Cron -->
+          <rect x="555" y="150" width="125" height="48" rx="6" fill="rgba(6,78,59,0.35)" stroke="#34d399" stroke-width="1.5"/>
+          <text x="617" y="170" fill="white" font-size="11" font-weight="600" text-anchor="middle" font-family="'Inter',sans-serif">Cron Scheduler</text>
+          <text x="617" y="185" fill="#94a3b8" font-size="8" text-anchor="middle" font-family="'Inter',sans-serif">Automated Tasks</text>
+
+          <!-- Legend Area -->
+          <rect x="730" y="300" width="100" height="100" rx="8" fill="rgba(15,23,42,0.7)" stroke="#334155" stroke-width="1"/>
+          <text x="740" y="316" fill="white" font-size="9" font-weight="600" font-family="'Inter',sans-serif">Legend</text>
+          <rect x="738" y="324" width="12" height="8" rx="2" fill="rgba(8,51,68,0.5)" stroke="#22d3ee" stroke-width="1"/>
+          <text x="756" y="331" fill="#94a3b8" font-size="7" font-family="'Inter',sans-serif">Orchestrator</text>
+          <rect x="738" y="338" width="12" height="8" rx="2" fill="rgba(76,29,149,0.4)" stroke="#a78bfa" stroke-width="1"/>
+          <text x="756" y="345" fill="#94a3b8" font-size="7" font-family="'Inter',sans-serif">Admin</text>
+          <rect x="738" y="352" width="12" height="8" rx="2" fill="rgba(136,19,55,0.4)" stroke="#fb7185" stroke-width="1"/>
+          <text x="756" y="359" fill="#94a3b8" font-size="7" font-family="'Inter',sans-serif">Content</text>
+          <rect x="738" y="366" width="12" height="8" rx="2" fill="rgba(6,78,59,0.4)" stroke="#34d399" stroke-width="1"/>
+          <text x="756" y="373" fill="#94a3b8" font-size="7" font-family="'Inter',sans-serif">Gateway / Cron</text>
+          <rect x="738" y="380" width="12" height="8" rx="2" fill="rgba(30,41,59,0.5)" stroke="#94a3b8" stroke-width="1"/>
+          <text x="756" y="387" fill="#94a3b8" font-size="7" font-family="'Inter',sans-serif">External</text>
+
+          <!-- ARROWS: Telegram → Gateway -->
+          <line x1="135" y1="91" x2="173" y2="91" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arr-cyan)"/>
+          <line x1="135" y1="151" x2="173" y2="116" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arr-cyan)"/>
+
+          <!-- ARROWS: Gateway → falconhermes -->
+          <line x1="305" y1="105" x2="348" y2="88" stroke="#34d399" stroke-width="1.5" marker-end="url(#arr)"/>
+
+          <!-- ARROWS: falconhermes → MC & Sammy -->
+          <line x1="420" y1="115" x2="420" y2="128" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arr-cyan)"/>
+          <line x1="440" y1="115" x2="455" y2="140" stroke="#22d3ee" stroke-width="1" stroke-dasharray="3,3"/>
+
+          <line x1="400" y1="115" x2="390" y2="140" stroke="#22d3ee" stroke-width="1" stroke-dasharray="3,3"/>
+          <line x1="422" y1="180" x2="422" y2="193" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arr-cyan)"/>
+
+          <!-- ARROWS: Agents → gbrain -->
+          <path d="M 495 95 L 525 95 Q 535 95 535 104 L 535 104" fill="none" stroke="#a78bfa" stroke-width="1" stroke-dasharray="4,3"/>
+          <path d="M 495 150 L 530 150 Q 545 150 545 145 L 553 145" fill="none" stroke="#a78bfa" stroke-width="1" stroke-dasharray="4,3"/>
+          <path d="M 495 220 L 530 220 Q 550 220 550 210 L 553 210" fill="none" stroke="#a78bfa" stroke-width="1" stroke-dasharray="4,3"/>
+
+          <!-- Arrow: falconhermes → Cron -->
+          <path d="M 440 115 L 490 140 Q 510 150 530 160 L 553 170" fill="none" stroke="#34d399" stroke-width="1" stroke-dasharray="3,3"/>
+
+          <!-- Info: VPS details -->
+          <text x="50" y="360" fill="#475569" font-size="7" font-family="'JetBrains Mono',monospace">1 CPU · 2GB RAM · 80GB SSD · Ubuntu 24.04</text>
+          <text x="50" y="375" fill="#475569" font-size="7" font-family="'JetBrains Mono',monospace">DeepSeek API · OpenAI API (embeddings) · Hermes Agent</text>
+        </svg>
       </div>
     </div>
   </section>
 
   <!-- ══════════════════════════════════════════
-       SLIDE 8: KEY INSIGHTS
+       SLIDE 8 : INSIGHTS
        ══════════════════════════════════════════ -->
   <section class="slide" data-index="7">
     <div class="slide-content">
       <h3>Insights</h3>
-      <h2>What this means for beginners</h2>
-
+      <h2>For beginners & decision-makers</h2>
       <ul class="insight-list">
-        <li>
-          <span class="bullet gold"></span>
-          <div>
-            <strong>AI agents are cheaper than a Netflix subscription.</strong><br>
-            <span style="color:var(--text-muted);font-size:0.9rem">$40/year for a full-time AI assistant vs. $288/year for Netflix Premium. The ROI is not even close.</span>
-          </div>
-        </li>
-        <li>
-          <span class="bullet green"></span>
-          <div>
-            <strong>You don't need expensive GPU cloud infrastructure.</strong><br>
-            <span style="color:var(--text-muted);font-size:0.9rem">The API model serves the reasoning — a $10/year VPS is all the compute you need to host the agent layer.</span>
-          </div>
-        </li>
-        <li>
-          <span class="bullet blue"></span>
-          <div>
-            <strong>The bottleneck isn't cost — it's configuration.</strong><br>
-            <span style="color:var(--text-muted);font-size:0.9rem">The real investment is time: designing profiles, workflows, and memory structures. Once set up, operational cost is negligible.</span>
-          </div>
-        </li>
-        <li>
-          <span class="bullet violet"></span>
-          <div>
-            <strong>Embeddings are practically free.</strong><br>
-            <span style="color:var(--text-muted);font-size:0.9rem">$10 of OpenAI credits for gbrain knowledge indexing will last over a decade at current usage. Long-term memory costs almost nothing.</span>
-          </div>
-        </li>
-        <li>
-          <span class="bullet gold"></span>
-          <div>
-            <strong>Multi-agent beats single-model every time.</strong><br>
-            <span style="color:var(--text-muted);font-size:0.9rem">Three specialised agents (orchestrator + admin + content) outperform one monolithic model — and cost less than a single user's ChatGPT subscription.</span>
-          </div>
-        </li>
+        <li><span class="bullet gold"></span><div><strong>Cheaper than Netflix.</strong> <span>$40/yr for a full-time AI assistant vs $288/yr for Netflix Premium. ROI isn't close.</span></div></li>
+        <li><span class="bullet green"></span><div><strong>No expensive GPUs needed.</strong> <span>API models provide the reasoning. A $10/yr VPS is all the compute you need to host the agent layer.</span></div></li>
+        <li><span class="bullet cyan"></span><div><strong>Bottleneck isn't cost — it's configuration.</strong> <span>The real investment is time: designing profiles, workflows, and memory. Once set up, operational cost is negligible.</span></div></li>
+        <li><span class="bullet violet"></span><div><strong>Embeddings are practically free.</strong> <span>$10 of OpenAI credits for knowledge indexing lasts over a decade. Long-term memory costs almost nothing.</span></div></li>
+        <li><span class="bullet gold"></span><div><strong>Multi-agent beats single-model.</strong> <span>Three specialised agents outperform one monolithic model — and cost less than a single ChatGPT subscription.</span></div></li>
       </ul>
     </div>
   </section>
 
   <!-- ══════════════════════════════════════════
-       SLIDE 9: FOR CLIENTS
+       SLIDE 9 : FOR CLIENTS
        ══════════════════════════════════════════ -->
   <section class="slide" data-index="8">
     <div class="slide-content">
       <h3>For Clients</h3>
-      <h2>What Maloha Coast can build for you</h2>
-      <p class="subtitle" style="margin-bottom:16px">
-        Same architecture. Tailored to your business. No cloud bill surprises.
-      </p>
-
-      <div class="card-grid">
-        <div class="card">
-          <div class="icon">🏢</div>
-          <div class="value" style="font-size:1.1rem">Solo Practitioners</div>
-          <div class="desc">Automate your inbox, calendar, content publishing and client follow-ups. Replace 3 SaaS subscriptions with one $40/year system.</div>
-        </div>
-        <div class="card">
-          <div class="icon">🏪</div>
-          <div class="value" style="font-size:1.1rem">SMB Owners</div>
-          <div class="desc">Customer support triage, lead qualification, social media management, project tracking. One agent per function.</div>
-        </div>
-        <div class="card">
-          <div class="icon">🏥</div>
-          <div class="value" style="font-size:1.1rem">Professional Services</div>
-          <div class="desc">Intake automation, research synthesis, report drafting, CRM enrichment. Works with your existing tools.</div>
-        </div>
-        <div class="card">
-          <div class="icon">🎓</div>
-          <div class="value" style="font-size:1.1rem">Agencies & Consultants</div>
-          <div class="desc">Multi-tenant agents for each client. Rebrand, reconnect, relaunch. White-label the agent stack.</div>
-        </div>
+      <h2>Tailored for your business</h2>
+      <p class="subtitle" style="margin-bottom:0.3em">Same architecture. Customised to your workflow. No bill surprises.</p>
+      <div class="card-grid" style="grid-template-columns:1fr 1fr">
+        <div class="card"><div class="icon">🏢</div><div style="font-size:clamp(0.6rem,1.2vh,0.85rem);font-weight:600">Solo Practitioners</div><div class="desc">Inbox, calendar, content, follow-ups. Replace 3 SaaS subscriptions with one $40/yr system.</div></div>
+        <div class="card"><div class="icon">🏪</div><div style="font-size:clamp(0.6rem,1.2vh,0.85rem);font-weight:600">SMB Owners</div><div class="desc">Support triage, lead qual, social media, projects. One agent per business function.</div></div>
+        <div class="card"><div class="icon">🏥</div><div style="font-size:clamp(0.6rem,1.2vh,0.85rem);font-weight:600">Professional Services</div><div class="desc">Intake automation, research synthesis, report drafting. Works with your tools.</div></div>
+        <div class="card"><div class="icon">🎓</div><div style="font-size:clamp(0.6rem,1.2vh,0.85rem);font-weight:600">Agencies</div><div class="desc">Multi-tenant agents per client. White-label the agent stack. Rebrand & relaunch.</div></div>
       </div>
-
-      <div class="callout" style="margin-top:20px">
-        <strong>Pricing model:</strong> One-time setup + <strong>$0/month</strong> base infrastructure.
-        The only ongoing cost is the API consumption — typically <strong>$5–30/month</strong> depending on usage, transparent and capped.
-      </div>
+      <div class="callout" style="margin-top:0.3em"><strong>Pricing:</strong> One-time setup. Base infrastructure <strong>$0/month</strong>. Only API consumption — typically <strong>$5–30/month</strong>.</div>
     </div>
   </section>
 
   <!-- ══════════════════════════════════════════
-       SLIDE 10: CLOSING
+       SLIDE 10 : CLOSING
        ══════════════════════════════════════════ -->
   <section class="slide" data-index="9">
-    <div class="slide-content" style="text-align:center">
+    <div class="slide-content" style="text-align:center;align-items:center">
       <h3 style="color:var(--text-muted);font-weight:400;letter-spacing:0.12em">MALOHA COAST SDN BHD</h3>
-
-      <div style="margin:40px 0">
-        <div class="big-number" style="font-size:clamp(2.5rem,6vw,4rem)">
-          $40 <span class="currency">/year</span>
-        </div>
-        <p style="font-size:1.2rem;color:var(--text-muted);margin-top:4px">
-          Full-time AI operations · Zero infrastructure headaches
-        </p>
+      <div style="margin:2vh 0">
+        <div class="big-number">$40 <span class="currency">/yr</span></div>
+        <p style="font-size:clamp(0.7rem,1.6vh,1rem);color:var(--text-muted);margin-top:2px">Full-time AI operations · Zero infrastructure headaches</p>
       </div>
-
-      <div class="divider" style="margin:24px auto"></div>
-
-      <p style="font-size:1rem;max-width:500px;margin:0 auto;line-height:1.7;color:var(--text-muted)">
-        AI doesn't have to be expensive.
-        <br>
-        The future of business automation runs on <span class="highlight">$10 VPS + $30 API credits</span>.
-        <br>
+      <div class="divider" style="margin:1.5vh auto"></div>
+      <p style="font-size:clamp(0.75rem,1.5vh,0.95rem);max-width:460px;line-height:1.7;color:var(--text-muted)">
+        AI doesn't have to be expensive.<br>
+        <span class="highlight">$10 VPS + $30 API credits</span>.<br>
         We build it. You own it.
       </p>
-
-      <div style="margin-top:40px;font-size:0.9rem;color:var(--text-muted)">
-        <span style="display:inline-block;padding:10px 24px;border:1px solid var(--accent);border-radius:8px;color:var(--accent);letter-spacing:0.04em">
-          sayf @ malohacoast.com
-        </span>
+      <div style="margin-top:2vh;font-size:clamp(0.65rem,1.3vh,0.85rem);color:var(--text-muted)">
+        <span style="display:inline-block;padding:8px 20px;border:1px solid var(--accent);border-radius:8px;color:var(--accent);letter-spacing:0.04em">sayf @ malohacoast.com</span>
       </div>
-
-      <p style="margin-top:40px;font-size:0.75rem;color:rgba(136,153,180,0.35);letter-spacing:0.04em">
-        Built with Hermes Agent · Maloha Coast Sdn Bhd
-      </p>
+      <p class="small" style="margin-top:2.5vh;color:rgba(148,163,180,0.25)">Built with Hermes Agent · Maloha Coast Sdn Bhd</p>
     </div>
   </section>
 
 </div>
 
-<!-- ═══ Navigation Bar ═══ -->
-<nav class="nav-bar" id="navBar">
-  <button class="nav-btn" id="prevBtn" aria-label="Previous slide">‹</button>
+<!-- ═══ Navigation ═══ -->
+<nav class="nav-bar">
+  <button class="nav-btn" id="prevBtn">‹</button>
   <span class="slide-number" id="slideNum">1 / 10</span>
   <div class="nav-dots" id="navDots"></div>
-  <button class="nav-btn" id="nextBtn" aria-label="Next slide">›</button>
+  <button class="nav-btn" id="nextBtn">›</button>
 </nav>
 
 <script>
-  (function(){
-    const slides = document.querySelectorAll('.slide');
-    const total = slides.length;
-    let current = 0;
+(function(){
+  const slides = document.querySelectorAll('.slide');
+  const total = slides.length;
+  const container = document.getElementById('slides');
+  let current = 0;
+  let isScrolling = false;
 
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    const slideNum = document.getElementById('slideNum');
-    const navDots = document.getElementById('navDots');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const slideNum = document.getElementById('slideNum');
+  const navDots = document.getElementById('navDots');
 
-    // Build dots
-    for (let i = 0; i < total; i++) {
-      const dot = document.createElement('div');
-      dot.className = 'nav-dot' + (i === 0 ? ' active' : '');
-      dot.dataset.index = i;
-      dot.addEventListener('click', function(){ goTo(parseInt(this.dataset.index)); });
-      navDots.appendChild(dot);
-    }
+  for (let i = 0; i < total; i++) {
+    const dot = document.createElement('div');
+    dot.className = 'nav-dot' + (i === 0 ? ' active' : '');
+    dot.dataset.index = i;
+    dot.addEventListener('click', () => goTo(parseInt(dot.dataset.index)));
+    navDots.appendChild(dot);
+  }
 
-    function goTo(index) {
-      if (index < 0) index = 0;
-      if (index >= total) index = total - 1;
-      current = index;
+  function goTo(index) {
+    if (index < 0) index = 0;
+    if (index >= total) index = total - 1;
+    if (index === current) return;
+    current = index;
+    slides[current].scrollIntoView({ behavior: 'smooth', block: 'start' });
+    updateNav();
+  }
 
-      slides[current].scrollIntoView({ behavior: 'smooth', block: 'start' });
+  function updateNav() {
+    slideNum.textContent = (current + 1) + ' / ' + total;
+    document.querySelectorAll('.nav-dot').forEach((d, i) => d.classList.toggle('active', i === current));
+    prevBtn.classList.toggle('disabled', current === 0);
+    nextBtn.classList.toggle('disabled', current === total - 1);
+  }
 
-      // Update nav
-      slideNum.textContent = (current + 1) + ' / ' + total;
-      document.querySelectorAll('.nav-dot').forEach((d, i) => {
-        d.classList.toggle('active', i === current);
-      });
-      prevBtn.classList.toggle('disabled', current === 0);
-      nextBtn.classList.toggle('disabled', current === total - 1);
-    }
+  prevBtn.addEventListener('click', () => goTo(current - 1));
+  nextBtn.addEventListener('click', () => goTo(current + 1));
 
-    prevBtn.addEventListener('click', () => goTo(current - 1));
-    nextBtn.addEventListener('click', () => goTo(current + 1));
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') { e.preventDefault(); goTo(current - 1); }
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ') { e.preventDefault(); goTo(current + 1); }
+  });
 
-    // Keyboard
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') { e.preventDefault(); goTo(current - 1); }
-      if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ') { e.preventDefault(); goTo(current + 1); }
-    });
-
-    // Touch swipe
-    let touchStartX = 0;
-    let touchStartY = 0;
-    document.addEventListener('touchstart', (e) => {
-      touchStartX = e.changedTouches[0].screenX;
-      touchStartY = e.changedTouches[0].screenY;
-    }, { passive: true });
-    document.addEventListener('touchend', (e) => {
-      const dx = e.changedTouches[0].screenX - touchStartX;
-      const dy = e.changedTouches[0].screenY - touchStartY;
-      if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 40) {
-        if (dx < 0) goTo(current + 1);
-        else goTo(current - 1);
+  // Intersection Observer for scroll-snap tracking
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && entry.intersectionRatio >= 0.4) {
+        const idx = parseInt(entry.target.dataset.index);
+        if (idx !== current) { current = idx; updateNav(); }
       }
-    }, { passive: true });
+    });
+  }, { threshold: [0.4, 0.6, 0.8] });
+  slides.forEach(s => observer.observe(s));
 
-    // Check initial slide on load + scroll
-    function getActiveSlide() {
-      const mid = window.scrollY + window.innerHeight / 2;
-      let best = 0;
-      slides.forEach((s, i) => {
-        const top = s.offsetTop;
-        const bot = top + s.offsetHeight;
-        if (mid >= top && mid < bot) best = i;
-      });
-      if (best !== current) goTo(best);
+  // Touch swipe
+  let sx = 0, sy = 0;
+  container.addEventListener('touchstart', (e) => {
+    sx = e.changedTouches[0].screenX;
+    sy = e.changedTouches[0].screenY;
+  }, { passive: true });
+  container.addEventListener('touchend', (e) => {
+    const dx = e.changedTouches[0].screenX - sx;
+    const dy = e.changedTouches[0].screenY - sy;
+    if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 30) {
+      if (dx < 0) goTo(current + 1); else goTo(current - 1);
     }
+  }, { passive: true });
 
-    window.addEventListener('scroll', getActiveSlide, { passive: true });
-    goTo(0);
-  })();
+  updateNav();
+})();
 </script>
-
 </body>
 </html>
