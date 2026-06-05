@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>gbrain Control Dashboard · Maloha Coast</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #020617; --surface: #0f172a; --surface2: #1e293b; --border: #334155;
+    --primary: #2a6a8a; --primary-light: #22d3ee; --accent: #c4a86a; --accent-light: #fbbf24;
+    --text: #f1f5f9; --text-muted: #94a3b8; --green: #34d399; --violet: #a78bfa;
+    --rose: #fb7185; --radius: 12px; --radius-sm: 8px;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+  .app { max-width: 1200px; margin: 0 auto; padding: 24px 20px 60px; }
+
+  /* ─── Header ─── */
+  .header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 24px; }
+  .header-left h1 { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; }
+  .header-left h1 span { color: var(--accent); }
+  .header-left .sub { font-size: 0.75rem; color: var(--text-muted); margin-top: 2px; }
+  .header-right { display: flex; gap: 8px; align-items: center; }
+  .badge { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; }
+  .badge.green { background: rgba(52,211,153,0.1); color: var(--green); border: 1px solid rgba(52,211,153,0.3); }
+  .badge.gold { background: rgba(196,168,106,0.1); color: var(--accent); border: 1px solid rgba(196,168,106,0.3); }
+  .badge.rose { background: rgba(251,113,133,0.1); color: var(--rose); border: 1px solid rgba(251,113,133,0.3); }
+  .refresh { background: var(--surface2); border: 1px solid var(--border); color: var(--text-muted); padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 0.7rem; font-family: 'Inter', sans-serif; }
+  .refresh:hover { color: var(--text); border-color: var(--text-muted); }
+  .last-updated { font-size: 0.65rem; color: var(--text-muted); }
+
+  /* ─── Stat Cards ─── */
+  .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 24px; }
+  .stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 16px; }
+  .stat-card .icon { font-size: 1.3rem; margin-bottom: 6px; }
+  .stat-card .value { font-size: 1.6rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; }
+  .stat-card .label { font-size: 0.7rem; color: var(--text-muted); margin-top: 2px; text-transform: uppercase; letter-spacing: 0.04em; }
+  .stat-card .detail { font-size: 0.65rem; color: var(--text-muted); margin-top: 4px; }
+
+  /* ─── Section Header ─── */
+  .section { margin-bottom: 28px; }
+  .section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+  .section-header h2 { font-size: 1rem; font-weight: 700; letter-spacing: -0.01em; }
+  .section-header .count { font-size: 0.7rem; color: var(--text-muted); }
+
+  /* ─── Tabs ─── */
+  .tabs { display: flex; gap: 4px; margin-bottom: 14px; background: var(--surface); border-radius: var(--radius-sm); padding: 3px; width: fit-content; }
+  .tab { padding: 6px 14px; border-radius: 6px; font-size: 0.75rem; cursor: pointer; color: var(--text-muted); border: none; background: none; font-family: 'Inter', sans-serif; }
+  .tab.active { background: var(--surface2); color: var(--text); }
+  .tab:hover:not(.active) { color: var(--text); }
+
+  /* ─── Table ─── */
+  .table-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.78rem; }
+  th { text-align: left; padding: 10px 14px; background: rgba(15,23,42,0.6); border-bottom: 1px solid var(--border); font-weight: 600; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); }
+  td { padding: 9px 14px; border-bottom: 1px solid rgba(255,255,255,0.03); }
+  tr:last-child td { border: none; }
+  tr:hover td { background: rgba(255,255,255,0.02); }
+  .slug-link { color: var(--primary-light); text-decoration: none; font-weight: 500; }
+  .slug-link:hover { text-decoration: underline; }
+  .type-tag { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 0.6rem; font-weight: 600; text-transform: uppercase; }
+  .type-tag.person { background: rgba(167,139,250,0.15); color: var(--violet); }
+  .type-tag.company { background: rgba(52,211,153,0.15); color: var(--green); }
+  .type-tag.meeting { background: rgba(251,191,36,0.15); color: var(--accent-light); }
+  .type-tag.concept { background: rgba(34,211,238,0.15); color: var(--primary-light); }
+
+  /* ─── Search ─── */
+  .search-wrap { position: relative; margin-bottom: 12px; }
+  .search-wrap input { width: 100%; padding: 10px 14px 10px 36px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); color: var(--text); font-size: 0.8rem; font-family: 'Inter', sans-serif; }
+  .search-wrap input::placeholder { color: var(--text-muted); }
+  .search-wrap input:focus { outline: none; border-color: var(--primary-light); }
+  .search-wrap .search-icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 0.8rem; }
+
+  /* ─── Entity Cards ─── */
+  .entity-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+  .entity-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; }
+  .entity-card .name { font-weight: 700; font-size: 0.9rem; margin-bottom: 4px; }
+  .entity-card .slug { font-family: 'JetBrains Mono', monospace; font-size: 0.65rem; color: var(--text-muted); }
+  .entity-card .meta { display: flex; gap: 6px; margin-top: 6px; }
+
+  /* ─── Health Grid ─── */
+  .health-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px; }
+  .health-item { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 12px 14px; display: flex; gap: 10px; align-items: flex-start; }
+  .health-dot { width: 8px; height: 8px; border-radius: 50%; margin-top: 4px; flex-shrink: 0; }
+  .health-dot.ok { background: var(--green); }
+  .health-dot.warn { background: var(--accent-light); }
+  .health-dot.error { background: var(--rose); }
+  .health-info { flex: 1; min-width: 0; }
+  .health-info .name { font-size: 0.75rem; font-weight: 600; }
+  .health-info .msg { font-size: 0.65rem; color: var(--text-muted); margin-top: 2px; word-break: break-word; }
+
+  /* ─── Empty State ─── */
+  .empty { text-align: center; padding: 40px 20px; color: var(--text-muted); }
+  .empty .icon { font-size: 2rem; margin-bottom: 8px; }
+  .empty p { font-size: 0.8rem; }
+
+  /* ─── Loading ─── */
+  .loading { display: flex; align-items: center; gap: 8px; padding: 20px; color: var(--text-muted); font-size: 0.8rem; }
+  .spinner { width: 16px; height: 16px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ─── Footer ─── */
+  .footer { text-align: center; padding: 20px; font-size: 0.6rem; color: rgba(148,163,184,0.25); }
+
+  @media (max-width: 600px) {
+    .app { padding: 16px 12px 60px; }
+    .stat-grid { grid-template-columns: 1fr 1fr; }
+    .header { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-left">
+      <h1>🧠 <span>gbrain</span> Control Dashboard</h1>
+      <div class="sub">Atlas → Projects → End Products · Head, Hands, Heart</div>
+    </div>
+    <div class="header-right">
+      <span class="last-updated" id="lastUpdated">Loading...</span>
+      <button class="refresh" onclick="loadData()">↻ Refresh</button>
+    </div>
+  </div>
+
+  <!-- Loading -->
+  <div class="loading" id="loading"><div class="spinner"></div> Loading brain data...</div>
+
+  <!-- Error -->
+  <div class="empty" id="error" style="display:none"><div class="icon">⚠️</div><p id="errorMsg"></p></div>
+
+  <!-- Dashboard Content -->
+  <div id="dashboard" style="display:none">
+
+    <!-- Stat Overview -->
+    <div class="stat-grid" id="statGrid"></div>
+
+    <!-- Tabs -->
+    <div class="section">
+      <div class="section-header"><h2>Browse</h2></div>
+      <div class="tabs" id="tabs">
+        <button class="tab active" data-tab="pages">📄 All Pages</button>
+        <button class="tab" data-tab="entities">👤 Entities</button>
+        <button class="tab" data-tab="health">🩺 Health</button>
+      </div>
+      <div class="search-wrap" id="searchWrap">
+        <span class="search-icon">🔍</span>
+        <input type="text" placeholder="Search pages..." id="searchInput" oninput="filterPages()">
+      </div>
+      <div class="table-wrap" id="pagesTable" style="max-height:500px;overflow-y:auto"></div>
+      <div id="entitiesView" style="display:none">
+        <div class="entity-grid" id="entityGrid"></div>
+      </div>
+      <div id="healthView" style="display:none">
+        <div class="health-grid" id="healthGrid"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">gbrain Control Dashboard · Maloha Coast Sdn Bhd · Auto-refreshes via cron</div>
+</div>
+
+<script>
+let DATA = null;
+let activeTab = 'pages';
+
+async function loadData() {
+  document.getElementById('loading').style.display = 'flex';
+  document.getElementById('dashboard').style.display = 'none';
+  document.getElementById('error').style.display = 'none';
+  try {
+    const res = await fetch('gbrain-data.json');
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    DATA = await res.json();
+    renderAll();
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('dashboard').style.display = 'block';
+  } catch(e) {
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('error').style.display = 'block';
+    document.getElementById('errorMsg').textContent = 'Failed to load brain data: ' + e.message;
+  }
+}
+
+function renderAll() {
+  renderStats();
+  renderPages();
+  renderEntities();
+  renderHealth();
+  document.getElementById('lastUpdated').textContent = 'Updated: ' + (DATA.updated_at || 'unknown');
+}
+
+function renderStats() {
+  const s = DATA.summary || {};
+  const pages = s.page_count || 0;
+  const types = {};
+  (DATA.pages || []).forEach(p => { const t = p.type || 'concept'; types[t] = (types[t]||0)+1; });
+  const typeList = Object.entries(types).map(([k,v]) => `${v} ${k}`).join(', ');
+
+  document.getElementById('statGrid').innerHTML = [
+    {icon:'📊', value: pages, label:'Total Pages', detail: typeList, cls:''},
+    {icon:'🏆', value: (s.score||'').match(/\d+/)?.[0] || '—', label:'Brain Score', detail: (s.score||'').replace(/^Brain score /,''), cls:''},
+    {icon:'🔗', value: (DATA.entities?.people?.length||0)+(DATA.entities?.companies?.length||0), label:'Entities', detail: `${DATA.entities?.people?.length||0} people, ${DATA.entities?.companies?.length||0} companies`, cls:''},
+    {icon:'📡', value: (s.graph_coverage||'').match(/[\d.]+%/)?.[0] || '—', label:'Graph Coverage', detail: s.graph_coverage||'', cls:''},
+    {icon:'✨', value: (s.embed_coverage||'').match(/[\d.]+%/)?.[0] || '—', label:'Embeddings', detail: s.embed_coverage||'', cls:''},
+  ].map(c => `<div class="stat-card"><div class="icon">${c.icon}</div><div class="value">${c.value}</div><div class="label">${c.label}</div><div class="detail">${c.detail}</div></div>`).join('');
+}
+
+function renderPages(filter) {
+  let pages = DATA.pages || [];
+  if (filter) {
+    const q = filter.toLowerCase();
+    pages = pages.filter(p => (p.slug||'').toLowerCase().includes(q) || (p.title||'').toLowerCase().includes(q) || (p.type||'').toLowerCase().includes(q));
+  }
+  if (!pages.length) {
+    document.getElementById('pagesTable').innerHTML = '<div class="empty"><p>No pages found</p></div>';
+    return;
+  }
+  document.getElementById('pagesTable').innerHTML = `<table><thead><tr><th>Page</th><th>Type</th><th>Updated</th></tr></thead><tbody>${
+    pages.map(p => `<tr><td><span class="slug-link">${esc(p.slug)}</span><br><span style="font-size:0.65rem;color:var(--text-muted)">${esc(p.title||'')}</span></td><td><span class="type-tag ${p.type||'concept'}">${p.type||'concept'}</span></td><td>${p.updated||''}</td></tr>`).join('')
+  }</tbody></table>`;
+}
+
+function renderEntities() {
+  const people = DATA.entities?.people || [];
+  const companies = DATA.entities?.companies || [];
+  const all = [
+    ...people.map(s => ({slug: s, type: 'person', icon: '👤', color: 'var(--violet)'})),
+    ...companies.map(s => ({slug: s, type: 'company', icon: '🏢', color: 'var(--green)'}))
+  ];
+  if (!all.length) {
+    document.getElementById('entityGrid').innerHTML = '<div class="empty"><div class="icon">🔍</div><p>No entities indexed yet</p></div>';
+    return;
+  }
+  document.getElementById('entityGrid').innerHTML = all.map(e => {
+    const name = e.slug.split('/').pop().replace(/-/g,' ').replace(/\b\w/g,c=>c.toUpperCase());
+    return `<div class="entity-card"><span style="font-size:1.4rem;float:right;opacity:0.4">${e.icon}</span><div class="name">${esc(name)}</div><div class="slug">${esc(e.slug)}</div><div class="meta"><span class="type-tag ${e.type}">${e.type}</span></div></div>`;
+  }).join('');
+}
+
+function renderHealth() {
+  const checks = DATA.doctor?.checks || [];
+  if (!checks.length) {
+    document.getElementById('healthGrid').innerHTML = '<div class="empty"><p>No health data</p></div>';
+    return;
+  }
+  document.getElementById('healthGrid').innerHTML = checks.map(c => {
+    let dotCls = 'ok';
+    if (c.status === 'warn' || c.status === 'warning') dotCls = 'warn';
+    if (c.status === 'error' || c.status === 'fail') dotCls = 'error';
+    return `<div class="health-item"><div class="health-dot ${dotCls}"></div><div class="health-info"><div class="name">${esc(c.name)}</div><div class="msg">${esc(c.message||'')}</div></div></div>`;
+  }).join('');
+}
+
+function filterPages() {
+  const q = document.getElementById('searchInput').value;
+  renderPages(q);
+}
+
+function esc(s) { const d=document.createElement('div'); d.textContent=s||''; return d.innerHTML; }
+
+// Tab switching
+document.getElementById('tabs').addEventListener('click', function(e) {
+  if (!e.target.classList.contains('tab')) return;
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  e.target.classList.add('active');
+  activeTab = e.target.dataset.tab;
+  document.getElementById('pagesTable').style.display = activeTab==='pages'?'':'none';
+  document.getElementById('searchWrap').style.display = activeTab==='pages'?'':'none';
+  document.getElementById('entitiesView').style.display = activeTab==='entities'?'':'none';
+  document.getElementById('healthView').style.display = activeTab==='health'?'':'none';
+});
+
+loadData();
+</script>
+</body>
+</html>

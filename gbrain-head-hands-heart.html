@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>The 3-Folder Brain · gbrain Onboarding · Maloha Coast</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #020617;
+    --surface: #0f172a;
+    --surface2: #1e293b;
+    --border: #334155;
+    --primary: #2a6a8a;
+    --primary-light: #22d3ee;
+    --accent: #c4a86a;
+    --accent-light: #fbbf24;
+    --text: #f1f5f9;
+    --text-muted: #94a3b8;
+    --green: #34d399;
+    --violet: #a78bfa;
+    --rose: #fb7185;
+    --radius: 14px;
+    --radius-sm: 10px;
+  }
+
+  html { scroll-behavior: smooth; -webkit-tap-highlight-color: transparent; }
+  body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); overflow: hidden; width: 100vw; height: 100vh; height: 100dvh; }
+
+  .slides {
+    display: flex; flex-direction: column;
+    width: 100vw; height: 100vh; height: 100dvh;
+    overflow-y: auto; overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .slide {
+    width: 100vw; height: 100vh; height: 100dvh;
+    flex-shrink: 0; scroll-snap-align: start;
+    display: flex; align-items: center; justify-content: center;
+    padding: 3vh 5vw; position: relative; overflow: hidden;
+  }
+  .slide::before {
+    content: ''; position: absolute; top: -50%; right: -20%;
+    width: 50vw; height: 50vw; border-radius: 50%;
+    background: radial-gradient(circle, rgba(42,106,138,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .slide-content {
+    width: 100%; max-width: 860px; max-height: 88vh; max-height: 88dvh;
+    position: relative; z-index: 2;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+
+  h1 { font-size: clamp(1.6rem, 3.8vh, 3rem); font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; }
+  h2 { font-size: clamp(1.2rem, 2.8vh, 2rem); font-weight: 700; letter-spacing: -0.015em; margin-bottom: 0.1em; }
+  h3 { font-size: clamp(0.7rem, 1.4vh, 0.9rem); font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.2em; }
+  p, .subtitle { font-size: clamp(0.75rem, 1.6vh, 1.05rem); color: var(--text-muted); line-height: 1.5; }
+  .subtitle { max-width: 600px; }
+  .highlight { color: var(--accent); }
+  .highlight-cyan { color: var(--primary-light); }
+  .highlight-green { color: var(--green); }
+  .small { font-size: clamp(0.6rem, 1.2vh, 0.8rem); color: var(--text-muted); }
+  .divider { width: 50px; height: 3px; background: var(--accent); border-radius: 2px; margin: 1.4vh 0; flex-shrink: 0; }
+
+  .card-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: clamp(8px, 1.2vh, 14px); margin: 1.2vh 0; flex-shrink: 0;
+  }
+  .card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: clamp(10px, 2vh, 20px);
+  }
+  .card .icon { font-size: clamp(1.2rem, 2.5vh, 1.8rem); margin-bottom: 4px; }
+  .card .value { font-size: clamp(1rem, 2vh, 1.5rem); font-weight: 700; letter-spacing: -0.02em; }
+  .card .label { font-size: clamp(0.6rem, 1.2vh, 0.8rem); color: var(--text-muted); }
+  .card .desc { font-size: clamp(0.55rem, 1.1vh, 0.75rem); color: var(--text-muted); margin-top: 4px; line-height: 1.4; }
+
+  .big-number { font-size: clamp(2rem, 6vh, 4.5rem); font-weight: 900; letter-spacing: -0.03em; line-height: 1; }
+  .callout {
+    background: var(--surface2); border-left: 3px solid var(--accent);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    padding: clamp(8px, 1.4vh, 14px) clamp(12px, 1.8vw, 18px);
+    font-size: clamp(0.6rem, 1.2vh, 0.85rem); line-height: 1.5; flex-shrink: 0;
+  }
+  .callout.green { border-left-color: var(--green); }
+  .callout.cyan { border-left-color: var(--primary-light); }
+  .callout.violet { border-left-color: var(--violet); }
+  .callout.rose { border-left-color: var(--rose); }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 0.8vh 0; flex-shrink: 0; }
+  .tag { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: clamp(0.5rem, 1vh, 0.7rem); font-weight: 500; background: var(--surface2); color: var(--text-muted); border: 1px solid var(--border); }
+  .tag.cyan { border-color: var(--primary-light); color: var(--primary-light); }
+  .tag.green { border-color: var(--green); color: var(--green); }
+  .tag.gold { border-color: var(--accent); color: var(--accent); }
+  .tag.violet { border-color: var(--violet); color: var(--violet); }
+  .tag.rose { border-color: var(--rose); color: var(--rose); }
+
+  .insight-list { list-style: none; margin: 1vh 0; flex-shrink: 0; }
+  .insight-list li { padding: 0.8vh 0; border-bottom: 1px solid rgba(255,255,255,0.05); display: flex; gap: 10px; align-items: flex-start; }
+  .insight-list li:last-child { border: none; }
+  .insight-list .bullet { width: 6px; height: 6px; border-radius: 50%; margin-top: 6px; flex-shrink: 0; }
+  .insight-list .bullet.gold { background: var(--accent); }
+  .insight-list .bullet.green { background: var(--green); }
+  .insight-list .bullet.cyan { background: var(--primary-light); }
+  .insight-list .bullet.violet { background: var(--violet); }
+  .insight-list .bullet.rose { background: var(--rose); }
+  .insight-list li strong { font-size: clamp(0.65rem, 1.3vh, 0.9rem); }
+  .insight-list li span { font-size: clamp(0.55rem, 1.1vh, 0.8rem); }
+
+  .stat-row { display: flex; align-items: center; gap: 12px; padding: 0.8vh 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+  .stat-row:last-child { border: none; }
+  .stat-label { flex: 1; color: var(--text-muted); font-size: clamp(0.6rem, 1.2vh, 0.85rem); }
+  .stat-value { font-weight: 600; font-size: clamp(0.65rem, 1.3vh, 0.95rem); text-align: right; }
+
+  .flow-row { display: flex; align-items: center; justify-content: center; gap: clamp(6px, 1vw, 16px); margin: 2vh 0; flex-wrap: wrap; flex-shrink: 0; }
+  .flow-box {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: clamp(8px, 1.6vh, 16px) clamp(12px, 2vw, 20px);
+    text-align: center; min-width: 100px; flex: 1; max-width: 180px;
+  }
+  .flow-box .icon { font-size: clamp(1.4rem, 3vh, 2rem); }
+  .flow-box .name { font-size: clamp(0.7rem, 1.4vh, 0.9rem); font-weight: 700; margin-top: 4px; }
+  .flow-box .hint { font-size: clamp(0.5rem, 1vh, 0.65rem); color: var(--text-muted); margin-top: 2px; }
+  .flow-arrow { color: var(--accent); font-size: clamp(1rem, 2vh, 1.5rem); font-weight: 700; }
+
+  .nav-bar {
+    position: fixed; bottom: 0; left: 0; right: 0;
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    padding: 1.5vh 16px;
+    background: rgba(2,6,23,0.85); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+    border-top: 1px solid var(--border); z-index: 100;
+  }
+  .nav-btn {
+    background: var(--surface2); border: 1px solid var(--border); color: var(--text);
+    width: 40px; height: 40px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center; cursor: pointer;
+    font-size: 1.1rem; transition: all 0.15s; user-select: none; -webkit-user-select: none;
+  }
+  .nav-btn:active { transform: scale(0.9); background: var(--primary); border-color: var(--primary); }
+  .nav-btn.disabled { opacity: 0.25; pointer-events: none; }
+  .nav-dots { display: flex; gap: 5px; }
+  .nav-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--surface2); border: 1px solid var(--border); cursor: pointer; transition: all 0.2s; }
+  .nav-dot.active { background: var(--accent); border-color: var(--accent); transform: scale(1.4); }
+  .slide-number { font-size: clamp(0.55rem, 1.1vh, 0.7rem); color: var(--text-muted); font-weight: 500; min-width: 32px; text-align: center; }
+
+  /* Folder tree visual */
+  .folder-tree {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: clamp(8px, 1.6vh, 16px);
+    font-family: 'JetBrains Mono', monospace; font-size: clamp(0.55rem, 1.1vh, 0.75rem);
+    line-height: 1.8; color: var(--text-muted); flex-shrink: 0; margin: 1vh 0;
+  }
+  .folder-tree .dir { color: var(--primary-light); font-weight: 600; }
+  .folder-tree .hl { color: var(--accent); }
+  .folder-tree .comment { color: #475569; }
+
+  .slide-footer { position: absolute; bottom: 7vh; left: 0; right: 0; text-align: center; font-size: clamp(0.5rem, 1vh, 0.65rem); color: rgba(148,163,184,0.3); pointer-events: none; }
+
+  @media (max-width: 480px) {
+    .slide { padding: 2.5vh 4vw; }
+    .card-grid { grid-template-columns: 1fr 1fr; gap: 6px; }
+    .flow-row { gap: 4px; }
+    .flow-box { min-width: 70px; padding: 8px; }
+  }
+  @media (orientation: landscape) and (max-height: 500px) {
+    .slide { padding: 1vh 4vw; }
+    .card-grid { grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 4px; }
+    h2 { font-size: clamp(0.9rem, 3vh, 1.3rem); }
+    .card { padding: 6px 10px; }
+    .nav-bar { padding: 4px 12px; }
+    .nav-btn { width: 30px; height: 30px; font-size: 0.9rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="slides" id="slides">
+
+  <!-- ═══════════ SLIDE 1 : TITLE ═══════════ -->
+  <section class="slide" data-index="0">
+    <div class="slide-content" style="text-align:center;align-items:center">
+      <h3 style="color:var(--text-muted);font-weight:400;letter-spacing:0.12em">GBRAIN ONBOARDING</h3>
+      <h1 style="margin-top:0.2em">The <span class="highlight">3-Folder</span> Brain</h1>
+      <p class="subtitle" style="margin:0.5em auto 0;max-width:560px">
+        Your file structure is a map of your cognitive architecture.
+        Three folders. That's the whole system.
+      </p>
+      <div class="divider" style="margin:1.5vh auto"></div>
+      <div class="tags" style="justify-content:center">
+        <span class="tag gold">Atlas</span>
+        <span class="tag cyan">Projects</span>
+        <span class="tag violet">End Products</span>
+        <span class="tag">gbrain</span>
+      </div>
+      <p class="small" style="margin-top:3vh">Maloha Coast Sdn Bhd</p>
+    </div>
+    <div class="slide-footer">Swipe or arrow keys · 10 slides</div>
+  </section>
+
+  <!-- ═══════════ SLIDE 2 : THE PROBLEM ═══════════ -->
+  <section class="slide" data-index="1">
+    <div class="slide-content">
+      <h3>The Problem</h3>
+      <h2>Your thinking <span class="highlight-cyan">is</span> your file structure</h2>
+      <p class="subtitle">Most people's maps are a junk drawer with a search bar.</p>
+      <ul class="insight-list">
+        <li><span class="bullet rose"></span><div><strong>AI doesn't work when your thinking is disorganized.</strong> <span>You burn tokens, get bad outputs, and wonder why nothing sticks. The problem isn't the AI — it's the cognitive architecture underneath.</span></div></li>
+        <li><span class="bullet gold"></span><div><strong>External files reveal internal patterns.</strong> <span>Untitled documents, "final version 3 (real final)", folders named "new strategy" — every duplicate is an unfinished thought.</span></div></li>
+        <li><span class="bullet cyan"></span><div><strong>AI shows you how you think.</strong> <span>As you externalize your thinking through AI, your patterns become visible. Most of them are a mess.</span></div></li>
+        <li><span class="bullet green"></span><div><strong>Fix the inside. The outside follows.</strong> <span>Before chasing the next tool, agent, or second brain app — get your first brain organized.</span></div></li>
+      </ul>
+      <div class="callout rose" style="margin-top:0.5em">"The bottleneck isn't the tool, it's the clarity of your thinking. Your cognitive architecture is now your competitive advantage."</div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SLIDE 3 : THE FRAMEWORK ═══════════ -->
+  <section class="slide" data-index="2">
+    <div class="slide-content">
+      <h3>The Framework</h3>
+      <h2>Three folders · <span class="highlight">One mental model</span></h2>
+      <p class="subtitle">You're only ever doing one of three things.</p>
+      <div class="flow-row">
+        <div class="flow-box" style="border-color:var(--accent)">
+          <div class="icon">🧠</div>
+          <div class="name" style="color:var(--accent)">ATLAS</div>
+          <div class="hint">Head · Thinking</div>
+          <div class="hint" style="margin-top:4px">Ideas, strategies,<br>raw materials, capture</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box" style="border-color:var(--primary-light)">
+          <div class="icon">✋</div>
+          <div class="name" style="color:var(--primary-light)">PROJECTS</div>
+          <div class="hint">Hands · Building</div>
+          <div class="hint" style="margin-top:4px">Active work, content,<br>drafts, plans in motion</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box" style="border-color:var(--violet)">
+          <div class="icon">❤️</div>
+          <div class="name" style="color:var(--violet)">PRODUCTS</div>
+          <div class="hint">Heart · Serving</div>
+          <div class="hint" style="margin-top:4px">Finished deliverables,<br>published work, templates</div>
+        </div>
+      </div>
+      <div class="card-grid" style="margin-top:1.5vh">
+        <div class="card"><div class="icon">💭</div><div class="label">Atlas</div><div class="desc">"I'm thinking about something." Raw ideas, journal entries, research.</div></div>
+        <div class="card"><div class="icon">🔨</div><div class="label">Projects</div><div class="desc">"I'm building something." Active work, client deliverables in progress.</div></div>
+        <div class="card"><div class="icon">🎁</div><div class="label">Products</div><div class="desc">"This is ready for the world." Completed work, published content.</div></div>
+      </div>
+      <div class="callout" style="margin-top:0.3em">One decision per file: <strong>Am I thinking, building, or serving?</strong> That's it.</div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SLIDE 4 : CLAUDE MIRRORS THIS ═══════════ -->
+  <section class="slide" data-index="3">
+    <div class="slide-content">
+      <h3>Pattern Recognition</h3>
+      <h2>Even <span class="highlight-cyan">Claude</span> uses three modes</h2>
+      <p class="subtitle">The framework appears everywhere once you see it.</p>
+      <div class="card-grid" style="grid-template-columns:1fr 1fr 1fr">
+        <div class="card" style="text-align:center"><div class="icon">💬</div><div style="font-weight:700;font-size:clamp(0.7rem,1.4vh,0.9rem);color:var(--accent)">Chat</div><div class="desc">Thinking. Exploring ideas. Flushing out thoughts before they become projects.</div><div class="desc" style="margin-top:4px;color:var(--accent)">→ Atlas (Head)</div></div>
+        <div class="card" style="text-align:center"><div class="icon">🤝</div><div style="font-weight:700;font-size:clamp(0.7rem,1.4vh,0.9rem);color:var(--primary-light)">Co-work</div><div class="desc">Building. Creating artifacts. Writing plans. Active collaboration.</div><div class="desc" style="margin-top:4px;color:var(--primary-light)">→ Projects (Hands)</div></div>
+        <div class="card" style="text-align:center"><div class="icon">⚡</div><div style="font-weight:700;font-size:clamp(0.7rem,1.4vh,0.9rem);color:var(--violet)">Claude Code</div><div class="desc">Shipping. Finished products. Deployable work that serves others.</div><div class="desc" style="margin-top:4px;color:var(--violet)">→ Products (Heart)</div></div>
+      </div>
+      <div class="callout cyan" style="margin-top:1vh">The same pattern appears in Skool communities, second brain systems, and how humans naturally think. Three is the magic number.</div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SLIDE 5 : THE BRAIN STRUCTURE ═══════════ -->
+  <section class="slide" data-index="4">
+    <div class="slide-content">
+      <h3>Your Brain</h3>
+      <h2>3 + 2 folders · <span class="highlight">That's it</span></h2>
+      <p class="subtitle">What you see. What the system does.</p>
+      <div class="folder-tree">
+<span class="dir">~/brain/</span>
+├── <span class="dir">atlas/</span>                  <span class="comment">← HEAD: Drop thinking here</span>
+│   ├── inbox/              <span class="comment">Quick capture (voice memos, scraps)</span>
+│   ├── ideas/              <span class="comment">Developed ideas</span>
+│   ├── strategies/         <span class="comment">Business/personal strategy</span>
+│   ├── references/         <span class="comment">Articles, research, saved links</span>
+│   └── journal/            <span class="comment">Daily reflections</span>
+├── <span class="dir">projects/</span>              <span class="comment">← HANDS: Active work</span>
+│   ├── active/             <span class="comment">Current projects</span>
+│   └── archive/            <span class="comment">Done or paused</span>
+├── <span class="dir">products/</span>              <span class="comment">← HEART: Finished deliverables</span>
+│   ├── clients/            <span class="comment">Client-facing work</span>
+│   ├── content/            <span class="comment">Published content</span>
+│   └── templates/          <span class="comment">Reusable templates</span>
+├── <span class="dir">people/</span>                <span class="comment">Contact dossiers</span>
+├── <span class="dir">meetings/</span>              <span class="comment">Meeting notes</span>
+└── <span class="dir">knowledge/</span>             <span class="hl">← READ-ONLY: What the brain remembers</span>
+    ├── people/             <span class="hl">Auto-enriched contact profiles</span>
+    ├── companies/          <span class="hl">Auto-enriched company profiles</span>
+    └── concepts/           <span class="hl">Cross-referenced ideas</span>
+</div>
+      <div class="callout green" style="margin-top:0.5em"><strong>knowledge/ is the magic.</strong> You never write to it. The system builds it — linking your thinking across every folder, enriching contacts, and surfacing what you forgot you knew.</div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SLIDE 6 : HOW IT WORKS ═══════════ -->
+  <section class="slide" data-index="5">
+    <div class="slide-content">
+      <h3>Under the Hood</h3>
+      <h2>You drop files. <span class="highlight-cyan">gbrain</span> connects everything.</h2>
+      <p class="subtitle">The system watches your folders. You don't need to learn anything.</p>
+      <div class="flow-row" style="flex-wrap:nowrap;overflow-x:auto;gap:8px">
+        <div class="flow-box" style="min-width:90px;flex:0 0 auto"><div class="icon">📝</div><div class="name">You drop</div><div class="hint">a file in atlas/</div></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box" style="min-width:90px;flex:0 0 auto;border-color:var(--primary-light)"><div class="icon">🔍</div><div class="name" style="color:var(--primary-light)">Detect</div><div class="hint">entities, dates</div></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box" style="min-width:90px;flex:0 0 auto;border-color:var(--violet)"><div class="icon">🔗</div><div class="name" style="color:var(--violet)">Link</div><div class="hint">cross-reference</div></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box" style="min-width:90px;flex:0 0 auto;border-color:var(--green)"><div class="icon">📊</div><div class="name" style="color:var(--green)">Enrich</div><div class="hint">people, companies</div></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box" style="min-width:90px;flex:0 0 auto;border-color:var(--accent)"><div class="icon">✨</div><div class="name" style="color:var(--accent)">knowledge/</div><div class="hint">auto-mirrored</div></div>
+      </div>
+      <div class="card-grid" style="grid-template-columns:1fr 1fr;margin-top:1.5vh">
+        <div class="card"><div class="icon">🔗</div><div class="label">Entity Linking</div><div class="desc">Person mentioned → linked to their dossier. Company discussed → connected to meeting. Nothing floats unconnected.</div></div>
+        <div class="card"><div class="icon">⏱️</div><div class="label">Timeline</div><div class="desc">Every event appears on ALL related pages. Meet someone at a company? It's on both timelines.</div></div>
+        <div class="card"><div class="icon">📡</div><div class="label">Auto-Watch</div><div class="desc">Cron jobs monitor your folders. Drop a file. Walk away. The brain processes it.</div></div>
+        <div class="card"><div class="icon">🔍</div><div class="label">Semantic Search</div><div class="desc">Ask questions in plain English. The brain finds what you meant, not just what you typed.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SLIDE 7 : KEY INSIGHTS ═══════════ -->
+  <section class="slide" data-index="6">
+    <div class="slide-content">
+      <h3>Core Principles</h3>
+      <h2>Why this works</h2>
+      <ul class="insight-list">
+        <li><span class="bullet gold"></span><div><strong>Simplicity is the whole point.</strong> <span>Three folders. One decision per file. The sophistication trap is real — smart people overcomplicate things. The answer is simpler than you think.</span></div></li>
+        <li><span class="bullet cyan"></span><div><strong>Organization is speed.</strong> <span>Bob Proctor: "Organization is heaven's first law." Clear structure makes AI faster and cheaper. Fewer tokens. Better outputs.</span></div></li>
+        <li><span class="bullet green"></span><div><strong>AI reveals you to yourself.</strong> <span>AI doesn't just do thinking FOR you — it shows you HOW you think by externalizing your patterns. Fix the inside. The outside follows.</span></div></li>
+        <li><span class="bullet violet"></span><div><strong>Agents mirror human growth.</strong> <span>An AI agent needs identity, context, and skills. A human changing their life needs the same three things. The pattern is universal.</span></div></li>
+        <li><span class="bullet rose"></span><div><strong>Stop building. Start organizing.</strong> <span>Before chasing the next tool, agent, or second brain app — get your first brain organized. Everything downstream inherits from this foundation.</span></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ═══════════ SLIDE 8 : FOR YOUR BUSINESS ═══════════ -->
+  <section class="slide" data-index="7">
+    <div class="slide-content">
+      <h3>For Your Business</h3>
+      <h2>Same brain · <span class="highlight">Your workflow</span></h2>
+      <p class="subtitle">gbrain adapts to how you already work.</p>
+      <div class="card-grid" style="grid-template-columns:1fr 1fr">
+        <div class="card"><div class="icon">🏢</div><div style="font-weight:700;font-size:clamp(0.6rem,1.2vh,0.85rem)">Solo Practitioners</div><div class="desc">Inbox, calendar, client notes, follow-ups. One system that remembers everything.</div></div>
+        <div class="card"><div class="icon">🏪</div><div style="font-weight:700;font-size:clamp(0.6rem,1.2vh,0.85rem)">SMB Owners</div><div class="desc">Support triage, lead tracking, meeting notes, project history. Never lose context again.</div></div>
+        <div class="card"><div class="icon">🏥</div><div style="font-weight:700;font-size:clamp(0.6rem,1.2vh,0.85rem)">Consultants & Coaches</div><div class="desc">Client dossiers auto-enriched. Session notes linked to people. Timeline of every interaction.</div></div>
+        <div class="card"><div class="icon">🎓</div><div style="font-weight:700;font-size:clamp(0.6rem,1.2vh,0.85rem)">Agencies</div><div class="desc">Per-client knowledge bases. Meeting → project → deliverable traceability. Multi-agent support.</div></div>
+      </div>
+      <div class="callout violet" style="margin-top:0.5em"><strong>Works with your tools.</strong> Drop files via Finder, VS Code, Notion sync, or any text editor. The brain watches the folders — no new app to learn.</div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SLIDE 9 : THE SETUP ═══════════ -->
+  <section class="slide" data-index="8">
+    <div class="slide-content">
+      <h3>The Setup</h3>
+      <h2>What you get · <span class="highlight-green">Day one</span></h2>
+      <div class="card-grid" style="grid-template-columns:1fr 1fr">
+        <div class="card"><div class="icon">📁</div><div class="value">3+2</div><div class="label">Folder structure</div><div class="desc">Atlas, Projects, Products + People, Meetings. Created, configured, ready.</div></div>
+        <div class="card"><div class="icon">🧠</div><div class="value">gbrain</div><div class="label">Knowledge base</div><div class="desc">PGLite database with embeddings, entity linking, timeline, semantic search.</div></div>
+        <div class="card"><div class="icon">🤖</div><div class="value">Hermes</div><div class="label">AI Agent</div><div class="desc">Watches your folders. Auto-ingests, enriches, links. Fully autonomous.</div></div>
+        <div class="card"><div class="icon">📋</div><div class="value">READY</div><div class="label">Welcome guide</div><div class="desc">README in ~/brain/ explains everything in plain English. Zero CLI needed.</div></div>
+      </div>
+      <div class="stat-row" style="margin-top:1vh"><span class="stat-label">Folder watchers</span><span class="stat-value" style="color:var(--green)">Cron · every 30m</span></div>
+      <div class="stat-row"><span class="stat-label">Nightly sync</span><span class="stat-value" style="color:var(--primary-light)">Extract + embed + export</span></div>
+      <div class="stat-row"><span class="stat-label">knowledge/ mirror</span><span class="stat-value" style="color:var(--accent)">Always fresh</span></div>
+      <div class="stat-row"><span class="stat-label">Health checks</span><span class="stat-value" style="color:var(--violet)">Automated daily</span></div>
+      <div class="callout green" style="margin-top:0.5em"><strong>Zero learning curve.</strong> If you can save a file, you can use this system. The AI does the organizing.</div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SLIDE 10 : CLOSING ═══════════ -->
+  <section class="slide" data-index="9">
+    <div class="slide-content" style="text-align:center;align-items:center">
+      <h3 style="color:var(--text-muted);font-weight:400;letter-spacing:0.12em">GBRAIN · MALOHA COAST</h3>
+      <div style="margin:2vh 0">
+        <div class="big-number" style="font-size:clamp(1.6rem,5vh,3rem)">Atlas → Projects → Products</div>
+        <p style="font-size:clamp(0.7rem,1.6vh,1rem);color:var(--text-muted);margin-top:4px">Head → Hands → Heart · Thinking → Building → Serving</p>
+      </div>
+      <div class="divider" style="margin:1.5vh auto"></div>
+      <p style="font-size:clamp(0.75rem,1.5vh,0.95rem);max-width:480px;line-height:1.7;color:var(--text-muted)">
+        Your file structure is a map of your<br>
+        <span class="highlight">cognitive architecture</span>.<br>
+        Fix the inside. The outside follows.
+      </p>
+      <div style="margin-top:2vh;font-size:clamp(0.65rem,1.3vh,0.85rem);color:var(--text-muted)">
+        <span style="display:inline-block;padding:8px 20px;border:1px solid var(--accent);border-radius:8px;color:var(--accent);letter-spacing:0.04em">sayf @ malohacoast.com</span>
+      </div>
+      <p class="small" style="margin-top:2.5vh;color:rgba(148,163,180,0.25)">Built with Hermes Agent + gbrain · Maloha Coast Sdn Bhd</p>
+    </div>
+  </section>
+
+</div>
+
+<!-- ═══ Navigation ═══ -->
+<nav class="nav-bar">
+  <button class="nav-btn" id="prevBtn">‹</button>
+  <span class="slide-number" id="slideNum">1 / 10</span>
+  <div class="nav-dots" id="navDots"></div>
+  <button class="nav-btn" id="nextBtn">›</button>
+</nav>
+
+<script>
+(function(){
+  const slides = document.querySelectorAll('.slide');
+  const total = slides.length;
+  const container = document.getElementById('slides');
+  let current = 0;
+
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const slideNum = document.getElementById('slideNum');
+  const navDots = document.getElementById('navDots');
+
+  for (let i = 0; i < total; i++) {
+    const dot = document.createElement('div');
+    dot.className = 'nav-dot' + (i === 0 ? ' active' : '');
+    dot.dataset.index = i;
+    dot.addEventListener('click', () => goTo(parseInt(dot.dataset.index)));
+    navDots.appendChild(dot);
+  }
+
+  function goTo(index) {
+    if (index < 0) index = 0;
+    if (index >= total) index = total - 1;
+    if (index === current) return;
+    current = index;
+    slides[current].scrollIntoView({ behavior: 'smooth', block: 'start' });
+    updateNav();
+  }
+
+  function updateNav() {
+    slideNum.textContent = (current + 1) + ' / ' + total;
+    document.querySelectorAll('.nav-dot').forEach((d, i) => d.classList.toggle('active', i === current));
+    prevBtn.classList.toggle('disabled', current === 0);
+    nextBtn.classList.toggle('disabled', current === total - 1);
+  }
+
+  prevBtn.addEventListener('click', () => goTo(current - 1));
+  nextBtn.addEventListener('click', () => goTo(current + 1));
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') { e.preventDefault(); goTo(current - 1); }
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ') { e.preventDefault(); goTo(current + 1); }
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && entry.intersectionRatio >= 0.4) {
+        const idx = parseInt(entry.target.dataset.index);
+        if (idx !== current) { current = idx; updateNav(); }
+      }
+    });
+  }, { threshold: [0.4, 0.6, 0.8] });
+  slides.forEach(s => observer.observe(s));
+
+  let sx = 0, sy = 0;
+  container.addEventListener('touchstart', (e) => { sx = e.changedTouches[0].screenX; sy = e.changedTouches[0].screenY; }, { passive: true });
+  container.addEventListener('touchend', (e) => {
+    const dx = e.changedTouches[0].screenX - sx;
+    const dy = e.changedTouches[0].screenY - sy;
+    if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 30) {
+      if (dx < 0) goTo(current + 1); else goTo(current - 1);
+    }
+  }, { passive: true });
+
+  updateNav();
+})();
+</script>
+</body>
+</html>
