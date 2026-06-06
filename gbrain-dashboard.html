@@ -276,6 +276,7 @@
       <button class="docs-tab" data-doc="features"><span class="d-icon">✨</span> Features</button>
       <button class="docs-tab" data-doc="setup"><span class="d-icon">🚀</span> Setup Recipe</button>
       <button class="docs-tab" data-doc="clients"><span class="d-icon">💼</span> For Clients</button>
+      <button class="docs-tab" data-doc="scaling"><span class="d-icon">📈</span> Scaling & Limits</button>
       <button class="docs-tab" data-doc="shortcuts"><span class="d-icon">⌨️</span> Shortcuts</button>
     </div>
     <div class="docs-content" id="docsContent"></div>
@@ -759,6 +760,38 @@ const DOCS = {
 <p>About the price of a cup of coffee per month. The brain uses OpenAI embeddings ($0.0001 per page — a thousand pages costs 10 cents). The dashboard is free to host. The only real cost is the VPS if they want one, or it runs on their own laptop.</p>
 <h3>White-Label It</h3>
 <p>Change the brand colours in the CSS variables, swap the logo, and it's theirs. Same dashboard, their identity. Takes 5 minutes.</p>`,
+
+  scaling: `<h2>Scaling & Limits</h2>
+<h3>Where We Are Now</h3>
+<p>This dashboard — HTML, JSON, everything — is <strong>440 KB total</strong>. GitHub Pages allows up to 1 GB. That means we're using 0.04% of the limit. We could grow 2,300× before hitting any cap.</p>
+<div class="callout"><strong>18 brain pages = 26 KB JSON.</strong> At ~1.4 KB per page, you'd need roughly 700,000 pages to hit GitHub's 1 GB site limit.</div>
+<h3>GitHub Pages Limits</h3>
+<table style="width:100%;font-size:0.75rem;border-collapse:collapse">
+  <tr><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)"><strong>Published site</strong></td><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)">1 GB (hard cap)</td><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04);color:var(--green)">We're at 115 KB</td></tr>
+  <tr><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)"><strong>Source repo</strong></td><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)">1 GB (recommended)</td><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04);color:var(--green)">We're at 440 KB</td></tr>
+  <tr><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)"><strong>Bandwidth</strong></td><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)">100 GB/month (soft)</td><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04);color:var(--green)">Negligible</td></tr>
+  <tr><td style="padding:6px 10px"><strong>Builds</strong></td><td style="padding:6px 10px">10/hour (soft)</td><td style="padding:6px 10px;color:var(--green)">~1-2/day</td></tr>
+</table>
+<h3>When Scaling Actually Matters</h3>
+<p>The real bottleneck isn't GitHub — it's the <strong>browser</strong>. Loading a single massive JSON file eventually gets slow:</p>
+<table style="width:100%;font-size:0.75rem;border-collapse:collapse">
+  <tr><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)"><strong>1,000 pages</strong></td><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)">~1.5 MB</td><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04);color:var(--green)">Still fast — sub-second load</td></tr>
+  <tr><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)"><strong>10,000 pages</strong></td><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)">~15 MB</td><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04);color:var(--accent-light)">Noticeable — 2-3 sec fetch</td></tr>
+  <tr><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)"><strong>50,000 pages</strong></td><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)">~75 MB</td><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04);color:var(--rose)">Uncomfortable — 10+ seconds</td></tr>
+  <tr><td style="padding:6px 10px"><strong>100,000+ pages</strong></td><td style="padding:6px 10px">~150 MB</td><td style="padding:6px 10px;color:var(--rose)">Unusable as single file</td></tr>
+</table>
+<h3>The Fix: Split Architecture</h3>
+<p>For clients with larger brains, you don't switch hosts — you switch the data loading strategy. Keep a small bootstrap file for stats and graph, then lazy-load page content only when someone clicks:</p>
+<code>gbrain-summary.json      (~10 KB always)   ← stats + graph + slugs<br>gbrain-page-&lt;slug&gt;.json  (~2 KB on demand) ← loaded when modal opens</code>
+<p>This scales to <strong>millions of pages</strong>. The initial load stays tiny regardless of brain size. The dashboard HTML doesn't change at all.</p>
+<h3>Platform Migration (if GitHub is ever limiting)</h3>
+<table style="width:100%;font-size:0.75rem;border-collapse:collapse">
+  <tr><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)"><strong>Cloudflare Pages</strong></td><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)">Free · faster CDN · no build limits</td></tr>
+  <tr><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)"><strong>Netlify</strong></td><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)">Free up to 100 GB bandwidth · drag-and-drop deploy</td></tr>
+  <tr><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)"><strong>Vercel</strong></td><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)">Free hobby tier · serverless functions built in</td></tr>
+  <tr><td style="padding:6px 10px"><strong>S3 + CloudFront</strong></td><td style="padding:6px 10px">~$0.50/month for 100 GB · the nuclear option. Petabyte-scale.</td></tr>
+</table>
+<div class="callout"><strong>For 90% of clients, GitHub Pages is permanent.</strong> For the 10% with large brains, the fix isn't a new platform — it's splitting the JSON. Moving to S3 costs about the same as a single coffee per year.</div>`,
 
   shortcuts: `<h2>Keyboard Shortcuts</h2>
 <table style="width:100%;font-size:0.78rem;border-collapse:collapse">
