@@ -146,7 +146,7 @@
 
   /* ─── Link Graph ─── */
   .graph-container { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px; margin-bottom: 24px; position: relative; }
-  .graph-container canvas { width: 100%; height: 400px; display: block; border-radius: var(--radius-sm); cursor: grab; background: var(--graph-bg); }
+  .graph-container canvas { width: 100%; height: 380px; display: block; border-radius: var(--radius-sm); cursor: grab; background: var(--graph-bg); }
   .graph-container canvas:active { cursor: grabbing; }
   .graph-container canvas.dragging-node { cursor: grabbing; }
   .graph-reset { position: absolute; top: 16px; right: 16px; background: var(--surface2); border: 1px solid var(--border); color: var(--text-muted); padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 0.6rem; font-family: 'Inter', sans-serif; transition: all 0.15s; }
@@ -258,6 +258,8 @@
     .modal { max-height: 90vh; border-radius: var(--radius-sm); }
     .modal-body .m-entity-fields { grid-template-columns: 1fr; }
     .entity-grid { grid-template-columns: 1fr; }
+    .graph-container canvas { height: 300px; }
+    .settings-popover { right: 8px; }
   }
 </style>
 </head>
@@ -287,7 +289,7 @@
     <!-- Link Graph -->
     <div class="graph-container">
       <div class="section-header"><h2>🔗 Knowledge Graph</h2><span class="count" id="graphCount"></span></div>
-      <canvas id="graphCanvas" width="1100" height="400"></canvas>
+      <canvas id="graphCanvas"></canvas>
       <button class="graph-reset" onclick="resetGraph()" title="Reset positions">↺ Reset</button>
       <div class="graph-legend">
         <span><span class="dot" style="background:var(--primary-light)"></span> Concept</span>
@@ -453,7 +455,23 @@ let graphNodes = [], graphSlugIndex = {}, graphEdges = 0;
 let graphZoom = 1, graphPanX = 0, graphPanY = 0;
 let graphDragging = null, graphPanning = false, lastMouse = null;
 let graphPhysics = true, graphAnimFrame = null;
+let graphW = 1100, graphH = 400;
 const graphColors = {concept: '#22d3ee', person: '#a78bfa', company: '#34d399', meeting: '#fbbf24', daily: '#fb7185'};
+
+function resizeCanvas() {
+  const canvas = document.getElementById('graphCanvas');
+  const rect = canvas.getBoundingClientRect();
+  const dpr = window.devicePixelRatio || 1;
+  const newW = Math.round(rect.width * dpr);
+  const newH = Math.round(rect.height * dpr);
+  if (newW === graphW && newH === graphH) return;
+  // Scale existing node positions
+  const sx = newW / (graphW || 1), sy = newH / (graphH || 1);
+  graphNodes.forEach(n => { n.x *= sx; n.y *= sy; });
+  graphW = newW; graphH = newH;
+  canvas.width = graphW; canvas.height = graphH;
+  drawGraphFrame();
+}
 
 function initGraph() {
   const pages = DATA.pages || [];
@@ -461,8 +479,8 @@ function initGraph() {
   graphSlugIndex = {};
   pages.forEach((p,i) => graphSlugIndex[p.slug] = i);
 
-  // Only init positions if not already set
   if (graphNodes.length !== pages.length) {
+    resizeCanvas(); // sync dimensions before laying out
     graphNodes = pages.map((p,i) => ({
       id: i, slug: p.slug, title: p.title, type: p.type,
       links: p.links_out || [], vx: 0, vy: 0
@@ -470,13 +488,15 @@ function initGraph() {
     layoutCircle();
     runPhysics(80);
     graphZoom = 1; graphPanX = 0; graphPanY = 0;
+  } else {
+    resizeCanvas(); // still sync on re-render
   }
   drawGraphFrame();
   if (graphPhysics) startPhysicsLoop();
 }
 
 function layoutCircle() {
-  const W = 1100, H = 400, cx = W/2, cy = H/2, rx = W/2 - 80, ry = H/2 - 50;
+  const cx = graphW/2, cy = graphH/2, rx = graphW/2 - 60, ry = graphH/2 - 50;
   graphNodes.forEach((n,i) => {
     const angle = (i / graphNodes.length) * 2 * Math.PI - Math.PI/2;
     n.x = cx + rx * Math.cos(angle);
@@ -504,7 +524,7 @@ function runPhysics(iterations) {
       });
     });
     graphNodes.forEach(n => {
-      n.vx += (550 - n.x) * 0.001; n.vy += (200 - n.y) * 0.001;
+      n.vx += (graphW/2 - n.x) * 0.001; n.vy += (graphH/2 - n.y) * 0.001;
       n.vx *= 0.85; n.vy *= 0.85;
       n.x += n.vx; n.y += n.vy;
     });
@@ -536,7 +556,7 @@ function startPhysicsLoop() {
     });
     graphNodes.forEach(n => {
       if (n === graphDragging) return;
-      n.vx += (550 - n.x) * 0.0003; n.vy += (200 - n.y) * 0.0003;
+      n.vx += (graphW/2 - n.x) * 0.0003; n.vy += (graphH/2 - n.y) * 0.0003;
       n.vx *= 0.92; n.vy *= 0.92;
       n.x += n.vx; n.y += n.vy;
       energy += Math.abs(n.vx) + Math.abs(n.vy);
@@ -598,10 +618,12 @@ function drawGraphFrame() {
     ctx.strokeStyle = isHovered ? '#fff' : 'rgba(15,23,42,0.8)';
     ctx.lineWidth = isHovered ? 2 : 1.5; ctx.stroke();
 
-    // Label — theme-aware
-    const label = n.title.length > 16 ? n.title.slice(0,15)+'…' : n.title;
+    // Label — theme-aware, responsive
+    const maxLen = graphW < 600 ? 10 : 16;
+    const label = n.title.length > maxLen ? n.title.slice(0,maxLen-1)+'…' : n.title;
     const labelColor = getComputedStyle(document.body).getPropertyValue('--text').trim() || '#e2e8f0';
-    ctx.font = `${isHovered ? '11px' : '9px'} "Inter", sans-serif`;
+    const fontSize = graphW < 500 ? (isHovered ? '10px' : '8px') : (isHovered ? '11px' : '9px');
+    ctx.font = `${fontSize} "Inter", sans-serif`;
     ctx.fillStyle = isHovered ? '#ffffff' : labelColor;
     ctx.textAlign = 'center';
     ctx.fillText(label, n.x, n.y + r + 13);
@@ -627,8 +649,8 @@ function drawGraphFrame() {
 
   function screenToWorld(e) {
     const rect = canvas.getBoundingClientRect();
-    const sx = (e.clientX - rect.left) * (1100 / rect.width);
-    const sy = (e.clientY - rect.top) * (400 / rect.height);
+    const sx = (e.clientX - rect.left) * (graphW / rect.width);
+    const sy = (e.clientY - rect.top) * (graphH / rect.height);
     return {
       x: (sx - graphPanX) / graphZoom,
       y: (sy - graphPanY) / graphZoom
@@ -696,8 +718,8 @@ function drawGraphFrame() {
       // Give dragged node a small velocity kick
       if (lastMouse) {
         const rect = canvas.getBoundingClientRect();
-        const dx = (e.clientX - (lastMouse.x || e.clientX)) * (1100 / rect.width) / graphZoom;
-        const dy = (e.clientY - (lastMouse.y || e.clientY)) * (400 / rect.height) / graphZoom;
+        const dx = (e.clientX - (lastMouse.x || e.clientX)) * (graphW / rect.width) / graphZoom;
+        const dy = (e.clientY - (lastMouse.y || e.clientY)) * (graphH / rect.height) / graphZoom;
         graphDragging.vx = dx * 0.3; graphDragging.vy = dy * 0.3;
       }
       canvas.classList.remove('dragging-node');
@@ -725,8 +747,8 @@ function drawGraphFrame() {
 
     // Zoom toward cursor
     const rect = canvas.getBoundingClientRect();
-    const mx = (e.clientX - rect.left) * (1100 / rect.width);
-    const my = (e.clientY - rect.top) * (400 / rect.height);
+    const mx = (e.clientX - rect.left) * (graphW / rect.width);
+    const my = (e.clientY - rect.top) * (graphH / rect.height);
     graphPanX = mx - (mx - graphPanX) * (newZoom / graphZoom);
     graphPanY = my - (my - graphPanY) * (newZoom / graphZoom);
     graphZoom = newZoom;
@@ -754,6 +776,17 @@ function drawGraphFrame() {
   }, {passive: true});
   canvas.addEventListener('touchend', function() { touchDist0 = 0; touchMid0 = null; });
 })();
+
+// ─── RESIZE HANDLER ───
+window.addEventListener('resize', () => {
+  resizeCanvas();
+  if (graphPhysics && !graphAnimFrame) startPhysicsLoop();
+});
+
+// Also observe the graph container for layout changes
+if (window.ResizeObserver) {
+  new ResizeObserver(() => { resizeCanvas(); }).observe(document.getElementById('graphCanvas'));
+}
 
 function resetGraph() {
   graphZoom = 1; graphPanX = 0; graphPanY = 0;
