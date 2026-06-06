@@ -148,6 +148,43 @@
 
   .footer { text-align: center; padding: 20px; font-size: 0.6rem; color: rgba(148,163,184,0.25); }
 
+  /* ─── Help Button ─── */
+  .help-btn { position: fixed; bottom: 24px; right: 24px; width: 44px; height: 44px; border-radius: 50%; background: var(--accent); color: var(--bg); border: none; cursor: pointer; font-size: 1.2rem; font-weight: 700; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(196,168,106,0.35); z-index: 50; transition: transform 0.15s, box-shadow 0.15s; }
+  .help-btn:hover { transform: scale(1.08); box-shadow: 0 6px 24px rgba(196,168,106,0.5); }
+  .help-btn:active { transform: scale(0.95); }
+  @keyframes helpPulse { 0%,100% { box-shadow: 0 4px 16px rgba(196,168,106,0.35); } 50% { box-shadow: 0 4px 24px rgba(196,168,106,0.6); } }
+  .help-btn { animation: helpPulse 3s ease-in-out infinite; }
+  .help-btn:hover { animation: none; }
+
+  /* ─── Docs Modal (2-Pane) ─── */
+  .docs-overlay { position: fixed; inset: 0; background: rgba(2,6,23,0.85); backdrop-filter: blur(4px); z-index: 200; display: none; align-items: center; justify-content: center; padding: 20px; }
+  .docs-overlay.active { display: flex; }
+  .docs-modal { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); width: 100%; max-width: 860px; height: 80vh; max-height: 700px; display: flex; box-shadow: 0 25px 50px rgba(0,0,0,0.5); animation: modalIn 0.2s ease; overflow: hidden; }
+  .docs-sidebar { width: 200px; min-width: 180px; border-right: 1px solid var(--border); background: var(--surface2); display: flex; flex-direction: column; padding: 8px 0; overflow-y: auto; }
+  .docs-sidebar .docs-tab { padding: 10px 16px; font-size: 0.75rem; color: var(--text-muted); cursor: pointer; border: none; background: none; text-align: left; font-family: 'Inter', sans-serif; transition: all 0.12s; border-left: 2px solid transparent; }
+  .docs-sidebar .docs-tab:hover { color: var(--text); background: rgba(255,255,255,0.03); }
+  .docs-sidebar .docs-tab.active { color: var(--accent); background: rgba(196,168,106,0.08); border-left-color: var(--accent); font-weight: 600; }
+  .docs-sidebar .docs-tab .d-icon { margin-right: 6px; font-size: 0.85rem; }
+  .docs-content { flex: 1; overflow-y: auto; padding: 20px 24px; }
+  .docs-content h2 { font-size: 1rem; font-weight: 700; margin-bottom: 4px; letter-spacing: -0.01em; }
+  .docs-content h3 { font-size: 0.8rem; font-weight: 600; margin: 16px 0 6px; color: var(--accent); }
+  .docs-content p, .docs-content li { font-size: 0.78rem; line-height: 1.7; color: var(--text-muted); }
+  .docs-content ul, .docs-content ol { padding-left: 18px; margin: 6px 0 12px; }
+  .docs-content li { margin-bottom: 4px; }
+  .docs-content code { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; background: var(--surface2); padding: 2px 6px; border-radius: 4px; color: var(--primary-light); }
+  .docs-content .kbd { display: inline-block; padding: 2px 7px; font-family: 'JetBrains Mono', monospace; font-size: 0.65rem; background: var(--surface2); border: 1px solid var(--border); border-radius: 4px; color: var(--text); }
+  .docs-content .callout { background: rgba(196,168,106,0.08); border: 1px solid rgba(196,168,106,0.2); border-radius: var(--radius-sm); padding: 12px 16px; margin: 12px 0; font-size: 0.75rem; }
+  .docs-close { position: absolute; top: 12px; right: 12px; background: var(--surface2); border: 1px solid var(--border); color: var(--text-muted); width: 28px; height: 28px; border-radius: 6px; cursor: pointer; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; z-index: 10; transition: all 0.15s; }
+  .docs-close:hover { color: var(--text); border-color: var(--rose); }
+
+  @media (max-width: 600px) {
+    .docs-modal { flex-direction: column; max-height: 90vh; }
+    .docs-sidebar { width: 100%; min-width: unset; flex-direction: row; overflow-x: auto; padding: 4px; border-right: none; border-bottom: 1px solid var(--border); }
+    .docs-sidebar .docs-tab { border-left: none; border-bottom: 2px solid transparent; white-space: nowrap; padding: 8px 12px; font-size: 0.7rem; }
+    .docs-sidebar .docs-tab.active { border-left: none; border-bottom-color: var(--accent); }
+    .help-btn { bottom: 16px; right: 16px; width: 40px; height: 40px; }
+  }
+
   @media (max-width: 600px) {
     .app { padding: 16px 12px 60px; }
     .stat-grid { grid-template-columns: 1fr 1fr; }
@@ -218,12 +255,31 @@
     </div>
   </div>
 
-  <div class="footer">gbrain Control Dashboard · Maloha Coast Sdn Bhd · Click anything for details</div>
+  <div class="footer">gbrain Control Dashboard · Maloha Coast Sdn Bhd · Press <span style="font-family:'JetBrains Mono',monospace">?</span> for help</div>
 </div>
 
-<!-- Modal -->
+<!-- Help Button -->
+<button class="help-btn" onclick="openDocs()" title="Help &amp; Documentation (press ?)">?</button>
+
+<!-- Page Detail Modal -->
 <div class="modal-overlay" id="modalOverlay" onclick="if(event.target===this)closeModal()">
   <div class="modal" id="modal"></div>
+</div>
+
+<!-- Docs / Help Modal -->
+<div class="docs-overlay" id="docsOverlay" onclick="if(event.target===this)closeDocs()">
+  <div class="docs-modal" style="position:relative">
+    <button class="docs-close" onclick="closeDocs()">✕</button>
+    <div class="docs-sidebar" id="docsSidebar">
+      <button class="docs-tab active" data-doc="overview"><span class="d-icon">🧠</span> Overview</button>
+      <button class="docs-tab" data-doc="how"><span class="d-icon">⚙️</span> How It Works</button>
+      <button class="docs-tab" data-doc="features"><span class="d-icon">✨</span> Features</button>
+      <button class="docs-tab" data-doc="setup"><span class="d-icon">🚀</span> Setup Recipe</button>
+      <button class="docs-tab" data-doc="clients"><span class="d-icon">💼</span> For Clients</button>
+      <button class="docs-tab" data-doc="shortcuts"><span class="d-icon">⌨️</span> Shortcuts</button>
+    </div>
+    <div class="docs-content" id="docsContent"></div>
+  </div>
 </div>
 
 <script>
@@ -634,9 +690,134 @@ function showTab(tab) {
   document.getElementById('searchInput').placeholder = tab==='pages' ? 'Search pages...' : tab==='entities' ? 'Search entities...' : '';
 }
 
+// ─── DOCS / HELP ───
+const DOCS = {
+  overview: `<h2>gbrain Dashboard</h2>
+<p>A live control panel for your AI-powered knowledge base. This dashboard shows everything your company knows — people, companies, meetings, concepts, infrastructure — and how it all connects.</p>
+<h3>What You're Looking At</h3>
+<ul>
+  <li><strong>Stats bar</strong> — page count, brain health score, link coverage, embedding status</li>
+  <li><strong>Knowledge Graph</strong> — a visual map of how your ideas, people, and companies connect</li>
+  <li><strong>Page Browser</strong> — every page in your brain, searchable and clickable</li>
+  <li><strong>Entity Cards</strong> — people and companies with contact details</li>
+  <li><strong>Health Panel</strong> — 50+ automated checks monitoring your brain's status</li>
+</ul>
+<div class="callout"><strong>New?</strong> Start by clicking any page name, then follow the links. It's Wikipedia-style browsing for your own company knowledge.</div>`,
+
+  how: `<h2>How It Works</h2>
+<p>This dashboard has two ingredients, both dead simple:</p>
+<h3>Ingredient 1 — The Brain (gbrain)</h3>
+<p>A knowledge base that lives on your computer or VPS. Every meeting, client detail, project note, or piece of research goes into the brain. The brain automatically figures out how pages relate to each other and makes everything searchable by meaning — not just keywords.</p>
+<h3>Ingredient 2 — The Dashboard</h3>
+<p>A single HTML file and a JSON data file. Combined they're about 50KB — smaller than a photo. The dashboard reads the brain data and displays it with a live knowledge graph, clickable modals, and instant search. No backend, no database queries. Everything runs in your browser.</p>
+<div class="callout"><strong>The magic:</strong> You keep taking notes. The dashboard shows you a living map of everything your company knows. It updates automatically. No maintenance required.</div>`,
+
+  features: `<h2>Features</h2>
+<h3>Knowledge Graph</h3>
+<p>A force-directed graph showing all your pages as connected nodes. Related pages cluster together. Click a node to open its detail panel.</p>
+<h3>Clickable Modals</h3>
+<p>Click any page row to see its full content, tags, outgoing links, and backlinks (pages that reference it). Navigate between pages without leaving the modal.</p>
+<h3>Entity Cards</h3>
+<p>People show their email, phone, company, and relationship notes. Companies show their description, product pipeline, and contact info.</p>
+<h3>Health Monitoring</h3>
+<p>50+ automated checks — embedding coverage, graph integrity, schema version, reranker health, and more. Green = healthy, yellow = needs attention, red = broken.</p>
+<h3>Instant Search</h3>
+<p>Search across page names, content, tags, and types. Filters as you type. No server round-trips.</p>
+<h3>Stat Drilldowns</h3>
+<p>Click stat cards to see page-type breakdowns or jump directly to the health panel.</p>`,
+
+  setup: `<h2>Setup Recipe (3 Steps)</h2>
+<h3>Step 1 — Generate the Data</h3>
+<p>Run a script that reads everything from the brain and writes it into a single JSON file:</p>
+<code>gbrain list && gbrain get <slug> && gbrain graph <slug></code>
+<p>Pipe the results through a script (Python, Node, whatever you like) that builds <code>gbrain-data.json</code> — the brain's contents packaged for the dashboard.</p>
+<h3>Step 2 — Upload Two Files</h3>
+<p>Drop <code>gbrain-dashboard.html</code> and <code>gbrain-data.json</code> onto any static host:</p>
+<ul>
+  <li><strong>GitHub Pages</strong> — free, automatic HTTPS, deploy via git push</li>
+  <li><strong>Netlify / Vercel</strong> — drag-and-drop, free tier</li>
+  <li><strong>S3 + CloudFront</strong> — pennies per month at scale</li>
+  <li><strong>Any web server</strong> — Apache, Nginx, or even a shared Dropbox folder</li>
+</ul>
+<h3>Step 3 — Automate</h3>
+<p>Set a cron job that re-runs Step 1 on a schedule and re-uploads the JSON. The dashboard auto-refreshes:</p>
+<code>0 */6 * * * /path/to/export-script.sh && git commit -am "refresh" && git push</code>
+<div class="callout"><strong>That's it.</strong> Three steps, two files, no servers, no databases, no monthly fees. Total hosting cost: $0.</div>`,
+
+  clients: `<h2>For Your Clients</h2>
+<h3>The Pitch</h3>
+<p>"Here's what we'll do. You keep taking notes the way you normally do — meeting notes, client details, project specs. We'll set up a brain that stores all of that in a way that's searchable and connected. Then we'll give you a dashboard — a single web page you can open on any device — that shows you a living map of everything your company knows."</p>
+<h3>What They Get</h3>
+<ul>
+  <li><strong>Company memory</strong> that doesn't walk out the door when someone quits</li>
+  <li><strong>Client context</strong> at their fingertips before every call</li>
+  <li><strong>Visual map</strong> of how projects, people, and ideas connect</li>
+  <li><strong>Health monitoring</strong> so they know their knowledge base is working</li>
+  <li><strong>Zero maintenance</strong> — it updates itself</li>
+</ul>
+<h3>What It Costs Them</h3>
+<p>About the price of a cup of coffee per month. The brain uses OpenAI embeddings ($0.0001 per page — a thousand pages costs 10 cents). The dashboard is free to host. The only real cost is the VPS if they want one, or it runs on their own laptop.</p>
+<h3>White-Label It</h3>
+<p>Change the brand colours in the CSS variables, swap the logo, and it's theirs. Same dashboard, their identity. Takes 5 minutes.</p>`,
+
+  shortcuts: `<h2>Keyboard Shortcuts</h2>
+<table style="width:100%;font-size:0.78rem;border-collapse:collapse">
+  <tr><td style="padding:8px 12px;border-bottom:1px solid rgba(255,255,255,0.04)"><span class="kbd">?</span></td><td style="padding:8px 12px;border-bottom:1px solid rgba(255,255,255,0.04)">Open this help guide</td></tr>
+  <tr><td style="padding:8px 12px;border-bottom:1px solid rgba(255,255,255,0.04)"><span class="kbd">Esc</span></td><td style="padding:8px 12px;border-bottom:1px solid rgba(255,255,255,0.04)">Close any open modal or panel</td></tr>
+  <tr><td style="padding:8px 12px;border-bottom:1px solid rgba(255,255,255,0.04)"><span class="kbd">Ctrl+K</span> / <span class="kbd">Cmd+K</span></td><td style="padding:8px 12px;border-bottom:1px solid rgba(255,255,255,0.04)">Focus the search bar</td></tr>
+  <tr><td style="padding:8px 12px"><span class="kbd">Click</span> anything</td><td style="padding:8px 12px">Drill into page content, entities, health checks</td></tr>
+</table>
+<h3>Mouse</h3>
+<ul>
+  <li>Click any <strong>page row</strong> — full detail modal with content + links</li>
+  <li>Click any <strong>entity card</strong> — person or company detail</li>
+  <li>Click any <strong>health check</strong> — diagnostic detail</li>
+  <li>Click a <strong>stat card</strong> — breakdown or jump to health panel</li>
+  <li>Click the <strong>?</strong> button — this help guide</li>
+  <li>Click <strong>outside</strong> a modal — close it</li>
+</ul>`
+};
+
+let activeDoc = 'overview';
+
+function openDocs() {
+  document.getElementById('docsOverlay').classList.add('active');
+  document.body.classList.add('modal-open');
+  switchDoc('overview');
+  document.querySelectorAll('#docsSidebar .docs-tab').forEach(t => t.classList.remove('active'));
+  document.querySelector('#docsSidebar .docs-tab[data-doc="overview"]').classList.add('active');
+}
+
+function closeDocs() {
+  document.getElementById('docsOverlay').classList.remove('active');
+  document.body.classList.remove('modal-open');
+}
+
+function switchDoc(doc) {
+  activeDoc = doc;
+  document.getElementById('docsContent').innerHTML = DOCS[doc] || '';
+  document.querySelectorAll('#docsSidebar .docs-tab').forEach(t => t.classList.remove('active'));
+  const tab = document.querySelector(`#docsSidebar .docs-tab[data-doc="${doc}"]`);
+  if (tab) tab.classList.add('active');
+}
+
+document.getElementById('docsSidebar').addEventListener('click', function(e) {
+  if (!e.target.classList.contains('docs-tab')) return;
+  switchDoc(e.target.dataset.doc);
+});
+
 // ─── KEYBOARD ───
 document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') closeModal();
+  // Don't capture shortcuts when typing in inputs
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
+    if (e.key === 'Escape') { e.target.blur(); return; }
+    return;
+  }
+  if (e.key === '?') { e.preventDefault(); openDocs(); return; }
+  if (e.key === 'Escape') {
+    if (document.getElementById('docsOverlay').classList.contains('active')) { closeDocs(); return; }
+    if (document.getElementById('modalOverlay').classList.contains('active')) { closeModal(); return; }
+  }
   if ((e.ctrlKey||e.metaKey) && e.key === 'k') {
     e.preventDefault();
     document.getElementById('searchInput').focus();
