@@ -12,7 +12,16 @@
     --primary: #2a6a8a; --primary-light: #22d3ee; --accent: #c4a86a; --accent-light: #fbbf24;
     --text: #f1f5f9; --text-muted: #94a3b8; --green: #34d399; --violet: #a78bfa;
     --rose: #fb7185; --radius: 12px; --radius-sm: 8px;
+    --graph-bg: #0f172a;
   }
+  body.light {
+    --bg: #f4f8fb; --surface: #ffffff; --surface2: #f1f5f9; --border: #dce4ec;
+    --primary: #2a6a8a; --primary-light: #0e7490; --accent: #9a7b2c; --accent-light: #b8860b;
+    --text: #0f172a; --text-muted: #64748b; --green: #059669; --violet: #7c3aed;
+    --rose: #e11d48;
+    --graph-bg: #f8fafc;
+  }
+  body { transition: background 0.3s, color 0.3s; }
   html { scroll-behavior: smooth; }
   body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; overflow-x: hidden; }
   body.modal-open { overflow: hidden; }
@@ -104,8 +113,13 @@
   .health-info .msg { font-size: 0.65rem; color: var(--text-muted); margin-top: 2px; word-break: break-word; }
 
   /* ─── Link Graph ─── */
-  .graph-container { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px; margin-bottom: 24px; }
-  .graph-container canvas { width: 100%; height: 350px; display: block; border-radius: var(--radius-sm); }
+  .graph-container { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px; margin-bottom: 24px; position: relative; }
+  .graph-container canvas { width: 100%; height: 400px; display: block; border-radius: var(--radius-sm); cursor: grab; background: var(--graph-bg); }
+  .graph-container canvas:active { cursor: grabbing; }
+  .graph-container canvas.dragging-node { cursor: grabbing; }
+  .graph-hint { position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%); font-size: 0.6rem; color: var(--text-muted); opacity: 0.6; pointer-events: none; display: flex; gap: 12px; }
+  .graph-reset { position: absolute; top: 16px; right: 16px; background: var(--surface2); border: 1px solid var(--border); color: var(--text-muted); padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 0.6rem; font-family: 'Inter', sans-serif; transition: all 0.15s; }
+  .graph-reset:hover { color: var(--text); border-color: var(--accent); }
   .graph-legend { display: flex; gap: 16px; margin-top: 8px; font-size: 0.65rem; color: var(--text-muted); justify-content: center; flex-wrap: wrap; }
   .graph-legend span { display: flex; align-items: center; gap: 4px; }
   .graph-legend .dot { width: 8px; height: 8px; border-radius: 50%; }
@@ -149,12 +163,30 @@
   .footer { text-align: center; padding: 20px; font-size: 0.6rem; color: rgba(148,163,184,0.25); }
 
   /* ─── Help Button ─── */
-  .help-btn { position: fixed; bottom: 24px; right: 24px; width: 44px; height: 44px; border-radius: 50%; background: var(--accent); color: var(--bg); border: none; cursor: pointer; font-size: 1.2rem; font-weight: 700; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(196,168,106,0.35); z-index: 50; transition: transform 0.15s, box-shadow 0.15s; }
-  .help-btn:hover { transform: scale(1.08); box-shadow: 0 6px 24px rgba(196,168,106,0.5); }
-  .help-btn:active { transform: scale(0.95); }
+  .float-btns { position: fixed; bottom: 24px; right: 24px; display: flex; flex-direction: column; gap: 10px; z-index: 50; align-items: flex-end; }
+  .float-btn { width: 44px; height: 44px; border-radius: 50%; border: none; cursor: pointer; font-size: 1.1rem; display: flex; align-items: center; justify-content: center; transition: transform 0.15s, box-shadow 0.15s; }
+  .float-btn:hover { transform: scale(1.08); }
+  .float-btn:active { transform: scale(0.95); }
+  .help-btn { background: var(--accent); color: var(--bg); box-shadow: 0 4px 16px rgba(196,168,106,0.35); font-weight: 700; font-size: 1.2rem; }
+  .help-btn:hover { box-shadow: 0 6px 24px rgba(196,168,106,0.5); }
   @keyframes helpPulse { 0%,100% { box-shadow: 0 4px 16px rgba(196,168,106,0.35); } 50% { box-shadow: 0 4px 24px rgba(196,168,106,0.6); } }
   .help-btn { animation: helpPulse 3s ease-in-out infinite; }
   .help-btn:hover { animation: none; }
+  .cog-btn { background: var(--surface2); color: var(--text-muted); border: 1px solid var(--border); font-size: 1rem; }
+  .cog-btn:hover { color: var(--text); border-color: var(--text-muted); }
+
+  /* ─── Settings Popover ─── */
+  .settings-popover { position: fixed; bottom: 120px; right: 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; width: 220px; box-shadow: 0 12px 32px rgba(0,0,0,0.4); z-index: 60; display: none; animation: modalIn 0.15s ease; }
+  .settings-popover.active { display: block; }
+  .settings-popover h3 { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); margin-bottom: 10px; }
+  .settings-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; font-size: 0.75rem; }
+  .settings-row:last-child { margin-bottom: 0; }
+  .toggle-sw { position: relative; width: 38px; height: 22px; flex-shrink: 0; }
+  .toggle-sw input { display: none; }
+  .toggle-sw .slider { position: absolute; inset: 0; background: var(--border); border-radius: 11px; cursor: pointer; transition: background 0.2s; }
+  .toggle-sw .slider::after { content: ''; position: absolute; width: 18px; height: 18px; left: 2px; top: 2px; background: var(--text); border-radius: 50%; transition: transform 0.2s; }
+  .toggle-sw input:checked + .slider { background: var(--accent); }
+  .toggle-sw input:checked + .slider::after { transform: translateX(16px); }
 
   /* ─── Docs Modal (2-Pane) ─── */
   .docs-overlay { position: fixed; inset: 0; background: rgba(2,6,23,0.85); backdrop-filter: blur(4px); z-index: 200; display: none; align-items: center; justify-content: center; padding: 20px; }
@@ -183,6 +215,9 @@
     .docs-sidebar .docs-tab { border-left: none; border-bottom: 2px solid transparent; white-space: nowrap; padding: 8px 12px; font-size: 0.7rem; }
     .docs-sidebar .docs-tab.active { border-left: none; border-bottom-color: var(--accent); }
     .help-btn { bottom: 16px; right: 16px; width: 40px; height: 40px; }
+    .float-btns { bottom: 16px; right: 16px; gap: 8px; }
+    .float-btn { width: 40px; height: 40px; }
+    .settings-popover { bottom: 100px; right: 16px; width: 200px; }
   }
 
   @media (max-width: 600px) {
@@ -221,7 +256,9 @@
     <!-- Link Graph -->
     <div class="graph-container">
       <div class="section-header"><h2>🔗 Knowledge Graph</h2><span class="count" id="graphCount"></span></div>
-      <canvas id="graphCanvas" width="1100" height="350"></canvas>
+      <canvas id="graphCanvas" width="1100" height="400"></canvas>
+      <button class="graph-reset" onclick="resetGraph()" title="Reset positions">↺ Reset</button>
+      <div class="graph-hint"><span>🖱 Scroll to zoom</span><span>✋ Drag to pan</span><span>🔵 Drag nodes</span><span>👆 Click to open</span></div>
       <div class="graph-legend">
         <span><span class="dot" style="background:var(--primary-light)"></span> Concept</span>
         <span><span class="dot" style="background:var(--violet)"></span> Person</span>
@@ -258,8 +295,27 @@
   <div class="footer">gbrain Control Dashboard · Maloha Coast Sdn Bhd · Press <span style="font-family:'JetBrains Mono',monospace">?</span> for help</div>
 </div>
 
-<!-- Help Button -->
-<button class="help-btn" onclick="openDocs()" title="Help &amp; Documentation (press ?)">?</button>
+<!-- Floating Buttons -->
+<div class="float-btns">
+  <button class="float-btn cog-btn" onclick="toggleSettings()" title="Settings">⚙</button>
+  <button class="float-btn help-btn" onclick="openDocs()" title="Help &amp; Documentation (press ?)">?</button>
+</div>
+
+<!-- Settings Popover -->
+<div class="settings-popover" id="settingsPopover">
+  <h3>⚙ Settings</h3>
+  <div class="settings-row">
+    <span>🌓 Dark mode</span>
+    <label class="toggle-sw"><input type="checkbox" id="themeToggle" onchange="toggleTheme()" checked><span class="slider"></span></label>
+  </div>
+  <div class="settings-row">
+    <span>🧲 Graph physics</span>
+    <label class="toggle-sw"><input type="checkbox" id="physicsToggle" onchange="togglePhysics()" checked><span class="slider"></span></label>
+  </div>
+  <div class="settings-row" style="margin-top:6px">
+    <button class="graph-reset" style="position:static;display:block;width:100%;text-align:center" onclick="resetGraph()">↺ Reset graph positions</button>
+  </div>
+</div>
 
 <!-- Page Detail Modal -->
 <div class="modal-overlay" id="modalOverlay" onclick="if(event.target===this)closeModal()">
@@ -354,131 +410,341 @@ function switchToHealth() {
   showTab(activeTab);
 }
 
-// ─── LINK GRAPH ───
-function drawGraph() {
+// ─── LINK GRAPH (Interactive) ───
+let graphNodes = [], graphSlugIndex = {}, graphEdges = 0;
+let graphZoom = 1, graphPanX = 0, graphPanY = 0;
+let graphDragging = null, graphPanning = false, lastMouse = null;
+let graphPhysics = true, graphAnimFrame = null;
+const graphColors = {concept: '#22d3ee', person: '#a78bfa', company: '#34d399', meeting: '#fbbf24', daily: '#fb7185'};
+
+function initGraph() {
+  const pages = DATA.pages || [];
+  if (!pages.length) return;
+  graphSlugIndex = {};
+  pages.forEach((p,i) => graphSlugIndex[p.slug] = i);
+
+  // Only init positions if not already set
+  if (graphNodes.length !== pages.length) {
+    graphNodes = pages.map((p,i) => ({
+      id: i, slug: p.slug, title: p.title, type: p.type,
+      links: p.links_out || [], vx: 0, vy: 0
+    }));
+    layoutCircle();
+    runPhysics(80);
+    graphZoom = 1; graphPanX = 0; graphPanY = 0;
+  }
+  drawGraphFrame();
+  if (graphPhysics) startPhysicsLoop();
+}
+
+function layoutCircle() {
+  const W = 1100, H = 400, cx = W/2, cy = H/2, rx = W/2 - 80, ry = H/2 - 50;
+  graphNodes.forEach((n,i) => {
+    const angle = (i / graphNodes.length) * 2 * Math.PI - Math.PI/2;
+    n.x = cx + rx * Math.cos(angle);
+    n.y = cy + ry * Math.sin(angle);
+  });
+}
+
+function runPhysics(iterations) {
+  for (let iter = 0; iter < iterations; iter++) {
+    for (let i = 0; i < graphNodes.length; i++) {
+      for (let j = i+1; j < graphNodes.length; j++) {
+        const dx = graphNodes[i].x - graphNodes[j].x, dy = graphNodes[i].y - graphNodes[j].y;
+        const dist = Math.sqrt(dx*dx+dy*dy) || 1, force = 400 / (dist*dist);
+        graphNodes[i].vx += (dx/dist) * force; graphNodes[i].vy += (dy/dist) * force;
+        graphNodes[j].vx -= (dx/dist) * force; graphNodes[j].vy -= (dy/dist) * force;
+      }
+    }
+    graphNodes.forEach(n => {
+      n.links.forEach(l => {
+        const j = graphSlugIndex[l.to]; if (j === undefined) return;
+        const dx = n.x - graphNodes[j].x, dy = n.y - graphNodes[j].y;
+        const dist = Math.sqrt(dx*dx+dy*dy) || 1, force = dist * 0.001;
+        n.vx -= (dx/dist) * force; n.vy -= (dy/dist) * force;
+        graphNodes[j].vx += (dx/dist) * force; graphNodes[j].vy += (dy/dist) * force;
+      });
+    });
+    graphNodes.forEach(n => {
+      n.vx += (550 - n.x) * 0.001; n.vy += (200 - n.y) * 0.001;
+      n.vx *= 0.85; n.vy *= 0.85;
+      n.x += n.vx; n.y += n.vy;
+    });
+  }
+  graphNodes.forEach(n => { n.vx = 0; n.vy = 0; });
+}
+
+function startPhysicsLoop() {
+  if (graphAnimFrame) cancelAnimationFrame(graphAnimFrame);
+  function tick() {
+    if (!graphPhysics) { graphAnimFrame = null; return; }
+    let energy = 0;
+    for (let i = 0; i < graphNodes.length; i++) {
+      for (let j = i+1; j < graphNodes.length; j++) {
+        const dx = graphNodes[i].x - graphNodes[j].x, dy = graphNodes[i].y - graphNodes[j].y;
+        const dist = Math.sqrt(dx*dx+dy*dy) || 1, force = 200 / (dist*dist);
+        graphNodes[i].vx += (dx/dist) * force * 0.3; graphNodes[i].vy += (dy/dist) * force * 0.3;
+        graphNodes[j].vx -= (dx/dist) * force * 0.3; graphNodes[j].vy -= (dy/dist) * force * 0.3;
+      }
+    }
+    graphNodes.forEach(n => {
+      n.links.forEach(l => {
+        const j = graphSlugIndex[l.to]; if (j === undefined) return;
+        const dx = n.x - graphNodes[j].x, dy = n.y - graphNodes[j].y;
+        const dist = Math.sqrt(dx*dx+dy*dy) || 1, force = dist * 0.0005;
+        n.vx -= (dx/dist) * force; n.vy -= (dy/dist) * force;
+        graphNodes[j].vx += (dx/dist) * force; graphNodes[j].vy += (dy/dist) * force;
+      });
+    });
+    graphNodes.forEach(n => {
+      if (n === graphDragging) return;
+      n.vx += (550 - n.x) * 0.0003; n.vy += (200 - n.y) * 0.0003;
+      n.vx *= 0.92; n.vy *= 0.92;
+      n.x += n.vx; n.y += n.vy;
+      energy += Math.abs(n.vx) + Math.abs(n.vy);
+    });
+    drawGraphFrame();
+    if (energy > 3) graphAnimFrame = requestAnimationFrame(tick);
+    else graphAnimFrame = null;
+  }
+  graphAnimFrame = requestAnimationFrame(tick);
+}
+
+function drawGraph() { initGraph(); }
+
+function drawGraphFrame() {
   const canvas = document.getElementById('graphCanvas');
   const ctx = canvas.getContext('2d');
   const W = canvas.width, H = canvas.height;
   ctx.clearRect(0, 0, W, H);
 
-  const pages = DATA.pages || [];
-  if (!pages.length) return;
+  // Background grid
+  ctx.strokeStyle = 'rgba(148,163,184,0.04)'; ctx.lineWidth = 0.5;
+  for (let x = 0; x < W; x += 40) { ctx.beginPath(); ctx.moveTo(x,0); ctx.lineTo(x,H); ctx.stroke(); }
+  for (let y = 0; y < H; y += 40) { ctx.beginPath(); ctx.moveTo(0,y); ctx.lineTo(W,y); ctx.stroke(); }
 
-  // Build adjacency
-  const slugIndex = {};
-  pages.forEach((p,i) => slugIndex[p.slug] = i);
-
-  const nodes = pages.map((p,i) => ({
-    id: i, slug: p.slug, title: p.title, type: p.type,
-    links: p.links_out || [],
-    x: 0, y: 0, vx: 0, vy: 0
-  }));
-
-  // Initialize positions in a circle
-  const cx = W/2, cy = H/2, rx = W/2 - 60, ry = H/2 - 40;
-  nodes.forEach((n,i) => {
-    const angle = (i / nodes.length) * 2 * Math.PI - Math.PI/2;
-    n.x = cx + rx * Math.cos(angle);
-    n.y = cy + ry * Math.sin(angle);
-  });
-
-  // Simple force layout (few iterations for performance)
-  for (let iter = 0; iter < 80; iter++) {
-    // Repulsion
-    for (let i = 0; i < nodes.length; i++) {
-      for (let j = i+1; j < nodes.length; j++) {
-        const dx = nodes[i].x - nodes[j].x;
-        const dy = nodes[i].y - nodes[j].y;
-        const dist = Math.sqrt(dx*dx+dy*dy) || 1;
-        const force = 400 / (dist*dist);
-        nodes[i].vx += (dx/dist) * force;
-        nodes[i].vy += (dy/dist) * force;
-        nodes[j].vx -= (dx/dist) * force;
-        nodes[j].vy -= (dy/dist) * force;
-      }
-    }
-    // Attraction along edges
-    nodes.forEach(n => {
-      n.links.forEach(l => {
-        const j = slugIndex[l.to];
-        if (j === undefined) return;
-        const dx = n.x - nodes[j].x;
-        const dy = n.y - nodes[j].y;
-        const dist = Math.sqrt(dx*dx+dy*dy) || 1;
-        const force = dist * 0.001;
-        n.vx -= (dx/dist) * force;
-        n.vy -= (dy/dist) * force;
-        nodes[j].vx += (dx/dist) * force;
-        nodes[j].vy += (dy/dist) * force;
-      });
-    });
-    // Center gravity
-    nodes.forEach(n => {
-      n.vx += (cx - n.x) * 0.001;
-      n.vy += (cy - n.y) * 0.001;
-    });
-    // Apply velocity with damping
-    nodes.forEach(n => {
-      n.vx *= 0.85;
-      n.vy *= 0.85;
-      n.x += n.vx;
-      n.y += n.vy;
-      n.x = Math.max(20, Math.min(W-20, n.x));
-      n.y = Math.max(20, Math.min(H-20, n.y));
-    });
-  }
-
-  // Color map
-  const colors = {concept: '#22d3ee', person: '#a78bfa', company: '#34d399', meeting: '#fbbf24', daily: '#fb7185'};
+  ctx.save();
+  ctx.translate(graphPanX, graphPanY);
+  ctx.scale(graphZoom, graphZoom);
 
   // Draw edges
   const drawnEdges = new Set();
-  nodes.forEach(n => {
+  graphNodes.forEach(n => {
     n.links.forEach(l => {
-      const j = slugIndex[l.to];
-      if (j === undefined) return;
+      const j = graphSlugIndex[l.to]; if (j === undefined) return;
       const key = [Math.min(n.id,j), Math.max(n.id,j)].join('-');
       if (drawnEdges.has(key)) return;
       drawnEdges.add(key);
-      ctx.beginPath();
-      ctx.moveTo(n.x, n.y);
-      ctx.lineTo(nodes[j].x, nodes[j].y);
-      ctx.strokeStyle = 'rgba(148,163,184,0.2)';
-      ctx.lineWidth = 0.8;
+      ctx.beginPath(); ctx.moveTo(n.x, n.y); ctx.lineTo(graphNodes[j].x, graphNodes[j].y);
+      ctx.strokeStyle = 'rgba(148,163,184,0.15)'; ctx.lineWidth = 0.8 / graphZoom;
       ctx.stroke();
     });
   });
+  graphEdges = drawnEdges.size;
 
   // Draw nodes
-  nodes.forEach(n => {
-    const color = colors[n.type] || '#94a3b8';
-    const size = Math.max(5, 3 + n.links.length * 1.5);
+  graphNodes.forEach(n => {
+    const color = graphColors[n.type] || '#94a3b8';
+    const size = Math.max(6, 4 + n.links.length * 1.5);
+    const isHovered = canvas._hoveredNode === n;
+    const r = isHovered ? size + 3 : size;
 
     // Glow
-    ctx.beginPath();
-    ctx.arc(n.x, n.y, size+4, 0, Math.PI*2);
-    ctx.fillStyle = color.replace(')', ',0.15)').replace('rgb','rgba');
+    ctx.beginPath(); ctx.arc(n.x, n.y, r+5, 0, Math.PI*2);
+    ctx.fillStyle = color.replace(')', isHovered ? ',0.25)' : ',0.08)').replace('rgb','rgba');
     ctx.fill();
 
-    // Node
-    ctx.beginPath();
-    ctx.arc(n.x, n.y, size, 0, Math.PI*2);
-    ctx.fillStyle = color;
-    ctx.fill();
-    ctx.strokeStyle = 'rgba(15,23,42,0.8)';
-    ctx.lineWidth = 1.5;
-    ctx.stroke();
+    // Node body
+    ctx.beginPath(); ctx.arc(n.x, n.y, r, 0, Math.PI*2);
+    ctx.fillStyle = color; ctx.fill();
+    ctx.strokeStyle = isHovered ? '#fff' : 'rgba(15,23,42,0.8)';
+    ctx.lineWidth = isHovered ? 2 : 1.5; ctx.stroke();
 
     // Label
-    const label = n.title.length > 14 ? n.title.slice(0,13)+'…' : n.title;
-    ctx.font = '9px "Inter", sans-serif';
-    ctx.fillStyle = '#e2e8f0';
+    const label = n.title.length > 16 ? n.title.slice(0,15)+'…' : n.title;
+    ctx.font = `${isHovered ? '11px' : '9px'} "Inter", sans-serif`;
+    ctx.fillStyle = isHovered ? '#fff' : '#e2e8f0';
     ctx.textAlign = 'center';
-    ctx.fillText(label, n.x, n.y + size + 12);
+    ctx.fillText(label, n.x, n.y + r + 13);
   });
 
-  document.getElementById('graphCount').textContent = `${nodes.length} nodes, ${drawnEdges.size} edges`;
+  ctx.restore();
+
+  // Zoom indicator
+  if (graphZoom !== 1) {
+    ctx.fillStyle = 'rgba(148,163,184,0.5)'; ctx.font = '9px "JetBrains Mono", monospace';
+    ctx.textAlign = 'right';
+    ctx.fillText(Math.round(graphZoom * 100) + '%', W - 12, H - 12);
+  }
+
+  document.getElementById('graphCount').textContent = `${graphNodes.length} nodes, ${graphEdges} edges`;
 }
+
+// ─── GRAPH MOUSE HANDLERS ───
+(function setupGraphMouse() {
+  const canvas = document.getElementById('graphCanvas');
+  canvas._hoveredNode = null;
+
+  function screenToWorld(e) {
+    const rect = canvas.getBoundingClientRect();
+    const sx = (e.clientX - rect.left) * (1100 / rect.width);
+    const sy = (e.clientY - rect.top) * (400 / rect.height);
+    return {
+      x: (sx - graphPanX) / graphZoom,
+      y: (sy - graphPanY) / graphZoom
+    };
+  }
+
+  function hitTest(wx, wy) {
+    for (let i = graphNodes.length-1; i >= 0; i--) {
+      const n = graphNodes[i];
+      const size = Math.max(6, 4 + n.links.length * 1.5) + 6;
+      const dx = wx - n.x, dy = wy - n.y;
+      if (dx*dx + dy*dy < size*size) return n;
+    }
+    return null;
+  }
+
+  canvas.addEventListener('mousedown', function(e) {
+    const w = screenToWorld(e);
+    const hit = hitTest(w.x, w.y);
+    if (hit) {
+      graphDragging = hit;
+      graphPanning = false;
+      canvas.classList.add('dragging-node');
+      e.preventDefault();
+    } else {
+      graphPanning = true;
+      lastMouse = {x: e.clientX, y: e.clientY};
+    }
+  });
+
+  window.addEventListener('mousemove', function(e) {
+    if (graphDragging) {
+      const w = screenToWorld(e);
+      graphDragging.x = w.x; graphDragging.y = w.y;
+      graphDragging.vx = 0; graphDragging.vy = 0;
+      drawGraphFrame();
+      return;
+    }
+    if (graphPanning && lastMouse) {
+      graphPanX += e.clientX - lastMouse.x;
+      graphPanY += e.clientY - lastMouse.y;
+      lastMouse = {x: e.clientX, y: e.clientY};
+      drawGraphFrame();
+      return;
+    }
+    // Hover
+    const w = screenToWorld(e);
+    const hit = hitTest(w.x, w.y);
+    const prev = canvas._hoveredNode;
+    canvas._hoveredNode = hit;
+    if (prev !== hit) drawGraphFrame();
+    canvas.style.cursor = hit ? 'pointer' : 'grab';
+  });
+
+  window.addEventListener('mouseup', function(e) {
+    if (graphDragging) {
+      // Give dragged node a small velocity kick
+      if (lastMouse) {
+        const rect = canvas.getBoundingClientRect();
+        const dx = (e.clientX - (lastMouse.x || e.clientX)) * (1100 / rect.width) / graphZoom;
+        const dy = (e.clientY - (lastMouse.y || e.clientY)) * (400 / rect.height) / graphZoom;
+        graphDragging.vx = dx * 0.3; graphDragging.vy = dy * 0.3;
+      }
+      canvas.classList.remove('dragging-node');
+      if (graphPhysics) startPhysicsLoop();
+      graphDragging = null;
+    }
+    if (graphPanning) { graphPanning = false; lastMouse = null; }
+  });
+
+  canvas.addEventListener('click', function(e) {
+    if (graphDragging || graphPanning) return;
+    const w = screenToWorld(e);
+    const hit = hitTest(w.x, w.y);
+    if (hit) openPageModal(hit.slug);
+  });
+
+  canvas.addEventListener('wheel', function(e) {
+    e.preventDefault();
+    const delta = e.deltaY > 0 ? 0.9 : 1.1;
+    const newZoom = Math.max(0.3, Math.min(3, graphZoom * delta));
+
+    // Zoom toward cursor
+    const rect = canvas.getBoundingClientRect();
+    const mx = (e.clientX - rect.left) * (1100 / rect.width);
+    const my = (e.clientY - rect.top) * (400 / rect.height);
+    graphPanX = mx - (mx - graphPanX) * (newZoom / graphZoom);
+    graphPanY = my - (my - graphPanY) * (newZoom / graphZoom);
+    graphZoom = newZoom;
+    drawGraphFrame();
+  });
+
+  // Touch support
+  let touchDist0 = 0, touchMid0 = null;
+  canvas.addEventListener('touchstart', function(e) {
+    if (e.touches.length === 2) {
+      const dx = e.touches[0].clientX - e.touches[1].clientX;
+      const dy = e.touches[0].clientY - e.touches[1].clientY;
+      touchDist0 = Math.sqrt(dx*dx+dy*dy);
+      touchMid0 = {x: graphPanX, y: graphPanY, z: graphZoom};
+    }
+  }, {passive: true});
+  canvas.addEventListener('touchmove', function(e) {
+    if (e.touches.length === 2 && touchDist0 > 0 && touchMid0) {
+      const dx = e.touches[0].clientX - e.touches[1].clientX;
+      const dy = e.touches[0].clientY - e.touches[1].clientY;
+      const dist = Math.sqrt(dx*dx+dy*dy);
+      graphZoom = Math.max(0.3, Math.min(3, touchMid0.z * (dist / touchDist0)));
+      drawGraphFrame();
+    }
+  }, {passive: true});
+  canvas.addEventListener('touchend', function() { touchDist0 = 0; touchMid0 = null; });
+})();
+
+function resetGraph() {
+  graphZoom = 1; graphPanX = 0; graphPanY = 0;
+  layoutCircle();
+  runPhysics(80);
+  drawGraphFrame();
+  if (graphPhysics) startPhysicsLoop();
+}
+
+function togglePhysics() {
+  graphPhysics = document.getElementById('physicsToggle').checked;
+  if (graphPhysics) startPhysicsLoop();
+  else { if (graphAnimFrame) { cancelAnimationFrame(graphAnimFrame); graphAnimFrame = null; } }
+}
+
+// ─── THEME ───
+function toggleTheme() {
+  const dark = document.getElementById('themeToggle').checked;
+  document.body.classList.toggle('light', !dark);
+  localStorage.setItem('gbrain-theme', dark ? 'dark' : 'light');
+  setTimeout(drawGraphFrame, 50);
+}
+
+// ─── SETTINGS ───
+function toggleSettings() {
+  document.getElementById('settingsPopover').classList.toggle('active');
+}
+
+// Init theme from storage
+(function() {
+  const saved = localStorage.getItem('gbrain-theme');
+  const dark = saved === 'dark' || saved === null;
+  document.getElementById('themeToggle').checked = dark;
+  document.body.classList.toggle('light', !dark);
+})();
+
+// Close settings on outside click
+document.addEventListener('click', function(e) {
+  const pop = document.getElementById('settingsPopover');
+  if (pop.classList.contains('active') && !pop.contains(e.target) && !e.target.classList.contains('cog-btn')) {
+    pop.classList.remove('active');
+  }
+});
 
 // ─── PAGES TABLE ───
 function renderPages(filter) {
@@ -800,6 +1066,15 @@ const DOCS = {
   <tr><td style="padding:8px 12px;border-bottom:1px solid rgba(255,255,255,0.04)"><span class="kbd">Ctrl+K</span> / <span class="kbd">Cmd+K</span></td><td style="padding:8px 12px;border-bottom:1px solid rgba(255,255,255,0.04)">Focus the search bar</td></tr>
   <tr><td style="padding:8px 12px"><span class="kbd">Click</span> anything</td><td style="padding:8px 12px">Drill into page content, entities, health checks</td></tr>
 </table>
+<h3>Graph</h3>
+<ul>
+  <li><strong>Scroll</strong> — zoom in/out (pinch on touch devices)</li>
+  <li><strong>Drag background</strong> — pan the view</li>
+  <li><strong>Drag node</strong> — reposition (releases with momentum)</li>
+  <li><strong>Click node</strong> — open that page's detail modal</li>
+  <li><strong>Hover node</strong> — highlights and enlarges</li>
+  <li><strong>↺ Reset</strong> — return graph to default layout</li>
+</ul>
 <h3>Mouse</h3>
 <ul>
   <li>Click any <strong>page row</strong> — full detail modal with content + links</li>
