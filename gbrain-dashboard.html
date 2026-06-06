@@ -21,6 +21,38 @@
     --rose: #e11d48;
     --graph-bg: #f8fafc;
   }
+  /* Catppuccin Mocha */
+  body.catppuccin-mocha {
+    --bg: #1e1e2e; --surface: #313244; --surface2: #45475a; --border: #585b70;
+    --primary: #89b4fa; --primary-light: #74c7ec; --accent: #f9e2af; --accent-light: #fab387;
+    --text: #cdd6f4; --text-muted: #a6adc8; --green: #a6e3a1; --violet: #cba6f7;
+    --rose: #f38ba8;
+    --graph-bg: #1e1e2e;
+  }
+  /* Catppuccin Latte */
+  body.catppuccin-latte {
+    --bg: #eff1f5; --surface: #e6e9ef; --surface2: #ccd0da; --border: #bcc0cc;
+    --primary: #1e66f5; --primary-light: #04a5e5; --accent: #df8e1d; --accent-light: #fe640b;
+    --text: #4c4f69; --text-muted: #8c8fa1; --green: #40a02b; --violet: #8839ef;
+    --rose: #d20f39;
+    --graph-bg: #eff1f5;
+  }
+  /* Tokyo Night */
+  body.tokyo-night {
+    --bg: #1a1b26; --surface: #24283b; --surface2: #2f3346; --border: #3b4261;
+    --primary: #7aa2f7; --primary-light: #7dcfff; --accent: #e0af68; --accent-light: #ff9e64;
+    --text: #c0caf5; --text-muted: #9aa5ce; --green: #9ece6a; --violet: #bb9af7;
+    --rose: #f7768e;
+    --graph-bg: #1a1b26;
+  }
+  /* Omarchy (DHH-inspired: warm, high-contrast, minimal) */
+  body.omarchy {
+    --bg: #faf6f0; --surface: #ffffff; --surface2: #f5efe6; --border: #d4c9b8;
+    --primary: #8b4513; --primary-light: #a0522d; --accent: #b8860b; --accent-light: #cd853f;
+    --text: #2c1810; --text-muted: #6b5b4f; --green: #5d7a3a; --violet: #6b3fa0;
+    --rose: #c0392b;
+    --graph-bg: #faf6f0;
+  }
   body { transition: background 0.3s, color 0.3s; }
   html { scroll-behavior: smooth; }
   body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; overflow-x: hidden; }
@@ -117,7 +149,6 @@
   .graph-container canvas { width: 100%; height: 400px; display: block; border-radius: var(--radius-sm); cursor: grab; background: var(--graph-bg); }
   .graph-container canvas:active { cursor: grabbing; }
   .graph-container canvas.dragging-node { cursor: grabbing; }
-  .graph-hint { position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%); font-size: 0.6rem; color: var(--text-muted); opacity: 0.6; pointer-events: none; display: flex; gap: 12px; }
   .graph-reset { position: absolute; top: 16px; right: 16px; background: var(--surface2); border: 1px solid var(--border); color: var(--text-muted); padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 0.6rem; font-family: 'Inter', sans-serif; transition: all 0.15s; }
   .graph-reset:hover { color: var(--text); border-color: var(--accent); }
   .graph-legend { display: flex; gap: 16px; margin-top: 8px; font-size: 0.65rem; color: var(--text-muted); justify-content: center; flex-wrap: wrap; }
@@ -258,13 +289,13 @@
       <div class="section-header"><h2>🔗 Knowledge Graph</h2><span class="count" id="graphCount"></span></div>
       <canvas id="graphCanvas" width="1100" height="400"></canvas>
       <button class="graph-reset" onclick="resetGraph()" title="Reset positions">↺ Reset</button>
-      <div class="graph-hint"><span>🖱 Scroll to zoom</span><span>✋ Drag to pan</span><span>🔵 Drag nodes</span><span>👆 Click to open</span></div>
       <div class="graph-legend">
         <span><span class="dot" style="background:var(--primary-light)"></span> Concept</span>
         <span><span class="dot" style="background:var(--violet)"></span> Person</span>
         <span><span class="dot" style="background:var(--green)"></span> Company</span>
         <span><span class="dot" style="background:var(--accent-light)"></span> Meeting</span>
         <span><span class="dot" style="background:var(--rose)"></span> Daily</span>
+        <span style="opacity:0.4;margin-left:8px">· zoom · pan · drag · click</span>
       </div>
     </div>
 
@@ -305,8 +336,15 @@
 <div class="settings-popover" id="settingsPopover">
   <h3>⚙ Settings</h3>
   <div class="settings-row">
-    <span>🌓 Dark mode</span>
-    <label class="toggle-sw"><input type="checkbox" id="themeToggle" onchange="toggleTheme()" checked><span class="slider"></span></label>
+    <span>🎨 Theme</span>
+    <select id="themeSelect" onchange="applyTheme(this.value)" style="background:var(--surface2);border:1px solid var(--border);color:var(--text);border-radius:6px;padding:4px 8px;font-size:0.7rem;font-family:'Inter',sans-serif;max-width:120px">
+      <option value="dark">Dark</option>
+      <option value="light">Light</option>
+      <option value="catppuccin-mocha">Catppuccin Mocha</option>
+      <option value="catppuccin-latte">Catppuccin Latte</option>
+      <option value="tokyo-night">Tokyo Night</option>
+      <option value="omarchy">Omarchy</option>
+    </select>
   </div>
   <div class="settings-row">
     <span>🧲 Graph physics</span>
@@ -560,10 +598,11 @@ function drawGraphFrame() {
     ctx.strokeStyle = isHovered ? '#fff' : 'rgba(15,23,42,0.8)';
     ctx.lineWidth = isHovered ? 2 : 1.5; ctx.stroke();
 
-    // Label
+    // Label — theme-aware
     const label = n.title.length > 16 ? n.title.slice(0,15)+'…' : n.title;
+    const labelColor = getComputedStyle(document.body).getPropertyValue('--text').trim() || '#e2e8f0';
     ctx.font = `${isHovered ? '11px' : '9px'} "Inter", sans-serif`;
-    ctx.fillStyle = isHovered ? '#fff' : '#e2e8f0';
+    ctx.fillStyle = isHovered ? '#ffffff' : labelColor;
     ctx.textAlign = 'center';
     ctx.fillText(label, n.x, n.y + r + 13);
   });
@@ -584,6 +623,7 @@ function drawGraphFrame() {
 (function setupGraphMouse() {
   const canvas = document.getElementById('graphCanvas');
   canvas._hoveredNode = null;
+  let dragStartNode = null, dragDist = 0, dragStartW = null;
 
   function screenToWorld(e) {
     const rect = canvas.getBoundingClientRect();
@@ -609,11 +649,15 @@ function drawGraphFrame() {
     const w = screenToWorld(e);
     const hit = hitTest(w.x, w.y);
     if (hit) {
+      dragStartNode = hit;
+      dragDist = 0;
+      dragStartW = w;
       graphDragging = hit;
       graphPanning = false;
       canvas.classList.add('dragging-node');
       e.preventDefault();
     } else {
+      dragStartNode = null; dragDist = 0;
       graphPanning = true;
       lastMouse = {x: e.clientX, y: e.clientY};
     }
@@ -622,6 +666,10 @@ function drawGraphFrame() {
   window.addEventListener('mousemove', function(e) {
     if (graphDragging) {
       const w = screenToWorld(e);
+      if (dragStartW) {
+        const dx = w.x - dragStartW.x, dy = w.y - dragStartW.y;
+        dragDist = Math.sqrt(dx*dx + dy*dy);
+      }
       graphDragging.x = w.x; graphDragging.y = w.y;
       graphDragging.vx = 0; graphDragging.vy = 0;
       drawGraphFrame();
@@ -660,7 +708,11 @@ function drawGraphFrame() {
   });
 
   canvas.addEventListener('click', function(e) {
-    if (graphDragging || graphPanning) return;
+    // Only fire click if the node wasn't significantly dragged (< 5 world-px of movement)
+    const dragged = dragDist > 5;
+    dragStartNode = null; dragDist = 0; dragStartW = null;
+    if (graphPanning) { graphPanning = false; lastMouse = null; return; }
+    if (dragged) return;
     const w = screenToWorld(e);
     const hit = hitTest(w.x, w.y);
     if (hit) openPageModal(hit.slug);
@@ -718,25 +770,26 @@ function togglePhysics() {
 }
 
 // ─── THEME ───
-function toggleTheme() {
-  const dark = document.getElementById('themeToggle').checked;
-  document.body.classList.toggle('light', !dark);
-  localStorage.setItem('gbrain-theme', dark ? 'dark' : 'light');
+const THEME_CLASSES = ['light', 'catppuccin-mocha', 'catppuccin-latte', 'tokyo-night', 'omarchy'];
+
+function applyTheme(name) {
+  document.body.classList.remove(...THEME_CLASSES);
+  if (name !== 'dark') document.body.classList.add(name);
+  localStorage.setItem('gbrain-theme', name);
+  document.getElementById('themeSelect').value = name;
   setTimeout(drawGraphFrame, 50);
 }
+
+// Init theme from storage
+(function() {
+  const saved = localStorage.getItem('gbrain-theme') || 'dark';
+  applyTheme(saved);
+})();
 
 // ─── SETTINGS ───
 function toggleSettings() {
   document.getElementById('settingsPopover').classList.toggle('active');
 }
-
-// Init theme from storage
-(function() {
-  const saved = localStorage.getItem('gbrain-theme');
-  const dark = saved === 'dark' || saved === null;
-  document.getElementById('themeToggle').checked = dark;
-  document.body.classList.toggle('light', !dark);
-})();
 
 // Close settings on outside click
 document.addEventListener('click', function(e) {
