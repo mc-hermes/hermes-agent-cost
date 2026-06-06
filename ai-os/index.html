@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI OS Architecture — Individuals · Departments · Businesses</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'JetBrains Mono', monospace;
+      background: #020617;
+      min-height: 100vh;
+      padding: 1.5rem;
+      color: #e2e8f0;
+    }
+    .container { max-width: 1400px; margin: 0 auto; }
+
+    /* ── HEADER ── */
+    .header { margin-bottom: 2rem; }
+    .header-row { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem; }
+    .pulse-dot {
+      width: 12px; height: 12px; background: #22d3ee; border-radius: 50%;
+      animation: pulse 2s infinite; flex-shrink: 0;
+    }
+    @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+    h1 { font-size: 1.4rem; font-weight: 600; color: #f1f5f9; }
+    .subtitle { font-size: 0.78rem; color: #64748b; margin-top: 0.25rem; line-height: 1.5; }
+    .subtitle em { color: #94a3b8; font-style: normal; }
+
+    /* ── DIAGRAM CARDS ── */
+    .diagram-card {
+      background: #0f172a;
+      border: 1px solid #1e293b;
+      border-radius: 12px;
+      padding: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+    .diagram-card h2 {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #94a3b8;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .diagram-card h2 .badge {
+      font-size: 0.6rem;
+      background: rgba(34,211,238,0.12);
+      color: #22d3ee;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+    svg { display: block; width: 100%; height: auto; }
+
+    /* ── LEGEND ── */
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      padding: 1rem 1.25rem;
+      background: #0f172a;
+      border: 1px solid #1e293b;
+      border-radius: 12px;
+      margin-top: 1rem;
+    }
+    .legend-item {
+      display: flex; align-items: center; gap: 0.5rem;
+      font-size: 0.7rem; color: #94a3b8;
+    }
+    .legend-swatch {
+      width: 14px; height: 14px; border-radius: 3px; border: 1.5px solid;
+      flex-shrink: 0;
+    }
+
+    /* ── LAYER NOTES ── */
+    .layer-notes {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .layer-note {
+      background: #0f172a;
+      border: 1px solid #1e293b;
+      border-radius: 10px;
+      padding: 1rem;
+    }
+    .layer-note h3 {
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .layer-note ul {
+      list-style: none;
+      font-size: 0.65rem;
+      color: #94a3b8;
+      line-height: 1.7;
+    }
+    .layer-note ul li::before { content: "▸ "; color: #475569; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 800px) {
+      .layer-notes { grid-template-columns: 1fr; }
+      body { padding: 1rem; }
+    }
+
+    /* ── FOOTER ── */
+    .footer {
+      text-align: center;
+      font-size: 0.6rem;
+      color: #334155;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #1e293b;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- ══════════ HEADER ══════════ -->
+  <div class="header">
+    <div class="header-row">
+      <div class="pulse-dot"></div>
+      <h1>AI OS Architecture</h1>
+      <span style="font-size:0.65rem;color:#475569;margin-left:auto;">Karpathy-inspired · Knowledge-Kernel Design</span>
+    </div>
+    <div class="subtitle">
+      Three-tier architecture inspired by <em>Karpathy's Second Brain / LLM Wiki</em> and the <em>gbrain</em> knowledge-graph kernel.
+      Each tier inherits the layer below — the kernel is shared, the interfaces expand.
+    </div>
+  </div>
+
+  <!-- ══════════ DIAGRAM 1 — THE KERNEL ══════════ -->
+  <div class="diagram-card">
+    <h2><span>01</span> The Kernel — Shared Brain Layer <span class="badge">runs every tier</span></h2>
+    <svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+        </pattern>
+        <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="#475569"/>
+        </marker>
+        <marker id="arrow-cyan" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="#22d3ee"/>
+        </marker>
+        <marker id="arrow-emerald" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="#34d399"/>
+        </marker>
+        <marker id="arrow-violet" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="#a78bfa"/>
+        </marker>
+        <marker id="arrow-amber" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="#fbbf24"/>
+        </marker>
+        <filter id="glow">
+          <feGaussianBlur stdDeviation="3" result="blur"/>
+          <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+      <rect width="1200" height="500" fill="url(#grid)"/>
+
+      <!-- Kernel boundary -->
+      <rect x="30" y="20" width="1140" height="460" rx="12" fill="none" stroke="#1e293b" stroke-width="2" stroke-dasharray="8,4"/>
+
+      <!-- Layer 1: Raw Sources (bottom) -->
+      <rect x="80" y="360" width="1040" height="100" rx="6" fill="rgba(30,41,59,0.5)" stroke="#475569" stroke-width="1.5"/>
+      <text x="120" y="385" fill="#64748b" font-size="9" font-weight="600">RAW SOURCE LAYER (immutable)</text>
+      <!-- Source boxes -->
+      <rect x="120" y="395" width="130" height="36" rx="4" fill="rgba(8,51,68,0.4)" stroke="#22d3ee" stroke-width="1"/>
+      <text x="140" y="417" fill="#22d3ee" font-size="8">Meeting Transcripts</text>
+      <rect x="270" y="395" width="130" height="36" rx="4" fill="rgba(8,51,68,0.4)" stroke="#22d3ee" stroke-width="1"/>
+      <text x="285" y="417" fill="#22d3ee" font-size="8">Email Threads</text>
+      <rect x="420" y="395" width="130" height="36" rx="4" fill="rgba(8,51,68,0.4)" stroke="#22d3ee" stroke-width="1"/>
+      <text x="435" y="417" fill="#22d3ee" font-size="8">Chat Logs</text>
+      <rect x="570" y="395" width="130" height="36" rx="4" fill="rgba(8,51,68,0.4)" stroke="#22d3ee" stroke-width="1"/>
+      <text x="590" y="417" fill="#22d3ee" font-size="8">Web Articles</text>
+      <rect x="720" y="395" width="130" height="36" rx="4" fill="rgba(8,51,68,0.4)" stroke="#22d3ee" stroke-width="1"/>
+      <text x="735" y="417" fill="#22d3ee" font-size="8">Documents</text>
+      <rect x="870" y="395" width="130" height="36" rx="4" fill="rgba(8,51,68,0.4)" stroke="#22d3ee" stroke-width="1"/>
+      <text x="888" y="417" fill="#22d3ee" font-size="8">API Data</text>
+
+      <!-- Arrow from raw to entities -->
+      <line x1="600" y1="358" x2="600" y2="335" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+      <!-- Layer 2: Entities / Concepts (middle) -->
+      <rect x="80" y="240" width="1040" height="100" rx="6" fill="rgba(6,78,59,0.35)" stroke="#34d399" stroke-width="1.5"/>
+      <text x="120" y="265" fill="#64748b" font-size="9" font-weight="600">COMPILED KNOWLEDGE LAYER (mutable, interlinked)</text>
+      <!-- Entity boxes -->
+      <rect x="120" y="275" width="140" height="36" rx="4" fill="rgba(6,78,59,0.4)" stroke="#34d399" stroke-width="1"/>
+      <text x="145" y="297" fill="#34d399" font-size="8">People (who)</text>
+      <rect x="280" y="275" width="140" height="36" rx="4" fill="rgba(76,29,149,0.4)" stroke="#a78bfa" stroke-width="1"/>
+      <text x="303" y="297" fill="#a78bfa" font-size="8">Companies (where)</text>
+      <rect x="440" y="275" width="140" height="36" rx="4" fill="rgba(251,146,60,0.3)" stroke="#fb923c" stroke-width="1"/>
+      <text x="463" y="297" fill="#fb923c" font-size="8">Meetings (when)</text>
+      <rect x="600" y="275" width="140" height="36" rx="4" fill="rgba(34,211,238,0.15)" stroke="#22d3ee" stroke-width="1"/>
+      <text x="620" y="297" fill="#22d3ee" font-size="8">Concepts (what)</text>
+      <rect x="760" y="275" width="140" height="36" rx="4" fill="rgba(251,146,60,0.25)" stroke="#fbbf24" stroke-width="1"/>
+      <text x="783" y="297" fill="#fbbf24" font-size="8">Projects (how)</text>
+      <rect x="920" y="275" width="140" height="36" rx="4" fill="rgba(120,53,15,0.25)" stroke="#fbbf24" stroke-width="1"/>
+      <text x="940" y="297" fill="#fbbf24" font-size="8">Deals (why)</text>
+
+      <!-- Curved back-link arrows between entities -->
+      <path d="M 260 293 Q 270 260 280 293" fill="none" stroke="#475569" stroke-width="0.8" marker-end="url(#arrow)"/>
+      <path d="M 420 293 Q 430 260 440 293" fill="none" stroke="#475569" stroke-width="0.8" marker-end="url(#arrow)"/>
+
+      <!-- Arrow from entities to schema/services -->
+      <line x1="600" y1="238" x2="600" y2="215" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+      <!-- Layer 3: Schema / Query / Services (top) -->
+      <rect x="80" y="120" width="1040" height="100" rx="6" fill="rgba(76,29,149,0.25)" stroke="#a78bfa" stroke-width="1.5"/>
+      <text x="120" y="145" fill="#64748b" font-size="9" font-weight="600">SCHEMA &amp; SERVICE LAYER</text>
+      <!-- Service boxes -->
+      <rect x="120" y="155" width="170" height="36" rx="4" fill="rgba(76,29,149,0.35)" stroke="#a78bfa" stroke-width="1"/>
+      <text x="145" y="177" fill="#a78bfa" font-size="8">Search / Query Engine</text>
+      <rect x="310" y="155" width="170" height="36" rx="4" fill="rgba(76,29,149,0.35)" stroke="#a78bfa" stroke-width="1"/>
+      <text x="335" y="177" fill="#a78bfa" font-size="8">Memory Provider</text>
+      <rect x="500" y="155" width="170" height="36" rx="4" fill="rgba(76,29,149,0.35)" stroke="#a78bfa" stroke-width="1"/>
+      <text x="525" y="177" fill="#a78bfa" font-size="8">Graph (back-links)</text>
+      <rect x="690" y="155" width="170" height="36" rx="4" fill="rgba(76,29,149,0.35)" stroke="#a78bfa" stroke-width="1"/>
+      <text x="712" y="177" fill="#a78bfa" font-size="8">Timeline / Log</text>
+      <rect x="880" y="155" width="180" height="36" rx="4" fill="rgba(76,29,149,0.35)" stroke="#a78bfa" stroke-width="1"/>
+      <text x="905" y="177" fill="#a78bfa" font-size="8">Embeddings / Vector</text>
+
+      <!-- Arrow from services to surface -->
+      <line x1="600" y1="118" x2="600" y2="95" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+      <!-- Surface: Agent Interface -->
+      <rect x="200" y="40" width="800" height="46" rx="6" fill="rgba(120,53,15,0.25)" stroke="#fbbf24" stroke-width="1.5"/>
+      <text x="430" y="67" fill="#fbbf24" font-size="8" font-weight="600">AGENT INTERFACE — CLI · Telegram · Discord · API Server · Webhooks</text>
+
+      <!-- Labels on the right -->
+      <text x="1000" y="40" fill="#475569" font-size="7">Layer 3</text>
+      <text x="1000" y="125" fill="#475569" font-size="7">Layer 2</text>
+      <text x="1000" y="365" fill="#475569" font-size="7">Layer 1</text>
+    </svg>
+  </div>
+
+  <!-- ══════════ DIAGRAM 2 — THE THREE TIERS ══════════ -->
+  <div class="diagram-card">
+    <h2><span>02</span> Three-Tier Deployment <span class="badge">scale · scope · governance</span></h2>
+    <svg viewBox="0 0 1200 620" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+        </pattern>
+        <marker id="arr2" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="#475569"/>
+        </marker>
+        <filter id="glow2">
+          <feGaussianBlur stdDeviation="2" result="blur"/>
+          <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+      <rect width="1200" height="620" fill="url(#grid2)"/>
+
+      <!-- ═══ TIER 1 — INDIVIDUALS (left) ═══ -->
+      <rect x="30" y="20" width="370" height="575" rx="10" fill="rgba(8,51,68,0.15)" stroke="#22d3ee" stroke-width="1.5" stroke-dasharray="6,3"/>
+      <text x="60" y="50" fill="#22d3ee" font-size="10" font-weight="600">TIER 1 — INDIVIDUAL</text>
+      <text x="60" y="65" fill="#475569" font-size="7">Personal AI OS · single user · private brain</text>
+
+      <!-- Individual components -->
+      <rect x="55" y="90" width="320" height="40" rx="5" fill="rgba(8,51,68,0.4)" stroke="#22d3ee" stroke-width="1.2"/>
+      <text x="120" y="115" fill="#22d3ee" font-size="8">Personal Agent (Telegram DM / CLI)</text>
+
+      <rect x="55" y="145" width="320" height="40" rx="5" fill="rgba(6,78,59,0.4)" stroke="#34d399" stroke-width="1.2"/>
+      <text x="130" y="170" fill="#34d399" font-size="8">Personal Knowledge Base (gbrain)</text>
+
+      <rect x="55" y="200" width="320" height="40" rx="5" fill="rgba(76,29,149,0.35)" stroke="#a78bfa" stroke-width="1.2"/>
+      <text x="120" y="225" fill="#a78bfa" font-size="8">Personal Memory (prefs · history)</text>
+
+      <rect x="55" y="255" width="320" height="40" rx="5" fill="rgba(251,146,60,0.25)" stroke="#fb923c" stroke-width="1.2"/>
+      <text x="135" y="280" fill="#fb923c" font-size="8">Personal Inbox / Calendar</text>
+
+      <rect x="55" y="310" width="320" height="40" rx="5" fill="rgba(120,53,15,0.2)" stroke="#fbbf24" stroke-width="1.2"/>
+      <text x="145" y="335" fill="#fbbf24" font-size="8">Simple Cron (reminders · briefings)</text>
+
+      <!-- Lines connecting Individual components -->
+      <line x1="215" y1="130" x2="215" y2="145" stroke="#475569" stroke-width="1" marker-end="url(#arr2)"/>
+      <line x1="215" y1="185" x2="215" y2="200" stroke="#475569" stroke-width="1" marker-end="url(#arr2)"/>
+      <line x1="215" y1="240" x2="215" y2="255" stroke="#475569" stroke-width="1" marker-end="url(#arr2)"/>
+      <line x1="215" y1="295" x2="215" y2="310" stroke="#475569" stroke-width="1" marker-end="url(#arr2)"/>
+
+      <!-- Individual use cases -->
+      <rect x="55" y="370" width="320" height="80" rx="4" fill="rgba(30,41,59,0.4)" stroke="none"/>
+      <text x="75" y="390" fill="#64748b" font-size="7">use cases:</text>
+      <text x="75" y="405" fill="#475569" font-size="7">▸ personal research assistant</text>
+      <text x="75" y="418" fill="#475569" font-size="7">▸ meeting note-taker</text>
+      <text x="75" y="431" fill="#475569" font-size="7">▸ daily briefing / email triage</text>
+      <text x="75" y="444" fill="#475569" font-size="7">▸ bookmark &amp; knowledge capture</text>
+
+      <!-- ═══ TIER 2 — DEPARTMENTS (centre) ═══ -->
+      <rect x="415" y="20" width="370" height="575" rx="10" fill="rgba(6,78,59,0.12)" stroke="#34d399" stroke-width="1.5" stroke-dasharray="6,3"/>
+      <text x="445" y="50" fill="#34d399" font-size="10" font-weight="600">TIER 2 — DEPARTMENT</text>
+      <text x="445" y="65" fill="#475569" font-size="7">Team AI OS · shared context · role-based access</text>
+
+      <!-- Department components -->
+      <rect x="440" y="90" width="320" height="40" rx="5" fill="rgba(8,51,68,0.4)" stroke="#22d3ee" stroke-width="1.2"/>
+      <text x="500" y="115" fill="#22d3ee" font-size="8">Multi-Agent Interface (shared channels)</text>
+
+      <rect x="440" y="145" width="320" height="40" rx="5" fill="rgba(6,78,59,0.4)" stroke="#34d399" stroke-width="1.2"/>
+      <text x="510" y="170" fill="#34d399" font-size="8">Shared Knowledge Base + Workspace</text>
+
+      <rect x="440" y="200" width="320" height="40" rx="5" fill="rgba(76,29,149,0.35)" stroke="#a78bfa" stroke-width="1.2"/>
+      <text x="510" y="225" fill="#a78bfa" font-size="8">Kanban Board (task orchestration)</text>
+
+      <rect x="440" y="255" width="320" height="40" rx="5" fill="rgba(251,146,60,0.25)" stroke="#fb923c" stroke-width="1.2"/>
+      <text x="505" y="280" fill="#fb923c" font-size="8">Shared Inbox · Project Tracker</text>
+
+      <rect x="440" y="310" width="320" height="40" rx="5" fill="rgba(120,53,15,0.2)" stroke="#fbbf24" stroke-width="1.2"/>
+      <text x="510" y="335" fill="#fbbf24" font-size="8">Delegation · Scheduled Workflows</text>
+
+      <!-- Divider line showing inheritance -->
+      <line x1="440" y1="365" x2="760" y2="365" stroke="#34d399" stroke-width="0.8" stroke-dasharray="3,3"/>
+      <text x="470" y="380" fill="#34d399" font-size="7">inherits from Tier 1: personal agents + memory</text>
+
+      <!-- Department use cases -->
+      <rect x="440" y="390" width="320" height="80" rx="4" fill="rgba(30,41,59,0.4)" stroke="none"/>
+      <text x="460" y="410" fill="#64748b" font-size="7">use cases:</text>
+      <text x="460" y="425" fill="#475569" font-size="7">▸ engineering team knowledge base</text>
+      <text x="460" y="438" fill="#475569" font-size="7">▸ client account management</text>
+      <text x="460" y="451" fill="#475569" font-size="7">▸ project workflows &amp; handoffs</text>
+      <text x="460" y="464" fill="#475569" font-size="7">▸ role-gated access (viewer/editor/admin)</text>
+
+      <!-- ═══ TIER 3 — BUSINESS (right) ═══ -->
+      <rect x="800" y="20" width="370" height="575" rx="10" fill="rgba(76,29,149,0.12)" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="6,3"/>
+      <text x="830" y="50" fill="#a78bfa" font-size="10" font-weight="600">TIER 3 — BUSINESS</text>
+      <text x="830" y="65" fill="#475569" font-size="7">Enterprise AI OS · org-wide · governance</text>
+
+      <!-- Business components -->
+      <rect x="825" y="90" width="320" height="40" rx="5" fill="rgba(8,51,68,0.4)" stroke="#22d3ee" stroke-width="1.2"/>
+      <text x="885" y="115" fill="#22d3ee" font-size="8">Agent Swarm Orchestrator</text>
+
+      <rect x="825" y="145" width="320" height="40" rx="5" fill="rgba(6,78,59,0.4)" stroke="#34d399" stroke-width="1.2"/>
+      <text x="875" y="170" fill="#34d399" font-size="8">Enterprise Knowledge Graph</text>
+
+      <rect x="825" y="200" width="320" height="40" rx="5" fill="rgba(76,29,149,0.35)" stroke="#a78bfa" stroke-width="1.2"/>
+      <text x="880" y="225" fill="#a78bfa" font-size="8">Multi-Board Kanban (cross-dept)</text>
+
+      <rect x="825" y="255" width="320" height="40" rx="5" fill="rgba(251,146,60,0.25)" stroke="#fb923c" stroke-width="1.2"/>
+      <text x="875" y="280" fill="#fb923c" font-size="8">CRM · ERP · Business Integrations</text>
+
+      <rect x="825" y="310" width="320" height="40" rx="5" fill="rgba(120,53,15,0.2)" stroke="#fbbf24" stroke-width="1.2"/>
+      <text x="875" y="335" fill="#fbbf24" font-size="8">Governance · Audit · Compliance</text>
+
+      <!-- Divider -->
+      <line x1="825" y1="365" x2="1145" y2="365" stroke="#a78bfa" stroke-width="0.8" stroke-dasharray="3,3"/>
+      <text x="855" y="380" fill="#a78bfa" font-size="7">inherits from Tier 2 + Tier 1: all features</text>
+
+      <!-- Business use cases -->
+      <rect x="825" y="390" width="320" height="80" rx="4" fill="rgba(30,41,59,0.4)" stroke="none"/>
+      <text x="845" y="410" fill="#64748b" font-size="7">use cases:</text>
+      <text x="845" y="425" fill="#475569" font-size="7">▸ org-wide knowledge + retention</text>
+      <text x="845" y="438" fill="#475569" font-size="7">▸ multi-department agent orchestration</text>
+      <text x="845" y="451" fill="#475569" font-size="7">▸ compliance audit trails</text>
+      <text x="845" y="464" fill="#475569" font-size="7">▸ external system integration (API gateways)</text>
+
+      <!-- Horizontal arrows showing inheritance -->
+      <line x1="400" y1="550" x2="415" y2="550" stroke="#475569" stroke-width="1.5" marker-end="url(#arr2)"/>
+      <text x="370" y="545" fill="#475569" font-size="6" text-anchor="end">inherits</text>
+      <line x1="785" y1="550" x2="800" y2="550" stroke="#475569" stroke-width="1.5" marker-end="url(#arr2)"/>
+      <text x="755" y="545" fill="#475569" font-size="6" text-anchor="end">inherits</text>
+
+      <!-- Bottom: shared kernel label -->
+      <rect x="350" y="510" width="500" height="30" rx="4" fill="rgba(251,146,60,0.2)" stroke="#fb923c" stroke-width="1" stroke-dasharray="3,3"/>
+      <text x="470" y="530" fill="#fb923c" font-size="7">All three tiers run on the same Kernel (Diagram 01)</text>
+      <line x1="600" y1="505" x2="600" y2="510" stroke="#fb923c" stroke-width="1"/>
+
+      <!-- Feature diff table -->
+      <line x1="55" y1="500" x2="1145" y2="500" stroke="#1e293b" stroke-width="1"/>
+      <!-- Column headers -->
+      <text x="60" y="590" fill="#64748b" font-size="7">Capability</text>
+      <text x="185" y="590" fill="#22d3ee" font-size="7">Individual</text>
+      <text x="570" y="590" fill="#34d399" font-size="7">Department</text>
+      <text x="960" y="590" fill="#a78bfa" font-size="7">Business</text>
+      <!-- Row 1 -->
+      <text x="60" y="480" fill="#475569" font-size="6">User count</text>
+      <text x="185" y="480" fill="#22d3ee" font-size="6">1</text>
+      <text x="570" y="480" fill="#34d399" font-size="6">2–50</text>
+      <text x="960" y="480" fill="#a78bfa" font-size="6">50–∞</text>
+      <!-- Row 2 -->
+      <text x="60" y="470" fill="#475569" font-size="6">Knowledge scope</text>
+      <text x="185" y="470" fill="#22d3ee" font-size="6">Personal</text>
+      <text x="570" y="470" fill="#34d399" font-size="6">Team</text>
+      <text x="960" y="470" fill="#a78bfa" font-size="6">Org-wide</text>
+      <!-- Row 3 -->
+      <text x="60" y="460" fill="#475569" font-size="6">Agent count</text>
+      <text x="185" y="460" fill="#22d3ee" font-size="6">1</text>
+      <text x="570" y="460" fill="#34d399" font-size="6">2–5</text>
+      <text x="960" y="460" fill="#a78bfa" font-size="6">5–∞ (swarm)</text>
+    </svg>
+  </div>
+
+  <!-- ══════════ DIAGRAM 3 — DATA FLOW ══════════ -->
+  <div class="diagram-card">
+    <h2><span>03</span> Data Flow Across Tiers <span class="badge">read · enrich · write · route</span></h2>
+    <svg viewBox="0 0 1200 380" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+        </pattern>
+        <marker id="arr3" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="#475569"/>
+        </marker>
+        <marker id="arr-g" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="#34d399"/>
+        </marker>
+      </defs>
+      <rect width="1200" height="380" fill="url(#grid3)"/>
+
+      <!-- Inbound signal -->
+      <rect x="50" y="30" width="130" height="40" rx="5" fill="rgba(30,41,59,0.5)" stroke="#475569" stroke-width="1.2"/>
+      <text x="65" y="55" fill="#94a3b8" font-size="8">Inbound Signal</text>
+
+      <!-- 4 arrows from signal -->
+      <line x1="180" y1="50" x2="260" y2="50" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arr3)"/>
+      <line x1="180" y1="50" x2="260" y2="130" stroke="#34d399" stroke-width="1.5" marker-end="url(#arr3)"/>
+      <line x1="180" y1="50" x2="260" y2="210" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#arr3)"/>
+      <line x1="180" y1="50" x2="260" y2="290" stroke="#fb923c" stroke-width="1.5" marker-end="url(#arr3)"/>
+
+      <!-- Phase boxes -->
+      <rect x="265" y="30" width="200" height="40" rx="5" fill="rgba(8,51,68,0.4)" stroke="#22d3ee" stroke-width="1.2"/>
+      <text x="285" y="55" fill="#22d3ee" font-size="8">① Detect Entities</text>
+
+      <rect x="265" y="110" width="200" height="40" rx="5" fill="rgba(6,78,59,0.4)" stroke="#34d399" stroke-width="1.2"/>
+      <text x="285" y="135" fill="#34d399" font-size="8">② Brain-First Lookup</text>
+
+      <rect x="265" y="190" width="200" height="40" rx="5" fill="rgba(76,29,149,0.35)" stroke="#a78bfa" stroke-width="1.2"/>
+      <text x="285" y="215" fill="#a78bfa" font-size="8">③ Read → Enrich → Write</text>
+
+      <rect x="265" y="270" width="200" height="40" rx="5" fill="rgba(251,146,60,0.25)" stroke="#fb923c" stroke-width="1.2"/>
+      <text x="285" y="295" fill="#fb923c" font-size="8">④ Route by Tier</text>
+
+      <!-- Phase 4 routing arrows -->
+      <line x1="465" y1="290" x2="555" y2="290" stroke="#475569" stroke-width="1.5" marker-end="url(#arr3)"/>
+
+      <!-- Tier routing targets -->
+      <rect x="560" y="270" width="180" height="40" rx="5" fill="rgba(8,51,68,0.25)" stroke="#22d3ee" stroke-width="1" stroke-dasharray="4,2"/>
+      <text x="590" y="295" fill="#22d3ee" font-size="8">Tier 1: Personal Brain</text>
+
+      <rect x="560" y="190" width="180" height="40" rx="5" fill="rgba(6,78,59,0.25)" stroke="#34d399" stroke-width="1" stroke-dasharray="4,2"/>
+      <text x="590" y="215" fill="#34d399" font-size="8">Tier 2: Team Workspace</text>
+
+      <rect x="560" y="110" width="180" height="40" rx="5" fill="rgba(76,29,149,0.25)" stroke="#a78bfa" stroke-width="1" stroke-dasharray="4,2"/>
+      <text x="590" y="135" fill="#a78bfa" font-size="8">Tier 3: Enterprise Graph</text>
+
+      <line x1="465" y1="210" x2="555" y2="210" stroke="#475569" stroke-width="1.5" marker-end="url(#arr3)"/>
+      <line x1="465" y1="130" x2="555" y2="130" stroke="#475569" stroke-width="1.5" marker-end="url(#arr3)"/>
+
+      <!-- Right side: Feedback loop -->
+      <path d="M 740 310 Q 800 330 800 350 L 350 350 Q 50 350 50 70" fill="none" stroke="#fbbf24" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arr3)"/>
+      <text x="350" y="365" fill="#fbbf24" font-size="7">feedback loop: enriched data flows back into next inbound signal</text>
+    </svg>
+  </div>
+
+  <!-- ══════════ DIAGRAM 4 — EXTENSION PILLARS ══════════ -->
+  <div class="diagram-card">
+    <h2><span>04</span> Extension Pillars — What Each Tier Adds <span class="badge">incremental complexity</span></h2>
+    <svg viewBox="0 0 1200 340" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="grid4" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+        </pattern>
+      </defs>
+      <rect width="1200" height="340" fill="url(#grid4)"/>
+
+      <!-- Column 1: Tier 1 -->
+      <rect x="60" y="20" width="340" height="290" rx="8" fill="rgba(8,51,68,0.08)" stroke="#22d3ee" stroke-width="1"/>
+      <text x="120" y="50" fill="#22d3ee" font-size="10" font-weight="600">INDIVIDUAL PILLARS</text>
+
+      <rect x="80" y="65" width="290" height="35" rx="4" fill="rgba(8,51,68,0.3)" stroke="#22d3ee" stroke-width="0.8"/>
+      <text x="90" y="87" fill="#e2e8f0" font-size="7">Knowledge Capture</text>
+      <text x="220" y="87" fill="#64748b" font-size="7">| note · clip · save</text>
+
+      <rect x="80" y="108" width="290" height="35" rx="4" fill="rgba(8,51,68,0.3)" stroke="#22d3ee" stroke-width="0.8"/>
+      <text x="90" y="130" fill="#e2e8f0" font-size="7">Personal Memory</text>
+      <text x="228" y="130" fill="#64748b" font-size="7">| prefs · history</text>
+
+      <rect x="80" y="151" width="290" height="35" rx="4" fill="rgba(8,51,68,0.3)" stroke="#22d3ee" stroke-width="0.8"/>
+      <text x="90" y="173" fill="#e2e8f0" font-size="7">Agent Interface</text>
+      <text x="225" y="173" fill="#64748b" font-size="7">| DM · CLI · voice</text>
+
+      <rect x="80" y="194" width="290" height="35" rx="4" fill="rgba(8,51,68,0.3)" stroke="#22d3ee" stroke-width="0.8"/>
+      <text x="90" y="216" fill="#e2e8f0" font-size="7">Automation</text>
+      <text x="215" y="216" fill="#64748b" font-size="7">| reminders · briefings</text>
+
+      <rect x="80" y="237" width="290" height="35" rx="4" fill="rgba(8,51,68,0.3)" stroke="#22d3ee" stroke-width="0.8"/>
+      <text x="90" y="259" fill="#e2e8f0" font-size="7">Search</text>
+      <text x="175" y="259" fill="#64748b" font-size="7">| personal brain query</text>
+
+      <!-- Column 2: Tier 2 -->
+      <rect x="430" y="20" width="340" height="290" rx="8" fill="rgba(6,78,59,0.08)" stroke="#34d399" stroke-width="1"/>
+      <text x="485" y="50" fill="#34d399" font-size="10" font-weight="600">DEPARTMENT PILLARS (adds to individual)</text>
+
+      <rect x="450" y="65" width="290" height="35" rx="4" fill="rgba(6,78,59,0.3)" stroke="#34d399" stroke-width="0.8"/>
+      <text x="460" y="87" fill="#e2e8f0" font-size="7">Shared Workspace</text>
+      <text x="590" y="87" fill="#64748b" font-size="7">| team brain + tasks</text>
+
+      <rect x="450" y="108" width="290" height="35" rx="4" fill="rgba(6,78,59,0.3)" stroke="#34d399" stroke-width="0.8"/>
+      <text x="460" y="130" fill="#e2e8f0" font-size="7">Kanban / Workflows</text>
+      <text x="590" y="130" fill="#64748b" font-size="7">| task orchestration</text>
+
+      <rect x="450" y="151" width="290" height="35" rx="4" fill="rgba(6,78,59,0.3)" stroke="#34d399" stroke-width="0.8"/>
+      <text x="460" y="173" fill="#e2e8f0" font-size="7">Role-Based Access</text>
+      <text x="590" y="173" fill="#64748b" font-size="7">| viewer · editor · admin</text>
+
+      <rect x="450" y="194" width="290" height="35" rx="4" fill="rgba(6,78,59,0.3)" stroke="#34d399" stroke-width="0.8"/>
+      <text x="460" y="216" fill="#e2e8f0" font-size="7">Shared Inbox</text>
+      <text x="590" y="216" fill="#64748b" font-size="7">| client · project · queue</text>
+
+      <rect x="450" y="237" width="290" height="35" rx="4" fill="rgba(6,78,59,0.3)" stroke="#34d399" stroke-width="0.8"/>
+      <text x="460" y="259" fill="#e2e8f0" font-size="7">Delegation</text>
+      <text x="590" y="259" fill="#64748b" font-size="7">| profile workers + cron</text>
+
+      <!-- Column 3: Tier 3 -->
+      <rect x="800" y="20" width="340" height="290" rx="8" fill="rgba(76,29,149,0.08)" stroke="#a78bfa" stroke-width="1"/>
+      <text x="855" y="50" fill="#a78bfa" font-size="10" font-weight="600">BUSINESS PILLARS (adds to department)</text>
+
+      <rect x="820" y="65" width="290" height="35" rx="4" fill="rgba(76,29,149,0.3)" stroke="#a78bfa" stroke-width="0.8"/>
+      <text x="830" y="87" fill="#e2e8f0" font-size="7">Enterprise Graph</text>
+      <text x="960" y="87" fill="#64748b" font-size="7">| cross-dept knowledge</text>
+
+      <rect x="820" y="108" width="290" height="35" rx="4" fill="rgba(76,29,149,0.3)" stroke="#a78bfa" stroke-width="0.8"/>
+      <text x="830" y="130" fill="#e2e8f0" font-size="7">Agent Swarms</text>
+      <text x="960" y="130" fill="#64748b" font-size="7">| multi-agent orchestration</text>
+
+      <rect x="820" y="151" width="290" height="35" rx="4" fill="rgba(76,29,149,0.3)" stroke="#a78bfa" stroke-width="0.8"/>
+      <text x="830" y="173" fill="#e2e8f0" font-size="7">Compliance &amp; Audit</text>
+      <text x="960" y="173" fill="#64748b" font-size="7">| full trail + governance</text>
+
+      <rect x="820" y="194" width="290" height="35" rx="4" fill="rgba(76,29,149,0.3)" stroke="#a78bfa" stroke-width="0.8"/>
+      <text x="830" y="216" fill="#e2e8f0" font-size="7">System Integration</text>
+      <text x="960" y="216" fill="#64748b" font-size="7">| CRM · ERP · API gateways</text>
+
+      <rect x="820" y="237" width="290" height="35" rx="4" fill="rgba(76,29,149,0.3)" stroke="#a78bfa" stroke-width="0.8"/>
+      <text x="830" y="259" fill="#e2e8f0" font-size="7">Multi-Tenant</text>
+      <text x="960" y="259" fill="#64748b" font-size="7">| isolated brain per unit</text>
+    </svg>
+  </div>
+
+  <!-- ══════════ LAYER NOTES ══════════ -->
+  <div class="layer-notes">
+    <div class="layer-note" style="border-color:rgba(34,211,238,0.25);">
+      <h3><span style="color:#22d3ee;">●</span> Tier 1 — Individual</h3>
+      <ul>
+        <li>Single user, single agent profile</li>
+        <li>Personal knowledge base (private gbrain)</li>
+        <li>Messaging gateway (Telegram/Discord DM)</li>
+        <li>Personal memory &amp; session persistence</li>
+        <li>Simple cron for reminders &amp; briefings</li>
+        <li>Cost: ~$10–20/mo (VPS + API)</li>
+      </ul>
+    </div>
+    <div class="layer-note" style="border-color:rgba(52,211,153,0.25);">
+      <h3><span style="color:#34d399;">●</span> Tier 2 — Department</h3>
+      <ul>
+        <li>2–50 users, shared context</li>
+        <li>Kanban board for task orchestration</li>
+        <li>Role-gated access (viewer/editor/admin)</li>
+        <li>Shared knowledge base + project tracker</li>
+        <li>Delegation &amp; profile workers</li>
+        <li>Cost: ~$30–100/mo (multi-agent VPS)</li>
+      </ul>
+    </div>
+    <div class="layer-note" style="border-color:rgba(167,139,250,0.25);">
+      <h3><span style="color:#a78bfa;">●</span> Tier 3 — Business</h3>
+      <ul>
+        <li>Org-wide knowledge graph</li>
+        <li>Agent swarms with orchestration</li>
+        <li>Compliance audit trails</li>
+        <li>External system integration (API gateways)</li>
+        <li>Multi-tenant data isolation</li>
+        <li>Cost: ~$100–500/mo (scaled infra)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ══════════ LEGEND ══════════ -->
+  <div class="legend">
+    <div class="legend-item"><div class="legend-swatch" style="background:rgba(8,51,68,0.4);border-color:#22d3ee;"></div> Agent Interface</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:rgba(6,78,59,0.4);border-color:#34d399;"></div> Knowledge Base</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:rgba(76,29,149,0.4);border-color:#a78bfa;"></div> Schema / Service</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:rgba(251,146,60,0.3);border-color:#fb923c;"></div> Workflow / Routing</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:rgba(120,53,15,0.3);border-color:#fbbf24;"></div> Infrastructure</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:rgba(30,41,59,0.5);border-color:#475569;"></div> Raw Source</div>
+    <div class="legend-item"><div style="width:20px;height:0;border-top:1.5px dashed #475569;margin:7px 0;"></div> Boundary / Group</div>
+  </div>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <div class="footer">
+    AI OS Architecture · Karpathy Second Brain design · Maloha Coast Sdn Bhd
+  </div>
+
+</div>
+</body>
+</html>
