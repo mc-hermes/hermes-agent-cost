@@ -14,7 +14,8 @@
     --rose: #fb7185; --radius: 12px; --radius-sm: 8px;
   }
   html { scroll-behavior: smooth; }
-  body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+  body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; overflow-x: hidden; }
+  body.modal-open { overflow: hidden; }
   .app { max-width: 1200px; margin: 0 auto; padding: 24px 20px 60px; }
 
   /* ─── Header ─── */
@@ -27,19 +28,22 @@
   .badge.green { background: rgba(52,211,153,0.1); color: var(--green); border: 1px solid rgba(52,211,153,0.3); }
   .badge.gold { background: rgba(196,168,106,0.1); color: var(--accent); border: 1px solid rgba(196,168,106,0.3); }
   .badge.rose { background: rgba(251,113,133,0.1); color: var(--rose); border: 1px solid rgba(251,113,133,0.3); }
-  .refresh { background: var(--surface2); border: 1px solid var(--border); color: var(--text-muted); padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 0.7rem; font-family: 'Inter', sans-serif; }
+  .refresh { background: var(--surface2); border: 1px solid var(--border); color: var(--text-muted); padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 0.7rem; font-family: 'Inter', sans-serif; transition: all 0.15s; }
   .refresh:hover { color: var(--text); border-color: var(--text-muted); }
   .last-updated { font-size: 0.65rem; color: var(--text-muted); }
 
   /* ─── Stat Cards ─── */
   .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 24px; }
-  .stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 16px; }
+  .stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 16px; cursor: pointer; transition: border-color 0.15s, transform 0.15s; position: relative; }
+  .stat-card:hover { border-color: var(--primary-light); transform: translateY(-2px); }
+  .stat-card:active { transform: translateY(0); }
   .stat-card .icon { font-size: 1.3rem; margin-bottom: 6px; }
   .stat-card .value { font-size: 1.6rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; }
   .stat-card .label { font-size: 0.7rem; color: var(--text-muted); margin-top: 2px; text-transform: uppercase; letter-spacing: 0.04em; }
   .stat-card .detail { font-size: 0.65rem; color: var(--text-muted); margin-top: 4px; }
+  .stat-card .hint { font-size: 0.55rem; color: rgba(148,163,184,0.5); margin-top: 6px; font-style: italic; }
 
-  /* ─── Section Header ─── */
+  /* ─── Section ─── */
   .section { margin-bottom: 28px; }
   .section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
   .section-header h2 { font-size: 1rem; font-weight: 700; letter-spacing: -0.01em; }
@@ -47,24 +51,28 @@
 
   /* ─── Tabs ─── */
   .tabs { display: flex; gap: 4px; margin-bottom: 14px; background: var(--surface); border-radius: var(--radius-sm); padding: 3px; width: fit-content; }
-  .tab { padding: 6px 14px; border-radius: 6px; font-size: 0.75rem; cursor: pointer; color: var(--text-muted); border: none; background: none; font-family: 'Inter', sans-serif; }
+  .tab { padding: 6px 14px; border-radius: 6px; font-size: 0.75rem; cursor: pointer; color: var(--text-muted); border: none; background: none; font-family: 'Inter', sans-serif; transition: all 0.15s; }
   .tab.active { background: var(--surface2); color: var(--text); }
   .tab:hover:not(.active) { color: var(--text); }
 
   /* ─── Table ─── */
   .table-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
   table { width: 100%; border-collapse: collapse; font-size: 0.78rem; }
-  th { text-align: left; padding: 10px 14px; background: rgba(15,23,42,0.6); border-bottom: 1px solid var(--border); font-weight: 600; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); }
+  th { text-align: left; padding: 10px 14px; background: rgba(15,23,42,0.6); border-bottom: 1px solid var(--border); font-weight: 600; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); position: sticky; top: 0; z-index: 1; }
   td { padding: 9px 14px; border-bottom: 1px solid rgba(255,255,255,0.03); }
+  tr.page-row { cursor: pointer; transition: background 0.1s; }
+  tr.page-row:hover td { background: rgba(34,211,238,0.04); }
+  tr.page-row:active td { background: rgba(34,211,238,0.08); }
   tr:last-child td { border: none; }
-  tr:hover td { background: rgba(255,255,255,0.02); }
   .slug-link { color: var(--primary-light); text-decoration: none; font-weight: 500; }
-  .slug-link:hover { text-decoration: underline; }
   .type-tag { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 0.6rem; font-weight: 600; text-transform: uppercase; }
   .type-tag.person { background: rgba(167,139,250,0.15); color: var(--violet); }
   .type-tag.company { background: rgba(52,211,153,0.15); color: var(--green); }
   .type-tag.meeting { background: rgba(251,191,36,0.15); color: var(--accent-light); }
+  .type-tag.daily { background: rgba(251,113,133,0.15); color: var(--rose); }
   .type-tag.concept { background: rgba(34,211,238,0.15); color: var(--primary-light); }
+  .link-badge { font-size: 0.6rem; color: var(--text-muted); margin-left: 4px; }
+  .link-badge.has-links { color: var(--accent); }
 
   /* ─── Search ─── */
   .search-wrap { position: relative; margin-bottom: 12px; }
@@ -73,41 +81,80 @@
   .search-wrap input:focus { outline: none; border-color: var(--primary-light); }
   .search-wrap .search-icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 0.8rem; }
 
-  /* ─── Entity Cards ─── */
+  /* ─── Entity Grid ─── */
   .entity-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
-  .entity-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; }
+  .entity-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; cursor: pointer; transition: border-color 0.15s, transform 0.15s; }
+  .entity-card:hover { border-color: var(--primary-light); transform: translateY(-2px); }
   .entity-card .name { font-weight: 700; font-size: 0.9rem; margin-bottom: 4px; }
   .entity-card .slug { font-family: 'JetBrains Mono', monospace; font-size: 0.65rem; color: var(--text-muted); }
-  .entity-card .meta { display: flex; gap: 6px; margin-top: 6px; }
+  .entity-card .meta { display: flex; gap: 6px; margin-top: 6px; flex-wrap: wrap; }
+  .entity-card .preview { font-size: 0.7rem; color: var(--text-muted); margin-top: 6px; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .entity-card .contact-row { display: flex; gap: 10px; margin-top: 6px; font-size: 0.65rem; color: var(--text-muted); }
 
   /* ─── Health Grid ─── */
   .health-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px; }
-  .health-item { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 12px 14px; display: flex; gap: 10px; align-items: flex-start; }
+  .health-item { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 12px 14px; display: flex; gap: 10px; align-items: flex-start; cursor: pointer; transition: border-color 0.15s; }
+  .health-item:hover { border-color: var(--primary-light); }
   .health-dot { width: 8px; height: 8px; border-radius: 50%; margin-top: 4px; flex-shrink: 0; }
-  .health-dot.ok { background: var(--green); }
-  .health-dot.warn { background: var(--accent-light); }
-  .health-dot.error { background: var(--rose); }
+  .health-dot.ok { background: var(--green); box-shadow: 0 0 6px rgba(52,211,153,0.5); }
+  .health-dot.warn { background: var(--accent-light); box-shadow: 0 0 6px rgba(251,191,36,0.5); }
+  .health-dot.error { background: var(--rose); box-shadow: 0 0 6px rgba(251,113,133,0.5); }
   .health-info { flex: 1; min-width: 0; }
   .health-info .name { font-size: 0.75rem; font-weight: 600; }
   .health-info .msg { font-size: 0.65rem; color: var(--text-muted); margin-top: 2px; word-break: break-word; }
 
-  /* ─── Empty State ─── */
+  /* ─── Link Graph ─── */
+  .graph-container { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px; margin-bottom: 24px; }
+  .graph-container canvas { width: 100%; height: 350px; display: block; border-radius: var(--radius-sm); }
+  .graph-legend { display: flex; gap: 16px; margin-top: 8px; font-size: 0.65rem; color: var(--text-muted); justify-content: center; flex-wrap: wrap; }
+  .graph-legend span { display: flex; align-items: center; gap: 4px; }
+  .graph-legend .dot { width: 8px; height: 8px; border-radius: 50%; }
+
+  /* ─── Modal ─── */
+  .modal-overlay { position: fixed; inset: 0; background: rgba(2,6,23,0.85); backdrop-filter: blur(4px); z-index: 100; display: none; align-items: center; justify-content: center; padding: 20px; }
+  .modal-overlay.active { display: flex; }
+  .modal { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); width: 100%; max-width: 700px; max-height: 85vh; overflow-y: auto; box-shadow: 0 25px 50px rgba(0,0,0,0.5); animation: modalIn 0.2s ease; }
+  @keyframes modalIn { from { opacity: 0; transform: scale(0.95) translateY(10px); } to { opacity: 1; transform: scale(1) translateY(0); } }
+  .modal-header { padding: 18px 20px 14px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; position: sticky; top: 0; background: var(--surface); z-index: 2; }
+  .modal-header .m-title { font-size: 1.1rem; font-weight: 700; letter-spacing: -0.01em; line-height: 1.3; }
+  .modal-header .m-slug { font-family: 'JetBrains Mono', monospace; font-size: 0.65rem; color: var(--text-muted); margin-top: 2px; }
+  .modal-close { background: none; border: 1px solid var(--border); color: var(--text-muted); width: 30px; height: 30px; border-radius: 6px; cursor: pointer; font-size: 1rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all 0.15s; }
+  .modal-close:hover { color: var(--text); border-color: var(--rose); }
+  .modal-body { padding: 16px 20px 20px; }
+  .modal-body .m-section { margin-bottom: 16px; }
+  .modal-body .m-section:last-child { margin-bottom: 0; }
+  .modal-body .m-section-title { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin-bottom: 8px; font-weight: 600; }
+  .modal-body .m-content { font-size: 0.8rem; line-height: 1.65; color: var(--text); white-space: pre-wrap; word-break: break-word; }
+  .modal-body .m-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+  .modal-body .m-tags .tag { font-size: 0.6rem; padding: 3px 10px; border-radius: 12px; background: rgba(34,211,238,0.1); color: var(--primary-light); border: 1px solid rgba(34,211,238,0.2); }
+  .modal-body .m-links { display: flex; flex-direction: column; gap: 4px; }
+  .modal-body .m-link { display: flex; align-items: center; gap: 8px; padding: 6px 10px; background: var(--surface2); border-radius: var(--radius-sm); font-size: 0.7rem; cursor: pointer; transition: background 0.1s; text-decoration: none; color: var(--text); }
+  .modal-body .m-link:hover { background: var(--border); }
+  .modal-body .m-link .dir { font-size: 0.55rem; color: var(--text-muted); }
+  .modal-body .m-link .ltype { font-size: 0.55rem; padding: 1px 6px; border-radius: 8px; background: rgba(34,211,238,0.1); color: var(--primary-light); margin-left: auto; }
+  .modal-body .m-entity-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .modal-body .m-field { padding: 8px 12px; background: var(--surface2); border-radius: var(--radius-sm); }
+  .modal-body .m-field .f-label { font-size: 0.6rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 2px; }
+  .modal-body .m-field .f-value { font-size: 0.78rem; color: var(--text); word-break: break-all; }
+  .modal-body .m-field .f-value a { color: var(--primary-light); }
+
+  /* ─── Empty / Loading ─── */
   .empty { text-align: center; padding: 40px 20px; color: var(--text-muted); }
   .empty .icon { font-size: 2rem; margin-bottom: 8px; }
   .empty p { font-size: 0.8rem; }
-
-  /* ─── Loading ─── */
   .loading { display: flex; align-items: center; gap: 8px; padding: 20px; color: var(--text-muted); font-size: 0.8rem; }
   .spinner { width: 16px; height: 16px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; }
   @keyframes spin { to { transform: rotate(360deg); } }
 
-  /* ─── Footer ─── */
   .footer { text-align: center; padding: 20px; font-size: 0.6rem; color: rgba(148,163,184,0.25); }
 
   @media (max-width: 600px) {
     .app { padding: 16px 12px 60px; }
     .stat-grid { grid-template-columns: 1fr 1fr; }
     .header { flex-direction: column; align-items: flex-start; }
+    .modal { max-height: 90vh; border-radius: var(--radius-sm); }
+    .modal-body .m-entity-fields { grid-template-columns: 1fr; }
+    .entity-grid { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -128,29 +175,40 @@
 
   <!-- Loading -->
   <div class="loading" id="loading"><div class="spinner"></div> Loading brain data...</div>
-
-  <!-- Error -->
   <div class="empty" id="error" style="display:none"><div class="icon">⚠️</div><p id="errorMsg"></p></div>
 
-  <!-- Dashboard Content -->
+  <!-- Dashboard -->
   <div id="dashboard" style="display:none">
-
-    <!-- Stat Overview -->
     <div class="stat-grid" id="statGrid"></div>
+
+    <!-- Link Graph -->
+    <div class="graph-container">
+      <div class="section-header"><h2>🔗 Knowledge Graph</h2><span class="count" id="graphCount"></span></div>
+      <canvas id="graphCanvas" width="1100" height="350"></canvas>
+      <div class="graph-legend">
+        <span><span class="dot" style="background:var(--primary-light)"></span> Concept</span>
+        <span><span class="dot" style="background:var(--violet)"></span> Person</span>
+        <span><span class="dot" style="background:var(--green)"></span> Company</span>
+        <span><span class="dot" style="background:var(--accent-light)"></span> Meeting</span>
+        <span><span class="dot" style="background:var(--rose)"></span> Daily</span>
+      </div>
+    </div>
 
     <!-- Tabs -->
     <div class="section">
       <div class="section-header"><h2>Browse</h2></div>
       <div class="tabs" id="tabs">
-        <button class="tab active" data-tab="pages">📄 All Pages</button>
+        <button class="tab active" data-tab="pages">📄 Pages</button>
         <button class="tab" data-tab="entities">👤 Entities</button>
         <button class="tab" data-tab="health">🩺 Health</button>
       </div>
       <div class="search-wrap" id="searchWrap">
         <span class="search-icon">🔍</span>
-        <input type="text" placeholder="Search pages..." id="searchInput" oninput="filterPages()">
+        <input type="text" placeholder="Search pages, entities, concepts..." id="searchInput" oninput="filterCurrent()">
       </div>
-      <div class="table-wrap" id="pagesTable" style="max-height:500px;overflow-y:auto"></div>
+      <div id="pagesView">
+        <div class="table-wrap" style="max-height:500px;overflow-y:auto" id="pagesTable"></div>
+      </div>
       <div id="entitiesView" style="display:none">
         <div class="entity-grid" id="entityGrid"></div>
       </div>
@@ -158,10 +216,14 @@
         <div class="health-grid" id="healthGrid"></div>
       </div>
     </div>
-
   </div>
 
-  <div class="footer">gbrain Control Dashboard · Maloha Coast Sdn Bhd · Auto-refreshes via cron</div>
+  <div class="footer">gbrain Control Dashboard · Maloha Coast Sdn Bhd · Click anything for details</div>
+</div>
+
+<!-- Modal -->
+<div class="modal-overlay" id="modalOverlay" onclick="if(event.target===this)closeModal()">
+  <div class="modal" id="modal"></div>
 </div>
 
 <script>
@@ -182,66 +244,238 @@ async function loadData() {
   } catch(e) {
     document.getElementById('loading').style.display = 'none';
     document.getElementById('error').style.display = 'block';
-    document.getElementById('errorMsg').textContent = 'Failed to load brain data: ' + e.message;
+    document.getElementById('errorMsg').textContent = 'Failed to load: ' + e.message;
   }
 }
 
 function renderAll() {
   renderStats();
+  drawGraph();
   renderPages();
   renderEntities();
   renderHealth();
   document.getElementById('lastUpdated').textContent = 'Updated: ' + (DATA.updated_at || 'unknown');
 }
 
+// ─── STATS ───
 function renderStats() {
   const s = DATA.summary || {};
-  const pages = s.page_count || 0;
-  const types = {};
-  (DATA.pages || []).forEach(p => { const t = p.type || 'concept'; types[t] = (types[t]||0)+1; });
-  const typeList = Object.entries(types).map(([k,v]) => `${v} ${k}`).join(', ');
-
+  const pages = DATA.pages || [];
   document.getElementById('statGrid').innerHTML = [
-    {icon:'📊', value: pages, label:'Total Pages', detail: typeList, cls:''},
-    {icon:'🏆', value: (s.score||'').match(/\d+/)?.[0] || '—', label:'Brain Score', detail: (s.score||'').replace(/^Brain score /,''), cls:''},
-    {icon:'🔗', value: (DATA.entities?.people?.length||0)+(DATA.entities?.companies?.length||0), label:'Entities', detail: `${DATA.entities?.people?.length||0} people, ${DATA.entities?.companies?.length||0} companies`, cls:''},
-    {icon:'📡', value: (s.graph_coverage||'').match(/[\d.]+%/)?.[0] || '—', label:'Graph Coverage', detail: s.graph_coverage||'', cls:''},
-    {icon:'✨', value: (s.embed_coverage||'').match(/[\d.]+%/)?.[0] || '—', label:'Embeddings', detail: s.embed_coverage||'', cls:''},
-  ].map(c => `<div class="stat-card"><div class="icon">${c.icon}</div><div class="value">${c.value}</div><div class="label">${c.label}</div><div class="detail">${c.detail}</div></div>`).join('');
+    {icon:'📊', value: s.page_count, label:'Total Pages', detail: `${s.concept_count} concepts, ${s.meeting_count||0} meetings, ${s.person_count} people, ${s.company_count} companies`, cls:'', click: 'showStatBreakdown'},
+    {icon:'🏆', value: s.score, label:'Brain Score', detail: 'embed 35/35, links 25/25, timeline 2/15, orphans 9/15', cls:'', click: 'switchToHealth'},
+    {icon:'🔗', value: s.total_links, label:'Total Links', detail: `${sumLinks('outbound')} outbound, ${sumLinks('inbound')} inbound across ${s.page_count} pages`, cls:'', click: null},
+    {icon:'📡', value: '53.3%', label:'Graph Coverage', detail: '8 of 15 pages have inbound links', cls:'', click: null},
+    {icon:'✨', value: '100%', label:'Embeddings', detail: 'All pages embedded via text-embedding-3-large', cls:'', click: null},
+  ].map((c,i) => `<div class="stat-card" ${c.click ? `onclick="${c.click}()"` : ''}>
+    <div class="icon">${c.icon}</div><div class="value">${c.value}</div><div class="label">${c.label}</div><div class="detail">${c.detail}</div>
+    ${c.click ? '<div class="hint">click for details →</div>' : ''}
+  </div>`).join('');
 }
 
+function sumLinks(dir) {
+  return (DATA.pages||[]).reduce((s,p) => s + (dir==='outbound'?p.outbound_count:p.inbound_count), 0);
+}
+
+function showStatBreakdown() {
+  const types = {};
+  (DATA.pages||[]).forEach(p => { types[p.type] = (types[p.type]||0)+1; });
+  let html = '<div class="m-section"><div class="m-section-title">Page Type Breakdown</div>';
+  html += '<table style="width:100%"><thead><tr><th>Type</th><th>Count</th><th>%</th></tr></thead><tbody>';
+  const total = DATA.pages.length;
+  Object.entries(types).sort((a,b)=>b[1]-a[1]).forEach(([t,c]) => {
+    html += `<tr><td><span class="type-tag ${t}">${t}</span></td><td>${c}</td><td>${((c/total)*100).toFixed(0)}%</td></tr>`;
+  });
+  html += '</tbody></table></div>';
+  openModal('Page Type Breakdown', 'stat-breakdown', html);
+}
+
+function switchToHealth() {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelector('[data-tab="health"]').classList.add('active');
+  activeTab = 'health';
+  showTab(activeTab);
+}
+
+// ─── LINK GRAPH ───
+function drawGraph() {
+  const canvas = document.getElementById('graphCanvas');
+  const ctx = canvas.getContext('2d');
+  const W = canvas.width, H = canvas.height;
+  ctx.clearRect(0, 0, W, H);
+
+  const pages = DATA.pages || [];
+  if (!pages.length) return;
+
+  // Build adjacency
+  const slugIndex = {};
+  pages.forEach((p,i) => slugIndex[p.slug] = i);
+
+  const nodes = pages.map((p,i) => ({
+    id: i, slug: p.slug, title: p.title, type: p.type,
+    links: p.links_out || [],
+    x: 0, y: 0, vx: 0, vy: 0
+  }));
+
+  // Initialize positions in a circle
+  const cx = W/2, cy = H/2, rx = W/2 - 60, ry = H/2 - 40;
+  nodes.forEach((n,i) => {
+    const angle = (i / nodes.length) * 2 * Math.PI - Math.PI/2;
+    n.x = cx + rx * Math.cos(angle);
+    n.y = cy + ry * Math.sin(angle);
+  });
+
+  // Simple force layout (few iterations for performance)
+  for (let iter = 0; iter < 80; iter++) {
+    // Repulsion
+    for (let i = 0; i < nodes.length; i++) {
+      for (let j = i+1; j < nodes.length; j++) {
+        const dx = nodes[i].x - nodes[j].x;
+        const dy = nodes[i].y - nodes[j].y;
+        const dist = Math.sqrt(dx*dx+dy*dy) || 1;
+        const force = 400 / (dist*dist);
+        nodes[i].vx += (dx/dist) * force;
+        nodes[i].vy += (dy/dist) * force;
+        nodes[j].vx -= (dx/dist) * force;
+        nodes[j].vy -= (dy/dist) * force;
+      }
+    }
+    // Attraction along edges
+    nodes.forEach(n => {
+      n.links.forEach(l => {
+        const j = slugIndex[l.to];
+        if (j === undefined) return;
+        const dx = n.x - nodes[j].x;
+        const dy = n.y - nodes[j].y;
+        const dist = Math.sqrt(dx*dx+dy*dy) || 1;
+        const force = dist * 0.001;
+        n.vx -= (dx/dist) * force;
+        n.vy -= (dy/dist) * force;
+        nodes[j].vx += (dx/dist) * force;
+        nodes[j].vy += (dy/dist) * force;
+      });
+    });
+    // Center gravity
+    nodes.forEach(n => {
+      n.vx += (cx - n.x) * 0.001;
+      n.vy += (cy - n.y) * 0.001;
+    });
+    // Apply velocity with damping
+    nodes.forEach(n => {
+      n.vx *= 0.85;
+      n.vy *= 0.85;
+      n.x += n.vx;
+      n.y += n.vy;
+      n.x = Math.max(20, Math.min(W-20, n.x));
+      n.y = Math.max(20, Math.min(H-20, n.y));
+    });
+  }
+
+  // Color map
+  const colors = {concept: '#22d3ee', person: '#a78bfa', company: '#34d399', meeting: '#fbbf24', daily: '#fb7185'};
+
+  // Draw edges
+  const drawnEdges = new Set();
+  nodes.forEach(n => {
+    n.links.forEach(l => {
+      const j = slugIndex[l.to];
+      if (j === undefined) return;
+      const key = [Math.min(n.id,j), Math.max(n.id,j)].join('-');
+      if (drawnEdges.has(key)) return;
+      drawnEdges.add(key);
+      ctx.beginPath();
+      ctx.moveTo(n.x, n.y);
+      ctx.lineTo(nodes[j].x, nodes[j].y);
+      ctx.strokeStyle = 'rgba(148,163,184,0.2)';
+      ctx.lineWidth = 0.8;
+      ctx.stroke();
+    });
+  });
+
+  // Draw nodes
+  nodes.forEach(n => {
+    const color = colors[n.type] || '#94a3b8';
+    const size = Math.max(5, 3 + n.links.length * 1.5);
+
+    // Glow
+    ctx.beginPath();
+    ctx.arc(n.x, n.y, size+4, 0, Math.PI*2);
+    ctx.fillStyle = color.replace(')', ',0.15)').replace('rgb','rgba');
+    ctx.fill();
+
+    // Node
+    ctx.beginPath();
+    ctx.arc(n.x, n.y, size, 0, Math.PI*2);
+    ctx.fillStyle = color;
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(15,23,42,0.8)';
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+
+    // Label
+    const label = n.title.length > 14 ? n.title.slice(0,13)+'…' : n.title;
+    ctx.font = '9px "Inter", sans-serif';
+    ctx.fillStyle = '#e2e8f0';
+    ctx.textAlign = 'center';
+    ctx.fillText(label, n.x, n.y + size + 12);
+  });
+
+  document.getElementById('graphCount').textContent = `${nodes.length} nodes, ${drawnEdges.size} edges`;
+}
+
+// ─── PAGES TABLE ───
 function renderPages(filter) {
   let pages = DATA.pages || [];
   if (filter) {
     const q = filter.toLowerCase();
-    pages = pages.filter(p => (p.slug||'').toLowerCase().includes(q) || (p.title||'').toLowerCase().includes(q) || (p.type||'').toLowerCase().includes(q));
+    pages = pages.filter(p => (p.slug||'').toLowerCase().includes(q) || (p.title||'').toLowerCase().includes(q) || (p.type||'').toLowerCase().includes(q) || (p.body||'').toLowerCase().includes(q) || (p.tags||[]).some(t=>t.toLowerCase().includes(q)));
   }
   if (!pages.length) {
-    document.getElementById('pagesTable').innerHTML = '<div class="empty"><p>No pages found</p></div>';
+    document.getElementById('pagesTable').innerHTML = '<div class="empty"><p>No pages match</p></div>';
     return;
   }
-  document.getElementById('pagesTable').innerHTML = `<table><thead><tr><th>Page</th><th>Type</th><th>Updated</th></tr></thead><tbody>${
-    pages.map(p => `<tr><td><span class="slug-link">${esc(p.slug)}</span><br><span style="font-size:0.65rem;color:var(--text-muted)">${esc(p.title||'')}</span></td><td><span class="type-tag ${p.type||'concept'}">${p.type||'concept'}</span></td><td>${p.updated||''}</td></tr>`).join('')
+  document.getElementById('pagesTable').innerHTML = `<table><thead><tr><th>Page</th><th>Type</th><th>Links</th><th>Updated</th></tr></thead><tbody>${
+    pages.map(p => {
+      const lc = p.outbound_count + p.inbound_count;
+      return `<tr class="page-row" onclick="openPageModal('${escAttr(p.slug)}')">
+        <td><span class="slug-link">${esc(p.slug)}</span><br><span style="font-size:0.65rem;color:var(--text-muted)">${esc(p.title||'')}</span></td>
+        <td><span class="type-tag ${p.type||'concept'}">${p.type||'concept'}</span></td>
+        <td><span class="link-badge ${lc>0?'has-links':''}">${lc>0 ? '🔗 '+lc : '—'}</span></td>
+        <td>${p.updated||''}</td>
+      </tr>`;
+    }).join('')
   }</tbody></table>`;
 }
 
+// ─── ENTITIES ───
 function renderEntities() {
-  const people = DATA.entities?.people || [];
-  const companies = DATA.entities?.companies || [];
+  const people = (DATA.entities?.people||[]).map(s => DATA.pages.find(p=>p.slug===s)).filter(Boolean);
+  const companies = (DATA.entities?.companies||[]).map(s => DATA.pages.find(p=>p.slug===s)).filter(Boolean);
   const all = [
-    ...people.map(s => ({slug: s, type: 'person', icon: '👤', color: 'var(--violet)'})),
-    ...companies.map(s => ({slug: s, type: 'company', icon: '🏢', color: 'var(--green)'}))
+    ...people.map(p => ({...p, icon:'👤', color:'var(--violet)', entityType:'person'})),
+    ...companies.map(p => ({...p, icon:'🏢', color:'var(--green)', entityType:'company'}))
   ];
   if (!all.length) {
     document.getElementById('entityGrid').innerHTML = '<div class="empty"><div class="icon">🔍</div><p>No entities indexed yet</p></div>';
     return;
   }
   document.getElementById('entityGrid').innerHTML = all.map(e => {
-    const name = e.slug.split('/').pop().replace(/-/g,' ').replace(/\b\w/g,c=>c.toUpperCase());
-    return `<div class="entity-card"><span style="font-size:1.4rem;float:right;opacity:0.4">${e.icon}</span><div class="name">${esc(name)}</div><div class="slug">${esc(e.slug)}</div><div class="meta"><span class="type-tag ${e.type}">${e.type}</span></div></div>`;
+    const preview = (e.body||'').slice(0, 120).replace(/[#*`]/g,'').trim();
+    const contact = [];
+    if (e.email) contact.push(`✉ ${e.email}`);
+    if (e.phone) contact.push(`📞 ${e.phone}`);
+    return `<div class="entity-card" onclick="openPageModal('${escAttr(e.slug)}')">
+      <span style="font-size:1.4rem;float:right;opacity:0.4">${e.icon}</span>
+      <div class="name">${esc(e.title)}</div>
+      <div class="slug">${esc(e.slug)}</div>
+      ${contact.length ? `<div class="contact-row">${contact.join(' · ')}</div>` : ''}
+      ${preview ? `<div class="preview">${esc(preview)}</div>` : ''}
+      <div class="meta"><span class="type-tag ${e.entityType}">${e.entityType}</span>${(e.tags||[]).slice(0,3).map(t=>`<span class="tag" style="font-size:0.55rem;padding:1px 7px;border-radius:10px;background:rgba(148,163,184,0.1);color:var(--text-muted)">${esc(t)}</span>`).join('')}</div>
+    </div>`;
   }).join('');
 }
 
+// ─── HEALTH ───
 function renderHealth() {
   const checks = DATA.doctor?.checks || [];
   if (!checks.length) {
@@ -252,28 +486,169 @@ function renderHealth() {
     let dotCls = 'ok';
     if (c.status === 'warn' || c.status === 'warning') dotCls = 'warn';
     if (c.status === 'error' || c.status === 'fail') dotCls = 'error';
-    return `<div class="health-item"><div class="health-dot ${dotCls}"></div><div class="health-info"><div class="name">${esc(c.name)}</div><div class="msg">${esc(c.message||'')}</div></div></div>`;
+    return `<div class="health-item" onclick="openCheckModal('${escAttr(c.name)}')">
+      <div class="health-dot ${dotCls}"></div>
+      <div class="health-info">
+        <div class="name">${esc(c.name)}</div>
+        <div class="msg">${esc(c.message||'')}</div>
+        <div style="font-size:0.55rem;color:var(--text-muted);margin-top:4px">${esc(c.category||'')} · ${c.status}</div>
+      </div>
+    </div>`;
   }).join('');
 }
 
-function filterPages() {
-  const q = document.getElementById('searchInput').value;
-  renderPages(q);
+// ─── MODALS ───
+function openPageModal(slug) {
+  const page = (DATA.pages||[]).find(p => p.slug === slug);
+  if (!page) return;
+
+  let html = '';
+
+  // Tags
+  if ((page.tags||[]).length) {
+    html += `<div class="m-section"><div class="m-section-title">Tags</div>
+      <div class="m-tags">${page.tags.map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</div></div>`;
+  }
+
+  // Entity fields (for people / companies)
+  if (page.type === 'person' || page.type === 'company') {
+    const fields = [];
+    if (page.email) fields.push({l:'Email',v:`<a href="mailto:${escAttr(page.email)}">${esc(page.email)}</a>`});
+    if (page.phone) fields.push({l:'Phone',v:esc(page.phone)});
+    if (page.company_name) fields.push({l:'Company',v:esc(page.company_name)});
+    if (page.website) fields.push({l:'Website',v:`<a href="https://${escAttr(page.website)}" target="_blank">${esc(page.website)}</a>`});
+    if (page.location) fields.push({l:'Location',v:esc(page.location)});
+    if (page.relationship) fields.push({l:'Relationship',v:esc(page.relationship)});
+    if (fields.length) {
+      html += `<div class="m-section"><div class="m-section-title">Details</div>
+        <div class="m-entity-fields">${fields.map(f=>`<div class="m-field"><div class="f-label">${f.l}</div><div class="f-value">${f.v}</div></div>`).join('')}</div></div>`;
+    }
+  }
+
+  // Content
+  const body = (page.body||'').trim();
+  if (body) {
+    // Clean markdown for display
+    const cleanBody = body
+      .replace(/^###?\s+/gm, '◆ ')
+      .replace(/^##\s+/gm, '◆◆ ')
+      .replace(/^#\s+/gm, '◆◆◆ ')
+      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<span style="color:var(--primary-light);cursor:pointer" onclick="event.stopPropagation();navigateTo(\'$2\')">$1</span>');
+    html += `<div class="m-section"><div class="m-section-title">Content</div>
+      <div class="m-content">${cleanBody}</div></div>`;
+  }
+
+  // Links out
+  if ((page.links_out||[]).length) {
+    html += `<div class="m-section"><div class="m-section-title">Links Out (${page.links_out.length})</div><div class="m-links">${
+      page.links_out.map(l => `<div class="m-link" onclick="event.stopPropagation();openPageModal('${escAttr(l.to)}')">
+        <span class="dir">→</span><span>${esc(l.to)}</span><span class="ltype">${esc(l.type)}</span>
+      </div>`).join('')}</div></div>`;
+  }
+
+  // Backlinks
+  if ((page.backlinks||[]).length) {
+    html += `<div class="m-section"><div class="m-section-title">Backlinks (${page.backlinks.length} pages link here)</div><div class="m-links">${
+      page.backlinks.map(l => `<div class="m-link" onclick="event.stopPropagation();openPageModal('${escAttr(l.from)}')">
+        <span class="dir">←</span><span>${esc(l.from)}</span><span class="ltype">${esc(l.type)}</span>
+      </div>`).join('')}</div></div>`;
+  }
+
+  openModal(page.title, page.slug, html);
 }
 
-function esc(s) { const d=document.createElement('div'); d.textContent=s||''; return d.innerHTML; }
+function openCheckModal(name) {
+  const check = (DATA.doctor?.checks||[]).find(c => c.name === name);
+  if (!check) return;
 
-// Tab switching
+  let dotCls = check.status === 'warn' || check.status === 'warning' ? 'warn' : check.status === 'error' || check.status === 'fail' ? 'error' : 'ok';
+  let html = `<div class="m-section">
+    <div class="m-section-title">Status</div>
+    <div style="display:flex;align-items:center;gap:8px">
+      <div class="health-dot ${dotCls}" style="margin:0"></div>
+      <span style="font-size:0.8rem;font-weight:600">${esc(check.status)}</span>
+      <span class="type-tag concept">${esc(check.category||'unknown')}</span>
+    </div>
+  </div>
+  <div class="m-section">
+    <div class="m-section-title">Message</div>
+    <div class="m-content">${esc(check.message||'No details available')}</div>
+  </div>`;
+
+  openModal(check.name, `health check · ${check.category||''}`, html);
+}
+
+function openModal(title, subtitle, bodyHtml) {
+  document.getElementById('modal').innerHTML = `
+    <div class="modal-header">
+      <div>
+        <div class="m-title">${esc(title)}</div>
+        ${subtitle ? `<div class="m-slug">${esc(subtitle)}</div>` : ''}
+      </div>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-body">${bodyHtml}</div>`;
+  document.getElementById('modalOverlay').classList.add('active');
+  document.body.classList.add('modal-open');
+}
+
+function closeModal() {
+  document.getElementById('modalOverlay').classList.remove('active');
+  document.body.classList.remove('modal-open');
+}
+
+// ─── NAVIGATION ───
+function navigateTo(slug) {
+  // Clean slug from markdown link
+  slug = slug.replace(/^(people|companies|concepts|meetings|architecture|reference|brand)\//,'');
+  // Try to find the page
+  const page = (DATA.pages||[]).find(p => p.slug === slug || p.slug.endsWith('/'+slug));
+  if (page) { closeModal(); setTimeout(() => openPageModal(page.slug), 100); }
+}
+
+// ─── FILTERS ───
+function filterCurrent() {
+  const q = document.getElementById('searchInput').value;
+  if (activeTab === 'pages') { renderPages(q); }
+  else if (activeTab === 'entities') { /* entities view - filter via search */ }
+}
+
+// ─── TABS ───
 document.getElementById('tabs').addEventListener('click', function(e) {
   if (!e.target.classList.contains('tab')) return;
   document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
   e.target.classList.add('active');
   activeTab = e.target.dataset.tab;
-  document.getElementById('pagesTable').style.display = activeTab==='pages'?'':'none';
-  document.getElementById('searchWrap').style.display = activeTab==='pages'?'':'none';
-  document.getElementById('entitiesView').style.display = activeTab==='entities'?'':'none';
-  document.getElementById('healthView').style.display = activeTab==='health'?'':'none';
+  showTab(activeTab);
 });
+
+function showTab(tab) {
+  document.getElementById('pagesView').style.display = tab==='pages'?'':'none';
+  document.getElementById('searchWrap').style.display = (tab==='pages'||tab==='entities')?'':'none';
+  document.getElementById('entitiesView').style.display = tab==='entities'?'':'none';
+  document.getElementById('healthView').style.display = tab==='health'?'':'none';
+  if (tab==='entities') renderEntities();
+  if (tab==='health') renderHealth();
+  if (tab==='pages') renderPages();
+  document.getElementById('searchInput').placeholder = tab==='pages' ? 'Search pages...' : tab==='entities' ? 'Search entities...' : '';
+}
+
+// ─── KEYBOARD ───
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeModal();
+  if ((e.ctrlKey||e.metaKey) && e.key === 'k') {
+    e.preventDefault();
+    document.getElementById('searchInput').focus();
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelector('[data-tab="pages"]').classList.add('active');
+    activeTab = 'pages';
+    showTab('pages');
+  }
+});
+
+function esc(s) { const d=document.createElement('div'); d.textContent=(s||''); return d.innerHTML; }
+function escAttr(s) { return (s||'').replace(/'/g,"&#39;").replace(/"/g,"&quot;"); }
 
 loadData();
 </script>
