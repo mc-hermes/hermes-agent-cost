@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Second Brain Deployment Architecture — VPS vs GitHub Pages</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', monospace; background: #020617; min-height: 100vh; padding: 2rem; color: white; }
+  .container { max-width: 1100px; margin: 0 auto; }
+  .header { margin-bottom: 2rem; }
+  .header-row { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem; }
+  .pulse-dot { width: 12px; height: 12px; background: #22d3ee; border-radius: 50%; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+  h1 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.025em; }
+  .subtitle { color: #94a3b8; font-size: 0.875rem; margin-left: 1.75rem; }
+  .diagram-container { background: rgba(15,23,42,0.5); border-radius: 1rem; border: 1px solid #1e293b; padding: 1.5rem; overflow-x: auto; }
+  svg { width: 100%; min-width: 1000px; display: block; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 2rem; }
+  .card { background: rgba(15,23,42,0.5); border-radius: 0.75rem; border: 1px solid #1e293b; padding: 1.25rem; }
+  .card-header { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; }
+  .card-dot { width: 8px; height: 8px; border-radius: 50%; }
+  .card-dot.cyan { background: #22d3ee; }
+  .card-dot.emerald { background: #34d399; }
+  .card-dot.violet { background: #a78bfa; }
+  .card-dot.amber { background: #fbbf24; }
+  .card-dot.rose { background: #fb7185; }
+  .card-dot.orange { background: #fb923c; }
+  .card h3 { font-size: 0.875rem; font-weight: 600; }
+  .card ul { list-style: none; color: #94a3b8; font-size: 0.75rem; }
+  .card li { margin-bottom: 0.375rem; }
+  .footer { text-align: center; margin-top: 1.5rem; color: #475569; font-size: 0.75rem; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="header-row">
+      <div class="pulse-dot"></div>
+      <h1>Second Brain — How GitHub Pages Fits</h1>
+    </div>
+    <p class="subtitle">One brain, two surfaces. VPS is the engine. GitHub Pages is the billboard.</p>
+  </div>
+
+  <div class="diagram-container">
+    <svg viewBox="0 0 1060 700">
+      <defs>
+        <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+          <polygon points="0 0, 8 3, 0 6" fill="#64748b"/>
+        </marker>
+        <marker id="arrC" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+          <polygon points="0 0, 8 3, 0 6" fill="#22d3ee"/>
+        </marker>
+        <marker id="arrG" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+          <polygon points="0 0, 8 3, 0 6" fill="#34d399"/>
+        </marker>
+        <marker id="arrV" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+          <polygon points="0 0, 8 3, 0 6" fill="#a78bfa"/>
+        </marker>
+        <marker id="arrA" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+          <polygon points="0 0, 8 3, 0 6" fill="#fbbf24"/>
+        </marker>
+        <marker id="arrR" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+          <polygon points="0 0, 8 3, 0 6" fill="#fb7185"/>
+        </marker>
+        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+        </pattern>
+        <filter id="glow">
+          <feGaussianBlur stdDeviation="3" result="blur"/>
+          <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+
+      <rect width="1060" height="700" fill="url(#grid)"/>
+
+      <!-- ======= VPS BOUNDARY ======= -->
+      <rect x="20" y="30" width="620" height="650" rx="14" fill="rgba(34,211,238,0.03)" stroke="#22d3ee" stroke-width="1.5" stroke-dasharray="8,4" filter="url(#glow)"/>
+      <text x="32" y="54" fill="#22d3ee" font-size="12" font-weight="700">Maloha Coast VPS (the engine)</text>
+      <text x="32" y="70" fill="#475569" font-size="8">Everything that computes, queries, ingests, and transforms lives here.</text>
+
+      <!-- ======= VPS LEFT COLUMN: Data Layer ======= -->
+
+      <!-- gbrain DB -->
+      <rect x="50" y="100" width="130" height="60" rx="8" fill="rgba(76,29,149,0.4)" stroke="#a78bfa" stroke-width="1.5"/>
+      <text x="115" y="124" fill="white" font-size="10" font-weight="600" text-anchor="middle">gbrain (PGLite)</text>
+      <text x="115" y="140" fill="#94a3b8" font-size="8" text-anchor="middle">pages · embeddings · graph</text>
+      <text x="115" y="152" fill="#a78bfa" font-size="7" text-anchor="middle">34 pages · 30 edges</text>
+
+      <!-- Hermes Agent -->
+      <rect x="50" y="190" width="130" height="50" rx="8" fill="rgba(8,51,68,0.5)" stroke="#22d3ee" stroke-width="1.5"/>
+      <text x="115" y="212" fill="white" font-size="10" font-weight="600" text-anchor="middle">Hermes Agent</text>
+      <text x="115" y="226" fill="#94a3b8" font-size="8" text-anchor="middle">orchestrator</text>
+
+      <!-- Cron job -->
+      <rect x="50" y="270" width="130" height="50" rx="8" fill="rgba(251,146,60,0.3)" stroke="#fb923c" stroke-width="1.5"/>
+      <text x="115" y="292" fill="white" font-size="10" font-weight="600" text-anchor="middle">Cron 776c7bf3</text>
+      <text x="115" y="306" fill="#94a3b8" font-size="8" text-anchor="middle">every 2 minutes</text>
+
+      <!-- Arrows between VPS components -->
+      <line x1="115" y1="160" x2="115" y2="188" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#arrV)"/>
+      <line x1="115" y1="240" x2="115" y2="268" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrC)"/>
+
+      <!-- ======= VPS RIGHT COLUMN: Runtime Layer ======= -->
+
+      <!-- :8080 Server -->
+      <rect x="280" y="100" width="150" height="70" rx="8" fill="rgba(6,78,59,0.4)" stroke="#34d399" stroke-width="2"/>
+      <text x="355" y="122" fill="white" font-size="10" font-weight="700" text-anchor="middle">HTTP Server :8080</text>
+      <text x="355" y="138" fill="#94a3b8" font-size="8" text-anchor="middle">static files + /api/query</text>
+      <text x="355" y="154" fill="#34d399" font-size="8" text-anchor="middle">LIVE — runs on VPS</text>
+
+      <!-- Enrichment Script -->
+      <rect x="280" y="210" width="150" height="55" rx="8" fill="rgba(76,29,149,0.3)" stroke="#a78bfa" stroke-width="1.5"/>
+      <text x="355" y="232" fill="white" font-size="9" font-weight="600" text-anchor="middle">Enrichment Script</text>
+      <text x="355" y="248" fill="#94a3b8" font-size="8" text-anchor="middle">gbrain export → JSON</text>
+      <text x="355" y="260" fill="#64748b" font-size="7" text-anchor="middle">writes to /tmp/hermes-agent-cost/</text>
+
+      <!-- Git push -->
+      <rect x="280" y="305" width="150" height="45" rx="8" fill="rgba(120,53,15,0.3)" stroke="#fbbf24" stroke-width="1.5"/>
+      <text x="355" y="324" fill="white" font-size="9" font-weight="600" text-anchor="middle">git push</text>
+      <text x="355" y="338" fill="#94a3b8" font-size="8" text-anchor="middle">gbrain-data.json only</text>
+
+      <!-- Arrows in VPS runtime -->
+      <line x1="215" y1="295" x2="355" y2="208" stroke="#fb923c" stroke-width="1.5" marker-end="url(#arrA)"/>
+      <line x1="355" y1="170" x2="355" y2="208" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrG)"/>
+      <line x1="355" y1="265" x2="355" y2="303" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#arrV)"/>
+
+      <!-- ======= FILES on VPS ======= -->
+
+      <rect x="60" y="370" width="140" height="40" rx="6" fill="rgba(30,41,59,0.5)" stroke="#475569" stroke-width="1"/>
+      <text x="130" y="390" fill="white" font-size="9" font-weight="600" text-anchor="middle">Dashboard HTML</text>
+      <text x="130" y="403" fill="#64748b" font-size="7" text-anchor="middle">~/.hermes/presentations/</text>
+
+      <rect x="240" y="370" width="140" height="40" rx="6" fill="rgba(30,41,59,0.5)" stroke="#475569" stroke-width="1"/>
+      <text x="310" y="390" fill="white" font-size="9" font-weight="600" text-anchor="middle">gbrain-data.json</text>
+      <text x="310" y="403" fill="#64748b" font-size="7" text-anchor="middle">local (always fresh)</text>
+
+      <rect x="420" y="370" width="140" height="40" rx="6" fill="rgba(30,41,59,0.5)" stroke="#475569" stroke-width="1"/>
+      <text x="490" y="390" fill="white" font-size="9" font-weight="600" text-anchor="middle">Articles + Decks</text>
+      <text x="490" y="403" fill="#64748b" font-size="7" text-anchor="middle">prd, business case, etc.</text>
+
+      <!-- VPS Labels -->
+      <text x="60" y="358" fill="#475569" font-size="8" font-weight="600">STATIC CONTENT — edited here, pushed to GitHub Pages</text>
+
+      <!-- ======= ARROW: VPS → GitHub ======= -->
+      <line x1="430" y1="330" x2="678" y2="330" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="4,4" marker-end="url(#arrA)"/>
+      <text x="554" y="322" fill="#fbbf24" font-size="8" font-weight="600">git push gbrain-data.json</text>
+      <text x="554" y="344" fill="#475569" font-size="7">every 2min · best-effort · ||true</text>
+
+      <!-- ======= GITHUB PAGES BOUNDARY ======= -->
+      <rect x="680" y="30" width="360" height="650" rx="14" fill="rgba(251,191,36,0.03)" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="6,4"/>
+      <text x="692" y="54" fill="#fbbf24" font-size="12" font-weight="700">GitHub Pages (the billboard)</text>
+      <text x="692" y="70" fill="#475569" font-size="8">Static snapshot. Public URL. No compute. Free hosting.</text>
+
+      <!-- Repo -->
+      <rect x="710" y="100" width="160" height="55" rx="8" fill="rgba(120,53,15,0.3)" stroke="#fbbf24" stroke-width="1.5"/>
+      <text x="790" y="120" fill="white" font-size="10" font-weight="600" text-anchor="middle">mc-hermes/</text>
+      <text x="790" y="136" fill="white" font-size="10" font-weight="600" text-anchor="middle">hermes-agent-cost</text>
+      <text x="790" y="150" fill="#94a3b8" font-size="7" text-anchor="middle">git repo (main branch)</text>
+
+      <!-- Files served -->
+      <rect x="710" y="180" width="160" height="50" rx="6" fill="rgba(8,51,68,0.4)" stroke="#22d3ee" stroke-width="1"/>
+      <text x="790" y="200" fill="white" font-size="9" font-weight="600" text-anchor="middle">index.html</text>
+      <text x="790" y="216" fill="#94a3b8" font-size="7" text-anchor="middle">6 cards · landing page</text>
+      <text x="790" y="226" fill="#64748b" font-size="6" text-anchor="middle">edited on VPS, pushed to GH</text>
+
+      <rect x="710" y="245" width="160" height="50" rx="6" fill="rgba(8,51,68,0.4)" stroke="#22d3ee" stroke-width="1"/>
+      <text x="790" y="265" fill="white" font-size="9" font-weight="600" text-anchor="middle">gbrain-dashboard.html</text>
+      <text x="790" y="281" fill="#94a3b8" font-size="7" text-anchor="middle">1261 lines · interactive</text>
+      <text x="790" y="291" fill="#64748b" font-size="6" text-anchor="middle">❤ static — no queries work here</text>
+
+      <rect x="710" y="310" width="160" height="50" rx="6" fill="rgba(8,51,68,0.4)" stroke="#22d3ee" stroke-width="1"/>
+      <text x="790" y="330" fill="white" font-size="9" font-weight="600" text-anchor="middle">gbrain-data.json</text>
+      <text x="790" y="346" fill="#94a3b8" font-size="7" text-anchor="middle">~26KB · stale(ish)</text>
+      <text x="790" y="356" fill="#64748b" font-size="6" text-anchor="middle">⬇ pushed from VPS every 2min</text>
+
+      <!-- Article pages -->
+      <rect x="710" y="385" width="160" height="60" rx="6" fill="rgba(8,51,68,0.4)" stroke="#22d3ee" stroke-width="1"/>
+      <text x="790" y="405" fill="white" font-size="9" font-weight="600" text-anchor="middle">Article Pages</text>
+      <text x="790" y="420" fill="#94a3b8" font-size="8" text-anchor="middle">prd-email-to-brain.html</text>
+      <text x="790" y="434" fill="#94a3b8" font-size="8" text-anchor="middle">business-case-*.html</text>
+      <text x="790" y="442" fill="#64748b" font-size="6" text-anchor="middle">edited on VPS, pushed to GH</text>
+
+      <!-- Architecture -->
+      <rect x="710" y="460" width="160" height="40" rx="6" fill="rgba(8,51,68,0.4)" stroke="#22d3ee" stroke-width="1"/>
+      <text x="790" y="480" fill="white" font-size="9" font-weight="600" text-anchor="middle">email-to-brain-architecture.html</text>
+      <text x="790" y="494" fill="#94a3b8" font-size="7" text-anchor="middle">SVG diagram</text>
+
+      <!-- ======= CDN LAYER ======= -->
+      <rect x="900" y="100" width="120" height="50" rx="6" fill="rgba(251,191,36,0.15)" stroke="#fbbf24" stroke-width="1" stroke-dasharray="3,3"/>
+      <text x="960" y="122" fill="white" font-size="9" font-weight="600" text-anchor="middle">CDN Cache</text>
+      <text x="960" y="136" fill="#94a3b8" font-size="7" text-anchor="middle">1-5 min lag</text>
+      <text x="960" y="148" fill="#64748b" font-size="6" text-anchor="middle">fastly.net</text>
+
+      <!-- ======= USERS ======= -->
+
+      <!-- Sayf (VPS access) -->
+      <rect x="50" y="490" width="130" height="50" rx="6" fill="rgba(30,41,59,0.5)" stroke="#94a3b8" stroke-width="1.5"/>
+      <text x="115" y="512" fill="white" font-size="10" font-weight="600" text-anchor="middle">sayf (admin)</text>
+      <text x="115" y="526" fill="#94a3b8" font-size="8" text-anchor="middle">SSH + :8080</text>
+
+      <!-- Sayf at GitHub -->
+      <path d="M 180 515 L 540 515 Q 560 515 560 495 L 560 450 Q 560 430 580 430 L 708 430" fill="none" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrC)"/>
+      <text x="370" y="508" fill="#22d3ee" font-size="7">views & edits static content</text>
+
+      <!-- Client at GitHub -->
+      <rect x="840" y="550" width="180" height="50" rx="6" fill="rgba(251,191,36,0.15)" stroke="#fbbf24" stroke-width="1.5"/>
+      <text x="930" y="570" fill="white" font-size="9" font-weight="600" text-anchor="middle">Client / Public</text>
+      <text x="930" y="586" fill="#94a3b8" font-size="8" text-anchor="middle">github.io — read only</text>
+      <text x="930" y="598" fill="#64748b" font-size="6" text-anchor="middle">sees articles, dashboard, data</text>
+
+      <!-- Client/Sayf arrow to GH -->
+      <line x1="840" y1="575" x2="872" y2="575" stroke="#fbbf24" stroke-width="1" marker-end="url(#arrA)"/>
+
+      <!-- ======= VPS :8080 serving LIVE dashboard ======= -->
+
+      <!-- Browser hitting :8080 -->
+      <rect x="50" y="580" width="180" height="50" rx="6" fill="rgba(34,211,238,0.08)" stroke="#22d3ee" stroke-width="1" stroke-dasharray="3,3"/>
+      <text x="140" y="602" fill="white" font-size="9" font-weight="600" text-anchor="middle">Browser → :8080</text>
+      <text x="140" y="618" fill="#94a3b8" font-size="8" text-anchor="middle">LIVE dashboard + query</text>
+
+      <!-- Arrow :8080 -->
+      <line x1="230" y1="605" x2="278" y2="605" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrG)"/>
+      <text x="254" y="598" fill="#34d399" font-size="7">:8080</text>
+
+      <!-- ======= BIG ANNOTATION: THE KEY INSIGHT ======= -->
+
+      <rect x="60" y="440" width="540" height="35" rx="6" fill="rgba(15,23,42,0.8)" stroke="#334155" stroke-width="1"/>
+      <text x="75" y="460" fill="#22d3ee" font-size="8" font-weight="600">VPS = SOURCE OF TRUTH (all compute, ingestion, queries live here)</text>
+      <text x="75" y="472" fill="#64748b" font-size="7">git push copies a static snapshot to GitHub Pages every 2 minutes</text>
+
+      <!-- ======= LEGEND ======= -->
+
+      <rect x="710" y="520" width="310" height="145" rx="8" fill="rgba(15,23,42,0.7)" stroke="#334155" stroke-width="1"/>
+      <text x="722" y="538" fill="white" font-size="10" font-weight="600">What lives where?</text>
+
+      <text x="722" y="556" fill="#22d3ee" font-size="8" font-weight="600">VPS :8080 (LIVE):</text>
+      <text x="722" y="570" fill="#94a3b8" font-size="7">· gbrain-dashboard.html (fetches LIVE gbrain-data.json)</text>
+      <text x="722" y="582" fill="#94a3b8" font-size="7">· /api/query?q=... (hits gbrain query in real-time)</text>
+
+      <text x="722" y="598" fill="#fbbf24" font-size="8" font-weight="600">GitHub Pages (STATIC SNAPSHOT):</text>
+      <text x="722" y="612" fill="#94a3b8" font-size="7">· index.html, articles, architecture diagram</text>
+      <text x="722" y="624" fill="#94a3b8" font-size="7">· gbrain-dashboard.html (fetches STALE gbrain-data.json)</text>
+      <text x="722" y="636" fill="#94a3b8" font-size="7">· gbrain-data.json (updated every 2min from VPS)</text>
+      <text x="722" y="650" fill="#fb7185" font-size="7">· ⚠ No /api/query here — static hosting only</text>
+      <text x="722" y="660" fill="#64748b" font-size="6">· CDN caches for 1-5 minutes</text>
+    </svg>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="card-header">
+        <div class="card-dot emerald"></div>
+        <h3>VPS :8080 — The Engine</h3>
+      </div>
+      <ul>
+        <li>• Runs gbrain (queries, ingest, embed)</li>
+        <li>• Serves LIVE dashboard with fresh JSON</li>
+        <li>• /api/query endpoint for semantic search</li>
+        <li>• Cron polls Gmail, processes emails</li>
+        <li>• Source of truth for ALL data</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-dot amber"></div>
+        <h3>GitHub Pages — The Billboard</h3>
+      </div>
+      <ul>
+        <li>• Static snapshot pushed every 2 min</li>
+        <li>• Public URL — anyone can view</li>
+        <li>• Landing page, articles, architecture</li>
+        <li>• Dashboard with stale(ish) JSON</li>
+        <li>• No query capability (no backend)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-dot cyan"></div>
+        <h3>The Demo Strategy</h3>
+      </div>
+      <ul>
+        <li>• Send prospects to GitHub Pages first</li>
+        <li>• Landing page → business case → PRD</li>
+        <li>• For live demos: VPS :8080 dashboard</li>
+        <li>• Query box only works on VPS</li>
+        <li>• Both surfaces show same data shape</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="footer">Maloha Coast · Second Brain v1 · VPS + GitHub Pages</p>
+</div>
+</body>
+</html>
