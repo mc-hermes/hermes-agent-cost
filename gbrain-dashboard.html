@@ -418,8 +418,8 @@ function renderStats() {
     {icon:'📊', value: s.page_count, label:'Total Pages', detail: `${s.concept_count} concepts, ${s.meeting_count||0} meetings, ${s.person_count} people, ${s.company_count} companies`, cls:'', click: 'showStatBreakdown'},
     {icon:'🏆', value: s.score, label:'Brain Score', detail: 'embed 35/35, links 25/25, timeline 2/15, orphans 9/15', cls:'', click: 'switchToHealth'},
     {icon:'🔗', value: s.total_links, label:'Total Links', detail: `${sumLinks('outbound')} outbound, ${sumLinks('inbound')} inbound across ${s.page_count} pages`, cls:'', click: null},
-    {icon:'📡', value: '53.3%', label:'Graph Coverage', detail: '8 of 15 pages have inbound links', cls:'', click: null},
-    {icon:'✨', value: '100%', label:'Embeddings', detail: 'All pages embedded via text-embedding-3-large', cls:'', click: null},
+    {icon:'📡', value: s.graph_coverage?.match(/[\d.]+%/)?.[0] || '—', label:'Graph Coverage', detail: s.graph_coverage||'', cls:'', click: null},
+    {icon:'✨', value: s.embed_coverage?.match(/[\d.]+%/)?.[0] || '—', label:'Embeddings', detail: s.embed_coverage||'', cls:'', click: null},
   ].map((c,i) => `<div class="stat-card" ${c.click ? `onclick="${c.click}()"` : ''}>
     <div class="icon">${c.icon}</div><div class="value">${c.value}</div><div class="label">${c.label}</div><div class="detail">${c.detail}</div>
     ${c.click ? '<div class="hint">click for details →</div>' : ''}
