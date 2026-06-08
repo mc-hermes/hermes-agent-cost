@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-06-08T03:21:15Z",
+  "updated_at": "2026-06-08T03:24:26Z",
   "summary": {
-    "score": "Brain score 13/22",
+    "score": "Brain score 15/22",
     "page_count": 22,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "59.1% of pages have inbound links",
+    "graph_coverage": "68.2% of pages have inbound links",
     "entity_links": "Coverage \u2014 5 people, 2 companies indexed",
     "concept_count": 13,
     "meeting_count": 2,
     "person_count": 5,
     "company_count": 2,
-    "total_links": 17,
+    "total_links": 26,
     "outbound_count": 28,
-    "inbound_count": 17
+    "inbound_count": 26
   },
   "pages": [
     {
@@ -58,11 +58,16 @@
         {
           "from": "vps-hardening",
           "type": "wikilink",
+          "text": "2026-06-03#VPS Hardening"
+        },
+        {
+          "from": "vps-hardening",
+          "type": "wikilink",
           "text": "2026-06-03"
         }
       ],
       "outbound_count": 4,
-      "inbound_count": 3
+      "inbound_count": 4
     },
     {
       "slug": "architecture/agent-hierarchy",
@@ -227,9 +232,15 @@
           "text": "2026-06-04"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "vps-hardening",
+          "type": "wikilink",
+          "text": "Gateway Infrastructure"
+        }
+      ],
       "outbound_count": 3,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "gbrain",
@@ -291,13 +302,28 @@
       ],
       "backlinks": [
         {
+          "from": "2026-06-03",
+          "type": "wikilink",
+          "text": "Google Workspace Setup"
+        },
+        {
           "from": "brand/maloha-coast-brand-identity",
           "type": "wikilink",
           "text": "google-workspace-setup"
+        },
+        {
+          "from": "gbrain",
+          "type": "wikilink",
+          "text": "Google Workspace Setup"
+        },
+        {
+          "from": "vps-hardening",
+          "type": "wikilink",
+          "text": "Google Workspace Setup"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 1
+      "inbound_count": 4
     },
     {
       "slug": "hermes-profile-backup",
@@ -557,15 +583,51 @@
           "text": "Gateway Infrastructure"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "2026-06-03",
+          "type": "wikilink",
+          "text": "VPS Hardening"
+        },
+        {
+          "from": "2026-06-03",
+          "type": "wikilink",
+          "text": "VPS Hardening#fail2ban"
+        },
+        {
+          "from": "gateway-infrastructure",
+          "type": "wikilink",
+          "text": "VPS Hardening"
+        },
+        {
+          "from": "gbrain",
+          "type": "wikilink",
+          "text": "VPS Hardening"
+        }
+      ],
       "outbound_count": 4,
-      "inbound_count": 0
+      "inbound_count": 4
     }
   ],
   "graph_links": [
     {
       "source": "2026-06-03",
+      "target": "vps-hardening",
+      "type": "wikilink"
+    },
+    {
+      "source": "2026-06-03",
+      "target": "google-workspace-setup",
+      "type": "wikilink"
+    },
+    {
+      "source": "2026-06-03",
       "target": "gbrain",
+      "type": "wikilink"
+    },
+    {
+      "source": "2026-06-03",
+      "target": "vps-hardening",
       "type": "wikilink"
     },
     {
@@ -594,8 +656,23 @@
       "type": "link"
     },
     {
+      "source": "gateway-infrastructure",
+      "target": "vps-hardening",
+      "type": "wikilink"
+    },
+    {
       "source": "gbrain",
       "target": "2026-06-03",
+      "type": "wikilink"
+    },
+    {
+      "source": "gbrain",
+      "target": "google-workspace-setup",
+      "type": "wikilink"
+    },
+    {
+      "source": "gbrain",
+      "target": "vps-hardening",
       "type": "wikilink"
     },
     {
@@ -646,6 +723,21 @@
     {
       "source": "vps-hardening",
       "target": "2026-06-03",
+      "type": "wikilink"
+    },
+    {
+      "source": "vps-hardening",
+      "target": "google-workspace-setup",
+      "type": "wikilink"
+    },
+    {
+      "source": "vps-hardening",
+      "target": "2026-06-03",
+      "type": "wikilink"
+    },
+    {
+      "source": "vps-hardening",
+      "target": "gateway-infrastructure",
       "type": "wikilink"
     }
   ],
