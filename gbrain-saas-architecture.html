@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>gbrain SaaS Architecture · Maloha Coast</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #020617; --surface: #0f172a; --surface2: #1e293b; --border: #334155;
+    --primary: #2a6a8a; --primary-light: #22d3ee; --accent: #c4a86a; --accent-light: #fbbf24;
+    --text: #f1f5f9; --text-muted: #94a3b8; --text-dim: #64748b;
+    --green: #34d399; --violet: #a78bfa; --rose: #fb7185; --orange: #fb923c;
+    --radius: 14px; --radius-sm: 10px;
+  }
+
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+
+  /* ── Nav ── */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(2,6,23,0.85); backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 12px 24px; display: flex; align-items: center; justify-content: space-between;
+    font-size: 0.8rem;
+  }
+  nav a { color: var(--text-muted); text-decoration: none; transition: color 0.15s; }
+  nav a:hover { color: var(--accent); }
+  nav .brand { font-weight: 700; letter-spacing: -0.01em; color: var(--text); }
+  nav .brand span { color: var(--accent); }
+
+  /* ── Layout ── */
+  .container { max-width: 900px; margin: 0 auto; padding: 40px 24px 80px; }
+
+  .back-link { display: inline-block; margin-bottom: 24px; color: var(--text-muted); font-size: 0.8rem; text-decoration: none; }
+  .back-link:hover { color: var(--accent-light); }
+
+  h1 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.2; margin-bottom: 8px; }
+  .subtitle { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 40px; }
+
+  h2 { font-size: 1.2rem; font-weight: 700; margin: 48px 0 16px; padding-top: 16px; border-top: 1px solid var(--border); letter-spacing: -0.01em; }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  h3 { font-size: 1rem; font-weight: 600; margin: 28px 0 10px; color: var(--accent); letter-spacing: -0.01em; }
+
+  p { color: var(--text-muted); margin-bottom: 14px; font-size: 0.88rem; }
+  p strong { color: var(--text); font-weight: 600; }
+  ul, ol { color: var(--text-muted); padding-left: 20px; margin-bottom: 16px; font-size: 0.88rem; }
+  li { margin-bottom: 6px; }
+
+  code { font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; background: var(--surface2); padding: 2px 6px; border-radius: 4px; color: var(--primary-light); }
+  pre { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 16px; overflow-x: auto; margin-bottom: 20px; font-size: 0.75rem; line-height: 1.6; }
+  pre code { background: none; padding: 0; color: var(--text); }
+
+  /* ── Cards ── */
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; margin-bottom: 20px; }
+  .card h3 { margin-top: 0; }
+  .card p { margin-bottom: 0; }
+
+  /* ── Comparison table ── */
+  .table-wrap { overflow-x: auto; margin-bottom: 24px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.78rem; }
+  th { text-align: left; padding: 10px 12px; background: var(--surface); font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted); border-bottom: 2px solid var(--border); }
+  td { padding: 10px 12px; border-bottom: 1px solid var(--border); color: var(--text-muted); vertical-align: top; }
+  td:first-child { color: var(--text); font-weight: 600; white-space: nowrap; }
+  tr:hover td { background: rgba(255,255,255,0.02); }
+
+  /* ── Verdict badges ── */
+  .badge { display: inline-block; padding: 2px 10px; border-radius: 10px; font-size: 0.65rem; font-weight: 700; margin-right: 4px; }
+  .badge-rec { background: rgba(52,211,153,0.15); color: var(--green); }
+  .badge-alt { background: rgba(251,191,36,0.15); color: var(--accent-light); }
+  .badge-no { background: rgba(251,113,133,0.15); color: var(--rose); }
+
+  /* ── Diagram container ── */
+  .diagram-wrap {
+    background: rgba(15,23,42,0.5); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 20px 12px; margin-bottom: 20px; overflow-x: auto;
+  }
+  .diagram-wrap svg { width: 100%; min-width: 850px; display: block; }
+
+  /* ── Mermaid ── */
+  .mermaid-wrap {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 24px 16px; margin-bottom: 20px; overflow-x: auto;
+  }
+  .mermaid-wrap .mermaid { display: flex; justify-content: center; }
+
+  /* ── Footer ── */
+  footer { text-align: center; padding: 40px 24px; color: var(--text-dim); font-size: 0.7rem; border-top: 1px solid var(--border); }
+  footer a { color: rgba(148,163,184,0.4); }
+
+  /* ── Responsive ── */
+  @media (max-width: 640px) {
+    .container { padding: 24px 16px 60px; }
+    table { font-size: 0.7rem; }
+    th, td { padding: 8px 6px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="brand">Maloha Coast · <span>AI</span></a>
+  <a href="index.html">← Back to Index</a>
+</nav>
+
+<div class="container">
+
+<a href="index.html" class="back-link">← Index</a>
+<h1>gbrain SaaS Architecture</h1>
+<p class="subtitle">Deploying a "second brain" product for non-technical clients — single-tenant managed hosting with BYO-keys. June 2026.</p>
+
+<!-- ─────────────────────────────────────────────────────────── -->
+<h2>1. What Is the Product?</h2>
+
+<p><strong>gbrain</strong> is a knowledge-graph engine — a Bun CLI with an embedded <strong>PGLite</strong> vector store. It ingests raw material (meeting transcripts, articles, voice notes, PDFs), extracts entities and wiki links, generates OpenAI embeddings, and builds a queryable knowledge graph.</p>
+
+<p><strong>Hermes Agent</strong> is the AI operator layer that runs the processing pipeline: ingest → extract entities → embed → enrich → synthesize Q&A. The agent calls <code>gbrain put</code>, <code>gbrain embed --all</code>, <code>gbrain extract all</code>, and <code>gbrain doctor</code> on a schedule.</p>
+
+<p>The <strong>dashboard</strong> is a static HTML frontend — a single file that fetches an exported <code>gbrain-data.json</code> and renders an interactive knowledge graph with search, entity cards, and health panels. No backend. No framework. Deployable anywhere.</p>
+
+<p>The goal: <strong>productize this as a monthly subscription for solo coaches and consultants who never touch a terminal.</strong></p>
+
+<!-- ─────────────────────────────────────────────────────────── -->
+<h2>2. The Core Constraint</h2>
+
+<div class="card">
+  <h3>PGLite Is an Embedded Database — Not a Server</h3>
+  <p>PGLite is a single-file WASM PostgreSQL that runs inside the Bun process. There is no network port. No client/server protocol. No remote connection. The gbrain CLI <strong>must</strong> run on the same machine where the <code>brain.pglite</code> file lives. This single fact determines everything about the deployment architecture.</p>
+</div>
+
+<p>This means the core question is: <strong>who runs the Bun process, and on whose machine does the PGLite file sit?</strong></p>
+
+<!-- ─────────────────────────────────────────────────────────── -->
+<h2>3. Deployment Options Compared</h2>
+
+<div class="table-wrap">
+<table>
+  <tr><th>Dimension</th><th>(a) Local App</th><th>(b) Managed Single-Tenant</th><th>(c) Client's Cloud</th><th>(d) Browser/Edge</th></tr>
+  <tr>
+    <td>Who runs gbrain?</td>
+    <td>Client's computer (Electron/Tauri)</td>
+    <td><strong>You</strong> — per-client LXC container</td>
+    <td>Client's cloud VM</td>
+    <td>Browser WASM (theoretical)</td>
+  </tr>
+  <tr>
+    <td>Where is PGLite?</td>
+    <td>Client's local disk</td>
+    <td>Your VPS — isolated per client</td>
+    <td>Client's cloud disk</td>
+    <td>Browser OPFS (limited)</td>
+  </tr>
+  <tr>
+    <td>Where are the keys?</td>
+    <td>Client's app config</td>
+    <td>Container env (supplied at onboarding)</td>
+    <td>Client's VM env</td>
+    <td>Browser localStorage</td>
+  </tr>
+  <tr>
+    <td>Privacy story</td>
+    <td><span class="badge badge-rec">Strongest</span> Raw files never touch your infra</td>
+    <td><span class="badge badge-alt">Good</span> BYO-keys, isolated container, encryption at rest</td>
+    <td><span class="badge badge-rec">Excellent</span> Full sovereignty</td>
+    <td><span class="badge badge-rec">Strongest</span> All-local</td>
+  </tr>
+  <tr>
+    <td>Setup friction</td>
+    <td><span class="badge badge-no">High</span> 200MB installer, OS compat, always-on</td>
+    <td><span class="badge badge-rec">Lowest</span> URL → OAuth → paste key → done</td>
+    <td><span class="badge badge-no">Extreme</span> Cloud account, VM management</td>
+    <td><span class="badge badge-alt">None</span> (but doesn't work)</td>
+  </tr>
+  <tr>
+    <td>Your ops burden</td>
+    <td>High support, low infra</td>
+    <td><span class="badge badge-rec">Medium</span> — automatable</td>
+    <td>Low (but support spikes)</td>
+    <td>None</td>
+  </tr>
+  <tr>
+    <td>Cost (per client)</td>
+    <td>$0 (you) + OpenAI (them)</td>
+    <td>~$2–5/mo (you) + OpenAI (them)</td>
+    <td>~$20–50/mo VM + OpenAI (them)</td>
+    <td>$0 (but doesn't exist)</td>
+  </tr>
+  <tr>
+    <td>Feasible?</td>
+    <td><span class="badge badge-alt">Yes, but</span> support hell</td>
+    <td><span class="badge badge-rec">Yes ✓</span></td>
+    <td><span class="badge badge-no">No</span> for non-technical</td>
+    <td><span class="badge badge-no">No</span> — Bun doesn't run in browser</td>
+  </tr>
+</table>
+</div>
+
+<!-- ─────────────────────────────────────────────────────────── -->
+<h2>4. Is This a SaaS?</h2>
+
+<p><strong>Yes — but a specific kind: single-tenant managed platform with BYO-keys.</strong></p>
+
+<p>It is <strong>not</strong> multi-tenant SaaS (shared database, shared runtime) because PGLite does not support multi-tenancy natively. Each client gets their own gbrain process + PGLite file. You cannot pool them into one database without replacing PGLite with a full PostgreSQL server — which would defeat the local-first architecture of gbrain.</p>
+
+<p>It is <strong>not</strong> pure self-hosted because you run the infrastructure.</p>
+
+<p>It is <strong>not</strong> pure desktop software because the runtime lives on your servers.</p>
+
+<p>The closest analogues:</p>
+<ul>
+  <li><strong>Ghost(Pro)</strong> — managed single-tenant Ghost blogs. Each customer gets their own instance. BYO domain.</li>
+  <li><strong>WordPress.com (Business tier)</strong> — managed WP instances with plugin isolation.</li>
+  <li><strong>Supabase (dedicated)</strong> — managed Postgres per project.</li>
+</ul>
+
+<p>The pricing model works because:</p>
+<ul>
+  <li>Client pays you a <strong>monthly subscription</strong> ($29–99/mo depending on page tiers, query volume, features)</li>
+  <li>Client brings their own <strong>OpenAI API key</strong> — you never see an OpenAI bill</li>
+  <li>Your margin = subscription minus infrastructure (~$2–5/mo/client on a modest VPS)</li>
+</ul>
+
+<!-- ─────────────────────────────────────────────────────────── -->
+<h2>5. Recommended Architecture</h2>
+
+<h3>Managed Single-Tenant LXC Containers</h3>
+
+<p>Every client gets a <strong>dedicated LXC container</strong> on your VPS. Inside that container lives: Bun, gbrain CLI, PGLite, the Hermes agent, a Google Drive sync daemon, and a lightweight Query API for LLM-powered Q&A.</p>
+
+</div><!-- close container for full-width diagram -->
+
+<div class="diagram-wrap" style="max-width:1000px; margin: 0 auto 32px;">
+<svg viewBox="0 0 1000 720">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/></marker>
+    <marker id="arrow-cyan" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#22d3ee"/></marker>
+    <marker id="arrow-emerald" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#34d399"/></marker>
+    <marker id="arrow-violet" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#a78bfa"/></marker>
+    <marker id="arrow-amber" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#fbbf24"/></marker>
+    <marker id="arrow-rose" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#fb7185"/></marker>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/></pattern>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+
+  <!-- Per-Client LXC Boundary -->
+  <rect x="180" y="50" width="600" height="510" rx="12" fill="rgba(34,211,238,0.03)" stroke="#22d3ee" stroke-width="1" stroke-dasharray="8,4"/>
+  <text x="192" y="70" fill="#22d3ee" font-size="10" font-weight="600" font-family="JetBrains Mono, monospace">Client LXC Container (one per subscriber)</text>
+
+  <!-- Operator Infra Boundary -->
+  <rect x="20" y="580" width="960" height="120" rx="12" fill="rgba(251,191,36,0.04)" stroke="#fbbf24" stroke-width="1" stroke-dasharray="8,4"/>
+  <text x="32" y="600" fill="#fbbf24" font-size="10" font-weight="600" font-family="JetBrains Mono, monospace">Operator Infrastructure (maloha-vps / cloud)</text>
+
+  <!-- Google Drive -->
+  <rect x="30" y="120" width="120" height="70" rx="6" fill="rgba(30,41,59,0.5)" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="90" y="148" fill="white" font-size="11" font-weight="600" text-anchor="middle" font-family="JetBrains Mono, monospace">Google Drive</text>
+  <text x="90" y="164" fill="#94a3b8" font-size="8" text-anchor="middle" font-family="JetBrains Mono, monospace">Raw material</text>
+  <text x="90" y="178" fill="#fbbf24" font-size="7" text-anchor="middle" font-family="JetBrains Mono, monospace">Client-owned</text>
+
+  <!-- Dashboard -->
+  <rect x="30" y="280" width="120" height="70" rx="6" fill="rgba(8,51,68,0.4)" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="90" y="308" fill="white" font-size="11" font-weight="600" text-anchor="middle" font-family="JetBrains Mono, monospace">Dashboard</text>
+  <text x="90" y="324" fill="#94a3b8" font-size="8" text-anchor="middle" font-family="JetBrains Mono, monospace">Static HTML</text>
+  <text x="90" y="338" fill="#22d3ee" font-size="7" text-anchor="middle" font-family="JetBrains Mono, monospace">client.example.com</text>
+
+  <!-- Sync Daemon -->
+  <rect x="260" y="110" width="140" height="70" rx="6" fill="rgba(6,78,59,0.4)" stroke="#34d399" stroke-width="1.5"/>
+  <text x="330" y="138" fill="white" font-size="11" font-weight="600" text-anchor="middle" font-family="JetBrains Mono, monospace">Sync Daemon</text>
+  <text x="330" y="154" fill="#94a3b8" font-size="8" text-anchor="middle" font-family="JetBrains Mono, monospace">Google Drive API</text>
+  <text x="330" y="168" fill="#34d399" font-size="7" text-anchor="middle" font-family="JetBrains Mono, monospace">rclone / gdrive</text>
+
+  <!-- Workspace -->
+  <rect x="260" y="210" width="140" height="55" rx="6" fill="rgba(30,41,59,0.5)" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="330" y="232" fill="white" font-size="11" font-weight="600" text-anchor="middle" font-family="JetBrains Mono, monospace">Workspace</text>
+  <text x="330" y="248" fill="#94a3b8" font-size="8" text-anchor="middle" font-family="JetBrains Mono, monospace">~/workspace/</text>
+
+  <!-- Hermes Agent -->
+  <rect x="470" y="110" width="160" height="70" rx="6" fill="rgba(6,78,59,0.4)" stroke="#34d399" stroke-width="1.5"/>
+  <text x="550" y="135" fill="white" font-size="11" font-weight="600" text-anchor="middle" font-family="JetBrains Mono, monospace">Hermes Agent</text>
+  <text x="550" y="151" fill="#94a3b8" font-size="8" text-anchor="middle" font-family="JetBrains Mono, monospace">Ingest · Enrich · Synthesize</text>
+  <text x="550" y="167" fill="#34d399" font-size="7" text-anchor="middle" font-family="JetBrains Mono, monospace">Scheduled + on-demand</text>
+
+  <!-- gbrain Runtime + PGLite -->
+  <rect x="470" y="270" width="160" height="90" rx="6" fill="rgba(76,29,149,0.4)" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="550" y="295" fill="white" font-size="11" font-weight="600" text-anchor="middle" font-family="JetBrains Mono, monospace">gbrain Runtime</text>
+  <text x="550" y="312" fill="#94a3b8" font-size="8" text-anchor="middle" font-family="JetBrains Mono, monospace">Bun + gbrain CLI</text>
+  <text x="550" y="326" fill="#a78bfa" font-size="8" text-anchor="middle" font-family="JetBrains Mono, monospace">PGLite (brain.pglite)</text>
+  <text x="550" y="344" fill="#a78bfa" font-size="7" text-anchor="middle" font-family="JetBrains Mono, monospace">put / embed / query / doctor</text>
+
+  <!-- Data Export -->
+  <rect x="260" y="430" width="140" height="55" rx="6" fill="rgba(8,51,68,0.4)" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="330" y="452" fill="white" font-size="11" font-weight="600" text-anchor="middle" font-family="JetBrains Mono, monospace">Data Export</text>
+  <text x="330" y="468" fill="#94a3b8" font-size="8" text-anchor="middle" font-family="JetBrains Mono, monospace">gbrain-data.json</text>
+
+  <!-- Static Host -->
+  <rect x="470" y="430" width="160" height="55" rx="6" fill="rgba(120,53,15,0.3)" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="550" y="452" fill="white" font-size="11" font-weight="600" text-anchor="middle" font-family="JetBrains Mono, monospace">Static Host</text>
+  <text x="550" y="468" fill="#94a3b8" font-size="8" text-anchor="middle" font-family="JetBrains Mono, monospace">Nginx / GitHub Pages</text>
+
+  <!-- Query API -->
+  <rect x="680" y="270" width="110" height="90" rx="6" fill="rgba(6,78,59,0.4)" stroke="#34d399" stroke-width="1.5"/>
+  <text x="735" y="298" fill="white" font-size="11" font-weight="600" text-anchor="middle" font-family="JetBrains Mono, monospace">Query API</text>
+  <text x="735" y="314" fill="#94a3b8" font-size="8" text-anchor="middle" font-family="JetBrains Mono, monospace">/api/ask</text>
+  <text x="735" y="330" fill="#34d399" font-size="8" text-anchor="middle" font-family="JetBrains Mono, monospace">Fastify :3001</text>
+  <text x="735" y="348" fill="#fb923c" font-size="7" text-anchor="middle" font-family="JetBrains Mono, monospace">Client's OpenAI key</text>
+
+  <!-- OpenAI -->
+  <rect x="30" y="420" width="120" height="55" rx="6" fill="rgba(30,41,59,0.5)" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="90" y="444" fill="white" font-size="11" font-weight="600" text-anchor="middle" font-family="JetBrains Mono, monospace">OpenAI API</text>
+  <text x="90" y="460" fill="#94a3b8" font-size="8" text-anchor="middle" font-family="JetBrains Mono, monospace">Client's key</text>
+
+  <!-- Operator components -->
+  <rect x="60" y="620" width="160" height="60" rx="6" fill="rgba(6,78,59,0.4)" stroke="#34d399" stroke-width="1.5"/>
+  <text x="140" y="645" fill="white" font-size="11" font-weight="600" text-anchor="middle" font-family="JetBrains Mono, monospace">Orchestrator</text>
+  <text x="140" y="662" fill="#94a3b8" font-size="8" text-anchor="middle" font-family="JetBrains Mono, monospace">Provision · Monitor · Bill</text>
+
+  <rect x="280" y="620" width="160" height="60" rx="6" fill="rgba(8,51,68,0.4)" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="360" y="645" fill="white" font-size="11" font-weight="600" text-anchor="middle" font-family="JetBrains Mono, monospace">Admin Panel</text>
+  <text x="360" y="662" fill="#94a3b8" font-size="8" text-anchor="middle" font-family="JetBrains Mono, monospace">Health · Billing · Alerts</text>
+
+  <rect x="500" y="620" width="160" height="60" rx="6" fill="rgba(76,29,149,0.4)" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="580" y="645" fill="white" font-size="11" font-weight="600" text-anchor="middle" font-family="JetBrains Mono, monospace">Backup Store</text>
+  <text x="580" y="662" fill="#94a3b8" font-size="8" text-anchor="middle" font-family="JetBrains Mono, monospace">PGLite snapshots</text>
+
+  <rect x="720" y="620" width="160" height="60" rx="6" fill="rgba(136,19,55,0.4)" stroke="#fb7185" stroke-width="1.5"/>
+  <text x="800" y="645" fill="white" font-size="11" font-weight="600" text-anchor="middle" font-family="JetBrains Mono, monospace">Auth Gateway</text>
+  <text x="800" y="662" fill="#94a3b8" font-size="8" text-anchor="middle" font-family="JetBrains Mono, monospace">OAuth · Magic Link · Stripe</text>
+
+  <!-- Auth boundary -->
+  <rect x="15" y="260" width="150" height="110" rx="8" fill="transparent" stroke="#fb7185" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="22" y="275" fill="#fb7185" font-size="8" font-family="JetBrains Mono, monospace">auth required</text>
+
+  <!-- Arrows -->
+  <line x1="150" y1="155" x2="258" y2="145" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow-emerald)"/>
+  <text x="200" y="138" fill="#94a3b8" font-size="8" text-anchor="middle" font-family="JetBrains Mono, monospace">OAuth pull</text>
+  <line x1="330" y1="180" x2="330" y2="208" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow-emerald)"/>
+  <line x1="400" y1="237" x2="468" y2="170" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow-emerald)"/>
+  <text x="430" y="200" fill="#94a3b8" font-size="8" text-anchor="middle" font-family="JetBrains Mono, monospace">raw files</text>
+  <line x1="550" y1="180" x2="550" y2="268" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#arrow-violet)"/>
+  <text x="564" y="225" fill="#94a3b8" font-size="8" font-family="JetBrains Mono, monospace">put / embed</text>
+  <line x1="470" y1="310" x2="152" y2="448" stroke="#fbbf24" stroke-width="1.5" marker-end="url(#arrow-amber)"/>
+  <text x="300" y="375" fill="#fbbf24" font-size="8" font-family="JetBrains Mono, monospace">text-embedding-3-small</text>
+  <line x1="470" y1="145" x2="152" y2="440" stroke="#fbbf24" stroke-width="1.5" marker-end="url(#arrow-amber)"/>
+  <text x="280" y="280" fill="#fbbf24" font-size="8" font-family="JetBrains Mono, monospace">GPT-4o / o4-mini</text>
+  <line x1="150" y1="315" x2="150" y2="455" stroke="#22d3ee" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="156" y="388" fill="#22d3ee" font-size="8" font-family="JetBrains Mono, monospace">fetch JSON</text>
+  <line x1="470" y1="360" x2="400" y2="430" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrow-cyan)"/>
+  <line x1="400" y1="455" x2="468" y2="455" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrow-cyan)"/>
+  <text x="430" y="420" fill="#94a3b8" font-size="8" text-anchor="middle" font-family="JetBrains Mono, monospace">enrich</text>
+  <line x1="150" y1="315" x2="730" y2="315" stroke="#22d3ee" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow-cyan)"/>
+  <text x="440" y="310" fill="#22d3ee" font-size="8" text-anchor="middle" font-family="JetBrains Mono, monospace">POST /api/ask</text>
+  <line x1="680" y1="310" x2="632" y2="310" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow-emerald)"/>
+  <line x1="140" y1="620" x2="330" y2="510" stroke="#fbbf24" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="200" y="560" fill="#fbbf24" font-size="7" font-family="JetBrains Mono, monospace">provision / health</text>
+
+  <!-- Legend -->
+  <text x="820" y="90" fill="white" font-size="10" font-weight="600" font-family="JetBrains Mono, monospace">Legend</text>
+  <rect x="820" y="102" width="16" height="10" rx="2" fill="rgba(8,51,68,0.4)" stroke="#22d3ee" stroke-width="1"/><text x="842" y="110" fill="#94a3b8" font-size="8" font-family="JetBrains Mono, monospace">Dashboard / Frontend</text>
+  <rect x="820" y="118" width="16" height="10" rx="2" fill="rgba(6,78,59,0.4)" stroke="#34d399" stroke-width="1"/><text x="842" y="126" fill="#94a3b8" font-size="8" font-family="JetBrains Mono, monospace">Backend / Processing</text>
+  <rect x="820" y="134" width="16" height="10" rx="2" fill="rgba(76,29,149,0.4)" stroke="#a78bfa" stroke-width="1"/><text x="842" y="142" fill="#94a3b8" font-size="8" font-family="JetBrains Mono, monospace">Database (PGLite)</text>
+  <rect x="820" y="150" width="16" height="10" rx="2" fill="rgba(120,53,15,0.3)" stroke="#fbbf24" stroke-width="1"/><text x="842" y="158" fill="#94a3b8" font-size="8" font-family="JetBrains Mono, monospace">External / Cloud API</text>
+  <rect x="820" y="166" width="16" height="10" rx="2" fill="rgba(136,19,55,0.4)" stroke="#fb7185" stroke-width="1"/><text x="842" y="174" fill="#94a3b8" font-size="8" font-family="JetBrains Mono, monospace">Auth / Security</text>
+  <line x1="820" y1="188" x2="836" y2="188" stroke="#22d3ee" stroke-width="1" stroke-dasharray="4,3"/><text x="842" y="192" fill="#94a3b8" font-size="8" font-family="JetBrains Mono, monospace">Data fetch</text>
+  <line x1="820" y1="204" x2="836" y2="204" stroke="#fbbf24" stroke-width="1" stroke-dasharray="4,4"/><text x="842" y="208" fill="#94a3b8" font-size="8" font-family="JetBrains Mono, monospace">Management plane</text>
+</svg>
+</div>
+
+<div class="container">
+
+<!-- ─────────────────────────────────────────────────────────── -->
+<h2>6. Component Map</h2>
+
+<div class="table-wrap">
+<table>
+  <tr><th>Component</th><th>Where</th><th>What It Does</th></tr>
+  <tr><td>Google Drive folder</td><td>Client's Google account</td><td>Source of truth for raw material — meeting transcripts, articles, voice notes, PDFs. Client owns and controls.</td></tr>
+  <tr><td>Sync Daemon</td><td>Inside client's LXC</td><td>rclone daemon that polls Drive every 15 min. Pulls new/changed files into <code>~/workspace/</code>. OAuth token stored per-client.</td></tr>
+  <tr><td>Hermes Agent</td><td>Inside client's LXC</td><td>Runs the processing pipeline: put pages → extract links → embed vectors → run doctor → export JSON. Fires on cron (every 6h) or on-demand "Refresh Brain" button.</td></tr>
+  <tr><td>gbrain Runtime</td><td>Inside client's LXC</td><td>Bun process running gbrain CLI. Owns the PGLite file. Called by Hermes Agent and Query API. Single-writer — only one operation at a time.</td></tr>
+  <tr><td>PGLite</td><td>Inside client's LXC</td><td>Single-file WASM PostgreSQL. ~30 KB per page. 50 pages ≈ 1.5 MB. 500 pages ≈ 15 MB. Tiny.</td></tr>
+  <tr><td>Query API</td><td>Inside client's LXC</td><td>Lightweight Fastify server on :3001. Single endpoint: <code>POST /api/ask</code>. Runs <code>gbrain query</code> for hybrid search, then calls OpenAI (GPT-4o) for synthesis. Returns answer with source citations.</td></tr>
+  <tr><td>Static Host</td><td>Nginx in LXC or CDN</td><td>Serves the dashboard HTML + exported JSON. Can be Nginx in the container, or pushed to GitHub Pages / Cloudflare Pages for CDN distribution.</td></tr>
+  <tr><td>OpenAI API</td><td>External</td><td>Embeddings (<code>text-embedding-3-small</code>) for vector search. LLM (<code>GPT-4o</code>) for Q&A synthesis. <strong>Called under the client's own API key.</strong></td></tr>
+  <tr><td>Orchestrator</td><td>Operator VPS (host level)</td><td>Provisioning script: <code>create-client --email X --plan pro</code> → creates LXC, installs deps, configures DNS, returns URL.</td></tr>
+  <tr><td>Admin Panel</td><td>Operator VPS</td><td>Health dashboard across all clients. Container uptime, disk usage, brain scores, OpenAI key validity, build status.</td></tr>
+  <tr><td>Auth Gateway</td><td>Operator VPS</td><td>OAuth for Google Drive. Magic link for dashboard login. Stripe webhooks for billing. Session management.</td></tr>
+  <tr><td>Backup Store</td><td>Operator VPS (off-instance)</td><td>Nightly PGLite snapshots per client. Restore from last good snapshot on corruption.</td></tr>
+</table>
+</div>
+
+<!-- ─────────────────────────────────────────────────────────── -->
+<h2>7. Sequence Diagram: Onboarding + First Brain Build</h2>
+
+<div class="mermaid-wrap">
+<div class="mermaid">
+sequenceDiagram
+    actor Client
+    participant Dashboard as Dashboard (browser)
+    participant AuthGW as Auth Gateway
+    participant Orch as Orchestrator
+    participant LXC as Client LXC Container
+    participant Sync as Sync Daemon
+    participant Hermes as Hermes Agent
+    participant gbrain as gbrain Runtime + PGLite
+    participant OpenAI as OpenAI API
+    participant Host as Static Host
+
+    Client->>Dashboard: Visits signup.malohacoast.com
+    Dashboard->>AuthGW: POST /signup (email)
+    AuthGW->>Orch: Provision new client container
+    Orch->>LXC: Create LXC: client-042
+    Orch->>LXC: Install Bun, gbrain, deps
+    Orch->>AuthGW: Container ready → client-042.malohacoast.com
+    AuthGW->>Client: Magic link → set password
+
+    Client->>Dashboard: "Connect Google Drive"
+    Dashboard->>AuthGW: OAuth2 flow → Google
+    AuthGW->>Sync: Store refresh token in container env
+    Sync->>Sync: rclone config with client's token
+
+    Client->>Dashboard: Pastes OpenAI API key
+    Dashboard->>AuthGW: POST /setup/key
+    AuthGW->>LXC: Write OPENAI_API_KEY to container env
+
+    Client->>Dashboard: Clicks "Build My Brain"
+    Dashboard->>Hermes: POST /api/build
+    Hermes->>Sync: Pull latest from Drive
+    Sync-->>Hermes: 12 files pulled
+
+    loop For each file in workspace
+        Hermes->>gbrain: gbrain put slug --body-stdin
+        gbrain-->>Hermes: page created
+    end
+
+    Hermes->>gbrain: gbrain extract all --source db
+    gbrain-->>Hermes: 34 wiki links resolved
+    Hermes->>gbrain: gbrain embed --all
+    gbrain->>OpenAI: POST /embeddings (text-embedding-3-small)
+    Note over OpenAI: Client's API key used
+    OpenAI-->>gbrain: embeddings vectors
+    gbrain-->>Hermes: 12 pages embedded
+
+    Hermes->>gbrain: gbrain doctor --json
+    gbrain-->>Hermes: brain_score: 78, coverage: 92%
+
+    Hermes->>Hermes: Run enrichment script → gbrain-data.json
+    Hermes->>Host: Deploy dashboard + data JSON
+    Host-->>Hermes: Live at client-042.malohacoast.com
+
+    Hermes-->>Dashboard: Build complete. Brain ready.
+    Dashboard->>Client: "Your brain is live! 🧠"
+</div>
+</div>
+
+<!-- ─────────────────────────────────────────────────────────── -->
+<h2>8. Sequence Diagram: Daily "Ask My Brain a Question"</h2>
+
+<div class="mermaid-wrap">
+<div class="mermaid">
+sequenceDiagram
+    actor Client
+    participant Dashboard as Dashboard (static HTML)
+    participant Nginx as Static Host
+    participant QAPI as Query API (:3001)
+    participant gbrain as gbrain Runtime
+    participant PGLite as PGLite (brain.pglite)
+    participant OpenAI as OpenAI API
+
+    Client->>Dashboard: Opens client-042.malohacoast.com
+    Dashboard->>Nginx: GET gbrain-dashboard.html
+    Nginx-->>Dashboard: HTML (cached)
+    Dashboard->>Nginx: GET gbrain-data.json
+    Nginx-->>Dashboard: Brain export (30 KB)
+
+    Client->>Dashboard: Types "Nabil" in search box
+    Dashboard->>Dashboard: Client-side filter: ILIKE "nabil"
+    Dashboard->>Client: Shows Nabil Jalil entity card
+
+    Client->>Dashboard: "What did I discuss with Nabil?"
+    Dashboard->>QAPI: POST /api/ask {question}
+    Note over QAPI: Auth: session cookie
+
+    QAPI->>gbrain: gbrain query "What did I discuss..."
+    gbrain->>PGLite: Hybrid search (vector + keyword)
+    PGLite-->>gbrain: Top 5 matching pages
+
+    gbrain-->>QAPI: [{slug, title, snippet, score}]
+
+    QAPI->>OpenAI: POST /chat/completions
+    Note over OpenAI: Client's API key
+    OpenAI-->>QAPI: "You met Nabil Jalil after the Biarta..."
+
+    QAPI-->>Dashboard: {answer, sources[], query_ms: 234}
+    Dashboard->>Client: Answer with clickable source citations
+</div>
+</div>
+
+<!-- ─────────────────────────────────────────────────────────── -->
+<h2>9. Trade-offs of the Recommended Architecture</h2>
+
+<div class="card">
+  <h3>Privacy Compromise</h3>
+  <p>Raw files transit through your VPS during processing. A privacy-obsessed client might object. Mitigated by: clear data handling policy in ToS, encryption at rest, full data purge on cancellation, BYO-keys. If a client absolutely requires "my data never touches a third-party server," offer a local app tier (Option A) as an enterprise plan.</p>
+</div>
+
+<div class="card">
+  <h3>PGLite Is Not Concurrent</h3>
+  <p>Only ONE gbrain process can write to <code>brain.pglite</code> at a time. If Hermes is mid-build and the client hits <code>/api/ask</code>, the query could fail or get stale results. Solution: job queue. Builds are queued. Queries read from a read-only copy or wait. Flagged for implementation.</p>
+</div>
+
+<div class="card">
+  <h3>Container Overhead</h3>
+  <p>Each LXC is ~200–400 MB RAM (Bun + gbrain + daemons). At 50 clients: 10–20 GB RAM on your VPS. Manageable on a $40–80/mo VPS. At 200+ clients, you'll need orchestration (Kubernetes or multiple VPSs).</p>
+</div>
+
+<div class="card">
+  <h3>Build Time</h3>
+  <p>First build for a client with 50 files might take 5–15 minutes (embeddings are the bottleneck — OpenAI's API is fast but rate-limited). Client can't use the brain until the build finishes. Need a progress indicator in the dashboard.</p>
+</div>
+
+<div class="card">
+  <h3>OpenAI Key Exposure</h3>
+  <p>The key lives in the container env. If your VPS is compromised, keys could be exfiltrated. Mitigation: container isolation, no logging of env vars, read-only mount from a secrets manager, and alerting on anomalous OpenAI spend.</p>
+</div>
+
+<div class="card">
+  <h3>Dashboard Is Stale Between Builds</h3>
+  <p>The dashboard fetches a JSON snapshot. It doesn't auto-refresh. Solution: cron-based rebuild every 6 hours + manual "Refresh Brain" button. For real-time updates, add a WebSocket — but that's overkill for solo coaches.</p>
+</div>
+
+<!-- ─────────────────────────────────────────────────────────── -->
+<h2>10. Failure Modes</h2>
+
+<div class="table-wrap">
+<table>
+  <tr><th>Failure</th><th>Impact</th><th>Mitigation</th></tr>
+  <tr>
+    <td>Client's OpenAI key expires</td>
+    <td>Embeddings fail, queries fail. Brain goes stale.</td>
+    <td>Health check monitors key validity. Email alert to client. Graceful degradation: search still works (keyword only), no LLM synthesis.</td>
+  </tr>
+  <tr>
+    <td>Google Drive OAuth token expires</td>
+    <td>Sync daemon can't pull new files.</td>
+    <td>Token refresh logic in rclone. If refresh fails, email client to re-auth.</td>
+  </tr>
+  <tr>
+    <td>PGLite file corruption</td>
+    <td>Brain is dead. All data lost.</td>
+    <td>Nightly PGLite snapshots to backup store. Restore from last good snapshot. <code>gbrain doctor</code> detects corruption early.</td>
+  </tr>
+  <tr>
+    <td>Container runs out of disk</td>
+    <td>Builds fail, queries fail.</td>
+    <td>Disk quota monitoring. Auto-alert at 80% usage. Auto-prune old workspace files.</td>
+  </tr>
+  <tr>
+    <td>OpenAI API is down</td>
+    <td>Embeddings and LLM queries fail.</td>
+    <td>Queue and retry with exponential backoff. Client sees "OpenAI is temporarily unavailable — your brain search still works."</td>
+  </tr>
+  <tr>
+    <td>VPS goes down</td>
+    <td>All clients' brains unavailable.</td>
+    <td>Single point of failure. Mitigate with standby VPS + replicated containers, or accept 99.5% uptime as acceptable for a solo-coach tool.</td>
+  </tr>
+</table>
+</div>
+
+<!-- ─────────────────────────────────────────────────────────── -->
+<h2>11. gbrain Internals That Constrain the Design</h2>
+
+<h3>Confirmed (from live gbrain instance)</h3>
+<ul>
+  <li><strong>PGLite is a single file</strong> (<code>brain.pglite</code>) opened by the Bun process. No network port. No client/server protocol. This is the single biggest constraint — it means gbrain MUST run locally to the PGLite file.</li>
+  <li><strong>gbrain uses OpenAI for embeddings</strong> (<code>text-embedding-3-small</code>). API call per page during <code>gbrain embed --all</code>. Client's key used server-side. No local embedding model needed.</li>
+  <li><strong>The CLI is synchronous</strong>. <code>gbrain put</code>, <code>gbrain embed</code>, <code>gbrain extract</code> are blocking commands. No streaming. A build is a sequential pipeline.</li>
+  <li><strong>Export is file-based</strong>: <code>gbrain export --dir /tmp/brain-export</code> dumps markdown files. The enrichment script (Python, stdlib only) builds the dashboard JSON. This is a batch operation.</li>
+  <li><strong>The dashboard is pure static HTML + JSON fetch</strong>. No backend needed for browsing. This is a huge advantage — it means the dashboard can be hosted on a $0 CDN and only the Query API needs compute.</li>
+</ul>
+
+<h3>Guesses (needs verification)</h3>
+<ul>
+  <li><strong>Does gbrain have built-in auth or multi-user support?</strong> I'm assuming none. The container is the isolation boundary. You'd need to build auth yourself.</li>
+  <li><strong>Does <code>gbrain query</code> return structured data?</strong> I'm assuming JSON or parseable text. If it only prints human-readable output, you'll need a wrapper script to parse it for the Query API.</li>
+  <li><strong>Memory/CPU profile at scale</strong> — I've seen it handle ~30 pages fine. At 500+ pages, the Bun process might need tuning. Benchmark before production.</li>
+  <li><strong>Does PGLite support WAL or read replicas?</strong> If it does, you could have a read replica for queries while the main process builds. If not (likely — it's embedded), use the job queue approach.</li>
+</ul>
+
+<!-- ─────────────────────────────────────────────────────────── -->
+<h2>12. The Scale Path</h2>
+
+<div class="card">
+  <pre><code>Phase 1 (1–10 clients):
+  1 VPS ($40/mo) → 10 LXC containers → manual provisioning
+
+Phase 2 (10–50 clients):
+  2–3 VPSs → Ansible/Terraform provisioning → admin panel for health
+
+Phase 3 (50–200 clients):
+  Kubernetes cluster → per-client namespaces → automated billing
+  → offer "bring your own cloud" for enterprise clients
+
+Phase 4 (200+ clients):
+  Multi-region → dedicated embedding models (no OpenAI dependency)
+  → tiered storage (hot PGLite + cold S3 archive)</code></pre>
+</div>
+
+<div class="card" style="border-color: var(--accent);">
+  <h3>Next Step: Build the Provisioning Script</h3>
+  <p>One command that does everything: <code>create-client --email sayf@example.com --plan pro</code> spins up an LXC, installs gbrain + deps, configures DNS, returns a URL. Once provisioning is scripted, everything else is iteration on the dashboard, pipeline, and billing.</p>
+</div>
+
+</div><!-- /container -->
+
+<footer>
+  <a href="https://malohacoast.com">Maloha Coast Sdn Bhd</a> · Built with Hermes Agent + gbrain · June 2026
+</footer>
+
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'dark',
+    themeVariables: {
+      darkMode: true,
+      background: '#0f172a',
+      primaryColor: '#22d3ee',
+      primaryTextColor: '#f1f5f9',
+      primaryBorderColor: '#334155',
+      lineColor: '#64748b',
+      secondaryColor: '#34d399',
+      tertiaryColor: '#a78bfa',
+      noteBkgColor: '#1e293b',
+      noteTextColor: '#94a3b8',
+      actorBkg: '#1e293b',
+      actorBorder: '#334155',
+      actorTextColor: '#f1f5f9',
+      actorLineColor: '#64748b',
+      signalColor: '#f1f5f9',
+      signalTextColor: '#94a3b8',
+      labelBoxBkgColor: '#0f172a',
+      labelBoxBorderColor: '#334155',
+      labelTextColor: '#94a3b8',
+      loopTextColor: '#94a3b8',
+      activationBkgColor: '#1e293b',
+      activationBorderColor: '#22d3ee',
+      sequenceNumberColor: '#020617'
+    }
+  });
+</script>
+</body>
+</html>
