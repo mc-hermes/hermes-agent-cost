@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-06-08T06:15:44Z",
+  "updated_at": "2026-06-08T15:54:09Z",
   "summary": {
-    "score": "Brain score 20/28",
-    "page_count": 28,
+    "score": "Brain score 26/34",
+    "page_count": 34,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "71.4% of pages have inbound links",
-    "entity_links": "Coverage \u2014 7 people, 6 companies indexed",
-    "concept_count": 13,
+    "graph_coverage": "76.5% of pages have inbound links",
+    "entity_links": "Coverage \u2014 9 people, 9 companies indexed",
+    "concept_count": 14,
     "meeting_count": 2,
-    "person_count": 7,
-    "company_count": 6,
-    "total_links": 22,
-    "outbound_count": 35,
-    "inbound_count": 33
+    "person_count": 9,
+    "company_count": 9,
+    "total_links": 30,
+    "outbound_count": 49,
+    "inbound_count": 44
   },
   "pages": [
     {
@@ -114,6 +114,82 @@
       ],
       "outbound_count": 2,
       "inbound_count": 1
+    },
+    {
+      "slug": "companies/ai-automation-society",
+      "title": "AI Automation Society",
+      "type": "company",
+      "updated": "",
+      "body": "# AI Automation Society\n\n> Community and newsletter for AI automation practitioners, publishing insights on practical AI workflows, client acquisition, and industry trends.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [The Skill That 10x'd My Claude Code Projects](concepts/the-skill-that-10xd-my-claude-code-projects) as the publisher of the forwarded newsletter by Nate Herk, covering the Grill Me skill, Carson's automation client win, and Anthropic's IPO filing\n- Hosts AIS Live event (July 11-12, 2026)\n\n## Related\n\n- [Nate Herk](people/nate-herk) \u2014 Creator/Author\n- [Carson](people/carson) \u2014 Community Member\n- [concepts/the-skill-that-10xd-my-claude-code-projects] \u2014 Newsletter source\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-05** | Published newsletter \"The Skill That 10x'd My Claude Code Projects\" covering Claude context skills, first client acquisition stories, and Anthropic IPO news. [Source: Email newsletter]\n- **2026-07-11\u201312** | AIS Live event: two-day practitioner conference on AI automation client work. [Source: Newsletter]",
+      "tags": [
+        "ai-automation",
+        "community",
+        "newsletter"
+      ],
+      "links_out": [
+        {
+          "to": "concepts/the-skill-that-10xd-my-claude-code-projects",
+          "type": "link",
+          "text": "The Skill That 10x'd My Claude Code Projects"
+        },
+        {
+          "to": "people/nate-herk",
+          "type": "link",
+          "text": "Nate Herk"
+        },
+        {
+          "to": "people/carson",
+          "type": "link",
+          "text": "Carson"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "concepts/claude-code-10x-skill-newsletter",
+          "type": "wikilink",
+          "text": "AI Automation Society"
+        },
+        {
+          "from": "people/carson",
+          "type": "link",
+          "text": "AI Automation Society"
+        }
+      ],
+      "outbound_count": 3,
+      "inbound_count": 2
+    },
+    {
+      "slug": "companies/anthropic",
+      "title": "Anthropic",
+      "type": "company",
+      "updated": "",
+      "body": "# Anthropic\n\n> AI research company behind Claude. Filed for IPO at $965 billion valuation (June 2026).\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[claude-code-10x-skill-newsletter]] \u2014 IPO filing at $965B\n\n## Related\n\n- [[claude-code-10x-skill-newsletter]] \u2014 Discussion of Anthropic's IPO and what it means for Claude users\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-05** | Reported IPO filing at $965 billion valuation. Source: Nate Herk / AI Automation Society newsletter.",
+      "tags": [
+        "ai",
+        "claude",
+        "llm"
+      ],
+      "links_out": [
+        {
+          "to": "concepts/claude-code-10x-skill-newsletter",
+          "type": "wikilink",
+          "text": "claude-code-10x-skill-newsletter"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "companies/openai",
+          "type": "link",
+          "text": "Anthropic"
+        },
+        {
+          "from": "concepts/claude-code-10x-skill-newsletter",
+          "type": "wikilink",
+          "text": "Anthropic"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 2
     },
     {
       "slug": "companies/blackgrid-digital",
@@ -240,6 +316,40 @@
       "inbound_count": 1
     },
     {
+      "slug": "companies/openai",
+      "title": "OpenAI",
+      "type": "company",
+      "updated": "",
+      "body": "# OpenAI\n\n> AI research and deployment company behind ChatGPT and GPT model family. Valued at $852 billion after their last funding round, expected to go public in 2026.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [The Skill That 10x'd My Claude Code Projects](concepts/the-skill-that-10xd-my-claude-code-projects) as having a $852 billion valuation, competing with Anthropic and SpaceX in the race to go public in 2026\n\n## Related\n\n- [Anthropic](companies/anthropic) \u2014 Competitor\n- [concepts/the-skill-that-10xd-my-claude-code-projects] \u2014 Market context\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06** | Valued at $852 billion after latest funding round, expected to go public alongside Anthropic and SpaceX this year. [Source: AI Automation Society newsletter]",
+      "tags": [
+        "ai",
+        "chatgpt",
+        "ipo",
+        "llm"
+      ],
+      "links_out": [
+        {
+          "to": "concepts/the-skill-that-10xd-my-claude-code-projects",
+          "type": "link",
+          "text": "The Skill That 10x'd My Claude Code Projects"
+        },
+        {
+          "to": "companies/anthropic",
+          "type": "link",
+          "text": "Anthropic"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "concepts/claude-code-10x-skill-newsletter",
+          "type": "wikilink",
+          "text": "OpenAI"
+        }
+      ],
+      "outbound_count": 2,
+      "inbound_count": 1
+    },
+    {
       "slug": "companies/passend",
       "title": "Passend",
       "type": "company",
@@ -278,6 +388,55 @@
       ],
       "outbound_count": 0,
       "inbound_count": 1
+    },
+    {
+      "slug": "concepts/claude-code-10x-skill-newsletter",
+      "title": "Claude Code 10x Skill Newsletter",
+      "type": "concept",
+      "updated": "",
+      "body": "# Fwd: The Skill That 10x'd My Claude Code Projects\n**From:** Sayf Codes <sayfcodes@gmail.com>\n**Date:** Mon, 8 Jun 2026 23:49:48 +0800\n**Source:** email\n\n> Forwarded message from Nate Herk <nate@aiautomationsociety.ai>\n\nJune 05, 2026 \u2014 AI Automation Society Newsletter\n\n## The Skill That 10x'd My Claude Code Projects\n\nSharper Claude context, Carson's first automation win, and Anthropic's $965B IPO filing\n\n### In This Issue\n- The single technique that makes every Claude project sound less like everyone else and more like you\n- Carson landed his first automation client with a free pilot \u2014 here's the exact move\n- Anthropic just filed for IPO at $965 billion \u2014 what it means if Claude is your primary tool\n\n### New Video: The Skill That 10x'd My Claude Code Projects\n\nIf your Claude outputs feel generic \u2014 technically correct but missing your voice \u2014 the problem is not the model. Everyone using Claude Opus 4.8 starts from the same foundation. The difference between outputs that sound like you and ones that sound like everyone else is context.\n\n**The Grill Me skill** fixes that. Instead of a five-minute brain dump before you start building, it interviews you until it actually understands how you think. It asks one question at a time, checkpoints your answers to a markdown file in your project, and keeps going until there are no gaps. By the end, you have reusable context your AI pulls from every time you touch that skill or project.\n\n**The mistake most people make:** Starting with a brain dump and calling it good enough. Five minutes of info-dumping gets your output quality to about 70% on iteration one. The Grill Me approach gets you to 90% from the start \u2014 fewer revision cycles, faster time to a deliverable clients actually like.\n\n**How this helps you:** When Claude knows your voice, your decisions, and your process, it stops generating generic output. Your projects feel like yours. Clients notice. You spend less time fixing what the AI got wrong.\n\n### Winning Is All We Do \u2014 [[Carson]] landed his first automation client\n\n**What happened:** [[Carson]] built a lead automation for a local aesthetics clinic as a free pilot. The workflow routes contact data and handles follow-ups automatically. He's waiting on Facebook credentials to go live, but the clinic owner is already highly receptive. His plan: deliver the pilot, then position for a paid monthly retainer.\n\n**The opportunity:** Local service businesses (clinics, salons, studios) are some of the easiest first clients to land. They have real lead problems, a low technology bar, and if you deliver, they talk to other business owners. A free pilot with a clear upsell path is one of the cleanest ways to get your first paying automation client.\n\n### In the News \u2014 [[Anthropic]] filed for IPO at $965 billion\n\n**The news:** On June 1, 2026, [[Anthropic]] \u2014 the company behind Claude \u2014 confidentially submitted an S-1 to the SEC for a proposed initial public offering. Valuation: $965 billion, putting it ahead of [[OpenAI]] ($852 billion after their last funding round). [[Anthropic]] joins SpaceX and [[OpenAI]] in what analysts are already calling a race to go public \u2014 all three expected to list this year.\n\n**How it affects automation:** When your primary AI tool's parent company goes public, two things typically follow: more capital to build better models (good for you), and quarterly earnings pressure that tends to push enterprise-first roadmaps and price adjustments upward. This is not a reason to panic. It is a reason to build your skills and client base now, before the landscape shifts again.\n\n### AIS Live \u2014 July 11-12, 2026\n\n[[AI Automation Society]] hosts a two-day event where real practitioners walk through real client engagements on stage. Day 1: see the exact projects being sold right now and build one live. Day 2: exactly how to get clients, even if you're a beginner with no credibility yet. General Admission starts at $97 (early bird ends June 7).\n\n### People Mentioned\n- [[Nate Herk]] \u2014 Author of the original newsletter from [[AI Automation Society]]\n- [[Carson]] \u2014 Practitioner who landed first automation client\n\n### Companies Mentioned\n- [[AI Automation Society]] \u2014 Publisher\n- [[Anthropic]] \u2014 Filed IPO at $965B\n- [[OpenAI]] \u2014 $852B valuation\n\n---\n\n*From: AI Automation Society (beehiiv)*",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "people/carson",
+          "type": "wikilink",
+          "text": "Carson"
+        },
+        {
+          "to": "companies/anthropic",
+          "type": "wikilink",
+          "text": "Anthropic"
+        },
+        {
+          "to": "companies/openai",
+          "type": "wikilink",
+          "text": "OpenAI"
+        },
+        {
+          "to": "companies/ai-automation-society",
+          "type": "wikilink",
+          "text": "AI Automation Society"
+        },
+        {
+          "to": "people/nate-herk",
+          "type": "wikilink",
+          "text": "Nate Herk"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "companies/anthropic",
+          "type": "wikilink",
+          "text": "claude-code-10x-skill-newsletter"
+        },
+        {
+          "from": "people/nate-herk",
+          "type": "wikilink",
+          "text": "claude-code-10x-skill-newsletter"
+        }
+      ],
+      "outbound_count": 5,
+      "inbound_count": 2
     },
     {
       "slug": "concepts/embedding-cost-projection",
@@ -599,6 +758,43 @@
       "inbound_count": 1
     },
     {
+      "slug": "people/carson",
+      "title": "Carson",
+      "type": "person",
+      "updated": "",
+      "body": "# Carson\n\n> AI automation practitioner who landed his first automation client through a free pilot approach.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [The Skill That 10x'd My Claude Code Projects](concepts/the-skill-that-10xd-my-claude-code-projects) as the practitioner who built a lead automation for a local aesthetics clinic as a free pilot, planning to upsell to a monthly retainer\n\n## Related\n\n- [AI Automation Society](companies/ai-automation-society) \u2014 Member/Practitioner\n- [concepts/the-skill-that-10xd-my-claude-code-projects] \u2014 Story source\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-05** | Landed first automation client with a free lead automation pilot for a local aesthetics clinic. [Source: AI Automation Society newsletter]",
+      "tags": [
+        "ai-automation",
+        "client-work"
+      ],
+      "links_out": [
+        {
+          "to": "concepts/the-skill-that-10xd-my-claude-code-projects",
+          "type": "link",
+          "text": "The Skill That 10x'd My Claude Code Projects"
+        },
+        {
+          "to": "companies/ai-automation-society",
+          "type": "link",
+          "text": "AI Automation Society"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "companies/ai-automation-society",
+          "type": "link",
+          "text": "Carson"
+        },
+        {
+          "from": "concepts/claude-code-10x-skill-newsletter",
+          "type": "wikilink",
+          "text": "Carson"
+        }
+      ],
+      "outbound_count": 2,
+      "inbound_count": 2
+    },
+    {
       "slug": "people/jake-van-cleef",
       "title": "Jake Van Cleef",
       "type": "person",
@@ -642,6 +838,39 @@
       "company_name": "BlackGrid Digital",
       "website": "https://blackgridseo.com",
       "location": "Los Angeles, CA / Kuala Lumpur, Malaysia"
+    },
+    {
+      "slug": "people/nate-herk",
+      "title": "Nate Herk",
+      "type": "person",
+      "updated": "",
+      "body": "# Nate Herk\n\n> Author of the AI Automation Society newsletter. Writes about Claude Code techniques, AI automation workflows, and industry news.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[claude-code-10x-skill-newsletter]] \u2014 forwarded newsletter about Claude Code skills and Anthropic IPO\n\n## Related\n\n- [[claude-code-10x-skill-newsletter]] \u2014 Newsletter: \"The Skill That 10x'd My Claude Code Projects\"\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-05** | Published newsletter: \"The Skill That 10x'd My Claude Code Projects\" covering Claude context techniques, Carson's automation win, and Anthropic's $965B IPO filing. Forwarded by sayf on 2026-06-08.",
+      "tags": [
+        "ai-automation",
+        "claude-code",
+        "newsletter"
+      ],
+      "links_out": [
+        {
+          "to": "concepts/claude-code-10x-skill-newsletter",
+          "type": "wikilink",
+          "text": "claude-code-10x-skill-newsletter"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "companies/ai-automation-society",
+          "type": "link",
+          "text": "Nate Herk"
+        },
+        {
+          "from": "concepts/claude-code-10x-skill-newsletter",
+          "type": "wikilink",
+          "text": "Nate Herk"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 2
     },
     {
       "slug": "people/nick-milo",
@@ -841,6 +1070,21 @@
       "type": "wikilink"
     },
     {
+      "source": "companies/ai-automation-society",
+      "target": "people/nate-herk",
+      "type": "link"
+    },
+    {
+      "source": "companies/ai-automation-society",
+      "target": "people/carson",
+      "type": "link"
+    },
+    {
+      "source": "companies/anthropic",
+      "target": "concepts/claude-code-10x-skill-newsletter",
+      "type": "wikilink"
+    },
+    {
       "source": "companies/blackgrid-digital",
       "target": "people/nabil-jalil",
       "type": "link"
@@ -858,6 +1102,31 @@
     {
       "source": "companies/nation-building-school",
       "target": "people/zaim-mohzani",
+      "type": "wikilink"
+    },
+    {
+      "source": "companies/openai",
+      "target": "companies/anthropic",
+      "type": "link"
+    },
+    {
+      "source": "concepts/claude-code-10x-skill-newsletter",
+      "target": "people/carson",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/claude-code-10x-skill-newsletter",
+      "target": "companies/openai",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/claude-code-10x-skill-newsletter",
+      "target": "companies/ai-automation-society",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/claude-code-10x-skill-newsletter",
+      "target": "people/nate-herk",
       "type": "wikilink"
     },
     {
@@ -930,18 +1199,23 @@
     "people": [
       "people/bjarte",
       "people/bob-proctor",
+      "people/carson",
       "people/jake-van-cleef",
       "people/nabil-jalil",
+      "people/nate-herk",
       "people/nick-milo",
       "people/tj-vandermolen",
       "people/zaim-mohzani"
     ],
     "companies": [
+      "companies/ai-automation-society",
+      "companies/anthropic",
       "companies/blackgrid-digital",
       "companies/global-ai-village",
       "companies/inclusive-ai-association",
       "companies/ksi-strategic-institute",
       "companies/nation-building-school",
+      "companies/openai",
       "companies/passend"
     ]
   },
