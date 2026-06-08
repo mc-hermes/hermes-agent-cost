@@ -968,7 +968,7 @@ function openPageModal(slug) {
   if ((page.links_out||[]).length) {
     html += `<div class="m-section"><div class="m-section-title">Links Out (${page.links_out.length})</div><div class="m-links">${
       page.links_out.map(l => `<div class="m-link" onclick="event.stopPropagation();openPageModal('${escAttr(l.to)}')">
-        <span class="dir">→</span><span>${esc(l.to)}</span><span class="ltype">${esc(l.type)}</span>
+        <span class="dir">→</span><span>${esc(l.text || l.to)}</span><span class="ltype">${esc(l.type)}</span>
       </div>`).join('')}</div></div>`;
   }
 

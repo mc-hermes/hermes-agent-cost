@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-08T03:24:26Z",
+  "updated_at": "2026-06-08T03:26:41Z",
   "summary": {
     "score": "Brain score 15/22",
     "page_count": 22,
@@ -24,12 +24,12 @@
       "tags": [],
       "links_out": [
         {
-          "to": "VPS Hardening",
+          "to": "vps-hardening",
           "type": "wikilink",
           "text": "VPS Hardening"
         },
         {
-          "to": "Google Workspace Setup",
+          "to": "google-workspace-setup",
           "type": "wikilink",
           "text": "Google Workspace Setup"
         },
@@ -39,7 +39,7 @@
           "text": "gbrain"
         },
         {
-          "to": "VPS Hardening#fail2ban",
+          "to": "vps-hardening",
           "type": "wikilink",
           "text": "VPS Hardening#fail2ban"
         }
@@ -222,7 +222,7 @@
           "text": "gateway-watchdog"
         },
         {
-          "to": "VPS Hardening",
+          "to": "vps-hardening",
           "type": "wikilink",
           "text": "VPS Hardening"
         },
@@ -256,12 +256,12 @@
           "text": "2026-06-03"
         },
         {
-          "to": "Google Workspace Setup",
+          "to": "google-workspace-setup",
           "type": "wikilink",
           "text": "Google Workspace Setup"
         },
         {
-          "to": "VPS Hardening",
+          "to": "vps-hardening",
           "type": "wikilink",
           "text": "VPS Hardening"
         }
@@ -563,12 +563,12 @@
       "tags": "",
       "links_out": [
         {
-          "to": "2026-06-03#VPS Hardening",
+          "to": "2026-06-03",
           "type": "wikilink",
           "text": "2026-06-03#VPS Hardening"
         },
         {
-          "to": "Google Workspace Setup",
+          "to": "google-workspace-setup",
           "type": "wikilink",
           "text": "Google Workspace Setup"
         },
@@ -578,7 +578,7 @@
           "text": "2026-06-03"
         },
         {
-          "to": "Gateway Infrastructure",
+          "to": "gateway-infrastructure",
           "type": "wikilink",
           "text": "Gateway Infrastructure"
         }
