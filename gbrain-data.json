@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-06-08T16:13:54Z",
+  "updated_at": "2026-06-08T16:14:31Z",
   "summary": {
-    "score": "Brain score 27/37",
+    "score": "Brain score 28/37",
     "page_count": 37,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "73.0% of pages have inbound links",
+    "graph_coverage": "75.7% of pages have inbound links",
     "entity_links": "Coverage \u2014 10 people, 10 companies indexed",
     "concept_count": 15,
     "meeting_count": 2,
     "person_count": 10,
     "company_count": 10,
-    "total_links": 31,
-    "outbound_count": 52,
-    "inbound_count": 45
+    "total_links": 33,
+    "outbound_count": 54,
+    "inbound_count": 47
   },
   "pages": [
     {
@@ -394,9 +394,15 @@
           "text": "Neo Kim"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "concepts/openclaw-anatomy",
+          "type": "wikilink",
+          "text": "System Design One"
+        }
+      ],
       "outbound_count": 2,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "concepts/business-brain",
@@ -487,11 +493,22 @@
       "title": "Openclaw Anatomy",
       "type": "concept",
       "updated": "",
-      "body": "# Fwd: The Anatomy of OpenClaw\n**From:** Sayf Codes <sayfcodes@gmail.com>\n**Date:** Tue, 9 Jun 2026 00:11:45 +0800\n**Source:** email forward\n\nForwarded from **Neo Kim** (System Design Newsletter) \u2014 Issue #151.\n\n> **Understanding How OpenClaw Works**\n\nOpenClaw is an open-source autonomous AI agent that runs on your machine, connects to messaging apps, and executes tasks directly \u2014 no manual copy-paste needed. It bridges the \"thinking layer\" (LLMs like Claude, GPT, Gemini) and the \"act layer\" (tools, APIs, files).\n\n## What OpenClaw Offers\n\n- **Gateway**: Always-on Node.js server (port 18789) coordinating messaging apps, LLM, tools, and memory. Runs as a background daemon \u2014 persistence is the foundation of scheduled jobs, proactive alerts, and multi-channel messaging.\n- **Multi-channel messaging**: WhatsApp, Telegram, Slack \u2014 shared context and memory across all platforms.\n- **Skills platform (ClawHub, 5,400+ capabilities)**: Plain Markdown files that define specific tasks (check GitHub PRs, send Slack messages).\n- **Persistent memory**: Markdown files on disk \u2014 inspectable, version-controllable.\n- **Proactive scheduling**: Heartbeat + cron jobs that act without being prompted.\n- **Model-agnostic**: Claude, GPT, DeepSeek, Gemini, Grok, local via Ollama \u2014 mix and match.\n\n## How It Differs\n\n- ChatGPT/Claude/Gemini: browser-only, no access to email/scripts, no persistence.\n- Siri/Google Assistant: closed products, no custom skills or self-hosting.\n- LangChain/CrewAI/AutoGen: developer frameworks requiring Python code.\n- Claude Code/Codex CLI: terminal tools for coding sessions \u2014 not 24/7.\n- **OpenClaw runs 24/7** for everything, not just code.\n\n## Architecture Layers\n\n**Gateway** (Control Center): Orchestrates everything \u2014 authenticates senders, assembles context, passes to LLM, handles tool calls, routes replies. Sends command confirmation requests (e.g., `rm -rf ~/logs/*.log` needs approval). Serves Control UI at `http://localhost:18789` for real-time monitoring. Supports hot configuration reloads.\n\n**Channel Layer**: Translation adapters per platform \u2014 Telegram (bot token + polling/webhook), WhatsApp (reverse-engineered web protocol, QR auth), Slack (Socket Mode, two token types), Discord (gateway WebSocket). Normalizes messages into internal format. Security policies (allowlists, pairing) apply uniformly.\n\n**LLM Layer**: Assembles system prompt from agent personality + available skills + retrieved memory + conversation history. Calls the AI model. Tool calls execute and feed results back \u2014 loop continues until final response. Compaction triggers at context limit (summarizes history).\n\n**Plugin System**: Almost everything non-core is a plugin \u2014 Telegram, GitHub, memory. Plugins hook into lifecycle events (before/after tool calls, messages, session start/end). Enables audit logging, rate limiting, custom approval flows without touching core.\n\n**Memory System**: Three-layer approach \u2014 (1) short-term: session files on disk, loads recent context only; (2) long-term: all sessions indexed into local database, auto-searches before answering; (3) standing notes: Markdown files in `~/.openclaw/workspace/memory/` as permanent briefing documents.\n\n**Long-running tasks**: Agent acknowledges task, works in background, messages when done. State written to disk, not held in memory. Cron jobs in isolated session mode for truly long-running work.\n\n## Key Insights\n\n- The Gateway runs on your Mac Mini or VPS \u2014 accessible via Tailscale from any device.\n- Control UI shows every tool call, model response, and approval request in real time.\n- Model can be changed at any time without reconfiguration.\n- If a single tool call takes too long, Gateway times out \u2014 break large tasks into chunks.\n- DeepResearch runs long sessions but stops when done \u2014 OpenClaw never stops.\n\n*This was a preview of a subscriber-only post from Neo Kim's System Design Newsletter.*",
+      "body": "# Fwd: The Anatomy of OpenClaw\n**From:** Sayf Codes <sayfcodes@gmail.com>\n**Date:** Tue, 9 Jun 2026 00:11:45 +0800\n**Source:** email forward\n\nForwarded from **[[Neo Kim]]** ([[System Design One]]) \u2014 Issue #151.\n\n> **Understanding How OpenClaw Works**\n\nOpenClaw is an open-source autonomous AI agent that runs on your machine, connects to messaging apps, and executes tasks directly \u2014 no manual copy-paste needed. It bridges the \"thinking layer\" (LLMs like Claude, GPT, Gemini) and the \"act layer\" (tools, APIs, files).\n\n## What OpenClaw Offers\n\n- **Gateway**: Always-on Node.js server (port 18789) coordinating messaging apps, LLM, tools, and memory. Runs as a background daemon \u2014 persistence is the foundation of scheduled jobs, proactive alerts, and multi-channel messaging.\n- **Multi-channel messaging**: WhatsApp, Telegram, Slack \u2014 shared context and memory across all platforms.\n- **Skills platform (ClawHub, 5,400+ capabilities)**: Plain Markdown files that define specific tasks (check GitHub PRs, send Slack messages).\n- **Persistent memory**: Markdown files on disk \u2014 inspectable, version-controllable.\n- **Proactive scheduling**: Heartbeat + cron jobs that act without being prompted.\n- **Model-agnostic**: Claude, GPT, DeepSeek, Gemini, Grok, local via Ollama \u2014 mix and match.\n\n## How It Differs\n\n- ChatGPT/Claude/Gemini: browser-only, no access to email/scripts, no persistence.\n- Siri/Google Assistant: closed products, no custom skills or self-hosting.\n- LangChain/CrewAI/AutoGen: developer frameworks requiring Python code.\n- Claude Code/Codex CLI: terminal tools for coding sessions \u2014 not 24/7.\n- **OpenClaw runs 24/7** for everything, not just code.\n\n## Architecture Layers\n\n**Gateway** (Control Center): Orchestrates everything \u2014 authenticates senders, assembles context, passes to LLM, handles tool calls, routes replies. Sends command confirmation requests (e.g., `rm -rf ~/logs/*.log` needs approval). Serves Control UI at `http://localhost:18789` for real-time monitoring. Supports hot configuration reloads.\n\n**Channel Layer**: Translation adapters per platform \u2014 Telegram (bot token + polling/webhook), WhatsApp (reverse-engineered web protocol, QR auth), Slack (Socket Mode, two token types), Discord (gateway WebSocket). Normalizes messages into internal format. Security policies (allowlists, pairing) apply uniformly.\n\n**LLM Layer**: Assembles system prompt from agent personality + available skills + retrieved memory + conversation history. Calls the AI model. Tool calls execute and feed results back \u2014 loop continues until final response. Compaction triggers at context limit (summarizes history).\n\n**Plugin System**: Almost everything non-core is a plugin \u2014 Telegram, GitHub, memory. Plugins hook into lifecycle events (before/after tool calls, messages, session start/end). Enables audit logging, rate limiting, custom approval flows without touching core.\n\n**Memory System**: Three-layer approach \u2014 (1) short-term: session files on disk, loads recent context only; (2) long-term: all sessions indexed into local database, auto-searches before answering; (3) standing notes: Markdown files in `~/.openclaw/workspace/memory/` as permanent briefing documents.\n\n**Long-running tasks**: Agent acknowledges task, works in background, messages when done. State written to disk, not held in memory. Cron jobs in isolated session mode for truly long-running work.\n\n## Key Insights\n\n- The Gateway runs on your Mac Mini or VPS \u2014 accessible via Tailscale from any device.\n- Control UI shows every tool call, model response, and approval request in real time.\n- Model can be changed at any time without reconfiguration.\n- If a single tool call takes too long, Gateway times out \u2014 break large tasks into chunks.\n- DeepResearch runs long sessions but stops when done \u2014 OpenClaw never stops.\n\n*This was a preview of a subscriber-only post from Neo Kim's System Design Newsletter.*",
       "tags": [],
-      "links_out": [],
+      "links_out": [
+        {
+          "to": "people/neo-kim",
+          "type": "wikilink",
+          "text": "Neo Kim"
+        },
+        {
+          "to": "companies/system-design-one",
+          "type": "wikilink",
+          "text": "System Design One"
+        }
+      ],
       "backlinks": [],
-      "outbound_count": 0,
+      "outbound_count": 2,
       "inbound_count": 0
     },
     {
@@ -933,10 +950,15 @@
           "from": "companies/system-design-one",
           "type": "wikilink",
           "text": "Neo Kim"
+        },
+        {
+          "from": "concepts/openclaw-anatomy",
+          "type": "wikilink",
+          "text": "Neo Kim"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "people/nick-milo",
@@ -1198,6 +1220,16 @@
     {
       "source": "concepts/claude-code-10x-skill-newsletter",
       "target": "people/nate-herk",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/openclaw-anatomy",
+      "target": "people/neo-kim",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/openclaw-anatomy",
+      "target": "companies/system-design-one",
       "type": "wikilink"
     },
     {
