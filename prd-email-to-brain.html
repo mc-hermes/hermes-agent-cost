@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RFC-001: Email-to-Brain Ingestion Pipeline · Maloha Coast</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #020617;
+    --surface: #0f172a;
+    --surface2: #1e293b;
+    --border: #334155;
+    --primary: #2a6a8a;
+    --primary-light: #22d3ee;
+    --accent: #c4a86a;
+    --accent-light: #fbbf24;
+    --text: #f1f5f9;
+    --text-muted: #94a3b8;
+    --green: #34d399;
+    --violet: #a78bfa;
+    --rose: #fb7185;
+    --radius: 12px;
+    --radius-sm: 8px;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    line-height: 1.7;
+    font-size: 15px;
+  }
+
+  /* ─── Article Layout ─── */
+  .article-wrap {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+  }
+
+  /* ─── RFC Header ─── */
+  .rfc-header {
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+  .rfc-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    font-family: 'JetBrains Mono', monospace;
+    background: rgba(196,168,106,0.12);
+    color: var(--accent);
+    border: 1px solid rgba(196,168,106,0.3);
+    margin-bottom: 16px;
+    letter-spacing: 0.04em;
+  }
+  .rfc-header h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+  .rfc-header h1 span { color: var(--accent); }
+  .rfc-subtitle {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    line-height: 1.5;
+  }
+  .rfc-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 20px;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .rfc-meta .meta-item { display: flex; align-items: center; gap: 6px; }
+  .rfc-meta .meta-label { color: var(--text-muted); opacity: 0.7; }
+  .rfc-meta .meta-value { color: var(--text); }
+
+  /* ─── Section Headings ─── */
+  h2 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    margin: 48px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  h2 .section-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--accent);
+    background: rgba(196,168,106,0.08);
+    padding: 2px 10px;
+    border-radius: 4px;
+  }
+  h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 28px 0 10px;
+    color: var(--accent-light);
+    letter-spacing: -0.01em;
+  }
+  h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 20px 0 8px;
+    color: var(--text);
+    letter-spacing: -0.005em;
+  }
+
+  /* ─── Paragraphs & Inline ─── */
+  p {
+    margin-bottom: 14px;
+    color: var(--text-muted);
+    line-height: 1.75;
+  }
+  p strong { color: var(--text); }
+  a { color: var(--primary-light); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    background: var(--surface2);
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: var(--primary-light);
+  }
+  em { color: var(--text); }
+
+  /* ─── Lists ─── */
+  ul, ol {
+    margin: 8px 0 16px;
+    padding-left: 22px;
+    color: var(--text-muted);
+  }
+  li { margin-bottom: 6px; line-height: 1.6; }
+  li strong { color: var(--text); }
+
+  /* ─── Cards ─── */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    margin: 20px 0;
+  }
+  .card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--text);
+    font-size: 0.95rem;
+  }
+  .card p:last-child { margin-bottom: 0; }
+  .card.accent { border-left: 3px solid var(--accent); }
+  .card.green { border-left: 3px solid var(--green); }
+  .card.cyan { border-left: 3px solid var(--primary-light); }
+  .card.rose  { border-left: 3px solid var(--rose); }
+  .card.violet { border-left: 3px solid var(--violet); }
+
+  /* ─── Callout ─── */
+  .callout {
+    background: rgba(196,168,106,0.06);
+    border: 1px solid rgba(196,168,106,0.18);
+    border-radius: var(--radius-sm);
+    padding: 14px 18px;
+    margin: 18px 0;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+  }
+  .callout strong { color: var(--accent); }
+
+  /* ─── Tables ─── */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 20px;
+    font-size: 0.8rem;
+  }
+  thead th {
+    text-align: left;
+    padding: 10px 14px;
+    background: var(--surface2);
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid var(--border);
+  }
+  tbody td {
+    padding: 10px 14px;
+    border-bottom: 1px solid rgba(51,65,85,0.4);
+    color: var(--text-muted);
+    vertical-align: top;
+  }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover td { background: rgba(255,255,255,0.015); }
+  tbody td:first-child { color: var(--text); font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; }
+
+  /* ─── Pre / Code Blocks ─── */
+  pre {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 16px 20px;
+    margin: 16px 0;
+    overflow-x: auto;
+  }
+  pre code {
+    background: none;
+    padding: 0;
+    color: var(--text);
+    font-size: 0.78rem;
+    line-height: 1.6;
+    display: block;
+  }
+  pre code .kw  { color: var(--violet); }
+  pre code .str { color: var(--green); }
+  pre code .cmt { color: var(--text-muted); opacity: 0.6; }
+  pre code .fn  { color: var(--primary-light); }
+
+  /* ─── Phase Diagram ─── */
+  .phase-timeline {
+    display: flex;
+    gap: 0;
+    margin: 20px 0;
+    overflow-x: auto;
+    padding: 8px 0;
+  }
+  .phase-block {
+    flex-shrink: 0;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 14px 16px;
+    text-align: center;
+    min-width: 90px;
+    position: relative;
+    margin-right: -1px;
+    border-radius: 0;
+  }
+  .phase-block:first-child { border-radius: var(--radius-sm) 0 0 var(--radius-sm); }
+  .phase-block:last-child  { border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+  .phase-block .phase-icon { font-size: 1.2rem; margin-bottom: 4px; }
+  .phase-block .phase-name { font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; font-weight: 600; }
+  .phase-block .phase-time { font-size: 0.9rem; font-weight: 700; color: var(--text); font-family: 'JetBrains Mono', monospace; }
+
+  /* ─── Footer ─── */
+  .article-footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    font-family: 'JetBrains Mono', monospace;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  /* ─── Status Badges ─── */
+  .status-live {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.68rem;
+    font-weight: 600;
+    background: rgba(52,211,153,0.1);
+    color: var(--green);
+    border: 1px solid rgba(52,211,153,0.25);
+  }
+  .status-live::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--green); }
+
+  /* ─── TOC ─── */
+  .toc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    margin: 24px 0 32px;
+  }
+  .toc h3 { margin-top: 0; color: var(--text); font-size: 0.85rem; margin-bottom: 12px; }
+  .toc ol { list-style: none; counter-reset: toc; padding: 0; margin: 0; }
+  .toc li { counter-increment: toc; margin-bottom: 8px; font-size: 0.82rem; }
+  .toc li::before { content: counter(toc) ". "; color: var(--accent); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; }
+  .toc a { color: var(--text-muted); text-decoration: none; transition: color 0.15s; }
+  .toc a:hover { color: var(--text); }
+
+  @media (max-width: 600px) {
+    .article-wrap { padding: 32px 16px 48px; }
+    .rfc-header h1 { font-size: 1.5rem; }
+    table { font-size: 0.7rem; }
+    thead th, tbody td { padding: 8px 10px; }
+    .phase-timeline { font-size: 0.7rem; }
+    .phase-block { min-width: 70px; padding: 10px 8px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="article-wrap">
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- RFC Header -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="rfc-header">
+    <div class="rfc-badge">RFC-001 · PRODUCTION</div>
+    <h1>Email-to-<span>Brain</span> Ingestion Pipeline</h1>
+    <p class="rfc-subtitle">Proven architecture for knowledge ingestion via email forwarding — 90 seconds end-to-end.</p>
+    <div class="rfc-meta">
+      <div class="meta-item"><span class="meta-label">Author:</span><span class="meta-value">sayf · Director, Maloha Coast Sdn Bhd</span></div>
+      <div class="meta-item"><span class="meta-label">Status:</span><span class="status-live">LIVE</span></div>
+      <div class="meta-item"><span class="meta-label">Date:</span><span class="meta-value">2026-06-09</span></div>
+      <div class="meta-item"><span class="meta-label">System:</span><span class="meta-value">Hermes Agent · gbrain · Gmail API</span></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- Table of Contents -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="toc">
+    <h3>Contents</h3>
+    <ol>
+      <li><a href="#s1">Problem Statement &amp; Current-State Analysis</a></li>
+      <li><a href="#s2">Solution Overview — The Email-Forwarding Paradigm</a></li>
+      <li><a href="#s3">Architecture &amp; Pipeline Phases</a></li>
+      <li><a href="#s4">Component Specification</a></li>
+      <li><a href="#s5">Data Model</a></li>
+      <li><a href="#s6">Whitelist &amp; Security Model</a></li>
+      <li><a href="#s7">API Contracts — Gmail Commands</a></li>
+      <li><a href="#s8">Failure Modes &amp; Recovery</a></li>
+      <li><a href="#s9">Scaling Limits &amp; Next Steps</a></li>
+    </ol>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- 1. Problem Statement -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <h2 id="s1"><span class="section-num">1</span> Problem Statement &amp; Current-State Analysis</h2>
+
+  <h3>1.1 The Knowledge Ingestion Gap</h3>
+  <p>
+    Maloha Coast operates a knowledge graph (<strong>gbrain</strong>) that stores structured intelligence —
+    people, companies, meetings, concepts, and their interconnections — in a PGLite-backed knowledge base.
+    The current brain holds <strong>37 pages, 30 graph edges, 10 people, and 10 companies</strong> with a composite brain score of <strong>28/37</strong>.
+  </p>
+  <p>
+    However, valuable knowledge arrives <em>outside the brain</em> — in newsletters, forwarded articles,
+    client emails, event announcements, and research digests. The user (<strong>sayf</strong>) forwards these
+    from <code>sayfcodes@gmail.com</code> to <code>info@malohacoast.com</code>. Before this pipeline, each
+    forward required a manual cycle: read the email, extract entities, decide where it fits in the brain,
+    write a brain page, link it to related pages, embed it, and deploy the dashboard update.
+    This manual cycle took <strong>5-15 minutes per email</strong> and was frequently deferred or skipped entirely.
+  </p>
+
+  <div class="card rose">
+    <h3>Current-State Pain Points</h3>
+    <ul>
+      <li><strong>Knowledge loss:</strong> Forwards sitting unprocessed in the inbox represent lost institutional memory.</li>
+      <li><strong>Inconsistent structure:</strong> Manual brain entries vary in format, tagging, and link density.</li>
+      <li><strong>High cognitive overhead:</strong> Reading, extracting, writing, linking, and deploying for every forward is a context switch.</li>
+      <li><strong>Dashboard staleness:</strong> Without automated ingestion, the dashboard reflects periodic bursts rather than continuous knowledge flow.</li>
+    </ul>
+  </div>
+
+  <h3>1.2 Existing Infrastructure</h3>
+  <p>The pipeline is not greenfield. It runs on production infrastructure:</p>
+  <table>
+    <thead>
+      <tr><th>Component</th><th>Detail</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Host</td><td>VPS · Linux 6.8.0-124-generic</td></tr>
+      <tr><td>Agent Runtime</td><td>Hermes Agent with cron scheduler</td></tr>
+      <tr><td>Knowledge Base</td><td>gbrain v0.42.10.0 · PGLite at <code>~/.gbrain/brain.pglite</code></td></tr>
+      <tr><td>LLM Backend</td><td>DeepSeek v4 Flash (via Hermes tool system)</td></tr>
+      <tr><td>Email Provider</td><td>Google Workspace · <code>info@malohacoast.com</code></td></tr>
+      <tr><td>Gmail OAuth</td><td>Project <code>leafy-affinity-491809-a5</code> · Client <code>admin-assistant</code></td></tr>
+      <tr><td>Dashboard Host</td><td>GitHub Pages · <code>mc-hermes/hermes-agent-cost</code></td></tr>
+      <tr><td>Brain Score</td><td>28/37 (embed 35/35, links 25/25, timeline 2/15, orphans 9/15)</td></tr>
+    </tbody>
+  </table>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- 2. Solution Overview -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <h2 id="s2"><span class="section-num">2</span> Solution Overview — The Email-Forwarding Paradigm</h2>
+
+  <h3>2.1 Core Idea</h3>
+  <p>
+    The pipeline treats <strong>email as an ingestion API</strong>. The user forwards any piece of
+    knowledge to <code>info@malohacoast.com</code> — a newsletter, a meeting summary, an article link,
+    a LinkedIn profile, or raw notes. The system polls the inbox every 2 minutes, processes qualifying
+    emails through a multi-phase pipeline, creates structured brain pages with entity extraction and
+    vector embeddings, and replies to confirm ingestion. Total latency: <strong>90-120 seconds</strong>
+    from forward arrival to brain page live.
+  </p>
+
+  <div class="callout">
+    <strong>Paradigm shift:</strong> The user's only action is forwarding an email. Everything else —
+    reading, extracting, classifying, embedding, linking, deploying, and replying — is automated.
+    Zero-touch ingestion.
+  </div>
+
+  <h3>2.2 User Flow</h3>
+  <ol>
+    <li><strong>Receive</strong> — User gets an email they want in the brain (in personal inbox <code>sayfcodes@gmail.com</code>).</li>
+    <li><strong>Forward</strong> — User forwards it to <code>info@malohacoast.com</code>.</li>
+    <li><strong>Wait ~2 min</strong> — Pipeline polls, processes, ingests, and embeds automatically.</li>
+    <li><strong>Receive confirmation</strong> — User gets a reply email with the brain page slug, extracted entities, and a link to the dashboard.</li>
+    <li><strong>Verify (optional)</strong> — User can visit the brain page or dashboard to verify.</li>
+  </ol>
+
+  <div class="card green">
+    <h3>Design Principles</h3>
+    <ul>
+      <li><strong>Email as universal input.</strong> Everything can be forwarded — newsletters, meeting notes, web clippings, LinkedIn bios.</li>
+      <li><strong>Git as source of truth.</strong> Brain pages are Markdown in a git repo. Every ingestion is a commit. Undo is <code>git revert</code>.</li>
+      <li><strong>Idempotent by Gmail message ID.</strong> Processed emails are labeled; re-polling the same email is a no-op.</li>
+      <li><strong>Fail gracefully, never silently.</strong> Errors produce reply emails with diagnostics, not silent drops.</li>
+      <li><strong>Zero ongoing cost.</strong> GitHub Pages hosting is free. Gmail API is free-tier. Embedding cost is ~$0.0001 per page.</li>
+    </ul>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- 3. Architecture & Pipeline Phases -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <h2 id="s3"><span class="section-num">3</span> Architecture &amp; Pipeline Phases</h2>
+
+  <h3>3.1 High-Level Architecture</h3>
+  <p>
+    The pipeline is a <strong>Hermes cron-triggered batch processor</strong> with seven serial phases.
+    Each phase either passes data forward or short-circuits with a reply. There is no persistent queue —
+    the Gmail inbox IS the queue, and Hermes cron is the scheduler.
+  </p>
+
+  <pre><code>┌──────────┐    ┌──────────┐    ┌──────────┐    ┌──────────┐    ┌──────────┐    ┌──────────┐    ┌──────────┐
+│  HERMES  │───▶│  GMAIL   │───▶│  GBRAIN  │───▶│  ENTITY  │───▶│  EMBED   │───▶│ ENRICH + │───▶│  REPLY   │
+│  CRON    │    │  POLL    │    │ INGEST   │    │ EXTRACT  │    │          │    │  DEPLOY  │    │          │
+│ (2 min)  │    │  (2s)    │    │  (10s)   │    │ (~40s)   │    │  (8s)    │    │ (5+5s)   │    │  (2s)    │
+└──────────┘    └──────────┘    └──────────┘    └──────────┘    └──────────┘    └──────────┘    └──────────┘
+      │              │              │              │              │              │              │
+      ▼              ▼              ▼              ▼              ▼              ▼              ▼
+  every 2 min   Gmail search    gbrain page    DeepSeek v4     OpenAI         Python         Gmail
+  trigger       IN:inbox        create +       Flash entity    text-embed     enrichment     reply
+                from:whitelist  content fill   extraction      3-large        + git push     thread
+</code></pre>
+
+  <h3>3.2 Phase Timing Breakdown</h3>
+  <table>
+    <thead>
+      <tr><th>#</th><th>Phase</th><th>Duration</th><th>Tool / System</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>0</td><td>Cron Trigger</td><td>—</td><td>Hermes cron 776c7bf32c77</td><td>Fires every 2 minutes. No-op if previous run still executing.</td></tr>
+      <tr><td>1</td><td>Gmail Poll</td><td>~2s</td><td>google-workspace skill</td><td>Searches INBOX for unread emails from whitelisted senders. Returns message IDs.</td></tr>
+      <tr><td>2</td><td>Ingest</td><td>~10s</td><td>gbrain CLI</td><td>Creates brain page from email body, assigns type (concept/meeting/person/company), writes Markdown.</td></tr>
+      <tr><td>3</td><td>Entity Extraction</td><td>~40s</td><td>DeepSeek v4 Flash (LLM)</td><td>Extracts people, companies, topics, dates and generates wikilinks. Dominant phase.</td></tr>
+      <tr><td>4</td><td>Embed</td><td>~8s</td><td>gbrain embed (OpenAI)</td><td>Generates vector embedding for semantic search. <code>text-embedding-3-large</code>.</td></tr>
+      <tr><td>5</td><td>Enrich</td><td>~5s</td><td>Python enrichment script</td><td>Adds structured metadata, computes link graph updates, validates schema.</td></tr>
+      <tr><td>6</td><td>Push + Deploy</td><td>~5s</td><td>git + GitHub Pages</td><td>Commits brain changes, regenerates dashboard JSON, pushes to GitHub Pages.</td></tr>
+      <tr><td>7</td><td>Reply</td><td>~2s</td><td>Gmail reply API</td><td>Replies to original forward with slug, entity summary, and dashboard link.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>3.3 Phase Timeline Visualization</h3>
+  <div class="phase-timeline">
+    <div class="phase-block">
+      <div class="phase-icon">📬</div><div class="phase-name">Poll</div><div class="phase-time">2s</div>
+    </div>
+    <div class="phase-block">
+      <div class="phase-icon">📥</div><div class="phase-name">Ingest</div><div class="phase-time">10s</div>
+    </div>
+    <div class="phase-block">
+      <div class="phase-icon">🧠</div><div class="phase-name">Entity</div><div class="phase-time">~40s</div>
+    </div>
+    <div class="phase-block">
+      <div class="phase-icon">✨</div><div class="phase-name">Embed</div><div class="phase-time">8s</div>
+    </div>
+    <div class="phase-block">
+      <div class="phase-icon">🔧</div><div class="phase-name">Enrich</div><div class="phase-time">5s</div>
+    </div>
+    <div class="phase-block">
+      <div class="phase-icon">🚀</div><div class="phase-name">Push</div><div class="phase-time">5s</div>
+    </div>
+    <div class="phase-block">
+      <div class="phase-icon">✉️</div><div class="phase-name">Reply</div><div class="phase-time">2s</div>
+    </div>
+  </div>
+  <p style="text-align:center; font-family:'JetBrains Mono',monospace; font-size:0.78rem; color:var(--accent); margin-top:4px;">
+    Total: 90-120s per email &nbsp;|&nbsp; No-email pass: ~5s
+  </p>
+
+  <h3>3.4 Data Flow Diagram</h3>
+  <pre><code>Gmail Message                    gbrain Page (Markdown)              Deployed Dashboard
+┌──────────────────┐            ┌────────────────────────┐          ┌──────────────────────┐
+│ From: whitelist  │            │ ---                    │          │ GitHub Pages          │
+│ Subject: ...     │──Ingest──▶│ type: concept           │──Push──▶│ mc-hermes/            │
+│ Body: (HTML)     │            │ slug: concepts/foo     │          │   hermes-agent-cost/  │
+│ Message-ID: X    │            │ ---                    │          │   gbrain-data.json    │
+│ Thread-ID: T     │            │ # Title                │          │   gbrain-dashboard.   │
+└──────────────────┘            │ Body content...        │          │     html               │
+                                │ [[linked-page]]        │          └──────────────────────┘
+                                │ ## Entities            │
+                                │ - Person: ...          │                   ▲
+                                │ - Company: ...         │                   │
+                                │ ## Timeline            │          User opens dashboard
+                                │ - 2026-06-09 | ...     │          or clicks link in
+                                └────────────────────────┘          confirmation reply
+</code></pre>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- 4. Component Specification -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <h2 id="s4"><span class="section-num">4</span> Component Specification</h2>
+
+  <h3>4.1 Hermes Cron Scheduler</h3>
+  <table>
+    <thead><tr><th>Property</th><th>Value</th></tr></thead>
+    <tbody>
+      <tr><td>Cron Job ID</td><td><code>776c7bf32c77</code></td></tr>
+      <tr><td>Interval</td><td>Every 2 minutes (120s)</td></tr>
+      <tr><td>Concurrency</td><td>Single-run lock — if previous run is still active, skip this tick</td></tr>
+      <tr><td>Profile</td><td>default (falconhermes)</td></tr>
+      <tr><td>Action</td><td>Invokes the full ingestion sub-agent with the pipeline prompt</td></tr>
+      <tr><td>Logging</td><td>Stdout captured by Hermes; errors trigger reply email with trace</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout">
+    <strong>Cron rationale:</strong> 2 minutes balances freshness (user waits at most 2 min for confirmation)
+    against API rate limits. Gmail API free tier allows 1 billion quota units/day; this pipeline consumes
+    ~720 searches/day (~72,000 units), well below the limit.
+  </div>
+
+  <h3>4.2 Gmail Polling — google-workspace Skill</h3>
+  <p>
+    The <strong>google-workspace</strong> Hermes skill handles all Gmail API interactions. It authenticates
+    via OAuth 2.0 with stored refresh tokens under project <code>leafy-affinity-491809-a5</code>, client
+    <code>admin-assistant</code>.
+  </p>
+  <table>
+    <thead><tr><th>Operation</th><th>Gmail API Method</th><th>Purpose</th></tr></thead>
+    <tbody>
+      <tr><td>Poll</td><td><code>users.messages.list</code> + <code>q=in:inbox is:unread</code></td><td>Find unprocessed forwards</td></tr>
+      <tr><td>Get</td><td><code>users.messages.get</code> with <code>format=full</code></td><td>Fetch full email body + headers</td></tr>
+      <tr><td>Label</td><td><code>users.messages.modify</code> addLabelIds</td><td>Mark as processed (prevents re-ingestion)</td></tr>
+      <tr><td>Reply</td><td><code>users.messages.send</code> with threadId</td><td>Confirmation reply in-thread</td></tr>
+    </tbody>
+  </table>
+
+  <h3>4.3 gbrain CLI</h3>
+  <p>
+    gbrain is the knowledge graph engine installed at <code>~/gbrain/</code> with the brain database at
+    <code>~/.gbrain/brain.pglite</code>. The pipeline invokes these CLI commands:
+  </p>
+  <table>
+    <thead><tr><th>Command</th><th>Phase</th><th>Purpose</th></tr></thead>
+    <tbody>
+      <tr><td><code>gbrain create --type concept --title "..." --body "..."</code></td><td>Ingest</td><td>Creates the brain page file + PGLite record</td></tr>
+      <tr><td><code>gbrain link &lt;slug&gt; &lt;target&gt;</code></td><td>Entity Extraction</td><td>Creates graph edges between pages</td></tr>
+      <tr><td><code>gbrain embed &lt;slug&gt;</code></td><td>Embed</td><td>Generates OpenAI vector embedding</td></tr>
+      <tr><td><code>gbrain doctor --json</code></td><td>Enrich</td><td>Validates brain health post-ingestion</td></tr>
+    </tbody>
+  </table>
+
+  <h3>4.4 Entity Extraction (LLM)</h3>
+  <p>
+    The most computationally intensive phase. The email body is passed to <strong>DeepSeek v4 Flash</strong>
+    with a structured extraction prompt. The LLM returns a JSON object with:
+  </p>
+  <ul>
+    <li><strong>Page type</strong> classification (concept, person, company, meeting)</li>
+    <li><strong>Title</strong> suggestion based on email content</li>
+    <li><strong>People</strong> mentioned — names, emails, roles</li>
+    <li><strong>Companies</strong> mentioned — names, websites, industries</li>
+    <li><strong>Topics</strong> — key concepts for tagging</li>
+    <li><strong>Timeline entries</strong> — dates and events extracted from the body</li>
+    <li><strong>Wikilinks</strong> — suggested links to existing brain pages</li>
+  </ul>
+  <p>
+    This phase accounts for ~40s of the pipeline latency. It is the only phase that uses an LLM.
+    Future optimization: batch multiple emails into a single LLM call.
+  </p>
+
+  <h3>4.5 Enrichment Script</h3>
+  <p>
+    The Python enrichment script lives at:
+  </p>
+  <pre><code>~/.hermes/skills/software-development/gbrain-dashboard/references/enrichment-script.py</code></pre>
+  <p>
+    It performs post-processing after the core ingestion:
+  </p>
+  <ul>
+    <li>Validates that all wikilink targets exist in the brain (flags orphans)</li>
+    <li>Computes link graph statistics (outbound count, inbound count, orphan count)</li>
+    <li>Generates the enriched <code>gbrain-data.json</code> for the dashboard</li>
+    <li>Runs <code>gbrain doctor</code> and embeds health check results</li>
+    <li>Updates the brain score computation</li>
+  </ul>
+
+  <h3>4.6 GitHub Pages Deploy</h3>
+  <p>
+    The final phase commits all changes and pushes to <code>mc-hermes/hermes-agent-cost</code>:
+  </p>
+  <pre><code>cd ~/.gbrain
+git add -A
+git commit -m "ingest: &lt;slug&gt; from email &lt;message-id&gt;"
+cd /path/to/hermes-agent-cost
+python3 enrichment-script.py   # regenerates gbrain-data.json
+cp /tmp/gbrain-data.json .
+git add gbrain-data.json
+git commit -m "dashboard refresh $(date -Iminutes)"
+git push origin main</code></pre>
+  <p>
+    GitHub Pages rebuilds automatically on push. The dashboard is live within 60 seconds of <code>git push</code>.
+  </p>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- 5. Data Model -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <h2 id="s5"><span class="section-num">5</span> Data Model</h2>
+
+  <h3>5.1 gbrain Page Types</h3>
+  <table>
+    <thead>
+      <tr><th>Type</th><th>Slug Prefix</th><th>Typical Content</th><th>Entity Fields</th><th>Current Count</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><code>concept</code></td><td><code>concepts/</code></td><td>Newsletter digests, research notes, ideas, technical articles</td><td>topics, tags, source</td><td>15</td></tr>
+      <tr><td><code>person</code></td><td><code>people/</code></td><td>Individual profiles from LinkedIn, email signatures, bios</td><td>email, phone, company, role, website, location</td><td>10</td></tr>
+      <tr><td><code>company</code></td><td><code>companies/</code></td><td>Organization profiles, product pipelines, client notes</td><td>website, industry, contact_email, location, founded</td><td>10</td></tr>
+      <tr><td><code>meeting</code></td><td><code>meetings/</code></td><td>Meeting notes, call summaries, action items</td><td>date, attendees, agenda, decisions, action_items</td><td>2</td></tr>
+    </tbody>
+  </table>
+
+  <h3>5.2 Markdown Page Schema</h3>
+  <p>Every brain page is a Markdown file with YAML frontmatter. Example:</p>
+  <pre><code>---
+type: concept
+slug: concepts/claude-code-10x-skill-newsletter
+date: 2026-06-08
+source: email
+message_id: &lt;abc123@mail.gmail.com&gt;
+tags: [ai, claude, automation, newsletter]
+---
+
+# Fwd: The Skill That 10x'd My Claude Code Projects
+
+**From:** Sayf Codes &lt;sayfcodes@gmail.com&gt;
+**Date:** Mon, 8 Jun 2026 23:49:48 +0800
+**Source:** email forward
+
+## Content
+[... email body content ...]
+
+## Entities
+- **Author:** [[Nate Herk]]
+- **Publisher:** [[AI Automation Society]]
+- **Companies Mentioned:** [[Anthropic]], [[OpenAI]]
+
+## Timeline
+- **2026-06-05** | Newsletter published by Nate Herk / AI Automation Society
+- **2026-06-08** | Forwarded to brain by sayf</code></pre>
+
+  <h3>5.3 PGLite Backend</h3>
+  <p>
+    gbrain uses <strong>PGLite</strong> — an embedded PostgreSQL running inside the gbrain process.
+    No server, no connection strings, no port exposure. The database file lives at
+    <code>~/.gbrain/brain.pglite</code> and stores:
+  </p>
+  <table>
+    <thead><tr><th>Table</th><th>Purpose</th></tr></thead>
+    <tbody>
+      <tr><td><code>pages</code></td><td>Slug, type, title, body, created_at, updated_at, checksum</td></tr>
+      <tr><td><code>links</code></td><td>from_slug, to_slug, link_type (wikilink, reference, tag), context</td></tr>
+      <tr><td><code>embeddings</code></td><td>slug, model, vector (1536-dim float array), token_count, cost</td></tr>
+      <tr><td><code>tags</code></td><td>slug, tag — normalized tag catalog</td></tr>
+      <tr><td><code>timeline</code></td><td>slug, event_date, description, source</td></tr>
+    </tbody>
+  </table>
+
+  <h3>5.4 JSON Enrichment Schema</h3>
+  <p>
+    The enrichment script produces <code>gbrain-data.json</code> consumed by the dashboard:
+  </p>
+  <pre><code>{
+  "updated_at": "2026-06-09T12:00:00Z",
+  "summary": {
+    "score": "Brain score 28/37",
+    "page_count": 37,
+    "concept_count": 15,
+    "meeting_count": 2,
+    "person_count": 10,
+    "company_count": 10,
+    "total_links": 33,
+    "embed_coverage": "100%",
+    "graph_coverage": "75.7%"
+  },
+  "pages": [
+    {
+      "slug": "concepts/foo",
+      "title": "Page Title",
+      "type": "concept",
+      "updated": "2026-06-09",
+      "body": "Markdown content (capped at 3000 chars)",
+      "tags": ["ai", "automation"],
+      "links_out": [
+        {"to": "people/jane-doe", "type": "wikilink", "text": "Jane Doe"}
+      ],
+      "backlinks": [
+        {"from": "meetings/2026-06-01", "type": "reference"}
+      ],
+      "outbound_count": 1,
+      "inbound_count": 1,
+      "email": "",
+      "phone": "",
+      "company_name": "",
+      "website": "",
+      "location": ""
+    }
+  ],
+  "entities": {
+    "people": ["people/jane-doe", "people/john-smith"],
+    "companies": ["companies/acme-corp"]
+  },
+  "doctor": {
+    "checks": [
+      {"name": "embedding_coverage", "status": "pass", "detail": "37/37 pages embedded"},
+      {"name": "orphan_pages", "status": "warn", "detail": "9 orphans found"}
+    ]
+  }
+}</code></pre>
+
+  <div class="card cyan">
+    <h3>JSON Size Budget</h3>
+    <p>
+      At current scale (37 pages), <code>gbrain-data.json</code> is ~100 KB. Projected growth:
+      ~1.4 KB per page. GitHub Pages limit is 1 GB — enough for ~700,000 pages before any
+      split-architecture migration is needed.
+    </p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- 6. Whitelist & Security Model -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <h2 id="s6"><span class="section-num">6</span> Whitelist &amp; Security Model</h2>
+
+  <h3>6.1 Sender Whitelist</h3>
+  <p>
+    The pipeline <strong>only processes emails from explicitly whitelisted senders</strong>. All other
+    emails to <code>info@malohacoast.com</code> are ignored by the poll query.
+  </p>
+  <table>
+    <thead><tr><th>Email</th><th>Identity</th><th>Role</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td><code>sayfcodes@gmail.com</code></td><td>sayf</td><td>Director, Maloha Coast</td><td><span class="status-live">ACTIVE</span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout">
+    <strong>Current state:</strong> Single-whitelist (<code>sayfcodes@gmail.com</code>). The whitelist
+    is stored in the Hermes cron job configuration and can be extended to trusted team members or
+    automation accounts (e.g., <code>zapier@malohacoast.com</code> for newsletter auto-forwarding).
+  </div>
+
+  <h3>6.2 Gmail Query Filter</h3>
+  <p>The poll query uses Gmail's search syntax to pre-filter at the API level:</p>
+  <pre><code>q=in:inbox is:unread from:sayfcodes@gmail.com -label:gbrain-processed</code></pre>
+  <p>This ensures:</p>
+  <ul>
+    <li><strong>Sender-gated:</strong> Only whitelisted senders pass the <code>from:</code> filter.</li>
+    <li><strong>Read-gated:</strong> Only unread emails are candidates (prevents re-processing).</li>
+    <li><strong>Label-gated:</strong> The <code>-label:gbrain-processed</code> exclusion double-locks idempotency.</li>
+  </ul>
+
+  <h3>6.3 Post-Ingestion Labeling</h3>
+  <p>
+    After successful ingestion, the pipeline applies the Gmail label <code>gbrain-processed</code> to the
+    message. This label is created once at pipeline setup via <code>users.labels.create</code>. The label
+    serves as the idempotency token — the poll query excludes labeled messages.
+  </p>
+
+  <h3>6.4 Security Boundaries</h3>
+  <table>
+    <thead><tr><th>Boundary</th><th>Mechanism</th><th>Risk</th></tr></thead>
+    <tbody>
+      <tr><td>Email spoofing</td><td>Gmail's SPF/DKIM/DMARC enforcement at Google's edge</td><td>Low — Gmail rejects unauthenticated senders</td></tr>
+      <tr><td>Malicious content injection</td><td>All content is treated as Markdown, not executed; HTML in emails is stripped to plain text</td><td>Low — no eval, no HTML rendering</td></tr>
+      <tr><td>API key exfiltration</td><td>OAuth tokens stored in Hermes credential store; OpenAI key in environment variable</td><td>Medium — mitigated by VPS hardening (UFW, fail2ban, key-only SSH)</td></tr>
+      <tr><td>Unintended brain modification</td><td>git version control; every change is a commit — revert is <code>git revert</code></td><td>Low — full audit trail</td></tr>
+      <tr><td>Rate-limit exhaustion</td><td>2-minute cron interval; Gmail API quota is 1B units/day; pipeline uses ~72K</td><td>Low — 0.007% of quota</td></tr>
+    </tbody>
+  </table>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- 7. API Contracts -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <h2 id="s7"><span class="section-num">7</span> API Contracts — Gmail Commands</h2>
+
+  <p>
+    All Gmail interactions are mediated through the <strong>google-workspace</strong> Hermes skill,
+    which wraps the Gmail REST API. Below are the exact API contracts used in the pipeline.
+  </p>
+
+  <h3>7.1 Search — Poll for Unprocessed Emails</h3>
+  <pre><code>GET https://gmail.googleapis.com/gmail/v1/users/me/messages
+Authorization: Bearer &lt;oauth_token&gt;
+Query: q=in:inbox is:unread from:sayfcodes@gmail.com -label:gbrain-processed
+       maxResults=5
+
+Response 200:
+{
+  "messages": [
+    {"id": "18a3f...", "threadId": "18a3f..."},
+    ...
+  ],
+  "resultSizeEstimate": 2
+}
+
+Response 200 (empty):
+{ "resultSizeEstimate": 0 }</code></pre>
+
+  <h3>7.2 Get — Fetch Full Message</h3>
+  <pre><code>GET https://gmail.googleapis.com/gmail/v1/users/me/messages/18a3f...
+Authorization: Bearer &lt;oauth_token&gt;
+Query: format=full
+       metadataHeaders=From
+       metadataHeaders=Date
+       metadataHeaders=Subject
+       metadataHeaders=Message-ID
+
+Response 200:
+{
+  "id": "18a3f...",
+  "threadId": "18a3f...",
+  "labelIds": ["INBOX", "UNREAD"],
+  "payload": {
+    "headers": [
+      {"name": "From", "value": "Sayf Codes &lt;sayfcodes@gmail.com&gt;"},
+      {"name": "Subject", "value": "Fwd: Newsletter Title"},
+      {"name": "Date", "value": "Mon, 9 Jun 2026 10:30:00 +0800"}
+    ],
+    "body": { "data": "&lt;base64-encoded-email-body&gt;" },
+    "mimeType": "text/html"
+  }
+}</code></pre>
+
+  <h3>7.3 Reply — Send Confirmation</h3>
+  <pre><code>POST https://gmail.googleapis.com/gmail/v1/users/me/messages/send
+Authorization: Bearer &lt;oauth_token&gt;
+Content-Type: application/json
+
+{
+  "raw": "&lt;base64url-encoded-RFC2822-message&gt;",
+  "threadId": "18a3f..."
+}
+
+The raw message (RFC 2822):
+  To: sayfcodes@gmail.com
+  Subject: Re: Fwd: Newsletter Title
+  References: &lt;original-message-id&gt;
+  In-Reply-To: &lt;original-message-id&gt;
+  Content-Type: text/plain; charset=UTF-8
+
+  ✅ Ingested to gbrain
+
+  Page: concepts/newsletter-title
+  Type: concept
+  Entities: 2 people, 1 company
+  Links: [[Nate Herk]], [[AI Automation Society]]
+
+  Dashboard: https://mc-hermes.github.io/hermes-agent-cost/gbrain-dashboard.html
+
+Response 200:
+{
+  "id": "18b4g...",
+  "threadId": "18a3f...",
+  "labelIds": ["SENT"]
+}</code></pre>
+
+  <h3>7.4 Modify — Apply Processed Label</h3>
+  <pre><code>POST https://gmail.googleapis.com/gmail/v1/users/me/messages/18a3f.../modify
+Authorization: Bearer &lt;oauth_token&gt;
+Content-Type: application/json
+
+{
+  "addLabelIds": ["Label_123456789"],
+  "removeLabelIds": ["UNREAD"]
+}
+
+Response 200:
+{
+  "id": "18a3f...",
+  "labelIds": ["INBOX", "Label_123456789"]
+}</code></pre>
+
+  <div class="card accent">
+    <h3>Contract Stability</h3>
+    <p>
+      All Gmail API v1 endpoints are stable (GA since 2014). The <code>users.messages</code> resource
+      is the most mature surface in the Gmail API. Breaking changes require 12-month deprecation notice
+      per Google's API deprecation policy.
+    </p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- 8. Failure Modes & Recovery -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <h2 id="s8"><span class="section-num">8</span> Failure Modes &amp; Recovery</h2>
+
+  <h3>8.1 Failure Catalog</h3>
+  <table>
+    <thead>
+      <tr><th>Failure Mode</th><th>Phase</th><th>Symptoms</th><th>Detection</th><th>Recovery</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Gmail API auth expiry</td>
+        <td>1 (Poll)</td>
+        <td>401 Unauthorized on poll</td>
+        <td>Cron run logs error; no emails processed</td>
+        <td>Re-authenticate google-workspace skill via Hermes OAuth flow</td>
+      </tr>
+      <tr>
+        <td>Gmail API rate limit</td>
+        <td>1 (Poll)</td>
+        <td>429 Too Many Requests</td>
+        <td>Cron run logs error</td>
+        <td>Automatic: Hermes retries next cron tick (2 min). No data loss.</td>
+      </tr>
+      <tr>
+        <td>LLM timeout / error</td>
+        <td>3 (Entity)</td>
+        <td>DeepSeek API error or timeout</td>
+        <td>Empty extraction JSON; page created without entities</td>
+        <td>Manual: re-run <code>gbrain enrich &lt;slug&gt;</code> to backfill entities</td>
+      </tr>
+      <tr>
+        <td>Embedding API failure</td>
+        <td>4 (Embed)</td>
+        <td>OpenAI API error; page created but not embedded</td>
+        <td><code>gbrain doctor</code> flags missing embedding</td>
+        <td>Automatic: next <code>gbrain embed --all</code> sweep picks it up</td>
+      </tr>
+      <tr>
+        <td>Git push conflict</td>
+        <td>6 (Push)</td>
+        <td>Non-fast-forward rejection</td>
+        <td>Cron run logs error; dashboard stale</td>
+        <td>Manual: <code>git pull --rebase && git push</code></td>
+      </tr>
+      <tr>
+        <td>Brain DB corruption</td>
+        <td>Any</td>
+        <td>gbrain CLI errors on read/write</td>
+        <td><code>gbrain doctor</code> returns red checks</td>
+        <td>Restore from git history (Markdown is source of truth; PGLite is derived)</td>
+      </tr>
+      <tr>
+        <td>Partial ingestion (crash mid-pipeline)</td>
+        <td>3-6</td>
+        <td>Page created but unlinked, unembedded, or un-pushed</td>
+        <td><code>gbrain doctor</code> flags orphan/partial pages</td>
+        <td>Automatic: Gmail label NOT applied (UNREAD persists); re-processed next cron</td>
+      </tr>
+      <tr>
+        <td>Spam / unwanted forward</td>
+        <td>1 (Poll)</td>
+        <td>Non-whitelisted sender</td>
+        <td>Gmail query filter excludes it</td>
+        <td>No action needed — email stays in inbox, never processed</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>8.2 Idempotency Guarantee</h3>
+  <p>
+    The pipeline achieves idempotency through the <strong>Gmail processed label</strong>. The label is
+    applied ONLY after all phases succeed (ingest → entity → embed → enrich → push). If any phase fails,
+    the label is not applied, the email remains UNREAD, and the next cron tick re-attempts the full pipeline.
+  </p>
+
+  <div class="card rose">
+    <h3>Critical Safety Property</h3>
+    <p>
+      The Gmail label is the <strong>last operation</strong> in the pipeline. This means a crash at any
+      point before labeling leaves the email UNREAD — it will be retried. A crash after labeling but before
+      reply means the email is processed (no double-ingestion) but no confirmation sent. This is the safer
+      failure direction (missing confirmations are visible to the user; duplicate brain pages are not).
+    </p>
+  </div>
+
+  <h3>8.3 Monitoring &amp; Alerting</h3>
+  <table>
+    <thead><tr><th>Check</th><th>Method</th><th>Frequency</th><th>Alert</th></tr></thead>
+    <tbody>
+      <tr><td>Pipeline health</td><td>Cron run exit code + log grep for ERROR</td><td>Every 2 min (per tick)</td><td>Hermes notify on consecutive failures ≥ 3</td></tr>
+      <tr><td>Brain health</td><td><code>gbrain doctor --json</code></td><td>Daily (separate cron)</td><td>Dashboard health panel; red checks visible</td></tr>
+      <tr><td>Stale pipeline</td><td>Timestamp of last successful ingestion</td><td>Hourly</td><td>No ingestion in 24h → possible auth/skill issue</td></tr>
+      <tr><td>Whitelist anomalies</td><td>Count of non-whitelisted UNREAD emails addressed to info@</td><td>Daily</td><td>Manual review — possible new valid sender</td></tr>
+    </tbody>
+  </table>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- 9. Scaling Limits & Next Steps -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <h2 id="s9"><span class="section-num">9</span> Scaling Limits &amp; Next Steps</h2>
+
+  <h3>9.1 Current Limits (Production)</h3>
+  <table>
+    <thead><tr><th>Dimension</th><th>Current</th><th>Hard Limit</th><th>Headroom</th></tr></thead>
+    <tbody>
+      <tr><td>Brain pages</td><td>37</td><td>~700,000 (GitHub Pages 1 GB)</td><td>18,900×</td></tr>
+      <tr><td>Pipeline throughput</td><td>~1 email / 90s</td><td>~480 emails/day at current speed</td><td>N/A (burst OK, sustained rare)</td></tr>
+      <tr><td>Gmail API quota</td><td>~72,000 units/day</td><td>1,000,000,000 units/day</td><td>13,800×</td></tr>
+      <tr><td>Embedding cost</td><td>~$0.004/day (37 pages)</td><td>N/A (linear)</td><td>$0.10/day at 1,000 pages</td></tr>
+      <tr><td>LLM cost (entity extraction)</td><td>~$0.01/email (DeepSeek v4 Flash)</td><td>N/A (token-based)</td><td>~$5/day at 500 emails</td></tr>
+      <tr><td>VPS resources</td><td>&lt;5% CPU, ~200 MB RAM during pipeline</td><td>VPS capacity</td><td>20× before resource contention</td></tr>
+      <tr><td>Whitelist entries</td><td>1</td><td>Unlimited (Gmail filter length ~1500 chars)</td><td>~50 senders before query rewrite needed</td></tr>
+    </tbody>
+  </table>
+
+  <h3>9.2 Known Bottlenecks</h3>
+  <table>
+    <thead><tr><th>Bottleneck</th><th>Phase</th><th>Mitigation</th></tr></thead>
+    <tbody>
+      <tr><td>LLM latency (40s)</td><td>3 (Entity Extraction)</td><td>Batch multiple emails into single LLM call; use smaller model for simple classification; cache entity lookups</td></tr>
+      <tr><td>Single-threaded pipeline</td><td>All</td><td>Parallelize independent phases (ingest + embed can overlap across emails)</td></tr>
+      <tr><td>Cron interval floor (2 min)</td><td>0 (Trigger)</td><td>Reduce to 1 min if needed; Gmail API supports it</td></tr>
+      <tr><td>GitHub Pages build time</td><td>6 (Push)</td><td>Pre-built static assets (no Jekyll); currently instant — may slow at &gt;10,000 pages JSON</td></tr>
+      <tr><td>DeepSeek API rate limit</td><td>3 (Entity Extraction)</td><td>Add fallback to OpenAI or local Ollama model</td></tr>
+    </tbody>
+  </table>
+
+  <h3>9.3 Next Steps (Priority-Ordered)</h3>
+
+  <div class="card green">
+    <h3>P0 — Immediate (This Week)</h3>
+    <ul>
+      <li><strong>Add monitoring cron:</strong> A separate daily cron that runs <code>gbrain doctor</code> and alerts on red checks.</li>
+      <li><strong>Improve reply email:</strong> Include the brain page preview (first 200 chars) and direct link to the brain page slug.</li>
+      <li><strong>Whitelist expansion:</strong> Add any additional trusted senders (team members, automation accounts).</li>
+    </ul>
+  </div>
+
+  <div class="card cyan">
+    <h3>P1 — Short-Term (Next 2 Weeks)</h3>
+    <ul>
+      <li><strong>Reply-to-pipeline:</strong> Allow the user to reply to the confirmation email with corrections ("wrong type, should be meeting") — pipeline reprocesses.</li>
+      <li><strong>Entity deduplication:</strong> Before creating a new person/company page, check for existing by email/domain fuzzy match.</li>
+      <li><strong>Newsletter auto-forward:</strong> Set up Zapier/Make rule to auto-forward specific newsletters (AI Automation Society, System Design One) to <code>info@malohacoast.com</code>.</li>
+    </ul>
+  </div>
+
+  <div class="card violet">
+    <h3>P2 — Medium-Term (Next Month)</h3>
+    <ul>
+      <li><strong>Batch LLM extraction:</strong> Queue up to 5 emails and extract entities in a single LLM call — reduces per-email latency from 40s to ~10s.</li>
+      <li><strong>Pipeline metrics dashboard:</strong> Track ingestion volume, LLM cost, error rate, and brain growth over time.</li>
+      <li><strong>Multi-whitelist with roles:</strong> Different processing rules per whitelisted sender (e.g., client emails → meeting type; newsletters → concept type).</li>
+    </ul>
+  </div>
+
+  <div class="card accent">
+    <h3>P3 — Long-Term (Quarter+)</h3>
+    <ul>
+      <li><strong>Multi-brain support:</strong> Route emails to different gbrain instances per client.</li>
+      <li><strong>Split JSON architecture:</strong> For brains &gt;1,000 pages, split <code>gbrain-data.json</code> into summary + per-page files.</li>
+      <li><strong>Webhook ingestion:</strong> Alternative to email forwarding — accept POSTs from Zapier, Make, n8n directly.</li>
+    </ul>
+  </div>
+
+  <h3>9.4 When to Revisit This RFC</h3>
+  <p>
+    This architecture is designed to scale linearly with minimal intervention. The following trigger
+    conditions indicate when to revisit the design:
+  </p>
+  <table>
+    <thead><tr><th>Trigger</th><th>Action</th></tr></thead>
+    <tbody>
+      <tr><td>Brain exceeds 1,000 pages</td><td>Implement split JSON architecture (Section 9.2)</td></tr>
+      <tr><td>Pipeline latency exceeds 5 min per email</td><td>Implement batch LLM extraction (P2)</td></tr>
+      <tr><td>More than 5 whitelisted senders</td><td>Refactor Gmail query to use label-based routing</td></tr>
+      <tr><td>Monthly LLM cost exceeds $50</td><td>Evaluate local model fallback (Ollama) for classification</td></tr>
+      <tr><td>Second brain instance needed</td><td>Implement multi-brain routing (P3)</td></tr>
+      <tr><td>Dashboard JSON exceeds 5 MB</td><td>Implement lazy-load page content (split architecture)</td></tr>
+    </tbody>
+  </table>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- Appendix -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <h2 id="appendix"><span class="section-num">A</span> Appendix — Operational Runbook</h2>
+
+  <h3>A.1 Manual Pipeline Trigger</h3>
+  <pre><code># Trigger the pipeline immediately (bypass cron wait):
+hermes run-cron 776c7bf32c77
+
+# Or, process a specific email manually:
+hermes skill-run google-workspace --action process-email --message-id &lt;id&gt;</code></pre>
+
+  <h3>A.2 Recovery Commands</h3>
+  <pre><code># Re-embed all pages after API outage:
+cd ~/.gbrain && gbrain embed --all
+
+# Rebuild link graph from scratch:
+cd ~/.gbrain && gbrain graph --rebuild
+
+# Regenerate dashboard JSON manually:
+python3 ~/.hermes/skills/software-development/gbrain-dashboard/references/enrichment-script.py
+
+# Force dashboard deploy:
+cd /path/to/hermes-agent-cost
+git add gbrain-data.json && git commit -m "force refresh" && git push
+
+# Check pipeline health:
+gbrain doctor --json | python3 -m json.tool</code></pre>
+
+  <h3>A.3 Adding a New Whitelisted Sender</h3>
+  <pre><code># 1. Update the Gmail poll query in the cron job config:
+#    Add: OR from:new-sender@example.com
+# 2. Add label 'gbrain-processed' visibility for the sender (if shared inbox)
+# 3. Test: send a test forward from the new sender
+# 4. Verify: check cron logs for successful processing</code></pre>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- Footer -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="article-footer">
+    <span>RFC-001 · Email-to-Brain Ingestion Pipeline</span>
+    <span>Maloha Coast Sdn Bhd · June 2026</span>
+  </div>
+
+</div>
+
+</body>
+</html>

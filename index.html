@@ -3,25 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Maloha Coast · AI Presentations</title>
+<title>Maloha Coast · AI</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
     --bg: #020617; --surface: #0f172a; --surface2: #1e293b; --border: #334155;
     --primary: #2a6a8a; --primary-light: #22d3ee; --accent: #c4a86a; --accent-light: #fbbf24;
-    --text: #f1f5f9; --text-muted: #94a3b8; --green: #34d399; --violet: #a78bfa; --rose: #fb7185;
+    --text: #f1f5f9; --text-muted: #94a3b8; --green: #34d399; --violet: #a78bfa; --rose: #fb7185; --orange: #fb923c;
     --radius: 14px;
   }
   body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 40px 20px; }
-  .landing { max-width: 700px; width: 100%; text-align: center; }
+  .landing { max-width: 780px; width: 100%; text-align: center; }
   .landing h1 { font-size: clamp(1.6rem, 4vh, 2.5rem); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 4px; }
   .landing h1 span { color: var(--accent); }
-  .landing .subtitle { color: var(--text-muted); font-size: clamp(0.75rem, 1.4vh, 0.9rem); margin-bottom: 32px; }
+  .landing .subtitle { color: var(--text-muted); font-size: clamp(0.75rem, 1.4vh, 0.9rem); margin-bottom: 8px; }
+  .landing .subtitle2 { color: var(--text-muted); font-size: clamp(0.65rem, 1.1vh, 0.75rem); margin-bottom: 28px; opacity: 0.6; }
   .divider { width: 50px; height: 3px; background: var(--accent); border-radius: 2px; margin: 0 auto 24px; }
-  .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-bottom: 32px; }
+
+  .section-label { font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin: 32px 0 12px; opacity: 0.5; }
+  .section-label:first-of-type { margin-top: 0; }
+
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-bottom: 18px; }
+  .card-grid.featured { grid-template-columns: 1fr 1fr; }
   .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px 20px; text-align: left; text-decoration: none; color: var(--text); transition: border-color 0.2s, transform 0.15s; display: block; }
   .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card.featured { border-color: rgba(196,168,106,0.3); background: linear-gradient(135deg, rgba(196,168,106,0.06) 0%, rgba(15,23,42,1) 40%); }
   .card .icon { font-size: 1.8rem; margin-bottom: 10px; }
   .card h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 4px; letter-spacing: -0.01em; }
   .card p { font-size: 0.75rem; color: var(--text-muted); line-height: 1.5; }
@@ -30,17 +37,52 @@
   .tag.cyan { background: rgba(34,211,238,0.15); color: var(--primary-light); }
   .tag.green { background: rgba(52,211,153,0.15); color: var(--green); }
   .tag.violet { background: rgba(167,139,250,0.15); color: var(--violet); }
-  .footer { font-size: 0.6rem; color: rgba(148,163,184,0.25); }
+  .tag.orange { background: rgba(251,146,60,0.15); color: var(--orange); }
+  .tag.rose { background: rgba(251,113,133,0.15); color: var(--rose); }
+
+  .footer { font-size: 0.6rem; color: rgba(148,163,184,0.25); margin-top: 32px; }
   .footer a { color: rgba(148,163,184,0.4); }
+
+  @media (max-width: 500px) {
+    .card-grid.featured { grid-template-columns: 1fr; }
+  }
 </style>
 </head>
 <body>
 <div class="landing">
   <h1>Maloha Coast · <span>AI</span></h1>
-  <p class="subtitle">Production AI infrastructure. Real numbers. No hype.</p>
+  <p class="subtitle">Second Brain — an email address that thinks.</p>
+  <p class="subtitle2">Production infrastructure. Proven pipeline. Real numbers.</p>
   <div class="divider"></div>
 
+  <!-- FEATURED: MVP -->
+  <p class="section-label">Second Brain MVP</p>
+  <div class="card-grid featured">
+    <a href="business-case-second-brain.html" class="card featured">
+      <div class="icon">🧠</div>
+      <h3>Second Brain — Business Case</h3>
+      <p>Forward anything. Ask it anything. Get the answer — with the source. Done-for-you, by Maloha Coast. $29/month.</p>
+      <span class="tag gold">Pitch · ROI · $29/mo</span>
+    </a>
+
+    <a href="prd-email-to-brain.html" class="card">
+      <div class="icon">📋</div>
+      <h3>RFC-001 — Technical Spec</h3>
+      <p>Complete PRD: architecture, data model, component specs, failure modes, scaling limits. 1,157 lines. No fluff.</p>
+      <span class="tag violet">PRD · RFC</span>
+    </a>
+  </div>
+
+  <!-- SUPPORTING -->
+  <p class="section-label">Supporting</p>
   <div class="card-grid">
+    <a href="email-to-brain-architecture.html" class="card">
+      <div class="icon">🏗️</div>
+      <h3>Pipeline Architecture Diagram</h3>
+      <p>Dark-themed SVG: full 6-phase pipeline with timing benchmarks. VPS → gbrain → GitHub Pages.</p>
+      <span class="tag cyan">Architecture · Diagram</span>
+    </a>
+
     <a href="hermes-agent-cost.html" class="card">
       <div class="icon">💰</div>
       <h3>The $40 AI Agent</h3>
@@ -49,7 +91,7 @@
     </a>
 
     <a href="gbrain-head-hands-heart.html" class="card">
-      <div class="icon">🧠</div>
+      <div class="icon">📖</div>
       <h3>The 3-Folder Brain</h3>
       <p>gbrain onboarding — how Atlas → Projects → End Products restructures your thinking and your AI.</p>
       <span class="tag cyan">Slide Deck · 10 slides</span>
@@ -58,36 +100,8 @@
     <a href="gbrain-dashboard.html" class="card">
       <div class="icon">📊</div>
       <h3>gbrain Dashboard</h3>
-      <p>Live control panel — browse brain pages, entities, health checks, and link graph.</p>
-      <span class="tag green">Dashboard</span>
-    </a>
-
-    <a href="ai-os/index.html" class="card">
-      <div class="icon">🏛️</div>
-      <h3>AI OS Architecture</h3>
-      <p>Three-tier knowledge-kernel design for Individuals, Departments, and Businesses — inspired by Karpathy's Second Brain.</p>
-      <span class="tag violet">Architecture · 4 diagrams</span>
-    </a>
-
-    <a href="gbrain-saas-architecture.html" class="card">
-      <div class="icon">🏗️</div>
-      <h3>gbrain SaaS Architecture</h3>
-      <p>Deploying a "second brain" product for non-technical clients — single-tenant managed hosting with BYO-keys. Deployment options, trade-offs, sequence diagrams.</p>
-      <span class="tag gold">Architecture · 2 diagrams</span>
-    </a>
-
-    <a href="gbrain-mvp-architecture.html" class="card">
-      <div class="icon">⚡</div>
-      <h3>gbrain MVP — Email-First</h3>
-      <p>The demo that sells itself: forward an email to your brain, watch the knowledge graph update in real time. 340 lines of new code. Buildable in a weekend.</p>
-      <span class="tag green">MVP · Email Ingestion</span>
-    </a>
-
-    <a href="gstack-review-gbrain-mvp.html" class="card">
-      <div class="icon">🔍</div>
-      <h3>gstack Review: MVP Vetted</h3>
-      <p>YC Office Hours + CEO + Eng + Design review of the email-first gbrain MVP. Sharp wedge, weak retention. Build order revised.</p>
-      <span class="tag violet">Review · 4 Lenses</span>
+      <p>Live control panel — browse brain pages, entities, health checks, and link graph. 34 pages and counting.</p>
+      <span class="tag green">Dashboard · Live</span>
     </a>
   </div>
 
