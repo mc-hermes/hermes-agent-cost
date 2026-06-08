@@ -1,600 +1,170 @@
 {
-  "updated_at": "2026-06-06T08:30:00Z",
+  "updated_at": "2026-06-08T02:49:29Z",
   "summary": {
-    "page_count": 18,
-    "concept_count": 11,
-    "meeting_count": 1,
-    "person_count": 4,
-    "company_count": 1,
-    "total_links": 22,
-    "score": "81/100"
+    "score": "Brain score 89/100 (embed 35/35, links 25/25, timeline 7/15, orphans 12/15, dead-links 10/10)",
+    "page_count": 22,
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "68.2% of pages have inbound links (>=30% — graph signals fire on most queries)",
+    "entity_links": "Coverage 100% ± 0.0%"
   },
   "pages": [
+    {
+      "slug": "meetings/2026-06-08-bjarte-global-ai-village",
+      "type": "concept",
+      "updated": "2026-06-08",
+      "title": "2026 06 08 Bjarte Global Ai Village"
+    },
+    {
+      "slug": "people/bjarte",
+      "type": "person",
+      "updated": "2026-06-08",
+      "title": "Bjarte"
+    },
+    {
+      "slug": "concepts/business-brain",
+      "type": "concept",
+      "updated": "2026-06-08",
+      "title": "Business Brain"
+    },
+    {
+      "slug": "companies/global-ai-village",
+      "type": "company",
+      "updated": "2026-06-08",
+      "title": "Global Ai Village"
+    },
     {
       "slug": "concepts/three-folder-system-head-hands-heart",
       "type": "concept",
       "updated": "2026-06-05",
-      "title": "Three Folder System Head Hands Heart",
-      "body": "# The 3-Folder System: Atlas \u2192 Projects \u2192 End Products (Head, Hands, Heart)\n\n**Source:** YouTube \u2014 \"Your file structure is a map of your cognitive architecture\"\n**URL:** https://www.youtube.com/watch?v=Rl7rvHbDqGk\n\n## Summary\n\nThe speaker discovered that disorganized AI outputs were a reflection of disorganized thinking. After months of building AI agents and burning API tokens, he stopped and realized the real problem wasn't the tools \u2014 it was his cognitive architecture. His core insight: **your file structure is a map of your thinking**. Most people's maps are a junk drawer with a search bar.\n\n## The Three-Folder Framework\n\n### 1. Atlas (Head / Thinking)\nRaw materials, ideas, strategy, capture. Where you put ideas when you get them \u2014 the thinking layer.\n\n### 2. Projects (Hands / Building)\nActive work. Content being created, things being built.\n\n### 3. End Products (Heart / Serving)\nCompleted work. Finished deliverables that serve other people.\n\n## Key Insights\n- **File structure = cognitive architecture.**\n- **Organization is speed.** Clear structure makes AI faster and cheaper (fewer tokens).\n- **The sophistication trap.** Smart people overcomplicate things.\n- **AI reveals you to yourself.** AI externalizes your thinking patterns.\n- **Agents mirror human growth.** An agent needs identity, context, and skills.",
-      "tags": [],
-      "links_out": [
-        {
-          "to": "people/bob-proctor",
-          "type": "mentions"
-        },
-        {
-          "to": "people/jake-van-cleef",
-          "type": "mentions"
-        },
-        {
-          "to": "people/nick-milo",
-          "type": "mentions"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "people/nick-milo",
-          "type": "mentions"
-        },
-        {
-          "from": "people/jake-van-cleef",
-          "type": "mentions"
-        },
-        {
-          "from": "people/bob-proctor",
-          "type": "mentions"
-        }
-      ],
-      "inbound_count": 3,
-      "outbound_count": 3,
-      "email": "",
-      "phone": "",
-      "company_name": "",
-      "website": "",
-      "location": "",
-      "relationship": ""
+      "title": "Three Folder System Head Hands Heart"
     },
     {
       "slug": "people/nick-milo",
       "type": "person",
       "updated": "2026-06-05",
-      "title": "Nick Milo",
-      "body": "Obsidian and second-brain advocate. Known for promoting simple folder structures and the Linking Your Thinking (LYT) framework. His patterns around three-folder organization influenced the Head, Hands, Heart system. Referenced in the three-folder system concept for his Obsidian/second-brain approaches.",
-      "tags": [
-        "knowledge-management",
-        "obsidian",
-        "second-brain"
-      ],
-      "links_out": [
-        {
-          "to": "concepts/three-folder-system-head-hands-heart",
-          "type": "mentions"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "concepts/three-folder-system-head-hands-heart",
-          "type": "mentions"
-        }
-      ],
-      "inbound_count": 1,
-      "outbound_count": 1,
-      "email": "",
-      "phone": "",
-      "company_name": "",
-      "website": "",
-      "location": "",
-      "relationship": ""
+      "title": "Nick Milo"
     },
     {
       "slug": "people/jake-van-cleef",
       "type": "person",
       "updated": "2026-06-05",
-      "title": "Jake Van Cleef",
-      "body": "Author of an academic paper arguing to stop building AI agents and focus on file folder structure instead. His work was a key influence on the Three Folder System / Head Hands Heart framework. The paper was processed through Claude for plain-English explanation.",
-      "tags": [
-        "AI",
-        "agent-building",
-        "researcher"
-      ],
-      "links_out": [
-        {
-          "to": "concepts/three-folder-system-head-hands-heart",
-          "type": "mentions"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "concepts/three-folder-system-head-hands-heart",
-          "type": "mentions"
-        }
-      ],
-      "inbound_count": 1,
-      "outbound_count": 1,
-      "email": "",
-      "phone": "",
-      "company_name": "",
-      "website": "",
-      "location": "",
-      "relationship": ""
+      "title": "Jake Van Cleef"
     },
     {
       "slug": "people/bob-proctor",
       "type": "person",
       "updated": "2026-06-05",
-      "title": "Bob Proctor",
-      "body": "Motivational speaker, author, philosopher. Known for the quote \"Organization is heaven's first law,\" referenced in the Three Folder System framework video as the core organizing principle.",
-      "tags": [
-        "author",
-        "philosophy",
-        "speaker"
-      ],
-      "links_out": [
-        {
-          "to": "concepts/three-folder-system-head-hands-heart",
-          "type": "mentions"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "concepts/three-folder-system-head-hands-heart",
-          "type": "mentions"
-        }
-      ],
-      "inbound_count": 1,
-      "outbound_count": 1,
-      "email": "",
-      "phone": "",
-      "company_name": "",
-      "website": "",
-      "location": "",
-      "relationship": ""
+      "title": "Bob Proctor"
     },
     {
       "slug": "meetings/2026-06-05-tj-vandermolen",
-      "type": "meeting",
+      "type": "concept",
       "updated": "2026-06-05",
-      "title": "Meeting with TJ van der Molen",
-      "body": "**Date:** 2026-06-05\n**Attendees:** TJ van der Molen, sayf\n\nMet with TJ van der Molen, CEO and ECHA Specialist at Passend. Discussed his business progress, partnerships, and growth plans. Explored how Maloha Coast can support Passend's development needs.\n\n## Three Projects Discussed\n\n### 1. Database + Frontend \u2014 Project-Based Learning Showcase\nChronological records of student projects & learning outcomes. Distribute updates via portal/newsletters/social media.\n\n### 2. Internal Tool \u2014 Reporting Automation\nRapid data input tools for behavioral observations with database storage and report generation. Staff verification for AI/OCR data.\n\n### 3. SaaS Platform \u2014 Counselor Teaching & Learning\nFreemium to subscription. Three tiers: Course access, Curriculum sharing, Hosted events. Certification at all levels.\n\n## Next Steps\n- Requirements Engineering Workshop: MYR 100/hr or MYR 800/day\n- TJ to prioritize which system to build first",
-      "tags": [],
-      "links_out": [
-        {
-          "to": "companies/passend",
-          "type": "mentions"
-        },
-        {
-          "to": "people/tj-vandermolen",
-          "type": "mentions"
-        }
-      ],
-      "backlinks": [],
-      "inbound_count": 0,
-      "outbound_count": 2,
-      "email": "",
-      "phone": "",
-      "company_name": "",
-      "website": "",
-      "location": "",
-      "relationship": ""
+      "title": "2026 06 05 Tj Vandermolen"
     },
     {
       "slug": "companies/passend",
       "type": "company",
       "updated": "2026-06-05",
-      "title": "Passend",
-      "body": "Malaysian education platform led by TJ van der Molen (CEO & ECHA Specialist). Three-product pipeline: project-based learning showcase, reporting automation, and SaaS counselor platform. Early-stage prospect for Maloha Coast.\n\n## Product Pipeline\n1. **Database + Frontend \u2014 Project-Based Learning Showcase:** Chronological records via portal/newsletters/social media\n2. **Internal Tool \u2014 Reporting Automation:** Behavioral observation tools for teachers\n3. **SaaS Platform \u2014 Counselor Teaching and Learning:** Freemium to subscription, three tiers\n\n## Open Threads\n- TJ to prioritize first product\n- Workshop proposed: MYR 100/hr or MYR 800/day\n- sayf's availability open until May, then contract work begins",
-      "tags": [
-        "education",
-        "prospect",
-        "saas"
-      ],
-      "links_out": [],
-      "backlinks": [
-        {
-          "from": "meetings/2026-06-05-tj-vandermolen",
-          "type": "mentions"
-        }
-      ],
-      "inbound_count": 1,
-      "outbound_count": 0,
-      "email": "",
-      "phone": "",
-      "company_name": "",
-      "website": "",
-      "location": "",
-      "relationship": ""
+      "title": "Passend"
     },
     {
       "slug": "people/tj-vandermolen",
       "type": "person",
       "updated": "2026-06-05",
-      "title": "TJ van der Molen",
-      "body": "CEO & ECHA Specialist at Passend. Met June 2026 to discuss three potential development projects. Early-stage prospect \u2014 interest confirmed, awaiting prioritization decision.\n\n## What They're Building\nPassend \u2014 education platform: learning showcase, reporting automation, SaaS counselor platform.\n\n## Assessment\nEarly-stage prospect. Three distinct systems identified \u2014 sensible to prioritize one for MVP. Clear vision for Passend's growth. Workshop will reveal more about decision-making style and budget.\n\n## Relationship\n- 2026-06-05: Initial meeting \u2014 discussed business progress and three projects\n- Next step: TJ to prioritize which system to build first",
-      "tags": [
-        "client",
-        "prospect"
-      ],
-      "links_out": [],
-      "backlinks": [
-        {
-          "from": "meetings/2026-06-05-tj-vandermolen",
-          "type": "mentions"
-        }
-      ],
-      "inbound_count": 1,
-      "outbound_count": 0,
-      "email": "t.vandermolen@passend.my",
-      "phone": "+6016 434 8614",
-      "company_name": "Passend",
-      "website": "www.passend.my",
-      "location": "Malaysia",
-      "relationship": "Prospective client \u2014 met to discuss development projects"
+      "title": "TJ van der Molen"
     },
     {
       "slug": "architecture/agent-hierarchy",
       "type": "concept",
       "updated": "2026-06-04",
-      "title": "Agent Hierarchy",
-      "body": "The Maloha Coast Hermes ecosystem has three agents in a hierarchy:\n\n**falconhermes** (root) \u2014 Orchestrator. Sayf's primary interface. Delegates tasks to MC and Sammy. Handles strategy, high-level planning.\n\n**MC** (profiles/mc/) \u2014 Executive assistant. Inbox triage, calendar, project tracking, client communications, research, business operations.\n\n**Sammy** (profiles/sammy/) \u2014 Content creator. LinkedIn posts, X threads, blog articles, brand voice, engagement drafting.\n\nBacked up to github.com/Maloha-Coast/hermes-profile-backup.",
-      "tags": [],
-      "links_out": [],
-      "backlinks": [],
-      "inbound_count": 0,
-      "outbound_count": 0,
-      "email": "",
-      "phone": "",
-      "company_name": "",
-      "website": "",
-      "location": "",
-      "relationship": ""
+      "title": "Agent Hierarchy"
     },
     {
       "slug": "reference/cold-lead-response-conference-events",
       "type": "concept",
       "updated": "2026-06-04",
-      "title": "Cold Lead Response \u2014 Conference Events",
-      "body": "Response to a conference producer who asked for examples after cold outreach. Crafted for LinkedIn DM \u2014 punchy, concrete, pilot-friendly.\n\n## Use Cases Pitched\n\n**Speaker sourcing:** Scans hundreds of profiles, past talks, decks \u2192 shortlist + briefing notes in ~15 minutes.\n\n**Post-session repurposing:** Recording/transcript \u2192 LinkedIn article, 3-5 social posts, newsletter summary, key highlights. One session \u2192 30+ usable pieces.\n\n**Sponsor deliverables:** Pre-event copy, staff briefs, lead reports, post-event ROI summaries \u2014 cutting out ~20 hours per sponsor tier.\n\n**Business brain / gbrain:** Agent learns past events, speakers, sponsors. Ask \"What sponsors performed best last year?\" or \"Give me the checklist for a 500-person event\" \u2014 pulls from your own history.\n\nNo AI jargon \u2014 pitched as a tool they control. Each example maps to a known pain point for conference producers.",
-      "tags": [],
-      "links_out": [],
-      "backlinks": [],
-      "inbound_count": 0,
-      "outbound_count": 0,
-      "email": "",
-      "phone": "",
-      "company_name": "",
-      "website": "",
-      "location": "",
-      "relationship": ""
+      "title": "Cold Lead Response Conference Events"
     },
     {
       "slug": "vps-hardening",
       "type": "concept",
       "updated": "2026-06-04",
-      "title": "VPS Hardening",
-      "body": "Security hardening of the Maloha Coast production VPS (Ubuntu, 6.8.0-124-generic).\n\n## SSH Hardening\n- PermitRootLogin: prohibit-password\n- PasswordAuthentication: no\n- X11Forwarding: no\n- MaxAuthTries: 3\n- ClientAliveInterval: 300s\n- AllowUsers: ubuntu only\n\n## Firewall (UFW)\n- Default: deny incoming, allow outgoing\n- Open: 22/tcp (SSH) only\n\n## fail2ban\n- Jail: sshd (aggressive mode)\n- Max retries: 3, Ban time: 1 hour\n- Banned 4 IPs within 2 minutes of coming online",
-      "tags": [
-        "devops",
-        "infrastructure",
-        "security"
-      ],
-      "links_out": [
-        {
-          "to": "2026-06-03",
-          "type": "wikilink"
-        },
-        {
-          "to": "gateway-infrastructure",
-          "type": "wikilink"
-        },
-        {
-          "to": "google-workspace-setup",
-          "type": "wikilink"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "gateway-infrastructure",
-          "type": "wikilink"
-        },
-        {
-          "from": "gbrain",
-          "type": "wikilink"
-        },
-        {
-          "from": "2026-06-03",
-          "type": "wikilink"
-        }
-      ],
-      "inbound_count": 3,
-      "outbound_count": 3,
-      "email": "",
-      "phone": "",
-      "company_name": "",
-      "website": "",
-      "location": "",
-      "relationship": ""
+      "title": "Vps Hardening"
     },
     {
       "slug": "gateway-infrastructure",
       "type": "concept",
       "updated": "2026-06-04",
-      "title": "Gateway Infrastructure",
-      "body": "## Hardware\n2GB VPS (Tencent Cloud, Ubuntu, 6.8.0-124). 2GB swap. ~50GB storage.\n\n## Hermes Gateway\nSystemd user service. Auto-starts on boot. Linger enabled.\n\n### Memory Profile\n- Baseline: ~97MB RSS\n- After 14h moderate use: ~600MB (growth ~36MB/h)\n- Peak observed: 1.0G\n\n### Health Watchdog\nPython script running every 10 minutes via cron. Silent when healthy; alerts Discord #Home on threshold breaches:\n- Gateway RSS >= 1.4GB (warn) / >= 1.6GB (critical)\n- Free memory <= 300MB (warn) / <= 150MB (critical)\n- Swap > 200MB\n- Memory growth > 50MB/hour",
-      "tags": [
-        "devops",
-        "hermes",
-        "infrastructure",
-        "monitoring"
-      ],
-      "links_out": [
-        {
-          "to": "vps-hardening",
-          "type": "wikilink"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "vps-hardening",
-          "type": "wikilink"
-        }
-      ],
-      "inbound_count": 1,
-      "outbound_count": 1,
-      "email": "",
-      "phone": "",
-      "company_name": "",
-      "website": "",
-      "location": "",
-      "relationship": ""
+      "title": "Gateway Infrastructure"
     },
     {
       "slug": "maloha-coast",
       "type": "concept",
       "updated": "2026-06-04",
-      "title": "Maloha Coast",
-      "body": "Maloha Coast Sdn Bhd \u2014 AI consulting and development agency bringing AI to SMBs locally and worldwide.\n\n## Director\nSayf (username: falcon)\n\n## Infrastructure\n- VPS hardened and secured\n- Google Workspace configured (info@malohacoast.com)\n- gbrain knowledge base with embeddings enabled\n- Hermes MC profile as admin assistant\n\n## Brand\n- Primary: #2a6a8a (teal blue), Accent: #c4a86a (champagne gold)\n- Optima font\n- Gold-on-navy honeycomb hex pattern",
-      "tags": [
-        "company",
-        "consulting",
-        "malohacoast"
-      ],
-      "links_out": [],
-      "backlinks": [
-        {
-          "from": "brand/maloha-coast-brand-identity",
-          "type": "wikilink"
-        }
-      ],
-      "inbound_count": 1,
-      "outbound_count": 0,
-      "email": "",
-      "phone": "",
-      "company_name": "",
-      "website": "",
-      "location": "",
-      "relationship": ""
+      "title": "Maloha Coast"
     },
     {
       "slug": "brand/maloha-coast-brand-identity",
       "type": "concept",
       "updated": "2026-06-04",
-      "title": "Maloha Coast \u2014 Brand Identity",
-      "body": "## Colour Palette\n- Primary: #2a6a8a (teal blue)\n- Accent: #c4a86a (champagne gold)\n- Dark Navy: #0a1628\n- Light backgrounds: #f4f8fb, #ffffff\n\n## Typography\n- Primary: Optima (humanist, elegant)\n- Fallback: 'Segoe UI', 'Candara', 'Palatino Linotype', Palatino, serif\n\n## Brand Pattern\nHoneycomb Hexagon Grid \u2014 Gold on Navy. Tile: 90\u00d752 px seamless PNG.\n\n## Email Templates\nProduction template based on \"Ocean Deep\" direction. Outer wrapper with gold-on-navy hex pattern. White rounded body card. Gold accent borders. Gmail-compatible (HTML background attribute, inline styles, max 600px width).",
-      "tags": [
-        "brand",
-        "design",
-        "email-template",
-        "malohacoast"
-      ],
-      "links_out": [
-        {
-          "to": "google-workspace-setup",
-          "type": "wikilink"
-        },
-        {
-          "to": "maloha-coast",
-          "type": "wikilink"
-        }
-      ],
-      "backlinks": [],
-      "inbound_count": 0,
-      "outbound_count": 2,
-      "email": "",
-      "phone": "",
-      "company_name": "",
-      "website": "",
-      "location": "",
-      "relationship": ""
+      "title": "Maloha Coast — Brand Identity"
     },
     {
       "slug": "concepts/embedding-cost-projection",
       "type": "concept",
       "updated": "2026-06-03",
-      "title": "Embedding Cost Projection",
-      "body": "Model: text-embedding-3-large ($0.00013 / 1K tokens)\n\n## Per-Page Average\n~772 tokens/page \u2192 ~$0.0001/page\n\n## Cost Projection\n| Pages | Cost |\n|-------|------|\n| 100 | $0.01 |\n| 1,000 | $0.10 |\n| 10,000 | $1.00 |\n| 100,000 | $10.00 |\n\nKey insight: The real bottleneck is content curation, not API pricing. Even War and Peace (~775K tokens) costs ~$0.10.",
-      "tags": [
-        "brain",
-        "cost",
-        "embeddings",
-        "openai"
-      ],
-      "links_out": [],
-      "backlinks": [],
-      "inbound_count": 0,
-      "outbound_count": 0,
-      "email": "",
-      "phone": "",
-      "company_name": "",
-      "website": "",
-      "location": "",
-      "relationship": ""
+      "title": "Embedding Cost Projection"
     },
     {
       "slug": "hermes-profile-backup",
       "type": "concept",
       "updated": "2026-06-03",
-      "title": "Hermes Profile Backup",
-      "body": "Pushes all agent profiles to private GitHub repo with secrets stripped.\n\n## Repository\n- github.com/Maloha-Coast/hermes-profile-backup (private)\n- 1,186 files across 2 profiles (default + MC)\n- Includes: SOUL.md, skills, cron, memories, config.yaml (stripped)\n- Excludes: API keys, tokens, session logs, OAuth tokens\n\n## Restore\ngit clone \u2192 ./setup.sh \u2192 edit config.yaml and .env with credentials",
-      "tags": [],
-      "links_out": [],
-      "backlinks": [],
-      "inbound_count": 0,
-      "outbound_count": 0,
-      "email": "",
-      "phone": "",
-      "company_name": "",
-      "website": "",
-      "location": "",
-      "relationship": ""
+      "title": "Hermes Profile Backup"
     },
     {
       "slug": "gbrain",
       "type": "concept",
       "updated": "2026-06-03",
-      "title": "gbrain",
-      "body": "gbrain v0.42.10.0 \u2014 local AI-powered knowledge base for Hermes agent.\n\n## Setup\n- CLI: ~/.bun/bin/gbrain\n- Brain: ~/.gbrain/brain.pglite (PGLite \u2014 local Postgres)\n- Config: ~/.gbrain/config.json\n- Schema: gbrain-base-v2\n\n## Models\n| Role | Model |\n|------|-------|\n| Embedding | openai:text-embedding-3-large (1536d) |\n| Query Expansion | anthropic:claude-haiku-4-5-20251001 |\n| Chat | anthropic:claude-opus-4-7 |\n\n## Status\n- \u2705 Keyword search works\n- \u2705 49 skills loaded\n- \u2705 Embeddings enabled (100% coverage)",
-      "tags": [],
-      "links_out": [
-        {
-          "to": "2026-06-03",
-          "type": "wikilink"
-        },
-        {
-          "to": "google-workspace-setup",
-          "type": "wikilink"
-        },
-        {
-          "to": "vps-hardening",
-          "type": "wikilink"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "google-workspace-setup",
-          "type": "wikilink"
-        },
-        {
-          "from": "2026-06-03",
-          "type": "wikilink"
-        }
-      ],
-      "inbound_count": 2,
-      "outbound_count": 3,
-      "email": "",
-      "phone": "",
-      "company_name": "",
-      "website": "",
-      "location": "",
-      "relationship": ""
+      "title": "Gbrain"
     },
     {
       "slug": "google-workspace-setup",
       "type": "concept",
       "updated": "2026-06-03",
-      "title": "Google Workspace Setup",
-      "body": "## Account\n- Email: info@malohacoast.com\n- OAuth Client: admin-assistant\n- Token: ~/.hermes/google_token.json (auto-refreshes)\n\n## Services\n| Service | Status |\n|---------|--------|\n| Gmail | \u2705 Read/Send/Modify |\n| Calendar | \u2705 Configured |\n| Drive | \u2705 Configured |\n| Docs | \u2705 Configured |\n| Sheets | \u2705 Configured |",
-      "tags": [
-        "email",
-        "google-workspace",
-        "productivity"
-      ],
-      "links_out": [
-        {
-          "to": "2026-06-03",
-          "type": "wikilink"
-        },
-        {
-          "to": "gbrain",
-          "type": "wikilink"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "vps-hardening",
-          "type": "wikilink"
-        },
-        {
-          "from": "brand/maloha-coast-brand-identity",
-          "type": "wikilink"
-        },
-        {
-          "from": "gbrain",
-          "type": "wikilink"
-        },
-        {
-          "from": "2026-06-03",
-          "type": "wikilink"
-        }
-      ],
-      "inbound_count": 4,
-      "outbound_count": 2,
-      "email": "",
-      "phone": "",
-      "company_name": "",
-      "website": "",
-      "location": "",
-      "relationship": ""
+      "title": "Google Workspace Setup"
     },
     {
       "slug": "2026-06-03",
-      "type": "daily",
+      "type": "concept",
       "updated": "2026-06-03",
-      "title": "June 3, 2026 \u2014 Setup Day",
-      "body": "## Highlights\n- Full VPS security audit and hardening\n- Google Workspace admin setup (info@malohacoast.com)\n- gbrain installation and configuration\n- Obsidian vault creation\n\n## VPS Hardening\nSSH locked down, UFW active, fail2ban running \u2014 banned 4 brute-force IPs. New kernel 6.8.0-124 active after reboot.\n\n## AI Infrastructure\ngbrain v0.42.10.0 installed, brain initialized at ~/.gbrain/. Hermes agent configured with 49 skills.",
-      "tags": [],
-      "links_out": [
-        {
-          "to": "gbrain",
-          "type": "wikilink"
-        },
-        {
-          "to": "google-workspace-setup",
-          "type": "wikilink"
-        },
-        {
-          "to": "vps-hardening",
-          "type": "wikilink"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "vps-hardening",
-          "type": "wikilink"
-        },
-        {
-          "from": "gbrain",
-          "type": "wikilink"
-        },
-        {
-          "from": "google-workspace-setup",
-          "type": "wikilink"
-        }
-      ],
-      "inbound_count": 3,
-      "outbound_count": 3,
-      "email": "",
-      "phone": "",
-      "company_name": "",
-      "website": "",
-      "location": "",
-      "relationship": ""
+      "title": "2026 06 03"
     }
   ],
   "entities": {
     "people": [
+      "people/bjarte",
       "people/nick-milo",
       "people/jake-van-cleef",
       "people/bob-proctor",
       "people/tj-vandermolen"
     ],
     "companies": [
+      "companies/global-ai-village",
       "companies/passend"
     ]
   },
   "doctor": {
-    "schema_version": 113,
+    "schema_version": 2,
+    "status": "warnings",
     "health_score": 80,
     "brain_checks_score": 95,
+    "category_scores": {
+      "brain": 95,
+      "skill": 100,
+      "ops": 95,
+      "meta": 90
+    },
     "checks": [
       {
         "name": "resolver_health",
@@ -615,6 +185,93 @@
         "category": "skill"
       },
       {
+        "name": "nightly_quality_probe_health",
+        "status": "ok",
+        "message": "disabled (opt-in). Enable with: gbrain config set autopilot.nightly_quality_probe.enabled true",
+        "category": "brain"
+      },
+      {
+        "name": "extract_health",
+        "status": "ok",
+        "message": "no extractions in last 7 days",
+        "details": {
+          "schema_version": 1,
+          "kinds": []
+        },
+        "category": "brain"
+      },
+      {
+        "name": "conversation_facts_backlog",
+        "status": "ok",
+        "message": "disabled (opt-in). Enable with: gbrain config set cycle.conversation_facts_backfill.enabled true",
+        "category": "brain"
+      },
+      {
+        "name": "extract_atoms_backlog",
+        "status": "ok",
+        "message": "no pages awaiting atom extraction",
+        "details": {
+          "backlog": 0,
+          "pack_declares_phase": false,
+          "known_approximation": "page backlog only; transcript corpus not counted"
+        },
+        "category": "brain"
+      },
+      {
+        "name": "conversation_format_coverage",
+        "status": "ok",
+        "message": "No conversation-type pages — coverage check not applicable",
+        "category": "brain"
+      },
+      {
+        "name": "progressive_batch_audit_health",
+        "status": "ok",
+        "message": "No progressive-batch operations in the last 7 days",
+        "category": "ops"
+      },
+      {
+        "name": "conversation_parser_probe_health",
+        "status": "ok",
+        "message": "Skipped (nightly probe is opt-in; enable with `gbrain config set autopilot.conversation_parser_probe.enabled true`)",
+        "category": "brain"
+      },
+      {
+        "name": "home_dir_in_worktree",
+        "status": "ok",
+        "message": "gbrain home is outside any enclosing git worktree.",
+        "category": "ops"
+      },
+      {
+        "name": "connection",
+        "status": "ok",
+        "message": "Connected, 22 pages",
+        "category": "ops"
+      },
+      {
+        "name": "pgvector",
+        "status": "warn",
+        "message": "Could not check pgvector extension",
+        "category": "ops"
+      },
+      {
+        "name": "rls",
+        "status": "ok",
+        "message": "Skipped (PGLite — no PostgREST exposure, RLS not applicable)",
+        "category": "ops"
+      },
+      {
+        "name": "schema_version",
+        "status": "ok",
+        "message": "Version 113 (latest: 113)",
+        "category": "meta"
+      },
+      {
+        "name": "rls_event_trigger",
+        "status": "ok",
+        "message": "Skipped (PGLite — no event trigger support)",
+        "category": "ops"
+      },
+      {
         "name": "embeddings",
         "status": "ok",
         "message": "100% coverage, 0 missing",
@@ -623,7 +280,19 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1536d",
+        "message": "openai:text-embedding-3-large ✓ 330ms, 1536 dims, DB aligned",
+        "category": "brain"
+      },
+      {
+        "name": "embedding_column_registry",
+        "status": "ok",
+        "message": "Registry healthy: 2 columns (embedding, embedding_image); active='embedding'",
+        "category": "brain"
+      },
+      {
+        "name": "embedding_env_override",
+        "status": "ok",
+        "message": "no embedding env overrides set",
         "category": "brain"
       },
       {
@@ -633,40 +302,22 @@
         "category": "brain"
       },
       {
-        "name": "graph_signals_coverage",
+        "name": "brain_score",
         "status": "ok",
-        "message": "53.3% pages have inbound links",
+        "message": "Brain score 89/100 (embed 35/35, links 25/25, timeline 7/15, orphans 12/15, dead-links 10/10)",
         "category": "brain"
       },
       {
-        "name": "brain_score",
+        "name": "orphan_ratio",
         "status": "ok",
-        "message": "Brain score 81/100",
+        "message": "Vacuous: 7 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "15 pages sampled; clean",
+        "message": "Sampled 22 pages; no bare-tweet phrases or external links.",
         "category": "brain"
-      },
-      {
-        "name": "connection",
-        "status": "ok",
-        "message": "Connected, 18 pages",
-        "category": "ops"
-      },
-      {
-        "name": "schema_version",
-        "status": "ok",
-        "message": "Version 113 (latest)",
-        "category": "meta"
-      },
-      {
-        "name": "reranker_health",
-        "status": "ok",
-        "message": "21 failures in 7 days (below threshold)",
-        "category": "ops"
       },
       {
         "name": "jsonb_integrity",
@@ -675,10 +326,328 @@
         "category": "brain"
       },
       {
-        "name": "pgvector",
-        "status": "warn",
-        "message": "Could not check pgvector extension",
+        "name": "takes_weight_grid",
+        "status": "ok",
+        "message": "No takes yet",
+        "category": "brain"
+      },
+      {
+        "name": "child_table_orphans",
+        "status": "ok",
+        "message": "All FK-child tables clean (10 tables checked)",
+        "category": "brain"
+      },
+      {
+        "name": "whoknows_health",
+        "status": "ok",
+        "message": "whoknows eval fixture present (10 queries). Run `gbrain eval whoknows test/fixtures/whoknows-eval.jsonl` to grade.",
+        "category": "skill"
+      },
+      {
+        "name": "cross_modal_modality_backfill",
+        "status": "ok",
+        "message": "All image-asset chunks have modality=image",
+        "category": "brain"
+      },
+      {
+        "name": "unified_multimodal_coverage",
+        "status": "ok",
+        "message": "search.unified_multimodal is off; coverage check N/A",
+        "category": "brain"
+      },
+      {
+        "name": "markdown_body_completeness",
+        "status": "ok",
+        "message": "Skipped (raw_data unavailable)",
+        "category": "brain"
+      },
+      {
+        "name": "oversized_pages",
+        "status": "ok",
+        "message": "Skipped (No database connection: connect() has not been called. Fix: Run gbrain init --supabase or gbrain init --url <connection_string>)",
+        "category": "brain"
+      },
+      {
+        "name": "scraper_junk_pages",
+        "status": "ok",
+        "message": "Skipped (No database connection: connect() has not been called. Fix: Run gbrain init --supabase or gbrain init --url <connection_string>)",
+        "category": "brain"
+      },
+      {
+        "name": "content_sanity_audit_recent",
+        "status": "ok",
+        "message": "No content-sanity events in last 7 days (audit JSONL is local to this host; share GBRAIN_AUDIT_DIR for multi-host visibility)",
+        "category": "brain"
+      },
+      {
+        "name": "quarantined_pages",
+        "status": "ok",
+        "message": "No quarantined pages",
+        "category": "brain"
+      },
+      {
+        "name": "flagged_pages",
+        "status": "ok",
+        "message": "No flagged pages",
+        "category": "brain"
+      },
+      {
+        "name": "frontmatter_integrity",
+        "status": "ok",
+        "message": "No registered sources to scan",
+        "category": "brain"
+      },
+      {
+        "name": "eval_capture",
+        "status": "ok",
+        "message": "No capture failures in the last 24h",
+        "category": "meta"
+      },
+      {
+        "name": "contradictions",
+        "status": "ok",
+        "message": "No probe runs in the last 7 days. Run `gbrain eval suspected-contradictions --query \"...\" --top-k 5` to populate.",
+        "category": "brain"
+      },
+      {
+        "name": "facts_extraction_health",
+        "status": "ok",
+        "message": "No facts:absorb failures in the last 24h.",
+        "category": "brain"
+      },
+      {
+        "name": "effective_date_health",
+        "status": "ok",
+        "message": "Sample of last 1000 pages clean (no fallback-with-parseable-fm-date, no future-dated, no pre-1990)",
+        "category": "brain"
+      },
+      {
+        "name": "salience_health",
+        "status": "ok",
+        "message": "Skipped (no pages have emotional_weight > 0; either fresh install or recompute hasn't run yet)",
+        "category": "brain"
+      },
+      {
+        "name": "queue_health",
+        "status": "ok",
+        "message": "Skipped (PGLite — no multi-process worker surface)",
         "category": "ops"
+      },
+      {
+        "name": "subagent_capability",
+        "status": "ok",
+        "message": "Subagent tier resolves to default (claude-sonnet-4-6) — full tool-loop capability",
+        "category": "ops"
+      },
+      {
+        "name": "facts_health",
+        "status": "ok",
+        "message": "facts_health(default): 0 active, 0 today, 0 this week, 0 consolidated, top entities —",
+        "category": "brain"
+      },
+      {
+        "name": "image_assets",
+        "status": "ok",
+        "message": "No image assets indexed yet",
+        "category": "brain"
+      },
+      {
+        "name": "ocr_health",
+        "status": "ok",
+        "message": "OCR not in use (or no images ingested with OCR opt-in)",
+        "category": "brain"
+      },
+      {
+        "name": "sync_freshness",
+        "status": "ok",
+        "message": "No federated sources to sync",
+        "details": {
+          "unchanged_count": 0,
+          "synced_recently_count": 0,
+          "stale_count": 0
+        },
+        "category": "brain"
+      },
+      {
+        "name": "sync_consolidation",
+        "status": "ok",
+        "message": "Single-source brain — sync --all consolidation not applicable.",
+        "category": "ops"
+      },
+      {
+        "name": "links_extraction_lag",
+        "status": "ok",
+        "message": "Extraction lag not applicable (22 pages — too few to assess)",
+        "category": "brain"
+      },
+      {
+        "name": "cycle_freshness",
+        "status": "ok",
+        "message": "No federated sources to cycle",
+        "category": "brain"
+      },
+      {
+        "name": "search_mode",
+        "status": "ok",
+        "message": "Mode: tokenmax (no per-key overrides — mode bundle is canonical).",
+        "category": "ops"
+      },
+      {
+        "name": "eval_drift",
+        "status": "ok",
+        "message": "No retrieval-affecting files changed in working tree.",
+        "category": "brain"
+      },
+      {
+        "name": "reranker_health",
+        "status": "ok",
+        "message": "26 reranker failure(s) in last 7 days (below threshold)",
+        "category": "ops"
+      },
+      {
+        "name": "batch_retry_health",
+        "status": "ok",
+        "message": "No exhausted batch retries in last 24h.",
+        "category": "ops"
+      },
+      {
+        "name": "graph_signals_coverage",
+        "status": "ok",
+        "message": "68.2% of pages have inbound links (>=30% — graph signals fire on most queries)",
+        "category": "brain"
+      },
+      {
+        "name": "brainstorm_health",
+        "status": "ok",
+        "message": "Migration v79 applied; tracking enabled. Calibration profile not yet generated — brainstorm/lsd will run unbiased until enough takes are resolved.",
+        "category": "ops"
+      },
+      {
+        "name": "link_resolution_opportunity",
+        "status": "ok",
+        "message": "global_basename mode already enabled",
+        "category": "brain"
+      },
+      {
+        "name": "ze_embedding_health",
+        "status": "ok",
+        "message": "Configured embedding model \"openai:text-embedding-3-large\" is not ZeroEntropy — skip.",
+        "category": "ops"
+      },
+      {
+        "name": "embedding_width_consistency",
+        "status": "ok",
+        "message": "Schema width (1536d) matches gateway embedding_dimensions",
+        "category": "brain"
+      },
+      {
+        "name": "facts_embedding_width_consistency",
+        "status": "ok",
+        "message": "Skipped on PGLite (single bundled pgvector version).",
+        "category": "brain"
+      },
+      {
+        "name": "source_routing_health",
+        "status": "ok",
+        "message": "Single-source brain (no federation to check)",
+        "category": "brain"
+      },
+      {
+        "name": "oauth_confidential_client_health",
+        "status": "ok",
+        "message": "No OAuth clients registered",
+        "category": "ops"
+      },
+      {
+        "name": "autopilot_lock_scope",
+        "status": "ok",
+        "message": "Lock path: /home/ubuntu/.gbrain/autopilot.lock",
+        "category": "ops"
+      },
+      {
+        "name": "stale_locks",
+        "status": "ok",
+        "message": "No stale locks (no rows with ttl_expires_at < NOW())",
+        "category": "ops"
+      },
+      {
+        "name": "cycle_phase_scope",
+        "status": "ok",
+        "message": "Phase taxonomy: 12 source-scoped, 8 brain-global, 2 mixed. Source-safe: [lint, backlinks, sync, extract, extract_facts, extract_atoms, recompute_emotional_weight, consolidate, propose_takes, conversation_facts_backfill, enrich_thin, schema-suggest]. Brain-global: [resolve_symbol_edges, synthesize_concepts, grade_takes, calibration_profile, skillopt, embed, orphans, purge]. Mixed: [synthesize, patterns].",
+        "details": {
+          "phase_scope_map": {
+            "lint": "source",
+            "backlinks": "source",
+            "sync": "source",
+            "synthesize": "mixed",
+            "extract": "source",
+            "extract_facts": "source",
+            "resolve_symbol_edges": "global",
+            "patterns": "mixed",
+            "recompute_emotional_weight": "source",
+            "consolidate": "source",
+            "propose_takes": "source",
+            "grade_takes": "global",
+            "calibration_profile": "global",
+            "embed": "global",
+            "orphans": "global",
+            "purge": "global",
+            "schema-suggest": "source",
+            "extract_atoms": "source",
+            "synthesize_concepts": "global",
+            "conversation_facts_backfill": "source",
+            "enrich_thin": "source",
+            "skillopt": "global"
+          },
+          "counts": {
+            "source": 12,
+            "global": 8,
+            "mixed": 2
+          }
+        },
+        "category": "meta"
+      },
+      {
+        "name": "embed_staleness",
+        "status": "ok",
+        "message": "No stale chunks",
+        "category": "meta"
+      },
+      {
+        "name": "entity_link_coverage",
+        "status": "ok",
+        "message": "Coverage 100% ± 0.0%",
+        "category": "meta"
+      },
+      {
+        "name": "timeline_coverage",
+        "status": "ok",
+        "message": "Coverage 100% ± 0.0%",
+        "category": "meta"
+      },
+      {
+        "name": "takes_count",
+        "status": "warn",
+        "message": "0 takes (takes.bootstrap_enabled is false; opt in to enable)",
+        "category": "meta"
+      },
+      {
+        "name": "pack_upgrade_available",
+        "status": "warn",
+        "message": "Active pack: gbrain-base@1.0.0+7bd490ab. Successor available: gbrain-base-v2@1.0.0+b9bebaa4. Preview: `gbrain onboard --check --explain`",
+        "category": "meta"
+      },
+      {
+        "name": "type_proliferation",
+        "status": "ok",
+        "message": "3 distinct typed values (pack declares 25)",
+        "category": "meta"
+      },
+      {
+        "name": "dangling_aliases",
+        "status": "ok",
+        "message": "No dangling aliases",
+        "category": "meta"
       }
     ]
   }
