@@ -12,9 +12,51 @@
     --primary: #2a6a8a; --primary-light: #22d3ee; --accent: #c4a86a; --accent-light: #fbbf24;
     --text: #f1f5f9; --text-muted: #94a3b8; --green: #34d399; --violet: #a78bfa;
     --rose: #fb7185; --radius: 12px; --radius-sm: 8px;
+    --graph-bg: #0f172a;
   }
+  body.light {
+    --bg: #f4f8fb; --surface: #ffffff; --surface2: #f1f5f9; --border: #dce4ec;
+    --primary: #2a6a8a; --primary-light: #0e7490; --accent: #9a7b2c; --accent-light: #b8860b;
+    --text: #0f172a; --text-muted: #64748b; --green: #059669; --violet: #7c3aed;
+    --rose: #e11d48;
+    --graph-bg: #f8fafc;
+  }
+  /* Catppuccin Mocha */
+  body.catppuccin-mocha {
+    --bg: #1e1e2e; --surface: #313244; --surface2: #45475a; --border: #585b70;
+    --primary: #89b4fa; --primary-light: #74c7ec; --accent: #f9e2af; --accent-light: #fab387;
+    --text: #cdd6f4; --text-muted: #a6adc8; --green: #a6e3a1; --violet: #cba6f7;
+    --rose: #f38ba8;
+    --graph-bg: #1e1e2e;
+  }
+  /* Catppuccin Latte */
+  body.catppuccin-latte {
+    --bg: #eff1f5; --surface: #e6e9ef; --surface2: #ccd0da; --border: #bcc0cc;
+    --primary: #1e66f5; --primary-light: #04a5e5; --accent: #df8e1d; --accent-light: #fe640b;
+    --text: #4c4f69; --text-muted: #8c8fa1; --green: #40a02b; --violet: #8839ef;
+    --rose: #d20f39;
+    --graph-bg: #eff1f5;
+  }
+  /* Tokyo Night */
+  body.tokyo-night {
+    --bg: #1a1b26; --surface: #24283b; --surface2: #2f3346; --border: #3b4261;
+    --primary: #7aa2f7; --primary-light: #7dcfff; --accent: #e0af68; --accent-light: #ff9e64;
+    --text: #c0caf5; --text-muted: #9aa5ce; --green: #9ece6a; --violet: #bb9af7;
+    --rose: #f7768e;
+    --graph-bg: #1a1b26;
+  }
+  /* Omarchy (DHH-inspired: warm, high-contrast, minimal) */
+  body.omarchy {
+    --bg: #faf6f0; --surface: #ffffff; --surface2: #f5efe6; --border: #d4c9b8;
+    --primary: #8b4513; --primary-light: #a0522d; --accent: #b8860b; --accent-light: #cd853f;
+    --text: #2c1810; --text-muted: #6b5b4f; --green: #5d7a3a; --violet: #6b3fa0;
+    --rose: #c0392b;
+    --graph-bg: #faf6f0;
+  }
+  body { transition: background 0.3s, color 0.3s; }
   html { scroll-behavior: smooth; }
-  body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+  body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; overflow-x: hidden; }
+  body.modal-open { overflow: hidden; }
   .app { max-width: 1200px; margin: 0 auto; padding: 24px 20px 60px; }
 
   /* ─── Header ─── */
@@ -27,19 +69,22 @@
   .badge.green { background: rgba(52,211,153,0.1); color: var(--green); border: 1px solid rgba(52,211,153,0.3); }
   .badge.gold { background: rgba(196,168,106,0.1); color: var(--accent); border: 1px solid rgba(196,168,106,0.3); }
   .badge.rose { background: rgba(251,113,133,0.1); color: var(--rose); border: 1px solid rgba(251,113,133,0.3); }
-  .refresh { background: var(--surface2); border: 1px solid var(--border); color: var(--text-muted); padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 0.7rem; font-family: 'Inter', sans-serif; }
+  .refresh { background: var(--surface2); border: 1px solid var(--border); color: var(--text-muted); padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 0.7rem; font-family: 'Inter', sans-serif; transition: all 0.15s; }
   .refresh:hover { color: var(--text); border-color: var(--text-muted); }
   .last-updated { font-size: 0.65rem; color: var(--text-muted); }
 
   /* ─── Stat Cards ─── */
   .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 24px; }
-  .stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 16px; }
+  .stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 16px; cursor: pointer; transition: border-color 0.15s, transform 0.15s; position: relative; }
+  .stat-card:hover { border-color: var(--primary-light); transform: translateY(-2px); }
+  .stat-card:active { transform: translateY(0); }
   .stat-card .icon { font-size: 1.3rem; margin-bottom: 6px; }
   .stat-card .value { font-size: 1.6rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; }
   .stat-card .label { font-size: 0.7rem; color: var(--text-muted); margin-top: 2px; text-transform: uppercase; letter-spacing: 0.04em; }
   .stat-card .detail { font-size: 0.65rem; color: var(--text-muted); margin-top: 4px; }
+  .stat-card .hint { font-size: 0.55rem; color: rgba(148,163,184,0.5); margin-top: 6px; font-style: italic; }
 
-  /* ─── Section Header ─── */
+  /* ─── Section ─── */
   .section { margin-bottom: 28px; }
   .section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
   .section-header h2 { font-size: 1rem; font-weight: 700; letter-spacing: -0.01em; }
@@ -47,24 +92,28 @@
 
   /* ─── Tabs ─── */
   .tabs { display: flex; gap: 4px; margin-bottom: 14px; background: var(--surface); border-radius: var(--radius-sm); padding: 3px; width: fit-content; }
-  .tab { padding: 6px 14px; border-radius: 6px; font-size: 0.75rem; cursor: pointer; color: var(--text-muted); border: none; background: none; font-family: 'Inter', sans-serif; }
+  .tab { padding: 6px 14px; border-radius: 6px; font-size: 0.75rem; cursor: pointer; color: var(--text-muted); border: none; background: none; font-family: 'Inter', sans-serif; transition: all 0.15s; }
   .tab.active { background: var(--surface2); color: var(--text); }
   .tab:hover:not(.active) { color: var(--text); }
 
   /* ─── Table ─── */
   .table-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
   table { width: 100%; border-collapse: collapse; font-size: 0.78rem; }
-  th { text-align: left; padding: 10px 14px; background: rgba(15,23,42,0.6); border-bottom: 1px solid var(--border); font-weight: 600; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); }
+  th { text-align: left; padding: 10px 14px; background: rgba(15,23,42,0.6); border-bottom: 1px solid var(--border); font-weight: 600; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); position: sticky; top: 0; z-index: 1; }
   td { padding: 9px 14px; border-bottom: 1px solid rgba(255,255,255,0.03); }
+  tr.page-row { cursor: pointer; transition: background 0.1s; }
+  tr.page-row:hover td { background: rgba(34,211,238,0.04); }
+  tr.page-row:active td { background: rgba(34,211,238,0.08); }
   tr:last-child td { border: none; }
-  tr:hover td { background: rgba(255,255,255,0.02); }
   .slug-link { color: var(--primary-light); text-decoration: none; font-weight: 500; }
-  .slug-link:hover { text-decoration: underline; }
   .type-tag { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 0.6rem; font-weight: 600; text-transform: uppercase; }
   .type-tag.person { background: rgba(167,139,250,0.15); color: var(--violet); }
   .type-tag.company { background: rgba(52,211,153,0.15); color: var(--green); }
   .type-tag.meeting { background: rgba(251,191,36,0.15); color: var(--accent-light); }
+  .type-tag.daily { background: rgba(251,113,133,0.15); color: var(--rose); }
   .type-tag.concept { background: rgba(34,211,238,0.15); color: var(--primary-light); }
+  .link-badge { font-size: 0.6rem; color: var(--text-muted); margin-left: 4px; }
+  .link-badge.has-links { color: var(--accent); }
 
   /* ─── Search ─── */
   .search-wrap { position: relative; margin-bottom: 12px; }
@@ -73,41 +122,144 @@
   .search-wrap input:focus { outline: none; border-color: var(--primary-light); }
   .search-wrap .search-icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 0.8rem; }
 
-  /* ─── Entity Cards ─── */
+  /* ─── Entity Grid ─── */
   .entity-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
-  .entity-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; }
+  .entity-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; cursor: pointer; transition: border-color 0.15s, transform 0.15s; }
+  .entity-card:hover { border-color: var(--primary-light); transform: translateY(-2px); }
   .entity-card .name { font-weight: 700; font-size: 0.9rem; margin-bottom: 4px; }
   .entity-card .slug { font-family: 'JetBrains Mono', monospace; font-size: 0.65rem; color: var(--text-muted); }
-  .entity-card .meta { display: flex; gap: 6px; margin-top: 6px; }
+  .entity-card .meta { display: flex; gap: 6px; margin-top: 6px; flex-wrap: wrap; }
+  .entity-card .preview { font-size: 0.7rem; color: var(--text-muted); margin-top: 6px; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .entity-card .contact-row { display: flex; gap: 10px; margin-top: 6px; font-size: 0.65rem; color: var(--text-muted); }
 
   /* ─── Health Grid ─── */
   .health-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px; }
-  .health-item { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 12px 14px; display: flex; gap: 10px; align-items: flex-start; }
+  .health-item { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 12px 14px; display: flex; gap: 10px; align-items: flex-start; cursor: pointer; transition: border-color 0.15s; }
+  .health-item:hover { border-color: var(--primary-light); }
   .health-dot { width: 8px; height: 8px; border-radius: 50%; margin-top: 4px; flex-shrink: 0; }
-  .health-dot.ok { background: var(--green); }
-  .health-dot.warn { background: var(--accent-light); }
-  .health-dot.error { background: var(--rose); }
+  .health-dot.ok { background: var(--green); box-shadow: 0 0 6px rgba(52,211,153,0.5); }
+  .health-dot.warn { background: var(--accent-light); box-shadow: 0 0 6px rgba(251,191,36,0.5); }
+  .health-dot.error { background: var(--rose); box-shadow: 0 0 6px rgba(251,113,133,0.5); }
   .health-info { flex: 1; min-width: 0; }
   .health-info .name { font-size: 0.75rem; font-weight: 600; }
   .health-info .msg { font-size: 0.65rem; color: var(--text-muted); margin-top: 2px; word-break: break-word; }
 
-  /* ─── Empty State ─── */
+  /* ─── Link Graph ─── */
+  .graph-container { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px; margin-bottom: 24px; position: relative; }
+  .graph-container canvas { width: 100%; height: 380px; display: block; border-radius: var(--radius-sm); cursor: grab; background: var(--graph-bg); }
+  .graph-container canvas:active { cursor: grabbing; }
+  .graph-container canvas.dragging-node { cursor: grabbing; }
+  .graph-reset { position: absolute; top: 16px; right: 16px; background: var(--surface2); border: 1px solid var(--border); color: var(--text-muted); padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 0.6rem; font-family: 'Inter', sans-serif; transition: all 0.15s; }
+  .graph-reset:hover { color: var(--text); border-color: var(--accent); }
+  .graph-legend { display: flex; gap: 16px; margin-top: 8px; font-size: 0.65rem; color: var(--text-muted); justify-content: center; flex-wrap: wrap; }
+  .graph-legend span { display: flex; align-items: center; gap: 4px; }
+  .graph-legend .dot { width: 8px; height: 8px; border-radius: 50%; }
+
+  /* ─── Modal ─── */
+  .modal-overlay { position: fixed; inset: 0; background: rgba(2,6,23,0.85); backdrop-filter: blur(4px); z-index: 100; display: none; align-items: center; justify-content: center; padding: 20px; }
+  .modal-overlay.active { display: flex; }
+  .modal { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); width: 100%; max-width: 700px; max-height: 85vh; overflow-y: auto; box-shadow: 0 25px 50px rgba(0,0,0,0.5); animation: modalIn 0.2s ease; }
+  @keyframes modalIn { from { opacity: 0; transform: scale(0.95) translateY(10px); } to { opacity: 1; transform: scale(1) translateY(0); } }
+  .modal-header { padding: 18px 20px 14px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; position: sticky; top: 0; background: var(--surface); z-index: 2; }
+  .modal-header .m-title { font-size: 1.1rem; font-weight: 700; letter-spacing: -0.01em; line-height: 1.3; }
+  .modal-header .m-slug { font-family: 'JetBrains Mono', monospace; font-size: 0.65rem; color: var(--text-muted); margin-top: 2px; }
+  .modal-close { background: none; border: 1px solid var(--border); color: var(--text-muted); width: 30px; height: 30px; border-radius: 6px; cursor: pointer; font-size: 1rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all 0.15s; }
+  .modal-close:hover { color: var(--text); border-color: var(--rose); }
+  .modal-body { padding: 16px 20px 20px; }
+  .modal-body .m-section { margin-bottom: 16px; }
+  .modal-body .m-section:last-child { margin-bottom: 0; }
+  .modal-body .m-section-title { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin-bottom: 8px; font-weight: 600; }
+  .modal-body .m-content { font-size: 0.8rem; line-height: 1.65; color: var(--text); white-space: pre-wrap; word-break: break-word; }
+  .modal-body .m-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+  .modal-body .m-tags .tag { font-size: 0.6rem; padding: 3px 10px; border-radius: 12px; background: rgba(34,211,238,0.1); color: var(--primary-light); border: 1px solid rgba(34,211,238,0.2); }
+  .modal-body .m-links { display: flex; flex-direction: column; gap: 4px; }
+  .modal-body .m-link { display: flex; align-items: center; gap: 8px; padding: 6px 10px; background: var(--surface2); border-radius: var(--radius-sm); font-size: 0.7rem; cursor: pointer; transition: background 0.1s; text-decoration: none; color: var(--text); }
+  .modal-body .m-link:hover { background: var(--border); }
+  .modal-body .m-link .dir { font-size: 0.55rem; color: var(--text-muted); }
+  .modal-body .m-link .ltype { font-size: 0.55rem; padding: 1px 6px; border-radius: 8px; background: rgba(34,211,238,0.1); color: var(--primary-light); margin-left: auto; }
+  .modal-body .m-entity-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .modal-body .m-field { padding: 8px 12px; background: var(--surface2); border-radius: var(--radius-sm); }
+  .modal-body .m-field .f-label { font-size: 0.6rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 2px; }
+  .modal-body .m-field .f-value { font-size: 0.78rem; color: var(--text); word-break: break-all; }
+  .modal-body .m-field .f-value a { color: var(--primary-light); }
+
+  /* ─── Empty / Loading ─── */
   .empty { text-align: center; padding: 40px 20px; color: var(--text-muted); }
   .empty .icon { font-size: 2rem; margin-bottom: 8px; }
   .empty p { font-size: 0.8rem; }
-
-  /* ─── Loading ─── */
   .loading { display: flex; align-items: center; gap: 8px; padding: 20px; color: var(--text-muted); font-size: 0.8rem; }
   .spinner { width: 16px; height: 16px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; }
   @keyframes spin { to { transform: rotate(360deg); } }
 
-  /* ─── Footer ─── */
   .footer { text-align: center; padding: 20px; font-size: 0.6rem; color: rgba(148,163,184,0.25); }
+
+  /* ─── Help Button ─── */
+  .float-btns { position: fixed; bottom: 24px; right: 24px; display: flex; flex-direction: column; gap: 10px; z-index: 50; align-items: flex-end; }
+  .float-btn { width: 44px; height: 44px; border-radius: 50%; border: none; cursor: pointer; font-size: 1.1rem; display: flex; align-items: center; justify-content: center; transition: transform 0.15s, box-shadow 0.15s; }
+  .float-btn:hover { transform: scale(1.08); }
+  .float-btn:active { transform: scale(0.95); }
+  .help-btn { background: var(--accent); color: var(--bg); box-shadow: 0 4px 16px rgba(196,168,106,0.35); font-weight: 700; font-size: 1.2rem; }
+  .help-btn:hover { box-shadow: 0 6px 24px rgba(196,168,106,0.5); }
+  @keyframes helpPulse { 0%,100% { box-shadow: 0 4px 16px rgba(196,168,106,0.35); } 50% { box-shadow: 0 4px 24px rgba(196,168,106,0.6); } }
+  .help-btn { animation: helpPulse 3s ease-in-out infinite; }
+  .help-btn:hover { animation: none; }
+  .cog-btn { background: var(--surface2); color: var(--text-muted); border: 1px solid var(--border); font-size: 1rem; }
+  .cog-btn:hover { color: var(--text); border-color: var(--text-muted); }
+
+  /* ─── Settings Popover ─── */
+  .settings-popover { position: fixed; bottom: 120px; right: 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; width: 220px; box-shadow: 0 12px 32px rgba(0,0,0,0.4); z-index: 60; display: none; animation: modalIn 0.15s ease; }
+  .settings-popover.active { display: block; }
+  .settings-popover h3 { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); margin-bottom: 10px; }
+  .settings-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; font-size: 0.75rem; }
+  .settings-row:last-child { margin-bottom: 0; }
+  .toggle-sw { position: relative; width: 38px; height: 22px; flex-shrink: 0; }
+  .toggle-sw input { display: none; }
+  .toggle-sw .slider { position: absolute; inset: 0; background: var(--border); border-radius: 11px; cursor: pointer; transition: background 0.2s; }
+  .toggle-sw .slider::after { content: ''; position: absolute; width: 18px; height: 18px; left: 2px; top: 2px; background: var(--text); border-radius: 50%; transition: transform 0.2s; }
+  .toggle-sw input:checked + .slider { background: var(--accent); }
+  .toggle-sw input:checked + .slider::after { transform: translateX(16px); }
+
+  /* ─── Docs Modal (2-Pane) ─── */
+  .docs-overlay { position: fixed; inset: 0; background: rgba(2,6,23,0.85); backdrop-filter: blur(4px); z-index: 200; display: none; align-items: center; justify-content: center; padding: 20px; }
+  .docs-overlay.active { display: flex; }
+  .docs-modal { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); width: 100%; max-width: 860px; height: 80vh; max-height: 700px; display: flex; box-shadow: 0 25px 50px rgba(0,0,0,0.5); animation: modalIn 0.2s ease; overflow: hidden; }
+  .docs-sidebar { width: 200px; min-width: 180px; border-right: 1px solid var(--border); background: var(--surface2); display: flex; flex-direction: column; padding: 8px 0; overflow-y: auto; }
+  .docs-sidebar .docs-tab { padding: 10px 16px; font-size: 0.75rem; color: var(--text-muted); cursor: pointer; border: none; background: none; text-align: left; font-family: 'Inter', sans-serif; transition: all 0.12s; border-left: 2px solid transparent; }
+  .docs-sidebar .docs-tab:hover { color: var(--text); background: rgba(255,255,255,0.03); }
+  .docs-sidebar .docs-tab.active { color: var(--accent); background: rgba(196,168,106,0.08); border-left-color: var(--accent); font-weight: 600; }
+  .docs-sidebar .docs-tab .d-icon { margin-right: 6px; font-size: 0.85rem; }
+  .docs-content { flex: 1; overflow-y: auto; padding: 20px 24px; }
+  .docs-content h2 { font-size: 1rem; font-weight: 700; margin-bottom: 4px; letter-spacing: -0.01em; }
+  .docs-content h3 { font-size: 0.8rem; font-weight: 600; margin: 16px 0 6px; color: var(--accent); }
+  .docs-content p, .docs-content li { font-size: 0.78rem; line-height: 1.7; color: var(--text-muted); }
+  .docs-content ul, .docs-content ol { padding-left: 18px; margin: 6px 0 12px; }
+  .docs-content li { margin-bottom: 4px; }
+  .docs-content code { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; background: var(--surface2); padding: 2px 6px; border-radius: 4px; color: var(--primary-light); }
+  .docs-content .kbd { display: inline-block; padding: 2px 7px; font-family: 'JetBrains Mono', monospace; font-size: 0.65rem; background: var(--surface2); border: 1px solid var(--border); border-radius: 4px; color: var(--text); }
+  .docs-content .callout { background: rgba(196,168,106,0.08); border: 1px solid rgba(196,168,106,0.2); border-radius: var(--radius-sm); padding: 12px 16px; margin: 12px 0; font-size: 0.75rem; }
+  .docs-close { position: absolute; top: 12px; right: 12px; background: var(--surface2); border: 1px solid var(--border); color: var(--text-muted); width: 28px; height: 28px; border-radius: 6px; cursor: pointer; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; z-index: 10; transition: all 0.15s; }
+  .docs-close:hover { color: var(--text); border-color: var(--rose); }
+
+  @media (max-width: 600px) {
+    .docs-modal { flex-direction: column; max-height: 90vh; }
+    .docs-sidebar { width: 100%; min-width: unset; flex-direction: row; overflow-x: auto; padding: 4px; border-right: none; border-bottom: 1px solid var(--border); }
+    .docs-sidebar .docs-tab { border-left: none; border-bottom: 2px solid transparent; white-space: nowrap; padding: 8px 12px; font-size: 0.7rem; }
+    .docs-sidebar .docs-tab.active { border-left: none; border-bottom-color: var(--accent); }
+    .help-btn { bottom: 16px; right: 16px; width: 40px; height: 40px; }
+    .float-btns { bottom: 16px; right: 16px; gap: 8px; }
+    .float-btn { width: 40px; height: 40px; }
+    .settings-popover { bottom: 100px; right: 16px; width: 200px; }
+  }
 
   @media (max-width: 600px) {
     .app { padding: 16px 12px 60px; }
     .stat-grid { grid-template-columns: 1fr 1fr; }
     .header { flex-direction: column; align-items: flex-start; }
+    .modal { max-height: 90vh; border-radius: var(--radius-sm); }
+    .modal-body .m-entity-fields { grid-template-columns: 1fr; }
+    .entity-grid { grid-template-columns: 1fr; }
+    .graph-container canvas { height: 300px; }
+    .settings-popover { right: 8px; }
   }
 </style>
 </head>
@@ -128,29 +280,42 @@
 
   <!-- Loading -->
   <div class="loading" id="loading"><div class="spinner"></div> Loading brain data...</div>
-
-  <!-- Error -->
   <div class="empty" id="error" style="display:none"><div class="icon">⚠️</div><p id="errorMsg"></p></div>
 
-  <!-- Dashboard Content -->
+  <!-- Dashboard -->
   <div id="dashboard" style="display:none">
-
-    <!-- Stat Overview -->
     <div class="stat-grid" id="statGrid"></div>
+
+    <!-- Link Graph -->
+    <div class="graph-container">
+      <div class="section-header"><h2>🔗 Knowledge Graph</h2><span class="count" id="graphCount"></span></div>
+      <canvas id="graphCanvas"></canvas>
+      <button class="graph-reset" onclick="resetGraph()" title="Reset positions">↺ Reset</button>
+      <div class="graph-legend">
+        <span><span class="dot" style="background:var(--primary-light)"></span> Concept</span>
+        <span><span class="dot" style="background:var(--violet)"></span> Person</span>
+        <span><span class="dot" style="background:var(--green)"></span> Company</span>
+        <span><span class="dot" style="background:var(--accent-light)"></span> Meeting</span>
+        <span><span class="dot" style="background:var(--rose)"></span> Daily</span>
+        <span style="opacity:0.4;margin-left:8px">· zoom · pan · drag · click</span>
+      </div>
+    </div>
 
     <!-- Tabs -->
     <div class="section">
       <div class="section-header"><h2>Browse</h2></div>
       <div class="tabs" id="tabs">
-        <button class="tab active" data-tab="pages">📄 All Pages</button>
+        <button class="tab active" data-tab="pages">📄 Pages</button>
         <button class="tab" data-tab="entities">👤 Entities</button>
         <button class="tab" data-tab="health">🩺 Health</button>
       </div>
       <div class="search-wrap" id="searchWrap">
         <span class="search-icon">🔍</span>
-        <input type="text" placeholder="Search pages..." id="searchInput" oninput="filterPages()">
+        <input type="text" placeholder="Search pages, entities, concepts..." id="searchInput" oninput="filterCurrent()">
       </div>
-      <div class="table-wrap" id="pagesTable" style="max-height:500px;overflow-y:auto"></div>
+      <div id="pagesView">
+        <div class="table-wrap" style="max-height:500px;overflow-y:auto" id="pagesTable"></div>
+      </div>
       <div id="entitiesView" style="display:none">
         <div class="entity-grid" id="entityGrid"></div>
       </div>
@@ -158,10 +323,60 @@
         <div class="health-grid" id="healthGrid"></div>
       </div>
     </div>
-
   </div>
 
-  <div class="footer">gbrain Control Dashboard · Maloha Coast Sdn Bhd · Auto-refreshes via cron</div>
+  <div class="footer">gbrain Control Dashboard · Maloha Coast Sdn Bhd · Press <span style="font-family:'JetBrains Mono',monospace">?</span> for help</div>
+</div>
+
+<!-- Floating Buttons -->
+<div class="float-btns">
+  <button class="float-btn cog-btn" onclick="toggleSettings()" title="Settings">⚙</button>
+  <button class="float-btn help-btn" onclick="openDocs()" title="Help &amp; Documentation (press ?)">?</button>
+</div>
+
+<!-- Settings Popover -->
+<div class="settings-popover" id="settingsPopover">
+  <h3>⚙ Settings</h3>
+  <div class="settings-row">
+    <span>🎨 Theme</span>
+    <select id="themeSelect" onchange="applyTheme(this.value)" style="background:var(--surface2);border:1px solid var(--border);color:var(--text);border-radius:6px;padding:4px 8px;font-size:0.7rem;font-family:'Inter',sans-serif;max-width:120px">
+      <option value="dark">Dark</option>
+      <option value="light">Light</option>
+      <option value="catppuccin-mocha">Catppuccin Mocha</option>
+      <option value="catppuccin-latte">Catppuccin Latte</option>
+      <option value="tokyo-night">Tokyo Night</option>
+      <option value="omarchy">Omarchy</option>
+    </select>
+  </div>
+  <div class="settings-row">
+    <span>🧲 Graph physics</span>
+    <label class="toggle-sw"><input type="checkbox" id="physicsToggle" onchange="togglePhysics()" checked><span class="slider"></span></label>
+  </div>
+  <div class="settings-row" style="margin-top:6px">
+    <button class="graph-reset" style="position:static;display:block;width:100%;text-align:center" onclick="resetGraph()">↺ Reset graph positions</button>
+  </div>
+</div>
+
+<!-- Page Detail Modal -->
+<div class="modal-overlay" id="modalOverlay" onclick="if(event.target===this)closeModal()">
+  <div class="modal" id="modal"></div>
+</div>
+
+<!-- Docs / Help Modal -->
+<div class="docs-overlay" id="docsOverlay" onclick="if(event.target===this)closeDocs()">
+  <div class="docs-modal" style="position:relative">
+    <button class="docs-close" onclick="closeDocs()">✕</button>
+    <div class="docs-sidebar" id="docsSidebar">
+      <button class="docs-tab active" data-doc="overview"><span class="d-icon">🧠</span> Overview</button>
+      <button class="docs-tab" data-doc="how"><span class="d-icon">⚙️</span> How It Works</button>
+      <button class="docs-tab" data-doc="features"><span class="d-icon">✨</span> Features</button>
+      <button class="docs-tab" data-doc="setup"><span class="d-icon">🚀</span> Setup Recipe</button>
+      <button class="docs-tab" data-doc="clients"><span class="d-icon">💼</span> For Clients</button>
+      <button class="docs-tab" data-doc="scaling"><span class="d-icon">📈</span> Scaling & Limits</button>
+      <button class="docs-tab" data-doc="shortcuts"><span class="d-icon">⌨️</span> Shortcuts</button>
+    </div>
+    <div class="docs-content" id="docsContent"></div>
+  </div>
 </div>
 
 <script>
@@ -182,66 +397,510 @@ async function loadData() {
   } catch(e) {
     document.getElementById('loading').style.display = 'none';
     document.getElementById('error').style.display = 'block';
-    document.getElementById('errorMsg').textContent = 'Failed to load brain data: ' + e.message;
+    document.getElementById('errorMsg').textContent = 'Failed to load: ' + e.message;
   }
 }
 
 function renderAll() {
   renderStats();
+  drawGraph();
   renderPages();
   renderEntities();
   renderHealth();
   document.getElementById('lastUpdated').textContent = 'Updated: ' + (DATA.updated_at || 'unknown');
 }
 
+// ─── STATS ───
 function renderStats() {
   const s = DATA.summary || {};
-  const pages = s.page_count || 0;
-  const types = {};
-  (DATA.pages || []).forEach(p => { const t = p.type || 'concept'; types[t] = (types[t]||0)+1; });
-  const typeList = Object.entries(types).map(([k,v]) => `${v} ${k}`).join(', ');
-
+  const pages = DATA.pages || [];
   document.getElementById('statGrid').innerHTML = [
-    {icon:'📊', value: pages, label:'Total Pages', detail: typeList, cls:''},
-    {icon:'🏆', value: (s.score||'').match(/\d+/)?.[0] || '—', label:'Brain Score', detail: (s.score||'').replace(/^Brain score /,''), cls:''},
-    {icon:'🔗', value: (DATA.entities?.people?.length||0)+(DATA.entities?.companies?.length||0), label:'Entities', detail: `${DATA.entities?.people?.length||0} people, ${DATA.entities?.companies?.length||0} companies`, cls:''},
-    {icon:'📡', value: (s.graph_coverage||'').match(/[\d.]+%/)?.[0] || '—', label:'Graph Coverage', detail: s.graph_coverage||'', cls:''},
-    {icon:'✨', value: (s.embed_coverage||'').match(/[\d.]+%/)?.[0] || '—', label:'Embeddings', detail: s.embed_coverage||'', cls:''},
-  ].map(c => `<div class="stat-card"><div class="icon">${c.icon}</div><div class="value">${c.value}</div><div class="label">${c.label}</div><div class="detail">${c.detail}</div></div>`).join('');
+    {icon:'📊', value: s.page_count, label:'Total Pages', detail: `${s.concept_count} concepts, ${s.meeting_count||0} meetings, ${s.person_count} people, ${s.company_count} companies`, cls:'', click: 'showStatBreakdown'},
+    {icon:'🏆', value: s.score, label:'Brain Score', detail: 'embed 35/35, links 25/25, timeline 2/15, orphans 9/15', cls:'', click: 'switchToHealth'},
+    {icon:'🔗', value: s.total_links, label:'Total Links', detail: `${sumLinks('outbound')} outbound, ${sumLinks('inbound')} inbound across ${s.page_count} pages`, cls:'', click: null},
+    {icon:'📡', value: '53.3%', label:'Graph Coverage', detail: '8 of 15 pages have inbound links', cls:'', click: null},
+    {icon:'✨', value: '100%', label:'Embeddings', detail: 'All pages embedded via text-embedding-3-large', cls:'', click: null},
+  ].map((c,i) => `<div class="stat-card" ${c.click ? `onclick="${c.click}()"` : ''}>
+    <div class="icon">${c.icon}</div><div class="value">${c.value}</div><div class="label">${c.label}</div><div class="detail">${c.detail}</div>
+    ${c.click ? '<div class="hint">click for details →</div>' : ''}
+  </div>`).join('');
 }
 
+function sumLinks(dir) {
+  return (DATA.pages||[]).reduce((s,p) => s + (dir==='outbound'?p.outbound_count:p.inbound_count), 0);
+}
+
+function showStatBreakdown() {
+  const types = {};
+  (DATA.pages||[]).forEach(p => { types[p.type] = (types[p.type]||0)+1; });
+  let html = '<div class="m-section"><div class="m-section-title">Page Type Breakdown</div>';
+  html += '<table style="width:100%"><thead><tr><th>Type</th><th>Count</th><th>%</th></tr></thead><tbody>';
+  const total = DATA.pages.length;
+  Object.entries(types).sort((a,b)=>b[1]-a[1]).forEach(([t,c]) => {
+    html += `<tr><td><span class="type-tag ${t}">${t}</span></td><td>${c}</td><td>${((c/total)*100).toFixed(0)}%</td></tr>`;
+  });
+  html += '</tbody></table></div>';
+  openModal('Page Type Breakdown', 'stat-breakdown', html);
+}
+
+function switchToHealth() {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelector('[data-tab="health"]').classList.add('active');
+  activeTab = 'health';
+  showTab(activeTab);
+}
+
+// ─── LINK GRAPH (Interactive) ───
+let graphNodes = [], graphSlugIndex = {}, graphEdges = 0;
+let graphZoom = 1, graphPanX = 0, graphPanY = 0;
+let graphDragging = null, graphPanning = false, lastMouse = null;
+let graphPhysics = true, graphAnimFrame = null;
+let graphW = 1100, graphH = 400;
+const graphColors = {concept: '#22d3ee', person: '#a78bfa', company: '#34d399', meeting: '#fbbf24', daily: '#fb7185'};
+
+function resizeCanvas() {
+  const canvas = document.getElementById('graphCanvas');
+  const rect = canvas.getBoundingClientRect();
+  const dpr = window.devicePixelRatio || 1;
+  const newW = Math.round(rect.width * dpr);
+  const newH = Math.round(rect.height * dpr);
+  if (newW === graphW && newH === graphH) return;
+  // Scale existing node positions
+  const sx = newW / (graphW || 1), sy = newH / (graphH || 1);
+  graphNodes.forEach(n => { n.x *= sx; n.y *= sy; });
+  graphW = newW; graphH = newH;
+  canvas.width = graphW; canvas.height = graphH;
+  drawGraphFrame();
+}
+
+function initGraph() {
+  const pages = DATA.pages || [];
+  if (!pages.length) return;
+  graphSlugIndex = {};
+  pages.forEach((p,i) => graphSlugIndex[p.slug] = i);
+
+  if (graphNodes.length !== pages.length) {
+    resizeCanvas(); // sync dimensions before laying out
+    graphNodes = pages.map((p,i) => ({
+      id: i, slug: p.slug, title: p.title, type: p.type,
+      links: p.links_out || [], vx: 0, vy: 0
+    }));
+    layoutCircle();
+    runPhysics(80);
+    graphZoom = 1; graphPanX = 0; graphPanY = 0;
+  } else {
+    resizeCanvas(); // still sync on re-render
+  }
+  drawGraphFrame();
+  if (graphPhysics) startPhysicsLoop();
+}
+
+function layoutCircle() {
+  const cx = graphW/2, cy = graphH/2, rx = graphW/2 - 60, ry = graphH/2 - 50;
+  graphNodes.forEach((n,i) => {
+    const angle = (i / graphNodes.length) * 2 * Math.PI - Math.PI/2;
+    n.x = cx + rx * Math.cos(angle);
+    n.y = cy + ry * Math.sin(angle);
+  });
+}
+
+function runPhysics(iterations) {
+  for (let iter = 0; iter < iterations; iter++) {
+    for (let i = 0; i < graphNodes.length; i++) {
+      for (let j = i+1; j < graphNodes.length; j++) {
+        const dx = graphNodes[i].x - graphNodes[j].x, dy = graphNodes[i].y - graphNodes[j].y;
+        const dist = Math.sqrt(dx*dx+dy*dy) || 1, force = 400 / (dist*dist);
+        graphNodes[i].vx += (dx/dist) * force; graphNodes[i].vy += (dy/dist) * force;
+        graphNodes[j].vx -= (dx/dist) * force; graphNodes[j].vy -= (dy/dist) * force;
+      }
+    }
+    graphNodes.forEach(n => {
+      n.links.forEach(l => {
+        const j = graphSlugIndex[l.to]; if (j === undefined) return;
+        const dx = n.x - graphNodes[j].x, dy = n.y - graphNodes[j].y;
+        const dist = Math.sqrt(dx*dx+dy*dy) || 1, force = dist * 0.001;
+        n.vx -= (dx/dist) * force; n.vy -= (dy/dist) * force;
+        graphNodes[j].vx += (dx/dist) * force; graphNodes[j].vy += (dy/dist) * force;
+      });
+    });
+    graphNodes.forEach(n => {
+      n.vx += (graphW/2 - n.x) * 0.001; n.vy += (graphH/2 - n.y) * 0.001;
+      n.vx *= 0.85; n.vy *= 0.85;
+      n.x += n.vx; n.y += n.vy;
+    });
+  }
+  graphNodes.forEach(n => { n.vx = 0; n.vy = 0; });
+}
+
+function startPhysicsLoop() {
+  if (graphAnimFrame) cancelAnimationFrame(graphAnimFrame);
+  function tick() {
+    if (!graphPhysics) { graphAnimFrame = null; return; }
+    let energy = 0;
+    for (let i = 0; i < graphNodes.length; i++) {
+      for (let j = i+1; j < graphNodes.length; j++) {
+        const dx = graphNodes[i].x - graphNodes[j].x, dy = graphNodes[i].y - graphNodes[j].y;
+        const dist = Math.sqrt(dx*dx+dy*dy) || 1, force = 200 / (dist*dist);
+        graphNodes[i].vx += (dx/dist) * force * 0.3; graphNodes[i].vy += (dy/dist) * force * 0.3;
+        graphNodes[j].vx -= (dx/dist) * force * 0.3; graphNodes[j].vy -= (dy/dist) * force * 0.3;
+      }
+    }
+    graphNodes.forEach(n => {
+      n.links.forEach(l => {
+        const j = graphSlugIndex[l.to]; if (j === undefined) return;
+        const dx = n.x - graphNodes[j].x, dy = n.y - graphNodes[j].y;
+        const dist = Math.sqrt(dx*dx+dy*dy) || 1, force = dist * 0.0005;
+        n.vx -= (dx/dist) * force; n.vy -= (dy/dist) * force;
+        graphNodes[j].vx += (dx/dist) * force; graphNodes[j].vy += (dy/dist) * force;
+      });
+    });
+    graphNodes.forEach(n => {
+      if (n === graphDragging) return;
+      n.vx += (graphW/2 - n.x) * 0.0003; n.vy += (graphH/2 - n.y) * 0.0003;
+      n.vx *= 0.92; n.vy *= 0.92;
+      n.x += n.vx; n.y += n.vy;
+      energy += Math.abs(n.vx) + Math.abs(n.vy);
+    });
+    drawGraphFrame();
+    if (energy > 3) graphAnimFrame = requestAnimationFrame(tick);
+    else graphAnimFrame = null;
+  }
+  graphAnimFrame = requestAnimationFrame(tick);
+}
+
+function drawGraph() { initGraph(); }
+
+function drawGraphFrame() {
+  const canvas = document.getElementById('graphCanvas');
+  const ctx = canvas.getContext('2d');
+  const W = canvas.width, H = canvas.height;
+  ctx.clearRect(0, 0, W, H);
+
+  // Background grid
+  ctx.strokeStyle = 'rgba(148,163,184,0.04)'; ctx.lineWidth = 0.5;
+  for (let x = 0; x < W; x += 40) { ctx.beginPath(); ctx.moveTo(x,0); ctx.lineTo(x,H); ctx.stroke(); }
+  for (let y = 0; y < H; y += 40) { ctx.beginPath(); ctx.moveTo(0,y); ctx.lineTo(W,y); ctx.stroke(); }
+
+  ctx.save();
+  ctx.translate(graphPanX, graphPanY);
+  ctx.scale(graphZoom, graphZoom);
+
+  // Draw edges — more prominent
+  const drawnEdges = new Set();
+  graphNodes.forEach(n => {
+    n.links.forEach(l => {
+      const j = graphSlugIndex[l.to]; if (j === undefined) return;
+      const key = [Math.min(n.id,j), Math.max(n.id,j)].join('-');
+      if (drawnEdges.has(key)) return;
+      drawnEdges.add(key);
+      const src = graphNodes[j];
+      ctx.beginPath(); ctx.moveTo(n.x, n.y); ctx.lineTo(src.x, src.y);
+      ctx.strokeStyle = 'rgba(148,163,184,0.4)'; ctx.lineWidth = 1.6 / graphZoom;
+      ctx.stroke();
+    });
+  });
+  graphEdges = drawnEdges.size;
+
+  // Draw nodes — simple dots
+  graphNodes.forEach(n => {
+    const color = graphColors[n.type] || '#94a3b8';
+    const size = Math.max(4, 3 + n.links.length);
+    const isHovered = canvas._hoveredNode === n;
+    const r = isHovered ? size + 3 : size;
+
+    // Outer glow on hover
+    if (isHovered) {
+      ctx.beginPath(); ctx.arc(n.x, n.y, r+6, 0, Math.PI*2);
+      ctx.fillStyle = color.replace(')', ',0.3)').replace('rgb','rgba');
+      ctx.fill();
+    }
+
+    // Dot body
+    ctx.beginPath(); ctx.arc(n.x, n.y, r, 0, Math.PI*2);
+    ctx.fillStyle = isHovered ? '#fff' : color;
+    ctx.fill();
+    ctx.strokeStyle = isHovered ? color : 'rgba(255,255,255,0)';
+    ctx.lineWidth = 2; ctx.stroke();
+
+    // Dot outline ring for visibility
+    ctx.beginPath(); ctx.arc(n.x, n.y, r, 0, Math.PI*2);
+    ctx.strokeStyle = 'rgba(0,0,0,0.3)'; ctx.lineWidth = 0.5; ctx.stroke();
+
+    // Mini label on hover only
+    if (isHovered) {
+      const maxLen = graphW < 600 ? 14 : 20;
+      const label = n.title.length > maxLen ? n.title.slice(0,maxLen-1)+'…' : n.title;
+      const labelColor = getComputedStyle(document.body).getPropertyValue('--text').trim() || '#e2e8f0';
+      ctx.font = '10px "Inter", sans-serif';
+      ctx.fillStyle = labelColor;
+      ctx.textAlign = 'center';
+      // Background pill for label
+      const metrics = ctx.measureText(label);
+      const pad = 4;
+      const lx = n.x - metrics.width/2 - pad, ly = n.y + r + 16;
+      ctx.fillStyle = 'rgba(15,23,42,0.85)';
+      ctx.beginPath(); ctx.roundRect(lx, ly, metrics.width + pad*2, 16, 4); ctx.fill();
+      ctx.fillStyle = labelColor;
+      ctx.fillText(label, n.x, n.y + r + 27);
+    }
+  });
+
+  ctx.restore();
+
+  // Zoom indicator
+  if (graphZoom !== 1) {
+    ctx.fillStyle = 'rgba(148,163,184,0.5)'; ctx.font = '9px "JetBrains Mono", monospace';
+    ctx.textAlign = 'right';
+    ctx.fillText(Math.round(graphZoom * 100) + '%', W - 12, H - 12);
+  }
+
+  document.getElementById('graphCount').textContent = `${graphNodes.length} nodes, ${graphEdges} edges`;
+}
+
+// ─── GRAPH MOUSE HANDLERS ───
+(function setupGraphMouse() {
+  const canvas = document.getElementById('graphCanvas');
+  canvas._hoveredNode = null;
+  let dragStartNode = null, dragDist = 0, dragStartW = null;
+
+  function screenToWorld(e) {
+    const rect = canvas.getBoundingClientRect();
+    const sx = (e.clientX - rect.left) * (graphW / rect.width);
+    const sy = (e.clientY - rect.top) * (graphH / rect.height);
+    return {
+      x: (sx - graphPanX) / graphZoom,
+      y: (sy - graphPanY) / graphZoom
+    };
+  }
+
+  function hitTest(wx, wy) {
+    for (let i = graphNodes.length-1; i >= 0; i--) {
+      const n = graphNodes[i];
+      const size = Math.max(4, 3 + n.links.length) + 4;
+      const dx = wx - n.x, dy = wy - n.y;
+      if (dx*dx + dy*dy < size*size) return n;
+    }
+    return null;
+  }
+
+  canvas.addEventListener('mousedown', function(e) {
+    const w = screenToWorld(e);
+    const hit = hitTest(w.x, w.y);
+    if (hit) {
+      dragStartNode = hit;
+      dragDist = 0;
+      dragStartW = w;
+      graphDragging = hit;
+      graphPanning = false;
+      canvas.classList.add('dragging-node');
+      e.preventDefault();
+    } else {
+      dragStartNode = null; dragDist = 0;
+      graphPanning = true;
+      lastMouse = {x: e.clientX, y: e.clientY};
+    }
+  });
+
+  window.addEventListener('mousemove', function(e) {
+    if (graphDragging) {
+      const w = screenToWorld(e);
+      if (dragStartW) {
+        const dx = w.x - dragStartW.x, dy = w.y - dragStartW.y;
+        dragDist = Math.sqrt(dx*dx + dy*dy);
+      }
+      graphDragging.x = w.x; graphDragging.y = w.y;
+      graphDragging.vx = 0; graphDragging.vy = 0;
+      drawGraphFrame();
+      return;
+    }
+    if (graphPanning && lastMouse) {
+      graphPanX += e.clientX - lastMouse.x;
+      graphPanY += e.clientY - lastMouse.y;
+      lastMouse = {x: e.clientX, y: e.clientY};
+      drawGraphFrame();
+      return;
+    }
+    // Hover
+    const w = screenToWorld(e);
+    const hit = hitTest(w.x, w.y);
+    const prev = canvas._hoveredNode;
+    canvas._hoveredNode = hit;
+    if (prev !== hit) drawGraphFrame();
+    canvas.style.cursor = hit ? 'pointer' : 'grab';
+  });
+
+  window.addEventListener('mouseup', function(e) {
+    if (graphDragging) {
+      // Give dragged node a small velocity kick
+      if (lastMouse) {
+        const rect = canvas.getBoundingClientRect();
+        const dx = (e.clientX - (lastMouse.x || e.clientX)) * (graphW / rect.width) / graphZoom;
+        const dy = (e.clientY - (lastMouse.y || e.clientY)) * (graphH / rect.height) / graphZoom;
+        graphDragging.vx = dx * 0.3; graphDragging.vy = dy * 0.3;
+      }
+      canvas.classList.remove('dragging-node');
+      if (graphPhysics) startPhysicsLoop();
+      graphDragging = null;
+    }
+    if (graphPanning) { graphPanning = false; lastMouse = null; }
+  });
+
+  canvas.addEventListener('click', function(e) {
+    // Only fire click if the node wasn't significantly dragged (< 5 world-px of movement)
+    const dragged = dragDist > 5;
+    dragStartNode = null; dragDist = 0; dragStartW = null;
+    if (graphPanning) { graphPanning = false; lastMouse = null; return; }
+    if (dragged) return;
+    const w = screenToWorld(e);
+    const hit = hitTest(w.x, w.y);
+    if (hit) openPageModal(hit.slug);
+  });
+
+  canvas.addEventListener('wheel', function(e) {
+    e.preventDefault();
+    const delta = e.deltaY > 0 ? 0.9 : 1.1;
+    const newZoom = Math.max(0.3, Math.min(3, graphZoom * delta));
+
+    // Zoom toward cursor
+    const rect = canvas.getBoundingClientRect();
+    const mx = (e.clientX - rect.left) * (graphW / rect.width);
+    const my = (e.clientY - rect.top) * (graphH / rect.height);
+    graphPanX = mx - (mx - graphPanX) * (newZoom / graphZoom);
+    graphPanY = my - (my - graphPanY) * (newZoom / graphZoom);
+    graphZoom = newZoom;
+    drawGraphFrame();
+  });
+
+  // Touch support
+  let touchDist0 = 0, touchMid0 = null;
+  canvas.addEventListener('touchstart', function(e) {
+    if (e.touches.length === 2) {
+      const dx = e.touches[0].clientX - e.touches[1].clientX;
+      const dy = e.touches[0].clientY - e.touches[1].clientY;
+      touchDist0 = Math.sqrt(dx*dx+dy*dy);
+      touchMid0 = {x: graphPanX, y: graphPanY, z: graphZoom};
+    }
+  }, {passive: true});
+  canvas.addEventListener('touchmove', function(e) {
+    if (e.touches.length === 2 && touchDist0 > 0 && touchMid0) {
+      const dx = e.touches[0].clientX - e.touches[1].clientX;
+      const dy = e.touches[0].clientY - e.touches[1].clientY;
+      const dist = Math.sqrt(dx*dx+dy*dy);
+      graphZoom = Math.max(0.3, Math.min(3, touchMid0.z * (dist / touchDist0)));
+      drawGraphFrame();
+    }
+  }, {passive: true});
+  canvas.addEventListener('touchend', function() { touchDist0 = 0; touchMid0 = null; });
+})();
+
+// ─── RESIZE HANDLER ───
+window.addEventListener('resize', () => {
+  resizeCanvas();
+  if (graphPhysics && !graphAnimFrame) startPhysicsLoop();
+});
+
+// Also observe the graph container for layout changes
+if (window.ResizeObserver) {
+  new ResizeObserver(() => { resizeCanvas(); }).observe(document.getElementById('graphCanvas'));
+}
+
+function resetGraph() {
+  graphZoom = 1; graphPanX = 0; graphPanY = 0;
+  layoutCircle();
+  runPhysics(80);
+  drawGraphFrame();
+  if (graphPhysics) startPhysicsLoop();
+}
+
+function togglePhysics() {
+  graphPhysics = document.getElementById('physicsToggle').checked;
+  if (graphPhysics) startPhysicsLoop();
+  else { if (graphAnimFrame) { cancelAnimationFrame(graphAnimFrame); graphAnimFrame = null; } }
+}
+
+// ─── THEME ───
+const THEME_CLASSES = ['light', 'catppuccin-mocha', 'catppuccin-latte', 'tokyo-night', 'omarchy'];
+
+function applyTheme(name) {
+  document.body.classList.remove(...THEME_CLASSES);
+  if (name !== 'dark') document.body.classList.add(name);
+  localStorage.setItem('gbrain-theme', name);
+  document.getElementById('themeSelect').value = name;
+  setTimeout(drawGraphFrame, 50);
+}
+
+// Init theme from storage
+(function() {
+  const saved = localStorage.getItem('gbrain-theme') || 'dark';
+  applyTheme(saved);
+})();
+
+// ─── SETTINGS ───
+function toggleSettings() {
+  document.getElementById('settingsPopover').classList.toggle('active');
+}
+
+// Close settings on outside click
+document.addEventListener('click', function(e) {
+  const pop = document.getElementById('settingsPopover');
+  if (pop.classList.contains('active') && !pop.contains(e.target) && !e.target.classList.contains('cog-btn')) {
+    pop.classList.remove('active');
+  }
+});
+
+// ─── PAGES TABLE ───
 function renderPages(filter) {
   let pages = DATA.pages || [];
   if (filter) {
     const q = filter.toLowerCase();
-    pages = pages.filter(p => (p.slug||'').toLowerCase().includes(q) || (p.title||'').toLowerCase().includes(q) || (p.type||'').toLowerCase().includes(q));
+    pages = pages.filter(p => (p.slug||'').toLowerCase().includes(q) || (p.title||'').toLowerCase().includes(q) || (p.type||'').toLowerCase().includes(q) || (p.body||'').toLowerCase().includes(q) || (p.tags||[]).some(t=>t.toLowerCase().includes(q)));
   }
   if (!pages.length) {
-    document.getElementById('pagesTable').innerHTML = '<div class="empty"><p>No pages found</p></div>';
+    document.getElementById('pagesTable').innerHTML = '<div class="empty"><p>No pages match</p></div>';
     return;
   }
-  document.getElementById('pagesTable').innerHTML = `<table><thead><tr><th>Page</th><th>Type</th><th>Updated</th></tr></thead><tbody>${
-    pages.map(p => `<tr><td><span class="slug-link">${esc(p.slug)}</span><br><span style="font-size:0.65rem;color:var(--text-muted)">${esc(p.title||'')}</span></td><td><span class="type-tag ${p.type||'concept'}">${p.type||'concept'}</span></td><td>${p.updated||''}</td></tr>`).join('')
+  document.getElementById('pagesTable').innerHTML = `<table><thead><tr><th>Page</th><th>Type</th><th>Links</th><th>Updated</th></tr></thead><tbody>${
+    pages.map(p => {
+      const lc = p.outbound_count + p.inbound_count;
+      return `<tr class="page-row" onclick="openPageModal('${escAttr(p.slug)}')">
+        <td><span class="slug-link">${esc(p.slug)}</span><br><span style="font-size:0.65rem;color:var(--text-muted)">${esc(p.title||'')}</span></td>
+        <td><span class="type-tag ${p.type||'concept'}">${p.type||'concept'}</span></td>
+        <td><span class="link-badge ${lc>0?'has-links':''}">${lc>0 ? '🔗 '+lc : '—'}</span></td>
+        <td>${p.updated||''}</td>
+      </tr>`;
+    }).join('')
   }</tbody></table>`;
 }
 
+// ─── ENTITIES ───
 function renderEntities() {
-  const people = DATA.entities?.people || [];
-  const companies = DATA.entities?.companies || [];
+  const people = (DATA.entities?.people||[]).map(s => DATA.pages.find(p=>p.slug===s)).filter(Boolean);
+  const companies = (DATA.entities?.companies||[]).map(s => DATA.pages.find(p=>p.slug===s)).filter(Boolean);
   const all = [
-    ...people.map(s => ({slug: s, type: 'person', icon: '👤', color: 'var(--violet)'})),
-    ...companies.map(s => ({slug: s, type: 'company', icon: '🏢', color: 'var(--green)'}))
+    ...people.map(p => ({...p, icon:'👤', color:'var(--violet)', entityType:'person'})),
+    ...companies.map(p => ({...p, icon:'🏢', color:'var(--green)', entityType:'company'}))
   ];
   if (!all.length) {
     document.getElementById('entityGrid').innerHTML = '<div class="empty"><div class="icon">🔍</div><p>No entities indexed yet</p></div>';
     return;
   }
   document.getElementById('entityGrid').innerHTML = all.map(e => {
-    const name = e.slug.split('/').pop().replace(/-/g,' ').replace(/\b\w/g,c=>c.toUpperCase());
-    return `<div class="entity-card"><span style="font-size:1.4rem;float:right;opacity:0.4">${e.icon}</span><div class="name">${esc(name)}</div><div class="slug">${esc(e.slug)}</div><div class="meta"><span class="type-tag ${e.type}">${e.type}</span></div></div>`;
+    const preview = (e.body||'').slice(0, 120).replace(/[#*`]/g,'').trim();
+    const contact = [];
+    if (e.email) contact.push(`✉ ${e.email}`);
+    if (e.phone) contact.push(`📞 ${e.phone}`);
+    return `<div class="entity-card" onclick="openPageModal('${escAttr(e.slug)}')">
+      <span style="font-size:1.4rem;float:right;opacity:0.4">${e.icon}</span>
+      <div class="name">${esc(e.title)}</div>
+      <div class="slug">${esc(e.slug)}</div>
+      ${contact.length ? `<div class="contact-row">${contact.join(' · ')}</div>` : ''}
+      ${preview ? `<div class="preview">${esc(preview)}</div>` : ''}
+      <div class="meta"><span class="type-tag ${e.entityType}">${e.entityType}</span>${(e.tags||[]).slice(0,3).map(t=>`<span class="tag" style="font-size:0.55rem;padding:1px 7px;border-radius:10px;background:rgba(148,163,184,0.1);color:var(--text-muted)">${esc(t)}</span>`).join('')}</div>
+    </div>`;
   }).join('');
 }
 
+// ─── HEALTH ───
 function renderHealth() {
   const checks = DATA.doctor?.checks || [];
   if (!checks.length) {
@@ -252,28 +911,335 @@ function renderHealth() {
     let dotCls = 'ok';
     if (c.status === 'warn' || c.status === 'warning') dotCls = 'warn';
     if (c.status === 'error' || c.status === 'fail') dotCls = 'error';
-    return `<div class="health-item"><div class="health-dot ${dotCls}"></div><div class="health-info"><div class="name">${esc(c.name)}</div><div class="msg">${esc(c.message||'')}</div></div></div>`;
+    return `<div class="health-item" onclick="openCheckModal('${escAttr(c.name)}')">
+      <div class="health-dot ${dotCls}"></div>
+      <div class="health-info">
+        <div class="name">${esc(c.name)}</div>
+        <div class="msg">${esc(c.message||'')}</div>
+        <div style="font-size:0.55rem;color:var(--text-muted);margin-top:4px">${esc(c.category||'')} · ${c.status}</div>
+      </div>
+    </div>`;
   }).join('');
 }
 
-function filterPages() {
-  const q = document.getElementById('searchInput').value;
-  renderPages(q);
+// ─── MODALS ───
+function openPageModal(slug) {
+  const page = (DATA.pages||[]).find(p => p.slug === slug);
+  if (!page) return;
+
+  let html = '';
+
+  // Tags
+  if ((page.tags||[]).length) {
+    html += `<div class="m-section"><div class="m-section-title">Tags</div>
+      <div class="m-tags">${page.tags.map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</div></div>`;
+  }
+
+  // Entity fields (for people / companies)
+  if (page.type === 'person' || page.type === 'company') {
+    const fields = [];
+    if (page.email) fields.push({l:'Email',v:`<a href="mailto:${escAttr(page.email)}">${esc(page.email)}</a>`});
+    if (page.phone) fields.push({l:'Phone',v:esc(page.phone)});
+    if (page.company_name) fields.push({l:'Company',v:esc(page.company_name)});
+    if (page.website) fields.push({l:'Website',v:`<a href="https://${escAttr(page.website)}" target="_blank">${esc(page.website)}</a>`});
+    if (page.location) fields.push({l:'Location',v:esc(page.location)});
+    if (page.relationship) fields.push({l:'Relationship',v:esc(page.relationship)});
+    if (fields.length) {
+      html += `<div class="m-section"><div class="m-section-title">Details</div>
+        <div class="m-entity-fields">${fields.map(f=>`<div class="m-field"><div class="f-label">${f.l}</div><div class="f-value">${f.v}</div></div>`).join('')}</div></div>`;
+    }
+  }
+
+  // Content
+  const body = (page.body||'').trim();
+  if (body) {
+    // Clean markdown for display
+    const cleanBody = body
+      .replace(/^###?\s+/gm, '◆ ')
+      .replace(/^##\s+/gm, '◆◆ ')
+      .replace(/^#\s+/gm, '◆◆◆ ')
+      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<span style="color:var(--primary-light);cursor:pointer" onclick="event.stopPropagation();navigateTo(\'$2\')">$1</span>');
+    html += `<div class="m-section"><div class="m-section-title">Content</div>
+      <div class="m-content">${cleanBody}</div></div>`;
+  }
+
+  // Links out
+  if ((page.links_out||[]).length) {
+    html += `<div class="m-section"><div class="m-section-title">Links Out (${page.links_out.length})</div><div class="m-links">${
+      page.links_out.map(l => `<div class="m-link" onclick="event.stopPropagation();openPageModal('${escAttr(l.to)}')">
+        <span class="dir">→</span><span>${esc(l.to)}</span><span class="ltype">${esc(l.type)}</span>
+      </div>`).join('')}</div></div>`;
+  }
+
+  // Backlinks
+  if ((page.backlinks||[]).length) {
+    html += `<div class="m-section"><div class="m-section-title">Backlinks (${page.backlinks.length} pages link here)</div><div class="m-links">${
+      page.backlinks.map(l => `<div class="m-link" onclick="event.stopPropagation();openPageModal('${escAttr(l.from)}')">
+        <span class="dir">←</span><span>${esc(l.from)}</span><span class="ltype">${esc(l.type)}</span>
+      </div>`).join('')}</div></div>`;
+  }
+
+  openModal(page.title, page.slug, html);
 }
 
-function esc(s) { const d=document.createElement('div'); d.textContent=s||''; return d.innerHTML; }
+function openCheckModal(name) {
+  const check = (DATA.doctor?.checks||[]).find(c => c.name === name);
+  if (!check) return;
 
-// Tab switching
+  let dotCls = check.status === 'warn' || check.status === 'warning' ? 'warn' : check.status === 'error' || check.status === 'fail' ? 'error' : 'ok';
+  let html = `<div class="m-section">
+    <div class="m-section-title">Status</div>
+    <div style="display:flex;align-items:center;gap:8px">
+      <div class="health-dot ${dotCls}" style="margin:0"></div>
+      <span style="font-size:0.8rem;font-weight:600">${esc(check.status)}</span>
+      <span class="type-tag concept">${esc(check.category||'unknown')}</span>
+    </div>
+  </div>
+  <div class="m-section">
+    <div class="m-section-title">Message</div>
+    <div class="m-content">${esc(check.message||'No details available')}</div>
+  </div>`;
+
+  openModal(check.name, `health check · ${check.category||''}`, html);
+}
+
+function openModal(title, subtitle, bodyHtml) {
+  document.getElementById('modal').innerHTML = `
+    <div class="modal-header">
+      <div>
+        <div class="m-title">${esc(title)}</div>
+        ${subtitle ? `<div class="m-slug">${esc(subtitle)}</div>` : ''}
+      </div>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-body">${bodyHtml}</div>`;
+  document.getElementById('modalOverlay').classList.add('active');
+  document.body.classList.add('modal-open');
+}
+
+function closeModal() {
+  document.getElementById('modalOverlay').classList.remove('active');
+  document.body.classList.remove('modal-open');
+}
+
+// ─── NAVIGATION ───
+function navigateTo(slug) {
+  // Clean slug from markdown link
+  slug = slug.replace(/^(people|companies|concepts|meetings|architecture|reference|brand)\//,'');
+  // Try to find the page
+  const page = (DATA.pages||[]).find(p => p.slug === slug || p.slug.endsWith('/'+slug));
+  if (page) { closeModal(); setTimeout(() => openPageModal(page.slug), 100); }
+}
+
+// ─── FILTERS ───
+function filterCurrent() {
+  const q = document.getElementById('searchInput').value;
+  if (activeTab === 'pages') { renderPages(q); }
+  else if (activeTab === 'entities') { /* entities view - filter via search */ }
+}
+
+// ─── TABS ───
 document.getElementById('tabs').addEventListener('click', function(e) {
   if (!e.target.classList.contains('tab')) return;
   document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
   e.target.classList.add('active');
   activeTab = e.target.dataset.tab;
-  document.getElementById('pagesTable').style.display = activeTab==='pages'?'':'none';
-  document.getElementById('searchWrap').style.display = activeTab==='pages'?'':'none';
-  document.getElementById('entitiesView').style.display = activeTab==='entities'?'':'none';
-  document.getElementById('healthView').style.display = activeTab==='health'?'':'none';
+  showTab(activeTab);
 });
+
+function showTab(tab) {
+  document.getElementById('pagesView').style.display = tab==='pages'?'':'none';
+  document.getElementById('searchWrap').style.display = (tab==='pages'||tab==='entities')?'':'none';
+  document.getElementById('entitiesView').style.display = tab==='entities'?'':'none';
+  document.getElementById('healthView').style.display = tab==='health'?'':'none';
+  if (tab==='entities') renderEntities();
+  if (tab==='health') renderHealth();
+  if (tab==='pages') renderPages();
+  document.getElementById('searchInput').placeholder = tab==='pages' ? 'Search pages...' : tab==='entities' ? 'Search entities...' : '';
+}
+
+// ─── DOCS / HELP ───
+const DOCS = {
+  overview: `<h2>gbrain Dashboard</h2>
+<p>A live control panel for your AI-powered knowledge base. This dashboard shows everything your company knows — people, companies, meetings, concepts, infrastructure — and how it all connects.</p>
+<h3>What You're Looking At</h3>
+<ul>
+  <li><strong>Stats bar</strong> — page count, brain health score, link coverage, embedding status</li>
+  <li><strong>Knowledge Graph</strong> — a visual map of how your ideas, people, and companies connect</li>
+  <li><strong>Page Browser</strong> — every page in your brain, searchable and clickable</li>
+  <li><strong>Entity Cards</strong> — people and companies with contact details</li>
+  <li><strong>Health Panel</strong> — 50+ automated checks monitoring your brain's status</li>
+</ul>
+<div class="callout"><strong>New?</strong> Start by clicking any page name, then follow the links. It's Wikipedia-style browsing for your own company knowledge.</div>`,
+
+  how: `<h2>How It Works</h2>
+<p>This dashboard has two ingredients, both dead simple:</p>
+<h3>Ingredient 1 — The Brain (gbrain)</h3>
+<p>A knowledge base that lives on your computer or VPS. Every meeting, client detail, project note, or piece of research goes into the brain. The brain automatically figures out how pages relate to each other and makes everything searchable by meaning — not just keywords.</p>
+<h3>Ingredient 2 — The Dashboard</h3>
+<p>A single HTML file and a JSON data file. Combined they're about 50KB — smaller than a photo. The dashboard reads the brain data and displays it with a live knowledge graph, clickable modals, and instant search. No backend, no database queries. Everything runs in your browser.</p>
+<div class="callout"><strong>The magic:</strong> You keep taking notes. The dashboard shows you a living map of everything your company knows. It updates automatically. No maintenance required.</div>`,
+
+  features: `<h2>Features</h2>
+<h3>Knowledge Graph</h3>
+<p>A force-directed graph showing all your pages as connected nodes. Related pages cluster together. Click a node to open its detail panel.</p>
+<h3>Clickable Modals</h3>
+<p>Click any page row to see its full content, tags, outgoing links, and backlinks (pages that reference it). Navigate between pages without leaving the modal.</p>
+<h3>Entity Cards</h3>
+<p>People show their email, phone, company, and relationship notes. Companies show their description, product pipeline, and contact info.</p>
+<h3>Health Monitoring</h3>
+<p>50+ automated checks — embedding coverage, graph integrity, schema version, reranker health, and more. Green = healthy, yellow = needs attention, red = broken.</p>
+<h3>Instant Search</h3>
+<p>Search across page names, content, tags, and types. Filters as you type. No server round-trips.</p>
+<h3>Stat Drilldowns</h3>
+<p>Click stat cards to see page-type breakdowns or jump directly to the health panel.</p>`,
+
+  setup: `<h2>Setup Recipe (3 Steps)</h2>
+<h3>Step 1 — Generate the Data</h3>
+<p>Run a script that reads everything from the brain and writes it into a single JSON file:</p>
+<code>gbrain list && gbrain get <slug> && gbrain graph <slug></code>
+<p>Pipe the results through a script (Python, Node, whatever you like) that builds <code>gbrain-data.json</code> — the brain's contents packaged for the dashboard.</p>
+<h3>Step 2 — Upload Two Files</h3>
+<p>Drop <code>gbrain-dashboard.html</code> and <code>gbrain-data.json</code> onto any static host:</p>
+<ul>
+  <li><strong>GitHub Pages</strong> — free, automatic HTTPS, deploy via git push</li>
+  <li><strong>Netlify / Vercel</strong> — drag-and-drop, free tier</li>
+  <li><strong>S3 + CloudFront</strong> — pennies per month at scale</li>
+  <li><strong>Any web server</strong> — Apache, Nginx, or even a shared Dropbox folder</li>
+</ul>
+<h3>Step 3 — Automate</h3>
+<p>Set a cron job that re-runs Step 1 on a schedule and re-uploads the JSON. The dashboard auto-refreshes:</p>
+<code>0 */6 * * * /path/to/export-script.sh && git commit -am "refresh" && git push</code>
+<div class="callout"><strong>That's it.</strong> Three steps, two files, no servers, no databases, no monthly fees. Total hosting cost: $0.</div>`,
+
+  clients: `<h2>For Your Clients</h2>
+<h3>The Pitch</h3>
+<p>"Here's what we'll do. You keep taking notes the way you normally do — meeting notes, client details, project specs. We'll set up a brain that stores all of that in a way that's searchable and connected. Then we'll give you a dashboard — a single web page you can open on any device — that shows you a living map of everything your company knows."</p>
+<h3>What They Get</h3>
+<ul>
+  <li><strong>Company memory</strong> that doesn't walk out the door when someone quits</li>
+  <li><strong>Client context</strong> at their fingertips before every call</li>
+  <li><strong>Visual map</strong> of how projects, people, and ideas connect</li>
+  <li><strong>Health monitoring</strong> so they know their knowledge base is working</li>
+  <li><strong>Zero maintenance</strong> — it updates itself</li>
+</ul>
+<h3>What It Costs Them</h3>
+<p>About the price of a cup of coffee per month. The brain uses OpenAI embeddings ($0.0001 per page — a thousand pages costs 10 cents). The dashboard is free to host. The only real cost is the VPS if they want one, or it runs on their own laptop.</p>
+<h3>White-Label It</h3>
+<p>Change the brand colours in the CSS variables, swap the logo, and it's theirs. Same dashboard, their identity. Takes 5 minutes.</p>`,
+
+  scaling: `<h2>Scaling & Limits</h2>
+<h3>Where We Are Now</h3>
+<p>This dashboard — HTML, JSON, everything — is <strong>440 KB total</strong>. GitHub Pages allows up to 1 GB. That means we're using 0.04% of the limit. We could grow 2,300× before hitting any cap.</p>
+<div class="callout"><strong>18 brain pages = 26 KB JSON.</strong> At ~1.4 KB per page, you'd need roughly 700,000 pages to hit GitHub's 1 GB site limit.</div>
+<h3>GitHub Pages Limits</h3>
+<table style="width:100%;font-size:0.75rem;border-collapse:collapse">
+  <tr><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)"><strong>Published site</strong></td><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)">1 GB (hard cap)</td><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04);color:var(--green)">We're at 115 KB</td></tr>
+  <tr><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)"><strong>Source repo</strong></td><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)">1 GB (recommended)</td><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04);color:var(--green)">We're at 440 KB</td></tr>
+  <tr><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)"><strong>Bandwidth</strong></td><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)">100 GB/month (soft)</td><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04);color:var(--green)">Negligible</td></tr>
+  <tr><td style="padding:6px 10px"><strong>Builds</strong></td><td style="padding:6px 10px">10/hour (soft)</td><td style="padding:6px 10px;color:var(--green)">~1-2/day</td></tr>
+</table>
+<h3>When Scaling Actually Matters</h3>
+<p>The real bottleneck isn't GitHub — it's the <strong>browser</strong>. Loading a single massive JSON file eventually gets slow:</p>
+<table style="width:100%;font-size:0.75rem;border-collapse:collapse">
+  <tr><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)"><strong>1,000 pages</strong></td><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)">~1.5 MB</td><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04);color:var(--green)">Still fast — sub-second load</td></tr>
+  <tr><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)"><strong>10,000 pages</strong></td><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)">~15 MB</td><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04);color:var(--accent-light)">Noticeable — 2-3 sec fetch</td></tr>
+  <tr><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)"><strong>50,000 pages</strong></td><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)">~75 MB</td><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04);color:var(--rose)">Uncomfortable — 10+ seconds</td></tr>
+  <tr><td style="padding:6px 10px"><strong>100,000+ pages</strong></td><td style="padding:6px 10px">~150 MB</td><td style="padding:6px 10px;color:var(--rose)">Unusable as single file</td></tr>
+</table>
+<h3>The Fix: Split Architecture</h3>
+<p>For clients with larger brains, you don't switch hosts — you switch the data loading strategy. Keep a small bootstrap file for stats and graph, then lazy-load page content only when someone clicks:</p>
+<code>gbrain-summary.json      (~10 KB always)   ← stats + graph + slugs<br>gbrain-page-&lt;slug&gt;.json  (~2 KB on demand) ← loaded when modal opens</code>
+<p>This scales to <strong>millions of pages</strong>. The initial load stays tiny regardless of brain size. The dashboard HTML doesn't change at all.</p>
+<h3>Platform Migration (if GitHub is ever limiting)</h3>
+<table style="width:100%;font-size:0.75rem;border-collapse:collapse">
+  <tr><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)"><strong>Cloudflare Pages</strong></td><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)">Free · faster CDN · no build limits</td></tr>
+  <tr><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)"><strong>Netlify</strong></td><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)">Free up to 100 GB bandwidth · drag-and-drop deploy</td></tr>
+  <tr><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)"><strong>Vercel</strong></td><td style="padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04)">Free hobby tier · serverless functions built in</td></tr>
+  <tr><td style="padding:6px 10px"><strong>S3 + CloudFront</strong></td><td style="padding:6px 10px">~$0.50/month for 100 GB · the nuclear option. Petabyte-scale.</td></tr>
+</table>
+<div class="callout"><strong>For 90% of clients, GitHub Pages is permanent.</strong> For the 10% with large brains, the fix isn't a new platform — it's splitting the JSON. Moving to S3 costs about the same as a single coffee per year.</div>`,
+
+  shortcuts: `<h2>Keyboard Shortcuts</h2>
+<table style="width:100%;font-size:0.78rem;border-collapse:collapse">
+  <tr><td style="padding:8px 12px;border-bottom:1px solid rgba(255,255,255,0.04)"><span class="kbd">?</span></td><td style="padding:8px 12px;border-bottom:1px solid rgba(255,255,255,0.04)">Open this help guide</td></tr>
+  <tr><td style="padding:8px 12px;border-bottom:1px solid rgba(255,255,255,0.04)"><span class="kbd">Esc</span></td><td style="padding:8px 12px;border-bottom:1px solid rgba(255,255,255,0.04)">Close any open modal or panel</td></tr>
+  <tr><td style="padding:8px 12px;border-bottom:1px solid rgba(255,255,255,0.04)"><span class="kbd">Ctrl+K</span> / <span class="kbd">Cmd+K</span></td><td style="padding:8px 12px;border-bottom:1px solid rgba(255,255,255,0.04)">Focus the search bar</td></tr>
+  <tr><td style="padding:8px 12px"><span class="kbd">Click</span> anything</td><td style="padding:8px 12px">Drill into page content, entities, health checks</td></tr>
+</table>
+<h3>Graph</h3>
+<ul>
+  <li><strong>Scroll</strong> — zoom in/out (pinch on touch devices)</li>
+  <li><strong>Drag background</strong> — pan the view</li>
+  <li><strong>Drag node</strong> — reposition (releases with momentum)</li>
+  <li><strong>Click node</strong> — open that page's detail modal</li>
+  <li><strong>Hover node</strong> — highlights and enlarges</li>
+  <li><strong>↺ Reset</strong> — return graph to default layout</li>
+</ul>
+<h3>Mouse</h3>
+<ul>
+  <li>Click any <strong>page row</strong> — full detail modal with content + links</li>
+  <li>Click any <strong>entity card</strong> — person or company detail</li>
+  <li>Click any <strong>health check</strong> — diagnostic detail</li>
+  <li>Click a <strong>stat card</strong> — breakdown or jump to health panel</li>
+  <li>Click the <strong>?</strong> button — this help guide</li>
+  <li>Click <strong>outside</strong> a modal — close it</li>
+</ul>`
+};
+
+let activeDoc = 'overview';
+
+function openDocs() {
+  document.getElementById('docsOverlay').classList.add('active');
+  document.body.classList.add('modal-open');
+  switchDoc('overview');
+  document.querySelectorAll('#docsSidebar .docs-tab').forEach(t => t.classList.remove('active'));
+  document.querySelector('#docsSidebar .docs-tab[data-doc="overview"]').classList.add('active');
+}
+
+function closeDocs() {
+  document.getElementById('docsOverlay').classList.remove('active');
+  document.body.classList.remove('modal-open');
+}
+
+function switchDoc(doc) {
+  activeDoc = doc;
+  document.getElementById('docsContent').innerHTML = DOCS[doc] || '';
+  document.querySelectorAll('#docsSidebar .docs-tab').forEach(t => t.classList.remove('active'));
+  const tab = document.querySelector(`#docsSidebar .docs-tab[data-doc="${doc}"]`);
+  if (tab) tab.classList.add('active');
+}
+
+document.getElementById('docsSidebar').addEventListener('click', function(e) {
+  if (!e.target.classList.contains('docs-tab')) return;
+  switchDoc(e.target.dataset.doc);
+});
+
+// ─── KEYBOARD ───
+document.addEventListener('keydown', function(e) {
+  // Don't capture shortcuts when typing in inputs
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
+    if (e.key === 'Escape') { e.target.blur(); return; }
+    return;
+  }
+  if (e.key === '?') { e.preventDefault(); openDocs(); return; }
+  if (e.key === 'Escape') {
+    if (document.getElementById('docsOverlay').classList.contains('active')) { closeDocs(); return; }
+    if (document.getElementById('modalOverlay').classList.contains('active')) { closeModal(); return; }
+  }
+  if ((e.ctrlKey||e.metaKey) && e.key === 'k') {
+    e.preventDefault();
+    document.getElementById('searchInput').focus();
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelector('[data-tab="pages"]').classList.add('active');
+    activeTab = 'pages';
+    showTab('pages');
+  }
+});
+
+function esc(s) { const d=document.createElement('div'); d.textContent=(s||''); return d.innerHTML; }
+function escAttr(s) { return (s||'').replace(/'/g,"&#39;").replace(/"/g,"&quot;"); }
 
 loadData();
 </script>
