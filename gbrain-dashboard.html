@@ -1297,7 +1297,8 @@ function runLiveQuery() {
   error.style.display = 'none';
   empty.style.display = 'none';
   loading.style.display = 'block';
-  fetch('https://43.156.64.222:8443/api/query?q=' + encodeURIComponent(q))
+  const API_BASE = 'https://achieved-disposal-chemical-border.trycloudflare.com';
+  fetch(API_BASE + '/api/query?q=' + encodeURIComponent(q))
     .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
     .then(data => {
       loading.style.display = 'none';
