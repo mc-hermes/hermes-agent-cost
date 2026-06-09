@@ -1,1452 +1,297 @@
 {
-  "updated_at": "2026-06-09T09:02:48Z",
+  "updated_at": "2026-06-09T09:19:14Z",
   "summary": {
-    "score": "Brain score 31/41",
+    "score": "Brain score 90/100 (embed 35/35, links 25/25, timeline 6/15, orphans 14/15, dead-links 10/10)",
     "page_count": 41,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "75.6% of pages have inbound links",
-    "entity_links": "Coverage \u2014 11 people, 10 companies indexed",
-    "concept_count": 18,
-    "meeting_count": 2,
-    "person_count": 11,
-    "company_count": 10,
-    "total_links": 36,
-    "outbound_count": 58,
-    "inbound_count": 51
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "73.2% of pages have inbound links (>=30% — graph signals fire on most queries)",
+    "entity_links": "Coverage 90% ± 6.4%"
   },
   "pages": [
     {
-      "slug": "2026-06-03",
-      "title": "2026 06 03",
-      "type": "concept",
-      "updated": "",
-      "body": "{\"title\": \"June 3, 2026\", \"content\": \"# June 3, 2026\n\n## Highlights\n- Full VPS security audit and hardening\n- Google Workspace admin setup (info@malohacoast.com)\n- gbrain installation and configuration\n- Obsidian vault creation\n\n## VPS Hardening\nCompleted [[VPS Hardening]] \\u2014 see project note for full details. All high-priority fixes applied:\n- SSH locked down (root login disabled, key-only auth, idle timeouts)\n- UFW firewall active (deny all inbound except SSH)\n- fail2ban installed and running \\u2014 already banned 4 brute-force IPs\n- System packages updated, new kernel 6.8.0-124 active after reboot\n\n## Google Workspace\nSet up [[Google Workspace Setup]] for Maloha Coast. Authenticated as `info@malohacoast.com`.\n- Gmail, Calendar, Drive, Docs, Sheets all configured\n- OAuth client \\\"admin-assistant\\\" under project _leafy-affinity-491809-a5_\n\n## AI Infrastructure\n- [[gbrain]] v0.42.10.0 installed from source at `~/gbrain/`\n- Brain initialized at `~/.gbrain/brain.pglite` (PGLite, no server needed)\n- Obsidian vault created at `~/obsidian-vault/` with folder structure\n- Hermes agent configured with skills system\n\n## Notes\n- VPS reboot needed to activate new kernel \\u2014 confirmed working post-reboot\n- fail2ban already proving its value (see [[VPS Hardening#fail2ban]])\n- gbrain needs OpenAI API key for vector embeddings (keyword search works without)\", \"kind\": \"daily\"}",
-      "tags": [],
-      "links_out": [
-        {
-          "to": "vps-hardening",
-          "type": "wikilink",
-          "text": "VPS Hardening"
-        },
-        {
-          "to": "google-workspace-setup",
-          "type": "wikilink",
-          "text": "Google Workspace Setup"
-        },
-        {
-          "to": "gbrain",
-          "type": "wikilink",
-          "text": "gbrain"
-        },
-        {
-          "to": "vps-hardening",
-          "type": "wikilink",
-          "text": "VPS Hardening#fail2ban"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "gbrain",
-          "type": "wikilink",
-          "text": "2026-06-03"
-        },
-        {
-          "from": "google-workspace-setup",
-          "type": "wikilink",
-          "text": "2026-06-03"
-        },
-        {
-          "from": "vps-hardening",
-          "type": "wikilink",
-          "text": "2026-06-03#VPS Hardening"
-        },
-        {
-          "from": "vps-hardening",
-          "type": "wikilink",
-          "text": "2026-06-03"
-        }
-      ],
-      "outbound_count": 4,
-      "inbound_count": 4
-    },
-    {
-      "slug": "architecture/agent-hierarchy",
-      "title": "Agent Hierarchy",
-      "type": "concept",
-      "updated": "",
-      "body": "The Maloha Coast Hermes ecosystem has three agents in a hierarchy:\n\n**falconhermes** (root profile) \u2014 Orchestrator. Sayf's primary interface. Delegates tasks to MC and Sammy based on domain. Handles strategy, high-level planning, and anything that doesn't fit the other agents.\n  SOUL.md at ~/.hermes/SOUL.md\n\n**MC** (profiles/mc/) \u2014 Executive assistant. Handles inbox triage, calendar management, project tracking, client communications, research, business operations.\n  SOUL.md at ~/.hermes/profiles/mc/SOUL.md\n\n**Sammy** (profiles/sammy/) \u2014 Content creator. Handles LinkedIn posts, X threads, blog articles, brand voice, engagement drafting.\n  SOUL.md at ~/.hermes/profiles/sammy/SOUL.md\n\nThe hierarchy is documented in each agent's SOUL.md and backing memory files. The full setup is backed up to github.com/Maloha-Coast/hermes-profile-backup.",
-      "tags": [],
-      "links_out": [],
-      "backlinks": [],
-      "outbound_count": 0,
-      "inbound_count": 0
-    },
-    {
-      "slug": "brand/maloha-coast-brand-identity",
-      "title": "Maloha Coast \u2014 Brand Identity",
-      "type": "concept",
-      "updated": "",
-      "body": "# Maloha Coast \u2014 Brand Identity\n\n## Finalised Brand Decisions (locked June 2026)\n\n### Colour Palette\n- **Primary**: #2a6a8a (teal blue)\n- **Accent**: #c4a86a (champagne gold)\n- **Dark Navy**: #0a1628\n- **Light backgrounds**: #f4f8fb, #ffffff\n\n### Typography\n- **Primary font**: Optima (humanist, elegant Roman forms)\n- **Fallback stack**: 'Segoe UI', 'Candara', 'Palatino Linotype', 'Book Antiqua', Palatino, serif\n\n### Brand Pattern\n\u2b21 **Honeycomb Hexagon Grid** \u2014 Gold on Navy\n- Hex lines: #c4a86a (champagne gold)\n- Background field: #0a1628 (dark navy)\n- Tile size: 90\u00d752 px seamless tiling PNG\n- Hosted at: https://iili.io/CK3nHLF.png\n- Also available in 7 other colour variants (see skill references)\n\n## Email Templates\n\nThe production email template is based on the \"Ocean Deep\" direction (selected from 5 brand concepts A-E).\n\n### Template Structure\n1. **Outer wrapper**: Gold-on-navy hex pattern background (via HTML `background` attribute on `<td>`, NOT CSS)\n2. **Header**: Pattern visible with rgba(10,22,40,0.65) semi-transparent overlay \u2192 \"MALOHA COAST\" in white + \"Sdn Bhd\" in gold\n3. **Body card**: White rounded card with generous padding\n4. **Info cards**: Gold left accent border (#c4a86a) on light teal (#f4f8fb) background\n5. **Signature**: Gold horizontal rule (#c4a86a) + name/title/company/tagline in brand colours\n6. **Footer**: Same hex pattern background as header\n\n### Gmail Compatibility (verified)\n- Use HTML `background` attribute on `<td>` elements for patterns (CSS `background-image` with data URIs is stripped by Gmail)\n- Use nested `<table>` with `rgba()` overlay for colour tinting\n- Use inline styles only (no `<style>` blocks)\n- Max width 600px for email card\n- No JavaScript\n\n### Skill Reference\nThe full workflow is in the `html-email-with-sheet-logging` skill:\n- **SKILL.md**: /home/ubuntu/.hermes/skills/productivity/html-email-with-sheet-logging/SKILL.md\n- **Production template**: references/ocean-deep-template.html\n- **Header fragment**: templates/maloha-coast-header-fragment.html\n- **Hex pattern variants**: references/hex-pattern-variants.md\n- **Script to regenerate**: scripts/generate-hex-pattern.py\n\n### Brand Concepts File\nFull brand exploration HTML (5 palettes, 12 patterns, typography pairings):\n/home/ubuntu/maloha-coast-brand-concepts.html\n\n### Related\n- [[maloha-coast]] \u2014 company overview\n- [[google-workspace-setup]] \u2014 email infrastructure",
-      "tags": [
-        "brand",
-        "design",
-        "email-template",
-        "malohacoast"
-      ],
-      "links_out": [
-        {
-          "to": "maloha-coast",
-          "type": "wikilink",
-          "text": "maloha-coast"
-        },
-        {
-          "to": "google-workspace-setup",
-          "type": "wikilink",
-          "text": "google-workspace-setup"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "maloha-coast",
-          "type": "wikilink",
-          "text": "brand/maloha-coast-brand-identity"
-        }
-      ],
-      "outbound_count": 2,
-      "inbound_count": 1
-    },
-    {
-      "slug": "companies/ai-automation-society",
-      "title": "AI Automation Society",
-      "type": "company",
-      "updated": "",
-      "body": "# AI Automation Society\n\n> Community and newsletter for AI automation practitioners, publishing insights on practical AI workflows, client acquisition, and industry trends.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [The Skill That 10x'd My Claude Code Projects](concepts/the-skill-that-10xd-my-claude-code-projects) as the publisher of the forwarded newsletter by Nate Herk, covering the Grill Me skill, Carson's automation client win, and Anthropic's IPO filing\n- Hosts AIS Live event (July 11-12, 2026)\n\n## Related\n\n- [Nate Herk](people/nate-herk) \u2014 Creator/Author\n- [Carson](people/carson) \u2014 Community Member\n- [concepts/the-skill-that-10xd-my-claude-code-projects] \u2014 Newsletter source\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-05** | Published newsletter \"The Skill That 10x'd My Claude Code Projects\" covering Claude context skills, first client acquisition stories, and Anthropic IPO news. [Source: Email newsletter]\n- **2026-07-11\u201312** | AIS Live event: two-day practitioner conference on AI automation client work. [Source: Newsletter]",
-      "tags": [
-        "ai-automation",
-        "community",
-        "newsletter"
-      ],
-      "links_out": [
-        {
-          "to": "concepts/the-skill-that-10xd-my-claude-code-projects",
-          "type": "link",
-          "text": "The Skill That 10x'd My Claude Code Projects"
-        },
-        {
-          "to": "people/nate-herk",
-          "type": "link",
-          "text": "Nate Herk"
-        },
-        {
-          "to": "people/carson",
-          "type": "link",
-          "text": "Carson"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "concepts/claude-code-10x-skill-newsletter",
-          "type": "wikilink",
-          "text": "AI Automation Society"
-        },
-        {
-          "from": "people/carson",
-          "type": "link",
-          "text": "AI Automation Society"
-        }
-      ],
-      "outbound_count": 3,
-      "inbound_count": 2
-    },
-    {
-      "slug": "companies/anthropic",
-      "title": "Anthropic",
-      "type": "company",
-      "updated": "",
-      "body": "# Anthropic\n\n> AI research company behind Claude. Filed for IPO at $965 billion valuation (June 2026).\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[claude-code-10x-skill-newsletter]] \u2014 IPO filing at $965B\n\n## Related\n\n- [[claude-code-10x-skill-newsletter]] \u2014 Discussion of Anthropic's IPO and what it means for Claude users\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-05** | Reported IPO filing at $965 billion valuation. Source: Nate Herk / AI Automation Society newsletter.",
-      "tags": [
-        "ai",
-        "claude",
-        "llm"
-      ],
-      "links_out": [
-        {
-          "to": "concepts/claude-code-10x-skill-newsletter",
-          "type": "wikilink",
-          "text": "claude-code-10x-skill-newsletter"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "companies/openai",
-          "type": "link",
-          "text": "Anthropic"
-        },
-        {
-          "from": "concepts/claude-code-10x-skill-newsletter",
-          "type": "wikilink",
-          "text": "Anthropic"
-        }
-      ],
-      "outbound_count": 1,
-      "inbound_count": 2
-    },
-    {
-      "slug": "companies/blackgrid-digital",
-      "title": "Blackgrid Digital",
-      "type": "company",
-      "updated": "",
-      "body": "> **BlackGrid Digital Sdn Bhd** \u2014 Los Angeles Premier Digital Marketing Agency serving clients in North America and Southeast Asia. Founded in 2015 by [Nabil Jalil](people/nabil-jalil).\n\n## Overview\n\nBlackGrid Digital is a full-service digital marketing agency offering SEO, digital advertising, and growth consulting. With offices in Los Angeles, California and Ampang, Selangor (Malaysia), they serve clients across multiple industries worldwide.\n\n- **Registration:** Malaysia: 1584916-X\n- **Founded:** 2015\n- **Tagline:** \"Los Angeles Premier Digital Marketing Agency\"\n- **Google Rating:** 5.0 stars\n- **Website:** blackgridseo.com\n\n## Services\n\n### 1. 12-Week SEO Sprint Programme\nStructured SEO program: Discovery \u2192 Strategy \u2192 Content \u2192 Analysis\n\n### 2. SEO Content Creation\nBlog posts, landing pages, local SEO content, keyword research, product descriptions, long-form content\n\n### 3. Digital Advertising\nFacebook, Instagram, TikTok ads \u2014 precision targeting, campaign management, weekly analysis\n\n### 4. Growth Consulting\nStrategy implementation, sustainable growth, tailored business strategies\n\n### 5. Web Design & Development\nWebsite creation and redesign\n\n## Team\n\n| Name | Role |\n|------|------|\n| [Nabil Jalil](people/nabil-jalil) | CEO, Founder |\n| Shane Reezal | COO, Digital Advertising |\n| Syed Adil | UX Strategist & Business Growth |\n| Chian Sern Ng (CY) | Lead SEO Specialist |\n| Fitri Joroji | Tech Lead, Web & Software |\n| Syafiq Jalil | Creatives Lead |\n\n## Locations\n\n- **US HQ:** 601 S Figueroa St, #4050, Los Angeles, CA 90017\n- **Asia:** Wisma Rand, No. 31-33, #207, Jalan Nirwana 1, 68000 Ampang, Selangor\n\n## Clients & Testimonials\n\nSelected clients: Mitchell Gasky (Real Estate PM), Kotton Grammer (Forbes & INC. Marketing Influencer 2020), Tom Recher (Founder, Mid Island Audiology), Jeremy Khattar (CEO, Ronin), Dr. Thomas S. Eder (Post-Doc Researcher), Faisal Uraizee (Physician), Isaac Byrne (Software Engineer, Rocket Insights), Marcus Zeng Yik Chia (MD & CEO, Rand Development), Jason Kendall, Jason Healey (Founder, Policy Growth Partners), Amir Rahim (Actor/Host).\n\n## Partners\n- **RoarPoint** \u2014 strategic brand consultancy\n- **iWisers** \u2014 AI/data analytics company\n\n## Timeline\n\n- **2015** | BlackGrid Digital founded by Nabil Jalil\n- **2016** | Nabil publishes \"On Page SEO in 2016\"\n- **2023** | Nabil publishes \"Is SEO Worth It?\" and \"How to Use SEO and Digital Marketing to Grow Your Business in 2023\"\n- **2026-06-08** | Nabil meets sayf (Maloha Coast) after the Biarta meeting. Potential collaboration discussed.\n\n## Synergy with Maloha Coast\n\nBlackGrid's SEO and digital marketing expertise could complement Maloha Coast's AI consulting. Potential areas of collaboration:\n- AI-powered SEO tools and automation\n- Combined service packages (AI strategy + SEO implementation)\n- Cross-referral opportunities with shared client base",
-      "tags": [],
-      "links_out": [
-        {
-          "to": "people/nabil-jalil",
-          "type": "link",
-          "text": "Nabil Jalil"
-        }
-      ],
-      "backlinks": [],
-      "outbound_count": 1,
-      "inbound_count": 0,
-      "email": "hello@blackgridseo.com",
-      "phone": "+1 310-936-2578",
-      "website": "https://blackgridseo.com",
-      "location": "Los Angeles, CA / Ampang, Selangor, Malaysia"
-    },
-    {
-      "slug": "companies/global-ai-village",
-      "title": "Global Ai Village",
-      "type": "company",
-      "updated": "",
-      "body": "",
-      "tags": [],
-      "links_out": [],
-      "backlinks": [
-        {
-          "from": "meetings/2026-06-08-bjarte-global-ai-village",
-          "type": "link",
-          "text": "Global AI Village"
-        }
-      ],
-      "outbound_count": 0,
-      "inbound_count": 1
-    },
-    {
-      "slug": "companies/inclusive-ai-association",
-      "title": "Inclusive Ai Association",
-      "type": "company",
-      "updated": "",
-      "body": "# Inclusive AI Association (IAIA)\n\n> **Type:** Community-based NGO\n> **Founded:** August 2025\n> **Co-Chair:** [[Zaim Mohzani]]\n> **Location:** Malaysia\n> **Mission:** Making Malaysians AI-Literate (MAIL) by 2030\n\nIAIA bridges the last mile between national AI policies and everyday communities.\n\nThree focus areas:\n- **Inform:** Raising public awareness of AI through campaigns and simple explainers\n- **Contribute:** Creating platforms for citizens to share feedback that informs inclusive AI policy\n- **Educate:** Delivering workshops, training sessions, and guides aligned with the National Guidelines on AI Governance and Ethics and the ASEAN AI Safety Network\n\n[Source: LinkedIn profile of Zaim Mohzani, 2026-06-09]",
-      "tags": [
-        "ai-literacy",
-        "company",
-        "ngo"
-      ],
-      "links_out": [
-        {
-          "to": "people/zaim-mohzani",
-          "type": "wikilink",
-          "text": "Zaim Mohzani"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "people/zaim-mohzani",
-          "type": "wikilink",
-          "text": "Inclusive AI Association"
-        }
-      ],
-      "outbound_count": 1,
-      "inbound_count": 1
-    },
-    {
-      "slug": "companies/ksi-strategic-institute",
-      "title": "KSI Strategic Institute for Asia Pacific",
-      "type": "company",
-      "updated": "",
-      "body": "# KSI Strategic Institute for Asia Pacific\n\n> **Type:** Independent Not-for-Profit Think Tank\n> **Location:** Kuala Lumpur, Malaysia\n> **Website:** https://kasi.asia/\n> **Tagline:** \"Where Leaders Meet\" / \"Building Better Nations Across Asia Pacific\"\n\nRanked 109th for Top Social Policy Think Tanks (2020 Global Go To Think Tank Index). Focus areas: Education, Economics, Healthcare, International Affairs, Politics & Governance.\n\nHas engaged over 3,000 policymakers, business captains and NGO leaders through 60+ high-level events since late 2018. Led by Tan Sri Michael Yeoh.\n\n[[Zaim Mohzani]] serves as Senior Director of External Relations (Jan 2024-present). He leads the ASEAN Economic Club, World Digital Chamber, KSInsights (30+ articles), KSI Visiting Fellowship, and KSI Academy (AI training for ASEAN corporations).\n\nKey initiatives: ECKL, GCET, GMBF (Global Muslim Business Forum), WDC (World Digital Chamber).\n\n[Source: kasi.asia + LinkedIn profile of Zaim Mohzani, 2026-06-09]",
-      "tags": [
-        "asean",
-        "company",
-        "think-tank"
-      ],
-      "links_out": [
-        {
-          "to": "people/zaim-mohzani",
-          "type": "wikilink",
-          "text": "Zaim Mohzani"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "people/zaim-mohzani",
-          "type": "wikilink",
-          "text": "KSI Strategic Institute for Asia Pacific"
-        }
-      ],
-      "outbound_count": 1,
-      "inbound_count": 1
-    },
-    {
-      "slug": "companies/nation-building-school",
-      "title": "Nation Building School",
-      "type": "company",
-      "updated": "",
-      "body": "# Nation Building School\n\n> **Type:** Social Enterprise / Career Education\n> **Founded:** August 2015\n> **Founder/Principal:** Zaim Mohzani\n> **Location:** Kuala Lumpur, Malaysia\n> **Website:** https://www.nationbuildingschool.com/\n\nStarted as a bootstrapped NGO in Bukit Tunku, now a social enterprise empowering the next generation of leaders in Malaysia and Southeast Asia. Has engaged over 10,000 youths.\n\nFocus areas: career workshops and leadership programmes for urban poor, single mothers, and youth at risk. Launched virtual career workshops during the pandemic.\n\n[[Zaim Mohzani]] serves as AI & Career Strategist (Jan 2024-present) and previously as Principal (Aug 2015-Dec 2023).\n\n[Source: LinkedIn profile of Zaim Mohzani, 2026-06-09]",
-      "tags": [
-        "company",
-        "malaysia",
-        "social-enterprise"
-      ],
-      "links_out": [
-        {
-          "to": "people/zaim-mohzani",
-          "type": "wikilink",
-          "text": "Zaim Mohzani"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "people/zaim-mohzani",
-          "type": "wikilink",
-          "text": "Nation Building School"
-        }
-      ],
-      "outbound_count": 1,
-      "inbound_count": 1
-    },
-    {
-      "slug": "companies/openai",
-      "title": "OpenAI",
-      "type": "company",
-      "updated": "",
-      "body": "# OpenAI\n\n> AI research and deployment company behind ChatGPT and GPT model family. Valued at $852 billion after their last funding round, expected to go public in 2026.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [The Skill That 10x'd My Claude Code Projects](concepts/the-skill-that-10xd-my-claude-code-projects) as having a $852 billion valuation, competing with Anthropic and SpaceX in the race to go public in 2026\n\n## Related\n\n- [Anthropic](companies/anthropic) \u2014 Competitor\n- [concepts/the-skill-that-10xd-my-claude-code-projects] \u2014 Market context\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06** | Valued at $852 billion after latest funding round, expected to go public alongside Anthropic and SpaceX this year. [Source: AI Automation Society newsletter]",
-      "tags": [
-        "ai",
-        "chatgpt",
-        "ipo",
-        "llm"
-      ],
-      "links_out": [
-        {
-          "to": "concepts/the-skill-that-10xd-my-claude-code-projects",
-          "type": "link",
-          "text": "The Skill That 10x'd My Claude Code Projects"
-        },
-        {
-          "to": "companies/anthropic",
-          "type": "link",
-          "text": "Anthropic"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "concepts/claude-code-10x-skill-newsletter",
-          "type": "wikilink",
-          "text": "OpenAI"
-        }
-      ],
-      "outbound_count": 2,
-      "inbound_count": 1
-    },
-    {
-      "slug": "companies/passend",
-      "title": "Passend",
-      "type": "company",
-      "updated": "2026-06-05",
-      "body": "# Passend\n\n> Malaysian education platform led by TJ van der Molen (CEO & ECHA Specialist). Three-product pipeline: project-based learning showcase, reporting automation, and SaaS counselor platform. Early-stage prospect for Maloha Coast. [Source: User, 2026-06-05]\n\n## State\n\n- **What they do:** Education platform \u2014 student project showcase, behavioral reporting tools, and counselor training SaaS\n- **Stage:** Active \u2014 multiple products in pipeline\n- **Key person:** TJ van der Molen, CEO & ECHA Specialist\n- **Website:** www.passend.my\n- **Contact:** t.vandermolen@passend.my / +6016 434 8614\n- **Maloha Coast connection:** sayf met TJ June 2026 \u2014 Requirements Engineering Workshop proposed [Source: User, 2026-06-05]\n\n## Product Pipeline\n\n1. **Database + Frontend \u2014 Project-Based Learning Showcase:** Chronological records of student projects, distributed via portal/newsletters/social media. Facial recognition for parental consent under consideration.\n2. **Internal Tool \u2014 Reporting Automation:** Rapid data input for behavioral observations, database storage, report generation, AI/OCR import with staff verification.\n3. **SaaS Platform \u2014 Counselor Teaching and Learning:** Freemium to subscription. Three tiers (course access, curriculum sharing, hosted events). Certification at all levels. [Source: User, 2026-06-05]\n\n## Open Threads\n\n- TJ to prioritize which system to build first\n- Requirements Engineering Workshop: MYR 100/hr or MYR 800/day\n- sayf's availability open until May, then contract work begins [Source: User, 2026-06-05]\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-05** | Initial meeting between TJ van der Molen and sayf (Maloha Coast). Three development projects discussed. Workshop next step. [Source: User, 2026-06-05]",
-      "tags": [
-        "education",
-        "prospect",
-        "saas"
-      ],
-      "links_out": [],
-      "backlinks": [
-        {
-          "from": "meetings/2026-06-05-tj-vandermolen",
-          "type": "link",
-          "text": "Passend"
-        }
-      ],
-      "outbound_count": 0,
-      "inbound_count": 1
-    },
-    {
-      "slug": "companies/system-design-one",
-      "title": "System Design One",
-      "type": "company",
-      "updated": "",
-      "body": "# System Design One\n\n> Substack publication by Neo Kim focusing on system design, architecture deep-dives, and how real-world systems handle scale, reliability, and performance.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[The Anatomy of OpenClaw]] as the source publication for Issue #151 about OpenClaw.\n\n## Related\n\n- [[Neo Kim]] \u2014 author and founder of the publication\n- [[The Anatomy of OpenClaw]] \u2014 article published under this brand\n\n## Timeline\n\n- **Jun 2026** | Published Issue #151: \"The Anatomy of OpenClaw\". [Source: email forward]",
-      "tags": [
-        "newsletter",
-        "publication",
-        "substack"
-      ],
-      "links_out": [
-        {
-          "to": "The Anatomy of OpenClaw",
-          "type": "wikilink",
-          "text": "The Anatomy of OpenClaw"
-        },
-        {
-          "to": "people/neo-kim",
-          "type": "wikilink",
-          "text": "Neo Kim"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "concepts/openclaw-anatomy",
-          "type": "wikilink",
-          "text": "System Design One"
-        }
-      ],
-      "outbound_count": 2,
-      "inbound_count": 1
-    },
-    {
-      "slug": "concepts/business-brain",
-      "title": "Business Brain",
-      "type": "concept",
-      "updated": "",
-      "body": "",
-      "tags": [],
-      "links_out": [],
-      "backlinks": [
-        {
-          "from": "meetings/2026-06-08-bjarte-global-ai-village",
-          "type": "link",
-          "text": "Business Brain"
-        }
-      ],
-      "outbound_count": 0,
-      "inbound_count": 1
-    },
-    {
-      "slug": "concepts/claude-code-10x-skill-newsletter",
-      "title": "Claude Code 10x Skill Newsletter",
-      "type": "concept",
-      "updated": "",
-      "body": "# Fwd: The Skill That 10x'd My Claude Code Projects\n**From:** Sayf Codes <sayfcodes@gmail.com>\n**Date:** Mon, 8 Jun 2026 23:49:48 +0800\n**Source:** email\n\n> Forwarded message from Nate Herk <nate@aiautomationsociety.ai>\n\nJune 05, 2026 \u2014 AI Automation Society Newsletter\n\n## The Skill That 10x'd My Claude Code Projects\n\nSharper Claude context, Carson's first automation win, and Anthropic's $965B IPO filing\n\n### In This Issue\n- The single technique that makes every Claude project sound less like everyone else and more like you\n- Carson landed his first automation client with a free pilot \u2014 here's the exact move\n- Anthropic just filed for IPO at $965 billion \u2014 what it means if Claude is your primary tool\n\n### New Video: The Skill That 10x'd My Claude Code Projects\n\nIf your Claude outputs feel generic \u2014 technically correct but missing your voice \u2014 the problem is not the model. Everyone using Claude Opus 4.8 starts from the same foundation. The difference between outputs that sound like you and ones that sound like everyone else is context.\n\n**The Grill Me skill** fixes that. Instead of a five-minute brain dump before you start building, it interviews you until it actually understands how you think. It asks one question at a time, checkpoints your answers to a markdown file in your project, and keeps going until there are no gaps. By the end, you have reusable context your AI pulls from every time you touch that skill or project.\n\n**The mistake most people make:** Starting with a brain dump and calling it good enough. Five minutes of info-dumping gets your output quality to about 70% on iteration one. The Grill Me approach gets you to 90% from the start \u2014 fewer revision cycles, faster time to a deliverable clients actually like.\n\n**How this helps you:** When Claude knows your voice, your decisions, and your process, it stops generating generic output. Your projects feel like yours. Clients notice. You spend less time fixing what the AI got wrong.\n\n### Winning Is All We Do \u2014 [[Carson]] landed his first automation client\n\n**What happened:** [[Carson]] built a lead automation for a local aesthetics clinic as a free pilot. The workflow routes contact data and handles follow-ups automatically. He's waiting on Facebook credentials to go live, but the clinic owner is already highly receptive. His plan: deliver the pilot, then position for a paid monthly retainer.\n\n**The opportunity:** Local service businesses (clinics, salons, studios) are some of the easiest first clients to land. They have real lead problems, a low technology bar, and if you deliver, they talk to other business owners. A free pilot with a clear upsell path is one of the cleanest ways to get your first paying automation client.\n\n### In the News \u2014 [[Anthropic]] filed for IPO at $965 billion\n\n**The news:** On June 1, 2026, [[Anthropic]] \u2014 the company behind Claude \u2014 confidentially submitted an S-1 to the SEC for a proposed initial public offering. Valuation: $965 billion, putting it ahead of [[OpenAI]] ($852 billion after their last funding round). [[Anthropic]] joins SpaceX and [[OpenAI]] in what analysts are already calling a race to go public \u2014 all three expected to list this year.\n\n**How it affects automation:** When your primary AI tool's parent company goes public, two things typically follow: more capital to build better models (good for you), and quarterly earnings pressure that tends to push enterprise-first roadmaps and price adjustments upward. This is not a reason to panic. It is a reason to build your skills and client base now, before the landscape shifts again.\n\n### AIS Live \u2014 July 11-12, 2026\n\n[[AI Automation Society]] hosts a two-day event where real practitioners walk through real client engagements on stage. Day 1: see the exact projects being sold right now and build one live. Day 2: exactly how to get clients, even if you're a beginner with no credibility yet. General Admission starts at $97 (early bird ends June 7).\n\n### People Mentioned\n- [[Nate Herk]] \u2014 Author of the original newsletter from [[AI Automation Society]]\n- [[Carson]] \u2014 Practitioner who landed first automation client\n\n### Companies Mentioned\n- [[AI Automation Society]] \u2014 Publisher\n- [[Anthropic]] \u2014 Filed IPO at $965B\n- [[OpenAI]] \u2014 $852B valuation\n\n---\n\n*From: AI Automation Society (beehiiv)*",
-      "tags": [],
-      "links_out": [
-        {
-          "to": "people/carson",
-          "type": "wikilink",
-          "text": "Carson"
-        },
-        {
-          "to": "companies/anthropic",
-          "type": "wikilink",
-          "text": "Anthropic"
-        },
-        {
-          "to": "companies/openai",
-          "type": "wikilink",
-          "text": "OpenAI"
-        },
-        {
-          "to": "companies/ai-automation-society",
-          "type": "wikilink",
-          "text": "AI Automation Society"
-        },
-        {
-          "to": "people/nate-herk",
-          "type": "wikilink",
-          "text": "Nate Herk"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "companies/anthropic",
-          "type": "wikilink",
-          "text": "claude-code-10x-skill-newsletter"
-        },
-        {
-          "from": "people/nate-herk",
-          "type": "wikilink",
-          "text": "claude-code-10x-skill-newsletter"
-        }
-      ],
-      "outbound_count": 5,
-      "inbound_count": 2
-    },
-    {
-      "slug": "concepts/company-memory-os-ph1-prd",
-      "title": "Company Memory Os Ph1 Prd",
-      "type": "concept",
-      "updated": "",
-      "body": "# Hermes Agent to ingest\n**From:** Sayf Codes <sayfcodes@gmail.com>\n**Date:** Tue, 9 Jun 2026 10:50:14 +0800\n**Source:** email forward\n\nHere's a compact PRD designed specifically for Hermes to execute against.\n\nPRD: Company Memory OS (Phase 1)\n\n## Author\n\nAuthored by [[Sayf Codes]].\n\n## Vision\n\nBuild a Company Memory Operating System that transforms fragmented\ncommunication into a searchable institutional memory.\n\nInitial delivery is service-first, software-second.\n\nThe goal is not to sell software access.\n\nThe goal is to deliver the outcome:\n\"Never lose important decisions, context, relationships, or knowledge\nagain.\"\n\n---\n\n## Problem\n\nSmall businesses, consultants, agencies, and founders lose critical\nknowledge because it is scattered across:\n\n- Email\n- Meeting transcripts\n- Documents\n- Chat conversations\n- Notes\n\nKnowledge becomes unrecoverable after weeks or months.\n\nCurrent solutions focus on storage.\n\nUsers need retrieval and context.\n\n---\n\n## Target Customer\n\n### Primary \u2014 Consultants\n\nCharacteristics:\n- 20-100 clients\n- High email volume\n- Multiple projects running simultaneously\n- Knowledge-intensive work\n- Decisions buried in communications\n\n### Secondary\n- Agency owners\n- Startup founders\n- Fractional executives\n- Professional services firms\n\n---\n\n## Core Value Proposition\n\nTransform company communications into a searchable memory system.\n\n**Input:** Emails, Meeting transcripts, Documents\n\n**Output:** Searchable knowledge base, Decision history, Relationship intelligence, Project memory, AI-assisted retrieval\n\n---\n\n## Initial Offer\n\nProductized Service \u2014 Not SaaS. Human-assisted onboarding.\n\n### Knowledge Audit\n\n**Customer provides:** Emails, Documents, Meeting notes\n\n**System generates:** Executive summary, Project map, Key decisions, Action items, Stakeholder map, Recurring themes, Knowledge gaps\n\n**Deliverable:** Interactive dashboard + report.\n\n---\n\n## Success Metric\n\nCustomer says: *\"I found something valuable that I would not have found otherwise.\"*\n\n---\n\n## MVP Scope\n\n### Ingestion\nSupport: Email forwarding, Gmail export, Meeting transcripts, Markdown documents, PDFs\n\n### Processing\nExtract: People, Companies, Projects, Decisions, Tasks, Dates, Relationships\nGenerate: Summaries, Tags, Backlinks, Knowledge graph connections\n\n### Retrieval\nUser can ask:\n- What was decided about Project X?\n- What commitments were made to Client Y?\n- Show all discussions involving Person Z.\n- What unresolved action items exist?\n\n### Dashboard\nViews: Decision Timeline, Relationship Graph, Project Knowledge Base, Open Actions, Search (natural language)\n\n---\n\n## Go-To-Market\n\n**Goal:** Acquire first 3 paying customers.\n\n**Offer:** Free Knowledge Audit\n\n**Target:** Existing network, Founders, Consultants, Agency owners\n\n**Message:** *\"I've built a system that turns emails, meetings, and documents into a searchable company memory. Looking for 3 companies to test it with.\"*\n\n---\n\n## Validation Questions\n\n1. What was most valuable?\n2. What surprised you?\n3. What would you pay monthly to keep this updated?\n4. Which feature would you miss most?\n5. Would you recommend this to someone else?\n\n---\n\n## Pricing Experiments\n\n| Stage | Service | Price |\n|-------|---------|-------|\n| 1 | Knowledge Audit (one-time) | RM300 - RM1000 |\n| 2 | Continuous Memory Service (monthly) | RM300 - RM1000/month |\n| 3 | SaaS | Only after 10+ paying customers |\n\n---\n\n## Strategic Principle\n\nDo not optimize for software. Optimize for customer outcomes.\n\nUse Hermes + GBrain internally as operational infrastructure. The platform emerges from repeated customer success, not from building features first.\n\n---\n\n## North Star\n\nBecome the memory layer for small organizations.\n\nLong-term vision: Communication \u2192 Knowledge Graph \u2192 Institutional Memory \u2192 Organizational Intelligence",
-      "tags": [],
-      "links_out": [
-        {
-          "to": "people/sayf-codes",
-          "type": "wikilink",
-          "text": "Sayf Codes"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "concepts/knowledge-graph-as-moat",
-          "type": "wikilink",
-          "text": "concepts/company-memory-os-ph1-prd"
-        },
-        {
-          "from": "people/sayf-codes",
-          "type": "wikilink",
-          "text": "company-memory-os-ph1-prd"
-        }
-      ],
-      "outbound_count": 1,
-      "inbound_count": 2
-    },
-    {
-      "slug": "concepts/embedding-cost-projection",
-      "title": "Embedding Cost Projection",
-      "type": "concept",
-      "updated": "",
-      "body": "## Source Data\n\n- **CSV:** `/home/ubuntu/Downloads/openai_cost_2026-05-04_2026-06-03.csv`\n- **Date of run:** June 3, 2026\n- **Model:** `text-embedding-3-large` ($0.00013 / 1K tokens)\n- **Pages embedded:** 6 brain pages (total 6,838 chars)\n- **Tokens consumed:** 4,633\n- **Cost:** $0.000602 USD\n\n## Per-Page Average\n\n~772 tokens/page \u2192 ~$0.0001/page\n\n## Projection\n\n| Pages | Est. Tokens | Est. Cost |\n|-------|-------------|-----------|\n| 6 (current) | 4.6K | $0.0006 |\n| 50 | 38K | $0.005 |\n| 100 | 77K | $0.01 |\n| 1,000 | 772K | $0.10 |\n| 10,000 | 7.7M | $1.00 |\n| 100,000 | 77M | $10.00 |\n\n## Key Insight\n\nThe real bottleneck is content curation (writing meaningful pages), not API pricing. Even embedding the full text of *War and Peace* (~775K tokens) would cost only ~$0.10.\n\n## Verified\n\n- 4,633 tokens \u00d7 $0.00013/K = $0.00060229 \u2713\n- Cost scales linearly with token count\n- No minimum or fixed fees on text-embedding-3-large",
-      "tags": [
-        "brain",
-        "cost",
-        "embeddings",
-        "openai"
-      ],
-      "links_out": [],
-      "backlinks": [],
-      "outbound_count": 0,
-      "inbound_count": 0
-    },
-    {
       "slug": "concepts/knowledge-graph-as-moat",
-      "title": "Knowledge Graph As Moat",
       "type": "concept",
-      "updated": "",
-      "body": "# Knowledge Graph as Moat\n\n**Synthesized:** 2026-06-09\n**Sources:** Graphify video (Jack, YouTube), email-to-gbrain pipeline benchmarks, Company Memory OS PRD\n\n## The Pattern\n\nThe same architectural pattern works across two different domains:\n\n| Layer | Code Domain (Graphify) | Business Domain (Company Memory OS / gbrain) |\n|---|---|---|\n| **Ingest** | Clone GitHub repo | Forward email, upload transcript |\n| **Parse** | Read code, cluster into modules | Extract entities, detect relationships |\n| **Graph** | Files \u2192 modules \u2192 god nodes | People \u2192 companies \u2192 deals \u2192 decisions |\n| **Query** | \"What depends on X?\" | \"What was decided about Project X?\" |\n| **Dashboard** | Interactive circle graph | gbrain dashboard + architecture diagram |\n| **Agent** | Claude Code + Hermes | Hermes + gbrain |\n| **Compounding** | Every session builds context | Every email ingested enriches memory |\n\n## Core Insight\n\nBoth systems solve the same fundamental problem: **\"rereading is the tax.\"**\n\n- In code: re-reading the repo every conversation costs tokens and produces shallower answers\n- In business: re-searching emails/meetings every time you need context costs time and lets decisions fall through cracks\n\nThe knowledge graph IS the moat. Once a codebase or a business has been mapped:\n- Answers come from summaries, not re-parsing\n- Dependencies and blast radius are visible before making changes  \n- Context compounds across sessions\n- Switching costs increase dramatically \u2014 the graph IS the switching cost\n\n## Why This Validates Company Memory OS\n\nJack's video pitches Graphify as worth paying for because it saves Claude Code users money and produces better results. The same value proposition applies to Company Memory OS:\n\n- For a consultant with 50 clients: \"What commitments did I make to Client Y?\" answered in <500ms\n- For an agency owner: \"Show me all discussions about the Q2 budget\" without digging through email\n- For a founder: \"Who did I meet at the June conference and what did we discuss?\"\n\nThe architecture is proven. The pattern is validated. The question is execution and positioning.\n\n## Key References\n\n- [[media/videos/graphify-solves-claude-code-problem]] \u2014 Full video analysis with chapter index, quotes, and architecture breakdown\n- [[concepts/company-memory-os-ph1-prd]] \u2014 Phase 1 PRD for the Company Memory OS productized service\n- The email-to-gbrain pipeline (cron job `776c7bf32c77`) is the working MVP of Phase 1\n\n## Client Pitch Analogy\n\n\"What Graphify does for code \u2014 instant understanding of any codebase without reading through it \u2014 we do for your business communications. Forward an email. Get a searchable memory. Never lose a decision again.\"",
-      "tags": [],
-      "links_out": [
-        {
-          "to": "media/videos/graphify-solves-claude-code-problem",
-          "type": "wikilink",
-          "text": "media/videos/graphify-solves-claude-code-problem"
-        },
-        {
-          "to": "concepts/company-memory-os-ph1-prd",
-          "type": "wikilink",
-          "text": "concepts/company-memory-os-ph1-prd"
-        }
-      ],
-      "backlinks": [],
-      "outbound_count": 2,
-      "inbound_count": 0
-    },
-    {
-      "slug": "concepts/openclaw-anatomy",
-      "title": "Openclaw Anatomy",
-      "type": "concept",
-      "updated": "",
-      "body": "# Fwd: The Anatomy of OpenClaw\n**From:** Sayf Codes <sayfcodes@gmail.com>\n**Date:** Tue, 9 Jun 2026 00:11:45 +0800\n**Source:** email forward\n\nForwarded from **[[Neo Kim]]** ([[System Design One]]) \u2014 Issue #151.\n\n> **Understanding How OpenClaw Works**\n\nOpenClaw is an open-source autonomous AI agent that runs on your machine, connects to messaging apps, and executes tasks directly \u2014 no manual copy-paste needed. It bridges the \"thinking layer\" (LLMs like Claude, GPT, Gemini) and the \"act layer\" (tools, APIs, files).\n\n## What OpenClaw Offers\n\n- **Gateway**: Always-on Node.js server (port 18789) coordinating messaging apps, LLM, tools, and memory. Runs as a background daemon \u2014 persistence is the foundation of scheduled jobs, proactive alerts, and multi-channel messaging.\n- **Multi-channel messaging**: WhatsApp, Telegram, Slack \u2014 shared context and memory across all platforms.\n- **Skills platform (ClawHub, 5,400+ capabilities)**: Plain Markdown files that define specific tasks (check GitHub PRs, send Slack messages).\n- **Persistent memory**: Markdown files on disk \u2014 inspectable, version-controllable.\n- **Proactive scheduling**: Heartbeat + cron jobs that act without being prompted.\n- **Model-agnostic**: Claude, GPT, DeepSeek, Gemini, Grok, local via Ollama \u2014 mix and match.\n\n## How It Differs\n\n- ChatGPT/Claude/Gemini: browser-only, no access to email/scripts, no persistence.\n- Siri/Google Assistant: closed products, no custom skills or self-hosting.\n- LangChain/CrewAI/AutoGen: developer frameworks requiring Python code.\n- Claude Code/Codex CLI: terminal tools for coding sessions \u2014 not 24/7.\n- **OpenClaw runs 24/7** for everything, not just code.\n\n## Architecture Layers\n\n**Gateway** (Control Center): Orchestrates everything \u2014 authenticates senders, assembles context, passes to LLM, handles tool calls, routes replies. Sends command confirmation requests (e.g., `rm -rf ~/logs/*.log` needs approval). Serves Control UI at `http://localhost:18789` for real-time monitoring. Supports hot configuration reloads.\n\n**Channel Layer**: Translation adapters per platform \u2014 Telegram (bot token + polling/webhook), WhatsApp (reverse-engineered web protocol, QR auth), Slack (Socket Mode, two token types), Discord (gateway WebSocket). Normalizes messages into internal format. Security policies (allowlists, pairing) apply uniformly.\n\n**LLM Layer**: Assembles system prompt from agent personality + available skills + retrieved memory + conversation history. Calls the AI model. Tool calls execute and feed results back \u2014 loop continues until final response. Compaction triggers at context limit (summarizes history).\n\n**Plugin System**: Almost everything non-core is a plugin \u2014 Telegram, GitHub, memory. Plugins hook into lifecycle events (before/after tool calls, messages, session start/end). Enables audit logging, rate limiting, custom approval flows without touching core.\n\n**Memory System**: Three-layer approach \u2014 (1) short-term: session files on disk, loads recent context only; (2) long-term: all sessions indexed into local database, auto-searches before answering; (3) standing notes: Markdown files in `~/.openclaw/workspace/memory/` as permanent briefing documents.\n\n**Long-running tasks**: Agent acknowledges task, works in background, messages when done. State written to disk, not held in memory. Cron jobs in isolated session mode for truly long-running work.\n\n## Key Insights\n\n- The Gateway runs on your Mac Mini or VPS \u2014 accessible via Tailscale from any device.\n- Control UI shows every tool call, model response, and approval request in real time.\n- Model can be changed at any time without reconfiguration.\n- If a single tool call takes too long, Gateway times out \u2014 break large tasks into chunks.\n- DeepResearch runs long sessions but stops when done \u2014 OpenClaw never stops.\n\n*This was a preview of a subscriber-only post from Neo Kim's System Design Newsletter.*",
-      "tags": [],
-      "links_out": [
-        {
-          "to": "people/neo-kim",
-          "type": "wikilink",
-          "text": "Neo Kim"
-        },
-        {
-          "to": "companies/system-design-one",
-          "type": "wikilink",
-          "text": "System Design One"
-        }
-      ],
-      "backlinks": [],
-      "outbound_count": 2,
-      "inbound_count": 0
-    },
-    {
-      "slug": "concepts/three-folder-system-head-hands-heart",
-      "title": "Three Folder System Head Hands Heart",
-      "type": "concept",
-      "updated": "",
-      "body": "# The 3-Folder System: Atlas \u2192 Projects \u2192 End Products (Head, Hands, Heart)\n\n**Source:** YouTube \u2014 \"Your file structure is a map of your cognitive architecture\"\n**URL:** https://www.youtube.com/watch?v=Rl7rvHbDqGk\n**Format:** Video transcript\n**Ingested:** 2026-06-05\n\n## Summary\n\nThe speaker discovered that disorganized AI outputs were a reflection of disorganized thinking. After months of building AI agents and burning API tokens, he stopped and realized the real problem wasn't the tools \u2014 it was his cognitive architecture. His core insight: **your file structure is a map of your thinking**. Most people's maps are a junk drawer with a search bar.\n\nThe solution is embarrassingly simple: a three-folder system that maps to Head, Hands, and Heart.\n\n## The Three-Folder Framework\n\n### 1. Atlas (Head / Thinking)\nRaw materials, ideas, strategy, capture. Where you put ideas when you get them \u2014 the thinking layer. Everything that isn't yet a project.\n\n### 2. Projects (Hands / Building)\nActive work. Content being created, things being built. This is the doing layer.\n\n### 3. End Products (Heart / Serving)\nCompleted work. Finished deliverables that serve other people. The output layer.\n\n## Key Insights\n\n- **File structure = cognitive architecture.** Your external files reveal your internal thinking patterns.\n- **Organization is speed.** [Bob Proctor](people/bob-proctor): \"Organization is heaven's first law.\" Clear structure makes AI faster and cheaper (fewer tokens).\n- **The sophistication trap.** Smart people overcomplicate things. The answer is usually simpler than you think.\n- **AI reveals you to yourself.** AI doesn't just do thinking FOR you \u2014 it shows you HOW you think by externalizing your patterns.\n- **Agents mirror human growth.** An AI agent needs identity, context, and skills \u2014 the same three things a human needs to change their life.\n- **Stop building, start organizing.** Before chasing the next tool or agent, fix the foundation.\n\n## Claude Mirrors the Same Structure\n\n| Mode | Purpose | Maps To |\n|------|---------|---------|\n| Chat | Thinking, exploring ideas | Atlas (Head) |\n| Co-work | Building artifacts, plans | Projects (Hands) |\n| Claude Code | Finished products, shipped work | End Products (Heart) |\n\n## The Three Communities Pattern\n\nThe speaker's Skool communities also follow this structure:\n- **Free community** (Lifestyle Founders Group) \u2192 Thinking, sharing ideas (Atlas)\n- **Paid community** (Claude for Coaches) \u2192 Active building, workshops (Projects)\n- **VIP community** \u2192 End products, completed work (Heart)\n\n## Notable Quotes\n\n- \"Your file structure is a map of your cognitive architecture. Most people's maps are a junk drawer with a search bar.\"\n- \"Organization is heaven's first law.\" \u2014 [Bob Proctor](people/bob-proctor)\n- \"The bottleneck isn't the tool, it's the clarity of your thinking. Your cognitive architecture is now your competitive advantage.\"\n- \"Fix the inside, the outside follows. As above, so below.\"\n- \"I need a second brain sounds nice, but actually my first brain needs to get organized first.\"\n\n## People/Resources Mentioned\n\n- [Bob Proctor](people/bob-proctor) \u2014 \"Organization is heaven's first law\"\n- [Jake Van Cleef](people/jake-van-cleef) \u2014 academic paper on stopping agent building, fixing file structure first\n- [Nick Milo](people/nick-milo) \u2014 Obsidian/second brain advocate, three-folder patterns\n- Head, Hands & Heart Notes: https://imported-abacus-8dd.notion.site/\n- Free Skool Community: https://skool.com/lfg\n- Claude For Coaches: https://www.skool.com/claudeforcoaches/about\n- Lifestyle Founder Mastermind: https://www.skool.com/quantum100/about\n\n[Source: YouTube video, ingested 2026-06-05]",
-      "tags": [],
-      "links_out": [
-        {
-          "to": "people/bob-proctor",
-          "type": "link",
-          "text": "Bob Proctor"
-        },
-        {
-          "to": "people/jake-van-cleef",
-          "type": "link",
-          "text": "Jake Van Cleef"
-        },
-        {
-          "to": "people/nick-milo",
-          "type": "link",
-          "text": "Nick Milo"
-        }
-      ],
-      "backlinks": [],
-      "outbound_count": 3,
-      "inbound_count": 0
-    },
-    {
-      "slug": "gateway-infrastructure",
-      "title": "Gateway Infrastructure",
-      "type": "concept",
-      "updated": "",
-      "body": "# Gateway Infrastructure\n\n## Hardware\n2GB VPS (Tencent Cloud, Ubuntu, 6.8.0-124). 2GB swap. ~50GB storage.\n\n## Hermes Gateway\n\n### Service\nSystemd user service at `~/.config/systemd/user/hermes-gateway.service`. Auto-starts on boot. Linger enabled so it survives logout.\n\n### Exit Code 75 (EX_TEMPFAIL)\nThe gateway uses exit code 75 as a \"please restart me\" signal to systemd. Triggered by `/restart`, `/update`, or SIGUSR1. The systemd config has `RestartForceExitStatus=75` so this always triggers a restart. See [[gateway-watchdog]] for crash-loop detection.\n\n### Memory Profile\n- Baseline: ~97MB RSS at startup\n- After 14h moderate use: ~600MB (growth ~36MB/h)\n- Peak observed: 1.0G\n- Gradual leak under active use \u2014 tracked by watchdog growth-rate alert\n\n### Manual Recovery\nWhen stuck in a crash loop: `sudo -u ubuntu /home/ubuntu/.local/bin/hermes gateway start`\n\n## Gateway Health Watchdog\n\nCreated Jun 4, 2026. A Python script at `~/.hermes/scripts/gateway-watchdog.py` that runs every 10 minutes via cron (`no_agent=True`, zero LLM tokens). Silent when healthy; alerts Discord #Home when thresholds are breached.\n\n### Thresholds\n- Gateway RSS >= 1.4GB (warning) / >= 1.6GB (critical)\n- System free memory <= 300MB (warning) / <= 150MB (critical)\n- Swap usage > 200MB\n- >= 1 exit code 75 crash in last hour\n- >= 1 SIGTERM kill in last hour\n- Gateway uptime < 30 min\n- Memory growth rate > 50MB/hour\n\n### Related\n- [[VPS Hardening]] \u2014 SSH, firewall, fail2ban baseline\n- [[2026-06-04]] \u2014 watchdog setup and gateway crash investigation",
-      "tags": [
-        "devops",
-        "hermes",
-        "infrastructure",
-        "monitoring"
-      ],
-      "links_out": [
-        {
-          "to": "gateway-watchdog",
-          "type": "wikilink",
-          "text": "gateway-watchdog"
-        },
-        {
-          "to": "vps-hardening",
-          "type": "wikilink",
-          "text": "VPS Hardening"
-        },
-        {
-          "to": "2026-06-04",
-          "type": "wikilink",
-          "text": "2026-06-04"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "vps-hardening",
-          "type": "wikilink",
-          "text": "Gateway Infrastructure"
-        }
-      ],
-      "outbound_count": 3,
-      "inbound_count": 1
-    },
-    {
-      "slug": "gbrain",
-      "title": "Gbrain",
-      "type": "concept",
-      "updated": "",
-      "body": "{\"title\": \"gbrain\", \"content\": \"# gbrain\n\n## Overview\ngbrain v0.42.10.0 \\u2014 local AI-powered knowledge base for Hermes agent. Lives at `~/gbrain/`.\n\n## Setup\n- **Install**: Built from source at `~/gbrain/`\n- **CLI**: Symlinked at `~/.bun/bin/gbrain`\n- **Brain location**: `~/.gbrain/brain.pglite` (PGLite \\u2014 local Postgres, no server needed)\n- **Config**: `~/.gbrain/config.json`\n- **Schema**: gbrain-base-v2\n- **Pages**: 0 (just initialized)\n\n## Models Configured\n| Role | Model |\n|------|-------|\n| Embedding | openai:text-embedding-3-large (1536d) |\n| Query Expansion | anthropic:claude-haiku-4-5-20251001 |\n| Chat | anthropic:claude-opus-4-7 |\n\n## Status\n- \\u274c **Embeddings disabled** \\u2014 needs OpenAI API key\n- \\u2705 **Keyword search** works without embeddings\n- \\u2705 Brain initialized and ready\n- 49 skills loaded\n\n## Related\n- [[2026-06-03]]\n- [[Google Workspace Setup]]\n- [[VPS Hardening]]\", \"kind\": \"reference\"}",
-      "tags": [],
-      "links_out": [
-        {
-          "to": "2026-06-03",
-          "type": "wikilink",
-          "text": "2026-06-03"
-        },
-        {
-          "to": "google-workspace-setup",
-          "type": "wikilink",
-          "text": "Google Workspace Setup"
-        },
-        {
-          "to": "vps-hardening",
-          "type": "wikilink",
-          "text": "VPS Hardening"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "2026-06-03",
-          "type": "wikilink",
-          "text": "gbrain"
-        },
-        {
-          "from": "google-workspace-setup",
-          "type": "wikilink",
-          "text": "gbrain"
-        }
-      ],
-      "outbound_count": 3,
-      "inbound_count": 2
-    },
-    {
-      "slug": "google-workspace-setup",
-      "title": "Google Workspace Setup",
-      "type": "concept",
-      "updated": "",
-      "body": "{\"title\": \"Google Workspace Setup\", \"content\": \"# Google Workspace Setup\n\n## Account\n- **Email**: info@malohacoast.com\n- **Project**: leafy-affinity-491809-a5 (Open Claw)\n- **OAuth Client**: admin-assistant\n- **Token**: `~/.hermes/google_token.json` (auto-refreshes)\n\n## Configured Services\n| Service | Status | Notes |\n|---------|--------|-------|\n| Gmail | \\u2705 Read/Send/Modify | Full inbox access |\n| Calendar | \\u2705 Configured | Event management |\n| Drive | \\u2705 Configured | File storage |\n| Docs | \\u2705 Configured | Document creation |\n| Sheets | \\u2705 Configured | Spreadsheet management |\n\n## Usage via Hermes\nThe google-workspace skill is loaded for managing Google services.\nShorthand alias configured: `GAPI=\\\"python $HOME/.hermes/skills/productivity/google-workspace/scripts/google_api.py\\\"`\n\n## Related\n- [[2026-06-03]]\n- [[gbrain]]\", \"kind\": \"reference\"}",
-      "tags": [
-        "email",
-        "google-workspace",
-        "productivity"
-      ],
-      "links_out": [
-        {
-          "to": "2026-06-03",
-          "type": "wikilink",
-          "text": "2026-06-03"
-        },
-        {
-          "to": "gbrain",
-          "type": "wikilink",
-          "text": "gbrain"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "2026-06-03",
-          "type": "wikilink",
-          "text": "Google Workspace Setup"
-        },
-        {
-          "from": "brand/maloha-coast-brand-identity",
-          "type": "wikilink",
-          "text": "google-workspace-setup"
-        },
-        {
-          "from": "gbrain",
-          "type": "wikilink",
-          "text": "Google Workspace Setup"
-        },
-        {
-          "from": "vps-hardening",
-          "type": "wikilink",
-          "text": "Google Workspace Setup"
-        }
-      ],
-      "outbound_count": 2,
-      "inbound_count": 4
-    },
-    {
-      "slug": "hermes-profile-backup",
-      "title": "Hermes Profile Backup",
-      "type": "concept",
-      "updated": "",
-      "body": "{\"title\": \"Hermes Profile Backup\", \"content\": \"## Hermes Profile Backup\n\nThe Hermes profile backup pushes all agent profiles to a private GitHub repo with secrets stripped.\n\n### Repository\n- **Repo:** `github.com/Maloha-Coast/hermes-profile-backup` (private)\n- **Contents:** 1,186 files across 2 profiles (default + MC)\n- **Includes:** SOUL.md, skills, cron, memories, config.yaml (stripped), setup.sh, .gitignore\n\n### What gets backed up\n- SOUL.md (agent identity)\n- skills/ (all skill files)\n- cron/ (scheduled jobs)\n- memories/ (USER.md + MEMORY.md)\n- config.yaml with API keys replaced by <YOUR_KEY_HERE>\n\n### What gets EXCLUDED\n- API keys, tokens, secrets (replaced with placeholders)\n- Session logs and databases\n- OAuth tokens (google_token.json)\n- Runtime state files\n\n### Restore\n```bash\ngit clone git@github.com:Maloha-Coast/hermes-profile-backup.git\ncd hermes-profile-backup\n./setup.sh\n```\nThen edit ~/.hermes/config.yaml and ~/.hermes/.env with credentials.\n\n### Known gap\n- .env.template is missing from the current backup (README references it but file was not generated). Needs to be added on next backup run.\", \"kind\": \"reference\"}",
-      "tags": [],
-      "links_out": [],
-      "backlinks": [],
-      "outbound_count": 0,
-      "inbound_count": 0
-    },
-    {
-      "slug": "maloha-coast",
-      "title": "Maloha Coast",
-      "type": "concept",
-      "updated": "",
-      "body": "{\"title\": \"Maloha Coast\", \"content\": \"Maloha Coast Sdn Bhd \u2014 AI consulting and development agency bringing AI to SMBs locally and worldwide.\n\n## Director\nSayf (username: falcon)\n\n## Infrastructure\n- VPS hardened and secured\n- Google Workspace configured (info@malohacoast.com)\n- gbrain knowledge base with embeddings enabled\n- Obsidian vault for personal notes\n- Hermes MC profile as admin assistant\n\n## GitHub\nOrganization: malohacoast on GitHub\nEmbeddings: \u2705 Enabled via OpenAI service account\", \"kind\": \"organization\"}\n\n\n## Brand Identity\n- **Colour palette**: Primary #2a6a8a (teal blue), Accent #c4a86a (champagne gold)\n- **Typography**: Optima font (humanist/elegant)\n- **Hex pattern**: Gold-on-navy honeycomb grid at https://iili.io/CK3nHLF.png\n- **Email templates**: \\`html-email-with-sheet-logging\\` skill (production template, header fragment, 8 colour variants)\n- Full brand identity: [[brand/maloha-coast-brand-identity]]\n\n## Skills\n- \\`html-email-with-sheet-logging\\` \u2014 Send brand-styled HTML emails via Gmail API + log to Google Sheet\n- Brand exploration concepts: /home/ubuntu/maloha-coast-brand-concepts.html",
-      "tags": [
-        "company",
-        "consulting",
-        "malohacoast"
-      ],
-      "links_out": [
-        {
-          "to": "brand/maloha-coast-brand-identity",
-          "type": "wikilink",
-          "text": "brand/maloha-coast-brand-identity"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "brand/maloha-coast-brand-identity",
-          "type": "wikilink",
-          "text": "maloha-coast"
-        },
-        {
-          "from": "meetings/2026-06-08-bjarte-global-ai-village",
-          "type": "link",
-          "text": "Maloha Coast"
-        }
-      ],
-      "outbound_count": 1,
-      "inbound_count": 2
+      "updated": "2026-06-09",
+      "title": "Knowledge Graph As Moat"
     },
     {
       "slug": "media/videos/graphify-solves-claude-code-problem",
-      "title": "Graphify Solves Claude Code Problem",
+      "type": "media",
+      "updated": "2026-06-09",
+      "title": "Graphify Solves Claude Code Problem"
+    },
+    {
+      "slug": "concepts/company-memory-os-ph1-prd",
       "type": "concept",
-      "updated": "",
-      "body": "# Graphify Solves Claude Code's Problem\n\n**Source:** YouTube video by Jack, AI automation channel\n**URL:** https://youtu.be/Owv503rTqYY\n**Ingested:** 2026-06-09\n**Type:** tutorial + product pitch\n\n## Executive Summary\n\nGraphify is a tool that creates a knowledge graph of any codebase \u2014 mapping files, modules, \"god nodes\" (load-bearing files), and their interdependencies. This gives Claude (or any AI agent) a persistent, queryable map so it doesn't re-read the entire repo every conversation. The core insight: \"rereading is the tax we're saving\" \u2014 the graph lets the AI answer from summaries instead of re-parsing flat code. When connected to an agentic operating system (Hermes + Claude Code + a visual dashboard), it becomes a shared brain that compounds across sessions and devices.\n\n## The Core Idea\n\nGraphify treats every codebase as a foreign country. Without it, you're translating a language you don't speak. With it, you have a map \u2014 you understand relationships, dependencies, and what affects what before editing anything.\n\n### What the Map Does\n- **Instant orientation** \u2014 understand any repo immediately without reading through it\n- **Grounded answers** \u2014 queries pull from the graph, not guesses from skimming\n- **Blast radius awareness** \u2014 see every dependency before editing a file\n- **Token savings** \u2014 avoid re-reading the repo each conversation; answer from summaries\n- **Always fresh** \u2014 the graph is regenerated, not stale\n\n### How It Works\n1. Reads code (does not summarize)\n2. Clusters things into modules\n3. Ranks \"god nodes\" \u2014 load-bearing files\n4. Labels facts vs. guesses (extracted vs. inferred)\n\n## Technical Architecture\n\n- **Input:** Any codebase (Claude Code, Hermes, GitHub repos)\n- **Output:** Knowledge graph with interactive visualization (community clusters)\n- **Integration:** Works as a Claude Code skill; connects to Hermes Agent\n- **Dashboard:** Visual interface showing files, links, clusters, and cost savings per conversation\n\n## The Agentic Operating System Layer\n\nThe video's key argument is that Graphify alone is useful, but Graphify + an agentic OS is the 10x unlock. The OS provides:\n\n- **One shared brain:** Graphify, Claude Code, Hermes, and the dashboard all read from one registry\n- **Cross-device continuity:** Work on laptop with Claude Code, then query from mobile via Hermes \u2014 same graph\n- **Any repo ingestion:** Paste a GitHub URL \u2192 \"graphify it\" \u2192 $0 cost \u2192 queryable immediately\n- **Overnight reviews:** The OS runs dream cycles, searches for improvements, processes chat history\n- **Hermes Telegram integration:** Hermes can reach out proactively with questions\n\n## Key Quotes\n\n- \"Rereading is the tax that we're saving here\" (3:04)\n- \"Without the map, it skims a whole repo every single conversation\" (3:10)\n- \"With the map, we can actually answer from summaries \u2014 every session compounds\" (3:13)\n- \"Graphify makes the map and the OS makes it always on, shared, and conversational\" (7:02)\n- \"If you're not using an agentic operating system, you're leaving so much value on the table\" (10:04)\n\n## People Mentioned\n\n- **Jack** \u2014 Video creator, AI automation YouTuber. Previously built and sold a tech startup \"with a gazillion customers.\" Now building AI businesses. Runs a community with Claude Code + Hermes operating system templates.\n\n## Tools/Technologies Mentioned\n\n- **Graphify** \u2014 Knowledge graph generator for codebases (GitHub repo, open source)\n- **Claude Code** \u2014 Primary coding agent that Graphify enhances\n- **Hermes Agent** \u2014 Agent framework connected to the operating system\n- **OpenCor** \u2014 Mentioned as part of the cross-device connectivity stack\n- **Anti-Gravity** \u2014 Referenced as part of the agent ecosystem\n- **Codex** \u2014 OpenAI Codex, also integrated into the OS\n\n## Relevance to Maloha Coast\n\nThe Graphify pattern directly parallels the email-to-gbrain / Company Memory OS architecture:\n\n| Graphify Pattern | gbrain/Company Memory OS Equivalent |\n|---|---|\n| Knowledge graph of code files | Knowledge graph of people, companies, decisions |\n| \"God nodes\" = key files | \"God nodes\" = key relationships/deals |\n| Query: \"what depends on X?\" | Query: \"what was decided about Project X?\" |\n| Claude Code integration | Hermes Agent + gbrain integration |\n| Visual dashboard | gbrain dashboard + architecture diagram |\n| Compound context across sessions | Compound institutional memory across emails |\n\nThe video validates the architecture sayf has already built: knowledge graph + agentic layer + visual dashboard + autonomous pipeline. It's a compelling analogy for client pitches \u2014 \"what Graphify does for code, Company Memory OS does for your business.\"\n\n## Chapter Index\n\n- 00:00 \u2014 Chapter 1: Graphify Solves Claude's Problem (hook + promise)\n- 00:46 \u2014 Chapter 2: What Graphify Actually Does (the map metaphor)\n- 01:21 \u2014 Chapter 3: How The Map Works (clustering, god nodes, facts vs guesses)\n- 02:10 \u2014 Chapter 4: Why Maps Save Tokens (orientation, blast radius, re-reading tax)\n- 03:17 \u2014 Chapter 5: Install And Set Up (clone repo, Claude Code integration)\n- 04:38 \u2014 Chapter 6: See The Knowledge Graph (interactive visualization)\n- 05:04 \u2014 Chapter 7: Query Any Repo Live (prompt example, cost comparison)\n- 05:43 \u2014 Chapter 8: Take It Further (agentic operating system intro)\n- 06:07 \u2014 Chapter 9: Inside The Operating System (dashboard, Hermes integration)\n- 07:32 \u2014 Chapter 10: Import Any GitHub Repo (one-click ingestion)\n- 08:07 \u2014 Chapter 11: Chat To Your Projects (conversational interface)\n- 09:04 \u2014 Chapter 12: Connect Everything Together (shared brain architecture)\n- 10:04 \u2014 Chapter 13: Visual Interface Wins (closing argument)\n\n---\n\n*Raw transcript extracted from YouTube timestamps provided by user (VPS IP blocked by YouTube, transcript retrieved via user-supplied text).*",
-      "tags": [],
-      "links_out": [],
-      "backlinks": [
-        {
-          "from": "concepts/knowledge-graph-as-moat",
-          "type": "wikilink",
-          "text": "media/videos/graphify-solves-claude-code-problem"
-        }
-      ],
-      "outbound_count": 0,
-      "inbound_count": 1
-    },
-    {
-      "slug": "meetings/2026-06-05-tj-vandermolen",
-      "title": "2026 06 05 Tj Vandermolen",
-      "type": "meeting",
-      "updated": "",
-      "body": "# Meeting with TJ van der Molen\n\n**Date:** 2026-06-05\n**Attendees:** [TJ van der Molen](people/tj-vandermolen), sayf\n\n## About TJ\n\n- **Role:** CEO & ECHA Specialist\n- **Company:** [Passend](companies/passend)\n- **Email:** t.vandermolen@passend.my\n- **Website:** www.passend.my\n- **Phone:** +6016 434 8614\n\n## Summary\n\nMet with [TJ van der Molen](people/tj-vandermolen), CEO and ECHA Specialist at [Passend](companies/passend). Discussed his business progress, partnerships, and growth plans. Explored how Maloha Coast can support Passend's development needs.\n\n## Three Projects Discussed\n\n### 1. Database + Frontend - Project-Based Learning Showcase\n\n- **Primary users:** Admin & staff\n- **Purpose:** Maintain chronological records of student projects & learning outcomes\n- **Functionality:** Distribute updates to students, parents, and community via portal/newsletters/social media\n- **Feature consideration:** Facial recognition/computer vision for obtaining parental consent before publishing student content\n\n### 2. Internal Tool - Reporting Automation\n\n- **Primary users:** Admin & staff recording behavioral observations for assessment\n- **Challenge:** Excessive paperwork distracts teachers/instructors from effective student engagement\n- **Solution:** Implement rapid data input tools with database storage and report generation\n- **Quality control:** Staff verification system to validate AI/OCR data imports\n\n### 3. SaaS Platform - Counselor Teaching & Learning\n\n- **Primary users:** Counselors/teaching staff accessing Passend materials\n- **Business model:** Freemium to subscription conversion\n- **Tier structure:**\n  - Level 1: Course access\n  - Level 2: Curriculum sharing with colleagues\n  - Level 3: Passend-hosted events\n  - Certification available at all levels\n\n## Next Steps\n\n- Recommended a Requirements Engineering Workshop to develop detailed user stories and interaction requirements\n- Workshop would produce a comprehensive task list usable by any development team\n- Duration: 1 hour to full day depending on system complexity\n- TJ to prioritize which of the three systems to pursue first\n\n## Commercial\n\n- Services offered through Maloha Coast Sdn Bhd\n- sayf's calendar relatively open until May, after which contract work begins\n- Requirements Engineering Workshop rates: MYR 100/hour or MYR 800/full day\n\n[Source: User, 2026-06-05]\n\n## Draft Email\n\n```\nHi TJ,\n\nThank you for meeting with me today. I thoroughly enjoyed learning about your business progress and partnerships.\n\nI'm excited about your growth plans and exploring how I can support Passend. Below is a summary of the projects we discussed:\n\n1. Database + Frontend - Project-Based Learning Showcase\n   - Primary users: Admin & staff\n   - Purpose: Maintain chronological records of student projects & learning outcomes\n   - Functionality: Distribute updates to students, parents, and community via portal/newsletters/social media\n   - Feature consideration: Facial recognition/computer vision for obtaining parental consent before publishing student content\n\n2. Internal Tool - Reporting Automation\n   - Primary users: Admin & staff recording behavioral observations for assessment\n   - Challenge: Excessive paperwork distracts teachers/instructors from effective student engagement\n   - Solution: Implement rapid data input tools with database storage and report generation\n   - Quality control: Staff verification system to validate AI/OCR data imports\n\n3. SaaS Platform - Counselor Teaching & Learning\n   - Primary users: Counselors/teaching staff accessing Passend materials\n   - Business model: Freemium to subscription conversion\n   - Tier structure:\n     - Level 1: Course access\n     - Level 2: Curriculum sharing with colleagues\n     - Level 3: Passend-hosted events\n     - Certification available at all levels\n\nPlease feel free to correct any misunderstandings or add details I may have missed.\n\nFor next steps, I recommend a Requirements Engineering Workshop to develop detailed user stories and specific interaction requirements. This workshop would produce a comprehensive task list that any development team, including ours, could use to build your MVP. The documentation would cover all necessary frontend and backend components.\n\nWorkshop duration typically ranges from one hour to a full day depending on system complexity. You might consider prioritizing which of the three systems you'd like to pursue first.\n\nThese services are offered through my company, Maloha Coast Sdn Bhd. My calendar is relatively open until May, after which I'll begin contract work for several months. For transparency, our Requirements Engineering Workshop rates are MYR 100 per hour or MYR 800 for a full day.\n\nLooking forward to potentially working together.\n\nBest regards,\n[Your Name]\n```",
-      "tags": [],
-      "links_out": [
-        {
-          "to": "people/tj-vandermolen",
-          "type": "link",
-          "text": "TJ van der Molen"
-        },
-        {
-          "to": "companies/passend",
-          "type": "link",
-          "text": "Passend"
-        }
-      ],
-      "backlinks": [],
-      "outbound_count": 2,
-      "inbound_count": 0
-    },
-    {
-      "slug": "meetings/2026-06-08-bjarte-global-ai-village",
-      "title": "Meeting: Bjarte \u2014 Global AI Village",
-      "type": "meeting",
-      "updated": "",
-      "body": "# Meeting: Bjarte \u2014 Global AI Village\n\n**Date:** 2026-06-08 (Monday)\n**Attendees:** sayf ([Maloha Coast](maloha-coast)), [Bjarte](people/bjarte)\n\n## Summary\n\nSayf met with [Bjarte](people/bjarte) (Managing Director, [Global AI Village](companies/global-ai-village)) to discuss projects, the [Business Brain](concepts/business-brain) concept, and potential client leads for sayf's AI operating system services.\n\n## Key Topics\n\n### 1. Bjarte's Projects at Global AI Village\n[Bjarte](people/bjarte) discussed projects he's currently working on at the [Global AI Village](companies/global-ai-village).\n\n### 2. Sayf's Business Brain Concept\nSayf outlined his [Business Brain](concepts/business-brain) offering:\n- An AI layer on top of data aggregation for businesses (databases, CRMs)\n- A \"second brain\" that auto-ingests and organises data\n- Automatically creates a graph of relationships between entities as more data is ingested\n- Based on the gbrain repository architecture\n- Testing planned with a company on Friday (2026-06-12) to explore viability\n- Long-term goal: building Business Brains for different types of businesses\n\n### 3. Potential Leads\n[Bjarte](people/bjarte) may have leads for sayf's AI operating system services \u2014 potential clients who could benefit from the [Business Brain](concepts/business-brain) concept.\n\n## Key Decisions\n\n- Sayf to test the Business Brain concept with a company on 2026-06-12\n- [Bjarte](people/bjarte) to explore potential leads for sayf's AI OS services\n\n## Action Items\n\n| Owner | Action | Deadline |\n|-------|--------|----------|\n| Sayf | Test Business Brain concept with target company | 2026-06-12 |\n| [Bjarte](people/bjarte) | Explore leads for AI OS services | Ongoing |\n\n## Discussion Notes\n\n- The conversation was held in Kuala Lumpur (Global AI Village is KL-based)\n- This is a promising connection for [Maloha Coast](maloha-coast) \u2014 Bjarte is well-positioned in the local AI ecosystem\n- The Business Brain concept directly maps to Maloha Coast's mission of democratising AI for SMBs\n\n## Related Pages\n\n- [Bjarte](people/bjarte) \u2014 Managing Director of Global AI Village\n- [Global AI Village](companies/global-ai-village) \u2014 AI organisation in KL\n- [Business Brain](concepts/business-brain) \u2014 Concept discussed in this meeting\n- [Maloha Coast](maloha-coast) \u2014 Sayf's AI consulting agency",
-      "tags": [
-        "meeting",
-        "global-ai-village",
-        "bjarte",
-        "business-brain",
-        "collaboration",
-        "lead"
-      ],
-      "links_out": [
-        {
-          "to": "maloha-coast",
-          "type": "link",
-          "text": "Maloha Coast"
-        },
-        {
-          "to": "people/bjarte",
-          "type": "link",
-          "text": "Bjarte"
-        },
-        {
-          "to": "companies/global-ai-village",
-          "type": "link",
-          "text": "Global AI Village"
-        },
-        {
-          "to": "concepts/business-brain",
-          "type": "link",
-          "text": "Business Brain"
-        }
-      ],
-      "backlinks": [],
-      "outbound_count": 4,
-      "inbound_count": 0
-    },
-    {
-      "slug": "people/bjarte",
-      "title": "Bjarte",
-      "type": "person",
-      "updated": "",
-      "body": "",
-      "tags": [],
-      "links_out": [],
-      "backlinks": [
-        {
-          "from": "meetings/2026-06-08-bjarte-global-ai-village",
-          "type": "link",
-          "text": "Bjarte"
-        }
-      ],
-      "outbound_count": 0,
-      "inbound_count": 1
-    },
-    {
-      "slug": "people/bob-proctor",
-      "title": "Bob Proctor",
-      "type": "person",
-      "updated": "",
-      "body": "# Bob Proctor\n\n> Motivational speaker, author, and philosopher. Known for the quote \"Organization is heaven's first law,\" referenced in the Three Folder System / Head Hands Heart framework video.\n\n## Notable Quotes\n\n- \"Organization is heaven's first law\" \u2014 cited in the context of cognitive architecture and file structure organization\n\n## In Maloha Coast Knowledge\n\n- Referenced in [concepts/three-folder-system-head-hands-heart] as the source of the core organizing principle\n\n## Related\n\n- [concepts/three-folder-system-head-hands-heart] \u2014 Organization is heaven's first law\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-05** | Quote referenced in YouTube video on three-folder cognitive architecture (Head, Hands, Heart). Ingested into Maloha Coast brain. [Source: YouTube video transcript]",
-      "tags": [
-        "author",
-        "philosophy",
-        "speaker"
-      ],
-      "links_out": [],
-      "backlinks": [
-        {
-          "from": "concepts/three-folder-system-head-hands-heart",
-          "type": "link",
-          "text": "Bob Proctor"
-        }
-      ],
-      "outbound_count": 0,
-      "inbound_count": 1
-    },
-    {
-      "slug": "people/carson",
-      "title": "Carson",
-      "type": "person",
-      "updated": "",
-      "body": "# Carson\n\n> AI automation practitioner who landed his first automation client through a free pilot approach.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [The Skill That 10x'd My Claude Code Projects](concepts/the-skill-that-10xd-my-claude-code-projects) as the practitioner who built a lead automation for a local aesthetics clinic as a free pilot, planning to upsell to a monthly retainer\n\n## Related\n\n- [AI Automation Society](companies/ai-automation-society) \u2014 Member/Practitioner\n- [concepts/the-skill-that-10xd-my-claude-code-projects] \u2014 Story source\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-05** | Landed first automation client with a free lead automation pilot for a local aesthetics clinic. [Source: AI Automation Society newsletter]",
-      "tags": [
-        "ai-automation",
-        "client-work"
-      ],
-      "links_out": [
-        {
-          "to": "concepts/the-skill-that-10xd-my-claude-code-projects",
-          "type": "link",
-          "text": "The Skill That 10x'd My Claude Code Projects"
-        },
-        {
-          "to": "companies/ai-automation-society",
-          "type": "link",
-          "text": "AI Automation Society"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "companies/ai-automation-society",
-          "type": "link",
-          "text": "Carson"
-        },
-        {
-          "from": "concepts/claude-code-10x-skill-newsletter",
-          "type": "wikilink",
-          "text": "Carson"
-        }
-      ],
-      "outbound_count": 2,
-      "inbound_count": 2
-    },
-    {
-      "slug": "people/jake-van-cleef",
-      "title": "Jake Van Cleef",
-      "type": "person",
-      "updated": "",
-      "body": "# Jake Van Cleef\n\n> Author of an academic paper arguing to stop building AI agents and focus on file folder structure instead. His work was a key influence on the Three Folder System / Head Hands Heart framework.\n\n## In Maloha Coast Knowledge\n\n- His paper on stopping agent building and improving file structure was cited in [concepts/three-folder-system-head-hands-heart] as a pivotal insight\n- The paper was processed through Claude for plain-English explanation\n\n## Related\n\n- [concepts/three-folder-system-head-hands-heart] \u2014 His paper inspired the three-folder system\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-05** | Academic paper referenced in YouTube video on three-folder cognitive architecture. Ingested into Maloha Coast brain. [Source: YouTube video transcript]",
-      "tags": [
-        "AI",
-        "agent-building",
-        "researcher"
-      ],
-      "links_out": [],
-      "backlinks": [
-        {
-          "from": "concepts/three-folder-system-head-hands-heart",
-          "type": "link",
-          "text": "Jake Van Cleef"
-        }
-      ],
-      "outbound_count": 0,
-      "inbound_count": 1
-    },
-    {
-      "slug": "people/nabil-jalil",
-      "title": "Nabil Jalil",
-      "type": "person",
-      "updated": "",
-      "body": "> CEO & Founder of **BlackGrid Digital**, a Los Angeles-based digital marketing and SEO agency serving clients globally. Met sayf after the Biarta meeting (June 2026).\n\n## About\n\nNabil Jalil is the CEO and Founder of BlackGrid Digital, a premier digital marketing agency with offices in Los Angeles (HQ) and Ampang, Selangor (Malaysia). He has been in business for over 10 years, helping businesses grow through SEO, digital advertising, and growth consulting.\n\n### Education\n- **California State Polytechnic University-Pomona** (2011\u20132015)\n- Awards: Dean's List, National Excellence In Leadership Award, MARA Scholarship, High Performance Student Award, Moral Character Awards\n\n### Languages\n- English, Malay, Arabic\n\n### Published Articles\n- \"Is SEO Worth It?\" (2023)\n- \"How to Use SEO and Digital Marketing to Grow Your Business in 2023\"\n- \"Website Ready for 2017?\"\n- \"On Page SEO in 2016\"\n\n### LinkedIn\n- ~9,882 followers, 500+ connections\n- linkedin.com/in/nabiljalil\n\n## Relationship with Maloha Coast\n\n- **2026-06-08** | Bumped into sayf after the Biarta meeting. Sayf followed up and arranged a second meeting for potential collaboration \u2014 BlackGrid's SEO expertise could complement Maloha Coast's AI consulting.\n\n## Contact\n- **US/Europe:** +1 310-936-2578\n- **Asia/KL:** +60 10 939 9578\n- **Email:** hello@blackgridseo.com\n- **Booking:** Calendly (15-min calls)\n- **LinkedIn:** /in/nabiljalil",
-      "tags": [],
-      "links_out": [],
-      "backlinks": [
-        {
-          "from": "companies/blackgrid-digital",
-          "type": "link",
-          "text": "Nabil Jalil"
-        }
-      ],
-      "outbound_count": 0,
-      "inbound_count": 1,
-      "email": "hello@blackgridseo.com",
-      "phone": "+1 310-936-2578",
-      "company_name": "BlackGrid Digital",
-      "website": "https://blackgridseo.com",
-      "location": "Los Angeles, CA / Kuala Lumpur, Malaysia"
-    },
-    {
-      "slug": "people/nate-herk",
-      "title": "Nate Herk",
-      "type": "person",
-      "updated": "",
-      "body": "# Nate Herk\n\n> Author of the AI Automation Society newsletter. Writes about Claude Code techniques, AI automation workflows, and industry news.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[claude-code-10x-skill-newsletter]] \u2014 forwarded newsletter about Claude Code skills and Anthropic IPO\n\n## Related\n\n- [[claude-code-10x-skill-newsletter]] \u2014 Newsletter: \"The Skill That 10x'd My Claude Code Projects\"\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-05** | Published newsletter: \"The Skill That 10x'd My Claude Code Projects\" covering Claude context techniques, Carson's automation win, and Anthropic's $965B IPO filing. Forwarded by sayf on 2026-06-08.",
-      "tags": [
-        "ai-automation",
-        "claude-code",
-        "newsletter"
-      ],
-      "links_out": [
-        {
-          "to": "concepts/claude-code-10x-skill-newsletter",
-          "type": "wikilink",
-          "text": "claude-code-10x-skill-newsletter"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "companies/ai-automation-society",
-          "type": "link",
-          "text": "Nate Herk"
-        },
-        {
-          "from": "concepts/claude-code-10x-skill-newsletter",
-          "type": "wikilink",
-          "text": "Nate Herk"
-        }
-      ],
-      "outbound_count": 1,
-      "inbound_count": 2
-    },
-    {
-      "slug": "people/neo-kim",
-      "title": "Neo Kim",
-      "type": "person",
-      "updated": "",
-      "body": "# Neo Kim\n\n> Author of the System Design Newsletter (Substack publication). Writes deep-dive architecture analyses of real-world systems.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[The Anatomy of OpenClaw]] as the author of the System Design Newsletter (Issue #151).\n\n## Related\n\n- [[The Anatomy of OpenClaw]] \u2014 article forwarded by sayf with architectural details on OpenClaw\n\n## Timeline\n\n- **Jun 2026** | Published \"The Anatomy of OpenClaw\" (Issue #151) about OpenClaw's architecture. [Source: email forward]",
-      "tags": [
-        "author",
-        "system-design"
-      ],
-      "links_out": [
-        {
-          "to": "The Anatomy of OpenClaw",
-          "type": "wikilink",
-          "text": "The Anatomy of OpenClaw"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "companies/system-design-one",
-          "type": "wikilink",
-          "text": "Neo Kim"
-        },
-        {
-          "from": "concepts/openclaw-anatomy",
-          "type": "wikilink",
-          "text": "Neo Kim"
-        }
-      ],
-      "outbound_count": 1,
-      "inbound_count": 2
-    },
-    {
-      "slug": "people/nick-milo",
-      "title": "Nick Milo",
-      "type": "person",
-      "updated": "",
-      "body": "# Nick Milo\n\n> Obsidian and second-brain advocate. Known for promoting simple folder structures and the Linking Your Thinking (LYT) framework. His patterns around three-folder organization influenced the Head, Hands, Heart system.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [concepts/three-folder-system-head-hands-heart] for his Obsidian/second-brain approaches and three-folder patterns\n\n## Related\n\n- [concepts/three-folder-system-head-hands-heart] \u2014 His Obsidian folder patterns informed the system\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-05** | Referenced in YouTube video on three-folder cognitive architecture (Head, Hands, Heart). Ingested into Maloha Coast brain. [Source: YouTube video transcript]",
-      "tags": [
-        "knowledge-management",
-        "obsidian",
-        "second-brain"
-      ],
-      "links_out": [],
-      "backlinks": [
-        {
-          "from": "concepts/three-folder-system-head-hands-heart",
-          "type": "link",
-          "text": "Nick Milo"
-        }
-      ],
-      "outbound_count": 0,
-      "inbound_count": 1
+      "updated": "2026-06-09",
+      "title": "Company Memory Os Ph1 Prd"
     },
     {
       "slug": "people/sayf-codes",
-      "title": "Sayf Codes",
       "type": "person",
-      "updated": "",
-      "body": "# Sayf Codes\n\n> Founder and operator of Maloha Coast \u2014 sender of business intelligence, strategy, and product direction.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[company-memory-os-ph1-prd]] as the author of the Company Memory OS Phase 1 PRD, outlining vision, go-to-market, and product strategy for the memory OS product line.\n\n## Related\n\n- [[company-memory-os-ph1-prd]] \u2014 Authored the Company Memory OS Phase 1 PRD",
-      "tags": [
-        "founder",
-        "maloha-coast"
-      ],
-      "links_out": [
-        {
-          "to": "concepts/company-memory-os-ph1-prd",
-          "type": "wikilink",
-          "text": "company-memory-os-ph1-prd"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "concepts/company-memory-os-ph1-prd",
-          "type": "wikilink",
-          "text": "Sayf Codes"
-        }
-      ],
-      "outbound_count": 1,
-      "inbound_count": 1
+      "updated": "2026-06-09",
+      "title": "Sayf Codes"
     },
     {
-      "slug": "people/tj-vandermolen",
-      "title": "TJ van der Molen",
+      "slug": "concepts/openclaw-anatomy",
+      "type": "concept",
+      "updated": "2026-06-08",
+      "title": "Openclaw Anatomy"
+    },
+    {
+      "slug": "companies/system-design-one",
+      "type": "company",
+      "updated": "2026-06-08",
+      "title": "System Design One"
+    },
+    {
+      "slug": "people/neo-kim",
       "type": "person",
-      "updated": "2026-06-05",
-      "body": "# TJ van der Molen\n\n> CEO & ECHA Specialist at Passend. Met June 2026 to discuss three potential development projects. Early-stage prospect \u2014 interest confirmed, awaiting prioritization decision. [Source: User, 2026-06-05]\n\n## State\n\n- **Role:** CEO & ECHA Specialist at Passend\n- **Location:** Malaysia\n- **Contact:** t.vandermolen@passend.my / +6016 434 8614\n- **Status:** Active prospect \u2014 Requirements Engineering Workshop proposed [Source: User, 2026-06-05]\n\n## What They're Building\n\nPassend \u2014 an education platform spanning three domains:\n1. Project-based learning showcase (database + frontend for student work)\n2. Internal reporting automation (behavioral observation tools for teachers)\n3. SaaS counselor teaching and learning platform (freemium to subscription) [Source: User, 2026-06-05]\n\n## What Motivates Them\n\nBuilding scalable education infrastructure. Focus on reducing administrative burden on teachers so they can focus on student engagement. Interested in AI/OCR for data automation and computer vision for consent management. [Source: User, 2026-06-05]\n\n## Assessment\n\nEarly-stage prospect. Three distinct systems identified \u2014 sensible to prioritize one for MVP. Has clear vision for Passend's growth. Technical sophistication TBD. Workshop will reveal more about decision-making style and budget. [Source: User, 2026-06-05]\n\n## Relationship\n\n- 2026-06-05: Initial meeting \u2014 discussed business progress, partnerships, and three potential projects\n- Next step: TJ to prioritize which system to build first, then schedule Requirements Engineering Workshop [Source: User, 2026-06-05]\n\n## Open Threads\n\n- TJ to decide which of 3 projects to pursue first\n- Requirements Engineering Workshop to be scheduled\n- Workshop rates communicated: MYR 100/hr or MYR 800/day [Source: User, 2026-06-05]\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-05** | Initial meeting with sayf (Maloha Coast). Discussed three development projects for Passend. Requirements Engineering Workshop proposed. [Source: User, 2026-06-05]",
-      "tags": [
-        "client",
-        "prospect"
-      ],
-      "links_out": [],
-      "backlinks": [
-        {
-          "from": "meetings/2026-06-05-tj-vandermolen",
-          "type": "link",
-          "text": "TJ van der Molen"
-        }
-      ],
-      "outbound_count": 0,
-      "inbound_count": 1,
-      "email": "t.vandermolen@passend.my",
-      "phone": "+6016 434 8614",
-      "company_name": "Passend",
-      "website": "www.passend.my",
-      "location": "Malaysia",
-      "relationship": "Prospective client \u2014 met to discuss development projects"
+      "updated": "2026-06-08",
+      "title": "Neo Kim"
+    },
+    {
+      "slug": "concepts/claude-code-10x-skill-newsletter",
+      "type": "concept",
+      "updated": "2026-06-08",
+      "title": "Claude Code 10x Skill Newsletter"
+    },
+    {
+      "slug": "companies/ai-automation-society",
+      "type": "company",
+      "updated": "2026-06-08",
+      "title": "AI Automation Society"
+    },
+    {
+      "slug": "companies/openai",
+      "type": "company",
+      "updated": "2026-06-08",
+      "title": "OpenAI"
+    },
+    {
+      "slug": "people/carson",
+      "type": "person",
+      "updated": "2026-06-08",
+      "title": "Carson"
+    },
+    {
+      "slug": "companies/anthropic",
+      "type": "company",
+      "updated": "2026-06-08",
+      "title": "Anthropic"
+    },
+    {
+      "slug": "people/nate-herk",
+      "type": "person",
+      "updated": "2026-06-08",
+      "title": "Nate Herk"
+    },
+    {
+      "slug": "companies/ksi-strategic-institute",
+      "type": "company",
+      "updated": "2026-06-08",
+      "title": "KSI Strategic Institute for Asia Pacific"
+    },
+    {
+      "slug": "companies/inclusive-ai-association",
+      "type": "company",
+      "updated": "2026-06-08",
+      "title": "Inclusive Ai Association"
+    },
+    {
+      "slug": "companies/nation-building-school",
+      "type": "company",
+      "updated": "2026-06-08",
+      "title": "Nation Building School"
     },
     {
       "slug": "people/zaim-mohzani",
-      "title": "Zaim Mohzani",
       "type": "person",
-      "updated": "",
-      "body": "# Zaim Mohzani\n\n> **Role:** AI & Career Strategist | ASEAN Policy Specialist | Senior Director at KSI\n> **Location:** Federal Territory of Kuala Lumpur, Malaysia\n> **LinkedIn:** https://my.linkedin.com/in/zaimmohzani\n> **Website:** www.zaim.my\n> **1st-degree connection with sayf** [Source: User, LinkedIn, 2026-06-09]\n\n---\n\n## Compilation of Facts (Compiled Truth)\n\nZaim Mohzani is a Malaysian career strategist, ASEAN policy specialist, and social entrepreneur. He helps mid-career professionals change careers without starting over, using a lifestyle-centric career design approach. He has directly helped 2,600+ professionals in Malaysia since 2015. [Source: LinkedIn profile, 2026-06-09]\n\nHe is Malaysia's first certified Designing Your Life (DYL) coach, trained by Bill Burnett and Dave Evans at Stanford University. [Source: LinkedIn profile, 2026-06-09]\n\n### Core Philosophy: Lifestyle-Centric Career Design\n\nZaim's approach rejects the \"follow your passion\" advice. Instead:\n- Start with the lifestyle you actually want\n- Work backwards to careers that support it\n- Build skills with market value\n- Make moves based on reality, not feelings\n\nHis key thesis: **Passion is a by-product of doing good work, not a prerequisite.** [Source: LinkedIn About section, 2026-06-09]\n\n### Personal Story\n\nAt 25, Zaim had strong credentials but was burnt out \u2014 hundreds of applications, zero offers. He was told \"you just haven't found your passion yet.\" That advice kept him paralysed. He pivoted through five industries and at 28 became chairman of a Malaysian government agency \u2014 not because he found his calling, but because he stopped chasing passion and started designing for the life he wanted. [Source: LinkedIn About section, 2026-06-09]\n\n---\n\n## Current Roles (as of June 2026)\n\n| Role | Organization | Since | Type |\n|------|-------------|-------|------|\n| AI & Career Strategist | [[Nation Building School]] | Jan 2024 | Full-time |\n| Principal | Nation Building School | Aug 2015 - Dec 2023 | Previous role |\n| Senior Director of External Relations | [[KSI Strategic Institute for Asia Pacific]] | Jan 2024 | Full-time |\n| Director of External Relations | KSI Strategic Institute for Asia Pacific | Nov 2020 - Dec 2023 | Previous role |\n| Co-Chair | [[Inclusive AI Association]] (IAIA) | Aug 2025 | Volunteer |\n| Advisor | Asia House (London) | Oct 2020 - Feb 2023 | Seasonal |\n\n[Source: LinkedIn profile, 2026-06-09]\n\n---\n\n## Education\n\n- **MSc in International Strategy & Diplomacy (Distinction)** \u2014 London School of Economics and Political Science (LSE), 2019-2020. Chevening Scholar. Dissertation: \"Disrupted by AI? Impact of AI on the U.S-China Arms Dynamics.\"\n- **BA in Political Science and Government** \u2014 Monash University, 2010-2013\n\n[Source: LinkedIn profile, 2026-06-09]\n\n---\n\n## Key Certifications\n\n- **Designing Your Life Certified Coach** \u2014 Stanford University (via DYL), issued Jul 2023\n- **AI For Good** \u2014 AI Singapore, issued Sep 2025\n- AI Trainer (UK), ChatGPT Prompt Specialist (Singapore), ChatGPT Expert (India)\n\n[Source: LinkedIn profile, 2026-06-09]\n\n---\n\n## Major Awards & Recognitions\n\n- Best Perdana Fellow Award (2023)\n- Dalai Lama Fellows (2022)\n- Youth Advisor to Prime Minister of Malaysia (PM2PM, 2021)\n- British Council Future Leaders Connect (2021)\n- Acumen Academy Fellowship Malaysia (2021)\n- Queen Elizabeth Prize for Engineering Ambassador (2020)\n- Founding Chairman, Impact Malaysia / Impact Integrated (2018)\n- The Edge Inspiring Young Leaders Awards (2019)\n- U.S. Department of State YSEALI Professional Fellowship \u2014 ACYPL (2018)\n- ASEAN Youth Fellowship (2018)\n- Associate Fellowship, Royal Commonwealth Society (2017)\n- NGO/Youth Advisor \u2014 ACTYVATE/Blue Ocean Youth Movement, Ministry of Finance Malaysia (2017)\n- Advisory Chair, AIESEC in Malaysia (2017)\n- Community Ambassador, Impact Hub Malaysia (2016)\n- Selected for World Economic Forum Global Shapers\n- Asia Society Asia 21 Next Generation Fellow\n- New York Southeast Asia Network (NYSEAN) member\n\n[Source: LinkedIn profile + KSI speaker page + web search, 2026-06-09]\n\n---\n\n## Organizations Founded / Led\n\n### [[Nation Building School]] (est. Aug 2015)\nSocial enterprise started as a bootstrapped NGO in Bukit Tunku, now empowering next-generation leaders. Has engaged over 10,000 youths in Malaysia and Southeast Asia. Focus: career workshops and leadership programmes for urban poor, single mothers, and youth at risk. During the pandemic, launched virtual career workshops. [Source: LinkedIn profile, 2026-06-09]\n\n### Impact Integrated (est. Dec 2018)\nFounding Chairman. Government agency under Malaysian Ministry of Youth and Sports. Oversaw transformation from \"reputationally controversial\" to sustainable and impactful. Strengthened corporate governance. Notable project: #BeliaBerkeja (Youth Working) Virtual Career Fair. Engaged 10,000+ youths. Served until Feb 2023. [Source: LinkedIn profile + KSI speaker page, 2026-06-09]\n\n### KSI Visiting Fellowship\nFounded the KSI Visiting Fellowship programme, bringing in 10+ regional experts to strengthen policy and research at KSI. [Source: LinkedIn profile, 2026-06-09]\n\n### KSI Academy\nLeads KSI Academy, delivering AI training programmes for corporations across ASEAN. [Source: LinkedIn profile, 2026-06-09]\n\n### KSInsights\nBuilt KSInsights into a regional platform, publishing 30+ articles on ASEAN, technology, and geopolitics. [Source: LinkedIn profile, 2026-06-09]\n\n### [[Inclusive AI Association]] (IAIA)\nCo-Chair since Aug 2025. Community-based NGO dedicated to making Malaysians AI-Literate (MAIL) by 2030. Focus areas:\n- **Inform:** Public awareness campaigns and simple AI explainers\n- **Contribute:** Platforms for citizen feedback on AI policy\n- **Educate:** Workshops and training aligned with National Guidelines on AI Governance and Ethics and ASEAN AI Safety Network\n\n[Source: LinkedIn profile, 2026-06-09]\n\n### ASEAN Economic Club & World Digital Chamber\nLeads these KSI initiatives to drive regional economic and digital cooperation. Engages Prime Ministers, Presidents, and senior policymakers across ASEAN. [Source: LinkedIn profile, 2026-06-09]\n\n### Chevening Alumni Malaysia\nPresident (Sep 2020 - Apr 2022). Achievements:\n- Increased membership 60% (133 to 222)\n- Established Chevening Alumni Southeast Asian Network (CASEAN)\n- Organised inaugural CAM Summit 2022\n- Created four CAM Interest Network Groups (CAMINGs)\n- Youth Mentorship Programme: 592 mentors mentoring 160+ youths\n- Supported hundreds of Chevening applicants\n\n[Source: LinkedIn profile, 2026-06-09]\n\n### YSEALI Council of Malaysia (YCOM)\nFounder and Chair. Among the first YSEALI alumni associations in the region. [Source: KSI speaker page, 2026-06-09]\n\n---\n\n## What He Offers (Products / Services)\n\n1. **90-Day Career Change Programme** \u2014 Helps mid-career professionals choose careers they actually want without starting over or chasing passion. [Source: LinkedIn About, 2026-06-09]\n2. **Free Monthly Career Clarity Workshop** \u2014 Next: 1 July 2026 (Wednesday), 9:00-10:30 PM GMT+8/MYT, via Zoom. Register at https://t.ly/getclearoncareer6 [Source: LinkedIn Featured, 2026-06-09]\n3. **Free Guide: \"Find Your Next Career Move in 30 Minutes (Without Starting Over)\"** \u2014 Available at https://www.nationbuildingschool.com/ [Source: LinkedIn Featured + website, 2026-06-09]\n4. **AI Training for Non-Technical Professionals** \u2014 Hands-on training on applying tools like ChatGPT without needing to code. [Source: LinkedIn Experience, 2026-06-09]\n\n---\n\n## Networks & Affiliations\n\n- World Economic Forum Global Shapers\n- Asia Society Asia 21 Next Generation Fellow\n- New York Southeast Asia Network (NYSEAN)\n- Global Muslim Business Forum (speaker)\n- Royal Commonwealth Society (Associate Fellow)\n- Perdana Fellows Alumni Association (Founding President, Sep 2013 - Nov 2014)\n- Toastmasters International (May 2013 - Jun 2014)\n\n[Source: LinkedIn profile + web search + KSI speaker page, 2026-06-09]\n\n---\n\n## Audience & Reach\n\n- **8,838 LinkedIn followers** (as of June 2026)\n- **500+ connections**\n- **52 mutual connections** with sayf (including Sara Radziah, Divya Adinarayanan)\n- Active LinkedIn content creator \u2014 posts regularly on career strategy, workplace dynamics, and Malaysian professional life\n- Recent viral-style post (June 2026): story about an admin assistant running a side business from her office desk, getting caught by colleagues, Industrial Court dismissal \u2014 used as a teachable moment about workplace visibility\n\n[Source: LinkedIn profile, 2026-06-09]\n\n---\n\n## Relevance to Maloha Coast\n\nsayf identified Zaim as a **pitch target** for Friday (June 2026). Key angles:\n- Zaim runs AI literacy training for non-technical professionals \u2014 complementary to Maloha Coast's AI consulting services\n- His Inclusive AI Association (IAIA) is building Malaysia's AI literacy ecosystem \u2014 potential partnership or client\n- KSI Academy delivers AI training to ASEAN corporations \u2014 potential B2B channel\n- Zaim is a connector across ASEAN policy, business, and youth ecosystems\n- His career design methodology (DYL/Stanford) could integrate with AI upskilling offerings\n- sayf has 52 mutual connections with Zaim, including Sara Radziah and Divya Adinarayanan\n\n[Source: User, 2026-06-09]\n\n---\n\n## Languages\n\n- English: Native or bilingual proficiency\n- Malay: Native or bilingual proficiency\n\n[Source: LinkedIn profile, 2026-06-09]",
-      "tags": [
-        "ai-literacy",
-        "asean-policy",
-        "career-coach",
-        "malaysia",
-        "people",
-        "pitch-target"
-      ],
-      "links_out": [
-        {
-          "to": "companies/nation-building-school",
-          "type": "wikilink",
-          "text": "Nation Building School"
-        },
-        {
-          "to": "companies/ksi-strategic-institute",
-          "type": "wikilink",
-          "text": "KSI Strategic Institute for Asia Pacific"
-        },
-        {
-          "to": "companies/inclusive-ai-association",
-          "type": "wikilink",
-          "text": "Inclusive AI Association"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "companies/inclusive-ai-association",
-          "type": "wikilink",
-          "text": "Zaim Mohzani"
-        },
-        {
-          "from": "companies/ksi-strategic-institute",
-          "type": "wikilink",
-          "text": "Zaim Mohzani"
-        },
-        {
-          "from": "companies/nation-building-school",
-          "type": "wikilink",
-          "text": "Zaim Mohzani"
-        }
-      ],
-      "outbound_count": 3,
-      "inbound_count": 3
+      "updated": "2026-06-08",
+      "title": "Zaim Mohzani"
+    },
+    {
+      "slug": "companies/blackgrid-digital",
+      "type": "company",
+      "updated": "2026-06-08",
+      "title": "Blackgrid Digital"
+    },
+    {
+      "slug": "people/nabil-jalil",
+      "type": "person",
+      "updated": "2026-06-08",
+      "title": "Nabil Jalil"
+    },
+    {
+      "slug": "meetings/2026-06-08-bjarte-global-ai-village",
+      "type": "concept",
+      "updated": "2026-06-08",
+      "title": "2026 06 08 Bjarte Global Ai Village"
+    },
+    {
+      "slug": "people/bjarte",
+      "type": "person",
+      "updated": "2026-06-08",
+      "title": "Bjarte"
+    },
+    {
+      "slug": "concepts/business-brain",
+      "type": "concept",
+      "updated": "2026-06-08",
+      "title": "Business Brain"
+    },
+    {
+      "slug": "companies/global-ai-village",
+      "type": "company",
+      "updated": "2026-06-08",
+      "title": "Global Ai Village"
+    },
+    {
+      "slug": "concepts/three-folder-system-head-hands-heart",
+      "type": "concept",
+      "updated": "2026-06-05",
+      "title": "Three Folder System Head Hands Heart"
+    },
+    {
+      "slug": "people/nick-milo",
+      "type": "person",
+      "updated": "2026-06-05",
+      "title": "Nick Milo"
+    },
+    {
+      "slug": "people/jake-van-cleef",
+      "type": "person",
+      "updated": "2026-06-05",
+      "title": "Jake Van Cleef"
+    },
+    {
+      "slug": "people/bob-proctor",
+      "type": "person",
+      "updated": "2026-06-05",
+      "title": "Bob Proctor"
+    },
+    {
+      "slug": "meetings/2026-06-05-tj-vandermolen",
+      "type": "concept",
+      "updated": "2026-06-05",
+      "title": "2026 06 05 Tj Vandermolen"
+    },
+    {
+      "slug": "companies/passend",
+      "type": "company",
+      "updated": "2026-06-05",
+      "title": "Passend"
+    },
+    {
+      "slug": "people/tj-vandermolen",
+      "type": "person",
+      "updated": "2026-06-05",
+      "title": "TJ van der Molen"
+    },
+    {
+      "slug": "architecture/agent-hierarchy",
+      "type": "concept",
+      "updated": "2026-06-04",
+      "title": "Agent Hierarchy"
     },
     {
       "slug": "reference/cold-lead-response-conference-events",
-      "title": "Cold Lead Response Conference Events",
       "type": "concept",
-      "updated": "",
-      "body": "**Context:** Response to a conference producer who asked for examples after a cold outreach. Crafted for LinkedIn DM \u2014 punchy, concrete, pilot-friendly.\n\n## The Response\n\nThanks for asking. Here are some practical ways I think a Hermes agent could fit into your events workflow if we set one up on your laptop or VPS:\n\n**Speaker sourcing:** You feed it your target criteria once, and it scans hundreds of profiles, past talks, and decks. It comes back with a shortlist plus solid briefing notes in about 15 minutes instead of 3\u20134 hours of manual digging.\n\n**Post-session repurposing:** Right after a talk, you drop in the recording or transcript and it generates a full LinkedIn article, 3-5 social posts, a newsletter summary, and key highlights. Turns one session into 30+ usable pieces.\n\n**Sponsor deliverables:** It pulls from your existing docs and data to create pre-event copy, staff briefs, lead reports, and post-event ROI summaries \u2014 cutting out a big chunk of the 20 hours per sponsor tier your team usually spends.\n\n**Business brain / company memory:** I'm actually building one of these for myself right now. We can set up a \"gbrain\" where the agent learns your past events, speakers, sponsors, what worked and what didn't. Then you can just ask it things like \"What sponsors performed best last year?\" or \"Give me the checklist for a 500-person event\" and it pulls from your own history.\n\n**Closer:** Which one sounds like it would save you the most time or headache right now? Happy to walk through any of them in more detail or hop on a quick call to map it to how you currently work.\n\n## Notes\n\n- Crafted to be realistic, specific, and pilot-friendly\n- No AI jargon \u2014 pitched as a tool they control\n- Each example maps to a known pain point for conference producers\n- The gbrain example doubles as a subtle demo of the product in use",
-      "tags": [],
-      "links_out": [],
-      "backlinks": [],
-      "outbound_count": 0,
-      "inbound_count": 0
+      "updated": "2026-06-04",
+      "title": "Cold Lead Response Conference Events"
     },
     {
       "slug": "vps-hardening",
-      "title": "Vps Hardening",
       "type": "concept",
-      "updated": "",
-      "body": "# VPS Hardening\n\n## Overview\nSecurity hardening of the Maloha Coast production VPS (Ubuntu, 6.8.0-124-generic). All changes applied and verified post-reboot.\n\n## Changes Applied\n\n### SSH Hardening\n| Setting | Before | After |\n|---------|--------|-------|\n| PermitRootLogin | yes | prohibit-password |\n| X11Forwarding | yes | no |\n| MaxAuthTries | 6 (default) | 3 |\n| ClientAliveInterval | none | 300s (5 min) |\n| ClientAliveCountMax | 3 (default) | 2 |\n| AllowUsers | any local user | ubuntu only |\n| DSA host keys | present | removed |\n| PasswordAuthentication | yes | no |\n\n### Firewall (UFW)\n- **Default**: deny all incoming, allow all outgoing\n- **Open ports**: 22/tcp (SSH) only\n- Status: active\n\n### fail2ban\n- **Jail**: sshd (aggressive mode)\n- **Max retries**: 3\n- **Ban time**: 1 hour\n- **Post-reboot**: banned 4 IPs within 2 minutes of coming online\n- See [[2026-06-03#VPS Hardening]] for timeline\n\n### System Updates\n- 78 packages upgraded\n- Kernel updated to 6.8.0-124 (was pending reboot, now active)\n\n## Verification\n- [x] SSH config validated via `sshd -T`\n- [x] UFW active with correct rules\n- [x] fail2ban running with active bans\n- [x] Hermes gateway auto-starts on boot\n- [x] Ubuntu NOPASSWD sudo preserved (Hermes requirement)\n\n## Related\n- [[Google Workspace Setup]]\n- [[2026-06-03]]\n- [[Gateway Infrastructure]] \u2014 gateway health monitoring and watchdog",
-      "tags": [
-        "devops",
-        "infrastructure",
-        "security"
-      ],
-      "links_out": [
-        {
-          "to": "2026-06-03",
-          "type": "wikilink",
-          "text": "2026-06-03#VPS Hardening"
-        },
-        {
-          "to": "google-workspace-setup",
-          "type": "wikilink",
-          "text": "Google Workspace Setup"
-        },
-        {
-          "to": "2026-06-03",
-          "type": "wikilink",
-          "text": "2026-06-03"
-        },
-        {
-          "to": "gateway-infrastructure",
-          "type": "wikilink",
-          "text": "Gateway Infrastructure"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "2026-06-03",
-          "type": "wikilink",
-          "text": "VPS Hardening"
-        },
-        {
-          "from": "2026-06-03",
-          "type": "wikilink",
-          "text": "VPS Hardening#fail2ban"
-        },
-        {
-          "from": "gateway-infrastructure",
-          "type": "wikilink",
-          "text": "VPS Hardening"
-        },
-        {
-          "from": "gbrain",
-          "type": "wikilink",
-          "text": "VPS Hardening"
-        }
-      ],
-      "outbound_count": 4,
-      "inbound_count": 4
-    }
-  ],
-  "graph_links": [
-    {
-      "source": "2026-06-03",
-      "target": "vps-hardening",
-      "type": "wikilink"
+      "updated": "2026-06-04",
+      "title": "Vps Hardening"
     },
     {
-      "source": "2026-06-03",
-      "target": "google-workspace-setup",
-      "type": "wikilink"
+      "slug": "gateway-infrastructure",
+      "type": "concept",
+      "updated": "2026-06-04",
+      "title": "Gateway Infrastructure"
     },
     {
-      "source": "2026-06-03",
-      "target": "gbrain",
-      "type": "wikilink"
+      "slug": "maloha-coast",
+      "type": "concept",
+      "updated": "2026-06-04",
+      "title": "Maloha Coast"
     },
     {
-      "source": "brand/maloha-coast-brand-identity",
-      "target": "maloha-coast",
-      "type": "wikilink"
+      "slug": "brand/maloha-coast-brand-identity",
+      "type": "concept",
+      "updated": "2026-06-04",
+      "title": "Maloha Coast — Brand Identity"
     },
     {
-      "source": "brand/maloha-coast-brand-identity",
-      "target": "google-workspace-setup",
-      "type": "wikilink"
+      "slug": "concepts/embedding-cost-projection",
+      "type": "concept",
+      "updated": "2026-06-03",
+      "title": "Embedding Cost Projection"
     },
     {
-      "source": "companies/ai-automation-society",
-      "target": "people/nate-herk",
-      "type": "link"
+      "slug": "hermes-profile-backup",
+      "type": "concept",
+      "updated": "2026-06-03",
+      "title": "Hermes Profile Backup"
     },
     {
-      "source": "companies/ai-automation-society",
-      "target": "people/carson",
-      "type": "link"
+      "slug": "gbrain",
+      "type": "concept",
+      "updated": "2026-06-03",
+      "title": "Gbrain"
     },
     {
-      "source": "companies/anthropic",
-      "target": "concepts/claude-code-10x-skill-newsletter",
-      "type": "wikilink"
+      "slug": "google-workspace-setup",
+      "type": "concept",
+      "updated": "2026-06-03",
+      "title": "Google Workspace Setup"
     },
     {
-      "source": "companies/blackgrid-digital",
-      "target": "people/nabil-jalil",
-      "type": "link"
-    },
-    {
-      "source": "companies/inclusive-ai-association",
-      "target": "people/zaim-mohzani",
-      "type": "wikilink"
-    },
-    {
-      "source": "companies/ksi-strategic-institute",
-      "target": "people/zaim-mohzani",
-      "type": "wikilink"
-    },
-    {
-      "source": "companies/nation-building-school",
-      "target": "people/zaim-mohzani",
-      "type": "wikilink"
-    },
-    {
-      "source": "companies/openai",
-      "target": "companies/anthropic",
-      "type": "link"
-    },
-    {
-      "source": "companies/system-design-one",
-      "target": "people/neo-kim",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/claude-code-10x-skill-newsletter",
-      "target": "people/carson",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/claude-code-10x-skill-newsletter",
-      "target": "companies/openai",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/claude-code-10x-skill-newsletter",
-      "target": "companies/ai-automation-society",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/claude-code-10x-skill-newsletter",
-      "target": "people/nate-herk",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/company-memory-os-ph1-prd",
-      "target": "people/sayf-codes",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/knowledge-graph-as-moat",
-      "target": "media/videos/graphify-solves-claude-code-problem",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/knowledge-graph-as-moat",
-      "target": "concepts/company-memory-os-ph1-prd",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/openclaw-anatomy",
-      "target": "people/neo-kim",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/openclaw-anatomy",
-      "target": "companies/system-design-one",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/three-folder-system-head-hands-heart",
-      "target": "people/bob-proctor",
-      "type": "link"
-    },
-    {
-      "source": "concepts/three-folder-system-head-hands-heart",
-      "target": "people/jake-van-cleef",
-      "type": "link"
-    },
-    {
-      "source": "concepts/three-folder-system-head-hands-heart",
-      "target": "people/nick-milo",
-      "type": "link"
-    },
-    {
-      "source": "gateway-infrastructure",
-      "target": "vps-hardening",
-      "type": "wikilink"
-    },
-    {
-      "source": "gbrain",
-      "target": "google-workspace-setup",
-      "type": "wikilink"
-    },
-    {
-      "source": "gbrain",
-      "target": "vps-hardening",
-      "type": "wikilink"
-    },
-    {
-      "source": "meetings/2026-06-05-tj-vandermolen",
-      "target": "people/tj-vandermolen",
-      "type": "link"
-    },
-    {
-      "source": "meetings/2026-06-05-tj-vandermolen",
-      "target": "companies/passend",
-      "type": "link"
-    },
-    {
-      "source": "meetings/2026-06-08-bjarte-global-ai-village",
-      "target": "maloha-coast",
-      "type": "link"
-    },
-    {
-      "source": "meetings/2026-06-08-bjarte-global-ai-village",
-      "target": "people/bjarte",
-      "type": "link"
-    },
-    {
-      "source": "meetings/2026-06-08-bjarte-global-ai-village",
-      "target": "companies/global-ai-village",
-      "type": "link"
-    },
-    {
-      "source": "meetings/2026-06-08-bjarte-global-ai-village",
-      "target": "concepts/business-brain",
-      "type": "link"
-    },
-    {
-      "source": "vps-hardening",
-      "target": "google-workspace-setup",
-      "type": "wikilink"
+      "slug": "2026-06-03",
+      "type": "concept",
+      "updated": "2026-06-03",
+      "title": "2026 06 03"
     }
   ],
   "entities": {
     "people": [
-      "people/bjarte",
-      "people/bob-proctor",
-      "people/carson",
-      "people/jake-van-cleef",
-      "people/nabil-jalil",
-      "people/nate-herk",
-      "people/neo-kim",
-      "people/nick-milo",
       "people/sayf-codes",
-      "people/tj-vandermolen",
-      "people/zaim-mohzani"
+      "people/neo-kim",
+      "people/carson",
+      "people/nate-herk",
+      "people/zaim-mohzani",
+      "people/nabil-jalil",
+      "people/bjarte",
+      "people/nick-milo",
+      "people/jake-van-cleef",
+      "people/bob-proctor",
+      "people/tj-vandermolen"
     ],
     "companies": [
+      "companies/system-design-one",
       "companies/ai-automation-society",
+      "companies/openai",
       "companies/anthropic",
+      "companies/ksi-strategic-institute",
+      "companies/inclusive-ai-association",
+      "companies/nation-building-school",
       "companies/blackgrid-digital",
       "companies/global-ai-village",
-      "companies/inclusive-ai-association",
-      "companies/ksi-strategic-institute",
-      "companies/nation-building-school",
-      "companies/openai",
-      "companies/passend",
-      "companies/system-design-one"
+      "companies/passend"
     ]
   },
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
+    "health_score": 75,
     "brain_checks_score": 95,
     "category_scores": {
       "brain": 95,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -1476,10 +321,32 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "no extractions in last 7 days",
+        "message": "2 kind(s) tracked, all halt rates below 10%",
         "details": {
           "schema_version": 1,
-          "kinds": []
+          "kinds": [
+            {
+              "kind": "facts.fence",
+              "cost_7d_usd": 0,
+              "eval_pass_count": 0,
+              "eval_fail_count": 0,
+              "halt_count": 0,
+              "round_completed_count": 1,
+              "halt_rate": 0,
+              "last_updated_at": "2026-06-08T15:03:15.502Z"
+            },
+            {
+              "kind": "takes.proposed",
+              "cost_7d_usd": 0,
+              "eval_pass_count": 0,
+              "eval_fail_count": 0,
+              "halt_count": 0,
+              "round_completed_count": 1,
+              "halt_rate": 0,
+              "last_updated_at": "2026-06-08T15:03:16.068Z"
+            }
+          ],
+          "rollup_write_failures_7d": 0
         },
         "category": "brain"
       },
@@ -1503,7 +370,7 @@
       {
         "name": "conversation_format_coverage",
         "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "message": "No conversation-type pages — coverage check not applicable",
         "category": "brain"
       },
       {
@@ -1527,7 +394,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 22 pages",
+        "message": "Connected, 41 pages",
         "category": "ops"
       },
       {
@@ -1539,7 +406,7 @@
       {
         "name": "rls",
         "status": "ok",
-        "message": "Skipped (PGLite \u2014 no PostgREST exposure, RLS not applicable)",
+        "message": "Skipped (PGLite — no PostgREST exposure, RLS not applicable)",
         "category": "ops"
       },
       {
@@ -1551,7 +418,7 @@
       {
         "name": "rls_event_trigger",
         "status": "ok",
-        "message": "Skipped (PGLite \u2014 no event trigger support)",
+        "message": "Skipped (PGLite — no event trigger support)",
         "category": "ops"
       },
       {
@@ -1563,7 +430,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 330ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large ✓ 287ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -1581,25 +448,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 100%, timeline 100%",
+        "message": "Entity link coverage 91%, timeline 68%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 89/100 (embed 35/35, links 25/25, timeline 7/15, orphans 12/15, dead-links 10/10)",
+        "message": "Brain score 90/100 (embed 35/35, links 25/25, timeline 6/15, orphans 14/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 7 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 21 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 22 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 41 pages; no bare-tweet phrases or external links.",
         "category": "brain"
       },
       {
@@ -1713,19 +580,19 @@
       {
         "name": "queue_health",
         "status": "ok",
-        "message": "Skipped (PGLite \u2014 no multi-process worker surface)",
+        "message": "Skipped (PGLite — no multi-process worker surface)",
         "category": "ops"
       },
       {
         "name": "subagent_capability",
         "status": "ok",
-        "message": "Subagent tier resolves to default (claude-sonnet-4-6) \u2014 full tool-loop capability",
+        "message": "Subagent tier resolves to default (claude-sonnet-4-6) — full tool-loop capability",
         "category": "ops"
       },
       {
         "name": "facts_health",
         "status": "ok",
-        "message": "facts_health(default): 0 active, 0 today, 0 this week, 0 consolidated, top entities \u2014",
+        "message": "facts_health(default): 0 active, 0 today, 0 this week, 0 consolidated, top entities —",
         "category": "brain"
       },
       {
@@ -1754,13 +621,13 @@
       {
         "name": "sync_consolidation",
         "status": "ok",
-        "message": "Single-source brain \u2014 sync --all consolidation not applicable.",
+        "message": "Single-source brain — sync --all consolidation not applicable.",
         "category": "ops"
       },
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (22 pages \u2014 too few to assess)",
+        "message": "Extraction lag not applicable (41 pages — too few to assess)",
         "category": "brain"
       },
       {
@@ -1772,7 +639,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: tokenmax (no per-key overrides — mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -1784,7 +651,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "26 reranker failure(s) in last 7 days (below threshold)",
+        "message": "48 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -1796,13 +663,13 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "68.2% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "73.2% of pages have inbound links (>=30% — graph signals fire on most queries)",
         "category": "brain"
       },
       {
         "name": "brainstorm_health",
         "status": "ok",
-        "message": "Migration v79 applied; tracking enabled. Calibration profile not yet generated \u2014 brainstorm/lsd will run unbiased until enough takes are resolved.",
+        "message": "Migration v79 applied; tracking enabled. Calibration profile not yet generated — brainstorm/lsd will run unbiased until enough takes are resolved.",
         "category": "ops"
       },
       {
@@ -1814,7 +681,7 @@
       {
         "name": "ze_embedding_health",
         "status": "ok",
-        "message": "Configured embedding model \"openai:text-embedding-3-large\" is not ZeroEntropy \u2014 skip.",
+        "message": "Configured embedding model \"openai:text-embedding-3-large\" is not ZeroEntropy — skip.",
         "category": "ops"
       },
       {
@@ -1899,13 +766,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "message": "Coverage 90% ± 6.4%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 67% ± 10.3% (target 90%)",
         "category": "meta"
       },
       {
@@ -1923,7 +790,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "3 distinct typed values (pack declares 25)",
+        "message": "4 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
