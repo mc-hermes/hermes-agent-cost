@@ -843,10 +843,17 @@ function drawGraphFrame() {
   });
   graphEdges = drawnEdges.size;
 
-  // Draw nodes — simple dots
+  // ── Font scale: counteract zoom so labels stay readable ──
+  // Canvas multiplies everything by graphZoom; dividing font by it keeps screen-size constant.
+  const labelFontSize = Math.max(8, Math.min(15, 12 / graphZoom));
+  const labelPillH = Math.max(10, Math.min(18, 14 / graphZoom));
+  const labelPillPad = Math.max(3, Math.min(6, 5 / graphZoom));
+  const labelGap = Math.max(5, Math.min(10, 7 / graphZoom));
+
+  // Draw nodes
   graphNodes.forEach(n => {
     const color = graphColors[n.type] || '#94a3b8';
-    const size = Math.max(4, 3 + n.links.length);
+    const size = Math.max(5, 4 + n.links.length * 1.5);
     const isHovered = canvas._hoveredNode === n;
     const r = isHovered ? size + 3 : size;
 
@@ -868,22 +875,25 @@ function drawGraphFrame() {
     ctx.beginPath(); ctx.arc(n.x, n.y, r, 0, Math.PI*2);
     ctx.strokeStyle = 'rgba(0,0,0,0.3)'; ctx.lineWidth = 0.5; ctx.stroke();
 
-    // Mini label on hover only
-    if (isHovered) {
+    // ── Label: always visible, density-filtered at low zoom ──
+    const showByDensity = graphZoom >= 0.6 || n.links.length >= 2;
+    if (showByDensity) {
       const maxLen = graphW < 600 ? 14 : 20;
       const label = n.title.length > maxLen ? n.title.slice(0,maxLen-1)+'…' : n.title;
-      const labelColor = getComputedStyle(document.body).getPropertyValue('--text').trim() || '#e2e8f0';
-      ctx.font = '10px "Inter", sans-serif';
-      ctx.fillStyle = labelColor;
+      const darkBg = getComputedStyle(document.body).getPropertyValue('--bg').trim() || '#0f172a';
+      ctx.font = `${labelFontSize}px "Inter", sans-serif`;
       ctx.textAlign = 'center';
-      // Background pill for label
       const metrics = ctx.measureText(label);
-      const pad = 4;
-      const lx = n.x - metrics.width/2 - pad, ly = n.y + r + 16;
-      ctx.fillStyle = 'rgba(15,23,42,0.85)';
-      ctx.beginPath(); ctx.roundRect(lx, ly, metrics.width + pad*2, 16, 4); ctx.fill();
-      ctx.fillStyle = labelColor;
-      ctx.fillText(label, n.x, n.y + r + 27);
+      const pillW = metrics.width + labelPillPad * 2;
+      const lx = n.x - pillW/2, ly = n.y + r + labelGap;
+
+      // Pill background
+      ctx.fillStyle = 'rgba(15,23,42,0.82)';
+      ctx.beginPath(); ctx.roundRect(lx, ly, pillW, labelPillH, 4); ctx.fill();
+
+      // Label text
+      ctx.fillStyle = isHovered ? '#fff' : '#e2e8f0';
+      ctx.fillText(label, n.x, ly + labelPillH - labelPillPad);
     }
   });
 
@@ -918,7 +928,7 @@ function drawGraphFrame() {
   function hitTest(wx, wy) {
     for (let i = graphNodes.length-1; i >= 0; i--) {
       const n = graphNodes[i];
-      const size = Math.max(4, 3 + n.links.length) + 4;
+      const size = Math.max(5, 4 + n.links.length * 1.5) + 8;
       const dx = wx - n.x, dy = wy - n.y;
       if (dx*dx + dy*dy < size*size) return n;
     }
