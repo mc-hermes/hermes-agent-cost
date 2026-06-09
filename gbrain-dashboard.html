@@ -287,6 +287,76 @@
   .lq-loading { font-size: 0.75rem; color: var(--text-muted); padding: 12px; text-align: center; display: none; }
   .lq-loading .spinner { width: 14px; height: 14px; border: 2px solid var(--border); border-top-color: var(--primary-light); border-radius: 50%; animation: spin 0.8s linear infinite; display: inline-block; margin-right: 6px; vertical-align: middle; }
   .lq-empty { font-size: 0.75rem; color: var(--text-muted); padding: 12px; text-align: center; display: none; }
+
+  /* ─── Chat Bubble ─── */
+  .chat-bubble {
+    position: fixed; bottom: 24px; right: 24px; z-index: 1000;
+    width: 56px; height: 56px; border-radius: 50%;
+    background: var(--primary-light); color: #020617;
+    border: none; cursor: pointer; font-size: 1.5rem;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 4px 20px rgba(34,211,238,0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .chat-bubble:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(34,211,238,0.4); }
+  .chat-panel {
+    position: fixed; bottom: 92px; right: 24px; z-index: 999;
+    width: 380px; max-height: 560px; background: var(--surface);
+    border: 1px solid var(--border); border-radius: 16px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.4);
+    display: none; flex-direction: column; overflow: hidden;
+  }
+  .chat-panel.active { display: flex; }
+  .chat-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 16px; border-bottom: 1px solid var(--border);
+    background: var(--surface2);
+  }
+  .chat-header h3 { font-size: 0.85rem; font-weight: 700; color: var(--text); }
+  .chat-header button { background: none; border: none; color: var(--text-muted); cursor: pointer; font-size: 1.1rem; padding: 4px; border-radius: 6px; }
+  .chat-header button:hover { background: var(--border); color: var(--text); }
+  .chat-messages {
+    flex: 1; overflow-y: auto; padding: 12px 16px;
+    display: flex; flex-direction: column; gap: 10px;
+    min-height: 200px; max-height: 400px;
+  }
+  .chat-msg { max-width: 85%; padding: 10px 14px; border-radius: 12px; font-size: 0.8rem; line-height: 1.5; }
+  .chat-msg.user { align-self: flex-end; background: var(--primary-light); color: #020617; border-bottom-right-radius: 4px; }
+  .chat-msg.bot { align-self: flex-start; background: var(--surface2); color: var(--text); border-bottom-left-radius: 4px; }
+  .chat-msg.bot .bot-card { margin-top: 8px; padding: 10px 12px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); cursor: pointer; transition: border-color 0.15s; }
+  .chat-msg.bot .bot-card:hover { border-color: var(--primary-light); }
+  .chat-msg.bot .bot-card .card-title { font-weight: 600; font-size: 0.75rem; color: var(--text); }
+  .chat-msg.bot .bot-card .card-snippet { font-size: 0.7rem; color: var(--text-muted); margin-top: 4px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .chat-msg.bot .bot-card .card-score { display: inline-block; font-size: 0.6rem; font-weight: 700; padding: 1px 7px; border-radius: 8px; margin-top: 6px; }
+  .chat-msg.bot .bot-card .card-score.high { background: rgba(52,211,153,0.15); color: var(--green); }
+  .chat-msg.bot .bot-card .card-score.med { background: rgba(196,168,106,0.15); color: var(--accent); }
+  .chat-msg.bot .bot-card .card-score.low { background: rgba(251,113,133,0.15); color: var(--rose); }
+  .chat-input-bar {
+    display: flex; gap: 8px; padding: 12px 16px;
+    border-top: 1px solid var(--border); background: var(--surface2);
+  }
+  .chat-input-bar input {
+    flex: 1; background: var(--surface); border: 1px solid var(--border);
+    border-radius: 20px; padding: 10px 16px; font-size: 0.8rem;
+    color: var(--text); font-family: 'Inter', sans-serif; outline: none;
+  }
+  .chat-input-bar input:focus { border-color: var(--primary-light); }
+  .chat-input-bar input::placeholder { color: var(--text-muted); }
+  .chat-input-bar button {
+    background: var(--primary-light); color: #020617; border: none;
+    border-radius: 20px; padding: 10px 18px; font-size: 0.8rem;
+    font-weight: 600; cursor: pointer; font-family: 'Inter', sans-serif;
+    transition: opacity 0.15s; white-space: nowrap;
+  }
+  .chat-input-bar button:hover { opacity: 0.85; }
+  .chat-input-bar button:disabled { opacity: 0.4; cursor: not-allowed; }
+  .chat-typing { font-size: 0.75rem; color: var(--text-muted); padding: 8px 14px; display: none; }
+  .chat-typing.active { display: block; }
+  .chat-welcome { font-size: 0.75rem; color: var(--text-muted); text-align: center; padding: 20px 16px; line-height: 1.6; }
+  @media (max-width: 600px) {
+    .chat-panel { width: calc(100vw - 32px); right: 16px; bottom: 84px; max-height: 70vh; }
+    .chat-bubble { bottom: 16px; right: 16px; }
+  }
 </style>
 </head>
 <body>
@@ -396,12 +466,33 @@
   </div>
 </div>
 
-<!-- Page Detail Modal -->
-<div class="modal-overlay" id="modalOverlay" onclick="if(event.target===this)closeModal()">
-  <div class="modal" id="modal"></div>
+<!-- Modal Overlay -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+  <div class="modal" id="modal" onclick="event.stopPropagation()"></div>
 </div>
 
-<!-- Docs / Help Modal -->
+<!-- Chat Bubble -->
+<button class="chat-bubble" id="chatBubble" onclick="toggleChat()" title="Ask about the brain">💬</button>
+<div class="chat-panel" id="chatPanel">
+  <div class="chat-header">
+    <h3>🧠 Ask the Brain</h3>
+    <button onclick="toggleChat()">✕</button>
+  </div>
+  <div class="chat-messages" id="chatMessages">
+    <div class="chat-welcome" id="chatWelcome">
+      Ask me anything about Maloha Coast's knowledge base.<br>
+      Try: <em>"what did we discuss with Bjarte?"</em> or <em>"tell me about Nabil"</em>
+    </div>
+  </div>
+  <div class="chat-typing" id="chatTyping">Thinking...</div>
+  <div class="chat-input-bar">
+    <input type="text" id="chatInput" placeholder="Ask a question..." onkeydown="if(event.key==='Enter') sendChat()">
+    <button id="chatSendBtn" onclick="sendChat()">Send</button>
+  </div>
+</div>
+
+<!-- Docs Overlay -->
+
 <div class="docs-overlay" id="docsOverlay" onclick="if(event.target===this)closeDocs()">
   <div class="docs-modal" style="position:relative">
     <button class="docs-close" onclick="closeDocs()">✕</button>
@@ -1279,6 +1370,64 @@ document.addEventListener('keydown', function(e) {
 
 function esc(s) { const d=document.createElement('div'); d.textContent=(s||''); return d.innerHTML; }
 function escAttr(s) { return (s||'').replace(/'/g,"&#39;").replace(/"/g,"&quot;"); }
+
+// ─── Chat Bubble ───
+let chatOpen = false;
+function toggleChat() {
+  chatOpen = !chatOpen;
+  document.getElementById('chatPanel').classList.toggle('active', chatOpen);
+  document.getElementById('chatBubble').textContent = chatOpen ? '✕' : '💬';
+  if (chatOpen) document.getElementById('chatInput').focus();
+}
+function addChatMessage(text, role) {
+  const d = document.createElement('div');
+  d.className = 'chat-msg ' + role;
+  d.innerHTML = text;
+  const c = document.getElementById('chatMessages');
+  c.appendChild(d);
+  c.scrollTop = c.scrollHeight;
+}
+function sendChat() {
+  const input = document.getElementById('chatInput');
+  const btn = document.getElementById('chatSendBtn');
+  const q = input.value.trim();
+  if (!q) return;
+  input.value = '';
+  btn.disabled = true;
+  document.getElementById('chatWelcome').style.display = 'none';
+  addChatMessage(esc(q), 'user');
+  document.getElementById('chatTyping').classList.add('active');
+  const API_BASE = 'https://signals-sunglasses-earnings-clock.trycloudflare.com';
+  fetch(API_BASE + '/api/query?q=' + encodeURIComponent(q))
+    .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(data => {
+      document.getElementById('chatTyping').classList.remove('active');
+      if (!data.results || data.results.length === 0) {
+        addChatMessage('No results found for that question.', 'bot');
+        return;
+      }
+      let html = 'Here\'s what I found:<br>';
+      const maxShow = Math.min(data.results.length, 4);
+      for (let i = 0; i < maxShow; i++) {
+        const r = data.results[i];
+        let sc = 'low';
+        if (r.score >= 0.7) sc = 'high';
+        else if (r.score >= 0.5) sc = 'med';
+        const snippet = esc(r.snippet || '').trim() || '';
+        html += '<div class="bot-card" onclick="openPageModal(\'' + escAttr(r.slug) + '\')">';
+        html += '<div class="card-title">' + esc(r.slug) + '</div>';
+        if (snippet) html += '<div class="card-snippet">' + snippet + '</div>';
+        html += '<span class="card-score ' + sc + '">' + Math.round(r.score * 100) + '%</span>';
+        html += '</div>';
+      }
+      addChatMessage(html, 'bot');
+    })
+    .catch(err => {
+      document.getElementById('chatTyping').classList.remove('active');
+      addChatMessage('Sorry, I couldn\'t reach the brain. ' + err.message, 'bot');
+    })
+    .finally(() => { btn.disabled = false; });
+}
 
 loadData();
 
