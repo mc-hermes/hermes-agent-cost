@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-06-08T16:14:31Z",
+  "updated_at": "2026-06-09T02:51:42Z",
   "summary": {
-    "score": "Brain score 28/37",
-    "page_count": 37,
+    "score": "Brain score 30/39",
+    "page_count": 39,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "75.7% of pages have inbound links",
-    "entity_links": "Coverage \u2014 10 people, 10 companies indexed",
-    "concept_count": 15,
+    "graph_coverage": "76.9% of pages have inbound links",
+    "entity_links": "Coverage \u2014 11 people, 10 companies indexed",
+    "concept_count": 16,
     "meeting_count": 2,
-    "person_count": 10,
+    "person_count": 11,
     "company_count": 10,
-    "total_links": 33,
-    "outbound_count": 54,
-    "inbound_count": 47
+    "total_links": 34,
+    "outbound_count": 56,
+    "inbound_count": 49
   },
   "pages": [
     {
@@ -470,6 +470,30 @@
       ],
       "outbound_count": 5,
       "inbound_count": 2
+    },
+    {
+      "slug": "concepts/company-memory-os-ph1-prd",
+      "title": "Company Memory Os Ph1 Prd",
+      "type": "concept",
+      "updated": "",
+      "body": "# Hermes Agent to ingest\n**From:** Sayf Codes <sayfcodes@gmail.com>\n**Date:** Tue, 9 Jun 2026 10:50:14 +0800\n**Source:** email forward\n\nHere's a compact PRD designed specifically for Hermes to execute against.\n\nPRD: Company Memory OS (Phase 1)\n\n## Author\n\nAuthored by [[Sayf Codes]].\n\n## Vision\n\nBuild a Company Memory Operating System that transforms fragmented\ncommunication into a searchable institutional memory.\n\nInitial delivery is service-first, software-second.\n\nThe goal is not to sell software access.\n\nThe goal is to deliver the outcome:\n\"Never lose important decisions, context, relationships, or knowledge\nagain.\"\n\n---\n\n## Problem\n\nSmall businesses, consultants, agencies, and founders lose critical\nknowledge because it is scattered across:\n\n- Email\n- Meeting transcripts\n- Documents\n- Chat conversations\n- Notes\n\nKnowledge becomes unrecoverable after weeks or months.\n\nCurrent solutions focus on storage.\n\nUsers need retrieval and context.\n\n---\n\n## Target Customer\n\n### Primary \u2014 Consultants\n\nCharacteristics:\n- 20-100 clients\n- High email volume\n- Multiple projects running simultaneously\n- Knowledge-intensive work\n- Decisions buried in communications\n\n### Secondary\n- Agency owners\n- Startup founders\n- Fractional executives\n- Professional services firms\n\n---\n\n## Core Value Proposition\n\nTransform company communications into a searchable memory system.\n\n**Input:** Emails, Meeting transcripts, Documents\n\n**Output:** Searchable knowledge base, Decision history, Relationship intelligence, Project memory, AI-assisted retrieval\n\n---\n\n## Initial Offer\n\nProductized Service \u2014 Not SaaS. Human-assisted onboarding.\n\n### Knowledge Audit\n\n**Customer provides:** Emails, Documents, Meeting notes\n\n**System generates:** Executive summary, Project map, Key decisions, Action items, Stakeholder map, Recurring themes, Knowledge gaps\n\n**Deliverable:** Interactive dashboard + report.\n\n---\n\n## Success Metric\n\nCustomer says: *\"I found something valuable that I would not have found otherwise.\"*\n\n---\n\n## MVP Scope\n\n### Ingestion\nSupport: Email forwarding, Gmail export, Meeting transcripts, Markdown documents, PDFs\n\n### Processing\nExtract: People, Companies, Projects, Decisions, Tasks, Dates, Relationships\nGenerate: Summaries, Tags, Backlinks, Knowledge graph connections\n\n### Retrieval\nUser can ask:\n- What was decided about Project X?\n- What commitments were made to Client Y?\n- Show all discussions involving Person Z.\n- What unresolved action items exist?\n\n### Dashboard\nViews: Decision Timeline, Relationship Graph, Project Knowledge Base, Open Actions, Search (natural language)\n\n---\n\n## Go-To-Market\n\n**Goal:** Acquire first 3 paying customers.\n\n**Offer:** Free Knowledge Audit\n\n**Target:** Existing network, Founders, Consultants, Agency owners\n\n**Message:** *\"I've built a system that turns emails, meetings, and documents into a searchable company memory. Looking for 3 companies to test it with.\"*\n\n---\n\n## Validation Questions\n\n1. What was most valuable?\n2. What surprised you?\n3. What would you pay monthly to keep this updated?\n4. Which feature would you miss most?\n5. Would you recommend this to someone else?\n\n---\n\n## Pricing Experiments\n\n| Stage | Service | Price |\n|-------|---------|-------|\n| 1 | Knowledge Audit (one-time) | RM300 - RM1000 |\n| 2 | Continuous Memory Service (monthly) | RM300 - RM1000/month |\n| 3 | SaaS | Only after 10+ paying customers |\n\n---\n\n## Strategic Principle\n\nDo not optimize for software. Optimize for customer outcomes.\n\nUse Hermes + GBrain internally as operational infrastructure. The platform emerges from repeated customer success, not from building features first.\n\n---\n\n## North Star\n\nBecome the memory layer for small organizations.\n\nLong-term vision: Communication \u2192 Knowledge Graph \u2192 Institutional Memory \u2192 Organizational Intelligence",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "people/sayf-codes",
+          "type": "wikilink",
+          "text": "Sayf Codes"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "people/sayf-codes",
+          "type": "wikilink",
+          "text": "company-memory-os-ph1-prd"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 1
     },
     {
       "slug": "concepts/embedding-cost-projection",
@@ -983,6 +1007,33 @@
       "inbound_count": 1
     },
     {
+      "slug": "people/sayf-codes",
+      "title": "Sayf Codes",
+      "type": "person",
+      "updated": "",
+      "body": "# Sayf Codes\n\n> Founder and operator of Maloha Coast \u2014 sender of business intelligence, strategy, and product direction.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[company-memory-os-ph1-prd]] as the author of the Company Memory OS Phase 1 PRD, outlining vision, go-to-market, and product strategy for the memory OS product line.\n\n## Related\n\n- [[company-memory-os-ph1-prd]] \u2014 Authored the Company Memory OS Phase 1 PRD",
+      "tags": [
+        "founder",
+        "maloha-coast"
+      ],
+      "links_out": [
+        {
+          "to": "concepts/company-memory-os-ph1-prd",
+          "type": "wikilink",
+          "text": "company-memory-os-ph1-prd"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "concepts/company-memory-os-ph1-prd",
+          "type": "wikilink",
+          "text": "Sayf Codes"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 1
+    },
+    {
       "slug": "people/tj-vandermolen",
       "title": "TJ van der Molen",
       "type": "person",
@@ -1223,6 +1274,11 @@
       "type": "wikilink"
     },
     {
+      "source": "concepts/company-memory-os-ph1-prd",
+      "target": "people/sayf-codes",
+      "type": "wikilink"
+    },
+    {
       "source": "concepts/openclaw-anatomy",
       "target": "people/neo-kim",
       "type": "wikilink"
@@ -1308,6 +1364,7 @@
       "people/nate-herk",
       "people/neo-kim",
       "people/nick-milo",
+      "people/sayf-codes",
       "people/tj-vandermolen",
       "people/zaim-mohzani"
     ],
