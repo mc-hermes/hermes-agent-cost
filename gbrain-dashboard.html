@@ -261,6 +261,32 @@
     .graph-container canvas { height: 300px; }
     .settings-popover { right: 8px; }
   }
+
+  /* ─── Live Query Box ─── */
+  .live-query-section { margin-bottom: 24px; }
+  .live-query-section .section-header h2 { font-size: 1rem; font-weight: 700; }
+  .live-query-bar { display: flex; gap: 8px; margin-bottom: 12px; }
+  .live-query-bar input { flex: 1; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 10px 14px; font-size: 0.85rem; color: var(--text); font-family: 'Inter', sans-serif; outline: none; transition: border-color 0.15s; }
+  .live-query-bar input:focus { border-color: var(--primary-light); }
+  .live-query-bar input::placeholder { color: var(--text-muted); }
+  .live-query-bar button { background: var(--primary-light); color: #020617; border: none; border-radius: var(--radius-sm); padding: 10px 20px; font-size: 0.8rem; font-weight: 600; cursor: pointer; font-family: 'Inter', sans-serif; transition: opacity 0.15s; white-space: nowrap; }
+  .live-query-bar button:hover { opacity: 0.85; }
+  .live-query-bar button:disabled { opacity: 0.4; cursor: not-allowed; }
+  .live-query-results { max-height: 400px; overflow-y: auto; display: flex; flex-direction: column; gap: 8px; }
+  .live-query-results:empty { display: none; }
+  .lq-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 12px 14px; cursor: pointer; transition: border-color 0.15s; }
+  .lq-card:hover { border-color: var(--primary-light); }
+  .lq-card .lq-header { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+  .lq-card .lq-score { font-size: 0.65rem; font-weight: 700; padding: 2px 8px; border-radius: 10px; white-space: nowrap; }
+  .lq-card .lq-score.high { background: rgba(52,211,153,0.15); color: var(--green); }
+  .lq-card .lq-score.med { background: rgba(196,168,106,0.15); color: var(--accent); }
+  .lq-card .lq-score.low { background: rgba(251,113,133,0.15); color: var(--rose); }
+  .lq-card .lq-path { font-size: 0.75rem; font-weight: 600; color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .lq-card .lq-snippet { font-size: 0.7rem; color: var(--text-muted); line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .lq-error { font-size: 0.75rem; color: var(--rose); padding: 8px 12px; background: rgba(251,113,133,0.08); border: 1px solid rgba(251,113,133,0.2); border-radius: var(--radius-sm); display: none; }
+  .lq-loading { font-size: 0.75rem; color: var(--text-muted); padding: 12px; text-align: center; display: none; }
+  .lq-loading .spinner { width: 14px; height: 14px; border: 2px solid var(--border); border-top-color: var(--primary-light); border-radius: 50%; animation: spin 0.8s linear infinite; display: inline-block; margin-right: 6px; vertical-align: middle; }
+  .lq-empty { font-size: 0.75rem; color: var(--text-muted); padding: 12px; text-align: center; display: none; }
 </style>
 </head>
 <body>
@@ -285,6 +311,19 @@
   <!-- Dashboard -->
   <div id="dashboard" style="display:none">
     <div class="stat-grid" id="statGrid"></div>
+
+    <!-- Live Query -->
+    <div class="live-query-section">
+      <div class="section-header"><h2>🔍 Live Query</h2></div>
+      <div class="live-query-bar">
+        <input type="text" id="lqInput" placeholder="Ask anything about your brain..." onkeydown="if(event.key==='Enter') runLiveQuery()">
+        <button id="lqBtn" onclick="runLiveQuery()">Ask</button>
+      </div>
+      <div class="lq-loading" id="lqLoading"><span class="spinner"></span> Querying brain...</div>
+      <div class="lq-error" id="lqError"></div>
+      <div class="lq-empty" id="lqEmpty">No results found.</div>
+      <div class="live-query-results" id="lqResults"></div>
+    </div>
 
     <!-- Link Graph -->
     <div class="graph-container">
@@ -1242,6 +1281,50 @@ function esc(s) { const d=document.createElement('div'); d.textContent=(s||''); 
 function escAttr(s) { return (s||'').replace(/'/g,"&#39;").replace(/"/g,"&quot;"); }
 
 loadData();
+
+// ─── Live Semantic Query ───
+function runLiveQuery() {
+  const input = document.getElementById('lqInput');
+  const btn = document.getElementById('lqBtn');
+  const results = document.getElementById('lqResults');
+  const loading = document.getElementById('lqLoading');
+  const error = document.getElementById('lqError');
+  const empty = document.getElementById('lqEmpty');
+  const q = input.value.trim();
+  if (!q) return;
+  btn.disabled = true;
+  results.innerHTML = '';
+  error.style.display = 'none';
+  empty.style.display = 'none';
+  loading.style.display = 'block';
+  fetch('https://43.156.64.222:8443/api/query?q=' + encodeURIComponent(q))
+    .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(data => {
+      loading.style.display = 'none';
+      if (!data.results || data.results.length === 0) {
+        empty.style.display = 'block';
+        return;
+      }
+      let html = '';
+      data.results.forEach(r => {
+        let scoreClass = 'low';
+        if (r.score >= 0.7) scoreClass = 'high';
+        else if (r.score >= 0.5) scoreClass = 'med';
+        const scorePct = Math.round(r.score * 100);
+        html += '<div class="lq-card" onclick="openPageModal(\'' + escAttr(r.slug) + '\')">';
+        html += '<div class="lq-header"><span class="lq-score ' + scoreClass + '">' + scorePct + '%</span>';
+        html += '<span class="lq-path">' + esc(r.slug) + '</span></div>';
+        html += '<div class="lq-snippet">' + esc(r.snippet || '') + '</div></div>';
+      });
+      results.innerHTML = html;
+    })
+    .catch(err => {
+      loading.style.display = 'none';
+      error.textContent = 'Connection failed \u2014 API server may be offline (' + err.message + ')';
+      error.style.display = 'block';
+    })
+    .finally(() => { btn.disabled = false; });
+}
 </script>
 </body>
 </html>
