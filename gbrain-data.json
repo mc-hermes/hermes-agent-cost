@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-06-09T09:02:16Z",
+  "updated_at": "2026-06-09T09:02:48Z",
   "summary": {
-    "score": "Brain score 30/39",
-    "page_count": 39,
+    "score": "Brain score 31/41",
+    "page_count": 41,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "76.9% of pages have inbound links",
+    "graph_coverage": "75.6% of pages have inbound links",
     "entity_links": "Coverage \u2014 11 people, 10 companies indexed",
-    "concept_count": 16,
+    "concept_count": 18,
     "meeting_count": 2,
     "person_count": 11,
     "company_count": 10,
-    "total_links": 34,
-    "outbound_count": 56,
-    "inbound_count": 49
+    "total_links": 36,
+    "outbound_count": 58,
+    "inbound_count": 51
   },
   "pages": [
     {
@@ -487,13 +487,18 @@
       ],
       "backlinks": [
         {
+          "from": "concepts/knowledge-graph-as-moat",
+          "type": "wikilink",
+          "text": "concepts/company-memory-os-ph1-prd"
+        },
+        {
           "from": "people/sayf-codes",
           "type": "wikilink",
           "text": "company-memory-os-ph1-prd"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "concepts/embedding-cost-projection",
@@ -510,6 +515,29 @@
       "links_out": [],
       "backlinks": [],
       "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "concepts/knowledge-graph-as-moat",
+      "title": "Knowledge Graph As Moat",
+      "type": "concept",
+      "updated": "",
+      "body": "# Knowledge Graph as Moat\n\n**Synthesized:** 2026-06-09\n**Sources:** Graphify video (Jack, YouTube), email-to-gbrain pipeline benchmarks, Company Memory OS PRD\n\n## The Pattern\n\nThe same architectural pattern works across two different domains:\n\n| Layer | Code Domain (Graphify) | Business Domain (Company Memory OS / gbrain) |\n|---|---|---|\n| **Ingest** | Clone GitHub repo | Forward email, upload transcript |\n| **Parse** | Read code, cluster into modules | Extract entities, detect relationships |\n| **Graph** | Files \u2192 modules \u2192 god nodes | People \u2192 companies \u2192 deals \u2192 decisions |\n| **Query** | \"What depends on X?\" | \"What was decided about Project X?\" |\n| **Dashboard** | Interactive circle graph | gbrain dashboard + architecture diagram |\n| **Agent** | Claude Code + Hermes | Hermes + gbrain |\n| **Compounding** | Every session builds context | Every email ingested enriches memory |\n\n## Core Insight\n\nBoth systems solve the same fundamental problem: **\"rereading is the tax.\"**\n\n- In code: re-reading the repo every conversation costs tokens and produces shallower answers\n- In business: re-searching emails/meetings every time you need context costs time and lets decisions fall through cracks\n\nThe knowledge graph IS the moat. Once a codebase or a business has been mapped:\n- Answers come from summaries, not re-parsing\n- Dependencies and blast radius are visible before making changes  \n- Context compounds across sessions\n- Switching costs increase dramatically \u2014 the graph IS the switching cost\n\n## Why This Validates Company Memory OS\n\nJack's video pitches Graphify as worth paying for because it saves Claude Code users money and produces better results. The same value proposition applies to Company Memory OS:\n\n- For a consultant with 50 clients: \"What commitments did I make to Client Y?\" answered in <500ms\n- For an agency owner: \"Show me all discussions about the Q2 budget\" without digging through email\n- For a founder: \"Who did I meet at the June conference and what did we discuss?\"\n\nThe architecture is proven. The pattern is validated. The question is execution and positioning.\n\n## Key References\n\n- [[media/videos/graphify-solves-claude-code-problem]] \u2014 Full video analysis with chapter index, quotes, and architecture breakdown\n- [[concepts/company-memory-os-ph1-prd]] \u2014 Phase 1 PRD for the Company Memory OS productized service\n- The email-to-gbrain pipeline (cron job `776c7bf32c77`) is the working MVP of Phase 1\n\n## Client Pitch Analogy\n\n\"What Graphify does for code \u2014 instant understanding of any codebase without reading through it \u2014 we do for your business communications. Forward an email. Get a searchable memory. Never lose a decision again.\"",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "media/videos/graphify-solves-claude-code-problem",
+          "type": "wikilink",
+          "text": "media/videos/graphify-solves-claude-code-problem"
+        },
+        {
+          "to": "concepts/company-memory-os-ph1-prd",
+          "type": "wikilink",
+          "text": "concepts/company-memory-os-ph1-prd"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 2,
       "inbound_count": 0
     },
     {
@@ -733,6 +761,24 @@
       ],
       "outbound_count": 1,
       "inbound_count": 2
+    },
+    {
+      "slug": "media/videos/graphify-solves-claude-code-problem",
+      "title": "Graphify Solves Claude Code Problem",
+      "type": "concept",
+      "updated": "",
+      "body": "# Graphify Solves Claude Code's Problem\n\n**Source:** YouTube video by Jack, AI automation channel\n**URL:** https://youtu.be/Owv503rTqYY\n**Ingested:** 2026-06-09\n**Type:** tutorial + product pitch\n\n## Executive Summary\n\nGraphify is a tool that creates a knowledge graph of any codebase \u2014 mapping files, modules, \"god nodes\" (load-bearing files), and their interdependencies. This gives Claude (or any AI agent) a persistent, queryable map so it doesn't re-read the entire repo every conversation. The core insight: \"rereading is the tax we're saving\" \u2014 the graph lets the AI answer from summaries instead of re-parsing flat code. When connected to an agentic operating system (Hermes + Claude Code + a visual dashboard), it becomes a shared brain that compounds across sessions and devices.\n\n## The Core Idea\n\nGraphify treats every codebase as a foreign country. Without it, you're translating a language you don't speak. With it, you have a map \u2014 you understand relationships, dependencies, and what affects what before editing anything.\n\n### What the Map Does\n- **Instant orientation** \u2014 understand any repo immediately without reading through it\n- **Grounded answers** \u2014 queries pull from the graph, not guesses from skimming\n- **Blast radius awareness** \u2014 see every dependency before editing a file\n- **Token savings** \u2014 avoid re-reading the repo each conversation; answer from summaries\n- **Always fresh** \u2014 the graph is regenerated, not stale\n\n### How It Works\n1. Reads code (does not summarize)\n2. Clusters things into modules\n3. Ranks \"god nodes\" \u2014 load-bearing files\n4. Labels facts vs. guesses (extracted vs. inferred)\n\n## Technical Architecture\n\n- **Input:** Any codebase (Claude Code, Hermes, GitHub repos)\n- **Output:** Knowledge graph with interactive visualization (community clusters)\n- **Integration:** Works as a Claude Code skill; connects to Hermes Agent\n- **Dashboard:** Visual interface showing files, links, clusters, and cost savings per conversation\n\n## The Agentic Operating System Layer\n\nThe video's key argument is that Graphify alone is useful, but Graphify + an agentic OS is the 10x unlock. The OS provides:\n\n- **One shared brain:** Graphify, Claude Code, Hermes, and the dashboard all read from one registry\n- **Cross-device continuity:** Work on laptop with Claude Code, then query from mobile via Hermes \u2014 same graph\n- **Any repo ingestion:** Paste a GitHub URL \u2192 \"graphify it\" \u2192 $0 cost \u2192 queryable immediately\n- **Overnight reviews:** The OS runs dream cycles, searches for improvements, processes chat history\n- **Hermes Telegram integration:** Hermes can reach out proactively with questions\n\n## Key Quotes\n\n- \"Rereading is the tax that we're saving here\" (3:04)\n- \"Without the map, it skims a whole repo every single conversation\" (3:10)\n- \"With the map, we can actually answer from summaries \u2014 every session compounds\" (3:13)\n- \"Graphify makes the map and the OS makes it always on, shared, and conversational\" (7:02)\n- \"If you're not using an agentic operating system, you're leaving so much value on the table\" (10:04)\n\n## People Mentioned\n\n- **Jack** \u2014 Video creator, AI automation YouTuber. Previously built and sold a tech startup \"with a gazillion customers.\" Now building AI businesses. Runs a community with Claude Code + Hermes operating system templates.\n\n## Tools/Technologies Mentioned\n\n- **Graphify** \u2014 Knowledge graph generator for codebases (GitHub repo, open source)\n- **Claude Code** \u2014 Primary coding agent that Graphify enhances\n- **Hermes Agent** \u2014 Agent framework connected to the operating system\n- **OpenCor** \u2014 Mentioned as part of the cross-device connectivity stack\n- **Anti-Gravity** \u2014 Referenced as part of the agent ecosystem\n- **Codex** \u2014 OpenAI Codex, also integrated into the OS\n\n## Relevance to Maloha Coast\n\nThe Graphify pattern directly parallels the email-to-gbrain / Company Memory OS architecture:\n\n| Graphify Pattern | gbrain/Company Memory OS Equivalent |\n|---|---|\n| Knowledge graph of code files | Knowledge graph of people, companies, decisions |\n| \"God nodes\" = key files | \"God nodes\" = key relationships/deals |\n| Query: \"what depends on X?\" | Query: \"what was decided about Project X?\" |\n| Claude Code integration | Hermes Agent + gbrain integration |\n| Visual dashboard | gbrain dashboard + architecture diagram |\n| Compound context across sessions | Compound institutional memory across emails |\n\nThe video validates the architecture sayf has already built: knowledge graph + agentic layer + visual dashboard + autonomous pipeline. It's a compelling analogy for client pitches \u2014 \"what Graphify does for code, Company Memory OS does for your business.\"\n\n## Chapter Index\n\n- 00:00 \u2014 Chapter 1: Graphify Solves Claude's Problem (hook + promise)\n- 00:46 \u2014 Chapter 2: What Graphify Actually Does (the map metaphor)\n- 01:21 \u2014 Chapter 3: How The Map Works (clustering, god nodes, facts vs guesses)\n- 02:10 \u2014 Chapter 4: Why Maps Save Tokens (orientation, blast radius, re-reading tax)\n- 03:17 \u2014 Chapter 5: Install And Set Up (clone repo, Claude Code integration)\n- 04:38 \u2014 Chapter 6: See The Knowledge Graph (interactive visualization)\n- 05:04 \u2014 Chapter 7: Query Any Repo Live (prompt example, cost comparison)\n- 05:43 \u2014 Chapter 8: Take It Further (agentic operating system intro)\n- 06:07 \u2014 Chapter 9: Inside The Operating System (dashboard, Hermes integration)\n- 07:32 \u2014 Chapter 10: Import Any GitHub Repo (one-click ingestion)\n- 08:07 \u2014 Chapter 11: Chat To Your Projects (conversational interface)\n- 09:04 \u2014 Chapter 12: Connect Everything Together (shared brain architecture)\n- 10:04 \u2014 Chapter 13: Visual Interface Wins (closing argument)\n\n---\n\n*Raw transcript extracted from YouTube timestamps provided by user (VPS IP blocked by YouTube, transcript retrieved via user-supplied text).*",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "concepts/knowledge-graph-as-moat",
+          "type": "wikilink",
+          "text": "media/videos/graphify-solves-claude-code-problem"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 1
     },
     {
       "slug": "meetings/2026-06-05-tj-vandermolen",
@@ -1276,6 +1322,16 @@
     {
       "source": "concepts/company-memory-os-ph1-prd",
       "target": "people/sayf-codes",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/knowledge-graph-as-moat",
+      "target": "media/videos/graphify-solves-claude-code-problem",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/knowledge-graph-as-moat",
+      "target": "concepts/company-memory-os-ph1-prd",
       "type": "wikilink"
     },
     {
