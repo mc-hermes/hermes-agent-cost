@@ -1315,7 +1315,8 @@ function runLiveQuery() {
         html += '<div class="lq-card" onclick="openPageModal(\'' + escAttr(r.slug) + '\')">';
         html += '<div class="lq-header"><span class="lq-score ' + scoreClass + '">' + scorePct + '%</span>';
         html += '<span class="lq-path">' + esc(r.slug) + '</span></div>';
-        html += '<div class="lq-snippet">' + esc(r.snippet || '') + '</div></div>';
+        const snippet = esc(r.snippet || '').trim() || '<span style="opacity:0.4">(no preview)</span>';
+        html += '<div class="lq-snippet">' + snippet + '</div></div>';
       });
       results.innerHTML = html;
     })
