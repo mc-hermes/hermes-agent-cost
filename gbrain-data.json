@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-06-10T14:37:52Z",
+  "updated_at": "2026-06-10T14:41:51Z",
   "summary": {
-    "score": "Brain score 92/100 (embed 35/35, links 25/25, timeline 8/15, orphans 14/15, dead-links 10/10)",
+    "score": "Brain score 46/53",
     "page_count": 53,
-    "embed_coverage": "100% coverage, 0 missing",
-    "graph_coverage": "71.7% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
-    "entity_links": "Coverage 86% \u00b1 6.6%",
+    "embed_coverage": "100% coverage \u2014 all pages embedded",
+    "graph_coverage": "86.8% of pages have inbound links",
+    "entity_links": "Coverage \u2014 16 people, 12 companies indexed",
     "concept_count": 20,
     "meeting_count": 3,
     "person_count": 16,
@@ -17,13 +17,9 @@
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 1,
-    "total_links": 59,
-    "outbound_count": 93,
-    "inbound_count": 84,
-    "score_detail": "Brain score 92/100 (embed 35/35, links 25/25, timeline 8/15, orphans 14/15, dead-links 10/10)",
-    "checks_passed": 67,
-    "checks_warned": 6,
-    "checks_failed": 0
+    "total_links": 76,
+    "outbound_count": 110,
+    "inbound_count": 101
   },
   "pages": [
     {
@@ -260,6 +256,11 @@
           "text": "Dynamics Orchard Farm Sdn Bhd"
         },
         {
+          "from": "digests/2026-06-10-business-brain-digest",
+          "type": "wikilink",
+          "text": "Dynamics Orchard Farm Sdn Bhd"
+        },
+        {
           "from": "people/aisyah-humaira-wan-aziz",
           "type": "wikilink",
           "text": "dynamics-orchard-farm-sdn-bhd"
@@ -271,7 +272,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 4
+      "inbound_count": 5
     },
     {
       "slug": "companies/global-ai-village",
@@ -283,13 +284,18 @@
       "links_out": [],
       "backlinks": [
         {
+          "from": "digests/2026-06-10-business-brain-digest",
+          "type": "wikilink",
+          "text": "Global AI Village"
+        },
+        {
           "from": "meetings/2026-06-08-bjarte-global-ai-village",
           "type": "link",
           "text": "Global AI Village"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "companies/inclusive-ai-association",
@@ -423,13 +429,18 @@
       "links_out": [],
       "backlinks": [
         {
+          "from": "digests/2026-06-10-business-brain-digest",
+          "type": "wikilink",
+          "text": "Passend"
+        },
+        {
           "from": "meetings/2026-06-05-tj-vandermolen",
           "type": "link",
           "text": "Passend"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "companies/posh-corporate",
@@ -487,7 +498,7 @@
         {
           "from": "digests/2026-06-10-business-brain-digest",
           "type": "wikilink",
-          "text": "companies/posh-corporate"
+          "text": "Posh Corporate"
         },
         {
           "from": "meetings/2026-06-10-business-brain-with-audrey",
@@ -556,13 +567,18 @@
       "links_out": [],
       "backlinks": [
         {
+          "from": "digests/2026-06-10-business-brain-digest",
+          "type": "wikilink",
+          "text": "Business Brain"
+        },
+        {
           "from": "meetings/2026-06-08-bjarte-global-ai-village",
           "type": "link",
           "text": "Business Brain"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "concepts/claude-code-10x-skill-newsletter",
@@ -605,13 +621,18 @@
           "text": "claude-code-10x-skill-newsletter"
         },
         {
+          "from": "digests/2026-06-10-business-brain-digest",
+          "type": "wikilink",
+          "text": "Claude Code 10x Skill Newsletter"
+        },
+        {
           "from": "people/nate-herk",
           "type": "wikilink",
           "text": "claude-code-10x-skill-newsletter"
         }
       ],
       "outbound_count": 5,
-      "inbound_count": 2
+      "inbound_count": 3
     },
     {
       "slug": "concepts/company-memory-os-ph1-prd",
@@ -634,13 +655,18 @@
           "text": "concepts/company-memory-os-ph1-prd"
         },
         {
+          "from": "digests/2026-06-10-business-brain-digest",
+          "type": "wikilink",
+          "text": "Company Memory OS Ph1 PRD"
+        },
+        {
           "from": "people/sayf-codes",
           "type": "wikilink",
           "text": "company-memory-os-ph1-prd"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 2
+      "inbound_count": 3
     },
     {
       "slug": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
@@ -693,6 +719,11 @@
           "text": "concepts/dynamics-orchard-farm-management-accounts-fye-2025"
         },
         {
+          "from": "digests/2026-06-10-business-brain-digest",
+          "type": "wikilink",
+          "text": "Dynamics Orchard Farm Management Accounts FYE 2025"
+        },
+        {
           "from": "people/aisyah-humaira-wan-aziz",
           "type": "wikilink",
           "text": "concepts/dynamics-orchard-farm-management-accounts-fye-2025"
@@ -714,7 +745,7 @@
         }
       ],
       "outbound_count": 6,
-      "inbound_count": 6
+      "inbound_count": 7
     },
     {
       "slug": "concepts/embedding-cost-projection",
@@ -752,9 +783,15 @@
           "text": "concepts/company-memory-os-ph1-prd"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-06-10-business-brain-digest",
+          "type": "wikilink",
+          "text": "Knowledge Graph as Moat"
+        }
+      ],
       "outbound_count": 2,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "concepts/openclaw-anatomy",
@@ -775,9 +812,15 @@
           "text": "System Design One"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-06-10-business-brain-digest",
+          "type": "wikilink",
+          "text": "OpenClaw Anatomy"
+        }
+      ],
       "outbound_count": 2,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "concepts/three-folder-system-head-hands-heart",
@@ -803,9 +846,15 @@
           "text": "Nick Milo"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-06-10-business-brain-digest",
+          "type": "wikilink",
+          "text": "Three Folder System Head Hands Heart"
+        }
+      ],
       "outbound_count": 3,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "concepts/virtual-machines-deep-dive",
@@ -857,18 +906,13 @@
       ],
       "backlinks": [
         {
-          "from": "digests/2026-06-10-business-brain-digest",
-          "type": "wikilink",
-          "text": "datasets/dynamics-orchard-management-accounts-fye-2025"
-        },
-        {
           "from": "meetings/2026-06-10-business-brain-with-audrey",
           "type": "wikilink",
           "text": "datasets/dynamics-orchard-management-accounts-fye-2025"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 2,
+      "inbound_count": 1,
       "raw_path": "/home/ubuntu/.gbrain/datasets/dynamics-orchard-management-accounts-fye-2025.csv",
       "row_count": "24",
       "format": "csv",
@@ -902,32 +946,117 @@
       "title": "2026 06 10 Business Brain Digest",
       "type": "digest",
       "updated": "",
-      "body": "# Your Business Brain \u2014 Week of 2026-06-03 to 2026-06-10\n\n\ud83d\udce5 This week's intake: 50 items\n- 1 dataset (Dynamics Orchard Management Accounts FYE 2025, 24 rows)\n- 2 meetings (Audrey Loh @ Posh Corporate, Bjarte @ Global AI Village, TJ van der Molen @ Passend)\n- 19 concepts, 16 people, 12 companies, 1 media\n\n\ud83d\udd17 New connections found\n- [[meetings/2026-06-10-business-brain-with-audrey]] \u2192 [[people/audrey-loh]] (attendee)\n- [[meetings/2026-06-10-business-brain-with-audrey]] \u2192 [[companies/posh-corporate]] (discussed)\n- [[meetings/2026-06-10-business-brain-with-audrey]] \u2192 [[datasets/dynamics-orchard-management-accounts-fye-2025]] (data reviewed)\n- [[people/audrey-loh]] \u2192 [[companies/posh-corporate]] (works at)\n\n\ud83d\udcca Data updates\n- **Dynamics Orchard Management Accounts FYE 2025**: 24 rows, 5 columns. Net profit MYR 102,000. Orchard B outperforms Orchard A (MYR 107K vs MYR 89.5K).\n\n\ud83d\udca1 Insight\nAudrey Loh at Posh Corporate discussed the Dynamics Orchard Farm expansion, noting that Orchard B's margins are 15%% higher than Orchard A's \u2014 consistent with the management accounts data showing Orchard B revenue of MYR 107K vs Orchard A's MYR 89.5K. The expansion feasibility study (MYR 7,500) was captured in the September 2025 accounts, linking the meeting discussion directly to the financial data [[meetings/2026-06-10-business-brain-with-audrey]].",
+      "body": "# Your Business Brain \u2014 Week of June 3\u201310, 2026\n\n\ud83d\udce5 **This week's intake: 53 items** (first full week of brain population)\n\n- **3 meetings** \u2014 with [[Audrey Loh]] (Posh Corporate), [[Bjarte]] (Global AI Village), and [[TJ van der Molen]] (Passend)\n- **1 dataset** \u2014 [[Dynamics Orchard Farm Management Accounts FYE 2025]], 24 transactions, MYR 196.5K total revenue across two orchards\n- **1 video** \u2014 [[Graphify Solves Claude Code Problem]], knowledge graph tool for codebases\n- **16 people** added as entity pages (Audrey Loh, Yaw Hog Ng, Yassif N.M., Aisyah Humaira, Ayaan, Sayf Codes, Neo Kim, Carson, Nate Herk, Zaim Mohzani, Nabil Jalil, Bjarte, Nick Milo, Jake Van Cleef, Bob Proctor, TJ van der Molen)\n- **12 companies** mapped (Posh Corporate, Dynamics Orchard Farm, Passend, Global AI Village, AI Automation Society, OpenAI, Anthropic, KSI Strategic Institute, Inclusive AI Association, Nation Building School, Blackgrid Digital, System Design One)\n- **Key concepts** \u2014 [[Business Brain]], [[Company Memory OS Ph1 PRD]], [[Knowledge Graph as Moat]], [[OpenClaw Anatomy]], [[Claude Code 10x Skill Newsletter]], [[Three Folder System Head Hands Heart]]\n\n---\n\n\ud83d\udd17 **New connections found**\n\n- [[Audrey Loh]] \u2192 [[Posh Corporate]] \u2192 [[Dynamics Orchard Farm Sdn Bhd]] \u2014 three verified graph edges forming a complete client-accountant-firm chain, with the FYE 2025 management accounts dataset as supporting evidence\n- [[Posh Corporate]] connects to 4 people ([[Audrey Loh]], [[Yaw Hog Ng]], [[Yassif N.M.]], [[Aisyah Humaira Wan Aziz]]) and 1 company ([[Dynamics Orchard Farm Sdn Bhd]]) \u2014 a dense business relationship cluster with real financial data flowing through it\n- [[meetings/2026-06-08-bjarte-global-ai-village]] \u2192 [[Global AI Village]] \u2192 [[Business Brain]] \u2014 the Business Brain concept was pitched to a real prospect with a follow-up test scheduled for June 12\n- [[Knowledge Graph as Moat]] backlinks to [[Company Memory OS Ph1 PRD]], which links to [[Sayf Codes]] \u2014 the product vision and competitive strategy are connected through the same author\n- [[meetings/2026-06-05-tj-vandermolen]] \u2192 [[Passend]] \u2014 prospective client with 3 development projects scoped, including a Requirements Engineering Workshop proposal at MYR 800/full day\n\n---\n\n\ud83d\udcc8 **Data updates**\n\n- **Dynamics Orchard Farm \u2014 Management Accounts FYE 2025**: 24 transactions across Jan\u2013Dec 2025. Orchard A revenue MYR 89,500; Orchard B revenue MYR 107,000; total net profit MYR 102,000. Orchard B consistently outperforms with 15% higher margins. Orchard expansion feasibility study (MYR 7,500, Sept 2025) and new planting materials (MYR 10,500, Oct 2025) indicate expansion plans are already underway. Source: email from [[Audrey Loh]] at [[Posh Corporate]].\n\n---\n\n\ud83d\udca1 **Insight**\n\nThe [[Business Brain]] concept \u2014 pitched to [[Bjarte]] at [[Global AI Village]] on June 8 \u2014 sits at the intersection of two verified product development threads. The [[Company Memory OS Ph1 PRD]] (authored by [[Sayf Codes]]) defines the technical vision for transforming fragmented communication into searchable institutional memory, while [[Knowledge Graph as Moat]] articulates the competitive defensibility of graph-based data relationships. The [[Graphify Solves Claude Code Problem]] video, ingested June 9, independently validates the same core pattern \u2014 a knowledge graph that compounds value as more data enters the system. With the [[Dynamics Orchard Farm Management Accounts FYE 2025]] dataset demonstrating real financial data flowing through the brain ([[Posh Corporate]] \u2192 [[Audrey Loh]] \u2192 [[Dynamics Orchard Farm Sdn Bhd]]), the Business Brain concept has both a product architecture and a live data proof point for the June 12 test.",
       "tags": [],
       "links_out": [
         {
-          "to": "meetings/2026-06-10-business-brain-with-audrey",
-          "type": "wikilink",
-          "text": "meetings/2026-06-10-business-brain-with-audrey"
-        },
-        {
           "to": "people/audrey-loh",
           "type": "wikilink",
-          "text": "people/audrey-loh"
+          "text": "Audrey Loh"
+        },
+        {
+          "to": "people/bjarte",
+          "type": "wikilink",
+          "text": "Bjarte"
+        },
+        {
+          "to": "people/tj-vandermolen",
+          "type": "wikilink",
+          "text": "TJ van der Molen"
+        },
+        {
+          "to": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
+          "type": "wikilink",
+          "text": "Dynamics Orchard Farm Management Accounts FYE 2025"
+        },
+        {
+          "to": "media/videos/graphify-solves-claude-code-problem",
+          "type": "wikilink",
+          "text": "Graphify Solves Claude Code Problem"
+        },
+        {
+          "to": "concepts/business-brain",
+          "type": "wikilink",
+          "text": "Business Brain"
+        },
+        {
+          "to": "concepts/company-memory-os-ph1-prd",
+          "type": "wikilink",
+          "text": "Company Memory OS Ph1 PRD"
+        },
+        {
+          "to": "concepts/knowledge-graph-as-moat",
+          "type": "wikilink",
+          "text": "Knowledge Graph as Moat"
+        },
+        {
+          "to": "concepts/openclaw-anatomy",
+          "type": "wikilink",
+          "text": "OpenClaw Anatomy"
+        },
+        {
+          "to": "concepts/claude-code-10x-skill-newsletter",
+          "type": "wikilink",
+          "text": "Claude Code 10x Skill Newsletter"
+        },
+        {
+          "to": "concepts/three-folder-system-head-hands-heart",
+          "type": "wikilink",
+          "text": "Three Folder System Head Hands Heart"
         },
         {
           "to": "companies/posh-corporate",
           "type": "wikilink",
-          "text": "companies/posh-corporate"
+          "text": "Posh Corporate"
         },
         {
-          "to": "datasets/dynamics-orchard-management-accounts-fye-2025",
+          "to": "companies/dynamics-orchard-farm-sdn-bhd",
           "type": "wikilink",
-          "text": "datasets/dynamics-orchard-management-accounts-fye-2025"
+          "text": "Dynamics Orchard Farm Sdn Bhd"
+        },
+        {
+          "to": "people/yaw-hog-ng",
+          "type": "wikilink",
+          "text": "Yaw Hog Ng"
+        },
+        {
+          "to": "people/yassif-n-m",
+          "type": "wikilink",
+          "text": "Yassif N.M."
+        },
+        {
+          "to": "people/aisyah-humaira-wan-aziz",
+          "type": "wikilink",
+          "text": "Aisyah Humaira Wan Aziz"
+        },
+        {
+          "to": "meetings/2026-06-08-bjarte-global-ai-village",
+          "type": "wikilink",
+          "text": "meetings/2026-06-08-bjarte-global-ai-village"
+        },
+        {
+          "to": "companies/global-ai-village",
+          "type": "wikilink",
+          "text": "Global AI Village"
+        },
+        {
+          "to": "people/sayf-codes",
+          "type": "wikilink",
+          "text": "Sayf Codes"
+        },
+        {
+          "to": "meetings/2026-06-05-tj-vandermolen",
+          "type": "wikilink",
+          "text": "meetings/2026-06-05-tj-vandermolen"
+        },
+        {
+          "to": "companies/passend",
+          "type": "wikilink",
+          "text": "Passend"
         }
       ],
       "backlinks": [],
-      "outbound_count": 4,
+      "outbound_count": 21,
       "inbound_count": 0
     },
     {
@@ -1114,10 +1243,15 @@
           "from": "concepts/knowledge-graph-as-moat",
           "type": "wikilink",
           "text": "media/videos/graphify-solves-claude-code-problem"
+        },
+        {
+          "from": "digests/2026-06-10-business-brain-digest",
+          "type": "wikilink",
+          "text": "Graphify Solves Claude Code Problem"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "meetings/2026-06-05-tj-vandermolen",
@@ -1138,9 +1272,15 @@
           "text": "Passend"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-06-10-business-brain-digest",
+          "type": "wikilink",
+          "text": "meetings/2026-06-05-tj-vandermolen"
+        }
+      ],
       "outbound_count": 2,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "meetings/2026-06-08-bjarte-global-ai-village",
@@ -1178,9 +1318,15 @@
           "text": "Business Brain"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-06-10-business-brain-digest",
+          "type": "wikilink",
+          "text": "meetings/2026-06-08-bjarte-global-ai-village"
+        }
+      ],
       "outbound_count": 4,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "meetings/2026-06-10-business-brain-with-audrey",
@@ -1206,15 +1352,9 @@
           "text": "datasets/dynamics-orchard-management-accounts-fye-2025"
         }
       ],
-      "backlinks": [
-        {
-          "from": "digests/2026-06-10-business-brain-digest",
-          "type": "wikilink",
-          "text": "meetings/2026-06-10-business-brain-with-audrey"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 3,
-      "inbound_count": 1
+      "inbound_count": 0
     },
     {
       "slug": "people/aisyah-humaira-wan-aziz",
@@ -1248,10 +1388,15 @@
           "from": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
           "type": "wikilink",
           "text": "Aisyah Humaira Wan Aziz (Maira)"
+        },
+        {
+          "from": "digests/2026-06-10-business-brain-digest",
+          "type": "wikilink",
+          "text": "Aisyah Humaira Wan Aziz"
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "people/audrey-loh",
@@ -1293,7 +1438,7 @@
         {
           "from": "digests/2026-06-10-business-brain-digest",
           "type": "wikilink",
-          "text": "people/audrey-loh"
+          "text": "Audrey Loh"
         },
         {
           "from": "meetings/2026-06-10-business-brain-with-audrey",
@@ -1338,13 +1483,18 @@
       "links_out": [],
       "backlinks": [
         {
+          "from": "digests/2026-06-10-business-brain-digest",
+          "type": "wikilink",
+          "text": "Bjarte"
+        },
+        {
           "from": "meetings/2026-06-08-bjarte-global-ai-village",
           "type": "link",
           "text": "Bjarte"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "people/bob-proctor",
@@ -1564,10 +1714,15 @@
           "from": "concepts/company-memory-os-ph1-prd",
           "type": "wikilink",
           "text": "Sayf Codes"
+        },
+        {
+          "from": "digests/2026-06-10-business-brain-digest",
+          "type": "wikilink",
+          "text": "Sayf Codes"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "people/tj-vandermolen",
@@ -1582,13 +1737,18 @@
       "links_out": [],
       "backlinks": [
         {
+          "from": "digests/2026-06-10-business-brain-digest",
+          "type": "wikilink",
+          "text": "TJ van der Molen"
+        },
+        {
           "from": "meetings/2026-06-05-tj-vandermolen",
           "type": "link",
           "text": "TJ van der Molen"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 1,
+      "inbound_count": 2,
       "email": "t.vandermolen@passend.my",
       "phone": "+6016 434 8614",
       "company_name": "Passend",
@@ -1622,10 +1782,15 @@
           "from": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
           "type": "wikilink",
           "text": "Yassif N.M."
+        },
+        {
+          "from": "digests/2026-06-10-business-brain-digest",
+          "type": "wikilink",
+          "text": "Yassif N.M."
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "people/yaw-hog-ng",
@@ -1658,10 +1823,15 @@
           "from": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
           "type": "wikilink",
           "text": "Yaw Hog, Ng"
+        },
+        {
+          "from": "digests/2026-06-10-business-brain-digest",
+          "type": "wikilink",
+          "text": "Yaw Hog Ng"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 2
+      "inbound_count": 3
     },
     {
       "slug": "people/zaim-mohzani",
@@ -1983,12 +2153,57 @@
     },
     {
       "source": "digests/2026-06-10-business-brain-digest",
-      "target": "meetings/2026-06-10-business-brain-with-audrey",
+      "target": "people/audrey-loh",
       "type": "wikilink"
     },
     {
       "source": "digests/2026-06-10-business-brain-digest",
-      "target": "people/audrey-loh",
+      "target": "people/bjarte",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-10-business-brain-digest",
+      "target": "people/tj-vandermolen",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-10-business-brain-digest",
+      "target": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-10-business-brain-digest",
+      "target": "media/videos/graphify-solves-claude-code-problem",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-10-business-brain-digest",
+      "target": "concepts/business-brain",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-10-business-brain-digest",
+      "target": "concepts/company-memory-os-ph1-prd",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-10-business-brain-digest",
+      "target": "concepts/knowledge-graph-as-moat",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-10-business-brain-digest",
+      "target": "concepts/openclaw-anatomy",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-10-business-brain-digest",
+      "target": "concepts/claude-code-10x-skill-newsletter",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-10-business-brain-digest",
+      "target": "concepts/three-folder-system-head-hands-heart",
       "type": "wikilink"
     },
     {
@@ -1998,7 +2213,47 @@
     },
     {
       "source": "digests/2026-06-10-business-brain-digest",
-      "target": "datasets/dynamics-orchard-management-accounts-fye-2025",
+      "target": "companies/dynamics-orchard-farm-sdn-bhd",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-10-business-brain-digest",
+      "target": "people/yaw-hog-ng",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-10-business-brain-digest",
+      "target": "people/yassif-n-m",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-10-business-brain-digest",
+      "target": "people/aisyah-humaira-wan-aziz",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-10-business-brain-digest",
+      "target": "meetings/2026-06-08-bjarte-global-ai-village",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-10-business-brain-digest",
+      "target": "companies/global-ai-village",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-10-business-brain-digest",
+      "target": "people/sayf-codes",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-10-business-brain-digest",
+      "target": "meetings/2026-06-05-tj-vandermolen",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-10-business-brain-digest",
+      "target": "companies/passend",
       "type": "wikilink"
     },
     {
@@ -2119,13 +2374,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 70,
-    "brain_checks_score": 90,
+    "health_score": 80,
+    "brain_checks_score": 95,
     "category_scores": {
-      "brain": 90,
+      "brain": 95,
       "skill": 100,
       "ops": 95,
-      "meta": 85
+      "meta": 90
     },
     "checks": [
       {
@@ -2193,9 +2448,9 @@
       {
         "name": "extract_atoms_backlog",
         "status": "ok",
-        "message": "3 page(s) eligible (below warn threshold; pack does not run extract_atoms)",
+        "message": "no pages awaiting atom extraction",
         "details": {
-          "backlog": 3,
+          "backlog": 0,
           "pack_declares_phase": false,
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
@@ -2203,8 +2458,8 @@
       },
       {
         "name": "conversation_format_coverage",
-        "status": "warn",
-        "message": "2/3 conversation pages (66.7%) match NO built-in pattern. Breakdown: _no_match=2, bold-name-no-time=1. Investigate: gbrain conversation-parser scan <slug> | Enable LLM fallback (opt-in): gbrain config set conversation_parser.llm_fallback_enabled true",
+        "status": "ok",
+        "message": "No conversation-type pages \u2014 coverage check not applicable",
         "category": "brain"
       },
       {
@@ -2228,7 +2483,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 53 pages",
+        "message": "Connected, 43 pages",
         "category": "ops"
       },
       {
@@ -2264,7 +2519,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 300ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -2282,25 +2537,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 86%, timeline 83%",
+        "message": "Entity link coverage 91%, timeline 100%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 92/100 (embed 35/35, links 25/25, timeline 8/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 28 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 53 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
         "category": "brain"
       },
       {
@@ -2461,7 +2716,7 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (53 pages \u2014 too few to assess)",
+        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
         "category": "brain"
       },
       {
@@ -2485,7 +2740,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "93 reranker failure(s) in last 7 days (below threshold)",
+        "message": "83 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -2497,7 +2752,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "71.7% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -2600,13 +2855,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 86% \u00b1 6.6%",
+        "message": "Coverage 91% \u00b1 6.1%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "warn",
-        "message": "Coverage 82% \u00b1 7.2% (target 90%)",
+        "status": "ok",
+        "message": "Coverage 100% \u00b1 0.0%",
         "category": "meta"
       },
       {
@@ -2624,7 +2879,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "7 distinct typed values (pack declares 25)",
+        "message": "4 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
