@@ -1189,7 +1189,7 @@ function renderPages(filter) {
   }
   var sections = [
     { label: '\uD83D\uDCCC  Recently Added', test: function(d) { return daysAgo(d) <= 2; } },
-    { label: '\uD83D\uDCC5  This Week',      test: function(d) { return daysAgo(d) <= 7; } },
+    { label: '\uD83D\uDCC5  This Week',      test: function(d) { return daysAgo(d) < 7 && daysAgo(d) > 2; } },
     { label: '\uD83D\uDCC1  Older',          test: function(d) { return daysAgo(d) > 7; } },
   ];
   var html = '<table><thead><tr><th>Page</th><th>Type</th><th>Links</th><th>Updated</th></tr></thead><tbody>';
