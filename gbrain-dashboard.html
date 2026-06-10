@@ -384,6 +384,7 @@
 
     /* Hide desktop tabs on mobile */
     .desktop-tabs-row { display: none; }
+    .desktop-view-tabs { display: none; }
 
     /* Graph: taller, fullscreen button visible */
     .graph-container canvas { height: 280px; }
@@ -460,6 +461,14 @@
 
   <!-- Dashboard -->
   <div id="dashboard" style="display:none">
+
+    <!-- Desktop View Navigation -->
+    <div class="tabs desktop-view-tabs" id="desktopViewTabs" style="margin-bottom:16px">
+      <button class="tab active" data-dview="today" onclick="showView('today')">📰 Today</button>
+      <button class="tab" data-dview="browse" onclick="showView('browse')">📂 Browse</button>
+      <button class="tab" data-dview="ask" onclick="showView('ask')">💬 Ask</button>
+      <button class="tab" data-dview="graph" onclick="showView('graph')">🔗 Graph</button>
+    </div>
 
     <!-- Stat Cards (always visible) -->
     <div class="stat-grid" id="statGrid"></div>
@@ -733,6 +742,11 @@ function showView(name) {
   document.querySelectorAll('.mobile-nav-btn').forEach(b => b.classList.remove('active'));
   const navBtn = document.querySelector('.mobile-nav-btn[data-view="' + name + '"]');
   if (navBtn) navBtn.classList.add('active');
+
+  // Update desktop view tabs
+  document.querySelectorAll('#desktopViewTabs .tab').forEach(t => t.classList.remove('active'));
+  const dt = document.querySelector('#desktopViewTabs .tab[data-dview="' + name + '"]');
+  if (dt) dt.classList.add('active');
 
   // Close more menu
   document.getElementById('moreMenu').classList.remove('active');
