@@ -1,18 +1,22 @@
 {
-  "updated_at": "2026-06-10T04:57:33Z",
+  "updated_at": "2026-06-10T12:22:48Z",
   "summary": {
-    "score": "Brain score 38/50",
+    "score": "Brain score 92/100 (embed 35/35, links 25/25, timeline 8/15, orphans 14/15, dead-links 10/10)",
     "page_count": 50,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "76.0% of pages have inbound links",
-    "entity_links": "Coverage \u2014 16 people, 12 companies indexed",
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "74.0% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 86% \u00b1 6.6%",
     "concept_count": 20,
     "meeting_count": 2,
     "person_count": 16,
     "company_count": 12,
     "total_links": 50,
-    "outbound_count": 78,
-    "inbound_count": 69
+    "outbound_count": 84,
+    "inbound_count": 75,
+    "score_detail": "Brain score 92/100 (embed 35/35, links 25/25, timeline 8/15, orphans 14/15, dead-links 10/10)",
+    "checks_passed": 68,
+    "checks_warned": 5,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -244,6 +248,11 @@
           "text": "dynamics-orchard-farm-sdn-bhd"
         },
         {
+          "from": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
+          "type": "wikilink",
+          "text": "Dynamics Orchard Farm Sdn Bhd"
+        },
+        {
           "from": "people/aisyah-humaira-wan-aziz",
           "type": "wikilink",
           "text": "dynamics-orchard-farm-sdn-bhd"
@@ -255,7 +264,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 3
+      "inbound_count": 4
     },
     {
       "slug": "companies/global-ai-village",
@@ -459,6 +468,11 @@
           "text": "posh-corporate"
         },
         {
+          "from": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
+          "type": "wikilink",
+          "text": "Posh Corporate"
+        },
+        {
           "from": "people/aisyah-humaira-wan-aziz",
           "type": "wikilink",
           "text": "posh-corporate"
@@ -475,7 +489,7 @@
         }
       ],
       "outbound_count": 5,
-      "inbound_count": 4
+      "inbound_count": 5
     },
     {
       "slug": "companies/system-design-one",
@@ -611,9 +625,40 @@
       "title": "Dynamics Orchard Farm Management Accounts Fye 2025",
       "type": "concept",
       "updated": "",
-      "body": "# Dynamics Orchard Farm Sdn Bhd - Preparation of Management Accounts FYE 2025\n**From:** Sayf Codes <sayfcodes@gmail.com>\n**Date:** Wed, 10 Jun 2026 12:54:27 +0800\n**Source:** email forward\n\nSayf's note: This is the first company secretary request being sent to Gbrain for filing into memory and the knowledge base.\n\n## Email Chain Summary\n\n**Aisyah Humaira Wan Aziz (Maira)** \u2014 Senior Executive, Accounting at **Posh Corporate** \u2014 requested the following documents from Yassif and Syaf (Sayf) to facilitate preparation of the management accounts for Dynamics Orchard Farm Sdn Bhd for the financial year ending 2025:\n\n1. **Bank statements** \u2014 July 2025 to December 2025\n2. **Supporting documents** \u2014 August 2025 to December 2025\n\n**Sayf's response**: Provided a Google Drive shared folder with the bank statements for the requested period. Yassif is expected to furnish the supporting documents.\n\n- Google Drive link: https://drive.google.com/drive/folders/13lfy_i99qD5fWkk0czMjheiCz92WCDCO\n\n**People involved:**\n- **Aisyah Humaira Wan Aziz (Maira)** \u2014 Senior Executive, Accounting at Posh Corporate (humaira@poshcorporate.com, +6016-737 2896)\n- **Yassif N.M.** (yassif.n.m@gmail.com) \u2014 supporting documents contact\n- **Yaw Hog, Ng** \u2014 Posh Corporate (yaw@poshcorporate.com)\n- **Audrey Loh** \u2014 Posh Corporate (audrey@poshcorporate.com)\n- **Sayf** \u2014 client contact",
+      "body": "# Dynamics Orchard Farm Sdn Bhd - Preparation of Management Accounts FYE 2025\n**From:** Sayf Codes <sayfcodes@gmail.com>\n**Date:** Wed, 10 Jun 2026 12:54:27 +0800\n**Source:** email forward\n\nSayf's note: This is the first company secretary request being sent to Gbrain for filing into memory and the knowledge base.\n\n## Email Chain Summary\n\n**Aisyah Humaira Wan Aziz (Maira)** \u2014 Senior Executive, Accounting at **Posh Corporate** \u2014 requested the following documents from Yassif and Syaf (Sayf) to facilitate preparation of the management accounts for Dynamics Orchard Farm Sdn Bhd for the financial year ending 2025:\n\n1. **Bank statements** \u2014 July 2025 to December 2025 for [[Dynamics Orchard Farm Sdn Bhd]]\n2. **Supporting documents** \u2014 August 2025 to December 2025\n\n**Sayf's response**: Provided a Google Drive shared folder with the bank statements for the requested period. Yassif is expected to furnish the supporting documents.\n\n- Google Drive link: https://drive.google.com/drive/folders/13lfy_i99qD5fWkk0czMjheiCz92WCDCO\n\n**People involved:**\n- **[[Aisyah Humaira Wan Aziz (Maira)]]** \u2014 Senior Executive, Accounting at [[Posh Corporate]] (humaira@poshcorporate.com, +6016-737 2896)\n- **[[Yassif N.M.]]** (yassif.n.m@gmail.com) \u2014 supporting documents contact\n- **[[Yaw Hog, Ng]]** \u2014 Posh Corporate (yaw@poshcorporate.com)\n- **[[Audrey Loh]]** \u2014 Posh Corporate (audrey@poshcorporate.com)\n- **Sayf** \u2014 client contact",
       "tags": [],
-      "links_out": [],
+      "links_out": [
+        {
+          "to": "companies/dynamics-orchard-farm-sdn-bhd",
+          "type": "wikilink",
+          "text": "Dynamics Orchard Farm Sdn Bhd"
+        },
+        {
+          "to": "people/aisyah-humaira-wan-aziz",
+          "type": "wikilink",
+          "text": "Aisyah Humaira Wan Aziz (Maira)"
+        },
+        {
+          "to": "companies/posh-corporate",
+          "type": "wikilink",
+          "text": "Posh Corporate"
+        },
+        {
+          "to": "people/yassif-n-m",
+          "type": "wikilink",
+          "text": "Yassif N.M."
+        },
+        {
+          "to": "people/yaw-hog-ng",
+          "type": "wikilink",
+          "text": "Yaw Hog, Ng"
+        },
+        {
+          "to": "people/audrey-loh",
+          "type": "wikilink",
+          "text": "Audrey Loh"
+        }
+      ],
       "backlinks": [
         {
           "from": "companies/dynamics-orchard-farm-sdn-bhd",
@@ -646,7 +691,7 @@
           "text": "concepts/dynamics-orchard-farm-management-accounts-fye-2025"
         }
       ],
-      "outbound_count": 0,
+      "outbound_count": 6,
       "inbound_count": 6
     },
     {
@@ -1048,9 +1093,15 @@
           "text": "dynamics-orchard-farm-sdn-bhd"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
+          "type": "wikilink",
+          "text": "Aisyah Humaira Wan Aziz (Maira)"
+        }
+      ],
       "outbound_count": 3,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "people/audrey-loh",
@@ -1078,10 +1129,15 @@
           "from": "companies/posh-corporate",
           "type": "wikilink",
           "text": "audrey-loh"
+        },
+        {
+          "from": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
+          "type": "wikilink",
+          "text": "Audrey Loh"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "people/ayaan",
@@ -1396,9 +1452,15 @@
           "text": "dynamics-orchard-farm-sdn-bhd"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
+          "type": "wikilink",
+          "text": "Yassif N.M."
+        }
+      ],
       "outbound_count": 2,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "people/yaw-hog-ng",
@@ -1426,10 +1488,15 @@
           "from": "companies/posh-corporate",
           "type": "wikilink",
           "text": "yaw-hog-ng"
+        },
+        {
+          "from": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
+          "type": "wikilink",
+          "text": "Yaw Hog, Ng"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "people/zaim-mohzani",
@@ -1675,6 +1742,26 @@
       "type": "wikilink"
     },
     {
+      "source": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
+      "target": "people/aisyah-humaira-wan-aziz",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
+      "target": "people/yassif-n-m",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
+      "target": "people/yaw-hog-ng",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
+      "target": "people/audrey-loh",
+      "type": "wikilink"
+    },
+    {
       "source": "concepts/knowledge-graph-as-moat",
       "target": "media/videos/graphify-solves-claude-code-problem",
       "type": "wikilink"
@@ -1766,11 +1853,6 @@
     },
     {
       "source": "people/aisyah-humaira-wan-aziz",
-      "target": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
-      "type": "wikilink"
-    },
-    {
-      "source": "people/aisyah-humaira-wan-aziz",
       "target": "companies/posh-corporate",
       "type": "wikilink"
     },
@@ -1780,23 +1862,8 @@
       "type": "wikilink"
     },
     {
-      "source": "people/audrey-loh",
-      "target": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
-      "type": "wikilink"
-    },
-    {
-      "source": "people/yassif-n-m",
-      "target": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
-      "type": "wikilink"
-    },
-    {
       "source": "people/yassif-n-m",
       "target": "companies/dynamics-orchard-farm-sdn-bhd",
-      "type": "wikilink"
-    },
-    {
-      "source": "people/yaw-hog-ng",
-      "target": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
       "type": "wikilink"
     },
     {
@@ -1842,13 +1909,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
+    "health_score": 75,
     "brain_checks_score": 95,
     "category_scores": {
       "brain": 95,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -1951,7 +2018,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 50 pages",
         "category": "ops"
       },
       {
@@ -1987,7 +2054,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 922ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -2005,25 +2072,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 86%, timeline 79%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 92/100 (embed 35/35, links 25/25, timeline 8/15, orphans 14/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 28 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 50 pages; no bare-tweet phrases or external links.",
         "category": "brain"
       },
       {
@@ -2184,7 +2251,7 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction lag not applicable (50 pages \u2014 too few to assess)",
         "category": "brain"
       },
       {
@@ -2208,7 +2275,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "85 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -2220,7 +2287,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "74.0% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -2323,13 +2390,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 86% \u00b1 6.6%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 79% \u00b1 7.8% (target 90%)",
         "category": "meta"
       },
       {
