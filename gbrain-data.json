@@ -1,18 +1,25 @@
 {
-  "updated_at": "2026-06-10T12:44:18Z",
+  "updated_at": "2026-06-10T13:16:52Z",
   "summary": {
-    "score": "Brain score 40/50",
-    "page_count": 50,
+    "score": "Brain score 41/52",
+    "page_count": 52,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "80.0% of pages have inbound links",
+    "graph_coverage": "78.8% of pages have inbound links",
     "entity_links": "Coverage \u2014 16 people, 12 companies indexed",
     "concept_count": 20,
-    "meeting_count": 2,
+    "meeting_count": 3,
     "person_count": 16,
     "company_count": 12,
-    "total_links": 50,
-    "outbound_count": 84,
-    "inbound_count": 75
+    "newsletter_count": 0,
+    "video_count": 0,
+    "article_count": 0,
+    "bookmark_count": 0,
+    "quote_count": 0,
+    "dataset_count": 1,
+    "digest_count": 0,
+    "total_links": 55,
+    "outbound_count": 89,
+    "inbound_count": 80
   },
   "pages": [
     {
@@ -469,6 +476,16 @@
           "text": "Posh Corporate"
         },
         {
+          "from": "datasets/dynamics-orchard-management-accounts-fye-2025",
+          "type": "wikilink",
+          "text": "Posh Corporate"
+        },
+        {
+          "from": "meetings/2026-06-10-business-brain-with-audrey",
+          "type": "wikilink",
+          "text": "Posh Corporate"
+        },
+        {
           "from": "people/aisyah-humaira-wan-aziz",
           "type": "wikilink",
           "text": "posh-corporate"
@@ -485,7 +502,7 @@
         }
       ],
       "outbound_count": 5,
-      "inbound_count": 5
+      "inbound_count": 7
     },
     {
       "slug": "companies/system-design-one",
@@ -811,6 +828,62 @@
       "inbound_count": 1
     },
     {
+      "slug": "datasets/dynamics-orchard-management-accounts-fye-2025",
+      "title": "Dynamics Orchard Management Accounts Fye 2025",
+      "type": "dataset",
+      "updated": "",
+      "body": "# Dynamics Orchard Farm \u2014 Management Accounts FYE 2025\n\n**Source:** Email from Posh Corporate (Audrey Loh)\n**Source URI:** gmail://msg_demo_dy_orchard_2025\n**Ingested:** 2026-06-10T21:30:00Z\n**Provenance:** Forwarded by sayf from Posh Corporate on 2026-06-10\n\n## Summary\n\nManagement accounts for Dynamics Orchard Farm Sdn Bhd for the financial year ending 2025. Prepared by Posh Corporate (Audrey Loh's team). 24 transactions covering Jan-Dec 2025.\n\n**Total revenue (Orchard A):** MYR 89,500\n**Total revenue (Orchard B):** MYR 107,000\n**Total expenses:** MYR 94,500\n**Net profit:** MYR 102,000\n\n## Key Observations\n\n- Orchard B consistently outperforms Orchard A in revenue (MYR 107K vs MYR 89.5K)\n- Significant expense item: Orchard expansion feasibility study (MYR 7,500) in September 2025 \u2014 indicates planned expansion was already being evaluated\n- New planting materials (MYR 10,500) purchased in October 2025 \u2014 likely follow-through from the feasibility study\n- [[Posh Corporate]] is the accounting firm managing these accounts, with [[Audrey Loh]] as the primary contact",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "companies/posh-corporate",
+          "type": "wikilink",
+          "text": "Posh Corporate"
+        },
+        {
+          "to": "people/audrey-loh",
+          "type": "wikilink",
+          "text": "Audrey Loh"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "meetings/2026-06-10-business-brain-with-audrey",
+          "type": "wikilink",
+          "text": "datasets/dynamics-orchard-management-accounts-fye-2025"
+        }
+      ],
+      "outbound_count": 2,
+      "inbound_count": 1,
+      "raw_path": "/home/ubuntu/.gbrain/datasets/dynamics-orchard-management-accounts-fye-2025.csv",
+      "row_count": "24",
+      "format": "csv",
+      "columns": [
+        "date",
+        "description",
+        "debit",
+        "credit",
+        "balance"
+      ],
+      "sample_rows": [
+        "- '2025-01-15",
+        "Sales - Orchard A",
+        "12,500.00",
+        "",
+        "45,200.00",
+        "- '2025-09-15",
+        "Orchard expansion feasibility study",
+        "",
+        "7,500.00",
+        "102,500.00",
+        "- '2025-12-02",
+        "Sales - Orchard B",
+        "20,500.00",
+        "",
+        "143,000.00"
+      ]
+    },
+    {
       "slug": "gateway-infrastructure",
       "title": "Gateway Infrastructure",
       "type": "concept",
@@ -1063,6 +1136,34 @@
       "inbound_count": 0
     },
     {
+      "slug": "meetings/2026-06-10-business-brain-with-audrey",
+      "title": "2026 06 10 Business Brain With Audrey",
+      "type": "meeting",
+      "updated": "",
+      "body": "# 2026-06-10 \u2014 Business Brain with Audrey Loh\n\n**Attendees:** [[Audrey Loh]], sayf\n**Date:** 2026-06-10\n**Duration:** 45 min\n**Source:** Meeting transcript\n**Source URI:** gmail://msg_meeting_audrey_20260610\n**Ingested:** 2026-06-10T22:00:00Z\n**Provenance:** Meeting notes from sayf on 2026-06-10\n\n## Summary\n\nMet with [[Audrey Loh]], Senior Executive at [[Posh Corporate]], to discuss the Dynamics Orchard Farm account and expansion plans. Audrey provided an update on the management accounts preparation and flagged that the client is exploring orchard expansion into new acreage.\n\n## Key Decisions\n\n- Management accounts FYE 2025 are complete (see [[datasets/dynamics-orchard-management-accounts-fye-2025]])\n- [[Posh Corporate]] will present the orchard expansion budget proposal at the next quarterly review\n- Orchard B's consistent outperformance suggests expansion should prioritise B-varietal planting\n\n## Action Items\n\n- [ ] Sayf: Share MyKAP/KKKP compliance checklist for new agricultural land acquisition\n- [ ] Audrey: Circulate orchard expansion feasibility study findings by next week\n- [ ] Both: Schedule follow-up meeting mid-July to review budget proposal\n\n## Discussion Notes\n\nAudrey mentioned that the orchard expansion feasibility study (MYR 7,500, captured in the September 2025 management accounts) identified two potential expansion zones. The preferred zone could increase total orchard output by approximately 40%. The land acquisition cost is estimated at MYR 180,000-220,000, with planting and infrastructure adding another MYR 60,000-80,000. Revenue projections suggest the expanded orchard would break even within 18 months.\n\nAudrey specifically noted that Orchard B's margins are 15% higher than Orchard A's, attributed to better soil conditions and more mature trees. She recommended that any expansion should use B-varietal planting stock to maximise ROI.",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "people/audrey-loh",
+          "type": "wikilink",
+          "text": "Audrey Loh"
+        },
+        {
+          "to": "companies/posh-corporate",
+          "type": "wikilink",
+          "text": "Posh Corporate"
+        },
+        {
+          "to": "datasets/dynamics-orchard-management-accounts-fye-2025",
+          "type": "wikilink",
+          "text": "datasets/dynamics-orchard-management-accounts-fye-2025"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 3,
+      "inbound_count": 0
+    },
+    {
       "slug": "people/aisyah-humaira-wan-aziz",
       "title": "Aisyah Humaira Wan Aziz (Maira)",
       "type": "person",
@@ -1130,10 +1231,20 @@
           "from": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
           "type": "wikilink",
           "text": "Audrey Loh"
+        },
+        {
+          "from": "datasets/dynamics-orchard-management-accounts-fye-2025",
+          "type": "wikilink",
+          "text": "Audrey Loh"
+        },
+        {
+          "from": "meetings/2026-06-10-business-brain-with-audrey",
+          "type": "wikilink",
+          "text": "Audrey Loh"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 2
+      "inbound_count": 4
     },
     {
       "slug": "people/ayaan",
@@ -1803,6 +1914,16 @@
       "type": "wikilink"
     },
     {
+      "source": "datasets/dynamics-orchard-management-accounts-fye-2025",
+      "target": "companies/posh-corporate",
+      "type": "wikilink"
+    },
+    {
+      "source": "datasets/dynamics-orchard-management-accounts-fye-2025",
+      "target": "people/audrey-loh",
+      "type": "wikilink"
+    },
+    {
       "source": "gateway-infrastructure",
       "target": "vps-hardening",
       "type": "wikilink"
@@ -1846,6 +1967,21 @@
       "source": "meetings/2026-06-08-bjarte-global-ai-village",
       "target": "concepts/business-brain",
       "type": "link"
+    },
+    {
+      "source": "meetings/2026-06-10-business-brain-with-audrey",
+      "target": "people/audrey-loh",
+      "type": "wikilink"
+    },
+    {
+      "source": "meetings/2026-06-10-business-brain-with-audrey",
+      "target": "companies/posh-corporate",
+      "type": "wikilink"
+    },
+    {
+      "source": "meetings/2026-06-10-business-brain-with-audrey",
+      "target": "datasets/dynamics-orchard-management-accounts-fye-2025",
+      "type": "wikilink"
     },
     {
       "source": "people/aisyah-humaira-wan-aziz",
