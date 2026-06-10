@@ -658,7 +658,7 @@ function renderStats() {
   const pages = DATA.pages || [];
   document.getElementById('statGrid').innerHTML = [
     {icon:'📊', value: s.page_count, label:'Total Pages', detail: `${s.concept_count} concepts, ${s.meeting_count||0} meetings, ${s.person_count} people, ${s.company_count} companies`, cls:'', click: 'showStatBreakdown'},
-    {icon:'🏆', value: s.score, label:'Brain Score', detail: 'embed 35/35, links 25/25, timeline 2/15, orphans 9/15', cls:'', click: 'showBrainScoreDetails'},
+    {icon:'🏆', value: s.score, label:'Brain Score', detail: s.score_detail || 'embed 35/35, links 25/25, timeline 2/15, orphans 9/15', cls:'', click: 'showBrainScoreDetails'},
     {icon:'🔗', value: s.total_links, label:'Total Links', detail: `${sumLinks('outbound')} outbound, ${sumLinks('inbound')} inbound across ${s.page_count} pages`, cls:'', click: null},
     {icon:'📡', value: s.graph_coverage?.match(/[\d.]+%/)?.[0] || '—', label:'Graph Coverage', detail: s.graph_coverage||'', cls:'', click: null},
     {icon:'✨', value: s.embed_coverage?.match(/[\d.]+%/)?.[0] || '—', label:'Embeddings', detail: s.embed_coverage||'', cls:'', click: null},

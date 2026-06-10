@@ -1,7 +1,8 @@
 {
-  "updated_at": "2026-06-10T04:07:48Z",
+  "updated_at": "2026-06-10T04:13:42Z",
   "summary": {
     "score": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+    "score_detail": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
     "page_count": 43,
     "embed_coverage": "100% coverage, 0 missing",
     "graph_coverage": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
@@ -1288,7 +1289,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 459ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
