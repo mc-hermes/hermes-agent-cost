@@ -1086,28 +1086,32 @@ function drawGraphFrame() {
     const color = graphColors[n.type] || '#94a3b8';
     const size = Math.max(4, 3 + n.links.length);
     const isHovered = canvas._hoveredNode === n;
-    const r = isHovered ? size + 3 : size;
-    if (isHovered) { ctx.beginPath(); ctx.arc(n.x, n.y, r+6, 0, Math.PI*2); ctx.fillStyle = 'rgba(34,211,238,0.3)'; ctx.fill(); }
+    const isTouched = canvas._touchedNode === n;
+    const isActive = isHovered || isTouched;
+    const r = isActive ? size + 3 : size;
+    if (isActive) { ctx.beginPath(); ctx.arc(n.x, n.y, r+6, 0, Math.PI*2); ctx.fillStyle = 'rgba(34,211,238,0.3)'; ctx.fill(); }
     ctx.beginPath(); ctx.arc(n.x, n.y, r, 0, Math.PI*2);
-    ctx.fillStyle = isHovered ? '#fff' : color; ctx.fill();
-    ctx.strokeStyle = isHovered ? color : 'rgba(255,255,255,0)'; ctx.lineWidth = 2; ctx.stroke();
+    ctx.fillStyle = isActive ? '#fff' : color; ctx.fill();
+    ctx.strokeStyle = isActive ? color : 'rgba(255,255,255,0)'; ctx.lineWidth = 2; ctx.stroke();
     ctx.beginPath(); ctx.arc(n.x, n.y, r, 0, Math.PI*2);
     ctx.strokeStyle = 'rgba(0,0,0,0.3)'; ctx.lineWidth = 0.5; ctx.stroke();
-    if (isHovered) {
-      const maxLen = W < 800 ? 14 : 20;
-      const label = n.title.length > maxLen ? n.title.slice(0,maxLen-1)+'…' : n.title;
-      const labelColor = getComputedStyle(document.body).getPropertyValue('--text').trim() || '#e2e8f0';
-      ctx.font = '10px "Inter", sans-serif';
-      ctx.fillStyle = labelColor;
-      ctx.textAlign = 'center';
-      const metrics = ctx.measureText(label);
-      const pad = 4;
-      const lx = n.x - metrics.width/2 - pad, ly = n.y + r + 16;
-      ctx.fillStyle = 'rgba(15,23,42,0.85)';
-      ctx.beginPath(); ctx.roundRect(lx, ly, metrics.width + pad*2, 16, 4); ctx.fill();
-      ctx.fillStyle = labelColor;
-      ctx.fillText(label, n.x, n.y + r + 27);
-    }
+
+    // Always show label under every node
+    const maxLen = W < 600 ? 8 : W < 800 ? 12 : W < 1100 ? 16 : 22;
+    const label = n.title.length > maxLen ? n.title.slice(0,maxLen-1)+'…' : n.title;
+    const labelColor = getComputedStyle(document.body).getPropertyValue('--text').trim() || '#e2e8f0';
+    const fontSize = W < 600 ? 7 : W < 800 ? 8 : 9;
+    ctx.font = fontSize + 'px "Inter", sans-serif';
+    ctx.textAlign = 'center';
+    const metrics = ctx.measureText(label);
+    const pad = 3;
+    const lx = n.x - metrics.width/2 - pad, ly = n.y + r + 10;
+    ctx.fillStyle = isActive ? 'rgba(15,23,42,0.9)' : 'rgba(15,23,42,0.6)';
+    ctx.beginPath(); ctx.roundRect(lx, ly, metrics.width + pad*2, fontSize + 8, 3); ctx.fill();
+    ctx.fillStyle = isActive ? '#fff' : labelColor;
+    ctx.globalAlpha = n === canvas._touchedNode ? 1.0 : 0.75;
+    ctx.fillText(label, n.x, n.y + r + fontSize + 7);
+    ctx.globalAlpha = 1.0;
   });
   ctx.restore();
   if (graphZoom !== 1) {
@@ -1215,15 +1219,20 @@ function drawGraphFrame() {
       const dy = e.touches[0].clientY - e.touches[1].clientY;
       touchDist0 = Math.sqrt(dx*dx+dy*dy);
       touchMid0 = {x: graphPanX, y: graphPanY, z: graphZoom};
+      canvas._touchedNode = null;
       e.preventDefault();
     } else if (e.touches.length === 1) {
       singleTouchStart = {x: e.touches[0].clientX, y: e.touches[0].clientY};
       const w = screenToWorld(e.touches[0].clientX, e.touches[0].clientY);
       const hit = hitTest(w.x, w.y);
       if (hit) {
+        canvas._touchedNode = hit;
+        drawGraphFrame();
         dragStartNode = hit; dragDist = 0; dragStartW = w;
         graphDragging = hit; graphPanning = false;
       } else {
+        canvas._touchedNode = null;
+        drawGraphFrame();
         graphPanning = true; lastMouse = {x: e.touches[0].clientX, y: e.touches[0].clientY};
       }
     }
@@ -1253,6 +1262,8 @@ function drawGraphFrame() {
   }, {passive: false});
 
   canvas.addEventListener('touchend', function(e) {
+    canvas._touchedNode = null;
+    drawGraphFrame();
     if (graphDragging && dragDist <= 5) {
       // Tap → open modal
       const hit = dragStartNode;
