@@ -657,7 +657,7 @@ function renderStats() {
   const pages = DATA.pages || [];
   document.getElementById('statGrid').innerHTML = [
     {icon:'📊', value: s.page_count, label:'Total Pages', detail: `${s.concept_count} concepts, ${s.meeting_count||0} meetings, ${s.person_count} people, ${s.company_count} companies`, cls:'', click: 'showStatBreakdown'},
-    {icon:'🏆', value: s.score, label:'Brain Score', detail: 'embed 35/35, links 25/25, timeline 2/15, orphans 9/15', cls:'', click: 'switchToHealth'},
+    {icon:'🏆', value: s.score, label:'Brain Score', detail: 'embed 35/35, links 25/25, timeline 2/15, orphans 9/15', cls:'', click: 'showBrainScoreDetails'},
     {icon:'🔗', value: s.total_links, label:'Total Links', detail: `${sumLinks('outbound')} outbound, ${sumLinks('inbound')} inbound across ${s.page_count} pages`, cls:'', click: null},
     {icon:'📡', value: s.graph_coverage?.match(/[\d.]+%/)?.[0] || '—', label:'Graph Coverage', detail: s.graph_coverage||'', cls:'', click: null},
     {icon:'✨', value: s.embed_coverage?.match(/[\d.]+%/)?.[0] || '—', label:'Embeddings', detail: s.embed_coverage||'', cls:'', click: null},
@@ -682,6 +682,57 @@ function showStatBreakdown() {
   });
   html += '</tbody></table></div>';
   openModal('Page Type Breakdown', 'stat-breakdown', html);
+}
+
+function showBrainScoreDetails() {
+  const s = DATA.summary || {};
+  // Try to extract detailed component scores from health checks
+  let embed = 35, links = 25, timeline = 2, orphans = 9, dead = 5;
+  let maxEmbed = 35, maxLinks = 25, maxTimeline = 15, maxOrphans = 15, maxDead = 10;
+  let healthScore = '—';
+  (DATA.health || []).forEach(h => {
+    if (h.check_id === 'brain_score' && h.detail) {
+      const m = h.detail.match(/embed (\d+)\/(\d+).*links (\d+)\/(\d+).*timeline (\d+)\/(\d+).*orphans (\d+)\/(\d+).*dead-links (\d+)\/(\d+)/);
+      if (m) {
+        embed = +m[1]; maxEmbed = +m[2]; links = +m[3]; maxLinks = +m[4];
+        timeline = +m[5]; maxTimeline = +m[6]; orphans = +m[7]; maxOrphans = +m[8];
+        dead = +m[9]; maxDead = +m[10];
+      }
+      const sm = h.detail.match(/Brain score (\d+)\/(\d+)/);
+      if (sm) healthScore = `${sm[1]}/${sm[2]}`;
+    }
+  });
+
+  const components = [
+    { label: 'Embeddings', val: embed, max: maxEmbed, pct: (embed/maxEmbed*100).toFixed(0), icon: '✨', color: '#22d3ee' },
+    { label: 'Links', val: links, max: maxLinks, pct: (links/maxLinks*100).toFixed(0), icon: '🔗', color: '#34d399' },
+    { label: 'Timeline', val: timeline, max: maxTimeline, pct: (timeline/maxTimeline*100).toFixed(0), icon: '📅', color: '#fbbf24' },
+    { label: 'Orphans', val: orphans, max: maxOrphans, pct: (orphans/maxOrphans*100).toFixed(0), icon: '🫂', color: '#a78bfa' },
+    { label: 'Dead Links', val: dead, max: maxDead, pct: (dead/maxDead*100).toFixed(0), icon: '💀', color: '#fb7185' },
+  ];
+  const totalPct = components.reduce((s,c) => s + +c.pct, 0);
+  const overallPct = (totalPct / 5).toFixed(0);
+
+  let html = `<div class="m-section">
+    <div style="text-align:center;margin-bottom:16px">
+      <div style="font-size:2.5rem;font-weight:800;letter-spacing:-0.03em">${overallPct}%</div>
+      <div style="font-size:0.75rem;color:var(--text-muted);margin-top:2px">${healthScore !== '—' ? `Detailed: ${healthScore}` : ''}</div>
+    </div>`;
+  html += '<table style="width:100%"><thead><tr><th>Component</th><th>Score</th><th></th></tr></thead><tbody>';
+  components.forEach(c => {
+    const barColor = +c.pct >= 80 ? 'var(--green)' : +c.pct >= 50 ? 'var(--accent)' : 'var(--rose)';
+    html += `<tr>
+      <td style="padding:6px 8px;white-space:nowrap"><span style="margin-right:4px">${c.icon}</span>${c.label}</td>
+      <td style="padding:6px 8px;white-space:nowrap;font-weight:600">${c.val}/${c.max}</td>
+      <td style="padding:6px 8px;width:60%">
+        <div style="height:6px;background:var(--border);border-radius:3px;overflow:hidden">
+          <div style="height:100%;width:${c.pct}%;background:${barColor};border-radius:3px;transition:width 0.3s"></div>
+        </div>
+      </td>
+    </tr>`;
+  });
+  html += '</tbody></table></div>';
+  openModal('Brain Score Breakdown', 'brain-score', html);
 }
 
 function switchToHealth() {
