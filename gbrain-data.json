@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-06-10T02:35:19Z",
+  "updated_at": "2026-06-09T09:02:48Z",
   "summary": {
-    "score": "Brain score 33/43",
-    "page_count": 43,
+    "score": "Brain score 31/41",
+    "page_count": 41,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "76.7% of pages have inbound links",
-    "entity_links": "Coverage \u2014 12 people, 10 companies indexed",
-    "concept_count": 19,
+    "graph_coverage": "75.6% of pages have inbound links",
+    "entity_links": "Coverage \u2014 11 people, 10 companies indexed",
+    "concept_count": 18,
     "meeting_count": 2,
-    "person_count": 12,
+    "person_count": 11,
     "company_count": 10,
-    "total_links": 38,
-    "outbound_count": 61,
-    "inbound_count": 54
+    "total_links": 36,
+    "outbound_count": 58,
+    "inbound_count": 51
   },
   "pages": [
     {
@@ -592,35 +592,6 @@
       "inbound_count": 0
     },
     {
-      "slug": "concepts/virtual-machines-deep-dive",
-      "title": "Virtual Machines Deep Dive",
-      "type": "concept",
-      "updated": "",
-      "body": "# How Virtual Machines Work - A Deep Dive (#148: Part 1 - DevOps Mastermind)\n\n**From:** [[Neo Kim]] (via systemdesignone@substack.com, forwarded by Sayf Codes)\n**Date:** Mon, 25 May 2026\n**Source:** email forward\n\n---\n\n**DevOps Mastermind** \u2014 A newsletter series to help engineers master DevOps fundamentals instead of just memorizing commands. Architecture breakdowns of core DevOps systems, deep dives into Docker, Kubernetes, Terraform, and practical insights into scalability, automation, and reliability.\n\n---\n\n## Emulation vs Virtualization\n\nEmulation is when software pretends to be completely different hardware (e.g., retro gaming emulators). Each instruction from the old system is translated for the modern chip. It works, but it's slow.\n\nVirtualization creates a version of the same hardware the machine already has. Most instructions run directly on the real processor. Result: near-native speed.\n\n- Emulation = hiring a translator for every sentence\n- Virtualization = both people already speak the same language\n\nThis speed is what made virtualization practical at scale \u2014 you cannot run thousands of emulated systems on a single server. With virtualization, you can.\n\n## What a Virtual Machine Actually Is\n\nA VM is a complete computer abstraction built on top of a physical machine. It's presented with CPU, memory, storage, and network \u2014 just like a physical system. The OS inside has no awareness it's sharing the machine.\n\n**The hypervisor** is the layer that makes the illusion possible. Every request for CPU, memory, disk I/O, or network goes through it. Three key capabilities:\n\n1. **Isolation** \u2014 each VM runs independently; a failure in one doesn't affect others\n2. **Portability** \u2014 VMs can move between physical systems with minimal changes\n3. **Efficient resource use** \u2014 multiple workloads share the same hardware\n\n## Hypervisor: Brain Behind the Illusion\n\n### Type 1 vs Type 2\n\n| Type | Description | Examples |\n|------|-------------|----------|\n| **Type 1 (bare-metal)** | Runs directly on physical hardware, no host OS in between | VMware ESXi, Microsoft Hyper-V, KVM |\n| **Type 2 (hosted)** | Runs on top of an existing OS like a regular app | VirtualBox, VMware Workstation |\n\n### Full Virtualization vs Paravirtualization\n\n- **Full virtualization**: Guest OS runs unmodified; hypervisor handles all abstraction work\n- **Paravirtualization**: Guest OS is aware it's virtualized and cooperates with the hypervisor to reduce overhead\n- Trade-off: compatibility (full) vs performance (para)\n\n### Hardware-Assisted Virtualization\n\nIntel VT-x and AMD-V let the CPU itself differentiate between VMs and the hypervisor. Sensitive operations pass control to the hypervisor automatically. This made virtualization practical at scale.\n\n### Nested Virtualization\n\nRunning a VM inside another VM. Useful for testing and local Kubernetes setups but unsuitable for production due to overhead.\n\n## CPU Virtualization\n\n### The Privilege Model\n\nIn a normal system, the OS sits at the highest privilege level. In a virtual environment, the hypervisor needs to sit above the OS. The guest OS gets moved down a level \u2014 but never knows it was demoted.\n\nWhen the guest tries a privileged operation, the processor hands control to the hypervisor.\n\n### vCPU and Scheduling\n\nWhen you create a VM, you assign vCPUs (virtual CPUs). The hypervisor schedules vCPUs onto physical cores via **time-slicing** \u2014 the same way an OS runs multiple apps.\n\n**CPU overcommit**: Assigning more vCPUs than physical cores (e.g., 16 cores running 32 vCPUs). Works if all VMs aren't busy simultaneously. When demand rises, contention reduces performance.\n\n### VM-exit and VM-entry\n\n- **VM-exit**: VM tries a privileged instruction \u2192 processor stops it \u2192 control transfers to hypervisor\n- **VM-entry**: Hypervisor handles the request \u2192 hands control back to the VM exactly where it left off\n- Handoff takes microseconds. But frequent exits hurt performance.\n\n### NUMA Awareness (Non-Uniform Memory Access)\n\nModern servers have multiple processors, each with local memory. Accessing memory on a different processor is slower. The hypervisor tries to keep a VM's vCPUs and memory on the same NUMA node.\n\nFor most small deployments this doesn't matter. For high-performance databases on large servers, it matters a lot.\n\n---\n\n|*This was a free preview of a subscriber-only post from [[Neo Kim]]'s \"The System Design Newsletter\". Guest author: [[Ayaan]] (self-taught DevOps engineer focused on Kubernetes & cloud infrastructure).*\n\n## Key Takeaways\n\n- Virtualization enabled cloud computing by splitting one powerful machine into many isolated ones\n- The hypervisor is the core abstraction layer \u2014 handles CPU, memory, storage, and networking\n- Hardware support (VT-x/AMD-V) made virtualization practical at scale\n- Containers are a different approach (OS-level virtualization, shared kernel) \u2014 covered in Part 1's comparison\n\n## People Mentioned\n\n- **[[Neo Kim]]** \u2014 Author of The System Design Newsletter (systemdesignone.substack.com). Wrote this deep dive on virtualization architecture as part of the DevOps Mastermind series.\n- **[[Ayaan]]** \u2014 Self-taught DevOps engineer, guest author. Focused on Kubernetes & cloud infrastructure. Builds in public on Twitter/X and GitHub.",
-      "tags": [],
-      "links_out": [
-        {
-          "to": "people/neo-kim",
-          "type": "wikilink",
-          "text": "Neo Kim"
-        },
-        {
-          "to": "people/ayaan",
-          "type": "wikilink",
-          "text": "Ayaan"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "people/ayaan",
-          "type": "wikilink",
-          "text": "concepts/virtual-machines-deep-dive"
-        }
-      ],
-      "outbound_count": 2,
-      "inbound_count": 1
-    },
-    {
       "slug": "gateway-infrastructure",
       "title": "Gateway Infrastructure",
       "type": "concept",
@@ -873,30 +844,6 @@
       "inbound_count": 0
     },
     {
-      "slug": "people/ayaan",
-      "title": "Ayaan",
-      "type": "person",
-      "updated": "",
-      "body": "# Ayaan\n\n> Self-taught DevOps engineer focused on Kubernetes & cloud infrastructure. Guest author on The System Design Newsletter \u2014 co-wrote the DevOps Mastermind series and the deep dive on virtualization architecture.\n\nReferenced in [[concepts/virtual-machines-deep-dive]] as guest author and co-author of the article, contributing the section on Kubernetes and cloud-native infrastructure.",
-      "tags": [],
-      "links_out": [
-        {
-          "to": "concepts/virtual-machines-deep-dive",
-          "type": "wikilink",
-          "text": "concepts/virtual-machines-deep-dive"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "concepts/virtual-machines-deep-dive",
-          "type": "wikilink",
-          "text": "Ayaan"
-        }
-      ],
-      "outbound_count": 1,
-      "inbound_count": 1
-    },
-    {
       "slug": "people/bjarte",
       "title": "Bjarte",
       "type": "person",
@@ -1078,15 +1025,10 @@
           "from": "concepts/openclaw-anatomy",
           "type": "wikilink",
           "text": "Neo Kim"
-        },
-        {
-          "from": "concepts/virtual-machines-deep-dive",
-          "type": "wikilink",
-          "text": "Neo Kim"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 3
+      "inbound_count": 2
     },
     {
       "slug": "people/nick-milo",
@@ -1418,16 +1360,6 @@
       "type": "link"
     },
     {
-      "source": "concepts/virtual-machines-deep-dive",
-      "target": "people/neo-kim",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/virtual-machines-deep-dive",
-      "target": "people/ayaan",
-      "type": "wikilink"
-    },
-    {
       "source": "gateway-infrastructure",
       "target": "vps-hardening",
       "type": "wikilink"
@@ -1480,7 +1412,6 @@
   ],
   "entities": {
     "people": [
-      "people/ayaan",
       "people/bjarte",
       "people/bob-proctor",
       "people/carson",
