@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-10T12:22:48Z",
+  "updated_at": "2026-06-10T12:25:00Z",
   "summary": {
     "score": "Brain score 92/100 (embed 35/35, links 25/25, timeline 8/15, orphans 14/15, dead-links 10/10)",
     "page_count": 50,
@@ -14,8 +14,8 @@
     "outbound_count": 84,
     "inbound_count": 75,
     "score_detail": "Brain score 92/100 (embed 35/35, links 25/25, timeline 8/15, orphans 14/15, dead-links 10/10)",
-    "checks_passed": 68,
-    "checks_warned": 5,
+    "checks_passed": 67,
+    "checks_warned": 6,
     "checks_failed": 0
   },
   "pages": [
@@ -1909,10 +1909,10 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 75,
-    "brain_checks_score": 95,
+    "health_score": 70,
+    "brain_checks_score": 90,
     "category_scores": {
-      "brain": 95,
+      "brain": 90,
       "skill": 100,
       "ops": 95,
       "meta": 85
@@ -1983,9 +1983,9 @@
       {
         "name": "extract_atoms_backlog",
         "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "message": "2 page(s) eligible (below warn threshold; pack does not run extract_atoms)",
         "details": {
-          "backlog": 0,
+          "backlog": 2,
           "pack_declares_phase": false,
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
@@ -1993,8 +1993,8 @@
       },
       {
         "name": "conversation_format_coverage",
-        "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "status": "warn",
+        "message": "2/2 conversation pages (100.0%) match NO built-in pattern. Breakdown: _no_match=2. Investigate: gbrain conversation-parser scan <slug> | Enable LLM fallback (opt-in): gbrain config set conversation_parser.llm_fallback_enabled true",
         "category": "brain"
       },
       {
@@ -2054,7 +2054,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 922ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 307ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -2414,7 +2414,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "5 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {

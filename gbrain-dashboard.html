@@ -149,9 +149,8 @@
   .graph-container canvas { width: 100%; height: 380px; display: block; border-radius: var(--radius-sm); cursor: grab; background: var(--graph-bg); }
   .graph-container canvas:active { cursor: grabbing; }
   .graph-container canvas.dragging-node { cursor: grabbing; }
-  .graph-reset { background: var(--surface2); border: 1px solid var(--border); color: var(--text-muted); padding: 2px 8px; border-radius: 6px; cursor: pointer; font-size: 0.6rem; font-family: 'Inter', sans-serif; transition: all 0.15s; margin-left: 6px; white-space: nowrap; }
+  .graph-reset { position: absolute; top: 16px; right: 16px; background: var(--surface2); border: 1px solid var(--border); color: var(--text-muted); padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 0.6rem; font-family: 'Inter', sans-serif; transition: all 0.15s; }
   .graph-reset:hover { color: var(--text); border-color: var(--accent); }
-  .section-head td { background: var(--surface2); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.02em; padding: 8px 12px; border-bottom: 1px solid var(--border); color: var(--text-muted); }
   .graph-legend { display: flex; gap: 16px; margin-top: 8px; font-size: 0.65rem; color: var(--text-muted); justify-content: center; flex-wrap: wrap; }
   .graph-legend span { display: flex; align-items: center; gap: 4px; }
   .graph-legend .dot { width: 8px; height: 8px; border-radius: 50%; }
@@ -497,8 +496,9 @@
 
     <!-- Link Graph -->
     <div class="graph-container">
-      <div class="section-header"><h2>🔗 Knowledge Graph</h2><span class="count" id="graphCount"></span><button class="graph-reset" onclick="resetGraph()" title="Reset positions">↺ Reset</button></div>
+      <div class="section-header"><h2>🔗 Knowledge Graph</h2><span class="count" id="graphCount"></span></div>
       <canvas id="graphCanvas"></canvas>
+      <button class="graph-reset" onclick="resetGraph()" title="Reset positions">↺ Reset</button>
       <div class="graph-legend">
         <span><span class="dot" style="background:var(--primary-light)"></span> Concept</span>
         <span><span class="dot" style="background:var(--violet)"></span> Person</span>
@@ -633,9 +633,9 @@ async function loadData() {
     const res = await fetch('gbrain-data.json');
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     DATA = await res.json();
-    document.getElementById('dashboard').style.display = 'block';
     renderAll();
     document.getElementById('loading').style.display = 'none';
+    document.getElementById('dashboard').style.display = 'block';
   } catch(e) {
     document.getElementById('loading').style.display = 'none';
     document.getElementById('error').style.display = 'block';
@@ -658,7 +658,7 @@ function renderStats() {
   const pages = DATA.pages || [];
   document.getElementById('statGrid').innerHTML = [
     {icon:'📊', value: s.page_count, label:'Total Pages', detail: `${s.concept_count} concepts, ${s.meeting_count||0} meetings, ${s.person_count} people, ${s.company_count} companies`, cls:'', click: 'showStatBreakdown'},
-    {icon:'🏆', value: s.score, label:'Brain Score', detail: s.score_detail || 'embed 35/35, links 25/25, timeline 2/15, orphans 9/15', cls:'', click: 'showBrainScoreDetails'},
+    {icon:'🏆', value: s.score, label:'Brain Score', detail: 'embed 35/35, links 25/25, timeline 2/15, orphans 9/15', cls:'', click: 'switchToHealth'},
     {icon:'🔗', value: s.total_links, label:'Total Links', detail: `${sumLinks('outbound')} outbound, ${sumLinks('inbound')} inbound across ${s.page_count} pages`, cls:'', click: null},
     {icon:'📡', value: s.graph_coverage?.match(/[\d.]+%/)?.[0] || '—', label:'Graph Coverage', detail: s.graph_coverage||'', cls:'', click: null},
     {icon:'✨', value: s.embed_coverage?.match(/[\d.]+%/)?.[0] || '—', label:'Embeddings', detail: s.embed_coverage||'', cls:'', click: null},
@@ -683,57 +683,6 @@ function showStatBreakdown() {
   });
   html += '</tbody></table></div>';
   openModal('Page Type Breakdown', 'stat-breakdown', html);
-}
-
-function showBrainScoreDetails() {
-  const s = DATA.summary || {};
-  // Try to extract detailed component scores from health checks
-  let embed = 35, links = 25, timeline = 2, orphans = 9, dead = 5;
-  let maxEmbed = 35, maxLinks = 25, maxTimeline = 15, maxOrphans = 15, maxDead = 10;
-  let healthScore = '—';
-  (DATA.health || []).forEach(h => {
-    if (h.check_id === 'brain_score' && h.detail) {
-      const m = h.detail.match(/embed (\d+)\/(\d+).*links (\d+)\/(\d+).*timeline (\d+)\/(\d+).*orphans (\d+)\/(\d+).*dead-links (\d+)\/(\d+)/);
-      if (m) {
-        embed = +m[1]; maxEmbed = +m[2]; links = +m[3]; maxLinks = +m[4];
-        timeline = +m[5]; maxTimeline = +m[6]; orphans = +m[7]; maxOrphans = +m[8];
-        dead = +m[9]; maxDead = +m[10];
-      }
-      const sm = h.detail.match(/Brain score (\d+)\/(\d+)/);
-      if (sm) healthScore = `${sm[1]}/${sm[2]}`;
-    }
-  });
-
-  const components = [
-    { label: 'Embeddings', val: embed, max: maxEmbed, pct: (embed/maxEmbed*100).toFixed(0), icon: '✨', color: '#22d3ee' },
-    { label: 'Links', val: links, max: maxLinks, pct: (links/maxLinks*100).toFixed(0), icon: '🔗', color: '#34d399' },
-    { label: 'Timeline', val: timeline, max: maxTimeline, pct: (timeline/maxTimeline*100).toFixed(0), icon: '📅', color: '#fbbf24' },
-    { label: 'Orphans', val: orphans, max: maxOrphans, pct: (orphans/maxOrphans*100).toFixed(0), icon: '🫂', color: '#a78bfa' },
-    { label: 'Dead Links', val: dead, max: maxDead, pct: (dead/maxDead*100).toFixed(0), icon: '💀', color: '#fb7185' },
-  ];
-  const totalPct = components.reduce((s,c) => s + +c.pct, 0);
-  const overallPct = (totalPct / 5).toFixed(0);
-
-  let html = `<div class="m-section">
-    <div style="text-align:center;margin-bottom:16px">
-      <div style="font-size:2.5rem;font-weight:800;letter-spacing:-0.03em">${overallPct}%</div>
-      <div style="font-size:0.75rem;color:var(--text-muted);margin-top:2px">${healthScore !== '—' ? `Detailed: ${healthScore}` : ''}</div>
-    </div>`;
-  html += '<table style="width:100%"><thead><tr><th>Component</th><th>Score</th><th></th></tr></thead><tbody>';
-  components.forEach(c => {
-    const barColor = +c.pct >= 80 ? 'var(--green)' : +c.pct >= 50 ? 'var(--accent)' : 'var(--rose)';
-    html += `<tr>
-      <td style="padding:6px 8px;white-space:nowrap"><span style="margin-right:4px">${c.icon}</span>${c.label}</td>
-      <td style="padding:6px 8px;white-space:nowrap;font-weight:600">${c.val}/${c.max}</td>
-      <td style="padding:6px 8px;width:60%">
-        <div style="height:6px;background:var(--border);border-radius:3px;overflow:hidden">
-          <div style="height:100%;width:${c.pct}%;background:${barColor};border-radius:3px;transition:width 0.3s"></div>
-        </div>
-      </td>
-    </tr>`;
-  });
-  html += '</tbody></table></div>';
-  openModal('Brain Score Breakdown', 'brain-score', html);
 }
 
 function switchToHealth() {
@@ -894,17 +843,10 @@ function drawGraphFrame() {
   });
   graphEdges = drawnEdges.size;
 
-  // ── Font scale: counteract zoom so labels stay readable ──
-  // Canvas multiplies everything by graphZoom; dividing font by it keeps screen-size constant.
-  const labelFontSize = Math.max(8, Math.min(15, 12 / graphZoom));
-  const labelPillH = Math.max(10, Math.min(18, 14 / graphZoom));
-  const labelPillPad = Math.max(3, Math.min(6, 5 / graphZoom));
-  const labelGap = Math.max(5, Math.min(10, 7 / graphZoom));
-
-  // Draw nodes
+  // Draw nodes — simple dots
   graphNodes.forEach(n => {
     const color = graphColors[n.type] || '#94a3b8';
-    const size = Math.max(5, 4 + n.links.length * 1.5);
+    const size = Math.max(4, 3 + n.links.length);
     const isHovered = canvas._hoveredNode === n;
     const r = isHovered ? size + 3 : size;
 
@@ -926,25 +868,22 @@ function drawGraphFrame() {
     ctx.beginPath(); ctx.arc(n.x, n.y, r, 0, Math.PI*2);
     ctx.strokeStyle = 'rgba(0,0,0,0.3)'; ctx.lineWidth = 0.5; ctx.stroke();
 
-    // ── Label: always visible, density-filtered at low zoom ──
-    const showByDensity = graphZoom >= 0.6 || n.links.length >= 2;
-    if (showByDensity) {
+    // Mini label on hover only
+    if (isHovered) {
       const maxLen = graphW < 600 ? 14 : 20;
       const label = n.title.length > maxLen ? n.title.slice(0,maxLen-1)+'…' : n.title;
-      const darkBg = getComputedStyle(document.body).getPropertyValue('--bg').trim() || '#0f172a';
-      ctx.font = `${labelFontSize}px "Inter", sans-serif`;
+      const labelColor = getComputedStyle(document.body).getPropertyValue('--text').trim() || '#e2e8f0';
+      ctx.font = '10px "Inter", sans-serif';
+      ctx.fillStyle = labelColor;
       ctx.textAlign = 'center';
+      // Background pill for label
       const metrics = ctx.measureText(label);
-      const pillW = metrics.width + labelPillPad * 2;
-      const lx = n.x - pillW/2, ly = n.y + r + labelGap;
-
-      // Pill background
-      ctx.fillStyle = 'rgba(15,23,42,0.82)';
-      ctx.beginPath(); ctx.roundRect(lx, ly, pillW, labelPillH, 4); ctx.fill();
-
-      // Label text
-      ctx.fillStyle = isHovered ? '#fff' : '#e2e8f0';
-      ctx.fillText(label, n.x, ly + labelPillH - labelPillPad);
+      const pad = 4;
+      const lx = n.x - metrics.width/2 - pad, ly = n.y + r + 16;
+      ctx.fillStyle = 'rgba(15,23,42,0.85)';
+      ctx.beginPath(); ctx.roundRect(lx, ly, metrics.width + pad*2, 16, 4); ctx.fill();
+      ctx.fillStyle = labelColor;
+      ctx.fillText(label, n.x, n.y + r + 27);
     }
   });
 
@@ -979,7 +918,7 @@ function drawGraphFrame() {
   function hitTest(wx, wy) {
     for (let i = graphNodes.length-1; i >= 0; i--) {
       const n = graphNodes[i];
-      const size = Math.max(5, 4 + n.links.length * 1.5) + 8;
+      const size = Math.max(4, 3 + n.links.length) + 4;
       const dx = wx - n.x, dy = wy - n.y;
       if (dx*dx + dy*dy < size*size) return n;
     }
@@ -1153,66 +1092,28 @@ document.addEventListener('click', function(e) {
 
 // ─── PAGES TABLE ───
 function renderPages(filter) {
-  var pages = DATA.pages || [];
+  let pages = DATA.pages || [];
   if (filter) {
-    var q = filter.toLowerCase();
-    pages = pages.filter(function(p) {
-      return (p.slug||'').toLowerCase().indexOf(q) >= 0 ||
-        (p.title||'').toLowerCase().indexOf(q) >= 0 ||
-        (p.type||'').toLowerCase().indexOf(q) >= 0 ||
-        (p.body||'').toLowerCase().indexOf(q) >= 0 ||
-        (p.tags||[]).some(function(t) { return t.toLowerCase().indexOf(q) >= 0; });
-    });
+    const q = filter.toLowerCase();
+    pages = pages.filter(p => (p.slug||'').toLowerCase().includes(q) || (p.title||'').toLowerCase().includes(q) || (p.type||'').toLowerCase().includes(q) || (p.body||'').toLowerCase().includes(q) || (p.tags||[]).some(t=>t.toLowerCase().includes(q)));
   }
   if (!pages.length) {
     document.getElementById('pagesTable').innerHTML = '<div class="empty"><p>No pages match</p></div>';
     return;
   }
-  pages.sort(function(a,b) {
-    var da = a.updated || '', db = b.updated || '';
-    if (da !== db) return da > db ? -1 : 1;
-    return (a.slug||'') < (b.slug||'') ? -1 : 1;
-  });
-  var latestDate = pages.length > 0 ? (pages[0].updated || '') : '';
-  var today = latestDate ? new Date(latestDate) : new Date();
-  function daysAgo(dateStr) {
-    if (!dateStr) return 999;
-    return Math.round((today - new Date(dateStr)) / 86400000);
-  }
-  function pageRow(p) {
-    var lc = p.outbound_count + p.inbound_count;
-    return '<tr class="page-row" onclick="openPageModal(' + "'" + escAttr(p.slug) + "'" + ')">' +
-      '<td><span class="slug-link">' + esc(p.slug) + '</span><br><span style="font-size:0.65rem;color:var(--text-muted)">' + esc(p.title||'') + '</span></td>' +
-      '<td><span class="type-tag ' + (p.type||'concept') + '">' + (p.type||'concept') + '</span></td>' +
-      '<td><span class="link-badge ' + (lc>0?'has-links':'') + '">' + (lc>0 ? '\uD83D\uDD17 '+lc : '\u2014') + '</td>' +
-      '<td>' + (p.updated||'') + '</td></tr>';
-  }
-  var sections = [
-    { label: '\uD83D\uDCCC  Recently Added', test: function(d) { return daysAgo(d) <= 2; } },
-    { label: '\uD83D\uDCC5  This Week',      test: function(d) { return daysAgo(d) < 7 && daysAgo(d) > 2; } },
-    { label: '\uD83D\uDCC1  Older',          test: function(d) { return daysAgo(d) >= 7; } },
-  ];
-  var html = '<table><thead><tr><th>Page</th><th>Type</th><th>Links</th><th>Updated</th></tr></thead><tbody>';
-  var anySection = false;
-  for (var si = 0; si < sections.length; si++) {
-    var section = sections[si];
-    var sectionPages = [];
-    for (var pi = 0; pi < pages.length; pi++) {
-      if (section.test(pages[pi].updated)) sectionPages.push(pages[pi]);
-    }
-    if (!sectionPages.length) continue;
-    anySection = true;
-    html += '<tr class="section-head"><td colspan="4">' + section.label + ' <span class="count" style="font-weight:400">(' + sectionPages.length + ')</span></td></tr>';
-    for (var rj = 0; rj < sectionPages.length; rj++) {
-      html += pageRow(sectionPages[rj]);
-    }
-  }
-  html += '</tbody></table>';
-  document.getElementById('pagesTable').innerHTML = html;
-  if (!anySection) {
-    document.getElementById('pagesTable').innerHTML = '<div class="empty"><p>No pages match</p></div>';
-  }
+  document.getElementById('pagesTable').innerHTML = `<table><thead><tr><th>Page</th><th>Type</th><th>Links</th><th>Updated</th></tr></thead><tbody>${
+    pages.map(p => {
+      const lc = p.outbound_count + p.inbound_count;
+      return `<tr class="page-row" onclick="openPageModal('${escAttr(p.slug)}')">
+        <td><span class="slug-link">${esc(p.slug)}</span><br><span style="font-size:0.65rem;color:var(--text-muted)">${esc(p.title||'')}</span></td>
+        <td><span class="type-tag ${p.type||'concept'}">${p.type||'concept'}</span></td>
+        <td><span class="link-badge ${lc>0?'has-links':''}">${lc>0 ? '🔗 '+lc : '—'}</span></td>
+        <td>${p.updated||''}</td>
+      </tr>`;
+    }).join('')
+  }</tbody></table>`;
 }
+
 // ─── ENTITIES ───
 function renderEntities() {
   const people = (DATA.entities?.people||[]).map(s => DATA.pages.find(p=>p.slug===s)).filter(Boolean);
