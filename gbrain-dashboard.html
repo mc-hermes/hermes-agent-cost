@@ -112,8 +112,56 @@
   .type-tag.meeting { background: rgba(251,191,36,0.15); color: var(--accent-light); }
   .type-tag.daily { background: rgba(251,113,133,0.15); color: var(--rose); }
   .type-tag.concept { background: rgba(34,211,238,0.15); color: var(--primary-light); }
+  .type-tag.newsletter { background: rgba(52,211,153,0.15); color: var(--green); }
+  .type-tag.video { background: rgba(251,113,133,0.15); color: var(--rose); }
+  .type-tag.article { background: rgba(167,139,250,0.15); color: var(--violet); }
+  .type-tag.bookmark { background: rgba(196,168,106,0.15); color: var(--accent); }
+  .type-tag.quote { background: rgba(251,191,36,0.15); color: var(--accent-light); }
+  .type-tag.dataset { background: rgba(52,211,153,0.15); color: var(--green); }
+  .type-tag.digest { background: rgba(196,168,106,0.15); color: var(--accent); }
   .link-badge { font-size: 0.6rem; color: var(--text-muted); margin-left: 4px; }
   .link-badge.has-links { color: var(--accent); }
+
+  /* ─── Today Feed ─── */
+  .feed-section { margin-bottom: 24px; }
+  .feed-source-tabs { display: flex; gap: 4px; margin-bottom: 14px; background: var(--surface); border-radius: var(--radius-sm); padding: 3px; width: fit-content; flex-wrap: wrap; }
+  .feed-source-tab { padding: 6px 12px; border-radius: 6px; font-size: 0.7rem; cursor: pointer; color: var(--text-muted); border: none; background: none; font-family: 'Inter', sans-serif; transition: all 0.15s; white-space: nowrap; }
+  .feed-source-tab.active { background: var(--surface2); color: var(--text); }
+  .feed-source-tab:hover:not(.active) { color: var(--text); }
+  .feed-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; margin-bottom: 10px; cursor: pointer; transition: border-color 0.15s, transform 0.15s; }
+  .feed-card:hover { border-color: var(--primary-light); transform: translateX(3px); }
+  .feed-card:active { transform: translateX(0); }
+  .feed-card .fc-header { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+  .feed-card .fc-type-badge { font-size: 0.55rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; padding: 2px 8px; border-radius: 10px; white-space: nowrap; }
+  .feed-card .fc-type-badge.newsletter { background: rgba(52,211,153,0.12); color: var(--green); }
+  .feed-card .fc-type-badge.video { background: rgba(251,113,133,0.12); color: var(--rose); }
+  .feed-card .fc-type-badge.article { background: rgba(167,139,250,0.12); color: var(--violet); }
+  .feed-card .fc-type-badge.bookmark { background: rgba(196,168,106,0.12); color: var(--accent); }
+  .feed-card .fc-type-badge.quote { background: rgba(251,191,36,0.12); color: var(--accent-light); }
+  .feed-card .fc-type-badge.dataset { background: rgba(52,211,153,0.12); color: var(--green); }
+  .feed-card .fc-type-badge.meeting { background: rgba(251,191,36,0.12); color: var(--accent-light); }
+  .feed-card .fc-type-badge.concept { background: rgba(34,211,238,0.12); color: var(--primary-light); }
+  .feed-card .fc-type-badge.digest { background: rgba(196,168,106,0.12); color: var(--accent); }
+  .feed-card .fc-time { font-size: 0.6rem; color: var(--text-muted); margin-left: auto; white-space: nowrap; }
+  .feed-card .fc-title { font-size: 0.85rem; font-weight: 600; margin-bottom: 4px; }
+  .feed-card .fc-links { font-size: 0.65rem; color: var(--text-muted); line-height: 1.5; }
+  .feed-card .fc-links .fc-link { color: var(--primary-light); cursor: pointer; }
+  .feed-card .fc-links .fc-link:hover { text-decoration: underline; }
+  .feed-card .fc-links .fc-second-degree { color: var(--accent); opacity: 0.7; }
+  .feed-card .fc-links .fc-second-degree:hover { opacity: 1; }
+  .feed-card .fc-summary { font-size: 0.7rem; color: var(--text-muted); margin-top: 6px; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .feed-card .fc-meta { display: flex; gap: 10px; margin-top: 6px; font-size: 0.6rem; color: var(--text-muted); flex-wrap: wrap; }
+
+  /* ─── Featured Digest ─── */
+  .digest-card { background: linear-gradient(135deg, rgba(196,168,106,0.06), rgba(34,211,238,0.04)); border: 1px solid rgba(196,168,106,0.25); border-radius: var(--radius); padding: 16px; margin-bottom: 14px; cursor: pointer; transition: border-color 0.15s; }
+  .digest-card:hover { border-color: var(--accent); }
+  .digest-card .dc-badge { font-size: 0.55rem; font-weight: 600; text-transform: uppercase; background: rgba(196,168,106,0.15); color: var(--accent); padding: 2px 10px; border-radius: 10px; display: inline-block; margin-bottom: 6px; letter-spacing: 0.04em; }
+  .digest-card .dc-title { font-size: 0.85rem; font-weight: 700; margin-bottom: 4px; }
+  .digest-card .dc-date { font-size: 0.6rem; color: var(--text-muted); margin-bottom: 6px; }
+  .digest-card .dc-section { font-size: 0.72rem; line-height: 1.5; color: var(--text-muted); margin-top: 6px; }
+  .digest-card .dc-section strong { color: var(--text); }
+  .digest-card .dc-section .dc-link { color: var(--primary-light); }
+  .digest-card .dc-insight { background: rgba(196,168,106,0.06); border-left: 2px solid var(--accent); padding: 8px 10px; margin-top: 6px; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; font-size: 0.7rem; }
 
   /* ─── Search ─── */
   .search-wrap { position: relative; margin-bottom: 12px; }
@@ -149,9 +197,8 @@
   .graph-container canvas { width: 100%; height: 380px; display: block; border-radius: var(--radius-sm); cursor: grab; background: var(--graph-bg); }
   .graph-container canvas:active { cursor: grabbing; }
   .graph-container canvas.dragging-node { cursor: grabbing; }
-  .graph-reset { background: var(--surface2); border: 1px solid var(--border); color: var(--text-muted); padding: 2px 8px; border-radius: 6px; cursor: pointer; font-size: 0.6rem; font-family: 'Inter', sans-serif; transition: all 0.15s; margin-left: 6px; white-space: nowrap; }
+  .graph-reset { position: absolute; top: 16px; right: 16px; background: var(--surface2); border: 1px solid var(--border); color: var(--text-muted); padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 0.6rem; font-family: 'Inter', sans-serif; transition: all 0.15s; }
   .graph-reset:hover { color: var(--text); border-color: var(--accent); }
-  .section-head td { background: var(--surface2); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.02em; padding: 8px 12px; border-bottom: 1px solid var(--border); color: var(--text-muted); }
   .graph-legend { display: flex; gap: 16px; margin-top: 8px; font-size: 0.65rem; color: var(--text-muted); justify-content: center; flex-wrap: wrap; }
   .graph-legend span { display: flex; align-items: center; gap: 4px; }
   .graph-legend .dot { width: 8px; height: 8px; border-radius: 50%; }
@@ -495,10 +542,36 @@
       <div class="live-query-results" id="lqResults"></div>
     </div>
 
+    <!-- Today Feed (default tab) -->
+    <div class="section" id="todayView">
+      <div class="section-header">
+        <h2>📰 Today</h2>
+        <span class="count" id="feedCount"></span>
+      </div>
+      <!-- Featured digest slot (populated by renderDigest) -->
+      <div id="digestSlot"></div>
+      <!-- Per-source filter tabs -->
+      <div class="feed-source-tabs" id="feedSourceTabs">
+        <button class="feed-source-tab active" data-src="all">📥 All</button>
+        <button class="feed-source-tab" data-src="newsletter">📬 Inbox</button>
+        <button class="feed-source-tab" data-src="video">🎬 Library</button>
+        <button class="feed-source-tab" data-src="bookmark">🔖 Saved</button>
+        <button class="feed-source-tab" data-src="quote">💬 Quotes</button>
+        <button class="feed-source-tab" data-src="dataset">📊 Data</button>
+        <button class="feed-source-tab" data-src="meeting">🤝 Meetings</button>
+      </div>
+      <div id="feedCards"></div>
+      <div class="empty" id="feedEmpty" style="display:none">
+        <div class="icon">📭</div>
+        <p>Nothing in this feed yet. Forward emails or ingest content to see it here.</p>
+      </div>
+    </div>
+
     <!-- Link Graph -->
     <div class="graph-container">
-      <div class="section-header"><h2>🔗 Knowledge Graph</h2><span class="count" id="graphCount"></span><button class="graph-reset" onclick="resetGraph()" title="Reset positions">↺ Reset</button></div>
+      <div class="section-header"><h2>🔗 Knowledge Graph</h2><span class="count" id="graphCount"></span></div>
       <canvas id="graphCanvas"></canvas>
+      <button class="graph-reset" onclick="resetGraph()" title="Reset positions">↺ Reset</button>
       <div class="graph-legend">
         <span><span class="dot" style="background:var(--primary-light)"></span> Concept</span>
         <span><span class="dot" style="background:var(--violet)"></span> Person</span>
@@ -633,9 +706,9 @@ async function loadData() {
     const res = await fetch('gbrain-data.json');
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     DATA = await res.json();
-    document.getElementById('dashboard').style.display = 'block';
     renderAll();
     document.getElementById('loading').style.display = 'none';
+    document.getElementById('dashboard').style.display = 'block';
   } catch(e) {
     document.getElementById('loading').style.display = 'none';
     document.getElementById('error').style.display = 'block';
@@ -645,11 +718,17 @@ async function loadData() {
 
 function renderAll() {
   renderStats();
+  renderDigest();
+  renderFeed();
   drawGraph();
   renderPages();
   renderEntities();
   renderHealth();
   document.getElementById('lastUpdated').textContent = 'Updated: ' + (DATA.updated_at || 'unknown');
+  // Wire feed source tab clicks
+  document.querySelectorAll('#feedSourceTabs .feed-source-tab').forEach(t => {
+    t.onclick = function(){ filterFeed(this.getAttribute('data-src')); };
+  });
 }
 
 // ─── STATS ───
@@ -658,7 +737,7 @@ function renderStats() {
   const pages = DATA.pages || [];
   document.getElementById('statGrid').innerHTML = [
     {icon:'📊', value: s.page_count, label:'Total Pages', detail: `${s.concept_count} concepts, ${s.meeting_count||0} meetings, ${s.person_count} people, ${s.company_count} companies`, cls:'', click: 'showStatBreakdown'},
-    {icon:'🏆', value: s.score, label:'Brain Score', detail: s.score_detail || 'embed 35/35, links 25/25, timeline 2/15, orphans 9/15', cls:'', click: 'showBrainScoreDetails'},
+    {icon:'🏆', value: s.score, label:'Brain Score', detail: 'embed 35/35, links 25/25, timeline 2/15, orphans 9/15', cls:'', click: 'switchToHealth'},
     {icon:'🔗', value: s.total_links, label:'Total Links', detail: `${sumLinks('outbound')} outbound, ${sumLinks('inbound')} inbound across ${s.page_count} pages`, cls:'', click: null},
     {icon:'📡', value: s.graph_coverage?.match(/[\d.]+%/)?.[0] || '—', label:'Graph Coverage', detail: s.graph_coverage||'', cls:'', click: null},
     {icon:'✨', value: s.embed_coverage?.match(/[\d.]+%/)?.[0] || '—', label:'Embeddings', detail: s.embed_coverage||'', cls:'', click: null},
@@ -685,63 +764,183 @@ function showStatBreakdown() {
   openModal('Page Type Breakdown', 'stat-breakdown', html);
 }
 
-function showBrainScoreDetails() {
-  const s = DATA.summary || {};
-  // Try to extract detailed component scores from health checks
-  let embed = 35, links = 25, timeline = 2, orphans = 9, dead = 5;
-  let maxEmbed = 35, maxLinks = 25, maxTimeline = 15, maxOrphans = 15, maxDead = 10;
-  let healthScore = '—';
-  (DATA.health || []).forEach(h => {
-    if (h.check_id === 'brain_score' && h.detail) {
-      const m = h.detail.match(/embed (\d+)\/(\d+).*links (\d+)\/(\d+).*timeline (\d+)\/(\d+).*orphans (\d+)\/(\d+).*dead-links (\d+)\/(\d+)/);
-      if (m) {
-        embed = +m[1]; maxEmbed = +m[2]; links = +m[3]; maxLinks = +m[4];
-        timeline = +m[5]; maxTimeline = +m[6]; orphans = +m[7]; maxOrphans = +m[8];
-        dead = +m[9]; maxDead = +m[10];
-      }
-      const sm = h.detail.match(/Brain score (\d+)\/(\d+)/);
-      if (sm) healthScore = `${sm[1]}/${sm[2]}`;
-    }
-  });
-
-  const components = [
-    { label: 'Embeddings', val: embed, max: maxEmbed, pct: (embed/maxEmbed*100).toFixed(0), icon: '✨', color: '#22d3ee' },
-    { label: 'Links', val: links, max: maxLinks, pct: (links/maxLinks*100).toFixed(0), icon: '🔗', color: '#34d399' },
-    { label: 'Timeline', val: timeline, max: maxTimeline, pct: (timeline/maxTimeline*100).toFixed(0), icon: '📅', color: '#fbbf24' },
-    { label: 'Orphans', val: orphans, max: maxOrphans, pct: (orphans/maxOrphans*100).toFixed(0), icon: '🫂', color: '#a78bfa' },
-    { label: 'Dead Links', val: dead, max: maxDead, pct: (dead/maxDead*100).toFixed(0), icon: '💀', color: '#fb7185' },
-  ];
-  const totalPct = components.reduce((s,c) => s + +c.pct, 0);
-  const overallPct = (totalPct / 5).toFixed(0);
-
-  let html = `<div class="m-section">
-    <div style="text-align:center;margin-bottom:16px">
-      <div style="font-size:2.5rem;font-weight:800;letter-spacing:-0.03em">${overallPct}%</div>
-      <div style="font-size:0.75rem;color:var(--text-muted);margin-top:2px">${healthScore !== '—' ? `Detailed: ${healthScore}` : ''}</div>
-    </div>`;
-  html += '<table style="width:100%"><thead><tr><th>Component</th><th>Score</th><th></th></tr></thead><tbody>';
-  components.forEach(c => {
-    const barColor = +c.pct >= 80 ? 'var(--green)' : +c.pct >= 50 ? 'var(--accent)' : 'var(--rose)';
-    html += `<tr>
-      <td style="padding:6px 8px;white-space:nowrap"><span style="margin-right:4px">${c.icon}</span>${c.label}</td>
-      <td style="padding:6px 8px;white-space:nowrap;font-weight:600">${c.val}/${c.max}</td>
-      <td style="padding:6px 8px;width:60%">
-        <div style="height:6px;background:var(--border);border-radius:3px;overflow:hidden">
-          <div style="height:100%;width:${c.pct}%;background:${barColor};border-radius:3px;transition:width 0.3s"></div>
-        </div>
-      </td>
-    </tr>`;
-  });
-  html += '</tbody></table></div>';
-  openModal('Brain Score Breakdown', 'brain-score', html);
-}
-
 function switchToHealth() {
   document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
   document.querySelector('[data-tab="health"]').classList.add('active');
   activeTab = 'health';
   showTab(activeTab);
 }
+
+// ─── TODAY FEED ───
+let feedSourceFilter = 'all';
+
+function renderFeed() {
+  const pages = DATA.pages || [];
+  // Filter by source type
+  let filtered = pages;
+  if (feedSourceFilter !== 'all') {
+    filtered = pages.filter(p => p.type === feedSourceFilter);
+  }
+  // Sort by updated descending (most recent first)
+  filtered = filtered.sort((a,b) => (b.updated||'').localeCompare(a.updated||''));
+
+  const container = document.getElementById('feedCards');
+  const empty = document.getElementById('feedEmpty');
+  document.getElementById('feedCount').textContent = filtered.length + ' items';
+
+  if (!filtered.length) {
+    container.innerHTML = '';
+    empty.style.display = 'block';
+    return;
+  }
+  empty.style.display = 'none';
+
+  // Build slug index for second-degree link computation
+  const slugIndex = {};
+  pages.forEach(p => { slugIndex[p.slug] = p; });
+
+  container.innerHTML = filtered.map(p => {
+    const type = p.type || 'concept';
+    const icon = getTypeIcon(type);
+    const timeDisplay = p.updated ? timeAgo(p.updated) : '';
+
+    // Build direct links line
+    const linksOut = p.links_out || [];
+    const linkNames = [];
+    linksOut.forEach(l => {
+      const target = slugIndex[l.to];
+      if (target) {
+        linkNames.push(`<span class="fc-link" onclick="openPageModal('${escAttr(l.to)}')">→ ${esc(target.title || l.to)}</span>`);
+      }
+    });
+
+    // Second-degree links: entities this page links to, that themselves link to other pages
+    const secondDegree = computeSecondDegreeLinks(p, slugIndex, linksOut);
+    secondDegree.forEach(sd => {
+      linkNames.push(`<span class="fc-second-degree" onclick="openPageModal('${escAttr(sd.slug)}')">· also: ${esc(sd.title)} (via ${esc(sd.via)})</span>`);
+    });
+
+    // Summary snippet
+    const snippet = p.body ? p.body.replace(/^# .*\n?/m, '').replace(/\[[^\]]+\]\([^)]+\)/g, '').replace(/\[\[([^\]]+)\]\]/g, '$1').trim().slice(0, 120) : '';
+
+    return `<div class="feed-card" onclick="openPageModal('${escAttr(p.slug)}')">
+      <div class="fc-header">
+        <span class="fc-type-badge ${type}">${icon} ${type}</span>
+        <span class="fc-time">${timeDisplay}</span>
+      </div>
+      <div class="fc-title">${esc(p.title || p.slug)}</div>
+      ${linkNames.length ? `<div class="fc-links">${linkNames.join(' · ')}</div>` : ''}
+      ${snippet ? `<div class="fc-summary">${esc(snippet)}</div>` : ''}
+      ${p.type === 'dataset' ? `<div class="fc-meta">${p.row_count ? p.row_count + ' rows' : ''}${p.columns ? ' · ' + (p.columns||[]).slice(0,5).join(', ') : ''}${p.format ? ' · ' + p.format : ''}</div>` : ''}
+    </div>`;
+  }).join('');
+}
+
+function computeSecondDegreeLinks(page, slugIndex, linksOut) {
+  // Collect direct link targets
+  const directSlugs = new Set();
+  linksOut.forEach(l => { if (slugIndex[l.to]) directSlugs.add(l.to); });
+
+  const results = [];
+  const seen = new Set();
+
+  directSlugs.forEach(directSlug => {
+    const directPage = slugIndex[directSlug];
+    if (!directPage) return;
+    const directLinks = directPage.links_out || [];
+    directLinks.forEach(l => {
+      // Skip self-references and already-linked pages
+      if (l.to === page.slug) return;
+      if (directSlugs.has(l.to)) return;
+      if (seen.has(l.to)) return;
+      seen.add(l.to);
+      const target = slugIndex[l.to];
+      if (target && target.type !== 'person' && target.type !== 'company') {
+        // Only surface non-entity second-degree links (meeting→dataset, not meeting→person)
+        results.push({
+          slug: l.to,
+          title: target.title || l.to,
+          via: directPage.title || directSlug,
+        });
+      }
+    });
+  });
+
+  // Limit to 3 second-degree links per card
+  return results.slice(0, 3);
+}
+
+function filterFeed(src) {
+  feedSourceFilter = src;
+  document.querySelectorAll('#feedSourceTabs .feed-source-tab').forEach(t => {
+    t.classList.toggle('active', t.getAttribute('data-src') === src);
+  });
+  renderFeed();
+}
+
+function getTypeIcon(type) {
+  const icons = {
+    newsletter: '📬', meeting: '🤝', video: '🎬', article: '📝',
+    bookmark: '🔖', quote: '💬', dataset: '📊', digest: '📰',
+    person: '👤', company: '🏢', concept: '🧠', daily: '📋'
+  };
+  return icons[type] || '📄';
+}
+
+function timeAgo(dateStr) {
+  if (!dateStr) return '';
+  const d = new Date(dateStr);
+  if (isNaN(d)) return '';
+  const now = new Date();
+  const diff = Math.floor((now - d) / 1000);
+  if (diff < 60) return 'just now';
+  if (diff < 3600) return Math.floor(diff/60) + 'm ago';
+  if (diff < 86400) return Math.floor(diff/3600) + 'h ago';
+  if (diff < 604800) return Math.floor(diff/86400) + 'd ago';
+  return dateStr;
+}
+
+function esc(s) {
+  const div = document.createElement('div');
+  div.textContent = s;
+  return div.innerHTML;
+}
+
+function escAttr(s) {
+  return (s||'').replace(/'/g, '&apos;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+}
+
+// ─── DIGEST ───
+function renderDigest() {
+  const slot = document.getElementById('digestSlot');
+  // Find digest pages in data
+  const digests = (DATA.pages||[]).filter(p => p.type === 'digest');
+  if (!digests.length) { slot.innerHTML = ''; return; }
+  // Show most recent digest
+  const d = digests.sort((a,b) => (b.updated||'').localeCompare(a.updated||''))[0];
+  const body = d.body || '';
+  // Extract sections from digest body
+  const sections = body.split(/\n## /);
+  let html = `<div class="digest-card" onclick="openPageModal('${escAttr(d.slug)}')">
+    <div class="dc-badge">📰 Weekly Digest</div>
+    <div class="dc-title">${esc(d.title || 'Business Brain Digest')}</div>
+    <div class="dc-date">${d.updated || ''}</div>`;
+  sections.forEach(s => {
+    if (!s.trim()) return;
+    const lines = s.split('\n').filter(l => l.trim());
+    const heading = lines[0].replace(/^##?\s*/, '').trim();
+    if (heading) {
+      // Check content for [[links]]
+      const content = lines.slice(1).join('\n').replace(/\[\[([^\]]+)\]\]/g, '<span class="dc-link" onclick="event.stopPropagation();openPageModal(\'$1\')">$1</span>').slice(0, 200);
+      html += `<div class="dc-section"><strong>${esc(heading)}</strong><br>${content}</div>`;
+    }
+  });
+  html += '</div>';
+  slot.innerHTML = html;
+}
+
+// ─── SECOND-DEGREE LINK COMPUTATION (called from renderFeed) ───
+// computeSecondDegreeLinks defined above in renderFeed section
 
 // ─── LINK GRAPH (Interactive) ───
 let graphNodes = [], graphSlugIndex = {}, graphEdges = 0;
@@ -894,17 +1093,10 @@ function drawGraphFrame() {
   });
   graphEdges = drawnEdges.size;
 
-  // ── Font scale: counteract zoom so labels stay readable ──
-  // Canvas multiplies everything by graphZoom; dividing font by it keeps screen-size constant.
-  const labelFontSize = Math.max(8, Math.min(15, 12 / graphZoom));
-  const labelPillH = Math.max(10, Math.min(18, 14 / graphZoom));
-  const labelPillPad = Math.max(3, Math.min(6, 5 / graphZoom));
-  const labelGap = Math.max(5, Math.min(10, 7 / graphZoom));
-
-  // Draw nodes
+  // Draw nodes — simple dots
   graphNodes.forEach(n => {
     const color = graphColors[n.type] || '#94a3b8';
-    const size = Math.max(5, 4 + n.links.length * 1.5);
+    const size = Math.max(4, 3 + n.links.length);
     const isHovered = canvas._hoveredNode === n;
     const r = isHovered ? size + 3 : size;
 
@@ -926,25 +1118,22 @@ function drawGraphFrame() {
     ctx.beginPath(); ctx.arc(n.x, n.y, r, 0, Math.PI*2);
     ctx.strokeStyle = 'rgba(0,0,0,0.3)'; ctx.lineWidth = 0.5; ctx.stroke();
 
-    // ── Label: always visible, density-filtered at low zoom ──
-    const showByDensity = graphZoom >= 0.6 || n.links.length >= 2;
-    if (showByDensity) {
+    // Mini label on hover only
+    if (isHovered) {
       const maxLen = graphW < 600 ? 14 : 20;
       const label = n.title.length > maxLen ? n.title.slice(0,maxLen-1)+'…' : n.title;
-      const darkBg = getComputedStyle(document.body).getPropertyValue('--bg').trim() || '#0f172a';
-      ctx.font = `${labelFontSize}px "Inter", sans-serif`;
+      const labelColor = getComputedStyle(document.body).getPropertyValue('--text').trim() || '#e2e8f0';
+      ctx.font = '10px "Inter", sans-serif';
+      ctx.fillStyle = labelColor;
       ctx.textAlign = 'center';
+      // Background pill for label
       const metrics = ctx.measureText(label);
-      const pillW = metrics.width + labelPillPad * 2;
-      const lx = n.x - pillW/2, ly = n.y + r + labelGap;
-
-      // Pill background
-      ctx.fillStyle = 'rgba(15,23,42,0.82)';
-      ctx.beginPath(); ctx.roundRect(lx, ly, pillW, labelPillH, 4); ctx.fill();
-
-      // Label text
-      ctx.fillStyle = isHovered ? '#fff' : '#e2e8f0';
-      ctx.fillText(label, n.x, ly + labelPillH - labelPillPad);
+      const pad = 4;
+      const lx = n.x - metrics.width/2 - pad, ly = n.y + r + 16;
+      ctx.fillStyle = 'rgba(15,23,42,0.85)';
+      ctx.beginPath(); ctx.roundRect(lx, ly, metrics.width + pad*2, 16, 4); ctx.fill();
+      ctx.fillStyle = labelColor;
+      ctx.fillText(label, n.x, n.y + r + 27);
     }
   });
 
@@ -979,7 +1168,7 @@ function drawGraphFrame() {
   function hitTest(wx, wy) {
     for (let i = graphNodes.length-1; i >= 0; i--) {
       const n = graphNodes[i];
-      const size = Math.max(5, 4 + n.links.length * 1.5) + 8;
+      const size = Math.max(4, 3 + n.links.length) + 4;
       const dx = wx - n.x, dy = wy - n.y;
       if (dx*dx + dy*dy < size*size) return n;
     }
@@ -1153,66 +1342,28 @@ document.addEventListener('click', function(e) {
 
 // ─── PAGES TABLE ───
 function renderPages(filter) {
-  var pages = DATA.pages || [];
+  let pages = DATA.pages || [];
   if (filter) {
-    var q = filter.toLowerCase();
-    pages = pages.filter(function(p) {
-      return (p.slug||'').toLowerCase().indexOf(q) >= 0 ||
-        (p.title||'').toLowerCase().indexOf(q) >= 0 ||
-        (p.type||'').toLowerCase().indexOf(q) >= 0 ||
-        (p.body||'').toLowerCase().indexOf(q) >= 0 ||
-        (p.tags||[]).some(function(t) { return t.toLowerCase().indexOf(q) >= 0; });
-    });
+    const q = filter.toLowerCase();
+    pages = pages.filter(p => (p.slug||'').toLowerCase().includes(q) || (p.title||'').toLowerCase().includes(q) || (p.type||'').toLowerCase().includes(q) || (p.body||'').toLowerCase().includes(q) || (p.tags||[]).some(t=>t.toLowerCase().includes(q)));
   }
   if (!pages.length) {
     document.getElementById('pagesTable').innerHTML = '<div class="empty"><p>No pages match</p></div>';
     return;
   }
-  pages.sort(function(a,b) {
-    var da = a.updated || '', db = b.updated || '';
-    if (da !== db) return da > db ? -1 : 1;
-    return (a.slug||'') < (b.slug||'') ? -1 : 1;
-  });
-  var latestDate = pages.length > 0 ? (pages[0].updated || '') : '';
-  var today = latestDate ? new Date(latestDate) : new Date();
-  function daysAgo(dateStr) {
-    if (!dateStr) return 999;
-    return Math.round((today - new Date(dateStr)) / 86400000);
-  }
-  function pageRow(p) {
-    var lc = p.outbound_count + p.inbound_count;
-    return '<tr class="page-row" onclick="openPageModal(' + "'" + escAttr(p.slug) + "'" + ')">' +
-      '<td><span class="slug-link">' + esc(p.slug) + '</span><br><span style="font-size:0.65rem;color:var(--text-muted)">' + esc(p.title||'') + '</span></td>' +
-      '<td><span class="type-tag ' + (p.type||'concept') + '">' + (p.type||'concept') + '</span></td>' +
-      '<td><span class="link-badge ' + (lc>0?'has-links':'') + '">' + (lc>0 ? '\uD83D\uDD17 '+lc : '\u2014') + '</td>' +
-      '<td>' + (p.updated||'') + '</td></tr>';
-  }
-  var sections = [
-    { label: '\uD83D\uDCCC  Recently Added', test: function(d) { return daysAgo(d) <= 2; } },
-    { label: '\uD83D\uDCC5  This Week',      test: function(d) { return daysAgo(d) < 7 && daysAgo(d) > 2; } },
-    { label: '\uD83D\uDCC1  Older',          test: function(d) { return daysAgo(d) >= 7; } },
-  ];
-  var html = '<table><thead><tr><th>Page</th><th>Type</th><th>Links</th><th>Updated</th></tr></thead><tbody>';
-  var anySection = false;
-  for (var si = 0; si < sections.length; si++) {
-    var section = sections[si];
-    var sectionPages = [];
-    for (var pi = 0; pi < pages.length; pi++) {
-      if (section.test(pages[pi].updated)) sectionPages.push(pages[pi]);
-    }
-    if (!sectionPages.length) continue;
-    anySection = true;
-    html += '<tr class="section-head"><td colspan="4">' + section.label + ' <span class="count" style="font-weight:400">(' + sectionPages.length + ')</span></td></tr>';
-    for (var rj = 0; rj < sectionPages.length; rj++) {
-      html += pageRow(sectionPages[rj]);
-    }
-  }
-  html += '</tbody></table>';
-  document.getElementById('pagesTable').innerHTML = html;
-  if (!anySection) {
-    document.getElementById('pagesTable').innerHTML = '<div class="empty"><p>No pages match</p></div>';
-  }
+  document.getElementById('pagesTable').innerHTML = `<table><thead><tr><th>Page</th><th>Type</th><th>Links</th><th>Updated</th></tr></thead><tbody>${
+    pages.map(p => {
+      const lc = p.outbound_count + p.inbound_count;
+      return `<tr class="page-row" onclick="openPageModal('${escAttr(p.slug)}')">
+        <td><span class="slug-link">${esc(p.slug)}</span><br><span style="font-size:0.65rem;color:var(--text-muted)">${esc(p.title||'')}</span></td>
+        <td><span class="type-tag ${p.type||'concept'}">${p.type||'concept'}</span></td>
+        <td><span class="link-badge ${lc>0?'has-links':''}">${lc>0 ? '🔗 '+lc : '—'}</span></td>
+        <td>${p.updated||''}</td>
+      </tr>`;
+    }).join('')
+  }</tbody></table>`;
 }
+
 // ─── ENTITIES ───
 function renderEntities() {
   const people = (DATA.entities?.people||[]).map(s => DATA.pages.find(p=>p.slug===s)).filter(Boolean);
