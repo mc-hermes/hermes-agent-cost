@@ -151,6 +151,7 @@
   .graph-container canvas.dragging-node { cursor: grabbing; }
   .graph-reset { background: var(--surface2); border: 1px solid var(--border); color: var(--text-muted); padding: 2px 8px; border-radius: 6px; cursor: pointer; font-size: 0.6rem; font-family: 'Inter', sans-serif; transition: all 0.15s; margin-left: 6px; white-space: nowrap; }
   .graph-reset:hover { color: var(--text); border-color: var(--accent); }
+  .section-head td { background: var(--surface2); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.02em; padding: 8px 12px; border-bottom: 1px solid var(--border); color: var(--text-muted); }
   .graph-legend { display: flex; gap: 16px; margin-top: 8px; font-size: 0.65rem; color: var(--text-muted); justify-content: center; flex-wrap: wrap; }
   .graph-legend span { display: flex; align-items: center; gap: 4px; }
   .graph-legend .dot { width: 8px; height: 8px; border-radius: 50%; }
@@ -1152,28 +1153,66 @@ document.addEventListener('click', function(e) {
 
 // ─── PAGES TABLE ───
 function renderPages(filter) {
-  let pages = DATA.pages || [];
+  var pages = DATA.pages || [];
   if (filter) {
-    const q = filter.toLowerCase();
-    pages = pages.filter(p => (p.slug||'').toLowerCase().includes(q) || (p.title||'').toLowerCase().includes(q) || (p.type||'').toLowerCase().includes(q) || (p.body||'').toLowerCase().includes(q) || (p.tags||[]).some(t=>t.toLowerCase().includes(q)));
+    var q = filter.toLowerCase();
+    pages = pages.filter(function(p) {
+      return (p.slug||'').toLowerCase().indexOf(q) >= 0 ||
+        (p.title||'').toLowerCase().indexOf(q) >= 0 ||
+        (p.type||'').toLowerCase().indexOf(q) >= 0 ||
+        (p.body||'').toLowerCase().indexOf(q) >= 0 ||
+        (p.tags||[]).some(function(t) { return t.toLowerCase().indexOf(q) >= 0; });
+    });
   }
   if (!pages.length) {
     document.getElementById('pagesTable').innerHTML = '<div class="empty"><p>No pages match</p></div>';
     return;
   }
-  document.getElementById('pagesTable').innerHTML = `<table><thead><tr><th>Page</th><th>Type</th><th>Links</th><th>Updated</th></tr></thead><tbody>${
-    pages.map(p => {
-      const lc = p.outbound_count + p.inbound_count;
-      return `<tr class="page-row" onclick="openPageModal('${escAttr(p.slug)}')">
-        <td><span class="slug-link">${esc(p.slug)}</span><br><span style="font-size:0.65rem;color:var(--text-muted)">${esc(p.title||'')}</span></td>
-        <td><span class="type-tag ${p.type||'concept'}">${p.type||'concept'}</span></td>
-        <td><span class="link-badge ${lc>0?'has-links':''}">${lc>0 ? '🔗 '+lc : '—'}</span></td>
-        <td>${p.updated||''}</td>
-      </tr>`;
-    }).join('')
-  }</tbody></table>`;
+  pages.sort(function(a,b) {
+    var da = a.updated || '', db = b.updated || '';
+    if (da !== db) return da > db ? -1 : 1;
+    return (a.slug||'') < (b.slug||'') ? -1 : 1;
+  });
+  var latestDate = pages.length > 0 ? (pages[0].updated || '') : '';
+  var today = latestDate ? new Date(latestDate) : new Date();
+  function daysAgo(dateStr) {
+    if (!dateStr) return 999;
+    return Math.round((today - new Date(dateStr)) / 86400000);
+  }
+  function pageRow(p) {
+    var lc = p.outbound_count + p.inbound_count;
+    return '<tr class="page-row" onclick="openPageModal(' + "'" + escAttr(p.slug) + "'" + ')">' +
+      '<td><span class="slug-link">' + esc(p.slug) + '</span><br><span style="font-size:0.65rem;color:var(--text-muted)">' + esc(p.title||'') + '</span></td>' +
+      '<td><span class="type-tag ' + (p.type||'concept') + '">' + (p.type||'concept') + '</span></td>' +
+      '<td><span class="link-badge ' + (lc>0?'has-links':'') + '">' + (lc>0 ? '\uD83D\uDD17 '+lc : '\u2014') + '</td>' +
+      '<td>' + (p.updated||'') + '</td></tr>';
+  }
+  var sections = [
+    { label: '\uD83D\uDCCC  Recently Added', test: function(d) { return daysAgo(d) <= 2; } },
+    { label: '\uD83D\uDCC5  This Week',      test: function(d) { return daysAgo(d) <= 7; } },
+    { label: '\uD83D\uDCC1  Older',          test: function(d) { return daysAgo(d) > 7; } },
+  ];
+  var html = '<table><thead><tr><th>Page</th><th>Type</th><th>Links</th><th>Updated</th></tr></thead><tbody>';
+  var anySection = false;
+  for (var si = 0; si < sections.length; si++) {
+    var section = sections[si];
+    var sectionPages = [];
+    for (var pi = 0; pi < pages.length; pi++) {
+      if (section.test(pages[pi].updated)) sectionPages.push(pages[pi]);
+    }
+    if (!sectionPages.length) continue;
+    anySection = true;
+    html += '<tr class="section-head"><td colspan="4">' + section.label + ' <span class="count" style="font-weight:400">(' + sectionPages.length + ')</span></td></tr>';
+    for (var rj = 0; rj < sectionPages.length; rj++) {
+      html += pageRow(sectionPages[rj]);
+    }
+  }
+  html += '</tbody></table>';
+  document.getElementById('pagesTable').innerHTML = html;
+  if (!anySection) {
+    document.getElementById('pagesTable').innerHTML = '<div class="empty"><p>No pages match</p></div>';
+  }
 }
-
 // ─── ENTITIES ───
 function renderEntities() {
   const people = (DATA.entities?.people||[]).map(s => DATA.pages.find(p=>p.slug===s)).filter(Boolean);
