@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-11T03:29:34Z",
+  "updated_at": "2026-06-11T03:34:01Z",
   "summary": {
     "score": "91",
     "score_label": "/100",
@@ -22,6 +22,11 @@
     "total_links": 76,
     "outbound_count": 110,
     "inbound_count": 101,
+    "artifact_count": 2,
+    "artifact_types": {
+      "image": 1,
+      "spreadsheet": 1
+    },
     "score_raw": "Brain score 91/100 (embed 35/35, links 25/25, timeline 7/15, orphans 14/15, dead-links 10/10)",
     "score_components": {
       "score": "91/100",
@@ -2538,7 +2543,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 479ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 632ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -2908,5 +2913,29 @@
         "category": "meta"
       }
     ]
-  }
+  },
+  "artifacts": [
+    {
+      "path": "~/.gbrain/datasets/freeletics/2026-06-11-workout.png",
+      "basename": "2026-06-11-workout.png",
+      "size": 1055302,
+      "size_human": "1.0 MB",
+      "ext": ".png",
+      "type": "image",
+      "source_pages": [
+        "concepts/freeletics-workout-2026-06-11"
+      ],
+      "mtime": "2026-06-11T03:26:03.806920+00:00"
+    },
+    {
+      "path": "~/.gbrain/datasets/dynamics-orchard-management-accounts-fye-2025.csv",
+      "basename": "dynamics-orchard-management-accounts-fye-2025.csv",
+      "size": 1247,
+      "size_human": "1.2 KB",
+      "ext": ".csv",
+      "type": "spreadsheet",
+      "source_pages": [],
+      "mtime": "2026-06-10T13:16:02.981905+00:00"
+    }
+  ]
 }
