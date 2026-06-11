@@ -500,6 +500,19 @@
   .artifact-search-wrap input:focus { outline: none; border-color: var(--primary); }
   .artifact-search-wrap .search-icon { position: absolute; left: 10px; color: var(--text-muted); }
   @media (max-width: 768px) { .artifact-grid { grid-template-columns: 1fr; } }
+
+  /* ─── Artifact Preview Modal ─── */
+  .art-preview-image { max-width: 100%; max-height: 60vh; border-radius: var(--radius-sm); display: block; margin: 0 auto; }
+  .art-preview-table { width: 100%; border-collapse: collapse; font-size: 0.65rem; max-height: 50vh; overflow-y: auto; display: block; }
+  .art-preview-table thead { position: sticky; top: 0; }
+  .art-preview-table th { background: var(--surface2); padding: 6px 10px; text-align: left; font-weight: 600; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  .art-preview-table td { padding: 5px 10px; border-bottom: 1px solid rgba(255,255,255,0.03); white-space: nowrap; }
+  .art-preview-table tr:hover td { background: rgba(255,255,255,0.02); }
+  .art-preview-text { font-family: 'JetBrains Mono', monospace; font-size: 0.65rem; line-height: 1.5; white-space: pre-wrap; max-height: 55vh; overflow-y: auto; background: var(--surface2); padding: 12px; border-radius: var(--radius-sm); }
+  .art-preview-meta { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; font-size: 0.65rem; color: var(--text-muted); }
+  .art-preview-meta span { display: flex; align-items: center; gap: 4px; }
+  .art-preview-unsupported { text-align: center; padding: 40px 20px; color: var(--text-muted); }
+  .art-preview-unsupported .icon { font-size: 2.5rem; margin-bottom: 12px; opacity: 0.4; }
 </style>
 </head>
 <body>
@@ -1580,7 +1593,7 @@ function renderArtifacts(query) {
   const slugIndex = {};
   (DATA.pages||[]).forEach(function(p) { slugIndex[p.slug] = p; });
   
-  grid.innerHTML = filtered.map(function(a) {
+  grid.innerHTML = filtered.map(function(a, idx) {
     var srcPages = a.source_pages || [];
     var pagesHtml = '';
     if (srcPages.length) {
@@ -1592,10 +1605,12 @@ function renderArtifacts(query) {
       pagesHtml = '<span class="art-nopage">no linked page</span>';
     }
     var mtime = a.mtime ? a.mtime.split('T')[0] : '';
-    return '<div class="artifact-card">' +
+    var previewable = a.preview && a.preview.type !== 'error';
+    var clickAttr = previewable ? ' onclick="openArtifactPreview(' + idx + ')" style="cursor:pointer"' : ' style="cursor:default;opacity:0.6"';
+    return '<div class="artifact-card"' + clickAttr + '>' +
       '<div class="art-icon">' + getArtifactIcon(a.type) + '</div>' +
       '<div class="art-name">' + esc(a.basename) + '</div>' +
-      '<div class="art-meta"><span>' + esc(a.ext) + '</span><span>' + esc(a.size_human) + '</span>' + (mtime ? '<span>' + esc(mtime) + '</span>' : '') + '</div>' +
+      '<div class="art-meta"><span>' + esc(a.ext) + '</span><span>' + esc(a.size_human) + '</span>' + (mtime ? '<span>' + esc(mtime) + '</span>' : '') + (previewable ? '<span style="color:var(--green)">preview</span>' : '') + '</div>' +
       '<div class="art-pages">' + pagesHtml + '</div>' +
     '</div>';
   }).join('');
@@ -1619,6 +1634,59 @@ function getArtifactIcon(type) {
   };
   return (icons[type] || '') + ' ';
 }
+
+function openArtifactPreview(idx) {
+  var artifacts = DATA.artifacts || [];
+  var a = artifacts[idx];
+  if (!a || !a.preview) return;
+  var p = a.preview;
+  var title = a.basename;
+  var subtitle = a.type + ' · ' + a.size_human;
+  var html = '';
+  
+  // Meta bar
+  html += '<div class="art-preview-meta">';
+  html += '<span>' + getArtifactIcon(a.type) + ' ' + a.type + '</span>';
+  html += '<span>' + esc(a.ext) + '</span>';
+  html += '<span>' + esc(a.size_human) + '</span>';
+  if (a.source_pages.length) {
+    var slugIndex = {};
+    (DATA.pages||[]).forEach(function(pg) { slugIndex[pg.slug] = pg; });
+    html += '<span>Pages: ' + a.source_pages.map(function(s) {
+      return '<a href="#" onclick="event.preventDefault();closeModal();openPageModal(\'' + escAttr(s) + '\')" style="color:var(--primary)">' + esc((slugIndex[s]||{}).title || s) + '</a>';
+    }).join(', ') + '</span>';
+  }
+  html += '</div>';
+  
+  // Preview content by type
+  if (p.type === 'image') {
+    html += '<img class="art-preview-image" src="data:' + escAttr(p.mime||'image/jpeg') + ';base64,' + (p.data||'') + '" alt="' + escAttr(a.basename) + '">';
+  } else if (p.type === 'table') {
+    var headers = p.headers || [];
+    var rows = p.rows || [];
+    html += '<div style="max-height:55vh;overflow-y:auto"><table class="art-preview-table"><thead><tr>';
+    headers.forEach(function(h) { html += '<th>' + esc(h) + '</th>'; });
+    html += '</tr></thead><tbody>';
+    rows.forEach(function(row) {
+      html += '<tr>';
+      for (var i = 0; i < headers.length; i++) {
+        html += '<td>' + esc(row[i]||'') + '</td>';
+      }
+      html += '</tr>';
+    });
+    html += '</tbody></table></div>';
+    if (p.total_rows) {
+      html += '<div style="font-size:0.6rem;color:var(--text-muted);margin-top:6px">Showing ' + rows.length + ' of ' + p.total_rows + ' rows</div>';
+    }
+  } else if (p.type === 'text') {
+    html += '<div class="art-preview-text">' + esc(p.content||'') + '</div>';
+  } else if (p.type === 'error') {
+    html += '<div class="art-preview-unsupported"><div class="icon"></div><p>Preview generation failed</p><p style="font-size:0.65rem">' + esc(p.message||'') + '</p></div>';
+  }
+  
+  openModal(title, subtitle, html);
+}
+
 
 // ─── ENTITIES (lazy) ───
 function renderEntities() {
