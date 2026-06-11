@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-11T05:42:10Z",
+  "updated_at": "2026-06-11T05:42:46Z",
   "summary": {
     "score": "91",
     "score_label": "/100",
@@ -2543,7 +2543,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1168ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 553ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -3124,7 +3124,10 @@
           ]
         ],
         "total_rows": 25
-      }
+      },
+      "r2_key": "sayf/dynamics-orchard/dynamics-orchard-management-accounts-fye-2025.csv",
+      "r2_url": "r2://gbrain-artifacts/sayf/dynamics-orchard/dynamics-orchard-management-accounts-fye-2025.csv",
+      "r2_s3_endpoint": "ace3aeb4a5bb6414ed3416ac5b8f8d59.r2.cloudflarestorage.com"
     }
   ]
 }
