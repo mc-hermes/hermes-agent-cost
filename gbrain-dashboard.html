@@ -192,7 +192,7 @@
   }
   .feed-card .fc-links .fc-link::before { content: '→ '; color: var(--primary-light); }
   .feed-card .fc-links .fc-link:hover { color: var(--primary-light); text-decoration: underline; }
-  .feed-card .fc-links .fc-second-degree { color: var(--accent); opacity: 0.7; cursor: pointer; }
+  .feed-card .fc-links .fc-second-degree { color: var(--accent); cursor: pointer; }
   .feed-card .fc-links .fc-second-degree::before { content: '· also: '; opacity: 0.5; }
   .feed-card .fc-links .fc-second-degree:hover { opacity: 1; }
   .feed-card .fc-summary { font-size: 0.7rem; color: var(--text-muted); margin-top: 6px; line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
@@ -263,7 +263,7 @@
   .live-query-bar { display: flex; gap: 8px; margin-bottom: 12px; }
   .live-query-bar input { flex: 1; padding: 10px 16px; background: var(--surface2); border: 1px solid var(--border); border-radius: var(--radius-sm); color: var(--text); font-size: 0.8rem; font-family: 'Inter', sans-serif; }
   .live-query-bar input:focus { outline: none; border-color: var(--primary); }
-  .live-query-bar button { padding: 10px 20px; background: var(--primary); border: none; border-radius: var(--radius-sm); color: #fff; font-size: 0.75rem; font-weight: 600; font-family: 'Inter', sans-serif; cursor: pointer; transition: background 0.15s; }
+  .live-query-bar button { padding: 10px 20px; background: var(--primary); border: none; border-radius: var(--radius-sm); color: #1a1b26; font-size: 0.75rem; font-weight: 600; font-family: 'Inter', sans-serif; cursor: pointer; transition: background 0.15s; }
   .live-query-bar button:hover { background: var(--primary-light); }
   .live-query-results { display: flex; flex-direction: column; gap: 8px; }
   .live-query-results:empty { display: none; }
@@ -362,7 +362,7 @@
   .footer { text-align: center; font-size: 0.6rem; color: var(--text-muted); padding: 24px 0; opacity: 0.4; }
 
   /* ─── Chat Bubble ─── */
-  .chat-bubble { position: fixed; bottom: 24px; right: 24px; width: 56px; height: 56px; border-radius: 50%; background: var(--primary); border: 1px solid var(--primary-light); color: white; font-size: 1.4rem; cursor: pointer; z-index: 1000; box-shadow: 0 4px 20px rgba(122,162,247,0.25); transition: all 0.15s; display: flex; align-items: center; justify-content: center; }
+  .chat-bubble { position: fixed; bottom: 24px; right: 24px; width: 56px; height: 56px; border-radius: 50%; background: var(--primary); border: 1px solid var(--primary-light); color: #1a1b26; font-size: 1.4rem; cursor: pointer; z-index: 1000; box-shadow: 0 4px 20px rgba(122,162,247,0.25); transition: all 0.15s; display: flex; align-items: center; justify-content: center; }
   .chat-bubble:hover { transform: scale(1.05); box-shadow: 0 6px 28px rgba(122,162,247,0.35); }
   .chat-panel { position: fixed; bottom: 92px; right: 24px; width: 380px; height: 520px; max-height: calc(100vh - 120px); background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: 0 12px 40px rgba(0,0,0,0.5); z-index: 999; display: none; flex-direction: column; overflow: hidden; }
   .chat-panel.active { display: flex; }
@@ -405,7 +405,7 @@
   .chat-input-bar { display: flex; gap: 6px; padding: 10px 16px; border-top: 1px solid var(--border); background: var(--surface2); flex-shrink: 0; }
   .chat-input-bar input { flex: 1; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font-size: 0.72rem; font-family: 'Inter', sans-serif; }
   .chat-input-bar input:focus { outline: none; border-color: var(--primary); }
-  .chat-input-bar button { padding: 8px 16px; border-radius: 999px; background: var(--primary); border: none; color: white; font-size: 0.7rem; font-weight: 600; cursor: pointer; font-family: 'Inter', sans-serif; }
+  .chat-input-bar button { padding: 8px 16px; border-radius: 999px; background: var(--primary); border: none; color: #1a1b26; font-size: 0.7rem; font-weight: 600; cursor: pointer; font-family: 'Inter', sans-serif; }
 
   /* ─── Loading ─── */
   .loading { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 60px 20px; color: var(--text-muted); font-size: 0.8rem; gap: 16px; }
