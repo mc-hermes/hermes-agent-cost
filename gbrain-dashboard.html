@@ -87,8 +87,18 @@
   .refresh:hover { color: var(--text); border-color: var(--primary); }
   .last-updated { font-size: 0.65rem; color: var(--text-muted); }
 
-  /* ─── Stat Cards ─── */
-  .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 32px; }
+  /* ─── Stat Chips (compact, Today-only, horizontal scroll on mobile) ─── */
+  .stat-chips { display: flex; gap: 8px; margin-bottom: 16px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: 4px 0; }
+  .stat-chips::-webkit-scrollbar { display: none; }
+  .stat-chip { display: flex; align-items: center; gap: 6px; background: var(--surface); border: 1px solid var(--border); border-radius: 999px; padding: 6px 14px; flex-shrink: 0; cursor: default; transition: border-color 0.15s; }
+  .stat-chip:hover { border-color: var(--primary-light); }
+  .stat-chip .sc-icon { width: 14px; height: 14px; color: var(--primary-light); flex-shrink: 0; }
+  .stat-chip .sc-icon svg { display: block; width: 14px; height: 14px; }
+  .stat-chip .sc-value { font-family: 'Syne', sans-serif; font-size: 0.85rem; font-weight: 700; color: var(--text); line-height: 1; }
+  .stat-chip .sc-label { font-size: 0.6rem; color: var(--text-muted); line-height: 1; }
+
+  /* ─── Stat Cards (used on desktop Today view) ─── */
+  .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 32px; align-items: start; }
   .stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; cursor: pointer; transition: border-color 0.15s, transform 0.15s; position: relative; }
   .stat-card:hover { border-color: var(--primary-light); transform: translateY(-2px); }
   .stat-card:active { transform: translateY(0); }
@@ -359,7 +369,7 @@
   .placeholder-card { height: 80px; margin-bottom: 10px; }
 
   /* ─── Footer ─── */
-  .footer { text-align: center; font-size: 0.6rem; color: var(--text-muted); padding: 24px 0; opacity: 0.4; }
+  .footer { text-align: center; font-size: 0.6rem; color: var(--text-muted); padding: 24px 0 80px; opacity: 0.4; }
 
   /* ─── Chat Bubble ─── */
   .chat-bubble { position: fixed; bottom: 24px; right: 24px; width: 56px; height: 56px; border-radius: 50%; background: var(--primary); border: 1px solid var(--primary-light); color: #1a1b26; font-size: 1.4rem; cursor: pointer; z-index: 1000; box-shadow: 0 4px 20px rgba(122,162,247,0.25); transition: all 0.15s; display: flex; align-items: center; justify-content: center; }
@@ -453,7 +463,7 @@
     .table-wrap td:first-child { font-weight: 600; }
     .live-query-section { padding: 12px; margin-bottom: 16px; }
     .live-query-bar button { padding: 10px 12px; font-size: 0.7rem; }
-    .float-btns { bottom: 80px; left: 12px; }
+    .float-btns { display: none; }
     .settings-popover { bottom: 170px; left: 12px; }
     .chat-bubble { bottom: 80px; right: 12px; width: 48px; height: 48px; font-size: 1.2rem; }
     .chat-panel { width: calc(100vw - 24px); right: 12px; bottom: 80px; height: 480px; max-height: calc(100vh - 100px); border-radius: 12px; }
@@ -495,20 +505,22 @@
 
     <!-- Desktop View Navigation -->
     <div class="tabs desktop-view-tabs" id="desktopViewTabs" style="margin-bottom:16px">
-      <button class="tab active" data-dview="today" onclick="showView('today')">📰 Today</button>
-      <button class="tab" data-dview="browse" onclick="showView('browse')">📂 Browse</button>
-      <button class="tab" data-dview="ask" onclick="showView('ask')">💬 Ask</button>
-      <button class="tab" data-dview="graph" onclick="showView('graph')">🔗 Graph</button>
+      <button class="tab active" data-dview="today" onclick="showView('today')"><span class="tab-icon"><svg viewBox="0 0 16 16"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" fill="none"/><path d="M5 7h6M5 10h6" stroke="currentColor"/></svg></span> Today</button>
+      <button class="tab" data-dview="browse" onclick="showView('browse')"><span class="tab-icon"><svg viewBox="0 0 16 16"><rect x="2" y="2" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="9" y="2" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="2" y="9" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="9" y="9" width="5" height="5" rx="1" stroke="currentColor" fill="none"/></svg></span> Browse</button>
+      <button class="tab" data-dview="ask" onclick="showView('ask')"><span class="tab-icon"><svg viewBox="0 0 16 16"><path d="M2 2h12v9H6l-4 3V2z" stroke="currentColor" fill="none"/></svg></span> Ask</button>
+      <button class="tab" data-dview="graph" onclick="showView('graph')"><span class="tab-icon"><svg viewBox="0 0 16 16"><circle cx="5" cy="5" r="2" stroke="currentColor" fill="none"/><circle cx="11" cy="4" r="1.5" stroke="currentColor" fill="none"/><circle cx="8" cy="11" r="2.5" stroke="currentColor" fill="none"/><path d="M6 6l2 4M10 5l-1 4" stroke="currentColor"/></svg></span> Graph</button>
     </div>
 
-    <!-- Stat Cards (always visible) -->
-    <div class="stat-grid" id="statGrid"></div>
+    <!-- No stat cards at top level — they live inside view-today only -->
 
     <!-- === VIEW: Today (mobile home) === -->
     <div class="view-panel active" id="view-today">
+      <!-- Stat Chips (compact, Today only) -->
+      <div class="stat-chips" id="statChips"></div>
+
       <!-- Live Query -->
       <div class="live-query-section">
-        <div class="section-header"><h2>🔍 Live Query</h2></div>
+        <div class="section-header"><h2>Ask</h2></div>
         <div class="live-query-bar">
           <input type="text" id="lqInput" placeholder="Ask anything about your brain..." onkeydown="if(event.key==='Enter') runLiveQuery()">
           <button id="lqBtn" onclick="runLiveQuery()">Ask</button>
@@ -522,18 +534,18 @@
       <!-- Today Feed -->
       <div class="section" id="todayView">
         <div class="section-header">
-          <h2>📰 Today</h2>
+          <h2>Today</h2>
           <span class="count" id="feedCount"></span>
         </div>
         <div id="digestSlot"></div>
         <div class="feed-source-tabs" id="feedSourceTabs">
-          <button class="feed-source-tab active" data-src="all">📥 All</button>
-          <button class="feed-source-tab" data-src="newsletter">📬 Inbox</button>
-          <button class="feed-source-tab" data-src="video">🎬 Library</button>
-          <button class="feed-source-tab" data-src="bookmark">🔖 Saved</button>
-          <button class="feed-source-tab" data-src="quote">💬 Quotes</button>
-          <button class="feed-source-tab" data-src="dataset">📊 Data</button>
-          <button class="feed-source-tab" data-src="meeting">🤝 Meetings</button>
+          <button class="feed-source-tab active" data-src="all">All</button>
+          <button class="feed-source-tab" data-src="newsletter">Inbox</button>
+          <button class="feed-source-tab" data-src="video">Library</button>
+          <button class="feed-source-tab" data-src="bookmark">Saved</button>
+          <button class="feed-source-tab" data-src="quote">Quotes</button>
+          <button class="feed-source-tab" data-src="dataset">Data</button>
+          <button class="feed-source-tab" data-src="meeting">Meetings</button>
         </div>
         <div id="feedCards"></div>
         <div class="empty-state" id="feedEmpty" style="display:none">
@@ -546,7 +558,7 @@
     <!-- === VIEW: Graph === -->
     <div class="view-panel" id="view-graph">
       <div class="graph-container" id="graphContainer">
-        <div class="section-header"><h2>🔗 Knowledge Graph</h2><span class="count" id="graphCount"></span></div>
+        <div class="section-header"><h2>Knowledge Graph</h2><span class="count" id="graphCount"></span></div>
         <canvas id="graphCanvas"></canvas>
         <button class="graph-reset" onclick="resetGraph()" title="Reset positions">↺ Reset</button>
         <button class="graph-fullscreen-btn" onclick="toggleGraphFullscreen()" title="Fullscreen">⛶</button>
@@ -566,12 +578,12 @@
       <div class="section">
         <div class="section-header"><h2>Browse</h2></div>
         <div class="tabs desktop-tabs-row" id="browseTabs">
-          <button class="tab active" data-btab="pages">📄 Pages</button>
-          <button class="tab" data-btab="entities">👤 Entities</button>
-          <button class="tab" data-btab="health">🩺 Health</button>
+          <button class="tab active" data-btab="pages">Pages</button>
+          <button class="tab" data-btab="entities">Entities</button>
+          <button class="tab" data-btab="health">Health</button>
         </div>
         <div class="search-wrap" id="searchWrap">
-          <span class="search-icon">🔍</span>
+          <span class="search-icon"><svg viewBox="0 0 16 16" width="14" height="14"><circle cx="7" cy="7" r="5" stroke="currentColor" fill="none"/><path d="M11 11l4 4" stroke="currentColor"/></svg></span>
           <input type="text" placeholder="Search pages..." id="searchInput" oninput="filterCurrent()">
         </div>
         <div id="pagesView">
@@ -589,7 +601,7 @@
     <!-- === VIEW: Ask (mobile chat-style) === -->
     <div class="view-panel" id="view-ask">
       <div class="live-query-section" style="margin-bottom:8px">
-        <div class="section-header"><h2>💬 Ask Your Brain</h2></div>
+        <div class="section-header"><h2>Ask</h2></div>
         <div class="live-query-bar">
           <input type="text" id="mqInput" placeholder="Ask anything..." onkeydown="if(event.key==='Enter') runMobileQuery()">
           <button onclick="runMobileQuery()">Ask</button>
@@ -611,42 +623,42 @@
 <nav class="mobile-nav" id="mobileNav">
   <div class="mobile-nav-inner">
     <button class="mobile-nav-btn active" data-view="today" onclick="showView('today')">
-      <span class="nav-icon">📰</span> Today
+      <span class="nav-icon"><svg viewBox="0 0 16 16"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" fill="none"/><path d="M5 7h6M5 10h6" stroke="currentColor"/></svg></span> Today
     </button>
     <button class="mobile-nav-btn" data-view="browse" onclick="showView('browse')">
-      <span class="nav-icon">📂</span> Browse
+      <span class="nav-icon"><svg viewBox="0 0 16 16"><rect x="2" y="2" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="9" y="2" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="2" y="9" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="9" y="9" width="5" height="5" rx="1" stroke="currentColor" fill="none"/></svg></span> Browse
     </button>
     <button class="mobile-nav-btn" data-view="ask" onclick="showView('ask')">
-      <span class="nav-icon">💬</span> Ask
+      <span class="nav-icon"><svg viewBox="0 0 16 16"><path d="M2 2h12v9H6l-4 3V2z" stroke="currentColor" fill="none"/></svg></span> Ask
     </button>
     <button class="mobile-nav-btn" data-view="graph" onclick="showView('graph')">
-      <span class="nav-icon">🔗</span> Graph
+      <span class="nav-icon"><svg viewBox="0 0 16 16"><circle cx="5" cy="5" r="2" stroke="currentColor" fill="none"/><circle cx="11" cy="4" r="1.5" stroke="currentColor" fill="none"/><circle cx="8" cy="11" r="2.5" stroke="currentColor" fill="none"/><path d="M6 6l2 4M10 5l-1 4" stroke="currentColor"/></svg></span> Graph
     </button>
     <button class="mobile-nav-btn" data-view="more" onclick="toggleMoreMenu()">
-      <span class="nav-icon">⋯</span> More
+      <span class="nav-icon">···</span> More
     </button>
   </div>
 </nav>
 
 <!-- More menu popover -->
 <div class="settings-popover" id="moreMenu" style="bottom:80px;left:auto;right:12px;width:180px">
-  <div class="settings-row" style="cursor:pointer" onclick="showView('browse');document.querySelector('[data-btab=entities]').click();toggleMoreMenu()">👤 Entities</div>
-  <div class="settings-row" style="cursor:pointer" onclick="showView('browse');document.querySelector('[data-btab=health]').click();toggleMoreMenu()">🩺 Health</div>
-  <div class="settings-row" style="cursor:pointer" onclick="toggleSettings();toggleMoreMenu()">⚙ Settings</div>
-  <div class="settings-row" style="cursor:pointer" onclick="openDocs();toggleMoreMenu()">? Help</div>
+  <div class="settings-row" style="cursor:pointer" onclick="showView('browse');document.querySelector('[data-btab=entities]').click();toggleMoreMenu()">Entities</div>
+  <div class="settings-row" style="cursor:pointer" onclick="showView('browse');document.querySelector('[data-btab=health]').click();toggleMoreMenu()">Health</div>
+  <div class="settings-row" style="cursor:pointer" onclick="toggleSettings();toggleMoreMenu()">Settings</div>
+  <div class="settings-row" style="cursor:pointer" onclick="openDocs();toggleMoreMenu()">Help</div>
 </div>
 
 <!-- Floating Buttons -->
 <div class="float-btns">
-  <button class="float-btn cog-btn" onclick="toggleSettings()" title="Settings">⚙</button>
-  <button class="float-btn help-btn" onclick="openDocs()" title="Help &amp; Documentation (press ?)">?</button>
+<button class="float-btn cog-btn" onclick="toggleSettings()" title="Settings"><svg viewBox="0 0 16 16" width="14" height="14"><circle cx="8" cy="8" r="2.5" stroke="currentColor" fill="none"/><path d="M8 2v1.5M8 12.5v1.5M2 8h1.5M12.5 8h1.5M3.5 3.5l1 1M11.5 11.5l1 1M3.5 12.5l1-1M11.5 4.5l1-1" stroke="currentColor"/></svg></button>
+<button class="float-btn help-btn" onclick="openDocs()" title="Help &amp; Documentation (press ?)">?</button>
 </div>
 
 <!-- Settings Popover -->
 <div class="settings-popover" id="settingsPopover">
-  <h3>⚙ Settings</h3>
+  <h3>Settings</h3>
   <div class="settings-row">
-    <span>🎨 Theme</span>
+    <span>Theme</span>
     <select id="themeSelect" onchange="applyTheme(this.value)" style="background:var(--surface2);border:1px solid var(--border);color:var(--text);border-radius:6px;padding:4px 8px;font-size:0.7rem;font-family:'Inter',sans-serif;max-width:120px">
       <option value="dark">Dark</option>
       <option value="light">Light</option>
@@ -657,7 +669,7 @@
     </select>
   </div>
   <div class="settings-row">
-    <span>🧲 Graph physics</span>
+    <span>Graph physics</span>
     <label class="toggle-sw"><input type="checkbox" id="physicsToggle" onchange="togglePhysics()" checked><span class="slider"></span></label>
   </div>
   <div class="settings-row" style="margin-top:6px">
@@ -671,14 +683,14 @@
 </div>
 
 <!-- Chat Bubble (desktop) -->
-<button class="chat-bubble" id="chatBubble" onclick="toggleChat()" title="Chat with gbrain assistant">💬</button>
+<button class="chat-bubble" id="chatBubble" onclick="toggleChat()" title="Chat with gbrain assistant"><svg viewBox="0 0 16 16" width="20" height="20"><path d="M2 2h12v9H6l-4 3V2z" stroke="#1a1b26" fill="none" stroke-width="1.5"/></svg></button>
 <div class="chat-panel" id="chatPanel">
   <div class="chat-header">
-    <h3>🧠 Assistant</h3>
+    <h3>Assistant</h3>
     <div class="chat-header-actions">
       <select id="chatModel" onchange="switchModel()" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);color:var(--text-muted);border-radius:6px;padding:4px 8px;font-size:0.68rem;font-family:'Inter',sans-serif;cursor:pointer;outline:none">
-        <option value="deepseek">⚡ DeepSeek Flash</option>
-        <option value="claude-haiku">🧬 Claude Haiku</option>
+        <option value="deepseek">DeepSeek Flash</option>
+        <option value="claude-haiku">Claude Haiku</option>
       </select>
       <button class="chat-clear" onclick="clearChat()" title="Clear conversation">Clear</button>
       <button onclick="toggleChat()">✕</button>
@@ -708,13 +720,13 @@
   <div class="docs-modal" style="position:relative">
     <button class="docs-close" onclick="closeDocs()">✕</button>
     <div class="docs-sidebar" id="docsSidebar">
-      <button class="docs-tab active" data-doc="overview"><span class="d-icon">🧠</span> Overview</button>
-      <button class="docs-tab" data-doc="how"><span class="d-icon">⚙️</span> How It Works</button>
-      <button class="docs-tab" data-doc="features"><span class="d-icon">✨</span> Features</button>
-      <button class="docs-tab" data-doc="setup"><span class="d-icon">🚀</span> Setup Recipe</button>
-      <button class="docs-tab" data-doc="clients"><span class="d-icon">💼</span> For Clients</button>
-      <button class="docs-tab" data-doc="scaling"><span class="d-icon">📈</span> Scaling & Limits</button>
-      <button class="docs-tab" data-doc="shortcuts"><span class="d-icon">⌨️</span> Shortcuts</button>
+      <button class="docs-tab active" data-doc="overview"><span class="d-icon">i</span> Overview</button>
+      <button class="docs-tab" data-doc="how"><span class="d-icon">⚙</span> How It Works</button>
+      <button class="docs-tab" data-doc="features"><span class="d-icon">✦</span> Features</button>
+      <button class="docs-tab" data-doc="setup"><span class="d-icon">↑</span> Setup Recipe</button>
+      <button class="docs-tab" data-doc="clients"><span class="d-icon">◈</span> For Clients</button>
+      <button class="docs-tab" data-doc="scaling"><span class="d-icon">↗</span> Scaling & Limits</button>
+      <button class="docs-tab" data-doc="shortcuts"><span class="d-icon">⌘</span> Shortcuts</button>
     </div>
     <div class="docs-content" id="docsContent"></div>
   </div>
@@ -797,19 +809,76 @@ function showView(name) {
 }
 
 // ─── STATS ───
+// Stat icon SVGs (replaces emoji)
+var statIconSvgs = {
+  pages: '<svg viewBox="0 0 16 16"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" fill="none"/><path d="M5 7h6M5 10h6" stroke="currentColor"/></svg>',
+  brain: '<svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" stroke="currentColor" fill="none"/><path d="M5 8c0-2 1-3 3-3s3 1 3 3-1 3-3 3-3-1-3-3z" stroke="currentColor"/><path d="M7 6v2M9 7v1" stroke="currentColor"/></svg>',
+  links: '<svg viewBox="0 0 16 16"><path d="M6 3l7 5-7 5V3z" stroke="currentColor" fill="none"/><path d="M3 5v6" stroke="currentColor"/></svg>',
+  graph: '<svg viewBox="0 0 16 16"><circle cx="5" cy="5" r="2" stroke="currentColor" fill="none"/><circle cx="11" cy="4" r="1.5" stroke="currentColor" fill="none"/><circle cx="8" cy="11" r="2.5" stroke="currentColor" fill="none"/><path d="M6 6l2 4M10 5l-1 4" stroke="currentColor"/></svg>',
+  embed: '<svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="3" stroke="currentColor" fill="none"/><circle cx="8" cy="8" r="5" stroke="currentColor" fill="none" opacity="0.5"/><circle cx="8" cy="8" r="7" stroke="currentColor" fill="none" opacity="0.3"/></svg>'
+};
+
 function renderStats() {
   const s = DATA.summary || {};
   const pages = DATA.pages || [];
-  document.getElementById('statGrid').innerHTML = [
-    {icon:'📊', value: s.page_count, label:'Total Pages', detail: `${s.concept_count} concepts, ${s.meeting_count||0} meetings, ${s.person_count} people, ${s.company_count} companies`, cls:'', click: 'showStatBreakdown'},
-    {icon:'🏆', value: s.score, label:'Brain Score', detail: 'embed 35/35, links 25/25, timeline 2/15, orphans 9/15', cls:'', click: 'switchToHealth'},
-    {icon:'🔗', value: s.total_links, label:'Total Links', detail: `${sumLinks('outbound')} outbound, ${sumLinks('inbound')} inbound across ${s.page_count} pages`, cls:'', click: null},
-    {icon:'📡', value: s.graph_coverage?.match(/[\d.]+%/)?.[0] || '—', label:'Graph Coverage', detail: s.graph_coverage||'', cls:'', click: null},
-    {icon:'✨', value: s.embed_coverage?.match(/[\d.]+%/)?.[0] || '—', label:'Embeddings', detail: s.embed_coverage||'', cls:'', click: null},
-  ].map((c,i) => `<div class="stat-card" ${c.click ? `onclick="${c.click}()"` : ''}>
-    <div class="icon">${c.icon}</div><div class="value">${c.value}</div><div class="label">${c.label}</div><div class="detail">${c.detail}</div>
-    ${c.click ? '<div class="hint">click for details →</div>' : ''}
-  </div>`).join('');
+  // Render compact chips into statChips (Today view) + fallback statGrid if present
+  var chips = [
+    {svg: statIconSvgs.pages, value: s.page_count, label: 'Pages'},
+    {svg: statIconSvgs.brain, value: s.score || '—', label: 'Score' + (s.score_label || ''), click: 'showBrainScoreModal'},
+    {svg: statIconSvgs.links, value: s.total_links, label: 'Links'},
+    {svg: statIconSvgs.graph, value: (s.graph_coverage||'').match(/[\\d.]+%/) ? (s.graph_coverage.match(/[\\d.]+%/)[0]) : '—', label: 'Graph'},
+    {svg: statIconSvgs.embed, value: (s.embed_coverage||'').match(/[\\d.]+%/) ? (s.embed_coverage.match(/[\\d.]+%/)[0]) : '—', label: 'Embed'}
+  ];
+  var html = chips.map(function(c) {
+    return '<div class="stat-chip"' + (c.click ? ' onclick="' + c.click + '()"' : '') + '>' +
+      '<span class="sc-icon">' + c.svg + '</span>' +
+      '<span class="sc-value">' + esc(String(c.value)) + '</span>' +
+      '<span class="sc-label">' + esc(c.label) + '</span>' +
+    '</div>';
+  }).join('');
+  var chipsEl = document.getElementById('statChips');
+  if (chipsEl) chipsEl.innerHTML = html;
+  // Also render into statGrid if it exists (for desktop)
+  var gridEl = document.getElementById('statGrid');
+  if (gridEl) {
+    var gridHtml = [
+      {icon: statIconSvgs.pages, value: s.page_count, label: 'Total Pages', detail: (s.concept_count||0) + ' concepts, ' + (s.meeting_count||0) + ' meetings, ' + (s.person_count||0) + ' people', cls: '', click: 'showStatBreakdown'},
+      {icon: statIconSvgs.brain, value: s.score || '—', label: 'Brain Score /100', detail: s.score_breakdown || '', cls: '', click: 'showBrainScoreModal'},
+      {icon: statIconSvgs.links, value: s.total_links, label: 'Total Links', detail: sumLinks('outbound') + ' outbound, ' + sumLinks('inbound') + ' inbound', cls: '', click: null},
+      {icon: statIconSvgs.graph, value: (s.graph_coverage||'').match(/[\\d.]+%/) ? (s.graph_coverage.match(/[\\d.]+%/)[0]) : '—', label: 'Graph Coverage', detail: s.graph_coverage||'', cls: '', click: null},
+      {icon: statIconSvgs.embed, value: (s.embed_coverage||'').match(/[\\d.]+%/) ? (s.embed_coverage.match(/[\\d.]+%/)[0]) : '—', label: 'Embeddings', detail: s.embed_coverage||'', cls: '', click: null}
+    ].map(function(c) {
+      return '<div class="stat-card"' + (c.click ? ' onclick="' + c.click + '()"' : '') + '>' +
+        '<div class="icon">' + c.icon + '</div><div class="value">' + esc(String(c.value)) + '</div><div class="label">' + esc(c.label) + '</div><div class="detail">' + esc(c.detail||'') + '</div>' +
+        (c.click ? '<div class="hint">click for details →</div>' : '') +
+      '</div>';
+    }).join('');
+    gridEl.innerHTML = gridHtml;
+  }
+}
+
+function showBrainScoreModal() {
+  var s = DATA.summary || {};
+  var comps = s.score_components || {};
+  var breakdown = s.score_breakdown || '';
+  var html = '<div class="m-section"><div class="m-section-title">Brain Score Breakdown</div>';
+  html += '<div style="font-family:Syne,sans-serif;font-size:3rem;font-weight:800;text-align:center;margin:16px 0;color:var(--primary-light)">' + esc(s.score||'—') + '<span style="font-size:1rem;color:var(--text-muted)">/100</span></div>';
+  var keys = ['embed', 'links', 'timeline', 'orphans', 'dead-links'];
+  keys.forEach(function(k) {
+    var val = comps[k] || '—/—';
+    var parts = val.split('/');
+    var numer = parseInt(parts[0]) || 0;
+    var denom = parseInt(parts[1]) || 0;
+    var pct = denom > 0 ? Math.round(numer/denom*100) : 0;
+    var color = pct >= 80 ? 'var(--green)' : pct >= 50 ? 'var(--accent)' : 'var(--rose)';
+    html += '<div style="margin:8px 0"><div style="display:flex;justify-content:space-between;font-size:0.7rem;margin-bottom:2px"><span>' + k + '</span><span style="font-family:JetBrains Mono,monospace">' + val + '</span></div>';
+    html += '<div style="height:6px;background:var(--surface2);border-radius:3px;overflow:hidden"><div style="height:100%;width:' + pct + '%;background:' + color + ';border-radius:3px"></div></div></div>';
+  });
+  if (breakdown) {
+    html += '<div style="font-size:0.65rem;color:var(--text-muted);margin-top:12px;font-family:JetBrains Mono,monospace">' + esc(breakdown) + '</div>';
+  }
+  html += '</div>';
+  openModal('Brain Score', 'brain-score', html);
 }
 
 function sumLinks(dir) {
@@ -854,6 +923,18 @@ function renderFeed() {
   if (!filtered.length) {
     container.innerHTML = '';
     empty.style.display = 'block';
+    // Tab-specific empty state messages
+    var emptyMsgs = {
+      'all': {title: 'No pages yet', desc: 'Forward an email or add a note to start building your knowledge.'},
+      'newsletter': {title: 'No newsletters', desc: 'Forward newsletter emails to your brain inbox.'},
+      'video': {title: 'No videos', desc: 'Ingest YouTube videos or video notes to populate this section.'},
+      'bookmark': {title: 'No saved items', desc: 'Save bookmarks from your reading to see them here.'},
+      'quote': {title: 'No quotes', desc: 'Capture quotes from meetings and articles.'},
+      'dataset': {title: 'No datasets', desc: 'Upload spreadsheets or CSVs to analyze here.'},
+      'meeting': {title: 'No meetings', desc: 'Ingest meeting transcripts to populate this section.'}
+    };
+    var m = emptyMsgs[feedSourceFilter] || emptyMsgs['all'];
+    empty.innerHTML = '<div class="empty-title">' + esc(m.title) + '</div><div class="empty-desc">' + esc(m.desc) + '</div>';
     return;
   }
   empty.style.display = 'none';
@@ -865,29 +946,26 @@ function renderFeed() {
     const type = p.type || 'concept';
     const timeDisplay = p.updated ? timeAgo(p.updated) : '';
     const linksOut = p.links_out || [];
+    // Deduplicate links by target slug
+    var seenLinks = {};
+    var uniqueLinks = [];
+    linksOut.forEach(function(l) {
+      if (!seenLinks[l.to]) { seenLinks[l.to] = true; uniqueLinks.push(l); }
+    });
     const linkNames = [];
-    linksOut.forEach(l => {
+    uniqueLinks.forEach(function(l) {
       const target = slugIndex[l.to];
       if (target) {
-        linkNames.push(`<span class="fc-link" onclick="event.stopPropagation();openPageModal('${escAttr(l.to)}')">${esc(target.title || l.to)}</span>`);
+        linkNames.push('<span class="fc-link" onclick="event.stopPropagation();openPageModal(\'' + escAttr(l.to) + '\')">' + esc(target.title || l.to) + '</span>');
       }
     });
-    const secondDegree = computeSecondDegreeLinks(p, slugIndex, linksOut);
-    secondDegree.forEach(sd => {
-      linkNames.push(`<span class="fc-second-degree" onclick="event.stopPropagation();openPageModal('${escAttr(sd.slug)}')">${esc(sd.title)} (via ${esc(sd.via)})</span>`);
+    const secondDegree = computeSecondDegreeLinks(p, slugIndex, uniqueLinks);
+    secondDegree.forEach(function(sd) {
+      linkNames.push('<span class="fc-second-degree" onclick="event.stopPropagation();openPageModal(\'' + escAttr(sd.slug) + '\')">' + esc(sd.title) + ' (via ' + esc(sd.via) + ')</span>');
     });
-    const snippet = p.body ? p.body.replace(/^# .*\n?/m, '').replace(/\[[^\]]+\]\([^)]+\)/g, '').replace(/\[\[([^\]]+)\]\]/g, '$1').trim().slice(0, 120) : '';
-    return `<div class="feed-card" data-slug="${escAttr(p.slug)}" onclick="openPageModal('${escAttr(p.slug)}')">
-      <div class="fc-link-line"></div>
-      <div class="fc-header">
-        <span class="fc-type-badge ${type}">${getTypeSvg(type)} ${type}</span>
-        <span class="fc-time">${timeDisplay}</span>
-      </div>
-      <div class="fc-title">${esc(p.title || p.slug)}</div>
-      ${linkNames.length ? `<div class="fc-links">${linkNames.join(' · ')}</div>` : ''}
-      ${snippet ? `<div class="fc-summary">${esc(snippet)}</div>` : ''}
-      ${p.type === 'dataset' ? `<div class="fc-meta">${p.row_count ? p.row_count + ' rows' : ''}${p.columns ? ' · ' + (p.columns||[]).slice(0,5).join(', ') : ''}${p.format ? ' · ' + p.format : ''}</div>` : ''}
-    </div>`;
+    // Strip markdown from snippet: remove headings, bold/italic, blockquotes, links, wikilinks
+    const snippet = p.body ? p.body.replace(/^#{1,6}\s+.*$/gm, '').replace(/\*\*([^*]+)\*\*/g, '$1').replace(/\*([^*]+)\*/g, '$1').replace(/^>\s?/gm, '').replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/\[\[([^\]]+)\]\]/g, '$1').replace(/`{1,3}[^`]+`{1,3}/g, '').trim().slice(0, 120) : '';
+    return '<div class="feed-card" data-slug="' + escAttr(p.slug) + '" onclick="openPageModal(\'' + escAttr(p.slug) + '\')">\n      <div class="fc-link-line"></div>\n      <div class="fc-header">\n        <span class="fc-type-badge ' + type + '">' + getTypeSvg(type) + ' ' + type + '</span>\n        <span class="fc-time">' + timeDisplay + '</span>\n      </div>\n      <div class="fc-title">' + esc(p.title || p.slug) + '</div>\n      ' + (linkNames.length ? '<div class="fc-links">' + linkNames.join(' · ') + '</div>' : '') + '\n      ' + (snippet ? '<div class="fc-summary">' + esc(snippet) + '</div>' : '') + '\n      ' + (p.type === 'dataset' ? '<div class="fc-meta">' + (p.row_count ? p.row_count + ' rows' : '') + (p.columns ? ' · ' + (p.columns||[]).slice(0,5).join(', ') : '') + (p.format ? ' · ' + p.format : '') + '</div>' : '') + '\n    </div>';
   }).join('');
   setupDrawInAnimation();
 }
@@ -922,8 +1000,8 @@ function filterFeed(src) {
 }
 
 function getTypeIcon(type) {
-  const icons = { newsletter: '📬', meeting: '🤝', video: '🎬', article: '📝', bookmark: '🔖', quote: '💬', dataset: '📊', digest: '📰', person: '👤', company: '🏢', concept: '🧠', daily: '📋' };
-  return icons[type] || '📄';
+  var icons = { newsletter: '✉', meeting: '◈', video: '▶', article: '☰', bookmark: '⟐', quote: '❝', dataset: '⊞', digest: '☰', person: '●', company: '■', concept: '○', daily: '☷' };
+  return icons[type] || '○';
 }
 
 /* SVG icon system — single-stroke, currentColor */
@@ -986,7 +1064,7 @@ function renderDigest() {
   const body = d.body || '';
   const sections = body.split(/\n## /);
   let html = `<div class="digest-card" onclick="openPageModal('${escAttr(d.slug)}')">
-    <div class="dc-badge">📰 Weekly Digest</div>
+    <div class="dc-badge">Weekly Digest</div>
     <div class="dc-title">${esc(d.title || 'Business Brain Digest')}</div>
     <div class="dc-date">${d.updated || ''}</div>`;
   sections.forEach(s => {
@@ -1744,7 +1822,7 @@ const MAX_HISTORY = 6;
 function toggleChat() {
   chatOpen = !chatOpen;
   document.getElementById('chatPanel').classList.toggle('active', chatOpen);
-  document.getElementById('chatBubble').textContent = chatOpen ? '✕' : '💬';
+  document.getElementById('chatBubble').innerHTML = chatOpen ? '✕' : '<svg viewBox="0 0 16 16" width="20" height="20"><path d="M2 2h12v9H6l-4 3V2z" stroke="#1a1b26" fill="none" stroke-width="1.5"/></svg>';
   if (chatOpen) document.getElementById('chatInput').focus();
 }
 
@@ -1772,7 +1850,7 @@ function addAssistantMessage(data) {
   let html = '<div class="bot-msg-body"><div class="bot-msg-text">' + formatAssistantText(data.response) + '</div></div>';
   if (data.sources && data.sources.length > 0) {
     const srcCount = data.sources.length;
-    html += '<button class="bot-sources-toggle" onclick="toggleSources(this)">📚 ' + srcCount + ' source' + (srcCount !== 1 ? 's' : '') + ' <span class="arrow">▸</span></button>';
+    html += '<button class="bot-sources-toggle" onclick="toggleSources(this)">' + srcCount + ' source' + (srcCount !== 1 ? 's' : '') + ' <span class="arrow">▸</span></button>';
     html += '<div class="bot-sources">';
     data.sources.forEach(function(s) {
       const name = s.slug.split('/').pop().replace(/-/g, ' ').replace(/_/g, ' ');

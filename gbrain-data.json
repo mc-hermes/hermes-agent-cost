@@ -1,7 +1,9 @@
 {
-  "updated_at": "2026-06-11T01:19:04Z",
+  "updated_at": "2026-06-11T01:49:40Z",
   "summary": {
-    "score": "Brain score 46/53",
+    "score": "92",
+    "score_label": "/100",
+    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
     "page_count": 53,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
     "graph_coverage": "86.8% of pages have inbound links",
@@ -27,7 +29,7 @@
       "title": "2026 06 03",
       "type": "concept",
       "updated": "",
-      "body": "{\"title\": \"June 3, 2026\", \"content\": \"# June 3, 2026\n\n## Highlights\n- Full VPS security audit and hardening\n- Google Workspace admin setup (info@malohacoast.com)\n- gbrain installation and configuration\n- Obsidian vault creation\n\n## VPS Hardening\nCompleted [[VPS Hardening]] \\u2014 see project note for full details. All high-priority fixes applied:\n- SSH locked down (root login disabled, key-only auth, idle timeouts)\n- UFW firewall active (deny all inbound except SSH)\n- fail2ban installed and running \\u2014 already banned 4 brute-force IPs\n- System packages updated, new kernel 6.8.0-124 active after reboot\n\n## Google Workspace\nSet up [[Google Workspace Setup]] for Maloha Coast. Authenticated as `info@malohacoast.com`.\n- Gmail, Calendar, Drive, Docs, Sheets all configured\n- OAuth client \\\"admin-assistant\\\" under project _leafy-affinity-491809-a5_\n\n## AI Infrastructure\n- [[gbrain]] v0.42.10.0 installed from source at `~/gbrain/`\n- Brain initialized at `~/.gbrain/brain.pglite` (PGLite, no server needed)\n- Obsidian vault created at `~/obsidian-vault/` with folder structure\n- Hermes agent configured with skills system\n\n## Notes\n- VPS reboot needed to activate new kernel \\u2014 confirmed working post-reboot\n- fail2ban already proving its value (see [[VPS Hardening#fail2ban]])\n- gbrain needs OpenAI API key for vector embeddings (keyword search works without)\", \"kind\": \"daily\"}",
+      "body": "# June 3, 2026\n\n## Highlights\n- Full VPS security audit and hardening\n- Google Workspace admin setup (info@malohacoast.com)\n- gbrain installation and configuration\n- Obsidian vault creation\n\n## VPS Hardening\nCompleted [[VPS Hardening]] \u2014 see project note for full details. All high-priority fixes applied:\n- SSH locked down (root login disabled, key-only auth, idle timeouts)\n- UFW firewall active (deny all inbound except SSH)\n- fail2ban installed and running \u2014 already banned 4 brute-force IPs\n- System packages updated, new kernel 6.8.0-124 active after reboot\n\n## Google Workspace\nSet up [[Google Workspace Setup]] for Maloha Coast. Authenticated as `info@malohacoast.com`.\n- Gmail, Calendar, Drive, Docs, Sheets all configured\n- OAuth client \"admin-assistant\" under project _leafy-affinity-491809-a5_\n\n## AI Infrastructure\n- [[gbrain]] v0.42.10.0 installed from source at `~/gbrain/`\n- Brain initialized at `~/.gbrain/brain.pglite` (PGLite, no server needed)\n- Obsidian vault created at `~/obsidian-vault/` with folder structure\n- Hermes agent configured with skills system\n\n## Notes\n- VPS reboot needed to activate new kernel \u2014 confirmed working post-reboot\n- fail2ban already proving its value (see [[VPS Hardening#fail2ban]])\n- gbrain needs OpenAI API key for vector embeddings (keyword search works without)",
       "tags": [],
       "links_out": [
         {
@@ -1103,7 +1105,7 @@
       "title": "Gbrain",
       "type": "concept",
       "updated": "",
-      "body": "{\"title\": \"gbrain\", \"content\": \"# gbrain\n\n## Overview\ngbrain v0.42.10.0 \\u2014 local AI-powered knowledge base for Hermes agent. Lives at `~/gbrain/`.\n\n## Setup\n- **Install**: Built from source at `~/gbrain/`\n- **CLI**: Symlinked at `~/.bun/bin/gbrain`\n- **Brain location**: `~/.gbrain/brain.pglite` (PGLite \\u2014 local Postgres, no server needed)\n- **Config**: `~/.gbrain/config.json`\n- **Schema**: gbrain-base-v2\n- **Pages**: 0 (just initialized)\n\n## Models Configured\n| Role | Model |\n|------|-------|\n| Embedding | openai:text-embedding-3-large (1536d) |\n| Query Expansion | anthropic:claude-haiku-4-5-20251001 |\n| Chat | anthropic:claude-opus-4-7 |\n\n## Status\n- \\u274c **Embeddings disabled** \\u2014 needs OpenAI API key\n- \\u2705 **Keyword search** works without embeddings\n- \\u2705 Brain initialized and ready\n- 49 skills loaded\n\n## Related\n- [[2026-06-03]]\n- [[Google Workspace Setup]]\n- [[VPS Hardening]]\", \"kind\": \"reference\"}",
+      "body": "# gbrain\n\n## Overview\ngbrain v0.42.10.0 \u2014 local AI-powered knowledge base for Hermes agent. Lives at `~/gbrain/`.\n\n## Setup\n- **Install**: Built from source at `~/gbrain/`\n- **CLI**: Symlinked at `~/.bun/bin/gbrain`\n- **Brain location**: `~/.gbrain/brain.pglite` (PGLite \u2014 local Postgres, no server needed)\n- **Config**: `~/.gbrain/config.json`\n- **Schema**: gbrain-base-v2\n- **Pages**: 0 (just initialized)\n\n## Models Configured\n| Role | Model |\n|------|-------|\n| Embedding | openai:text-embedding-3-large (1536d) |\n| Query Expansion | anthropic:claude-haiku-4-5-20251001 |\n| Chat | anthropic:claude-opus-4-7 |\n\n## Status\n- \u274c **Embeddings disabled** \u2014 needs OpenAI API key\n- \u2705 **Keyword search** works without embeddings\n- \u2705 Brain initialized and ready\n- 49 skills loaded\n\n## Related\n- [[2026-06-03]]\n- [[Google Workspace Setup]]\n- [[VPS Hardening]]",
       "tags": [],
       "links_out": [
         {
@@ -1142,7 +1144,7 @@
       "title": "Google Workspace Setup",
       "type": "concept",
       "updated": "",
-      "body": "{\"title\": \"Google Workspace Setup\", \"content\": \"# Google Workspace Setup\n\n## Account\n- **Email**: info@malohacoast.com\n- **Project**: leafy-affinity-491809-a5 (Open Claw)\n- **OAuth Client**: admin-assistant\n- **Token**: `~/.hermes/google_token.json` (auto-refreshes)\n\n## Configured Services\n| Service | Status | Notes |\n|---------|--------|-------|\n| Gmail | \\u2705 Read/Send/Modify | Full inbox access |\n| Calendar | \\u2705 Configured | Event management |\n| Drive | \\u2705 Configured | File storage |\n| Docs | \\u2705 Configured | Document creation |\n| Sheets | \\u2705 Configured | Spreadsheet management |\n\n## Usage via Hermes\nThe google-workspace skill is loaded for managing Google services.\nShorthand alias configured: `GAPI=\\\"python $HOME/.hermes/skills/productivity/google-workspace/scripts/google_api.py\\\"`\n\n## Related\n- [[2026-06-03]]\n- [[gbrain]]\", \"kind\": \"reference\"}",
+      "body": "# Google Workspace Setup\n\n## Account\n- **Email**: info@malohacoast.com\n- **Project**: leafy-affinity-491809-a5 (Open Claw)\n- **OAuth Client**: admin-assistant\n- **Token**: `~/.hermes/google_token.json` (auto-refreshes)\n\n## Configured Services\n| Service | Status | Notes |\n|---------|--------|-------|\n| Gmail | \u2705 Read/Send/Modify | Full inbox access |\n| Calendar | \u2705 Configured | Event management |\n| Drive | \u2705 Configured | File storage |\n| Docs | \u2705 Configured | Document creation |\n| Sheets | \u2705 Configured | Spreadsheet management |\n\n## Usage via Hermes\nThe google-workspace skill is loaded for managing Google services.\nShorthand alias configured: `GAPI=\"python $HOME/.hermes/skills/productivity/google-workspace/scripts/google_api.py\"`\n\n## Related\n- [[2026-06-03]]\n- [[gbrain]]",
       "tags": [
         "email",
         "google-workspace",
@@ -1190,7 +1192,7 @@
       "title": "Hermes Profile Backup",
       "type": "concept",
       "updated": "",
-      "body": "{\"title\": \"Hermes Profile Backup\", \"content\": \"## Hermes Profile Backup\n\nThe Hermes profile backup pushes all agent profiles to a private GitHub repo with secrets stripped.\n\n### Repository\n- **Repo:** `github.com/Maloha-Coast/hermes-profile-backup` (private)\n- **Contents:** 1,186 files across 2 profiles (default + MC)\n- **Includes:** SOUL.md, skills, cron, memories, config.yaml (stripped), setup.sh, .gitignore\n\n### What gets backed up\n- SOUL.md (agent identity)\n- skills/ (all skill files)\n- cron/ (scheduled jobs)\n- memories/ (USER.md + MEMORY.md)\n- config.yaml with API keys replaced by <YOUR_KEY_HERE>\n\n### What gets EXCLUDED\n- API keys, tokens, secrets (replaced with placeholders)\n- Session logs and databases\n- OAuth tokens (google_token.json)\n- Runtime state files\n\n### Restore\n```bash\ngit clone git@github.com:Maloha-Coast/hermes-profile-backup.git\ncd hermes-profile-backup\n./setup.sh\n```\nThen edit ~/.hermes/config.yaml and ~/.hermes/.env with credentials.\n\n### Known gap\n- .env.template is missing from the current backup (README references it but file was not generated). Needs to be added on next backup run.\", \"kind\": \"reference\"}",
+      "body": "## Hermes Profile Backup\n\nThe Hermes profile backup pushes all agent profiles to a private GitHub repo with secrets stripped.\n\n### Repository\n- **Repo:** `github.com/Maloha-Coast/hermes-profile-backup` (private)\n- **Contents:** 1,186 files across 2 profiles (default + MC)\n- **Includes:** SOUL.md, skills, cron, memories, config.yaml (stripped), setup.sh, .gitignore\n\n### What gets backed up\n- SOUL.md (agent identity)\n- skills/ (all skill files)\n- cron/ (scheduled jobs)\n- memories/ (USER.md + MEMORY.md)\n- config.yaml with API keys replaced by <YOUR_KEY_HERE>\n\n### What gets EXCLUDED\n- API keys, tokens, secrets (replaced with placeholders)\n- Session logs and databases\n- OAuth tokens (google_token.json)\n- Runtime state files\n\n### Restore\n```bash\ngit clone git@github.com:Maloha-Coast/hermes-profile-backup.git\ncd hermes-profile-backup\n./setup.sh\n```\nThen edit ~/.hermes/config.yaml and ~/.hermes/.env with credentials.\n\n### Known gap\n- .env.template is missing from the current backup (README references it but file was not generated). Needs to be added on next backup run.",
       "tags": [],
       "links_out": [],
       "backlinks": [],
@@ -1202,7 +1204,7 @@
       "title": "Maloha Coast",
       "type": "concept",
       "updated": "",
-      "body": "{\"title\": \"Maloha Coast\", \"content\": \"Maloha Coast Sdn Bhd \u2014 AI consulting and development agency bringing AI to SMBs locally and worldwide.\n\n## Director\nSayf (username: falcon)\n\n## Infrastructure\n- VPS hardened and secured\n- Google Workspace configured (info@malohacoast.com)\n- gbrain knowledge base with embeddings enabled\n- Obsidian vault for personal notes\n- Hermes MC profile as admin assistant\n\n## GitHub\nOrganization: malohacoast on GitHub\nEmbeddings: \u2705 Enabled via OpenAI service account\", \"kind\": \"organization\"}\n\n\n## Brand Identity\n- **Colour palette**: Primary #2a6a8a (teal blue), Accent #c4a86a (champagne gold)\n- **Typography**: Optima font (humanist/elegant)\n- **Hex pattern**: Gold-on-navy honeycomb grid at https://iili.io/CK3nHLF.png\n- **Email templates**: \\`html-email-with-sheet-logging\\` skill (production template, header fragment, 8 colour variants)\n- Full brand identity: [[brand/maloha-coast-brand-identity]]\n\n## Skills\n- \\`html-email-with-sheet-logging\\` \u2014 Send brand-styled HTML emails via Gmail API + log to Google Sheet\n- Brand exploration concepts: /home/ubuntu/maloha-coast-brand-concepts.html",
+      "body": "Maloha Coast Sdn Bhd \u2014 AI consulting and development agency bringing AI to SMBs locally and worldwide.\n\n## Director\nSayf (username: falcon)\n\n## Infrastructure\n- VPS hardened and secured\n- Google Workspace configured (info@malohacoast.com)\n- gbrain knowledge base with embeddings enabled\n- Obsidian vault for personal notes\n- Hermes MC profile as admin assistant\n\n## GitHub\nOrganization: malohacoast on GitHub\nEmbeddings: \u2705 Enabled via OpenAI service account\n\n## Brand Identity\n- **Colour palette**: Primary #2a6a8a (teal blue), Accent #c4a86a (champagne gold)\n- **Typography**: Optima font (humanist/elegant)\n- **Hex pattern**: Gold-on-navy honeycomb grid at https://iili.io/CK3nHLF.png\n- **Email templates**: \\`html-email-with-sheet-logging\\` skill (production template, header fragment, 8 colour variants)\n- Full brand identity: [[brand/maloha-coast-brand-identity]]\n\n## Skills\n- \\`html-email-with-sheet-logging\\` \u2014 Send brand-styled HTML emails via Gmail API + log to Google Sheet\n- Brand exploration concepts: /home/ubuntu/maloha-coast-brand-concepts.html",
       "tags": [
         "company",
         "consulting",
@@ -1284,18 +1286,11 @@
     },
     {
       "slug": "meetings/2026-06-08-bjarte-global-ai-village",
-      "title": "Meeting: Bjarte \u2014 Global AI Village",
+      "title": "2026 06 08 Bjarte Global Ai Village",
       "type": "meeting",
       "updated": "",
       "body": "# Meeting: Bjarte \u2014 Global AI Village\n\n**Date:** 2026-06-08 (Monday)\n**Attendees:** sayf ([Maloha Coast](maloha-coast)), [Bjarte](people/bjarte)\n\n## Summary\n\nSayf met with [Bjarte](people/bjarte) (Managing Director, [Global AI Village](companies/global-ai-village)) to discuss projects, the [Business Brain](concepts/business-brain) concept, and potential client leads for sayf's AI operating system services.\n\n## Key Topics\n\n### 1. Bjarte's Projects at Global AI Village\n[Bjarte](people/bjarte) discussed projects he's currently working on at the [Global AI Village](companies/global-ai-village).\n\n### 2. Sayf's Business Brain Concept\nSayf outlined his [Business Brain](concepts/business-brain) offering:\n- An AI layer on top of data aggregation for businesses (databases, CRMs)\n- A \"second brain\" that auto-ingests and organises data\n- Automatically creates a graph of relationships between entities as more data is ingested\n- Based on the gbrain repository architecture\n- Testing planned with a company on Friday (2026-06-12) to explore viability\n- Long-term goal: building Business Brains for different types of businesses\n\n### 3. Potential Leads\n[Bjarte](people/bjarte) may have leads for sayf's AI operating system services \u2014 potential clients who could benefit from the [Business Brain](concepts/business-brain) concept.\n\n## Key Decisions\n\n- Sayf to test the Business Brain concept with a company on 2026-06-12\n- [Bjarte](people/bjarte) to explore potential leads for sayf's AI OS services\n\n## Action Items\n\n| Owner | Action | Deadline |\n|-------|--------|----------|\n| Sayf | Test Business Brain concept with target company | 2026-06-12 |\n| [Bjarte](people/bjarte) | Explore leads for AI OS services | Ongoing |\n\n## Discussion Notes\n\n- The conversation was held in Kuala Lumpur (Global AI Village is KL-based)\n- This is a promising connection for [Maloha Coast](maloha-coast) \u2014 Bjarte is well-positioned in the local AI ecosystem\n- The Business Brain concept directly maps to Maloha Coast's mission of democratising AI for SMBs\n\n## Related Pages\n\n- [Bjarte](people/bjarte) \u2014 Managing Director of Global AI Village\n- [Global AI Village](companies/global-ai-village) \u2014 AI organisation in KL\n- [Business Brain](concepts/business-brain) \u2014 Concept discussed in this meeting\n- [Maloha Coast](maloha-coast) \u2014 Sayf's AI consulting agency",
-      "tags": [
-        "meeting",
-        "global-ai-village",
-        "bjarte",
-        "business-brain",
-        "collaboration",
-        "lead"
-      ],
+      "tags": [],
       "links_out": [
         {
           "to": "maloha-coast",
