@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-06-11T06:24:57Z",
+  "updated_at": "2026-06-11T06:55:08Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
     "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 54,
+    "page_count": 55,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "85.2% of pages have inbound links",
+    "graph_coverage": "83.6% of pages have inbound links",
     "entity_links": "Coverage \u2014 16 people, 12 companies indexed",
-    "concept_count": 21,
+    "concept_count": 22,
     "meeting_count": 3,
     "person_count": 16,
     "company_count": 12,
@@ -20,7 +20,7 @@
     "dataset_count": 1,
     "digest_count": 1,
     "total_links": 76,
-    "outbound_count": 110,
+    "outbound_count": 112,
     "inbound_count": 101,
     "artifact_count": 2,
     "artifact_types": {
@@ -674,6 +674,29 @@
       ],
       "outbound_count": 1,
       "inbound_count": 3
+    },
+    {
+      "slug": "concepts/dashboard-composer-test",
+      "title": "Dashboard Composer Test",
+      "type": "concept",
+      "updated": "",
+      "body": "# Dashboard Composer Test\n**From:** Dashboard Composer\n**Date:** Thu, 11 Jun 2026 06:43:01 +0000\n**Source:** dashboard\n\nThis note references [[GBrain Dashboard]] and [[Email-to-gbrain Pipeline]].\n\n- Dashboard composer works\n- Notes go through email pipeline",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "GBrain Dashboard",
+          "type": "wikilink",
+          "text": "GBrain Dashboard"
+        },
+        {
+          "to": "Email-to-gbrain Pipeline",
+          "type": "wikilink",
+          "text": "Email-to-gbrain Pipeline"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 2,
+      "inbound_count": 0
     },
     {
       "slug": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
