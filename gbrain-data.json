@@ -1,27 +1,27 @@
 {
-  "updated_at": "2026-06-11T10:28:36Z",
+  "updated_at": "2026-06-11T10:43:24Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
     "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 55,
+    "page_count": 58,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "83.6% of pages have inbound links",
-    "entity_links": "Coverage \u2014 16 people, 12 companies indexed",
-    "concept_count": 22,
+    "graph_coverage": "81.0% of pages have inbound links",
+    "entity_links": "Coverage \u2014 17 people, 12 companies indexed",
+    "concept_count": 23,
     "meeting_count": 3,
-    "person_count": 16,
+    "person_count": 17,
     "company_count": 12,
     "newsletter_count": 0,
     "video_count": 0,
     "article_count": 0,
-    "bookmark_count": 0,
+    "bookmark_count": 1,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 1,
-    "total_links": 80,
-    "outbound_count": 115,
-    "inbound_count": 105,
+    "total_links": 82,
+    "outbound_count": 117,
+    "inbound_count": 107,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -94,6 +94,35 @@
       "backlinks": [],
       "outbound_count": 0,
       "inbound_count": 0
+    },
+    {
+      "slug": "bookmarks/agent-skills-by-addy-osmani",
+      "title": "Agent Skills By Addy Osmani",
+      "type": "bookmark",
+      "updated": "",
+      "body": "# Agent Skills by Addy Osmani\n\n> GitHub repository of agent skills, saved from the dashboard composer (2026-06-11).\n\n### GitHub link\nhttps://github.com/addyosmani/agent-skills\n\nCollected by [[Addy Osmani]].",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "bookmarks/agent-skills-by-addy-osmani",
+          "type": "wikilink",
+          "text": "Addy Osmani"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "bookmarks/agent-skills-by-addy-osmani",
+          "type": "wikilink",
+          "text": "Addy Osmani"
+        },
+        {
+          "from": "people/addy-osmani",
+          "type": "wikilink",
+          "text": "agent-skills-by-addy-osmani"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 2
     },
     {
       "slug": "brand/maloha-coast-brand-identity",
@@ -866,6 +895,18 @@
       "inbound_count": 2
     },
     {
+      "slug": "concepts/logs-tab-e2e-test",
+      "title": "Logs Tab E2e Test",
+      "type": "concept",
+      "updated": "",
+      "body": "# Logs tab E2E test\n**From:** Dashboard Composer\n**Date:** Thu, 11 Jun 2026 10:42:33 +0000\n**Source:** dashboard\n**Type hint:** note\n\nVerification note for the new activity log pipeline. Mentions the gbrain dashboard.",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "concepts/openclaw-anatomy",
       "title": "Openclaw Anatomy",
       "type": "concept",
@@ -1419,6 +1460,24 @@
       ],
       "backlinks": [],
       "outbound_count": 3,
+      "inbound_count": 0
+    },
+    {
+      "slug": "people/addy-osmani",
+      "title": "Addy Osmani",
+      "type": "person",
+      "updated": "",
+      "body": "# Addy Osmani\n\n> Engineering leader at Google Chrome; author and speaker on web performance and AI-assisted development.\n\nMaintains the agent-skills repository referenced in [[agent-skills-by-addy-osmani]].",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "bookmarks/agent-skills-by-addy-osmani",
+          "type": "wikilink",
+          "text": "agent-skills-by-addy-osmani"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
       "inbound_count": 0
     },
     {
@@ -2042,6 +2101,11 @@
       "type": "wikilink"
     },
     {
+      "source": "bookmarks/agent-skills-by-addy-osmani",
+      "target": "bookmarks/agent-skills-by-addy-osmani",
+      "type": "wikilink"
+    },
+    {
       "source": "brand/maloha-coast-brand-identity",
       "target": "maloha-coast",
       "type": "wikilink"
@@ -2407,6 +2471,11 @@
       "type": "wikilink"
     },
     {
+      "source": "people/addy-osmani",
+      "target": "bookmarks/agent-skills-by-addy-osmani",
+      "type": "wikilink"
+    },
+    {
       "source": "people/aisyah-humaira-wan-aziz",
       "target": "companies/posh-corporate",
       "type": "wikilink"
@@ -2429,6 +2498,7 @@
   ],
   "entities": {
     "people": [
+      "people/addy-osmani",
       "people/aisyah-humaira-wan-aziz",
       "people/audrey-loh",
       "people/ayaan",
