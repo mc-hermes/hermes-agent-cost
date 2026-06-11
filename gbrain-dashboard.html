@@ -478,6 +478,28 @@
     .entity-card:hover { transform: none; }
   }
   @media (max-width: 400px) { .stat-grid { grid-template-columns: 1fr 1fr; gap: 6px; } .stat-card { padding: 10px 8px; } .stat-card .value { font-size: 1rem; } }
+
+  /* ─── Artifact Cards ─── */
+  .artifact-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+  .artifact-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; cursor: pointer; transition: all 0.15s; }
+  .artifact-card:hover { border-color: var(--primary); transform: translateY(-1px); }
+  .artifact-card .art-icon { font-size: 1.5rem; margin-bottom: 6px; }
+  .artifact-card .art-name { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; font-weight: 500; word-break: break-all; margin-bottom: 6px; }
+  .artifact-card .art-meta { display: flex; gap: 8px; font-size: 0.6rem; color: var(--text-muted); flex-wrap: wrap; margin-bottom: 6px; }
+  .artifact-card .art-meta span { padding: 2px 8px; border-radius: 999px; background: var(--surface2); }
+  .artifact-card .art-pages { font-size: 0.62rem; display: flex; flex-wrap: wrap; gap: 4px; }
+  .artifact-card .art-page-link { color: var(--primary); cursor: pointer; font-weight: 500; }
+  .artifact-card .art-page-link:hover { text-decoration: underline; }
+  .artifact-card .art-nopage { color: var(--text-muted); font-style: italic; font-size: 0.6rem; }
+  .artifact-filter-bar { display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap; }
+  .artifact-filter-pill { padding: 4px 12px; border-radius: 999px; border: 1px solid var(--border); background: none; color: var(--text-muted); font-size: 0.65rem; cursor: pointer; font-family: 'Inter', sans-serif; transition: all 0.15s; }
+  .artifact-filter-pill:hover { border-color: var(--primary); color: var(--text); }
+  .artifact-filter-pill.active { background: var(--primary); border-color: var(--primary); color: #1a1b26; }
+  .artifact-search-wrap { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; position: relative; }
+  .artifact-search-wrap input { flex: 1; padding: 8px 12px 8px 32px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text); font-size: 0.72rem; font-family: 'Inter', sans-serif; }
+  .artifact-search-wrap input:focus { outline: none; border-color: var(--primary); }
+  .artifact-search-wrap .search-icon { position: absolute; left: 10px; color: var(--text-muted); }
+  @media (max-width: 768px) { .artifact-grid { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -581,6 +603,7 @@
           <button class="tab active" data-btab="pages">Pages</button>
           <button class="tab" data-btab="entities">Entities</button>
           <button class="tab" data-btab="health">Health</button>
+          <button class="tab" data-btab="artifacts">Artifacts</button>
         </div>
         <div class="search-wrap" id="searchWrap">
           <span class="search-icon"><svg viewBox="0 0 16 16" width="14" height="14"><circle cx="7" cy="7" r="5" stroke="currentColor" fill="none"/><path d="M11 11l4 4" stroke="currentColor"/></svg></span>
@@ -594,6 +617,11 @@
         </div>
         <div id="healthView" style="display:none">
           <div class="health-grid" id="healthGrid"></div>
+        </div>
+        <div id="artifactsView" style="display:none">
+          <div class="artifact-filter-bar" id="artifactFilters"></div>
+          <div class="artifact-grid" id="artifactGrid"></div>
+          <div class="empty" id="artifactEmpty" style="display:none"><p>No artifacts yet. Ingest screenshots, CSVs, or PDFs to populate.</p></div>
         </div>
       </div>
     </div>
@@ -644,6 +672,7 @@
 <div class="settings-popover" id="moreMenu" style="bottom:80px;left:auto;right:12px;width:180px">
   <div class="settings-row" style="cursor:pointer" onclick="showView('browse');document.querySelector('[data-btab=entities]').click();toggleMoreMenu()">Entities</div>
   <div class="settings-row" style="cursor:pointer" onclick="showView('browse');document.querySelector('[data-btab=health]').click();toggleMoreMenu()">Health</div>
+  <div class="settings-row" style="cursor:pointer" onclick="showView('browse');document.querySelector('[data-btab=artifacts]').click();toggleMoreMenu()">Artifacts</div>
   <div class="settings-row" style="cursor:pointer" onclick="toggleSettings();toggleMoreMenu()">Settings</div>
   <div class="settings-row" style="cursor:pointer" onclick="openDocs();toggleMoreMenu()">Help</div>
 </div>
@@ -740,6 +769,7 @@ let graphRendered = false;
 let pagesRendered = false;
 let entitiesRendered = false;
 let healthRendered = false;
+let artifactsRendered = false;
 
 async function loadData() {
   document.getElementById('loading').style.display = 'flex';
@@ -800,6 +830,7 @@ function showView(name) {
     if (!pagesRendered) { renderPages(); pagesRendered = true; }
     if (!entitiesRendered) { renderEntities(); entitiesRendered = true; }
     if (!healthRendered) { renderHealth(); healthRendered = true; }
+    if (!artifactsRendered) { renderArtifacts(); artifactsRendered = true; }
     // Show correct sub-view
     showBrowseTab(activeTab);
   }
@@ -1500,6 +1531,95 @@ function renderPages(filter) {
   }</tbody></table>`;
 }
 
+
+// ─── ARTIFACTS (lazy) ───
+let artifactFilter = 'all';
+
+function renderArtifacts(query) {
+  const artifacts = DATA.artifacts || [];
+  let filtered = artifacts;
+  query = query || '';
+  
+  // Text search
+  if (query.trim()) {
+    const q = query.toLowerCase();
+    filtered = filtered.filter(a => 
+      a.basename.toLowerCase().includes(q) || 
+      a.path.toLowerCase().includes(q) ||
+      (a.source_pages||[]).some(s => s.toLowerCase().includes(q))
+    );
+  }
+  
+  // Type filter
+  if (artifactFilter !== 'all') {
+    filtered = filtered.filter(a => a.type === artifactFilter);
+  }
+  
+  const grid = document.getElementById('artifactGrid');
+  const empty = document.getElementById('artifactEmpty');
+  const filters = document.getElementById('artifactFilters');
+  
+  // Render type filter pills
+  const types = {};
+  artifacts.forEach(a => { types[a.type] = (types[a.type]||0) + 1; });
+  var filterHtml = '<button class="artifact-filter-pill' + (artifactFilter==='all'?' active':'') + '" onclick="setArtifactFilter(\'all\')">All (' + artifacts.length + ')</button>';
+  Object.entries(types).sort((a,b)=>b[1]-a[1]).forEach(function(e) {
+    filterHtml += '<button class="artifact-filter-pill' + (artifactFilter===e[0]?' active':'') + '" onclick="setArtifactFilter(\'' + escAttr(e[0]) + '\')">' + getArtifactIcon(e[0]) + ' ' + e[0] + ' (' + e[1] + ')</button>';
+  });
+  filters.innerHTML = filterHtml;
+  
+  if (!filtered.length) {
+    grid.innerHTML = '';
+    empty.style.display = 'block';
+    if (query) empty.innerHTML = '<p>No artifacts matching "' + esc(query) + '"</p>';
+    else empty.innerHTML = '<p>No artifacts yet. Ingest screenshots, CSVs, or PDFs to populate.</p>';
+    return;
+  }
+  empty.style.display = 'none';
+  
+  const slugIndex = {};
+  (DATA.pages||[]).forEach(function(p) { slugIndex[p.slug] = p; });
+  
+  grid.innerHTML = filtered.map(function(a) {
+    var srcPages = a.source_pages || [];
+    var pagesHtml = '';
+    if (srcPages.length) {
+      pagesHtml = srcPages.map(function(s) {
+        var title = (slugIndex[s]||{}).title || s;
+        return '<span class="art-page-link" onclick="event.stopPropagation();openPageModal(\'' + escAttr(s) + '\')">' + esc(title) + '</span>';
+      }).join(' · ');
+    } else {
+      pagesHtml = '<span class="art-nopage">no linked page</span>';
+    }
+    var mtime = a.mtime ? a.mtime.split('T')[0] : '';
+    return '<div class="artifact-card">' +
+      '<div class="art-icon">' + getArtifactIcon(a.type) + '</div>' +
+      '<div class="art-name">' + esc(a.basename) + '</div>' +
+      '<div class="art-meta"><span>' + esc(a.ext) + '</span><span>' + esc(a.size_human) + '</span>' + (mtime ? '<span>' + esc(mtime) + '</span>' : '') + '</div>' +
+      '<div class="art-pages">' + pagesHtml + '</div>' +
+    '</div>';
+  }).join('');
+}
+
+function setArtifactFilter(type) {
+  artifactFilter = type;
+  renderArtifacts();
+}
+
+function getArtifactIcon(type) {
+  var icons = {
+    image: '',
+    spreadsheet: '',
+    document: '',
+    text: '',
+    data: '',
+    video: '',
+    audio: '',
+    file: ''
+  };
+  return (icons[type] || '') + ' ';
+}
+
 // ─── ENTITIES (lazy) ───
 function renderEntities() {
   const people = (DATA.entities?.people||[]).map(s => DATA.pages.find(p=>p.slug===s)).filter(Boolean);
@@ -1556,10 +1676,12 @@ function renderHealth() {
 function showBrowseTab(tab) {
   activeTab = tab;
   document.getElementById('pagesView').style.display = tab==='pages'?'':'none';
-  document.getElementById('searchWrap').style.display = (tab==='pages'||tab==='entities')?'':'none';
+  document.getElementById('searchWrap').style.display = (tab==='pages'||tab==='entities'||tab==='artifacts')?'':'none';
   document.getElementById('entitiesView').style.display = tab==='entities'?'':'none';
   document.getElementById('healthView').style.display = tab==='health'?'':'none';
-  document.getElementById('searchInput').placeholder = tab==='pages' ? 'Search pages...' : tab==='entities' ? 'Search entities...' : '';
+  document.getElementById('artifactsView').style.display = tab==='artifacts'?'':'none';
+  document.getElementById('searchInput').placeholder = tab==='pages' ? 'Search pages...' : tab==='entities' ? 'Search entities...' : tab==='artifacts' ? 'Search artifacts...' : '';
+  if (tab === 'artifacts') { renderArtifacts(); }
 }
 
 document.getElementById('browseTabs').addEventListener('click', function(e) {
@@ -1663,6 +1785,8 @@ function navigateTo(slug) {
 function filterCurrent() {
   const q = document.getElementById('searchInput').value;
   if (activeTab === 'pages') { renderPages(q); }
+  if (activeTab === 'artifacts') { renderArtifacts(q); }
+  if (activeTab === 'entities') { renderEntities(q); }
 }
 
 // ─── DOCS ───

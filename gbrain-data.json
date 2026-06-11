@@ -2538,7 +2538,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 742ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 807ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
