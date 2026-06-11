@@ -479,6 +479,105 @@
   }
   @media (max-width: 400px) { .stat-grid { grid-template-columns: 1fr 1fr; gap: 6px; } .stat-card { padding: 10px 8px; } .stat-card .value { font-size: 1rem; } }
 
+  /* ═══════════════════════════════════════════════
+     Write — Dashboard Note Composer
+     ═══════════════════════════════════════════════ */
+
+  /* ─── FAB ─── */
+  .write-fab { display: none; position: fixed; bottom: 92px; right: 24px; width: 48px; height: 48px; border-radius: 50%; background: var(--accent); border: 1px solid rgba(224,175,104,0.4); color: #1a1b26; font-size: 1.5rem; cursor: pointer; z-index: 80; box-shadow: 0 4px 20px rgba(224,175,104,0.2); transition: transform 0.15s, box-shadow 0.15s; align-items: center; justify-content: center; font-family: 'Inter',sans-serif; line-height: 1; }
+  .write-fab:hover { transform: scale(1.08); box-shadow: 0 6px 28px rgba(224,175,104,0.35); }
+  .write-fab:active { transform: scale(0.95); }
+
+  /* ─── Write Modal ─── */
+  .write-overlay { position: fixed; inset: 0; background: rgba(26,27,38,0.92); z-index: 200; display: none; align-items: center; justify-content: center; padding: 24px; }
+  .write-overlay.active { display: flex; }
+  .write-composer { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); width: 100%; max-width: 680px; max-height: 90vh; display: flex; flex-direction: column; overflow: hidden; animation: modalIn 0.18s ease; }
+  .write-composer .wc-header { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border-bottom: 1px solid var(--border); flex-shrink: 0; }
+  .write-composer .wc-header h3 { font-family: 'Syne',sans-serif; font-size: 0.85rem; font-weight: 700; color: var(--accent); }
+  .write-composer .wc-header .wc-actions { display: flex; gap: 8px; align-items: center; }
+  .write-composer .wc-close { background: none; border: none; color: var(--text-muted); font-size: 1.2rem; cursor: pointer; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: color 0.15s; }
+  .write-composer .wc-close:hover { color: var(--text); }
+  .write-composer .wc-body-wrap { flex: 1; overflow-y: auto; padding: 20px; display: flex; flex-direction: column; gap: 16px; }
+  .write-composer .wc-title { width: 100%; background: none; border: none; font-family: 'Syne',sans-serif; font-size: 1.35rem; font-weight: 700; color: var(--text); padding: 0; outline: none; letter-spacing: -0.02em; }
+  .write-composer .wc-title::placeholder { color: var(--text-muted); opacity: 0.5; }
+  .write-composer .wc-editor-wrap { position: relative; flex: 1; display: flex; flex-direction: column; min-height: 200px; }
+  .write-composer .wc-body { width: 100%; flex: 1; background: none; border: none; font-family: 'Inter',sans-serif; font-size: 0.95rem; line-height: 1.75; color: var(--text); resize: none; padding: 0; outline: none; min-height: 200px; }
+  .write-composer .wc-body::placeholder { color: var(--text-muted); opacity: 0.4; }
+  .write-composer .wc-format-hint { font-family: 'JetBrains Mono',monospace; font-size: 0.62rem; color: var(--text-muted); opacity: 0; transition: opacity 0.25s; padding: 4px 0; letter-spacing: 0.02em; user-select: none; pointer-events: none; }
+  .write-composer .wc-format-hint.visible { opacity: 0.55; }
+  .write-composer .wc-format-hint span { color: var(--primary-light); }
+
+  /* ─── Autocomplete ─── */
+  .wc-autocomplete { position: absolute; bottom: 100%; left: 0; right: 0; background: var(--surface2); border: 1px solid var(--border); border-radius: var(--radius-sm); max-height: 200px; overflow-y: auto; z-index: 10; display: none; box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+  .wc-autocomplete.active { display: block; }
+  .wc-autocomplete .wc-ac-item { padding: 8px 14px; cursor: pointer; font-size: 0.73rem; color: var(--text); transition: background 0.1s; border-bottom: 1px solid rgba(59,66,97,0.3); min-height: 36px; display: flex; align-items: center; gap: 8px; }
+  .wc-autocomplete .wc-ac-item:last-child { border-bottom: none; }
+  .wc-autocomplete .wc-ac-item:hover, .wc-autocomplete .wc-ac-item.active { background: rgba(122,162,247,0.1); }
+  .wc-autocomplete .wc-ac-item .ac-type { font-size: 0.55rem; padding: 1px 6px; border-radius: 4px; background: rgba(154,165,206,0.1); color: var(--text-muted); flex-shrink: 0; }
+
+  /* ─── Type Chips ─── */
+  .wc-type-row { display: flex; gap: 6px; flex-wrap: wrap; }
+  .wc-type-chip { padding: 3px 10px; border-radius: 999px; font-size: 0.62rem; font-weight: 500; cursor: pointer; background: var(--surface2); border: 1px solid var(--border); color: var(--text-muted); transition: all 0.15s; font-family: 'Inter',sans-serif; }
+  .wc-type-chip:hover { border-color: var(--text-muted); color: var(--text); }
+  .wc-type-chip.active { background: rgba(224,175,104,0.1); border-color: var(--accent); color: var(--accent); }
+
+  /* ─── Bottom Toolbar ─── */
+  .write-composer .wc-toolbar { display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; border-top: 1px solid var(--border); flex-shrink: 0; gap: 12px; }
+  .write-composer .wc-toolbar-left { display: flex; gap: 8px; align-items: center; }
+  .wc-toggle-btn { padding: 6px 14px; border-radius: 999px; font-size: 0.62rem; font-weight: 500; cursor: pointer; background: var(--surface2); border: 1px solid var(--border); color: var(--text-muted); transition: all 0.15s; font-family: 'Inter',sans-serif; }
+  .wc-toggle-btn:hover { border-color: var(--text-muted); color: var(--text); }
+  .wc-toggle-btn.active { background: rgba(122,162,247,0.1); border-color: var(--primary); color: var(--primary); }
+  .wc-submit-btn { padding: 8px 22px; border-radius: 999px; font-size: 0.7rem; font-weight: 600; cursor: pointer; background: var(--accent); border: none; color: #1a1b26; transition: all 0.15s; font-family: 'Inter',sans-serif; }
+  .wc-submit-btn:hover { filter: brightness(1.1); }
+  .wc-submit-btn:disabled { opacity: 0.4; cursor: not-allowed; filter: none; }
+
+  /* ─── Preview ─── */
+  .write-composer .wc-preview { display: none; flex: 1; overflow-y: auto; padding: 20px; font-size: 0.85rem; line-height: 1.7; color: var(--text); min-height: 200px; }
+  .write-composer .wc-preview.active { display: block; }
+  .write-composer .wc-preview h1, .write-composer .wc-preview h2, .write-composer .wc-preview h3 { font-family: 'Syne',sans-serif; font-weight: 700; margin-top: 1em; margin-bottom: 0.3em; }
+  .write-composer .wc-preview h1 { font-size: 1.2rem; }
+  .write-composer .wc-preview h2 { font-size: 0.95rem; }
+  .write-composer .wc-preview strong { color: var(--primary-light); }
+  .write-composer .wc-preview a { color: var(--primary); }
+  .write-composer .wc-preview code { font-family: 'JetBrains Mono',monospace; font-size: 0.75rem; background: var(--surface2); padding: 2px 6px; border-radius: 4px; }
+  .write-composer .wc-preview blockquote { border-left: 2px solid var(--accent); padding: 4px 12px; margin: 8px 0; color: var(--text-muted); font-style: italic; }
+  .write-composer .wc-preview ul, .write-composer .wc-preview ol { padding-left: 1.5em; margin: 6px 0; }
+  .write-composer .wc-preview .wikilink { color: var(--primary); text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; }
+
+  /* ─── Pending Chip ─── */
+  .feed-card.pending { opacity: 0.7; border-style: dashed; }
+  .feed-card.pending .fc-pending-badge { display: inline-flex; align-items: center; gap: 4px; background: rgba(224,175,104,0.12); color: var(--accent); font-size: 0.55rem; padding: 2px 8px; border-radius: 999px; font-weight: 600; }
+  .fc-pending-badge .spinner-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); animation: pendPulse 1.2s ease infinite; }
+  @keyframes pendPulse { 0%,100%{opacity:0.3} 50%{opacity:1} }
+
+  /* ─── Token Prompt ─── */
+  .token-overlay { position: fixed; inset: 0; background: rgba(26,27,38,0.94); z-index: 250; display: none; align-items: center; justify-content: center; padding: 24px; }
+  .token-overlay.active { display: flex; }
+  .token-dialog { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; max-width: 400px; width: 100%; text-align: center; animation: modalIn 0.18s ease; }
+  .token-dialog h3 { font-family: 'Syne',sans-serif; font-size: 0.9rem; font-weight: 700; color: var(--accent); margin-bottom: 8px; }
+  .token-dialog p { font-size: 0.72rem; color: var(--text-muted); margin-bottom: 16px; line-height: 1.5; }
+  .token-dialog input { width: 100%; padding: 10px 14px; background: var(--surface2); border: 1px solid var(--border); border-radius: var(--radius-sm); color: var(--text); font-family: 'JetBrains Mono',monospace; font-size: 0.72rem; text-align: center; margin-bottom: 12px; }
+  .token-dialog input:focus { outline: none; border-color: var(--primary); }
+  .token-dialog .token-actions { display: flex; gap: 8px; justify-content: center; }
+  .token-dialog button { padding: 8px 20px; border-radius: 999px; font-size: 0.7rem; font-weight: 600; cursor: pointer; font-family: 'Inter',sans-serif; }
+  .token-dialog .tk-save { background: var(--accent); border: none; color: #1a1b26; }
+  .token-dialog .tk-skip { background: none; border: 1px solid var(--border); color: var(--text-muted); }
+  .token-dialog .tk-error { color: var(--rose); font-size: 0.6rem; margin-top: 8px; display: none; }
+
+  /* ─── Mobile Write Adaptations ─── */
+  @media (max-width: 700px) {
+    .write-fab { display: flex; bottom: 76px; right: 16px; width: 48px; height: 48px; z-index: 85; }
+    .write-overlay { padding: 0; align-items: stretch; }
+    .write-composer { max-width: 100%; max-height: 100vh; border-radius: 0; }
+    .write-composer .wc-title { font-size: 1.15rem; }
+    .write-composer .wc-body { font-size: 0.88rem; min-height: 160px; }
+    .write-composer .wc-body-wrap { padding: 16px; }
+    .write-composer .wc-toolbar { padding: 10px 16px; flex-wrap: wrap; }
+  }
+
+  /* Desktop: Write tab in top bar */
+  .write-tab-item { color: var(--accent) !important; }
+  .write-tab-item:hover { border-color: var(--accent) !important; }
   /* ─── Artifact Cards ─── */
   .artifact-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
   .artifact-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; cursor: pointer; transition: all 0.15s; }
@@ -544,6 +643,7 @@
       <button class="tab" data-dview="browse" onclick="showView('browse')"><span class="tab-icon"><svg viewBox="0 0 16 16"><rect x="2" y="2" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="9" y="2" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="2" y="9" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="9" y="9" width="5" height="5" rx="1" stroke="currentColor" fill="none"/></svg></span> Browse</button>
       <button class="tab" data-dview="ask" onclick="showView('ask')"><span class="tab-icon"><svg viewBox="0 0 16 16"><path d="M2 2h12v9H6l-4 3V2z" stroke="currentColor" fill="none"/></svg></span> Ask</button>
       <button class="tab" data-dview="graph" onclick="showView('graph')"><span class="tab-icon"><svg viewBox="0 0 16 16"><circle cx="5" cy="5" r="2" stroke="currentColor" fill="none"/><circle cx="11" cy="4" r="1.5" stroke="currentColor" fill="none"/><circle cx="8" cy="11" r="2.5" stroke="currentColor" fill="none"/><path d="M6 6l2 4M10 5l-1 4" stroke="currentColor"/></svg></span> Graph</button>
+      <button class="tab write-tab-item" onclick="openWrite()"><span class="tab-icon"><svg viewBox="0 0 16 16"><path d="M3 13h10M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span> Write</button>
     </div>
 
     <!-- No stat cards at top level — they live inside view-today only -->
@@ -582,6 +682,7 @@
           <button class="feed-source-tab" data-src="dataset">Data</button>
           <button class="feed-source-tab" data-src="meeting">Meetings</button>
         </div>
+        <div id="pendingNotes"></div>
         <div id="feedCards"></div>
         <div class="empty-state" id="feedEmpty" style="display:none">
           <div class="empty-title">Nothing here yet</div>
@@ -690,6 +791,9 @@
   <div class="settings-row" style="cursor:pointer" onclick="openDocs();toggleMoreMenu()">Help</div>
 </div>
 
+<!-- Write FAB (mobile-only) -->
+<button class="write-fab" id="writeFab" onclick="openWrite()" title="Write a note">+</button>
+
 <!-- Floating Buttons -->
 <div class="float-btns">
 <button class="float-btn cog-btn" onclick="toggleSettings()" title="Settings"><svg viewBox="0 0 16 16" width="14" height="14"><circle cx="8" cy="8" r="2.5" stroke="currentColor" fill="none"/><path d="M8 2v1.5M8 12.5v1.5M2 8h1.5M12.5 8h1.5M3.5 3.5l1 1M11.5 11.5l1 1M3.5 12.5l1-1M11.5 4.5l1-1" stroke="currentColor"/></svg></button>
@@ -771,6 +875,56 @@
       <button class="docs-tab" data-doc="shortcuts"><span class="d-icon">⌘</span> Shortcuts</button>
     </div>
     <div class="docs-content" id="docsContent"></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     Write — Note Composer + Token Prompt
+     ═══════════════════════════════════════════ -->
+
+<!-- Token Prompt -->
+<div class="token-overlay" id="tokenOverlay">
+  <div class="token-dialog">
+    <h3>🔑 Token Required</h3>
+    <p>To save notes to your brain, enter the dashboard write token.<br>This is set once and stored on your device.</p>
+    <input type="password" id="tokenInput" placeholder="Paste your write token…" onkeydown="if(event.key==='Enter')saveToken()">
+    <div class="token-actions">
+      <button class="tk-skip" onclick="closeTokenPrompt()">Cancel</button>
+      <button class="tk-save" onclick="saveToken()">Save &amp; Write</button>
+    </div>
+    <div class="tk-error" id="tokenError"></div>
+  </div>
+</div>
+
+<!-- Write Composer -->
+<div class="write-overlay" id="writeOverlay" onclick="if(event.target===this)closeWrite()">
+  <div class="write-composer">
+    <div class="wc-header">
+      <h3>New Note</h3>
+      <div class="wc-actions">
+        <button class="wc-close" onclick="closeWrite()" title="Close (Esc)">✕</button>
+      </div>
+    </div>
+    <div class="wc-body-wrap" id="wcBodyWrap">
+      <input type="text" class="wc-title" id="wcTitle" placeholder="Untitled thought" oninput="saveDraft()">
+      <div class="wc-editor-wrap" id="wcEditorWrap">
+        <div class="wc-autocomplete" id="wcAutocomplete"></div>
+        <textarea class="wc-body" id="wcBody" placeholder="Start writing… markdown is welcome" oninput="handleWikilinkInput();saveDraft()" onfocus="showFormatHint()" onblur="hideFormatHint()"></textarea>
+        <div class="wc-format-hint" id="wcFormatHint"><span># heading</span>  <span>**bold**</span>  <span>[[link a page]]</span>  <span>- list</span></div>
+      </div>
+      <div class="wc-preview" id="wcPreview"></div>
+      <div class="wc-type-row">
+        <span class="wc-type-chip" onclick="toggleTypeChip(this,'note')">📝 note</span>
+        <span class="wc-type-chip" onclick="toggleTypeChip(this,'quote')">💬 quote</span>
+        <span class="wc-type-chip" onclick="toggleTypeChip(this,'bookmark')">🔖 bookmark</span>
+      </div>
+    </div>
+    <div class="wc-toolbar">
+      <div class="wc-toolbar-left">
+        <button class="wc-toggle-btn" id="wcToggleBtn" onclick="togglePreview()">👁 Preview</button>
+      </div>
+      <button class="wc-submit-btn" id="wcSubmitBtn" onclick="submitNote()">Save to Brain</button>
+    </div>
   </div>
 </div>
 
@@ -2114,6 +2268,385 @@ function sendChat() {
     })
     .finally(function() { btn.disabled = false; });
 }
+
+// ═══════════════════════════════════════════════
+// Write — Note Composer
+// ═══════════════════════════════════════════════
+
+var WRITE_TOKEN = null;
+var _writePreview = false;
+var _activeTypeChip = null;
+var _acIndex = -1;
+var _acMatches = [];
+
+(function() {
+  try { WRITE_TOKEN = localStorage.getItem('gbrain-write-token'); } catch(e) {}
+  try { restoreDraft(); } catch(e) {}
+})();
+
+function getPageTitles() {
+  if (!DATA || !DATA.pages) return [];
+  return DATA.pages.map(function(p) { return { title: p.title || p.slug, slug: p.slug, type: p.type || '' }; });
+}
+
+function openWrite() {
+  if (!WRITE_TOKEN) {
+    showTokenPrompt();
+    return;
+  }
+  document.getElementById('writeOverlay').classList.add('active');
+  document.body.classList.add('modal-open');
+  document.getElementById('wcTitle').focus();
+}
+
+function closeWrite() {
+  document.getElementById('writeOverlay').classList.remove('active');
+  document.body.classList.remove('modal-open');
+  closeAutocomplete();
+}
+
+function showTokenPrompt() {
+  document.getElementById('tokenOverlay').classList.add('active');
+  document.getElementById('tokenInput').focus();
+}
+
+function closeTokenPrompt() {
+  document.getElementById('tokenOverlay').classList.remove('active');
+  document.getElementById('tokenError').style.display = 'none';
+}
+
+function saveToken() {
+  var input = document.getElementById('tokenInput');
+  var token = input.value.trim();
+  if (!token) return;
+  WRITE_TOKEN = token;
+  try { localStorage.setItem('gbrain-write-token', token); } catch(e) {}
+  closeTokenPrompt();
+  openWrite();
+}
+
+function saveDraft() {
+  try {
+    var draft = {
+      title: document.getElementById('wcTitle').value,
+      body: document.getElementById('wcBody').value,
+      typeChip: _activeTypeChip
+    };
+    localStorage.setItem('gbrain-write-draft', JSON.stringify(draft));
+  } catch(e) {}
+}
+
+function restoreDraft() {
+  try {
+    var raw = localStorage.getItem('gbrain-write-draft');
+    if (!raw) return;
+    var draft = JSON.parse(raw);
+    if (draft.title) document.getElementById('wcTitle').value = draft.title;
+    if (draft.body) document.getElementById('wcBody').value = draft.body;
+    if (draft.typeChip) {
+      var chips = document.querySelectorAll('.wc-type-chip');
+      for (var i = 0; i < chips.length; i++) {
+        if (chips[i].textContent.trim().indexOf(draft.typeChip) === 0) {
+          toggleTypeChip(chips[i], draft.typeChip);
+          break;
+        }
+      }
+    }
+  } catch(e) {}
+}
+
+function clearDraft() {
+  document.getElementById('wcTitle').value = '';
+  document.getElementById('wcBody').value = '';
+  _activeTypeChip = null;
+  document.querySelectorAll('.wc-type-chip').forEach(function(c) { c.classList.remove('active'); });
+  try { localStorage.removeItem('gbrain-write-draft'); } catch(e) {}
+}
+
+function showFormatHint() {
+  document.getElementById('wcFormatHint').classList.add('visible');
+}
+
+function hideFormatHint() {
+  setTimeout(function() {
+    document.getElementById('wcFormatHint').classList.remove('visible');
+  }, 300);
+}
+
+function toggleTypeChip(el, type) {
+  if (el.classList.contains('active')) {
+    el.classList.remove('active');
+    _activeTypeChip = null;
+  } else {
+    document.querySelectorAll('.wc-type-chip').forEach(function(c) { c.classList.remove('active'); });
+    el.classList.add('active');
+    _activeTypeChip = type;
+  }
+  saveDraft();
+}
+
+function togglePreview() {
+  _writePreview = !_writePreview;
+  var btn = document.getElementById('wcToggleBtn');
+  var editorWrap = document.getElementById('wcEditorWrap');
+  var preview = document.getElementById('wcPreview');
+  var titleEl = document.getElementById('wcTitle');
+  var bodyWrap = document.getElementById('wcBodyWrap');
+
+  if (_writePreview) {
+    btn.textContent = '✏ Write';
+    btn.classList.add('active');
+    editorWrap.style.display = 'none';
+    preview.classList.add('active');
+    // Simple markdown → HTML
+    var md = document.getElementById('wcBody').value;
+    var html = renderMarkdownPreview(md);
+    preview.innerHTML = html;
+  } else {
+    btn.textContent = '👁 Preview';
+    btn.classList.remove('active');
+    editorWrap.style.display = '';
+    preview.classList.remove('active');
+  }
+}
+
+function renderMarkdownPreview(md) {
+  var html = esc(md);
+  // Headers
+  html = html.replace(/^### (.+)$/gm, '<h3>$1</h3>');
+  html = html.replace(/^## (.+)$/gm, '<h2>$1</h2>');
+  html = html.replace(/^# (.+)$/gm, '<h1>$1</h1>');
+  // Bold
+  html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  // Italic
+  html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
+  // Inline code
+  html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
+  // Wikilinks
+  html = html.replace(/\[\[(.+?)\]\]/g, '<span class="wikilink">$1</span>');
+  // Blockquotes
+  html = html.replace(/^&gt; (.+)$/gm, '<blockquote>$1</blockquote>');
+  // Unordered lists
+  html = html.replace(/^- (.+)$/gm, '<li>$1</li>');
+  html = html.replace(/(<li>.*<\/li>\n?)+/g, '<ul>$&</ul>');
+  // Paragraphs
+  html = '<p>' + html.replace(/\n\n/g, '</p><p>').replace(/\n/g, '<br>') + '</p>';
+  html = html.replace(/<p><\/p>/g, '');
+  html = html.replace(/<p><h([123])>/g, '<h$1>');
+  html = html.replace(/<\/h([123])><\/p>/g, '</h$1>');
+  html = html.replace(/<p><ul>/g, '<ul>');
+  html = html.replace(/<\/ul><\/p>/g, '</ul>');
+  html = html.replace(/<p><blockquote>/g, '<blockquote>');
+  html = html.replace(/<\/blockquote><\/p>/g, '</blockquote>');
+  return html;
+}
+
+// ─── Wikilink Autocomplete ───
+
+function handleWikilinkInput() {
+  var ta = document.getElementById('wcBody');
+  var val = ta.value;
+  var pos = ta.selectionStart;
+  // Find the [[ before cursor
+  var openIdx = val.lastIndexOf('[[', pos);
+  if (openIdx === -1) { closeAutocomplete(); return; }
+  // Check no closing ]] between open and cursor
+  var between = val.substring(openIdx + 2, pos);
+  if (between.indexOf(']]') !== -1) { closeAutocomplete(); return; }
+  var query = between.toLowerCase();
+  if (query.length === 0) { closeAutocomplete(); return; }
+
+  var titles = getPageTitles();
+  _acMatches = [];
+  for (var i = 0; i < titles.length; i++) {
+    if (titles[i].title.toLowerCase().indexOf(query) !== -1) {
+      _acMatches.push(titles[i]);
+    }
+  }
+  if (_acMatches.length === 0) { closeAutocomplete(); return; }
+
+  _acIndex = -1;
+  renderAutocomplete();
+}
+
+function renderAutocomplete() {
+  var ac = document.getElementById('wcAutocomplete');
+  var html = '';
+  for (var i = 0; i < _acMatches.length && i < 8; i++) {
+    var m = _acMatches[i];
+    html += '<div class="wc-ac-item' + (i === _acIndex ? ' active' : '') + '" data-idx="' + i + '" onmousedown="selectAutocomplete(' + i + ')">'
+      + '<span class="ac-type">' + esc(m.type || 'page') + '</span> '
+      + esc(m.title)
+      + '</div>';
+  }
+  ac.innerHTML = html;
+  ac.classList.add('active');
+}
+
+function closeAutocomplete() {
+  document.getElementById('wcAutocomplete').classList.remove('active');
+  _acMatches = [];
+  _acIndex = -1;
+}
+
+function selectAutocomplete(idx) {
+  var m = _acMatches[idx];
+  if (!m) return;
+  var ta = document.getElementById('wcBody');
+  var val = ta.value;
+  var pos = ta.selectionStart;
+  var openIdx = val.lastIndexOf('[[', pos);
+  if (openIdx === -1) return;
+  var before = val.substring(0, openIdx);
+  var after = val.substring(pos);
+  ta.value = before + '[[' + m.title + ']]' + after;
+  closeAutocomplete();
+  ta.focus();
+  var newPos = openIdx + m.title.length + 4;
+  ta.setSelectionRange(newPos, newPos);
+  saveDraft();
+}
+
+function handleAcKeydown(e) {
+  if (!document.getElementById('wcAutocomplete').classList.contains('active')) return false;
+  if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    _acIndex = Math.min(_acIndex + 1, _acMatches.length - 1);
+    renderAutocomplete();
+    return true;
+  }
+  if (e.key === 'ArrowUp') {
+    e.preventDefault();
+    _acIndex = Math.max(_acIndex - 1, 0);
+    renderAutocomplete();
+    return true;
+  }
+  if (e.key === 'Enter' || e.key === 'Tab') {
+    e.preventDefault();
+    if (_acIndex >= 0 && _acIndex < _acMatches.length) {
+      selectAutocomplete(_acIndex);
+    } else if (_acMatches.length > 0) {
+      selectAutocomplete(0);
+    }
+    return true;
+  }
+  if (e.key === 'Escape') {
+    closeAutocomplete();
+    return true;
+  }
+  return false;
+}
+
+// ─── Submit ───
+
+function submitNote() {
+  var title = document.getElementById('wcTitle').value.trim();
+  var body = document.getElementById('wcBody').value.trim();
+  if (!body) return;
+
+  var submitBtn = document.getElementById('wcSubmitBtn');
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Saving…';
+
+  var payload = { title: title || 'Untitled thought', body: body };
+  if (_activeTypeChip) payload.type_hint = _activeTypeChip;
+
+  var API_BASE = 'https://signals-sunglasses-earnings-clock.trycloudflare.com';
+  fetch(API_BASE + '/api/note', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + WRITE_TOKEN
+    },
+    body: JSON.stringify(payload)
+  })
+  .then(function(r) {
+    if (r.status === 401) {
+      WRITE_TOKEN = null;
+      try { localStorage.removeItem('gbrain-write-token'); } catch(e) {}
+      throw new Error('token_expired');
+    }
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    return r.json();
+  })
+  .then(function(data) {
+    addPendingCard(title, body, payload.type_hint || 'note');
+    clearDraft();
+    closeWrite();
+  })
+  .catch(function(err) {
+    if (err.message === 'token_expired') {
+      closeWrite();
+      showTokenPrompt();
+      document.getElementById('tokenError').textContent = 'Token was rejected. Please re-enter.';
+      document.getElementById('tokenError').style.display = 'block';
+    } else {
+      alert('Failed to save: ' + err.message);
+    }
+  })
+  .finally(function() {
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Save to Brain';
+  });
+}
+
+function addPendingCard(title, body, typeHint) {
+  var container = document.getElementById('pendingNotes');
+  var now = new Date();
+  var timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+  var excerpt = body.replace(/[#*\[\]`]/g, '').substring(0, 120);
+  if (body.length > 120) excerpt += '…';
+
+  var card = document.createElement('div');
+  card.className = 'feed-card pending';
+  card.setAttribute('data-pending', now.getTime());
+  card.innerHTML =
+    '<div class="fc-header">'
+    + '<span class="fc-type-icon">📝</span>'
+    + '<span class="fc-title">' + esc(title || 'Untitled thought') + '</span>'
+    + '</div>'
+    + '<div class="fc-time">' + esc(timeStr) + ' · <span class="fc-pending-badge"><span class="spinner-dot"></span> Processing</span></div>'
+    + '<div class="fc-summary">' + esc(excerpt) + '</div>';
+
+  container.appendChild(card);
+
+  // Remove pending card on next data refresh (check every 30s for up to 5 min)
+  var start = now.getTime();
+  var interval = setInterval(function() {
+    if (Date.now() - start > 300000) { clearInterval(interval); card.style.opacity = '0.3'; return; }
+    // Check if a real card with matching title appeared
+    var feedCards = document.querySelectorAll('#feedCards .feed-card .fc-title');
+    for (var i = 0; i < feedCards.length; i++) {
+      if (feedCards[i].textContent.trim().indexOf(title.substring(0, 20)) !== -1 || feedCards[i].textContent.trim() === title) {
+        card.remove();
+        clearInterval(interval);
+        return;
+      }
+    }
+  }, 30000);
+}
+
+// Wire up keyboard shortcuts for composer
+document.addEventListener('keydown', function(e) {
+  var overlay = document.getElementById('writeOverlay');
+  if (!overlay.classList.contains('active')) return;
+
+  // Autocomplete keys take priority
+  if (handleAcKeydown(e)) return;
+
+  if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+    e.preventDefault();
+    submitNote();
+    return;
+  }
+  if (e.key === 'Escape') {
+    e.preventDefault();
+    closeWrite();
+    return;
+  }
+});
+
 </script>
 </main>
 </body>
