@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-06-11T03:23:00Z",
+  "updated_at": "2026-06-11T03:29:34Z",
   "summary": {
-    "score": "92",
+    "score": "91",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 53,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "86.8% of pages have inbound links",
-    "entity_links": "Coverage \u2014 16 people, 12 companies indexed",
-    "concept_count": 20,
+    "score_breakdown": "score 91/100, embed 35/35, links 25/25, timeline 7/15, orphans 14/15, dead-links 10/10",
+    "page_count": 54,
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "77.8% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 89% \u00b1 5.8%",
+    "concept_count": 21,
     "meeting_count": 3,
     "person_count": 16,
     "company_count": 12,
@@ -21,7 +21,19 @@
     "digest_count": 1,
     "total_links": 76,
     "outbound_count": 110,
-    "inbound_count": 101
+    "inbound_count": 101,
+    "score_raw": "Brain score 91/100 (embed 35/35, links 25/25, timeline 7/15, orphans 14/15, dead-links 10/10)",
+    "score_components": {
+      "score": "91/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "7/15",
+      "orphans": "14/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 67,
+    "checks_warned": 6,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -761,6 +773,18 @@
         "embeddings",
         "openai"
       ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "concepts/freeletics-workout-2026-06-11",
+      "title": "Freeletics Workout 2026 06 11",
+      "type": "concept",
+      "updated": "",
+      "body": "# Freeletics Workout \u2014 2026-06-11\n\n**Source:** Freeletics app screenshot\n**Source URI:** file://~/.gbrain/datasets/freeletics/2026-06-11-workout.png\n**Ingested:** 2026-06-11T11:25:00+08:00\n**Provenance:** Screenshot shared by sayf via Telegram, OCR-extracted\n\n## Workout Summary\n\n| Metric | Value |\n|---|---|\n| **App** | Freeletics |\n| **Minutes trained** | 55 |\n| **Exercises** | 24 |\n\n## Exercises Performed\n\n1. **Weighted Single Leg Hip Raises** \u2014 60 reps\n2. **Knee Pushups** \u2014 24 reps\n\n*(Note: Only top portion of image captured by OCR. 24 exercises total \u2014 22 additional exercises may be visible in full screenshot scroll.)*\n\n## Raw Image\n\nPreserved at: `~/.gbrain/datasets/freeletics/2026-06-11-workout.png` (1.0 MB, 1969\u00d72184px)\n\n## Context\n\nFreeletics is an AI-powered fitness coaching app. sayf uses it for bodyweight/HIIT-style training. This session was a 55-minute workout covering 24 exercises \u2014 solid volume for a single session.",
+      "tags": [],
       "links_out": [],
       "backlinks": [],
       "outbound_count": 0,
@@ -2369,13 +2393,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 70,
+    "brain_checks_score": 90,
     "category_scores": {
-      "brain": 95,
+      "brain": 90,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -2443,9 +2467,9 @@
       {
         "name": "extract_atoms_backlog",
         "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "message": "3 page(s) eligible (below warn threshold; pack does not run extract_atoms)",
         "details": {
-          "backlog": 0,
+          "backlog": 3,
           "pack_declares_phase": false,
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
@@ -2453,8 +2477,8 @@
       },
       {
         "name": "conversation_format_coverage",
-        "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "status": "warn",
+        "message": "2/3 conversation pages (66.7%) match NO built-in pattern. Breakdown: _no_match=2, bold-name-no-time=1. Investigate: gbrain conversation-parser scan <slug> | Enable LLM fallback (opt-in): gbrain config set conversation_parser.llm_fallback_enabled true",
         "category": "brain"
       },
       {
@@ -2478,7 +2502,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 54 pages",
         "category": "ops"
       },
       {
@@ -2514,7 +2538,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 742ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -2532,25 +2556,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 90%, timeline 83%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 91/100 (embed 35/35, links 25/25, timeline 7/15, orphans 14/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 28 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 54 pages; no bare-tweet phrases or external links.",
         "category": "brain"
       },
       {
@@ -2711,7 +2735,7 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction lag not applicable (54 pages \u2014 too few to assess)",
         "category": "brain"
       },
       {
@@ -2735,7 +2759,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "105 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -2747,7 +2771,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "77.8% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -2850,13 +2874,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 89% \u00b1 5.8%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 82% \u00b1 7.2% (target 90%)",
         "category": "meta"
       },
       {
@@ -2874,7 +2898,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "7 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
