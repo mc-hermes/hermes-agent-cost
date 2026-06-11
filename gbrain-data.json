@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-06-11T05:24:06Z",
+  "updated_at": "2026-06-11T05:42:10Z",
   "summary": {
-    "score": "92",
+    "score": "91",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
+    "score_breakdown": "score 91/100, embed 35/35, links 25/25, timeline 7/15, orphans 14/15, dead-links 10/10",
     "page_count": 54,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "85.2% of pages have inbound links",
-    "entity_links": "Coverage \u2014 16 people, 12 companies indexed",
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "77.8% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 89% \u00b1 5.8%",
     "concept_count": 21,
     "meeting_count": 3,
     "person_count": 16,
@@ -26,7 +26,19 @@
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 91/100 (embed 35/35, links 25/25, timeline 7/15, orphans 14/15, dead-links 10/10)",
+    "score_components": {
+      "score": "91/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "7/15",
+      "orphans": "14/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 67,
+    "checks_warned": 6,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -2386,13 +2398,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 70,
+    "brain_checks_score": 90,
     "category_scores": {
-      "brain": 95,
+      "brain": 90,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -2460,9 +2472,9 @@
       {
         "name": "extract_atoms_backlog",
         "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "message": "3 page(s) eligible (below warn threshold; pack does not run extract_atoms)",
         "details": {
-          "backlog": 0,
+          "backlog": 3,
           "pack_declares_phase": false,
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
@@ -2470,8 +2482,8 @@
       },
       {
         "name": "conversation_format_coverage",
-        "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "status": "warn",
+        "message": "2/3 conversation pages (66.7%) match NO built-in pattern. Breakdown: _no_match=2, bold-name-no-time=1. Investigate: gbrain conversation-parser scan <slug> | Enable LLM fallback (opt-in): gbrain config set conversation_parser.llm_fallback_enabled true",
         "category": "brain"
       },
       {
@@ -2495,7 +2507,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 54 pages",
         "category": "ops"
       },
       {
@@ -2531,7 +2543,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 1168ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -2549,25 +2561,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 90%, timeline 83%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 91/100 (embed 35/35, links 25/25, timeline 7/15, orphans 14/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 28 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 54 pages; no bare-tweet phrases or external links.",
         "category": "brain"
       },
       {
@@ -2728,7 +2740,7 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction lag not applicable (54 pages \u2014 too few to assess)",
         "category": "brain"
       },
       {
@@ -2752,7 +2764,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "105 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -2764,7 +2776,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "77.8% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -2867,13 +2879,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 89% \u00b1 5.8%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 82% \u00b1 7.2% (target 90%)",
         "category": "meta"
       },
       {
@@ -2891,7 +2903,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "7 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
@@ -2918,7 +2930,10 @@
         "type": "image",
         "mime": "image/jpeg",
         "data": "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KzKM0Aa0viO/kZm/cqXXa+Ix85xjJ98fgKyugxSZozQAZozSZozQAUmaKSgAoopKBhSUUlIApKKSgYUhoNJSGFIaKSgAooopDCiiigAooooAKKKKACiiigAooooAKWkpaBC0opKKYDqWm0tAh1LTaWmAtLmkooEOozTaXNADs0ZpKKYhc0uabRmgB2aM03NGaAFzRmkzRQAuaTNFJmgYtJmikpAFFFJmgApKKSgYUhopKQwoopKAA0lFFIYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUALS02lpiFpc0lFADqWm0tAhc0uabS5pgOopuaXNAC0tNzS5oELmjNJRQAuaM0lFAC5opKM0AFFJmigYtJmjNJmgBaSkooAKTNGaSkMKKKSgApKKKQwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigBaKSigB1FJS0xC5pabRQA6lzTc0ZoEOzRmkopgOzRmm0ZoAdmjNNzRmgB2aTNJRQAuaM0lGaQBRSZooGGaKSigApKKSgBaSiikMKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAozRRQAuaWm0ZpiHUUmaM0ALS02loAXNGaSigBc0ZpKKAFzRSUUALSUlFAC0UmaTNAC0ZpKKQwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKM0UUALmjNJRQAuaM0lFAC5pM0UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB/9k="
-      }
+      },
+      "r2_key": "sayf/freeletics/2026-06-11-workout.png",
+      "r2_url": "r2://gbrain-artifacts/sayf/freeletics/2026-06-11-workout.png",
+      "r2_s3_endpoint": "ace3aeb4a5bb6414ed3416ac5b8f8d59.r2.cloudflarestorage.com"
     },
     {
       "path": "~/.gbrain/datasets/dynamics-orchard-management-accounts-fye-2025.csv",

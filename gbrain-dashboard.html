@@ -1606,11 +1606,12 @@ function renderArtifacts(query) {
     }
     var mtime = a.mtime ? a.mtime.split('T')[0] : '';
     var previewable = a.preview && a.preview.type !== 'error';
+    var inR2 = !!a.r2_key;
     var clickAttr = previewable ? ' onclick="openArtifactPreview(' + idx + ')" style="cursor:pointer"' : ' style="cursor:default;opacity:0.6"';
     return '<div class="artifact-card"' + clickAttr + '>' +
       '<div class="art-icon">' + getArtifactIcon(a.type) + '</div>' +
       '<div class="art-name">' + esc(a.basename) + '</div>' +
-      '<div class="art-meta"><span>' + esc(a.ext) + '</span><span>' + esc(a.size_human) + '</span>' + (mtime ? '<span>' + esc(mtime) + '</span>' : '') + (previewable ? '<span style="color:var(--green)">preview</span>' : '') + '</div>' +
+      '<div class="art-meta"><span>' + esc(a.ext) + '</span><span>' + esc(a.size_human) + '</span>' + (mtime ? '<span>' + esc(mtime) + '</span>' : '') + (inR2 ? '<span style="background:rgba(34,211,238,0.12);color:var(--primary-light)">R2</span>' : '') + (previewable ? '<span style="color:var(--green)">preview</span>' : '') + '</div>' +
       '<div class="art-pages">' + pagesHtml + '</div>' +
     '</div>';
   }).join('');
@@ -1649,6 +1650,9 @@ function openArtifactPreview(idx) {
   html += '<span>' + getArtifactIcon(a.type) + ' ' + a.type + '</span>';
   html += '<span>' + esc(a.ext) + '</span>';
   html += '<span>' + esc(a.size_human) + '</span>';
+  if (a.r2_key) {
+    html += '<span style="color:var(--primary-light)">R2: ' + esc(a.r2_key) + '</span>';
+  }
   if (a.source_pages.length) {
     var slugIndex = {};
     (DATA.pages||[]).forEach(function(pg) { slugIndex[pg.slug] = pg; });
