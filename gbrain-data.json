@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-11T06:55:08Z",
+  "updated_at": "2026-06-11T07:04:39Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
@@ -19,9 +19,9 @@
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 1,
-    "total_links": 76,
-    "outbound_count": 112,
-    "inbound_count": 101,
+    "total_links": 80,
+    "outbound_count": 115,
+    "inbound_count": 105,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -493,6 +493,11 @@
           "text": "posh-corporate"
         },
         {
+          "from": "concepts/dashboard-composer-test",
+          "type": "wikilink",
+          "text": "Posh Corporate"
+        },
+        {
           "from": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
           "type": "wikilink",
           "text": "Posh Corporate"
@@ -529,7 +534,7 @@
         }
       ],
       "outbound_count": 5,
-      "inbound_count": 8
+      "inbound_count": 9
     },
     {
       "slug": "companies/system-design-one",
@@ -657,6 +662,11 @@
       ],
       "backlinks": [
         {
+          "from": "concepts/dashboard-composer-test",
+          "type": "wikilink",
+          "text": "Company Memory Os Ph1 Prd"
+        },
+        {
           "from": "concepts/knowledge-graph-as-moat",
           "type": "wikilink",
           "text": "concepts/company-memory-os-ph1-prd"
@@ -673,14 +683,14 @@
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 3
+      "inbound_count": 4
     },
     {
       "slug": "concepts/dashboard-composer-test",
       "title": "Dashboard Composer Test",
       "type": "concept",
       "updated": "",
-      "body": "# Dashboard Composer Test\n**From:** Dashboard Composer\n**Date:** Thu, 11 Jun 2026 06:43:01 +0000\n**Source:** dashboard\n\nThis note references [[GBrain Dashboard]] and [[Email-to-gbrain Pipeline]].\n\n- Dashboard composer works\n- Notes go through email pipeline",
+      "body": "# Dashboard Composer Test\n**From:** Dashboard Composer\n**Date:** Thu, 11 Jun 2026 06:43:01 +0000\n**Source:** dashboard\n\nThis note demonstrates the full dashboard composer loop:\n\n- Written in the dashboard [[GBrain Dashboard]] \u2192 writes to inbox \u2192 email pipeline ingests \u2192 brain page created\n- References [[Posh Corporate]] and [[Audrey Loh]] who are in the brain\n- Also references [[Knowledge Graph As Moat]] and [[Company Memory Os Ph1 Prd]]\n\nThe \"\u2192 linked to\" lines on the Today feed card should show these connections.",
       "tags": [],
       "links_out": [
         {
@@ -689,13 +699,28 @@
           "text": "GBrain Dashboard"
         },
         {
-          "to": "Email-to-gbrain Pipeline",
+          "to": "companies/posh-corporate",
           "type": "wikilink",
-          "text": "Email-to-gbrain Pipeline"
+          "text": "Posh Corporate"
+        },
+        {
+          "to": "people/audrey-loh",
+          "type": "wikilink",
+          "text": "Audrey Loh"
+        },
+        {
+          "to": "concepts/knowledge-graph-as-moat",
+          "type": "wikilink",
+          "text": "Knowledge Graph As Moat"
+        },
+        {
+          "to": "concepts/company-memory-os-ph1-prd",
+          "type": "wikilink",
+          "text": "Company Memory Os Ph1 Prd"
         }
       ],
       "backlinks": [],
-      "outbound_count": 2,
+      "outbound_count": 5,
       "inbound_count": 0
     },
     {
@@ -827,13 +852,18 @@
       ],
       "backlinks": [
         {
+          "from": "concepts/dashboard-composer-test",
+          "type": "wikilink",
+          "text": "Knowledge Graph As Moat"
+        },
+        {
           "from": "digests/2026-06-10-business-brain-digest",
           "type": "wikilink",
           "text": "Knowledge Graph as Moat"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "concepts/openclaw-anatomy",
@@ -1461,6 +1491,11 @@
           "text": "audrey-loh"
         },
         {
+          "from": "concepts/dashboard-composer-test",
+          "type": "wikilink",
+          "text": "Audrey Loh"
+        },
+        {
           "from": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
           "type": "wikilink",
           "text": "Audrey Loh"
@@ -1482,7 +1517,7 @@
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 5
+      "inbound_count": 6
     },
     {
       "slug": "people/ayaan",
@@ -2109,6 +2144,26 @@
     {
       "source": "concepts/company-memory-os-ph1-prd",
       "target": "people/sayf-codes",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/dashboard-composer-test",
+      "target": "companies/posh-corporate",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/dashboard-composer-test",
+      "target": "people/audrey-loh",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/dashboard-composer-test",
+      "target": "concepts/knowledge-graph-as-moat",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/dashboard-composer-test",
+      "target": "concepts/company-memory-os-ph1-prd",
       "type": "wikilink"
     },
     {

@@ -143,13 +143,13 @@
   .type-tag.newsletter { background: rgba(158,206,106,0.12); color: var(--green); }
   .type-tag.video { background: rgba(247,118,142,0.12); color: var(--rose); }
   .type-tag.article { background: rgba(187,154,247,0.12); color: var(--violet); }
-  .type-tag.bookmark { background: rgba(224,175,104,0.12); color: var(--accent); }
+  .type-tag.bookmark { background: rgba(122,162,247,0.1); color: var(--primary); }
   .type-tag.quote { background: rgba(255,158,100,0.12); color: var(--accent-light); }
   .type-tag.dataset { background: rgba(158,206,106,0.12); color: var(--green); }
   .type-tag.digest { background: rgba(224,175,104,0.12); color: var(--accent); }
   .type-tag svg { width: 10px; height: 10px; fill: currentColor; flex-shrink: 0; }
   .link-badge { font-size: 0.6rem; color: var(--text-muted); margin-left: 4px; }
-  .link-badge.has-links { color: var(--accent); }
+  .link-badge.has-links { color: var(--primary); }
 
   /* ─── Today Feed ─── */
   .feed-section { margin-bottom: 24px; }
@@ -187,7 +187,7 @@
   .feed-card .fc-type-badge.newsletter { background: rgba(158,206,106,0.1); color: var(--green); }
   .feed-card .fc-type-badge.video { background: rgba(247,118,142,0.1); color: var(--rose); }
   .feed-card .fc-type-badge.article { background: rgba(187,154,247,0.1); color: var(--violet); }
-  .feed-card .fc-type-badge.bookmark { background: rgba(224,175,104,0.1); color: var(--accent); }
+  .feed-card .fc-type-badge.bookmark { background: rgba(122,162,247,0.1); color: var(--primary); }
   .feed-card .fc-type-badge.quote { background: rgba(255,158,100,0.1); color: var(--accent-light); }
   .feed-card .fc-type-badge.dataset { background: rgba(158,206,106,0.1); color: var(--green); }
   .feed-card .fc-type-badge.meeting { background: rgba(255,158,100,0.1); color: var(--accent-light); }
@@ -325,6 +325,34 @@
   .mobile-nav-btn.active { color: var(--primary); }
   .mobile-nav-btn:active { background: rgba(122,162,247,0.08); }
 
+  /* Raised Write dock (center nav button, elevated above nav bar) */
+  .mobile-nav .nav-write-btn {
+    position: relative;
+    top: -18px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--primary);
+    border: 2px solid var(--bg);
+    color: #1a1b26;
+    font-size: 1.6rem;
+    cursor: pointer;
+    z-index: 95;
+    box-shadow: 0 4px 16px rgba(122,162,247,0.25);
+    transition: transform 0.15s, box-shadow 0.15s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-family: 'Inter',sans-serif;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+  }
+  .mobile-nav .nav-write-btn:hover { transform: scale(1.05); box-shadow: 0 6px 20px rgba(122,162,247,0.35); }
+  .mobile-nav .nav-write-btn:active { transform: scale(0.95); }
+  .mobile-nav .nav-write-btn svg { display: block; width: 22px; height: 22px; stroke: #1a1b26; stroke-width: 2.2; stroke-linecap: round; fill: none; }
+
   /* ─── Floating Buttons ─── */
   .float-btns { position: fixed; bottom: 24px; left: 24px; z-index: 50; display: flex; flex-direction: column; gap: 8px; }
   .float-btn { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--border); background: var(--surface); color: var(--text-muted); font-size: 0.9rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.15s; }
@@ -349,11 +377,11 @@
   .docs-sidebar { width: 200px; background: var(--surface2); padding: 12px 0; flex-shrink: 0; overflow-y: auto; }
   .docs-sidebar .docs-tab { padding: 10px 16px; font-size: 0.75rem; color: var(--text-muted); cursor: pointer; border: none; background: none; text-align: left; font-family: 'Inter', sans-serif; transition: all 0.12s; border-left: 2px solid transparent; display: block; width: 100%; }
   .docs-sidebar .docs-tab:hover { color: var(--text); background: rgba(255,255,255,0.03); }
-  .docs-sidebar .docs-tab.active { color: var(--accent); background: rgba(224,175,104,0.06); border-left-color: var(--accent); font-weight: 600; }
+  .docs-sidebar .docs-tab.active { color: var(--primary); background: rgba(122,162,247,0.06); border-left-color: var(--primary); }
   .docs-sidebar .docs-tab .d-icon { margin-right: 6px; font-size: 0.85rem; }
   .docs-content { flex: 1; padding: 24px; overflow-y: auto; font-size: 0.78rem; line-height: 1.7; }
   .docs-content h2 { font-family: 'Syne', sans-serif; font-size: 1.15rem; margin-bottom: 12px; }
-  .docs-content h3 { font-family: 'Syne', sans-serif; font-size: 0.85rem; margin: 16px 0 8px; color: var(--accent); font-weight: 600; }
+  .docs-content h3 { font-family: 'Syne', sans-serif; font-size: 0.85rem; margin: 16px 0 8px; color: var(--text); font-weight: 600; }
   .docs-content ul { margin: 6px 0 12px 18px; }
   .docs-content li { margin-bottom: 4px; }
   .docs-content code { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; background: var(--surface2); padding: 2px 6px; border-radius: 4px; }
@@ -372,8 +400,9 @@
   .footer { text-align: center; font-size: 0.6rem; color: var(--text-muted); padding: 24px 0 80px; opacity: 0.4; }
 
   /* ─── Chat Bubble ─── */
-  .chat-bubble { position: fixed; bottom: 24px; right: 24px; width: 56px; height: 56px; border-radius: 50%; background: var(--primary); border: 1px solid var(--primary-light); color: #1a1b26; font-size: 1.4rem; cursor: pointer; z-index: 1000; box-shadow: 0 4px 20px rgba(122,162,247,0.25); transition: all 0.15s; display: flex; align-items: center; justify-content: center; }
+  .chat-bubble { position: fixed; bottom: 24px; right: 24px; width: 56px; height: 56px; border-radius: 50%; background: var(--primary); border: 1px solid var(--primary-light); color: #1a1b26; font-size: 1.4rem; cursor: pointer; z-index: 1000; box-shadow: 0 4px 20px rgba(122,162,247,0.25); transition: all 0.15s, bottom 0.3s ease; display: flex; align-items: center; justify-content: center; }
   .chat-bubble:hover { transform: scale(1.05); box-shadow: 0 6px 28px rgba(122,162,247,0.35); }
+  .chat-bubble.chat-hidden { bottom: -60px; pointer-events: none; opacity: 0; }
   .chat-panel { position: fixed; bottom: 92px; right: 24px; width: 380px; height: 520px; max-height: calc(100vh - 120px); background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: 0 12px 40px rgba(0,0,0,0.5); z-index: 999; display: none; flex-direction: column; overflow: hidden; }
   .chat-panel.active { display: flex; }
   .chat-header { display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; border-bottom: 1px solid var(--border); background: var(--surface2); flex-shrink: 0; }
@@ -392,7 +421,7 @@
   .bot-msg-body { padding: 10px 14px; }
   .bot-msg-text { font-size: 0.72rem; line-height: 1.45; }
   .bot-msg-text strong { color: var(--primary); }
-  .bot-msg-text blockquote { border-left: 2px solid var(--accent); margin: 4px 0; padding: 2px 8px; font-style: italic; color: var(--text-muted); }
+  .bot-msg-text blockquote { border-left: 2px solid var(--primary); margin: 4px 0; padding: 2px 8px; font-style: italic; color: var(--text-muted); }
   .bot-sources-toggle { width: 100%; padding: 6px 14px; background: none; border: none; border-top: 1px solid rgba(255,255,255,0.04); color: var(--text-muted); font-size: 0.65rem; cursor: pointer; font-family: 'Inter', sans-serif; text-align: left; display: flex; align-items: center; gap: 4px; }
   .bot-sources-toggle .arrow { transition: transform 0.2s; display: inline-block; }
   .bot-sources-toggle.open .arrow { transform: rotate(90deg); }
@@ -466,11 +495,12 @@
     .float-btns { display: none; }
     .settings-popover { bottom: 170px; left: 12px; }
     .chat-bubble { bottom: 80px; right: 12px; width: 48px; height: 48px; font-size: 1.2rem; }
+    .chat-bubble.chat-hidden { bottom: -40px; }
     .chat-panel { width: calc(100vw - 24px); right: 12px; bottom: 80px; height: 480px; max-height: calc(100vh - 100px); border-radius: 12px; }
     .docs-modal { flex-direction: column; }
     .docs-sidebar { width: 100%; display: flex; overflow-x: auto; padding: 8px; gap: 4px; }
     .docs-sidebar .docs-tab { border-left: none; border-bottom: 2px solid transparent; white-space: nowrap; padding: 8px 12px; font-size: 0.7rem; }
-    .docs-sidebar .docs-tab.active { border-left: none; border-bottom-color: var(--accent); }
+    .docs-sidebar .docs-tab.active { border-left: none; border-bottom-color: var(--primary); }
     .docs-content { font-size: 0.7rem; }
     .tab, .feed-source-tab, .mobile-nav-btn, .feed-card, .entity-card, .health-item, .m-link, .starter-pill, .bot-followup-pill { min-height: 44px; }
     .stat-card:hover { transform: none; }
@@ -483,17 +513,14 @@
      Write — Dashboard Note Composer
      ═══════════════════════════════════════════════ */
 
-  /* ─── FAB ─── */
-  .write-fab { display: none; position: fixed; bottom: 92px; right: 24px; width: 48px; height: 48px; border-radius: 50%; background: var(--accent); border: 1px solid rgba(224,175,104,0.4); color: #1a1b26; font-size: 1.5rem; cursor: pointer; z-index: 80; box-shadow: 0 4px 20px rgba(224,175,104,0.2); transition: transform 0.15s, box-shadow 0.15s; align-items: center; justify-content: center; font-family: 'Inter',sans-serif; line-height: 1; }
-  .write-fab:hover { transform: scale(1.08); box-shadow: 0 6px 28px rgba(224,175,104,0.35); }
-  .write-fab:active { transform: scale(0.95); }
+  /* ─── FAB removed — now a raised nav dock ─── */
 
   /* ─── Write Modal ─── */
   .write-overlay { position: fixed; inset: 0; background: rgba(26,27,38,0.92); z-index: 200; display: none; align-items: center; justify-content: center; padding: 24px; }
   .write-overlay.active { display: flex; }
   .write-composer { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); width: 100%; max-width: 680px; max-height: 90vh; display: flex; flex-direction: column; overflow: hidden; animation: modalIn 0.18s ease; }
   .write-composer .wc-header { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border-bottom: 1px solid var(--border); flex-shrink: 0; }
-  .write-composer .wc-header h3 { font-family: 'Syne',sans-serif; font-size: 0.85rem; font-weight: 700; color: var(--accent); }
+  .write-composer .wc-header h3 { font-family: 'Syne',sans-serif; font-size: 0.85rem; font-weight: 700; color: var(--text); }
   .write-composer .wc-header .wc-actions { display: flex; gap: 8px; align-items: center; }
   .write-composer .wc-close { background: none; border: none; color: var(--text-muted); font-size: 1.2rem; cursor: pointer; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: color 0.15s; }
   .write-composer .wc-close:hover { color: var(--text); }
@@ -519,7 +546,7 @@
   .wc-type-row { display: flex; gap: 6px; flex-wrap: wrap; }
   .wc-type-chip { padding: 3px 10px; border-radius: 999px; font-size: 0.62rem; font-weight: 500; cursor: pointer; background: var(--surface2); border: 1px solid var(--border); color: var(--text-muted); transition: all 0.15s; font-family: 'Inter',sans-serif; }
   .wc-type-chip:hover { border-color: var(--text-muted); color: var(--text); }
-  .wc-type-chip.active { background: rgba(224,175,104,0.1); border-color: var(--accent); color: var(--accent); }
+  .wc-type-chip.active { background: rgba(122,162,247,0.1); border-color: var(--primary); color: var(--primary); }
 
   /* ─── Bottom Toolbar ─── */
   .write-composer .wc-toolbar { display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; border-top: 1px solid var(--border); flex-shrink: 0; gap: 12px; }
@@ -527,7 +554,7 @@
   .wc-toggle-btn { padding: 6px 14px; border-radius: 999px; font-size: 0.62rem; font-weight: 500; cursor: pointer; background: var(--surface2); border: 1px solid var(--border); color: var(--text-muted); transition: all 0.15s; font-family: 'Inter',sans-serif; }
   .wc-toggle-btn:hover { border-color: var(--text-muted); color: var(--text); }
   .wc-toggle-btn.active { background: rgba(122,162,247,0.1); border-color: var(--primary); color: var(--primary); }
-  .wc-submit-btn { padding: 8px 22px; border-radius: 999px; font-size: 0.7rem; font-weight: 600; cursor: pointer; background: var(--accent); border: none; color: #1a1b26; transition: all 0.15s; font-family: 'Inter',sans-serif; }
+  .wc-submit-btn { padding: 8px 22px; border-radius: 999px; font-size: 0.7rem; font-weight: 600; cursor: pointer; background: var(--primary); border: none; color: #1a1b26; transition: all 0.15s; font-family: 'Inter',sans-serif; }
   .wc-submit-btn:hover { filter: brightness(1.1); }
   .wc-submit-btn:disabled { opacity: 0.4; cursor: not-allowed; filter: none; }
 
@@ -540,33 +567,32 @@
   .write-composer .wc-preview strong { color: var(--primary-light); }
   .write-composer .wc-preview a { color: var(--primary); }
   .write-composer .wc-preview code { font-family: 'JetBrains Mono',monospace; font-size: 0.75rem; background: var(--surface2); padding: 2px 6px; border-radius: 4px; }
-  .write-composer .wc-preview blockquote { border-left: 2px solid var(--accent); padding: 4px 12px; margin: 8px 0; color: var(--text-muted); font-style: italic; }
+  .write-composer .wc-preview blockquote { border-left: 2px solid var(--primary); padding: 4px 12px; margin: 8px 0; color: var(--text-muted); font-style: italic; }
   .write-composer .wc-preview ul, .write-composer .wc-preview ol { padding-left: 1.5em; margin: 6px 0; }
   .write-composer .wc-preview .wikilink { color: var(--primary); text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; }
 
   /* ─── Pending Chip ─── */
   .feed-card.pending { opacity: 0.7; border-style: dashed; }
-  .feed-card.pending .fc-pending-badge { display: inline-flex; align-items: center; gap: 4px; background: rgba(224,175,104,0.12); color: var(--accent); font-size: 0.55rem; padding: 2px 8px; border-radius: 999px; font-weight: 600; }
-  .fc-pending-badge .spinner-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); animation: pendPulse 1.2s ease infinite; }
+  .feed-card.pending .fc-pending-badge { display: inline-flex; align-items: center; gap: 4px; background: rgba(122,162,247,0.12); color: var(--primary); font-size: 0.55rem; padding: 2px 8px; border-radius: 999px; font-weight: 600; }
+  .fc-pending-badge .spinner-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--primary); animation: pendPulse 1.2s ease infinite; }
   @keyframes pendPulse { 0%,100%{opacity:0.3} 50%{opacity:1} }
 
   /* ─── Token Prompt ─── */
   .token-overlay { position: fixed; inset: 0; background: rgba(26,27,38,0.94); z-index: 250; display: none; align-items: center; justify-content: center; padding: 24px; }
   .token-overlay.active { display: flex; }
   .token-dialog { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; max-width: 400px; width: 100%; text-align: center; animation: modalIn 0.18s ease; }
-  .token-dialog h3 { font-family: 'Syne',sans-serif; font-size: 0.9rem; font-weight: 700; color: var(--accent); margin-bottom: 8px; }
+  .token-dialog h3 { font-family: 'Syne',sans-serif; font-size: 0.9rem; font-weight: 700; color: var(--text); margin-bottom: 8px; }
   .token-dialog p { font-size: 0.72rem; color: var(--text-muted); margin-bottom: 16px; line-height: 1.5; }
   .token-dialog input { width: 100%; padding: 10px 14px; background: var(--surface2); border: 1px solid var(--border); border-radius: var(--radius-sm); color: var(--text); font-family: 'JetBrains Mono',monospace; font-size: 0.72rem; text-align: center; margin-bottom: 12px; }
   .token-dialog input:focus { outline: none; border-color: var(--primary); }
   .token-dialog .token-actions { display: flex; gap: 8px; justify-content: center; }
   .token-dialog button { padding: 8px 20px; border-radius: 999px; font-size: 0.7rem; font-weight: 600; cursor: pointer; font-family: 'Inter',sans-serif; }
-  .token-dialog .tk-save { background: var(--accent); border: none; color: #1a1b26; }
+  .token-dialog .tk-save { background: var(--primary); border: none; color: #1a1b26; }
   .token-dialog .tk-skip { background: none; border: 1px solid var(--border); color: var(--text-muted); }
   .token-dialog .tk-error { color: var(--rose); font-size: 0.6rem; margin-top: 8px; display: none; }
 
   /* ─── Mobile Write Adaptations ─── */
   @media (max-width: 700px) {
-    .write-fab { display: flex; bottom: 76px; left: 50%; transform: translateX(-50%); width: 52px; height: 52px; z-index: 1001; }
     .write-overlay { padding: 0; align-items: stretch; }
     .write-composer { max-width: 100%; max-height: 100vh; border-radius: 0; }
     .write-composer .wc-title { font-size: 1.15rem; }
@@ -576,8 +602,8 @@
   }
 
   /* Desktop: Write tab in top bar */
-  .write-tab-item { color: var(--accent) !important; }
-  .write-tab-item:hover { border-color: var(--accent) !important; }
+  .write-tab-item { color: var(--primary) !important; }
+  .write-tab-item:hover { border-color: var(--primary) !important; }
   /* ─── Artifact Cards ─── */
   .artifact-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
   .artifact-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; cursor: pointer; transition: all 0.15s; }
@@ -770,11 +796,11 @@
     <button class="mobile-nav-btn" data-view="browse" onclick="showView('browse')">
       <span class="nav-icon"><svg viewBox="0 0 16 16"><rect x="2" y="2" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="9" y="2" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="2" y="9" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="9" y="9" width="5" height="5" rx="1" stroke="currentColor" fill="none"/></svg></span> Browse
     </button>
+    <button class="nav-write-btn" onclick="openWrite()" title="Write a note">
+      <svg viewBox="0 0 16 16"><path d="M3 13h10M8 2v10M3 7h10" stroke="currentColor" stroke-linecap="round"/></svg>
+    </button>
     <button class="mobile-nav-btn" data-view="ask" onclick="showView('ask')">
       <span class="nav-icon"><svg viewBox="0 0 16 16"><path d="M2 2h12v9H6l-4 3V2z" stroke="currentColor" fill="none"/></svg></span> Ask
-    </button>
-    <button class="mobile-nav-btn" data-view="graph" onclick="showView('graph')">
-      <span class="nav-icon"><svg viewBox="0 0 16 16"><circle cx="5" cy="5" r="2" stroke="currentColor" fill="none"/><circle cx="11" cy="4" r="1.5" stroke="currentColor" fill="none"/><circle cx="8" cy="11" r="2.5" stroke="currentColor" fill="none"/><path d="M6 6l2 4M10 5l-1 4" stroke="currentColor"/></svg></span> Graph
     </button>
     <button class="mobile-nav-btn" data-view="more" onclick="toggleMoreMenu()">
       <span class="nav-icon">···</span> More
@@ -784,6 +810,7 @@
 
 <!-- More menu popover -->
 <div class="settings-popover" id="moreMenu" style="bottom:80px;left:auto;right:12px;width:180px">
+  <div class="settings-row" style="cursor:pointer" onclick="showView('graph');toggleMoreMenu()">Graph</div>
   <div class="settings-row" style="cursor:pointer" onclick="showView('browse');document.querySelector('[data-btab=entities]').click();toggleMoreMenu()">Entities</div>
   <div class="settings-row" style="cursor:pointer" onclick="showView('browse');document.querySelector('[data-btab=health]').click();toggleMoreMenu()">Health</div>
   <div class="settings-row" style="cursor:pointer" onclick="showView('browse');document.querySelector('[data-btab=artifacts]').click();toggleMoreMenu()">Artifacts</div>
@@ -791,8 +818,7 @@
   <div class="settings-row" style="cursor:pointer" onclick="openDocs();toggleMoreMenu()">Help</div>
 </div>
 
-<!-- Write FAB (mobile-only) -->
-<button class="write-fab" id="writeFab" onclick="openWrite()" title="Write a note">+</button>
+<!-- Write FAB removed — now a raised dock in the nav -->
 
 <!-- Floating Buttons -->
 <div class="float-btns">
@@ -885,7 +911,7 @@
 <!-- Token Prompt -->
 <div class="token-overlay" id="tokenOverlay">
   <div class="token-dialog">
-    <h3>🔑 Token Required</h3>
+    <h3><svg viewBox="0 0 14 14" width="14" height="14" style="vertical-align:middle;margin-right:6px"><path d="M5 7h6l2 4v2H7v-2H3l2-4zM5 7C5 4.5 3 3 3 3s2 .5 4 2c1-1.5 3-2 3-2s-2 1.5-2 4" fill="none" stroke="currentColor" stroke-linecap="round"/></svg> Token Required</h3>
     <p>To save notes to your brain, enter the dashboard write token.<br>This is set once and stored on your device.</p>
     <input type="password" id="tokenInput" placeholder="Paste your write token…" onkeydown="if(event.key==='Enter')saveToken()">
     <div class="token-actions">
@@ -914,9 +940,9 @@
       </div>
       <div class="wc-preview" id="wcPreview"></div>
       <div class="wc-type-row">
-        <span class="wc-type-chip" onclick="toggleTypeChip(this,'note')">📝 note</span>
-        <span class="wc-type-chip" onclick="toggleTypeChip(this,'quote')">💬 quote</span>
-        <span class="wc-type-chip" onclick="toggleTypeChip(this,'bookmark')">🔖 bookmark</span>
+        <span class="wc-type-chip" onclick="toggleTypeChip(this,'note')"><svg viewBox="0 0 14 14" width="12" height="12" style="vertical-align:middle;margin-right:2px"><path d="M3 13h8M3 1v12L7 9l4 4V1H3z" fill="none" stroke="currentColor" stroke-linecap="round"/></svg> note</span>
+        <span class="wc-type-chip" onclick="toggleTypeChip(this,'quote')"><svg viewBox="0 0 14 14" width="12" height="12" style="vertical-align:middle;margin-right:2px"><path d="M2 2h10v7H6l-4 3V2z" fill="none" stroke="currentColor" stroke-linecap="round"/></svg> quote</span>
+        <span class="wc-type-chip" onclick="toggleTypeChip(this,'bookmark')"><svg viewBox="0 0 14 14" width="12" height="12" style="vertical-align:middle;margin-right:2px"><path d="M3 1h8v12L7 10l-4 3V1z" fill="none" stroke="currentColor" stroke-linecap="round"/></svg> bookmark</span>
       </div>
     </div>
     <div class="wc-toolbar">
@@ -1068,7 +1094,7 @@ function showBrainScoreModal() {
     var numer = parseInt(parts[0]) || 0;
     var denom = parseInt(parts[1]) || 0;
     var pct = denom > 0 ? Math.round(numer/denom*100) : 0;
-    var color = pct >= 80 ? 'var(--green)' : pct >= 50 ? 'var(--accent)' : 'var(--rose)';
+    var color = pct >= 80 ? 'var(--green)' : pct >= 50 ? 'var(--primary)' : 'var(--rose)';
     html += '<div style="margin:8px 0"><div style="display:flex;justify-content:space-between;font-size:0.7rem;margin-bottom:2px"><span>' + k + '</span><span style="font-family:JetBrains Mono,monospace">' + val + '</span></div>';
     html += '<div style="height:6px;background:var(--surface2);border-radius:3px;overflow:hidden"><div style="height:100%;width:' + pct + '%;background:' + color + ';border-radius:3px"></div></div></div>';
   });
@@ -2164,6 +2190,30 @@ function runLiveQuery() {
 
 loadData();
 
+// ─── Scroll-aware chat bubble hide (mobile) ───
+(function() {
+  var lastY = 0;
+  var SCROLL_HIDE = 60;
+  window.addEventListener('scroll', function() {
+    var chatBubble = document.getElementById('chatBubble');
+    var chatPanel = document.getElementById('chatPanel');
+    if (!chatBubble) return;
+    var y = window.pageYOffset || document.documentElement.scrollTop;
+    // Don't hide when chat is open
+    if (chatPanel && chatPanel.classList.contains('active')) {
+      chatBubble.classList.remove('chat-hidden');
+      lastY = y;
+      return;
+    }
+    if (y > SCROLL_HIDE && y > lastY + 5) {
+      chatBubble.classList.add('chat-hidden');
+    } else if (y < lastY - 5 || y <= SCROLL_HIDE) {
+      chatBubble.classList.remove('chat-hidden');
+    }
+    lastY = y;
+  }, { passive: true });
+})();
+
 // ─── Chat Bubble (desktop) ───
 let chatOpen = false;
 let conversationHistory = [];
@@ -2603,7 +2653,7 @@ function addPendingCard(title, body, typeHint) {
   card.setAttribute('data-pending', now.getTime());
   card.innerHTML =
     '<div class="fc-header">'
-    + '<span class="fc-type-icon">📝</span>'
+    + '<span class="fc-type-icon"><svg viewBox="0 0 14 14" width="12" height="12" style="vertical-align:middle"><path d="M3 13h8M3 1v12L7 9l4 4V1H3z" fill="none" stroke="currentColor" stroke-linecap="round"/></svg></span>'
     + '<span class="fc-title">' + esc(title || 'Untitled thought') + '</span>'
     + '</div>'
     + '<div class="fc-time">' + esc(timeStr) + ' · <span class="fc-pending-badge"><span class="spinner-dot"></span> Processing</span></div>'
