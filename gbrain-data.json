@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-12T03:39:25Z",
+  "updated_at": "2026-06-12T04:10:30Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
     "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 64,
+    "page_count": 65,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "78.1% of pages have inbound links",
+    "graph_coverage": "76.9% of pages have inbound links",
     "entity_links": "Coverage \u2014 18 people, 14 companies indexed",
     "concept_count": 24,
-    "meeting_count": 3,
+    "meeting_count": 4,
     "person_count": 18,
     "company_count": 14,
     "newsletter_count": 2,
@@ -19,9 +19,9 @@
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 1,
-    "total_links": 85,
-    "outbound_count": 123,
-    "inbound_count": 111,
+    "total_links": 86,
+    "outbound_count": 126,
+    "inbound_count": 112,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -153,10 +153,15 @@
           "from": "maloha-coast",
           "type": "wikilink",
           "text": "brand/maloha-coast-brand-identity"
+        },
+        {
+          "from": "meetings/sayf-zaim-jun-12-2026",
+          "type": "wikilink",
+          "text": "Maloha Coast"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "companies/ai-automation-society",
@@ -1523,6 +1528,34 @@
       "inbound_count": 0
     },
     {
+      "slug": "meetings/sayf-zaim-jun-12-2026",
+      "title": "Sayf Zaim Jun 12 2026",
+      "type": "meeting",
+      "updated": "",
+      "body": "# Sayf x Zaim \u2014 Jun 12, 2026\n\n**From:** Sayf Codes <sayfcodes@gmail.com>\n**Date:** Fri, 12 Jun 2026 12:00:46 +0800\n**Source:** email forward\n**Type hint:** meeting\n\n**Sayf's note:** From my meeting with Zaim this morning.\n\n---\n\n## Summary\n\nDiscussion explored AI skepticism and market strategy alongside technical collaboration opportunities for business growth.\n\n### Differing AI Market Perspectives\n\n[[Sayf]] and [[Zaim Mohzani|Zaim]] debated the value of AI in business, contrasting skepticism about automation hype with the practical utility of AI for basic skills training.\n\n### Technical Tools and Infrastructure\n\nDiscussion shifted toward specific software tools, noting the efficiency of virtual private servers and the potential of data integration dashboards for business applications.\n\n### Collaboration and Service Models\n\nAgreement reached to build a technical solution for coaching services while prioritizing simple, revenue-focused strategies for future client engagement for [[Maloha Coast]].\n\n## Suggested Next Steps\n\n- **[Maloha Coast]** Build Dashboard: Arrange a meeting to build the dashboard component. Perform the session either in person or over a call based on the preference of Zaim Mohzani.\n- **[Zaim Mohzani]** Provide Testimonial: Provide a testimonial in exchange for the assistance provided by Maloha Coast.\n- **[Maloha Coast]** Share Research Link: Send the Tencent Lighthouse promotion link for further research.\n- **[The group]** Schedule Followup Session: Coordinate a time for a meeting to continue the discussion.\n- **[Zaim Mohzani]** Send WhatsApp Message: Contact Maloha Coast via the provided phone number to initiate further communication.\n\n## Google Doc\n\nhttps://docs.google.com/document/d/1q3v6SbKF_PiEaTatPNvhZtoWd9T_n9v5HqMoxsLj3hQ/edit?usp=meet_tnfm_email",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "Sayf",
+          "type": "wikilink",
+          "text": "Sayf"
+        },
+        {
+          "to": "Zaim Mohzani|Zaim",
+          "type": "wikilink",
+          "text": "Zaim Mohzani|Zaim"
+        },
+        {
+          "to": "brand/maloha-coast-brand-identity",
+          "type": "wikilink",
+          "text": "Maloha Coast"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 3,
+      "inbound_count": 0
+    },
+    {
       "slug": "newsletters/nerdqaxe-revision-7-launch",
       "title": "Nerdqaxe Revision 7 Launch",
       "type": "newsletter",
@@ -2603,6 +2636,11 @@
     {
       "source": "meetings/2026-06-10-business-brain-with-audrey",
       "target": "datasets/dynamics-orchard-management-accounts-fye-2025",
+      "type": "wikilink"
+    },
+    {
+      "source": "meetings/sayf-zaim-jun-12-2026",
+      "target": "brand/maloha-coast-brand-identity",
       "type": "wikilink"
     },
     {
