@@ -2784,7 +2784,16 @@ function drawLogRows() {
   }
   feed.innerHTML = rows.map(function(ev) {
     var t = '';
-    try { t = new Date(ev.ts).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' }); } catch(e) { t = ev.ts || ''; }
+    try {
+      var d = new Date(ev.ts);
+      var now = new Date();
+      var sameDay = d.getFullYear() === now.getFullYear() && d.getMonth() === now.getMonth() && d.getDate() === now.getDate();
+      if (sameDay) {
+        t = d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+      } else {
+        t = d.toLocaleDateString([], { month: 'short', day: 'numeric' }) + ' ' + d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+      }
+    } catch(e) { t = ev.ts || ''; }
     var lvl = ev.level === 'error' ? 'error' : (ev.level === 'warn' ? 'warn' : 'info');
     var clickable = ev.slug ? ' clickable" onclick="openPageModal(\'' + escAttr(ev.slug) + '\')' : '';
     return '<div class="log-row' + clickable + '">'
