@@ -1,27 +1,27 @@
 {
-  "updated_at": "2026-06-12T01:33:15Z",
+  "updated_at": "2026-06-12T02:48:26Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
     "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 62,
+    "page_count": 64,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "79.0% of pages have inbound links",
-    "entity_links": "Coverage \u2014 18 people, 13 companies indexed",
+    "graph_coverage": "78.1% of pages have inbound links",
+    "entity_links": "Coverage \u2014 18 people, 14 companies indexed",
     "concept_count": 24,
     "meeting_count": 3,
     "person_count": 18,
-    "company_count": 13,
-    "newsletter_count": 1,
+    "company_count": 14,
+    "newsletter_count": 2,
     "video_count": 0,
     "article_count": 0,
     "bookmark_count": 1,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 1,
-    "total_links": 84,
-    "outbound_count": 121,
-    "inbound_count": 110,
+    "total_links": 85,
+    "outbound_count": 123,
+    "inbound_count": 111,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -588,6 +588,30 @@
       ],
       "outbound_count": 5,
       "inbound_count": 9
+    },
+    {
+      "slug": "companies/solo-satoshi",
+      "title": "Solo Satoshi",
+      "type": "company",
+      "updated": "",
+      "body": "# Solo Satoshi\n\n> Bitcoin hardware company \u2014 \"#1 place for Bitcoin hardware\". Produces the NerdQaxe++ open-source quad-chip Bitcoin solo miner. USA-based manufacturing.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[NerdQaxe++ Revision 7 launches tomorrow afternoon]] as the team launching Revision 7 of the NerdQaxe++ open-source solo miner, with fully open-source repositories and US-based production.\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-12** | Mentioned in NerdQaxe++ Revision 7 launches tomorrow afternoon newsletter. [Source: email from Solo Satoshi VIP, 2026-06-12]",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "NerdQaxe++ Revision 7 launches tomorrow afternoon",
+          "type": "wikilink",
+          "text": "NerdQaxe++ Revision 7 launches tomorrow afternoon"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "newsletters/nerdqaxe-revision-7-launch",
+          "type": "wikilink",
+          "text": "Solo Satoshi"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 1
     },
     {
       "slug": "companies/system-design-one",
@@ -1496,6 +1520,24 @@
       ],
       "backlinks": [],
       "outbound_count": 3,
+      "inbound_count": 0
+    },
+    {
+      "slug": "newsletters/nerdqaxe-revision-7-launch",
+      "title": "Nerdqaxe Revision 7 Launch",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# NerdQaxe++ Revision 7 launches tomorrow afternoon\n\n**From:** [[Solo Satoshi]] <VIP@solosatoshi.com>\n**Date:** Fri, 12 Jun 2026 02:27 +0800\n**Source:** email forward\n**Forwarded by:** Sayf Codes\n**Ingested:** 2026-06-12T10:45:57+08:00\n**Provenance:** Forwarded by Sayf on 2026-06-12\n\n---\n\nThe NerdQaxe++ Revision 7, the newest evolution of the open-source quad-chip Bitcoin solo miner, launches tomorrow afternoon.\n\n**Key details:**\n- Production is 100% based in the USA \u2014 every unit assembled domestically\n- Initial supply will move quickly but production will not stop\n- Fully open source \u2014 repositories went public before a single unit ships\n- Hardware design files and firmware source code are available for review\n- Pre-release technical overview video on YouTube walks through what is new\n- Countering rumors: Some claimed Revision 7 would not be open source \u2014 that claim is false\n\n**From the [[Solo Satoshi]] Team:**\n> \"When you place an order with us, your product is ready to ship.\"\n> \"Thank you for standing with us and for championing open-source Bitcoin mining. Tomorrow, we set a new standard.\"\n\nAlso notable: others have been slashing prices and opening pre-orders on closed-source copies of this miner in a rush to get ahead of the launch.",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "companies/solo-satoshi",
+          "type": "wikilink",
+          "text": "Solo Satoshi"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
       "inbound_count": 0
     },
     {
@@ -2564,6 +2606,11 @@
       "type": "wikilink"
     },
     {
+      "source": "newsletters/nerdqaxe-revision-7-launch",
+      "target": "companies/solo-satoshi",
+      "type": "wikilink"
+    },
+    {
       "source": "people/addy-osmani",
       "target": "bookmarks/agent-skills-by-addy-osmani",
       "type": "wikilink"
@@ -2628,6 +2675,7 @@
       "companies/openai",
       "companies/passend",
       "companies/posh-corporate",
+      "companies/solo-satoshi",
       "companies/system-design-one"
     ]
   },
