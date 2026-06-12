@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-06-12T19:54:42Z",
+  "updated_at": "2026-06-12T20:25:59Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
     "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 65,
+    "page_count": 66,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "76.9% of pages have inbound links",
+    "graph_coverage": "75.8% of pages have inbound links",
     "entity_links": "Coverage \u2014 18 people, 14 companies indexed",
-    "concept_count": 24,
+    "concept_count": 25,
     "meeting_count": 4,
     "person_count": 18,
     "company_count": 14,
@@ -914,6 +914,18 @@
       "inbound_count": 0
     },
     {
+      "slug": "concepts/gbrain-raw-notes-folder",
+      "title": "Gbrain Raw Notes Folder",
+      "type": "concept",
+      "updated": "",
+      "body": "# gbrain-raw-notes \u2014 Shared Drive Folder\n\n**Type:** Data source (Google Drive folder)\n**Ingested:** 2026-06-13\n\nA Google Drive folder shared with info@malohacoast.com, intended as a raw notes intake point for gbrain ingestion.\n\n- **Shared:** 6 Jun 2026 by Maloha Coast\n- **URL:** https://drive.google.com/drive/folders/14SniynIf18GqCB_Ix8RYbEAuOYQVxsDL\n- **Purpose:** Likely an intake folder where raw notes are dropped before being ingested into gbrain\n\nThis folder should be monitored periodically for new files that need gbrain ingestion.",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "concepts/knowledge-graph-as-moat",
       "title": "Knowledge Graph As Moat",
       "type": "concept",
@@ -1532,7 +1544,7 @@
       "title": "Sayf Zaim Jun 12 2026",
       "type": "meeting",
       "updated": "",
-      "body": "# Sayf x Zaim \u2014 Jun 12, 2026\n\n**From:** Sayf Codes <sayfcodes@gmail.com>\n**Date:** Fri, 12 Jun 2026 12:00:46 +0800\n**Source:** email forward\n**Type hint:** meeting\n\n**Sayf's note:** From my meeting with Zaim this morning.\n\n---\n\n## Summary\n\nDiscussion explored AI skepticism and market strategy alongside technical collaboration opportunities for business growth.\n\n### Differing AI Market Perspectives\n\n[[Sayf]] and [[Zaim Mohzani|Zaim]] debated the value of AI in business, contrasting skepticism about automation hype with the practical utility of AI for basic skills training.\n\n### Technical Tools and Infrastructure\n\nDiscussion shifted toward specific software tools, noting the efficiency of virtual private servers and the potential of data integration dashboards for business applications.\n\n### Collaboration and Service Models\n\nAgreement reached to build a technical solution for coaching services while prioritizing simple, revenue-focused strategies for future client engagement for [[Maloha Coast]].\n\n## Suggested Next Steps\n\n- **[Maloha Coast]** Build Dashboard: Arrange a meeting to build the dashboard component. Perform the session either in person or over a call based on the preference of Zaim Mohzani.\n- **[Zaim Mohzani]** Provide Testimonial: Provide a testimonial in exchange for the assistance provided by Maloha Coast.\n- **[Maloha Coast]** Share Research Link: Send the Tencent Lighthouse promotion link for further research.\n- **[The group]** Schedule Followup Session: Coordinate a time for a meeting to continue the discussion.\n- **[Zaim Mohzani]** Send WhatsApp Message: Contact Maloha Coast via the provided phone number to initiate further communication.\n\n## Google Doc\n\nhttps://docs.google.com/document/d/1q3v6SbKF_PiEaTatPNvhZtoWd9T_n9v5HqMoxsLj3hQ/edit?usp=meet_tnfm_email",
+      "body": "# Sayf x Zaim \u2014 Jun 12, 2026\n\n**From:** Sayf Codes <sayfcodes@gmail.com>\n**Date:** Fri, 12 Jun 2026 12:00:46 +0800\n**Source:** email forward + calendar acceptance\n**Source URI:** gmail://19eb6b5d19465acd\n\n**Sayf's note:** From my meeting with Zaim this morning.\n\n## Calendar Details\n\n- **Scheduled:** Fri, 12 Jun 2026, 10:30am \u2013 11:00am (MYT)\n- **Status:** Accepted by Sayf\n- **Google Meet:** https://meet.google.com/udx-niaz-esr\n- **Phone (US):** +1 402-588-0161, PIN: 507016250\n\n[Source: Calendar acceptance email, 2026-06-11]\n\n---\n\n## Summary\n\nDiscussion explored AI skepticism and market strategy alongside technical collaboration opportunities for business growth.\n\n### Differing AI Market Perspectives\n\n[[Sayf]] and [[Zaim Mohzani|Zaim]] debated the value of AI in business, contrasting skepticism about automation hype with the practical utility of AI for basic skills training.\n\n### Technical Tools and Infrastructure\n\nDiscussion shifted toward specific software tools, noting the efficiency of virtual private servers and the potential of data integration dashboards for business applications.\n\n### Collaboration and Service Models\n\nAgreement reached to build a technical solution for coaching services while prioritizing simple, revenue-focused strategies for future client engagement for [[Maloha Coast]].\n\n## Suggested Next Steps\n\n- **[Maloha Coast]** Build Dashboard: Arrange a meeting to build the dashboard component. Perform the session either in person or over a call based on the preference of Zaim Mohzani.\n- **[Zaim Mohzani]** Provide Testimonial: Provide a testimonial in exchange for the assistance provided by Maloha Coast.\n- **[Maloha Coast]** Share Research Link: Send the Tencent Lighthouse promotion link for further research.\n- **[The group]** Schedule Followup Session: Coordinate a time for a meeting to continue the discussion.\n- **[Zaim Mohzani]** Send WhatsApp Message: Contact Maloha Coast via the provided phone number to initiate further communication.\n\n## Google Doc\n\nhttps://docs.google.com/document/d/1q3v6SbKF_PiEaTatPNvhZtoWd9T_n9v5HqMoxsLj3hQ/edit?usp=meet_tnfm_email",
       "tags": [],
       "links_out": [
         {
