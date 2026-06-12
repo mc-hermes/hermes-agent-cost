@@ -1,27 +1,27 @@
 {
-  "updated_at": "2026-06-11T10:43:24Z",
+  "updated_at": "2026-06-12T01:12:36Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
     "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 58,
+    "page_count": 61,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "81.0% of pages have inbound links",
-    "entity_links": "Coverage \u2014 17 people, 12 companies indexed",
+    "graph_coverage": "80.3% of pages have inbound links",
+    "entity_links": "Coverage \u2014 18 people, 13 companies indexed",
     "concept_count": 23,
     "meeting_count": 3,
-    "person_count": 17,
-    "company_count": 12,
-    "newsletter_count": 0,
+    "person_count": 18,
+    "company_count": 13,
+    "newsletter_count": 1,
     "video_count": 0,
     "article_count": 0,
     "bookmark_count": 1,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 1,
-    "total_links": 82,
-    "outbound_count": 117,
-    "inbound_count": 107,
+    "total_links": 84,
+    "outbound_count": 121,
+    "inbound_count": 110,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -356,6 +356,30 @@
           "from": "people/zaim-mohzani",
           "type": "wikilink",
           "text": "Inclusive AI Association"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 1
+    },
+    {
+      "slug": "companies/js-mastery",
+      "title": "Js Mastery",
+      "type": "company",
+      "updated": "",
+      "body": "# JS Mastery\n\n> Educational platform and course provider focused on JavaScript, AI development, and engineering practices.\n\nReferenced in [[newsletters/three-features-three-claudes-one-afternoon]].",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "newsletters/three-features-three-claudes-one-afternoon",
+          "type": "wikilink",
+          "text": "newsletters/three-features-three-claudes-one-afternoon"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "newsletters/three-features-three-claudes-one-afternoon",
+          "type": "wikilink",
+          "text": "JS Mastery"
         }
       ],
       "outbound_count": 1,
@@ -1463,6 +1487,40 @@
       "inbound_count": 0
     },
     {
+      "slug": "newsletters/three-features-three-claudes-one-afternoon",
+      "title": "Three Features Three Claudes One Afternoon",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# Three Features. Three Claudes. One Afternoon.\n\n**Source:** email forward\n**Source URI:** gmail://msg_19eb960b3c2b3ec2\n**Ingested:** 2026-06-12T09:09:30Z\n**Provenance:** Forwarded by sayf on 2026-06-12\n\n---\n\nSayf's note: newsletter shared\n\n---\n\n**From:** [[Adrian (JS Mastery)]] | [[JS Mastery]]\n**Subject:** Three Features. Three Claudes. One Afternoon.\n**Date:** Thu, 11 Jun 2026\n\nFebruary 5th is in my diary. I'm looking at three terminal windows, all running Claude Code simultaneously, all working on the same project.\n\nOne is building a dark/light mode toggle. One is writing API endpoint tests. One is adding code quality tooling. None of them knows the others exist.\n\nI watched all three work at the same time and remember thinking, \"This is genuinely new.\" This isn't a faster way to do what I was already doing. This is a different thing entirely.\n\nHere's the setup. Git has a feature called worktrees, you to check out multiple branches of the same project into separate directories and work on them independently. Each directory gets its own Claude session, its own context window, its own isolated set of files to modify.\n\nWhat this solves is the thing that makes parallel AI development feel risky: two agents writing to the same file at the same time. With worktrees, that can't happen.\n\nThey're operating in completely separate environments.\n\nWhen all three were done, I committed each branch with a descriptive message. Claude wrote those too, which matters more than it sounds when you're about to merge three sets of changes, and then asked a fourth Claude session to pull everything together and resolve any conflicts.\n\nIt found one. A pyproject.toml that two branches had both modified. Resolved it in about thirty seconds.\n\nThe whole thing, three features built simultaneously, merged, tested, took an afternoon. Features that would have been sequential, each requiring their own setup, their own context, their own careful hand-holding through implementation.\n\nBut here's what actually stuck with me. It wasn't the speed. It was that I spent that afternoon thinking, about architecture, about what each feature needed to know, about how the pieces would fit together after the merge. Not implementing. Directing.\n\nThat's the shift I keep coming back to.\n\nHave you ever tried running more than one AI session in parallel on the same project? Did it work, or did it create more problems than it solved?\n\nTalk soon,\n[[Adrian (JS Mastery)]]\n[[JS Mastery]]",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "Adrian (JS Mastery)",
+          "type": "wikilink",
+          "text": "Adrian (JS Mastery)"
+        },
+        {
+          "to": "companies/js-mastery",
+          "type": "wikilink",
+          "text": "JS Mastery"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "companies/js-mastery",
+          "type": "wikilink",
+          "text": "newsletters/three-features-three-claudes-one-afternoon"
+        },
+        {
+          "from": "people/adrian-js-mastery",
+          "type": "wikilink",
+          "text": "newsletters/three-features-three-claudes-one-afternoon"
+        }
+      ],
+      "outbound_count": 2,
+      "inbound_count": 2
+    },
+    {
       "slug": "people/addy-osmani",
       "title": "Addy Osmani",
       "type": "person",
@@ -1474,6 +1532,24 @@
           "to": "bookmarks/agent-skills-by-addy-osmani",
           "type": "wikilink",
           "text": "agent-skills-by-addy-osmani"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
+      "inbound_count": 0
+    },
+    {
+      "slug": "people/adrian-js-mastery",
+      "title": "Adrian Js Mastery",
+      "type": "person",
+      "updated": "",
+      "body": "# Adrian (JS Mastery)\n\n> Newsletter author and founder at JS Mastery, an educational platform for AI and JavaScript development.\n\nReferenced in [[newsletters/three-features-three-claudes-one-afternoon]].",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "newsletters/three-features-three-claudes-one-afternoon",
+          "type": "wikilink",
+          "text": "newsletters/three-features-three-claudes-one-afternoon"
         }
       ],
       "backlinks": [],
@@ -2151,6 +2227,11 @@
       "type": "wikilink"
     },
     {
+      "source": "companies/js-mastery",
+      "target": "newsletters/three-features-three-claudes-one-afternoon",
+      "type": "wikilink"
+    },
+    {
       "source": "companies/ksi-strategic-institute",
       "target": "people/zaim-mohzani",
       "type": "wikilink"
@@ -2476,6 +2557,11 @@
       "type": "wikilink"
     },
     {
+      "source": "people/adrian-js-mastery",
+      "target": "newsletters/three-features-three-claudes-one-afternoon",
+      "type": "wikilink"
+    },
+    {
       "source": "people/aisyah-humaira-wan-aziz",
       "target": "companies/posh-corporate",
       "type": "wikilink"
@@ -2499,6 +2585,7 @@
   "entities": {
     "people": [
       "people/addy-osmani",
+      "people/adrian-js-mastery",
       "people/aisyah-humaira-wan-aziz",
       "people/audrey-loh",
       "people/ayaan",
@@ -2523,6 +2610,7 @@
       "companies/dynamics-orchard-farm-sdn-bhd",
       "companies/global-ai-village",
       "companies/inclusive-ai-association",
+      "companies/js-mastery",
       "companies/ksi-strategic-institute",
       "companies/nation-building-school",
       "companies/openai",
