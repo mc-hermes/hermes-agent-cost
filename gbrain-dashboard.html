@@ -659,6 +659,141 @@
   .art-preview-meta span { display: flex; align-items: center; gap: 4px; }
   .art-preview-unsupported { text-align: center; padding: 40px 20px; color: var(--text-muted); }
   .art-preview-unsupported .icon { font-size: 2.5rem; margin-bottom: 12px; opacity: 0.4; }
+
+  /* ═══════════════════════════════════════════════
+     CRM — Contact & Relationship Intelligence
+     ═══════════════════════════════════════════════ */
+  .crm-wrap { display: flex; flex-direction: column; gap: 16px; }
+  .crm-toolbar { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .crm-toolbar input { flex:1; min-width: 180px; padding: 8px 14px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); color: var(--text); font-size: 0.75rem; font-family: 'Inter',sans-serif; }
+  .crm-toolbar input:focus { outline: none; border-color: var(--primary); }
+  .crm-toolbar select { padding: 6px 10px; background: var(--surface); border: 1px solid var(--border); border-radius: 6px; color: var(--text); font-size: 0.7rem; font-family: 'Inter',sans-serif; }
+  .crm-toolbar select:focus { outline: none; border-color: var(--primary); }
+  .crm-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 8px; margin-bottom: 4px; }
+  .crm-stat { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 12px 16px; }
+  .crm-stat .crm-stat-val { font-family: 'Syne',sans-serif; font-size: 1.5rem; font-weight: 800; color: var(--primary-light); line-height: 1.1; }
+  .crm-stat .crm-stat-lbl { font-size: 0.6rem; color: var(--text-muted); margin-top: 2px; }
+  .crm-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 10px; }
+  .crm-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; cursor: pointer; transition: all 0.15s; }
+  .crm-card:hover { border-color: var(--primary); transform: translateY(-2px); }
+  .crm-card:active { transform: translateY(0); }
+  .crm-card .crm-card-type { display: inline-flex; align-items: center; gap: 4px; font-size: 0.55rem; font-weight: 600; padding: 2px 10px; border-radius: 999px; margin-bottom: 8px; }
+  .crm-card .crm-card-type.person { background: rgba(187,154,247,0.12); color: var(--violet); }
+  .crm-card .crm-card-type.company { background: rgba(158,206,106,0.12); color: var(--green); }
+  .crm-card .crm-card-name { font-family: 'Syne',sans-serif; font-size: 0.95rem; font-weight: 700; letter-spacing: -0.01em; }
+  .crm-card .crm-card-tags { display: flex; gap: 4px; flex-wrap: wrap; margin: 6px 0; }
+  .crm-card .crm-card-tags span { font-size: 0.55rem; padding: 1px 8px; border-radius: 999px; background: rgba(148,163,184,0.08); color: var(--text-muted); }
+  .crm-card .crm-card-rels { display: flex; flex-direction: column; gap: 4px; margin-top: 8px; padding-top: 8px; border-top: 1px solid rgba(255,255,255,0.04); }
+  .crm-card .crm-card-rel { display: flex; align-items: center; gap: 6px; font-size: 0.65rem; color: var(--text-muted); }
+  .crm-card .crm-card-rel .rel-icon { width: 14px; height: 14px; flex-shrink: 0; opacity: 0.5; }
+  .crm-card .crm-card-rel .rel-val { color: var(--primary); }
+  .crm-card .crm-card-preview { font-size: 0.65rem; color: var(--text-muted); margin-top: 8px; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .crm-empty { text-align: center; padding: 48px 20px; color: var(--text-muted); font-size: 0.72rem; }
+
+  /* ═══════════════════════════════════════════════
+     Timeline — Chronological Intelligence
+     ═══════════════════════════════════════════════ */
+  .tl-wrap { display: flex; flex-direction: column; gap: 16px; }
+  .tl-toolbar { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .tl-toolbar select { padding: 6px 10px; background: var(--surface); border: 1px solid var(--border); border-radius: 6px; color: var(--text); font-size: 0.7rem; font-family: 'Inter',sans-serif; }
+  .tl-summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 8px; margin-bottom: 4px; }
+  .tl-summary-item { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 10px 14px; text-align: center; }
+  .tl-summary-item .tl-sum-val { font-family: 'Syne',sans-serif; font-size: 1.2rem; font-weight: 700; }
+  .tl-summary-item .tl-sum-lbl { font-size: 0.6rem; color: var(--text-muted); }
+  .tl-stream { position: relative; padding-left: 24px; }
+  .tl-stream::before { content: ''; position: absolute; left: 8px; top: 0; bottom: 0; width: 2px; background: var(--border); border-radius: 1px; }
+  .tl-event { position: relative; padding: 12px 16px; margin-bottom: 4px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); cursor: pointer; transition: all 0.12s; }
+  .tl-event:hover { border-color: var(--primary); margin-left: 4px; }
+  .tl-event::before { content: ''; position: absolute; left: -20px; top: 16px; width: 10px; height: 10px; border-radius: 50%; background: var(--surface2); border: 2px solid var(--border); }
+  .tl-event.tl-type-meeting::before { background: var(--accent-light); border-color: var(--accent); }
+  .tl-event.tl-type-person::before { background: var(--violet); border-color: var(--violet); }
+  .tl-event.tl-type-company::before { background: var(--green); border-color: var(--green); }
+  .tl-event.tl-type-concept::before { background: var(--primary-light); border-color: var(--primary); }
+  .tl-event.tl-type-newsletter::before { background: var(--green); border-color: var(--green); }
+  .tl-event.tl-type-bookmark::before { background: var(--primary); border-color: var(--primary); }
+  .tl-event .tl-header { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+  .tl-event .tl-date { font-family: 'JetBrains Mono',monospace; font-size: 0.6rem; color: var(--text-muted); }
+  .tl-event .tl-type-badge { font-size: 0.55rem; font-weight: 600; padding: 1px 8px; border-radius: 999px; }
+  .tl-event .tl-type-badge.meeting { background: rgba(255,158,100,0.12); color: var(--accent-light); }
+  .tl-event .tl-type-badge.person { background: rgba(187,154,247,0.12); color: var(--violet); }
+  .tl-event .tl-type-badge.company { background: rgba(158,206,106,0.12); color: var(--green); }
+  .tl-event .tl-type-badge.concept { background: rgba(125,207,255,0.12); color: var(--primary-light); }
+  .tl-event .tl-title { font-family: 'Syne',sans-serif; font-size: 0.85rem; font-weight: 600; letter-spacing: -0.01em; }
+  .tl-event .tl-snippet { font-size: 0.65rem; color: var(--text-muted); margin-top: 4px; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .tl-event .tl-links { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
+  .tl-event .tl-link-chip { font-size: 0.55rem; padding: 2px 8px; border-radius: 999px; background: rgba(122,162,247,0.08); color: var(--primary); border: 1px solid rgba(122,162,247,0.12); }
+  .tl-empty { text-align: center; padding: 48px 20px; color: var(--text-muted); font-size: 0.72rem; }
+
+  /* ═══════════════════════════════════════════════
+     Insights — Business Intelligence & Pattern Analysis
+     ═══════════════════════════════════════════════ */
+  .insights-wrap { display: flex; flex-direction: column; gap: 16px; }
+  .insight-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; }
+  .insight-card .ic-title { font-family: 'Syne',sans-serif; font-size: 0.85rem; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+  .insight-card .ic-title .ic-icon { width: 18px; height: 18px; }
+  .insight-chart { display: flex; flex-direction: column; gap: 6px; }
+  .insight-bar-row { display: flex; align-items: center; gap: 8px; cursor: pointer; transition: all 0.1s; padding: 4px 0; }
+  .insight-bar-row:hover { background: rgba(122,162,247,0.03); border-radius: 4px; }
+  .insight-bar-row .ibar-label { font-size: 0.72rem; min-width: 120px; max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 500; }
+  .insight-bar-row .ibar-track { flex: 1; height: 20px; background: var(--surface2); border-radius: 4px; overflow: hidden; position: relative; }
+  .insight-bar-row .ibar-fill { height: 100%; border-radius: 4px; transition: width 0.6s ease; min-width: 2px; }
+  .insight-bar-row .ibar-count { font-family: 'JetBrains Mono',monospace; font-size: 0.65rem; min-width: 32px; text-align: right; color: var(--text-muted); }
+  .insight-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+  .insight-mini { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px; cursor: pointer; transition: all 0.12s; }
+  .insight-mini:hover { border-color: var(--primary); }
+  .insight-mini .im-val { font-family: 'Syne',sans-serif; font-size: 1.3rem; font-weight: 800; color: var(--primary-light); }
+  .insight-mini .im-lbl { font-size: 0.6rem; color: var(--text-muted); margin-top: 2px; }
+  .insight-mini .im-detail { font-size: 0.6rem; color: var(--text-muted); margin-top: 4px; line-height: 1.4; }
+  .insight-section-title { font-family: 'Syne',sans-serif; font-size: 0.9rem; font-weight: 700; margin: 8px 0; }
+  .insight-card .ic-tag-cloud { display: flex; flex-wrap: wrap; gap: 6px; }
+  .insight-card .ic-tag { padding: 4px 12px; border-radius: 999px; font-size: 0.62rem; cursor: pointer; transition: all 0.12s; border: 1px solid var(--border); }
+  .insight-card .ic-tag:hover { border-color: var(--primary); }
+  .insight-empty { text-align: center; padding: 48px 20px; color: var(--text-muted); font-size: 0.72rem; }
+
+  /* ═══════════════════════════════════════════════
+     Projects / Domains — Clustered Knowledge Map
+     ═══════════════════════════════════════════════ */
+  .proj-wrap { display: flex; flex-direction: column; gap: 16px; }
+  .proj-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 12px; }
+  .proj-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; cursor: pointer; transition: all 0.15s; }
+  .proj-card:hover { border-color: var(--primary); transform: translateY(-2px); }
+  .proj-card:active { transform: translateY(0); }
+  .proj-card .pc-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .proj-card .pc-icon { font-size: 1.2rem; }
+  .proj-card .pc-name { font-family: 'Syne',sans-serif; font-size: 0.95rem; font-weight: 700; }
+  .proj-card .pc-count { font-size: 0.6rem; color: var(--text-muted); margin-left: auto; font-family: 'JetBrains Mono',monospace; }
+  .proj-card .pc-pages { display: flex; flex-wrap: wrap; gap: 4px; margin: 6px 0; }
+  .proj-card .pc-page { font-size: 0.6rem; padding: 2px 10px; border-radius: 999px; background: rgba(122,162,247,0.08); color: var(--primary); border: 1px solid rgba(122,162,247,0.1); cursor: pointer; transition: all 0.1s; }
+  .proj-card .pc-page:hover { background: rgba(122,162,247,0.15); }
+  .proj-card .pc-people { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; padding-top: 8px; border-top: 1px solid rgba(255,255,255,0.04); }
+  .proj-card .pc-person { font-size: 0.58rem; padding: 2px 10px; border-radius: 999px; background: rgba(187,154,247,0.08); color: var(--violet); border: 1px solid rgba(187,154,247,0.1); cursor: pointer; transition: all 0.1s; }
+  .proj-card .pc-person:hover { background: rgba(187,154,247,0.15); }
+  .proj-card .pc-companies { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
+  .proj-card .pc-company { font-size: 0.58rem; padding: 2px 10px; border-radius: 999px; background: rgba(158,206,106,0.08); color: var(--green); border: 1px solid rgba(158,206,106,0.1); cursor: pointer; transition: all 0.1s; }
+  .proj-card .pc-company:hover { background: rgba(158,206,106,0.15); }
+  .proj-card .pc-desc { font-size: 0.65rem; color: var(--text-muted); margin-top: 8px; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .proj-empty { text-align: center; padding: 48px 20px; color: var(--text-muted); font-size: 0.72rem; }
+
+  /* ═══════════════════════════════════════════════
+     Ring Chart (SVG-based)
+     ═══════════════════════════════════════════════ */
+  .ring-chart { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .ring-chart svg { flex-shrink: 0; }
+  .ring-legend { font-size: 0.65rem; display: flex; flex-direction: column; gap: 4px; }
+  .ring-legend-item { display: flex; align-items: center; gap: 6px; }
+  .ring-legend-item .rl-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .ring-legend-item .rl-label { color: var(--text-muted); }
+  .ring-legend-item .rl-val { font-family: 'JetBrains Mono',monospace; margin-left: auto; }
+
+  /* Mobile adaptations for new views */
+  @media (max-width: 768px) {
+    .crm-grid { grid-template-columns: 1fr; }
+    .proj-grid { grid-template-columns: 1fr; }
+    .crm-stats { grid-template-columns: 1fr 1fr; }
+    .insight-grid { grid-template-columns: 1fr 1fr; }
+    .insight-bar-row .ibar-label { min-width: 80px; max-width: 120px; }
+    .tl-stream { padding-left: 16px; }
+  }
 </style>
 </head>
 <body>
@@ -687,9 +822,12 @@
     <!-- Desktop View Navigation -->
     <div class="tabs desktop-view-tabs" id="desktopViewTabs" style="margin-bottom:16px">
       <button class="tab active" data-dview="today" onclick="showView('today')"><span class="tab-icon"><svg viewBox="0 0 16 16"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" fill="none"/><path d="M5 7h6M5 10h6" stroke="currentColor"/></svg></span> Today</button>
+      <button class="tab" data-dview="crm" onclick="showView('crm')"><span class="tab-icon"><svg viewBox="0 0 16 16"><circle cx="5" cy="5" r="2.5" stroke="currentColor" fill="none"/><circle cx="11" cy="5" r="2.5" stroke="currentColor" fill="none"/><path d="M2 14c0-3 1.5-4.5 3-4.5s3 1.5 3 4.5" stroke="currentColor" fill="none"/><path d="M8 14c0-3 1.5-4.5 3-4.5s3 1.5 3 4.5" stroke="currentColor" fill="none"/></svg></span> Network</button>
+      <button class="tab" data-dview="timeline" onclick="showView('timeline')"><span class="tab-icon"><svg viewBox="0 0 16 16"><path d="M3 3h10M3 6.5h10M3 10h10" stroke="currentColor" stroke-linecap="round"/><circle cx="3" cy="3" r="1.5" fill="currentColor"/><circle cx="8" cy="6.5" r="1.5" fill="currentColor"/><circle cx="12" cy="10" r="1.5" fill="currentColor"/></svg></span> Timeline</button>
+      <button class="tab" data-dview="insights" onclick="showView('insights')"><span class="tab-icon"><svg viewBox="0 0 16 16"><rect x="2" y="6" width="3" height="8" rx="0.5" stroke="currentColor" fill="none"/><rect x="6.5" y="3" width="3" height="11" rx="0.5" stroke="currentColor" fill="none"/><rect x="11" y="1" width="3" height="13" rx="0.5" stroke="currentColor" fill="none"/></svg></span> Insights</button>
       <button class="tab" data-dview="browse" onclick="showView('browse')"><span class="tab-icon"><svg viewBox="0 0 16 16"><rect x="2" y="2" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="9" y="2" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="2" y="9" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="9" y="9" width="5" height="5" rx="1" stroke="currentColor" fill="none"/></svg></span> Browse</button>
-      <button class="tab" data-dview="ask" onclick="showView('ask')"><span class="tab-icon"><svg viewBox="0 0 16 16"><path d="M2 2h12v9H6l-4 3V2z" stroke="currentColor" fill="none"/></svg></span> Ask</button>
       <button class="tab" data-dview="graph" onclick="showView('graph')"><span class="tab-icon"><svg viewBox="0 0 16 16"><circle cx="5" cy="5" r="2" stroke="currentColor" fill="none"/><circle cx="11" cy="4" r="1.5" stroke="currentColor" fill="none"/><circle cx="8" cy="11" r="2.5" stroke="currentColor" fill="none"/><path d="M6 6l2 4M10 5l-1 4" stroke="currentColor"/></svg></span> Graph</button>
+      <button class="tab" data-dview="projects" onclick="showView('projects')"><span class="tab-icon"><svg viewBox="0 0 16 16"><rect x="1" y="2" width="14" height="12" rx="1" stroke="currentColor" fill="none"/><path d="M4 7h8M4 10h6" stroke="currentColor"/><path d="M4 2V1M8 2V1" stroke="currentColor"/></svg></span> Domains</button>
       <button class="tab" data-dview="logs" onclick="showView('logs')"><span class="tab-icon"><svg viewBox="0 0 16 16"><path d="M3 3h10M3 6.5h10M3 10h7M3 13h5" stroke="currentColor" stroke-linecap="round"/></svg></span> Logs</button>
       <button class="tab write-tab-item" onclick="openWrite()"><span class="tab-icon"><svg viewBox="0 0 16 16"><path d="M3 13h10M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span> Write</button>
     </div>
@@ -821,6 +959,75 @@
         <div class="log-feed" id="logFeed"><div class="log-offline">Loading activity…</div></div>
       </div>
     </div>
+
+    <!-- === VIEW: Network / CRM === -->
+    <div class="view-panel" id="view-crm">
+      <div class="section">
+        <div class="section-header"><h2>Network</h2><span class="count" id="crmCount"></span></div>
+        <div class="crm-stats" id="crmStats"></div>
+        <div class="crm-toolbar">
+          <input type="text" id="crmSearch" placeholder="Search contacts..." oninput="renderCRM()">
+          <select id="crmTypeFilter" onchange="renderCRM()">
+            <option value="all">All contacts</option>
+            <option value="person">People</option>
+            <option value="company">Companies</option>
+          </select>
+          <select id="crmTagFilter" onchange="renderCRM()">
+            <option value="all">All tags</option>
+          </select>
+        </div>
+        <div class="crm-grid" id="crmGrid"></div>
+        <div class="crm-empty" id="crmEmpty" style="display:none">No contacts match your filter.</div>
+      </div>
+    </div>
+
+    <!-- === VIEW: Timeline === -->
+    <div class="view-panel" id="view-timeline">
+      <div class="section">
+        <div class="section-header"><h2>Timeline</h2><span class="count" id="tlCount"></span></div>
+        <div class="tl-summary" id="tlSummary"></div>
+        <div class="tl-toolbar">
+          <select id="tlTypeFilter" onchange="renderTimeline()">
+            <option value="all">All</option>
+            <option value="meeting">Meetings</option>
+            <option value="person">People</option>
+            <option value="company">Companies</option>
+            <option value="newsletter">Newsletters</option>
+            <option value="concept">Notes</option>
+            <option value="bookmark">Bookmarks</option>
+          </select>
+          <select id="tlDateFilter" onchange="renderTimeline()">
+            <option value="all">All time</option>
+            <option value="7d">Last 7 days</option>
+            <option value="30d">Last 30 days</option>
+            <option value="90d">Last 90 days</option>
+          </select>
+        </div>
+        <div class="tl-stream" id="tlStream"></div>
+        <div class="tl-empty" id="tlEmpty" style="display:none">No timeline events found.</div>
+      </div>
+    </div>
+
+    <!-- === VIEW: Insights === -->
+    <div class="view-panel" id="view-insights">
+      <div class="section">
+        <div class="section-header"><h2>Insights</h2><span class="count" id="insightsCount"></span></div>
+        <div class="insights-wrap" id="insightsWrap"></div>
+      </div>
+    </div>
+
+    <!-- === VIEW: Projects / Domains === -->
+    <div class="view-panel" id="view-projects">
+      <div class="section">
+        <div class="section-header"><h2>Domains</h2><span class="count" id="projCount"></span></div>
+        <div class="proj-wrap" id="projWrap">
+          <div style="font-size:0.72rem;color:var(--text-muted);line-height:1.5">Auto-clustered knowledge domains — concepts grouped by topic, with associated people and companies.</div>
+          <div class="proj-grid" id="projGrid"></div>
+          <div class="proj-empty" id="projEmpty" style="display:none">No domains have been auto-detected yet.</div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <div class="footer">gbrain Control Dashboard · Maloha Coast Sdn Bhd · Press <span style="font-family:'JetBrains Mono',monospace">?</span> for help</div>
@@ -832,14 +1039,14 @@
     <button class="mobile-nav-btn active" data-view="today" onclick="showView('today')">
       <span class="nav-icon"><svg viewBox="0 0 16 16"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" fill="none"/><path d="M5 7h6M5 10h6" stroke="currentColor"/></svg></span> Today
     </button>
-    <button class="mobile-nav-btn" data-view="browse" onclick="showView('browse')">
-      <span class="nav-icon"><svg viewBox="0 0 16 16"><rect x="2" y="2" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="9" y="2" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="2" y="9" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="9" y="9" width="5" height="5" rx="1" stroke="currentColor" fill="none"/></svg></span> Browse
+    <button class="mobile-nav-btn" data-view="crm" onclick="showView('crm')">
+      <span class="nav-icon"><svg viewBox="0 0 16 16"><circle cx="5" cy="5" r="2.5" stroke="currentColor" fill="none"/><circle cx="11" cy="5" r="2.5" stroke="currentColor" fill="none"/><path d="M2 14c0-3 1.5-4.5 3-4.5s3 1.5 3 4.5" stroke="currentColor" fill="none"/></svg></span> Network
     </button>
     <button class="nav-write-btn" onclick="openWrite()" title="Write a note">
       <svg viewBox="0 0 16 16"><path d="M3 13h10M8 2v10M3 7h10" stroke="currentColor" stroke-linecap="round"/></svg>
     </button>
-    <button class="mobile-nav-btn" data-view="ask" onclick="showView('ask')">
-      <span class="nav-icon"><svg viewBox="0 0 16 16"><path d="M2 2h12v9H6l-4 3V2z" stroke="currentColor" fill="none"/></svg></span> Ask
+    <button class="mobile-nav-btn" data-view="timeline" onclick="showView('timeline')">
+      <span class="nav-icon"><svg viewBox="0 0 16 16"><path d="M3 3h10M3 6.5h10M3 10h10" stroke="currentColor" stroke-linecap="round"/><circle cx="3" cy="3" r="1.5" fill="currentColor"/><circle cx="8" cy="6.5" r="1.5" fill="currentColor"/><circle cx="12" cy="10" r="1.5" fill="currentColor"/></svg></span> Timeline
     </button>
     <button class="mobile-nav-btn" data-view="more" onclick="toggleMoreMenu()">
       <span class="nav-icon">···</span> More
@@ -849,11 +1056,12 @@
 
 <!-- More menu popover -->
 <div class="settings-popover" id="moreMenu" style="bottom:80px;left:auto;right:12px;width:180px">
+  <div class="settings-row" style="cursor:pointer" onclick="showView('insights');toggleMoreMenu()">Insights</div>
   <div class="settings-row" style="cursor:pointer" onclick="showView('graph');toggleMoreMenu()">Graph</div>
-  <div class="settings-row" style="cursor:pointer" onclick="showView('browse');document.querySelector('[data-btab=entities]').click();toggleMoreMenu()">Entities</div>
-  <div class="settings-row" style="cursor:pointer" onclick="showView('browse');document.querySelector('[data-btab=health]').click();toggleMoreMenu()">Health</div>
-  <div class="settings-row" style="cursor:pointer" onclick="showView('browse');document.querySelector('[data-btab=artifacts]').click();toggleMoreMenu()">Artifacts</div>
+  <div class="settings-row" style="cursor:pointer" onclick="showView('projects');toggleMoreMenu()">Domains</div>
+  <div class="settings-row" style="cursor:pointer" onclick="showView('browse');toggleMoreMenu()">Browse</div>
   <div class="settings-row" style="cursor:pointer" onclick="showView('logs');toggleMoreMenu()">Logs</div>
+  <div class="settings-row" style="cursor:pointer" onclick="showView('ask');toggleMoreMenu()">Ask</div>
   <div class="settings-row" style="cursor:pointer" onclick="toggleSettings();toggleMoreMenu()">Settings</div>
   <div class="settings-row" style="cursor:pointer" onclick="openDocs();toggleMoreMenu()">Help</div>
 </div>
@@ -2365,6 +2573,700 @@ function sendChat() {
     })
     .finally(function() { btn.disabled = false; });
 }
+
+// ═══════════════════════════════════════════════
+// New View: Network / CRM — Contact & Relationship Intelligence
+// ═══════════════════════════════════════════════
+
+var _crmRendered = false;
+var _tlRendered = false;
+var _insightsRendered = false;
+var _projRendered = false;
+
+function renderAllNew() {
+  if (DATA && DATA.pages) {
+    renderCRM();
+    renderTimeline();
+    renderInsights();
+    renderProjects();
+  }
+}
+
+// ─── CRM / NETWORK VIEW ───
+function renderCRM() {
+  var pages = DATA.pages || [];
+  var searchQ = (document.getElementById('crmSearch') ? document.getElementById('crmSearch').value : '').toLowerCase();
+  var typeFilter = document.getElementById('crmTypeFilter') ? document.getElementById('crmTypeFilter').value : 'all';
+  var tagFilter = document.getElementById('crmTagFilter') ? document.getElementById('crmTagFilter').value : 'all';
+
+  // Collect all people + company pages
+  var allContacts = pages.filter(function(p) {
+    return p.type === 'person' || p.type === 'company';
+  });
+
+  // Populate tag filter
+  var tagEl = document.getElementById('crmTagFilter');
+  if (tagEl && tagEl.options.length <= 1) {
+    var allTags = {};
+    allContacts.forEach(function(c) {
+      (c.tags || []).forEach(function(t) { allTags[t] = (allTags[t]||0) + 1; });
+    });
+    Object.keys(allTags).sort().forEach(function(t) {
+      var opt = document.createElement('option');
+      opt.value = t; opt.textContent = t + ' (' + allTags[t] + ')';
+      tagEl.appendChild(opt);
+    });
+  }
+
+  // Build index for relationship lookups
+  var slugIndex = {};
+  pages.forEach(function(p) { slugIndex[p.slug] = p; });
+
+  // Compute relationships per contact
+  function getRelationships(slug, type) {
+    var rels = [];
+    var page = slugIndex[slug];
+    if (!page) return rels;
+    if (type === 'person') {
+      // Companies linked to this person
+      (page.links_out || []).forEach(function(l) {
+        var target = slugIndex[l.to];
+        if (target && target.type === 'company') {
+          rels.push({ icon: '🏢', label: 'works at', value: target.title || l.to, slug: l.to });
+        }
+      });
+      // Meetings attended
+      (page.backlinks || []).forEach(function(bl) {
+        var target = slugIndex[bl.from];
+        if (target && target.type === 'meeting') {
+          rels.push({ icon: '◈', label: 'met', value: target.title || bl.from, slug: bl.from });
+        }
+      });
+    } else if (type === 'company') {
+      // People linked to this company
+      (page.backlinks || []).forEach(function(bl) {
+        var target = slugIndex[bl.from];
+        if (target && target.type === 'person') {
+          rels.push({ icon: '👤', label: 'connected to', value: target.title || bl.from, slug: bl.from });
+        }
+      });
+      // Meetings referencing this company
+      pages.forEach(function(p) {
+        if (p.type === 'meeting' && (p.links_out || []).some(function(l) { return l.to === slug; })) {
+          rels.push({ icon: '◈', label: 'discussed in', value: p.title || p.slug, slug: p.slug });
+        }
+      });
+    }
+    return rels.slice(0, 5);
+  }
+
+  // Filter
+  var filtered = allContacts.filter(function(c) {
+    if (typeFilter !== 'all' && c.type !== typeFilter) return false;
+    if (tagFilter !== 'all' && (!c.tags || c.tags.indexOf(tagFilter) === -1)) return false;
+    if (searchQ) {
+      var title = (c.title || c.slug || '').toLowerCase();
+      var body = (c.body || '').toLowerCase();
+      var tags = (c.tags || []).join(' ').toLowerCase();
+      if (title.indexOf(searchQ) === -1 && body.indexOf(searchQ) === -1 && tags.indexOf(searchQ) === -1) return false;
+    }
+    return true;
+  });
+
+  // Stats
+  var personCount = allContacts.filter(function(c){return c.type==='person';}).length;
+  var companyCount = allContacts.filter(function(c){return c.type==='company';}).length;
+  document.getElementById('crmCount').textContent = personCount + companyCount + ' contacts';
+
+  var statsHtml = '<div class="crm-stat"><div class="crm-stat-val">' + personCount + '</div><div class="crm-stat-lbl">People</div></div>' +
+    '<div class="crm-stat"><div class="crm-stat-val">' + companyCount + '</div><div class="crm-stat-lbl">Companies</div></div>' +
+    '<div class="crm-stat"><div class="crm-stat-val">' + (personCount + companyCount) + '</div><div class="crm-stat-lbl">Total Contacts</div></div>' +
+    '<div class="crm-stat"><div class="crm-stat-val" style="color:var(--green)">' + (allContacts.reduce(function(s,c){return s + (c.outbound_count||0)+(c.inbound_count||0);}, 0)) + '</div><div class="crm-stat-lbl">Network Links</div></div>';
+  document.getElementById('crmStats').innerHTML = statsHtml;
+
+  // Render
+  var grid = document.getElementById('crmGrid');
+  var empty = document.getElementById('crmEmpty');
+  if (!filtered.length) {
+    grid.innerHTML = '';
+    empty.style.display = 'block';
+    document.getElementById('crmCount').textContent = '0 contacts';
+    return;
+  }
+  empty.style.display = 'none';
+
+  // Sort by connection count (most connected first)
+  filtered.sort(function(a,b) {
+    var aConn = (a.outbound_count||0)+(a.inbound_count||0);
+    var bConn = (b.outbound_count||0)+(b.inbound_count||0);
+    return bConn - aConn;
+  });
+
+  grid.innerHTML = filtered.map(function(c) {
+    var rels = getRelationships(c.slug, c.type);
+    var preview = (c.body||'').replace(/[#*`\[\]]/g,'').trim().slice(0, 120);
+    var tags = (c.tags||[]).map(function(t) { return '<span>' + esc(t) + '</span>'; }).join('');
+
+    return '<div class="crm-card" onclick="openCRMContact(\'' + escAttr(c.slug) + '\')" data-slug="' + escAttr(c.slug) + '">' +
+      '<div class="crm-card-type ' + c.type + '">' + (c.type === 'person' ? '👤' : '🏢') + ' ' + c.type + '</div>' +
+      '<div class="crm-card-name">' + esc(c.title || c.slug) + '</div>' +
+      (tags ? '<div class="crm-card-tags">' + tags + '</div>' : '') +
+      '<div class="crm-card-preview">' + esc(preview) + '</div>' +
+      (rels.length ? '<div class="crm-card-rels">' + rels.slice(0,4).map(function(r) {
+        return '<div class="crm-card-rel"><span class="rel-icon">' + r.icon + '</span><span class="rel-label">' + r.label + '</span> <span class="rel-val" onclick="event.stopPropagation();openCRMContact(\'' + escAttr(r.slug) + '\')">' + esc(r.value) + '</span></div>';
+      }).join('') + '</div>' : '') +
+    '</div>';
+  }).join('');
+}
+
+function openCRMContact(slug) {
+  var pages = DATA.pages || [];
+  var page = pages.filter(function(p){return p.slug===slug;})[0];
+  if (!page) { openPageModal(slug); return; }
+
+  var slugIndex = {};
+  pages.forEach(function(p) { slugIndex[p.slug] = p; });
+
+  // Compute rich relationship data
+  var relPeople = [];
+  var relCompanies = [];
+  var relMeetings = [];
+  var relConcepts = [];
+
+  (page.links_out || []).forEach(function(l) {
+    var t = slugIndex[l.to];
+    if (!t) return;
+    if (t.type === 'person') relPeople.push({ slug: l.to, title: t.title, type: 'out' });
+    else if (t.type === 'company') relCompanies.push({ slug: l.to, title: t.title, type: 'out' });
+    else if (t.type === 'meeting') relMeetings.push({ slug: l.to, title: t.title, type: 'out' });
+    else relConcepts.push({ slug: l.to, title: t.title, type: 'out' });
+  });
+  (page.backlinks || []).forEach(function(bl) {
+    var t = slugIndex[bl.from];
+    if (!t) return;
+    if (t.type === 'person') relPeople.push({ slug: bl.from, title: t.title, type: 'in' });
+    else if (t.type === 'company') relCompanies.push({ slug: bl.from, title: t.title, type: 'in' });
+    else if (t.type === 'meeting') relMeetings.push({ slug: bl.from, title: t.title, type: 'in' });
+    else relConcepts.push({ slug: bl.from, title: t.title, type: 'in' });
+  });
+
+  // Network stats for this contact
+  var totalConnections = relPeople.length + relCompanies.length + relMeetings.length + relConcepts.length;
+  var centrality = totalConnections > 5 ? 'high' : totalConnections > 2 ? 'medium' : 'low';
+  var centralityColor = centrality === 'high' ? 'var(--green)' : centrality === 'medium' ? 'var(--accent)' : 'var(--text-muted)';
+
+  var html = '';
+
+  // Entity details
+  if (page.type === 'person' || page.type === 'company') {
+    var fields = [];
+    if (page.email) fields.push({l:'Email',v:'<a href="mailto:'+escAttr(page.email)+'">'+esc(page.email)+'</a>'});
+    if (page.phone) fields.push({l:'Phone',v:esc(page.phone)});
+    if (page.company_name) fields.push({l:'Company',v:esc(page.company_name)});
+    if (page.website) fields.push({l:'Website',v:'<a href="https://'+escAttr(page.website)+'" target="_blank">'+esc(page.website)+'</a>'});
+    if (page.location) fields.push({l:'Location',v:esc(page.location)});
+    if (page.relationship) fields.push({l:'Relationship',v:esc(page.relationship)});
+    if (fields.length) {
+      html += '<div class="m-section"><div class="m-section-title">Details</div><div class="m-entity-fields">' +
+        fields.map(function(f){return '<div class="m-field"><div class="f-label">'+f.l+'</div><div class="f-value">'+f.v+'</div></div>';}).join('') +
+        '</div></div>';
+    }
+  }
+
+  // Network centrality
+  html += '<div class="m-section"><div class="m-section-title">Network Analysis</div>' +
+    '<div class="m-entity-fields" style="grid-template-columns:1fr 1fr 1fr">' +
+    '<div class="m-field"><div class="f-label">Total Connections</div><div class="f-value" style="font-family:Syne,sans-serif;font-weight:700;font-size:1.1rem">' + totalConnections + '</div></div>' +
+    '<div class="m-field"><div class="f-label">Centrality</div><div class="f-value" style="color:' + centralityColor + ';font-weight:600">' + centrality + '</div></div>' +
+    '<div class="m-field"><div class="f-label">Links Out / In</div><div class="f-value">' + (page.outbound_count||0) + ' / ' + (page.inbound_count||0) + '</div></div>' +
+    '</div></div>';
+
+  // People
+  if (relPeople.length) {
+    html += '<div class="m-section"><div class="m-section-title">People (' + relPeople.length + ')</div><div class="m-links">' +
+      relPeople.map(function(r) {
+        return '<div class="m-link" onclick="event.stopPropagation();openCRMContact(\'' + escAttr(r.slug) + '\')">' +
+          '<span class="dir">' + (r.type === 'out' ? '→' : '←') + '</span>' +
+          '<span>' + esc(r.title || r.slug) + '</span></div>';
+      }).join('') + '</div></div>';
+  }
+
+  // Companies
+  if (relCompanies.length) {
+    html += '<div class="m-section"><div class="m-section-title">Companies (' + relCompanies.length + ')</div><div class="m-links">' +
+      relCompanies.map(function(r) {
+        return '<div class="m-link" onclick="event.stopPropagation();openCRMContact(\'' + escAttr(r.slug) + '\')">' +
+          '<span class="dir">' + (r.type === 'out' ? '→' : '←') + '</span>' +
+          '<span>' + esc(r.title || r.slug) + '</span></div>';
+      }).join('') + '</div></div>';
+  }
+
+  // Meetings
+  if (relMeetings.length) {
+    html += '<div class="m-section"><div class="m-section-title">Meetings (' + relMeetings.length + ')</div><div class="m-links">' +
+      relMeetings.map(function(r) {
+        return '<div class="m-link" onclick="event.stopPropagation();openPageModal(\'' + escAttr(r.slug) + '\')">' +
+          '<span class="dir">◈</span><span>' + esc(r.title || r.slug) + '</span></div>';
+      }).join('') + '</div></div>';
+  }
+
+  // Body content
+  var body = (page.body||'').trim();
+  if (body) {
+    var cleanBody = body.replace(/^###?\s+/gm, '◆ ').replace(/^##\s+/gm,'◆◆ ').replace(/^#\s+/gm,'◆◆◆ ')
+      .replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g,'<span style="color:var(--primary-light);cursor:pointer" onclick="event.stopPropagation();navigateTo(\'$2\')">$1</span>');
+    html += '<div class="m-section"><div class="m-section-title">Notes</div><div class="m-content">' + cleanBody + '</div></div>';
+  }
+
+  openModal(page.title, page.slug + ' · ' + page.type, html);
+}
+
+// ─── TIMELINE VIEW ───
+function renderTimeline() {
+  var pages = DATA.pages || [];
+  var typeFilter = document.getElementById('tlTypeFilter') ? document.getElementById('tlTypeFilter').value : 'all';
+  var dateFilter = document.getElementById('tlDateFilter') ? document.getElementById('tlDateFilter').value : 'all';
+
+  // Collect all pages with date info
+  var events = [];
+  pages.forEach(function(p) {
+    // Try to extract dates from slug, title, and body
+    var dates = [];
+    var slugDate = p.slug.match(/^(\d{4}-\d{2}-\d{2})/);
+    if (slugDate) dates.push(slugDate[1]);
+
+    // Also try to find dates in body
+    var body = p.body || '';
+    var bodyDate = body.match(/\*\*Date:\*\*\s*(\d{4}-\d{2}-\d{2})/);
+    if (bodyDate) dates.push(bodyDate[1]);
+
+    // Use updated field
+    if (p.updated) {
+      var u = p.updated.split('T')[0];
+      if (u.match(/^\d{4}-\d{2}-\d{2}$/)) dates.push(u);
+    }
+
+    if (dates.length) {
+      // Sort dates and use the latest
+      dates.sort();
+      var dateStr = dates[dates.length - 1];
+      var date = new Date(dateStr);
+      if (!isNaN(date.getTime())) {
+        events.push({
+          date: date,
+          dateStr: dateStr,
+          slug: p.slug,
+          title: p.title || p.slug,
+          type: p.type || 'concept',
+          body: (p.body||'').replace(/[#*`\[\]]/g,'').trim().slice(0, 200),
+          linkCount: (p.outbound_count||0) + (p.inbound_count||0)
+        });
+      }
+    }
+  });
+
+  // Filter by type
+  if (typeFilter !== 'all') {
+    events = events.filter(function(e) { return e.type === typeFilter; });
+  }
+
+  // Filter by date range
+  var now = new Date();
+  if (dateFilter !== 'all') {
+    var cutoff = new Date(now);
+    if (dateFilter === '7d') cutoff.setDate(cutoff.getDate() - 7);
+    else if (dateFilter === '30d') cutoff.setDate(cutoff.getDate() - 30);
+    else if (dateFilter === '90d') cutoff.setDate(cutoff.getDate() - 90);
+    events = events.filter(function(e) { return e.date >= cutoff; });
+  }
+
+  // Sort by date (newest first)
+  events.sort(function(a,b) { return b.date - a.date; });
+
+  document.getElementById('tlCount').textContent = events.length + ' events';
+
+  // Summary stats
+  var typeCounts = {};
+  events.forEach(function(e) { typeCounts[e.type] = (typeCounts[e.type]||0) + 1; });
+  var timeSpan = events.length >= 2 ? Math.ceil((events[0].date - events[events.length-1].date) / (1000*60*60*24)) + 'd span' : '';
+  var sumHtml = '';
+  Object.keys(typeCounts).sort(function(a,b){return typeCounts[b]-typeCounts[a];}).forEach(function(t) {
+    sumHtml += '<div class="tl-summary-item"><div class="tl-sum-val" style="font-size:1rem">' + typeCounts[t] + '</div><div class="tl-sum-lbl">' + t + '</div></div>';
+  });
+  if (timeSpan) sumHtml += '<div class="tl-summary-item"><div class="tl-sum-val" style="font-size:0.85rem;color:var(--text-muted)">' + timeSpan + '</div><div class="tl-sum-lbl">span</div></div>';
+  document.getElementById('tlSummary').innerHTML = sumHtml;
+
+  // Render stream
+  var stream = document.getElementById('tlStream');
+  var empty = document.getElementById('tlEmpty');
+
+  if (!events.length) {
+    stream.innerHTML = '';
+    empty.style.display = 'block';
+    return;
+  }
+  empty.style.display = 'none';
+
+  stream.innerHTML = events.map(function(e) {
+    var month = e.date.toLocaleDateString('en-US', {month: 'short'});
+    var day = e.date.getDate();
+    var year = e.date.getFullYear();
+    var displayDate = month + ' ' + day + (year !== now.getFullYear() ? ', ' + year : '');
+    var snippet = e.body.slice(0, 120);
+    var nowYear = now.getFullYear();
+    var isToday = e.dateStr === now.toISOString().split('T')[0];
+
+    return '<div class="tl-event tl-type-' + e.type + '" onclick="openPageModal(\'' + escAttr(e.slug) + '\')">' +
+      '<div class="tl-header">' +
+      '<span class="tl-date">' + (isToday ? 'Today' : displayDate) + '</span>' +
+      '<span class="tl-type-badge ' + e.type + '">' + e.type + '</span>' +
+      '</div>' +
+      '<div class="tl-title">' + esc(e.title) + '</div>' +
+      (snippet ? '<div class="tl-snippet">' + esc(snippet) + '</div>' : '') +
+      (e.linkCount > 0 ? '<div class="tl-links"><span class="tl-link-chip">🔗 ' + e.linkCount + ' connection' + (e.linkCount !== 1 ? 's' : '') + '</span></div>' : '') +
+      '</div>';
+  }).join('');
+}
+
+// ─── INSIGHTS VIEW ───
+function renderInsights() {
+  var pages = DATA.pages || [];
+  var s = DATA.summary || {};
+
+  // Build tag frequency
+  var tagCounts = {};
+  pages.forEach(function(p) {
+    (p.tags || []).forEach(function(t) {
+      tagCounts[t] = (tagCounts[t]||0) + 1;
+    });
+  });
+
+  // Build type distribution
+  var typeDist = {};
+  pages.forEach(function(p) { typeDist[p.type] = (typeDist[p.type]||0) + 1; });
+
+  // Find most connected pages
+  var byConnections = pages.slice().sort(function(a,b) {
+    return ((b.outbound_count||0)+(b.inbound_count||0)) - ((a.outbound_count||0)+(a.inbound_count||0));
+  });
+
+  // Find top tags
+  var topTags = Object.keys(tagCounts).sort(function(a,b){return tagCounts[b]-tagCounts[a];}).slice(0, 30);
+
+  // Compute network density
+  var totalPages = pages.length;
+  var totalLinks = s.total_links || pages.reduce(function(acc,p){return acc+(p.outbound_count||0)+(p.inbound_count||0);}, 0);
+  var maxPossible = totalPages * (totalPages - 1);
+  var density = maxPossible > 0 ? ((totalLinks / maxPossible) * 100).toFixed(2) : '0.00';
+  var avgLinksPerPage = totalPages > 0 ? (totalLinks / totalPages).toFixed(1) : '0';
+
+  // Find connected components (simple clustering)
+  var connectedTo = {};
+  pages.forEach(function(p) {
+    connectedTo[p.slug] = new Set();
+    (p.links_out || []).forEach(function(l) { connectedTo[p.slug].add(l.to); });
+    (p.backlinks || []).forEach(function(bl) { connectedTo[p.slug].add(bl.from); });
+  });
+  var visited = new Set();
+  var components = [];
+  var allSlugs = pages.map(function(p) { return p.slug; });
+  allSlugs.forEach(function(slug) {
+    if (visited.has(slug)) return;
+    var comp = [];
+    var queue = [slug];
+    while (queue.length) {
+      var cur = queue.shift();
+      if (visited.has(cur)) continue;
+      visited.add(cur);
+      comp.push(cur);
+      if (connectedTo[cur]) {
+        connectedTo[cur].forEach(function(neighbor) {
+          if (!visited.has(neighbor)) queue.push(neighbor);
+        });
+      }
+    }
+    if (comp.length > 1) components.push(comp);
+  });
+  var largestCluster = components.length ? Math.max.apply(null, components.map(function(c){return c.length;})) : 0;
+
+  // Build HTML
+  var html = '';
+
+  // Row 1: Mini insight cards
+  html += '<div class="insight-grid">';
+  var miniCards = [
+    {val: totalPages, lbl: 'Total Pages', detail: s.page_count + ' pages indexed'},
+    {val: s.score || '—', lbl: 'Brain Health', detail: 'out of 100', color: 'var(--green)'},
+    {val: density + '%', lbl: 'Network Density', detail: avgLinksPerPage + ' links/page avg', color: 'var(--primary-light)'},
+    {val: components.length, lbl: 'Clusters', detail: 'largest: ' + largestCluster + ' pages', color: 'var(--violet)'}
+  ];
+  miniCards.forEach(function(c) {
+    html += '<div class="insight-mini">' +
+      '<div class="im-val"' + (c.color ? ' style="color:' + c.color + '"' : '') + '>' + esc(c.val) + '</div>' +
+      '<div class="im-lbl">' + esc(c.lbl) + '</div>' +
+      '<div class="im-detail">' + esc(c.detail) + '</div></div>';
+  });
+  html += '</div>';
+
+  // Type distribution — horizontal bars
+  var sortedTypes = Object.keys(typeDist).sort(function(a,b){return typeDist[b]-typeDist[a];});
+  var maxTypeCount = Math.max.apply(null, Object.values(typeDist));
+  var typeColors = {concept:'var(--primary-light)', person:'var(--violet)', company:'var(--green)', meeting:'var(--accent-light)', newsletter:'var(--green)', bookmark:'var(--primary)', digest:'var(--accent)', dataset:'var(--rose)', article:'var(--violet)', quote:'var(--accent-light)', video:'var(--rose)'};
+  html += '<div class="insight-card"><div class="ic-title"><svg class="ic-icon" viewBox="0 0 16 16"><rect x="2" y="6" width="3" height="8" rx="0.5" stroke="currentColor" fill="none"/><rect x="6.5" y="3" width="3" height="11" rx="0.5" stroke="currentColor" fill="none"/><rect x="11" y="1" width="3" height="13" rx="0.5" stroke="currentColor" fill="none"/></svg> Page Type Distribution</div>' +
+    '<div class="insight-chart">';
+  sortedTypes.forEach(function(t) {
+    var pct = Math.round((typeDist[t] / maxTypeCount) * 100);
+    var color = typeColors[t] || 'var(--primary)';
+    html += '<div class="insight-bar-row" onclick="showView(\'browse\')"><span class="ibar-label">' + esc(t) + '</span>' +
+      '<div class="ibar-track"><div class="ibar-fill" style="width:' + pct + '%;background:' + color + '"></div></div>' +
+      '<span class="ibar-count">' + typeDist[t] + '</span></div>';
+  });
+  html += '</div></div>';
+
+  // Top connected pages
+  html += '<div class="insight-card"><div class="ic-title"><svg class="ic-icon" viewBox="0 0 16 16"><circle cx="5" cy="5" r="2" stroke="currentColor" fill="none"/><circle cx="11" cy="4" r="1.5" stroke="currentColor" fill="none"/><circle cx="8" cy="11" r="2.5" stroke="currentColor" fill="none"/><path d="M6 6l2 4M10 5l-1 4" stroke="currentColor"/></svg> Most Connected Pages</div>' +
+    '<div class="insight-chart">';
+  byConnections.slice(0, 10).forEach(function(p) {
+    var conns = (p.outbound_count||0) + (p.inbound_count||0);
+    var maxConn = (byConnections[0] ? (byConnections[0].outbound_count||0)+(byConnections[0].inbound_count||0) : 1);
+    var pct = Math.round((conns / maxConn) * 100);
+    html += '<div class="insight-bar-row" onclick="openPageModal(\'' + escAttr(p.slug) + '\')">' +
+      '<span class="ibar-label">' + esc(p.title || p.slug) + '</span>' +
+      '<div class="ibar-track"><div class="ibar-fill" style="width:' + pct + '%;background:var(--accent)"></div></div>' +
+      '<span class="ibar-count">' + conns + '</span></div>';
+  });
+  html += '</div></div>';
+
+  // Tag cloud
+  if (topTags.length) {
+    var maxTagCount = tagCounts[topTags[0]] || 1;
+    html += '<div class="insight-card"><div class="ic-title"><svg class="ic-icon" viewBox="0 0 16 16"><circle cx="4" cy="4" r="3" stroke="currentColor" fill="none"/><path d="M7 4l7 7-3 3-7-7L7 4z" stroke="currentColor" fill="none"/></svg> Tag Cloud</div>' +
+      '<div class="ic-tag-cloud">';
+    topTags.forEach(function(t) {
+      var ratio = tagCounts[t] / maxTagCount;
+      var size = 0.62 + ratio * 0.35;
+      var opacity = 0.5 + ratio * 0.5;
+      var color = ratio > 0.7 ? 'var(--primary-light)' : ratio > 0.4 ? 'var(--primary)' : 'var(--text-muted)';
+      html += '<span class="ic-tag" style="font-size:' + size.toFixed(2) + 'rem;opacity:' + opacity.toFixed(2) + ';color:' + color + '" onclick="document.getElementById(\'crmSearch\').value=\'' + escAttr(t) + '\';showView(\'browse\')">' + esc(t) + ' (' + tagCounts[t] + ')' + '</span>';
+    });
+    html += '</div></div>';
+  }
+
+  // Cluster info
+  html += '<div class="insight-card"><div class="ic-title"><svg class="ic-icon" viewBox="0 0 16 16"><circle cx="5" cy="5" r="2" stroke="currentColor" fill="none"/><circle cx="11" cy="5" r="2" stroke="currentColor" fill="none"/><circle cx="8" cy="11" r="2.5" stroke="currentColor" fill="none"/><path d="M6 6l2 4M10 5l-1 4" stroke="currentColor"/></svg> Network Analysis</div>' +
+    '<div style="font-size:0.75rem;line-height:1.6">' +
+    '<p><strong>Pages:</strong> ' + totalPages + '</p>' +
+    '<p><strong>Total Links:</strong> ' + totalLinks + '</p>' +
+    '<p><strong>Avg Links/Page:</strong> ' + avgLinksPerPage + '</p>' +
+    '<p><strong>Network Density:</strong> ' + density + '% (higher = more connected)</p>' +
+    '<p><strong>Connected Clusters:</strong> ' + components.length + ' groups of 2+ linked pages</p>' +
+    '<p><strong>Largest Cluster:</strong> ' + largestCluster + ' pages</p>' +
+    '<p style="margin-top:8px;color:var(--text-muted);font-size:0.65rem">A knowledge graph at ' + density + '% density with ' + components.length + ' clusters means ' +
+    (density > 10 ? 'your knowledge is well-connected. Ideas link across domains.' : 'there\'s room to grow connections. Linking notes across domains will strengthen the graph.') + '</p>' +
+    '</div></div>';
+
+  document.getElementById('insightsWrap').innerHTML = html;
+  document.getElementById('insightsCount').textContent = 'auto-generated';
+}
+
+// ─── PROJECTS / DOMAINS VIEW ───
+function renderProjects() {
+  var pages = DATA.pages || [];
+  var slugIndex = {};
+  pages.forEach(function(p) { slugIndex[p.slug] = p; });
+
+  // Simple domain clustering based on topic affinity
+  // Group concepts by tag affinity and link proximity
+  var concepts = pages.filter(function(p) { return p.type === 'concept' || p.type === 'meeting'; });
+
+  // Build clusters using simple tag-based grouping + link proximity
+  var clusters = [];
+  var assigned = new Set();
+
+  // Helper: find tags for a slug
+  function getTags(slug) {
+    var p = slugIndex[slug];
+    return p ? (p.tags || []) : [];
+  }
+
+  // Helper: find linked slugs
+  function getLinks(slug) {
+    var p = slugIndex[slug];
+    var links = [];
+    if (!p) return links;
+    (p.links_out || []).forEach(function(l) { links.push(l.to); });
+    (p.backlinks || []).forEach(function(bl) { links.push(bl.from); });
+    return links;
+  }
+
+  // Cluster by shared links first (link proximity)
+  concepts.forEach(function(c) {
+    if (assigned.has(c.slug)) return;
+    var cluster = { name: '', icon: '📂', slugs: [c.slug], people: [], companies: [] };
+    assigned.add(c.slug);
+
+    var links = getLinks(c.slug);
+    // Check other concepts that share links with this one
+    concepts.forEach(function(other) {
+      if (assigned.has(other.slug)) return;
+      var otherLinks = getLinks(other.slug);
+      var shared = links.filter(function(l) { return otherLinks.indexOf(l) !== -1; });
+      var sharedTags = getTags(c.slug).filter(function(t) { return getTags(other.slug).indexOf(t) !== -1; });
+      if (shared.length > 0 || sharedTags.length > 0) {
+        cluster.slugs.push(other.slug);
+        assigned.add(other.slug);
+      }
+    });
+
+    // If singleton with tags, group with other tagged concepts
+    if (cluster.slugs.length === 1 && getTags(c.slug).length > 0) {
+      var myTags = getTags(c.slug);
+      concepts.forEach(function(other) {
+        if (assigned.has(other.slug) || other.slug === c.slug) return;
+        var sharedTags = myTags.filter(function(t) { return getTags(other.slug).indexOf(t) !== -1; });
+        if (sharedTags.length > 0) {
+          cluster.slugs.push(other.slug);
+          assigned.add(other.slug);
+        }
+      });
+    }
+
+    // Gather related people and companies
+    cluster.slugs.forEach(function(s) {
+      getLinks(s).forEach(function(l) {
+        var t = slugIndex[l];
+        if (t && t.type === 'person' && cluster.people.indexOf(l) === -1) cluster.people.push(l);
+        if (t && t.type === 'company' && cluster.companies.indexOf(l) === -1) cluster.companies.push(l);
+      });
+    });
+
+    // Name the cluster
+    var members = cluster.slugs.map(function(s) { return slugIndex[s]; }).filter(Boolean);
+    var allTags = {};
+    members.forEach(function(m) {
+      (m.tags || []).forEach(function(t) { allTags[t] = (allTags[t]||0)+1; });
+      if (m.type === 'meeting') { /* meetings are sub-items */ }
+    });
+    var topTag = Object.keys(allTags).sort(function(a,b){return allTags[b]-allTags[a];})[0];
+
+    // Pick representative name
+    var firstTitle = members[0] ? (members[0].title || members[0].slug) : '';
+    if (firstTitle.match(/^\d{4}-\d{2}-\d{2}/)) {
+      cluster.name = topTag ? topTag.charAt(0).toUpperCase() + topTag.slice(1) : 'Temporal';
+    } else if (topTag) {
+      cluster.name = topTag.charAt(0).toUpperCase() + topTag.slice(1);
+    } else {
+      cluster.name = firstTitle.split('/').pop().replace(/-/g,' ').replace(/\b\w/g,function(l){return l.toUpperCase();});
+    }
+    cluster.icon = '📂';
+    clusters.push(cluster);
+  });
+
+  // Assign unassigned concepts as singletons
+  concepts.forEach(function(c) {
+    if (!assigned.has(c.slug)) {
+      clusters.push({
+        name: (c.title || c.slug).split('/').pop().replace(/-/g,' ').replace(/\b\w/g,function(l){return l.toUpperCase();}),
+        icon: '📄',
+        slugs: [c.slug],
+        people: [],
+        companies: []
+      });
+    }
+  });
+
+  // Sort clusters by size
+  clusters.sort(function(a,b){return b.slugs.length - a.slugs.length;});
+
+  document.getElementById('projCount').textContent = clusters.length + ' domains';
+  var grid = document.getElementById('projGrid');
+  var empty = document.getElementById('projEmpty');
+
+  if (!clusters.length) {
+    grid.innerHTML = '';
+    empty.style.display = 'block';
+    return;
+  }
+  empty.style.display = 'none';
+
+  grid.innerHTML = clusters.map(function(cl) {
+    var members = cl.slugs.map(function(s) { return slugIndex[s]; }).filter(Boolean);
+    var concepts = members.filter(function(m) { return m.type === 'concept'; });
+    var meetings = members.filter(function(m) { return m.type === 'meeting'; });
+
+    var pageChips = concepts.slice(0, 6).map(function(p) {
+      return '<span class="pc-page" onclick="event.stopPropagation();openPageModal(\'' + escAttr(p.slug) + '\')">' + esc(p.title || p.slug) + '</span>';
+    }).join('');
+    if (concepts.length > 6) pageChips += '<span class="pc-page">+' + (concepts.length - 6) + '</span>';
+
+    var meetingChips = meetings.slice(0, 3).map(function(m) {
+      return '<span class="pc-page" onclick="event.stopPropagation();openPageModal(\'' + escAttr(m.slug) + '\')" style="background:rgba(255,158,100,0.08);color:var(--accent-light);border-color:rgba(255,158,100,0.1)">' + esc(m.title || m.slug) + '</span>';
+    }).join('');
+
+    var peopleChips = cl.people.slice(0, 5).map(function(s) {
+      var t = slugIndex[s];
+      return '<span class="pc-person" onclick="event.stopPropagation();openCRMContact(\'' + escAttr(s) + '\')">' + esc((t ? t.title : s)) + '</span>';
+    }).join('');
+    if (cl.people.length > 5) peopleChips += '<span class="pc-person">+' + (cl.people.length - 5) + '</span>';
+
+    var companyChips = cl.companies.slice(0, 3).map(function(s) {
+      var t = slugIndex[s];
+      return '<span class="pc-company" onclick="event.stopPropagation();openCRMContact(\'' + escAttr(s) + '\')">' + esc((t ? t.title : s)) + '</span>';
+    }).join('');
+
+    return '<div class="proj-card" onclick="openDomainModal(\'' + escAttr(cl.name) + '\')">' +
+      '<div class="pc-header">' +
+      '<span class="pc-icon">' + cl.icon + '</span>' +
+      '<span class="pc-name">' + esc(cl.name) + '</span>' +
+      '<span class="pc-count">' + cl.slugs.length + ' item' + (cl.slugs.length !== 1 ? 's' : '') + '</span>' +
+      '</div>' +
+      (pageChips ? '<div class="pc-pages">' + pageChips + '</div>' : '') +
+      (meetingChips ? '<div class="pc-pages">' + meetingChips + '</div>' : '') +
+      (peopleChips ? '<div class="pc-people">' + peopleChips + '</div>' : '') +
+      (companyChips ? '<div class="pc-companies">' + companyChips + '</div>' : '') +
+      '</div>';
+  }).join('');
+}
+
+function openDomainModal(name) {
+  var pages = DATA.pages || [];
+  var slugIndex = {};
+  pages.forEach(function(p) { slugIndex[p.slug] = p; });
+
+  // Find cluster by name
+  var matching = pages.filter(function(p) {
+    var pn = (p.title || p.slug).split('/').pop().replace(/-/g,' ').replace(/\b\w/g,function(l){return l.toUpperCase();});
+    return pn.indexOf(name) !== -1 || (p.tags||[]).some(function(t){return t.toLowerCase().indexOf(name.toLowerCase()) !== -1;});
+  });
+
+  var html = '<div class="m-section"><div class="m-section-title">Pages in this domain</div>' +
+    '<div style="display:flex;flex-wrap:wrap;gap:6px">';
+  matching.slice(0, 20).forEach(function(p) {
+    html += '<span class="tag" onclick="openPageModal(\'' + escAttr(p.slug) + '\')" style="cursor:pointer;padding:4px 12px;font-size:0.65rem">' + esc(p.title || p.slug) + '</span>';
+  });
+  html += '</div></div>';
+  openModal(name, 'knowledge domain', html);
+}
+
+// Hook new views into showView
+var _origShowView = showView;
+showView = function(name) {
+  _origShowView(name);
+  if (name === 'crm' && !_crmRendered) { renderCRM(); _crmRendered = true; }
+  if (name === 'timeline' && !_tlRendered) { renderTimeline(); _tlRendered = true; }
+  if (name === 'insights' && !_insightsRendered) { renderInsights(); _insightsRendered = true; }
+  if (name === 'projects' && !_projRendered) { renderProjects(); _projRendered = true; }
+};
+
+// Trigger render of new views after initial load
+var _origRenderAll = renderAll;
+renderAll = function() {
+  _origRenderAll();
+  // Pre-render CRM for the Network tab
+  _crmRendered = true; // Set true so clicking Network doesn't re-render
+  renderCRM();
+};
 
 // ═══════════════════════════════════════════════
 // Write — Note Composer
