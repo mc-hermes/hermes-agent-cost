@@ -342,8 +342,7 @@
   .mobile-nav { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--surface); border-top: 1px solid var(--border); z-index: 90; padding: 4px 0 env(safe-area-inset-bottom, 8px); }
   .mobile-nav-inner { display: flex; justify-content: space-around; align-items: center; max-width: 500px; margin: 0 auto; }
   .mobile-nav-btn { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; padding: 6px 10px; min-width: 56px; min-height: 48px; border: none; background: none; color: var(--text-muted); font-size: 0.55rem; font-weight: 500; font-family: 'Inter', sans-serif; cursor: pointer; transition: color 0.15s; border-radius: 8px; -webkit-tap-highlight-color: transparent; }
-  .mobile-nav-btn .nav-icon { width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; }
-  .mobile-nav-btn .nav-icon svg { display: block; width: 100%; height: 100%; }
+  .mobile-nav-btn .nav-icon { font-size: 1.2rem; line-height: 1; }
   .mobile-nav-btn.active { color: var(--primary); }
   .mobile-nav-btn:active { background: rgba(122,162,247,0.08); }
 
@@ -687,12 +686,12 @@
 
     <!-- Desktop View Navigation -->
     <div class="tabs desktop-view-tabs" id="desktopViewTabs" style="margin-bottom:16px">
-      <button class="tab active" data-dview="today" onclick="showView('today')"><span class="tab-icon"><svg viewBox="0 0 16 16" width="14" height="14"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" fill="none"/><path d="M5 7h6M5 10h6" stroke="currentColor"/></svg></span> Today</button>
-      <button class="tab" data-dview="browse" onclick="showView('browse')"><span class="tab-icon"><svg viewBox="0 0 16 16" width="14" height="14"><rect x="2" y="2" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="9" y="2" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="2" y="9" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="9" y="9" width="5" height="5" rx="1" stroke="currentColor" fill="none"/></svg></span> Library</button>
-      <button class="tab" data-dview="ask" onclick="showView('ask')"><span class="tab-icon"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M2 2h12v9H6l-4 3V2z" stroke="currentColor" fill="none"/></svg></span> Ask</button>
-      <button class="tab" data-dview="graph" onclick="showView('graph')"><span class="tab-icon"><svg viewBox="0 0 16 16" width="14" height="14"><circle cx="5" cy="5" r="2" stroke="currentColor" fill="none"/><circle cx="11" cy="4" r="1.5" stroke="currentColor" fill="none"/><circle cx="8" cy="11" r="2.5" stroke="currentColor" fill="none"/><path d="M6 6l2 4M10 5l-1 4" stroke="currentColor"/></svg></span> Graph</button>
-      <button class="tab" data-dview="logs" onclick="showView('logs')"><span class="tab-icon"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 3h10M3 6.5h10M3 10h7M3 13h5" stroke="currentColor" stroke-linecap="round"/></svg></span> Logs</button>
-      <button class="tab write-tab-item" onclick="openWrite()"><span class="tab-icon"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 13h10M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span> Write</button>
+      <button class="tab active" data-dview="today" onclick="showView('today')"><span class="tab-icon"><svg viewBox="0 0 16 16"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" fill="none"/><path d="M5 7h6M5 10h6" stroke="currentColor"/></svg></span> Today</button>
+      <button class="tab" data-dview="browse" onclick="showView('browse')"><span class="tab-icon"><svg viewBox="0 0 16 16"><rect x="2" y="2" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="9" y="2" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="2" y="9" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="9" y="9" width="5" height="5" rx="1" stroke="currentColor" fill="none"/></svg></span> Browse</button>
+      <button class="tab" data-dview="ask" onclick="showView('ask')"><span class="tab-icon"><svg viewBox="0 0 16 16"><path d="M2 2h12v9H6l-4 3V2z" stroke="currentColor" fill="none"/></svg></span> Ask</button>
+      <button class="tab" data-dview="graph" onclick="showView('graph')"><span class="tab-icon"><svg viewBox="0 0 16 16"><circle cx="5" cy="5" r="2" stroke="currentColor" fill="none"/><circle cx="11" cy="4" r="1.5" stroke="currentColor" fill="none"/><circle cx="8" cy="11" r="2.5" stroke="currentColor" fill="none"/><path d="M6 6l2 4M10 5l-1 4" stroke="currentColor"/></svg></span> Graph</button>
+      <button class="tab" data-dview="logs" onclick="showView('logs')"><span class="tab-icon"><svg viewBox="0 0 16 16"><path d="M3 3h10M3 6.5h10M3 10h7M3 13h5" stroke="currentColor" stroke-linecap="round"/></svg></span> Logs</button>
+      <button class="tab write-tab-item" onclick="openWrite()"><span class="tab-icon"><svg viewBox="0 0 16 16"><path d="M3 13h10M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span> Write</button>
     </div>
 
     <!-- No stat cards at top level — they live inside view-today only -->
@@ -758,19 +757,19 @@
       </div>
     </div>
 
-    <!-- === VIEW: Browse (Library/Entities/Health with desktop tabs) === -->
+    <!-- === VIEW: Browse (Pages/Entities/Health with desktop tabs) === -->
     <div class="view-panel" id="view-browse">
       <div class="section">
-        <div class="section-header"><h2>Library</h2></div>
+        <div class="section-header"><h2>Browse</h2></div>
         <div class="tabs desktop-tabs-row" id="browseTabs">
-          <button class="tab active" data-btab="pages">Notes</button>
-          <button class="tab" data-btab="entities">People & Companies</button>
-          <button class="tab" data-btab="health">Status</button>
-          <button class="tab" data-btab="artifacts">Files</button>
+          <button class="tab active" data-btab="pages">Pages</button>
+          <button class="tab" data-btab="entities">Entities</button>
+          <button class="tab" data-btab="health">Health</button>
+          <button class="tab" data-btab="artifacts">Artifacts</button>
         </div>
         <div class="search-wrap" id="searchWrap">
           <span class="search-icon"><svg viewBox="0 0 16 16" width="14" height="14"><circle cx="7" cy="7" r="5" stroke="currentColor" fill="none"/><path d="M11 11l4 4" stroke="currentColor"/></svg></span>
-          <input type="text" placeholder="Search notes..." id="searchInput" oninput="filterCurrent()">
+          <input type="text" placeholder="Search pages..." id="searchInput" oninput="filterCurrent()">
         </div>
         <div id="pagesView">
           <div class="table-wrap" style="max-height:500px;overflow-y:auto" id="pagesTable"></div>
@@ -831,29 +830,29 @@
 <nav class="mobile-nav" id="mobileNav">
   <div class="mobile-nav-inner">
     <button class="mobile-nav-btn active" data-view="today" onclick="showView('today')">
-      <span class="nav-icon"><svg viewBox="0 0 16 16" width="16" height="16"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" fill="none"/><path d="M5 7h6M5 10h6" stroke="currentColor"/></svg></span> Today
+      <span class="nav-icon"><svg viewBox="0 0 16 16"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" fill="none"/><path d="M5 7h6M5 10h6" stroke="currentColor"/></svg></span> Today
     </button>
     <button class="mobile-nav-btn" data-view="browse" onclick="showView('browse')">
-      <span class="nav-icon"><svg viewBox="0 0 16 16" width="16" height="16"><rect x="2" y="2" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="9" y="2" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="2" y="9" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="9" y="9" width="5" height="5" rx="1" stroke="currentColor" fill="none"/></svg></span> Library
+      <span class="nav-icon"><svg viewBox="0 0 16 16"><rect x="2" y="2" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="9" y="2" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="2" y="9" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="9" y="9" width="5" height="5" rx="1" stroke="currentColor" fill="none"/></svg></span> Browse
     </button>
     <button class="nav-write-btn" onclick="openWrite()" title="Write a note">
-      <svg viewBox="0 0 16 16" width="22" height="22"><path d="M3 13h10M8 2v10M3 7h10" stroke="currentColor" stroke-linecap="round"/></svg>
+      <svg viewBox="0 0 16 16"><path d="M3 13h10M8 2v10M3 7h10" stroke="currentColor" stroke-linecap="round"/></svg>
     </button>
-    <button class="mobile-nav-btn" data-view="graph" onclick="showView('graph')">
-      <span class="nav-icon"><svg viewBox="0 0 16 16" width="16" height="16"><circle cx="5" cy="5" r="2" stroke="currentColor" fill="none"/><circle cx="11" cy="4" r="1.5" stroke="currentColor" fill="none"/><circle cx="8" cy="11" r="2.5" stroke="currentColor" fill="none"/><path d="M6 6l2 4M10 5l-1 4" stroke="currentColor"/></svg></span> Graph
+    <button class="mobile-nav-btn" data-view="ask" onclick="showView('ask')">
+      <span class="nav-icon"><svg viewBox="0 0 16 16"><path d="M2 2h12v9H6l-4 3V2z" stroke="currentColor" fill="none"/></svg></span> Ask
     </button>
     <button class="mobile-nav-btn" data-view="more" onclick="toggleMoreMenu()">
-      <span class="nav-icon"><svg viewBox="0 0 16 16" width="16" height="16"><circle cx="3" cy="8" r="1.5" fill="currentColor"/><circle cx="8" cy="8" r="1.5" fill="currentColor"/><circle cx="13" cy="8" r="1.5" fill="currentColor"/></svg></span> More
+      <span class="nav-icon">···</span> More
     </button>
   </div>
 </nav>
 
 <!-- More menu popover -->
 <div class="settings-popover" id="moreMenu" style="bottom:80px;left:auto;right:12px;width:180px">
-  <div class="settings-row" style="cursor:pointer" onclick="showView('browse');document.querySelector('[data-btab=entities]').click();toggleMoreMenu()">People & Companies</div>
-  <div class="settings-row" style="cursor:pointer" onclick="showView('browse');document.querySelector('[data-btab=health]').click();toggleMoreMenu()">Status</div>
-  <div class="settings-row" style="cursor:pointer" onclick="showView('browse');document.querySelector('[data-btab=artifacts]').click();toggleMoreMenu()">Files</div>
-  <div class="settings-row" style="cursor:pointer" onclick="showView('ask');toggleMoreMenu()">Ask</div>
+  <div class="settings-row" style="cursor:pointer" onclick="showView('graph');toggleMoreMenu()">Graph</div>
+  <div class="settings-row" style="cursor:pointer" onclick="showView('browse');document.querySelector('[data-btab=entities]').click();toggleMoreMenu()">Entities</div>
+  <div class="settings-row" style="cursor:pointer" onclick="showView('browse');document.querySelector('[data-btab=health]').click();toggleMoreMenu()">Health</div>
+  <div class="settings-row" style="cursor:pointer" onclick="showView('browse');document.querySelector('[data-btab=artifacts]').click();toggleMoreMenu()">Artifacts</div>
   <div class="settings-row" style="cursor:pointer" onclick="showView('logs');toggleMoreMenu()">Logs</div>
   <div class="settings-row" style="cursor:pointer" onclick="toggleSettings();toggleMoreMenu()">Settings</div>
   <div class="settings-row" style="cursor:pointer" onclick="openDocs();toggleMoreMenu()">Help</div>
@@ -1061,16 +1060,6 @@ function showView(name) {
 
   // Lazy render
   if (name === 'graph' && !graphRendered) { drawGraph(); graphRendered = true; }
-  if (name === 'graph') {
-    setTimeout(resizeCanvas, 50);
-    // Auto-fullscreen on mobile viewports
-    if (window.innerWidth <= 768) {
-      var gc = document.getElementById('graphContainer');
-      if (gc && !gc.classList.contains('graph-fullscreen')) {
-        toggleGraphFullscreen();
-      }
-    }
-  }
   if (name === 'logs') {
     if (!logsRendered) { renderLogs(); logsRendered = true; }
     startLogsPoll();
@@ -1105,11 +1094,11 @@ function renderStats() {
   const pages = DATA.pages || [];
   // Render compact chips into statChips (Today view) + fallback statGrid if present
   var chips = [
-    {svg: statIconSvgs.pages, value: s.page_count, label: 'Notes'},
-    {svg: statIconSvgs.brain, value: s.score || '—', label: 'Health' + (s.score_label ? ' · '+s.score_label : ''), click: 'showBrainScoreModal'},
-    {svg: statIconSvgs.links, value: s.total_links, label: 'Connections'},
-    {svg: statIconSvgs.graph, value: (s.graph_coverage||'').match(/[\\d.]+%/) ? (s.graph_coverage.match(/[\\d.]+%/)[0]) : '—', label: 'Mapped'},
-    {svg: statIconSvgs.embed, value: (s.embed_coverage||'').match(/[\\d.]+%/) ? (s.embed_coverage.match(/[\\d.]+%/)[0]) : '—', label: 'Searchable'}
+    {svg: statIconSvgs.pages, value: s.page_count, label: 'Pages'},
+    {svg: statIconSvgs.brain, value: s.score || '—', label: 'Score' + (s.score_label || ''), click: 'showBrainScoreModal'},
+    {svg: statIconSvgs.links, value: s.total_links, label: 'Links'},
+    {svg: statIconSvgs.graph, value: (s.graph_coverage||'').match(/[\\d.]+%/) ? (s.graph_coverage.match(/[\\d.]+%/)[0]) : '—', label: 'Graph'},
+    {svg: statIconSvgs.embed, value: (s.embed_coverage||'').match(/[\\d.]+%/) ? (s.embed_coverage.match(/[\\d.]+%/)[0]) : '—', label: 'Embed'}
   ];
   var html = chips.map(function(c) {
     return '<div class="stat-chip"' + (c.click ? ' onclick="' + c.click + '()"' : '') + '>' +
@@ -1511,18 +1500,6 @@ function drawGraphFrame() {
     });
   });
   graphEdges = drawnEdges.size;
-  const labelColor = getComputedStyle(document.body).getPropertyValue('--text').trim() || '#e2e8f0';
-  const drawnLabels = [];
-
-  function labelOverlaps(x, y, w, h) {
-    for (var i = 0; i < drawnLabels.length; i++) {
-      var b = drawnLabels[i];
-      if (x < b.x + b.w && x + w > b.x && y < b.y + b.h && y + h > b.y) return true;
-    }
-    return false;
-  }
-
-  // First pass: draw nodes (circles only, no labels)
   graphNodes.forEach(n => {
     const color = graphColors[n.type] || '#94a3b8';
     const size = Math.max(4, 3 + n.links.length);
@@ -1534,35 +1511,22 @@ function drawGraphFrame() {
     ctx.strokeStyle = isHovered ? color : 'rgba(255,255,255,0)'; ctx.lineWidth = 2; ctx.stroke();
     ctx.beginPath(); ctx.arc(n.x, n.y, r, 0, Math.PI*2);
     ctx.strokeStyle = 'rgba(0,0,0,0.3)'; ctx.lineWidth = 0.5; ctx.stroke();
-  });
-
-  // Second pass: draw labels — always visible, collision-aware, sorted by importance
-  if (graphZoom >= 0.55) {
-    var sortedNodes = graphNodes.slice().sort(function(a,b){ return (b.links.length||0)-(a.links.length||0); });
-    sortedNodes.forEach(function(n) {
-      var isHovered = canvas._hoveredNode === n;
-      var maxLen = isHovered ? (W < 800 ? 20 : 28) : (W < 800 ? 10 : 14);
-      var rawTitle = n.title || n.slug.split('/').pop().replace(/-/g,' ').replace(/_/g,' ');
-      var label = rawTitle.length > maxLen ? rawTitle.slice(0,maxLen-1)+'…' : rawTitle;
-      var fontSize = isHovered ? 10 : 8;
-      ctx.font = fontSize + 'px "Inter", sans-serif';
+    if (isHovered) {
+      const maxLen = W < 800 ? 14 : 20;
+      const label = n.title.length > maxLen ? n.title.slice(0,maxLen-1)+'…' : n.title;
+      const labelColor = getComputedStyle(document.body).getPropertyValue('--text').trim() || '#e2e8f0';
+      ctx.font = '10px "Inter", sans-serif';
+      ctx.fillStyle = labelColor;
       ctx.textAlign = 'center';
-      var metrics = ctx.measureText(label);
-      var pad = isHovered ? 5 : 3;
-      var lw = metrics.width + pad*2;
-      var lh = fontSize + 4;
-      var lx = n.x - lw/2;
-      var ly = n.y + (Math.max(4,3+n.links.length)) + 10;
-      if (!isHovered && labelOverlaps(lx, ly, lw, lh)) return;
-      drawnLabels.push({x: lx, y: ly, w: lw, h: lh});
-      ctx.fillStyle = isHovered ? 'rgba(15,23,42,0.9)' : 'rgba(15,23,42,0.65)';
-      ctx.beginPath();
-      if (ctx.roundRect) { ctx.roundRect(lx, ly, lw, lh, 3); ctx.fill(); }
-      else { ctx.fillRect(lx, ly, lw, lh); }
-      ctx.fillStyle = isHovered ? '#fff' : labelColor;
-      ctx.fillText(label, n.x, ly + fontSize - 1);
-    });
-  }
+      const metrics = ctx.measureText(label);
+      const pad = 4;
+      const lx = n.x - metrics.width/2 - pad, ly = n.y + r + 16;
+      ctx.fillStyle = 'rgba(15,23,42,0.85)';
+      ctx.beginPath(); ctx.roundRect(lx, ly, metrics.width + pad*2, 16, 4); ctx.fill();
+      ctx.fillStyle = labelColor;
+      ctx.fillText(label, n.x, n.y + r + 27);
+    }
+  });
   ctx.restore();
   if (graphZoom !== 1) {
     ctx.fillStyle = 'rgba(148,163,184,0.5)'; ctx.font = '9px "JetBrains Mono", monospace';
@@ -1794,12 +1758,11 @@ function renderPages(filter) {
     document.getElementById('pagesTable').innerHTML = '<div class="empty"><p>No pages match</p></div>';
     return;
   }
-  document.getElementById('pagesTable').innerHTML = `<table><thead><tr><th>Note</th><th>Type</th><th>Links</th><th>Updated</th></tr></thead><tbody>${
+  document.getElementById('pagesTable').innerHTML = `<table><thead><tr><th>Page</th><th>Type</th><th>Links</th><th>Updated</th></tr></thead><tbody>${
     pages.map(p => {
       const lc = p.outbound_count + p.inbound_count;
-      const displayTitle = p.title || p.slug.split('/').pop().replace(/-/g,' ').replace(/_/g,' ');
       return `<tr class="page-row" onclick="openPageModal('${escAttr(p.slug)}')">
-        <td><span class="slug-link" style="font-weight:600;font-size:0.78rem">${esc(displayTitle)}</span><br><span style="font-size:0.6rem;color:var(--text-muted);font-family:'JetBrains Mono',monospace">${esc(p.slug)}</span></td>
+        <td><span class="slug-link">${esc(p.slug)}</span><br><span style="font-size:0.65rem;color:var(--text-muted)">${esc(p.title||'')}</span></td>
         <td><span class="type-tag ${p.type||'concept'}">${p.type||'concept'}</span></td>
         <td><span class="link-badge ${lc>0?'has-links':''}">${lc>0 ? '🔗 '+lc : '—'}</span></td>
         <td>${p.updated||''}</td>
@@ -2016,7 +1979,7 @@ function showBrowseTab(tab) {
   document.getElementById('entitiesView').style.display = tab==='entities'?'':'none';
   document.getElementById('healthView').style.display = tab==='health'?'':'none';
   document.getElementById('artifactsView').style.display = tab==='artifacts'?'':'none';
-  document.getElementById('searchInput').placeholder = tab==='pages' ? 'Search notes...' : tab==='entities' ? 'Search people & companies...' : tab==='artifacts' ? 'Search files...' : '';
+  document.getElementById('searchInput').placeholder = tab==='pages' ? 'Search pages...' : tab==='entities' ? 'Search entities...' : tab==='artifacts' ? 'Search artifacts...' : '';
   if (tab === 'artifacts') { renderArtifacts(); }
 }
 
@@ -2061,13 +2024,13 @@ function openPageModal(slug) {
       <div class="m-content">${cleanBody}</div></div>`;
   }
   if ((page.links_out||[]).length) {
-    html += `<div class="m-section"><div class="m-section-title">References (${page.links_out.length})</div><div class="m-links">${
+    html += `<div class="m-section"><div class="m-section-title">Links Out (${page.links_out.length})</div><div class="m-links">${
       page.links_out.map(l => `<div class="m-link" onclick="event.stopPropagation();openPageModal('${escAttr(l.to)}')">
         <span class="dir">→</span><span>${esc(l.text || l.to)}</span><span class="ltype">${esc(l.type)}</span>
       </div>`).join('')}</div></div>`;
   }
   if ((page.backlinks||[]).length) {
-    html += `<div class="m-section"><div class="m-section-title">Referenced by (${page.backlinks.length})</div><div class="m-links">${
+    html += `<div class="m-section"><div class="m-section-title">Backlinks (${page.backlinks.length} pages link here)</div><div class="m-links">${
       page.backlinks.map(l => `<div class="m-link" onclick="event.stopPropagation();openPageModal('${escAttr(l.from)}')">
         <span class="dir">←</span><span>${esc(l.from)}</span><span class="ltype">${esc(l.type)}</span>
       </div>`).join('')}</div></div>`;
@@ -2127,12 +2090,12 @@ function filterCurrent() {
 
 // ─── DOCS ───
 const DOCS = {
-  overview: `<h2>gbrain Dashboard</h2><p>Your AI-powered knowledge base — always up to date, always searchable. Forward an email, save a note, and your brain maps the connections for you.</p><h3>What You See</h3><ul><li><strong>Today</strong> — your latest notes, meetings, saved items, and the weekly digest</li><li><strong>Knowledge Graph</strong> — a living map of how your people, projects, and ideas connect</li><li><strong>Library</strong> — every note and file, searchable and clickable</li><li><strong>People & Companies</strong> — contact details and history at your fingertips</li><li><strong>Status</strong> — 50+ automated checks keeping your brain healthy</li></ul><div class="callout"><strong>New?</strong> Click any note to open it, then follow the links. It's like Wikipedia for everything your business knows.</div>`,
-  how: `<h2>How It Works</h2><p>Two simple ingredients:</p><h3>1. The Brain (gbrain)</h3><p>A knowledge base on your computer or private server. Every meeting, client detail, project note, or article you save goes straight in.</p><h3>2. The Dashboard</h3><p>A single web page that reads your brain and shows it as a searchable library, a visual knowledge graph, and a daily feed of what's new.</p><div class="callout"><strong>The magic:</strong> You keep doing your work. The dashboard shows you patterns and connections you didn't know you had.</div>`,
-  features: `<h2>Features</h2><h3>Knowledge Graph</h3><p>Every note is a node, every reference is an edge. Click any node to open it. Labels are always visible so you can scan your knowledge at a glance.</p><h3>Note Library</h3><p>All your notes in one table — searchable by title, type, or content. Click to open with full detail, tags, and linked references.</p><h3>AI Assistant</h3><p>Ask questions in plain English. The assistant searches your brain and synthesizes answers with citations back to your notes.</p><h3>Mobile Ready</h3><p>Bottom nav for Today, Library, Graph. Write button always one tap away. Graph opens fullscreen on phones for easy exploration.</p>`,
-  setup: `<h2>Setup Recipe</h2><h3>Step 1 — Generate the Data</h3><p><code>gbrain export --dir /tmp/brain-export</code> + enrichment script → <code>gbrain-data.json</code></p><h3>Step 2 — Upload Two Files</h3><p>Drop <code>gbrain-dashboard.html</code> and <code>gbrain-data.json</code> onto GitHub Pages, Netlify, or any static host.</p><h3>Step 3 — Automate</h3><p>Set a cron job that re-runs Step 1 on a schedule.</p><div class="callout"><strong>Done.</strong> Three steps, two files. No servers, no databases, no monthly fees.</div>`,
-  clients: `<h2>For Solopreneurs & SMBs</h2><h3>Who This Is For</h3><p>If you run your own business, coach clients, manage projects, or just have too many things to remember — this is your second brain.</p><h3>What You Get</h3><ul><li><strong>Never lose a conversation</strong> — every meeting note, client detail, and project update in one place</li><li><strong>Client context before every call</strong> — open the dashboard on your phone, search the name, everything's there</li><li><strong>See how your ideas connect</strong> — the graph shows patterns you'd never spot in a folder of files</li><li><strong>Your knowledge, not a platform's</strong> — your data lives on your machine. No vendor lock-in, no monthly subscription</li></ul><div class="callout"><strong>Example:</strong> Zaim Mohzani, a career coach in Kuala Lumpur, uses his gbrain dashboard to track clients, workshops, speaking engagements, and AI literacy projects — all connected in one visual map.</div>`,
-  scaling: `<h2>Scaling & Limits</h2><p>The dashboard — HTML, JSON, everything — is under 200 KB. GitHub Pages allows up to 1 GB.</p><div class="callout"><strong>60 notes ≈ 30 KB JSON.</strong> At ~0.5 KB per note, you'd need roughly 2 million notes to hit GitHub's 1 GB site limit. You won't.</div>`,
+  overview: `<h2>gbrain Dashboard</h2><p>A live control panel for your AI-powered knowledge base. This dashboard shows everything your company knows — people, companies, meetings, concepts, infrastructure — and how it all connects.</p><h3>What You're Looking At</h3><ul><li><strong>Stats bar</strong> — page count, brain health score, link coverage, embedding status</li><li><strong>Knowledge Graph</strong> — a visual map of how your ideas, people, and companies connect</li><li><strong>Page Browser</strong> — every page in your brain, searchable and clickable</li><li><strong>Entity Cards</strong> — people and companies with contact details</li><li><strong>Health Panel</strong> — 50+ automated checks monitoring your brain's status</li></ul><div class="callout"><strong>New?</strong> Start by clicking any page name, then follow the links. It's Wikipedia-style browsing for your own company knowledge.</div>`,
+  how: `<h2>How It Works</h2><p>This dashboard has two ingredients, both dead simple:</p><h3>Ingredient 1 — The Brain (gbrain)</h3><p>A knowledge base that lives on your computer or VPS. Every meeting, client detail, project note, or piece of research goes into the brain.</p><h3>Ingredient 2 — The Dashboard</h3><p>A single HTML file and a JSON data file. Combined they're about 50KB — smaller than a photo. The dashboard reads the brain data and displays it with a live knowledge graph, clickable modals, and instant search.</p><div class="callout"><strong>The magic:</strong> You keep taking notes. The dashboard shows you a living map of everything your company knows. No maintenance required.</div>`,
+  features: `<h2>Features</h2><h3>Knowledge Graph</h3><p>A force-directed graph showing all your pages as connected nodes. Click a node to open its detail panel.</p><h3>Clickable Modals</h3><p>Click any page row to see its full content, tags, outgoing links, and backlinks.</p><h3>Health Monitoring</h3><p>50+ automated checks — embedding coverage, graph integrity, schema version, reranker health.</p><h3>Mobile Navigation</h3><p>On phones, a fixed bottom nav bar lets you swap between Today, Browse, Ask, Graph, and More with one tap.</p>`,
+  setup: `<h2>Setup Recipe</h2><h3>Step 1 — Generate the Data</h3><p><code>gbrain export --dir /tmp/brain-export</code> + enrichment script → <code>gbrain-data.json</code></p><h3>Step 2 — Upload Two Files</h3><p>Drop <code>gbrain-dashboard.html</code> and <code>gbrain-data.json</code> onto GitHub Pages, Netlify, or any static host.</p><h3>Step 3 — Automate</h3><p>Set a cron job that re-runs Step 1 on a schedule.</p><div class="callout"><strong>That's it.</strong> Three steps, two files, no servers, no databases, no monthly fees.</div>`,
+  clients: `<h2>For Your Clients</h2><h3>The Pitch</h3><p>"Here's what we'll do. You keep taking notes the way you normally do. We'll set up a brain that stores all of that in a way that's searchable and connected. Then we'll give you a dashboard you can open on any device."</p><h3>What They Get</h3><ul><li><strong>Company memory</strong> that doesn't walk out when someone quits</li><li><strong>Client context</strong> at their fingertips before every call</li><li><strong>Visual map</strong> of how projects, people, and ideas connect</li><li><strong>Zero maintenance</strong> — it updates itself</li></ul>`,
+  scaling: `<h2>Scaling & Limits</h2><p>This dashboard — HTML, JSON, everything — is ~440 KB total. GitHub Pages allows up to 1 GB.</p><div class="callout"><strong>53 brain pages = ~30 KB JSON.</strong> At ~0.6 KB per page, you'd need roughly 1.6 million pages to hit GitHub's 1 GB site limit.</div>`,
   shortcuts: `<h2>Keyboard Shortcuts</h2><table style="width:100%;font-size:0.78rem;border-collapse:collapse"><tr><td style="padding:8px 12px;border-bottom:1px solid rgba(255,255,255,0.04)"><span class="kbd">?</span></td><td>Open this help</td></tr><tr><td style="padding:8px 12px;border-bottom:1px solid rgba(255,255,255,0.04)"><span class="kbd">Esc</span></td><td>Close modal or panel</td></tr><tr><td style="padding:8px 12px"><span class="kbd">Ctrl+K</span></td><td>Focus search</td></tr></table><h3>Graph</h3><ul><li><strong>Scroll</strong> — zoom in/out (pinch on touch)</li><li><strong>Drag background</strong> — pan</li><li><strong>Drag node</strong> — reposition</li><li><strong>Click node</strong> — open detail modal</li></ul>`
 };
 let activeDoc = 'overview';
