@@ -1,0 +1,3 @@
+*.bak-*
+*-prompt.md
+.claude/
