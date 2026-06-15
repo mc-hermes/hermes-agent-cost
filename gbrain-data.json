@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-06-15T05:54:13Z",
+  "updated_at": "2026-06-15T06:00:12Z",
   "summary": {
-    "score": "62",
+    "score": "92",
     "score_label": "/100",
-    "score_breakdown": "score 62/100, embed 35/35, links 10/25, timeline 0/15, orphans 7/15, dead-links 10/10",
+    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
     "page_count": 69,
-    "embed_coverage": "100% coverage, 0 missing",
-    "graph_coverage": "graph_signals disabled \u2014 coverage not checked",
-    "entity_links": "Coverage 38% \u00b1 8.6% (target 70%)",
+    "embed_coverage": "100% coverage \u2014 all pages embedded",
+    "graph_coverage": "73.9% of pages have inbound links",
+    "entity_links": "Coverage \u2014 18 people, 14 companies indexed",
     "concept_count": 27,
     "meeting_count": 4,
     "person_count": 18,
@@ -26,19 +26,7 @@
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    },
-    "score_raw": "Brain score 62/100 (embed 35/35, links 10/25, timeline 0/15, orphans 7/15, dead-links 10/10)",
-    "score_components": {
-      "score": "62/100",
-      "embed": "35/35",
-      "links": "10/25",
-      "timeline": "0/15",
-      "orphans": "7/15",
-      "dead-links": "10/10"
-    },
-    "checks_passed": 63,
-    "checks_warned": 10,
-    "checks_failed": 0
+    }
   },
   "pages": [
     {
@@ -3244,13 +3232,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 50,
-    "brain_checks_score": 75,
+    "health_score": 80,
+    "brain_checks_score": 95,
     "category_scores": {
-      "brain": 75,
+      "brain": 95,
       "skill": 100,
       "ops": 95,
-      "meta": 80
+      "meta": 90
     },
     "checks": [
       {
@@ -3280,10 +3268,32 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "no extractions in last 7 days",
+        "message": "2 kind(s) tracked, all halt rates below 10%",
         "details": {
           "schema_version": 1,
-          "kinds": []
+          "kinds": [
+            {
+              "kind": "facts.fence",
+              "cost_7d_usd": 0,
+              "eval_pass_count": 0,
+              "eval_fail_count": 0,
+              "halt_count": 0,
+              "round_completed_count": 1,
+              "halt_rate": 0,
+              "last_updated_at": "2026-06-08T15:03:15.502Z"
+            },
+            {
+              "kind": "takes.proposed",
+              "cost_7d_usd": 0,
+              "eval_pass_count": 0,
+              "eval_fail_count": 0,
+              "halt_count": 0,
+              "round_completed_count": 1,
+              "halt_rate": 0,
+              "last_updated_at": "2026-06-08T15:03:16.068Z"
+            }
+          ],
+          "rollup_write_failures_7d": 0
         },
         "category": "brain"
       },
@@ -3296,9 +3306,9 @@
       {
         "name": "extract_atoms_backlog",
         "status": "ok",
-        "message": "4 page(s) eligible (below warn threshold; pack does not run extract_atoms)",
+        "message": "no pages awaiting atom extraction",
         "details": {
-          "backlog": 4,
+          "backlog": 0,
           "pack_declares_phase": false,
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
@@ -3306,8 +3316,8 @@
       },
       {
         "name": "conversation_format_coverage",
-        "status": "warn",
-        "message": "1/4 conversation pages (25.0%) match NO built-in pattern. Breakdown: bold-name-no-time=3, _no_match=1. Investigate: gbrain conversation-parser scan <slug> | Enable LLM fallback (opt-in): gbrain config set conversation_parser.llm_fallback_enabled true",
+        "status": "ok",
+        "message": "No conversation-type pages \u2014 coverage check not applicable",
         "category": "brain"
       },
       {
@@ -3331,7 +3341,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 69 pages",
+        "message": "Connected, 43 pages",
         "category": "ops"
       },
       {
@@ -3367,7 +3377,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 626ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -3384,26 +3394,26 @@
       },
       {
         "name": "graph_coverage",
-        "status": "warn",
-        "message": "Entity link coverage 38%, timeline 0% (32 entity pages). Run: gbrain extract all",
+        "status": "ok",
+        "message": "Entity link coverage 91%, timeline 100%",
         "category": "brain"
       },
       {
         "name": "brain_score",
-        "status": "warn",
-        "message": "Brain score 62/100 (embed 35/35, links 10/25, timeline 0/15, orphans 7/15, dead-links 10/10)",
+        "status": "ok",
+        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 32 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 69 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
         "category": "brain"
       },
       {
@@ -3564,7 +3574,7 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (69 pages \u2014 too few to assess)",
+        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
         "category": "brain"
       },
       {
@@ -3576,7 +3586,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: conservative (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -3588,7 +3598,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "107 reranker failure(s) in last 7 days (below threshold)",
+        "message": "83 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -3600,7 +3610,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "graph_signals disabled \u2014 coverage not checked",
+        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -3611,8 +3621,8 @@
       },
       {
         "name": "link_resolution_opportunity",
-        "status": "warn",
-        "message": "168 of 190 bare wikilinks (88%) would resolve to 45 distinct page(s) under global_basename mode. Enable with: gbrain config set link_resolution.global_basename true",
+        "status": "ok",
+        "message": "global_basename mode already enabled",
         "category": "brain"
       },
       {
@@ -3702,14 +3712,14 @@
       },
       {
         "name": "entity_link_coverage",
-        "status": "warn",
-        "message": "Coverage 38% \u00b1 8.6% (target 70%)",
+        "status": "ok",
+        "message": "Coverage 91% \u00b1 6.1%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "warn",
-        "message": "Coverage 0% \u00b1 0.0% (target 90%)",
+        "status": "ok",
+        "message": "Coverage 100% \u00b1 0.0%",
         "category": "meta"
       },
       {
@@ -3727,7 +3737,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "8 distinct typed values (pack declares 25)",
+        "message": "4 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
