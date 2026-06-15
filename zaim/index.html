@@ -70,8 +70,10 @@
     font-feature-settings: 'tnum' 1;
   }
 
-  /* ─── Grid ─── */
-  .app { max-width: 1200px; margin: 0 auto; padding: 32px 24px 64px; }
+  /* ─── Layout with Sidebar ─── */
+  .app-shell { display: flex; min-height: 100vh; }
+  .app { flex: 1; min-width: 0; padding: 32px 24px 64px; max-width: 1100px; }
+  @media (min-width: 769px) { .app { margin-left: 0; } }
 
   /* ─── Header ─── */
   .header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 32px; }
@@ -86,6 +88,24 @@
   .refresh { background: var(--surface2); border: 1px solid var(--border); color: var(--text-muted); padding: 6px 16px; border-radius: 8px; cursor: pointer; font-size: 0.7rem; font-family: 'Inter', sans-serif; transition: all 0.15s; }
   .refresh:hover { color: var(--text); border-color: var(--primary); }
   .last-updated { font-size: 0.65rem; color: var(--text-muted); }
+
+  /* ─── Left Sidebar (Desktop) ─── */
+  .sidebar { width: 64px; flex-shrink: 0; background: var(--surface); border-right: 1px solid var(--border); display: flex; flex-direction: column; align-items: center; padding: 20px 0; position: fixed; top: 0; left: 0; bottom: 0; z-index: 80; overflow-y: auto; gap: 2px; transition: width 0.2s ease; box-shadow: 2px 0 12px rgba(0,0,0,0.15); }
+  .sidebar:hover { width: 180px; }
+  .sidebar-logo { width: 36px; height: 36px; border-radius: 10px; background: linear-gradient(135deg, var(--primary), var(--primary-light)); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; flex-shrink: 0; }
+  .sidebar-logo svg { width: 20px; height: 20px; color: #1a1b26; }
+  .sidebar-item { width: 100%; display: flex; align-items: center; gap: 12px; padding: 10px 14px; border: none; background: none; color: var(--text-muted); font-size: 0.72rem; font-family: 'Inter', sans-serif; cursor: pointer; transition: all 0.15s; border-left: 2px solid transparent; white-space: nowrap; overflow: hidden; }
+  .sidebar-item:hover { color: var(--text); background: rgba(122,162,247,0.06); }
+  .sidebar-item.active { color: var(--primary); background: rgba(122,162,247,0.1); border-left-color: var(--primary); }
+  .sidebar-item .s-icon { width: 20px; height: 20px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+  .sidebar-item .s-icon svg { width: 16px; height: 16px; }
+  .sidebar-item .s-label { opacity: 0; transition: opacity 0.15s; }
+  .sidebar:hover .sidebar-item .s-label { opacity: 1; }
+  .sidebar-spacer { flex: 1; }
+  .sidebar-item.write-btn { margin-top: 8px; color: var(--primary) !important; font-weight: 600; }
+  .sidebar-item.write-btn:hover { background: rgba(122,162,247,0.15); }
+  @media (max-width: 768px) { .sidebar { display: none; } .app-shell { margin-left: 0; } }
+  @media (min-width: 769px) { .app-shell { margin-left: 64px; } }
 
   /* ─── Stat Chips (compact, Today-only, horizontal scroll on mobile) ─── */
   .stat-chips { display: flex; gap: 8px; margin-bottom: 16px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: 4px 0; }
@@ -278,8 +298,12 @@
   .graph-container canvas { width: 100%; height: 380px; display: block; border-radius: var(--radius-sm); cursor: grab; background: var(--graph-bg); touch-action: none; }
   .graph-container canvas:active { cursor: grabbing; }
   .graph-container canvas.dragging-node { cursor: grabbing; }
-  .graph-reset { position: absolute; top: 16px; right: 16px; background: var(--surface2); border: 1px solid var(--border); color: var(--text-muted); padding: 4px 12px; border-radius: 6px; cursor: pointer; font-size: 0.6rem; font-family: 'Inter', sans-serif; transition: all 0.15s; }
-  .graph-fullscreen-btn { position: absolute; top: 16px; right: 70px; background: var(--surface2); border: 1px solid var(--border); color: var(--text-muted); padding: 4px 8px; border-radius: 6px; cursor: pointer; font-size: 0.6rem; font-family: 'Inter', sans-serif; display: none; }
+  .graph-toolbar { display: flex; align-items: center; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+  .graph-toolbar .graph-reset, .graph-toolbar .graph-fullscreen-btn { position: static; }
+  .graph-reset { background: var(--surface2); border: 1px solid var(--border); color: var(--text-muted); padding: 4px 12px; border-radius: 6px; cursor: pointer; font-size: 0.6rem; font-family: 'Inter', sans-serif; transition: all 0.15s; }
+  .graph-reset:hover { color: var(--text); border-color: var(--primary); }
+  .graph-fullscreen-btn { background: var(--surface2); border: 1px solid var(--border); color: var(--text-muted); padding: 4px 8px; border-radius: 6px; cursor: pointer; font-size: 0.6rem; font-family: 'Inter', sans-serif; transition: all 0.15s; }
+  .graph-fullscreen-btn:hover { color: var(--text); border-color: var(--primary); }
   .graph-legend { display: flex; gap: 12px; margin-top: 8px; font-size: 0.6rem; color: var(--text-muted); flex-wrap: wrap; align-items: center; }
   .graph-legend .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 4px; vertical-align: middle; }
 
@@ -493,11 +517,11 @@
     .mobile-nav { display: block; }
     .desktop-tabs-row { display: none; }
     .desktop-view-tabs { display: none; }
-    .graph-container canvas { height: 280px; }
-    .graph-fullscreen-btn { display: block; }
-    .graph-fullscreen { position: fixed; inset: 0; z-index: 300; background: var(--bg); padding: 16px; }
-    .graph-fullscreen canvas { height: calc(100vh - 80px) !important; }
-    .graph-fullscreen .graph-close { position: fixed; top: 16px; right: 16px; z-index: 301; background: var(--surface2); border: 1px solid var(--border); color: var(--text); padding: 8px 16px; border-radius: 8px; cursor: pointer; font-size: 0.8rem; font-family: 'Inter', sans-serif; }
+    .graph-container canvas { height: 340px; }
+    .graph-fullscreen-btn { display: block; background: var(--surface2); border: 1px solid var(--border); color: var(--text-muted); padding: 4px 8px; border-radius: 6px; cursor: pointer; font-size: 0.6rem; font-family: 'Inter', sans-serif; }
+    .graph-fullscreen { position: fixed; inset: 0; z-index: 300; background: var(--bg); padding: 16px; display: flex; flex-direction: column; }
+    .graph-fullscreen canvas { height: calc(100vh - 120px) !important; flex: 1; }
+    .graph-fullscreen .graph-close { background: var(--surface2); border: 1px solid var(--border); color: var(--text); padding: 8px 16px; border-radius: 8px; cursor: pointer; font-size: 0.8rem; font-family: 'Inter', sans-serif; align-self: flex-end; margin-bottom: 8px; }
     .entity-grid { grid-template-columns: 1fr; }
     .health-grid { grid-template-columns: 1fr; }
     .table-wrap { max-height: none !important; }
@@ -657,6 +681,22 @@
 </style>
 </head>
 <body>
+<div class="app-shell">
+
+<!-- Left Sidebar -->
+<nav class="sidebar" id="sidebar">
+  <div class="sidebar-logo"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" stroke="currentColor" fill="none" stroke-width="1.5"/><path d="M5 8c0-2 1-3 3-3s3 1 3 3-1 3-3 3-3-1-3-3z" stroke="currentColor" fill="none"/></svg></div>
+  <button class="sidebar-item active" data-view="today" onclick="showView('today')"><span class="s-icon"><svg viewBox="0 0 16 16"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" fill="none"/><path d="M5 7h6M5 10h6" stroke="currentColor"/></svg></span><span class="s-label">Today</span></button>
+  <button class="sidebar-item" data-view="browse" onclick="showView('browse')"><span class="s-icon"><svg viewBox="0 0 16 16"><rect x="2" y="2" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="9" y="2" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="2" y="9" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="9" y="9" width="5" height="5" rx="1" stroke="currentColor" fill="none"/></svg></span><span class="s-label">Library</span></button>
+  <button class="sidebar-item" data-view="graph" onclick="showView('graph')"><span class="s-icon"><svg viewBox="0 0 16 16"><circle cx="5" cy="5" r="2" stroke="currentColor" fill="none"/><circle cx="11" cy="4" r="1.5" stroke="currentColor" fill="none"/><circle cx="8" cy="11" r="2.5" stroke="currentColor" fill="none"/><path d="M6 6l2 4M10 5l-1 4" stroke="currentColor"/></svg></span><span class="s-label">Graph</span></button>
+  <button class="sidebar-item" data-view="ask" onclick="showView('ask')"><span class="s-icon"><svg viewBox="0 0 16 16"><path d="M2 2h12v9H6l-4 3V2z" stroke="currentColor" fill="none"/></svg></span><span class="s-label">Ask</span></button>
+  <button class="sidebar-item" data-view="logs" onclick="showView('logs')"><span class="s-icon"><svg viewBox="0 0 16 16"><path d="M3 3h10M3 6.5h10M3 10h7M3 13h5" stroke="currentColor" stroke-linecap="round"/></svg></span><span class="s-label">Activity</span></button>
+  <div class="sidebar-spacer"></div>
+  <button class="sidebar-item write-btn" onclick="openWrite()"><span class="s-icon"><svg viewBox="0 0 16 16"><path d="M3 13h10M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><span class="s-label">Write</span></button>
+  <button class="sidebar-item" onclick="toggleSettings()"><span class="s-icon"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="2.5" stroke="currentColor" fill="none"/><path d="M8 2v1.5M8 12.5v1.5M2 8h1.5M12.5 8h1.5" stroke="currentColor"/></svg></span><span class="s-label">Settings</span></button>
+  <button class="sidebar-item" onclick="openDocs()"><span class="s-icon">?</span><span class="s-label">Help</span></button>
+</nav>
+
 <main>
 <div class="app">
 
@@ -739,15 +779,17 @@
       <div class="graph-container" id="graphContainer">
         <div class="section-header"><h2>Knowledge Graph</h2><span class="count" id="graphCount"></span></div>
         <canvas id="graphCanvas"></canvas>
-        <button class="graph-reset" onclick="resetGraph()" title="Reset positions">↺ Reset</button>
-        <button class="graph-fullscreen-btn" onclick="toggleGraphFullscreen()" title="Fullscreen">⛶</button>
-        <div class="graph-legend">
-          <span><span class="dot" style="background:var(--primary-light)"></span> Concept</span>
-          <span><span class="dot" style="background:var(--violet)"></span> Person</span>
-          <span><span class="dot" style="background:var(--green)"></span> Company</span>
-          <span><span class="dot" style="background:var(--accent-light)"></span> Meeting</span>
-          <span><span class="dot" style="background:var(--rose)"></span> Daily</span>
-          <span style="opacity:0.4;margin-left:8px">· zoom · pan · drag · click</span>
+        <div class="graph-toolbar">
+          <button class="graph-reset" onclick="resetGraph()" title="Reset positions">↺ Reset</button>
+          <button class="graph-fullscreen-btn" onclick="toggleGraphFullscreen()" title="Fullscreen">⛶ Expand</button>
+          <div class="graph-legend">
+            <span><span class="dot" style="background:var(--primary-light)"></span> Concept</span>
+            <span><span class="dot" style="background:var(--violet)"></span> Person</span>
+            <span><span class="dot" style="background:var(--green)"></span> Company</span>
+            <span><span class="dot" style="background:var(--accent-light)"></span> Meeting</span>
+            <span><span class="dot" style="background:var(--rose)"></span> Daily</span>
+            <span style="opacity:0.4;margin-left:8px">· zoom · pan · drag · click</span>
+          </div>
         </div>
       </div>
     </div>
@@ -1039,7 +1081,12 @@ function showView(name) {
   const navBtn = document.querySelector('.mobile-nav-btn[data-view="' + name + '"]');
   if (navBtn) navBtn.classList.add('active');
 
-  // Update desktop view tabs
+  // Update sidebar nav
+  document.querySelectorAll('#sidebar .sidebar-item').forEach(b => b.classList.remove('active'));
+  const sidebarBtn = document.querySelector('#sidebar .sidebar-item[data-view="' + name + '"]');
+  if (sidebarBtn) sidebarBtn.classList.add('active');
+
+  // Update desktop view tabs (kept for backward compat)
   document.querySelectorAll('#desktopViewTabs .tab').forEach(t => t.classList.remove('active'));
   const dt = document.querySelector('#desktopViewTabs .tab[data-dview="' + name + '"]');
   if (dt) dt.classList.add('active');
@@ -1048,15 +1095,13 @@ function showView(name) {
   document.getElementById('moreMenu').classList.remove('active');
 
   // Lazy render
-  if (name === 'graph' && !graphRendered) { drawGraph(); graphRendered = true; }
   if (name === 'graph') {
+    var firstRender = !graphRendered;
+    if (firstRender) { drawGraph(); graphRendered = true; }
     setTimeout(resizeCanvas, 50);
-    // Auto-fullscreen on mobile viewports
-    if (window.innerWidth <= 768) {
-      var gc = document.getElementById('graphContainer');
-      if (gc && !gc.classList.contains('graph-fullscreen')) {
-        toggleGraphFullscreen();
-      }
+    // Set mobile-friendly initial zoom for smaller viewports on first render
+    if (window.innerWidth <= 768 && firstRender) {
+      setTimeout(function() { graphZoom = 1.25; graphPanX = -40; graphPanY = -20; drawGraphFrame(); }, 100);
     }
   }
   if (name === 'logs') {
@@ -1508,9 +1553,11 @@ function drawGraphFrame() {
   }
 
   // First pass: draw nodes (circles only, no labels)
+  var _isMobileG = graphW < 600 || (typeof window !== 'undefined' && window.innerWidth <= 768);
   graphNodes.forEach(n => {
     const color = graphColors[n.type] || '#94a3b8';
-    const size = Math.max(4, 3 + n.links.length);
+    var baseSize = _isMobileG ? 5 : 4;
+    const size = Math.max(baseSize, baseSize - 1 + n.links.length);
     const isHovered = canvas._hoveredNode === n;
     const r = isHovered ? size + 3 : size;
     if (isHovered) { ctx.beginPath(); ctx.arc(n.x, n.y, r+6, 0, Math.PI*2); ctx.fillStyle = 'rgba(34,211,238,0.3)'; ctx.fill(); }
@@ -1522,14 +1569,17 @@ function drawGraphFrame() {
   });
 
   // Second pass: draw labels — always visible, collision-aware, sorted by importance
-  if (graphZoom >= 0.55) {
+  if (graphZoom >= 0.4) {
+    var isMobile = W < 600 || (typeof window !== 'undefined' && window.innerWidth <= 768);
     var sortedNodes = graphNodes.slice().sort(function(a,b){ return (b.links.length||0)-(a.links.length||0); });
-    sortedNodes.forEach(function(n) {
+    var maxLabels = isMobile ? 12 : sortedNodes.length;
+    sortedNodes.forEach(function(n, idx) {
+      if (idx >= maxLabels) return;
       var isHovered = canvas._hoveredNode === n;
-      var maxLen = isHovered ? (W < 800 ? 20 : 28) : (W < 800 ? 10 : 14);
+      var maxLen = isHovered ? (isMobile ? 22 : 28) : (isMobile ? 12 : 14);
       var rawTitle = n.title || n.slug.split('/').pop().replace(/-/g,' ').replace(/_/g,' ');
       var label = rawTitle.length > maxLen ? rawTitle.slice(0,maxLen-1)+'…' : rawTitle;
-      var fontSize = isHovered ? 10 : 8;
+      var fontSize = isHovered ? (isMobile ? 12 : 10) : (isMobile ? 9 : 8);
       ctx.font = fontSize + 'px "Inter", sans-serif';
       ctx.textAlign = 'center';
       var metrics = ctx.measureText(label);
@@ -2799,5 +2849,6 @@ function renderLogs() {
 
 </script>
 </main>
+</div><!-- /app-shell -->
 </body>
 </html>
