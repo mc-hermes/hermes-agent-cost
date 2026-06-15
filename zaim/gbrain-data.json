@@ -1,152 +1,50 @@
 {
-  "updated_at": "2026-06-15T08:31:14Z",
+  "updated_at": "2026-06-15T09:41:12Z",
   "summary": {
-    "tag": "zaim",
-    "total_pages": 9,
-    "total_links": 9,
-    "type_breakdown": {
-      "concept": 8,
-      "person": 1
-    }
+    "page_count": 2,
+    "people_count": 1,
+    "company_count": 0,
+    "artifact_count": 0,
+    "total_links": 0,
+    "outbound_count": 6,
+    "inbound_count": 6,
+    "graph_coverage": "50.0% of pages have inbound links",
+    "concept_count": 0,
+    "meeting_count": 1,
+    "person_count": 1,
+    "newsletter_count": 0,
+    "video_count": 0,
+    "article_count": 0,
+    "bookmark_count": 0,
+    "quote_count": 0,
+    "dataset_count": 0,
+    "digest_count": 0
   },
   "pages": [
     {
-      "slug": "concepts/salary-negotiation-playbook",
-      "title": "Salary Negotiation Playbook",
-      "type": "concept",
+      "slug": "meetings/sayf-zaim-jun-12-2026",
+      "title": "Sayf Zaim Jun 12 2026",
+      "type": "meeting",
       "updated": "",
-      "body": "# Salary Negotiation Playbook\n\nCompensation bands and negotiation tactics for product management roles in Kuala Lumpur, compiled from Zaim's coaching engagements.\n\n## Related\n- [[The 3-Month Career Pivot Framework]]\n- [[KSI Strategic Institute for Asia Pacific]]",
+      "body": "# Sayf x Zaim \u2014 Jun 12, 2026\n\n**From:** Sayf Codes <sayfcodes@gmail.com>\n**Date:** Fri, 12 Jun 2026 12:00:46 +0800\n**Source:** email forward + calendar acceptance\n**Source URI:** gmail://19eb6b5d19465acd\n\n**Sayf's note:** From my meeting with Zaim this morning.\n\n## Calendar Details\n\n- **Scheduled:** Fri, 12 Jun 2026, 10:30am \u2013 11:00am (MYT)\n- **Status:** Accepted by Sayf\n- **Google Meet:** https://meet.google.com/udx-niaz-esr\n- **Phone (US):** +1 402-588-0161, PIN: 507016250\n\n[Source: Calendar acceptance email, 2026-06-11]\n\n---\n\n## Summary\n\nDiscussion explored AI skepticism and market strategy alongside technical collaboration opportunities for business growth.\n\n### Differing AI Market Perspectives\n\n[[Sayf]] and [[Zaim Mohzani|Zaim]] debated the value of AI in business, contrasting skepticism about automation hype with the practical utility of AI for basic skills training.\n\n### Technical Tools and Infrastructure\n\nDiscussion shifted toward specific software tools, noting the efficiency of virtual private servers and the potential of data integration dashboards for business applications.\n\n### Collaboration and Service Models\n\nAgreement reached to build a technical solution for coaching services while prioritizing simple, revenue-focused strategies for future client engagement for [[Maloha Coast]].\n\n## Suggested Next Steps\n\n- **[Maloha Coast]** Build Dashboard: Arrange a meeting to build the dashboard component. Perform the session either in person or over a call based on the preference of Zaim Mohzani.\n- **[Zaim Mohzani]** Provide Testimonial: Provide a testimonial in exchange for the assistance provided by Maloha Coast.\n- **[Maloha Coast]** Share Research Link: Send the Tencent Lighthouse promotion link for further research.\n- **[The group]** Schedule Followup Session: Coordinate a time for a meeting to continue the discussion.\n- **[Zaim Mohzani]** Send WhatsApp Message: Contact Maloha Coast via the provided phone number to initiate further communication.\n\n## Google Doc\n\nhttps://docs.google.com/document/d/1q3v6SbKF_PiEaTatPNvhZtoWd9T_n9v5HqMoxsLj3hQ/edit?usp=meet_tnfm_email",
       "tags": [
         "zaim"
       ],
       "links_out": [
         {
-          "to": "The 3-Month Career Pivot Framework",
+          "to": "Sayf",
           "type": "wikilink",
-          "text": "The 3-Month Career Pivot Framework"
+          "text": "Sayf"
         },
         {
-          "to": "companies/ksi-strategic-institute",
+          "to": "Zaim Mohzani|Zaim",
           "type": "wikilink",
-          "text": "KSI Strategic Institute for Asia Pacific"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "concepts/3-month-career-pivot-framework",
-          "type": "wikilink",
-          "text": "Salary Negotiation Playbook"
+          "text": "Zaim Mohzani|Zaim"
         },
         {
-          "from": "concepts/zaim-3month-career-pivot-framework",
+          "to": "brand/maloha-coast-brand-identity",
           "type": "wikilink",
-          "text": "Salary Negotiation Playbook"
-        }
-      ],
-      "outbound_count": 2,
-      "inbound_count": 2
-    },
-    {
-      "slug": "concepts/side-project-strategy",
-      "title": "Side Project Strategy",
-      "type": "concept",
-      "updated": "",
-      "body": "# Side Project Strategy\n\nA career pivot tactic from Zaim's coaching playbook.\n\n## Core Principle\nBuild one public artifact, not ten private ones. A single well-documented project signals competence better than a scattered portfolio.\n\n## Related\n- [[The 3-Month Career Pivot Framework]]\n- [[Skills Inventory]]",
-      "tags": [
-        "zaim"
-      ],
-      "links_out": [
-        {
-          "to": "The 3-Month Career Pivot Framework",
-          "type": "wikilink",
-          "text": "The 3-Month Career Pivot Framework"
-        },
-        {
-          "to": "concepts/skills-inventory",
-          "type": "wikilink",
-          "text": "Skills Inventory"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "concepts/3-month-career-pivot-framework",
-          "type": "wikilink",
-          "text": "Side Project Strategy"
-        },
-        {
-          "from": "concepts/zaim-3month-career-pivot-framework",
-          "type": "wikilink",
-          "text": "Side Project Strategy"
-        }
-      ],
-      "outbound_count": 2,
-      "inbound_count": 2
-    },
-    {
-      "slug": "concepts/skills-inventory",
-      "title": "Skills Inventory",
-      "type": "concept",
-      "updated": "",
-      "body": "# Skills Inventory\n\nA structured mapping exercise used in Zaim's career coaching framework.\n\n## Purpose\nMap current skills against target role requirements to identify the critical 20% gap that blocks 80% of interviews.\n\n## Related\n- [[The 3-Month Career Pivot Framework]]\n- [[Zaim Mohzani]]",
-      "tags": [
-        "zaim"
-      ],
-      "links_out": [
-        {
-          "to": "The 3-Month Career Pivot Framework",
-          "type": "wikilink",
-          "text": "The 3-Month Career Pivot Framework"
-        },
-        {
-          "to": "people/zaim-mohzani",
-          "type": "wikilink",
-          "text": "Zaim Mohzani"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "concepts/3-month-career-pivot-framework",
-          "type": "wikilink",
-          "text": "Skills Inventory"
-        },
-        {
-          "from": "concepts/side-project-strategy",
-          "type": "wikilink",
-          "text": "Skills Inventory"
-        },
-        {
-          "from": "concepts/zaim-3month-career-pivot-framework",
-          "type": "wikilink",
-          "text": "Skills Inventory"
-        }
-      ],
-      "outbound_count": 2,
-      "inbound_count": 3
-    },
-    {
-      "slug": "concepts/zaim-3month-career-pivot-framework",
-      "title": "Zaim 3month Career Pivot Framework",
-      "type": "concept",
-      "updated": "",
-      "body": "## The 3-Month Career Pivot Framework\n\nZaim shared this during a coaching session with a KSI senior analyst looking to move into product.\n\n### Phase 1: Audit (Month 1)\n- [[Skills Inventory]] \u2014 map current skills to target role requirements\n- Identify the 20% skill gap that blocks 80% of interviews\n- Don't learn everything \u2014 learn the gatekeepers\n\n### Phase 2: Signal (Month 2)\n- [[Side Project Strategy]] \u2014 build one public artifact, not ten private ones\n- Write 2 LinkedIn posts/week documenting the pivot journey\n- Engage with 3 target-company hiring managers\n\n### Phase 3: Convert (Month 3)\n- [[Salary Negotiation Playbook]] \u2014 comp bands for product roles in KL\n- Reference calls with 2 people who made the same pivot\n- First offer within 90 days\n\n### Key Insight\n> 'The career pivot gap isn't a skills problem \u2014 it's a positioning problem. You're not underqualified, you're framed wrong.' \u2014 Zaim\n\n**Client:** KSI Senior Analyst \u2192 Product Manager\n**Engagement:** Weekly coaching, 12 sessions\n**Status:** Phase 2, on track\n**Source:** email\n**Source URI:** gmail://msg_19eca58bcdb09c70\n**Ingested:** 2026-06-15T16:20:00Z\n**Provenance:** Career coaching note from Zaim via info+zaim@malohacoast.com\n\n<!-- processed 2026-06-15T16:24 -->",
-      "tags": [
-        "zaim"
-      ],
-      "links_out": [
-        {
-          "to": "concepts/skills-inventory",
-          "type": "wikilink",
-          "text": "Skills Inventory"
-        },
-        {
-          "to": "concepts/side-project-strategy",
-          "type": "wikilink",
-          "text": "Side Project Strategy"
-        },
-        {
-          "to": "concepts/salary-negotiation-playbook",
-          "type": "wikilink",
-          "text": "Salary Negotiation Playbook"
+          "text": "Maloha Coast"
         }
       ],
       "backlinks": [],
@@ -154,683 +52,90 @@
       "inbound_count": 0
     },
     {
-      "slug": "concepts/zaim-pipeline-fix-test-20260615",
-      "title": "Zaim Pipeline Fix Test 20260615",
-      "type": "concept",
-      "updated": "",
-      "body": "# End-to-End Pipeline Test (Post-Fix Verification)\n\n**Source:** Pipeline test \u2014 verifying Bug 1 (venv Python) and Bug 2 (YAML tags) fixes.\n\n## Context\n\nThis page tests the full email-to-gbrain pipeline after applying two critical fixes discovered on June 15, 2026:\n\n1. **Bug 1 \u2014 Cron Python PATH**: Pipeline now uses Hermes venv Python at `/home/ubuntu/.hermes/hermes-agent/venv/bin/python` instead of bare `python`/`python3`.\n\n2. **Bug 2 \u2014 Tags Lost on Export**: Workspace files now embed `tags:` in YAML frontmatter so the `zaim` tag survives `gbrain export` and reaches the enrichment pipeline.\n\n## Verification Steps\n\n- [ ] Workspace file saved with YAML frontmatter\n- [ ] `gbrain put --tags zaim --body-stdin` succeeds\n- [ ] `gbrain export` includes `tags:` in YAML frontmatter\n- [ ] Enrichment pipeline picks up the `zaim` tag\n- [ ] Dashboard shows this page under the Zaim filter\n\n**Test timestamp:** $(date -u +%Y-%m-%dT%H:%M:%SZ)",
-      "tags": [
-        "zaim"
-      ],
-      "links_out": [],
-      "backlinks": [],
-      "outbound_count": 0,
-      "inbound_count": 0
-    },
-    {
-      "slug": "people/aisyah-rahim",
-      "title": "Aisyah Rahim",
+      "slug": "people/zaim-mohzani",
+      "title": "Zaim Mohzani",
       "type": "person",
       "updated": "",
-      "body": "Zaim here. Adding a quick profile on a new client.\n\nName: Aisyah Rahim\nRole: Senior Brand Manager at Unilever Malaysia\nContext: Referred by Liyana from the KSI workshop last month. First session next Tuesday.\n\nKey points from our intro call:\n- 8 years in FMCG brand management, feeling stagnant\n- Wants to pivot into tech but unsure where to start\n- Main blocker: 'I don't have a technical background'\n- Has actually done more data-driven work than she realises \u2014 ran consumer analytics for 3 product launches\n- Salary anchor: RM 18k/month, worried about resetting to junior level\n\nMy read: Classic mid-career pivot case. The real problem isn't skills \u2014 it's confidence and narrative. She needs help reframing 'brand manager' as 'growth strategist who uses data.' Tech companies would kill for someone who can bridge consumer insights and product.\n\nPlan for session 1: Audit her last 2 years of work through a tech lens. Find 3-5 specific examples where she already did 'product thinking' without calling it that.\n\n\u2014 Zaim",
+      "body": "# Zaim Mohzani\n\n> **Role:** AI & Career Strategist | ASEAN Policy Specialist | Senior Director at KSI\n> **Location:** Federal Territory of Kuala Lumpur, Malaysia\n> **LinkedIn:** https://my.linkedin.com/in/zaimmohzani\n> **Website:** www.zaim.my\n> **1st-degree connection with sayf** [Source: User, LinkedIn, 2026-06-09]\n\n---\n\n## Compilation of Facts (Compiled Truth)\n\nZaim Mohzani is a Malaysian career strategist, ASEAN policy specialist, and social entrepreneur. He helps mid-career professionals change careers without starting over, using a lifestyle-centric career design approach. He has directly helped 2,600+ professionals in Malaysia since 2015. [Source: LinkedIn profile, 2026-06-09]\n\nHe is Malaysia's first certified Designing Your Life (DYL) coach, trained by Bill Burnett and Dave Evans at Stanford University. [Source: LinkedIn profile, 2026-06-09]\n\n### Core Philosophy: Lifestyle-Centric Career Design\n\nZaim's approach rejects the \"follow your passion\" advice. Instead:\n- Start with the lifestyle you actually want\n- Work backwards to careers that support it\n- Build skills with market value\n- Make moves based on reality, not feelings\n\nHis key thesis: **Passion is a by-product of doing good work, not a prerequisite.** [Source: LinkedIn About section, 2026-06-09]\n\n### Personal Story\n\nAt 25, Zaim had strong credentials but was burnt out \u2014 hundreds of applications, zero offers. He was told \"you just haven't found your passion yet.\" That advice kept him paralysed. He pivoted through five industries and at 28 became chairman of a Malaysian government agency \u2014 not because he found his calling, but because he stopped chasing passion and started designing for the life he wanted. [Source: LinkedIn About section, 2026-06-09]\n\n---\n\n## Current Roles (as of June 2026)\n\n| Role | Organization | Since | Type |\n|------|-------------|-------|------|\n| AI & Career Strategist | [[Nation Building School]] | Jan 2024 | Full-time |\n| Principal | Nation Building School | Aug 2015 - Dec 2023 | Previous role |\n| Senior Director of External Relations | [[KSI Strategic Institute for Asia Pacific]] | Jan 2024 | Full-time |\n| Director of External Relations | KSI Strategic Institute for Asia Pacific | Nov 2020 - Dec 2023 | Previous role |\n| Co-Chair | [[Inclusive AI Association]] (IAIA) | Aug 2025 | Volunteer |\n| Advisor | Asia House (London) | Oct 2020 - Feb 2023 | Seasonal |\n\n[Source: LinkedIn profile, 2026-06-09]\n\n---\n\n## Education\n\n- **MSc in International Strategy & Diplomacy (Distinction)** \u2014 London School of Economics and Political Science (LSE), 2019-2020. Chevening Scholar. Dissertation: \"Disrupted by AI? Impact of AI on the U.S-China Arms Dynamics.\"\n- **BA in Political Science and Government** \u2014 Monash University, 2010-2013\n\n[Source: LinkedIn profile, 2026-06-09]\n\n---\n\n## Key Certifications\n\n- **Designing Your Life Certified Coach** \u2014 Stanford University (via DYL), issued Jul 2023\n- **AI For Good** \u2014 AI Singapore, issued Sep 2025\n- AI Trainer (UK), ChatGPT Prompt Specialist (Singapore), ChatGPT Expert (India)\n\n[Source: LinkedIn profile, 2026-06-09]\n\n---\n\n## Major Awards & Recognitions\n\n- Best Perdana Fellow Award (2023)\n- Dalai Lama Fellows (2022)\n- Youth Advisor to Prime Minister of Malaysia (PM2PM, 2021)\n- British Council Future Leaders Connect (2021)\n- Acumen Academy Fellowship Malaysia (2021)\n- Queen Elizabeth Prize for Engineering Ambassador (2020)\n- Founding Chairman, Impact Malaysia / Impact Integrated (2018)\n- The Edge Inspiring Young Leaders Awards (2019)\n- U.S. Department of State YSEALI Professional Fellowship \u2014 ACYPL (2018)\n- ASEAN Youth Fellowship (2018)\n- Associate Fellowship, Royal Commonwealth Society (2017)\n- NGO/Youth Advisor \u2014 ACTYVATE/Blue Ocean Youth Movement, Ministry of Finance Malaysia (2017)\n- Advisory Chair, AIESEC in Malaysia (2017)\n- Community Ambassador, Impact Hub Malaysia (2016)\n- Selected for World Economic Forum Global Shapers\n- Asia Society Asia 21 Next Generation Fellow\n- New York Southeast Asia Network (NYSEAN) member\n\n[Source: LinkedIn profile + KSI speaker page + web search, 2026-06-09]\n\n---\n\n## Organizations Founded / Led\n\n### [[Nation Building School]] (est. Aug 2015)\nSocial enterprise started as a bootstrapped NGO in Bukit Tunku, now empowering next-generation leaders. Has engaged over 10,000 youths in Malaysia and Southeast Asia. Focus: career workshops and leadership programmes for urban poor, single mothers, and youth at risk. During the pandemic, launched virtual career workshops. [Source: LinkedIn profile, 2026-06-09]\n\n### Impact Integrated (est. Dec 2018)\nFounding Chairman. Government agency under Malaysian Ministry of Youth and Sports. Oversaw transformation from \"reputationally controversial\" to sustainable and impactful. Strengthened corporate governance. Notable project: #BeliaBerkeja (Youth Working) Virtual Career Fair. Engaged 10,000+ youths. Served until Feb 2023. [Source: LinkedIn profile + KSI speaker page, 2026-06-09]\n\n### KSI Visiting Fellowship\nFounded the KSI Visiting Fellowship programme, bringing in 10+ regional experts to strengthen policy and research at KSI. [Source: LinkedIn profile, 2026-06-09]\n\n### KSI Academy\nLeads KSI Academy, delivering AI training programmes for corporations across ASEAN. [Source: LinkedIn profile, 2026-06-09]\n\n### KSInsights\nBuilt KSInsights into a regional platform, publishing 30+ articles on ASEAN, technology, and geopolitics. [Source: LinkedIn profile, 2026-06-09]\n\n### [[Inclusive AI Association]] (IAIA)\nCo-Chair since Aug 2025. Community-based NGO dedicated to making Malaysians AI-Literate (MAIL) by 2030. Focus areas:\n- **Inform:** Public awareness campaigns and simple AI explainers\n- **Contribute:** Platforms for citizen feedback on AI policy\n- **Educate:** Workshops and training aligned with National Guidelines on AI Governance and Ethics and ASEAN AI Safety Network\n\n[Source: LinkedIn profile, 2026-06-09]\n\n### ASEAN Economic Club & World Digital Chamber\nLeads these KSI initiatives to drive regional economic and digital cooperation. Engages Prime Ministers, Presidents, and senior policymakers across ASEAN. [Source: LinkedIn profile, 2026-06-09]\n\n### Chevening Alumni Malaysia\nPresident (Sep 2020 - Apr 2022). Achievements:\n- Increased membership 60% (133 to 222)\n- Established Chevening Alumni Southeast Asian Network (CASEAN)\n- Organised inaugural CAM Summit 2022\n- Created four CAM Interest Network Groups (CAMINGs)\n- Youth Mentorship Programme: 592 mentors mentoring 160+ youths\n- Supported hundreds of Chevening applicants\n\n[Source: LinkedIn profile, 2026-06-09]\n\n### YSEALI Council of Malaysia (YCOM)\nFounder and Chair. Among the first YSEALI alumni associations in the region. [Source: KSI speaker page, 2026-06-09]\n\n---\n\n## What He Offers (Products / Services)\n\n1. **90-Day Career Change Programme** \u2014 Helps mid-career professionals choose careers they actually want without starting over or chasing passion. [Source: LinkedIn About, 2026-06-09]\n2. **Free Monthly Career Clarity Workshop** \u2014 Next: 1 July 2026 (Wednesday), 9:00-10:30 PM GMT+8/MYT, via Zoom. Register at https://t.ly/getclearoncareer6 [Source: LinkedIn Featured, 2026-06-09]\n3. **Free Guide: \"Find Your Next Career Move in 30 Minutes (Without Starting Over)\"** \u2014 Available at https://www.nationbuildingschool.com/ [Source: LinkedIn Featured + website, 2026-06-09]\n4. **AI Training for Non-Technical Professionals** \u2014 Hands-on training on applying tools like ChatGPT without needing to code. [Source: LinkedIn Experience, 2026-06-09]\n\n---\n\n## Networks & Affiliations\n\n- World Economic Forum Global Shapers\n- Asia Society Asia 21 Next Generation Fellow\n- New York Southeast Asia Network (NYSEAN)\n- Global Muslim Business Forum (speaker)\n- Royal Commonwealth Society (Associate Fellow)\n- Perdana Fellows Alumni Association (Founding President, Sep 2013 - Nov 2014)\n- Toastmasters International (May 2013 - Jun 2014)\n\n[Source: LinkedIn profile + web search + KSI speaker page, 2026-06-09]\n\n---\n\n## Audience & Reach\n\n- **8,838 LinkedIn followers** (as of June 2026)\n- **500+ connections**\n- **52 mutual connections** with sayf (including Sara Radziah, Divya Adinarayanan)\n- Active LinkedIn content creator \u2014 posts regularly on career strategy, workplace dynamics, and Malaysian professional life\n- Recent viral-style post (June 2026): story about an admin assistant running a side business from her office desk, getting caught by colleagues, Industrial Court dismissal \u2014 used as a teachable moment about workplace visibility\n\n[Source: LinkedIn profile, 2026-06-09]\n\n---\n\n## Relevance to Maloha Coast\n\nsayf identified Zaim as a **pitch target** for Friday (June 2026). Key angles:\n- Zaim runs AI literacy training for non-technical professionals \u2014 complementary to Maloha Coast's AI consulting services\n- His Inclusive AI Association (IAIA) is building Malaysia's AI literacy ecosystem \u2014 potential partnership or client\n- KSI Academy delivers AI training to ASEAN corporations \u2014 potential B2B channel\n- Zaim is a connector across ASEAN policy, business, and youth ecosystems\n- His career design methodology (DYL/Stanford) could integrate with AI upskilling offerings\n- sayf has 52 mutual connections with Zaim, including Sara Radziah and Divya Adinarayanan\n\n[Source: User, 2026-06-09]\n\n---\n\n## Languages\n\n- English: Native or bilingual proficiency\n- Malay: Native or bilingual proficiency\n\n[Source: LinkedIn profile, 2026-06-09]",
       "tags": [
+        "ai-literacy",
+        "asean-policy",
+        "career-coach",
+        "malaysia",
+        "people",
+        "pitch-target",
         "zaim"
       ],
-      "links_out": [],
-      "backlinks": [],
-      "outbound_count": 0,
-      "inbound_count": 0,
-      "email": "aisyah.rahim@example.com",
-      "company_name": "Unilever Malaysia",
-      "relationship": "Coaching client"
-    },
-    {
-      "slug": "zaim-15min-gap-method",
-      "title": "The 15-Minute Gap Method",
-      "type": "concept",
-      "updated": "",
-      "body": "Zaim here. Wanted to capture this before I forget.\n\nBetween KSI sessions I have these 15-minute gaps. Started using them to jot down one thing I noticed about each student \u2014 what they're stuck on, what lit them up. After a month of this, patterns emerged that I'd never have spotted otherwise.\n\nThree buckets emerged:\n1. Career pivoters \u2014 stuck on 'what if I fail' not 'what do I want'\n2. Fresh grads \u2014 over-indexing on salary, under-indexing on growth trajectory  \n3. Mid-career \u2014 all variations of 'is this it?'\n\nThe 15-minute rule: never let a gap go empty. Even one sentence per student compounds.\n\n\u2014 Zaim",
-      "tags": [
-        "zaim"
+      "links_out": [
+        {
+          "to": "companies/nation-building-school",
+          "type": "wikilink",
+          "text": "Nation Building School"
+        },
+        {
+          "to": "companies/ksi-strategic-institute",
+          "type": "wikilink",
+          "text": "KSI Strategic Institute for Asia Pacific"
+        },
+        {
+          "to": "companies/inclusive-ai-association",
+          "type": "wikilink",
+          "text": "Inclusive AI Association"
+        }
       ],
-      "links_out": [],
-      "backlinks": [],
-      "outbound_count": 0,
-      "inbound_count": 0
-    },
-    {
-      "slug": "zaim-15min-rule",
-      "title": "Zaim 15min Rule",
-      "type": "concept",
-      "updated": "",
-      "body": "# Coaching Insight: The 15-Minute Rule\nBetween KSI meetings, I have 15-minute gaps. Started using them to capture one coaching insight each time. After a month, I had 20+ insights I'd forgotten I'd had. The system surfaces the relevant one when I need it.",
-      "tags": [
-        "zaim"
+      "backlinks": [
+        {
+          "from": "companies/inclusive-ai-association",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
+          "from": "companies/ksi-strategic-institute",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
+          "from": "companies/nation-building-school",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
+          "from": "concepts/3-month-career-pivot-framework",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
+          "from": "concepts/skills-inventory",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
+          "from": "digests/2026-06-15-business-brain-digest",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        }
       ],
-      "links_out": [],
-      "backlinks": [],
-      "outbound_count": 0,
-      "inbound_count": 0
-    },
-    {
-      "slug": "zaim-test-pipeline",
-      "title": "Zaim Test Pipeline",
-      "type": "concept",
-      "updated": "",
-      "body": "# Test Page - Quick Capture\nJust testing the pipeline works end to end. Zaim's coaching workflow.",
-      "tags": [
-        "zaim"
-      ],
-      "links_out": [],
-      "backlinks": [],
-      "outbound_count": 0,
-      "inbound_count": 0
+      "outbound_count": 3,
+      "inbound_count": 6
     }
   ],
-  "graph_links": [
-    {
-      "source": "concepts/3-month-career-pivot-framework",
-      "target": "concepts/skills-inventory",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/3-month-career-pivot-framework",
-      "target": "concepts/side-project-strategy",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/3-month-career-pivot-framework",
-      "target": "concepts/salary-negotiation-playbook",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/salary-negotiation-playbook",
-      "target": "companies/ksi-strategic-institute",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/side-project-strategy",
-      "target": "concepts/skills-inventory",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/skills-inventory",
-      "target": "people/zaim-mohzani",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/zaim-3month-career-pivot-framework",
-      "target": "concepts/skills-inventory",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/zaim-3month-career-pivot-framework",
-      "target": "concepts/side-project-strategy",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/zaim-3month-career-pivot-framework",
-      "target": "concepts/salary-negotiation-playbook",
-      "type": "wikilink"
-    }
-  ],
+  "graph_links": [],
   "entities": {
     "people": [
-      "people/addy-osmani",
-      "people/adrian-js-mastery",
-      "people/aisyah-humaira-wan-aziz",
-      "people/aisyah-rahim",
-      "people/audrey-loh",
-      "people/ayaan",
-      "people/bjarte",
-      "people/bob-proctor",
-      "people/carson",
-      "people/jake-van-cleef",
-      "people/nabil-jalil",
-      "people/nate-herk",
-      "people/neo-kim",
-      "people/nick-milo",
-      "people/sayf-codes",
-      "people/tj-vandermolen",
-      "people/yassif-n-m",
-      "people/yaw-hog-ng",
       "people/zaim-mohzani"
     ],
-    "companies": [
-      "companies/ai-automation-society",
-      "companies/anthropic",
-      "companies/blackgrid-digital",
-      "companies/dynamics-orchard-farm-sdn-bhd",
-      "companies/global-ai-village",
-      "companies/inclusive-ai-association",
-      "companies/js-mastery",
-      "companies/ksi-strategic-institute",
-      "companies/nation-building-school",
-      "companies/openai",
-      "companies/passend",
-      "companies/posh-corporate",
-      "companies/solo-satoshi",
-      "companies/system-design-one"
-    ]
+    "companies": []
   },
-  "doctor": {
-    "schema_version": 2,
-    "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
-    "category_scores": {
-      "brain": 95,
-      "skill": 100,
-      "ops": 95,
-      "meta": 90
-    },
-    "checks": [
-      {
-        "name": "resolver_health",
-        "status": "ok",
-        "message": "49 skills, all reachable",
-        "category": "skill"
-      },
-      {
-        "name": "skill_conformance",
-        "status": "ok",
-        "message": "49/49 skills pass",
-        "category": "skill"
-      },
-      {
-        "name": "skill_brain_first",
-        "status": "ok",
-        "message": "49 skill(s) compliant or exempt",
-        "category": "skill"
-      },
-      {
-        "name": "nightly_quality_probe_health",
-        "status": "ok",
-        "message": "disabled (opt-in). Enable with: gbrain config set autopilot.nightly_quality_probe.enabled true",
-        "category": "brain"
-      },
-      {
-        "name": "extract_health",
-        "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
-        "details": {
-          "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
-        },
-        "category": "brain"
-      },
-      {
-        "name": "conversation_facts_backlog",
-        "status": "ok",
-        "message": "disabled (opt-in). Enable with: gbrain config set cycle.conversation_facts_backfill.enabled true",
-        "category": "brain"
-      },
-      {
-        "name": "extract_atoms_backlog",
-        "status": "ok",
-        "message": "no pages awaiting atom extraction",
-        "details": {
-          "backlog": 0,
-          "pack_declares_phase": false,
-          "known_approximation": "page backlog only; transcript corpus not counted"
-        },
-        "category": "brain"
-      },
-      {
-        "name": "conversation_format_coverage",
-        "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
-        "category": "brain"
-      },
-      {
-        "name": "progressive_batch_audit_health",
-        "status": "ok",
-        "message": "No progressive-batch operations in the last 7 days",
-        "category": "ops"
-      },
-      {
-        "name": "conversation_parser_probe_health",
-        "status": "ok",
-        "message": "Skipped (nightly probe is opt-in; enable with `gbrain config set autopilot.conversation_parser_probe.enabled true`)",
-        "category": "brain"
-      },
-      {
-        "name": "home_dir_in_worktree",
-        "status": "ok",
-        "message": "gbrain home is outside any enclosing git worktree.",
-        "category": "ops"
-      },
-      {
-        "name": "connection",
-        "status": "ok",
-        "message": "Connected, 43 pages",
-        "category": "ops"
-      },
-      {
-        "name": "pgvector",
-        "status": "warn",
-        "message": "Could not check pgvector extension",
-        "category": "ops"
-      },
-      {
-        "name": "rls",
-        "status": "ok",
-        "message": "Skipped (PGLite \u2014 no PostgREST exposure, RLS not applicable)",
-        "category": "ops"
-      },
-      {
-        "name": "schema_version",
-        "status": "ok",
-        "message": "Version 113 (latest: 113)",
-        "category": "meta"
-      },
-      {
-        "name": "rls_event_trigger",
-        "status": "ok",
-        "message": "Skipped (PGLite \u2014 no event trigger support)",
-        "category": "ops"
-      },
-      {
-        "name": "embeddings",
-        "status": "ok",
-        "message": "100% coverage, 0 missing",
-        "category": "brain"
-      },
-      {
-        "name": "embedding_provider",
-        "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
-        "category": "brain"
-      },
-      {
-        "name": "embedding_column_registry",
-        "status": "ok",
-        "message": "Registry healthy: 2 columns (embedding, embedding_image); active='embedding'",
-        "category": "brain"
-      },
-      {
-        "name": "embedding_env_override",
-        "status": "ok",
-        "message": "no embedding env overrides set",
-        "category": "brain"
-      },
-      {
-        "name": "graph_coverage",
-        "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
-        "category": "brain"
-      },
-      {
-        "name": "brain_score",
-        "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
-        "category": "brain"
-      },
-      {
-        "name": "orphan_ratio",
-        "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
-        "category": "brain"
-      },
-      {
-        "name": "integrity",
-        "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
-        "category": "brain"
-      },
-      {
-        "name": "jsonb_integrity",
-        "status": "warn",
-        "message": "Could not check JSONB integrity",
-        "category": "brain"
-      },
-      {
-        "name": "takes_weight_grid",
-        "status": "ok",
-        "message": "No takes yet",
-        "category": "brain"
-      },
-      {
-        "name": "child_table_orphans",
-        "status": "ok",
-        "message": "All FK-child tables clean (10 tables checked)",
-        "category": "brain"
-      },
-      {
-        "name": "whoknows_health",
-        "status": "ok",
-        "message": "whoknows eval fixture present (10 queries). Run `gbrain eval whoknows test/fixtures/whoknows-eval.jsonl` to grade.",
-        "category": "skill"
-      },
-      {
-        "name": "cross_modal_modality_backfill",
-        "status": "ok",
-        "message": "All image-asset chunks have modality=image",
-        "category": "brain"
-      },
-      {
-        "name": "unified_multimodal_coverage",
-        "status": "ok",
-        "message": "search.unified_multimodal is off; coverage check N/A",
-        "category": "brain"
-      },
-      {
-        "name": "markdown_body_completeness",
-        "status": "ok",
-        "message": "Skipped (raw_data unavailable)",
-        "category": "brain"
-      },
-      {
-        "name": "oversized_pages",
-        "status": "ok",
-        "message": "Skipped (No database connection: connect() has not been called. Fix: Run gbrain init --supabase or gbrain init --url <connection_string>)",
-        "category": "brain"
-      },
-      {
-        "name": "scraper_junk_pages",
-        "status": "ok",
-        "message": "Skipped (No database connection: connect() has not been called. Fix: Run gbrain init --supabase or gbrain init --url <connection_string>)",
-        "category": "brain"
-      },
-      {
-        "name": "content_sanity_audit_recent",
-        "status": "ok",
-        "message": "No content-sanity events in last 7 days (audit JSONL is local to this host; share GBRAIN_AUDIT_DIR for multi-host visibility)",
-        "category": "brain"
-      },
-      {
-        "name": "quarantined_pages",
-        "status": "ok",
-        "message": "No quarantined pages",
-        "category": "brain"
-      },
-      {
-        "name": "flagged_pages",
-        "status": "ok",
-        "message": "No flagged pages",
-        "category": "brain"
-      },
-      {
-        "name": "frontmatter_integrity",
-        "status": "ok",
-        "message": "No registered sources to scan",
-        "category": "brain"
-      },
-      {
-        "name": "eval_capture",
-        "status": "ok",
-        "message": "No capture failures in the last 24h",
-        "category": "meta"
-      },
-      {
-        "name": "contradictions",
-        "status": "ok",
-        "message": "No probe runs in the last 7 days. Run `gbrain eval suspected-contradictions --query \"...\" --top-k 5` to populate.",
-        "category": "brain"
-      },
-      {
-        "name": "facts_extraction_health",
-        "status": "ok",
-        "message": "No facts:absorb failures in the last 24h.",
-        "category": "brain"
-      },
-      {
-        "name": "effective_date_health",
-        "status": "ok",
-        "message": "Sample of last 1000 pages clean (no fallback-with-parseable-fm-date, no future-dated, no pre-1990)",
-        "category": "brain"
-      },
-      {
-        "name": "salience_health",
-        "status": "ok",
-        "message": "Skipped (no pages have emotional_weight > 0; either fresh install or recompute hasn't run yet)",
-        "category": "brain"
-      },
-      {
-        "name": "queue_health",
-        "status": "ok",
-        "message": "Skipped (PGLite \u2014 no multi-process worker surface)",
-        "category": "ops"
-      },
-      {
-        "name": "subagent_capability",
-        "status": "ok",
-        "message": "Subagent tier resolves to default (claude-sonnet-4-6) \u2014 full tool-loop capability",
-        "category": "ops"
-      },
-      {
-        "name": "facts_health",
-        "status": "ok",
-        "message": "facts_health(default): 0 active, 0 today, 0 this week, 0 consolidated, top entities \u2014",
-        "category": "brain"
-      },
-      {
-        "name": "image_assets",
-        "status": "ok",
-        "message": "No image assets indexed yet",
-        "category": "brain"
-      },
-      {
-        "name": "ocr_health",
-        "status": "ok",
-        "message": "OCR not in use (or no images ingested with OCR opt-in)",
-        "category": "brain"
-      },
-      {
-        "name": "sync_freshness",
-        "status": "ok",
-        "message": "No federated sources to sync",
-        "details": {
-          "unchanged_count": 0,
-          "synced_recently_count": 0,
-          "stale_count": 0
-        },
-        "category": "brain"
-      },
-      {
-        "name": "sync_consolidation",
-        "status": "ok",
-        "message": "Single-source brain \u2014 sync --all consolidation not applicable.",
-        "category": "ops"
-      },
-      {
-        "name": "links_extraction_lag",
-        "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
-        "category": "brain"
-      },
-      {
-        "name": "cycle_freshness",
-        "status": "ok",
-        "message": "No federated sources to cycle",
-        "category": "brain"
-      },
-      {
-        "name": "search_mode",
-        "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
-        "category": "ops"
-      },
-      {
-        "name": "eval_drift",
-        "status": "ok",
-        "message": "No retrieval-affecting files changed in working tree.",
-        "category": "brain"
-      },
-      {
-        "name": "reranker_health",
-        "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
-        "category": "ops"
-      },
-      {
-        "name": "batch_retry_health",
-        "status": "ok",
-        "message": "No exhausted batch retries in last 24h.",
-        "category": "ops"
-      },
-      {
-        "name": "graph_signals_coverage",
-        "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
-        "category": "brain"
-      },
-      {
-        "name": "brainstorm_health",
-        "status": "ok",
-        "message": "Migration v79 applied; tracking enabled. Calibration profile not yet generated \u2014 brainstorm/lsd will run unbiased until enough takes are resolved.",
-        "category": "ops"
-      },
-      {
-        "name": "link_resolution_opportunity",
-        "status": "ok",
-        "message": "global_basename mode already enabled",
-        "category": "brain"
-      },
-      {
-        "name": "ze_embedding_health",
-        "status": "ok",
-        "message": "Configured embedding model \"openai:text-embedding-3-large\" is not ZeroEntropy \u2014 skip.",
-        "category": "ops"
-      },
-      {
-        "name": "embedding_width_consistency",
-        "status": "ok",
-        "message": "Schema width (1536d) matches gateway embedding_dimensions",
-        "category": "brain"
-      },
-      {
-        "name": "facts_embedding_width_consistency",
-        "status": "ok",
-        "message": "Skipped on PGLite (single bundled pgvector version).",
-        "category": "brain"
-      },
-      {
-        "name": "source_routing_health",
-        "status": "ok",
-        "message": "Single-source brain (no federation to check)",
-        "category": "brain"
-      },
-      {
-        "name": "oauth_confidential_client_health",
-        "status": "ok",
-        "message": "No OAuth clients registered",
-        "category": "ops"
-      },
-      {
-        "name": "autopilot_lock_scope",
-        "status": "ok",
-        "message": "Lock path: /home/ubuntu/.gbrain/autopilot.lock",
-        "category": "ops"
-      },
-      {
-        "name": "stale_locks",
-        "status": "ok",
-        "message": "No stale locks (no rows with ttl_expires_at < NOW())",
-        "category": "ops"
-      },
-      {
-        "name": "cycle_phase_scope",
-        "status": "ok",
-        "message": "Phase taxonomy: 12 source-scoped, 8 brain-global, 2 mixed. Source-safe: [lint, backlinks, sync, extract, extract_facts, extract_atoms, recompute_emotional_weight, consolidate, propose_takes, conversation_facts_backfill, enrich_thin, schema-suggest]. Brain-global: [resolve_symbol_edges, synthesize_concepts, grade_takes, calibration_profile, skillopt, embed, orphans, purge]. Mixed: [synthesize, patterns].",
-        "details": {
-          "phase_scope_map": {
-            "lint": "source",
-            "backlinks": "source",
-            "sync": "source",
-            "synthesize": "mixed",
-            "extract": "source",
-            "extract_facts": "source",
-            "resolve_symbol_edges": "global",
-            "patterns": "mixed",
-            "recompute_emotional_weight": "source",
-            "consolidate": "source",
-            "propose_takes": "source",
-            "grade_takes": "global",
-            "calibration_profile": "global",
-            "embed": "global",
-            "orphans": "global",
-            "purge": "global",
-            "schema-suggest": "source",
-            "extract_atoms": "source",
-            "synthesize_concepts": "global",
-            "conversation_facts_backfill": "source",
-            "enrich_thin": "source",
-            "skillopt": "global"
-          },
-          "counts": {
-            "source": 12,
-            "global": 8,
-            "mixed": 2
-          }
-        },
-        "category": "meta"
-      },
-      {
-        "name": "embed_staleness",
-        "status": "ok",
-        "message": "No stale chunks",
-        "category": "meta"
-      },
-      {
-        "name": "entity_link_coverage",
-        "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
-        "category": "meta"
-      },
-      {
-        "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
-        "category": "meta"
-      },
-      {
-        "name": "takes_count",
-        "status": "warn",
-        "message": "0 takes (takes.bootstrap_enabled is false; opt in to enable)",
-        "category": "meta"
-      },
-      {
-        "name": "pack_upgrade_available",
-        "status": "warn",
-        "message": "Active pack: gbrain-base@1.0.0+7bd490ab. Successor available: gbrain-base-v2@1.0.0+b9bebaa4. Preview: `gbrain onboard --check --explain`",
-        "category": "meta"
-      },
-      {
-        "name": "type_proliferation",
-        "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
-        "category": "meta"
-      },
-      {
-        "name": "dangling_aliases",
-        "status": "ok",
-        "message": "No dangling aliases",
-        "category": "meta"
-      }
-    ]
-  },
-  "logs": []
+  "doctor": {},
+  "artifacts": [],
+  "logs": [
+    {
+      "ts": "2026-06-15T09:41:12Z",
+      "source": "export",
+      "stage": "deployed",
+      "slug": null,
+      "detail": "Dashboard refreshed \u2014 2 pages, 0 links",
+      "level": "info"
+    }
+  ]
 }
