@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-15T09:00:18Z",
+  "updated_at": "2026-06-15T10:00:16Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
@@ -19,9 +19,9 @@
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 134,
+    "total_links": 136,
     "outbound_count": 181,
-    "inbound_count": 162,
+    "inbound_count": 164,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -168,15 +168,10 @@
           "from": "maloha-coast",
           "type": "wikilink",
           "text": "brand/maloha-coast-brand-identity"
-        },
-        {
-          "from": "meetings/sayf-zaim-jun-12-2026",
-          "type": "wikilink",
-          "text": "Maloha Coast"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 4
+      "inbound_count": 3
     },
     {
       "slug": "companies/ai-automation-society",
@@ -723,9 +718,7 @@
       "type": "concept",
       "updated": "",
       "body": "# The 3-Month Career Pivot Framework\n\nZaim shared this during a coaching session with a KSI senior analyst looking to move into product.\n\n### Phase 1: Audit (Month 1)\n- [[Skills Inventory]] \u2014 map current skills to target role requirements\n- Identify the 20% skill gap that blocks 80% of interviews\n- Don't learn everything \u2014 learn the gatekeepers\n\n### Phase 2: Signal (Month 2)\n- [[Side Project Strategy]] \u2014 build one public artifact, not ten private ones\n- Write 2 LinkedIn posts/week documenting the pivot journey\n- Engage with 3 target-company hiring managers\n\n### Phase 3: Convert (Month 3)\n- [[Salary Negotiation Playbook]] \u2014 comp bands for product roles in KL\n- Reference calls with 2 people who made the same pivot\n- First offer within 90 days\n\n### Key Insight\n> 'The career pivot gap isn't a skills problem \u2014 it's a positioning problem. You're not underqualified, you're framed wrong.' \u2014 Zaim\n\n**Client:** KSI Senior Analyst \u2192 Product Manager\n**Engagement:** Weekly coaching, 12 sessions\n**Status:** Phase 2, on track",
-      "tags": [
-        "zaim"
-      ],
+      "tags": [],
       "links_out": [
         {
           "to": "concepts/skills-inventory",
@@ -1192,9 +1185,7 @@
       "type": "concept",
       "updated": "",
       "body": "# Salary Negotiation Playbook\n\nCompensation bands and negotiation tactics for product management roles in Kuala Lumpur, compiled from Zaim's coaching engagements.\n\n## Related\n- [[The 3-Month Career Pivot Framework]]\n- [[KSI Strategic Institute for Asia Pacific]]",
-      "tags": [
-        "zaim"
-      ],
+      "tags": [],
       "links_out": [
         {
           "to": "The 3-Month Career Pivot Framework",
@@ -1233,9 +1224,7 @@
       "type": "concept",
       "updated": "",
       "body": "# Side Project Strategy\n\nA career pivot tactic from Zaim's coaching playbook.\n\n## Core Principle\nBuild one public artifact, not ten private ones. A single well-documented project signals competence better than a scattered portfolio.\n\n## Related\n- [[The 3-Month Career Pivot Framework]]\n- [[Skills Inventory]]",
-      "tags": [
-        "zaim"
-      ],
+      "tags": [],
       "links_out": [
         {
           "to": "The 3-Month Career Pivot Framework",
@@ -1274,9 +1263,7 @@
       "type": "concept",
       "updated": "",
       "body": "# Skills Inventory\n\nA structured mapping exercise used in Zaim's career coaching framework.\n\n## Purpose\nMap current skills against target role requirements to identify the critical 20% gap that blocks 80% of interviews.\n\n## Related\n- [[The 3-Month Career Pivot Framework]]\n- [[Zaim Mohzani]]",
-      "tags": [
-        "zaim"
-      ],
+      "tags": [],
       "links_out": [
         {
           "to": "The 3-Month Career Pivot Framework",
@@ -1393,9 +1380,7 @@
       "type": "concept",
       "updated": "",
       "body": "## The 3-Month Career Pivot Framework\n\nZaim shared this during a coaching session with a KSI senior analyst looking to move into product.\n\n### Phase 1: Audit (Month 1)\n- [[Skills Inventory]] \u2014 map current skills to target role requirements\n- Identify the 20% skill gap that blocks 80% of interviews\n- Don't learn everything \u2014 learn the gatekeepers\n\n### Phase 2: Signal (Month 2)\n- [[Side Project Strategy]] \u2014 build one public artifact, not ten private ones\n- Write 2 LinkedIn posts/week documenting the pivot journey\n- Engage with 3 target-company hiring managers\n\n### Phase 3: Convert (Month 3)\n- [[Salary Negotiation Playbook]] \u2014 comp bands for product roles in KL\n- Reference calls with 2 people who made the same pivot\n- First offer within 90 days\n\n### Key Insight\n> 'The career pivot gap isn't a skills problem \u2014 it's a positioning problem. You're not underqualified, you're framed wrong.' \u2014 Zaim\n\n**Client:** KSI Senior Analyst \u2192 Product Manager\n**Engagement:** Weekly coaching, 12 sessions\n**Status:** Phase 2, on track\n**Source:** email\n**Source URI:** gmail://msg_19eca58bcdb09c70\n**Ingested:** 2026-06-15T16:20:00Z\n**Provenance:** Career coaching note from Zaim via info+zaim@malohacoast.com\n\n<!-- processed 2026-06-15T16:24 -->",
-      "tags": [
-        "zaim"
-      ],
+      "tags": [],
       "links_out": [
         {
           "to": "concepts/skills-inventory",
@@ -1423,9 +1408,7 @@
       "type": "concept",
       "updated": "",
       "body": "# End-to-End Pipeline Test (Post-Fix Verification)\n\n**Source:** Pipeline test \u2014 verifying Bug 1 (venv Python) and Bug 2 (YAML tags) fixes.\n\n## Context\n\nThis page tests the full email-to-gbrain pipeline after applying two critical fixes discovered on June 15, 2026:\n\n1. **Bug 1 \u2014 Cron Python PATH**: Pipeline now uses Hermes venv Python at `/home/ubuntu/.hermes/hermes-agent/venv/bin/python` instead of bare `python`/`python3`.\n\n2. **Bug 2 \u2014 Tags Lost on Export**: Workspace files now embed `tags:` in YAML frontmatter so the `zaim` tag survives `gbrain export` and reaches the enrichment pipeline.\n\n## Verification Steps\n\n- [ ] Workspace file saved with YAML frontmatter\n- [ ] `gbrain put --tags zaim --body-stdin` succeeds\n- [ ] `gbrain export` includes `tags:` in YAML frontmatter\n- [ ] Enrichment pipeline picks up the `zaim` tag\n- [ ] Dashboard shows this page under the Zaim filter\n\n**Test timestamp:** $(date -u +%Y-%m-%dT%H:%M:%SZ)",
-      "tags": [
-        "zaim"
-      ],
+      "tags": [],
       "links_out": [],
       "backlinks": [],
       "outbound_count": 0,
@@ -1908,7 +1891,8 @@
       "tags": [
         "company",
         "consulting",
-        "malohacoast"
+        "malohacoast",
+        "zaim"
       ],
       "links_out": [
         {
@@ -1927,10 +1911,15 @@
           "from": "meetings/2026-06-08-bjarte-global-ai-village",
           "type": "link",
           "text": "Maloha Coast"
+        },
+        {
+          "from": "meetings/sayf-zaim-jun-12-2026",
+          "type": "wikilink",
+          "text": "maloha-coast|Maloha Coast"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 2
+      "inbound_count": 3
     },
     {
       "slug": "media/videos/graphify-solves-claude-code-problem",
@@ -2061,23 +2050,25 @@
       "title": "Sayf Zaim Jun 12 2026",
       "type": "meeting",
       "updated": "",
-      "body": "# Sayf x Zaim \u2014 Jun 12, 2026\n\n**From:** Sayf Codes <sayfcodes@gmail.com>\n**Date:** Fri, 12 Jun 2026 12:00:46 +0800\n**Source:** email forward + calendar acceptance\n**Source URI:** gmail://19eb6b5d19465acd\n\n**Sayf's note:** From my meeting with Zaim this morning.\n\n## Calendar Details\n\n- **Scheduled:** Fri, 12 Jun 2026, 10:30am \u2013 11:00am (MYT)\n- **Status:** Accepted by Sayf\n- **Google Meet:** https://meet.google.com/udx-niaz-esr\n- **Phone (US):** +1 402-588-0161, PIN: 507016250\n\n[Source: Calendar acceptance email, 2026-06-11]\n\n---\n\n## Summary\n\nDiscussion explored AI skepticism and market strategy alongside technical collaboration opportunities for business growth.\n\n### Differing AI Market Perspectives\n\n[[Sayf]] and [[Zaim Mohzani|Zaim]] debated the value of AI in business, contrasting skepticism about automation hype with the practical utility of AI for basic skills training.\n\n### Technical Tools and Infrastructure\n\nDiscussion shifted toward specific software tools, noting the efficiency of virtual private servers and the potential of data integration dashboards for business applications.\n\n### Collaboration and Service Models\n\nAgreement reached to build a technical solution for coaching services while prioritizing simple, revenue-focused strategies for future client engagement for [[Maloha Coast]].\n\n## Suggested Next Steps\n\n- **[Maloha Coast]** Build Dashboard: Arrange a meeting to build the dashboard component. Perform the session either in person or over a call based on the preference of Zaim Mohzani.\n- **[Zaim Mohzani]** Provide Testimonial: Provide a testimonial in exchange for the assistance provided by Maloha Coast.\n- **[Maloha Coast]** Share Research Link: Send the Tencent Lighthouse promotion link for further research.\n- **[The group]** Schedule Followup Session: Coordinate a time for a meeting to continue the discussion.\n- **[Zaim Mohzani]** Send WhatsApp Message: Contact Maloha Coast via the provided phone number to initiate further communication.\n\n## Google Doc\n\nhttps://docs.google.com/document/d/1q3v6SbKF_PiEaTatPNvhZtoWd9T_n9v5HqMoxsLj3hQ/edit?usp=meet_tnfm_email",
-      "tags": [],
+      "body": "# Sayf x Zaim \u2014 Jun 12, 2026\n\n**From:** Sayf Codes <sayfcodes@gmail.com>\n**Date:** Fri, 12 Jun 2026 12:00:46 +0800\n**Source:** email forward + calendar acceptance\n**Source URI:** gmail://19eb6b5d19465acd\n\n**Sayf's note:** From my meeting with Zaim this morning.\n\n## Calendar Details\n\n- **Scheduled:** Fri, 12 Jun 2026, 10:30am \u2013 11:00am (MYT)\n- **Status:** Accepted by Sayf\n- **Google Meet:** https://meet.google.com/udx-niaz-esr\n- **Phone (US):** +1 402-588-0161, PIN: 507016250\n\n[Source: Calendar acceptance email, 2026-06-11]\n\n---\n\n## Summary\n\nDiscussion explored AI skepticism and market strategy alongside technical collaboration opportunities for business growth.\n\n### Differing AI Market Perspectives\n\n[[people/sayf-codes|Sayf]] and [[people/zaim-mohzani|Zaim]] debated the value of AI in business, contrasting skepticism about automation hype with the practical utility of AI for basic skills training.\n\n### Technical Tools and Infrastructure\n\nDiscussion shifted toward specific software tools, noting the efficiency of virtual private servers and the potential of data integration dashboards for business applications.\n\n### Collaboration and Service Models\n\nAgreement reached to build a technical solution for coaching services while prioritizing simple, revenue-focused strategies for future client engagement for [[maloha-coast|Maloha Coast]].\n\n## Suggested Next Steps\n\n- **[Maloha Coast]** Build Dashboard: Arrange a meeting to build the dashboard component. Perform the session either in person or over a call based on the preference of Zaim Mohzani.\n- **[Zaim Mohzani]** Provide Testimonial: Provide a testimonial in exchange for the assistance provided by Maloha Coast.\n- **[Maloha Coast]** Share Research Link: Send the Tencent Lighthouse promotion link for further research.\n- **[The group]** Schedule Followup Session: Coordinate a time for a meeting to continue the discussion.\n- **[Zaim Mohzani]** Send WhatsApp Message: Contact Maloha Coast via the provided phone number to initiate further communication.\n\n## Google Doc\n\nhttps://docs.google.com/document/d/1q3v6SbKF_PiEaTatPNvhZtoWd9T_n9v5HqMoxsLj3hQ/edit?usp=meet_tnfm_email",
+      "tags": [
+        "zaim"
+      ],
       "links_out": [
         {
-          "to": "Sayf",
+          "to": "people/sayf-codes",
           "type": "wikilink",
-          "text": "Sayf"
+          "text": "people/sayf-codes|Sayf"
         },
         {
-          "to": "Zaim Mohzani|Zaim",
+          "to": "people/zaim-mohzani",
           "type": "wikilink",
-          "text": "Zaim Mohzani|Zaim"
+          "text": "people/zaim-mohzani|Zaim"
         },
         {
-          "to": "brand/maloha-coast-brand-identity",
+          "to": "maloha-coast",
           "type": "wikilink",
-          "text": "Maloha Coast"
+          "text": "maloha-coast|Maloha Coast"
         }
       ],
       "backlinks": [],
@@ -2282,16 +2273,11 @@
       "type": "person",
       "updated": "",
       "body": "Zaim here. Adding a quick profile on a new client.\n\nName: Aisyah Rahim\nRole: Senior Brand Manager at Unilever Malaysia\nContext: Referred by Liyana from the KSI workshop last month. First session next Tuesday.\n\nKey points from our intro call:\n- 8 years in FMCG brand management, feeling stagnant\n- Wants to pivot into tech but unsure where to start\n- Main blocker: 'I don't have a technical background'\n- Has actually done more data-driven work than she realises \u2014 ran consumer analytics for 3 product launches\n- Salary anchor: RM 18k/month, worried about resetting to junior level\n\nMy read: Classic mid-career pivot case. The real problem isn't skills \u2014 it's confidence and narrative. She needs help reframing 'brand manager' as 'growth strategist who uses data.' Tech companies would kill for someone who can bridge consumer insights and product.\n\nPlan for session 1: Audit her last 2 years of work through a tech lens. Find 3-5 specific examples where she already did 'product thinking' without calling it that.\n\n\u2014 Zaim",
-      "tags": [
-        "zaim"
-      ],
+      "tags": [],
       "links_out": [],
       "backlinks": [],
       "outbound_count": 0,
-      "inbound_count": 0,
-      "email": "aisyah.rahim@example.com",
-      "company_name": "Unilever Malaysia",
-      "relationship": "Coaching client"
+      "inbound_count": 0
     },
     {
       "slug": "people/audrey-loh",
@@ -2625,7 +2611,8 @@
       "body": "# Sayf Codes\n\n> Founder and operator of Maloha Coast \u2014 sender of business intelligence, strategy, and product direction.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[company-memory-os-ph1-prd]] as the author of the Company Memory OS Phase 1 PRD, outlining vision, go-to-market, and product strategy for the memory OS product line.\n\n## Related\n\n- [[company-memory-os-ph1-prd]] \u2014 Authored the Company Memory OS Phase 1 PRD",
       "tags": [
         "founder",
-        "maloha-coast"
+        "maloha-coast",
+        "zaim"
       ],
       "links_out": [
         {
@@ -2644,10 +2631,15 @@
           "from": "digests/2026-06-10-business-brain-digest",
           "type": "wikilink",
           "text": "Sayf Codes"
+        },
+        {
+          "from": "meetings/sayf-zaim-jun-12-2026",
+          "type": "wikilink",
+          "text": "people/sayf-codes|Sayf"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 2
+      "inbound_count": 3
     },
     {
       "slug": "people/tj-vandermolen",
@@ -2779,7 +2771,8 @@
         "career-coach",
         "malaysia",
         "people",
-        "pitch-target"
+        "pitch-target",
+        "zaim"
       ],
       "links_out": [
         {
@@ -2828,10 +2821,15 @@
           "from": "digests/2026-06-15-business-brain-digest",
           "type": "wikilink",
           "text": "Zaim Mohzani"
+        },
+        {
+          "from": "meetings/sayf-zaim-jun-12-2026",
+          "type": "wikilink",
+          "text": "people/zaim-mohzani|Zaim"
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 6
+      "inbound_count": 7
     },
     {
       "slug": "reference/cold-lead-response-conference-events",
@@ -2909,9 +2907,7 @@
       "type": "concept",
       "updated": "",
       "body": "Zaim here. Wanted to capture this before I forget.\n\nBetween KSI sessions I have these 15-minute gaps. Started using them to jot down one thing I noticed about each student \u2014 what they're stuck on, what lit them up. After a month of this, patterns emerged that I'd never have spotted otherwise.\n\nThree buckets emerged:\n1. Career pivoters \u2014 stuck on 'what if I fail' not 'what do I want'\n2. Fresh grads \u2014 over-indexing on salary, under-indexing on growth trajectory  \n3. Mid-career \u2014 all variations of 'is this it?'\n\nThe 15-minute rule: never let a gap go empty. Even one sentence per student compounds.\n\n\u2014 Zaim",
-      "tags": [
-        "zaim"
-      ],
+      "tags": [],
       "links_out": [],
       "backlinks": [],
       "outbound_count": 0,
@@ -2923,9 +2919,7 @@
       "type": "concept",
       "updated": "",
       "body": "# Coaching Insight: The 15-Minute Rule\nBetween KSI meetings, I have 15-minute gaps. Started using them to capture one coaching insight each time. After a month, I had 20+ insights I'd forgotten I'd had. The system surfaces the relevant one when I need it.",
-      "tags": [
-        "zaim"
-      ],
+      "tags": [],
       "links_out": [],
       "backlinks": [],
       "outbound_count": 0,
@@ -2937,9 +2931,7 @@
       "type": "concept",
       "updated": "",
       "body": "# Test Page - Quick Capture\nJust testing the pipeline works end to end. Zaim's coaching workflow.",
-      "tags": [
-        "zaim"
-      ],
+      "tags": [],
       "links_out": [],
       "backlinks": [],
       "outbound_count": 0,
@@ -3569,7 +3561,17 @@
     },
     {
       "source": "meetings/sayf-zaim-jun-12-2026",
-      "target": "brand/maloha-coast-brand-identity",
+      "target": "people/sayf-codes",
+      "type": "wikilink"
+    },
+    {
+      "source": "meetings/sayf-zaim-jun-12-2026",
+      "target": "people/zaim-mohzani",
+      "type": "wikilink"
+    },
+    {
+      "source": "meetings/sayf-zaim-jun-12-2026",
+      "target": "maloha-coast",
       "type": "wikilink"
     },
     {
