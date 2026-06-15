@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-06-15T06:00:12Z",
+  "updated_at": "2026-06-15T07:00:12Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
     "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 69,
+    "page_count": 71,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "73.9% of pages have inbound links",
-    "entity_links": "Coverage \u2014 18 people, 14 companies indexed",
-    "concept_count": 27,
+    "graph_coverage": "71.8% of pages have inbound links",
+    "entity_links": "Coverage \u2014 19 people, 14 companies indexed",
+    "concept_count": 28,
     "meeting_count": 4,
-    "person_count": 18,
+    "person_count": 19,
     "company_count": 14,
     "newsletter_count": 2,
     "video_count": 0,
@@ -1971,6 +1971,23 @@
       "inbound_count": 3
     },
     {
+      "slug": "people/aisyah-rahim",
+      "title": "Aisyah Rahim",
+      "type": "person",
+      "updated": "",
+      "body": "Zaim here. Adding a quick profile on a new client.\n\nName: Aisyah Rahim\nRole: Senior Brand Manager at Unilever Malaysia\nContext: Referred by Liyana from the KSI workshop last month. First session next Tuesday.\n\nKey points from our intro call:\n- 8 years in FMCG brand management, feeling stagnant\n- Wants to pivot into tech but unsure where to start\n- Main blocker: 'I don't have a technical background'\n- Has actually done more data-driven work than she realises \u2014 ran consumer analytics for 3 product launches\n- Salary anchor: RM 18k/month, worried about resetting to junior level\n\nMy read: Classic mid-career pivot case. The real problem isn't skills \u2014 it's confidence and narrative. She needs help reframing 'brand manager' as 'growth strategist who uses data.' Tech companies would kill for someone who can bridge consumer insights and product.\n\nPlan for session 1: Audit her last 2 years of work through a tech lens. Find 3-5 specific examples where she already did 'product thinking' without calling it that.\n\n\u2014 Zaim",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0,
+      "email": "aisyah.rahim@example.com",
+      "company_name": "Unilever Malaysia",
+      "relationship": "Coaching client"
+    },
+    {
       "slug": "people/audrey-loh",
       "title": "Audrey Loh",
       "type": "person",
@@ -2569,6 +2586,20 @@
       ],
       "outbound_count": 4,
       "inbound_count": 4
+    },
+    {
+      "slug": "zaim-15min-gap-method",
+      "title": "The 15-Minute Gap Method",
+      "type": "concept",
+      "updated": "",
+      "body": "Zaim here. Wanted to capture this before I forget.\n\nBetween KSI sessions I have these 15-minute gaps. Started using them to jot down one thing I noticed about each student \u2014 what they're stuck on, what lit them up. After a month of this, patterns emerged that I'd never have spotted otherwise.\n\nThree buckets emerged:\n1. Career pivoters \u2014 stuck on 'what if I fail' not 'what do I want'\n2. Fresh grads \u2014 over-indexing on salary, under-indexing on growth trajectory  \n3. Mid-career \u2014 all variations of 'is this it?'\n\nThe 15-minute rule: never let a gap go empty. Even one sentence per student compounds.\n\n\u2014 Zaim",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
     },
     {
       "slug": "zaim-15min-rule",
@@ -3196,6 +3227,7 @@
       "people/addy-osmani",
       "people/adrian-js-mastery",
       "people/aisyah-humaira-wan-aziz",
+      "people/aisyah-rahim",
       "people/audrey-loh",
       "people/ayaan",
       "people/bjarte",
