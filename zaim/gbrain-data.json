@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-15T06:09:17Z",
+  "updated_at": "2026-06-15T06:46:57Z",
   "summary": {
-    "page_count": 2,
+    "page_count": 3,
     "people_count": 0,
     "company_count": 0,
     "artifact_count": 0,
@@ -9,7 +9,7 @@
     "outbound_count": 0,
     "inbound_count": 0,
     "graph_coverage": "0.0% of pages have inbound links",
-    "concept_count": 2,
+    "concept_count": 3,
     "meeting_count": 0,
     "person_count": 0,
     "newsletter_count": 0,
@@ -21,6 +21,20 @@
     "digest_count": 0
   },
   "pages": [
+    {
+      "slug": "zaim-15min-gap-method",
+      "title": "The 15-Minute Gap Method",
+      "type": "concept",
+      "updated": "",
+      "body": "Zaim here. Wanted to capture this before I forget.\n\nBetween KSI sessions I have these 15-minute gaps. Started using them to jot down one thing I noticed about each student \u2014 what they're stuck on, what lit them up. After a month of this, patterns emerged that I'd never have spotted otherwise.\n\nThree buckets emerged:\n1. Career pivoters \u2014 stuck on 'what if I fail' not 'what do I want'\n2. Fresh grads \u2014 over-indexing on salary, under-indexing on growth trajectory  \n3. Mid-career \u2014 all variations of 'is this it?'\n\nThe 15-minute rule: never let a gap go empty. Even one sentence per student compounds.\n\n\u2014 Zaim",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
     {
       "slug": "zaim-15min-rule",
       "title": "Zaim 15min Rule",
@@ -59,15 +73,23 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-15T06:09:17Z",
+      "ts": "2026-06-15T06:46:57Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
-      "detail": "Dashboard refreshed \u2014 2 pages, 0 links",
+      "detail": "Dashboard refreshed \u2014 3 pages, 0 links",
       "level": "info"
     },
     {
-      "ts": "2026-06-15T06:09:17Z",
+      "ts": "2026-06-15T06:46:57Z",
+      "source": "tag",
+      "stage": "tagged",
+      "slug": "zaim-15min-gap-method",
+      "detail": "'The 15-Minute Gap Method' tagged for Zaim workspace",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-15T06:46:57Z",
       "source": "tag",
       "stage": "tagged",
       "slug": "zaim-15min-rule",
@@ -75,7 +97,7 @@
       "level": "info"
     },
     {
-      "ts": "2026-06-15T06:09:17Z",
+      "ts": "2026-06-15T06:46:57Z",
       "source": "tag",
       "stage": "tagged",
       "slug": "zaim-test-pipeline",
