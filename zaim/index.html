@@ -1115,9 +1115,6 @@ function showView(name) {
     // Show correct sub-view
     showBrowseTab(activeTab);
   }
-
-  // Resize canvas if graph view opened
-  if (name === 'graph') setTimeout(resizeCanvas, 50);
 }
 
 // ─── STATS ───
@@ -1572,9 +1569,7 @@ function drawGraphFrame() {
   if (graphZoom >= 0.4) {
     var isMobile = W < 600 || (typeof window !== 'undefined' && window.innerWidth <= 768);
     var sortedNodes = graphNodes.slice().sort(function(a,b){ return (b.links.length||0)-(a.links.length||0); });
-    var maxLabels = isMobile ? 12 : sortedNodes.length;
-    sortedNodes.forEach(function(n, idx) {
-      if (idx >= maxLabels) return;
+    sortedNodes.forEach(function(n) {
       var isHovered = canvas._hoveredNode === n;
       var maxLen = isHovered ? (isMobile ? 22 : 28) : (isMobile ? 12 : 14);
       var rawTitle = n.title || n.slug.split('/').pop().replace(/-/g,' ').replace(/_/g,' ');
@@ -1587,7 +1582,8 @@ function drawGraphFrame() {
       var lw = metrics.width + pad*2;
       var lh = fontSize + 4;
       var lx = n.x - lw/2;
-      var ly = n.y + (Math.max(4,3+n.links.length)) + 10;
+      var nodeR = isMobile ? Math.max(5, 4 + n.links.length) : Math.max(4, 3 + n.links.length);
+      var ly = n.y + nodeR + 10;
       if (!isHovered && labelOverlaps(lx, ly, lw, lh)) return;
       drawnLabels.push({x: lx, y: ly, w: lw, h: lh});
       ctx.fillStyle = isHovered ? 'rgba(15,23,42,0.9)' : 'rgba(15,23,42,0.65)';
@@ -1621,9 +1617,11 @@ function drawGraphFrame() {
   }
 
   function hitTest(wx, wy) {
+    var _m = graphW < 600 || (typeof window !== 'undefined' && window.innerWidth <= 768);
     for (let i = graphNodes.length-1; i >= 0; i--) {
       const n = graphNodes[i];
-      const size = Math.max(4, 3 + n.links.length) + 4;
+      var base = _m ? 5 : 4;
+      const size = Math.max(base, base - 1 + n.links.length) + 4;
       const dx = wx - n.x, dy = wy - n.y;
       if (dx*dx + dy*dy < size*size) return n;
     }
