@@ -70,7 +70,7 @@ output = {
     "pages": zaim_pages,
     "graph_links": zaim_links,
     "entities": entities,
-    "doctor": data.get("doctor", {}),
+    "doctor": {},
     "artifacts": zaim_artifacts,
 }
 
