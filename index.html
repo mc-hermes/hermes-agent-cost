@@ -10,18 +10,17 @@
   :root {
     --bg: #020617; --surface: #0f172a; --surface2: #1e293b; --border: #334155;
     --primary: #2a6a8a; --primary-light: #22d3ee; --accent: #c4a86a; --accent-light: #fbbf24;
-    --text: #f1f5f9; --text-muted: #94a3b8; --green: #34d399; --violet: #a78bfa; --rose: #fb7185; --orange: #fb923c;
+    --text: #f1f5f9; --text-muted: #94a3b8; --green: #34d399; --violet: #a78bfa;
     --radius: 14px;
   }
   body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 40px 20px; }
   .landing { max-width: 780px; width: 100%; text-align: center; }
   .landing h1 { font-size: clamp(1.6rem, 4vh, 2.5rem); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 4px; }
   .landing h1 span { color: var(--accent); }
-  .landing .subtitle { color: var(--text-muted); font-size: clamp(0.75rem, 1.4vh, 0.9rem); margin-bottom: 8px; }
-  .landing .subtitle2 { color: var(--text-muted); font-size: clamp(0.65rem, 1.1vh, 0.75rem); margin-bottom: 28px; opacity: 0.6; }
+  .landing .subtitle { color: var(--text-muted); font-size: clamp(0.8rem, 1.4vh, 0.95rem); margin-bottom: 28px; max-width: 520px; margin-left: auto; margin-right: auto; line-height: 1.5; }
   .divider { width: 50px; height: 3px; background: var(--accent); border-radius: 2px; margin: 0 auto 24px; }
 
-  .section-label { font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin: 32px 0 12px; opacity: 0.5; }
+  .section-label { font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin: 36px 0 12px; opacity: 0.5; }
   .section-label:first-of-type { margin-top: 0; }
 
   .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-bottom: 18px; }
@@ -37,8 +36,10 @@
   .tag.cyan { background: rgba(34,211,238,0.15); color: var(--primary-light); }
   .tag.green { background: rgba(52,211,153,0.15); color: var(--green); }
   .tag.violet { background: rgba(167,139,250,0.15); color: var(--violet); }
-  .tag.orange { background: rgba(251,146,60,0.15); color: var(--orange); }
-  .tag.rose { background: rgba(251,113,133,0.15); color: var(--rose); }
+
+  .cta-row { margin-top: 40px; }
+  .cta-row a { display: inline-block; background: var(--accent); color: #020617; font-weight: 700; font-size: 0.9rem; padding: 12px 28px; border-radius: 8px; text-decoration: none; transition: filter 0.2s; }
+  .cta-row a:hover { filter: brightness(1.15); }
 
   .footer { font-size: 0.6rem; color: rgba(148,163,184,0.25); margin-top: 32px; }
   .footer a { color: rgba(148,163,184,0.4); }
@@ -51,94 +52,54 @@
 <body>
 <div class="landing">
   <h1>Maloha Coast · <span>AI</span></h1>
-  <p class="subtitle">Second Brain — an email address that thinks.</p>
-  <p class="subtitle2">Production infrastructure. Proven pipeline. Real numbers.</p>
+  <p class="subtitle">AI assistants and business memory for Malaysian companies. Your own infrastructure. Your own data. No US subscriptions.</p>
   <div class="divider"></div>
 
-  <!-- CLIENT PROPOSALS -->
-  <p class="section-label">Client Proposals</p>
-  <div class="card-grid featured">
-    <a href="zaim-gbrain-proposal.html" class="card featured">
-      <div class="icon">🧠</div>
-      <h3>Zaim × gbrain — AI Thinking Partner for Career Coaching</h3>
-      <p>9 ways to fuel his creative process. Never stare at a blank page again. Idea engine, angle extractor, thinking prompts — AI does the thinking prep, he does the creating.</p>
-      <span class="tag gold">Proposal · Zaim Mohzani</span>
-    </a>
-  </div>
-
-  <!-- FEATURED: Hermes + Second Brain -->
-  <p class="section-label">For Malaysian Business Owners</p>
+  <!-- THE OFFER -->
+  <p class="section-label">What We Build</p>
   <div class="card-grid featured">
     <a href="okf-second-brain.html" class="card featured">
       <div class="icon">🤖</div>
       <h3>Your Own AI Assistant + Business Memory</h3>
-      <p>Hermes Agent on your phone. Second Brain for your business knowledge. Solo, Team, Enterprise tiers. MYR pricing, no US subscriptions.</p>
-      <span class="tag gold">RM 2,500 setup · RM 250/mo</span>
+      <p>Hermes Agent on your phone. Second Brain for everything your business knows. Solo, Team, or Enterprise — MYR pricing, no lock-in.</p>
+      <span class="tag gold">From RM 2,500 · RM 250/mo</span>
     </a>
 
     <a href="okf-explained.html" class="card">
       <div class="icon">📖</div>
       <h3>OKF Explained — Why Now?</h3>
       <p>Google just standardised AI knowledge. What that means for your business — in 90 seconds, zero jargon.</p>
-      <span class="tag cyan">Explainer · Shareable</span>
+      <span class="tag cyan">Explainer</span>
     </a>
   </div>
 
-  <!-- FEATURED: MVP -->
-  <p class="section-label">Second Brain MVP</p>
-  <div class="card-grid featured">
-    <a href="business-case-second-brain.html" class="card featured">
-      <div class="icon">🧠</div>
-      <h3>Second Brain — Business Case</h3>
-      <p>Forward anything. Ask it anything. Get the answer — with the source. Done-for-you, by Maloha Coast. $29/month.</p>
-      <span class="tag gold">Pitch · ROI · $29/mo</span>
-    </a>
-
-    <a href="prd-email-to-brain.html" class="card">
-      <div class="icon">📋</div>
-      <h3>RFC-001 — Technical Spec</h3>
-      <p>Complete PRD: architecture, data model, component specs, failure modes, scaling limits. 1,157 lines. No fluff.</p>
-      <span class="tag violet">PRD · RFC</span>
-    </a>
-  </div>
-
-  <!-- SUPPORTING -->
-  <p class="section-label">Supporting</p>
+  <!-- SEE IT -->
+  <p class="section-label">See It Working</p>
   <div class="card-grid">
-    <a href="email-to-brain-architecture.html" class="card">
-      <div class="icon">🏗️</div>
-      <h3>Pipeline Architecture Diagram</h3>
-      <p>Dark-themed SVG: full 6-phase pipeline with timing benchmarks. VPS → gbrain → GitHub Pages.</p>
-      <span class="tag cyan">Architecture · Diagram</span>
-    </a>
-
-    <a href="hermes-agent-cost.html" class="card">
-      <div class="icon">💰</div>
-      <h3>The $40 AI Agent</h3>
-      <p>Running a production-grade AI ecosystem on a shoestring budget — cost breakdown, architecture, and client implications.</p>
-      <span class="tag gold">Slide Deck · 10 slides</span>
+    <a href="gbrain-dashboard.html" class="card">
+      <div class="icon">📊</div>
+      <h3>Live Knowledge Dashboard</h3>
+      <p>Browse a real Second Brain — pages, entities, link graph, health checks. 34 pages. This is what your business memory looks like.</p>
+      <span class="tag green">Live Demo</span>
     </a>
 
     <a href="ai-pyramid.html" class="card">
       <div class="icon">🔺</div>
       <h3>The Pyramid — Memory First</h3>
-      <p>AI is only as smart as what it remembers about your business. The case for building memory before tools — with the gbrain pyramid.</p>
-      <span class="tag cyan">Essay · Thought Leadership</span>
+      <p>AI is only as smart as what it remembers about your business. Why building memory matters more than building tools.</p>
+      <span class="tag cyan">Essay</span>
     </a>
 
-    <a href="gbrain-head-hands-heart.html" class="card">
-      <div class="icon">📖</div>
-      <h3>The 3-Folder Brain</h3>
-      <p>gbrain onboarding — how Atlas → Projects → End Products restructures your thinking and your AI.</p>
-      <span class="tag cyan">Slide Deck · 10 slides</span>
+    <a href="business-case-second-brain.html" class="card">
+      <div class="icon">🧠</div>
+      <h3>Second Brain — Business Case</h3>
+      <p>Forward anything. Ask it anything. Get the answer with the source. The ROI case for giving your business a memory.</p>
+      <span class="tag gold">Pitch · ROI</span>
     </a>
+  </div>
 
-    <a href="gbrain-dashboard.html" class="card">
-      <div class="icon">📊</div>
-      <h3>gbrain Dashboard</h3>
-      <p>Live control panel — browse brain pages, entities, health checks, and link graph. 34 pages and counting.</p>
-      <span class="tag green">Dashboard · Live</span>
-    </a>
+  <div class="cta-row">
+    <a href="mailto:info@malohacoast.com?subject=AI%20Assistant%20for%20my%20business">Book a 20-min demo →</a>
   </div>
 
   <p class="footer">
