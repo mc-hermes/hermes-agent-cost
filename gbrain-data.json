@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-06-15T05:00:07Z",
+  "updated_at": "2026-06-15T05:54:13Z",
   "summary": {
-    "score": "92",
+    "score": "62",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 67,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "76.1% of pages have inbound links",
-    "entity_links": "Coverage \u2014 18 people, 14 companies indexed",
-    "concept_count": 25,
+    "score_breakdown": "score 62/100, embed 35/35, links 10/25, timeline 0/15, orphans 7/15, dead-links 10/10",
+    "page_count": 69,
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "graph_signals disabled \u2014 coverage not checked",
+    "entity_links": "Coverage 38% \u00b1 8.6% (target 70%)",
+    "concept_count": 27,
     "meeting_count": 4,
     "person_count": 18,
     "company_count": 14,
@@ -26,7 +26,19 @@
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 62/100 (embed 35/35, links 10/25, timeline 0/15, orphans 7/15, dead-links 10/10)",
+    "score_components": {
+      "score": "62/100",
+      "embed": "35/35",
+      "links": "10/25",
+      "timeline": "0/15",
+      "orphans": "7/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 63,
+    "checks_warned": 10,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -280,11 +292,7 @@
       ],
       "backlinks": [],
       "outbound_count": 1,
-      "inbound_count": 0,
-      "email": "hello@blackgridseo.com",
-      "phone": "+1 310-936-2578",
-      "website": "https://blackgridseo.com",
-      "location": "Los Angeles, CA / Ampang, Selangor, Malaysia"
+      "inbound_count": 0
     },
     {
       "slug": "companies/dynamics-orchard-farm-sdn-bhd",
@@ -534,7 +542,7 @@
       "slug": "companies/passend",
       "title": "Passend",
       "type": "company",
-      "updated": "2026-06-05",
+      "updated": "",
       "body": "# Passend\n\n> Malaysian education platform led by TJ van der Molen (CEO & ECHA Specialist). Three-product pipeline: project-based learning showcase, reporting automation, and SaaS counselor platform. Early-stage prospect for Maloha Coast. [Source: User, 2026-06-05]\n\n## State\n\n- **What they do:** Education platform \u2014 student project showcase, behavioral reporting tools, and counselor training SaaS\n- **Stage:** Active \u2014 multiple products in pipeline\n- **Key person:** TJ van der Molen, CEO & ECHA Specialist\n- **Website:** www.passend.my\n- **Contact:** t.vandermolen@passend.my / +6016 434 8614\n- **Maloha Coast connection:** sayf met TJ June 2026 \u2014 Requirements Engineering Workshop proposed [Source: User, 2026-06-05]\n\n## Product Pipeline\n\n1. **Database + Frontend \u2014 Project-Based Learning Showcase:** Chronological records of student projects, distributed via portal/newsletters/social media. Facial recognition for parental consent under consideration.\n2. **Internal Tool \u2014 Reporting Automation:** Rapid data input for behavioral observations, database storage, report generation, AI/OCR import with staff verification.\n3. **SaaS Platform \u2014 Counselor Teaching and Learning:** Freemium to subscription. Three tiers (course access, curriculum sharing, hosted events). Certification at all levels. [Source: User, 2026-06-05]\n\n## Open Threads\n\n- TJ to prioritize which system to build first\n- Requirements Engineering Workshop: MYR 100/hr or MYR 800/day\n- sayf's availability open until May, then contract work begins [Source: User, 2026-06-05]\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-05** | Initial meeting between TJ van der Molen and sayf (Maloha Coast). Three development projects discussed. Workshop next step. [Source: User, 2026-06-05]",
       "tags": [
         "education",
@@ -1202,34 +1210,7 @@
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 1,
-      "raw_path": "/home/ubuntu/.gbrain/datasets/dynamics-orchard-management-accounts-fye-2025.csv",
-      "row_count": "24",
-      "format": "csv",
-      "columns": [
-        "date",
-        "description",
-        "debit",
-        "credit",
-        "balance"
-      ],
-      "sample_rows": [
-        "- '2025-01-15",
-        "Sales - Orchard A",
-        "12,500.00",
-        "",
-        "45,200.00",
-        "- '2025-09-15",
-        "Orchard expansion feasibility study",
-        "",
-        "7,500.00",
-        "102,500.00",
-        "- '2025-12-02",
-        "Sales - Orchard B",
-        "20,500.00",
-        "",
-        "143,000.00"
-      ]
+      "inbound_count": 1
     },
     {
       "slug": "digests/2026-06-10-business-brain-digest",
@@ -2221,12 +2202,7 @@
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 1,
-      "email": "hello@blackgridseo.com",
-      "phone": "+1 310-936-2578",
-      "company_name": "BlackGrid Digital",
-      "website": "https://blackgridseo.com",
-      "location": "Los Angeles, CA / Kuala Lumpur, Malaysia"
+      "inbound_count": 1
     },
     {
       "slug": "people/nate-herk",
@@ -2366,7 +2342,7 @@
       "slug": "people/tj-vandermolen",
       "title": "TJ van der Molen",
       "type": "person",
-      "updated": "2026-06-05",
+      "updated": "",
       "body": "# TJ van der Molen\n\n> CEO & ECHA Specialist at Passend. Met June 2026 to discuss three potential development projects. Early-stage prospect \u2014 interest confirmed, awaiting prioritization decision. [Source: User, 2026-06-05]\n\n## State\n\n- **Role:** CEO & ECHA Specialist at Passend\n- **Location:** Malaysia\n- **Contact:** t.vandermolen@passend.my / +6016 434 8614\n- **Status:** Active prospect \u2014 Requirements Engineering Workshop proposed [Source: User, 2026-06-05]\n\n## What They're Building\n\nPassend \u2014 an education platform spanning three domains:\n1. Project-based learning showcase (database + frontend for student work)\n2. Internal reporting automation (behavioral observation tools for teachers)\n3. SaaS counselor teaching and learning platform (freemium to subscription) [Source: User, 2026-06-05]\n\n## What Motivates Them\n\nBuilding scalable education infrastructure. Focus on reducing administrative burden on teachers so they can focus on student engagement. Interested in AI/OCR for data automation and computer vision for consent management. [Source: User, 2026-06-05]\n\n## Assessment\n\nEarly-stage prospect. Three distinct systems identified \u2014 sensible to prioritize one for MVP. Has clear vision for Passend's growth. Technical sophistication TBD. Workshop will reveal more about decision-making style and budget. [Source: User, 2026-06-05]\n\n## Relationship\n\n- 2026-06-05: Initial meeting \u2014 discussed business progress, partnerships, and three potential projects\n- Next step: TJ to prioritize which system to build first, then schedule Requirements Engineering Workshop [Source: User, 2026-06-05]\n\n## Open Threads\n\n- TJ to decide which of 3 projects to pursue first\n- Requirements Engineering Workshop to be scheduled\n- Workshop rates communicated: MYR 100/hr or MYR 800/day [Source: User, 2026-06-05]\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-05** | Initial meeting with sayf (Maloha Coast). Discussed three development projects for Passend. Requirements Engineering Workshop proposed. [Source: User, 2026-06-05]",
       "tags": [
         "client",
@@ -2391,13 +2367,7 @@
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 3,
-      "email": "t.vandermolen@passend.my",
-      "phone": "+6016 434 8614",
-      "company_name": "Passend",
-      "website": "www.passend.my",
-      "location": "Malaysia",
-      "relationship": "Prospective client \u2014 met to discuss development projects"
+      "inbound_count": 3
     },
     {
       "slug": "people/yassif-n-m",
@@ -2611,6 +2581,34 @@
       ],
       "outbound_count": 4,
       "inbound_count": 4
+    },
+    {
+      "slug": "zaim-15min-rule",
+      "title": "Zaim 15min Rule",
+      "type": "concept",
+      "updated": "",
+      "body": "# Coaching Insight: The 15-Minute Rule\nBetween KSI meetings, I have 15-minute gaps. Started using them to capture one coaching insight each time. After a month, I had 20+ insights I'd forgotten I'd had. The system surfaces the relevant one when I need it.",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "zaim-test-pipeline",
+      "title": "Zaim Test Pipeline",
+      "type": "concept",
+      "updated": "",
+      "body": "# Test Page - Quick Capture\nJust testing the pipeline works end to end. Zaim's coaching workflow.",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
     }
   ],
   "graph_links": [
@@ -3246,13 +3244,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 50,
+    "brain_checks_score": 75,
     "category_scores": {
-      "brain": 95,
+      "brain": 75,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 80
     },
     "checks": [
       {
@@ -3282,32 +3280,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -3320,9 +3296,9 @@
       {
         "name": "extract_atoms_backlog",
         "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "message": "4 page(s) eligible (below warn threshold; pack does not run extract_atoms)",
         "details": {
-          "backlog": 0,
+          "backlog": 4,
           "pack_declares_phase": false,
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
@@ -3330,8 +3306,8 @@
       },
       {
         "name": "conversation_format_coverage",
-        "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "status": "warn",
+        "message": "1/4 conversation pages (25.0%) match NO built-in pattern. Breakdown: bold-name-no-time=3, _no_match=1. Investigate: gbrain conversation-parser scan <slug> | Enable LLM fallback (opt-in): gbrain config set conversation_parser.llm_fallback_enabled true",
         "category": "brain"
       },
       {
@@ -3355,7 +3331,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 69 pages",
         "category": "ops"
       },
       {
@@ -3391,7 +3367,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 626ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -3408,26 +3384,26 @@
       },
       {
         "name": "graph_coverage",
-        "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "status": "warn",
+        "message": "Entity link coverage 38%, timeline 0% (32 entity pages). Run: gbrain extract all",
         "category": "brain"
       },
       {
         "name": "brain_score",
-        "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "status": "warn",
+        "message": "Brain score 62/100 (embed 35/35, links 10/25, timeline 0/15, orphans 7/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 32 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 69 pages; no bare-tweet phrases or external links.",
         "category": "brain"
       },
       {
@@ -3588,7 +3564,7 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction lag not applicable (69 pages \u2014 too few to assess)",
         "category": "brain"
       },
       {
@@ -3600,7 +3576,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: conservative (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -3612,7 +3588,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "107 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -3624,7 +3600,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "graph_signals disabled \u2014 coverage not checked",
         "category": "brain"
       },
       {
@@ -3635,8 +3611,8 @@
       },
       {
         "name": "link_resolution_opportunity",
-        "status": "ok",
-        "message": "global_basename mode already enabled",
+        "status": "warn",
+        "message": "168 of 190 bare wikilinks (88%) would resolve to 45 distinct page(s) under global_basename mode. Enable with: gbrain config set link_resolution.global_basename true",
         "category": "brain"
       },
       {
@@ -3726,14 +3702,14 @@
       },
       {
         "name": "entity_link_coverage",
-        "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "status": "warn",
+        "message": "Coverage 38% \u00b1 8.6% (target 70%)",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 0% \u00b1 0.0% (target 90%)",
         "category": "meta"
       },
       {
@@ -3751,7 +3727,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "8 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
