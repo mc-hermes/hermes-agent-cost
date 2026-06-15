@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-15T06:52:33Z",
+  "updated_at": "2026-06-15T06:56:57Z",
   "summary": {
     "page_count": 4,
     "people_count": 1,
@@ -92,7 +92,7 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-15T06:52:33Z",
+      "ts": "2026-06-15T06:56:57Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
@@ -100,35 +100,35 @@
       "level": "info"
     },
     {
-      "ts": "2026-06-15T06:52:33Z",
-      "source": "tag",
-      "stage": "tagged",
+      "ts": "2026-06-15T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
       "slug": "people/aisyah-rahim",
-      "detail": "'Aisyah Rahim' tagged for Zaim workspace",
+      "detail": "Aisyah Rahim",
       "level": "info"
     },
     {
-      "ts": "2026-06-15T06:52:33Z",
-      "source": "tag",
-      "stage": "tagged",
+      "ts": "2026-06-15T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
       "slug": "zaim-15min-gap-method",
-      "detail": "'The 15-Minute Gap Method' tagged for Zaim workspace",
+      "detail": "The 15-Minute Gap Method",
       "level": "info"
     },
     {
-      "ts": "2026-06-15T06:52:33Z",
-      "source": "tag",
-      "stage": "tagged",
+      "ts": "2026-06-15T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
       "slug": "zaim-15min-rule",
-      "detail": "'Zaim 15min Rule' tagged for Zaim workspace",
+      "detail": "Zaim 15min Rule",
       "level": "info"
     },
     {
-      "ts": "2026-06-15T06:52:33Z",
-      "source": "tag",
-      "stage": "tagged",
+      "ts": "2026-06-15T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
       "slug": "zaim-test-pipeline",
-      "detail": "'Zaim Test Pipeline' tagged for Zaim workspace",
+      "detail": "Zaim Test Pipeline",
       "level": "info"
     }
   ]

@@ -22,8 +22,14 @@ gbrain export --dir /tmp/brain-export 2>&1 | tail -1
 echo "[2/3] Running enrichment pipeline..."
 python3 "$ENRICH_SCRIPT" 2>&1 | tail -1
 
+# Step 2b: Get actual page dates from gbrain (for accurate log timestamps)
+echo "[2b/4] Getting page dates from gbrain..."
+export PATH="$HOME/.bun/bin:$PATH"
+gbrain list 2>&1 > /tmp/gbrain-list.tsv
+echo "       $(wc -l < /tmp/gbrain-list.tsv) pages listed"
+
 # Step 3: Filter by tag, build Zaim-scoped data, and write JSON
-echo "[3/3] Filtering by tag '$TAG'..."
+echo "[3/4] Filtering by tag '$TAG'..."
 python3 << PYEOF
 """
 Zaim Dashboard Data Builder
@@ -95,27 +101,47 @@ summary = {
 }
 
 # ── Build Zaim-scoped activity log ─────────────────────────────────────
+# Use real dates from gbrain list (slug\ttype\tdate\ttitle format).
+# No fabricated timestamps — every event carries its actual date.
 now = datetime.now(timezone.utc)
+now_ts = now.strftime("%Y-%m-%dT%H:%M:%SZ")
+
+# Parse gbrain list dates: "slug\ttype\tYYYY-MM-DD\ttitle"
+page_dates = {}
+try:
+    with open("/tmp/gbrain-list.tsv") as f:
+        for line in f:
+            parts = line.strip().split("\t")
+            if len(parts) >= 3:
+                slug, ptype, date_str = parts[0], parts[1], parts[2]
+                if date_str and len(date_str) == 10:  # YYYY-MM-DD
+                    page_dates[slug] = date_str
+except Exception:
+    pass  # best-effort; fall back to empty dates
+
 logs = []
 
-# Page lifecycle events (from frontmatter timestamps)
+# Page events: use the real gbrain modification date if available,
+# otherwise fall back to enrichment frontmatter date.
 for p in zaim_pages:
     slug = p["slug"]
     title = p.get("title", slug)
-    updated = p.get("updated", "")
-    if updated:
+    gb_date = page_dates.get(slug, "")
+    fm_date = p.get("updated", "")
+    real_date = gb_date or fm_date
+    if real_date:
         logs.append({
-            "ts": f"{updated}T00:00:00Z",
+            "ts": f"{real_date}T00:00:00Z",
             "source": "page",
             "stage": "updated",
             "slug": slug,
-            "detail": f"{title}",
+            "detail": title,
             "level": "info",
         })
 
-# Export pipeline event
+# Export pipeline event — this timestamp IS real.
 logs.append({
-    "ts": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
+    "ts": now_ts,
     "source": "export",
     "stage": "deployed",
     "slug": None,
@@ -123,21 +149,8 @@ logs.append({
     "level": "info",
 })
 
-# Tagging events (one per page — when it was marked for Zaim)
-for p in zaim_pages:
-    slug = p["slug"]
-    title = p.get("title", slug)
-    logs.append({
-        "ts": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "source": "tag",
-        "stage": "tagged",
-        "slug": slug,
-        "detail": f"'{title}' tagged for Zaim workspace",
-        "level": "info",
-    })
-
-# Sort newest first
-logs.sort(key=lambda e: e["ts"], reverse=True)
+# Sort newest first, then by source for stable ordering
+logs.sort(key=lambda e: (e["ts"], e["source"]), reverse=True)
 
 # ── Assemble and write ─────────────────────────────────────────────────
 output = {

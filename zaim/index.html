@@ -1761,7 +1761,11 @@ function toggleMoreMenu() {
 }
 document.addEventListener('click', function(e) {
   const pop = document.getElementById('settingsPopover');
-  if (pop.classList.contains('active') && !pop.contains(e.target) && !e.target.classList.contains('cog-btn'))
+  // Don't close settings if click came from inside More menu (the menu
+  // item that triggered toggleSettings is not inside the popover itself).
+  if (pop.classList.contains('active') && !pop.contains(e.target)
+      && !e.target.classList.contains('cog-btn')
+      && !e.target.closest('#moreMenu'))
     pop.classList.remove('active');
   const mm = document.getElementById('moreMenu');
   if (mm.classList.contains('active') && !mm.contains(e.target) && !e.target.closest('.mobile-nav-btn[data-view="more"]'))
