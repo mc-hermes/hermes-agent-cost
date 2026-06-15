@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-06-15T09:41:12Z",
+  "updated_at": "2026-06-15T09:50:02Z",
   "summary": {
-    "page_count": 2,
-    "people_count": 1,
+    "page_count": 4,
+    "people_count": 2,
     "company_count": 0,
     "artifact_count": 0,
-    "total_links": 0,
-    "outbound_count": 6,
-    "inbound_count": 6,
-    "graph_coverage": "50.0% of pages have inbound links",
-    "concept_count": 0,
+    "total_links": 3,
+    "outbound_count": 8,
+    "inbound_count": 13,
+    "graph_coverage": "75.0% of pages have inbound links",
+    "concept_count": 1,
     "meeting_count": 1,
-    "person_count": 1,
+    "person_count": 2,
     "newsletter_count": 0,
     "video_count": 0,
     "article_count": 0,
@@ -22,34 +22,111 @@
   },
   "pages": [
     {
+      "slug": "maloha-coast",
+      "title": "Maloha Coast",
+      "type": "concept",
+      "updated": "",
+      "body": "Maloha Coast Sdn Bhd \u2014 AI consulting and development agency bringing AI to SMBs locally and worldwide.\n\n## Director\nSayf (username: falcon)\n\n## Infrastructure\n- VPS hardened and secured\n- Google Workspace configured (info@malohacoast.com)\n- gbrain knowledge base with embeddings enabled\n- Obsidian vault for personal notes\n- Hermes MC profile as admin assistant\n\n## GitHub\nOrganization: malohacoast on GitHub\nEmbeddings: \u2705 Enabled via OpenAI service account\n\n## Brand Identity\n- **Colour palette**: Primary #2a6a8a (teal blue), Accent #c4a86a (champagne gold)\n- **Typography**: Optima font (humanist/elegant)\n- **Hex pattern**: Gold-on-navy honeycomb grid at https://iili.io/CK3nHLF.png\n- **Email templates**: \\`html-email-with-sheet-logging\\` skill (production template, header fragment, 8 colour variants)\n- Full brand identity: [[brand/maloha-coast-brand-identity]]\n\n## Skills\n- \\`html-email-with-sheet-logging\\` \u2014 Send brand-styled HTML emails via Gmail API + log to Google Sheet\n- Brand exploration concepts: /home/ubuntu/maloha-coast-brand-concepts.html",
+      "tags": [
+        "company",
+        "consulting",
+        "malohacoast",
+        "zaim"
+      ],
+      "links_out": [
+        {
+          "to": "brand/maloha-coast-brand-identity",
+          "type": "wikilink",
+          "text": "brand/maloha-coast-brand-identity"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "brand/maloha-coast-brand-identity",
+          "type": "wikilink",
+          "text": "maloha-coast"
+        },
+        {
+          "from": "meetings/2026-06-08-bjarte-global-ai-village",
+          "type": "link",
+          "text": "Maloha Coast"
+        },
+        {
+          "from": "meetings/sayf-zaim-jun-12-2026",
+          "type": "wikilink",
+          "text": "maloha-coast|Maloha Coast"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 3
+    },
+    {
       "slug": "meetings/sayf-zaim-jun-12-2026",
       "title": "Sayf Zaim Jun 12 2026",
       "type": "meeting",
       "updated": "",
-      "body": "# Sayf x Zaim \u2014 Jun 12, 2026\n\n**From:** Sayf Codes <sayfcodes@gmail.com>\n**Date:** Fri, 12 Jun 2026 12:00:46 +0800\n**Source:** email forward + calendar acceptance\n**Source URI:** gmail://19eb6b5d19465acd\n\n**Sayf's note:** From my meeting with Zaim this morning.\n\n## Calendar Details\n\n- **Scheduled:** Fri, 12 Jun 2026, 10:30am \u2013 11:00am (MYT)\n- **Status:** Accepted by Sayf\n- **Google Meet:** https://meet.google.com/udx-niaz-esr\n- **Phone (US):** +1 402-588-0161, PIN: 507016250\n\n[Source: Calendar acceptance email, 2026-06-11]\n\n---\n\n## Summary\n\nDiscussion explored AI skepticism and market strategy alongside technical collaboration opportunities for business growth.\n\n### Differing AI Market Perspectives\n\n[[Sayf]] and [[Zaim Mohzani|Zaim]] debated the value of AI in business, contrasting skepticism about automation hype with the practical utility of AI for basic skills training.\n\n### Technical Tools and Infrastructure\n\nDiscussion shifted toward specific software tools, noting the efficiency of virtual private servers and the potential of data integration dashboards for business applications.\n\n### Collaboration and Service Models\n\nAgreement reached to build a technical solution for coaching services while prioritizing simple, revenue-focused strategies for future client engagement for [[Maloha Coast]].\n\n## Suggested Next Steps\n\n- **[Maloha Coast]** Build Dashboard: Arrange a meeting to build the dashboard component. Perform the session either in person or over a call based on the preference of Zaim Mohzani.\n- **[Zaim Mohzani]** Provide Testimonial: Provide a testimonial in exchange for the assistance provided by Maloha Coast.\n- **[Maloha Coast]** Share Research Link: Send the Tencent Lighthouse promotion link for further research.\n- **[The group]** Schedule Followup Session: Coordinate a time for a meeting to continue the discussion.\n- **[Zaim Mohzani]** Send WhatsApp Message: Contact Maloha Coast via the provided phone number to initiate further communication.\n\n## Google Doc\n\nhttps://docs.google.com/document/d/1q3v6SbKF_PiEaTatPNvhZtoWd9T_n9v5HqMoxsLj3hQ/edit?usp=meet_tnfm_email",
+      "body": "# Sayf x Zaim \u2014 Jun 12, 2026\n\n**From:** Sayf Codes <sayfcodes@gmail.com>\n**Date:** Fri, 12 Jun 2026 12:00:46 +0800\n**Source:** email forward + calendar acceptance\n**Source URI:** gmail://19eb6b5d19465acd\n\n**Sayf's note:** From my meeting with Zaim this morning.\n\n## Calendar Details\n\n- **Scheduled:** Fri, 12 Jun 2026, 10:30am \u2013 11:00am (MYT)\n- **Status:** Accepted by Sayf\n- **Google Meet:** https://meet.google.com/udx-niaz-esr\n- **Phone (US):** +1 402-588-0161, PIN: 507016250\n\n[Source: Calendar acceptance email, 2026-06-11]\n\n---\n\n## Summary\n\nDiscussion explored AI skepticism and market strategy alongside technical collaboration opportunities for business growth.\n\n### Differing AI Market Perspectives\n\n[[people/sayf-codes|Sayf]] and [[people/zaim-mohzani|Zaim]] debated the value of AI in business, contrasting skepticism about automation hype with the practical utility of AI for basic skills training.\n\n### Technical Tools and Infrastructure\n\nDiscussion shifted toward specific software tools, noting the efficiency of virtual private servers and the potential of data integration dashboards for business applications.\n\n### Collaboration and Service Models\n\nAgreement reached to build a technical solution for coaching services while prioritizing simple, revenue-focused strategies for future client engagement for [[maloha-coast|Maloha Coast]].\n\n## Suggested Next Steps\n\n- **[Maloha Coast]** Build Dashboard: Arrange a meeting to build the dashboard component. Perform the session either in person or over a call based on the preference of Zaim Mohzani.\n- **[Zaim Mohzani]** Provide Testimonial: Provide a testimonial in exchange for the assistance provided by Maloha Coast.\n- **[Maloha Coast]** Share Research Link: Send the Tencent Lighthouse promotion link for further research.\n- **[The group]** Schedule Followup Session: Coordinate a time for a meeting to continue the discussion.\n- **[Zaim Mohzani]** Send WhatsApp Message: Contact Maloha Coast via the provided phone number to initiate further communication.\n\n## Google Doc\n\nhttps://docs.google.com/document/d/1q3v6SbKF_PiEaTatPNvhZtoWd9T_n9v5HqMoxsLj3hQ/edit?usp=meet_tnfm_email",
       "tags": [
         "zaim"
       ],
       "links_out": [
         {
-          "to": "Sayf",
+          "to": "people/sayf-codes",
           "type": "wikilink",
-          "text": "Sayf"
+          "text": "people/sayf-codes|Sayf"
         },
         {
-          "to": "Zaim Mohzani|Zaim",
+          "to": "people/zaim-mohzani",
           "type": "wikilink",
-          "text": "Zaim Mohzani|Zaim"
+          "text": "people/zaim-mohzani|Zaim"
         },
         {
-          "to": "brand/maloha-coast-brand-identity",
+          "to": "maloha-coast",
           "type": "wikilink",
-          "text": "Maloha Coast"
+          "text": "maloha-coast|Maloha Coast"
         }
       ],
       "backlinks": [],
       "outbound_count": 3,
       "inbound_count": 0
+    },
+    {
+      "slug": "people/sayf-codes",
+      "title": "Sayf Codes",
+      "type": "person",
+      "updated": "",
+      "body": "# Sayf Codes\n\n> Founder and operator of Maloha Coast \u2014 sender of business intelligence, strategy, and product direction.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[company-memory-os-ph1-prd]] as the author of the Company Memory OS Phase 1 PRD, outlining vision, go-to-market, and product strategy for the memory OS product line.\n\n## Related\n\n- [[company-memory-os-ph1-prd]] \u2014 Authored the Company Memory OS Phase 1 PRD",
+      "tags": [
+        "founder",
+        "maloha-coast",
+        "zaim"
+      ],
+      "links_out": [
+        {
+          "to": "concepts/company-memory-os-ph1-prd",
+          "type": "wikilink",
+          "text": "company-memory-os-ph1-prd"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "concepts/company-memory-os-ph1-prd",
+          "type": "wikilink",
+          "text": "Sayf Codes"
+        },
+        {
+          "from": "digests/2026-06-10-business-brain-digest",
+          "type": "wikilink",
+          "text": "Sayf Codes"
+        },
+        {
+          "from": "meetings/sayf-zaim-jun-12-2026",
+          "type": "wikilink",
+          "text": "people/sayf-codes|Sayf"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 3
     },
     {
       "slug": "people/zaim-mohzani",
@@ -113,15 +190,37 @@
           "from": "digests/2026-06-15-business-brain-digest",
           "type": "wikilink",
           "text": "Zaim Mohzani"
+        },
+        {
+          "from": "meetings/sayf-zaim-jun-12-2026",
+          "type": "wikilink",
+          "text": "people/zaim-mohzani|Zaim"
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 6
+      "inbound_count": 7
     }
   ],
-  "graph_links": [],
+  "graph_links": [
+    {
+      "source": "meetings/sayf-zaim-jun-12-2026",
+      "target": "people/sayf-codes",
+      "type": "wikilink"
+    },
+    {
+      "source": "meetings/sayf-zaim-jun-12-2026",
+      "target": "people/zaim-mohzani",
+      "type": "wikilink"
+    },
+    {
+      "source": "meetings/sayf-zaim-jun-12-2026",
+      "target": "maloha-coast",
+      "type": "wikilink"
+    }
+  ],
   "entities": {
     "people": [
+      "people/sayf-codes",
       "people/zaim-mohzani"
     ],
     "companies": []
@@ -130,11 +229,27 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-15T09:41:12Z",
+      "ts": "2026-06-15T09:50:02Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
-      "detail": "Dashboard refreshed \u2014 2 pages, 0 links",
+      "detail": "Dashboard refreshed \u2014 4 pages, 3 links",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-15T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "maloha-coast",
+      "detail": "Maloha Coast",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-15T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "meetings/sayf-zaim-jun-12-2026",
+      "detail": "Sayf Zaim Jun 12 2026",
       "level": "info"
     }
   ]
