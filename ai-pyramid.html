@@ -9,9 +9,27 @@
     --ink:#1e2a32; --muted:#6b7a85; --green:#2f9e44; --green-soft:#e6f7eb;
     --blue:#1971c2; --blue-soft:#e7f3fc; --red:#e03131; --red-soft:#fdeaea;
     --yellow-soft:#fff8db; --line:#e3e9ed;
+    --bg:#fcfdfe; --card-bg:#fff; --cta-bg:#1e2a32; --cta-text:#cfd9df;
+    --svg-apex-fill:#f4f6f8; --svg-apex-stroke:#9aa7b0; --svg-apex-text:#56646d;
+    --svg-mid-fill:#f4f6f8; --svg-mid-stroke:#9aa7b0; --svg-mid-text:#56646d; --svg-mid-sub:#8a97a0;
+    --svg-base-fill:#dff3e4; --svg-base-stroke:#2f9e44; --svg-base-text:#1e2a32; --svg-base-sub:#2f9e44;
+    --svg-input-text:#1e2a32; --svg-note:#8a97a0; --svg-note-green:#2f9e44;
+    color-scheme:light dark;
+  }
+  @media(prefers-color-scheme:dark){
+    :root{
+      --ink:#e2e8f0; --muted:#8896a7; --green:#4ade80; --green-soft:#0d3320;
+      --blue:#60a5fa; --blue-soft:#0c1e33; --red:#f87171; --red-soft:#2d0d0d;
+      --yellow-soft:#1e1a0a; --line:#2d3748;
+      --bg:#0f172a; --card-bg:#1e293b; --cta-bg:#1e293b; --cta-text:#cbd5e1;
+      --svg-apex-fill:#1a2332; --svg-apex-stroke:#3b4a5e; --svg-apex-text:#8896a7;
+      --svg-mid-fill:#1a2332; --svg-mid-stroke:#3b4a5e; --svg-mid-text:#8896a7; --svg-mid-sub:#5a6a7e;
+      --svg-base-fill:#0d3320; --svg-base-stroke:#4ade80; --svg-base-text:#e2e8f0; --svg-base-sub:#4ade80;
+      --svg-input-text:#e2e8f0; --svg-note:#5a6a7e; --svg-note-green:#4ade80;
+    }
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:Georgia,'Times New Roman',serif;color:var(--ink);background:#fcfdfe;line-height:1.65}
+  body{font-family:Georgia,'Times New Roman',serif;color:var(--ink);background:var(--bg);line-height:1.65}
   .wrap{max-width:760px;margin:0 auto;padding:56px 28px 80px}
   .kicker{font-family:-apple-system,Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);font-weight:700}
   h1{font-size:34px;line-height:1.2;margin:10px 0 14px}
@@ -22,11 +40,11 @@
   .pyramid{margin:34px auto;display:block}
   .caption{text-align:center;font-family:-apple-system,Helvetica,Arial,sans-serif;font-size:13px;color:var(--muted);margin-top:-8px}
   .chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:18px 0 6px}
-  .chip{font-family:-apple-system,Helvetica,Arial,sans-serif;font-size:14px;padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:#fff}
+  .chip{font-family:-apple-system,Helvetica,Arial,sans-serif;font-size:14px;padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card-bg)}
   .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:22px 0}
-  .card{border:1px solid var(--line);border-radius:12px;padding:20px 22px;background:#fff}
-  .card.bad{background:var(--red-soft);border-color:#f3c2c2}
-  .card.good{background:var(--green-soft);border-color:#bfe6c9}
+  .card{border:1px solid var(--line);border-radius:12px;padding:20px 22px;background:var(--card-bg)}
+  .card.bad{background:var(--red-soft);border-color:var(--red-soft)}
+  .card.good{background:var(--green-soft);border-color:var(--green-soft)}
   .card h3{font-family:-apple-system,Helvetica,Arial,sans-serif;font-size:14px;letter-spacing:.04em;text-transform:uppercase;margin-bottom:8px}
   .card.bad h3{color:var(--red)} .card.good h3{color:var(--green)}
   .card p{font-size:15px;margin:0}
@@ -34,9 +52,9 @@
   .proof p{font-size:15px}
   .proof a{color:var(--blue)}
   .big{font-size:30px;font-weight:700;color:var(--blue);font-family:-apple-system,Helvetica,Arial,sans-serif}
-  .cta{margin-top:52px;text-align:center;padding:34px 24px;border-radius:14px;background:var(--ink);color:#fff}
-  .cta p{color:#cfd9df;font-size:15px}
-  .cta a{display:inline-block;margin-top:12px;font-family:-apple-system,Helvetica,Arial,sans-serif;font-weight:700;text-decoration:none;background:#fff;color:var(--ink);padding:12px 26px;border-radius:8px;font-size:15px}
+  .cta{margin-top:52px;text-align:center;padding:34px 24px;border-radius:14px;background:var(--cta-bg);color:#fff}
+  .cta p{color:var(--cta-text);font-size:15px}
+  .cta a{display:inline-block;margin-top:12px;font-family:-apple-system,Helvetica,Arial,sans-serif;font-weight:700;text-decoration:none;background:var(--card-bg);color:var(--ink);padding:12px 26px;border-radius:8px;font-size:15px}
   .foot{margin-top:40px;font-size:12.5px;color:var(--muted);font-family:-apple-system,Helvetica,Arial,sans-serif}
   .foot a{color:var(--muted)}
   @media(max-width:600px){.grid{grid-template-columns:1fr}h1{font-size:27px}}
@@ -55,38 +73,51 @@
   <p>Think of your AI setup as a pyramid. The layers on top are interchangeable — models and tools improve every few months, and you should be free to swap them. The base is not interchangeable. The base is <strong>your business context</strong>, and it's the only layer that compounds in value over time.</p>
 
   <svg class="pyramid" viewBox="0 0 560 360" width="100%" style="max-width:560px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pyramid: any AI on top, skills and workflows in the middle, your business context (gbrain) at the base">
+    <style>
+      .pyr-apex{fill:var(--svg-apex-fill);stroke:var(--svg-apex-stroke)}
+      .pyr-mid{fill:var(--svg-mid-fill);stroke:var(--svg-mid-stroke)}
+      .pyr-base{fill:var(--svg-base-fill);stroke:var(--svg-base-stroke)}
+      .pyr-txt-apex{fill:var(--svg-apex-text)}
+      .pyr-txt-mid{fill:var(--svg-mid-text)}
+      .pyr-txt-midsub{fill:var(--svg-mid-sub)}
+      .pyr-txt-base{fill:var(--svg-base-text)}
+      .pyr-txt-basesub{fill:var(--svg-base-sub)}
+      .pyr-txt-in{fill:var(--svg-input-text)}
+      .pyr-note{fill:var(--svg-note)}
+      .pyr-note-grn{fill:var(--svg-note-green)}
+    </style>
     <!-- apex -->
-    <polygon points="280,16 343,96 217,96" fill="#f4f6f8" stroke="#9aa7b0" stroke-width="2" stroke-dasharray="6 5"/>
-    <text x="280" y="74" text-anchor="middle" font-family="-apple-system,Helvetica,Arial" font-size="15" font-weight="700" fill="#56646d">ANY AI</text>
+    <polygon class="pyr-apex" points="280,16 343,96 217,96" stroke-width="2" stroke-dasharray="6 5"/>
+    <text class="pyr-txt-apex" x="280" y="74" text-anchor="middle" font-family="-apple-system,Helvetica,Arial" font-size="15" font-weight="700">ANY AI</text>
     <!-- middle -->
-    <polygon points="217,96 343,96 406,176 154,176" fill="#f4f6f8" stroke="#9aa7b0" stroke-width="2" stroke-dasharray="6 5"/>
-    <text x="280" y="132" text-anchor="middle" font-family="-apple-system,Helvetica,Arial" font-size="14" font-weight="700" fill="#56646d">SKILLS &amp; WORKFLOWS</text>
-    <text x="280" y="153" text-anchor="middle" font-family="-apple-system,Helvetica,Arial" font-size="11.5" fill="#8a97a0">forward an email → notes appear → deployed</text>
+    <polygon class="pyr-mid" points="217,96 343,96 406,176 154,176" stroke-width="2" stroke-dasharray="6 5"/>
+    <text class="pyr-txt-mid" x="280" y="132" text-anchor="middle" font-family="-apple-system,Helvetica,Arial" font-size="14" font-weight="700">SKILLS &amp; WORKFLOWS</text>
+    <text class="pyr-txt-midsub" x="280" y="153" text-anchor="middle" font-family="-apple-system,Helvetica,Arial" font-size="11.5">forward an email → notes appear → deployed</text>
     <!-- base -->
-    <polygon points="154,176 406,176 470,256 90,256" fill="#dff3e4" stroke="#2f9e44" stroke-width="3"/>
-    <text x="280" y="212" text-anchor="middle" font-family="-apple-system,Helvetica,Arial" font-size="16.5" font-weight="800" fill="#1e2a32">YOUR BUSINESS CONTEXT</text>
-    <text x="280" y="234" text-anchor="middle" font-family="-apple-system,Helvetica,Arial" font-size="12" fill="#2f9e44">gbrain — one private, ever-growing memory</text>
+    <polygon class="pyr-base" points="154,176 406,176 470,256 90,256" stroke-width="3"/>
+    <text class="pyr-txt-base" x="280" y="212" text-anchor="middle" font-family="-apple-system,Helvetica,Arial" font-size="16.5" font-weight="800">YOUR BUSINESS CONTEXT</text>
+    <text class="pyr-txt-basesub" x="280" y="234" text-anchor="middle" font-family="-apple-system,Helvetica,Arial" font-size="12">gbrain — one private, ever-growing memory</text>
     <!-- inputs -->
-    <g font-family="-apple-system,Helvetica,Arial" font-size="12" fill="#1e2a32">
-      <text x="138" y="332" text-anchor="middle">📰 newsletters</text>
-      <text x="234" y="332" text-anchor="middle">🎙 transcripts</text>
-      <text x="330" y="332" text-anchor="middle">📅 calendar</text>
-      <text x="420" y="332" text-anchor="middle">📧 email</text>
+    <g font-family="-apple-system,Helvetica,Arial" font-size="12">
+      <text class="pyr-txt-in" x="138" y="332" text-anchor="middle">📰 newsletters</text>
+      <text class="pyr-txt-in" x="234" y="332" text-anchor="middle">🎙 transcripts</text>
+      <text class="pyr-txt-in" x="330" y="332" text-anchor="middle">📅 calendar</text>
+      <text class="pyr-txt-in" x="420" y="332" text-anchor="middle">📧 email</text>
     </g>
-    <g stroke="#2f9e44" stroke-width="2" marker-end="none">
-      <line x1="138" y1="314" x2="146" y2="266"/><line x1="234" y1="314" x2="238" y2="266"/>
-      <line x1="330" y1="314" x2="326" y2="266"/><line x1="420" y1="314" x2="408" y2="266"/>
+    <g stroke-width="2" marker-end="none">
+      <line class="pyr-base" x1="138" y1="314" x2="146" y2="266"/><line class="pyr-base" x1="234" y1="314" x2="238" y2="266"/>
+      <line class="pyr-base" x1="330" y1="314" x2="326" y2="266"/><line class="pyr-base" x1="420" y1="314" x2="408" y2="266"/>
     </g>
-    <g fill="#2f9e44">
-      <polygon points="146,266 140,277 151,275"/><polygon points="238,266 232,276 243,276"/>
-      <polygon points="326,266 320,276 331,275"/><polygon points="408,266 401,275 412,277"/>
+    <g>
+      <polygon class="pyr-base" points="146,266 140,277 151,275"/><polygon class="pyr-base" points="238,266 232,276 243,276"/>
+      <polygon class="pyr-base" points="326,266 320,276 331,275"/><polygon class="pyr-base" points="408,266 401,275 412,277"/>
     </g>
     <!-- side notes -->
-    <text x="478" y="60" font-family="-apple-system,Helvetica,Arial" font-size="11.5" fill="#8a97a0">open layers —</text>
-    <text x="478" y="76" font-family="-apple-system,Helvetica,Arial" font-size="11.5" fill="#8a97a0">swap anytime,</text>
-    <text x="478" y="92" font-family="-apple-system,Helvetica,Arial" font-size="11.5" fill="#8a97a0">no lock-in</text>
-    <text x="478" y="206" font-family="-apple-system,Helvetica,Arial" font-size="12" font-weight="700" fill="#2f9e44">⭐ what I build</text>
-    <text x="478" y="222" font-family="-apple-system,Helvetica,Arial" font-size="12" font-weight="700" fill="#2f9e44">for you</text>
+    <text class="pyr-note" x="478" y="60" font-family="-apple-system,Helvetica,Arial" font-size="11.5">open layers —</text>
+    <text class="pyr-note" x="478" y="76" font-family="-apple-system,Helvetica,Arial" font-size="11.5">swap anytime,</text>
+    <text class="pyr-note" x="478" y="92" font-family="-apple-system,Helvetica,Arial" font-size="11.5">no lock-in</text>
+    <text class="pyr-note-grn" x="478" y="206" font-family="-apple-system,Helvetica,Arial" font-size="12" font-weight="700">⭐ what I build</text>
+    <text class="pyr-note-grn" x="478" y="222" font-family="-apple-system,Helvetica,Arial" font-size="12" font-weight="700">for you</text>
   </svg>
   <p class="caption">Everything your business already produces flows into the base — automatically.</p>
 
