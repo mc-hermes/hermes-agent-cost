@@ -1,157 +1,28 @@
 {
-  "updated_at": "2026-06-15T08:23:05Z",
+  "updated_at": "2026-06-15T08:30:14Z",
   "summary": {
     "tag": "zaim",
-    "total_pages": 8,
-    "total_links": 9,
+    "total_pages": 5,
+    "total_links": 0,
     "type_breakdown": {
-      "concept": 7,
+      "concept": 4,
       "person": 1
     },
-    "updated_at": "2026-06-15T08:23:05Z"
+    "updated_at": "2026-06-15T08:30:14Z"
   },
   "pages": [
     {
-      "slug": "concepts/salary-negotiation-playbook",
-      "title": "Salary Negotiation Playbook",
+      "slug": "concepts/zaim-pipeline-fix-test-20260615",
+      "title": "Zaim Pipeline Fix Test 20260615",
       "type": "concept",
       "updated": "",
-      "body": "# Salary Negotiation Playbook\n\nCompensation bands and negotiation tactics for product management roles in Kuala Lumpur, compiled from Zaim's coaching engagements.\n\n## Related\n- [[The 3-Month Career Pivot Framework]]\n- [[KSI Strategic Institute for Asia Pacific]]",
+      "body": "# End-to-End Pipeline Test (Post-Fix Verification)\n\n**Source:** Pipeline test \u2014 verifying Bug 1 (venv Python) and Bug 2 (YAML tags) fixes.\n\n## Context\n\nThis page tests the full email-to-gbrain pipeline after applying two critical fixes discovered on June 15, 2026:\n\n1. **Bug 1 \u2014 Cron Python PATH**: Pipeline now uses Hermes venv Python at `/home/ubuntu/.hermes/hermes-agent/venv/bin/python` instead of bare `python`/`python3`.\n\n2. **Bug 2 \u2014 Tags Lost on Export**: Workspace files now embed `tags:` in YAML frontmatter so the `zaim` tag survives `gbrain export` and reaches the enrichment pipeline.\n\n## Verification Steps\n\n- [ ] Workspace file saved with YAML frontmatter\n- [ ] `gbrain put --tags zaim --body-stdin` succeeds\n- [ ] `gbrain export` includes `tags:` in YAML frontmatter\n- [ ] Enrichment pipeline picks up the `zaim` tag\n- [ ] Dashboard shows this page under the Zaim filter\n\n**Test timestamp:** $(date -u +%Y-%m-%dT%H:%M:%SZ)",
       "tags": [
         "zaim"
       ],
-      "links_out": [
-        {
-          "to": "The 3-Month Career Pivot Framework",
-          "type": "wikilink",
-          "text": "The 3-Month Career Pivot Framework"
-        },
-        {
-          "to": "companies/ksi-strategic-institute",
-          "type": "wikilink",
-          "text": "KSI Strategic Institute for Asia Pacific"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "concepts/3-month-career-pivot-framework",
-          "type": "wikilink",
-          "text": "Salary Negotiation Playbook"
-        },
-        {
-          "from": "concepts/zaim-3month-career-pivot-framework",
-          "type": "wikilink",
-          "text": "Salary Negotiation Playbook"
-        }
-      ],
-      "outbound_count": 2,
-      "inbound_count": 2
-    },
-    {
-      "slug": "concepts/side-project-strategy",
-      "title": "Side Project Strategy",
-      "type": "concept",
-      "updated": "",
-      "body": "# Side Project Strategy\n\nA career pivot tactic from Zaim's coaching playbook.\n\n## Core Principle\nBuild one public artifact, not ten private ones. A single well-documented project signals competence better than a scattered portfolio.\n\n## Related\n- [[The 3-Month Career Pivot Framework]]\n- [[Skills Inventory]]",
-      "tags": [
-        "zaim"
-      ],
-      "links_out": [
-        {
-          "to": "The 3-Month Career Pivot Framework",
-          "type": "wikilink",
-          "text": "The 3-Month Career Pivot Framework"
-        },
-        {
-          "to": "concepts/skills-inventory",
-          "type": "wikilink",
-          "text": "Skills Inventory"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "concepts/3-month-career-pivot-framework",
-          "type": "wikilink",
-          "text": "Side Project Strategy"
-        },
-        {
-          "from": "concepts/zaim-3month-career-pivot-framework",
-          "type": "wikilink",
-          "text": "Side Project Strategy"
-        }
-      ],
-      "outbound_count": 2,
-      "inbound_count": 2
-    },
-    {
-      "slug": "concepts/skills-inventory",
-      "title": "Skills Inventory",
-      "type": "concept",
-      "updated": "",
-      "body": "# Skills Inventory\n\nA structured mapping exercise used in Zaim's career coaching framework.\n\n## Purpose\nMap current skills against target role requirements to identify the critical 20% gap that blocks 80% of interviews.\n\n## Related\n- [[The 3-Month Career Pivot Framework]]\n- [[Zaim Mohzani]]",
-      "tags": [
-        "zaim"
-      ],
-      "links_out": [
-        {
-          "to": "The 3-Month Career Pivot Framework",
-          "type": "wikilink",
-          "text": "The 3-Month Career Pivot Framework"
-        },
-        {
-          "to": "people/zaim-mohzani",
-          "type": "wikilink",
-          "text": "Zaim Mohzani"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "concepts/3-month-career-pivot-framework",
-          "type": "wikilink",
-          "text": "Skills Inventory"
-        },
-        {
-          "from": "concepts/side-project-strategy",
-          "type": "wikilink",
-          "text": "Skills Inventory"
-        },
-        {
-          "from": "concepts/zaim-3month-career-pivot-framework",
-          "type": "wikilink",
-          "text": "Skills Inventory"
-        }
-      ],
-      "outbound_count": 2,
-      "inbound_count": 3
-    },
-    {
-      "slug": "concepts/zaim-3month-career-pivot-framework",
-      "title": "Zaim 3month Career Pivot Framework",
-      "type": "concept",
-      "updated": "",
-      "body": "## The 3-Month Career Pivot Framework\n\nZaim shared this during a coaching session with a KSI senior analyst looking to move into product.\n\n### Phase 1: Audit (Month 1)\n- [[Skills Inventory]] \u2014 map current skills to target role requirements\n- Identify the 20% skill gap that blocks 80% of interviews\n- Don't learn everything \u2014 learn the gatekeepers\n\n### Phase 2: Signal (Month 2)\n- [[Side Project Strategy]] \u2014 build one public artifact, not ten private ones\n- Write 2 LinkedIn posts/week documenting the pivot journey\n- Engage with 3 target-company hiring managers\n\n### Phase 3: Convert (Month 3)\n- [[Salary Negotiation Playbook]] \u2014 comp bands for product roles in KL\n- Reference calls with 2 people who made the same pivot\n- First offer within 90 days\n\n### Key Insight\n> 'The career pivot gap isn't a skills problem \u2014 it's a positioning problem. You're not underqualified, you're framed wrong.' \u2014 Zaim\n\n**Client:** KSI Senior Analyst \u2192 Product Manager\n**Engagement:** Weekly coaching, 12 sessions\n**Status:** Phase 2, on track\n**Source:** email\n**Source URI:** gmail://msg_19eca58bcdb09c70\n**Ingested:** 2026-06-15T16:20:00Z\n**Provenance:** Career coaching note from Zaim via info+zaim@malohacoast.com\n\n<!-- processed 2026-06-15T16:24 -->",
-      "tags": [
-        "zaim"
-      ],
-      "links_out": [
-        {
-          "to": "concepts/skills-inventory",
-          "type": "wikilink",
-          "text": "Skills Inventory"
-        },
-        {
-          "to": "concepts/side-project-strategy",
-          "type": "wikilink",
-          "text": "Side Project Strategy"
-        },
-        {
-          "to": "concepts/salary-negotiation-playbook",
-          "type": "wikilink",
-          "text": "Salary Negotiation Playbook"
-        }
-      ],
+      "links_out": [],
       "backlinks": [],
-      "outbound_count": 3,
+      "outbound_count": 0,
       "inbound_count": 0
     },
     {
@@ -214,53 +85,7 @@
       "inbound_count": 0
     }
   ],
-  "graph_links": [
-    {
-      "source": "concepts/3-month-career-pivot-framework",
-      "target": "concepts/skills-inventory",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/3-month-career-pivot-framework",
-      "target": "concepts/side-project-strategy",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/3-month-career-pivot-framework",
-      "target": "concepts/salary-negotiation-playbook",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/salary-negotiation-playbook",
-      "target": "companies/ksi-strategic-institute",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/side-project-strategy",
-      "target": "concepts/skills-inventory",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/skills-inventory",
-      "target": "people/zaim-mohzani",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/zaim-3month-career-pivot-framework",
-      "target": "concepts/skills-inventory",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/zaim-3month-career-pivot-framework",
-      "target": "concepts/side-project-strategy",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/zaim-3month-career-pivot-framework",
-      "target": "concepts/salary-negotiation-playbook",
-      "type": "wikilink"
-    }
-  ],
+  "graph_links": [],
   "entities": {
     "people": [
       "people/addy-osmani",
