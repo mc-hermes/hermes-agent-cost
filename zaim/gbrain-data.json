@@ -1,33 +1,24 @@
 {
-  "updated_at": "2026-06-15T06:06:17Z",
+  "updated_at": "2026-06-15T06:09:17Z",
   "summary": {
-    "score": "92",
-    "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
     "page_count": 2,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "73.9% of pages have inbound links",
-    "entity_links": "Coverage \u2014 18 people, 14 companies indexed",
-    "concept_count": 27,
-    "meeting_count": 4,
-    "person_count": 18,
+    "people_count": 0,
     "company_count": 0,
-    "newsletter_count": 2,
+    "artifact_count": 0,
+    "total_links": 0,
+    "outbound_count": 0,
+    "inbound_count": 0,
+    "graph_coverage": "0.0% of pages have inbound links",
+    "concept_count": 2,
+    "meeting_count": 0,
+    "person_count": 0,
+    "newsletter_count": 0,
     "video_count": 0,
     "article_count": 0,
-    "bookmark_count": 1,
+    "bookmark_count": 0,
     "quote_count": 0,
-    "dataset_count": 1,
-    "digest_count": 2,
-    "total_links": 118,
-    "outbound_count": 160,
-    "inbound_count": 146,
-    "artifact_count": 0,
-    "artifact_types": {
-      "image": 1,
-      "spreadsheet": 1
-    },
-    "people_count": 0
+    "dataset_count": 0,
+    "digest_count": 0
   },
   "pages": [
     {
@@ -65,5 +56,31 @@
     "companies": []
   },
   "doctor": {},
-  "artifacts": []
+  "artifacts": [],
+  "logs": [
+    {
+      "ts": "2026-06-15T06:09:17Z",
+      "source": "export",
+      "stage": "deployed",
+      "slug": null,
+      "detail": "Dashboard refreshed \u2014 2 pages, 0 links",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-15T06:09:17Z",
+      "source": "tag",
+      "stage": "tagged",
+      "slug": "zaim-15min-rule",
+      "detail": "'Zaim 15min Rule' tagged for Zaim workspace",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-15T06:09:17Z",
+      "source": "tag",
+      "stage": "tagged",
+      "slug": "zaim-test-pipeline",
+      "detail": "'Zaim Test Pipeline' tagged for Zaim workspace",
+      "level": "info"
+    }
+  ]
 }
