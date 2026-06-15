@@ -1130,11 +1130,12 @@ var statIconSvgs = {
 function renderStats() {
   const s = DATA.summary || {};
   const pages = DATA.pages || [];
+  const tb = s.type_breakdown || {};
   // Render compact chips into statChips (Today view) + fallback statGrid if present
   var chips = [
-    {svg: statIconSvgs.pages, value: s.page_count, label: 'Notes'},
-    {svg: statIconSvgs.brain, value: s.score || '—', label: 'Health' + (s.score_label ? ' · '+s.score_label : ''), click: 'showBrainScoreModal'},
-    {svg: statIconSvgs.links, value: s.total_links, label: 'Connections'},
+    {svg: statIconSvgs.pages, value: s.total_pages || s.page_count || '—', label: 'Notes'},
+    {svg: statIconSvgs.brain, value: s.score || '—', label: 'Health' + (s.score_label ? ' · '+s.score_label : ''), click: s.score ? 'showBrainScoreModal' : null},
+    {svg: statIconSvgs.links, value: s.total_links != null ? s.total_links : '—', label: 'Connections'},
     {svg: statIconSvgs.graph, value: (s.graph_coverage||'').match(/[\\d.]+%/) ? (s.graph_coverage.match(/[\\d.]+%/)[0]) : '—', label: 'Mapped'},
     {svg: statIconSvgs.embed, value: (s.embed_coverage||'').match(/[\\d.]+%/) ? (s.embed_coverage.match(/[\\d.]+%/)[0]) : '—', label: 'Searchable'}
   ];
@@ -1151,9 +1152,9 @@ function renderStats() {
   var gridEl = document.getElementById('statGrid');
   if (gridEl) {
     var gridHtml = [
-      {icon: statIconSvgs.pages, value: s.page_count, label: 'Total Pages', detail: (s.concept_count||0) + ' concepts, ' + (s.meeting_count||0) + ' meetings, ' + (s.person_count||0) + ' people', cls: '', click: 'showStatBreakdown'},
-      {icon: statIconSvgs.brain, value: s.score || '—', label: 'Brain Score /100', detail: s.score_breakdown || '', cls: '', click: 'showBrainScoreModal'},
-      {icon: statIconSvgs.links, value: s.total_links, label: 'Total Links', detail: sumLinks('outbound') + ' outbound, ' + sumLinks('inbound') + ' inbound', cls: '', click: null},
+      {icon: statIconSvgs.pages, value: s.total_pages || s.page_count || '—', label: 'Total Pages', detail: (tb.concept||0) + ' concepts, ' + (tb.meeting||0) + ' meetings, ' + (tb.person||0) + ' people', cls: '', click: (s.total_pages||s.page_count) ? 'showStatBreakdown' : null},
+      {icon: statIconSvgs.brain, value: s.score || '—', label: 'Brain Score /100', detail: s.score_breakdown || '', cls: '', click: s.score ? 'showBrainScoreModal' : null},
+      {icon: statIconSvgs.links, value: s.total_links != null ? s.total_links : '—', label: 'Total Links', detail: sumLinks('outbound') + ' outbound, ' + sumLinks('inbound') + ' inbound', cls: '', click: null},
       {icon: statIconSvgs.graph, value: (s.graph_coverage||'').match(/[\\d.]+%/) ? (s.graph_coverage.match(/[\\d.]+%/)[0]) : '—', label: 'Graph Coverage', detail: s.graph_coverage||'', cls: '', click: null},
       {icon: statIconSvgs.embed, value: (s.embed_coverage||'').match(/[\\d.]+%/) ? (s.embed_coverage.match(/[\\d.]+%/)[0]) : '—', label: 'Embeddings', detail: s.embed_coverage||'', cls: '', click: null}
     ].map(function(c) {
