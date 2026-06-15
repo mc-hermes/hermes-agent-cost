@@ -1,37 +1,110 @@
 {
-  "updated_at": "2026-06-15T05:20:53Z",
+  "updated_at": "2026-06-15T05:33:08Z",
   "summary": {
     "score": 0,
     "score_label": "empty",
     "score_breakdown": {
       "embed": 0,
-      "links": 0,
+      "links": 1,
       "timeline": 0,
       "orphans": 0,
       "dead_links": 0
     },
-    "page_count": 0,
+    "page_count": 4,
     "embed_coverage": 0.0,
-    "graph_coverage": 0.0,
-    "entity_links": 0,
-    "concept_count": 0,
+    "graph_coverage": 50.0,
+    "entity_links": 1,
+    "concept_count": 3,
     "people_count": 0,
     "company_count": 0,
     "meeting_count": 0,
     "artifact_count": 0,
-    "tag_count": 0,
+    "tag_count": 4,
     "timeline_event_count": 0,
-    "avg_links_per_page": 0.0,
-    "avg_backlinks_per_page": 0.0,
+    "avg_links_per_page": 0.5,
+    "avg_backlinks_per_page": 0.25,
     "avg_embedding_age_days": 0.0,
     "total_body_chars": 0,
     "total_body_words": 0,
     "pages_with_embeddings": 0,
-    "pages_with_links": 0,
+    "pages_with_links": 2,
     "pages_with_timeline": 0
   },
-  "pages": [],
-  "graph_links": [],
+  "pages": [
+    {
+      "slug": "zaim-dyl-framework",
+      "title": "DYL Framework: Reframing Dysfunctional Beliefs",
+      "type": "page",
+      "updated": "2026-06-15T05:33:08Z",
+      "body": "The core exercise from Stanford's Designing Your Life methodology. I use this in every career clarity workshop.\n\n## The Three Beliefs\n\n1. **\"I need to find my passion first\"** \u2192 Reframe: Passion is a by-product of doing good work, not a prerequisite. Start with curiosity, not conviction.\n\n2. **\"I should already know what I want\"** \u2192 Reframe: Most people don't. The ones who say they do are either lying or haven't questioned it yet.\n\n3. **\"There's one right path for me\"** \u2192 Reframe: There are many lives you could live happily. The goal isn't finding THE one \u2014 it's designing A good one.\n\nReal example: A 34-year-old accountant wanted to quit and open a bakery. After the reframing, she realised she didn't want to bake \u2014 she wanted autonomy. She's now running a remote finance consultancy.",
+      "tags": [
+        "zaim",
+        "framework",
+        "dyl",
+        "career-coaching"
+      ],
+      "links_out": [
+        "zaim-client-midcareer-pivot"
+      ],
+      "backlinks": []
+    },
+    {
+      "slug": "zaim-linkedin-admin-post",
+      "title": "LinkedIn Post: The Admin Assistant Who Got Caught",
+      "type": "page",
+      "updated": "2026-06-15T05:33:08Z",
+      "body": "An admin assistant at a Malaysian company was running a side business from her office desk \u2014 taking orders on WhatsApp, coordinating deliveries. Her colleagues noticed. Someone reported her. The company took it to Industrial Court. She lost.\n\nThe real lesson isn't \"don't run a side business at work.\" It's this: your workplace visibility is your safety net. If you're invisible at work, doing just enough to not get fired, you have no social capital when something goes wrong.\n\nBuild relationships at work. Be seen. Be known. Not so you can run a side business \u2014 so that when life happens, someone has your back.",
+      "tags": [
+        "zaim",
+        "linkedin-post",
+        "career-advice",
+        "workplace"
+      ],
+      "links_out": [],
+      "backlinks": []
+    },
+    {
+      "slug": "zaim-client-midcareer-pivot",
+      "title": "Client Archetype: The Mid-Career Pivot",
+      "type": "page",
+      "updated": "2026-06-15T05:33:08Z",
+      "body": "This is my most common client profile. About 60% of people who join the 90-Day programme fit this pattern.\n\n## Profile\n- Age: 32-42, 8-15 years in same industry\n- Feeling: competent but bored, or burnt out and trapped\n- Income: RM 6,000-12,000/month\n- Family: married, 1-2 kids, mortgage\n\n## What They've Tried\n- Updated CV (no calls)\n- Applied to random jobs on JobStreet (rejected or offered less)\n- Thought about an MBA (can't afford time or money)\n\n## What Actually Works\n1. Stop looking at job boards. Start looking at lifestyle design.\n2. Map actual skills to industries that value them\n3. Run 2-3 low-risk experiments before quitting\n4. Build a bridge, not a cliff jump",
+      "tags": [
+        "zaim",
+        "client-archetype",
+        "career-coaching",
+        "midcareer"
+      ],
+      "links_out": [
+        "zaim-dyl-framework"
+      ],
+      "backlinks": [
+        "zaim-dyl-framework"
+      ]
+    },
+    {
+      "slug": "zaim-ksi-academy",
+      "title": "KSI Academy: AI Training for ASEAN Corporations",
+      "type": "page",
+      "updated": "2026-06-15T05:33:08Z",
+      "body": "KSI Academy delivers AI literacy and strategy training to corporate clients across ASEAN. Designed for non-technical professionals \u2014 directors, managers, policy teams.\n\n## Current Offerings\n1. **AI for Decision-Makers (Half-Day)** \u2014 C-suite and board level\n2. **AI for Policy & Strategy (Full-Day)** \u2014 Government and corporate strategy teams\n3. **AI Tools for Productivity (2-Day)** \u2014 Hands-on, teams bring real work\n\n## The Gap\nMost corporate AI training in Malaysia is either too technical or too shallow. There's a gap for training delivered by someone who understands both the technology AND the ASEAN policy landscape.\n\nGoal: train 5,000 ASEAN professionals on AI literacy by end of 2027.",
+      "tags": [
+        "zaim",
+        "ksi",
+        "ai-training",
+        "asean"
+      ],
+      "links_out": [],
+      "backlinks": []
+    }
+  ],
+  "graph_links": [
+    {
+      "source": "zaim-dyl-framework",
+      "target": "zaim-client-midcareer-pivot",
+      "type": "reference"
+    }
+  ],
   "entities": {
     "people": [],
     "companies": []
