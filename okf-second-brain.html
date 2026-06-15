@@ -3,57 +3,69 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OKF + Second Brain — Google just standardised your business knowledge</title>
+<title>Your Own AI Assistant — Hermes Agent + Second Brain for Malaysian Businesses</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #020617; --surface: #0f172a; --surface2: #1e293b; --border: #334155;
     --primary: #2a6a8a; --primary-light: #22d3ee; --accent: #c4a86a; --accent-light: #fbbf24;
     --text: #f1f5f9; --text-muted: #94a3b8; --green: #34d399; --green-bg: rgba(52,211,153,0.08);
-    --violet: #a78bfa; --rose: #fb7185;
+    --violet: #a78bfa;
     --radius: 14px; --radius-sm: 8px;
   }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; -webkit-font-smoothing: antialiased; }
 
-  .wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px 80px; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
 
   .back { display: inline-block; font-size: 0.75rem; color: var(--text-muted); text-decoration: none; margin-bottom: 28px; }
   .back:hover { color: var(--accent); }
 
   .kicker { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--primary-light); margin-bottom: 8px; }
-  h1 { font-size: clamp(1.7rem, 3.5vw, 2.4rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.2; margin-bottom: 8px; }
+  h1 { font-size: clamp(1.6rem, 3.5vw, 2.3rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.2; margin-bottom: 8px; }
   h1 span { background: linear-gradient(135deg, var(--accent), var(--accent-light)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-  .subtitle { font-size: 1.05rem; color: var(--text-muted); margin-bottom: 32px; max-width: 600px; }
+  .subtitle { font-size: 1rem; color: var(--text-muted); margin-bottom: 8px; max-width: 620px; }
+  .subtitle2 { font-size: 0.8rem; color: var(--text-muted); opacity: 0.6; margin-bottom: 32px; }
 
   .divider { width: 50px; height: 3px; background: var(--accent); border-radius: 2px; margin: 28px 0; }
 
-  h2 { font-size: 1.3rem; font-weight: 700; margin: 40px 0 12px; letter-spacing: -0.01em; }
+  h2 { font-size: 1.25rem; font-weight: 700; margin: 40px 0 12px; letter-spacing: -0.01em; }
   h3 { font-size: 1rem; font-weight: 600; margin: 24px 0 8px; }
-  p { font-size: 0.92rem; color: var(--text-muted); margin-bottom: 12px; line-height: 1.7; }
+  p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 12px; line-height: 1.7; }
   strong { color: var(--text); }
 
   .insight-box { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 24px; margin: 24px 0; }
-  .insight-box p { margin-bottom: 0; }
+  .insight-box p { margin-bottom: 0; font-size: 0.88rem; }
   .insight-box .label { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); margin-bottom: 6px; }
 
-  .three-col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 20px 0; }
-  .three-col .col { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; }
-  .three-col .col .num { font-family: 'JetBrains Mono', monospace; font-size: 1.6rem; font-weight: 800; color: var(--accent); }
-  .three-col .col h4 { font-size: 0.85rem; font-weight: 700; margin: 8px 0 4px; }
-  .three-col .col p { font-size: 0.78rem; margin: 0; }
+  /* Two-column comparison */
+  .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
+  .compare .col { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px 20px; }
+  .compare .col h4 { font-size: 0.9rem; font-weight: 700; margin-bottom: 10px; }
+  .compare .col p { font-size: 0.82rem; margin-bottom: 6px; }
+  .compare .col .vs-label { font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 4px; }
+  .compare .col.old .vs-label { color: var(--rose); }
+  .compare .col.new .vs-label { color: var(--green); }
 
-  .pricing { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0; }
-  .price-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 24px; text-align: center; }
-  .price-card.featured { border-color: rgba(196,168,106,0.4); background: linear-gradient(135deg, rgba(196,168,106,0.06) 0%, rgba(15,23,42,1) 40%); }
-  .price-card .price-label { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 4px; }
-  .price-card .amount { font-family: 'JetBrains Mono', monospace; font-size: 2.2rem; font-weight: 800; color: var(--accent); margin: 4px 0; }
-  .price-card .amount sub { font-size: 0.8rem; font-weight: 400; color: var(--text-muted); }
-  .price-card .detail { font-size: 0.78rem; color: var(--text-muted); line-height: 1.6; }
-  .price-card .detail li { margin-bottom: 4px; list-style: none; }
+  /* Pricing tiers */
+  .pricing { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 24px 0; }
+  .price-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 24px; }
+  .price-card.featured { border-color: rgba(196,168,106,0.4); background: linear-gradient(135deg, rgba(196,168,106,0.06) 0%, rgba(15,23,42,1) 40%); position: relative; }
+  .price-card.featured::before { content: 'Best Value'; position: absolute; top: -10px; right: 20px; background: var(--accent); color: #020617; font-size: 0.6rem; font-weight: 700; padding: 3px 10px; border-radius: 10px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .price-card .tier-name { font-size: 0.85rem; font-weight: 700; margin-bottom: 2px; }
+  .price-card .tier-desc { font-size: 0.72rem; color: var(--text-muted); margin-bottom: 16px; }
+  .price-card .price-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 4px; flex-wrap: wrap; }
+  .price-card .amount { font-family: 'JetBrains Mono', monospace; font-size: 2rem; font-weight: 800; color: var(--accent); }
+  .price-card .amount-label { font-size: 0.7rem; color: var(--text-muted); }
+  .price-card .amount-sub { font-family: 'JetBrains Mono', monospace; font-size: 1.1rem; font-weight: 700; color: var(--text); margin-top: 12px; }
+  .price-card .detail { font-size: 0.78rem; color: var(--text-muted); line-height: 1.7; margin-top: 12px; }
+  .price-card .detail li { margin-bottom: 3px; list-style: none; }
   .price-card .detail li::before { content: '✓ '; color: var(--green); }
 
-  .quote { border-left: 3px solid var(--accent); padding: 10px 0 10px 20px; margin: 28px 0; font-style: italic; color: var(--text); font-size: 1.05rem; }
+  /* FAQ */
+  .faq { margin: 28px 0; }
+  .faq .q { font-weight: 700; color: var(--text); font-size: 0.9rem; margin: 18px 0 4px; }
+  .faq .a { font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; }
 
   .cta { margin-top: 44px; text-align: center; }
   .cta a { display: inline-block; background: var(--accent); color: #020617; font-weight: 700; font-size: 0.95rem; padding: 14px 32px; border-radius: var(--radius-sm); text-decoration: none; transition: filter 0.2s; }
@@ -64,7 +76,7 @@
   .foot a { color: rgba(148,163,184,0.4); }
 
   @media (max-width: 600px) {
-    .three-col, .pricing { grid-template-columns: 1fr; }
+    .compare, .pricing { grid-template-columns: 1fr; }
     .wrap { padding: 32px 16px 60px; }
   }
 </style>
@@ -73,89 +85,132 @@
 <div class="wrap">
   <a href="index.html" class="back">← Maloha Coast</a>
 
-  <div class="kicker">June 2026 · OKF + gbrain</div>
-  <h1>Google just standardised how AI stores <span>your</span> business knowledge.</h1>
-  <p class="subtitle">The problem they left open? Someone has to feed it. That's what we do.</p>
+  <div class="kicker">For Malaysian Business Owners</div>
+  <h1>Your own AI assistant.<br>On your phone. <span>That remembers your business.</span></h1>
+  <p class="subtitle">Not ChatGPT. Not a subscription to a US company. Your own AI — running on your own infrastructure, accessible from WhatsApp or Telegram, 24/7.</p>
+  <p class="subtitle2">I spent 2 days setting this up for myself. I'll do it for you in 2 hours — and stay on retainer to keep it running.</p>
   <div class="divider"></div>
 
-  <h2>The news</h2>
-  <p>On June 12, 2026, Google published the <strong>Open Knowledge Format (OKF)</strong> — a vendor-neutral standard for AI agent knowledge. Plain markdown files. YAML frontmatter. No databases, no lock-in. If you can <code style="font-family:'JetBrains Mono',monospace;font-size:0.82rem;background:var(--surface2);padding:1px 5px;border-radius:3px;">cat</code> a file, you can read it. If you can <code style="font-family:'JetBrains Mono',monospace;font-size:0.82rem;background:var(--surface2);padding:1px 5px;border-radius:3px;">git clone</code>, you can ship it.</p>
-  <p>Karpathy predicted this. Google formalised it. The industry now agrees: <strong>agents need a knowledge format, and it's markdown.</strong></p>
+  <!-- THE PROBLEM -->
+  <h2>The problem with ChatGPT for business</h2>
+  <div class="compare">
+    <div class="col old">
+      <div class="vs-label">What most people do</div>
+      <h4>ChatGPT / Copilot / Gemini</h4>
+      <p>• Re-explain your business in every chat</p>
+      <p>• No memory of past conversations</p>
+      <p>• Can't read your emails or files</p>
+      <p>• US-based, unclear data handling</p>
+      <p>• Monthly subscription, no ownership</p>
+    </div>
+    <div class="col new">
+      <div class="vs-label">What we build for you</div>
+      <h4>Hermes Agent + Second Brain</h4>
+      <p>• Knows your business from day one</p>
+      <p>• Remembers every conversation, forever</p>
+      <p>• Ingests your emails, notes, documents</p>
+      <p>• Runs on your infrastructure, your keys</p>
+      <p>• One-time setup. You own it.</p>
+    </div>
+  </div>
+
+  <!-- HERMES AGENT -->
+  <h2>Foundation: Hermes Agent</h2>
+  <p>Hermes Agent is the <strong>AI assistant that lives on your phone.</strong> It connects to WhatsApp or Telegram — no new app to learn. It has persistent memory, so it remembers your preferences, your projects, and your conversations across days and weeks.</p>
+  <p>It can search the web, manage files, run scheduled tasks, and answer questions about anything you've shared with it. Think of it as <strong>ChatGPT, but private, persistent, and personalised to your business.</strong></p>
 
   <div class="insight-box">
-    <div class="label">Why this matters for your business</div>
-    <p>Right now your company knowledge lives in emails, Slack threads, meeting notes, invoices, and inside the heads of your 3 most senior people. When you ask an AI agent "what did we promise Client X last quarter?", it has to assemble the answer from 6 incompatible sources — or fail. OKF gives that knowledge a home. <strong>We make sure it actually gets there.</strong></p>
+    <div class="label">What the setup covers</div>
+    <p>VPS provisioning · Hermes Agent installation · model & provider configuration (DeepSeek, Claude, etc.) · desktop & mobile app connection · WhatsApp / Telegram wiring · basic skills setup (web search, file management, memory) · 2-hour onboarding walkthrough. <strong>You walk away with a working AI assistant on your phone.</strong></p>
   </div>
 
-  <h2>The three layers</h2>
-  <div class="three-col">
-    <div class="col">
-      <div class="num">1</div>
-      <h4>OKF — the format</h4>
-      <p>Google's standard. Markdown + YAML. Vendor-neutral, git-friendly, zero lock-in. Your knowledge, your files.</p>
-    </div>
-    <div class="col">
-      <div class="num">2</div>
-      <h4>gbrain — the engine</h4>
-      <p>Self-wiring knowledge graph. Hybrid search. Autonomous enrichment. 22K+ GitHub stars. Production-proven at 146K pages.</p>
-    </div>
-    <div class="col">
-      <div class="num">3</div>
-      <h4>Pipeline — the feed</h4>
-      <p>Forward an email → it lands in your brain. Meeting transcript, invoice, client thread — same flow. The part Google left unsolved. Our moat.</p>
-    </div>
+  <!-- SECOND BRAIN -->
+  <h2>Add-on: Second Brain</h2>
+  <p>Hermes Agent gives you an assistant. <strong>Second Brain gives it a memory of your entire business.</strong></p>
+  <p>Forward an email → it gets processed, linked to existing knowledge, and stored in your private knowledge base. Forward a meeting transcript, a client note, an invoice — same flow. No tagging. No manual entry. The system enriches itself while you sleep.</p>
+  <p>Ask <em>"What did Client X ask for in January?"</em> or <em>"Show me every conversation about the pricing proposal"</em> — and get the answer in seconds, with sources.</p>
+
+  <div class="insight-box">
+    <div class="label">The part Google just validated</div>
+    <p>June 2026: Google published the Open Knowledge Format (OKF) — a standard for exactly this kind of AI-readable knowledge base. Karpathy predicted it. Google formalised it. Your Second Brain is <strong>OKF-compatible from day one</strong> — plain markdown files, no vendor lock-in, your data walks with you anytime.</p>
   </div>
 
-  <h2>How it works — in plain English</h2>
-  <p><strong>1. Forward anything.</strong> An email, a meeting transcript, a client note, a newsletter you found useful. Forward it to your dedicated Second Brain address.</p>
-  <p><strong>2. It gets ingested.</strong> Our pipeline processes it — extracts key entities, links it to everything you've already stored, enriches it with context. No clicks. No manual tagging.</p>
-  <p><strong>3. Ask it anything.</strong> "What did Sarah ask for in the Q1 review?" "Show me every conversation we've had about pricing." "What's the status of the Acme contract?" — get the answer in seconds, with sources.</p>
-  <p><strong>4. It gets smarter every month.</strong> Unlike a wiki that rots the moment you stop updating it, this one improves while you sleep. The AI does the bookkeeping humans abandoned.</p>
-
-  <div class="quote">"Everyone is stacking agents on top of amnesia. We build the memory first — now in the format Google just blessed."</div>
-
-  <h2>The offer</h2>
+  <!-- PRICING -->
+  <h2>Two ways to start</h2>
   <div class="pricing">
     <div class="price-card">
-      <div class="price-label">One-Time Setup</div>
-      <div class="amount">$750</div>
+      <div class="tier-name">🥇 Hermes Agent Starter</div>
+      <div class="tier-desc">Your own AI assistant on your phone</div>
+      <div class="price-row">
+        <span class="amount">RM 1,500</span>
+        <span class="amount-label">one-time setup</span>
+      </div>
+      <div class="amount-sub">+ RM 150/mo</div>
       <ul class="detail">
-        <li>Email-to-brain pipeline configured</li>
-        <li>Initial knowledge base structure</li>
-        <li>OKF-compatible formatting</li>
-        <li>2-hour onboarding session</li>
-        <li>Your knowledge, your keys, your repo</li>
+        <li>Hermes Agent installed & configured</li>
+        <li>WhatsApp or Telegram connection</li>
+        <li>Desktop + mobile app access</li>
+        <li>Persistent memory across sessions</li>
+        <li>Web search, file management, scheduling</li>
+        <li>Monthly maintenance & updates</li>
+        <li>WhatsApp support (same-day)</li>
       </ul>
     </div>
     <div class="price-card featured">
-      <div class="price-label">Monthly Retainer</div>
-      <div class="amount">$49<sub>/mo</sub></div>
+      <div class="tier-name">🥇🥇 Hermes + Second Brain</div>
+      <div class="tier-desc">AI assistant with business memory</div>
+      <div class="price-row">
+        <span class="amount">RM 2,500</span>
+        <span class="amount-label">one-time setup</span>
+      </div>
+      <div class="amount-sub">+ RM 250/mo</div>
       <ul class="detail">
-        <li>Unlimited email forwarding</li>
+        <li>Everything in Starter, plus:</li>
+        <li>Email-to-brain ingestion pipeline</li>
         <li>Autonomous nightly enrichment</li>
+        <li>OKF-compatible knowledge base</li>
+        <li>Ask-anything with source citations</li>
         <li>Monthly brain health report</li>
         <li>Priority support (same-day)</li>
-        <li>Format stays current with OKF spec</li>
       </ul>
     </div>
   </div>
 
   <div class="insight-box">
-    <div class="label">The rationale — why setup + retainer</div>
-    <p><strong>Setup covers the real work:</strong> configuring your pipeline, structuring your knowledge base, training you and your team. This is 3–6 hours of deep integration work — not a SaaS checkbox. <strong>The retainer covers the compounding value:</strong> every email you forward, every month that passes, your brain gets richer. The enrichment cron jobs run autonomously. New entities get linked. Citations get fixed. The retainer is for maintenance, not for staring at a dashboard — the system does the staring for you.</p>
+    <div class="label">Why setup + retainer</div>
+    <p><strong>Setup covers the real work:</strong> 2 days of configuration compressed into a 2-hour onboarding — VPS, Hermes, models, platforms, testing. You get a working product, not a project plan. <strong>Retainer covers the compounding value:</strong> your AI runs 24/7. Models update. Platforms change. Cron jobs run. The retainer is for maintenance and peace of mind — for less than your phone bill.</p>
   </div>
 
-  <p style="margin-top:16px"><strong>Compare:</strong> Notion is $10/seat/month and you still have to write everything manually. A junior admin to maintain a wiki is $2,000+/month. This is an autonomous knowledge base that writes itself — for the price of a nice dinner.</p>
+  <!-- FAQ -->
+  <h2>Conversation starters (for your prospects)</h2>
+  <div class="faq">
+    <div class="q">"Is this just another ChatGPT wrapper?"</div>
+    <div class="a">No. ChatGPT doesn't remember your business. It doesn't run on your infrastructure. It can't ingest your emails. Hermes Agent is a self-hosted AI that you own — it's yours, on your server, with your data. ChatGPT is a rented tool. This is your own tool.</div>
+
+    <div class="q">"I'm not technical. Can I actually use this?"</div>
+    <div class="a">You use it the same way you use WhatsApp. That's the whole point. The technical setup is what I do. You just talk to it. "Remind me about the Client X meeting tomorrow." "Summarise the proposal Y sent last week." Same as texting a colleague.</div>
+
+    <div class="q">"Why not just hire a VA?"</div>
+    <div class="a">A part-time VA in Malaysia costs RM 800–1,500/mo. They work 20 hours a week. They forget things. They take sick leave. Hermes + Second Brain costs RM 150–250/mo, works 24/7, never forgets, and gets smarter every month you use it. It's not a replacement for a VA — it's a force multiplier. Your VA becomes 3x more effective with an AI that remembers everything.</div>
+
+    <div class="q">"What happens if I stop paying the retainer?"</div>
+    <div class="a">Your AI keeps running. The VPS is yours. The data is yours. The knowledge base is a folder of plain text files — walk away anytime and take it with you. The retainer covers maintenance, updates, and support. Cancel anytime; what you've built stays yours.</div>
+
+    <div class="q">"Can I try before committing?"</div>
+    <div class="a">Yes. Book a 20-minute call. I'll show you my own setup live — Hermes Agent running on my phone, answering questions from my Second Brain. No slide deck. No sales pitch. You'll see exactly what you're getting.</div>
+  </div>
 
   <div class="cta">
-    <a href="mailto:info@malohacoast.com?subject=OKF%20Second%20Brain">Let's talk →</a>
-    <p class="sub">20-minute call. We'll sketch your pyramid. Zero obligation.</p>
+    <a href="mailto:info@malohacoast.com?subject=AI%20Assistant%20for%20my%20business">Let's talk — 20 min →</a>
+    <p class="sub">Live demo of my own setup. Zero obligation. KL-based, English or BM.</p>
   </div>
 
   <p class="foot">
     <a href="https://malohacoast.com">Maloha Coast Sdn Bhd</a> · 
+    <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent</a> · 
     <a href="https://github.com/garrytan/gbrain">gbrain</a> · 
-    <a href="okf-explained.html">OKF explained in 90 seconds →</a>
+    <a href="https://github.com/google/okf">OKF</a> ·
+    <a href="okf-explained.html">OKF explained →</a>
   </p>
 </div>
 </body>
