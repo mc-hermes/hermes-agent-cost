@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-06-15T08:00:17Z",
+  "updated_at": "2026-06-15T08:21:13Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
     "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 71,
+    "page_count": 77,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "71.8% of pages have inbound links",
+    "graph_coverage": "70.1% of pages have inbound links",
     "entity_links": "Coverage \u2014 19 people, 14 companies indexed",
-    "concept_count": 28,
+    "concept_count": 34,
     "meeting_count": 4,
     "person_count": 19,
     "company_count": 14,
@@ -19,9 +19,9 @@
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 118,
-    "outbound_count": 160,
-    "inbound_count": 146,
+    "total_links": 130,
+    "outbound_count": 176,
+    "inbound_count": 158,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -441,6 +441,16 @@
       ],
       "backlinks": [
         {
+          "from": "concepts/3-month-career-pivot-framework",
+          "type": "wikilink",
+          "text": "KSI Strategic Institute for Asia Pacific"
+        },
+        {
+          "from": "concepts/salary-negotiation-playbook",
+          "type": "wikilink",
+          "text": "KSI Strategic Institute for Asia Pacific"
+        },
+        {
           "from": "digests/2026-06-15-business-brain-digest",
           "type": "wikilink",
           "text": "KSI Strategic Institute"
@@ -452,7 +462,7 @@
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 2
+      "inbound_count": 4
     },
     {
       "slug": "companies/nation-building-school",
@@ -708,6 +718,44 @@
       "inbound_count": 2
     },
     {
+      "slug": "concepts/3-month-career-pivot-framework",
+      "title": "3 Month Career Pivot Framework",
+      "type": "concept",
+      "updated": "",
+      "body": "## The 3-Month Career Pivot Framework\n\n[[Zaim Mohzani]] shared this during a coaching session with a [[KSI Strategic Institute for Asia Pacific]] senior analyst looking to move into product.\n\n### Phase 1: Audit (Month 1)\n- [[Skills Inventory]] \u2014 map current skills to target role requirements\n- Identify the 20% skill gap that blocks 80% of interviews\n- Don't learn everything \u2014 learn the gatekeepers\n\n### Phase 2: Signal (Month 2)\n- [[Side Project Strategy]] \u2014 build one public artifact, not ten private ones\n- Write 2 LinkedIn posts/week documenting the pivot journey\n- Engage with 3 target-company hiring managers\n\n### Phase 3: Convert (Month 3)\n- [[Salary Negotiation Playbook]] \u2014 comp bands for product roles in KL\n- Reference calls with 2 people who made the same pivot\n- First offer within 90 days\n\n### Key Insight\n> 'The career pivot gap isn't a skills problem \u2014 it's a positioning problem. You're not underqualified, you're framed wrong.' \u2014 [[Zaim Mohzani]]\n\n**Client:** KSI Senior Analyst \u2192 Product Manager\n**Engagement:** Weekly coaching, 12 sessions\n**Status:** Phase 2, on track\n\n## Related\n\n- [[Zaim Mohzani]] \u2014 creator of the framework\n- [[KSI Strategic Institute for Asia Pacific]] \u2014 client organization",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "people/zaim-mohzani",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
+          "to": "companies/ksi-strategic-institute",
+          "type": "wikilink",
+          "text": "KSI Strategic Institute for Asia Pacific"
+        },
+        {
+          "to": "concepts/skills-inventory",
+          "type": "wikilink",
+          "text": "Skills Inventory"
+        },
+        {
+          "to": "concepts/side-project-strategy",
+          "type": "wikilink",
+          "text": "Side Project Strategy"
+        },
+        {
+          "to": "concepts/salary-negotiation-playbook",
+          "type": "wikilink",
+          "text": "Salary Negotiation Playbook"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 5,
+      "inbound_count": 0
+    },
+    {
       "slug": "concepts/business-brain",
       "title": "Business Brain",
       "type": "concept",
@@ -781,13 +829,18 @@
           "text": "Claude Code 10x Skill Newsletter"
         },
         {
+          "from": "newsletter/maloha-coast-navigator-2026-06-15",
+          "type": "wikilink",
+          "text": "Claude Code 10x Skill"
+        },
+        {
           "from": "people/nate-herk",
           "type": "wikilink",
           "text": "claude-code-10x-skill-newsletter"
         }
       ],
       "outbound_count": 5,
-      "inbound_count": 4
+      "inbound_count": 5
     },
     {
       "slug": "concepts/company-memory-os-ph1-prd",
@@ -1099,6 +1152,113 @@
       "inbound_count": 2
     },
     {
+      "slug": "concepts/salary-negotiation-playbook",
+      "title": "Salary Negotiation Playbook",
+      "type": "concept",
+      "updated": "",
+      "body": "# Salary Negotiation Playbook\n\nCompensation bands and negotiation tactics for product management roles in Kuala Lumpur, compiled from Zaim's coaching engagements.\n\n## Related\n- [[The 3-Month Career Pivot Framework]]\n- [[KSI Strategic Institute for Asia Pacific]]",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "The 3-Month Career Pivot Framework",
+          "type": "wikilink",
+          "text": "The 3-Month Career Pivot Framework"
+        },
+        {
+          "to": "companies/ksi-strategic-institute",
+          "type": "wikilink",
+          "text": "KSI Strategic Institute for Asia Pacific"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "concepts/3-month-career-pivot-framework",
+          "type": "wikilink",
+          "text": "Salary Negotiation Playbook"
+        },
+        {
+          "from": "concepts/zaim-3month-career-pivot-framework",
+          "type": "wikilink",
+          "text": "Salary Negotiation Playbook"
+        }
+      ],
+      "outbound_count": 2,
+      "inbound_count": 2
+    },
+    {
+      "slug": "concepts/side-project-strategy",
+      "title": "Side Project Strategy",
+      "type": "concept",
+      "updated": "",
+      "body": "# Side Project Strategy\n\nA career pivot tactic from Zaim's coaching playbook.\n\n## Core Principle\nBuild one public artifact, not ten private ones. A single well-documented project signals competence better than a scattered portfolio.\n\n## Related\n- [[The 3-Month Career Pivot Framework]]\n- [[Skills Inventory]]",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "The 3-Month Career Pivot Framework",
+          "type": "wikilink",
+          "text": "The 3-Month Career Pivot Framework"
+        },
+        {
+          "to": "concepts/skills-inventory",
+          "type": "wikilink",
+          "text": "Skills Inventory"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "concepts/3-month-career-pivot-framework",
+          "type": "wikilink",
+          "text": "Side Project Strategy"
+        },
+        {
+          "from": "concepts/zaim-3month-career-pivot-framework",
+          "type": "wikilink",
+          "text": "Side Project Strategy"
+        }
+      ],
+      "outbound_count": 2,
+      "inbound_count": 2
+    },
+    {
+      "slug": "concepts/skills-inventory",
+      "title": "Skills Inventory",
+      "type": "concept",
+      "updated": "",
+      "body": "# Skills Inventory\n\nA structured mapping exercise used in Zaim's career coaching framework.\n\n## Purpose\nMap current skills against target role requirements to identify the critical 20% gap that blocks 80% of interviews.\n\n## Related\n- [[The 3-Month Career Pivot Framework]]\n- [[Zaim Mohzani]]",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "The 3-Month Career Pivot Framework",
+          "type": "wikilink",
+          "text": "The 3-Month Career Pivot Framework"
+        },
+        {
+          "to": "people/zaim-mohzani",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "concepts/3-month-career-pivot-framework",
+          "type": "wikilink",
+          "text": "Skills Inventory"
+        },
+        {
+          "from": "concepts/side-project-strategy",
+          "type": "wikilink",
+          "text": "Skills Inventory"
+        },
+        {
+          "from": "concepts/zaim-3month-career-pivot-framework",
+          "type": "wikilink",
+          "text": "Skills Inventory"
+        }
+      ],
+      "outbound_count": 2,
+      "inbound_count": 3
+    },
+    {
       "slug": "concepts/three-folder-system-head-hands-heart",
       "title": "Three Folder System Head Hands Heart",
       "type": "concept",
@@ -1170,6 +1330,34 @@
       ],
       "outbound_count": 2,
       "inbound_count": 2
+    },
+    {
+      "slug": "concepts/zaim-3month-career-pivot-framework",
+      "title": "Zaim 3month Career Pivot Framework",
+      "type": "concept",
+      "updated": "",
+      "body": "## The 3-Month Career Pivot Framework\n\nZaim shared this during a coaching session with a KSI senior analyst looking to move into product.\n\n### Phase 1: Audit (Month 1)\n- [[Skills Inventory]] \u2014 map current skills to target role requirements\n- Identify the 20% skill gap that blocks 80% of interviews\n- Don't learn everything \u2014 learn the gatekeepers\n\n### Phase 2: Signal (Month 2)\n- [[Side Project Strategy]] \u2014 build one public artifact, not ten private ones\n- Write 2 LinkedIn posts/week documenting the pivot journey\n- Engage with 3 target-company hiring managers\n\n### Phase 3: Convert (Month 3)\n- [[Salary Negotiation Playbook]] \u2014 comp bands for product roles in KL\n- Reference calls with 2 people who made the same pivot\n- First offer within 90 days\n\n### Key Insight\n> 'The career pivot gap isn't a skills problem \u2014 it's a positioning problem. You're not underqualified, you're framed wrong.' \u2014 Zaim\n\n**Client:** KSI Senior Analyst \u2192 Product Manager\n**Engagement:** Weekly coaching, 12 sessions\n**Status:** Phase 2, on track\n**Source:** email\n**Source URI:** gmail://msg_19eca58bcdb09c70\n**Ingested:** 2026-06-15T16:20:00Z\n**Provenance:** Career coaching note from Zaim via info+zaim@malohacoast.com\n\n<!-- processed 2026-06-15T16:24 -->",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "concepts/skills-inventory",
+          "type": "wikilink",
+          "text": "Skills Inventory"
+        },
+        {
+          "to": "concepts/side-project-strategy",
+          "type": "wikilink",
+          "text": "Side Project Strategy"
+        },
+        {
+          "to": "concepts/salary-negotiation-playbook",
+          "type": "wikilink",
+          "text": "Salary Negotiation Playbook"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 3,
+      "inbound_count": 0
     },
     {
       "slug": "datasets/dynamics-orchard-management-accounts-fye-2025",
@@ -1822,6 +2010,29 @@
       ],
       "backlinks": [],
       "outbound_count": 3,
+      "inbound_count": 0
+    },
+    {
+      "slug": "newsletter/maloha-coast-navigator-2026-06-15",
+      "title": "Maloha Coast Navigator 2026 06 15",
+      "type": "concept",
+      "updated": "",
+      "body": "# The Maloha Coast Navigator\n\n*Your weekly guide to AI strategy for SMBs*\n\n---\n\n## This Week: Why Most AI Pilots Fail\n\n80% of AI proofs-of-concept never reach production. Here's the pattern:\n\n1. **Scope creep** \u2014 POCs that try to boil the ocean\n2. **Data rot** \u2014 Models trained on stale data that's 6 months old\n3. **No owner** \u2014 AI sits in IT without a business sponsor\n\n### The Fix\n\nStart with a **single workflow**, not a platform. Pick the one manual process your team hates most. Automate that. Measure the time saved. Then expand.\n\n---\n\n## Client Spotlight\n\nA 12-person accounting firm deployed an email triage agent. Result: 14 hours/week saved. ROI in week one.\n\n---\n\n## What We're Reading\n\n- [[Claude Code 10x Skill]] \u2014 The skill pattern that changed everything\n- [[Second Brain Architecture]] \u2014 How we structure knowledge for SMBs\n\n---\n\n## Upcoming\n\nNext week: Pricing models that work for SMB AI consulting.\n\n*\u2014 Sayf, Maloha Coast*\n\n**Source:** email\n**Source URI:** gmail://msg_19eca4c3e7e0cefc\n**Ingested:** 2026-06-15T16:05:00Z\n**Provenance:** Maloha Coast Navigator newsletter from info@malohacoast.com",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "concepts/claude-code-10x-skill-newsletter",
+          "type": "wikilink",
+          "text": "Claude Code 10x Skill"
+        },
+        {
+          "to": "Second Brain Architecture",
+          "type": "wikilink",
+          "text": "Second Brain Architecture"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 2,
       "inbound_count": 0
     },
     {
@@ -2509,13 +2720,23 @@
           "text": "Zaim Mohzani"
         },
         {
+          "from": "concepts/3-month-career-pivot-framework",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
+          "from": "concepts/skills-inventory",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
           "from": "digests/2026-06-15-business-brain-digest",
           "type": "wikilink",
           "text": "Zaim Mohzani"
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 4
+      "inbound_count": 6
     },
     {
       "slug": "reference/cold-lead-response-conference-events",
@@ -2737,6 +2958,31 @@
       "type": "wikilink"
     },
     {
+      "source": "concepts/3-month-career-pivot-framework",
+      "target": "people/zaim-mohzani",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/3-month-career-pivot-framework",
+      "target": "companies/ksi-strategic-institute",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/3-month-career-pivot-framework",
+      "target": "concepts/skills-inventory",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/3-month-career-pivot-framework",
+      "target": "concepts/side-project-strategy",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/3-month-career-pivot-framework",
+      "target": "concepts/salary-negotiation-playbook",
+      "type": "wikilink"
+    },
+    {
       "source": "concepts/claude-code-10x-skill-newsletter",
       "target": "people/carson",
       "type": "wikilink"
@@ -2822,6 +3068,21 @@
       "type": "wikilink"
     },
     {
+      "source": "concepts/salary-negotiation-playbook",
+      "target": "companies/ksi-strategic-institute",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/side-project-strategy",
+      "target": "concepts/skills-inventory",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/skills-inventory",
+      "target": "people/zaim-mohzani",
+      "type": "wikilink"
+    },
+    {
       "source": "concepts/three-folder-system-head-hands-heart",
       "target": "people/bob-proctor",
       "type": "link"
@@ -2844,6 +3105,21 @@
     {
       "source": "concepts/virtual-machines-deep-dive",
       "target": "people/ayaan",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/zaim-3month-career-pivot-framework",
+      "target": "concepts/skills-inventory",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/zaim-3month-career-pivot-framework",
+      "target": "concepts/side-project-strategy",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/zaim-3month-career-pivot-framework",
+      "target": "concepts/salary-negotiation-playbook",
       "type": "wikilink"
     },
     {
@@ -3184,6 +3460,11 @@
     {
       "source": "meetings/sayf-zaim-jun-12-2026",
       "target": "brand/maloha-coast-brand-identity",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletter/maloha-coast-navigator-2026-06-15",
+      "target": "concepts/claude-code-10x-skill-newsletter",
       "type": "wikilink"
     },
     {
