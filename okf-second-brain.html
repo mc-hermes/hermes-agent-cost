@@ -136,42 +136,84 @@
   </div>
 
   <!-- PRICING -->
-  <h2>Two ways to start</h2>
-  <div class="pricing">
+  <style>
+    .pricing-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin: 24px 0; }
+    .price-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 22px; position: relative; }
+    .price-card.featured { border-color: rgba(196,168,106,0.4); background: linear-gradient(135deg, rgba(196,168,106,0.06) 0%, rgba(15,23,42,1) 40%); }
+    .price-card.featured::before { content: 'Most Popular'; position: absolute; top: -10px; right: 20px; background: var(--accent); color: #020617; font-size: 0.58rem; font-weight: 700; padding: 3px 10px; border-radius: 10px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .price-card .tier-icon { font-size: 1.4rem; margin-bottom: 8px; }
+    .price-card .tier-name { font-size: 0.9rem; font-weight: 700; margin-bottom: 2px; }
+    .price-card .tier-who { font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 14px; }
+    .price-card .price-row { display: flex; align-items: baseline; gap: 8px; margin-bottom: 2px; flex-wrap: wrap; }
+    .price-card .amount { font-family: 'JetBrains Mono', monospace; font-size: 1.8rem; font-weight: 800; color: var(--accent); }
+    .price-card .amount-label { font-size: 0.7rem; color: var(--text-muted); }
+    .price-card .amount-sub { font-family: 'JetBrains Mono', monospace; font-size: 1rem; font-weight: 700; color: var(--text); margin: 10px 0 14px; }
+    .price-card .amount-contact { font-size: 0.85rem; color: var(--text-muted); margin: 10px 0 14px; font-style: italic; }
+    .price-card .detail { font-size: 0.74rem; color: var(--text-muted); line-height: 1.75; list-style: none; padding: 0; }
+    .price-card .detail li { margin-bottom: 3px; }
+    .price-card .detail li::before { content: '✓ '; color: var(--green); }
+
+    @media (max-width: 700px) {
+      .pricing-3 { grid-template-columns: 1fr; }
+    }
+  </style>
+  <h2>Three ways to start — pick your size</h2>
+  <div class="pricing-3">
     <div class="price-card">
-      <div class="tier-name">🥇 Hermes Agent Starter</div>
-      <div class="tier-desc">Your own AI assistant on your phone</div>
-      <div class="price-row">
-        <span class="amount">RM 1,500</span>
-        <span class="amount-label">one-time setup</span>
-      </div>
-      <div class="amount-sub">+ RM 150/mo</div>
-      <ul class="detail">
-        <li>Hermes Agent installed & configured</li>
-        <li>WhatsApp or Telegram connection</li>
-        <li>Desktop + mobile app access</li>
-        <li>Persistent memory across sessions</li>
-        <li>Web search, file management, scheduling</li>
-        <li>Monthly maintenance & updates</li>
-        <li>WhatsApp support (same-day)</li>
-      </ul>
-    </div>
-    <div class="price-card featured">
-      <div class="tier-name">🥇🥇 Hermes + Second Brain</div>
-      <div class="tier-desc">AI assistant with business memory</div>
+      <div class="tier-icon">🧑‍💼</div>
+      <div class="tier-name">Solo</div>
+      <div class="tier-who">Individual business owners</div>
       <div class="price-row">
         <span class="amount">RM 2,500</span>
         <span class="amount-label">one-time setup</span>
       </div>
       <div class="amount-sub">+ RM 250/mo</div>
       <ul class="detail">
-        <li>Everything in Starter, plus:</li>
+        <li>Full Hermes Agent + Second Brain</li>
+        <li>1 seat, 1 brain workspace</li>
+        <li>WhatsApp or Telegram connection</li>
         <li>Email-to-brain ingestion pipeline</li>
         <li>Autonomous nightly enrichment</li>
-        <li>OKF-compatible knowledge base</li>
-        <li>Ask-anything with source citations</li>
-        <li>Monthly brain health report</li>
-        <li>Priority support (same-day)</li>
+        <li>Desktop + mobile app access</li>
+        <li>2-hour onboarding walkthrough</li>
+        <li>Same-day WhatsApp support</li>
+      </ul>
+    </div>
+    <div class="price-card featured">
+      <div class="tier-icon">👥</div>
+      <div class="tier-name">Team</div>
+      <div class="tier-who">Small teams · 2–10 people</div>
+      <div class="price-row">
+        <span class="amount">RM 5,500</span>
+        <span class="amount-label">one-time setup</span>
+      </div>
+      <div class="amount-sub">+ RM 550/mo</div>
+      <ul class="detail">
+        <li>Everything in Solo</li>
+        <li>Up to 5 seats with individual agents</li>
+        <li>Shared team brain — knowledge pooled</li>
+        <li>Team onboarding session (half-day)</li>
+        <li>Admin dashboard for team oversight</li>
+        <li>Priority support (dedicated channel)</li>
+        <li>Monthly team usage report</li>
+      </ul>
+    </div>
+    <div class="price-card">
+      <div class="tier-icon">🏢</div>
+      <div class="tier-name">Enterprise</div>
+      <div class="tier-who">Organisations · 10+ people</div>
+      <div class="price-row">
+        <span class="amount" style="font-size: 1.4rem;">Let's talk</span>
+      </div>
+      <div class="amount-contact">Custom quote based on your needs</div>
+      <ul class="detail">
+        <li>Everything in Team</li>
+        <li>Unlimited seats</li>
+        <li>Dedicated VPS infrastructure</li>
+        <li>Custom skills & integrations</li>
+        <li>SLA with guaranteed response times</li>
+        <li>Quarterly strategy reviews</li>
+        <li>On-site onboarding available</li>
       </ul>
     </div>
   </div>
@@ -179,6 +221,53 @@
   <div class="insight-box">
     <div class="label">Why setup + retainer</div>
     <p><strong>Setup covers the real work:</strong> 2 days of configuration compressed into a 2-hour onboarding — VPS, Hermes, models, platforms, testing. You get a working product, not a project plan. <strong>Retainer covers the compounding value:</strong> your AI runs 24/7. Models update. Platforms change. Cron jobs run. The retainer is for maintenance and peace of mind — for less than your phone bill.</p>
+  </div>
+
+  <!-- TRAINING & WORKSHOPS -->
+  <h2>Training & Workshops — KL</h2>
+  <p style="font-size:0.9rem;color:var(--text-muted);margin-bottom:20px;">I also get hired to run AI workshops and training sessions. Live demos. Hands-on. No death by PowerPoint. Everything I teach runs on real infrastructure — the same stack I use daily.</p>
+  <style>
+    .workshop-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin: 20px 0; }
+    .ws-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px 20px; }
+    .ws-card .ws-icon { font-size: 1.5rem; margin-bottom: 10px; }
+    .ws-card .ws-name { font-size: 0.88rem; font-weight: 700; margin-bottom: 2px; }
+    .ws-card .ws-format { font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 12px; }
+    .ws-card .ws-price { font-family: 'JetBrains Mono', monospace; font-size: 1.4rem; font-weight: 700; color: var(--accent); margin-bottom: 4px; }
+    .ws-card .ws-unit { font-size: 0.68rem; color: var(--text-muted); margin-bottom: 10px; }
+    .ws-card .ws-desc { font-size: 0.76rem; color: var(--text-muted); line-height: 1.6; }
+    @media (max-width: 700px) {
+      .workshop-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+  <div class="workshop-grid">
+    <div class="ws-card">
+      <div class="ws-icon">⚡</div>
+      <div class="ws-name">AI for Business Owners</div>
+      <div class="ws-format">Half-Day · 9am–1pm · Public</div>
+      <div class="ws-price">RM 500</div>
+      <div class="ws-unit">per person · max 15</div>
+      <div class="ws-desc">What AI can actually do for your business today. Live demo of a real AI assistant running on a phone. Walk out with 3 concrete use cases for your industry. Zero jargon. No coding.</div>
+    </div>
+    <div class="ws-card">
+      <div class="ws-icon">🛠️</div>
+      <div class="ws-name">Build Your Own AI Assistant</div>
+      <div class="ws-format">Full-Day · 9am–5pm · Public</div>
+      <div class="ws-price">RM 1,200</div>
+      <div class="ws-unit">per person · max 8</div>
+      <div class="ws-desc">Hands-on workshop. You set up Hermes Agent on a VPS during the session — connect it to your phone, configure skills, and leave with a working AI assistant. Lunch included. Bring a laptop.</div>
+    </div>
+    <div class="ws-card">
+      <div class="ws-icon">🏛️</div>
+      <div class="ws-name">AI-Ready Organisation</div>
+      <div class="ws-format">2-Day · In-House · Your Office</div>
+      <div class="ws-price">RM 8,000</div>
+      <div class="ws-unit">per team · up to 10 people</div>
+      <div class="ws-desc">Day 1: AI strategy + live demos tailored to your industry. Day 2: Team hands-on — each person builds their own agent. Includes pre-workshop consult to map your workflows. Lunch both days.</div>
+    </div>
+  </div>
+  <div class="insight-box">
+    <div class="label">HRDC claimable</div>
+    <p>All workshops are delivered through Maloha Coast Sdn Bhd. HRD Corp claim status varies by format — <a href="mailto:info@malohacoast.com?subject=Workshop%20HRDC%20claim%20status" style="color:var(--accent);">ask me</a> about SBL-Khas eligibility for your organisation. Private sessions can be run in BM or English.</p>
   </div>
 
   <!-- FAQ -->
@@ -191,7 +280,7 @@
     <div class="a">You use it the same way you use WhatsApp. That's the whole point. The technical setup is what I do. You just talk to it. "Remind me about the Client X meeting tomorrow." "Summarise the proposal Y sent last week." Same as texting a colleague.</div>
 
     <div class="q">"Why not just hire a VA?"</div>
-    <div class="a">A part-time VA in Malaysia costs RM 800–1,500/mo. They work 20 hours a week. They forget things. They take sick leave. Hermes + Second Brain costs RM 150–250/mo, works 24/7, never forgets, and gets smarter every month you use it. It's not a replacement for a VA — it's a force multiplier. Your VA becomes 3x more effective with an AI that remembers everything.</div>
+    <div class="a">A part-time VA in Malaysia costs RM 800–1,500/mo. They work 20 hours a week. They forget things. They take sick leave. Hermes + Second Brain costs RM 250–550/mo depending on your team size, works 24/7, never forgets, and gets smarter every month you use it. It's not a replacement for a VA — it's a force multiplier. Your VA becomes 3x more effective with an AI that remembers everything.</div>
 
     <div class="q">"What happens if I stop paying the retainer?"</div>
     <div class="a">Your AI keeps running. The VPS is yours. The data is yours. The knowledge base is a folder of plain text files — walk away anytime and take it with you. The retainer covers maintenance, updates, and support. Cancel anytime; what you've built stays yours.</div>
