@@ -346,6 +346,8 @@
   .modal-body .tag { padding: 2px 10px; border-radius: 999px; font-size: 0.6rem; background: rgba(125,207,255,0.08); color: var(--primary-light); }
   .modal-body .m-content { font-size: 0.78rem; line-height: 1.7; white-space: pre-wrap; word-break: break-word; }
   .modal-body .m-content strong { color: var(--primary); }
+  .modal-body .m-content .wikilink { color: var(--primary-light); cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; }
+  .modal-body .m-content .wikilink:hover { color: var(--primary); }
   .modal-body .m-entity-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
   .modal-body .m-field { background: var(--surface2); border-radius: var(--radius-sm); padding: 8px 12px; }
   .modal-body .m-field .f-label { font-size: 0.55rem; color: var(--text-muted); letter-spacing: 0.02em; }
@@ -1044,6 +1046,12 @@ async function loadData() {
     const res = await fetch('gbrain-data.json?t=' + Date.now());
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     DATA = await res.json();
+    // Build title→slug index for wikilink resolution
+    DATA._titleIndex = {};
+    (DATA.pages||[]).forEach(function(p) {
+      DATA._titleIndex[p.title] = p.slug;
+      DATA._titleIndex[p.slug] = p.slug; // slug→slug for [[slug]] references
+    });
     renderAll();
     document.getElementById('loading').style.display = 'none';
     document.getElementById('dashboard').style.display = 'block';
@@ -2089,14 +2097,27 @@ function openPageModal(slug) {
   }
   const body = (page.body||'').trim();
   if (body) {
+    const contentId = 'mc-' + Date.now();
     const cleanBody = body
       .replace(/^###?\s+/gm, '◆ ')
       .replace(/^##\s+/gm, '◆◆ ')
       .replace(/^#\s+/gm, '◆◆◆ ')
       .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<span style="color:var(--primary-light);cursor:pointer" onclick="event.stopPropagation();navigateTo(\'$2\')">$1</span>');
-    html += `<div class="m-section"><div class="m-section-title">Content</div>
-      <div class="m-content">${cleanBody}</div></div>`;
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<span style="color:var(--primary-light);cursor:pointer" onclick="event.stopPropagation();navigateTo(\'$2\')">$1</span>')
+      .replace(/\[\[([^\]]+)\]\]/g, function(match, text) {
+        var slug = (DATA._titleIndex||{})[text];
+        return slug
+          ? '<span class="wikilink" onclick="event.stopPropagation();openPageModal(\'' + escAttr(slug) + '\')">' + esc(text) + '</span>'
+          : esc(text);
+      });
+    html += '<div class="m-section">' +
+      '<div class="m-section-title" style="display:flex;align-items:center;gap:8px">' +
+        '<span>Content</span>' +
+        '<button class="src-toggle" id="' + contentId + '-btn" onclick="event.stopPropagation();toggleSource(\'' + contentId + '\')" style="font-size:0.55rem;padding:2px 8px;border-radius:6px;background:var(--surface2);color:var(--text-muted);border:1px solid var(--border);cursor:pointer">View Source</button>' +
+      '</div>' +
+      '<div id="' + contentId + '-rendered" class="m-content">' + cleanBody + '</div>' +
+      '<pre id="' + contentId + '-source" class="m-content" style="display:none;font-family:JetBrains Mono,monospace;font-size:0.7rem;background:var(--surface2);padding:12px;border-radius:8px;overflow-x:auto;white-space:pre-wrap;max-height:50vh">' + esc(body) + '</pre>' +
+    '</div>';
   }
   if ((page.links_out||[]).length) {
     html += `<div class="m-section"><div class="m-section-title">References (${page.links_out.length})</div><div class="m-links">${
@@ -2148,6 +2169,20 @@ function openModal(title, subtitle, bodyHtml) {
 function closeModal() {
   document.getElementById('modalOverlay').classList.remove('active');
   document.body.classList.remove('modal-open');
+}
+function toggleSource(contentId) {
+  const rendered = document.getElementById(contentId + '-rendered');
+  const source = document.getElementById(contentId + '-source');
+  const btn = document.getElementById(contentId + '-btn');
+  if (source.style.display === 'none') {
+    rendered.style.display = 'none';
+    source.style.display = 'block';
+    btn.textContent = 'View Rendered';
+  } else {
+    source.style.display = 'none';
+    rendered.style.display = 'block';
+    btn.textContent = 'View Source';
+  }
 }
 function navigateTo(slug) {
   slug = slug.replace(/^(people|companies|concepts|meetings|architecture|reference|brand)\//,'');
