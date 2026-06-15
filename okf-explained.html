@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OKF Explained in 90 Seconds — what Google's new standard means for your SMB</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #020617; --surface: #0f172a; --surface2: #1e293b; --border: #334155;
+    --primary: #2a6a8a; --primary-light: #22d3ee; --accent: #c4a86a; --accent-light: #fbbf24;
+    --text: #f1f5f9; --text-muted: #94a3b8; --green: #34d399;
+    --radius: 14px;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; -webkit-font-smoothing: antialiased; min-height: 100vh; display: flex; align-items: center; }
+
+  .wrap { max-width: 680px; margin: 0 auto; padding: 32px 24px; }
+
+  .back { display: inline-block; font-size: 0.75rem; color: var(--text-muted); text-decoration: none; margin-bottom: 32px; }
+  .back:hover { color: var(--accent); }
+
+  .kicker { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 6px; }
+  h1 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.2; margin-bottom: 6px; }
+  .subtitle { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 8px; }
+  .read-time { font-size: 0.7rem; color: var(--text-muted); opacity: 0.5; margin-bottom: 28px; }
+
+  .divider { width: 40px; height: 2px; background: var(--accent); border-radius: 1px; margin: 24px 0; }
+
+  h2 { font-size: 1.1rem; font-weight: 700; margin: 28px 0 8px; letter-spacing: -0.01em; }
+
+  .qa { margin: 16px 0; }
+  .qa .q { font-weight: 700; color: var(--accent); font-size: 0.9rem; margin-bottom: 4px; }
+  .qa .a { font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; }
+
+  .box { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 22px; margin: 20px 0; }
+  .box p { font-size: 0.85rem; color: var(--text-muted); }
+  .box p strong { color: var(--text); }
+
+  .cta { margin-top: 36px; text-align: center; }
+  .cta a { display: inline-block; background: var(--accent); color: #020617; font-weight: 700; font-size: 0.9rem; padding: 12px 28px; border-radius: 8px; text-decoration: none; }
+  .cta a:hover { filter: brightness(1.15); }
+
+  .foot { margin-top: 40px; font-size: 0.65rem; color: rgba(148,163,184,0.25); }
+  .foot a { color: rgba(148,163,184,0.4); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a href="index.html" class="back">← Maloha Coast</a>
+
+  <div class="kicker">The 90-Second Explainer</div>
+  <h1>Google just told the world how AI should store knowledge.</h1>
+  <p class="subtitle">Here's what it means for your business — no jargon.</p>
+  <p class="read-time">90 seconds · 6 questions</p>
+
+  <div class="qa">
+    <div class="q">What happened?</div>
+    <div class="a">Google published a standard called <strong>OKF</strong> (Open Knowledge Format). It says: "AI agents should store knowledge as plain text files. Markdown. That's it." No special software. No vendor lock-in. Anyone can read it with any text editor.</div>
+  </div>
+
+  <div class="qa">
+    <div class="q">Why should I care?</div>
+    <div class="a">Because your business knowledge is currently scattered across email, Slack, meeting notes, and people's heads. When you want to use AI to answer a business question, it can't find anything. OKF gives all that knowledge a single, clean home that <em>both</em> you and AI can read.</div>
+  </div>
+
+  <div class="qa">
+    <div class="q">Is this a Google product I have to buy?</div>
+    <div class="a">No. It's a <strong>format</strong>, like PDF or CSV. It's free, open, and works anywhere. Google just wrote the spec — they don't host it, sell it, or own your data.</div>
+  </div>
+
+  <div class="qa">
+    <div class="q">What's the catch?</div>
+    <div class="a">OKF defines the <em>output</em> format. It doesn't solve the hard part: getting your knowledge <em>in</em>. Someone still has to feed the brain. Emails, transcripts, invoices — they don't magically become markdown files. That ingestion step is the real work.</div>
+  </div>
+
+  <div class="qa">
+    <div class="q">So what do I actually need?</div>
+    <div class="a">Three things: (1) a knowledge <strong>format</strong> (OKF — solved by Google, free), (2) a knowledge <strong>engine</strong> (gbrain — open-source, production-proven), and (3) a <strong>pipeline</strong> that feeds your emails and documents into it automatically (this is what we build).</div>
+  </div>
+
+  <div class="qa">
+    <div class="q">How is this different from Notion or a wiki?</div>
+    <div class="a">Notion and wikis are <em>manual</em>. Someone has to write, tag, and update everything. Humans stop doing that after about 3 weeks. OKF + gbrain is <em>autonomous</em> — the AI reads your forwarded emails, extracts what matters, links it to your existing knowledge, and enriches it overnight. It's a wiki that writes itself.</div>
+  </div>
+
+  <div class="box">
+    <p><strong>The bottom line:</strong> Google standardised the format. The open-source community built the engine. We built the pipeline that feeds it — so you don't have to. Forward an email. Ask it anything. Your business knowledge compounds every day you own it.</p>
+  </div>
+
+  <div class="cta">
+    <a href="okf-second-brain.html">See the full offer →</a>
+  </div>
+
+  <p class="foot">
+    <a href="https://malohacoast.com">Maloha Coast Sdn Bhd</a> · OKF spec: 
+    <a href="https://github.com/google/okf">github.com/google/okf</a>
+  </p>
+</div>
+</body>
+</html>

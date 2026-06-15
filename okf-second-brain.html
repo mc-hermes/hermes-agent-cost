@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OKF + Second Brain — Google just standardised your business knowledge</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #020617; --surface: #0f172a; --surface2: #1e293b; --border: #334155;
+    --primary: #2a6a8a; --primary-light: #22d3ee; --accent: #c4a86a; --accent-light: #fbbf24;
+    --text: #f1f5f9; --text-muted: #94a3b8; --green: #34d399; --green-bg: rgba(52,211,153,0.08);
+    --violet: #a78bfa; --rose: #fb7185;
+    --radius: 14px; --radius-sm: 8px;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; -webkit-font-smoothing: antialiased; }
+
+  .wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px 80px; }
+
+  .back { display: inline-block; font-size: 0.75rem; color: var(--text-muted); text-decoration: none; margin-bottom: 28px; }
+  .back:hover { color: var(--accent); }
+
+  .kicker { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--primary-light); margin-bottom: 8px; }
+  h1 { font-size: clamp(1.7rem, 3.5vw, 2.4rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.2; margin-bottom: 8px; }
+  h1 span { background: linear-gradient(135deg, var(--accent), var(--accent-light)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .subtitle { font-size: 1.05rem; color: var(--text-muted); margin-bottom: 32px; max-width: 600px; }
+
+  .divider { width: 50px; height: 3px; background: var(--accent); border-radius: 2px; margin: 28px 0; }
+
+  h2 { font-size: 1.3rem; font-weight: 700; margin: 40px 0 12px; letter-spacing: -0.01em; }
+  h3 { font-size: 1rem; font-weight: 600; margin: 24px 0 8px; }
+  p { font-size: 0.92rem; color: var(--text-muted); margin-bottom: 12px; line-height: 1.7; }
+  strong { color: var(--text); }
+
+  .insight-box { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 24px; margin: 24px 0; }
+  .insight-box p { margin-bottom: 0; }
+  .insight-box .label { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); margin-bottom: 6px; }
+
+  .three-col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 20px 0; }
+  .three-col .col { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; }
+  .three-col .col .num { font-family: 'JetBrains Mono', monospace; font-size: 1.6rem; font-weight: 800; color: var(--accent); }
+  .three-col .col h4 { font-size: 0.85rem; font-weight: 700; margin: 8px 0 4px; }
+  .three-col .col p { font-size: 0.78rem; margin: 0; }
+
+  .pricing { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0; }
+  .price-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 24px; text-align: center; }
+  .price-card.featured { border-color: rgba(196,168,106,0.4); background: linear-gradient(135deg, rgba(196,168,106,0.06) 0%, rgba(15,23,42,1) 40%); }
+  .price-card .price-label { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 4px; }
+  .price-card .amount { font-family: 'JetBrains Mono', monospace; font-size: 2.2rem; font-weight: 800; color: var(--accent); margin: 4px 0; }
+  .price-card .amount sub { font-size: 0.8rem; font-weight: 400; color: var(--text-muted); }
+  .price-card .detail { font-size: 0.78rem; color: var(--text-muted); line-height: 1.6; }
+  .price-card .detail li { margin-bottom: 4px; list-style: none; }
+  .price-card .detail li::before { content: '✓ '; color: var(--green); }
+
+  .quote { border-left: 3px solid var(--accent); padding: 10px 0 10px 20px; margin: 28px 0; font-style: italic; color: var(--text); font-size: 1.05rem; }
+
+  .cta { margin-top: 44px; text-align: center; }
+  .cta a { display: inline-block; background: var(--accent); color: #020617; font-weight: 700; font-size: 0.95rem; padding: 14px 32px; border-radius: var(--radius-sm); text-decoration: none; transition: filter 0.2s; }
+  .cta a:hover { filter: brightness(1.15); }
+  .cta .sub { font-size: 0.75rem; color: var(--text-muted); margin-top: 10px; }
+
+  .foot { margin-top: 56px; font-size: 0.65rem; color: rgba(148,163,184,0.25); }
+  .foot a { color: rgba(148,163,184,0.4); }
+
+  @media (max-width: 600px) {
+    .three-col, .pricing { grid-template-columns: 1fr; }
+    .wrap { padding: 32px 16px 60px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a href="index.html" class="back">← Maloha Coast</a>
+
+  <div class="kicker">June 2026 · OKF + gbrain</div>
+  <h1>Google just standardised how AI stores <span>your</span> business knowledge.</h1>
+  <p class="subtitle">The problem they left open? Someone has to feed it. That's what we do.</p>
+  <div class="divider"></div>
+
+  <h2>The news</h2>
+  <p>On June 12, 2026, Google published the <strong>Open Knowledge Format (OKF)</strong> — a vendor-neutral standard for AI agent knowledge. Plain markdown files. YAML frontmatter. No databases, no lock-in. If you can <code style="font-family:'JetBrains Mono',monospace;font-size:0.82rem;background:var(--surface2);padding:1px 5px;border-radius:3px;">cat</code> a file, you can read it. If you can <code style="font-family:'JetBrains Mono',monospace;font-size:0.82rem;background:var(--surface2);padding:1px 5px;border-radius:3px;">git clone</code>, you can ship it.</p>
+  <p>Karpathy predicted this. Google formalised it. The industry now agrees: <strong>agents need a knowledge format, and it's markdown.</strong></p>
+
+  <div class="insight-box">
+    <div class="label">Why this matters for your business</div>
+    <p>Right now your company knowledge lives in emails, Slack threads, meeting notes, invoices, and inside the heads of your 3 most senior people. When you ask an AI agent "what did we promise Client X last quarter?", it has to assemble the answer from 6 incompatible sources — or fail. OKF gives that knowledge a home. <strong>We make sure it actually gets there.</strong></p>
+  </div>
+
+  <h2>The three layers</h2>
+  <div class="three-col">
+    <div class="col">
+      <div class="num">1</div>
+      <h4>OKF — the format</h4>
+      <p>Google's standard. Markdown + YAML. Vendor-neutral, git-friendly, zero lock-in. Your knowledge, your files.</p>
+    </div>
+    <div class="col">
+      <div class="num">2</div>
+      <h4>gbrain — the engine</h4>
+      <p>Self-wiring knowledge graph. Hybrid search. Autonomous enrichment. 22K+ GitHub stars. Production-proven at 146K pages.</p>
+    </div>
+    <div class="col">
+      <div class="num">3</div>
+      <h4>Pipeline — the feed</h4>
+      <p>Forward an email → it lands in your brain. Meeting transcript, invoice, client thread — same flow. The part Google left unsolved. Our moat.</p>
+    </div>
+  </div>
+
+  <h2>How it works — in plain English</h2>
+  <p><strong>1. Forward anything.</strong> An email, a meeting transcript, a client note, a newsletter you found useful. Forward it to your dedicated Second Brain address.</p>
+  <p><strong>2. It gets ingested.</strong> Our pipeline processes it — extracts key entities, links it to everything you've already stored, enriches it with context. No clicks. No manual tagging.</p>
+  <p><strong>3. Ask it anything.</strong> "What did Sarah ask for in the Q1 review?" "Show me every conversation we've had about pricing." "What's the status of the Acme contract?" — get the answer in seconds, with sources.</p>
+  <p><strong>4. It gets smarter every month.</strong> Unlike a wiki that rots the moment you stop updating it, this one improves while you sleep. The AI does the bookkeeping humans abandoned.</p>
+
+  <div class="quote">"Everyone is stacking agents on top of amnesia. We build the memory first — now in the format Google just blessed."</div>
+
+  <h2>The offer</h2>
+  <div class="pricing">
+    <div class="price-card">
+      <div class="price-label">One-Time Setup</div>
+      <div class="amount">$750</div>
+      <ul class="detail">
+        <li>Email-to-brain pipeline configured</li>
+        <li>Initial knowledge base structure</li>
+        <li>OKF-compatible formatting</li>
+        <li>2-hour onboarding session</li>
+        <li>Your knowledge, your keys, your repo</li>
+      </ul>
+    </div>
+    <div class="price-card featured">
+      <div class="price-label">Monthly Retainer</div>
+      <div class="amount">$49<sub>/mo</sub></div>
+      <ul class="detail">
+        <li>Unlimited email forwarding</li>
+        <li>Autonomous nightly enrichment</li>
+        <li>Monthly brain health report</li>
+        <li>Priority support (same-day)</li>
+        <li>Format stays current with OKF spec</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="insight-box">
+    <div class="label">The rationale — why setup + retainer</div>
+    <p><strong>Setup covers the real work:</strong> configuring your pipeline, structuring your knowledge base, training you and your team. This is 3–6 hours of deep integration work — not a SaaS checkbox. <strong>The retainer covers the compounding value:</strong> every email you forward, every month that passes, your brain gets richer. The enrichment cron jobs run autonomously. New entities get linked. Citations get fixed. The retainer is for maintenance, not for staring at a dashboard — the system does the staring for you.</p>
+  </div>
+
+  <p style="margin-top:16px"><strong>Compare:</strong> Notion is $10/seat/month and you still have to write everything manually. A junior admin to maintain a wiki is $2,000+/month. This is an autonomous knowledge base that writes itself — for the price of a nice dinner.</p>
+
+  <div class="cta">
+    <a href="mailto:info@malohacoast.com?subject=OKF%20Second%20Brain">Let's talk →</a>
+    <p class="sub">20-minute call. We'll sketch your pyramid. Zero obligation.</p>
+  </div>
+
+  <p class="foot">
+    <a href="https://malohacoast.com">Maloha Coast Sdn Bhd</a> · 
+    <a href="https://github.com/garrytan/gbrain">gbrain</a> · 
+    <a href="okf-explained.html">OKF explained in 90 seconds →</a>
+  </p>
+</div>
+</body>
+</html>
