@@ -1011,7 +1011,7 @@ async function loadData() {
   document.getElementById('dashboard').style.display = 'none';
   document.getElementById('error').style.display = 'none';
   try {
-    const res = await fetch('gbrain-data.json');
+    const res = await fetch('gbrain-data.json?t=' + Date.now());
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     DATA = await res.json();
     renderAll();
