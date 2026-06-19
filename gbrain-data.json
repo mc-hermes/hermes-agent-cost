@@ -1,44 +1,32 @@
 {
-  "updated_at": "2026-06-19T12:47:36Z",
+  "updated_at": "2026-06-19T13:00:15Z",
   "summary": {
-    "score": "83",
+    "score": "92",
     "score_label": "/100",
-    "score_breakdown": "score 83/100, embed 35/35, links 25/25, timeline 2/15, orphans 11/15, dead-links 10/10",
-    "page_count": 89,
-    "embed_coverage": "100% coverage, 0 missing",
-    "graph_coverage": "64.0% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
-    "entity_links": "Coverage 91% \u00b1 5.0%",
+    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
+    "page_count": 90,
+    "embed_coverage": "100% coverage \u2014 all pages embedded",
+    "graph_coverage": "63.3% of pages have inbound links",
+    "entity_links": "Coverage \u2014 20 people, 15 companies indexed",
     "concept_count": 43,
     "meeting_count": 4,
     "person_count": 20,
     "company_count": 15,
-    "newsletter_count": 3,
+    "newsletter_count": 4,
     "video_count": 0,
     "article_count": 0,
     "bookmark_count": 1,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 139,
-    "outbound_count": 187,
-    "inbound_count": 169,
+    "total_links": 140,
+    "outbound_count": 191,
+    "inbound_count": 170,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    },
-    "score_raw": "Brain score 83/100 (embed 35/35, links 25/25, timeline 2/15, orphans 11/15, dead-links 10/10)",
-    "score_components": {
-      "score": "83/100",
-      "embed": "35/35",
-      "links": "25/25",
-      "timeline": "2/15",
-      "orphans": "11/15",
-      "dead-links": "10/10"
-    },
-    "checks_passed": 66,
-    "checks_warned": 7,
-    "checks_failed": 0
+    }
   },
   "pages": [
     {
@@ -395,10 +383,15 @@
           "from": "concepts/humanlayer-launch-newsletter",
           "type": "wikilink",
           "text": "HumanLayer"
+        },
+        {
+          "from": "newsletters/humanlayer-launch-2026-06-19",
+          "type": "wikilink",
+          "text": "HumanLayer"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "companies/inclusive-ai-association",
@@ -2228,6 +2221,39 @@
       "inbound_count": 0
     },
     {
+      "slug": "newsletters/humanlayer-launch-2026-06-19",
+      "title": "Humanlayer Launch 2026 06 19",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# HumanLayer // We're live \u2014 come build with us\n\n**Source:** email newsletter from dex at humanlayer (Dexter @ HumanLayer)\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-19T20:17:44+08:00\n**Provenance:** Forwarded by Sayf on 2026-06-19\n\n## Summary\n\nHumanLayer \u2014 an Agentic IDE and collaboration platform for engineering teams \u2014 launched publicly after a waitlist period. The product is built on the open-source Research, Plan, Implement (RPI) framework, now used at Block and Uber.\n\n## Key Content\n\nHumanLayer is an Agentic IDE, collaboration platform, and building blocks for a software factory where engineering teams design complex systems with AI agents before generating code. It claims to deliver 2-3x faster SDLC throughput while maintaining rigorous architecture standards.\n\n**Core thesis:** \"Don't outsource the thinking.\" Great teams run design reviews for decades because there's enormous leverage in collaborating on system design before writing code. HumanLayer brings that into one place.\n\n**Pricing:** Starter plan is free for teams of fewer than three. Users bring their own AI subscriptions (Claude, Codex, etc.) \u2014 no separate per-token bill.\n\n**Public launch links:**\n- X: https://x.com/dexhorthy/status/2067286892786454855\n- LinkedIn: https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U\n- Blurb for writing your own post: https://humanlayer.com/launch/blurb.md\n\n## Entities\n\n- [[Dexter @ HumanLayer (Dex Horthy)]] \u2014 founder, open-source RPI framework creator\n- [[HumanLayer]] \u2014 Agentic IDE and collaboration platform\n- [[Block]] \u2014 RPI framework user\n- [[Uber]] \u2014 RPI framework user",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "Dexter @ HumanLayer (Dex Horthy)",
+          "type": "wikilink",
+          "text": "Dexter @ HumanLayer (Dex Horthy)"
+        },
+        {
+          "to": "companies/humanlayer",
+          "type": "wikilink",
+          "text": "HumanLayer"
+        },
+        {
+          "to": "Block",
+          "type": "wikilink",
+          "text": "Block"
+        },
+        {
+          "to": "Uber",
+          "type": "wikilink",
+          "text": "Uber"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 4,
+      "inbound_count": 0
+    },
+    {
       "slug": "newsletters/maloha-coast-navigator-test-edition-2026-06-15",
       "title": "Maloha Coast Navigator Test Edition 2026 06 15",
       "type": "newsletter",
@@ -3781,6 +3807,11 @@
       "type": "wikilink"
     },
     {
+      "source": "newsletters/humanlayer-launch-2026-06-19",
+      "target": "companies/humanlayer",
+      "type": "wikilink"
+    },
+    {
       "source": "newsletters/maloha-coast-navigator-test-edition-2026-06-15",
       "target": "concepts/claude-code-10x-skill-newsletter",
       "type": "wikilink"
@@ -3865,13 +3896,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 65,
-    "brain_checks_score": 85,
+    "health_score": 80,
+    "brain_checks_score": 95,
     "category_scores": {
-      "brain": 85,
+      "brain": 95,
       "skill": 100,
       "ops": 95,
-      "meta": 85
+      "meta": 90
     },
     "checks": [
       {
@@ -3901,10 +3932,32 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "no extractions in last 7 days",
+        "message": "2 kind(s) tracked, all halt rates below 10%",
         "details": {
           "schema_version": 1,
-          "kinds": []
+          "kinds": [
+            {
+              "kind": "facts.fence",
+              "cost_7d_usd": 0,
+              "eval_pass_count": 0,
+              "eval_fail_count": 0,
+              "halt_count": 0,
+              "round_completed_count": 1,
+              "halt_rate": 0,
+              "last_updated_at": "2026-06-08T15:03:15.502Z"
+            },
+            {
+              "kind": "takes.proposed",
+              "cost_7d_usd": 0,
+              "eval_pass_count": 0,
+              "eval_fail_count": 0,
+              "halt_count": 0,
+              "round_completed_count": 1,
+              "halt_rate": 0,
+              "last_updated_at": "2026-06-08T15:03:16.068Z"
+            }
+          ],
+          "rollup_write_failures_7d": 0
         },
         "category": "brain"
       },
@@ -3917,9 +3970,9 @@
       {
         "name": "extract_atoms_backlog",
         "status": "ok",
-        "message": "4 page(s) eligible (below warn threshold; pack does not run extract_atoms)",
+        "message": "no pages awaiting atom extraction",
         "details": {
-          "backlog": 4,
+          "backlog": 0,
           "pack_declares_phase": false,
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
@@ -3927,8 +3980,8 @@
       },
       {
         "name": "conversation_format_coverage",
-        "status": "warn",
-        "message": "1/4 conversation pages (25.0%) match NO built-in pattern. Breakdown: bold-name-no-time=3, _no_match=1. Investigate: gbrain conversation-parser scan <slug> | Enable LLM fallback (opt-in): gbrain config set conversation_parser.llm_fallback_enabled true",
+        "status": "ok",
+        "message": "No conversation-type pages \u2014 coverage check not applicable",
         "category": "brain"
       },
       {
@@ -3952,7 +4005,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 86 pages",
+        "message": "Connected, 43 pages",
         "category": "ops"
       },
       {
@@ -3988,7 +4041,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 634ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -4005,26 +4058,26 @@
       },
       {
         "name": "graph_coverage",
-        "status": "warn",
-        "message": "Entity link coverage 91%, timeline 36% (33 entity pages). Run: gbrain extract all",
+        "status": "ok",
+        "message": "Entity link coverage 91%, timeline 100%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 83/100 (embed 35/35, links 25/25, timeline 2/15, orphans 11/15, dead-links 10/10)",
+        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 33 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 86 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
         "category": "brain"
       },
       {
@@ -4185,7 +4238,7 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (86 pages \u2014 too few to assess)",
+        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
         "category": "brain"
       },
       {
@@ -4197,7 +4250,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -4209,7 +4262,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "16 reranker failure(s) in last 7 days (below threshold)",
+        "message": "83 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -4221,7 +4274,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "64.0% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -4324,13 +4377,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 5.0%",
+        "message": "Coverage 91% \u00b1 6.1%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "warn",
-        "message": "Coverage 36% \u00b1 8.4% (target 90%)",
+        "status": "ok",
+        "message": "Coverage 100% \u00b1 0.0%",
         "category": "meta"
       },
       {
@@ -4348,7 +4401,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "8 distinct typed values (pack declares 25)",
+        "message": "4 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {

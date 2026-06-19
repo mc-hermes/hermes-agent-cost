@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-19T12:47:44Z",
+  "updated_at": "2026-06-19T13:00:21Z",
   "summary": {
     "page_count": 5,
     "people_count": 2,
@@ -245,7 +245,7 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-19T12:47:44Z",
+      "ts": "2026-06-19T13:00:21Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
