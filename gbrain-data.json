@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-06-16T03:39:39Z",
+  "updated_at": "2026-06-19T12:29:11Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
     "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 81,
+    "page_count": 86,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "66.7% of pages have inbound links",
+    "graph_coverage": "62.8% of pages have inbound links",
     "entity_links": "Coverage \u2014 19 people, 14 companies indexed",
-    "concept_count": 37,
+    "concept_count": 42,
     "meeting_count": 4,
     "person_count": 19,
     "company_count": 14,
@@ -20,7 +20,7 @@
     "dataset_count": 1,
     "digest_count": 2,
     "total_links": 136,
-    "outbound_count": 181,
+    "outbound_count": 182,
     "inbound_count": 164,
     "artifact_count": 2,
     "artifact_types": {
@@ -1883,6 +1883,24 @@
       "inbound_count": 0
     },
     {
+      "slug": "humanlayer-launch-2026-06-19",
+      "title": "HumanLayer Launch \u2014 Agentic IDE Goes Public",
+      "type": "concept",
+      "updated": "",
+      "body": "# HumanLayer Launch \u2014 Agentic IDE Goes Public\n\nHumanLayer launched publicly on June 18, 2026. Dex Horthy and Kyle announced the general availability of their Agentic IDE after a waitlist period.\n\n## What HumanLayer Is\n\nAn Agentic IDE, collaboration platform, and building blocks for software factories \u2014 where engineering teams design complex systems with their AI agents before generating code.\n\n## Key Claims\n\n- **2-3x faster across the entire SDLC** (not just coding)\n- **Rigorous architecture standards** maintained through design reviews\n- Built on their open-source [[RPI Framework]] (Research, Plan, Implement), now running inside Fortune 500s like Block and Uber\n- **BYO subscription** model \u2014 plug in Claude, Codex, or other API keys. No separate per-token bill\n\n## Core Philosophy\n\n\"Don't outsource the thinking.\" Design reviews before code \u2014 bringing the missing piece of the software factory into one place.\n\n## Links\n\n- Website: https://humanlayer.com\n- Launch blurb (for AI-assisted posts): https://humanlayer.com/launch/blurb.md\n- X launch post: https://x.com/dexhorthy/status/2067286892786454855\n- LinkedIn: https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U\n\n## Relevance to Maloha Coast\n\nHumanLayer's RPI framework and agentic IDE approach aligns with the AI consulting and agent-building work at Maloha Coast. The BYO-subscription model is interesting for SMB clients who want to avoid per-token billing complexity. Worth evaluating the Starter plan (free for teams < 3).",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "RPI Framework",
+          "type": "wikilink",
+          "text": "RPI Framework"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
+      "inbound_count": 0
+    },
+    {
       "slug": "maloha-coast",
       "title": "Maloha Coast",
       "type": "concept",
@@ -2099,6 +2117,42 @@
       "inbound_count": 0
     },
     {
+      "slug": "newsletter/openrouter-three-cost-levers",
+      "title": "Openrouter Three Cost Levers",
+      "type": "concept",
+      "updated": "",
+      "body": "",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "newsletter/openrouter-three-features-try-next",
+      "title": "Openrouter Three Features Try Next",
+      "type": "concept",
+      "updated": "",
+      "body": "",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "newsletter/stripe-online-apac-on-demand",
+      "title": "Stripe Online Apac On Demand",
+      "type": "concept",
+      "updated": "",
+      "body": "",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "newsletters/maloha-coast-navigator-test-edition-2026-06-15",
       "title": "Maloha Coast Navigator Test Edition 2026 06 15",
       "type": "newsletter",
@@ -2183,6 +2237,18 @@
       ],
       "outbound_count": 2,
       "inbound_count": 3
+    },
+    {
+      "slug": "notes/github-2fa-required-mc-hermes",
+      "title": "Github 2fa Required Mc Hermes",
+      "type": "concept",
+      "updated": "",
+      "body": "",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
     },
     {
       "slug": "people/addy-osmani",
