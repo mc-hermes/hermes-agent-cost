@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-06-19T12:29:11Z",
+  "updated_at": "2026-06-19T12:47:36Z",
   "summary": {
-    "score": "92",
+    "score": "83",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 86,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "62.8% of pages have inbound links",
-    "entity_links": "Coverage \u2014 19 people, 14 companies indexed",
-    "concept_count": 42,
+    "score_breakdown": "score 83/100, embed 35/35, links 25/25, timeline 2/15, orphans 11/15, dead-links 10/10",
+    "page_count": 89,
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "64.0% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 91% \u00b1 5.0%",
+    "concept_count": 43,
     "meeting_count": 4,
-    "person_count": 19,
-    "company_count": 14,
+    "person_count": 20,
+    "company_count": 15,
     "newsletter_count": 3,
     "video_count": 0,
     "article_count": 0,
@@ -19,16 +19,25 @@
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 136,
-    "outbound_count": 182,
-    "inbound_count": 164,
+    "total_links": 139,
+    "outbound_count": 187,
+    "inbound_count": 169,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
     },
-    "checks_passed": 7,
-    "checks_warned": 1,
+    "score_raw": "Brain score 83/100 (embed 35/35, links 25/25, timeline 2/15, orphans 11/15, dead-links 10/10)",
+    "score_components": {
+      "score": "83/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "2/15",
+      "orphans": "11/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 66,
+    "checks_warned": 7,
     "checks_failed": 0
   },
   "pages": [
@@ -361,6 +370,35 @@
       ],
       "outbound_count": 0,
       "inbound_count": 2
+    },
+    {
+      "slug": "companies/humanlayer",
+      "title": "Humanlayer",
+      "type": "company",
+      "updated": "",
+      "body": "# HumanLayer\n\n> Agentic IDE, collaboration platform, and building blocks for a software factory. Enables engineering teams to design complex systems with AI agents before generating code. Launched publicly June 2026.\n\n## In Maloha Coast Knowledge\n\n- Mentioned in [[HumanLayer Launch Newsletter]] as product launch \u2014 Agentic IDE with RPI roots\n- Founders: [[Dexter Horthy]] and Kyle\n\n## Product\n\n**HumanLayer** is an Agentic IDE where teams design systems with agents before writing code. Key features:\n- Design-first workflow: system architecture design before code generation\n- 2-3x faster across full SDLC\n- Bring your own AI subscriptions (Claude, Codex)\n- Free Starter plan for teams < 3\n- Built on open-source RPI framework (used at Block and Uber)\n\n## Related\n\n- [[HumanLayer Launch Newsletter]] \u2014 Launch announcement forwarded by Sayf\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-19** | HumanLayer launches publicly. Mentioned in newsletter forwarded by Sayf. [Source: gmail://msg_19edfd1054c17600]",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "concepts/humanlayer-launch-newsletter",
+          "type": "wikilink",
+          "text": "HumanLayer Launch Newsletter"
+        },
+        {
+          "to": "people/dexter-horthy",
+          "type": "wikilink",
+          "text": "Dexter Horthy"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "concepts/humanlayer-launch-newsletter",
+          "type": "wikilink",
+          "text": "HumanLayer"
+        }
+      ],
+      "outbound_count": 2,
+      "inbound_count": 1
     },
     {
       "slug": "companies/inclusive-ai-association",
@@ -1084,6 +1122,40 @@
       "backlinks": [],
       "outbound_count": 0,
       "inbound_count": 0
+    },
+    {
+      "slug": "concepts/humanlayer-launch-newsletter",
+      "title": "Humanlayer Launch Newsletter",
+      "type": "concept",
+      "updated": "",
+      "body": "1|# HumanLayer // We're live \u2014 come build with us\n2|\n3|**Source:** Newsletter from HumanLayer (dex at humanlayer, dex@hey.humanlayer.dev)\n4|**Forwarded by:** Sayf Codes <sayfcodes@gmail.com>\n5|**Date:** Fri, 19 Jun 2026 20:17:44 +0800\n6|**Source URI:** gmail://msg_19edfd1054c17600\n7|**Ingested:** 2026-06-19T12:30:00Z\n8|\n9|## Summary\n10|\n11|HumanLayer, an Agentic IDE and collaborative software factory platform, launches publicly. Founders Kyle and Dex have been building on their open-source Research-Plan-Implement (RPI) framework (used inside Block and Uber). The product is a design-first agentic IDE where engineering teams design complex systems with AI agents before generating code.\n12|\n13|---\n14|\n15|## Key Content\n16|\n17|Hey there\u2014\n18|\n19|You're getting this because you're on the HumanLayer waitlist. The wait is over: today we're opening up HumanLayer to everyone.\n20|\n21|[humanlayer.com](https://humanlayer.com) \u2014 the Starter plan is free for teams of fewer than three.\n22|\n23|### The year of no more slop\n24|\n25|For the last year, Kyle and I have been pushing the limits of what coding agents can do \u2014 first with our open-source Research, Plan, Implement (RPI) framework (now running inside Fortune 500s like Block and Uber, where shipping slop is not an option), and now with the product we've been building on top of all of it.\n26|\n27|**HumanLayer** is an Agentic IDE, collaboration platform, and building blocks for your software factory \u2014 where engineering teams design complex systems with their AI agents before generating a single line of code. It lets engineers solving hard problems in complex codebases:\n28|\n29|- move 2-3x faster across the entire SDLC (not just the coding part)\n30|- maintain rigorous standards for system architecture and program design\n31|\n32|> The core idea: don't outsource the thinking. Great teams have run design reviews for decades because there's enormous leverage in collaborating on system design before you write the code. We bring that missing piece of the software factory into one place.\n33|\n34|Bring your own subscription \u2014 plug in your Claude, Codex, and other AI subscriptions or API keys. No separate per-token bill.\n35|\n36|### Launch\n37|\n38|- X: https://x.com/dexhorthy/status/2067286892786454855\n39|- LinkedIn: https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U\n40|\n41|---\n42|\n43|## Entities\n44|\n45|- **Dex** ([[Dexter Horthy]]) \u2014 Co-founder, HumanLayer. Previously open-source RPI framework.\n46|- **Kyle** \u2014 Co-founder, [[HumanLayer]].\n47|- **Block** (Square) \u2014 Fortune 500 using RPI framework.\n48|- **Uber** \u2014 Fortune 500 using RPI framework.\n49|",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "people/dexter-horthy",
+          "type": "wikilink",
+          "text": "Dexter Horthy"
+        },
+        {
+          "to": "companies/humanlayer",
+          "type": "wikilink",
+          "text": "HumanLayer"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "companies/humanlayer",
+          "type": "wikilink",
+          "text": "HumanLayer Launch Newsletter"
+        },
+        {
+          "from": "people/dexter-horthy",
+          "type": "wikilink",
+          "text": "HumanLayer Launch Newsletter"
+        }
+      ],
+      "outbound_count": 2,
+      "inbound_count": 2
     },
     {
       "slug": "concepts/knowledge-graph-as-moat",
@@ -2531,6 +2603,35 @@
       "inbound_count": 3
     },
     {
+      "slug": "people/dexter-horthy",
+      "title": "Dexter Horthy",
+      "type": "person",
+      "updated": "",
+      "body": "# Dexter Horthy\n\n> Co-founder of HumanLayer. Previously built the open-source Research, Plan, Implement (RPI) framework for AI coding agents.\n\n## In Maloha Coast Knowledge\n\n- Mentioned in [[HumanLayer Launch Newsletter]] as co-founder launching Agentic IDE platform\n\n## Related\n\n- [[HumanLayer Launch Newsletter]] \u2014 Product launch announcement forwarded by Sayf\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-19** | Mentioned in HumanLayer Launch Newsletter. [Source: gmail://msg_19edfd1054c17600]",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "concepts/humanlayer-launch-newsletter",
+          "type": "wikilink",
+          "text": "HumanLayer Launch Newsletter"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "companies/humanlayer",
+          "type": "wikilink",
+          "text": "Dexter Horthy"
+        },
+        {
+          "from": "concepts/humanlayer-launch-newsletter",
+          "type": "wikilink",
+          "text": "Dexter Horthy"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 2
+    },
+    {
       "slug": "people/jake-van-cleef",
       "title": "Jake Van Cleef",
       "type": "person",
@@ -3085,6 +3186,16 @@
       "type": "wikilink"
     },
     {
+      "source": "companies/humanlayer",
+      "target": "concepts/humanlayer-launch-newsletter",
+      "type": "wikilink"
+    },
+    {
+      "source": "companies/humanlayer",
+      "target": "people/dexter-horthy",
+      "type": "wikilink"
+    },
+    {
       "source": "companies/inclusive-ai-association",
       "target": "people/zaim-mohzani",
       "type": "wikilink"
@@ -3232,6 +3343,11 @@
     {
       "source": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
       "target": "people/audrey-loh",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/humanlayer-launch-newsletter",
+      "target": "people/dexter-horthy",
       "type": "wikilink"
     },
     {
@@ -3716,6 +3832,7 @@
       "people/bjarte",
       "people/bob-proctor",
       "people/carson",
+      "people/dexter-horthy",
       "people/jake-van-cleef",
       "people/nabil-jalil",
       "people/nate-herk",
@@ -3733,6 +3850,7 @@
       "companies/blackgrid-digital",
       "companies/dynamics-orchard-farm-sdn-bhd",
       "companies/global-ai-village",
+      "companies/humanlayer",
       "companies/inclusive-ai-association",
       "companies/js-mastery",
       "companies/ksi-strategic-institute",
@@ -3747,13 +3865,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 95,
-    "brain_checks_score": 100,
+    "health_score": 65,
+    "brain_checks_score": 85,
     "category_scores": {
-      "brain": 100,
+      "brain": 85,
       "skill": 100,
       "ops": 95,
-      "meta": 100
+      "meta": 85
     },
     "checks": [
       {
@@ -3781,6 +3899,39 @@
         "category": "brain"
       },
       {
+        "name": "extract_health",
+        "status": "ok",
+        "message": "no extractions in last 7 days",
+        "details": {
+          "schema_version": 1,
+          "kinds": []
+        },
+        "category": "brain"
+      },
+      {
+        "name": "conversation_facts_backlog",
+        "status": "ok",
+        "message": "disabled (opt-in). Enable with: gbrain config set cycle.conversation_facts_backfill.enabled true",
+        "category": "brain"
+      },
+      {
+        "name": "extract_atoms_backlog",
+        "status": "ok",
+        "message": "4 page(s) eligible (below warn threshold; pack does not run extract_atoms)",
+        "details": {
+          "backlog": 4,
+          "pack_declares_phase": false,
+          "known_approximation": "page backlog only; transcript corpus not counted"
+        },
+        "category": "brain"
+      },
+      {
+        "name": "conversation_format_coverage",
+        "status": "warn",
+        "message": "1/4 conversation pages (25.0%) match NO built-in pattern. Breakdown: bold-name-no-time=3, _no_match=1. Investigate: gbrain conversation-parser scan <slug> | Enable LLM fallback (opt-in): gbrain config set conversation_parser.llm_fallback_enabled true",
+        "category": "brain"
+      },
+      {
         "name": "progressive_batch_audit_health",
         "status": "ok",
         "message": "No progressive-batch operations in the last 7 days",
@@ -3800,9 +3951,411 @@
       },
       {
         "name": "connection",
-        "status": "warn",
-        "message": "Could not connect to configured DB (URL from config-file-path); filesystem checks only",
+        "status": "ok",
+        "message": "Connected, 86 pages",
         "category": "ops"
+      },
+      {
+        "name": "pgvector",
+        "status": "warn",
+        "message": "Could not check pgvector extension",
+        "category": "ops"
+      },
+      {
+        "name": "rls",
+        "status": "ok",
+        "message": "Skipped (PGLite \u2014 no PostgREST exposure, RLS not applicable)",
+        "category": "ops"
+      },
+      {
+        "name": "schema_version",
+        "status": "ok",
+        "message": "Version 113 (latest: 113)",
+        "category": "meta"
+      },
+      {
+        "name": "rls_event_trigger",
+        "status": "ok",
+        "message": "Skipped (PGLite \u2014 no event trigger support)",
+        "category": "ops"
+      },
+      {
+        "name": "embeddings",
+        "status": "ok",
+        "message": "100% coverage, 0 missing",
+        "category": "brain"
+      },
+      {
+        "name": "embedding_provider",
+        "status": "ok",
+        "message": "openai:text-embedding-3-large \u2713 634ms, 1536 dims, DB aligned",
+        "category": "brain"
+      },
+      {
+        "name": "embedding_column_registry",
+        "status": "ok",
+        "message": "Registry healthy: 2 columns (embedding, embedding_image); active='embedding'",
+        "category": "brain"
+      },
+      {
+        "name": "embedding_env_override",
+        "status": "ok",
+        "message": "no embedding env overrides set",
+        "category": "brain"
+      },
+      {
+        "name": "graph_coverage",
+        "status": "warn",
+        "message": "Entity link coverage 91%, timeline 36% (33 entity pages). Run: gbrain extract all",
+        "category": "brain"
+      },
+      {
+        "name": "brain_score",
+        "status": "ok",
+        "message": "Brain score 83/100 (embed 35/35, links 25/25, timeline 2/15, orphans 11/15, dead-links 10/10)",
+        "category": "brain"
+      },
+      {
+        "name": "orphan_ratio",
+        "status": "ok",
+        "message": "Vacuous: 33 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "category": "brain"
+      },
+      {
+        "name": "integrity",
+        "status": "ok",
+        "message": "Sampled 86 pages; no bare-tweet phrases or external links.",
+        "category": "brain"
+      },
+      {
+        "name": "jsonb_integrity",
+        "status": "warn",
+        "message": "Could not check JSONB integrity",
+        "category": "brain"
+      },
+      {
+        "name": "takes_weight_grid",
+        "status": "ok",
+        "message": "No takes yet",
+        "category": "brain"
+      },
+      {
+        "name": "child_table_orphans",
+        "status": "ok",
+        "message": "All FK-child tables clean (10 tables checked)",
+        "category": "brain"
+      },
+      {
+        "name": "whoknows_health",
+        "status": "ok",
+        "message": "whoknows eval fixture present (10 queries). Run `gbrain eval whoknows test/fixtures/whoknows-eval.jsonl` to grade.",
+        "category": "skill"
+      },
+      {
+        "name": "cross_modal_modality_backfill",
+        "status": "ok",
+        "message": "All image-asset chunks have modality=image",
+        "category": "brain"
+      },
+      {
+        "name": "unified_multimodal_coverage",
+        "status": "ok",
+        "message": "search.unified_multimodal is off; coverage check N/A",
+        "category": "brain"
+      },
+      {
+        "name": "markdown_body_completeness",
+        "status": "ok",
+        "message": "Skipped (raw_data unavailable)",
+        "category": "brain"
+      },
+      {
+        "name": "oversized_pages",
+        "status": "ok",
+        "message": "Skipped (No database connection: connect() has not been called. Fix: Run gbrain init --supabase or gbrain init --url <connection_string>)",
+        "category": "brain"
+      },
+      {
+        "name": "scraper_junk_pages",
+        "status": "ok",
+        "message": "Skipped (No database connection: connect() has not been called. Fix: Run gbrain init --supabase or gbrain init --url <connection_string>)",
+        "category": "brain"
+      },
+      {
+        "name": "content_sanity_audit_recent",
+        "status": "ok",
+        "message": "No content-sanity events in last 7 days (audit JSONL is local to this host; share GBRAIN_AUDIT_DIR for multi-host visibility)",
+        "category": "brain"
+      },
+      {
+        "name": "quarantined_pages",
+        "status": "ok",
+        "message": "No quarantined pages",
+        "category": "brain"
+      },
+      {
+        "name": "flagged_pages",
+        "status": "ok",
+        "message": "No flagged pages",
+        "category": "brain"
+      },
+      {
+        "name": "frontmatter_integrity",
+        "status": "ok",
+        "message": "No registered sources to scan",
+        "category": "brain"
+      },
+      {
+        "name": "eval_capture",
+        "status": "ok",
+        "message": "No capture failures in the last 24h",
+        "category": "meta"
+      },
+      {
+        "name": "contradictions",
+        "status": "ok",
+        "message": "No probe runs in the last 7 days. Run `gbrain eval suspected-contradictions --query \"...\" --top-k 5` to populate.",
+        "category": "brain"
+      },
+      {
+        "name": "facts_extraction_health",
+        "status": "ok",
+        "message": "No facts:absorb failures in the last 24h.",
+        "category": "brain"
+      },
+      {
+        "name": "effective_date_health",
+        "status": "ok",
+        "message": "Sample of last 1000 pages clean (no fallback-with-parseable-fm-date, no future-dated, no pre-1990)",
+        "category": "brain"
+      },
+      {
+        "name": "salience_health",
+        "status": "ok",
+        "message": "Skipped (no pages have emotional_weight > 0; either fresh install or recompute hasn't run yet)",
+        "category": "brain"
+      },
+      {
+        "name": "queue_health",
+        "status": "ok",
+        "message": "Skipped (PGLite \u2014 no multi-process worker surface)",
+        "category": "ops"
+      },
+      {
+        "name": "subagent_capability",
+        "status": "ok",
+        "message": "Subagent tier resolves to default (claude-sonnet-4-6) \u2014 full tool-loop capability",
+        "category": "ops"
+      },
+      {
+        "name": "facts_health",
+        "status": "ok",
+        "message": "facts_health(default): 0 active, 0 today, 0 this week, 0 consolidated, top entities \u2014",
+        "category": "brain"
+      },
+      {
+        "name": "image_assets",
+        "status": "ok",
+        "message": "No image assets indexed yet",
+        "category": "brain"
+      },
+      {
+        "name": "ocr_health",
+        "status": "ok",
+        "message": "OCR not in use (or no images ingested with OCR opt-in)",
+        "category": "brain"
+      },
+      {
+        "name": "sync_freshness",
+        "status": "ok",
+        "message": "No federated sources to sync",
+        "details": {
+          "unchanged_count": 0,
+          "synced_recently_count": 0,
+          "stale_count": 0
+        },
+        "category": "brain"
+      },
+      {
+        "name": "sync_consolidation",
+        "status": "ok",
+        "message": "Single-source brain \u2014 sync --all consolidation not applicable.",
+        "category": "ops"
+      },
+      {
+        "name": "links_extraction_lag",
+        "status": "ok",
+        "message": "Extraction lag not applicable (86 pages \u2014 too few to assess)",
+        "category": "brain"
+      },
+      {
+        "name": "cycle_freshness",
+        "status": "ok",
+        "message": "No federated sources to cycle",
+        "category": "brain"
+      },
+      {
+        "name": "search_mode",
+        "status": "ok",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
+        "category": "ops"
+      },
+      {
+        "name": "eval_drift",
+        "status": "ok",
+        "message": "No retrieval-affecting files changed in working tree.",
+        "category": "brain"
+      },
+      {
+        "name": "reranker_health",
+        "status": "ok",
+        "message": "16 reranker failure(s) in last 7 days (below threshold)",
+        "category": "ops"
+      },
+      {
+        "name": "batch_retry_health",
+        "status": "ok",
+        "message": "No exhausted batch retries in last 24h.",
+        "category": "ops"
+      },
+      {
+        "name": "graph_signals_coverage",
+        "status": "ok",
+        "message": "64.0% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "category": "brain"
+      },
+      {
+        "name": "brainstorm_health",
+        "status": "ok",
+        "message": "Migration v79 applied; tracking enabled. Calibration profile not yet generated \u2014 brainstorm/lsd will run unbiased until enough takes are resolved.",
+        "category": "ops"
+      },
+      {
+        "name": "link_resolution_opportunity",
+        "status": "ok",
+        "message": "global_basename mode already enabled",
+        "category": "brain"
+      },
+      {
+        "name": "ze_embedding_health",
+        "status": "ok",
+        "message": "Configured embedding model \"openai:text-embedding-3-large\" is not ZeroEntropy \u2014 skip.",
+        "category": "ops"
+      },
+      {
+        "name": "embedding_width_consistency",
+        "status": "ok",
+        "message": "Schema width (1536d) matches gateway embedding_dimensions",
+        "category": "brain"
+      },
+      {
+        "name": "facts_embedding_width_consistency",
+        "status": "ok",
+        "message": "Skipped on PGLite (single bundled pgvector version).",
+        "category": "brain"
+      },
+      {
+        "name": "source_routing_health",
+        "status": "ok",
+        "message": "Single-source brain (no federation to check)",
+        "category": "brain"
+      },
+      {
+        "name": "oauth_confidential_client_health",
+        "status": "ok",
+        "message": "No OAuth clients registered",
+        "category": "ops"
+      },
+      {
+        "name": "autopilot_lock_scope",
+        "status": "ok",
+        "message": "Lock path: /home/ubuntu/.gbrain/autopilot.lock",
+        "category": "ops"
+      },
+      {
+        "name": "stale_locks",
+        "status": "ok",
+        "message": "No stale locks (no rows with ttl_expires_at < NOW())",
+        "category": "ops"
+      },
+      {
+        "name": "cycle_phase_scope",
+        "status": "ok",
+        "message": "Phase taxonomy: 12 source-scoped, 8 brain-global, 2 mixed. Source-safe: [lint, backlinks, sync, extract, extract_facts, extract_atoms, recompute_emotional_weight, consolidate, propose_takes, conversation_facts_backfill, enrich_thin, schema-suggest]. Brain-global: [resolve_symbol_edges, synthesize_concepts, grade_takes, calibration_profile, skillopt, embed, orphans, purge]. Mixed: [synthesize, patterns].",
+        "details": {
+          "phase_scope_map": {
+            "lint": "source",
+            "backlinks": "source",
+            "sync": "source",
+            "synthesize": "mixed",
+            "extract": "source",
+            "extract_facts": "source",
+            "resolve_symbol_edges": "global",
+            "patterns": "mixed",
+            "recompute_emotional_weight": "source",
+            "consolidate": "source",
+            "propose_takes": "source",
+            "grade_takes": "global",
+            "calibration_profile": "global",
+            "embed": "global",
+            "orphans": "global",
+            "purge": "global",
+            "schema-suggest": "source",
+            "extract_atoms": "source",
+            "synthesize_concepts": "global",
+            "conversation_facts_backfill": "source",
+            "enrich_thin": "source",
+            "skillopt": "global"
+          },
+          "counts": {
+            "source": 12,
+            "global": 8,
+            "mixed": 2
+          }
+        },
+        "category": "meta"
+      },
+      {
+        "name": "embed_staleness",
+        "status": "ok",
+        "message": "No stale chunks",
+        "category": "meta"
+      },
+      {
+        "name": "entity_link_coverage",
+        "status": "ok",
+        "message": "Coverage 91% \u00b1 5.0%",
+        "category": "meta"
+      },
+      {
+        "name": "timeline_coverage",
+        "status": "warn",
+        "message": "Coverage 36% \u00b1 8.4% (target 90%)",
+        "category": "meta"
+      },
+      {
+        "name": "takes_count",
+        "status": "warn",
+        "message": "0 takes (takes.bootstrap_enabled is false; opt in to enable)",
+        "category": "meta"
+      },
+      {
+        "name": "pack_upgrade_available",
+        "status": "warn",
+        "message": "Active pack: gbrain-base@1.0.0+7bd490ab. Successor available: gbrain-base-v2@1.0.0+b9bebaa4. Preview: `gbrain onboard --check --explain`",
+        "category": "meta"
+      },
+      {
+        "name": "type_proliferation",
+        "status": "ok",
+        "message": "8 distinct typed values (pack declares 25)",
+        "category": "meta"
+      },
+      {
+        "name": "dangling_aliases",
+        "status": "ok",
+        "message": "No dangling aliases",
+        "category": "meta"
       }
     ]
   },
