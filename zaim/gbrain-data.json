@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-19T23:54:35Z",
+  "updated_at": "2026-06-19T23:57:34Z",
   "summary": {
     "page_count": 11,
     "people_count": 4,
@@ -9,8 +9,8 @@
     "outbound_count": 17,
     "inbound_count": 17,
     "graph_coverage": "45.5% of pages have inbound links",
-    "concept_count": 6,
-    "meeting_count": 1,
+    "concept_count": 5,
+    "meeting_count": 2,
     "person_count": 4,
     "newsletter_count": 0,
     "video_count": 0,
@@ -359,7 +359,7 @@
     {
       "slug": "zaim/meeting-sayf-zaim-2026-06-12",
       "title": "Meeting Sayf Zaim 2026 06 12",
-      "type": "concept",
+      "type": "meeting",
       "updated": "",
       "body": "# Sayf x Zaim \u2014 Jun 12, 2026\n\n**Source:** email forward\n**Source URI:** gmail://msg_19ecaa895ccb88af\n**Ingested:** 2026-06-20T04:00:00Z\n**Provenance:** Forwarded to Zaim's workspace via self-BCC\n\n**Date:** Friday, 12 June 2026, 10:30am \u2013 11:00am (MYT)\n**Google Meet:** https://meet.google.com/udx-niaz-esr\n\n## Summary\n\nDiscussion explored AI skepticism and market strategy alongside technical collaboration opportunities for business growth.\n\n### Differing AI Market Perspectives\nSayf and Zaim debated the value of AI in business, contrasting skepticism about automation hype with the practical utility of AI for basic skills training.\n\n### Technical Tools and Infrastructure\nDiscussion shifted toward specific software tools, noting the efficiency of virtual private servers and the potential of data integration dashboards for business applications.\n\n### Collaboration and Service Models\nAgreement reached to build a technical solution for coaching services while prioritizing simple, revenue-focused strategies for future client engagement for Maloha Coast.\n\n## Suggested Next Steps\n\n- **Maloha Coast** \u2014 Build Dashboard: Arrange a meeting to build the dashboard component. Perform the session either in person or over a call.\n- **Zaim Mohzani** \u2014 Provide Testimonial: Provide a testimonial in exchange for the assistance provided.\n- **Maloha Coast** \u2014 Share Research Link: Send the Tencent Lighthouse promotion link for further research.\n- **The group** \u2014 Schedule Followup Session: Coordinate a time for a meeting to continue the discussion.\n- **Zaim Mohzani** \u2014 Send WhatsApp Message: Contact Maloha Coast via the provided phone number.\n\n## Google Doc\nhttps://docs.google.com/document/d/1q3v6SbKF_PiEaTatPNvhZtoWdT9_n9v5HqMoxsLj3hQ/edit",
       "tags": [
@@ -416,7 +416,7 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-19T23:54:35Z",
+      "ts": "2026-06-19T23:57:34Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-19T23:54:24Z",
+  "updated_at": "2026-06-19T23:57:30Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
@@ -8,13 +8,13 @@
     "embed_coverage": "100% coverage \u2014 all pages embedded",
     "graph_coverage": "55.8% of pages have inbound links",
     "entity_links": "Coverage \u2014 24 people, 16 companies indexed",
-    "concept_count": 71,
-    "meeting_count": 4,
+    "concept_count": 56,
+    "meeting_count": 5,
     "person_count": 24,
     "company_count": 16,
-    "newsletter_count": 10,
+    "newsletter_count": 22,
     "video_count": 0,
-    "article_count": 0,
+    "article_count": 2,
     "bookmark_count": 1,
     "quote_count": 0,
     "dataset_count": 1,
@@ -937,7 +937,7 @@
     {
       "slug": "concepts/ai-data-center-architecture-2026-06-20",
       "title": "Ai Data Center Architecture 2026 06 20",
-      "type": "concept",
+      "type": "newsletter",
       "updated": "",
       "body": "# AI Data Center Architecture \u2014 Why AI Breakthroughs Are Really Infrastructure Breakthroughs\n\n**Source:** email\n**Source URI:** gmail://msg_19ee23d6478fc08e\n**Ingested:** 2026-06-20T08:00:00Z\n**Provenance:** Forwarded by Sayf from System Design One newsletter (Neo Kim), 2026-06-20\n\n**Original:** System Design One #155 by [[Neo Kim]] and [[Ashish Prajapati]]\n**Date:** 2026-06-19\n\n---\n\n> **Key insight:** The biggest breakthroughs in AI are not coming from better models \u2014 they're coming from better infrastructure. AI data centers are factories, where GPUs are the factory floor machines and the network is the internal transport system.\n\n---\n\n## The Mental Model: AI Data Center as a Factory\n\n- **AI Data Center = Factory**\n- **Data = Raw material**\n- **GPUs = Machines on the factory floor**\n- **Network = Internal transport system**\n- **Storage = Warehouse holding raw materials**\n- **Software = Assembly line logic**\n- **Output = Trained intelligence**\n\nRemove any one ingredient and the entire system stalls.\n\n---\n\n## First Problem: Physics\n\nBefore AI is a software problem, it's a physics problem.\n\n### 1. Power\nA single server rack of GPUs can draw 80-120 kW \u2014 roughly 40 homes at full load. You're limited by how much electricity your facility can physically receive and distribute.\n\n### 2. Cooling\nMore power = more heat. Modern data centers adopt **liquid cooling** \u2014 coolant circulated through cold plates attached directly to GPUs/CPUs, pumped to heat exchangers. Enables higher rack densities, lower cooling power consumption, and consistent performance at scale.\n\n### 3. Space\nScaling AI is real estate, energy infrastructure, and thermodynamics combined, not just software.\n\n---\n\n## Compute: Why GPUs Took Over\n\n- **CPU** = manager (a few powerful cores, complex sequential tasks, decision-making)\n- **GPU** = factory workers (thousands of simpler cores, matrix multiplications in parallel)\n- **DPU** = logistics (networking, storage I/O, security \u2014 keeps materials moving)\n\nAI training repeatedly performs matrix multiplications billions of times. GPUs are purpose-built for this.\n\n---\n\n## Hidden Bottleneck: Memory and Storage\n\nGPUs don't fail because they're slow. They fail because they're starved for data.\n\n### Memory Hierarchy (speed vs capacity)\n\n| Layer | Characteristics |\n|-------|-----------------|\n| GPU Memory (HBM) | Blazing fast but tiny (tens of GB) |\n| CPU RAM | Hundreds of GB, slower than HBM |\n| SSD/NVMe | Enormous capacity, slower still |\n| Network/Object Storage | Nearly unlimited, slowest link |\n\n### Tiered Storage in Practice\n\n- **Hot:** NVMe SSDs \u2014 active training datasets, model checkpoints\n- **Warm:** Parallel file systems (Lustre, GPFS) \u2014 high-speed shared access across many GPUs\n- **Cold:** Object storage (Amazon S3) \u2014 raw datasets, older checkpoints\n\nAI performance is determined by how fast data can be fed into the GPU, not just GPU compute speed.\n\n---\n\n## Networking: The Bottleneck Nobody Talks About\n\nThousands of GPUs must constantly communicate, sharing what they've learned at every step. Every second a GPU waits for data or synchronization is wasted investment.\n\n### Cluster Topology\n\nLeaf-spine network architectures \u2014 every GPU server reaches every other in at most 2 hops.\n\n### Speed Hierarchy\n\n- **NVLink** \u2014 fastest, a private highway between GPUs in the same server\n- **InfiniBand/RoCE** \u2014 \"bullet train\" between separate servers\n- **Ethernet** \u2014 general-purpose, not designed for AI's bandwidth/latency demands\n\n### Amdahl's Law\nAdding more GPUs increases computing power but also increases communication overhead. At a certain point, the bottleneck shifts from computation to communication.\n\n### Smarter Data Movement Techniques\n\n- **RDMA** \u2014 direct memory-to-memory transfers between servers, low-latency high-throughput\n- **RDMA kernel bypass** \u2014 network adapter accesses application memory directly from user space\n- **GPUDirect** \u2014 GPUs read/write to storage/network cards bypassing CPU entirely\n- **Zero-copy pipelines** \u2014 data takes shortest path from source to GPU\n\nThe goal: make thousands of GPUs behave like one giant unified processor.\n\n---\n\n## People Mentioned\n\n- [[Neo Kim]] \u2014 Author of The System Design Newsletter\n- [[Ashish Prajapati]] \u2014 AI infrastructure specialist, technology educator; NVIDIA-Certified Associate; created BeSA (Become a Solutions Architect) mentoring program reaching 23,000+ professionals; training programs reached 39,000+ learners worldwide\n\n---\n\n## Related Concepts\n\n- [[AI Data Centers]]\n- [[GPU Infrastructure]]\n- [[Distributed Training]]\n- [[RDMA]]\n- [[Liquid Cooling]]",
       "tags": [],
@@ -2334,7 +2334,7 @@
     {
       "slug": "humanlayer-launch-2026-06-19",
       "title": "Humanlayer Launch 2026 06 19",
-      "type": "concept",
+      "type": "newsletter",
       "updated": "",
       "body": "# HumanLayer // We're live \u2014 come build with us\n\n**Source:** email\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-19T20:30:00Z\n**Provenance:** Forwarded by Sayf Codes on 2026-06-19\n**Original from:** dex at humanlayer <dexter@hey.humanlayer.dev>\n**Original date:** 2026-06-18\n\n> Sayf was on the HumanLayer waitlist. He forwarded this launch announcement to Maloha Coast info@.\n\n[[HumanLayer]] is an Agentic IDE, collaboration platform, and building blocks for your software factory \u2014 where engineering teams design complex systems with their AI agents before generating a single line of code.\n\n## Key Details\n\n- [[HumanLayer]] is opening up to everyone (previously waitlist-only)\n- Created by [[Dex Horthy]] and Kyle, building on their open-source Research, Plan, Implement (RPI) framework\n- RPI framework already running inside Fortune 500s (Block, Uber)\n- **Core idea:** don't outsource the thinking. Design reviews before code generation. Brings system design collaboration into one place.\n- **Pricing:** Starter plan is free for teams of fewer than three\n- **BYO subscription:** Bring your own Claude, Codex, and other AI subscriptions or API keys \u2014 no separate per-token bill\n- **Promised benefits:** 2-3x faster across entire SDLC; maintain rigorous architecture standards\n- Product is live at humanlayer.com\n- Launching publicly on X and LinkedIn\n\n## What It Does\n\nLets engineers solving hard problems in complex codebases:\n- Move 2-3x faster across the entire SDLC (not just the coding part)\n- Maintain rigorous standards for system architecture and program design\n\n## Links\n\n- Product: https://humanlayer.com\n- Launch blurb: https://humanlayer.com/launch/blurb.md\n- X launch post: https://x.com/dexhorthy/status/2067286892786454855\n- LinkedIn: https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U",
       "tags": [],
@@ -2420,7 +2420,7 @@
     {
       "slug": "inbox/humanlayer-launch-2026-06-19",
       "title": "Humanlayer Launch 2026 06 19",
-      "type": "concept",
+      "type": "article",
       "updated": "",
       "body": "# HumanLayer Launch \u2014 Agentic IDE and Software Factory Platform\n\n**Source:** email (forwarded by sayf)\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-20T03:30:00Z\n**Provenance:** Forwarded by sayf on 2026-06-19\n\nSayf forwarded the HumanLayer launch announcement from Dexter (dex at humanlayer / dexter@hey.humanlayer.dev).\n\n## Summary\n\nHumanLayer is an Agentic IDE, collaboration platform, and software factory building blocks. It lets engineering teams design complex systems with AI agents before generating code. After a year of building on the open-source Research, Plan, Implement (RPI) framework (running inside Fortune 500s like Block and Uber), HumanLayer is now open to everyone.\n\n## Key Details\n\n- **Founders:** Dexter (dex@) and Kyle\n- **Core idea:** \"Don't outsource the thinking\" \u2014 design reviews for system architecture before writing code, bringing the missing piece of the software factory into one place\n- **Key metric:** Teams move 2-3x faster across the entire SDLC\n- **Pricing:** Starter plan is free for teams of fewer than three\n- **BYO subscription:** Plug in Claude, Codex, and other AI subscriptions or API keys \u2014 no separate per-token bill\n- **Launch posts:** [X launch thread](https://x.com/dexhorthy/status/2067286892786454855), [LinkedIn post](https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U)\n- **Website:** https://humanlayer.com\n\n## Our Take\n\nThis is directly relevant to Maloha Coast's work in the AI agent space. The RPI framework is already used in production at scale (Block, Uber). The \"design before code\" thesis aligns with how sayf approaches agentic system design. Worth watching.",
       "tags": [],
@@ -2432,7 +2432,7 @@
     {
       "slug": "inbox/humanlayer-launch-forward-2026-06-19",
       "title": "HumanLayer // We're live \u2014 come build with us",
-      "type": "concept",
+      "type": "article",
       "updated": "",
       "body": "# [[HumanLayer]] // We're live \u2014 come build with us\n\n**Source:** Forwarded by Sayf Codes from dex at humanlayer (dexter@hey.humanlayer.dev), 2026-06-19\n**Source URI:** gmail://msg_19edfd1054c17600\n\n**Sayf's note:** Forwarded this for reference \u2014 Sayf was on the [[HumanLayer]] waitlist.\n\n## Summary\n\n[[HumanLayer]] is launching publicly \u2014 an Agentic IDE, collaboration platform, and building blocks for a software factory. Built by the creators of the open-source Research, Plan, Implement (RPI) framework, now running inside Fortune 500s like [[Block]] and [[Uber]].\n\n## Key Points\n\n- **Product:** An Agentic IDE + collaboration platform where engineering teams design complex systems with AI agents before generating code\n- **Core idea:** Don't outsource the thinking. Great teams run design reviews for decades because there's enormous leverage in collaborating on system design before writing code\n- **Performance:** Teams move 2-3x faster across the entire SDLC (not just coding)\n- **Pricing:** Starter plan is free for teams of fewer than three. Bring your own subscription \u2014 plug in your Claude, Codex, and other API keys. No separate per-token bill.\n- **Founders:** Kyle and dex (dexter@hey.humanlayer.dev) \u2014 previously built the open-source RPI framework\n- **Enterprise adoption:** RPI framework running inside Block and Uber\n\n## Links\n\n- HumanLayer: https://humanlayer.com",
       "tags": [
@@ -2465,7 +2465,7 @@
     {
       "slug": "inbox/msg-19edfd1054c17600",
       "title": "Msg 19edfd1054c17600",
-      "type": "concept",
+      "type": "newsletter",
       "updated": "",
       "body": "# [[HumanLayer]] \u2014 Agentic IDE for engineering teams\n\n**Source:** Dex at [[HumanLayer]] (forwarded by sayf)\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-20\n**Provenance:** Forwarded by Sayf from sayfcodes@gmail.com to info@malohacoast.com on 2026-06-19\n\n[[HumanLayer]] is an Agentic IDE, collaboration platform, and building blocks for your software factory \u2014 where engineering teams design complex systems with their AI agents before generating a single line of code.\n\n**Original author:** [[Dex Horthy]] (dexter@hey.humanlayer.dev) / Kyle\n**Original date:** Thu, 18 Jun 2026\n\n## Key details\n\n- **Founders:** Kyle and [[Dex Horthy]] \u2014 previously built open-source Research, Plan, Implement (RPI) framework, running inside Fortune 500s (Block, Uber)\n- **Pricing:** Starter plan free for teams < 3\n- **Bring your own subscription** \u2014 plug in Claude, Codex, and other AI subscriptions or API keys. No separate per-token bill.\n- **Core philosophy:** \"Don't outsource the thinking.\" Design reviews before writing code. Engineering teams move 2-3x faster across the entire SDLC.\n\n## What it does\n\n[[HumanLayer]] lets engineers solving hard problems in complex codebases:\n- Move 2-3x faster across the entire SDLC (not just the coding part)\n- Maintain rigorous standards for system architecture and program design\n\n## Launch links\n\n- Product: [humanlayer.com](https://humanlayer.com)\n- Launch post on X: https://x.com/dexhorthy/status/2067286892786454855\n- LinkedIn launch: https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U",
       "tags": [
@@ -2493,7 +2493,7 @@
     {
       "slug": "inbox/msg-19ee03492356403f",
       "title": "Msg 19ee03492356403f",
-      "type": "concept",
+      "type": "newsletter",
       "updated": "",
       "body": "# How provider data policies work on [[OpenRouter]]\n\n**Source:** OpenRouter Team (newsletter)\n**Source URI:** gmail://msg_19ee03492356403f\n**Ingested:** 2026-06-20\n**Provenance:** Email to info@malohacoast.com on 2026-06-19\n\nEvery provider behind [[OpenRouter]] has its own retention and training policy. [[OpenRouter]] reflects those policies as structured data on each endpoint, publishes the full table in the docs, and gives you controls to filter routing on them.\n\n[Provider policy table](https://openrouter.ai/docs/features/privacy-and-logging)\n\n## What you control\n\n1. **Block routing to providers that train.** Account-wide toggle for whether routing may use providers that train on prompts, with separate switches for paid and free models.\n2. **Require a specific data policy per request.** Override account default on any single call via [data policy filtering](https://openrouter.ai/docs/features/provider-routing#requiring-providers-to-comply-with-data-policies).\n3. **Pick only zero-retention providers.** Many providers \u2014 including Amazon Bedrock, Azure, Cerebras, DeepInfra, Google Vertex, Groq, NVIDIA, SambaNova, and Together \u2014 are zero retention. Filter to them the same way as training policy.\n\n## If you need stricter guarantees\n\n[[OpenRouter]] supports EU in-region routing for enterprise accounts. Prompts and completions processed inside the EU via `https://eu.openrouter.ai`. [Contact enterprise team](https://openrouter.ai/enterprise/form) to enable it.\n\nOne API key, the same privacy controls across 300+ models.",
       "tags": [
@@ -2515,7 +2515,7 @@
     {
       "slug": "inbox/openrouter-provider-data-policies-2026-06-19",
       "title": "How provider data policies work on OpenRouter",
-      "type": "concept",
+      "type": "newsletter",
       "updated": "",
       "body": "# How provider data policies work on [[OpenRouter]]\n\n**Source:** email from OpenRouter Team, 2026-06-19\n**Source URI:** gmail://msg_19ee03492356403f\n\n## Summary\n\n[[OpenRouter]] provides structured data about each provider's retention and training policies, publishes a full table in their docs, and gives users three layers of control over which providers can process their prompts.\n\n## Key Content\n\nEvery provider behind [[OpenRouter]] has its own retention and training policy. [[OpenRouter]] reflects those policies as structured data on each endpoint and publishes the full table in the docs.\n\n### What You Control\n\n1. **Block routing to providers that train.** An account-wide toggle for whether routing may use providers that train on prompts, with separate switches for paid and free models. If you opt out, [[OpenRouter]] will not route to training providers.\n\n2. **Require a specific data policy per request.** Override your account default on any single call via data policy filtering in the provider routing docs.\n\n3. **Pick only zero-retention providers.** Many providers on [[OpenRouter]] are zero retention: Amazon Bedrock, Azure, Cerebras, DeepInfra, Google Vertex, Groq, NVIDIA, SambaNova, Together, and others.\n\n### Enterprise Options\n\n[[OpenRouter]] supports EU in-region routing for enterprise accounts. When enabled, prompts and completions are processed inside the European Union via `https://eu.openrouter.ai`.\n\n## Links\n\n- Provider policy table: https://openrouter.ai/docs/features/privacy-and-logging\n- Privacy settings: https://openrouter.ai/settings/privacy\n- Data policy filtering docs: https://openrouter.ai/docs/features/provider-routing\n- Enterprise: https://openrouter.ai/enterprise/form",
       "tags": [
@@ -2543,7 +2543,7 @@
     {
       "slug": "inbox/openrouter-provider-policies-2026-06-19",
       "title": "Openrouter Provider Policies 2026 06 19",
-      "type": "concept",
+      "type": "newsletter",
       "updated": "",
       "body": "# How Provider Data Policies Work on OpenRouter\n\n**Source:** email from OpenRouter Team <welcome@openrouter.ai>, 2026-06-19\n**Source URI:** gmail://msg_19ee03492356403f\n\nEvery provider behind OpenRouter has its own retention and training policy. OpenRouter reflects those policies as structured data on each endpoint, publishes the full table in the docs, and gives users controls to filter routing on them.\n\n## What You Control\n\n1. **Block routing to providers that train.** Account-wide toggle for whether routing may use providers that train on prompts, with separate switches for paid and free models. If you opt out, OpenRouter will not route to training providers.\n\n2. **Require a specific data policy per request.** Override your account default on any single call via data policy filtering in provider routing.\n\n3. **Pick only zero-retention providers.** Many providers on OpenRouter are zero retention: Amazon Bedrock, Azure, Cerebras, DeepInfra, Google Vertex, Groq, NVIDIA, SambaNova, Together, and others. Filter to them the same way as training policy.\n\n[Source: email from OpenRouter Team re: \"How provider data policies work on OpenRouter\", 2026-06-19]\n\n## EU In-Region Routing\n\nOpenRouter supports EU in-region routing for enterprise accounts. When enabled, prompts and completions are processed inside the European Union via `https://eu.openrouter.ai` base URL.\n\n[Source: email from OpenRouter Team re: \"How provider data policies work on OpenRouter\", 2026-06-19]",
       "tags": [],
@@ -2555,7 +2555,7 @@
     {
       "slug": "inbox/openrouter-three-features-2026-06-18",
       "title": "Openrouter Three Features 2026 06 18",
-      "type": "concept",
+      "type": "newsletter",
       "updated": "",
       "body": "# Three features worth trying next on OpenRouter\n\n**Source:** email\n**Source URI:** gmail://msg_19edb0e0abd83fb0\n**Ingested:** 2026-06-20T03:30:00Z\n\nOpenRouter onboarding email covering three features that are single-parameter changes with production value.\n\n## Key Points\n\n1. **Streaming** (`stream=True`): Tokens arrive as generated. Perceived latency drops from seconds to first-token time. Agents that stream partial results to a frontend get a noticeable UX lift for zero code cost.\n\n2. **Structured outputs** (`response_format` with JSON schema): OpenRouter enforces JSON schema at the API level. No regex parsing, no retry loops for malformed JSON, no \"please respond in valid JSON\" prompt engineering. Works on every model that supports the format; router respects it with `openrouter/auto`.\n\n3. **Provider preferences** (`provider` param in `extra_body`): Pin specific providers, exclude others, set latency floors and throughput minimums. Sort by `\"price\"` to always pick the cheapest, or use an allowlist to lock routing to trusted providers.\n\n## Combined Example\n\n```python\nresponse = client.chat.completions.create(\n    model=\"openrouter/auto\",\n    stream=True,\n    response_format={\"type\": \"json_schema\", \"json_schema\": schema},\n    extra_body={\"provider\": {\"sort\": \"price\"}},\n    messages=[{\"role\": \"user\", \"content\": \"...\"}],\n)\n```\n\n## Useful Pages\n\n- [Models & pricing](https://openrouter.ai/models)\n- [Rankings (real usage volume)](https://openrouter.ai/rankings)\n- [Usage & costs](https://openrouter.ai/activity)",
       "tags": [],
@@ -2567,7 +2567,7 @@
     {
       "slug": "inbox/openrouter-three-features-next-2026-06-18",
       "title": "Three features worth trying next on OpenRouter",
-      "type": "concept",
+      "type": "newsletter",
       "updated": "",
       "body": "# Three features worth trying next on [[OpenRouter]]\n\n**Source:** email from OpenRouter Team, 2026-06-18\n**Source URI:** gmail://msg_19edb0e0abd83fb0\n\n## Summary\n\nThree [[OpenRouter]] features that are each a single parameter change, don't require a new integration or endpoint, and each earns its place in production code.\n\n## Key Features\n\n### 1. Streaming\n\nSet `stream=True` and tokens arrive as they generate. Same endpoint, same auth, one parameter. Perceived latency drops from seconds to first-token time \u2014 the difference between a chat UI that feels alive and one that feels broken. Agents that stream partial results to a frontend get a noticeable UX lift for zero code cost.\n\n### 2. Structured Outputs\n\nPass a JSON schema via `response_format` and [[OpenRouter]] enforces it at the API level. No regex parsing, no retry loops when the model returns malformed JSON, no \"please respond in valid JSON\" prompt engineering. Works on every model that supports the parameter.\n\n### 3. Provider Preferences\n\nUse the `provider` parameter to control which providers handle a request: set `ignore=`` to skip specific providers, set `order` to prioritize by latency or cost, or set `allow_fallbacks` to keep the request reliable even when preferred providers are down.",
       "tags": [
@@ -2784,7 +2784,7 @@
     {
       "slug": "newsletter/humanlayer-launch-2026-06-19",
       "title": "HumanLayer \u2014 We''re live, come build with us",
-      "type": "concept",
+      "type": "newsletter",
       "updated": "",
       "body": "# HumanLayer \u2014 We're live, come build with us\n\n**Source:** email\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-20T04:00:00Z\n**Provenance:** Forwarded by Sayf Codes to info@malohacoast.com on 2026-06-19\n\n[[HumanLayer]] is opening up to everyone. Previously waitlist-only, the Agentic IDE and collaboration platform is now publicly available.\n\nFrom [[Dex Horthy]] (dexter@hey.humanlayer.dev) and Kyle \u2014 the team behind the open-source Research, Plan, Implement (RPI) framework now running inside Fortune 500s (Block, Uber).\n\n## What HumanLayer Is\n\nAn Agentic IDE, collaboration platform, and building blocks for your software factory \u2014 where engineering teams design complex systems with their AI agents before generating a single line of code. It lets engineers solving hard problems in complex codebases:\n\n- Move 2-3x faster across the entire SDLC (not just the coding part)\n- Maintain rigorous standards for system architecture and program design\n\n## Core Idea\n\nDon't outsource the thinking. Great teams have run design reviews for decades because there's enormous leverage in collaborating on system design before writing code. HumanLayer brings that missing piece of the software factory into one place.\n\nBring your own subscription \u2014 plug in Claude, Codex, and other AI subscriptions or API keys. No separate per-token bill.\n\n## Links\n\n- HumanLayer: https://humanlayer.com\n- Launch post (blurb.md): https://humanlayer.com/launch/blurb.md\n- X launch post: https://x.com/dexhorthy/status/2067286892786454855\n- LinkedIn launch post: https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U",
       "tags": [],
@@ -2830,7 +2830,7 @@
     {
       "slug": "newsletter/openrouter-data-policies-2026-06-19",
       "title": "How provider data policies work on OpenRouter",
-      "type": "concept",
+      "type": "newsletter",
       "updated": "",
       "body": "# How provider data policies work on [[OpenRouter]]\n\n**Source:** email\n**Source URI:** gmail://msg_19ee03492356403f\n**Ingested:** 2026-06-20T04:00:00Z\n**Provenance:** OpenRouter newsletter to info@malohacoast.com\n\nEvery provider behind [[OpenRouter]] has its own retention and training policy. [[OpenRouter]] reflects those policies as structured data on each endpoint, publishes the full table in the docs, and gives you controls to filter routing on them.\n\n## What You Control\n\n1. **Block routing to providers that train** \u2014 Account-wide toggle in privacy settings for whether routing may use providers that train on prompts, with separate switches for paid and free models.\n2. **Require a specific data policy per request** \u2014 Override account default on any single call via data policy filtering in provider routing docs.\n3. **Pick only zero-retention providers** \u2014 Many providers on [[OpenRouter]] are zero retention: Amazon Bedrock, Azure, Cerebras, DeepInfra, Google Vertex, Groq, NVIDIA, SambaNova, Together, and others.\n\n## EU Routing\n\n[[OpenRouter]] supports EU in-region routing for enterprise accounts. When enabled, prompts and completions are processed inside the European Union via the https://eu.openrouter.ai base URL.",
       "tags": [],
@@ -3134,7 +3134,7 @@
     {
       "slug": "openrouter-data-policies-2026-06-19",
       "title": "How provider data policies work on OpenRouter",
-      "type": "concept",
+      "type": "newsletter",
       "updated": "",
       "body": "# How provider data policies work on OpenRouter\n\n**Source:** email (OpenRouter Team)\n**Source URI:** gmail://msg_19ee03492356403f\n**Ingested:** 2026-06-19T22:07:00Z\n**Provenance:** OpenRouter onboarding email to info@malohacoast.com\n\n> Every provider behind OpenRouter has its own retention and training policy. OpenRouter reflects those policies as structured data on each endpoint, publishes the full table in the docs, and gives you controls to filter routing on them.\n\n## What You Control\n\n1. **Block routing to providers that train** \u2014 account-wide toggle for whether routing may use providers that train on prompts, with separate switches for paid and free models. If you opt out, OpenRouter will not route to training providers.\n\n2. **Require a specific data policy per request** \u2014 override account default on any single call.\n\n3. **Pick only zero-retention providers** \u2014 Many providers on OpenRouter are zero retention: Amazon Bedrock, Azure, Cerebras, DeepInfra, Google Vertex, Groq, NVIDIA, SambaNova, Together, and others.\n\n## Stricter Guarantees\n\nOpenRouter supports EU in-region routing for enterprise accounts. When enabled, prompts and completions are processed inside the European Union via `https://eu.openrouter.ai`.\n\n## Key Takeaway\n\nOne API key, the same privacy controls across 300+ models. Useful reference for sayf's Hermes setup \u2014 OpenRouter already has the infrastructure for per-provider data policy filtering.",
       "tags": [],
@@ -3146,7 +3146,7 @@
     {
       "slug": "openrouter-provider-data-policies-2026-06-19",
       "title": "How Provider Data Policies Work on OpenRouter",
-      "type": "concept",
+      "type": "newsletter",
       "updated": "",
       "body": "# How Provider Data Policies Work on OpenRouter\n\n**Source:** Email from OpenRouter Team, 2026-06-19\n**Source URI:** gmail://msg_19ee03492356403f\n**Ingested:** 2026-06-19T22:14:00Z\n\nOpenRouter onboarding email explaining each provider's data retention and training policy, and the controls available to users.\n\n## Key Points\n\n- Every provider behind OpenRouter has its own retention and training policy. These are reflected as structured data on each endpoint and published in the docs.\n- Users have three levels of control:\n  1. **Account-wide toggle** \u2014 block routing to providers that train on prompts, with separate switches for paid and free models.\n  2. **Per-request override** \u2014 require a specific data policy on any single API call.\n  3. **Zero-retention filtering** \u2014 filter to providers that keep no data.\n\n- Zero-retention providers include: Amazon Bedrock, Azure, Cerebras, DeepInfra, Google Vertex, Groq, NVIDIA, SambaNova, Together, and others.\n\n- **EU in-region routing** \u2014 available for enterprise accounts. Prompts and completions processed inside the EU via `https://eu.openrouter.ai` base URL.",
       "tags": [],
@@ -4254,7 +4254,7 @@
     {
       "slug": "zaim/meeting-sayf-zaim-2026-06-12",
       "title": "Meeting Sayf Zaim 2026 06 12",
-      "type": "concept",
+      "type": "meeting",
       "updated": "",
       "body": "# Sayf x Zaim \u2014 Jun 12, 2026\n\n**Source:** email forward\n**Source URI:** gmail://msg_19ecaa895ccb88af\n**Ingested:** 2026-06-20T04:00:00Z\n**Provenance:** Forwarded to Zaim's workspace via self-BCC\n\n**Date:** Friday, 12 June 2026, 10:30am \u2013 11:00am (MYT)\n**Google Meet:** https://meet.google.com/udx-niaz-esr\n\n## Summary\n\nDiscussion explored AI skepticism and market strategy alongside technical collaboration opportunities for business growth.\n\n### Differing AI Market Perspectives\nSayf and Zaim debated the value of AI in business, contrasting skepticism about automation hype with the practical utility of AI for basic skills training.\n\n### Technical Tools and Infrastructure\nDiscussion shifted toward specific software tools, noting the efficiency of virtual private servers and the potential of data integration dashboards for business applications.\n\n### Collaboration and Service Models\nAgreement reached to build a technical solution for coaching services while prioritizing simple, revenue-focused strategies for future client engagement for Maloha Coast.\n\n## Suggested Next Steps\n\n- **Maloha Coast** \u2014 Build Dashboard: Arrange a meeting to build the dashboard component. Perform the session either in person or over a call.\n- **Zaim Mohzani** \u2014 Provide Testimonial: Provide a testimonial in exchange for the assistance provided.\n- **Maloha Coast** \u2014 Share Research Link: Send the Tencent Lighthouse promotion link for further research.\n- **The group** \u2014 Schedule Followup Session: Coordinate a time for a meeting to continue the discussion.\n- **Zaim Mohzani** \u2014 Send WhatsApp Message: Contact Maloha Coast via the provided phone number.\n\n## Google Doc\nhttps://docs.google.com/document/d/1q3v6SbKF_PiEaTatPNvhZtoWdT9_n9v5HqMoxsLj3hQ/edit",
       "tags": [
