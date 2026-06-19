@@ -1,27 +1,27 @@
 {
-  "updated_at": "2026-06-19T21:00:25Z",
+  "updated_at": "2026-06-19T22:00:25Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
     "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 108,
+    "page_count": 110,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "58.3% of pages have inbound links",
+    "graph_coverage": "57.3% of pages have inbound links",
     "entity_links": "Coverage \u2014 22 people, 16 companies indexed",
-    "concept_count": 53,
+    "concept_count": 54,
     "meeting_count": 4,
     "person_count": 22,
     "company_count": 16,
-    "newsletter_count": 9,
+    "newsletter_count": 10,
     "video_count": 0,
     "article_count": 0,
     "bookmark_count": 1,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 156,
-    "outbound_count": 209,
-    "inbound_count": 190,
+    "total_links": 159,
+    "outbound_count": 211,
+    "inbound_count": 192,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -403,6 +403,11 @@
           "text": "HumanLayer"
         },
         {
+          "from": "newsletters/humanlayer-launch-2026-06-19-sayf",
+          "type": "wikilink",
+          "text": "HumanLayer"
+        },
+        {
           "from": "newsletters/humanlayer-launch-2026-06-19",
           "type": "wikilink",
           "text": "HumanLayer"
@@ -419,7 +424,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 6
+      "inbound_count": 7
     },
     {
       "slug": "companies/inclusive-ai-association",
@@ -619,11 +624,6 @@
           "text": "OpenRouter"
         },
         {
-          "from": "inbox/openrouter-provider-data-policies-2026-06-19",
-          "type": "wikilink",
-          "text": "OpenRouter"
-        },
-        {
           "from": "newsletters/openrouter-chain-models-2026-06-16",
           "type": "wikilink",
           "text": "OpenRouter"
@@ -650,7 +650,7 @@
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 7
+      "inbound_count": 6
     },
     {
       "slug": "companies/passend",
@@ -2137,11 +2137,23 @@
       "inbound_count": 0
     },
     {
+      "slug": "inbox/github-2fa-required-2026-06-17",
+      "title": "Github 2fa Required 2026 06 17",
+      "type": "concept",
+      "updated": "",
+      "body": "# GitHub 2FA Required for mc-hermes Account\n\n**Source:** email\n**Source URI:** gmail://msg_19ed814d86397ca4\n**Ingested:** 2026-06-20T03:30:00Z\n\nGitHub is enforcing 2FA for all users contributing code. The mc-hermes account must enroll by **July 19, 2026 at 00:00 (UTC)**.\n\n## Key Details\n\n- **Deadline:** July 19, 2026 at 00:00 UTC\n- **Account:** mc-hermes on GitHub\n- **Action needed:** Enroll in 2FA before the deadline\n- **Options:** Security key, GitHub Mobile, TOTP authenticator app, SMS\n- **Recommendation:** Set up at least two methods (including recovery codes)\n- **PATs/SSH keys continue working** after the deadline \u2014 only interactive sign-in is affected\n- **Deadline is ~29 days away** from today (June 20)",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "inbox/humanlayer-launch-2026-06-19",
       "title": "Humanlayer Launch 2026 06 19",
       "type": "concept",
       "updated": "",
-      "body": "# HumanLayer \u2014 Agentic IDE Launches Publicly\n\n**Source:** forwarded email from sayf, originally from dex at HumanLayer <dexter@hey.humanlayer.dev>, 2026-06-18\n**Source URI:** gmail://msg_19edfd1054c17600\n\n**Sayf's context:** Sayf forwarded this to the Maloha Coast info address, indicating interest in AI agent tooling.\n\n## Summary\n\nHumanLayer is an Agentic IDE, collaboration platform, and building blocks for a \"software factory\" \u2014 where engineering teams design complex systems with their AI agents before generating a single line of code. Previously on waitlist; now open to everyone.\n\n[Source: email from dex@hey.humanlayer.dev re: \"HumanLayer // We're live \u2014 come build with us\", 2026-06-18]\n\n## Key Details\n\n- **Founders:** Dexter (dex) and Kyle \u2014 previously built the open-source Research, Plan, Implement (RPI) framework, now running inside Fortune 500s like Block and Uber\n- **Pricing:** Starter plan is free for teams of fewer than three\n- **Core pitch:** \"Don't outsource the thinking\" \u2014 design reviews with AI before writing code, bringing the missing piece of the software factory into one place\n- **BYO subscription:** Plug in your Claude, Codex, and other AI subscriptions or API keys. No separate per-token bill.\n- **Claimed velocity:** Teams move 2-3x faster across the entire SDLC (not just coding)\n- **Launch:** June 18, 2026 on X and LinkedIn\n\n[Source: email from dex@hey.humanlayer.dev re: \"HumanLayer // We're live \u2014 come build with us\", 2026-06-18]",
+      "body": "# HumanLayer Launch \u2014 Agentic IDE and Software Factory Platform\n\n**Source:** email (forwarded by sayf)\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-20T03:30:00Z\n**Provenance:** Forwarded by sayf on 2026-06-19\n\nSayf forwarded the HumanLayer launch announcement from Dexter (dex at humanlayer / dexter@hey.humanlayer.dev).\n\n## Summary\n\nHumanLayer is an Agentic IDE, collaboration platform, and software factory building blocks. It lets engineering teams design complex systems with AI agents before generating code. After a year of building on the open-source Research, Plan, Implement (RPI) framework (running inside Fortune 500s like Block and Uber), HumanLayer is now open to everyone.\n\n## Key Details\n\n- **Founders:** Dexter (dex@) and Kyle\n- **Core idea:** \"Don't outsource the thinking\" \u2014 design reviews for system architecture before writing code, bringing the missing piece of the software factory into one place\n- **Key metric:** Teams move 2-3x faster across the entire SDLC\n- **Pricing:** Starter plan is free for teams of fewer than three\n- **BYO subscription:** Plug in Claude, Codex, and other AI subscriptions or API keys \u2014 no separate per-token bill\n- **Launch posts:** [X launch thread](https://x.com/dexhorthy/status/2067286892786454855), [LinkedIn post](https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U)\n- **Website:** https://humanlayer.com\n\n## Our Take\n\nThis is directly relevant to Maloha Coast's work in the AI agent space. The RPI framework is already used in production at scale (Block, Uber). The \"design before code\" thesis aligns with how sayf approaches agentic system design. Worth watching.",
       "tags": [],
       "links_out": [],
       "backlinks": [],
@@ -2153,15 +2165,9 @@
       "title": "Openrouter Provider Data Policies 2026 06 19",
       "type": "concept",
       "updated": "",
-      "body": "# How provider data policies work on [[OpenRouter]]\n\nEvery provider behind [[OpenRouter]] has its own retention and training policy. OpenRouter reflects those policies as structured data on each endpoint, publishes the full table in the docs, and gives you controls to filter routing on them.\n\n---\n\n## What You Control\n\n**1. Block routing to providers that train.** Your privacy settings have an account-wide toggle for whether routing may use providers that train on prompts, with separate switches for paid and free models. If you opt out, OpenRouter will not route to training providers.\n\n**2. Require a specific data policy per request.** You can override your account default on any single call. See data policy filtering in the provider routing docs.\n\n**3. Pick only zero-retention providers.** Many providers on OpenRouter are zero retention (Amazon Bedrock, Azure, Cerebras, DeepInfra, Google Vertex, Groq, NVIDIA, SambaNova, Together, and others in the table). Filter to them the same way as training policy.\n\n---\n\n## If You Need Stricter Guarantees\n\nOpenRouter supports EU in-region routing for enterprise accounts. When enabled, prompts and completions are processed inside the European Union via the `https://eu.openrouter.ai` base URL. Contact the enterprise team to enable it.\n\n---\n\nOne API key, the same privacy controls across 300+ models.\n\n[Source: OpenRouter Team <welcome@openrouter.ai>, 2026-06-19]",
+      "body": "# How provider data policies work on OpenRouter\n\n**Source:** email from OpenRouter Team, 2026-06-19\n**Source URI:** gmail://msg_19ee03492356403f\n**Ingested:** 2026-06-20\n\nEvery provider behind OpenRouter has its own retention and training policy, published as structured data on each endpoint.\n\n## Key Points\n\n- **Per-provider policies** are published in a full table and available as structured data on each endpoint\n- **Three control levels:**\n  1. Account-wide toggle to block routing to providers that train on prompts (separate switches for paid vs free models)\n  2. Per-request override of the data policy default via `data_policy` filtering in provider routing\n  3. Filter to zero-retention providers only: Amazon Bedrock, Azure, Cerebras, DeepInfra, Google Vertex, Groq, NVIDIA, SambaNova, Together, and others\n- **EU in-region routing** available for enterprise accounts via `https://eu.openrouter.ai` base URL\n\n## Entity Summary\n\n- **OpenRouter** \u2014 the platform being described\n- Zero-retention providers listed (Amazon Bedrock, Azure, Cerebras, DeepInfra, Google Vertex, Groq, NVIDIA, SambaNova, Together) \u2014 list-only mentions, no individual discussion",
       "tags": [],
-      "links_out": [
-        {
-          "to": "companies/openrouter",
-          "type": "wikilink",
-          "text": "OpenRouter"
-        }
-      ],
+      "links_out": [],
       "backlinks": [
         {
           "from": "companies/openrouter",
@@ -2169,7 +2175,7 @@
           "text": "inbox/openrouter-provider-data-policies-2026-06-19"
         }
       ],
-      "outbound_count": 1,
+      "outbound_count": 0,
       "inbound_count": 1
     },
     {
@@ -2189,7 +2195,7 @@
       "title": "Openrouter Three Features 2026 06 18",
       "type": "concept",
       "updated": "",
-      "body": "# Three OpenRouter Features Worth Trying Next\n\n**Source:** email from OpenRouter Team <welcome@openrouter.ai>, 2026-06-18\n**Source URI:** gmail://msg_19edb0e0abd83fb0\n\nThree features, each a single parameter change, none requiring a new integration or different endpoint.\n\n[Source: email from OpenRouter Team re: \"Three features worth trying next\", 2026-06-18]\n\n## 1. Streaming\n\nSet `stream=True` and tokens arrive as they generate. Same endpoint, same auth, one parameter. Perceived latency drops from seconds to first token \u2014 the difference between a chat UI that feels alive and one that feels broken.\n\n## 2. Structured Outputs\n\nPass a JSON schema via `response_format` and OpenRouter enforces it at the API level. No regex parsing, no retry loops, no \"please respond in valid JSON\" prompt engineering. Works on every model that supports the format; the router respects it when using `openrouter/auto`.\n\n## 3. Provider Preferences\n\nPin specific providers, exclude others, set latency floors and throughput minimums. When a model has multiple providers behind it, you decide which backend serves each request.\n\nSet `{\"sort\": \"price\"}` to always pick the cheapest, or an allowlist to lock routing to trusted providers.\n\n## All Three at Once\n\n```python\nresponse = client.chat.completions.create(\n    model=\"openrouter/auto\",\n    stream=True,\n    response_format={\"type\": \"json_schema\", \"json_schema\": schema},\n    extra_body={\"provider\": {\"sort\": \"price\"}},\n    messages=[{\"role\": \"user\", \"content\": \"...\"}],\n)\n```\n\n[Source: email from OpenRouter Team re: \"Three features worth trying next\", 2026-06-18]",
+      "body": "# Three features worth trying next on OpenRouter\n\n**Source:** email\n**Source URI:** gmail://msg_19edb0e0abd83fb0\n**Ingested:** 2026-06-20T03:30:00Z\n\nOpenRouter onboarding email covering three features that are single-parameter changes with production value.\n\n## Key Points\n\n1. **Streaming** (`stream=True`): Tokens arrive as generated. Perceived latency drops from seconds to first-token time. Agents that stream partial results to a frontend get a noticeable UX lift for zero code cost.\n\n2. **Structured outputs** (`response_format` with JSON schema): OpenRouter enforces JSON schema at the API level. No regex parsing, no retry loops for malformed JSON, no \"please respond in valid JSON\" prompt engineering. Works on every model that supports the format; router respects it with `openrouter/auto`.\n\n3. **Provider preferences** (`provider` param in `extra_body`): Pin specific providers, exclude others, set latency floors and throughput minimums. Sort by `\"price\"` to always pick the cheapest, or use an allowlist to lock routing to trusted providers.\n\n## Combined Example\n\n```python\nresponse = client.chat.completions.create(\n    model=\"openrouter/auto\",\n    stream=True,\n    response_format={\"type\": \"json_schema\", \"json_schema\": schema},\n    extra_body={\"provider\": {\"sort\": \"price\"}},\n    messages=[{\"role\": \"user\", \"content\": \"...\"}],\n)\n```\n\n## Useful Pages\n\n- [Models & pricing](https://openrouter.ai/models)\n- [Rankings (real usage volume)](https://openrouter.ai/rankings)\n- [Usage & costs](https://openrouter.ai/activity)",
       "tags": [],
       "links_out": [],
       "backlinks": [],
@@ -2446,6 +2452,34 @@
       "links_out": [],
       "backlinks": [],
       "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "newsletters/humanlayer-launch-2026-06-19-sayf",
+      "title": "Humanlayer Launch 2026 06 19 Sayf",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# HumanLayer // We're live \u2014 come build with us\n\n**Source:** email from [[Dex Horthy]] (HumanLayer), forwarded by Sayf Codes, 2026-06-19\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-20\n\n[[HumanLayer]] has opened to the public \u2014 an Agentic IDE and collaboration platform for engineering teams.\n\n## Summary\n\nHumanLayer is an Agentic IDE, collaboration platform, and software factory building blocks. The core idea: don't outsource the thinking \u2014 collaborate on system design before writing code, the way great engineering teams have run design reviews for decades.\n\n## Key Points\n\n- **Starter plan is free** for teams of fewer than three\n- **BYO subscription** \u2014 bring your own Claude, Codex, and other AI subscriptions or API keys; no separate per-token bill\n- Built on their open-source **Research, Plan, Implement (RPI)** framework, now running inside Fortune 500s like Block and Uber\n- **Moves 2-3x faster across the entire SDLC** (not just coding)\n- **Maintains rigorous standards** for system architecture and program design\n- Launch posts on X (https://x.com/dexhorthy/status/2067286892786454855) and LinkedIn\n\n## People Mentioned\n\n- **[[Dex Horthy]]** (dexter@hey.humanlayer.dev, @dexhorthy on X) \u2014 co-founder of HumanLayer\n- **[[Kyle]]** \u2014 co-founder of HumanLayer (alongside Dex)\n\n## Companies Mentioned\n\n- **[[HumanLayer]]** \u2014 the company launching the product\n- **Block** \u2014 Fortune 500 user of their RPI framework\n- **Uber** \u2014 Fortune 500 user of their RPI framework",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "people/dex-horthy",
+          "type": "wikilink",
+          "text": "Dex Horthy"
+        },
+        {
+          "to": "companies/humanlayer",
+          "type": "wikilink",
+          "text": "HumanLayer"
+        },
+        {
+          "to": "people/kyle",
+          "type": "wikilink",
+          "text": "Kyle"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 3,
       "inbound_count": 0
     },
     {
@@ -3015,6 +3049,11 @@
           "text": "Dex Horthy"
         },
         {
+          "from": "newsletters/humanlayer-launch-2026-06-19-sayf",
+          "type": "wikilink",
+          "text": "Dex Horthy"
+        },
+        {
           "from": "newsletters/humanlayer-launch-2026-06-19",
           "type": "wikilink",
           "text": "Dex Horthy"
@@ -3026,7 +3065,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 5
+      "inbound_count": 6
     },
     {
       "slug": "people/dexter-horthy",
@@ -3108,13 +3147,18 @@
           "text": "Kyle"
         },
         {
+          "from": "newsletters/humanlayer-launch-2026-06-19-sayf",
+          "type": "wikilink",
+          "text": "Kyle"
+        },
+        {
           "from": "newsletters/humanlayer-launch-2026-06-19",
           "type": "wikilink",
           "text": "Kyle"
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 2
+      "inbound_count": 3
     },
     {
       "slug": "people/nabil-jalil",
@@ -4276,6 +4320,21 @@
     {
       "source": "newsletter/maloha-coast-navigator-2026-06-15",
       "target": "concepts/claude-code-10x-skill-newsletter",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/humanlayer-launch-2026-06-19-sayf",
+      "target": "people/dex-horthy",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/humanlayer-launch-2026-06-19-sayf",
+      "target": "companies/humanlayer",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/humanlayer-launch-2026-06-19-sayf",
+      "target": "people/kyle",
       "type": "wikilink"
     },
     {
