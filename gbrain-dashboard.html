@@ -1993,7 +1993,42 @@ document.getElementById('browseTabs').addEventListener('click', function(e) {
 // ─── MODALS ───
 function openPageModal(slug) {
   const page = (DATA.pages||[]).find(p => p.slug === slug);
-  if (!page) return;
+  if (!page) {
+    // API fallback: when a page isn't in the static JSON, fetch it live from the API
+    var apiBase = 'https://signals-sunglasses-earnings-clock.trycloudflare.com';
+    var title = slug.split('/').pop().replace(/-/g, ' ').replace(/_/g, ' ');
+    openModal('[loading…]', slug, '<div style="padding:20px;text-align:center;color:var(--muted)">Fetching page…</div>');
+    fetch(apiBase + '/api/pages/' + encodeURIComponent(slug))
+      .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(function(data) {
+        if (!data || !data.body) { closeModal(); return; }
+        var raw = data.body;
+        var fm = {}, bodyStart = 0;
+        if (raw.indexOf('---') === 0) {
+          var end = raw.indexOf('---', 4);
+          if (end > 0) {
+            raw.substring(4, end).split('\n').forEach(function(line) {
+              var m = line.match(/^(\w[\w-]*):\s*(.*)/);
+              if (m) fm[m[1]] = m[2].trim();
+            });
+            bodyStart = end + 4;
+          }
+        }
+        var cleanBody = raw.substring(bodyStart).trim()
+          .replace(/^###?\s+/gm, '◆ ')
+          .replace(/^##\s+/gm, '◆◆ ')
+          .replace(/^#\s+/gm, '◆◆◆ ')
+          .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+          .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" style="color:var(--primary-light)">$1</a>');
+        var html2 = '';
+        if (fm.type) html2 += '<div class="m-section"><div class="m-section-title">Type</div><span class="type-tag ' + esc(fm.type) + '">' + esc(fm.type) + '</span></div>';
+        if (cleanBody) html2 += '<div class="m-section"><div class="m-section-title">Content</div><div class="m-content">' + cleanBody + '</div></div>';
+        html2 += '<div class="m-section" style="margin-top:16px;padding-top:12px;border-top:1px solid var(--border)"><span style="font-size:0.7rem;color:var(--muted)">⚡ loaded via API fallback</span></div>';
+        openModal(fm.title || title, slug, html2);
+      })
+      .catch(function() { closeModal(); });
+    return;
+  }
   let html = '';
   if ((page.tags||[]).length) {
     html += `<div class="m-section"><div class="m-section-title">Tags</div>
