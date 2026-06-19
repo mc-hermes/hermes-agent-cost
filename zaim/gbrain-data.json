@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-06-19T23:00:33Z",
+  "updated_at": "2026-06-19T23:54:35Z",
   "summary": {
-    "page_count": 5,
-    "people_count": 2,
+    "page_count": 11,
+    "people_count": 4,
     "company_count": 0,
     "artifact_count": 0,
-    "total_links": 3,
-    "outbound_count": 8,
-    "inbound_count": 13,
-    "graph_coverage": "60.0% of pages have inbound links",
-    "concept_count": 2,
+    "total_links": 6,
+    "outbound_count": 17,
+    "inbound_count": 17,
+    "graph_coverage": "45.5% of pages have inbound links",
+    "concept_count": 6,
     "meeting_count": 1,
-    "person_count": 2,
+    "person_count": 4,
     "newsletter_count": 0,
     "video_count": 0,
     "article_count": 0,
@@ -89,6 +89,78 @@
       "backlinks": [],
       "outbound_count": 3,
       "inbound_count": 0
+    },
+    {
+      "slug": "people/aisyah-rahim",
+      "title": "Aisyah Rahim",
+      "type": "person",
+      "updated": "",
+      "body": "# Aisyah Rahim\n\nSenior Brand Manager at Unilever Malaysia. Referred by [[Liyana]] from a KSI workshop.\n\n## In Maloha Coast Knowledge\n\n- Coaching client of Zaim Mohzani \u2014 career pivot from brand management to tech\n- Referred by Liyana from the KSI workshop\n- First session scheduled for next Tuesday (week of June 15, 2026)\n- Salary anchor: RM 18k/month\n\n## Related\n\n- [[Coaching Client: Aisyah Rahim]] \u2014 client intake profile\n- [[Zaim Mohzani]] \u2014 coach\n\n## Timeline\n\n- **2026-06-14** | Client intake completed by Zaim. [Source: gmail://msg_19eca0a8dc4888c3]",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [
+        {
+          "to": "people/liyana",
+          "type": "wikilink",
+          "text": "Liyana"
+        },
+        {
+          "to": "Coaching Client: Aisyah Rahim",
+          "type": "wikilink",
+          "text": "Coaching Client: Aisyah Rahim"
+        },
+        {
+          "to": "people/zaim-mohzani",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "people/liyana",
+          "type": "wikilink",
+          "text": "Aisyah Rahim"
+        }
+      ],
+      "outbound_count": 3,
+      "inbound_count": 1
+    },
+    {
+      "slug": "people/liyana",
+      "title": "Liyana",
+      "type": "person",
+      "updated": "",
+      "body": "# Liyana\n\nReferred [[Aisyah Rahim]] to Zaim for career coaching.\n\n## In Maloha Coast Knowledge\n\n- Referred Aisyah Rahim (Senior Brand Manager at Unilever Malaysia) to Zaim\n- Connected to the KSI workshop\n\n## Related\n\n- [[Coaching Client: Aisyah Rahim]] \u2014 referred the client\n- [[Zaim Mohzani]] \u2014 coach\n\n## Timeline\n\n- **2026-06-14** | Referred Aisyah Rahim to Zaim for career coaching. [Source: gmail://msg_19eca0a8dc4888c3]",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [
+        {
+          "to": "people/aisyah-rahim",
+          "type": "wikilink",
+          "text": "Aisyah Rahim"
+        },
+        {
+          "to": "Coaching Client: Aisyah Rahim",
+          "type": "wikilink",
+          "text": "Coaching Client: Aisyah Rahim"
+        },
+        {
+          "to": "people/zaim-mohzani",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "people/aisyah-rahim",
+          "type": "wikilink",
+          "text": "Liyana"
+        }
+      ],
+      "outbound_count": 3,
+      "inbound_count": 1
     },
     {
       "slug": "people/sayf-codes",
@@ -195,10 +267,20 @@
           "from": "meetings/sayf-zaim-jun-12-2026",
           "type": "wikilink",
           "text": "people/zaim-mohzani|Zaim"
+        },
+        {
+          "from": "people/aisyah-rahim",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
+          "from": "people/liyana",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 7
+      "inbound_count": 9
     },
     {
       "slug": "zaim-career-goals-12-week-year-2026-06-16",
@@ -209,6 +291,78 @@
       "tags": [
         "career-coaching",
         "newsletter",
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "zaim/15-minute-gap-method",
+      "title": "15 Minute Gap Method",
+      "type": "concept",
+      "updated": "",
+      "body": "# The 15-Minute Gap Method\n\n**Source:** email forward\n**Source URI:** gmail://msg_19eca04daacc7a09\n**Ingested:** 2026-06-20T04:00:00Z\n**Provenance:** Forwarded to Zaim's workspace via self-BCC\n\nZaim here. Wanted to capture this before I forget.\n\nBetween KSI sessions I have these 15-minute gaps. Started using them to jot down one thing I noticed about each student \u2014 what they're stuck on, what lit them up. After a month of this, patterns emerged that I'd never have spotted otherwise.\n\nThree buckets emerged:\n1. Career pivoters \u2014 stuck on 'what if I fail' not 'what do I want'\n2. Fresh grads \u2014 over-indexing on salary, under-indexing on growth trajectory\n3. Mid-career \u2014 all variations of 'is this it?'\n\nThe 15-minute rule: never let a gap go empty. Even one sentence per student compounds.\n\n\u2014 Zaim",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "zaim/3-month-career-pivot-framework",
+      "title": "3 Month Career Pivot Framework",
+      "type": "concept",
+      "updated": "",
+      "body": "# The 3-Month Career Pivot Framework\n\n**Source:** email forward\n**Source URI:** gmail://msg_19eca58bcdb09c70\n**Ingested:** 2026-06-20T04:00:00Z\n**Provenance:** Forwarded to Zaim's workspace via self-BCC\n\nZaim shared this during a coaching session with a KSI senior analyst looking to move into product.\n\n### Phase 1: Audit (Month 1)\n- [[Skills Inventory]] \u2014 map current skills to target role requirements\n- Identify the 20% skill gap that blocks 80% of interviews\n- Don't learn everything \u2014 learn the gatekeepers\n\n### Phase 2: Signal (Month 2)\n- [[Side Project Strategy]] \u2014 build one public artifact, not ten private ones\n- Write 2 LinkedIn posts/week documenting the pivot journey\n- Engage with 3 target-company hiring managers\n\n### Phase 3: Convert (Month 3)\n- [[Salary Negotiation Playbook]] \u2014 comp bands for product roles in KL\n- Reference calls with 2 people who made the same pivot\n- First offer within 90 days\n\n### Key Insight\n> 'The career pivot gap isn't a skills problem \u2014 it's a positioning problem. You're not underqualified, you're framed wrong.' \u2014 Zaim\n\n**Client:** KSI Senior Analyst \u2192 Product Manager\n**Engagement:** Weekly coaching, 12 sessions\n**Status:** Phase 2, on track",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [
+        {
+          "to": "concepts/skills-inventory",
+          "type": "wikilink",
+          "text": "Skills Inventory"
+        },
+        {
+          "to": "concepts/side-project-strategy",
+          "type": "wikilink",
+          "text": "Side Project Strategy"
+        },
+        {
+          "to": "concepts/salary-negotiation-playbook",
+          "type": "wikilink",
+          "text": "Salary Negotiation Playbook"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 3,
+      "inbound_count": 0
+    },
+    {
+      "slug": "zaim/coaching-client-aisyah-rahim",
+      "title": "Coaching Client Aisyah Rahim",
+      "type": "concept",
+      "updated": "",
+      "body": "# Coaching Client: Aisyah Rahim\n\n**Source:** email forward\n**Source URI:** gmail://msg_19eca0a8dc4888c3\n**Ingested:** 2026-06-20T04:00:00Z\n**Provenance:** Forwarded to Zaim's workspace via self-BCC\n\nZaim here. Adding a quick profile on a new client.\n\nName: Aisyah Rahim\nRole: Senior Brand Manager at Unilever Malaysia\nContext: Referred by Liyana from the KSI workshop last month. First session next Tuesday.\n\nKey points from our intro call:\n- 8 years in FMCG brand management, feeling stagnant\n- Wants to pivot into tech but unsure where to start\n- Main blocker: 'I don't have a technical background'\n- Has actually done more data-driven work than she realises \u2014 ran consumer analytics for 3 product launches\n- Salary anchor: RM 18k/month, worried about resetting to junior level\n\nMy read: Classic mid-career pivot case. The real problem isn't skills \u2014 it's confidence and narrative. She needs help reframing 'brand manager' as 'growth strategist who uses data.' Tech companies would kill for someone who can bridge consumer insights and product.\n\nPlan for session 1: Audit her last 2 years of work through a tech lens. Find 3-5 specific examples where she already did 'product thinking' without calling it that.\n\n\u2014 Zaim",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "zaim/meeting-sayf-zaim-2026-06-12",
+      "title": "Meeting Sayf Zaim 2026 06 12",
+      "type": "concept",
+      "updated": "",
+      "body": "# Sayf x Zaim \u2014 Jun 12, 2026\n\n**Source:** email forward\n**Source URI:** gmail://msg_19ecaa895ccb88af\n**Ingested:** 2026-06-20T04:00:00Z\n**Provenance:** Forwarded to Zaim's workspace via self-BCC\n\n**Date:** Friday, 12 June 2026, 10:30am \u2013 11:00am (MYT)\n**Google Meet:** https://meet.google.com/udx-niaz-esr\n\n## Summary\n\nDiscussion explored AI skepticism and market strategy alongside technical collaboration opportunities for business growth.\n\n### Differing AI Market Perspectives\nSayf and Zaim debated the value of AI in business, contrasting skepticism about automation hype with the practical utility of AI for basic skills training.\n\n### Technical Tools and Infrastructure\nDiscussion shifted toward specific software tools, noting the efficiency of virtual private servers and the potential of data integration dashboards for business applications.\n\n### Collaboration and Service Models\nAgreement reached to build a technical solution for coaching services while prioritizing simple, revenue-focused strategies for future client engagement for Maloha Coast.\n\n## Suggested Next Steps\n\n- **Maloha Coast** \u2014 Build Dashboard: Arrange a meeting to build the dashboard component. Perform the session either in person or over a call.\n- **Zaim Mohzani** \u2014 Provide Testimonial: Provide a testimonial in exchange for the assistance provided.\n- **Maloha Coast** \u2014 Share Research Link: Send the Tencent Lighthouse promotion link for further research.\n- **The group** \u2014 Schedule Followup Session: Coordinate a time for a meeting to continue the discussion.\n- **Zaim Mohzani** \u2014 Send WhatsApp Message: Contact Maloha Coast via the provided phone number.\n\n## Google Doc\nhttps://docs.google.com/document/d/1q3v6SbKF_PiEaTatPNvhZtoWdT9_n9v5HqMoxsLj3hQ/edit",
+      "tags": [
         "zaim"
       ],
       "links_out": [],
@@ -232,10 +386,27 @@
       "source": "meetings/sayf-zaim-jun-12-2026",
       "target": "maloha-coast",
       "type": "wikilink"
+    },
+    {
+      "source": "people/aisyah-rahim",
+      "target": "people/liyana",
+      "type": "wikilink"
+    },
+    {
+      "source": "people/aisyah-rahim",
+      "target": "people/zaim-mohzani",
+      "type": "wikilink"
+    },
+    {
+      "source": "people/liyana",
+      "target": "people/zaim-mohzani",
+      "type": "wikilink"
     }
   ],
   "entities": {
     "people": [
+      "people/aisyah-rahim",
+      "people/liyana",
       "people/sayf-codes",
       "people/zaim-mohzani"
     ],
@@ -245,11 +416,59 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-19T23:00:33Z",
+      "ts": "2026-06-19T23:54:35Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
-      "detail": "Dashboard refreshed \u2014 5 pages, 3 links",
+      "detail": "Dashboard refreshed \u2014 11 pages, 6 links",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-19T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "people/aisyah-rahim",
+      "detail": "Aisyah Rahim",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-19T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "people/liyana",
+      "detail": "Liyana",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-19T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "zaim/15-minute-gap-method",
+      "detail": "15 Minute Gap Method",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-19T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "zaim/3-month-career-pivot-framework",
+      "detail": "3 Month Career Pivot Framework",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-19T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "zaim/coaching-client-aisyah-rahim",
+      "detail": "Coaching Client Aisyah Rahim",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-19T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "zaim/meeting-sayf-zaim-2026-06-12",
+      "detail": "Meeting Sayf Zaim 2026 06 12",
       "level": "info"
     }
   ]

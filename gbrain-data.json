@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-06-19T23:00:26Z",
+  "updated_at": "2026-06-19T23:54:24Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
     "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 116,
+    "page_count": 129,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "54.3% of pages have inbound links",
-    "entity_links": "Coverage \u2014 22 people, 16 companies indexed",
-    "concept_count": 60,
+    "graph_coverage": "55.8% of pages have inbound links",
+    "entity_links": "Coverage \u2014 24 people, 16 companies indexed",
+    "concept_count": 71,
     "meeting_count": 4,
-    "person_count": 22,
+    "person_count": 24,
     "company_count": 16,
     "newsletter_count": 10,
     "video_count": 0,
@@ -19,9 +19,9 @@
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 167,
-    "outbound_count": 222,
-    "inbound_count": 201,
+    "total_links": 181,
+    "outbound_count": 246,
+    "inbound_count": 222,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -935,6 +935,112 @@
       "inbound_count": 0
     },
     {
+      "slug": "concepts/ai-data-center-architecture-2026-06-20",
+      "title": "Ai Data Center Architecture 2026 06 20",
+      "type": "concept",
+      "updated": "",
+      "body": "# AI Data Center Architecture \u2014 Why AI Breakthroughs Are Really Infrastructure Breakthroughs\n\n**Source:** email\n**Source URI:** gmail://msg_19ee23d6478fc08e\n**Ingested:** 2026-06-20T08:00:00Z\n**Provenance:** Forwarded by Sayf from System Design One newsletter (Neo Kim), 2026-06-20\n\n**Original:** System Design One #155 by [[Neo Kim]] and [[Ashish Prajapati]]\n**Date:** 2026-06-19\n\n---\n\n> **Key insight:** The biggest breakthroughs in AI are not coming from better models \u2014 they're coming from better infrastructure. AI data centers are factories, where GPUs are the factory floor machines and the network is the internal transport system.\n\n---\n\n## The Mental Model: AI Data Center as a Factory\n\n- **AI Data Center = Factory**\n- **Data = Raw material**\n- **GPUs = Machines on the factory floor**\n- **Network = Internal transport system**\n- **Storage = Warehouse holding raw materials**\n- **Software = Assembly line logic**\n- **Output = Trained intelligence**\n\nRemove any one ingredient and the entire system stalls.\n\n---\n\n## First Problem: Physics\n\nBefore AI is a software problem, it's a physics problem.\n\n### 1. Power\nA single server rack of GPUs can draw 80-120 kW \u2014 roughly 40 homes at full load. You're limited by how much electricity your facility can physically receive and distribute.\n\n### 2. Cooling\nMore power = more heat. Modern data centers adopt **liquid cooling** \u2014 coolant circulated through cold plates attached directly to GPUs/CPUs, pumped to heat exchangers. Enables higher rack densities, lower cooling power consumption, and consistent performance at scale.\n\n### 3. Space\nScaling AI is real estate, energy infrastructure, and thermodynamics combined, not just software.\n\n---\n\n## Compute: Why GPUs Took Over\n\n- **CPU** = manager (a few powerful cores, complex sequential tasks, decision-making)\n- **GPU** = factory workers (thousands of simpler cores, matrix multiplications in parallel)\n- **DPU** = logistics (networking, storage I/O, security \u2014 keeps materials moving)\n\nAI training repeatedly performs matrix multiplications billions of times. GPUs are purpose-built for this.\n\n---\n\n## Hidden Bottleneck: Memory and Storage\n\nGPUs don't fail because they're slow. They fail because they're starved for data.\n\n### Memory Hierarchy (speed vs capacity)\n\n| Layer | Characteristics |\n|-------|-----------------|\n| GPU Memory (HBM) | Blazing fast but tiny (tens of GB) |\n| CPU RAM | Hundreds of GB, slower than HBM |\n| SSD/NVMe | Enormous capacity, slower still |\n| Network/Object Storage | Nearly unlimited, slowest link |\n\n### Tiered Storage in Practice\n\n- **Hot:** NVMe SSDs \u2014 active training datasets, model checkpoints\n- **Warm:** Parallel file systems (Lustre, GPFS) \u2014 high-speed shared access across many GPUs\n- **Cold:** Object storage (Amazon S3) \u2014 raw datasets, older checkpoints\n\nAI performance is determined by how fast data can be fed into the GPU, not just GPU compute speed.\n\n---\n\n## Networking: The Bottleneck Nobody Talks About\n\nThousands of GPUs must constantly communicate, sharing what they've learned at every step. Every second a GPU waits for data or synchronization is wasted investment.\n\n### Cluster Topology\n\nLeaf-spine network architectures \u2014 every GPU server reaches every other in at most 2 hops.\n\n### Speed Hierarchy\n\n- **NVLink** \u2014 fastest, a private highway between GPUs in the same server\n- **InfiniBand/RoCE** \u2014 \"bullet train\" between separate servers\n- **Ethernet** \u2014 general-purpose, not designed for AI's bandwidth/latency demands\n\n### Amdahl's Law\nAdding more GPUs increases computing power but also increases communication overhead. At a certain point, the bottleneck shifts from computation to communication.\n\n### Smarter Data Movement Techniques\n\n- **RDMA** \u2014 direct memory-to-memory transfers between servers, low-latency high-throughput\n- **RDMA kernel bypass** \u2014 network adapter accesses application memory directly from user space\n- **GPUDirect** \u2014 GPUs read/write to storage/network cards bypassing CPU entirely\n- **Zero-copy pipelines** \u2014 data takes shortest path from source to GPU\n\nThe goal: make thousands of GPUs behave like one giant unified processor.\n\n---\n\n## People Mentioned\n\n- [[Neo Kim]] \u2014 Author of The System Design Newsletter\n- [[Ashish Prajapati]] \u2014 AI infrastructure specialist, technology educator; NVIDIA-Certified Associate; created BeSA (Become a Solutions Architect) mentoring program reaching 23,000+ professionals; training programs reached 39,000+ learners worldwide\n\n---\n\n## Related Concepts\n\n- [[AI Data Centers]]\n- [[GPU Infrastructure]]\n- [[Distributed Training]]\n- [[RDMA]]\n- [[Liquid Cooling]]",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "people/neo-kim",
+          "type": "wikilink",
+          "text": "Neo Kim"
+        },
+        {
+          "to": "people/ashish-prajapati",
+          "type": "wikilink",
+          "text": "Ashish Prajapati"
+        },
+        {
+          "to": "concepts/ai-data-centers",
+          "type": "wikilink",
+          "text": "AI Data Centers"
+        },
+        {
+          "to": "concepts/gpu-infrastructure",
+          "type": "wikilink",
+          "text": "GPU Infrastructure"
+        },
+        {
+          "to": "concepts/distributed-training",
+          "type": "wikilink",
+          "text": "Distributed Training"
+        },
+        {
+          "to": "concepts/rdma",
+          "type": "wikilink",
+          "text": "RDMA"
+        },
+        {
+          "to": "concepts/liquid-cooling",
+          "type": "wikilink",
+          "text": "Liquid Cooling"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "concepts/ai-data-centers",
+          "type": "wikilink",
+          "text": "AI Data Center Architecture"
+        },
+        {
+          "from": "concepts/distributed-training",
+          "type": "wikilink",
+          "text": "AI Data Center Architecture"
+        },
+        {
+          "from": "concepts/gpu-infrastructure",
+          "type": "wikilink",
+          "text": "AI Data Center Architecture"
+        },
+        {
+          "from": "concepts/liquid-cooling",
+          "type": "wikilink",
+          "text": "AI Data Center Architecture"
+        },
+        {
+          "from": "concepts/rdma",
+          "type": "wikilink",
+          "text": "AI Data Center Architecture"
+        },
+        {
+          "from": "people/ashish-prajapati",
+          "type": "wikilink",
+          "text": "AI Data Center Architecture"
+        }
+      ],
+      "outbound_count": 7,
+      "inbound_count": 6
+    },
+    {
+      "slug": "concepts/ai-data-centers",
+      "title": "AI Data Centers",
+      "type": "concept",
+      "updated": "",
+      "body": "# AI Data Centers\n\n> Entity stub \u2014 created from inline mention in [[AI Data Center Architecture]]. Does not contain full content. See [[AI Data Center Architecture]] for context.\n\n## Referenced In\n\n- [[AI Data Center Architecture]] \u2014 described as factories where GPUs are machines, network is transport",
+      "tags": [
+        "computing",
+        "infrastructure"
+      ],
+      "links_out": [
+        {
+          "to": "concepts/ai-data-center-architecture-2026-06-20",
+          "type": "wikilink",
+          "text": "AI Data Center Architecture"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "concepts/ai-data-center-architecture-2026-06-20",
+          "type": "wikilink",
+          "text": "AI Data Centers"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 1
+    },
+    {
       "slug": "concepts/business-brain",
       "title": "Business Brain",
       "type": "concept",
@@ -1021,10 +1127,15 @@
           "from": "people/nate-herk",
           "type": "wikilink",
           "text": "claude-code-10x-skill-newsletter"
+        },
+        {
+          "from": "sayf/maloha-coast-navigator-test-edition",
+          "type": "wikilink",
+          "text": "Claude Code 10x Skill"
         }
       ],
       "outbound_count": 5,
-      "inbound_count": 6
+      "inbound_count": 7
     },
     {
       "slug": "concepts/company-memory-os-ph1-prd",
@@ -1107,6 +1218,33 @@
       "backlinks": [],
       "outbound_count": 5,
       "inbound_count": 0
+    },
+    {
+      "slug": "concepts/distributed-training",
+      "title": "Distributed Training",
+      "type": "concept",
+      "updated": "",
+      "body": "# Distributed Training\n\n> Entity stub \u2014 created from inline mention in [[AI Data Center Architecture]]. Does not contain full content. See [[AI Data Center Architecture]] for context.\n\n## Referenced In\n\n- [[AI Data Center Architecture]] \u2014 distributing models across multiple GPUs and memory layers",
+      "tags": [
+        "ai",
+        "mlops"
+      ],
+      "links_out": [
+        {
+          "to": "concepts/ai-data-center-architecture-2026-06-20",
+          "type": "wikilink",
+          "text": "AI Data Center Architecture"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "concepts/ai-data-center-architecture-2026-06-20",
+          "type": "wikilink",
+          "text": "Distributed Training"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 1
     },
     {
       "slug": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
@@ -1239,6 +1377,33 @@
       "inbound_count": 0
     },
     {
+      "slug": "concepts/gpu-infrastructure",
+      "title": "GPU Infrastructure",
+      "type": "concept",
+      "updated": "",
+      "body": "# GPU Infrastructure\n\n> Entity stub \u2014 created from inline mention in [[AI Data Center Architecture]]. Does not contain full content. See [[AI Data Center Architecture]] for context.\n\n## Referenced In\n\n- [[AI Data Center Architecture]] \u2014 GPUs as the backbone of AI computation",
+      "tags": [
+        "ai",
+        "hardware"
+      ],
+      "links_out": [
+        {
+          "to": "concepts/ai-data-center-architecture-2026-06-20",
+          "type": "wikilink",
+          "text": "AI Data Center Architecture"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "concepts/ai-data-center-architecture-2026-06-20",
+          "type": "wikilink",
+          "text": "GPU Infrastructure"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 1
+    },
+    {
       "slug": "concepts/humanlayer-launch-newsletter",
       "title": "Humanlayer Launch Newsletter",
       "type": "concept",
@@ -1305,6 +1470,33 @@
       ],
       "outbound_count": 2,
       "inbound_count": 3
+    },
+    {
+      "slug": "concepts/liquid-cooling",
+      "title": "Liquid Cooling",
+      "type": "concept",
+      "updated": "",
+      "body": "# Liquid Cooling\n\n> Entity stub \u2014 created from inline mention in [[AI Data Center Architecture]]. Does not contain full content. See [[AI Data Center Architecture]] for context.\n\n## Referenced In\n\n- [[AI Data Center Architecture]] \u2014 cooling as a critical physical constraint for AI data centers",
+      "tags": [
+        "data-centers",
+        "hardware"
+      ],
+      "links_out": [
+        {
+          "to": "concepts/ai-data-center-architecture-2026-06-20",
+          "type": "wikilink",
+          "text": "AI Data Center Architecture"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "concepts/ai-data-center-architecture-2026-06-20",
+          "type": "wikilink",
+          "text": "Liquid Cooling"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 1
     },
     {
       "slug": "concepts/log-watchdog-test",
@@ -1395,6 +1587,33 @@
       "inbound_count": 0
     },
     {
+      "slug": "concepts/rdma",
+      "title": "RDMA (Remote Direct Memory Access)",
+      "type": "concept",
+      "updated": "",
+      "body": "# RDMA (Remote Direct Memory Access)\n\n> Entity stub \u2014 created from inline mention in [[AI Data Center Architecture]]. Does not contain full content. See [[AI Data Center Architecture]] for context.\n\n## Referenced In\n\n- [[AI Data Center Architecture]] \u2014 low-latency high-throughput memory-to-memory transfers between servers",
+      "tags": [
+        "distributed-computing",
+        "networking"
+      ],
+      "links_out": [
+        {
+          "to": "concepts/ai-data-center-architecture-2026-06-20",
+          "type": "wikilink",
+          "text": "AI Data Center Architecture"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "concepts/ai-data-center-architecture-2026-06-20",
+          "type": "wikilink",
+          "text": "RDMA"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 1
+    },
+    {
       "slug": "concepts/salary-negotiation-playbook",
       "title": "Salary Negotiation Playbook",
       "type": "concept",
@@ -1428,10 +1647,15 @@
           "from": "concepts/zaim-3month-career-pivot-framework",
           "type": "wikilink",
           "text": "Salary Negotiation Playbook"
+        },
+        {
+          "from": "zaim/3-month-career-pivot-framework",
+          "type": "wikilink",
+          "text": "Salary Negotiation Playbook"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 3
+      "inbound_count": 4
     },
     {
       "slug": "concepts/side-project-strategy",
@@ -1467,10 +1691,15 @@
           "from": "concepts/zaim-3month-career-pivot-framework",
           "type": "wikilink",
           "text": "Side Project Strategy"
+        },
+        {
+          "from": "zaim/3-month-career-pivot-framework",
+          "type": "wikilink",
+          "text": "Side Project Strategy"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 3
+      "inbound_count": 4
     },
     {
       "slug": "concepts/skills-inventory",
@@ -1511,10 +1740,15 @@
           "from": "concepts/zaim-3month-career-pivot-framework",
           "type": "wikilink",
           "text": "Skills Inventory"
+        },
+        {
+          "from": "zaim/3-month-career-pivot-framework",
+          "type": "wikilink",
+          "text": "Skills Inventory"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 4
+      "inbound_count": 5
     },
     {
       "slug": "concepts/three-folder-system-head-hands-heart",
@@ -3009,12 +3243,64 @@
       "title": "Aisyah Rahim",
       "type": "person",
       "updated": "",
-      "body": "Zaim here. Adding a quick profile on a new client.\n\nName: Aisyah Rahim\nRole: Senior Brand Manager at Unilever Malaysia\nContext: Referred by Liyana from the KSI workshop last month. First session next Tuesday.\n\nKey points from our intro call:\n- 8 years in FMCG brand management, feeling stagnant\n- Wants to pivot into tech but unsure where to start\n- Main blocker: 'I don't have a technical background'\n- Has actually done more data-driven work than she realises \u2014 ran consumer analytics for 3 product launches\n- Salary anchor: RM 18k/month, worried about resetting to junior level\n\nMy read: Classic mid-career pivot case. The real problem isn't skills \u2014 it's confidence and narrative. She needs help reframing 'brand manager' as 'growth strategist who uses data.' Tech companies would kill for someone who can bridge consumer insights and product.\n\nPlan for session 1: Audit her last 2 years of work through a tech lens. Find 3-5 specific examples where she already did 'product thinking' without calling it that.\n\n\u2014 Zaim",
-      "tags": [],
-      "links_out": [],
-      "backlinks": [],
-      "outbound_count": 0,
-      "inbound_count": 0
+      "body": "# Aisyah Rahim\n\nSenior Brand Manager at Unilever Malaysia. Referred by [[Liyana]] from a KSI workshop.\n\n## In Maloha Coast Knowledge\n\n- Coaching client of Zaim Mohzani \u2014 career pivot from brand management to tech\n- Referred by Liyana from the KSI workshop\n- First session scheduled for next Tuesday (week of June 15, 2026)\n- Salary anchor: RM 18k/month\n\n## Related\n\n- [[Coaching Client: Aisyah Rahim]] \u2014 client intake profile\n- [[Zaim Mohzani]] \u2014 coach\n\n## Timeline\n\n- **2026-06-14** | Client intake completed by Zaim. [Source: gmail://msg_19eca0a8dc4888c3]",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [
+        {
+          "to": "people/liyana",
+          "type": "wikilink",
+          "text": "Liyana"
+        },
+        {
+          "to": "Coaching Client: Aisyah Rahim",
+          "type": "wikilink",
+          "text": "Coaching Client: Aisyah Rahim"
+        },
+        {
+          "to": "people/zaim-mohzani",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "people/liyana",
+          "type": "wikilink",
+          "text": "Aisyah Rahim"
+        }
+      ],
+      "outbound_count": 3,
+      "inbound_count": 1
+    },
+    {
+      "slug": "people/ashish-prajapati",
+      "title": "Ashish Prajapati",
+      "type": "person",
+      "updated": "",
+      "body": "# Ashish Prajapati\n\n> AI infrastructure specialist, technology educator, and NVIDIA-Certified Associate. Created the BeSA (Become a Solutions Architect) mentoring program.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[AI Data Center Architecture]] as co-author of System Design One #155\n\n## Related\n\n- [[AI Data Center Architecture]] \u2014 co-authored the article on AI infrastructure\n\n## Timeline\n\n- **2026-06-19** | Co-authored \"The Secret Architecture Behind AI Data Centers\" (System Design One #155). [Source: gmail://msg_19ee23d6478fc08e]",
+      "tags": [
+        "ai-infrastructure",
+        "educator",
+        "nvidia"
+      ],
+      "links_out": [
+        {
+          "to": "concepts/ai-data-center-architecture-2026-06-20",
+          "type": "wikilink",
+          "text": "AI Data Center Architecture"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "concepts/ai-data-center-architecture-2026-06-20",
+          "type": "wikilink",
+          "text": "Ashish Prajapati"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 1
     },
     {
       "slug": "people/audrey-loh",
@@ -3364,6 +3650,42 @@
       "inbound_count": 3
     },
     {
+      "slug": "people/liyana",
+      "title": "Liyana",
+      "type": "person",
+      "updated": "",
+      "body": "# Liyana\n\nReferred [[Aisyah Rahim]] to Zaim for career coaching.\n\n## In Maloha Coast Knowledge\n\n- Referred Aisyah Rahim (Senior Brand Manager at Unilever Malaysia) to Zaim\n- Connected to the KSI workshop\n\n## Related\n\n- [[Coaching Client: Aisyah Rahim]] \u2014 referred the client\n- [[Zaim Mohzani]] \u2014 coach\n\n## Timeline\n\n- **2026-06-14** | Referred Aisyah Rahim to Zaim for career coaching. [Source: gmail://msg_19eca0a8dc4888c3]",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [
+        {
+          "to": "people/aisyah-rahim",
+          "type": "wikilink",
+          "text": "Aisyah Rahim"
+        },
+        {
+          "to": "Coaching Client: Aisyah Rahim",
+          "type": "wikilink",
+          "text": "Coaching Client: Aisyah Rahim"
+        },
+        {
+          "to": "people/zaim-mohzani",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "people/aisyah-rahim",
+          "type": "wikilink",
+          "text": "Liyana"
+        }
+      ],
+      "outbound_count": 3,
+      "inbound_count": 1
+    },
+    {
       "slug": "people/nabil-jalil",
       "title": "Nabil Jalil",
       "type": "person",
@@ -3443,6 +3765,11 @@
           "text": "Neo Kim"
         },
         {
+          "from": "concepts/ai-data-center-architecture-2026-06-20",
+          "type": "wikilink",
+          "text": "Neo Kim"
+        },
+        {
           "from": "concepts/openclaw-anatomy",
           "type": "wikilink",
           "text": "Neo Kim"
@@ -3459,7 +3786,7 @@
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 4
+      "inbound_count": 5
     },
     {
       "slug": "people/nick-milo",
@@ -3706,10 +4033,20 @@
           "from": "meetings/sayf-zaim-jun-12-2026",
           "type": "wikilink",
           "text": "people/zaim-mohzani|Zaim"
+        },
+        {
+          "from": "people/aisyah-rahim",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
+          "from": "people/liyana",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 7
+      "inbound_count": 9
     },
     {
       "slug": "reference/cold-lead-response-conference-events",
@@ -3721,6 +4058,29 @@
       "links_out": [],
       "backlinks": [],
       "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "sayf/maloha-coast-navigator-test-edition",
+      "title": "Maloha Coast Navigator Test Edition",
+      "type": "concept",
+      "updated": "",
+      "body": "# The Maloha Coast Navigator \u2014 Test Edition\n\n**Source:** email forward\n**Source URI:** gmail://msg_19eca4c3e7e0cefc\n**Ingested:** 2026-06-20T04:00:00Z\n**Provenance:** Self-BCC to sayf's inbox\n\n**The Maloha Coast Navigator**  \n*Your weekly guide to AI strategy for SMBs*\n\n---\n\n## This Week: Why Most AI Pilots Fail\n\n80% of AI proofs-of-concept never reach production. Here's the pattern:\n\n1. **Scope creep** \u2014 POCs that try to boil the ocean\n2. **Data rot** \u2014 Models trained on stale data that's 6 months old\n3. **No owner** \u2014 AI sits in IT without a business sponsor\n\n### The Fix\n\nStart with a **single workflow**, not a platform. Pick the one manual process your team hates most. Automate that. Measure the time saved. Then expand.\n\n---\n\n## Client Spotlight\n\nA 12-person accounting firm deployed an email triage agent. Result: 14 hours/week saved. ROI in week one.\n\n---\n\n## What We're Reading\n\n- [[Claude Code 10x Skill]] \u2014 The skill pattern that changed everything\n- [[Second Brain Architecture]] \u2014 How we structure knowledge for SMBs\n\n---\n\n## Upcoming\n\nNext week: Pricing models that work for SMB AI consulting.\n\n*\u2014 Sayf, Maloha Coast*",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "concepts/claude-code-10x-skill-newsletter",
+          "type": "wikilink",
+          "text": "Claude Code 10x Skill"
+        },
+        {
+          "to": "Second Brain Architecture",
+          "type": "wikilink",
+          "text": "Second Brain Architecture"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 2,
       "inbound_count": 0
     },
     {
@@ -3828,6 +4188,78 @@
       "updated": "",
       "body": "# Test Page - Quick Capture\nJust testing the pipeline works end to end. Zaim's coaching workflow.",
       "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "zaim/15-minute-gap-method",
+      "title": "15 Minute Gap Method",
+      "type": "concept",
+      "updated": "",
+      "body": "# The 15-Minute Gap Method\n\n**Source:** email forward\n**Source URI:** gmail://msg_19eca04daacc7a09\n**Ingested:** 2026-06-20T04:00:00Z\n**Provenance:** Forwarded to Zaim's workspace via self-BCC\n\nZaim here. Wanted to capture this before I forget.\n\nBetween KSI sessions I have these 15-minute gaps. Started using them to jot down one thing I noticed about each student \u2014 what they're stuck on, what lit them up. After a month of this, patterns emerged that I'd never have spotted otherwise.\n\nThree buckets emerged:\n1. Career pivoters \u2014 stuck on 'what if I fail' not 'what do I want'\n2. Fresh grads \u2014 over-indexing on salary, under-indexing on growth trajectory\n3. Mid-career \u2014 all variations of 'is this it?'\n\nThe 15-minute rule: never let a gap go empty. Even one sentence per student compounds.\n\n\u2014 Zaim",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "zaim/3-month-career-pivot-framework",
+      "title": "3 Month Career Pivot Framework",
+      "type": "concept",
+      "updated": "",
+      "body": "# The 3-Month Career Pivot Framework\n\n**Source:** email forward\n**Source URI:** gmail://msg_19eca58bcdb09c70\n**Ingested:** 2026-06-20T04:00:00Z\n**Provenance:** Forwarded to Zaim's workspace via self-BCC\n\nZaim shared this during a coaching session with a KSI senior analyst looking to move into product.\n\n### Phase 1: Audit (Month 1)\n- [[Skills Inventory]] \u2014 map current skills to target role requirements\n- Identify the 20% skill gap that blocks 80% of interviews\n- Don't learn everything \u2014 learn the gatekeepers\n\n### Phase 2: Signal (Month 2)\n- [[Side Project Strategy]] \u2014 build one public artifact, not ten private ones\n- Write 2 LinkedIn posts/week documenting the pivot journey\n- Engage with 3 target-company hiring managers\n\n### Phase 3: Convert (Month 3)\n- [[Salary Negotiation Playbook]] \u2014 comp bands for product roles in KL\n- Reference calls with 2 people who made the same pivot\n- First offer within 90 days\n\n### Key Insight\n> 'The career pivot gap isn't a skills problem \u2014 it's a positioning problem. You're not underqualified, you're framed wrong.' \u2014 Zaim\n\n**Client:** KSI Senior Analyst \u2192 Product Manager\n**Engagement:** Weekly coaching, 12 sessions\n**Status:** Phase 2, on track",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [
+        {
+          "to": "concepts/skills-inventory",
+          "type": "wikilink",
+          "text": "Skills Inventory"
+        },
+        {
+          "to": "concepts/side-project-strategy",
+          "type": "wikilink",
+          "text": "Side Project Strategy"
+        },
+        {
+          "to": "concepts/salary-negotiation-playbook",
+          "type": "wikilink",
+          "text": "Salary Negotiation Playbook"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 3,
+      "inbound_count": 0
+    },
+    {
+      "slug": "zaim/coaching-client-aisyah-rahim",
+      "title": "Coaching Client Aisyah Rahim",
+      "type": "concept",
+      "updated": "",
+      "body": "# Coaching Client: Aisyah Rahim\n\n**Source:** email forward\n**Source URI:** gmail://msg_19eca0a8dc4888c3\n**Ingested:** 2026-06-20T04:00:00Z\n**Provenance:** Forwarded to Zaim's workspace via self-BCC\n\nZaim here. Adding a quick profile on a new client.\n\nName: Aisyah Rahim\nRole: Senior Brand Manager at Unilever Malaysia\nContext: Referred by Liyana from the KSI workshop last month. First session next Tuesday.\n\nKey points from our intro call:\n- 8 years in FMCG brand management, feeling stagnant\n- Wants to pivot into tech but unsure where to start\n- Main blocker: 'I don't have a technical background'\n- Has actually done more data-driven work than she realises \u2014 ran consumer analytics for 3 product launches\n- Salary anchor: RM 18k/month, worried about resetting to junior level\n\nMy read: Classic mid-career pivot case. The real problem isn't skills \u2014 it's confidence and narrative. She needs help reframing 'brand manager' as 'growth strategist who uses data.' Tech companies would kill for someone who can bridge consumer insights and product.\n\nPlan for session 1: Audit her last 2 years of work through a tech lens. Find 3-5 specific examples where she already did 'product thinking' without calling it that.\n\n\u2014 Zaim",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "zaim/meeting-sayf-zaim-2026-06-12",
+      "title": "Meeting Sayf Zaim 2026 06 12",
+      "type": "concept",
+      "updated": "",
+      "body": "# Sayf x Zaim \u2014 Jun 12, 2026\n\n**Source:** email forward\n**Source URI:** gmail://msg_19ecaa895ccb88af\n**Ingested:** 2026-06-20T04:00:00Z\n**Provenance:** Forwarded to Zaim's workspace via self-BCC\n\n**Date:** Friday, 12 June 2026, 10:30am \u2013 11:00am (MYT)\n**Google Meet:** https://meet.google.com/udx-niaz-esr\n\n## Summary\n\nDiscussion explored AI skepticism and market strategy alongside technical collaboration opportunities for business growth.\n\n### Differing AI Market Perspectives\nSayf and Zaim debated the value of AI in business, contrasting skepticism about automation hype with the practical utility of AI for basic skills training.\n\n### Technical Tools and Infrastructure\nDiscussion shifted toward specific software tools, noting the efficiency of virtual private servers and the potential of data integration dashboards for business applications.\n\n### Collaboration and Service Models\nAgreement reached to build a technical solution for coaching services while prioritizing simple, revenue-focused strategies for future client engagement for Maloha Coast.\n\n## Suggested Next Steps\n\n- **Maloha Coast** \u2014 Build Dashboard: Arrange a meeting to build the dashboard component. Perform the session either in person or over a call.\n- **Zaim Mohzani** \u2014 Provide Testimonial: Provide a testimonial in exchange for the assistance provided.\n- **Maloha Coast** \u2014 Share Research Link: Send the Tencent Lighthouse promotion link for further research.\n- **The group** \u2014 Schedule Followup Session: Coordinate a time for a meeting to continue the discussion.\n- **Zaim Mohzani** \u2014 Send WhatsApp Message: Contact Maloha Coast via the provided phone number.\n\n## Google Doc\nhttps://docs.google.com/document/d/1q3v6SbKF_PiEaTatPNvhZtoWdT9_n9v5HqMoxsLj3hQ/edit",
+      "tags": [
+        "zaim"
+      ],
       "links_out": [],
       "backlinks": [],
       "outbound_count": 0,
@@ -3993,6 +4425,41 @@
     {
       "source": "concepts/3-month-career-pivot-framework",
       "target": "concepts/salary-negotiation-playbook",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/ai-data-center-architecture-2026-06-20",
+      "target": "people/neo-kim",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/ai-data-center-architecture-2026-06-20",
+      "target": "people/ashish-prajapati",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/ai-data-center-architecture-2026-06-20",
+      "target": "concepts/ai-data-centers",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/ai-data-center-architecture-2026-06-20",
+      "target": "concepts/gpu-infrastructure",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/ai-data-center-architecture-2026-06-20",
+      "target": "concepts/distributed-training",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/ai-data-center-architecture-2026-06-20",
+      "target": "concepts/rdma",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/ai-data-center-architecture-2026-06-20",
+      "target": "concepts/liquid-cooling",
       "type": "wikilink"
     },
     {
@@ -4651,6 +5118,16 @@
       "type": "wikilink"
     },
     {
+      "source": "people/aisyah-rahim",
+      "target": "people/liyana",
+      "type": "wikilink"
+    },
+    {
+      "source": "people/aisyah-rahim",
+      "target": "people/zaim-mohzani",
+      "type": "wikilink"
+    },
+    {
       "source": "people/kyle",
       "target": "companies/humanlayer",
       "type": "wikilink"
@@ -4661,13 +5138,38 @@
       "type": "wikilink"
     },
     {
+      "source": "people/liyana",
+      "target": "people/zaim-mohzani",
+      "type": "wikilink"
+    },
+    {
       "source": "people/yassif-n-m",
       "target": "companies/dynamics-orchard-farm-sdn-bhd",
       "type": "wikilink"
     },
     {
+      "source": "sayf/maloha-coast-navigator-test-edition",
+      "target": "concepts/claude-code-10x-skill-newsletter",
+      "type": "wikilink"
+    },
+    {
       "source": "vps-hardening",
       "target": "google-workspace-setup",
+      "type": "wikilink"
+    },
+    {
+      "source": "zaim/3-month-career-pivot-framework",
+      "target": "concepts/skills-inventory",
+      "type": "wikilink"
+    },
+    {
+      "source": "zaim/3-month-career-pivot-framework",
+      "target": "concepts/side-project-strategy",
+      "type": "wikilink"
+    },
+    {
+      "source": "zaim/3-month-career-pivot-framework",
+      "target": "concepts/salary-negotiation-playbook",
       "type": "wikilink"
     }
   ],
@@ -4677,6 +5179,7 @@
       "people/adrian-js-mastery",
       "people/aisyah-humaira-wan-aziz",
       "people/aisyah-rahim",
+      "people/ashish-prajapati",
       "people/audrey-loh",
       "people/ayaan",
       "people/bjarte",
@@ -4686,6 +5189,7 @@
       "people/dexter-horthy",
       "people/jake-van-cleef",
       "people/kyle",
+      "people/liyana",
       "people/nabil-jalil",
       "people/nate-herk",
       "people/neo-kim",
