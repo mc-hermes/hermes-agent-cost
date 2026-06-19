@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-06-19T14:00:17Z",
+  "updated_at": "2026-06-19T15:00:16Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
     "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 94,
+    "page_count": 97,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "64.9% of pages have inbound links",
+    "graph_coverage": "62.9% of pages have inbound links",
     "entity_links": "Coverage \u2014 22 people, 15 companies indexed",
-    "concept_count": 45,
+    "concept_count": 48,
     "meeting_count": 4,
     "person_count": 22,
     "company_count": 15,
@@ -1271,6 +1271,18 @@
       "inbound_count": 2
     },
     {
+      "slug": "concepts/openrouter-data-policies-2026-06-19",
+      "title": "Openrouter Data Policies 2026 06 19",
+      "type": "concept",
+      "updated": "",
+      "body": "# How provider data policies work on OpenRouter\n\n**Source:** Email (OpenRouter Team newsletter)\n**Source URI:** gmail://msg_19ee03492356403f\n**Ingested:** 2026-06-19T22:14:00Z\n**Provenance:** OpenRouter onboarding email, received 2026-06-19\n\nEvery provider behind OpenRouter has its own retention and training policy. OpenRouter reflects those policies as structured data on each endpoint, publishes the full table in the docs, and gives users controls to filter routing on them.\n\n## What you control\n\n1. **Block routing to providers that train.** An account-wide toggle for whether routing may use providers that train on prompts, with separate switches for paid and free models. Opting out means OpenRouter will not route to training providers.\n\n2. **Require a specific data policy per request.** Override account default on any single call via data policy filtering in the provider routing docs.\n\n3. **Pick only zero-retention providers.** Many providers on OpenRouter are zero retention: Amazon Bedrock, Azure, Cerebras, DeepInfra, Google Vertex, Groq, NVIDIA, SambaNova, Together, and others.\n\n## EU in-region routing\n\nFor enterprise accounts, OpenRouter supports EU in-region routing. When enabled, prompts and completions are processed inside the European Union via `https://eu.openrouter.ai` base URL.",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "concepts/salary-negotiation-playbook",
       "title": "Salary Negotiation Playbook",
       "type": "concept",
@@ -2425,6 +2437,30 @@
       "type": "concept",
       "updated": "",
       "body": "",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "openrouter-data-policies-2026-06-19",
+      "title": "How provider data policies work on OpenRouter",
+      "type": "concept",
+      "updated": "",
+      "body": "# How provider data policies work on OpenRouter\n\n**Source:** email (OpenRouter Team)\n**Source URI:** gmail://msg_19ee03492356403f\n**Ingested:** 2026-06-19T22:07:00Z\n**Provenance:** OpenRouter onboarding email to info@malohacoast.com\n\n> Every provider behind OpenRouter has its own retention and training policy. OpenRouter reflects those policies as structured data on each endpoint, publishes the full table in the docs, and gives you controls to filter routing on them.\n\n## What You Control\n\n1. **Block routing to providers that train** \u2014 account-wide toggle for whether routing may use providers that train on prompts, with separate switches for paid and free models. If you opt out, OpenRouter will not route to training providers.\n\n2. **Require a specific data policy per request** \u2014 override account default on any single call.\n\n3. **Pick only zero-retention providers** \u2014 Many providers on OpenRouter are zero retention: Amazon Bedrock, Azure, Cerebras, DeepInfra, Google Vertex, Groq, NVIDIA, SambaNova, Together, and others.\n\n## Stricter Guarantees\n\nOpenRouter supports EU in-region routing for enterprise accounts. When enabled, prompts and completions are processed inside the European Union via `https://eu.openrouter.ai`.\n\n## Key Takeaway\n\nOne API key, the same privacy controls across 300+ models. Useful reference for sayf's Hermes setup \u2014 OpenRouter already has the infrastructure for per-provider data policy filtering.",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "openrouter-provider-data-policies-2026-06-19",
+      "title": "How Provider Data Policies Work on OpenRouter",
+      "type": "concept",
+      "updated": "",
+      "body": "# How Provider Data Policies Work on OpenRouter\n\n**Source:** Email from OpenRouter Team, 2026-06-19\n**Source URI:** gmail://msg_19ee03492356403f\n**Ingested:** 2026-06-19T22:14:00Z\n\nOpenRouter onboarding email explaining each provider's data retention and training policy, and the controls available to users.\n\n## Key Points\n\n- Every provider behind OpenRouter has its own retention and training policy. These are reflected as structured data on each endpoint and published in the docs.\n- Users have three levels of control:\n  1. **Account-wide toggle** \u2014 block routing to providers that train on prompts, with separate switches for paid and free models.\n  2. **Per-request override** \u2014 require a specific data policy on any single API call.\n  3. **Zero-retention filtering** \u2014 filter to providers that keep no data.\n\n- Zero-retention providers include: Amazon Bedrock, Azure, Cerebras, DeepInfra, Google Vertex, Groq, NVIDIA, SambaNova, Together, and others.\n\n- **EU in-region routing** \u2014 available for enterprise accounts. Prompts and completions processed inside the EU via `https://eu.openrouter.ai` base URL.",
       "tags": [],
       "links_out": [],
       "backlinks": [],
