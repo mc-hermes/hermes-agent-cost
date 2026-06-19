@@ -1,27 +1,27 @@
 {
-  "updated_at": "2026-06-19T16:00:17Z",
+  "updated_at": "2026-06-19T17:00:18Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
     "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 100,
+    "page_count": 101,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "63.0% of pages have inbound links",
+    "graph_coverage": "62.4% of pages have inbound links",
     "entity_links": "Coverage \u2014 22 people, 16 companies indexed",
     "concept_count": 50,
     "meeting_count": 4,
     "person_count": 22,
     "company_count": 16,
-    "newsletter_count": 4,
+    "newsletter_count": 5,
     "video_count": 0,
     "article_count": 0,
     "bookmark_count": 1,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 151,
-    "outbound_count": 204,
-    "inbound_count": 185,
+    "total_links": 152,
+    "outbound_count": 205,
+    "inbound_count": 186,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -622,10 +622,15 @@
           "from": "inbox/openrouter-provider-data-policies-2026-06-19",
           "type": "wikilink",
           "text": "OpenRouter"
+        },
+        {
+          "from": "newsletters/openrouter-three-features-2026-06-19",
+          "type": "wikilink",
+          "text": "OpenRouter"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 2
+      "inbound_count": 3
     },
     {
       "slug": "companies/passend",
@@ -2469,6 +2474,24 @@
       "inbound_count": 1
     },
     {
+      "slug": "newsletters/openrouter-three-features-2026-06-19",
+      "title": "Openrouter Three Features 2026 06 19",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# Three features worth trying next on [[OpenRouter]]\n\n**Source:** email from OpenRouter Team (welcome@openrouter.ai)\n**Source URI:** gmail://msg_19edb0e0abd83fb0\n**Ingested:** 2026-06-20\n**Subject:** Three features worth trying next\n\n---\n\nHi there,\n\nThree features worth trying once your first requests are landing. Each one is a single parameter change. Each one earns its place in production code and none of them require a new integration or a different endpoint.\n\n### Streaming\n\nSet `stream=True` and tokens arrive as they generate. Same endpoint, same auth, one parameter. Perceived latency drops from seconds to the first token \u2014 the difference between a chat UI that feels alive and one that feels broken. Agents that stream partial results to a frontend get a noticeable UX lift for zero code cost.\n\n### Structured Outputs\n\nPass a JSON schema via `response_format` and OpenRouter enforces it at the API level. No regex parsing, no retry loops when the model returns malformed JSON, no \"please respond in valid JSON\" prompt engineering. Works on every model that supports the format, and the router respects it when you use `openrouter/auto`.\n\n### Provider Preferences\n\nPin specific providers, exclude others, set latency floors and throughput minimums. When a model has multiple providers behind it, you decide which backend serves each request. Set `{\"sort\": \"price\"}` to always pick the cheapest, or an allowlist to lock routing to providers you trust.\n\n### All Three at Once\n\n```python\nresponse = client.chat.completions.create(\n    model=\"openrouter/auto\",\n    stream=True,\n    response_format={\"type\": \"json_schema\", \"json_schema\": schema},\n    extra_body={\"provider\": {\"sort\": \"price\"}},\n    messages=[{\"role\": \"user\", \"content\": \"...\"}],\n)\n```\n\n**Pages worth bookmarking:**\n- [openrouter.ai/models](https://openrouter.ai/models) \u2014 browsing and pricing\n- [openrouter.ai/rankings](https://openrouter.ai/rankings) \u2014 real usage volume data\n- [openrouter.ai/activity](https://openrouter.ai/activity) \u2014 usage and costs\n- [discord.gg/openrouter](https://discord.gg/openrouter) \u2014 support\n\n---\n\n*Onboarding email from OpenRouter, received 2026-06-18.*",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "companies/openrouter",
+          "type": "wikilink",
+          "text": "OpenRouter"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
+      "inbound_count": 0
+    },
+    {
       "slug": "newsletters/three-features-three-claudes-one-afternoon",
       "title": "Three Features Three Claudes One Afternoon",
       "type": "newsletter",
@@ -4150,6 +4173,11 @@
     {
       "source": "newsletters/nerdqaxe-revision-7-launch",
       "target": "companies/solo-satoshi",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/openrouter-three-features-2026-06-19",
+      "target": "companies/openrouter",
       "type": "wikilink"
     },
     {

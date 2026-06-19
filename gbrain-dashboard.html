@@ -473,16 +473,6 @@
   @keyframes spin { to { transform: rotate(360deg); } }
   .empty { text-align: center; padding: 40px 20px; color: var(--text-muted); font-size: 0.8rem; }
 
-  /* ─── Entity Skeleton Loading ─── */
-  .entity-skeleton { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; min-height: 120px; }
-  .skeleton-line { height: 12px; background: var(--surface2); border-radius: 4px; margin-bottom: 10px; animation: sk-pulse 1.2s ease-in-out infinite; }
-  .skeleton-line:first-child { width: 60%; height: 16px; }
-  .skeleton-line:nth-child(2) { width: 40%; height: 10px; }
-  .skeleton-line:nth-child(3) { width: 90%; height: 8px; margin-top: 14px; }
-  .skeleton-line:nth-child(4) { width: 70%; height: 8px; }
-  @keyframes sk-pulse { 0%, 100% { opacity: 0.4; } 50% { opacity: 0.8; } }
-  .entity-live-badge { display: inline-block; font-size: 0.5rem; background: rgba(158,206,106,0.15); color: var(--green); padding: 1px 6px; border-radius: 8px; margin-left: 6px; font-weight: 600; letter-spacing: 0.03em; vertical-align: middle; }
-
   /* ═══════ MOBILE ═══════ */
   @media (max-width: 768px) {
     .app { padding: 16px 12px 100px; }
@@ -1014,17 +1004,11 @@ let entitiesRendered = false;
 let healthRendered = false;
 let artifactsRendered = false;
 let logsRendered = false;
-let LIVE_ENTITIES = null;     // populated by /api/entities fetch
-let _entitiesFetchDone = false;
-
-const API_BASE = 'https://signals-sunglasses-earnings-clock.trycloudflare.com';
 
 async function loadData() {
   document.getElementById('loading').style.display = 'flex';
   document.getElementById('dashboard').style.display = 'none';
   document.getElementById('error').style.display = 'none';
-  _entitiesFetchDone = false;   // allow re-fetch on manual refresh
-  LIVE_ENTITIES = null;
   try {
     const res = await fetch('gbrain-data.json');
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -1032,30 +1016,10 @@ async function loadData() {
     renderAll();
     document.getElementById('loading').style.display = 'none';
     document.getElementById('dashboard').style.display = 'block';
-    // Kick off live entity fetch for near-realtime freshness
-    fetchEntitiesLive();
   } catch(e) {
     document.getElementById('loading').style.display = 'none';
     document.getElementById('error').style.display = 'block';
     document.getElementById('errorMsg').textContent = 'Failed to load: ' + e.message;
-  }
-}
-
-async function fetchEntitiesLive() {
-  if (_entitiesFetchDone) return;
-  _entitiesFetchDone = true;
-  try {
-    const res = await fetch(API_BASE + '/api/entities');
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    LIVE_ENTITIES = await res.json();
-  } catch(e) {
-    // Silent degrade — set empty object so skeletons are replaced with static data
-    console.warn('Live entity fetch failed, falling back to static JSON:', e.message);
-    LIVE_ENTITIES = { people: [], companies: [], count: 0, types: { person: 0, company: 0 } };
-  }
-  // If the entity view is already visible, re-render it immediately
-  if (activeView === 'browse' && activeTab === 'entities') {
-    renderEntities();
   }
 }
 
@@ -1955,101 +1919,32 @@ function openArtifactPreview(idx) {
 }
 
 
-// ─── ENTITIES (lazy, with live merge) ───
+// ─── ENTITIES (lazy) ───
 function renderEntities() {
-  const grid = document.getElementById('entityGrid');
-  const staticPeople = (DATA.entities?.people||[]).map(s => DATA.pages.find(p=>p.slug===s)).filter(Boolean);
-  const staticCompanies = (DATA.entities?.companies||[]).map(s => DATA.pages.find(p=>p.slug===s)).filter(Boolean);
-  const staticSlugs = new Set([...staticPeople, ...staticCompanies].map(p => p.slug));
-
-  // ── Skeleton state: API fetch still in-flight, no live data yet ──
-  if (!LIVE_ENTITIES) {
-    var skel = '';
-    for (var i = 0; i < 6; i++) {
-      skel += '<div class="entity-skeleton">'
-        + '<div class="skeleton-line"></div>'
-        + '<div class="skeleton-line"></div>'
-        + '<div class="skeleton-line"></div>'
-        + '<div class="skeleton-line"></div>'
-        + '</div>';
-    }
-    grid.innerHTML = skel;
-    return;
-  }
-
-  // ── Merge: static entities + live-only entities ──
-  const livePeople = (LIVE_ENTITIES.people || []);
-  const liveCompanies = (LIVE_ENTITIES.companies || []);
-
-  // Build a map of static page data keyed by slug for enrichment
-  const pageMap = {};
-  (DATA.pages || []).forEach(function(p) { pageMap[p.slug] = p; });
-
-  // Start from static (fully enriched) entities
-  var people = [...staticPeople];
-  var companies = [...staticCompanies];
-  var liveOnlySlugs = [];
-
-  // Add entities from live API that aren't in static data
-  livePeople.forEach(function(p) {
-    if (!staticSlugs.has(p.slug) && !people.some(function(x){return x.slug===p.slug;})) {
-      // Create a minimal page object — enrichment comes from static JSON when available
-      var enriched = pageMap[p.slug] || {
-        slug: p.slug,
-        title: p.title,
-        type: p.type,
-        updated: p.updated,
-        body: '',
-        tags: [],
-        email: null, phone: null, company_name: null
-      };
-      enriched._live = true;
-      people.push(enriched);
-      liveOnlySlugs.push(p.slug);
-    }
-  });
-  liveCompanies.forEach(function(p) {
-    if (!staticSlugs.has(p.slug) && !companies.some(function(x){return x.slug===p.slug;})) {
-      var enriched = pageMap[p.slug] || {
-        slug: p.slug,
-        title: p.title,
-        type: p.type,
-        updated: p.updated,
-        body: '',
-        tags: [],
-        email: null, phone: null, company_name: null
-      };
-      enriched._live = true;
-      companies.push(enriched);
-      liveOnlySlugs.push(p.slug);
-    }
-  });
-
-  var all = people.map(function(p){return Object.assign({},p,{icon:'👤',color:'var(--violet)',entityType:'person'});})
-    .concat(companies.map(function(p){return Object.assign({},p,{icon:'🏢',color:'var(--green)',entityType:'company'});}));
-
+  const people = (DATA.entities?.people||[]).map(s => DATA.pages.find(p=>p.slug===s)).filter(Boolean);
+  const companies = (DATA.entities?.companies||[]).map(s => DATA.pages.find(p=>p.slug===s)).filter(Boolean);
+  const all = [
+    ...people.map(p => ({...p, icon:'👤', color:'var(--violet)', entityType:'person'})),
+    ...companies.map(p => ({...p, icon:'🏢', color:'var(--green)', entityType:'company'}))
+  ];
   if (!all.length) {
-    grid.innerHTML = '<div class="empty"><div class="icon">🔍</div><p>No entities indexed yet</p></div>';
+    document.getElementById('entityGrid').innerHTML = '<div class="empty"><div class="icon">🔍</div><p>No entities indexed yet</p></div>';
     return;
   }
-
-  grid.innerHTML = all.map(function(e) {
-    var preview = (e.body||'').slice(0, 120).replace(/[#*`]/g,'').trim();
-    var contact = [];
-    if (e.email) contact.push('✉ ' + e.email);
-    if (e.phone) contact.push('📞 ' + e.phone);
-    var liveBadge = e._live ? '<span class="entity-live-badge">LIVE</span>' : '';
-    return '<div class="entity-card" onclick="openPageModal(\'' + escAttr(e.slug) + '\')">'
-      + '<span style="font-size:1.4rem;float:right;opacity:0.4">' + e.icon + '</span>'
-      + '<div class="name">' + esc(e.title) + liveBadge + '</div>'
-      + '<div class="slug">' + esc(e.slug) + '</div>'
-      + (contact.length ? '<div class="contact-row">' + contact.join(' · ') + '</div>' : '')
-      + (preview ? '<div class="preview">' + esc(preview) + '</div>' : '')
-      + '<div class="meta"><span class="type-tag ' + e.entityType + '">' + e.entityType + '</span>'
-      + (e.tags||[]).slice(0,3).map(function(t){return '<span class="tag" style="font-size:0.55rem;padding:1px 7px;border-radius:10px;background:rgba(148,163,184,0.1);color:var(--text-muted)">'+esc(t)+'</span>';}).join('')
-      + '</div></div>';
+  document.getElementById('entityGrid').innerHTML = all.map(e => {
+    const preview = (e.body||'').slice(0, 120).replace(/[#*`]/g,'').trim();
+    const contact = [];
+    if (e.email) contact.push(`✉ ${e.email}`);
+    if (e.phone) contact.push(`📞 ${e.phone}`);
+    return `<div class="entity-card" onclick="openPageModal('${escAttr(e.slug)}')">
+      <span style="font-size:1.4rem;float:right;opacity:0.4">${e.icon}</span>
+      <div class="name">${esc(e.title)}</div>
+      <div class="slug">${esc(e.slug)}</div>
+      ${contact.length ? `<div class="contact-row">${contact.join(' · ')}</div>` : ''}
+      ${preview ? `<div class="preview">${esc(preview)}</div>` : ''}
+      <div class="meta"><span class="type-tag ${e.entityType}">${e.entityType}</span>${(e.tags||[]).slice(0,3).map(t=>`<span class="tag" style="font-size:0.55rem;padding:1px 7px;border-radius:10px;background:rgba(148,163,184,0.1);color:var(--text-muted)">${esc(t)}</span>`).join('')}</div>
+    </div>`;
   }).join('');
-
   setupDrawInAnimation();
 }
 
