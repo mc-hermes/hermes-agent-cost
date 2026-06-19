@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-06-19T15:00:16Z",
+  "updated_at": "2026-06-19T16:00:17Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
     "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 97,
+    "page_count": 100,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "62.9% of pages have inbound links",
-    "entity_links": "Coverage \u2014 22 people, 15 companies indexed",
-    "concept_count": 48,
+    "graph_coverage": "63.0% of pages have inbound links",
+    "entity_links": "Coverage \u2014 22 people, 16 companies indexed",
+    "concept_count": 50,
     "meeting_count": 4,
     "person_count": 22,
-    "company_count": 15,
+    "company_count": 16,
     "newsletter_count": 4,
     "video_count": 0,
     "article_count": 0,
@@ -19,9 +19,9 @@
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 149,
-    "outbound_count": 201,
-    "inbound_count": 182,
+    "total_links": 151,
+    "outbound_count": 204,
+    "inbound_count": 185,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -591,6 +591,40 @@
         }
       ],
       "outbound_count": 2,
+      "inbound_count": 2
+    },
+    {
+      "slug": "companies/openrouter",
+      "title": "OpenRouter",
+      "type": "company",
+      "updated": "",
+      "body": "# OpenRouter\n\n> AI model routing platform providing unified API access to 300+ models across multiple providers, with configurable privacy and data policy controls.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[inbox/openrouter-provider-data-policies-2026-06-19]] regarding their provider data policy framework \u2014 zero-retention, training opt-out, and EU in-region routing for enterprise accounts.\n\n## Related\n\n- [[inbox/openrouter-provider-data-policies-2026-06-19]] \u2014 Newsletter detailing provider data policies and privacy controls\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-19** | Mentioned in \"How provider data policies work on OpenRouter\" \u2014 their onboarding email details zero-retention providers (AWS Bedrock, Cerebras, DeepInfra, Google Vertex, Groq, NVIDIA, SambaNova, Together) and EU enterprise routing. [Source: email from OpenRouter Team, 2026-06-19]",
+      "tags": [
+        "ai",
+        "ai-infrastructure",
+        "inference",
+        "llm"
+      ],
+      "links_out": [
+        {
+          "to": "inbox/openrouter-provider-data-policies-2026-06-19",
+          "type": "wikilink",
+          "text": "inbox/openrouter-provider-data-policies-2026-06-19"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "concepts/openrouter-provider-data-policies-2026-06-19",
+          "type": "wikilink",
+          "text": "OpenRouter"
+        },
+        {
+          "from": "inbox/openrouter-provider-data-policies-2026-06-19",
+          "type": "wikilink",
+          "text": "OpenRouter"
+        }
+      ],
+      "outbound_count": 1,
       "inbound_count": 2
     },
     {
@@ -1280,6 +1314,24 @@
       "links_out": [],
       "backlinks": [],
       "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "concepts/openrouter-provider-data-policies-2026-06-19",
+      "title": "Openrouter Provider Data Policies 2026 06 19",
+      "type": "concept",
+      "updated": "",
+      "body": "# How provider data policies work on [[OpenRouter]]\n\n**Source:** email from OpenRouter Team (welcome@openrouter.ai)\n**Source URI:** gmail://msg_19ee03492356403f\n**Ingested:** 2026-06-19\n**Provenance:** Onboarding email sent to info@malohacoast.com\n\n## Summary\n\n[[OpenRouter]]'s onboarding email explaining how provider data retention and training policies work on their platform. Every provider has its own policy, reflected as structured data per endpoint and published in the docs table.\n\n## Key Points\n\n### What You Control\n1. **Block training providers** \u2014 Account-wide toggle to opt out of routing to providers that train on prompts, with separate switches for paid and free models.\n2. **Per-request override** \u2014 Override the account default on any single API call via data policy filtering in the provider routing docs.\n3. **Zero-retention providers** \u2014 Many providers are zero retention: Amazon Bedrock, Azure, Cerebras, DeepInfra, Google Vertex, Groq, NVIDIA, SambaNova, Together, and others. Filter to them the same way as training policy.\n\n### For Stricter Guarantees\n- **EU in-region routing** for enterprise accounts. Prompts and completions processed inside the EU via `https://eu.openrouter.ai` base URL.\n\n## Reference Links\n- Provider policy table: https://openrouter.ai/docs/features/privacy-and-logging\n- Privacy settings: https://openrouter.ai/settings/privacy\n- Provider routing docs: https://openrouter.ai/docs/features/provider-routing",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "companies/openrouter",
+          "type": "wikilink",
+          "text": "OpenRouter"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
       "inbound_count": 0
     },
     {
@@ -2058,6 +2110,30 @@
       "backlinks": [],
       "outbound_count": 0,
       "inbound_count": 0
+    },
+    {
+      "slug": "inbox/openrouter-provider-data-policies-2026-06-19",
+      "title": "Openrouter Provider Data Policies 2026 06 19",
+      "type": "concept",
+      "updated": "",
+      "body": "# How provider data policies work on [[OpenRouter]]\n\nEvery provider behind [[OpenRouter]] has its own retention and training policy. OpenRouter reflects those policies as structured data on each endpoint, publishes the full table in the docs, and gives you controls to filter routing on them.\n\n---\n\n## What You Control\n\n**1. Block routing to providers that train.** Your privacy settings have an account-wide toggle for whether routing may use providers that train on prompts, with separate switches for paid and free models. If you opt out, OpenRouter will not route to training providers.\n\n**2. Require a specific data policy per request.** You can override your account default on any single call. See data policy filtering in the provider routing docs.\n\n**3. Pick only zero-retention providers.** Many providers on OpenRouter are zero retention (Amazon Bedrock, Azure, Cerebras, DeepInfra, Google Vertex, Groq, NVIDIA, SambaNova, Together, and others in the table). Filter to them the same way as training policy.\n\n---\n\n## If You Need Stricter Guarantees\n\nOpenRouter supports EU in-region routing for enterprise accounts. When enabled, prompts and completions are processed inside the European Union via the `https://eu.openrouter.ai` base URL. Contact the enterprise team to enable it.\n\n---\n\nOne API key, the same privacy controls across 300+ models.\n\n[Source: OpenRouter Team <welcome@openrouter.ai>, 2026-06-19]",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "companies/openrouter",
+          "type": "wikilink",
+          "text": "OpenRouter"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "companies/openrouter",
+          "type": "wikilink",
+          "text": "inbox/openrouter-provider-data-policies-2026-06-19"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 1
     },
     {
       "slug": "maloha-coast",
@@ -3457,6 +3533,11 @@
       "type": "link"
     },
     {
+      "source": "companies/openrouter",
+      "target": "inbox/openrouter-provider-data-policies-2026-06-19",
+      "type": "wikilink"
+    },
+    {
       "source": "companies/posh-corporate",
       "target": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
       "type": "wikilink"
@@ -3609,6 +3690,11 @@
     {
       "source": "concepts/openclaw-anatomy",
       "target": "companies/system-design-one",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/openrouter-provider-data-policies-2026-06-19",
+      "target": "companies/openrouter",
       "type": "wikilink"
     },
     {
@@ -4144,6 +4230,7 @@
       "companies/ksi-strategic-institute",
       "companies/nation-building-school",
       "companies/openai",
+      "companies/openrouter",
       "companies/passend",
       "companies/posh-corporate",
       "companies/solo-satoshi",
