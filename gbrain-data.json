@@ -1,27 +1,27 @@
 {
-  "updated_at": "2026-06-19T20:00:19Z",
+  "updated_at": "2026-06-19T21:00:25Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
     "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 101,
+    "page_count": 108,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "62.4% of pages have inbound links",
+    "graph_coverage": "58.3% of pages have inbound links",
     "entity_links": "Coverage \u2014 22 people, 16 companies indexed",
-    "concept_count": 50,
+    "concept_count": 53,
     "meeting_count": 4,
     "person_count": 22,
     "company_count": 16,
-    "newsletter_count": 5,
+    "newsletter_count": 9,
     "video_count": 0,
     "article_count": 0,
     "bookmark_count": 1,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 152,
-    "outbound_count": 205,
-    "inbound_count": 186,
+    "total_links": 156,
+    "outbound_count": 209,
+    "inbound_count": 190,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -624,13 +624,33 @@
           "text": "OpenRouter"
         },
         {
+          "from": "newsletters/openrouter-chain-models-2026-06-16",
+          "type": "wikilink",
+          "text": "OpenRouter"
+        },
+        {
+          "from": "newsletters/openrouter-three-cost-levers-2026-06-17",
+          "type": "wikilink",
+          "text": "OpenRouter"
+        },
+        {
           "from": "newsletters/openrouter-three-features-2026-06-19",
+          "type": "wikilink",
+          "text": "OpenRouter"
+        },
+        {
+          "from": "newsletters/openrouter-three-features-save-money-2026-06-12",
+          "type": "wikilink",
+          "text": "OpenRouter"
+        },
+        {
+          "from": "newsletters/openrouter-three-features-try-next-2026-06-18",
           "type": "wikilink",
           "text": "OpenRouter"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 3
+      "inbound_count": 7
     },
     {
       "slug": "companies/passend",
@@ -2117,6 +2137,18 @@
       "inbound_count": 0
     },
     {
+      "slug": "inbox/humanlayer-launch-2026-06-19",
+      "title": "Humanlayer Launch 2026 06 19",
+      "type": "concept",
+      "updated": "",
+      "body": "# HumanLayer \u2014 Agentic IDE Launches Publicly\n\n**Source:** forwarded email from sayf, originally from dex at HumanLayer <dexter@hey.humanlayer.dev>, 2026-06-18\n**Source URI:** gmail://msg_19edfd1054c17600\n\n**Sayf's context:** Sayf forwarded this to the Maloha Coast info address, indicating interest in AI agent tooling.\n\n## Summary\n\nHumanLayer is an Agentic IDE, collaboration platform, and building blocks for a \"software factory\" \u2014 where engineering teams design complex systems with their AI agents before generating a single line of code. Previously on waitlist; now open to everyone.\n\n[Source: email from dex@hey.humanlayer.dev re: \"HumanLayer // We're live \u2014 come build with us\", 2026-06-18]\n\n## Key Details\n\n- **Founders:** Dexter (dex) and Kyle \u2014 previously built the open-source Research, Plan, Implement (RPI) framework, now running inside Fortune 500s like Block and Uber\n- **Pricing:** Starter plan is free for teams of fewer than three\n- **Core pitch:** \"Don't outsource the thinking\" \u2014 design reviews with AI before writing code, bringing the missing piece of the software factory into one place\n- **BYO subscription:** Plug in your Claude, Codex, and other AI subscriptions or API keys. No separate per-token bill.\n- **Claimed velocity:** Teams move 2-3x faster across the entire SDLC (not just coding)\n- **Launch:** June 18, 2026 on X and LinkedIn\n\n[Source: email from dex@hey.humanlayer.dev re: \"HumanLayer // We're live \u2014 come build with us\", 2026-06-18]",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "inbox/openrouter-provider-data-policies-2026-06-19",
       "title": "Openrouter Provider Data Policies 2026 06 19",
       "type": "concept",
@@ -2139,6 +2171,30 @@
       ],
       "outbound_count": 1,
       "inbound_count": 1
+    },
+    {
+      "slug": "inbox/openrouter-provider-policies-2026-06-19",
+      "title": "Openrouter Provider Policies 2026 06 19",
+      "type": "concept",
+      "updated": "",
+      "body": "# How Provider Data Policies Work on OpenRouter\n\n**Source:** email from OpenRouter Team <welcome@openrouter.ai>, 2026-06-19\n**Source URI:** gmail://msg_19ee03492356403f\n\nEvery provider behind OpenRouter has its own retention and training policy. OpenRouter reflects those policies as structured data on each endpoint, publishes the full table in the docs, and gives users controls to filter routing on them.\n\n## What You Control\n\n1. **Block routing to providers that train.** Account-wide toggle for whether routing may use providers that train on prompts, with separate switches for paid and free models. If you opt out, OpenRouter will not route to training providers.\n\n2. **Require a specific data policy per request.** Override your account default on any single call via data policy filtering in provider routing.\n\n3. **Pick only zero-retention providers.** Many providers on OpenRouter are zero retention: Amazon Bedrock, Azure, Cerebras, DeepInfra, Google Vertex, Groq, NVIDIA, SambaNova, Together, and others. Filter to them the same way as training policy.\n\n[Source: email from OpenRouter Team re: \"How provider data policies work on OpenRouter\", 2026-06-19]\n\n## EU In-Region Routing\n\nOpenRouter supports EU in-region routing for enterprise accounts. When enabled, prompts and completions are processed inside the European Union via `https://eu.openrouter.ai` base URL.\n\n[Source: email from OpenRouter Team re: \"How provider data policies work on OpenRouter\", 2026-06-19]",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "inbox/openrouter-three-features-2026-06-18",
+      "title": "Openrouter Three Features 2026 06 18",
+      "type": "concept",
+      "updated": "",
+      "body": "# Three OpenRouter Features Worth Trying Next\n\n**Source:** email from OpenRouter Team <welcome@openrouter.ai>, 2026-06-18\n**Source URI:** gmail://msg_19edb0e0abd83fb0\n\nThree features, each a single parameter change, none requiring a new integration or different endpoint.\n\n[Source: email from OpenRouter Team re: \"Three features worth trying next\", 2026-06-18]\n\n## 1. Streaming\n\nSet `stream=True` and tokens arrive as they generate. Same endpoint, same auth, one parameter. Perceived latency drops from seconds to first token \u2014 the difference between a chat UI that feels alive and one that feels broken.\n\n## 2. Structured Outputs\n\nPass a JSON schema via `response_format` and OpenRouter enforces it at the API level. No regex parsing, no retry loops, no \"please respond in valid JSON\" prompt engineering. Works on every model that supports the format; the router respects it when using `openrouter/auto`.\n\n## 3. Provider Preferences\n\nPin specific providers, exclude others, set latency floors and throughput minimums. When a model has multiple providers behind it, you decide which backend serves each request.\n\nSet `{\"sort\": \"price\"}` to always pick the cheapest, or an allowlist to lock routing to trusted providers.\n\n## All Three at Once\n\n```python\nresponse = client.chat.completions.create(\n    model=\"openrouter/auto\",\n    stream=True,\n    response_format={\"type\": \"json_schema\", \"json_schema\": schema},\n    extra_body={\"provider\": {\"sort\": \"price\"}},\n    messages=[{\"role\": \"user\", \"content\": \"...\"}],\n)\n```\n\n[Source: email from OpenRouter Team re: \"Three features worth trying next\", 2026-06-18]",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
     },
     {
       "slug": "maloha-coast",
@@ -2474,11 +2530,83 @@
       "inbound_count": 1
     },
     {
+      "slug": "newsletters/openrouter-chain-models-2026-06-16",
+      "title": "Chain models for complex tasks",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# Chain models for complex tasks\n\n**Source:** email\n**Source URI:** gmail://msg_19ed0c0b31514494\n**Ingested:** 2026-06-16\n**Provenance:** OpenRouter onboarding email to info@malohacoast.com\n\n## Summary\n\nOpenRouter onboarding newsletter covering chain models for complex tasks.\n\n## Key Content\n\nUse a fast model for classification, a strong model for generation. One endpoint handles both. \u00a0\n\nOpenRouter\nOpenRouter (  )\n\n\u2003\n\nHi there,\n\nUse a fast model for classification, a strong model for generation. Same endpoint, same auth, different model parameter. That is the point of having 300+ models on one API: you mix them per step instead of committing to one for the whole workload.\n\nBrowse models (  )\n\n\u2003\n\nPATTERN 1: CLASSIFY, THEN GENERATE\n\n# Step 1: classify with a fast, cheap model\nclassify = client.chat.completions.create\n( \u00a0\u00a0model=\"openai/gpt-4o-mini\",\n\u00a0\u00a0messages=[{\"role\": \"user\", \"content\": f\"Classify: {query}\"}], )\n\n\n# Step 2: generate with a strong model\nresult = client.chat.completions.create\n( \u00a0\u00a0model=\"anthropic/claude-sonnet-4.6\",\n\u00a0\u00a0messages=[{\"role\": \"user\", \"content\": f\"{classify.choices[0].message.content}: {query}\"}], )\n\n\nGPT-4o-mini runs around $0.15 per million input tokens. Claude Sonnet 4.6 runs around $3 per million. Using the cheap model for routing and the expensive one only where it earns its cost can cut total spend 5 to 10x on mixed workloads.\n\n\u2003\n\nPATTERN 2: EXTRACT, THEN WRITE\n\n# Step 1: structured extraction\nextracted = client.chat.completions.create\n( \u00a0\u00a0model=\"openai/gpt-4o-mini\",\n\u00a0\u00a0response_format={\"type\": \"json_object\"},\n\u00a0\u00a0messages=[{\"role\": \"user\", \"content\": f\"Extract fields as JSON: {doc}\"}], )\n\n\n# Step 2: long-form writing from the structured fields\ndraft = client.chat.completions.create\n( \u00a0\u00a0model=\"anthropic/claude-sonnet-4.6\",\n\u00a0\u00a0messages=[{\"role\": \"user\", \"content\": f\"Write a report from: {extracted.choices[0].message.content}\"}], )\n\n\nStructured outputs are cheap and fast on small models. Long-form generation is where the frontier models actually earn their per-token rate. Splitting the work keeps the expensive calls short.\n\nWhy this works on OpenRouter specifically. One endpoint means no separate SDK per provider, no second billing account, no new authentication. The model parameter is the only thing that changes between steps, and the activity dashboard shows both calls side by side so you can see exactly where the cost went.\n\nopenrouter.ai (  )\u00a0\u00a0\u00b7\u00a0\u00a0Discord (  )\u00a0\u00a0\u00b7\u00a0\u00a0X (  )\u00a0\u00a0\u00b7\u00a0\u00a0Docs (  )\n\nManage preferences (  )\n\u00a0\u00a0|\u00a0\u00a0\nUnsubscribe (  )\n\n## Related\n- [[OpenRouter]] \u2014 platform",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "companies/openrouter",
+          "type": "wikilink",
+          "text": "OpenRouter"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
+      "inbound_count": 0
+    },
+    {
+      "slug": "newsletters/openrouter-three-cost-levers-2026-06-17",
+      "title": "Three levers that lower your per-token cost",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# Three levers that lower your per-token cost\n\n**Source:** email\n**Source URI:** gmail://msg_19ed5e7b3a86e916\n**Ingested:** 2026-06-17\n**Provenance:** OpenRouter onboarding email to info@malohacoast.com\n\n## Summary\n\nOpenRouter onboarding newsletter covering three levers that lower your per-token cost.\n\n## Key Content\n\nTiered pricing, provider preferences, and prompt caching. All per-request, no extra wiring. \u00a0\n\nOpenRouter\nOpenRouter (  )\n\n\u2003\n\nHi there,\n\nThree things quietly cut your per-token cost on OpenRouter. They stack, and none of them require changing models or rewriting your app.\n\nCompare model pricing (  )\n\n\u2003\n\n1. TIERED PRICING\n\nMost models run on tiered pricing set by the provider: the more tokens you send through, the less each token costs. You do not opt in. The discount applies automatically once you cross the threshold. Open any model page on openrouter.ai/models (  ) and click the Effective Pricing tab to see the live per-provider rate, including any tiers you have already hit. Consolidating traffic onto one or two models unlocks the next tier faster than scattering tokens across five.\n\n2. PROVIDER PREFERENCES\n\nThe same model is served by multiple providers at different rates. provider in the request body lets you prefer cheaper providers, sort by price, or set a price ceiling. It is a per-request setting, so you can apply it selectively to traffic where latency matters less than cost. Docs: Provider Routing (  ).\n\n3. PROMPT CACHING\n\nOn supported models, OpenRouter reuses cached prompt prefixes across requests, so repeated context costs a fraction of the first call. Useful for long system prompts, RAG, agents that replay history, and anything that ships the same context every turn. Per-request, no extra wiring. Docs: Prompt Caching (  ).\n\nopenrouter.ai (  )\u00a0\u00a0\u00b7\u00a0\u00a0Discord (  )\u00a0\u00a0\u00b7\u00a0\u00a0X (  )\u00a0\u00a0\u00b7\u00a0\u00a0Docs (  )\n\nManage preferences (  )\n\u00a0\u00a0|\u00a0\u00a0\nUnsubscribe (  )\n\n## Related\n- [[OpenRouter]] \u2014 platform",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "companies/openrouter",
+          "type": "wikilink",
+          "text": "OpenRouter"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
+      "inbound_count": 0
+    },
+    {
       "slug": "newsletters/openrouter-three-features-2026-06-19",
       "title": "Openrouter Three Features 2026 06 19",
       "type": "newsletter",
       "updated": "",
       "body": "# Three features worth trying next on [[OpenRouter]]\n\n**Source:** email from OpenRouter Team (welcome@openrouter.ai)\n**Source URI:** gmail://msg_19edb0e0abd83fb0\n**Ingested:** 2026-06-20\n**Subject:** Three features worth trying next\n\n---\n\nHi there,\n\nThree features worth trying once your first requests are landing. Each one is a single parameter change. Each one earns its place in production code and none of them require a new integration or a different endpoint.\n\n### Streaming\n\nSet `stream=True` and tokens arrive as they generate. Same endpoint, same auth, one parameter. Perceived latency drops from seconds to the first token \u2014 the difference between a chat UI that feels alive and one that feels broken. Agents that stream partial results to a frontend get a noticeable UX lift for zero code cost.\n\n### Structured Outputs\n\nPass a JSON schema via `response_format` and OpenRouter enforces it at the API level. No regex parsing, no retry loops when the model returns malformed JSON, no \"please respond in valid JSON\" prompt engineering. Works on every model that supports the format, and the router respects it when you use `openrouter/auto`.\n\n### Provider Preferences\n\nPin specific providers, exclude others, set latency floors and throughput minimums. When a model has multiple providers behind it, you decide which backend serves each request. Set `{\"sort\": \"price\"}` to always pick the cheapest, or an allowlist to lock routing to providers you trust.\n\n### All Three at Once\n\n```python\nresponse = client.chat.completions.create(\n    model=\"openrouter/auto\",\n    stream=True,\n    response_format={\"type\": \"json_schema\", \"json_schema\": schema},\n    extra_body={\"provider\": {\"sort\": \"price\"}},\n    messages=[{\"role\": \"user\", \"content\": \"...\"}],\n)\n```\n\n**Pages worth bookmarking:**\n- [openrouter.ai/models](https://openrouter.ai/models) \u2014 browsing and pricing\n- [openrouter.ai/rankings](https://openrouter.ai/rankings) \u2014 real usage volume data\n- [openrouter.ai/activity](https://openrouter.ai/activity) \u2014 usage and costs\n- [discord.gg/openrouter](https://discord.gg/openrouter) \u2014 support\n\n---\n\n*Onboarding email from OpenRouter, received 2026-06-18.*",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "companies/openrouter",
+          "type": "wikilink",
+          "text": "OpenRouter"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
+      "inbound_count": 0
+    },
+    {
+      "slug": "newsletters/openrouter-three-features-save-money-2026-06-12",
+      "title": "Three features that quietly save you money",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# Three features that quietly save you money\n\n**Source:** email\n**Source URI:** gmail://msg_19ebc285fe5e7458\n**Ingested:** 2026-06-12\n**Provenance:** OpenRouter onboarding email to info@malohacoast.com\n\n## Summary\n\nOpenRouter onboarding newsletter covering three features that quietly save you money.\n\n## Key Content\n\nPrompt caching cuts repeat tokens by up to 90%. Fallback keeps you up. Healing fixes broken JSON. \u00a0\n\nOpenRouter\nOpenRouter (  )\n\n\u2003\n\nHi there,\n\nThree OpenRouter features quietly do work for you in production. They are off by default on most platforms and on or one-flag-away here. Each one pays for itself within the first week on any workload that hits real traffic.\n\nView the docs (  )\n\n\u2003\n\nPROMPT CACHING\n\nIf you send the same system prompt or context window repeatedly, OpenRouter caches the prefix and bills cached tokens at up to 90 percent off. It runs automatically on supported models with no setup. The savings show up in your usage report. Agents with long system prompts, RAG pipelines that reuse context, and multi-turn chat all benefit here without any code change.\n\n\u2003\n\nPROVIDER FALLBACK\n\nPass a list of models with route=\"fallback\" and OpenRouter retries the next one in the list when your primary fails. Same response shape, same cost as whichever model serves the request. Provider outages stop cascading to your app, and the only thing you added was one extra array entry.\n\n\u2003\n\nRESPONSE HEALING\n\nWhen a model returns malformed JSON, OpenRouter repairs it before sending the response back to your app. Enable it under Settings > Plugins (  ). Useful for any pipeline that parses model output downstream, which in practice is most production workloads.\n\n\u2003\n\nclient.chat.completions.create\n( \u00a0\u00a0model=\"openrouter/auto\",\n\u00a0\u00a0extra_body={\n\u00a0\u00a0\u00a0\u00a0\"models\": [\"openrouter/auto\", \"anthropic/claude-sonnet-4.6\"],\n\u00a0\u00a0\u00a0\u00a0\"route\": \"fallback\"\n\u00a0\u00a0},\n\u00a0\u00a0messages=[{\"role\": \"user\", \"content\": \"...\"}] )\n\n\n\u2003\n\nAuto-routing with a named fallback. The production pattern.\n\nWhy these three compound. Auto-routing picks a cheap model when the prompt does not need a frontier one. Prompt caching drops the per-call cost of whatever the router picks on repeat traffic. Provider fallback keeps you up when a backend misbehaves. Layered together, the cost curve stays flat as traffic grows and the uptime profile looks nothing like single-provider integration.\n\nThe next email walks through structured outputs: how to get valid JSON from any model on the catalog with one parameter.\n\nopenrouter.ai (  )\u00a0\u00a0\u00b7\u00a0\u00a0Discord (  )\u00a0\u00a0\u00b7\u00a0\u00a0X (  )\u00a0\u00a0\u00b7\u00a0\u00a0Docs (  )\n\nManage preferences (  )\n\u00a0\u00a0|\u00a0\u00a0\nUnsubscribe (  )\n\n## Related\n- [[OpenRouter]] \u2014 platform",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "companies/openrouter",
+          "type": "wikilink",
+          "text": "OpenRouter"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
+      "inbound_count": 0
+    },
+    {
+      "slug": "newsletters/openrouter-three-features-try-next-2026-06-18",
+      "title": "Three features worth trying next",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# Three features worth trying next\n\n**Source:** email\n**Source URI:** gmail://msg_19edb0e0abd83fb0\n**Ingested:** 2026-06-18\n**Provenance:** OpenRouter onboarding email to info@malohacoast.com\n\n## Summary\n\nOpenRouter onboarding newsletter covering three features worth trying next.\n\n## Key Content\n\nStreaming, structured outputs, and provider preferences. Three parameters that change what OpenRouter can do for you. \u00a0\n\nOpenRouter\nOpenRouter (  )\n\n\u2003\n\nHi there,\n\nThree features worth trying once your first requests are landing. Each one is a single parameter change. Each one earns its place in production code and none of them require a new integration or a different endpoint.\n\nSee the feature docs (  )\n\n\u2003\n\nStreaming (  ). Set stream=True and tokens arrive as they generate. Same endpoint, same auth, one parameter. Perceived latency drops from seconds to the first token, which is the difference between a chat UI that feels alive and one that feels broken. Agents that stream partial results to a frontend get a noticeable UX lift for zero code cost.\n\nStructured outputs (  ). Pass a JSON schema via response_format and OpenRouter enforces it at the API level. No regex parsing, no retry loops when the model returns malformed JSON, no \"please respond in valid JSON\" prompt engineering. Works on every model that supports the format, and the router respects it when you use openrouter/auto.\n\nProvider preferences (  ). Pin specific providers, exclude others, set latency floors and throughput minimums. When a model has multiple providers behind it, you decide which backend serves each request. Set {\"sort\": \"price\"} to always pick the cheapest, or an allowlist to lock routing to providers you trust.\n\n\u2003\n\nALL THREE AT ONCE\n\nresponse = client.chat.completions.create\n( \u00a0\u00a0model=\"openrouter/auto\",\n\u00a0\u00a0stream=True,\n\u00a0\u00a0response_format={\"type\": \"json_schema\", \"json_schema\": schema},\n\u00a0\u00a0extra_body={\"provider\": {\"sort\": \"price\"}},\n\u00a0\u00a0messages=[{\"role\": \"user\", \"content\": \"...\"}], )\n\n\n\u2003\n\nPages worth bookmarking: openrouter.ai/models (  ) for browsing and pricing, openrouter.ai/rankings (  ) for real usage volume data, openrouter.ai/activity (  ) for your usage and costs, and discord.gg/openrouter \n(  ) if you get stuck.\n\nopenrouter.ai (  )\u00a0\u00a0\u00b7\u00a0\u00a0Discord (  )\u00a0\u00a0\u00b7\u00a0\u00a0X (  )\u00a0\u00a0\u00b7\u00a0\u00a0Docs (  )\n\nManage preferences (  )\n\u00a0\u00a0|\u00a0\u00a0\nUnsubscribe (  )\n\n## Related\n- [[OpenRouter]] \u2014 platform",
       "tags": [],
       "links_out": [
         {
@@ -4176,7 +4304,27 @@
       "type": "wikilink"
     },
     {
+      "source": "newsletters/openrouter-chain-models-2026-06-16",
+      "target": "companies/openrouter",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/openrouter-three-cost-levers-2026-06-17",
+      "target": "companies/openrouter",
+      "type": "wikilink"
+    },
+    {
       "source": "newsletters/openrouter-three-features-2026-06-19",
+      "target": "companies/openrouter",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/openrouter-three-features-save-money-2026-06-12",
+      "target": "companies/openrouter",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/openrouter-three-features-try-next-2026-06-18",
       "target": "companies/openrouter",
       "type": "wikilink"
     },
