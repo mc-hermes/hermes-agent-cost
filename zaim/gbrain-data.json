@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-19T13:00:21Z",
+  "updated_at": "2026-06-19T14:00:25Z",
   "summary": {
     "page_count": 5,
     "people_count": 2,
@@ -245,19 +245,11 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-19T13:00:21Z",
+      "ts": "2026-06-19T14:00:25Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
       "detail": "Dashboard refreshed \u2014 5 pages, 3 links",
-      "level": "info"
-    },
-    {
-      "ts": "2026-06-19T00:00:00Z",
-      "source": "page",
-      "stage": "updated",
-      "slug": "maloha-coast",
-      "detail": "Maloha Coast",
       "level": "info"
     }
   ]

@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-06-19T13:00:15Z",
+  "updated_at": "2026-06-19T14:00:17Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
     "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 90,
+    "page_count": 94,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "63.3% of pages have inbound links",
-    "entity_links": "Coverage \u2014 20 people, 15 companies indexed",
-    "concept_count": 43,
+    "graph_coverage": "64.9% of pages have inbound links",
+    "entity_links": "Coverage \u2014 22 people, 15 companies indexed",
+    "concept_count": 45,
     "meeting_count": 4,
-    "person_count": 20,
+    "person_count": 22,
     "company_count": 15,
     "newsletter_count": 4,
     "video_count": 0,
@@ -19,9 +19,9 @@
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 140,
-    "outbound_count": 191,
-    "inbound_count": 170,
+    "total_links": 149,
+    "outbound_count": 201,
+    "inbound_count": 182,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -361,21 +361,29 @@
     },
     {
       "slug": "companies/humanlayer",
-      "title": "Humanlayer",
+      "title": "HumanLayer",
       "type": "company",
       "updated": "",
-      "body": "# HumanLayer\n\n> Agentic IDE, collaboration platform, and building blocks for a software factory. Enables engineering teams to design complex systems with AI agents before generating code. Launched publicly June 2026.\n\n## In Maloha Coast Knowledge\n\n- Mentioned in [[HumanLayer Launch Newsletter]] as product launch \u2014 Agentic IDE with RPI roots\n- Founders: [[Dexter Horthy]] and Kyle\n\n## Product\n\n**HumanLayer** is an Agentic IDE where teams design systems with agents before writing code. Key features:\n- Design-first workflow: system architecture design before code generation\n- 2-3x faster across full SDLC\n- Bring your own AI subscriptions (Claude, Codex)\n- Free Starter plan for teams < 3\n- Built on open-source RPI framework (used at Block and Uber)\n\n## Related\n\n- [[HumanLayer Launch Newsletter]] \u2014 Launch announcement forwarded by Sayf\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-19** | HumanLayer launches publicly. Mentioned in newsletter forwarded by Sayf. [Source: gmail://msg_19edfd1054c17600]",
-      "tags": [],
+      "body": "# HumanLayer\n\n> Agentic IDE, collaboration platform, and building blocks for a software factory \u2014 where engineering teams design complex systems with AI agents before generating code.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[HumanLayer Launch Announcement (2026-06-19)]] as a newly launched public product\n\n## Related\n\n- [[Dex Horthy]] \u2014 founder/creator\n- [[humanlayer-launch-2026-06-19]] \u2014 launch announcement\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-19** | Mentioned in HumanLayer Launch Announcement. [Source: gmail://msg_19edfd1054c17600]",
+      "tags": [
+        "agentic-ide",
+        "coding-agents"
+      ],
       "links_out": [
         {
-          "to": "concepts/humanlayer-launch-newsletter",
+          "to": "HumanLayer Launch Announcement (2026-06-19)",
           "type": "wikilink",
-          "text": "HumanLayer Launch Newsletter"
+          "text": "HumanLayer Launch Announcement (2026-06-19)"
         },
         {
-          "to": "people/dexter-horthy",
+          "to": "people/dex-horthy",
           "type": "wikilink",
-          "text": "Dexter Horthy"
+          "text": "Dex Horthy"
+        },
+        {
+          "to": "humanlayer-launch-2026-06-19",
+          "type": "wikilink",
+          "text": "humanlayer-launch-2026-06-19"
         }
       ],
       "backlinks": [
@@ -385,13 +393,33 @@
           "text": "HumanLayer"
         },
         {
+          "from": "humanlayer-launch-2026-06-19",
+          "type": "wikilink",
+          "text": "HumanLayer"
+        },
+        {
+          "from": "humanlayer-launch-announcement-2026-06-19",
+          "type": "wikilink",
+          "text": "HumanLayer"
+        },
+        {
           "from": "newsletters/humanlayer-launch-2026-06-19",
+          "type": "wikilink",
+          "text": "HumanLayer"
+        },
+        {
+          "from": "people/dex-horthy",
+          "type": "wikilink",
+          "text": "HumanLayer"
+        },
+        {
+          "from": "people/kyle",
           "type": "wikilink",
           "text": "HumanLayer"
         }
       ],
-      "outbound_count": 2,
-      "inbound_count": 2
+      "outbound_count": 3,
+      "inbound_count": 6
     },
     {
       "slug": "companies/inclusive-ai-association",
@@ -1137,18 +1165,13 @@
       ],
       "backlinks": [
         {
-          "from": "companies/humanlayer",
-          "type": "wikilink",
-          "text": "HumanLayer Launch Newsletter"
-        },
-        {
           "from": "people/dexter-horthy",
           "type": "wikilink",
           "text": "HumanLayer Launch Newsletter"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 2
+      "inbound_count": 1
     },
     {
       "slug": "concepts/knowledge-graph-as-moat",
@@ -1952,20 +1975,76 @@
     },
     {
       "slug": "humanlayer-launch-2026-06-19",
-      "title": "HumanLayer Launch \u2014 Agentic IDE Goes Public",
+      "title": "Humanlayer Launch 2026 06 19",
       "type": "concept",
       "updated": "",
-      "body": "# HumanLayer Launch \u2014 Agentic IDE Goes Public\n\nHumanLayer launched publicly on June 18, 2026. Dex Horthy and Kyle announced the general availability of their Agentic IDE after a waitlist period.\n\n## What HumanLayer Is\n\nAn Agentic IDE, collaboration platform, and building blocks for software factories \u2014 where engineering teams design complex systems with their AI agents before generating code.\n\n## Key Claims\n\n- **2-3x faster across the entire SDLC** (not just coding)\n- **Rigorous architecture standards** maintained through design reviews\n- Built on their open-source [[RPI Framework]] (Research, Plan, Implement), now running inside Fortune 500s like Block and Uber\n- **BYO subscription** model \u2014 plug in Claude, Codex, or other API keys. No separate per-token bill\n\n## Core Philosophy\n\n\"Don't outsource the thinking.\" Design reviews before code \u2014 bringing the missing piece of the software factory into one place.\n\n## Links\n\n- Website: https://humanlayer.com\n- Launch blurb (for AI-assisted posts): https://humanlayer.com/launch/blurb.md\n- X launch post: https://x.com/dexhorthy/status/2067286892786454855\n- LinkedIn: https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U\n\n## Relevance to Maloha Coast\n\nHumanLayer's RPI framework and agentic IDE approach aligns with the AI consulting and agent-building work at Maloha Coast. The BYO-subscription model is interesting for SMB clients who want to avoid per-token billing complexity. Worth evaluating the Starter plan (free for teams < 3).",
+      "body": "# HumanLayer // We're live \u2014 come build with us\n\n**Source:** email\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-19T20:30:00Z\n**Provenance:** Forwarded by Sayf Codes on 2026-06-19\n**Original from:** dex at humanlayer <dexter@hey.humanlayer.dev>\n**Original date:** 2026-06-18\n\n> Sayf was on the HumanLayer waitlist. He forwarded this launch announcement to Maloha Coast info@.\n\n[[HumanLayer]] is an Agentic IDE, collaboration platform, and building blocks for your software factory \u2014 where engineering teams design complex systems with their AI agents before generating a single line of code.\n\n## Key Details\n\n- [[HumanLayer]] is opening up to everyone (previously waitlist-only)\n- Created by [[Dex Horthy]] and Kyle, building on their open-source Research, Plan, Implement (RPI) framework\n- RPI framework already running inside Fortune 500s (Block, Uber)\n- **Core idea:** don't outsource the thinking. Design reviews before code generation. Brings system design collaboration into one place.\n- **Pricing:** Starter plan is free for teams of fewer than three\n- **BYO subscription:** Bring your own Claude, Codex, and other AI subscriptions or API keys \u2014 no separate per-token bill\n- **Promised benefits:** 2-3x faster across entire SDLC; maintain rigorous architecture standards\n- Product is live at humanlayer.com\n- Launching publicly on X and LinkedIn\n\n## What It Does\n\nLets engineers solving hard problems in complex codebases:\n- Move 2-3x faster across the entire SDLC (not just the coding part)\n- Maintain rigorous standards for system architecture and program design\n\n## Links\n\n- Product: https://humanlayer.com\n- Launch blurb: https://humanlayer.com/launch/blurb.md\n- X launch post: https://x.com/dexhorthy/status/2067286892786454855\n- LinkedIn: https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U",
       "tags": [],
       "links_out": [
         {
-          "to": "RPI Framework",
+          "to": "companies/humanlayer",
           "type": "wikilink",
-          "text": "RPI Framework"
+          "text": "HumanLayer"
+        },
+        {
+          "to": "people/dex-horthy",
+          "type": "wikilink",
+          "text": "Dex Horthy"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "companies/humanlayer",
+          "type": "wikilink",
+          "text": "humanlayer-launch-2026-06-19"
+        },
+        {
+          "from": "people/dex-horthy",
+          "type": "wikilink",
+          "text": "humanlayer-launch-2026-06-19"
+        }
+      ],
+      "outbound_count": 2,
+      "inbound_count": 2
+    },
+    {
+      "slug": "humanlayer-launch-announcement-2026-06-19",
+      "title": "Humanlayer Launch Announcement 2026 06 19",
+      "type": "concept",
+      "updated": "",
+      "body": "# HumanLayer // We're live \u2014 come build with us\n\n**Source:** Email (forwarded by sayf)\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-19T20:33:00Z\n**Provenance:** Forwarded by Sayf Codes <sayfcodes@gmail.com> to info@malohacoast.com on 2026-06-19\n\n**Original from:** dex at humanlayer <dexter@hey.humanlayer.dev>\n**Original date:** Thu, 18 Jun 2026\n\n---\n\n[[HumanLayer]] has launched publicly. It's an Agentic IDE and collaboration platform for engineering teams to design complex systems with AI agents before generating code.\n\n### Key Details\n\n- **Product:** [[HumanLayer]] \u2014 Agentic IDE, collaboration platform, and building blocks for the software factory\n- **Pricing:** Starter plan free for teams of fewer than three\n- **URL:** [humanlayer.com](https://humanlayer.com)\n- **Launch post (blurb):** [humanlayer.com/launch/blurb.md](https://humanlayer.com/launch/blurb.md)\n- **X post:** [@dexhorthy launch thread](https://x.com/dexhorthy/status/2067286892786454855)\n- **LinkedIn:** [[Dex Horthy]] launch post\n\n### Core Thesis\n\n> The year of no more slop.\n\n[[HumanLayer]]'s core idea: **don't outsource the thinking.** Great teams have run design reviews for decades because there's enormous leverage in collaborating on system design *before* writing the code. [[HumanLayer]] brings that missing piece of the software factory into one place.\n\n### What It Does\n\n- Lets engineers move 2-3x faster across the entire SDLC (not just coding)\n- Maintains rigorous standards for system architecture and program design\n- Engineers design complex systems with AI agents **before** generating a single line of code\n- **BYO subscription** \u2014 plug in Claude, Codex, and other AI subscriptions/API keys; no separate per-token bill\n\n### Background\n\n[[Dex Horthy]] and [[Kyle]] (the founders) previously built the open-source Research, Plan, Implement (RPI) framework, now running inside Fortune 500s like Block and Uber. [[HumanLayer]] is built on top of all that work.\n\n### People Mentioned\n\n- **[[Dex Horthy]]** \u2014 co-founder of [[HumanLayer]], previously built RPI framework\n- **[[Kyle]]** \u2014 co-founder of [[HumanLayer]]\n\n### Mentioned Companies\n\n- **[[HumanLayer]]** \u2014 Agentic IDE and software factory platform\n- **Block** \u2014 Fortune 500, runs RPI framework\n- **Uber** \u2014 Fortune 500, runs RPI framework",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "companies/humanlayer",
+          "type": "wikilink",
+          "text": "HumanLayer"
+        },
+        {
+          "to": "people/dex-horthy",
+          "type": "wikilink",
+          "text": "Dex Horthy"
+        },
+        {
+          "to": "people/kyle",
+          "type": "wikilink",
+          "text": "Kyle"
         }
       ],
       "backlinks": [],
-      "outbound_count": 1,
+      "outbound_count": 3,
+      "inbound_count": 0
+    },
+    {
+      "slug": "humanlayer-launch-newsletter-2026-06-19",
+      "title": "Humanlayer Launch Newsletter 2026 06 19",
+      "type": "concept",
+      "updated": "",
+      "body": "# HumanLayer // We're live \u2014 come build with us\n\n**Source:** Email (sayf forward)\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-19T20:32:00Z\n**Provenance:** Forwarded by Sayf on 2026-06-19\n\n---\n\nHumanLayer is launching publicly \u2014 an Agentic IDE, collaboration platform, and building blocks for software factories. After a year pushing limits with the open-source RPI (Research, Plan, Implement) framework now running inside Fortune 500s (Block, Uber), founder Dex (dex at humanlayer) and Kyle are opening up access.\n\n**Core thesis:** Don't outsource the thinking. Design reviews before code \u2014 bring the leverage of collaborative system design into one place. Teams move 2-3x faster across the full SDLC while maintaining rigorous system architecture standards.\n\n**Key details:**\n- humanlayer.com \u2014 Starter plan free for teams <3\n- Bring your own subscription (Claude, Codex, API keys) \u2014 no separate per-token bill\n- Launch posts: [X](https://x.com/dexhorthy/status/2067286892786454855) | [LinkedIn](https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U)\n- Launch blurb for writing: https://humanlayer.com/launch/blurb.md\n\n**Quote:** \"The year of no more slop.\"",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
       "inbound_count": 0
     },
     {
@@ -2225,33 +2304,34 @@
       "title": "Humanlayer Launch 2026 06 19",
       "type": "newsletter",
       "updated": "",
-      "body": "# HumanLayer // We're live \u2014 come build with us\n\n**Source:** email newsletter from dex at humanlayer (Dexter @ HumanLayer)\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-19T20:17:44+08:00\n**Provenance:** Forwarded by Sayf on 2026-06-19\n\n## Summary\n\nHumanLayer \u2014 an Agentic IDE and collaboration platform for engineering teams \u2014 launched publicly after a waitlist period. The product is built on the open-source Research, Plan, Implement (RPI) framework, now used at Block and Uber.\n\n## Key Content\n\nHumanLayer is an Agentic IDE, collaboration platform, and building blocks for a software factory where engineering teams design complex systems with AI agents before generating code. It claims to deliver 2-3x faster SDLC throughput while maintaining rigorous architecture standards.\n\n**Core thesis:** \"Don't outsource the thinking.\" Great teams run design reviews for decades because there's enormous leverage in collaborating on system design before writing code. HumanLayer brings that into one place.\n\n**Pricing:** Starter plan is free for teams of fewer than three. Users bring their own AI subscriptions (Claude, Codex, etc.) \u2014 no separate per-token bill.\n\n**Public launch links:**\n- X: https://x.com/dexhorthy/status/2067286892786454855\n- LinkedIn: https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U\n- Blurb for writing your own post: https://humanlayer.com/launch/blurb.md\n\n## Entities\n\n- [[Dexter @ HumanLayer (Dex Horthy)]] \u2014 founder, open-source RPI framework creator\n- [[HumanLayer]] \u2014 Agentic IDE and collaboration platform\n- [[Block]] \u2014 RPI framework user\n- [[Uber]] \u2014 RPI framework user",
+      "body": "# HumanLayer // We're live \u2014 come build with us\n\n**Source:** email newsletter from dex at humanlayer (Dexter @ HumanLayer)\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-19T20:17:44+08:00\n**Provenance:** Forwarded by Sayf on 2026-06-19\n\n## Summary\n\n[[HumanLayer]] \u2014 an Agentic IDE and collaboration platform for engineering teams \u2014 launched publicly after a waitlist period. The product is built on the open-source Research, Plan, Implement (RPI) framework, now used at Block and Uber.\n\n## Key Content\n\nHumanLayer is an Agentic IDE, collaboration platform, and building blocks for a software factory where engineering teams design complex systems with AI agents before generating code. It claims to deliver 2-3x faster SDLC throughput while maintaining rigorous architecture standards.\n\n**Core thesis:** \"Don't outsource the thinking.\" Great teams run design reviews for decades because there's enormous leverage in collaborating on system design before writing code. HumanLayer brings that into one place.\n\n**Pricing:** Starter plan is free for teams of fewer than three. Users bring their own AI subscriptions (Claude, Codex, etc.) \u2014 no separate per-token bill.\n\n**Public launch links:**\n- X: https://x.com/dexhorthy/status/2067286892786454855\n- LinkedIn: https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U\n- Blurb for writing your own post: https://humanlayer.com/launch/blurb.md\n\n## Entities\n\n- [[Dex Horthy]] \u2014 founder, open-source RPI framework creator\n- [[Kyle]] \u2014 co-founder, building RPI framework alongside Dex\n- [[HumanLayer]] \u2014 Agentic IDE and collaboration platform\n- Block \u2014 RPI framework user\n- Uber \u2014 RPI framework user",
       "tags": [],
       "links_out": [
-        {
-          "to": "Dexter @ HumanLayer (Dex Horthy)",
-          "type": "wikilink",
-          "text": "Dexter @ HumanLayer (Dex Horthy)"
-        },
         {
           "to": "companies/humanlayer",
           "type": "wikilink",
           "text": "HumanLayer"
         },
         {
-          "to": "Block",
+          "to": "people/dex-horthy",
           "type": "wikilink",
-          "text": "Block"
+          "text": "Dex Horthy"
         },
         {
-          "to": "Uber",
+          "to": "people/kyle",
           "type": "wikilink",
-          "text": "Uber"
+          "text": "Kyle"
         }
       ],
-      "backlinks": [],
-      "outbound_count": 4,
-      "inbound_count": 0
+      "backlinks": [
+        {
+          "from": "people/kyle",
+          "type": "wikilink",
+          "text": "newsletters/humanlayer-launch-2026-06-19"
+        }
+      ],
+      "outbound_count": 3,
+      "inbound_count": 1
     },
     {
       "slug": "newsletters/maloha-coast-navigator-test-edition-2026-06-15",
@@ -2629,6 +2709,63 @@
       "inbound_count": 3
     },
     {
+      "slug": "people/dex-horthy",
+      "title": "Dex Horthy",
+      "type": "person",
+      "updated": "",
+      "body": "# Dex Horthy\n\n> Creator of the open-source Research, Plan, Implement (RPI) framework and co-founder of [[HumanLayer]].\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[HumanLayer Launch Announcement (2026-06-19)]] as the sender of the HumanLayer launch newsletter\n\n## Related\n\n- [[HumanLayer]] \u2014 company founded\n- [[humanlayer-launch-2026-06-19]] \u2014 launch announcement\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-19** | Mentioned in HumanLayer Launch Announcement as founder. [Source: gmail://msg_19edfd1054c17600]",
+      "tags": [
+        "coding-agents",
+        "open-source"
+      ],
+      "links_out": [
+        {
+          "to": "companies/humanlayer",
+          "type": "wikilink",
+          "text": "HumanLayer"
+        },
+        {
+          "to": "HumanLayer Launch Announcement (2026-06-19)",
+          "type": "wikilink",
+          "text": "HumanLayer Launch Announcement (2026-06-19)"
+        },
+        {
+          "to": "humanlayer-launch-2026-06-19",
+          "type": "wikilink",
+          "text": "humanlayer-launch-2026-06-19"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "companies/humanlayer",
+          "type": "wikilink",
+          "text": "Dex Horthy"
+        },
+        {
+          "from": "humanlayer-launch-2026-06-19",
+          "type": "wikilink",
+          "text": "Dex Horthy"
+        },
+        {
+          "from": "humanlayer-launch-announcement-2026-06-19",
+          "type": "wikilink",
+          "text": "Dex Horthy"
+        },
+        {
+          "from": "newsletters/humanlayer-launch-2026-06-19",
+          "type": "wikilink",
+          "text": "Dex Horthy"
+        },
+        {
+          "from": "people/kyle",
+          "type": "wikilink",
+          "text": "Dex Horthy"
+        }
+      ],
+      "outbound_count": 3,
+      "inbound_count": 5
+    },
+    {
       "slug": "people/dexter-horthy",
       "title": "Dexter Horthy",
       "type": "person",
@@ -2644,18 +2781,13 @@
       ],
       "backlinks": [
         {
-          "from": "companies/humanlayer",
-          "type": "wikilink",
-          "text": "Dexter Horthy"
-        },
-        {
           "from": "concepts/humanlayer-launch-newsletter",
           "type": "wikilink",
           "text": "Dexter Horthy"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 2
+      "inbound_count": 1
     },
     {
       "slug": "people/jake-van-cleef",
@@ -2678,6 +2810,48 @@
       ],
       "outbound_count": 0,
       "inbound_count": 1
+    },
+    {
+      "slug": "people/kyle",
+      "title": "Kyle",
+      "type": "person",
+      "updated": "",
+      "body": "# Kyle\n\n> Co-founder of [[HumanLayer]], building the open-source Research, Plan, Implement (RPI) framework alongside [[Dex Horthy]].\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[newsletters/humanlayer-launch-2026-06-19]] as co-founder of HumanLayer. [Source: HumanLayer launch newsletter, gmail://msg_19edfd1054c17600, 2026-06-19]\n\n## Related\n\n- [[HumanLayer]] \u2014 company co-founded\n- [[Dex Horthy]] \u2014 co-founder\n- [[newsletters/humanlayer-launch-2026-06-19]] \u2014 launch announcement\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-19** | Mentioned in HumanLayer launch announcement as co-founder. [Source: gmail://msg_19edfd1054c17600]",
+      "tags": [
+        "coding-agents",
+        "humanlayer"
+      ],
+      "links_out": [
+        {
+          "to": "companies/humanlayer",
+          "type": "wikilink",
+          "text": "HumanLayer"
+        },
+        {
+          "to": "people/dex-horthy",
+          "type": "wikilink",
+          "text": "Dex Horthy"
+        },
+        {
+          "to": "newsletters/humanlayer-launch-2026-06-19",
+          "type": "wikilink",
+          "text": "newsletters/humanlayer-launch-2026-06-19"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "humanlayer-launch-announcement-2026-06-19",
+          "type": "wikilink",
+          "text": "Kyle"
+        },
+        {
+          "from": "newsletters/humanlayer-launch-2026-06-19",
+          "type": "wikilink",
+          "text": "Kyle"
+        }
+      ],
+      "outbound_count": 3,
+      "inbound_count": 2
     },
     {
       "slug": "people/nabil-jalil",
@@ -3213,12 +3387,12 @@
     },
     {
       "source": "companies/humanlayer",
-      "target": "concepts/humanlayer-launch-newsletter",
+      "target": "people/dex-horthy",
       "type": "wikilink"
     },
     {
       "source": "companies/humanlayer",
-      "target": "people/dexter-horthy",
+      "target": "humanlayer-launch-2026-06-19",
       "type": "wikilink"
     },
     {
@@ -3374,6 +3548,11 @@
     {
       "source": "concepts/humanlayer-launch-newsletter",
       "target": "people/dexter-horthy",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/humanlayer-launch-newsletter",
+      "target": "companies/humanlayer",
       "type": "wikilink"
     },
     {
@@ -3742,6 +3921,26 @@
       "type": "wikilink"
     },
     {
+      "source": "humanlayer-launch-2026-06-19",
+      "target": "people/dex-horthy",
+      "type": "wikilink"
+    },
+    {
+      "source": "humanlayer-launch-announcement-2026-06-19",
+      "target": "companies/humanlayer",
+      "type": "wikilink"
+    },
+    {
+      "source": "humanlayer-launch-announcement-2026-06-19",
+      "target": "people/dex-horthy",
+      "type": "wikilink"
+    },
+    {
+      "source": "humanlayer-launch-announcement-2026-06-19",
+      "target": "people/kyle",
+      "type": "wikilink"
+    },
+    {
       "source": "meetings/2026-06-05-tj-vandermolen",
       "target": "people/tj-vandermolen",
       "type": "link"
@@ -3812,6 +4011,16 @@
       "type": "wikilink"
     },
     {
+      "source": "newsletters/humanlayer-launch-2026-06-19",
+      "target": "people/dex-horthy",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/humanlayer-launch-2026-06-19",
+      "target": "people/kyle",
+      "type": "wikilink"
+    },
+    {
       "source": "newsletters/maloha-coast-navigator-test-edition-2026-06-15",
       "target": "concepts/claude-code-10x-skill-newsletter",
       "type": "wikilink"
@@ -3842,6 +4051,16 @@
       "type": "wikilink"
     },
     {
+      "source": "people/kyle",
+      "target": "companies/humanlayer",
+      "type": "wikilink"
+    },
+    {
+      "source": "people/kyle",
+      "target": "people/dex-horthy",
+      "type": "wikilink"
+    },
+    {
       "source": "people/yassif-n-m",
       "target": "companies/dynamics-orchard-farm-sdn-bhd",
       "type": "wikilink"
@@ -3863,8 +4082,10 @@
       "people/bjarte",
       "people/bob-proctor",
       "people/carson",
+      "people/dex-horthy",
       "people/dexter-horthy",
       "people/jake-van-cleef",
+      "people/kyle",
       "people/nabil-jalil",
       "people/nate-herk",
       "people/neo-kim",
