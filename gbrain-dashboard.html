@@ -479,7 +479,8 @@
   .mobile-nav { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--surface); border-top: 1px solid var(--border); z-index: 90; padding: 4px 0 env(safe-area-inset-bottom, 8px); }
   .mobile-nav-inner { display: flex; justify-content: space-around; align-items: center; max-width: 500px; margin: 0 auto; }
   .mobile-nav-btn { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; padding: 6px 10px; min-width: 56px; min-height: 48px; border: none; background: none; color: var(--text-muted); font-size: 0.55rem; font-weight: 500; font-family: 'Inter', sans-serif; cursor: pointer; transition: color 0.15s; border-radius: 8px; -webkit-tap-highlight-color: transparent; }
-  .mobile-nav-btn .nav-icon { font-size: 1.2rem; line-height: 1; }
+  .mobile-nav-btn .nav-icon { width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; }
+  .mobile-nav-btn .nav-icon svg { display: block; width: 100%; height: 100%; }
   .mobile-nav-btn.active { color: var(--primary); }
   .mobile-nav-btn:active { background: rgba(122,162,247,0.08); }
 
@@ -515,6 +516,25 @@
   .float-btns { position: fixed; bottom: 24px; left: 24px; z-index: 50; display: flex; flex-direction: column; gap: 8px; }
   .float-btn { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--border); background: var(--surface); color: var(--text-muted); font-size: 0.9rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.15s; }
   .float-btn:hover { border-color: var(--text-muted); color: var(--text); }
+
+  /* ─── Left Sidebar (Desktop) ─── */
+  .app-shell { display: flex; min-height: 100vh; }
+  .sidebar { width: 64px; flex-shrink: 0; background: var(--surface); border-right: 1px solid var(--border); display: flex; flex-direction: column; align-items: center; padding: 20px 0; position: fixed; top: 0; left: 0; bottom: 0; z-index: 80; overflow-y: auto; gap: 2px; transition: width 0.2s ease; box-shadow: 2px 0 12px rgba(0,0,0,0.15); }
+  .sidebar:hover { width: 180px; }
+  .sidebar-logo { width: 36px; height: 36px; border-radius: 10px; background: linear-gradient(135deg, var(--primary), var(--primary-light)); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; flex-shrink: 0; }
+  .sidebar-logo svg { width: 20px; height: 20px; color: #1a1b26; }
+  .sidebar-item { width: 100%; display: flex; align-items: center; gap: 12px; padding: 10px 14px; border: none; background: none; color: var(--text-muted); font-size: 0.72rem; font-family: 'Inter', sans-serif; cursor: pointer; transition: all 0.15s; border-left: 2px solid transparent; white-space: nowrap; overflow: hidden; }
+  .sidebar-item:hover { color: var(--text); background: rgba(122,162,247,0.06); }
+  .sidebar-item.active { color: var(--primary); background: rgba(122,162,247,0.1); border-left-color: var(--primary); }
+  .sidebar-item .s-icon { width: 20px; height: 20px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+  .sidebar-item .s-icon svg { width: 16px; height: 16px; }
+  .sidebar-item .s-label { opacity: 0; transition: opacity 0.15s; }
+  .sidebar:hover .sidebar-item .s-label { opacity: 1; }
+  .sidebar-spacer { flex: 1; }
+  .sidebar-item.write-btn { margin-top: 8px; color: var(--primary) !important; font-weight: 600; }
+  .sidebar-item.write-btn:hover { background: rgba(122,162,247,0.15); }
+  @media (max-width: 768px) { .sidebar { display: none; } .app-shell { margin-left: 0; } }
+  @media (min-width: 769px) { .app-shell { margin-left: 64px; } }
 
   /* ─── Settings ─── */
   .settings-popover { position: fixed; bottom: 120px; left: 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; width: 220px; box-shadow: 0 12px 32px rgba(0,0,0,0.4); z-index: 60; display: none; animation: modalIn 0.15s ease; }
@@ -799,6 +819,22 @@
 </style>
 </head>
 <body>
+<div class="app-shell">
+
+<!-- Left Sidebar (Desktop) -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-logo"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" stroke="currentColor" fill="none" stroke-width="1.5"/><path d="M5 8c0-2 1-3 3-3s3 1 3 3-1 3-3 3-3-1-3-3z" stroke="currentColor" fill="none"/></svg></div>
+  <button class="sidebar-item active" data-view="today" onclick="showView('today')"><span class="s-icon"><svg viewBox="0 0 16 16"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" fill="none"/><path d="M5 7h6M5 10h6" stroke="currentColor"/></svg></span><span class="s-label">Today</span></button>
+  <button class="sidebar-item" data-view="browse" onclick="showView('browse')"><span class="s-icon"><svg viewBox="0 0 16 16"><rect x="2" y="2" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="9" y="2" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="2" y="9" width="5" height="5" rx="1" stroke="currentColor" fill="none"/><rect x="9" y="9" width="5" height="5" rx="1" stroke="currentColor" fill="none"/></svg></span><span class="s-label">Library</span></button>
+  <button class="sidebar-item" data-view="graph" onclick="showView('graph')"><span class="s-icon"><svg viewBox="0 0 16 16"><circle cx="5" cy="5" r="2" stroke="currentColor" fill="none"/><circle cx="11" cy="4" r="1.5" stroke="currentColor" fill="none"/><circle cx="8" cy="11" r="2.5" stroke="currentColor" fill="none"/><path d="M6 6l2 4M10 5l-1 4" stroke="currentColor"/></svg></span><span class="s-label">Graph</span></button>
+  <button class="sidebar-item" data-view="ask" onclick="showView('ask')"><span class="s-icon"><svg viewBox="0 0 16 16"><path d="M2 2h12v9H6l-4 3V2z" stroke="currentColor" fill="none"/></svg></span><span class="s-label">Ask</span></button>
+  <button class="sidebar-item" data-view="logs" onclick="showView('logs')"><span class="s-icon"><svg viewBox="0 0 16 16"><path d="M3 3h10M3 6.5h10M3 10h7M3 13h5" stroke="currentColor" stroke-linecap="round"/></svg></span><span class="s-label">Activity</span></button>
+  <div class="sidebar-spacer"></div>
+  <button class="sidebar-item write-btn" onclick="openWrite()"><span class="s-icon"><svg viewBox="0 0 16 16"><path d="M3 13h10M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><span class="s-label">Write</span></button>
+  <button class="sidebar-item" onclick="toggleSettings()"><span class="s-icon"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="2.5" stroke="currentColor" fill="none"/><path d="M8 2v1.5M8 12.5v1.5M2 8h1.5M12.5 8h1.5" stroke="currentColor"/></svg></span><span class="s-label">Settings</span></button>
+  <button class="sidebar-item" onclick="openDocs()"><span class="s-icon"><svg viewBox="0 0 16 16" width="16" height="16"><circle cx="8" cy="8" r="7" stroke="currentColor" fill="none" stroke-width="1.3"/><text x="8" y="11.5" text-anchor="middle" font-size="11" font-family="Inter,sans-serif" fill="currentColor" stroke="none">?</text></svg></span><span class="s-label">Help</span></button>
+</aside>
+
 <main>
 <div class="app">
 
@@ -979,7 +1015,7 @@
       <span class="nav-icon"><svg viewBox="0 0 16 16"><path d="M2 2h12v9H6l-4 3V2z" stroke="currentColor" fill="none"/></svg></span> Ask
     </button>
     <button class="mobile-nav-btn" data-view="more" onclick="toggleMoreMenu()">
-      <span class="nav-icon">···</span> More
+      <span class="nav-icon"><svg viewBox="0 0 16 16" width="16" height="16"><circle cx="3" cy="8" r="1.5" fill="currentColor"/><circle cx="8" cy="8" r="1.5" fill="currentColor"/><circle cx="13" cy="8" r="1.5" fill="currentColor"/></svg></span> More
     </button>
   </div>
 </nav>
@@ -1191,6 +1227,11 @@ function showView(name) {
   document.querySelectorAll('#desktopViewTabs .tab').forEach(t => t.classList.remove('active'));
   const dt = document.querySelector('#desktopViewTabs .tab[data-dview="' + name + '"]');
   if (dt) dt.classList.add('active');
+
+  // Update sidebar
+  document.querySelectorAll('.sidebar-item[data-view]').forEach(s => s.classList.remove('active'));
+  const si = document.querySelector('.sidebar-item[data-view="' + name + '"]');
+  if (si) si.classList.add('active');
 
   // Close more menu
   document.getElementById('moreMenu').classList.remove('active');
@@ -3027,5 +3068,6 @@ function stopLogsPoll() {
 
 </script>
 </main>
+</div><!-- /app-shell -->
 </body>
 </html>
