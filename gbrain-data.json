@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-06-20T06:27:29Z",
+  "updated_at": "2026-06-20T06:52:16Z",
   "summary": {
     "score": "83",
     "score_label": "/100",
     "score_breakdown": "score 83/100, embed 35/35, links 25/25, timeline 3/15, orphans 10/15, dead-links 10/10",
-    "page_count": 203,
+    "page_count": 205,
     "embed_coverage": "100% coverage, 0 missing",
-    "graph_coverage": "47.8% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
-    "entity_links": "Coverage 84% \u00b1 5.1%",
+    "graph_coverage": "48.8% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 87% \u00b1 4.7%",
     "concept_count": 93,
     "meeting_count": 6,
     "person_count": 31,
-    "company_count": 20,
+    "company_count": 22,
     "newsletter_count": 42,
     "video_count": 0,
     "article_count": 6,
@@ -19,9 +19,9 @@
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 252,
-    "outbound_count": 325,
-    "inbound_count": 295,
+    "total_links": 259,
+    "outbound_count": 338,
+    "inbound_count": 309,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -362,7 +362,7 @@
       "title": "AI Automation Society",
       "type": "company",
       "updated": "",
-      "body": "# AI Automation Society\n\n> Community and newsletter for AI automation practitioners, publishing insights on practical AI workflows, client acquisition, and industry trends.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [The Skill That 10x'd My Claude Code Projects](concepts/the-skill-that-10xd-my-claude-code-projects) as the publisher of the forwarded newsletter by Nate Herk, covering the Grill Me skill, Carson's automation client win, and Anthropic's IPO filing\n- Hosts AIS Live event (July 11-12, 2026)\n\n## Related\n\n- [Nate Herk](people/nate-herk) \u2014 Creator/Author\n- [Carson](people/carson) \u2014 Community Member\n- [concepts/the-skill-that-10xd-my-claude-code-projects] \u2014 Newsletter source\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-20** | Published newsletter \"Every Level of a Claude Second Brain Explained\" \u2014 covering Claude second brain levels, client pipeline automation by Robert, and Codex reaching 5M users. [Source: gmail://msg_19ee2dfa87f86548]\n- **2026-06-05** | Published newsletter \"The Skill That 10x'd My Claude Code Projects\" covering Claude context skills, first client acquisition stories, and Anthropic IPO news. [Source: Email newsletter]\n- **2026-07-11\u201312** | AIS Live event: two-day practitioner conference on AI automation client work. [Source: Newsletter]",
+      "body": "# AI Automation Society\n\n> Online community/education platform run by Nate Herk, focused on AI automation for businesses. Publishes the AI Automation Society newsletter.\n\n## Related\n\n- [[nate-herk]] \u2014 Founder\n- [[newsletters/claude-second-brain-levels-2026-06-20]] \u2014 Featured in newsletter",
       "tags": [
         "ai-automation",
         "community",
@@ -370,19 +370,14 @@
       ],
       "links_out": [
         {
-          "to": "concepts/the-skill-that-10xd-my-claude-code-projects",
-          "type": "link",
-          "text": "The Skill That 10x'd My Claude Code Projects"
-        },
-        {
           "to": "people/nate-herk",
-          "type": "link",
-          "text": "Nate Herk"
+          "type": "wikilink",
+          "text": "nate-herk"
         },
         {
-          "to": "people/carson",
-          "type": "link",
-          "text": "Carson"
+          "to": "newsletters/claude-second-brain-levels-2026-06-20",
+          "type": "wikilink",
+          "text": "newsletters/claude-second-brain-levels-2026-06-20"
         }
       ],
       "backlinks": [
@@ -397,13 +392,18 @@
           "text": "AI Automation Society"
         },
         {
+          "from": "newsletters/claude-second-brain-levels-2026-06-20",
+          "type": "wikilink",
+          "text": "AI Automation Society"
+        },
+        {
           "from": "people/carson",
           "type": "link",
           "text": "AI Automation Society"
         }
       ],
-      "outbound_count": 3,
-      "inbound_count": 3
+      "outbound_count": 2,
+      "inbound_count": 4
     },
     {
       "slug": "companies/ai-garage-weekly",
@@ -443,7 +443,7 @@
       "title": "Anthropic",
       "type": "company",
       "updated": "",
-      "body": "> Entity stub \u2014 created from inline mention in [[AI Garage Weekly - June 19, 2026]].\n\n> AI safety company behind Claude and the Fable model series.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[AI Garage Weekly - June 19, 2026]] regarding the Fable 5 ban by US government directive\n\n## Related\n\n- [[AI Garage Weekly - June 19, 2026]] \u2014 Fable 5 banned by government directive",
+      "body": "# Anthropic\n\n> AI safety and research company. Creators of Claude and Claude Fable models.\n\n## Related\n\n- [[newsletters/claude-second-brain-levels-2026-06-20]] \u2014 Claude Second Brain article\n- [[newsletters/ai-garage-weekly-2026-06-19]] \u2014 Fable 5 ban news",
       "tags": [
         "ai",
         "claude",
@@ -451,9 +451,14 @@
       ],
       "links_out": [
         {
+          "to": "newsletters/claude-second-brain-levels-2026-06-20",
+          "type": "wikilink",
+          "text": "newsletters/claude-second-brain-levels-2026-06-20"
+        },
+        {
           "to": "newsletters/ai-garage-weekly-2026-06-19",
           "type": "wikilink",
-          "text": "AI Garage Weekly - June 19, 2026"
+          "text": "newsletters/ai-garage-weekly-2026-06-19"
         }
       ],
       "backlinks": [
@@ -473,7 +478,17 @@
           "text": "Anthropic"
         },
         {
+          "from": "newsletters/ai-garage-weekly-2026-06-19",
+          "type": "wikilink",
+          "text": "Anthropic"
+        },
+        {
           "from": "newsletters/ai-garage-weekly-2026-06-20",
+          "type": "wikilink",
+          "text": "Anthropic"
+        },
+        {
+          "from": "newsletters/claude-second-brain-levels-2026-06-20",
           "type": "wikilink",
           "text": "Anthropic"
         },
@@ -483,8 +498,8 @@
           "text": "Anthropic"
         }
       ],
-      "outbound_count": 1,
-      "inbound_count": 5
+      "outbound_count": 2,
+      "inbound_count": 7
     },
     {
       "slug": "companies/blackgrid-digital",
@@ -624,6 +639,30 @@
       "inbound_count": 2
     },
     {
+      "slug": "companies/herku",
+      "title": "Herku",
+      "type": "company",
+      "updated": "",
+      "body": "# Herku\n\n> Platform/tool mentioned in the context of Claude second brain setup. Used for organizing markdown files and folders as a knowledge management system.\n\n## Related\n\n- [[newsletters/claude-second-brain-levels-2026-06-20]] \u2014 Featured in newsletter",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "newsletters/claude-second-brain-levels-2026-06-20",
+          "type": "wikilink",
+          "text": "newsletters/claude-second-brain-levels-2026-06-20"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "newsletters/claude-second-brain-levels-2026-06-20",
+          "type": "wikilink",
+          "text": "Herku"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 1
+    },
+    {
       "slug": "companies/humanlayer",
       "title": "HumanLayer",
       "type": "company",
@@ -758,15 +797,27 @@
       "title": "Instantly",
       "type": "company",
       "updated": "",
-      "body": "# Instantly\n\n> Cold email outreach platform for sales campaigns.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [newsletters/claude-second-brain-levels-2026-06-20] as the tool Robert used to upload leads into ready-to-run campaigns\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-20** | Mentioned in \"Every Level of a Claude Second Brain Explained\" (AI Automation Society newsletter). Robert automated a client's lead-to-campaign pipeline using Instantly. [Source: gmail://msg_19ee2dfa87f86548]",
+      "body": "# Instantly\n\n> Email campaign platform used for automated outbound lead follow-up. Integrates with spreadsheet-to-campaign pipelines.\n\n## Related\n\n- [[newsletters/claude-second-brain-levels-2026-06-20]] \u2014 Featured in newsletter",
       "tags": [
         "automation",
         "email"
       ],
-      "links_out": [],
-      "backlinks": [],
-      "outbound_count": 0,
-      "inbound_count": 0
+      "links_out": [
+        {
+          "to": "newsletters/claude-second-brain-levels-2026-06-20",
+          "type": "wikilink",
+          "text": "newsletters/claude-second-brain-levels-2026-06-20"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "newsletters/claude-second-brain-levels-2026-06-20",
+          "type": "wikilink",
+          "text": "Instantly"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 1
     },
     {
       "slug": "companies/js-mastery",
@@ -897,10 +948,20 @@
           "from": "digests/2026-06-15-business-brain-digest",
           "type": "wikilink",
           "text": "OpenAI"
+        },
+        {
+          "from": "newsletters/ai-garage-weekly-2026-06-19",
+          "type": "wikilink",
+          "text": "OpenAI"
+        },
+        {
+          "from": "newsletters/claude-second-brain-levels-2026-06-20",
+          "type": "wikilink",
+          "text": "OpenAI"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 2
+      "inbound_count": 4
     },
     {
       "slug": "companies/openrouter",
@@ -1134,6 +1195,30 @@
           "from": "newsletters/nerdqaxe-revision-7-launch",
           "type": "wikilink",
           "text": "Solo Satoshi"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 1
+    },
+    {
+      "slug": "companies/stripe",
+      "title": "Stripe",
+      "type": "company",
+      "updated": "",
+      "body": "# Stripe\n\n> Payment processing platform. Mentioned in context of potential premium wiki payment integration for Agent Wikis.\n\n## Related\n\n- [[newsletters/ai-garage-weekly-2026-06-19]] \u2014 Payment integration consideration",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "newsletters/ai-garage-weekly-2026-06-19",
+          "type": "wikilink",
+          "text": "newsletters/ai-garage-weekly-2026-06-19"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "newsletters/ai-garage-weekly-2026-06-19",
+          "type": "wikilink",
+          "text": "Stripe"
         }
       ],
       "outbound_count": 1,
@@ -2109,13 +2194,18 @@
       ],
       "backlinks": [
         {
+          "from": "newsletters/ai-garage-weekly-2026-06-19",
+          "type": "wikilink",
+          "text": "Hermes Agent"
+        },
+        {
           "from": "newsletters/ai-garage-weekly-2026-06-20",
           "type": "wikilink",
           "text": "Hermes Agent"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "concepts/hermes-profile-backup",
@@ -4125,9 +4215,35 @@
       "title": "AI Garage Weekly - June 19, 2026",
       "type": "newsletter",
       "updated": "",
-      "body": "# AI Garage Weekly - June 19, 2026\n\n**Source:** email\n**Source URI:** gmail://msg_19ee2c24d5819622\n**Ingested:** 2026-06-20T05:44:15Z\n**Provenance:** Forwarded by sayf on 2026-06-20, originally from AI Garage Weekly (Beehiiv)\n\n## Summary\n\nTopics: Hermes Agent in Excel integration, Claude Fable 5 ban, GLM-5.2 release, Dr-DCI research paper.\n\n### Video of the Week: Hermes Agent in Excel\nThe author built a custom integration putting Hermes Agent inside Excel as a chat window with custom functions. First attempt used a complicated technique; found a simpler method after research. Enables a chat window right in Excel plus custom functions powered by Hermes. Open source on GitHub.\n\n### AI News & Model Releases\n- **Claude Fable 5 banned** \u2014 Anthropic removed Fable 5 access due to a US government directive. The author sees this as part of a broader trend of government control over powerful AI models.\n- **GLM-5.2 released** \u2014 Open weights model, impressive performance. Slightly behind Opus 4.8/GPT5.5 (one generation behind). Demonstrates that open-source frontier-level models are coming sooner than expected, though hardware requirements remain high.\n\n### Research & Experiments\n- **Dr-DCI: Scaling Direct Corpus Interaction via Dynamic Workspace Expansion** (arXiv:2606.14885) \u2014 An agent retrieval/workspace pattern that could go beyond RAG. Describes how agents collect and process information from large corpora, potentially applicable to Agent Wikis.",
-      "tags": [],
-      "links_out": [],
+      "body": "# AI Garage Weekly - June 19, 2026\n\n**Source:** email\n**Source URI:** gmail://msg_19ee2c24d5819622\n**Ingested:** 2026-06-20T06:30:00Z\n**Provenance:** Forwarded by sayf on 2026-06-20. Original from Tonbi's AI Garage Weekly (Beehiiv).\n\n**Original publication:** AI Garage Weekly, June 19, 2026\n**Original author:** Tonbi\n**Original recipient:** sayfcodes@gmail.com\n\nExcel, Fable Ban, GLM-5.2, and DR-DCI\n\n## Overview\n\nBetween the Fable ban and the GLM-5.2 release, it was a big week for the local LLM community. The Fable ban showed why local AI is so important; GLM-5.2 showed that open weights models can approach the top closed frontier models.\n\n## Video of the Week: [[Hermes Agent]] in Excel\n\nTonbi's wife was talking about using Claude in Excel for her work, which inspired him to research integrating [[Hermes Agent]] into Excel. After a complicated first attempt, his agent suggested a simpler method. The end result: a chat window right in Excel plus the ability to create custom functions with Hermes. He got nice comments but it didn't go super viral.\n\nLink: GitHub repo for the integration.\n\n## AI News & Model Releases\n\n### Claude Fable 5 Banned\n[[Anthropic]] removed Fable 5 access due to a new directive from the US government. Tonbi believes this was the direction we were headed anyway \u2014 the government isn't going to let private companies and individuals have that level of AI power. Highlights the need for local and decentralized AI.\n\n### GLM-5.2 Released\nOpen weights model that feels only slightly behind Opus 4.8/GPT-5.5 \u2014 maybe one generation behind. An incredible feat for open source. Most people won't be able to run it locally without serious hardware, but it shows what's possible.\n\n## Research & Experiments\n\n### DR-DCI: Scaling Direct Corpus Interaction via Dynamic Workspace Expansion\nPaper: arxiv.org/abs/2606.14885\n\nDescribes an agent retrieval/workspace pattern. With normal RAG, the agent asks a retriever, gets snippets, and answers. With DCI, the agent gets direct shell/file access to the corpus. Problem: breaks when corpus is huge. DR-DCI hides the huge corpus behind a retriever but lets the agent call pull(query, topK) to bring relevant documents into a local workspace, then use normal file tools on that smaller workspace. Increased accuracy and significantly improved wall time and costs.\n\n**Relevance to Agent Wikis:** Tonbi experimented with RAG over wikis and found it one of the best methods, but some wikis are quite large. Having a smaller workspace to pull relevant chunks could be useful.\n\n## Random Brainstorming & Project Progress: Agent Wikis\n\nAgent Wikis had a successful release \u2014 nearly 10k visitors on the first day (humans and agents), 5k-7k since then. Tonbi has been refining the pipeline to make it as autonomous as possible. Created a loop so missed topics get researched and added autonomously.\n\nExploring ways to allow agents to maintain and enhance the product. Considering premium wikis with [[Stripe]] integration, and potentially small ads where the agent develops the ad material, releases ads, analyzes results, and hones ads based on that.\n\n## People & Companies Mentioned\n\n- **Tonbi** \u2014 Creator of AI Garage Weekly, Agent Wikis, YouTube channel\n- **[[Anthropic]]** \u2014 Claude Fable 5\n- **[[OpenAI]]** \u2014 GPT-5.5\n- **GLM / Zhipu AI** \u2014 GLM-5.2 model\n- **[[Hermes Agent]]** \u2014 Nous Research\n- **[[Stripe]]** \u2014 Potential payment integration",
+      "tags": [
+        "ai-garage",
+        "local-llm",
+        "newsletter",
+        "tonbi"
+      ],
+      "links_out": [
+        {
+          "to": "concepts/hermes-agent",
+          "type": "wikilink",
+          "text": "Hermes Agent"
+        },
+        {
+          "to": "companies/anthropic",
+          "type": "wikilink",
+          "text": "Anthropic"
+        },
+        {
+          "to": "companies/stripe",
+          "type": "wikilink",
+          "text": "Stripe"
+        },
+        {
+          "to": "companies/openai",
+          "type": "wikilink",
+          "text": "OpenAI"
+        }
+      ],
       "backlinks": [
         {
           "from": "companies/ai-garage-weekly",
@@ -4137,12 +4253,17 @@
         {
           "from": "companies/anthropic",
           "type": "wikilink",
-          "text": "AI Garage Weekly - June 19, 2026"
+          "text": "newsletters/ai-garage-weekly-2026-06-19"
         },
         {
           "from": "companies/openai",
           "type": "wikilink",
           "text": "AI Garage Weekly - June 19, 2026"
+        },
+        {
+          "from": "companies/stripe",
+          "type": "wikilink",
+          "text": "newsletters/ai-garage-weekly-2026-06-19"
         },
         {
           "from": "companies/zhipu-ai",
@@ -4170,8 +4291,8 @@
           "text": "AI Garage Weekly - June 19, 2026"
         }
       ],
-      "outbound_count": 0,
-      "inbound_count": 8
+      "outbound_count": 4,
+      "inbound_count": 9
     },
     {
       "slug": "newsletters/ai-garage-weekly-2026-06-20",
@@ -4262,10 +4383,67 @@
       "title": "Every Level of a Claude Second Brain Explained",
       "type": "newsletter",
       "updated": "",
-      "body": "# Every Level of a Claude Second Brain Explained (AI Automation Society)\n\n**Source:** email\n**Source URI:** gmail://msg_19ee2dfa87f86548\n**Ingested:** 2026-06-20T05:44:15Z\n**Provenance:** Forwarded by sayf on 2026-06-20, originally from Nate Herk (AI Automation Society)\n\n## Summary\n\nNewsletter from AI Automation Society (Nate Herk) covering: five levels of building a Claude second brain, a client automation case study, and Codex hitting 5M weekly users.\n\n### Five Levels of a Claude Second Brain\n\n1. **Level 1:** Basic file search by exact word match.\n2. **Level 2:** Finding by meaning (semantic search).\n3. **Level 3:** Organized by business relationships and client data.\n4. **Level 4:** Cross-referencing IP and institutional knowledge.\n5. **Level 5:** Fully autonomous recall \u2014 the system knows your business, client relationships, and IP better than you.\n\nThe insight: Start from the end. Before organizing a single file, ask how you'll access this data later. The shape of the basketball determines the size of the hoop. Jon's setup uses a Herku project (just markdown files and folders).\n\n### Client Automation Win \u2014 Robert\n\nRobert automated a client's outbound email pipeline. The client's call center got daily lead lists as Excel files. Robert built an automation that extracts email/address/name data from inbox attachments, normalizes it, and uploads every contact directly into Instantly as ready-to-run campaigns. No manual cleanup needed.\n\n### In the News \u2014 Codex at 5M Weekly Users\n\nOpenAI Codex crossed 5M weekly active users. Two new features:\n- **Banked rate limit resets** (permanent): Save resets and use them when needed instead of losing them on a fixed timer.\n- **Referral bonus** (through June 24): Plus/Pro users can invite up to 3 friends. Both parties get a bonus reset when a friend sends their first message.\n\n## Key Takeaways\n\n- Your moat is your data. Organize it so agents can use it, not just find it.\n- The difference between levels isn't the tool \u2014 it's how the data is organized.\n- Client pipeline automation (Excel \u2192 Instantly) is a concrete, high-value service offering for call centers.",
-      "tags": [],
-      "links_out": [],
+      "body": "# Every Level of a Claude Second Brain Explained\n\n**Source:** email\n**Source URI:** gmail://msg_19ee2dfa87f86548\n**Ingested:** 2026-06-20T06:30:00Z\n**Provenance:** Forwarded by sayf on 2026-06-20. Original from [[Nate Herk]] ([[AI Automation Society]]).\n\n**Original publication:** [[AI Automation Society]] newsletter, June 19, 2026\n**Original author:** [[Nate Herk]]\n**Original recipient:** sayfti@gmail.com\n\nA Claude second brain breakdown, a client pipeline automated, and Codex hits 5M users with a free bonus through June 24.\n\n## In This Issue\n\n- Five levels of building a Claude second brain, from basic file search to fully autonomous recall.\n- Robert automated a client's outbound email pipeline and got their call center actually following up.\n- [[OpenAI]]'s Codex just crossed 5 million weekly users, with a free bonus through June 24.\n\n## New Video: Every Level of a Claude Second Brain Explained\n\nThere are five distinct levels to building a Claude second brain, and most people are stuck at level one.\n\n- **Level one:** Finding a file by searching an exact word.\n- **Level five:** A fully autonomous system that knows your business, your client relationships, and your IP better than you do.\n\nThe difference isn't the tool \u2014 it's how the data is organized.\n\n**Key insight:** Start from the end. Before you organize a single file, ask how you'll access this data later. The shape of the basketball determines the size of the hoop. Jon shows his actual setup (a [[Herku]] project, just markdown files and folders) and walks through what separates each level, including semantic search (finding by meaning, not exact match) and full relationship mapping.\n\n## Student Win: Robert's Call Center Pipeline\n\nRobert automated a client's outbound email pipeline from scratch. The client's call center was calling leads but nothing was following up by email. Sales managers emailed Robert their daily lead lists as Excel files. He built an automation that: when the file lands in his inbox, it extracts email, address, and name data, normalizes it, and uploads every contact directly into [[Instantly]] as a ready-to-run campaign. No manual cleanup. No copy-paste.\n\n**Opportunity:** Businesses running call centers almost always have messy lead data and no email follow-up. An automation that converts a spreadsheet into a live campaign solves a problem they didn't know anyone could fix.\n\n## In the News: Codex at 5M Weekly Users\n\n[[OpenAI]] Codex crossed 5 million weekly active users. Two new features:\n1. **Permanent:** Banked rate limit resets \u2014 save resets and use them when you actually need them instead of a fixed timer.\n2. **Through June 24:** Plus and Pro users can invite up to three friends. When a friend sends their first Codex message, both get a bonus reset.\n\n**Relevance:** The banked reset system fixes the problem of hitting rate limits mid-build. Codex growing through referral mechanics at 5M weekly users signals a tool people are actively building with and recommending.\n\n## People & Companies Mentioned\n\n- **[[Nate Herk]]** \u2014 [[AI Automation Society]], newsletter author\n- **Jon** \u2014 Creator who demonstrated his Claude second brain setup ([[Herku]] project)\n- **Robert** \u2014 [[AI Automation Society]] Plus member who built the call center pipeline\n- **[[AI Automation Society]]** \u2014 Newsletter publisher\n- **[[OpenAI]]** \u2014 Codex\n- **[[Anthropic]]** \u2014 Claude\n- **[[Herku]]** \u2014 Project/platform for second brain setup\n- **[[Instantly]]** \u2014 Email campaign platform",
+      "tags": [
+        "ai-automation-society",
+        "claude",
+        "nate-herk",
+        "newsletter",
+        "second-brain"
+      ],
+      "links_out": [
+        {
+          "to": "people/nate-herk",
+          "type": "wikilink",
+          "text": "Nate Herk"
+        },
+        {
+          "to": "companies/ai-automation-society",
+          "type": "wikilink",
+          "text": "AI Automation Society"
+        },
+        {
+          "to": "companies/openai",
+          "type": "wikilink",
+          "text": "OpenAI"
+        },
+        {
+          "to": "companies/herku",
+          "type": "wikilink",
+          "text": "Herku"
+        },
+        {
+          "to": "companies/instantly",
+          "type": "wikilink",
+          "text": "Instantly"
+        },
+        {
+          "to": "companies/anthropic",
+          "type": "wikilink",
+          "text": "Anthropic"
+        }
+      ],
       "backlinks": [
+        {
+          "from": "companies/ai-automation-society",
+          "type": "wikilink",
+          "text": "newsletters/claude-second-brain-levels-2026-06-20"
+        },
+        {
+          "from": "companies/anthropic",
+          "type": "wikilink",
+          "text": "newsletters/claude-second-brain-levels-2026-06-20"
+        },
+        {
+          "from": "companies/herku",
+          "type": "wikilink",
+          "text": "newsletters/claude-second-brain-levels-2026-06-20"
+        },
+        {
+          "from": "companies/instantly",
+          "type": "wikilink",
+          "text": "newsletters/claude-second-brain-levels-2026-06-20"
+        },
         {
           "from": "people/jon",
           "type": "wikilink",
@@ -4277,8 +4455,8 @@
           "text": "Claude Second Brain Levels 2026 06 20"
         }
       ],
-      "outbound_count": 0,
-      "inbound_count": 2
+      "outbound_count": 6,
+      "inbound_count": 6
     },
     {
       "slug": "newsletters/humanlayer-launch-2026-06-19-sayf",
@@ -5134,11 +5312,6 @@
       ],
       "backlinks": [
         {
-          "from": "companies/ai-automation-society",
-          "type": "link",
-          "text": "Carson"
-        },
-        {
           "from": "concepts/claude-code-10x-skill-newsletter",
           "type": "wikilink",
           "text": "Carson"
@@ -5150,7 +5323,7 @@
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 3
+      "inbound_count": 2
     },
     {
       "slug": "people/dex-horthy",
@@ -5424,8 +5597,8 @@
       "backlinks": [
         {
           "from": "companies/ai-automation-society",
-          "type": "link",
-          "text": "Nate Herk"
+          "type": "wikilink",
+          "text": "nate-herk"
         },
         {
           "from": "concepts/claude-code-10x-skill-newsletter",
@@ -5436,10 +5609,15 @@
           "from": "digests/2026-06-15-business-brain-digest",
           "type": "wikilink",
           "text": "Nate Herk"
+        },
+        {
+          "from": "newsletters/claude-second-brain-levels-2026-06-20",
+          "type": "wikilink",
+          "text": "Nate Herk"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 3
+      "inbound_count": 4
     },
     {
       "slug": "people/neo-kim",
@@ -6151,12 +6329,12 @@
     {
       "source": "companies/ai-automation-society",
       "target": "people/nate-herk",
-      "type": "link"
+      "type": "wikilink"
     },
     {
       "source": "companies/ai-automation-society",
-      "target": "people/carson",
-      "type": "link"
+      "target": "newsletters/claude-second-brain-levels-2026-06-20",
+      "type": "wikilink"
     },
     {
       "source": "companies/ai-garage-weekly",
@@ -6171,6 +6349,11 @@
     {
       "source": "companies/ai-garage-weekly",
       "target": "concepts/agent-wikis",
+      "type": "wikilink"
+    },
+    {
+      "source": "companies/anthropic",
+      "target": "newsletters/claude-second-brain-levels-2026-06-20",
       "type": "wikilink"
     },
     {
@@ -6204,6 +6387,11 @@
       "type": "wikilink"
     },
     {
+      "source": "companies/herku",
+      "target": "newsletters/claude-second-brain-levels-2026-06-20",
+      "type": "wikilink"
+    },
+    {
       "source": "companies/humanlayer",
       "target": "people/dex-horthy",
       "type": "wikilink"
@@ -6216,6 +6404,11 @@
     {
       "source": "companies/inclusive-ai-association",
       "target": "people/zaim-mohzani",
+      "type": "wikilink"
+    },
+    {
+      "source": "companies/instantly",
+      "target": "newsletters/claude-second-brain-levels-2026-06-20",
       "type": "wikilink"
     },
     {
@@ -6256,6 +6449,11 @@
     {
       "source": "companies/posh-corporate",
       "target": "people/audrey-loh",
+      "type": "wikilink"
+    },
+    {
+      "source": "companies/stripe",
+      "target": "newsletters/ai-garage-weekly-2026-06-19",
       "type": "wikilink"
     },
     {
@@ -7139,6 +7337,16 @@
       "type": "wikilink"
     },
     {
+      "source": "newsletters/claude-second-brain-levels-2026-06-20",
+      "target": "people/nate-herk",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/claude-second-brain-levels-2026-06-20",
+      "target": "companies/openai",
+      "type": "wikilink"
+    },
+    {
       "source": "newsletters/humanlayer-launch-2026-06-19-sayf",
       "target": "people/dex-horthy",
       "type": "wikilink"
@@ -7267,6 +7475,11 @@
       "source": "people/aisyah-rahim",
       "target": "people/zaim-mohzani",
       "type": "wikilink"
+    },
+    {
+      "source": "people/carson",
+      "target": "companies/ai-automation-society",
+      "type": "link"
     },
     {
       "source": "people/dexter-horthy",
@@ -7406,6 +7619,7 @@
       "companies/digital-power",
       "companies/dynamics-orchard-farm-sdn-bhd",
       "companies/global-ai-village",
+      "companies/herku",
       "companies/humanlayer",
       "companies/inclusive-ai-association",
       "companies/instantly",
@@ -7417,6 +7631,7 @@
       "companies/passend",
       "companies/posh-corporate",
       "companies/solo-satoshi",
+      "companies/stripe",
       "companies/system-design-one",
       "companies/zhipu-ai"
     ]
@@ -7512,7 +7727,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 201 pages",
+        "message": "Connected, 203 pages",
         "category": "ops"
       },
       {
@@ -7548,7 +7763,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 506ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 450ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -7566,7 +7781,7 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 83%, timeline 63%",
+        "message": "Entity link coverage 85%, timeline 61%",
         "category": "brain"
       },
       {
@@ -7578,13 +7793,13 @@
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 51 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 53 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 201 pages; 32 external link(s) (no bare tweets).",
+        "message": "Sampled 203 pages; 32 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -7745,11 +7960,11 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction current: 2/201 pages (1%) stale",
+        "message": "Extraction current: 0/203 pages (0%) stale",
         "details": {
-          "total": 201,
-          "stale": 2,
-          "pct": 1,
+          "total": 203,
+          "stale": 0,
+          "pct": 0,
           "warn_pct": 20,
           "fail_pct": null,
           "source_id": null
@@ -7789,7 +8004,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "47.8% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "48.8% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -7892,13 +8107,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 84% \u00b1 5.1%",
+        "message": "Coverage 87% \u00b1 4.7%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
         "status": "warn",
-        "message": "Coverage 65% \u00b1 6.7% (target 90%)",
+        "message": "Coverage 62% \u00b1 6.7% (target 90%)",
         "category": "meta"
       },
       {

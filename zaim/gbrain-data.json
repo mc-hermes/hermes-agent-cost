@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-20T06:27:36Z",
+  "updated_at": "2026-06-20T06:52:23Z",
   "summary": {
     "page_count": 19,
     "people_count": 4,
@@ -583,7 +583,7 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-20T06:27:36Z",
+      "ts": "2026-06-20T06:52:23Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
@@ -596,14 +596,6 @@
       "stage": "updated",
       "slug": "concepts/maloha-coast",
       "detail": "Maloha Coast",
-      "level": "info"
-    },
-    {
-      "ts": "2026-06-20T00:00:00Z",
-      "source": "page",
-      "stage": "updated",
-      "slug": "concepts/pipeline-e2e-test-2026-06-20",
-      "detail": "Pipeline End-to-End Test \u2014 Jun 20 2026",
       "level": "info"
     },
     {
