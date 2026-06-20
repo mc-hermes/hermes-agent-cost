@@ -1,32 +1,44 @@
 {
-  "updated_at": "2026-06-20T01:00:27Z",
+  "updated_at": "2026-06-20T01:15:59Z",
   "summary": {
-    "score": "92",
+    "score": "84",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 138,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "54.3% of pages have inbound links",
-    "entity_links": "Coverage \u2014 25 people, 17 companies indexed",
+    "score_breakdown": "score 84/100, embed 35/35, links 25/25, timeline 3/15, orphans 11/15, dead-links 10/10",
+    "page_count": 139,
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "55.9% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 95% \u00b1 3.4%",
     "concept_count": 59,
     "meeting_count": 5,
     "person_count": 25,
     "company_count": 17,
-    "newsletter_count": 26,
+    "newsletter_count": 27,
     "video_count": 0,
     "article_count": 2,
     "bookmark_count": 1,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 194,
-    "outbound_count": 263,
-    "inbound_count": 236,
+    "total_links": 189,
+    "outbound_count": 258,
+    "inbound_count": 231,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 84/100 (embed 35/35, links 25/25, timeline 3/15, orphans 11/15, dead-links 10/10)",
+    "score_components": {
+      "score": "84/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "3/15",
+      "orphans": "11/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 67,
+    "checks_warned": 6,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -301,18 +313,13 @@
       ],
       "backlinks": [
         {
-          "from": "newsletters/30-core-agentic-engineering-concepts-2026-06-20",
-          "type": "wikilink",
-          "text": "Digital Power"
-        },
-        {
           "from": "newsletters/agentic-engineering-concepts-2026-06-20-084511",
           "type": "wikilink",
           "text": "Digital Power"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 2
+      "inbound_count": 1
     },
     {
       "slug": "companies/dynamics-orchard-farm-sdn-bhd",
@@ -907,18 +914,13 @@
           "text": "System Design One"
         },
         {
-          "from": "newsletters/30-core-agentic-engineering-concepts-2026-06-20",
-          "type": "wikilink",
-          "text": "System Design One"
-        },
-        {
           "from": "newsletters/agentic-engineering-concepts-2026-06-20-084511",
           "type": "wikilink",
           "text": "System Design One"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 5
+      "inbound_count": 4
     },
     {
       "slug": "concepts/3-month-career-pivot-framework-2026-06-15",
@@ -1664,11 +1666,6 @@
       ],
       "backlinks": [
         {
-          "from": "newsletters/30-core-agentic-engineering-concepts-2026-06-20",
-          "type": "wikilink",
-          "text": "Paul's Pipeline"
-        },
-        {
           "from": "newsletters/agentic-engineering-concepts-2026-06-20-084511",
           "type": "wikilink",
           "text": "Paul's Pipeline"
@@ -1680,7 +1677,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 3
+      "inbound_count": 2
     },
     {
       "slug": "concepts/rdma",
@@ -2982,37 +2979,11 @@
       "title": "30 Core Agentic Engineering Concepts 2026 06 20",
       "type": "newsletter",
       "updated": "",
-      "body": "# 30 Core Agentic Engineering Concepts, Explained Simply\n\n**Source:** email\n**Source URI:** gmail://msg_19ee2580f5fe7903\n**Ingested:** 2026-06-20T08:48:00Z\n**Provenance:** Forwarded by Sayf Codes on 2026-06-20 from [[System Design One]] (#154)\n**Original Author:** [[Neo Kim]] & [[Paul Hoekstra]]\n**Original Publication:** [[System Design One]] (Substack), Jun 17\n**Original URL:** https://open.substack.com/pub/systemdesignone/p/agentic-engineering\n\n#154: What an agent is, how to configure one, when to use multiple, and how to keep them from doing damage.\n\n---\n\n\ud83d\udc4b Hey, it's Neo\u2026 This is a special free edition of this newsletter. To get every post and other paid subscriber benefits, upgrade your subscription.\n\n---\n\n**30 Core Agentic Engineering Concepts, Explained Simply**\n\n**Guest author:** [[Paul Hoekstra]] \u2014 data engineer at [[Digital Power]], a data and AI consultancy, and writes *[[Paul's Pipeline]]*, a free newsletter on AI, data, and side projects.\n\n---\n\n## Foundations\n\n### 1. What is an agent?\n\nAn agent is an LLM that runs in a loop, has access to tools, and decides what to do next. Instead of a single answer to a prompt, the model produces a chain of actions. Each action builds on the result of the last.\n\nCoding is the most obvious use case so far. The loop fits naturally there \u2014 small building blocks, fast feedback from tests and errors, files the agent can edit directly. The same shape works for research agents, ops automation, customer support, and content workflows.\n\nUse an agent when:\n- Task is open-ended (\"debug this failing test\", not \"format this date\")\n- The next step depends on the result of the last one\n- You cannot script the path in advance\n\nBut skip the agent when a single prompt or a plain script will do. Loops are not free \u2014 every time round costs time and money, and they add up fast.\n\n### 2. Execution model\n\nAn agent loop has a recognizable shape. Three steps, repeated until something says we are done:\n\n1. **Think** \u2014 The model reads the current state and decides what to do next.\n2. **Act** \u2014 The model emits a tool call. The harness receives it, validates it, and runs it.\n3. **Observe** \u2014 The tool result joins the conversation as new context. The next iteration starts with that result in scope.\n\nThis pattern goes by several names: ReAct (from the original paper), Think-act-observe, agent loop. The name changes, but the loop does not.\n\nA single model call must predict the entire path up front. The loop replaces that prediction with feedback \u2014 one step, observe what happened, decide the next based on the actual result rather than a guess. This is why an agent can recover from its own mistakes.\n\nTwo variations sit on top of this basic loop:\n- **Parallelism** \u2014 Modern agents can fire several tool calls inside a single act step. Cuts wall-clock time on read-heavy work but causes conflicts when two parallel calls edit the same thing.\n- **Blocking vs non-blocking** \u2014 Most agents run synchronously. Some run asynchronously with long-running background jobs. Async unlocks fan-out at the cost of more complexity.\n\n### 3. Agent state\n\n\"State\" gets used in two senses:\n\n1. **Workflow progress** \u2014 which step the agent is on and what is left.\n2. **Everything the agent knows at any moment**, which breaks into two halves:\n   - **Context window**: everything the model can see right now (latest message, system prompt, previous tool calls, results). Has a hard ceiling (token cap) and a soft one (context rot). Gone when the session ends.\n   - **Everything outside it**: files on disk, database entries, memory across sessions, knowledge the agent queries but never owns.\n\nWhere should state live? Files are usually the right default \u2014 diffable, versionable, easy for both you and the agent to edit. Memory for facts that survive sessions but don't need git history. Databases for structured queries or shared processes.\n\nMultiple agents make state harder. Two agents reading the same file is fine. Two agents writing to it is the canonical race condition. Git worktrees give each agent its own working copy. Subagents are friendlier \u2014 each starts with a fresh context window, and the parent passes only what it needs.\n\n### 4. Common agent patterns\n\nOnce you have multiple agents, the question is how to compose them:\n\n- **Planner/executor** \u2014 One agent plans, another executes. Keeps each in a context shape that suits it.\n- **Router/specialist** \u2014 A router dispatches to specialists with tighter system prompts and smaller toolsets. Cheaper (most calls hit a smaller model) and easier to reason about.\n- **Map-reduce parallelism** \u2014 Fan out a task across subagents and merge results. Cost bounded by the longest individual subagent.\n\nThese patterns combine in real workflows: a planner spawns a router, the router fans out map-reduce style, and the merged result comes back for review. Every pattern relies on handoffs between agents, carrying a compressed summary so the next agent doesn't start from scratch.\n\n---\n\n## Configuration Layer\n\n### 5. Agent config files\n\nEvery agent starts with a system prompt (the harness builder's baked-in instructions). Agent config files are the layer above \u2014 a project-level Markdown file loaded at the start of every session.\n\nClaude Code calls this CLAUDE.md. Most other tools have settled on AGENTS.md.\n\nA useful config is short and specific: hard limits on function length, the package manager you actually use, a few behavioral rules like \"never commit secrets\" or \"always read a file before editing it.\" Keep it under 100 lines. Treat it like a Makefile \u2014 as code, not documentation.\n\n### 6. Reusable workflow files\n\nIf config files are always on, reusable workflow files are on demand. Still Markdown, but with YAML frontmatter controlling when the agent loads them (Claude Code skills, Cursor rules).\n\nThe SkillsBench benchmark showed Claude Haiku scoring 27.7% with human-curated skills, beating Opus at 22.0% without them \u2014 the cheapest model with good instructions outperformed the flagship without. When researchers let the model write its own skills, the gains disappeared.\n\nRough division: **config files** for always-relevant project rules, **skills** for reusable task-specific procedures, **the live prompt** for what's unique about the current task.\n\n### 7. Workflow frameworks\n\nA framework on top helps for coding agents \u2014 a documented process for planning, TDD, debugging, and code review via a chain of skills, hooks, and slash commands.\n\nNotable options:\n- **Superpowers** \u2014 curated skill library + HARD-GATE directives + anti-rationalization tables\n- **Get Shit Done** \u2014 similar through slash commands, hooks, and meta-prompting\n- **Compound Engineering** \u2014 Plan \u2192 Work \u2192 Review \u2192 Compound phases (last phase captures patterns into a searchable knowledge base)\n\n### 8. Prompt caching\n\nStores the stable prefix of the conversation so the model doesn't pay full price to re-read it every turn. First call writes the prefix into cache at a small premium; later turns re-read at a steep discount. Latency improves too.\n\nCatch: caches expire after inactivity (a few minutes to an hour depending on provider). An active session keeps the cache warm; a long pause forces a rewrite.\n\n### 9. Context rot\n\nModel performance drops as the context window fills up. Even the latest models show this:\n- GPT-5.5: 98.1% on short documents \u2192 74.0% at 1M tokens\n- Claude Opus 4.7: 59.2% at 256K \u2192 32.2% at 1M\n\n---\n\n## Capability Layer\n\n### 10. Live documentation (AI-indexed codebase)\n\nBeyond static READMEs. The agent can query live docs that know your actual codebase \u2014 not what got documented last month.\n\n### 11. AI-native search\n\nSearch designed for LLMs, not humans. Returns chunks of relevant code with context the model can reason over directly. Optimizes for recall over precision.\n\n### 12. Long-term memory (persistent facts that survive sessions)\n\nStructured facts the agent reads on startup and writes during work. Two patterns: user-authored (\"always use ruff\") that the model treats as rules, and agent-authored (\"the build script is run via npm run build\") accumulated over sessions.\n\n### 13. Knowledge you query but never own\n\nInstead of stuffing everything into the context window, the agent queries a database or vector store and gets back a compact result. No training data contamination. The source stays authoritative.\n\n---\n\n## Orchestration Layer\n\n### 14. Git worktrees\n\nEach agent gets its own working copy. Blocking edits in one branch don't block another. Solves the file-collision problem for multi-agent workflows.\n\n### 15. Subagents\n\nThe simplest multi-agent setup: one parent delegates to children. Each child starts with a fresh context and a focused goal. The parent waits and merges. Reduces context rot by keeping each agent's window focused.\n\n### 16. Human in the loop\n\nSimple from the model's perspective \u2014 just wait for a response. Hard from the product perspective: how the human reviews, what gets surfaced, how to handle timeouts.\n\n### 17. Breakout criteria\n\nThe parent-agent should delegate when: the subtask has a clear completion signal, needs different tools/expertise, or would bloat the parent's context. If the instruction to the child is more than a few paragraphs, the split is probably wrong.\n\n### 18. Fan-out patterns\n\nSend the same task to N agents and pick the best result, or take a vote. Expensive but useful for evaluation, creative ideation, or when correctness is critical.\n\n---\n\n## Guardrails Layer\n\n### 19. Sandboxing\n\nRun agent code in a container or VM so it can't touch the host. Docker, Firecracker microVMs, or cloud sandbox APIs.\n\n### 20. Permissions\n\nFine-grained allow/deny rules at the tool level. Claude Code's permission model, for example, lets you restrict shell access, network calls, and file writes.\n\n### 21. Agentic hooks\n\nThe harness fires events before and after each tool call. Hooks intercept and decide: allow, modify, or block. Useful for non-negotiable rules (\"never rm -rf\").\n\n### 22. Commit gates\n\nAutomated checks that run before a change is committed: linter, type checker, test suite, security scan. Block the commit if any fail.\n\n### 23. Rate limiting\n\nToken limits per minute, API call limits per session, cost budgets. Prevents runaway costs from a single bad run.\n\n---\n\n## Observability Layer\n\n### 24. Tracing\n\nFull trace of every tool call: what was called, what it returned, how long it took. Required for debugging any agent failure.\n\n### 25. Logging\n\nStructured logs of the agent's reasoning steps. Not just the calls, but the model's rationale for making them.\n\n### 26. Replay\n\nReconstruct a past run from logs. Step through what the agent saw and did. Critical for debugging that requires seeing the context the model had at each decision point.\n\n### 27. Analytics\n\nAggregate metrics across many runs: success rate, average cost per task, common error modes. Tells you whether your agent system is actually getting better.\n\n### 28. Cost accounting\n\nPer-run cost tracking. Essential for knowing which tasks are worth agentifying and which aren't.\n\n### 29. Feedback loops\n\nUsers can thumbs-up/thumbs-down agent outcomes. The signal feeds back into prompt tuning, tool selection, and config refinement.\n\n### 30. Evaluation benchmarks\n\nAutomated eval suite for agent performance. Run on every config change to catch regressions. Same principle as CI for code, but for agent behavior.\n\n---\n\n## Key Insights\n\n- Learn the ideas behind the tools, not the tools themselves \u2014 the pace of new releases will not slow down\n- The agent loop (think \u2192 act \u2192 observe) replaces one-shot prediction with feedback-based recovery\n- The cheapest model with good instructions (Haiku + skills) outperformed the flagship without them\n- Files are the right default for agent state; memory for cross-session facts; databases for structured queries\n- Real agent workflows combine planner/executor, router/specialist, and map-reduce patterns\n- Keep config files under 100 lines, treat them as code\n- Context rot is real and measurable \u2014 even flagship models lose accuracy at long context lengths",
+      "body": "# 30 Core Agentic Engineering Concepts, Explained Simply\n\n**Source:** System Design Newsletter (Neo Kim & Paul Hoekstra)\n**Published:** Jun 17, 2026\n**Ingested:** 2026-06-20T08:04:29+08:00\n\n#154: What an agent is, how to configure one, when to use multiple, and how to keep them from doing damage.\n\n*Guest author: Paul Hoekstra \u2014 data engineer at Digital Power, data and AI consultancy; writes Paul's Pipeline.*\n\n## Foundations\n\n### 1. What is an agent?\nAn agent is an LLM that runs in a loop, has access to tools, and decides what to do next. Instead of a single answer to a prompt, the model produces a chain of actions, each building on the last.\n\nUse an agent when: task is open-ended, the next step depends on the last, you cannot script the path in advance. Skip the agent when a single prompt or plain script will do.\n\n### 2. Execution model (Think-Act-Observe / ReAct)\nThree steps, repeated: (1) model thinks \u2014 reads current state and decides next action; (2) acts \u2014 emits a tool call, harness validates and runs it; (3) observes \u2014 tool result joins conversation as context. The loop replaces upfront prediction with feedback, allowing the agent to recover from its own mistakes.\n\nTwo variations: parallelism (multiple tool calls in one act step) and blocking vs non-blocking (sync vs async).\n\n### 3. Agent state\nTwo senses: (1) workflow progress \u2014 which step is the agent on; (2) everything the agent knows at any moment. Breaks into: context window (everything the model sees, hard ceiling) and everything outside it (files, DB, memory it fetches on demand). Files are the right default \u2014 diffable, versionable, easy to edit. Subagents get a fresh context window, parent passes only what's needed.\n\n### 4. Common agent patterns\n- **Planner/executor**: one plans, another executes. Keeps each agent in a suitable context shape.\n- **Router/specialist**: router dispatches to specialists with tighter prompts and smaller toolsets. Cheaper, easier to reason about.\n- **Map-reduce parallelism**: fan-out across subagents, merge results. Cost bounded by longest subagent.\n- These combine in real workflows: planner spawns router \u2192 router fans out map-reduce \u2192 merged result comes back.\n\n## Configuration Layer\n\n### 5. Agent config files\nProject-level Markdown loaded at session start (CLAUDE.md, AGENTS.md). The agent reads hard rules before writing code. Useful configs are short and specific: hard limits, actual tooling stack, behavioral rules. Keep under 100 lines.\n\n### 6. Reusable workflow files (skills)\nMarkdown with YAML frontmatter \u2014 name, description, optional globs. Loaded on demand. SkillsBench showed Claude Haiku at 27.7% with human-curated skills beats Opus at 22.0% without them. Model-written skills saw gains disappear \u2014 generic AI-generated boilerplate makes things worse.\n\n### 7. Workflow frameworks\nChains of skills, hooks, and slash commands wired into repeatable processes. Examples: Superpowers, Get Shit Done, Compound Engineering. Shared thread: understand what you're building, tell it how to work, check the result.\n\n### 8. Prompt caching\nStores the stable prefix so the model doesn't re-read it every turn. First call pays a small premium to write the cache; later turns read at a discount. Cache TTL ranges from minutes to an hour depending on provider. Without caching you'd think carefully about config file size; with it, the cost is a rounding error.\n\n### 9. Context rot\nModel performance drops as context fills up. GPT-5.5: 98.1% on short documents \u2192 74.0% at 1M tokens. Claude Opus 4.7: 59.2% at 256K \u2192 32.2% at 1M. The model has to look past each token to focus on what matters.\n\n## Key Insights\n- Learn the ideas behind the tools, not the tools themselves \u2014 the pace of change won't slow down.\n- Skills/benchmark data proves that good instructions beat a better model.\n- Context rot is the hard constraint that all agentic workflows must design around.",
       "tags": [],
-      "links_out": [
-        {
-          "to": "companies/system-design-one",
-          "type": "wikilink",
-          "text": "System Design One"
-        },
-        {
-          "to": "people/neo-kim",
-          "type": "wikilink",
-          "text": "Neo Kim"
-        },
-        {
-          "to": "people/paul-hoekstra",
-          "type": "wikilink",
-          "text": "Paul Hoekstra"
-        },
-        {
-          "to": "companies/digital-power",
-          "type": "wikilink",
-          "text": "Digital Power"
-        },
-        {
-          "to": "concepts/pauls-pipeline",
-          "type": "wikilink",
-          "text": "Paul's Pipeline"
-        }
-      ],
+      "links_out": [],
       "backlinks": [],
-      "outbound_count": 5,
+      "outbound_count": 0,
       "inbound_count": 0
     },
     {
@@ -3303,6 +3274,18 @@
       ],
       "backlinks": [],
       "outbound_count": 1,
+      "inbound_count": 0
+    },
+    {
+      "slug": "newsletters/secret-architecture-behind-ai-data-centers-2026-06-20",
+      "title": "Secret Architecture Behind Ai Data Centers 2026 06 20",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# The Secret Architecture Behind AI Data Centers\n\n**Source:** System Design Newsletter (Neo Kim & Ashish Prajapati)\n**Published:** Jun 19, 2026\n**Ingested:** 2026-06-20T07:35:22+08:00\n\n#155: Why AI breakthroughs are really infrastructure breakthroughs\n\n*Guest author: Ashish Prajapati \u2014 AI infrastructure specialist, technology educator. Training programs have reached 39,000+ learners. Free mentoring initiative \"Become a Solutions Architect (BeSA)\" has helped 23,000+ professionals. NVIDIA-Certified Associate: AI Infrastructure and Operations (NCA-AIIO) bootcamp instructor.*\n\n## Mental Model: AI Data Center as a Factory\n- AI Data Center = Factory\n- Data = Raw material\n- GPUs = Machines on the factory floor\n- Network = Internal transport system\n- Storage = Warehouse holding raw materials\n- Software = Assembly line logic\n- Output = Trained intelligence\n\nRemove any one ingredient, and the entire system stalls.\n\n## First Problem: Physics\n\n### 1. Power\nA single GPU server rack draws 80-120 kW \u2014 roughly equivalent to 40 homes at full load. Limited by how much electricity the facility can physically receive and distribute.\n\n### 2. Cooling\nMore power = more heat. Without removal: hardware fails, performance throttles, systems shut down. Modern data centers use **liquid cooling** \u2014 coolant circulated through cold plates attached directly to GPUs. Enables higher rack densities, lower cooling power consumption, consistent performance.\n\n### 3. Space\nUnlimited chips and power still need racks and floor space. Scaling AI is real estate, energy infrastructure, and thermodynamics combined.\n\nTakeaway: A data center is a power plant combined with a massive, precisely controlled air-conditioning system.\n\n## Compute: Why GPUs Took Over\n- **CPU** = manager (decision-making) \u2014 a few powerful cores, handles complex sequential tasks\n- **GPU** = factory workers (mass production) \u2014 thousands of smaller cores, designed for parallel matrix multiplications\n- **DPU** (Data Processing Unit) = logistics and operations \u2014 handles networking, storage I/O, security so CPU and GPU aren't interrupted\n\n## Hidden Bottleneck: Memory and Storage\nGPUs don't fail because they're slow. They fail because they're hungry \u2014 constantly starved for data.\n\nMemory hierarchy: GPU Memory (HBM \u2014 fastest, tiny, tens of GB) \u2192 CPU RAM (hundreds of GB, slower) \u2192 SSD/NVMe (enormous) \u2192 Network/Object Storage (nearly unlimited, slowest).\n\n**AI performance is determined by how fast data can be fed into the GPU, not by how fast the GPU computes.**\n\nTiered storage: hot (NVMe SSDs for active datasets/checkpoints), warm (parallel file systems like Lustre/GPFS for shared access), cold (object storage like S3 for raw datasets).\n\n## Networking: Hidden Bottleneck\nWhen training large models with thousands of GPUs, they must constantly share what they've learned. Every second a GPU waits for data or synchronization is wasted investment.\n\n- **Leaf-spine architecture**: every server can reach every other server in at most two hops\n- **NVLink**: intra-node fabric, fastest path, direct GPU-to-GPU within a server\n- **InfiniBand/RoCE**: inter-node fabric, \"bullet train\" between servers\n- **Ethernet**: general-purpose, not designed for AI's extreme bandwidth/latency demands\n\n**Amdahl's Law**: parts of the system must wait \u2014 adding more workers eventually stops helping. More GPUs = more computing power but also more communication overhead.\n\nSmarter data movement: RDMA (low-latency direct memory transfers between servers), RDMA kernel bypass, GPUDirect (GPUs read/write to storage/network bypassing CPU), zero-copy pipelines.\n\nGoal: make thousands of GPUs behave like one giant, unified processor.",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
       "inbound_count": 0
     },
     {
@@ -4010,18 +3993,13 @@
           "text": "Neo Kim"
         },
         {
-          "from": "newsletters/30-core-agentic-engineering-concepts-2026-06-20",
-          "type": "wikilink",
-          "text": "Neo Kim"
-        },
-        {
           "from": "newsletters/agentic-engineering-concepts-2026-06-20-084511",
           "type": "wikilink",
           "text": "Neo Kim"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 7
+      "inbound_count": 6
     },
     {
       "slug": "people/nick-milo",
@@ -4074,18 +4052,13 @@
           "text": "paul-hoekstra"
         },
         {
-          "from": "newsletters/30-core-agentic-engineering-concepts-2026-06-20",
-          "type": "wikilink",
-          "text": "Paul Hoekstra"
-        },
-        {
           "from": "newsletters/agentic-engineering-concepts-2026-06-20-084511",
           "type": "wikilink",
           "text": "Paul Hoekstra"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 4
+      "inbound_count": 3
     },
     {
       "slug": "people/sayf-codes",
@@ -5325,31 +5298,6 @@
       "type": "wikilink"
     },
     {
-      "source": "newsletters/30-core-agentic-engineering-concepts-2026-06-20",
-      "target": "companies/system-design-one",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/30-core-agentic-engineering-concepts-2026-06-20",
-      "target": "people/neo-kim",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/30-core-agentic-engineering-concepts-2026-06-20",
-      "target": "people/paul-hoekstra",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/30-core-agentic-engineering-concepts-2026-06-20",
-      "target": "companies/digital-power",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/30-core-agentic-engineering-concepts-2026-06-20",
-      "target": "concepts/pauls-pipeline",
-      "type": "wikilink"
-    },
-    {
       "source": "newsletters/agentic-engineering-concepts-2026-06-20-084511",
       "target": "people/neo-kim",
       "type": "wikilink"
@@ -5566,13 +5514,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 70,
+    "brain_checks_score": 90,
     "category_scores": {
-      "brain": 95,
+      "brain": 90,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -5602,32 +5550,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -5640,9 +5566,9 @@
       {
         "name": "extract_atoms_backlog",
         "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "message": "7 page(s) eligible (below warn threshold; pack does not run extract_atoms)",
         "details": {
-          "backlog": 0,
+          "backlog": 7,
           "pack_declares_phase": false,
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
@@ -5650,8 +5576,8 @@
       },
       {
         "name": "conversation_format_coverage",
-        "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "status": "warn",
+        "message": "1/5 conversation pages (20.0%) match NO built-in pattern. Breakdown: bold-name-no-time=4, _no_match=1. Investigate: gbrain conversation-parser scan <slug> | Enable LLM fallback (opt-in): gbrain config set conversation_parser.llm_fallback_enabled true",
         "category": "brain"
       },
       {
@@ -5675,7 +5601,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 136 pages",
         "category": "ops"
       },
       {
@@ -5711,7 +5637,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 456ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -5729,25 +5655,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 93%, timeline 55%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 84/100 (embed 35/35, links 25/25, timeline 3/15, orphans 11/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 41 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 136 pages; 18 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -5908,7 +5834,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 17/136 pages (13%) stale",
+        "details": {
+          "total": 136,
+          "stale": 17,
+          "pct": 13,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -5920,7 +5854,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -5932,7 +5866,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "98 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -5944,7 +5878,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "55.9% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -6047,13 +5981,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 95% \u00b1 3.4%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 56% \u00b1 7.8% (target 90%)",
         "category": "meta"
       },
       {
@@ -6071,7 +6005,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "9 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
