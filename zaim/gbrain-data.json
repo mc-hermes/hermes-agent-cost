@@ -1,26 +1,40 @@
 {
-  "updated_at": "2026-06-20T14:00:29Z",
+  "updated_at": "2026-06-20T14:46:50Z",
   "summary": {
-    "page_count": 19,
+    "page_count": 20,
     "people_count": 4,
     "company_count": 0,
     "artifact_count": 0,
     "total_links": 8,
     "outbound_count": 22,
-    "inbound_count": 20,
-    "graph_coverage": "26.3% of pages have inbound links",
+    "inbound_count": 19,
+    "graph_coverage": "25.0% of pages have inbound links",
     "concept_count": 11,
     "meeting_count": 3,
     "person_count": 4,
     "newsletter_count": 1,
     "video_count": 0,
-    "article_count": 0,
+    "article_count": 1,
     "bookmark_count": 0,
     "quote_count": 0,
     "dataset_count": 0,
     "digest_count": 0
   },
   "pages": [
+    {
+      "slug": "articles/msg-19ece778ab23e039",
+      "title": "Why your 2026 career goals are already dead",
+      "type": "article",
+      "updated": "",
+      "body": "Sincerely,\n\n*Zaim Mohzani*\n\n---\n\nAnd what to do about it? \n\nIt's June. How's that career goal from January going?\n\nIf you're being honest, probably: forgotten by March, barely remembered\n(and feeling guilty) in June and quietly dropped by...the end of the year.\n\nIt's a timeframe problem, not a discipline problem.\nThe annual goal trap\n\nA year is too long to create urgency and too vague to act on.\n\n\"Get a new job this year\" feels fine in January. There's time. So nothing\nhappens.\n\nBy June, the goal is still technically alive, but you haven't done anything\nthat moves it forward. By December, you're setting the same goal again for\nnext year.\n\nI went through this myself but with weight, not career. In January 2025, I\nset an annual goal: lose 6kg by December. Standard SMART goal. Looked fine\non paper.\n\nThen I came across Brian Moran and Michael Lennington's book \"The 12 Week\nYear,\" which argues most people don't actually operate in years. They\noperate in the last few weeks before a deadline, however long that deadline\nis. So the fix is to shrink the deadline.\n\nBtw, this book is available on Shopee!\n\nI rewrote the goal: lose 6kg in 90 days, by 31 March.\n\nI hit it!!\n\nThe best part was that I never had to set that goal again. The habits I\nbuilt in those 90 days kept running on their own for the rest of the year.\nWhy this works for your career too\n\nThe same applies to a job search, a promotion case or a pivot.\n\n\"Get promoted this year\" doesn't tell you what to do on Monday.\n\n\"By 30 September, I will have had 3 conversations with people in my target\ndepartment, applied to 5 internal roles, and presented one project to\nleadership\" tells you exactly what to do on Monday.\n\nOne of these is a wish. The other is a plan.\n\nI've worked with clients on exactly this. The ones who set a 90-day goal\nlike \"land 3 offers from MNCs by end of Q3\" with weekly actions attached,\nmostly hit it or get close. The ones with \"find a better job this year\"\nmostly don't, because there's no Monday task attached to it.\nHow to set yours\n\nPick ONE career goal for this quarter. Just one.\n\nFollow this format and write down:\n\n   - *My 90-day career goal is...*\n   - *This matters to me because...*\n   - *To complete this, I commit that by 30 September 2026, I will have...*\n   (make this checkable. \"3 offers\" is checkable. \"More clarity\" is not.)\n   - *To make sure I complete it, I'm going to...* (weekly actions, not the\n   outcome)\n\nYour homework this weekend\n\nWrite it down. One goal. One sentence you can check off or not, no grey\narea.\n\nThen build it into your week, not your year.\n------------------------------\n\nP.S. I'm running a free workshop exactly on setting this 90-day goal for Q3\n2026. If you're interested to join, it's happening early next month in\nJune. For more info or to sign up, head over to\nhttps://t.ly/getclearoncareer6\n<https://preview.kit-mail3.com/click/dpheh0hzhmh4/aHR0cHM6Ly90Lmx5L2dldGNsZWFyb25jYXJlZXI2>\n\nUnsubscribe <https://preview.kit-mail3.com/unsubscribe> | Update your\nprofile <https://preview.kit-mail3.com/preferences> | I Write on LinkedIn\nEvery Day - Follow Me For Career, AI and Productivity Insights\n<https://preview.kit-mail3.com/click/dpheh0hzhmh4/aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2luL3phaW1tb2h6YW5pLw==>\n\nNation Building School - NBS Ventures - 202403343346 (003683654-H)",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
     {
       "slug": "concepts/maloha-coast",
       "title": "Maloha Coast",
@@ -347,15 +361,10 @@
           "from": "meetings/sayf-zaim-jun-12-2026",
           "type": "wikilink",
           "text": "people/sayf-codes|Sayf"
-        },
-        {
-          "from": "newsletters/msg-19ee2dfa87f86548",
-          "type": "wikilink",
-          "text": "Sayf Codes"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 4
+      "inbound_count": 3
     },
     {
       "slug": "people/zaim-mohzani",
@@ -588,11 +597,19 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-20T14:00:29Z",
+      "ts": "2026-06-20T14:46:50Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
-      "detail": "Dashboard refreshed \u2014 19 pages, 8 links",
+      "detail": "Dashboard refreshed \u2014 20 pages, 8 links",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-20T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "articles/msg-19ece778ab23e039",
+      "detail": "Why your 2026 career goals are already dead",
       "level": "info"
     }
   ]
