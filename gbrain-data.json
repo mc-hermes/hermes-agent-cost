@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-06-20T22:24:25Z",
+  "updated_at": "2026-06-20T22:37:04Z",
   "summary": {
     "score": "27",
     "score_label": "/100",
     "score_breakdown": "score 27/100, embed 0/35, links 8/25, timeline 2/15, orphans 7/15, dead-links 10/10",
-    "page_count": 247,
+    "page_count": 248,
     "embed_coverage": "No embeddings yet. Run: gbrain embed --stale",
     "graph_coverage": "graph_signals disabled \u2014 coverage not checked",
     "entity_links": "Coverage 69% \u00b1 12.8% (target 70%)",
@@ -15,13 +15,13 @@
     "newsletter_count": 48,
     "video_count": 0,
     "article_count": 9,
-    "bookmark_count": 10,
+    "bookmark_count": 11,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 290,
-    "outbound_count": 364,
-    "inbound_count": 335,
+    "total_links": 291,
+    "outbound_count": 365,
+    "inbound_count": 336,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -384,6 +384,24 @@
       "type": "bookmark",
       "updated": "",
       "body": "# How we turned hermes from an assistant to a chief of staff\n\n**Source:** email\n**Source URI:** gmail://msg_19ee6b8b30fd1a2c\n**Ingested:** 2026-06-21T04:30:00Z\n**Provenance:** Forwarded by sayf on 2026-06-21\n\n## Summary\n\nsayf forwarded a link to an X Article by [[ericosiu]] about using Hermes as a chief of staff \u2014 moving beyond simple assistant workflows.\n\n## Links\n\n- X/Tweet: https://x.com/ericosiu/status/2068370407049011538\n- X Article: https://x.com/i/article/2062257585613389824",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "people/ericosiu",
+          "type": "wikilink",
+          "text": "ericosiu"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
+      "inbound_count": 0
+    },
+    {
+      "slug": "bookmarks/hermes-assistant-to-chief-of-staff",
+      "title": ">-",
+      "type": "bookmark",
+      "updated": "",
+      "body": "# How we turned Hermes from an assistant into our chief of staff (and how you can too)\n\n**Source:** email\n**Source URI:** gmail://msg_19ee6b8b30fd1a2c\n**Ingested:** 2026-06-21T04:30:00Z\n**Provenance:** Self-forward by Sayf Codes on 2026-06-21\n\n## Bookmark\n\nX post by [[ericosiu]] sharing an X article about using Hermes as a chief of staff rather than just an assistant.\n\n**Post URL:** https://x.com/ericosiu/status/2068370407049011538\n**Article URL:** https://x.com/i/article/2062257585613389824\n\n### Preview\n\n> Your Hermes probably answers texts and manages your calendar. That's cool.\n>\n> Mine books sales calls, revives stalled deals, and ships ad creative all while I'm at the gym.\n>\n> Wait Eric \u2014 how's yours doing?\n\n### Context\n\n- **Author:** ericosiu (verified, @ericosiu)\n- **Date:** ~2026-06-20/21\n- **Post stats:** 4,499 views, 16 likes, 2 retweets, 39 bookmarks, 2 replies\n- **Tags:** Hermes, AI agents, chief of staff, automation\n\n### Relevance to Maloha Coast\n\nSayf forwarded this to the Maloha Coast inbox, indicating this is directly relevant \u2014 it's about a real-world use case of transforming an AI assistant (Hermes) into a true chief of staff agent. This is highly applicable to the Maloha Coast agent ecosystem and sayf's work with autonomous agents.",
       "tags": [],
       "links_out": [
         {
@@ -6120,6 +6138,11 @@
           "text": "ericosiu"
         },
         {
+          "from": "bookmarks/hermes-assistant-to-chief-of-staff",
+          "type": "wikilink",
+          "text": "ericosiu"
+        },
+        {
           "from": "people/erik-osiu",
           "type": "wikilink",
           "text": "ericosiu"
@@ -6131,7 +6154,7 @@
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 4
+      "inbound_count": 5
     },
     {
       "slug": "people/erik-osiu",
@@ -7159,6 +7182,11 @@
     },
     {
       "source": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-21",
+      "target": "people/ericosiu",
+      "type": "wikilink"
+    },
+    {
+      "source": "bookmarks/hermes-assistant-to-chief-of-staff",
       "target": "people/ericosiu",
       "type": "wikilink"
     },
@@ -8732,7 +8760,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 44 pages",
         "category": "ops"
       },
       {
@@ -8804,7 +8832,7 @@
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; 8 external link(s) (no bare tweets).",
+        "message": "Sampled 44 pages; 8 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -8965,7 +8993,7 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction lag not applicable (44 pages \u2014 too few to assess)",
         "category": "brain"
       },
       {
@@ -9098,7 +9126,7 @@
       {
         "name": "embed_staleness",
         "status": "warn",
-        "message": "59 stale chunks (small backlog)",
+        "message": "60 stale chunks (small backlog)",
         "category": "meta"
       },
       {
