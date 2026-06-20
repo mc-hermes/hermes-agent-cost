@@ -1,27 +1,27 @@
 {
-  "updated_at": "2026-06-20T08:17:19Z",
+  "updated_at": "2026-06-20T08:30:38Z",
   "summary": {
     "score": "83",
     "score_label": "/100",
     "score_breakdown": "score 83/100, embed 35/35, links 25/25, timeline 3/15, orphans 10/15, dead-links 10/10",
-    "page_count": 212,
+    "page_count": 215,
     "embed_coverage": "100% coverage, 0 missing",
-    "graph_coverage": "49.0% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
-    "entity_links": "Coverage 93% \u00b1 3.6%",
+    "graph_coverage": "47.9% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 91% \u00b1 3.9%",
     "concept_count": 93,
     "meeting_count": 6,
     "person_count": 31,
     "company_count": 23,
-    "newsletter_count": 47,
+    "newsletter_count": 50,
     "video_count": 0,
     "article_count": 6,
     "bookmark_count": 3,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 283,
-    "outbound_count": 370,
-    "inbound_count": 341,
+    "total_links": 280,
+    "outbound_count": 359,
+    "inbound_count": 330,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -404,11 +404,6 @@
           "text": "AI Automation Society"
         },
         {
-          "from": "newsletters/claude-second-brain-levels-2026-06-20",
-          "type": "wikilink",
-          "text": "AI Automation Society"
-        },
-        {
           "from": "newsletters/msg-19ee2dfa87f86548",
           "type": "wikilink",
           "text": "AI Automation Society"
@@ -420,7 +415,7 @@
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 6
+      "inbound_count": 5
     },
     {
       "slug": "companies/ai-garage-weekly",
@@ -511,17 +506,7 @@
           "text": "Anthropic"
         },
         {
-          "from": "newsletters/ai-garage-weekly-2026-06-19",
-          "type": "wikilink",
-          "text": "Anthropic"
-        },
-        {
           "from": "newsletters/ai-garage-weekly-2026-06-20",
-          "type": "wikilink",
-          "text": "Anthropic"
-        },
-        {
-          "from": "newsletters/claude-second-brain-levels-2026-06-20",
           "type": "wikilink",
           "text": "Anthropic"
         },
@@ -532,7 +517,7 @@
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 7
+      "inbound_count": 5
     },
     {
       "slug": "companies/beehiiv",
@@ -719,18 +704,13 @@
       ],
       "backlinks": [
         {
-          "from": "newsletters/claude-second-brain-levels-2026-06-20",
-          "type": "wikilink",
-          "text": "Herku"
-        },
-        {
           "from": "newsletters/msg-19ee2dfa87f86548",
           "type": "wikilink",
           "text": "Herku"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 2
+      "inbound_count": 1
     },
     {
       "slug": "companies/humanlayer",
@@ -881,18 +861,13 @@
       ],
       "backlinks": [
         {
-          "from": "newsletters/claude-second-brain-levels-2026-06-20",
-          "type": "wikilink",
-          "text": "Instantly"
-        },
-        {
           "from": "newsletters/msg-19ee2dfa87f86548",
           "type": "wikilink",
           "text": "Instantly"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 2
+      "inbound_count": 1
     },
     {
       "slug": "companies/js-mastery",
@@ -1025,23 +1000,13 @@
           "text": "OpenAI"
         },
         {
-          "from": "newsletters/ai-garage-weekly-2026-06-19",
-          "type": "wikilink",
-          "text": "OpenAI"
-        },
-        {
-          "from": "newsletters/claude-second-brain-levels-2026-06-20",
-          "type": "wikilink",
-          "text": "OpenAI"
-        },
-        {
           "from": "newsletters/msg-19ee2dfa87f86548",
           "type": "wikilink",
           "text": "OpenAI"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 5
+      "inbound_count": 3
     },
     {
       "slug": "companies/openrouter",
@@ -1304,15 +1269,9 @@
           "text": "newsletters/ai-garage-weekly-2026-06-19"
         }
       ],
-      "backlinks": [
-        {
-          "from": "newsletters/ai-garage-weekly-2026-06-19",
-          "type": "wikilink",
-          "text": "Stripe"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 1,
-      "inbound_count": 1
+      "inbound_count": 0
     },
     {
       "slug": "companies/system-design-one",
@@ -1385,11 +1344,6 @@
           "text": "System Design One"
         },
         {
-          "from": "newsletters/ai-data-center-architecture-2026-06-20",
-          "type": "wikilink",
-          "text": "System Design One"
-        },
-        {
           "from": "newsletters/msg-19ee2580f5fe7903",
           "type": "wikilink",
           "text": "companies/system-design-one|System Design One"
@@ -1406,7 +1360,7 @@
         }
       ],
       "outbound_count": 6,
-      "inbound_count": 9
+      "inbound_count": 8
     },
     {
       "slug": "companies/zhipu-ai",
@@ -2325,18 +2279,13 @@
           "text": "Hermes Agent"
         },
         {
-          "from": "newsletters/ai-garage-weekly-2026-06-19",
-          "type": "wikilink",
-          "text": "Hermes Agent"
-        },
-        {
           "from": "newsletters/ai-garage-weekly-2026-06-20",
           "type": "wikilink",
           "text": "Hermes Agent"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 3
+      "inbound_count": 2
     },
     {
       "slug": "concepts/hermes-profile-backup",
@@ -4222,6 +4171,22 @@
       "inbound_count": 0
     },
     {
+      "slug": "newsletters/30-core-agentic-concepts-2026-06-20",
+      "title": "30 Core Agentic Engineering Concepts, Explained Simply",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# 30 Core Agentic Engineering Concepts, Explained Simply\n\n**Source:** email from Sayf Codes, forwarded from Neo Kim (System Design One / Substack)\n**Source URI:** gmail://msg_19ee2580f5fe7903\n**Ingested:** 2026-06-20T12:30:00Z\n**Provenance:** Forwarded systemdesignone@substack.com \u2192 sayfcodes@gmail.com \u2192 info@malohacoast.com\n\nOriginally from: The System Design Newsletter by Neo Kim\n\n## Summary\n\nA comprehensive breakdown of 30 core concepts in agentic engineering. Covers the evolution of LLMs, agent architecture patterns, memory systems, reasoning techniques, and infrastructure. The article is gated (requires subscription for full access) but the open portions cover the conceptual landscape.\n\n## Key Concepts (From Open Portion)\n\n(Article content gated \u2014 the open portion previewed the following concepts as covered topics:)\n\n### Part 1: Introduction to Agentic Engineering\n- Evolution from LLMs to agents \u2014 agents perceive, reason, and act\n- Framing: agentic engineering > prompt engineering\n\n### Part 2: Agent Architectures\n- ReAct (Reasoning + Acting): interleaving reasoning traces with actions\n- Reflection: agents examining their own outputs for self-correction\n- Tool use: function calling as the bridge between LLMs and external systems\n\n### Part 3: Memory Systems\n- Short-term vs long-term memory in agent architectures\n- RAG and retrieval patterns\n\n### Part 4: Planning & Reasoning\n- Chain-of-thought, tree-of-thought\n- Multi-agent collaboration patterns\n\n### Part 5: Infrastructure & Evaluation\n- Agent evaluation frameworks\n- Production deployment considerations\n\n## Relevance for Maloha Coast\n\n- Every concept maps to Hermes Agent capabilities\n- Directly informs how to structure agent prompts, tool use, and memory\n- Signals what the broader industry considers \"agentic engineering\" best practice",
+      "tags": [
+        "agentic-ai",
+        "neo-kim",
+        "system-design-one"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "newsletters/30-core-agentic-engineering-concepts-2026-06-20",
       "title": "30 Core Agentic Engineering Concepts 2026 06 20",
       "type": "newsletter",
@@ -4328,17 +4293,15 @@
       "title": "The Secret Architecture Behind AI Data Centers",
       "type": "newsletter",
       "updated": "",
-      "body": "# The Secret Architecture Behind AI Data Centers\n\n**Source:** email (sayf forward)\n**Source URI:** gmail://msg_19ee23d6478fc08e\n**Ingested:** 2026-06-20T08:15:00Z\n**Provenance:** Forwarded by sayf on 2026-06-20\n\n**From:** Neo Kim, System Design One (#155)\n**Original Date:** Fri, 19 Jun 2026\n**Forwarded by:** Sayf \u2192 info@malohacoast.com\n\n\ud83d\udc4b Neo here! A free preview of a subscriber-only post on AI infrastructure.\n\n## Core Thesis\n\nThe biggest breakthroughs in AI are not coming from better models \u2014 they're coming from better infrastructure. AI data centers are factories, not server rooms.\n\n## Mental Model: AI Data Center as Factory\n\n| Component | Analogy |\n|-----------|---------|\n| AI Data Center | Factory |\n| Data | Raw material |\n| GPUs | Machines on the factory floor |\n| Network | Internal transport system |\n| Storage | Warehouse |\n| Software | Assembly line logic |\n| Output | Trained intelligence |\n\n## Physical Constraints\n\n1. **Power** \u2014 A single GPU rack draws 80-120 kW (\u224840 homes). Limited by what the facility can physically receive.\n2. **Cooling** \u2014 More power = more heat. Liquid cooling via cold plates attached directly to GPUs is the modern approach.\n3. **Space** \u2014 Scaling AI requires real estate, energy infrastructure, and thermodynamics management.\n\n## Compute Architecture\n\n- **CPU** = Manager (decision-making, few powerful cores)\n- **GPU** = Factory workers (thousands of simpler cores, mass production of matrix multiplications)\n- **DPU** = Logistics (networking, storage I/O, security)\n\n## Memory & Storage Bottleneck\n\nGPUs are constantly starved for data. Memory hierarchy:\n- GPU Memory (HBM) \u2014 blazing fast but tiny (tens of GB)\n- CPU RAM \u2014 hundreds of GB\n- SSD/NVMe \u2014 enormous capacity\n- Object storage \u2014 nearly unlimited but slowest\n\nTiered storage: Hot (NVMe SSDs) \u2192 Warm (Lustre, GPFS) \u2192 Cold (Amazon S3)\n\n## Networking\n\nLeaf-spine architecture: every GPU server reaches every other in \u22642 hops.\n- NVLink = intra-node (private highway within server)\n- InfiniBand/RoCE = inter-node (bullet train between servers)\n- Ethernet = general-purpose (not designed for AI workloads)\n\n**Amdahl's Law:** Adding more GPUs eventually stops helping due to communication overhead.\n\n**Smarter data movement:** RDMA (direct memory-to-memory), GPUDirect (bypass CPU), zero-copy pipelines.\n\n## Key People\n\n- **Neo Kim** \u2014 Author of System Design One\n- **Ashish Prajapati** \u2014 AI infrastructure specialist, co-author of this post\n\n## Related\n\n- [[System Design One]] \u2014 Publication",
-      "tags": [],
-      "links_out": [
-        {
-          "to": "companies/system-design-one",
-          "type": "wikilink",
-          "text": "System Design One"
-        }
+      "body": "# The Secret Architecture Behind AI Data Centers\n\n**Source:** email from Sayf Codes, forwarded from Neo Kim (System Design One / Substack)\n**Source URI:** gmail://msg_19ee23d6478fc08e\n**Ingested:** 2026-06-20T12:30:00Z\n**Provenance:** Forwarded systemdesignone@substack.com \u2192 sayfcodes@gmail.com \u2192 info@malohacoast.com\n\nOriginally from: The System Design Newsletter by Neo Kim. Featuring guest author Ashish Prajapati (AI infrastructure specialist).\n\n## Summary\n\nA deep dive into the physical and architectural reality of AI data centers. Covers why AI infrastructure is as much a physics problem as a software one \u2014 power, cooling, compute, memory hierarchy, and networking at scale.\n\n## Key Ideas\n\n### Mental Model: AI Data Center as a Factory\n- AI Data Center = Factory\n- Data = Raw material\n- GPUs = Machines on the factory floor\n- Network = Internal transport system\n- Storage = Warehouse holding raw materials\n- Software = Assembly line logic\n- Output = Trained intelligence\n\n### Three Physical Constraints\n1. **Power**: Single server rack of GPUs draws 80-120 kW (~40 homes at full load). Limited by what the facility can physically receive and distribute.\n2. **Cooling**: More power = more heat. Liquid cooling is replacing air cooling \u2014 coolant circulated through cold plates attached directly to GPUs/CPUs. Enables higher rack densities, lower cooling power consumption.\n3. **Space**: Unlimited chips + unlimited power still needs racks and floor space. AI scaling is real estate, energy infrastructure, and thermodynamics combined.\n\n### Compute Architecture\n- **CPU** = manager (complex, varied, sequential tasks; coordinates)\n- **GPU** = factory workers (thousands of simple cores for parallel matrix multiplication)\n- **DPU** = logistics (handles networking, storage I/O, security \u2014 frees GPU/CPU)\n\nAI training is repeatedly performing matrix multiplications billions of times \u2014 GPUs are designed for this.\n\n### Memory Hierarchy\n- **GPU Memory (HBM)**: Blazingly fast, tiny (tens of GB) \u2014 GPU's working memory\n- **CPU RAM**: Hundreds of GB, slower than HBM\n- **SSD/NVMe**: Enormous capacity, slower still\n- **Network/Object Storage**: Nearly unlimited, slowest link\n\nThe bottleneck: GPUs don't fail because they're slow \u2014 they fail because they're starved for data. AI performance = how fast data can be fed into the GPU, not how fast the GPU computes.\n\n### Networking at Scale\n- Modern AI clusters use leaf-spine architecture: every GPU server reaches every other in at most 2 hops\n- **NVLink**: fastest path, intra-node GPU communication\n- **InfiniBand/RoCE**: inter-node, \"bullet train\" of the data center\n- **Ethernet**: general-purpose but not designed for AI's extreme demands\n- **Amdahl's Law**: adding more GPUs eventually stops helping because communication overhead grows\n\n### Smarter Data Movement\n- **RDMA**: direct memory-to-memory data transfers between servers\n- **GPUDirect**: GPUs read/write to storage/network directly, bypassing CPU\n- Zero-copy pipelines: data takes shortest path with no redundant copying\n\n### About the Guest Author\n- **Ashish Prajapati**: AI infrastructure specialist and technology educator\n- Training programs reached 39,000+ learners worldwide\n- Runs BeSA (Become a Solutions Architect) mentoring initiative \u2014 helped 23,000+ professionals\n- Offers NCA-AIIO bootcamp (NVIDIA-Certified Associate: AI Infrastructure and Operations)\n\n## Relevance for Maloha Coast\n\n- Understanding AI infrastructure informs deployment decisions for Hermes Agent hosting\n- GPU topology knowledge relevant if running local models\n- Ashish Prajapati's BeSA program may be a useful resource for the team\n- The factory mental model is useful for explaining AI infrastructure to clients",
+      "tags": [
+        "ai-infrastructure",
+        "neo-kim",
+        "system-design-one"
       ],
+      "links_out": [],
       "backlinks": [],
-      "outbound_count": 1,
+      "outbound_count": 0,
       "inbound_count": 0
     },
     {
@@ -4346,35 +4309,16 @@
       "title": "AI Garage Weekly - June 19, 2026",
       "type": "newsletter",
       "updated": "",
-      "body": "# AI Garage Weekly - June 19, 2026\n\n**Source:** email\n**Source URI:** gmail://msg_19ee2c24d5819622\n**Ingested:** 2026-06-20T06:30:00Z\n**Provenance:** Forwarded by sayf on 2026-06-20. Original from Tonbi's AI Garage Weekly (Beehiiv).\n\n**Original publication:** AI Garage Weekly, June 19, 2026\n**Original author:** Tonbi\n**Original recipient:** sayfcodes@gmail.com\n\nExcel, Fable Ban, GLM-5.2, and DR-DCI\n\n## Overview\n\nBetween the Fable ban and the GLM-5.2 release, it was a big week for the local LLM community. The Fable ban showed why local AI is so important; GLM-5.2 showed that open weights models can approach the top closed frontier models.\n\n## Video of the Week: [[Hermes Agent]] in Excel\n\nTonbi's wife was talking about using Claude in Excel for her work, which inspired him to research integrating [[Hermes Agent]] into Excel. After a complicated first attempt, his agent suggested a simpler method. The end result: a chat window right in Excel plus the ability to create custom functions with Hermes. He got nice comments but it didn't go super viral.\n\nLink: GitHub repo for the integration.\n\n## AI News & Model Releases\n\n### Claude Fable 5 Banned\n[[Anthropic]] removed Fable 5 access due to a new directive from the US government. Tonbi believes this was the direction we were headed anyway \u2014 the government isn't going to let private companies and individuals have that level of AI power. Highlights the need for local and decentralized AI.\n\n### GLM-5.2 Released\nOpen weights model that feels only slightly behind Opus 4.8/GPT-5.5 \u2014 maybe one generation behind. An incredible feat for open source. Most people won't be able to run it locally without serious hardware, but it shows what's possible.\n\n## Research & Experiments\n\n### DR-DCI: Scaling Direct Corpus Interaction via Dynamic Workspace Expansion\nPaper: arxiv.org/abs/2606.14885\n\nDescribes an agent retrieval/workspace pattern. With normal RAG, the agent asks a retriever, gets snippets, and answers. With DCI, the agent gets direct shell/file access to the corpus. Problem: breaks when corpus is huge. DR-DCI hides the huge corpus behind a retriever but lets the agent call pull(query, topK) to bring relevant documents into a local workspace, then use normal file tools on that smaller workspace. Increased accuracy and significantly improved wall time and costs.\n\n**Relevance to Agent Wikis:** Tonbi experimented with RAG over wikis and found it one of the best methods, but some wikis are quite large. Having a smaller workspace to pull relevant chunks could be useful.\n\n## Random Brainstorming & Project Progress: Agent Wikis\n\nAgent Wikis had a successful release \u2014 nearly 10k visitors on the first day (humans and agents), 5k-7k since then. Tonbi has been refining the pipeline to make it as autonomous as possible. Created a loop so missed topics get researched and added autonomously.\n\nExploring ways to allow agents to maintain and enhance the product. Considering premium wikis with [[Stripe]] integration, and potentially small ads where the agent develops the ad material, releases ads, analyzes results, and hones ads based on that.\n\n## People & Companies Mentioned\n\n- **Tonbi** \u2014 Creator of AI Garage Weekly, Agent Wikis, YouTube channel\n- **[[Anthropic]]** \u2014 Claude Fable 5\n- **[[OpenAI]]** \u2014 GPT-5.5\n- **GLM / Zhipu AI** \u2014 GLM-5.2 model\n- **[[Hermes Agent]]** \u2014 Nous Research\n- **[[Stripe]]** \u2014 Potential payment integration",
+      "body": "# AI Garage Weekly - June 19, 2026\n\n**Source:** email from Sayf Codes, forwarded from AI Garage Weekly (Beehiiv)\n**Source URI:** gmail://msg_19ee2c24d5819622\n**Ingested:** 2026-06-20T12:30:00Z\n**Provenance:** Forwarded ai-garage-weekly@mail.beehiiv.com \u2192 sayfcodes@gmail.com \u2192 info@malohacoast.com\n\nSubtitle: Excel, Fable Ban, GLM-5.2, and DR-DCI\n\n## Summary\n\nCovers Hermes Agent in Excel integration, the Claude Fable 5 ban by US government, GLM-5.2 open weights release, and a DR-DCI research paper on scaling agent retrieval.\n\n## Key Points\n\n### Video of the Week: Hermes Agent in Excel\n- Author integrated Hermes Agent into Excel \u2014 a chat window inside Excel plus custom functions powered by Hermes\n- First attempt used a complicated technique; second attempt (after asking the agent for an easier way) was much simpler\n- Open source code available on GitHub: https://github.com/... (see link in email)\n- Directly relevant to Maloha Coast as Hermes Agent users\n\n### Claude Fable 5 Banned\n- Anthropic removed Fable 5 access due to a new directive from the US government\n- Many in the community were surprised and disappointed\n- Author's take: these models are so powerful the government won't let private companies/individuals have that power freely\n- Highlights the need for local and decentralized AI\n\n### GLM-5.2 Released\n- New open weights model from the GLM family\n- Author tested: feels only slightly behind Opus 4.8 / GPT-5.5 (about one generation behind)\n- Incredible for an open source model, though most people can't run it locally (needs serious hardware)\n\n### DR-DCI: Scaling Direct Corpus Interaction via Dynamic Workspace Expansion\n- Paper: https://arxiv.org/abs/2606.14885\n- Alternative to standard RAG: agent gets direct shell/file access to a corpus\n- Problem with DCI: breaks when corpus is huge (searching millions of files directly is slow)\n- DR-DCI fix: hide huge corpus behind a retriever; agent calls pull(query, topK) to bring relevant docs into a local workspace; then uses normal file tools\n- Results: increased accuracy, significantly improved wall time and costs\n- Directly applicable to Hermes Agent / gbrain retrieval patterns",
       "tags": [
         "ai-garage",
+        "hermes-agent",
+        "local-ai",
         "local-llm",
         "newsletter",
         "tonbi"
       ],
-      "links_out": [
-        {
-          "to": "concepts/hermes-agent",
-          "type": "wikilink",
-          "text": "Hermes Agent"
-        },
-        {
-          "to": "companies/anthropic",
-          "type": "wikilink",
-          "text": "Anthropic"
-        },
-        {
-          "to": "companies/stripe",
-          "type": "wikilink",
-          "text": "Stripe"
-        },
-        {
-          "to": "companies/openai",
-          "type": "wikilink",
-          "text": "OpenAI"
-        }
-      ],
+      "links_out": [],
       "backlinks": [
         {
           "from": "companies/ai-garage-weekly",
@@ -4427,7 +4371,7 @@
           "text": "AI Garage Weekly - June 19, 2026"
         }
       ],
-      "outbound_count": 4,
+      "outbound_count": 0,
       "inbound_count": 10
     },
     {
@@ -4514,7 +4458,7 @@
       "title": "Every Level of a Claude Second Brain Explained",
       "type": "newsletter",
       "updated": "",
-      "body": "# Every Level of a Claude Second Brain Explained\n\n**Source:** email\n**Source URI:** gmail://msg_19ee2dfa87f86548\n**Ingested:** 2026-06-20T06:30:00Z\n**Provenance:** Forwarded by sayf on 2026-06-20. Original from [[Nate Herk]] ([[AI Automation Society]]).\n\n**Original publication:** [[AI Automation Society]] newsletter, June 19, 2026\n**Original author:** [[Nate Herk]]\n**Original recipient:** sayfti@gmail.com\n\nA Claude second brain breakdown, a client pipeline automated, and Codex hits 5M users with a free bonus through June 24.\n\n## In This Issue\n\n- Five levels of building a Claude second brain, from basic file search to fully autonomous recall.\n- Robert automated a client's outbound email pipeline and got their call center actually following up.\n- [[OpenAI]]'s Codex just crossed 5 million weekly users, with a free bonus through June 24.\n\n## New Video: Every Level of a Claude Second Brain Explained\n\nThere are five distinct levels to building a Claude second brain, and most people are stuck at level one.\n\n- **Level one:** Finding a file by searching an exact word.\n- **Level five:** A fully autonomous system that knows your business, your client relationships, and your IP better than you do.\n\nThe difference isn't the tool \u2014 it's how the data is organized.\n\n**Key insight:** Start from the end. Before you organize a single file, ask how you'll access this data later. The shape of the basketball determines the size of the hoop. Jon shows his actual setup (a [[Herku]] project, just markdown files and folders) and walks through what separates each level, including semantic search (finding by meaning, not exact match) and full relationship mapping.\n\n## Student Win: Robert's Call Center Pipeline\n\nRobert automated a client's outbound email pipeline from scratch. The client's call center was calling leads but nothing was following up by email. Sales managers emailed Robert their daily lead lists as Excel files. He built an automation that: when the file lands in his inbox, it extracts email, address, and name data, normalizes it, and uploads every contact directly into [[Instantly]] as a ready-to-run campaign. No manual cleanup. No copy-paste.\n\n**Opportunity:** Businesses running call centers almost always have messy lead data and no email follow-up. An automation that converts a spreadsheet into a live campaign solves a problem they didn't know anyone could fix.\n\n## In the News: Codex at 5M Weekly Users\n\n[[OpenAI]] Codex crossed 5 million weekly active users. Two new features:\n1. **Permanent:** Banked rate limit resets \u2014 save resets and use them when you actually need them instead of a fixed timer.\n2. **Through June 24:** Plus and Pro users can invite up to three friends. When a friend sends their first Codex message, both get a bonus reset.\n\n**Relevance:** The banked reset system fixes the problem of hitting rate limits mid-build. Codex growing through referral mechanics at 5M weekly users signals a tool people are actively building with and recommending.\n\n## People & Companies Mentioned\n\n- **[[Nate Herk]]** \u2014 [[AI Automation Society]], newsletter author\n- **Jon** \u2014 Creator who demonstrated his Claude second brain setup ([[Herku]] project)\n- **Robert** \u2014 [[AI Automation Society]] Plus member who built the call center pipeline\n- **[[AI Automation Society]]** \u2014 Newsletter publisher\n- **[[OpenAI]]** \u2014 Codex\n- **[[Anthropic]]** \u2014 Claude\n- **[[Herku]]** \u2014 Project/platform for second brain setup\n- **[[Instantly]]** \u2014 Email campaign platform",
+      "body": "# Every Level of a Claude Second Brain Explained\n\n**Source:** email from Sayf Codes, forwarded from Nate Herk (AI Automation Society)\n**Source URI:** gmail://msg_19ee2dfa87f86548\n**Ingested:** 2026-06-20T12:30:00Z\n**Provenance:** Forwarded sayfti@gmail.com \u2192 sayfcodes@gmail.com \u2192 info@malohacoast.com\n\nOriginally from: AI Automation Society newsletter, June 19, 2026\nBy: Nate Herk\n\n## Summary\n\nA breakdown of five levels of building a Claude second brain, from basic file search to fully autonomous recall. Also covers a client pipeline automation success story and Codex hitting 5M weekly users.\n\n## Key Points\n\n### Five Levels of a Claude Second Brain\n1. Level one: find a file by exact word search\n2. Level five: fully autonomous system that knows your business, client relationships, and IP better than you do\n3. The difference between levels isn't the tool \u2014 it's how data is organized\n4. Insight: start from the end. Before organizing a single file, ask how you'll access data later\n5. Jon shows his actual setup (Herku project, markdown files and folders)\n6. Includes semantic search (finding by meaning, not exact match) and full relationship mapping\n\n### Client Pipeline Automation \u2014 Robert's Success Story\n- Robert automated a client's outbound email pipeline from scratch\n- Client's call center had leads but no email follow-up\n- Sales managers emailed daily lead lists as Excel files\n- Automation handles: extracts email, address, name data; normalizes addresses; uploads directly into Instantly as a ready campaign\n- Key takeaway: businesses running call centers almost always have messy lead data and no email follow-up\n\n### News: OpenAI Codex Hits 5M Weekly Users\n- Permanent feature: banked rate limit resets (save resets and use when needed, not on fixed timer)\n- Through June 24: Plus and Pro users can invite up to 3 friends; both get a bonus reset\n- Signal: Codex growing through referral mechanics at 5M weekly users",
       "tags": [
         "ai-automation-society",
         "claude",
@@ -4522,38 +4466,7 @@
         "newsletter",
         "second-brain"
       ],
-      "links_out": [
-        {
-          "to": "people/nate-herk",
-          "type": "wikilink",
-          "text": "Nate Herk"
-        },
-        {
-          "to": "companies/ai-automation-society",
-          "type": "wikilink",
-          "text": "AI Automation Society"
-        },
-        {
-          "to": "companies/openai",
-          "type": "wikilink",
-          "text": "OpenAI"
-        },
-        {
-          "to": "companies/herku",
-          "type": "wikilink",
-          "text": "Herku"
-        },
-        {
-          "to": "companies/instantly",
-          "type": "wikilink",
-          "text": "Instantly"
-        },
-        {
-          "to": "companies/anthropic",
-          "type": "wikilink",
-          "text": "Anthropic"
-        }
-      ],
+      "links_out": [],
       "backlinks": [
         {
           "from": "companies/ai-automation-society",
@@ -4586,7 +4499,7 @@
           "text": "Claude Second Brain Levels 2026 06 20"
         }
       ],
-      "outbound_count": 6,
+      "outbound_count": 0,
       "inbound_count": 6
     },
     {
@@ -4645,6 +4558,22 @@
       ],
       "outbound_count": 2,
       "inbound_count": 1
+    },
+    {
+      "slug": "newsletters/humanlayer-launch-2026-06-20",
+      "title": "HumanLayer // We're live \u2014 come build with us",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# HumanLayer Launch \u2014 Agentic IDE and Collaboration Platform\n\n**Source:** email from Sayf Codes, forwarded from dex at HumanLayer\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-20T12:30:00Z\n**Provenance:** Forwarded dex@hey.humanlayer.dev \u2192 sayfcodes@gmail.com \u2192 info@malohacoast.com\n\n## Summary\n\nHumanLayer launches publicly \u2014 an Agentic IDE, collaboration platform, and software factory for engineering teams. Founded by Kyle and Dex, creators of the open-source RPI (Research, Plan, Implement) framework used inside Fortune 500s like Block and Uber.\n\n## Key Features\n- **Agentic IDE**: Design complex systems with AI agents before generating code\n- **Collaboration platform**: Design reviews for system architecture before writing code\n- **BYO subscription**: Plug in Claude, Codex, or other AI subscriptions/API keys \u2014 no separate per-token bill\n- **Free Starter plan**: Free for teams of fewer than three\n- **Claims**: 2-3x faster across the entire SDLC (not just coding)\n\n## Core Philosophy\n\"Don't outsource the thinking.\" Great teams have run design reviews for decades \u2014 HumanLayer brings that missing piece of the software factory into one place with AI collaboration.\n\n## Launch Links\n- X: https://x.com/dexhorthy/status/2067286892786454855\n- LinkedIn: https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U\n- Launch blurb: `curl https://humanlayer.com/launch/blurb.md`\n\n## Relevance for Maloha Coast\n- The RPI framework (Research, Plan, Implement) is a known pattern for coding agents\n- HumanLayer's \"design before code\" approach could be useful for Maloha Coast's agent architecture work\n- Worth exploring as a tool for client-facing agent development\n- Free tier available for small teams",
+      "tags": [
+        "agentic-ide",
+        "ai-engineering",
+        "humanlayer"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
     },
     {
       "slug": "newsletters/maloha-coast-navigator-2026-06-15",
@@ -4979,6 +4908,22 @@
       ],
       "outbound_count": 1,
       "inbound_count": 1
+    },
+    {
+      "slug": "newsletters/openrouter-data-policies-2026-06-20",
+      "title": "How provider data policies work on OpenRouter",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# How Provider Data Policies Work on OpenRouter\n\n**Source:** email from OpenRouter Team <welcome@openrouter.ai>\n**Source URI:** gmail://msg_19ee03492356403f\n**Ingested:** 2026-06-20T12:30:00Z\n**Provenance:** Direct email to info@malohacoast.com\n\n## Summary\n\nOpenRouter explains how each provider has its own retention and training policy, and what controls users have to filter routing based on data policies.\n\n## Key Points\n\n### What OpenRouter Provides\n- Provider data policies are reflected as structured data on each endpoint\n- Full table published in the docs\n- Users can filter routing on these policies\n\n### User Controls\n1. **Block routing to training providers**: Account-wide toggle for whether routing may use providers that train on prompts (separate switches for paid and free models)\n2. **Per-request override**: Override account default on any single call via data policy filtering\n3. **Zero-retention providers**: Many providers are zero retention \u2014 Amazon Bedrock, Azure, Cerebras, DeepInfra, Google Vertex, Groq, NVIDIA, SambaNova, Together, and others\n\n### EU Routing\n- OpenRouter supports EU in-region routing for enterprise accounts\n- When enabled, prompts/completions processed inside the European Union via eu.openrouter.ai base URL\n\n## Relevance for Maloha Coast\n\n- If data privacy is a concern for client work, OpenRouter's zero-retention provider filtering is useful\n- EU routing option for compliance requirements\n- Informative for choosing model providers when handling sensitive data",
+      "tags": [
+        "ai-infrastructure",
+        "openrouter",
+        "privacy"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
     },
     {
       "slug": "newsletters/openrouter-first-response-2026-06-04",
@@ -5946,18 +5891,13 @@
           "text": "Nate Herk"
         },
         {
-          "from": "newsletters/claude-second-brain-levels-2026-06-20",
-          "type": "wikilink",
-          "text": "Nate Herk"
-        },
-        {
           "from": "newsletters/msg-19ee2dfa87f86548",
           "type": "wikilink",
           "text": "Nate Herk"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 5
+      "inbound_count": 4
     },
     {
       "slug": "people/neo-kim",
@@ -7788,11 +7728,6 @@
       "type": "wikilink"
     },
     {
-      "source": "newsletters/ai-data-center-architecture-2026-06-20",
-      "target": "companies/system-design-one",
-      "type": "wikilink"
-    },
-    {
       "source": "newsletters/ai-garage-weekly-2026-06-20",
       "target": "people/tonbi",
       "type": "wikilink"
@@ -7805,16 +7740,6 @@
     {
       "source": "newsletters/ai-garage-weekly-2026-06-20",
       "target": "companies/anthropic",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/claude-second-brain-levels-2026-06-20",
-      "target": "people/nate-herk",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/claude-second-brain-levels-2026-06-20",
-      "target": "companies/openai",
       "type": "wikilink"
     },
     {
@@ -8269,7 +8194,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 210 pages",
+        "message": "Connected, 213 pages",
         "category": "ops"
       },
       {
@@ -8305,7 +8230,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 401ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 389ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -8323,7 +8248,7 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 60%",
+        "message": "Entity link coverage 89%, timeline 60%",
         "category": "brain"
       },
       {
@@ -8341,7 +8266,7 @@
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 210 pages; 32 external link(s) (no bare tweets).",
+        "message": "Sampled 213 pages; 32 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -8502,11 +8427,11 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction current: 0/210 pages (0%) stale",
+        "message": "Extraction current: 6/213 pages (3%) stale",
         "details": {
-          "total": 210,
-          "stale": 0,
-          "pct": 0,
+          "total": 213,
+          "stale": 6,
+          "pct": 3,
           "warn_pct": 20,
           "fail_pct": null,
           "source_id": null
@@ -8546,7 +8471,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "49.0% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "47.9% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -8649,7 +8574,7 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 93% \u00b1 3.6%",
+        "message": "Coverage 91% \u00b1 3.9%",
         "category": "meta"
       },
       {
