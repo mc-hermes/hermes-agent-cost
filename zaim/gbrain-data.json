@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-06-20T01:46:14Z",
+  "updated_at": "2026-06-20T01:52:56Z",
   "summary": {
-    "page_count": 11,
+    "page_count": 18,
     "people_count": 4,
     "company_count": 0,
     "artifact_count": 0,
-    "total_links": 6,
-    "outbound_count": 17,
-    "inbound_count": 17,
-    "graph_coverage": "45.5% of pages have inbound links",
-    "concept_count": 5,
-    "meeting_count": 2,
+    "total_links": 7,
+    "outbound_count": 21,
+    "inbound_count": 18,
+    "graph_coverage": "27.8% of pages have inbound links",
+    "concept_count": 11,
+    "meeting_count": 3,
     "person_count": 4,
     "newsletter_count": 0,
     "video_count": 0,
@@ -21,6 +21,125 @@
     "digest_count": 0
   },
   "pages": [
+    {
+      "slug": "concepts/maloha-coast",
+      "title": "Maloha Coast",
+      "type": "concept",
+      "updated": "",
+      "body": "Maloha Coast Sdn Bhd \u2014 AI consulting and development agency bringing AI to SMBs locally and worldwide.\n\n## Director\nSayf (username: falcon)\n\n## Infrastructure\n- VPS hardened and secured\n- Google Workspace configured (info@malohacoast.com)\n- gbrain knowledge base with embeddings enabled\n- Obsidian vault for personal notes\n- Hermes MC profile as admin assistant\n\n## GitHub\nOrganization: malohacoast on GitHub\nEmbeddings: \u2705 Enabled via OpenAI service account\n\n## Brand Identity\n- **Colour palette**: Primary #2a6a8a (teal blue), Accent #c4a86a (champagne gold)\n- **Typography**: Optima font (humanist/elegant)\n- **Hex pattern**: Gold-on-navy honeycomb grid at https://iili.io/CK3nHLF.png\n- **Email templates**: \\`html-email-with-sheet-logging\\` skill (production template, header fragment, 8 colour variants)\n- Full brand identity: [[brand/maloha-coast-brand-identity]]\n\n## Skills\n- \\`html-email-with-sheet-logging\\` \u2014 Send brand-styled HTML emails via Gmail API + log to Google Sheet\n- Brand exploration concepts: /home/ubuntu/maloha-coast-brand-concepts.html",
+      "tags": [
+        "company",
+        "consulting",
+        "malohacoast",
+        "zaim"
+      ],
+      "links_out": [
+        {
+          "to": "brand/maloha-coast-brand-identity",
+          "type": "wikilink",
+          "text": "brand/maloha-coast-brand-identity"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
+      "inbound_count": 0
+    },
+    {
+      "slug": "concepts/pipeline-e2e-test-2026-06-20",
+      "title": "Pipeline End-to-End Test \u2014 Jun 20 2026",
+      "type": "concept",
+      "updated": "",
+      "body": "# Pipeline E2E Test\n\nThis page was created to verify the full gbrain write \u2192 index \u2192 dashboard pipeline.\n\n## Compiled Truth\n\nThe markdown-first write path works as follows:\n1. Write `.md` file to `~/brain/<type>/<slug>.md`\n2. `gbrain import ~/brain/` indexes into PGLite\n3. Dashboard pipeline exports from PGLite \u2192 JSON \u2192 GitHub Pages\n4. Both main and Zaim (tag-filtered) dashboards reflect the new page\n\n**Created:** 2026-06-20\n**Source:** System test, sayf-directed\n\n## Timeline\n\n- **2026-06-20** \u2014 Page created as part of pipeline end-to-end verification. [Source: System test]\n\n## Verification Checklist\n\n- [ ] Page appears in `gbrain list`\n- [ ] Page appears in `gbrain search \"pipeline end-to-end\"`\n- [ ] Page appears in main dashboard JSON\n- [ ] Page appears in Zaim dashboard JSON (tagged `zaim`)\n- [ ] Markdown committed to `~/brain/` repo",
+      "tags": [
+        "pipeline-e2e",
+        "test",
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "concepts/zaim-career-goals-12-week-year-2026-06-16",
+      "title": "Why Your 2026 Career Goals Are Already Dead (Zaim Newsletter)",
+      "type": "concept",
+      "updated": "",
+      "body": "# Why Your 2026 Career Goals Are Already Dead (Zaim Newsletter)\n\n**From:** Zaim Mohzani <zaim.mohzani90@gmail.com>\n**Sent to:** info+zaim@malohacoast.com\n**Date:** June 16, 2026\n\nSincerely,\n\n*Zaim Mohzani*\n\n\n---------- Forwarded message ---------\nFrom: Zaim Mohzani <zaim@nationbuildingschool.com>\nDate: Fri, Jun 12, 2026 at 4:46\u202fPM\nSubject: Why your 2026 career goals are already dead\nTo: <zaim.mohzani90@gmail.com>\n\n\nAnd what to do about it? \u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\n\n\nIt's June. How's that career goal from January going?\n\nIf you're being honest, probably: forgotten by March, barely remembered\n(and feeling guilty) in June and quietly dropped by...the end of the year.\n\nIt's a timeframe problem, not a discipline problem.\nThe annual goal trap\n\nA year is too long to create urgency and too vague to act on.\n\n\"Get a new job this year\" feels fine in January. There's time. So nothing\nhappens.\n\nBy June, the goal is still technically alive, but you haven't done anything\nthat moves it forward. By December, you're setting the same goal again for\nnext year.\n\nI went through this myself but with weight, not career. In January 2025, I\nset an annual goal: lose 6kg by December. Standard SMART goal. Looked fine\non paper.\n\nThen I came across Brian Moran and Michael Lennington's book \"The 12 Week\nYear,\" which argues most people don't actually operate in years. They\noperate in the last few weeks before a deadline, however long that deadline\nis. So the fix is to shrink the deadline.\n\nBtw, this book is available on Shopee!\n\nI rewrote the goal: lose 6kg in 90 days, by 31 March.\n\nI hit it!!\n\nThe best part was that I never had to set that goal again. The habits I\nbuilt in those 90 days kept running on their own for the rest of the year.\nWhy this works for your career too\n\nThe same applies to a job search, a promotion case or a pivot.\n\n\"Get promoted this year\" doesn't tell you what to do on Monday.\n\n\"By 30 September, I will have had 3 conversations with people in my target\ndepartment, applied to 5 internal roles, and presented one project to\nleadership\" tells you exactly what to do on Monday.\n\nOne of these is a wish. The other is a plan.\n\nI've worked with clients on exactly this. The ones who set a 90-day goal\nlike \"land 3 offers from MNCs by end of Q3\" with weekly actions attached,\nmostly hit it or get close. The ones with \"find a better job this year\"\nmostly don't, because there's no Monday task attached to it.\nHow to set yours\n\nPick ONE career goal for this quarter. Just one.\n\nFollow this format and write down:\n\n   - *My 90-day career goal is...*\n   - *This matters to me because...*\n   - *To complete this, I commit that by 30 September 2026, I will have...*\n   (make this checkable. \"3 offers\" is checkable. \"More clarity\" is not.)\n   - *To make sure I complete it, I'm going to...* (weekly actions, not the\n   outcome)\n\nYour homework this weekend\n\nWrite it down. One goal. One sentence you can check off or not, no grey\narea.\n\nThen build it into your week, not your year.\n------------------------------\n\nP.S. I'm running a free workshop exactly on setting this 90-day goal for Q3\n2026. If you're interested to join, it's happening early next month in\nJune. For more info or to sign up, head over to\nhttps://t.ly/getclearoncareer6\n<https://preview.kit-mail3.com/click/dpheh0hzhmh4/aHR0cHM6Ly90Lmx5L2dldGNsZWFyb25jYXJlZXI2>\n\nUnsubscribe <https://preview.kit-mail3.com/unsubscribe> | Update your\nprofile <https://preview.kit-mail3.com/preferences> | I Write on LinkedIn\nEvery Day - Follow Me For Career, AI and Productivity Insights\n<https://preview.kit-mail3.com/click/dpheh0hzhmh4/aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2luL3phaW1tb2h6YW5pLw==>\n\nNation Building School - NBS Ventures - 202403343346 (003683654-H)",
+      "tags": [
+        "career-coaching",
+        "newsletter",
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "concepts/zaim/15-minute-gap-method",
+      "title": "15 Minute Gap Method",
+      "type": "concept",
+      "updated": "",
+      "body": "# The 15-Minute Gap Method\n\n**Source:** email forward\n**Source URI:** gmail://msg_19eca04daacc7a09\n**Ingested:** 2026-06-20T04:00:00Z\n**Provenance:** Forwarded to Zaim's workspace via self-BCC\n\nZaim here. Wanted to capture this before I forget.\n\nBetween KSI sessions I have these 15-minute gaps. Started using them to jot down one thing I noticed about each student \u2014 what they're stuck on, what lit them up. After a month of this, patterns emerged that I'd never have spotted otherwise.\n\nThree buckets emerged:\n1. Career pivoters \u2014 stuck on 'what if I fail' not 'what do I want'\n2. Fresh grads \u2014 over-indexing on salary, under-indexing on growth trajectory\n3. Mid-career \u2014 all variations of 'is this it?'\n\nThe 15-minute rule: never let a gap go empty. Even one sentence per student compounds.\n\n\u2014 Zaim",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "concepts/zaim/3-month-career-pivot-framework",
+      "title": "3 Month Career Pivot Framework",
+      "type": "concept",
+      "updated": "",
+      "body": "# The 3-Month Career Pivot Framework\n\n**Source:** email forward\n**Source URI:** gmail://msg_19eca58bcdb09c70\n**Ingested:** 2026-06-20T04:00:00Z\n**Provenance:** Forwarded to Zaim's workspace via self-BCC\n\nZaim shared this during a coaching session with a KSI senior analyst looking to move into product.\n\n### Phase 1: Audit (Month 1)\n- [[Skills Inventory]] \u2014 map current skills to target role requirements\n- Identify the 20% skill gap that blocks 80% of interviews\n- Don't learn everything \u2014 learn the gatekeepers\n\n### Phase 2: Signal (Month 2)\n- [[Side Project Strategy]] \u2014 build one public artifact, not ten private ones\n- Write 2 LinkedIn posts/week documenting the pivot journey\n- Engage with 3 target-company hiring managers\n\n### Phase 3: Convert (Month 3)\n- [[Salary Negotiation Playbook]] \u2014 comp bands for product roles in KL\n- Reference calls with 2 people who made the same pivot\n- First offer within 90 days\n\n### Key Insight\n> 'The career pivot gap isn't a skills problem \u2014 it's a positioning problem. You're not underqualified, you're framed wrong.' \u2014 Zaim\n\n**Client:** KSI Senior Analyst \u2192 Product Manager\n**Engagement:** Weekly coaching, 12 sessions\n**Status:** Phase 2, on track",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [
+        {
+          "to": "concepts/skills-inventory",
+          "type": "wikilink",
+          "text": "Skills Inventory"
+        },
+        {
+          "to": "concepts/side-project-strategy",
+          "type": "wikilink",
+          "text": "Side Project Strategy"
+        },
+        {
+          "to": "concepts/salary-negotiation-playbook",
+          "type": "wikilink",
+          "text": "Salary Negotiation Playbook"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 3,
+      "inbound_count": 0
+    },
+    {
+      "slug": "concepts/zaim/coaching-client-aisyah-rahim",
+      "title": "Coaching Client Aisyah Rahim",
+      "type": "concept",
+      "updated": "",
+      "body": "# Coaching Client: Aisyah Rahim\n\n**Source:** email forward\n**Source URI:** gmail://msg_19eca0a8dc4888c3\n**Ingested:** 2026-06-20T04:00:00Z\n**Provenance:** Forwarded to Zaim's workspace via self-BCC\n\nZaim here. Adding a quick profile on a new client.\n\nName: Aisyah Rahim\nRole: Senior Brand Manager at Unilever Malaysia\nContext: Referred by Liyana from the KSI workshop last month. First session next Tuesday.\n\nKey points from our intro call:\n- 8 years in FMCG brand management, feeling stagnant\n- Wants to pivot into tech but unsure where to start\n- Main blocker: 'I don't have a technical background'\n- Has actually done more data-driven work than she realises \u2014 ran consumer analytics for 3 product launches\n- Salary anchor: RM 18k/month, worried about resetting to junior level\n\nMy read: Classic mid-career pivot case. The real problem isn't skills \u2014 it's confidence and narrative. She needs help reframing 'brand manager' as 'growth strategist who uses data.' Tech companies would kill for someone who can bridge consumer insights and product.\n\nPlan for session 1: Audit her last 2 years of work through a tech lens. Find 3-5 specific examples where she already did 'product thinking' without calling it that.\n\n\u2014 Zaim",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "people/liyana",
+          "type": "wikilink",
+          "text": "Aisyah Rahim"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 1
+    },
     {
       "slug": "maloha-coast",
       "title": "Maloha Coast",
@@ -47,6 +166,11 @@
           "text": "maloha-coast"
         },
         {
+          "from": "concepts/brand/maloha-coast-brand-identity",
+          "type": "wikilink",
+          "text": "maloha-coast"
+        },
+        {
           "from": "meetings/2026-06-08-bjarte-global-ai-village",
           "type": "link",
           "text": "Maloha Coast"
@@ -58,7 +182,7 @@
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 3
+      "inbound_count": 4
     },
     {
       "slug": "meetings/sayf-zaim-jun-12-2026",
@@ -91,6 +215,20 @@
       "inbound_count": 0
     },
     {
+      "slug": "meetings/zaim/meeting-sayf-zaim-2026-06-12",
+      "title": "Meeting Sayf Zaim 2026 06 12",
+      "type": "meeting",
+      "updated": "",
+      "body": "# Sayf x Zaim \u2014 Jun 12, 2026\n\n**Source:** email forward\n**Source URI:** gmail://msg_19ecaa895ccb88af\n**Ingested:** 2026-06-20T04:00:00Z\n**Provenance:** Forwarded to Zaim's workspace via self-BCC\n\n**Date:** Friday, 12 June 2026, 10:30am \u2013 11:00am (MYT)\n**Google Meet:** https://meet.google.com/udx-niaz-esr\n\n## Summary\n\nDiscussion explored AI skepticism and market strategy alongside technical collaboration opportunities for business growth.\n\n### Differing AI Market Perspectives\nSayf and Zaim debated the value of AI in business, contrasting skepticism about automation hype with the practical utility of AI for basic skills training.\n\n### Technical Tools and Infrastructure\nDiscussion shifted toward specific software tools, noting the efficiency of virtual private servers and the potential of data integration dashboards for business applications.\n\n### Collaboration and Service Models\nAgreement reached to build a technical solution for coaching services while prioritizing simple, revenue-focused strategies for future client engagement for Maloha Coast.\n\n## Suggested Next Steps\n\n- **Maloha Coast** \u2014 Build Dashboard: Arrange a meeting to build the dashboard component. Perform the session either in person or over a call.\n- **Zaim Mohzani** \u2014 Provide Testimonial: Provide a testimonial in exchange for the assistance provided.\n- **Maloha Coast** \u2014 Share Research Link: Send the Tencent Lighthouse promotion link for further research.\n- **The group** \u2014 Schedule Followup Session: Coordinate a time for a meeting to continue the discussion.\n- **Zaim Mohzani** \u2014 Send WhatsApp Message: Contact Maloha Coast via the provided phone number.\n\n## Google Doc\nhttps://docs.google.com/document/d/1q3v6SbKF_PiEaTatPNvhZtoWdT9_n9v5HqMoxsLj3hQ/edit",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "people/aisyah-rahim",
       "title": "Aisyah Rahim",
       "type": "person",
@@ -116,15 +254,9 @@
           "text": "Zaim Mohzani"
         }
       ],
-      "backlinks": [
-        {
-          "from": "people/liyana",
-          "type": "wikilink",
-          "text": "Aisyah Rahim"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 3,
-      "inbound_count": 1
+      "inbound_count": 0
     },
     {
       "slug": "people/liyana",
@@ -137,7 +269,7 @@
       ],
       "links_out": [
         {
-          "to": "people/aisyah-rahim",
+          "to": "concepts/zaim/coaching-client-aisyah-rahim",
           "type": "wikilink",
           "text": "Aisyah Rahim"
         },
@@ -399,6 +531,11 @@
     },
     {
       "source": "people/liyana",
+      "target": "concepts/zaim/coaching-client-aisyah-rahim",
+      "type": "wikilink"
+    },
+    {
+      "source": "people/liyana",
       "target": "people/zaim-mohzani",
       "type": "wikilink"
     }
@@ -416,58 +553,66 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-20T01:46:14Z",
+      "ts": "2026-06-20T01:52:56Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
-      "detail": "Dashboard refreshed \u2014 11 pages, 6 links",
+      "detail": "Dashboard refreshed \u2014 18 pages, 7 links",
       "level": "info"
     },
     {
-      "ts": "2026-06-19T00:00:00Z",
+      "ts": "2026-06-20T00:00:00Z",
       "source": "page",
       "stage": "updated",
-      "slug": "people/aisyah-rahim",
-      "detail": "Aisyah Rahim",
+      "slug": "concepts/maloha-coast",
+      "detail": "Maloha Coast",
       "level": "info"
     },
     {
-      "ts": "2026-06-19T00:00:00Z",
+      "ts": "2026-06-20T00:00:00Z",
       "source": "page",
       "stage": "updated",
-      "slug": "people/liyana",
-      "detail": "Liyana",
+      "slug": "concepts/pipeline-e2e-test-2026-06-20",
+      "detail": "Pipeline End-to-End Test \u2014 Jun 20 2026",
       "level": "info"
     },
     {
-      "ts": "2026-06-19T00:00:00Z",
+      "ts": "2026-06-20T00:00:00Z",
       "source": "page",
       "stage": "updated",
-      "slug": "zaim/15-minute-gap-method",
+      "slug": "concepts/zaim-career-goals-12-week-year-2026-06-16",
+      "detail": "Why Your 2026 Career Goals Are Already Dead (Zaim Newsletter)",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-20T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "concepts/zaim/15-minute-gap-method",
       "detail": "15 Minute Gap Method",
       "level": "info"
     },
     {
-      "ts": "2026-06-19T00:00:00Z",
+      "ts": "2026-06-20T00:00:00Z",
       "source": "page",
       "stage": "updated",
-      "slug": "zaim/3-month-career-pivot-framework",
+      "slug": "concepts/zaim/3-month-career-pivot-framework",
       "detail": "3 Month Career Pivot Framework",
       "level": "info"
     },
     {
-      "ts": "2026-06-19T00:00:00Z",
+      "ts": "2026-06-20T00:00:00Z",
       "source": "page",
       "stage": "updated",
-      "slug": "zaim/coaching-client-aisyah-rahim",
+      "slug": "concepts/zaim/coaching-client-aisyah-rahim",
       "detail": "Coaching Client Aisyah Rahim",
       "level": "info"
     },
     {
-      "ts": "2026-06-19T00:00:00Z",
+      "ts": "2026-06-20T00:00:00Z",
       "source": "page",
       "stage": "updated",
-      "slug": "zaim/meeting-sayf-zaim-2026-06-12",
+      "slug": "meetings/zaim/meeting-sayf-zaim-2026-06-12",
       "detail": "Meeting Sayf Zaim 2026 06 12",
       "level": "info"
     }

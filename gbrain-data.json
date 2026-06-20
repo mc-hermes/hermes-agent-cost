@@ -1,39 +1,39 @@
 {
-  "updated_at": "2026-06-20T01:46:08Z",
+  "updated_at": "2026-06-20T01:52:49Z",
   "summary": {
-    "score": "84",
+    "score": "82",
     "score_label": "/100",
-    "score_breakdown": "score 84/100, embed 35/35, links 25/25, timeline 3/15, orphans 11/15, dead-links 10/10",
-    "page_count": 139,
+    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 2/15, orphans 10/15, dead-links 10/10",
+    "page_count": 177,
     "embed_coverage": "100% coverage, 0 missing",
-    "graph_coverage": "55.9% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
-    "entity_links": "Coverage 95% \u00b1 3.4%",
-    "concept_count": 59,
-    "meeting_count": 5,
+    "graph_coverage": "50.0% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 95% \u00b1 3.3%",
+    "concept_count": 87,
+    "meeting_count": 6,
     "person_count": 25,
     "company_count": 17,
-    "newsletter_count": 27,
+    "newsletter_count": 34,
     "video_count": 0,
-    "article_count": 2,
+    "article_count": 4,
     "bookmark_count": 1,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 194,
-    "outbound_count": 261,
-    "inbound_count": 237,
+    "total_links": 226,
+    "outbound_count": 298,
+    "inbound_count": 268,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
     },
-    "score_raw": "Brain score 84/100 (embed 35/35, links 25/25, timeline 3/15, orphans 11/15, dead-links 10/10)",
+    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 2/15, orphans 10/15, dead-links 10/10)",
     "score_components": {
-      "score": "84/100",
+      "score": "82/100",
       "embed": "35/35",
       "links": "25/25",
-      "timeline": "3/15",
-      "orphans": "11/15",
+      "timeline": "2/15",
+      "orphans": "10/15",
       "dead-links": "10/10"
     },
     "checks_passed": 67,
@@ -50,12 +50,12 @@
       "tags": [],
       "links_out": [
         {
-          "to": "vps-hardening",
+          "to": "concepts/vps-hardening",
           "type": "wikilink",
           "text": "VPS Hardening"
         },
         {
-          "to": "google-workspace-setup",
+          "to": "concepts/google-workspace-setup",
           "type": "wikilink",
           "text": "Google Workspace Setup"
         },
@@ -65,12 +65,32 @@
           "text": "gbrain"
         },
         {
-          "to": "vps-hardening",
+          "to": "concepts/vps-hardening",
           "type": "wikilink",
           "text": "VPS Hardening#fail2ban"
         }
       ],
       "backlinks": [
+        {
+          "from": "concepts/gbrain",
+          "type": "wikilink",
+          "text": "2026-06-03"
+        },
+        {
+          "from": "concepts/google-workspace-setup",
+          "type": "wikilink",
+          "text": "2026-06-03"
+        },
+        {
+          "from": "concepts/vps-hardening",
+          "type": "wikilink",
+          "text": "2026-06-03#VPS Hardening"
+        },
+        {
+          "from": "concepts/vps-hardening",
+          "type": "wikilink",
+          "text": "2026-06-03"
+        },
         {
           "from": "gbrain",
           "type": "wikilink",
@@ -93,7 +113,7 @@
         }
       ],
       "outbound_count": 4,
-      "inbound_count": 4
+      "inbound_count": 8
     },
     {
       "slug": "architecture/agent-hierarchy",
@@ -105,6 +125,51 @@
       "links_out": [],
       "backlinks": [],
       "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "articles/humanlayer-launch-2026-06-19",
+      "title": "Humanlayer Launch 2026 06 19",
+      "type": "article",
+      "updated": "",
+      "body": "# HumanLayer Launch \u2014 Agentic IDE and Software Factory Platform\n\n**Source:** email (forwarded by sayf)\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-20T03:30:00Z\n**Provenance:** Forwarded by sayf on 2026-06-19\n\nSayf forwarded the HumanLayer launch announcement from Dexter (dex at humanlayer / dexter@hey.humanlayer.dev).\n\n## Summary\n\nHumanLayer is an Agentic IDE, collaboration platform, and software factory building blocks. It lets engineering teams design complex systems with AI agents before generating code. After a year of building on the open-source Research, Plan, Implement (RPI) framework (running inside Fortune 500s like Block and Uber), HumanLayer is now open to everyone.\n\n## Key Details\n\n- **Founders:** Dexter (dex@) and Kyle\n- **Core idea:** \"Don't outsource the thinking\" \u2014 design reviews for system architecture before writing code, bringing the missing piece of the software factory into one place\n- **Key metric:** Teams move 2-3x faster across the entire SDLC\n- **Pricing:** Starter plan is free for teams of fewer than three\n- **BYO subscription:** Plug in Claude, Codex, and other AI subscriptions or API keys \u2014 no separate per-token bill\n- **Launch posts:** [X launch thread](https://x.com/dexhorthy/status/2067286892786454855), [LinkedIn post](https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U)\n- **Website:** https://humanlayer.com\n\n## Our Take\n\nThis is directly relevant to Maloha Coast's work in the AI agent space. The RPI framework is already used in production at scale (Block, Uber). The \"design before code\" thesis aligns with how sayf approaches agentic system design. Worth watching.",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "articles/humanlayer-launch-forward-2026-06-19",
+      "title": "HumanLayer // We're live \u2014 come build with us",
+      "type": "article",
+      "updated": "",
+      "body": "# [[HumanLayer]] // We're live \u2014 come build with us\n\n**Source:** Forwarded by Sayf Codes from dex at humanlayer (dexter@hey.humanlayer.dev), 2026-06-19\n**Source URI:** gmail://msg_19edfd1054c17600\n\n**Sayf's note:** Forwarded this for reference \u2014 Sayf was on the [[HumanLayer]] waitlist.\n\n## Summary\n\n[[HumanLayer]] is launching publicly \u2014 an Agentic IDE, collaboration platform, and building blocks for a software factory. Built by the creators of the open-source Research, Plan, Implement (RPI) framework, now running inside Fortune 500s like [[Block]] and [[Uber]].\n\n## Key Points\n\n- **Product:** An Agentic IDE + collaboration platform where engineering teams design complex systems with AI agents before generating code\n- **Core idea:** Don't outsource the thinking. Great teams run design reviews for decades because there's enormous leverage in collaborating on system design before writing code\n- **Performance:** Teams move 2-3x faster across the entire SDLC (not just coding)\n- **Pricing:** Starter plan is free for teams of fewer than three. Bring your own subscription \u2014 plug in your Claude, Codex, and other API keys. No separate per-token bill.\n- **Founders:** Kyle and dex (dexter@hey.humanlayer.dev) \u2014 previously built the open-source RPI framework\n- **Enterprise adoption:** RPI framework running inside Block and Uber\n\n## Links\n\n- HumanLayer: https://humanlayer.com",
+      "tags": [
+        "ai-agents",
+        "coding-agents",
+        "humanlayer",
+        "ide"
+      ],
+      "links_out": [
+        {
+          "to": "companies/humanlayer",
+          "type": "wikilink",
+          "text": "HumanLayer"
+        },
+        {
+          "to": "Block",
+          "type": "wikilink",
+          "text": "Block"
+        },
+        {
+          "to": "Uber",
+          "type": "wikilink",
+          "text": "Uber"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 3,
       "inbound_count": 0
     },
     {
@@ -167,6 +232,11 @@
       ],
       "backlinks": [
         {
+          "from": "concepts/maloha-coast",
+          "type": "wikilink",
+          "text": "brand/maloha-coast-brand-identity"
+        },
+        {
           "from": "digests/2026-06-15-business-brain-digest",
           "type": "wikilink",
           "text": "Maloha Coast"
@@ -183,7 +253,7 @@
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 3
+      "inbound_count": 4
     },
     {
       "slug": "companies/ai-automation-society",
@@ -437,6 +507,16 @@
       ],
       "backlinks": [
         {
+          "from": "articles/humanlayer-launch-forward-2026-06-19",
+          "type": "wikilink",
+          "text": "HumanLayer"
+        },
+        {
+          "from": "concepts/humanlayer-launch-announcement-2026-06-19",
+          "type": "wikilink",
+          "text": "HumanLayer"
+        },
+        {
           "from": "concepts/humanlayer-launch-newsletter",
           "type": "wikilink",
           "text": "HumanLayer"
@@ -477,6 +557,11 @@
           "text": "HumanLayer"
         },
         {
+          "from": "newsletters/msg-19edfd1054c17600",
+          "type": "wikilink",
+          "text": "HumanLayer"
+        },
+        {
           "from": "people/dex-horthy",
           "type": "wikilink",
           "text": "HumanLayer"
@@ -488,7 +573,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 10
+      "inbound_count": 13
     },
     {
       "slug": "companies/inclusive-ai-association",
@@ -708,7 +793,22 @@
           "text": "OpenRouter"
         },
         {
+          "from": "newsletters/msg-19ee03492356403f",
+          "type": "wikilink",
+          "text": "OpenRouter"
+        },
+        {
           "from": "newsletters/openrouter-chain-models-2026-06-16",
+          "type": "wikilink",
+          "text": "OpenRouter"
+        },
+        {
+          "from": "newsletters/openrouter-data-policies-2026-06-19",
+          "type": "wikilink",
+          "text": "OpenRouter"
+        },
+        {
+          "from": "newsletters/openrouter-provider-data-policies-2026-06-19",
           "type": "wikilink",
           "text": "OpenRouter"
         },
@@ -719,6 +819,11 @@
         },
         {
           "from": "newsletters/openrouter-three-features-2026-06-19",
+          "type": "wikilink",
+          "text": "OpenRouter"
+        },
+        {
+          "from": "newsletters/openrouter-three-features-next-2026-06-18",
           "type": "wikilink",
           "text": "OpenRouter"
         },
@@ -734,7 +839,7 @@
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 10
+      "inbound_count": 14
     },
     {
       "slug": "companies/passend",
@@ -938,6 +1043,39 @@
       "inbound_count": 6
     },
     {
+      "slug": "concepts/2026-06-03",
+      "title": "2026 06 03",
+      "type": "concept",
+      "updated": "",
+      "body": "# June 3, 2026\n\n## Highlights\n- Full VPS security audit and hardening\n- Google Workspace admin setup (info@malohacoast.com)\n- gbrain installation and configuration\n- Obsidian vault creation\n\n## VPS Hardening\nCompleted [[VPS Hardening]] \u2014 see project note for full details. All high-priority fixes applied:\n- SSH locked down (root login disabled, key-only auth, idle timeouts)\n- UFW firewall active (deny all inbound except SSH)\n- fail2ban installed and running \u2014 already banned 4 brute-force IPs\n- System packages updated, new kernel 6.8.0-124 active after reboot\n\n## Google Workspace\nSet up [[Google Workspace Setup]] for Maloha Coast. Authenticated as `info@malohacoast.com`.\n- Gmail, Calendar, Drive, Docs, Sheets all configured\n- OAuth client \"admin-assistant\" under project _leafy-affinity-491809-a5_\n\n## AI Infrastructure\n- [[gbrain]] v0.42.10.0 installed from source at `~/gbrain/`\n- Brain initialized at `~/.gbrain/brain.pglite` (PGLite, no server needed)\n- Obsidian vault created at `~/obsidian-vault/` with folder structure\n- Hermes agent configured with skills system\n\n## Notes\n- VPS reboot needed to activate new kernel \u2014 confirmed working post-reboot\n- fail2ban already proving its value (see [[VPS Hardening#fail2ban]])\n- gbrain needs OpenAI API key for vector embeddings (keyword search works without)",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "concepts/vps-hardening",
+          "type": "wikilink",
+          "text": "VPS Hardening"
+        },
+        {
+          "to": "concepts/google-workspace-setup",
+          "type": "wikilink",
+          "text": "Google Workspace Setup"
+        },
+        {
+          "to": "gbrain",
+          "type": "wikilink",
+          "text": "gbrain"
+        },
+        {
+          "to": "concepts/vps-hardening",
+          "type": "wikilink",
+          "text": "VPS Hardening#fail2ban"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 4,
+      "inbound_count": 0
+    },
+    {
       "slug": "concepts/3-month-career-pivot-framework-2026-06-15",
       "title": "3 Month Career Pivot Framework 2026 06 15",
       "type": "concept",
@@ -1110,6 +1248,46 @@
       "inbound_count": 1
     },
     {
+      "slug": "concepts/architecture/agent-hierarchy",
+      "title": "Agent Hierarchy",
+      "type": "concept",
+      "updated": "",
+      "body": "The Maloha Coast Hermes ecosystem has three agents in a hierarchy:\n\n**falconhermes** (root profile) \u2014 Orchestrator. Sayf's primary interface. Delegates tasks to MC and Sammy based on domain. Handles strategy, high-level planning, and anything that doesn't fit the other agents.\n  SOUL.md at ~/.hermes/SOUL.md\n\n**MC** (profiles/mc/) \u2014 Executive assistant. Handles inbox triage, calendar management, project tracking, client communications, research, business operations.\n  SOUL.md at ~/.hermes/profiles/mc/SOUL.md\n\n**Sammy** (profiles/sammy/) \u2014 Content creator. Handles LinkedIn posts, X threads, blog articles, brand voice, engagement drafting.\n  SOUL.md at ~/.hermes/profiles/sammy/SOUL.md\n\nThe hierarchy is documented in each agent's SOUL.md and backing memory files. The full setup is backed up to github.com/Maloha-Coast/hermes-profile-backup.",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "concepts/brand/maloha-coast-brand-identity",
+      "title": "Maloha Coast \u2014 Brand Identity",
+      "type": "concept",
+      "updated": "",
+      "body": "# Maloha Coast \u2014 Brand Identity\n\n## Finalised Brand Decisions (locked June 2026)\n\n### Colour Palette\n- **Primary**: #2a6a8a (teal blue)\n- **Accent**: #c4a86a (champagne gold)\n- **Dark Navy**: #0a1628\n- **Light backgrounds**: #f4f8fb, #ffffff\n\n### Typography\n- **Primary font**: Optima (humanist, elegant Roman forms)\n- **Fallback stack**: 'Segoe UI', 'Candara', 'Palatino Linotype', 'Book Antiqua', Palatino, serif\n\n### Brand Pattern\n\u2b21 **Honeycomb Hexagon Grid** \u2014 Gold on Navy\n- Hex lines: #c4a86a (champagne gold)\n- Background field: #0a1628 (dark navy)\n- Tile size: 90\u00d752 px seamless tiling PNG\n- Hosted at: https://iili.io/CK3nHLF.png\n- Also available in 7 other colour variants (see skill references)\n\n## Email Templates\n\nThe production email template is based on the \"Ocean Deep\" direction (selected from 5 brand concepts A-E).\n\n### Template Structure\n1. **Outer wrapper**: Gold-on-navy hex pattern background (via HTML `background` attribute on `<td>`, NOT CSS)\n2. **Header**: Pattern visible with rgba(10,22,40,0.65) semi-transparent overlay \u2192 \"MALOHA COAST\" in white + \"Sdn Bhd\" in gold\n3. **Body card**: White rounded card with generous padding\n4. **Info cards**: Gold left accent border (#c4a86a) on light teal (#f4f8fb) background\n5. **Signature**: Gold horizontal rule (#c4a86a) + name/title/company/tagline in brand colours\n6. **Footer**: Same hex pattern background as header\n\n### Gmail Compatibility (verified)\n- Use HTML `background` attribute on `<td>` elements for patterns (CSS `background-image` with data URIs is stripped by Gmail)\n- Use nested `<table>` with `rgba()` overlay for colour tinting\n- Use inline styles only (no `<style>` blocks)\n- Max width 600px for email card\n- No JavaScript\n\n### Skill Reference\nThe full workflow is in the `html-email-with-sheet-logging` skill:\n- **SKILL.md**: /home/ubuntu/.hermes/skills/productivity/html-email-with-sheet-logging/SKILL.md\n- **Production template**: references/ocean-deep-template.html\n- **Header fragment**: templates/maloha-coast-header-fragment.html\n- **Hex pattern variants**: references/hex-pattern-variants.md\n- **Script to regenerate**: scripts/generate-hex-pattern.py\n\n### Brand Concepts File\nFull brand exploration HTML (5 palettes, 12 patterns, typography pairings):\n/home/ubuntu/maloha-coast-brand-concepts.html\n\n### Related\n- [[maloha-coast]] \u2014 company overview\n- [[google-workspace-setup]] \u2014 email infrastructure",
+      "tags": [
+        "brand",
+        "design",
+        "email-template",
+        "malohacoast"
+      ],
+      "links_out": [
+        {
+          "to": "maloha-coast",
+          "type": "wikilink",
+          "text": "maloha-coast"
+        },
+        {
+          "to": "google-workspace-setup",
+          "type": "wikilink",
+          "text": "google-workspace-setup"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 2,
+      "inbound_count": 0
+    },
+    {
       "slug": "concepts/business-brain",
       "title": "Business Brain",
       "type": "concept",
@@ -1173,6 +1351,11 @@
           "text": "claude-code-10x-skill-newsletter"
         },
         {
+          "from": "concepts/sayf/maloha-coast-navigator-test-edition",
+          "type": "wikilink",
+          "text": "Claude Code 10x Skill"
+        },
+        {
           "from": "digests/2026-06-10-business-brain-digest",
           "type": "wikilink",
           "text": "Claude Code 10x Skill Newsletter"
@@ -1184,6 +1367,11 @@
         },
         {
           "from": "newsletter/maloha-coast-navigator-2026-06-15",
+          "type": "wikilink",
+          "text": "Claude Code 10x Skill"
+        },
+        {
+          "from": "newsletters/maloha-coast-navigator-2026-06-15",
           "type": "wikilink",
           "text": "Claude Code 10x Skill"
         },
@@ -1204,7 +1392,19 @@
         }
       ],
       "outbound_count": 5,
-      "inbound_count": 7
+      "inbound_count": 9
+    },
+    {
+      "slug": "concepts/cold-lead-response-conference-events",
+      "title": "Cold Lead Response Conference Events",
+      "type": "concept",
+      "updated": "",
+      "body": "**Context:** Response to a conference producer who asked for examples after a cold outreach. Crafted for LinkedIn DM \u2014 punchy, concrete, pilot-friendly.\n\n## The Response\n\nThanks for asking. Here are some practical ways I think a Hermes agent could fit into your events workflow if we set one up on your laptop or VPS:\n\n**Speaker sourcing:** You feed it your target criteria once, and it scans hundreds of profiles, past talks, and decks. It comes back with a shortlist plus solid briefing notes in about 15 minutes instead of 3\u20134 hours of manual digging.\n\n**Post-session repurposing:** Right after a talk, you drop in the recording or transcript and it generates a full LinkedIn article, 3-5 social posts, a newsletter summary, and key highlights. Turns one session into 30+ usable pieces.\n\n**Sponsor deliverables:** It pulls from your existing docs and data to create pre-event copy, staff briefs, lead reports, and post-event ROI summaries \u2014 cutting out a big chunk of the 20 hours per sponsor tier your team usually spends.\n\n**Business brain / company memory:** I'm actually building one of these for myself right now. We can set up a \"gbrain\" where the agent learns your past events, speakers, sponsors, what worked and what didn't. Then you can just ask it things like \"What sponsors performed best last year?\" or \"Give me the checklist for a 500-person event\" and it pulls from your own history.\n\n**Closer:** Which one sounds like it would save you the most time or headache right now? Happy to walk through any of them in more detail or hop on a quick call to map it to how you currently work.\n\n## Notes\n\n- Crafted to be realistic, specific, and pilot-friendly\n- No AI jargon \u2014 pitched as a tool they control\n- Each example maps to a known pain point for conference producers\n- The gbrain example doubles as a subtle demo of the product in use",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
     },
     {
       "slug": "concepts/company-memory-os-ph1-prd",
@@ -1434,6 +1634,50 @@
       "inbound_count": 0
     },
     {
+      "slug": "concepts/gateway-infrastructure",
+      "title": "Gateway Infrastructure",
+      "type": "concept",
+      "updated": "",
+      "body": "# Gateway Infrastructure\n\n## Hardware\n2GB VPS (Tencent Cloud, Ubuntu, 6.8.0-124). 2GB swap. ~50GB storage.\n\n## Hermes Gateway\n\n### Service\nSystemd user service at `~/.config/systemd/user/hermes-gateway.service`. Auto-starts on boot. Linger enabled so it survives logout.\n\n### Exit Code 75 (EX_TEMPFAIL)\nThe gateway uses exit code 75 as a \"please restart me\" signal to systemd. Triggered by `/restart`, `/update`, or SIGUSR1. The systemd config has `RestartForceExitStatus=75` so this always triggers a restart. See [[gateway-watchdog]] for crash-loop detection.\n\n### Memory Profile\n- Baseline: ~97MB RSS at startup\n- After 14h moderate use: ~600MB (growth ~36MB/h)\n- Peak observed: 1.0G\n- Gradual leak under active use \u2014 tracked by watchdog growth-rate alert\n\n### Manual Recovery\nWhen stuck in a crash loop: `sudo -u ubuntu /home/ubuntu/.local/bin/hermes gateway start`\n\n## Gateway Health Watchdog\n\nCreated Jun 4, 2026. A Python script at `~/.hermes/scripts/gateway-watchdog.py` that runs every 10 minutes via cron (`no_agent=True`, zero LLM tokens). Silent when healthy; alerts Discord #Home when thresholds are breached.\n\n### Thresholds\n- Gateway RSS >= 1.4GB (warning) / >= 1.6GB (critical)\n- System free memory <= 300MB (warning) / <= 150MB (critical)\n- Swap usage > 200MB\n- >= 1 exit code 75 crash in last hour\n- >= 1 SIGTERM kill in last hour\n- Gateway uptime < 30 min\n- Memory growth rate > 50MB/hour\n\n### Related\n- [[VPS Hardening]] \u2014 SSH, firewall, fail2ban baseline\n- [[2026-06-04]] \u2014 watchdog setup and gateway crash investigation",
+      "tags": [
+        "devops",
+        "hermes",
+        "infrastructure",
+        "monitoring"
+      ],
+      "links_out": [
+        {
+          "to": "gateway-watchdog",
+          "type": "wikilink",
+          "text": "gateway-watchdog"
+        },
+        {
+          "to": "concepts/vps-hardening",
+          "type": "wikilink",
+          "text": "VPS Hardening"
+        },
+        {
+          "to": "2026-06-04",
+          "type": "wikilink",
+          "text": "2026-06-04"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "concepts/vps-hardening",
+          "type": "wikilink",
+          "text": "Gateway Infrastructure"
+        },
+        {
+          "from": "vps-hardening",
+          "type": "wikilink",
+          "text": "Gateway Infrastructure"
+        }
+      ],
+      "outbound_count": 3,
+      "inbound_count": 2
+    },
+    {
       "slug": "concepts/gbrain-raw-notes-folder",
       "title": "Gbrain Raw Notes Folder",
       "type": "concept",
@@ -1444,6 +1688,116 @@
       "backlinks": [],
       "outbound_count": 0,
       "inbound_count": 0
+    },
+    {
+      "slug": "concepts/gbrain",
+      "title": "Gbrain",
+      "type": "concept",
+      "updated": "",
+      "body": "# gbrain\n\n## Overview\ngbrain v0.42.10.0 \u2014 local AI-powered knowledge base for Hermes agent. Lives at `~/gbrain/`.\n\n## Setup\n- **Install**: Built from source at `~/gbrain/`\n- **CLI**: Symlinked at `~/.bun/bin/gbrain`\n- **Brain location**: `~/.gbrain/brain.pglite` (PGLite \u2014 local Postgres, no server needed)\n- **Config**: `~/.gbrain/config.json`\n- **Schema**: gbrain-base-v2\n- **Pages**: 0 (just initialized)\n\n## Models Configured\n| Role | Model |\n|------|-------|\n| Embedding | openai:text-embedding-3-large (1536d) |\n| Query Expansion | anthropic:claude-haiku-4-5-20251001 |\n| Chat | anthropic:claude-opus-4-7 |\n\n## Status\n- \u274c **Embeddings disabled** \u2014 needs OpenAI API key\n- \u2705 **Keyword search** works without embeddings\n- \u2705 Brain initialized and ready\n- 49 skills loaded\n\n## Related\n- [[2026-06-03]]\n- [[Google Workspace Setup]]\n- [[VPS Hardening]]",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "2026-06-03",
+          "type": "wikilink",
+          "text": "2026-06-03"
+        },
+        {
+          "to": "concepts/google-workspace-setup",
+          "type": "wikilink",
+          "text": "Google Workspace Setup"
+        },
+        {
+          "to": "concepts/vps-hardening",
+          "type": "wikilink",
+          "text": "VPS Hardening"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 3,
+      "inbound_count": 0
+    },
+    {
+      "slug": "concepts/github-2fa-required-2026-06-17",
+      "title": "Github 2fa Required 2026 06 17",
+      "type": "concept",
+      "updated": "",
+      "body": "# GitHub 2FA Required for mc-hermes Account\n\n**Source:** email\n**Source URI:** gmail://msg_19ed814d86397ca4\n**Ingested:** 2026-06-20T03:30:00Z\n\nGitHub is enforcing 2FA for all users contributing code. The mc-hermes account must enroll by **July 19, 2026 at 00:00 (UTC)**.\n\n## Key Details\n\n- **Deadline:** July 19, 2026 at 00:00 UTC\n- **Account:** mc-hermes on GitHub\n- **Action needed:** Enroll in 2FA before the deadline\n- **Options:** Security key, GitHub Mobile, TOTP authenticator app, SMS\n- **Recommendation:** Set up at least two methods (including recovery codes)\n- **PATs/SSH keys continue working** after the deadline \u2014 only interactive sign-in is affected\n- **Deadline is ~29 days away** from today (June 20)",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "concepts/github-2fa-required-mc-hermes",
+      "title": "Github 2fa Required Mc Hermes",
+      "type": "concept",
+      "updated": "",
+      "body": "",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "concepts/google-workspace-setup",
+      "title": "Google Workspace Setup",
+      "type": "concept",
+      "updated": "",
+      "body": "# Google Workspace Setup\n\n## Account\n- **Email**: info@malohacoast.com\n- **Project**: leafy-affinity-491809-a5 (Open Claw)\n- **OAuth Client**: admin-assistant\n- **Token**: `~/.hermes/google_token.json` (auto-refreshes)\n\n## Configured Services\n| Service | Status | Notes |\n|---------|--------|-------|\n| Gmail | \u2705 Read/Send/Modify | Full inbox access |\n| Calendar | \u2705 Configured | Event management |\n| Drive | \u2705 Configured | File storage |\n| Docs | \u2705 Configured | Document creation |\n| Sheets | \u2705 Configured | Spreadsheet management |\n\n## Usage via Hermes\nThe google-workspace skill is loaded for managing Google services.\nShorthand alias configured: `GAPI=\"python $HOME/.hermes/skills/productivity/google-workspace/scripts/google_api.py\"`\n\n## Related\n- [[2026-06-03]]\n- [[gbrain]]",
+      "tags": [
+        "email",
+        "google-workspace",
+        "productivity"
+      ],
+      "links_out": [
+        {
+          "to": "2026-06-03",
+          "type": "wikilink",
+          "text": "2026-06-03"
+        },
+        {
+          "to": "gbrain",
+          "type": "wikilink",
+          "text": "gbrain"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "2026-06-03",
+          "type": "wikilink",
+          "text": "Google Workspace Setup"
+        },
+        {
+          "from": "concepts/2026-06-03",
+          "type": "wikilink",
+          "text": "Google Workspace Setup"
+        },
+        {
+          "from": "concepts/gbrain",
+          "type": "wikilink",
+          "text": "Google Workspace Setup"
+        },
+        {
+          "from": "concepts/vps-hardening",
+          "type": "wikilink",
+          "text": "Google Workspace Setup"
+        },
+        {
+          "from": "gbrain",
+          "type": "wikilink",
+          "text": "Google Workspace Setup"
+        },
+        {
+          "from": "vps-hardening",
+          "type": "wikilink",
+          "text": "Google Workspace Setup"
+        }
+      ],
+      "outbound_count": 2,
+      "inbound_count": 6
     },
     {
       "slug": "concepts/gpu-infrastructure",
@@ -1473,6 +1827,64 @@
       "inbound_count": 1
     },
     {
+      "slug": "concepts/hermes-profile-backup",
+      "title": "Hermes Profile Backup",
+      "type": "concept",
+      "updated": "",
+      "body": "## Hermes Profile Backup\n\nThe Hermes profile backup pushes all agent profiles to a private GitHub repo with secrets stripped.\n\n### Repository\n- **Repo:** `github.com/Maloha-Coast/hermes-profile-backup` (private)\n- **Contents:** 1,186 files across 2 profiles (default + MC)\n- **Includes:** SOUL.md, skills, cron, memories, config.yaml (stripped), setup.sh, .gitignore\n\n### What gets backed up\n- SOUL.md (agent identity)\n- skills/ (all skill files)\n- cron/ (scheduled jobs)\n- memories/ (USER.md + MEMORY.md)\n- config.yaml with API keys replaced by <YOUR_KEY_HERE>\n\n### What gets EXCLUDED\n- API keys, tokens, secrets (replaced with placeholders)\n- Session logs and databases\n- OAuth tokens (google_token.json)\n- Runtime state files\n\n### Restore\n```bash\ngit clone git@github.com:Maloha-Coast/hermes-profile-backup.git\ncd hermes-profile-backup\n./setup.sh\n```\nThen edit ~/.hermes/config.yaml and ~/.hermes/.env with credentials.\n\n### Known gap\n- .env.template is missing from the current backup (README references it but file was not generated). Needs to be added on next backup run.",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "concepts/humanlayer-launch-announcement-2026-06-19",
+      "title": "Humanlayer Launch Announcement 2026 06 19",
+      "type": "concept",
+      "updated": "",
+      "body": "# HumanLayer // We're live \u2014 come build with us\n\n**Source:** Email (forwarded by sayf)\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-19T20:33:00Z\n**Provenance:** Forwarded by Sayf Codes <sayfcodes@gmail.com> to info@malohacoast.com on 2026-06-19\n\n**Original from:** dex at humanlayer <dexter@hey.humanlayer.dev>\n**Original date:** Thu, 18 Jun 2026\n\n---\n\n[[HumanLayer]] has launched publicly. It's an Agentic IDE and collaboration platform for engineering teams to design complex systems with AI agents before generating code.\n\n### Key Details\n\n- **Product:** [[HumanLayer]] \u2014 Agentic IDE, collaboration platform, and building blocks for the software factory\n- **Pricing:** Starter plan free for teams of fewer than three\n- **URL:** [humanlayer.com](https://humanlayer.com)\n- **Launch post (blurb):** [humanlayer.com/launch/blurb.md](https://humanlayer.com/launch/blurb.md)\n- **X post:** [@dexhorthy launch thread](https://x.com/dexhorthy/status/2067286892786454855)\n- **LinkedIn:** [[Dex Horthy]] launch post\n\n### Core Thesis\n\n> The year of no more slop.\n\n[[HumanLayer]]'s core idea: **don't outsource the thinking.** Great teams have run design reviews for decades because there's enormous leverage in collaborating on system design *before* writing the code. [[HumanLayer]] brings that missing piece of the software factory into one place.\n\n### What It Does\n\n- Lets engineers move 2-3x faster across the entire SDLC (not just coding)\n- Maintains rigorous standards for system architecture and program design\n- Engineers design complex systems with AI agents **before** generating a single line of code\n- **BYO subscription** \u2014 plug in Claude, Codex, and other AI subscriptions/API keys; no separate per-token bill\n\n### Background\n\n[[Dex Horthy]] and [[Kyle]] (the founders) previously built the open-source Research, Plan, Implement (RPI) framework, now running inside Fortune 500s like Block and Uber. [[HumanLayer]] is built on top of all that work.\n\n### People Mentioned\n\n- **[[Dex Horthy]]** \u2014 co-founder of [[HumanLayer]], previously built RPI framework\n- **[[Kyle]]** \u2014 co-founder of [[HumanLayer]]\n\n### Mentioned Companies\n\n- **[[HumanLayer]]** \u2014 Agentic IDE and software factory platform\n- **Block** \u2014 Fortune 500, runs RPI framework\n- **Uber** \u2014 Fortune 500, runs RPI framework",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "companies/humanlayer",
+          "type": "wikilink",
+          "text": "HumanLayer"
+        },
+        {
+          "to": "people/dex-horthy",
+          "type": "wikilink",
+          "text": "Dex Horthy"
+        },
+        {
+          "to": "people/kyle",
+          "type": "wikilink",
+          "text": "Kyle"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 3,
+      "inbound_count": 0
+    },
+    {
+      "slug": "concepts/humanlayer-launch-newsletter-2026-06-19",
+      "title": "Humanlayer Launch Newsletter 2026 06 19",
+      "type": "concept",
+      "updated": "",
+      "body": "# HumanLayer // We're live \u2014 come build with us\n\n**Source:** Email (sayf forward)\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-19T20:32:00Z\n**Provenance:** Forwarded by Sayf on 2026-06-19\n\n---\n\nHumanLayer is launching publicly \u2014 an Agentic IDE, collaboration platform, and building blocks for software factories. After a year pushing limits with the open-source RPI (Research, Plan, Implement) framework now running inside Fortune 500s (Block, Uber), founder Dex (dex at humanlayer) and Kyle are opening up access.\n\n**Core thesis:** Don't outsource the thinking. Design reviews before code \u2014 bring the leverage of collaborative system design into one place. Teams move 2-3x faster across the full SDLC while maintaining rigorous system architecture standards.\n\n**Key details:**\n- humanlayer.com \u2014 Starter plan free for teams <3\n- Bring your own subscription (Claude, Codex, API keys) \u2014 no separate per-token bill\n- Launch posts: [X](https://x.com/dexhorthy/status/2067286892786454855) | [LinkedIn](https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U)\n- Launch blurb for writing: https://humanlayer.com/launch/blurb.md\n\n**Quote:** \"The year of no more slop.\"",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "people/dexter-horthy",
+          "type": "wikilink",
+          "text": "HumanLayer Launch Newsletter"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 1
+    },
+    {
       "slug": "concepts/humanlayer-launch-newsletter",
       "title": "Humanlayer Launch Newsletter",
       "type": "concept",
@@ -1491,15 +1903,9 @@
           "text": "HumanLayer"
         }
       ],
-      "backlinks": [
-        {
-          "from": "people/dexter-horthy",
-          "type": "wikilink",
-          "text": "HumanLayer Launch Newsletter"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 2,
-      "inbound_count": 1
+      "inbound_count": 0
     },
     {
       "slug": "concepts/knowledge-graph-as-moat",
@@ -1590,6 +1996,52 @@
       "backlinks": [],
       "outbound_count": 0,
       "inbound_count": 0
+    },
+    {
+      "slug": "concepts/maloha-coast",
+      "title": "Maloha Coast",
+      "type": "concept",
+      "updated": "",
+      "body": "Maloha Coast Sdn Bhd \u2014 AI consulting and development agency bringing AI to SMBs locally and worldwide.\n\n## Director\nSayf (username: falcon)\n\n## Infrastructure\n- VPS hardened and secured\n- Google Workspace configured (info@malohacoast.com)\n- gbrain knowledge base with embeddings enabled\n- Obsidian vault for personal notes\n- Hermes MC profile as admin assistant\n\n## GitHub\nOrganization: malohacoast on GitHub\nEmbeddings: \u2705 Enabled via OpenAI service account\n\n## Brand Identity\n- **Colour palette**: Primary #2a6a8a (teal blue), Accent #c4a86a (champagne gold)\n- **Typography**: Optima font (humanist/elegant)\n- **Hex pattern**: Gold-on-navy honeycomb grid at https://iili.io/CK3nHLF.png\n- **Email templates**: \\`html-email-with-sheet-logging\\` skill (production template, header fragment, 8 colour variants)\n- Full brand identity: [[brand/maloha-coast-brand-identity]]\n\n## Skills\n- \\`html-email-with-sheet-logging\\` \u2014 Send brand-styled HTML emails via Gmail API + log to Google Sheet\n- Brand exploration concepts: /home/ubuntu/maloha-coast-brand-concepts.html",
+      "tags": [
+        "company",
+        "consulting",
+        "malohacoast",
+        "zaim"
+      ],
+      "links_out": [
+        {
+          "to": "brand/maloha-coast-brand-identity",
+          "type": "wikilink",
+          "text": "brand/maloha-coast-brand-identity"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
+      "inbound_count": 0
+    },
+    {
+      "slug": "concepts/media/videos/graphify-solves-claude-code-problem",
+      "title": "Graphify Solves Claude Code Problem",
+      "type": "concept",
+      "updated": "",
+      "body": "# Graphify Solves Claude Code's Problem\n\n**Source:** YouTube video by Jack, AI automation channel\n**URL:** https://youtu.be/Owv503rTqYY\n**Ingested:** 2026-06-09\n**Type:** tutorial + product pitch\n\n## Executive Summary\n\nGraphify is a tool that creates a knowledge graph of any codebase \u2014 mapping files, modules, \"god nodes\" (load-bearing files), and their interdependencies. This gives Claude (or any AI agent) a persistent, queryable map so it doesn't re-read the entire repo every conversation. The core insight: \"rereading is the tax we're saving\" \u2014 the graph lets the AI answer from summaries instead of re-parsing flat code. When connected to an agentic operating system (Hermes + Claude Code + a visual dashboard), it becomes a shared brain that compounds across sessions and devices.\n\n## The Core Idea\n\nGraphify treats every codebase as a foreign country. Without it, you're translating a language you don't speak. With it, you have a map \u2014 you understand relationships, dependencies, and what affects what before editing anything.\n\n### What the Map Does\n- **Instant orientation** \u2014 understand any repo immediately without reading through it\n- **Grounded answers** \u2014 queries pull from the graph, not guesses from skimming\n- **Blast radius awareness** \u2014 see every dependency before editing a file\n- **Token savings** \u2014 avoid re-reading the repo each conversation; answer from summaries\n- **Always fresh** \u2014 the graph is regenerated, not stale\n\n### How It Works\n1. Reads code (does not summarize)\n2. Clusters things into modules\n3. Ranks \"god nodes\" \u2014 load-bearing files\n4. Labels facts vs. guesses (extracted vs. inferred)\n\n## Technical Architecture\n\n- **Input:** Any codebase (Claude Code, Hermes, GitHub repos)\n- **Output:** Knowledge graph with interactive visualization (community clusters)\n- **Integration:** Works as a Claude Code skill; connects to Hermes Agent\n- **Dashboard:** Visual interface showing files, links, clusters, and cost savings per conversation\n\n## The Agentic Operating System Layer\n\nThe video's key argument is that Graphify alone is useful, but Graphify + an agentic OS is the 10x unlock. The OS provides:\n\n- **One shared brain:** Graphify, Claude Code, Hermes, and the dashboard all read from one registry\n- **Cross-device continuity:** Work on laptop with Claude Code, then query from mobile via Hermes \u2014 same graph\n- **Any repo ingestion:** Paste a GitHub URL \u2192 \"graphify it\" \u2192 $0 cost \u2192 queryable immediately\n- **Overnight reviews:** The OS runs dream cycles, searches for improvements, processes chat history\n- **Hermes Telegram integration:** Hermes can reach out proactively with questions\n\n## Key Quotes\n\n- \"Rereading is the tax that we're saving here\" (3:04)\n- \"Without the map, it skims a whole repo every single conversation\" (3:10)\n- \"With the map, we can actually answer from summaries \u2014 every session compounds\" (3:13)\n- \"Graphify makes the map and the OS makes it always on, shared, and conversational\" (7:02)\n- \"If you're not using an agentic operating system, you're leaving so much value on the table\" (10:04)\n\n## People Mentioned\n\n- **Jack** \u2014 Video creator, AI automation YouTuber. Previously built and sold a tech startup \"with a gazillion customers.\" Now building AI businesses. Runs a community with Claude Code + Hermes operating system templates.\n\n## Tools/Technologies Mentioned\n\n- **Graphify** \u2014 Knowledge graph generator for codebases (GitHub repo, open source)\n- **Claude Code** \u2014 Primary coding agent that Graphify enhances\n- **Hermes Agent** \u2014 Agent framework connected to the operating system\n- **OpenCor** \u2014 Mentioned as part of the cross-device connectivity stack\n- **Anti-Gravity** \u2014 Referenced as part of the agent ecosystem\n- **Codex** \u2014 OpenAI Codex, also integrated into the OS\n\n## Relevance to Maloha Coast\n\nThe Graphify pattern directly parallels the email-to-gbrain / Company Memory OS architecture:\n\n| Graphify Pattern | gbrain/Company Memory OS Equivalent |\n|---|---|\n| Knowledge graph of code files | Knowledge graph of people, companies, decisions |\n| \"God nodes\" = key files | \"God nodes\" = key relationships/deals |\n| Query: \"what depends on X?\" | Query: \"what was decided about Project X?\" |\n| Claude Code integration | Hermes Agent + gbrain integration |\n| Visual dashboard | gbrain dashboard + architecture diagram |\n| Compound context across sessions | Compound institutional memory across emails |\n\nThe video validates the architecture sayf has already built: knowledge graph + agentic layer + visual dashboard + autonomous pipeline. It's a compelling analogy for client pitches \u2014 \"what Graphify does for code, Company Memory OS does for your business.\"\n\n## Chapter Index\n\n- 00:00 \u2014 Chapter 1: Graphify Solves Claude's Problem (hook + promise)\n- 00:46 \u2014 Chapter 2: What Graphify Actually Does (the map metaphor)\n- 01:21 \u2014 Chapter 3: How The Map Works (clustering, god nodes, facts vs guesses)\n- 02:10 \u2014 Chapter 4: Why Maps Save Tokens (orientation, blast radius, re-reading tax)\n- 03:17 \u2014 Chapter 5: Install And Set Up (clone repo, Claude Code integration)\n- 04:38 \u2014 Chapter 6: See The Knowledge Graph (interactive visualization)\n- 05:04 \u2014 Chapter 7: Query Any Repo Live (prompt example, cost comparison)\n- 05:43 \u2014 Chapter 8: Take It Further (agentic operating system intro)\n- 06:07 \u2014 Chapter 9: Inside The Operating System (dashboard, Hermes integration)\n- 07:32 \u2014 Chapter 10: Import Any GitHub Repo (one-click ingestion)\n- 08:07 \u2014 Chapter 11: Chat To Your Projects (conversational interface)\n- 09:04 \u2014 Chapter 12: Connect Everything Together (shared brain architecture)\n- 10:04 \u2014 Chapter 13: Visual Interface Wins (closing argument)\n\n---\n\n*Raw transcript extracted from YouTube timestamps provided by user (VPS IP blocked by YouTube, transcript retrieved via user-supplied text).*",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-06-10-business-brain-digest",
+          "type": "wikilink",
+          "text": "Graphify Solves Claude Code Problem"
+        },
+        {
+          "from": "digests/2026-06-15-business-brain-digest",
+          "type": "wikilink",
+          "text": "Graphify Solves Claude Code Problem"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 2
     },
     {
       "slug": "concepts/openclaw-anatomy",
@@ -1695,6 +2147,22 @@
       "inbound_count": 2
     },
     {
+      "slug": "concepts/pipeline-e2e-test-2026-06-20",
+      "title": "Pipeline End-to-End Test \u2014 Jun 20 2026",
+      "type": "concept",
+      "updated": "",
+      "body": "# Pipeline E2E Test\n\nThis page was created to verify the full gbrain write \u2192 index \u2192 dashboard pipeline.\n\n## Compiled Truth\n\nThe markdown-first write path works as follows:\n1. Write `.md` file to `~/brain/<type>/<slug>.md`\n2. `gbrain import ~/brain/` indexes into PGLite\n3. Dashboard pipeline exports from PGLite \u2192 JSON \u2192 GitHub Pages\n4. Both main and Zaim (tag-filtered) dashboards reflect the new page\n\n**Created:** 2026-06-20\n**Source:** System test, sayf-directed\n\n## Timeline\n\n- **2026-06-20** \u2014 Page created as part of pipeline end-to-end verification. [Source: System test]\n\n## Verification Checklist\n\n- [ ] Page appears in `gbrain list`\n- [ ] Page appears in `gbrain search \"pipeline end-to-end\"`\n- [ ] Page appears in main dashboard JSON\n- [ ] Page appears in Zaim dashboard JSON (tagged `zaim`)\n- [ ] Markdown committed to `~/brain/` repo",
+      "tags": [
+        "pipeline-e2e",
+        "test",
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "concepts/rdma",
       "title": "RDMA (Remote Direct Memory Access)",
       "type": "concept",
@@ -1757,13 +2225,41 @@
           "text": "Salary Negotiation Playbook"
         },
         {
+          "from": "concepts/zaim/3-month-career-pivot-framework",
+          "type": "wikilink",
+          "text": "Salary Negotiation Playbook"
+        },
+        {
           "from": "zaim/3-month-career-pivot-framework",
           "type": "wikilink",
           "text": "Salary Negotiation Playbook"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 4
+      "inbound_count": 5
+    },
+    {
+      "slug": "concepts/sayf/maloha-coast-navigator-test-edition",
+      "title": "Maloha Coast Navigator Test Edition",
+      "type": "concept",
+      "updated": "",
+      "body": "# The Maloha Coast Navigator \u2014 Test Edition\n\n**Source:** email forward\n**Source URI:** gmail://msg_19eca4c3e7e0cefc\n**Ingested:** 2026-06-20T04:00:00Z\n**Provenance:** Self-BCC to sayf's inbox\n\n**The Maloha Coast Navigator**  \n*Your weekly guide to AI strategy for SMBs*\n\n---\n\n## This Week: Why Most AI Pilots Fail\n\n80% of AI proofs-of-concept never reach production. Here's the pattern:\n\n1. **Scope creep** \u2014 POCs that try to boil the ocean\n2. **Data rot** \u2014 Models trained on stale data that's 6 months old\n3. **No owner** \u2014 AI sits in IT without a business sponsor\n\n### The Fix\n\nStart with a **single workflow**, not a platform. Pick the one manual process your team hates most. Automate that. Measure the time saved. Then expand.\n\n---\n\n## Client Spotlight\n\nA 12-person accounting firm deployed an email triage agent. Result: 14 hours/week saved. ROI in week one.\n\n---\n\n## What We're Reading\n\n- [[Claude Code 10x Skill]] \u2014 The skill pattern that changed everything\n- [[Second Brain Architecture]] \u2014 How we structure knowledge for SMBs\n\n---\n\n## Upcoming\n\nNext week: Pricing models that work for SMB AI consulting.\n\n*\u2014 Sayf, Maloha Coast*",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "concepts/claude-code-10x-skill-newsletter",
+          "type": "wikilink",
+          "text": "Claude Code 10x Skill"
+        },
+        {
+          "to": "Second Brain Architecture",
+          "type": "wikilink",
+          "text": "Second Brain Architecture"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 2,
+      "inbound_count": 0
     },
     {
       "slug": "concepts/side-project-strategy",
@@ -1801,13 +2297,18 @@
           "text": "Side Project Strategy"
         },
         {
+          "from": "concepts/zaim/3-month-career-pivot-framework",
+          "type": "wikilink",
+          "text": "Side Project Strategy"
+        },
+        {
           "from": "zaim/3-month-career-pivot-framework",
           "type": "wikilink",
           "text": "Side Project Strategy"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 4
+      "inbound_count": 5
     },
     {
       "slug": "concepts/skills-inventory",
@@ -1850,13 +2351,18 @@
           "text": "Skills Inventory"
         },
         {
+          "from": "concepts/zaim/3-month-career-pivot-framework",
+          "type": "wikilink",
+          "text": "Skills Inventory"
+        },
+        {
           "from": "zaim/3-month-career-pivot-framework",
           "type": "wikilink",
           "text": "Skills Inventory"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 5
+      "inbound_count": 6
     },
     {
       "slug": "concepts/three-folder-system-head-hands-heart",
@@ -1932,6 +2438,108 @@
       "inbound_count": 2
     },
     {
+      "slug": "concepts/vps-hardening",
+      "title": "Vps Hardening",
+      "type": "concept",
+      "updated": "",
+      "body": "# VPS Hardening\n\n## Overview\nSecurity hardening of the Maloha Coast production VPS (Ubuntu, 6.8.0-124-generic). All changes applied and verified post-reboot.\n\n## Changes Applied\n\n### SSH Hardening\n| Setting | Before | After |\n|---------|--------|-------|\n| PermitRootLogin | yes | prohibit-password |\n| X11Forwarding | yes | no |\n| MaxAuthTries | 6 (default) | 3 |\n| ClientAliveInterval | none | 300s (5 min) |\n| ClientAliveCountMax | 3 (default) | 2 |\n| AllowUsers | any local user | ubuntu only |\n| DSA host keys | present | removed |\n| PasswordAuthentication | yes | no |\n\n### Firewall (UFW)\n- **Default**: deny all incoming, allow all outgoing\n- **Open ports**: 22/tcp (SSH) only\n- Status: active\n\n### fail2ban\n- **Jail**: sshd (aggressive mode)\n- **Max retries**: 3\n- **Ban time**: 1 hour\n- **Post-reboot**: banned 4 IPs within 2 minutes of coming online\n- See [[2026-06-03#VPS Hardening]] for timeline\n\n### System Updates\n- 78 packages upgraded\n- Kernel updated to 6.8.0-124 (was pending reboot, now active)\n\n## Verification\n- [x] SSH config validated via `sshd -T`\n- [x] UFW active with correct rules\n- [x] fail2ban running with active bans\n- [x] Hermes gateway auto-starts on boot\n- [x] Ubuntu NOPASSWD sudo preserved (Hermes requirement)\n\n## Related\n- [[Google Workspace Setup]]\n- [[2026-06-03]]\n- [[Gateway Infrastructure]] \u2014 gateway health monitoring and watchdog",
+      "tags": [
+        "devops",
+        "infrastructure",
+        "security"
+      ],
+      "links_out": [
+        {
+          "to": "2026-06-03",
+          "type": "wikilink",
+          "text": "2026-06-03#VPS Hardening"
+        },
+        {
+          "to": "concepts/google-workspace-setup",
+          "type": "wikilink",
+          "text": "Google Workspace Setup"
+        },
+        {
+          "to": "2026-06-03",
+          "type": "wikilink",
+          "text": "2026-06-03"
+        },
+        {
+          "to": "concepts/gateway-infrastructure",
+          "type": "wikilink",
+          "text": "Gateway Infrastructure"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "2026-06-03",
+          "type": "wikilink",
+          "text": "VPS Hardening"
+        },
+        {
+          "from": "2026-06-03",
+          "type": "wikilink",
+          "text": "VPS Hardening#fail2ban"
+        },
+        {
+          "from": "concepts/2026-06-03",
+          "type": "wikilink",
+          "text": "VPS Hardening"
+        },
+        {
+          "from": "concepts/2026-06-03",
+          "type": "wikilink",
+          "text": "VPS Hardening#fail2ban"
+        },
+        {
+          "from": "concepts/gateway-infrastructure",
+          "type": "wikilink",
+          "text": "VPS Hardening"
+        },
+        {
+          "from": "concepts/gbrain",
+          "type": "wikilink",
+          "text": "VPS Hardening"
+        },
+        {
+          "from": "gateway-infrastructure",
+          "type": "wikilink",
+          "text": "VPS Hardening"
+        },
+        {
+          "from": "gbrain",
+          "type": "wikilink",
+          "text": "VPS Hardening"
+        }
+      ],
+      "outbound_count": 4,
+      "inbound_count": 8
+    },
+    {
+      "slug": "concepts/zaim-15min-gap-method",
+      "title": "The 15-Minute Gap Method",
+      "type": "concept",
+      "updated": "",
+      "body": "Zaim here. Wanted to capture this before I forget.\n\nBetween KSI sessions I have these 15-minute gaps. Started using them to jot down one thing I noticed about each student \u2014 what they're stuck on, what lit them up. After a month of this, patterns emerged that I'd never have spotted otherwise.\n\nThree buckets emerged:\n1. Career pivoters \u2014 stuck on 'what if I fail' not 'what do I want'\n2. Fresh grads \u2014 over-indexing on salary, under-indexing on growth trajectory  \n3. Mid-career \u2014 all variations of 'is this it?'\n\nThe 15-minute rule: never let a gap go empty. Even one sentence per student compounds.\n\n\u2014 Zaim",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "concepts/zaim-15min-rule",
+      "title": "Zaim 15min Rule",
+      "type": "concept",
+      "updated": "",
+      "body": "# Coaching Insight: The 15-Minute Rule\nBetween KSI meetings, I have 15-minute gaps. Started using them to capture one coaching insight each time. After a month, I had 20+ insights I'd forgotten I'd had. The system surfaces the relevant one when I need it.",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "concepts/zaim-3month-career-pivot-framework",
       "title": "Zaim 3month Career Pivot Framework",
       "type": "concept",
@@ -1960,6 +2568,22 @@
       "inbound_count": 0
     },
     {
+      "slug": "concepts/zaim-career-goals-12-week-year-2026-06-16",
+      "title": "Why Your 2026 Career Goals Are Already Dead (Zaim Newsletter)",
+      "type": "concept",
+      "updated": "",
+      "body": "# Why Your 2026 Career Goals Are Already Dead (Zaim Newsletter)\n\n**From:** Zaim Mohzani <zaim.mohzani90@gmail.com>\n**Sent to:** info+zaim@malohacoast.com\n**Date:** June 16, 2026\n\nSincerely,\n\n*Zaim Mohzani*\n\n\n---------- Forwarded message ---------\nFrom: Zaim Mohzani <zaim@nationbuildingschool.com>\nDate: Fri, Jun 12, 2026 at 4:46\u202fPM\nSubject: Why your 2026 career goals are already dead\nTo: <zaim.mohzani90@gmail.com>\n\n\nAnd what to do about it? \u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\n\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u2007\u034f\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\n\n\nIt's June. How's that career goal from January going?\n\nIf you're being honest, probably: forgotten by March, barely remembered\n(and feeling guilty) in June and quietly dropped by...the end of the year.\n\nIt's a timeframe problem, not a discipline problem.\nThe annual goal trap\n\nA year is too long to create urgency and too vague to act on.\n\n\"Get a new job this year\" feels fine in January. There's time. So nothing\nhappens.\n\nBy June, the goal is still technically alive, but you haven't done anything\nthat moves it forward. By December, you're setting the same goal again for\nnext year.\n\nI went through this myself but with weight, not career. In January 2025, I\nset an annual goal: lose 6kg by December. Standard SMART goal. Looked fine\non paper.\n\nThen I came across Brian Moran and Michael Lennington's book \"The 12 Week\nYear,\" which argues most people don't actually operate in years. They\noperate in the last few weeks before a deadline, however long that deadline\nis. So the fix is to shrink the deadline.\n\nBtw, this book is available on Shopee!\n\nI rewrote the goal: lose 6kg in 90 days, by 31 March.\n\nI hit it!!\n\nThe best part was that I never had to set that goal again. The habits I\nbuilt in those 90 days kept running on their own for the rest of the year.\nWhy this works for your career too\n\nThe same applies to a job search, a promotion case or a pivot.\n\n\"Get promoted this year\" doesn't tell you what to do on Monday.\n\n\"By 30 September, I will have had 3 conversations with people in my target\ndepartment, applied to 5 internal roles, and presented one project to\nleadership\" tells you exactly what to do on Monday.\n\nOne of these is a wish. The other is a plan.\n\nI've worked with clients on exactly this. The ones who set a 90-day goal\nlike \"land 3 offers from MNCs by end of Q3\" with weekly actions attached,\nmostly hit it or get close. The ones with \"find a better job this year\"\nmostly don't, because there's no Monday task attached to it.\nHow to set yours\n\nPick ONE career goal for this quarter. Just one.\n\nFollow this format and write down:\n\n   - *My 90-day career goal is...*\n   - *This matters to me because...*\n   - *To complete this, I commit that by 30 September 2026, I will have...*\n   (make this checkable. \"3 offers\" is checkable. \"More clarity\" is not.)\n   - *To make sure I complete it, I'm going to...* (weekly actions, not the\n   outcome)\n\nYour homework this weekend\n\nWrite it down. One goal. One sentence you can check off or not, no grey\narea.\n\nThen build it into your week, not your year.\n------------------------------\n\nP.S. I'm running a free workshop exactly on setting this 90-day goal for Q3\n2026. If you're interested to join, it's happening early next month in\nJune. For more info or to sign up, head over to\nhttps://t.ly/getclearoncareer6\n<https://preview.kit-mail3.com/click/dpheh0hzhmh4/aHR0cHM6Ly90Lmx5L2dldGNsZWFyb25jYXJlZXI2>\n\nUnsubscribe <https://preview.kit-mail3.com/unsubscribe> | Update your\nprofile <https://preview.kit-mail3.com/preferences> | I Write on LinkedIn\nEvery Day - Follow Me For Career, AI and Productivity Insights\n<https://preview.kit-mail3.com/click/dpheh0hzhmh4/aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2luL3phaW1tb2h6YW5pLw==>\n\nNation Building School - NBS Ventures - 202403343346 (003683654-H)",
+      "tags": [
+        "career-coaching",
+        "newsletter",
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "concepts/zaim-pipeline-fix-test-20260615",
       "title": "Zaim Pipeline Fix Test 20260615",
       "type": "concept",
@@ -1970,6 +2594,82 @@
       "backlinks": [],
       "outbound_count": 0,
       "inbound_count": 0
+    },
+    {
+      "slug": "concepts/zaim-test-pipeline",
+      "title": "Zaim Test Pipeline",
+      "type": "concept",
+      "updated": "",
+      "body": "# Test Page - Quick Capture\nJust testing the pipeline works end to end. Zaim's coaching workflow.",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "concepts/zaim/15-minute-gap-method",
+      "title": "15 Minute Gap Method",
+      "type": "concept",
+      "updated": "",
+      "body": "# The 15-Minute Gap Method\n\n**Source:** email forward\n**Source URI:** gmail://msg_19eca04daacc7a09\n**Ingested:** 2026-06-20T04:00:00Z\n**Provenance:** Forwarded to Zaim's workspace via self-BCC\n\nZaim here. Wanted to capture this before I forget.\n\nBetween KSI sessions I have these 15-minute gaps. Started using them to jot down one thing I noticed about each student \u2014 what they're stuck on, what lit them up. After a month of this, patterns emerged that I'd never have spotted otherwise.\n\nThree buckets emerged:\n1. Career pivoters \u2014 stuck on 'what if I fail' not 'what do I want'\n2. Fresh grads \u2014 over-indexing on salary, under-indexing on growth trajectory\n3. Mid-career \u2014 all variations of 'is this it?'\n\nThe 15-minute rule: never let a gap go empty. Even one sentence per student compounds.\n\n\u2014 Zaim",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "concepts/zaim/3-month-career-pivot-framework",
+      "title": "3 Month Career Pivot Framework",
+      "type": "concept",
+      "updated": "",
+      "body": "# The 3-Month Career Pivot Framework\n\n**Source:** email forward\n**Source URI:** gmail://msg_19eca58bcdb09c70\n**Ingested:** 2026-06-20T04:00:00Z\n**Provenance:** Forwarded to Zaim's workspace via self-BCC\n\nZaim shared this during a coaching session with a KSI senior analyst looking to move into product.\n\n### Phase 1: Audit (Month 1)\n- [[Skills Inventory]] \u2014 map current skills to target role requirements\n- Identify the 20% skill gap that blocks 80% of interviews\n- Don't learn everything \u2014 learn the gatekeepers\n\n### Phase 2: Signal (Month 2)\n- [[Side Project Strategy]] \u2014 build one public artifact, not ten private ones\n- Write 2 LinkedIn posts/week documenting the pivot journey\n- Engage with 3 target-company hiring managers\n\n### Phase 3: Convert (Month 3)\n- [[Salary Negotiation Playbook]] \u2014 comp bands for product roles in KL\n- Reference calls with 2 people who made the same pivot\n- First offer within 90 days\n\n### Key Insight\n> 'The career pivot gap isn't a skills problem \u2014 it's a positioning problem. You're not underqualified, you're framed wrong.' \u2014 Zaim\n\n**Client:** KSI Senior Analyst \u2192 Product Manager\n**Engagement:** Weekly coaching, 12 sessions\n**Status:** Phase 2, on track",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [
+        {
+          "to": "concepts/skills-inventory",
+          "type": "wikilink",
+          "text": "Skills Inventory"
+        },
+        {
+          "to": "concepts/side-project-strategy",
+          "type": "wikilink",
+          "text": "Side Project Strategy"
+        },
+        {
+          "to": "concepts/salary-negotiation-playbook",
+          "type": "wikilink",
+          "text": "Salary Negotiation Playbook"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 3,
+      "inbound_count": 0
+    },
+    {
+      "slug": "concepts/zaim/coaching-client-aisyah-rahim",
+      "title": "Coaching Client Aisyah Rahim",
+      "type": "concept",
+      "updated": "",
+      "body": "# Coaching Client: Aisyah Rahim\n\n**Source:** email forward\n**Source URI:** gmail://msg_19eca0a8dc4888c3\n**Ingested:** 2026-06-20T04:00:00Z\n**Provenance:** Forwarded to Zaim's workspace via self-BCC\n\nZaim here. Adding a quick profile on a new client.\n\nName: Aisyah Rahim\nRole: Senior Brand Manager at Unilever Malaysia\nContext: Referred by Liyana from the KSI workshop last month. First session next Tuesday.\n\nKey points from our intro call:\n- 8 years in FMCG brand management, feeling stagnant\n- Wants to pivot into tech but unsure where to start\n- Main blocker: 'I don't have a technical background'\n- Has actually done more data-driven work than she realises \u2014 ran consumer analytics for 3 product launches\n- Salary anchor: RM 18k/month, worried about resetting to junior level\n\nMy read: Classic mid-career pivot case. The real problem isn't skills \u2014 it's confidence and narrative. She needs help reframing 'brand manager' as 'growth strategist who uses data.' Tech companies would kill for someone who can bridge consumer insights and product.\n\nPlan for session 1: Audit her last 2 years of work through a tech lens. Find 3-5 specific examples where she already did 'product thinking' without calling it that.\n\n\u2014 Zaim",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "people/liyana",
+          "type": "wikilink",
+          "text": "Aisyah Rahim"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 1
     },
     {
       "slug": "datasets/dynamics-orchard-management-accounts-fye-2025",
@@ -2029,7 +2729,7 @@
           "text": "Dynamics Orchard Farm Management Accounts FYE 2025"
         },
         {
-          "to": "media/videos/graphify-solves-claude-code-problem",
+          "to": "concepts/media/videos/graphify-solves-claude-code-problem",
           "type": "wikilink",
           "text": "Graphify Solves Claude Code Problem"
         },
@@ -2157,7 +2857,7 @@
           "text": "Three Features Three Claudes One Afternoon"
         },
         {
-          "to": "media/videos/graphify-solves-claude-code-problem",
+          "to": "concepts/media/videos/graphify-solves-claude-code-problem",
           "type": "wikilink",
           "text": "Graphify Solves Claude Code Problem"
         },
@@ -2320,7 +3020,7 @@
           "text": "gateway-watchdog"
         },
         {
-          "to": "vps-hardening",
+          "to": "concepts/vps-hardening",
           "type": "wikilink",
           "text": "VPS Hardening"
         },
@@ -2330,15 +3030,9 @@
           "text": "2026-06-04"
         }
       ],
-      "backlinks": [
-        {
-          "from": "vps-hardening",
-          "type": "wikilink",
-          "text": "Gateway Infrastructure"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 3,
-      "inbound_count": 1
+      "inbound_count": 0
     },
     {
       "slug": "gbrain",
@@ -2354,12 +3048,12 @@
           "text": "2026-06-03"
         },
         {
-          "to": "google-workspace-setup",
+          "to": "concepts/google-workspace-setup",
           "type": "wikilink",
           "text": "Google Workspace Setup"
         },
         {
-          "to": "vps-hardening",
+          "to": "concepts/vps-hardening",
           "type": "wikilink",
           "text": "VPS Hardening"
         }
@@ -2371,13 +3065,23 @@
           "text": "gbrain"
         },
         {
+          "from": "concepts/2026-06-03",
+          "type": "wikilink",
+          "text": "gbrain"
+        },
+        {
+          "from": "concepts/google-workspace-setup",
+          "type": "wikilink",
+          "text": "gbrain"
+        },
+        {
           "from": "google-workspace-setup",
           "type": "wikilink",
           "text": "gbrain"
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 2
+      "inbound_count": 4
     },
     {
       "slug": "google-workspace-setup",
@@ -2404,28 +3108,18 @@
       ],
       "backlinks": [
         {
-          "from": "2026-06-03",
-          "type": "wikilink",
-          "text": "Google Workspace Setup"
-        },
-        {
           "from": "brand/maloha-coast-brand-identity",
           "type": "wikilink",
           "text": "google-workspace-setup"
         },
         {
-          "from": "gbrain",
+          "from": "concepts/brand/maloha-coast-brand-identity",
           "type": "wikilink",
-          "text": "Google Workspace Setup"
-        },
-        {
-          "from": "vps-hardening",
-          "type": "wikilink",
-          "text": "Google Workspace Setup"
+          "text": "google-workspace-setup"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 4
+      "inbound_count": 2
     },
     {
       "slug": "hermes-profile-backup",
@@ -2722,6 +3416,11 @@
           "text": "maloha-coast"
         },
         {
+          "from": "concepts/brand/maloha-coast-brand-identity",
+          "type": "wikilink",
+          "text": "maloha-coast"
+        },
+        {
           "from": "meetings/2026-06-08-bjarte-global-ai-village",
           "type": "link",
           "text": "Maloha Coast"
@@ -2733,7 +3432,7 @@
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 3
+      "inbound_count": 4
     },
     {
       "slug": "media/videos/graphify-solves-claude-code-problem",
@@ -2748,20 +3447,10 @@
           "from": "concepts/knowledge-graph-as-moat",
           "type": "wikilink",
           "text": "media/videos/graphify-solves-claude-code-problem"
-        },
-        {
-          "from": "digests/2026-06-10-business-brain-digest",
-          "type": "wikilink",
-          "text": "Graphify Solves Claude Code Problem"
-        },
-        {
-          "from": "digests/2026-06-15-business-brain-digest",
-          "type": "wikilink",
-          "text": "Graphify Solves Claude Code Problem"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 3
+      "inbound_count": 1
     },
     {
       "slug": "meetings/2026-06-05-tj-vandermolen",
@@ -2887,6 +3576,20 @@
       ],
       "backlinks": [],
       "outbound_count": 3,
+      "inbound_count": 0
+    },
+    {
+      "slug": "meetings/zaim/meeting-sayf-zaim-2026-06-12",
+      "title": "Meeting Sayf Zaim 2026 06 12",
+      "type": "meeting",
+      "updated": "",
+      "body": "# Sayf x Zaim \u2014 Jun 12, 2026\n\n**Source:** email forward\n**Source URI:** gmail://msg_19ecaa895ccb88af\n**Ingested:** 2026-06-20T04:00:00Z\n**Provenance:** Forwarded to Zaim's workspace via self-BCC\n\n**Date:** Friday, 12 June 2026, 10:30am \u2013 11:00am (MYT)\n**Google Meet:** https://meet.google.com/udx-niaz-esr\n\n## Summary\n\nDiscussion explored AI skepticism and market strategy alongside technical collaboration opportunities for business growth.\n\n### Differing AI Market Perspectives\nSayf and Zaim debated the value of AI in business, contrasting skepticism about automation hype with the practical utility of AI for basic skills training.\n\n### Technical Tools and Infrastructure\nDiscussion shifted toward specific software tools, noting the efficiency of virtual private servers and the potential of data integration dashboards for business applications.\n\n### Collaboration and Service Models\nAgreement reached to build a technical solution for coaching services while prioritizing simple, revenue-focused strategies for future client engagement for Maloha Coast.\n\n## Suggested Next Steps\n\n- **Maloha Coast** \u2014 Build Dashboard: Arrange a meeting to build the dashboard component. Perform the session either in person or over a call.\n- **Zaim Mohzani** \u2014 Provide Testimonial: Provide a testimonial in exchange for the assistance provided.\n- **Maloha Coast** \u2014 Share Research Link: Send the Tencent Lighthouse promotion link for further research.\n- **The group** \u2014 Schedule Followup Session: Coordinate a time for a meeting to continue the discussion.\n- **Zaim Mohzani** \u2014 Send WhatsApp Message: Contact Maloha Coast via the provided phone number.\n\n## Google Doc\nhttps://docs.google.com/document/d/1q3v6SbKF_PiEaTatPNvhZtoWdT9_n9v5HqMoxsLj3hQ/edit",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
       "inbound_count": 0
     },
     {
@@ -3155,10 +3858,10 @@
     },
     {
       "slug": "newsletters/humanlayer-launch-2026-06-19",
-      "title": "Humanlayer Launch 2026 06 19",
+      "title": "HumanLayer \u2014 We''''re live, come build with us",
       "type": "newsletter",
       "updated": "",
-      "body": "# HumanLayer // We're live \u2014 come build with us\n\n**Source:** email newsletter from dex at humanlayer (Dexter @ HumanLayer)\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-19T20:17:44+08:00\n**Provenance:** Forwarded by Sayf on 2026-06-19\n\n## Summary\n\n[[HumanLayer]] \u2014 an Agentic IDE and collaboration platform for engineering teams \u2014 launched publicly after a waitlist period. The product is built on the open-source Research, Plan, Implement (RPI) framework, now used at Block and Uber.\n\n## Key Content\n\nHumanLayer is an Agentic IDE, collaboration platform, and building blocks for a software factory where engineering teams design complex systems with AI agents before generating code. It claims to deliver 2-3x faster SDLC throughput while maintaining rigorous architecture standards.\n\n**Core thesis:** \"Don't outsource the thinking.\" Great teams run design reviews for decades because there's enormous leverage in collaborating on system design before writing code. HumanLayer brings that into one place.\n\n**Pricing:** Starter plan is free for teams of fewer than three. Users bring their own AI subscriptions (Claude, Codex, etc.) \u2014 no separate per-token bill.\n\n**Public launch links:**\n- X: https://x.com/dexhorthy/status/2067286892786454855\n- LinkedIn: https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U\n- Blurb for writing your own post: https://humanlayer.com/launch/blurb.md\n\n## Entities\n\n- [[Dex Horthy]] \u2014 founder, open-source RPI framework creator\n- [[Kyle]] \u2014 co-founder, building RPI framework alongside Dex\n- [[HumanLayer]] \u2014 Agentic IDE and collaboration platform\n- Block \u2014 RPI framework user\n- Uber \u2014 RPI framework user",
+      "body": "# HumanLayer \u2014 We're live, come build with us\n\n**Source:** email\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-20T04:00:00Z\n**Provenance:** Forwarded by Sayf Codes to info@malohacoast.com on 2026-06-19\n\n[[HumanLayer]] is opening up to everyone. Previously waitlist-only, the Agentic IDE and collaboration platform is now publicly available.\n\nFrom [[Dex Horthy]] (dexter@hey.humanlayer.dev) and Kyle \u2014 the team behind the open-source Research, Plan, Implement (RPI) framework now running inside Fortune 500s (Block, Uber).\n\n## What HumanLayer Is\n\nAn Agentic IDE, collaboration platform, and building blocks for your software factory \u2014 where engineering teams design complex systems with their AI agents before generating a single line of code. It lets engineers solving hard problems in complex codebases:\n\n- Move 2-3x faster across the entire SDLC (not just the coding part)\n- Maintain rigorous standards for system architecture and program design\n\n## Core Idea\n\nDon't outsource the thinking. Great teams have run design reviews for decades because there's enormous leverage in collaborating on system design before writing code. HumanLayer brings that missing piece of the software factory into one place.\n\nBring your own subscription \u2014 plug in Claude, Codex, and other AI subscriptions or API keys. No separate per-token bill.\n\n## Links\n\n- HumanLayer: https://humanlayer.com\n- Launch post (blurb.md): https://humanlayer.com/launch/blurb.md\n- X launch post: https://x.com/dexhorthy/status/2067286892786454855\n- LinkedIn launch post: https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U",
       "tags": [],
       "links_out": [
         {
@@ -3170,11 +3873,6 @@
           "to": "people/dex-horthy",
           "type": "wikilink",
           "text": "Dex Horthy"
-        },
-        {
-          "to": "people/kyle",
-          "type": "wikilink",
-          "text": "Kyle"
         }
       ],
       "backlinks": [
@@ -3184,8 +3882,31 @@
           "text": "newsletters/humanlayer-launch-2026-06-19"
         }
       ],
-      "outbound_count": 3,
+      "outbound_count": 2,
       "inbound_count": 1
+    },
+    {
+      "slug": "newsletters/maloha-coast-navigator-2026-06-15",
+      "title": "Maloha Coast Navigator 2026 06 15",
+      "type": "concept",
+      "updated": "",
+      "body": "# The Maloha Coast Navigator\n\n*Your weekly guide to AI strategy for SMBs*\n\n---\n\n## This Week: Why Most AI Pilots Fail\n\n80% of AI proofs-of-concept never reach production. Here's the pattern:\n\n1. **Scope creep** \u2014 POCs that try to boil the ocean\n2. **Data rot** \u2014 Models trained on stale data that's 6 months old\n3. **No owner** \u2014 AI sits in IT without a business sponsor\n\n### The Fix\n\nStart with a **single workflow**, not a platform. Pick the one manual process your team hates most. Automate that. Measure the time saved. Then expand.\n\n---\n\n## Client Spotlight\n\nA 12-person accounting firm deployed an email triage agent. Result: 14 hours/week saved. ROI in week one.\n\n---\n\n## What We're Reading\n\n- [[Claude Code 10x Skill]] \u2014 The skill pattern that changed everything\n- [[Second Brain Architecture]] \u2014 How we structure knowledge for SMBs\n\n---\n\n## Upcoming\n\nNext week: Pricing models that work for SMB AI consulting.\n\n*\u2014 Sayf, Maloha Coast*\n\n**Source:** email\n**Source URI:** gmail://msg_19eca4c3e7e0cefc\n**Ingested:** 2026-06-15T16:05:00Z\n**Provenance:** Maloha Coast Navigator newsletter from info@malohacoast.com",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "concepts/claude-code-10x-skill-newsletter",
+          "type": "wikilink",
+          "text": "Claude Code 10x Skill"
+        },
+        {
+          "to": "Second Brain Architecture",
+          "type": "wikilink",
+          "text": "Second Brain Architecture"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 2,
+      "inbound_count": 0
     },
     {
       "slug": "newsletters/maloha-coast-navigator-test-edition-2026-06-15",
@@ -3208,6 +3929,56 @@
       ],
       "backlinks": [],
       "outbound_count": 2,
+      "inbound_count": 0
+    },
+    {
+      "slug": "newsletters/msg-19edfd1054c17600",
+      "title": "Msg 19edfd1054c17600",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# [[HumanLayer]] \u2014 Agentic IDE for engineering teams\n\n**Source:** Dex at [[HumanLayer]] (forwarded by sayf)\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-20\n**Provenance:** Forwarded by Sayf from sayfcodes@gmail.com to info@malohacoast.com on 2026-06-19\n\n[[HumanLayer]] is an Agentic IDE, collaboration platform, and building blocks for your software factory \u2014 where engineering teams design complex systems with their AI agents before generating a single line of code.\n\n**Original author:** [[Dex Horthy]] (dexter@hey.humanlayer.dev) / Kyle\n**Original date:** Thu, 18 Jun 2026\n\n## Key details\n\n- **Founders:** Kyle and [[Dex Horthy]] \u2014 previously built open-source Research, Plan, Implement (RPI) framework, running inside Fortune 500s (Block, Uber)\n- **Pricing:** Starter plan free for teams < 3\n- **Bring your own subscription** \u2014 plug in Claude, Codex, and other AI subscriptions or API keys. No separate per-token bill.\n- **Core philosophy:** \"Don't outsource the thinking.\" Design reviews before writing code. Engineering teams move 2-3x faster across the entire SDLC.\n\n## What it does\n\n[[HumanLayer]] lets engineers solving hard problems in complex codebases:\n- Move 2-3x faster across the entire SDLC (not just the coding part)\n- Maintain rigorous standards for system architecture and program design\n\n## Launch links\n\n- Product: [humanlayer.com](https://humanlayer.com)\n- Launch post on X: https://x.com/dexhorthy/status/2067286892786454855\n- LinkedIn launch: https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U",
+      "tags": [
+        "agentic-ide",
+        "ai-coding",
+        "humanlayer",
+        "saas"
+      ],
+      "links_out": [
+        {
+          "to": "companies/humanlayer",
+          "type": "wikilink",
+          "text": "HumanLayer"
+        },
+        {
+          "to": "people/dex-horthy",
+          "type": "wikilink",
+          "text": "Dex Horthy"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 2,
+      "inbound_count": 0
+    },
+    {
+      "slug": "newsletters/msg-19ee03492356403f",
+      "title": "Msg 19ee03492356403f",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# How provider data policies work on [[OpenRouter]]\n\n**Source:** OpenRouter Team (newsletter)\n**Source URI:** gmail://msg_19ee03492356403f\n**Ingested:** 2026-06-20\n**Provenance:** Email to info@malohacoast.com on 2026-06-19\n\nEvery provider behind [[OpenRouter]] has its own retention and training policy. [[OpenRouter]] reflects those policies as structured data on each endpoint, publishes the full table in the docs, and gives you controls to filter routing on them.\n\n[Provider policy table](https://openrouter.ai/docs/features/privacy-and-logging)\n\n## What you control\n\n1. **Block routing to providers that train.** Account-wide toggle for whether routing may use providers that train on prompts, with separate switches for paid and free models.\n2. **Require a specific data policy per request.** Override account default on any single call via [data policy filtering](https://openrouter.ai/docs/features/provider-routing#requiring-providers-to-comply-with-data-policies).\n3. **Pick only zero-retention providers.** Many providers \u2014 including Amazon Bedrock, Azure, Cerebras, DeepInfra, Google Vertex, Groq, NVIDIA, SambaNova, and Together \u2014 are zero retention. Filter to them the same way as training policy.\n\n## If you need stricter guarantees\n\n[[OpenRouter]] supports EU in-region routing for enterprise accounts. Prompts and completions processed inside the EU via `https://eu.openrouter.ai`. [Contact enterprise team](https://openrouter.ai/enterprise/form) to enable it.\n\nOne API key, the same privacy controls across 300+ models.",
+      "tags": [
+        "ai-providers",
+        "data-policies",
+        "openrouter"
+      ],
+      "links_out": [
+        {
+          "to": "companies/openrouter",
+          "type": "wikilink",
+          "text": "OpenRouter"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
       "inbound_count": 0
     },
     {
@@ -3253,6 +4024,58 @@
       "inbound_count": 0
     },
     {
+      "slug": "newsletters/openrouter-data-policies-2026-06-19",
+      "title": "How provider data policies work on OpenRouter",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# How provider data policies work on [[OpenRouter]]\n\n**Source:** email\n**Source URI:** gmail://msg_19ee03492356403f\n**Ingested:** 2026-06-20T04:00:00Z\n**Provenance:** OpenRouter newsletter to info@malohacoast.com\n\nEvery provider behind [[OpenRouter]] has its own retention and training policy. [[OpenRouter]] reflects those policies as structured data on each endpoint, publishes the full table in the docs, and gives you controls to filter routing on them.\n\n## What You Control\n\n1. **Block routing to providers that train** \u2014 Account-wide toggle in privacy settings for whether routing may use providers that train on prompts, with separate switches for paid and free models.\n2. **Require a specific data policy per request** \u2014 Override account default on any single call via data policy filtering in provider routing docs.\n3. **Pick only zero-retention providers** \u2014 Many providers on [[OpenRouter]] are zero retention: Amazon Bedrock, Azure, Cerebras, DeepInfra, Google Vertex, Groq, NVIDIA, SambaNova, Together, and others.\n\n## EU Routing\n\n[[OpenRouter]] supports EU in-region routing for enterprise accounts. When enabled, prompts and completions are processed inside the European Union via the https://eu.openrouter.ai base URL.",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "companies/openrouter",
+          "type": "wikilink",
+          "text": "OpenRouter"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
+      "inbound_count": 0
+    },
+    {
+      "slug": "newsletters/openrouter-provider-data-policies-2026-06-19",
+      "title": "How provider data policies work on OpenRouter",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# How provider data policies work on [[OpenRouter]]\n\n**Source:** email from OpenRouter Team, 2026-06-19\n**Source URI:** gmail://msg_19ee03492356403f\n\n## Summary\n\n[[OpenRouter]] provides structured data about each provider's retention and training policies, publishes a full table in their docs, and gives users three layers of control over which providers can process their prompts.\n\n## Key Content\n\nEvery provider behind [[OpenRouter]] has its own retention and training policy. [[OpenRouter]] reflects those policies as structured data on each endpoint and publishes the full table in the docs.\n\n### What You Control\n\n1. **Block routing to providers that train.** An account-wide toggle for whether routing may use providers that train on prompts, with separate switches for paid and free models. If you opt out, [[OpenRouter]] will not route to training providers.\n\n2. **Require a specific data policy per request.** Override your account default on any single call via data policy filtering in the provider routing docs.\n\n3. **Pick only zero-retention providers.** Many providers on [[OpenRouter]] are zero retention: Amazon Bedrock, Azure, Cerebras, DeepInfra, Google Vertex, Groq, NVIDIA, SambaNova, Together, and others.\n\n### Enterprise Options\n\n[[OpenRouter]] supports EU in-region routing for enterprise accounts. When enabled, prompts and completions are processed inside the European Union via `https://eu.openrouter.ai`.\n\n## Links\n\n- Provider policy table: https://openrouter.ai/docs/features/privacy-and-logging\n- Privacy settings: https://openrouter.ai/settings/privacy\n- Data policy filtering docs: https://openrouter.ai/docs/features/provider-routing\n- Enterprise: https://openrouter.ai/enterprise/form",
+      "tags": [
+        "ai-providers",
+        "data-privacy",
+        "openrouter"
+      ],
+      "links_out": [
+        {
+          "to": "companies/openrouter",
+          "type": "wikilink",
+          "text": "OpenRouter"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
+      "inbound_count": 0
+    },
+    {
+      "slug": "newsletters/openrouter-provider-policies-2026-06-19",
+      "title": "Openrouter Provider Policies 2026 06 19",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# How Provider Data Policies Work on OpenRouter\n\n**Source:** email from OpenRouter Team <welcome@openrouter.ai>, 2026-06-19\n**Source URI:** gmail://msg_19ee03492356403f\n\nEvery provider behind OpenRouter has its own retention and training policy. OpenRouter reflects those policies as structured data on each endpoint, publishes the full table in the docs, and gives users controls to filter routing on them.\n\n## What You Control\n\n1. **Block routing to providers that train.** Account-wide toggle for whether routing may use providers that train on prompts, with separate switches for paid and free models. If you opt out, OpenRouter will not route to training providers.\n\n2. **Require a specific data policy per request.** Override your account default on any single call via data policy filtering in provider routing.\n\n3. **Pick only zero-retention providers.** Many providers on OpenRouter are zero retention: Amazon Bedrock, Azure, Cerebras, DeepInfra, Google Vertex, Groq, NVIDIA, SambaNova, Together, and others. Filter to them the same way as training policy.\n\n[Source: email from OpenRouter Team re: \"How provider data policies work on OpenRouter\", 2026-06-19]\n\n## EU In-Region Routing\n\nOpenRouter supports EU in-region routing for enterprise accounts. When enabled, prompts and completions are processed inside the European Union via `https://eu.openrouter.ai` base URL.\n\n[Source: email from OpenRouter Team re: \"How provider data policies work on OpenRouter\", 2026-06-19]",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "newsletters/openrouter-three-cost-levers-2026-06-17",
       "title": "Three levers that lower your per-token cost",
       "type": "newsletter",
@@ -3271,12 +4094,60 @@
       "inbound_count": 0
     },
     {
+      "slug": "newsletters/openrouter-three-cost-levers",
+      "title": "Openrouter Three Cost Levers",
+      "type": "concept",
+      "updated": "",
+      "body": "",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "newsletters/openrouter-three-features-2026-06-18",
+      "title": "Openrouter Three Features 2026 06 18",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# Three features worth trying next on OpenRouter\n\n**Source:** email\n**Source URI:** gmail://msg_19edb0e0abd83fb0\n**Ingested:** 2026-06-20T03:30:00Z\n\nOpenRouter onboarding email covering three features that are single-parameter changes with production value.\n\n## Key Points\n\n1. **Streaming** (`stream=True`): Tokens arrive as generated. Perceived latency drops from seconds to first-token time. Agents that stream partial results to a frontend get a noticeable UX lift for zero code cost.\n\n2. **Structured outputs** (`response_format` with JSON schema): OpenRouter enforces JSON schema at the API level. No regex parsing, no retry loops for malformed JSON, no \"please respond in valid JSON\" prompt engineering. Works on every model that supports the format; router respects it with `openrouter/auto`.\n\n3. **Provider preferences** (`provider` param in `extra_body`): Pin specific providers, exclude others, set latency floors and throughput minimums. Sort by `\"price\"` to always pick the cheapest, or use an allowlist to lock routing to trusted providers.\n\n## Combined Example\n\n```python\nresponse = client.chat.completions.create(\n    model=\"openrouter/auto\",\n    stream=True,\n    response_format={\"type\": \"json_schema\", \"json_schema\": schema},\n    extra_body={\"provider\": {\"sort\": \"price\"}},\n    messages=[{\"role\": \"user\", \"content\": \"...\"}],\n)\n```\n\n## Useful Pages\n\n- [Models & pricing](https://openrouter.ai/models)\n- [Rankings (real usage volume)](https://openrouter.ai/rankings)\n- [Usage & costs](https://openrouter.ai/activity)",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "newsletters/openrouter-three-features-2026-06-19",
       "title": "Openrouter Three Features 2026 06 19",
       "type": "newsletter",
       "updated": "",
       "body": "# Three features worth trying next on [[OpenRouter]]\n\n**Source:** email from OpenRouter Team (welcome@openrouter.ai)\n**Source URI:** gmail://msg_19edb0e0abd83fb0\n**Ingested:** 2026-06-20\n**Subject:** Three features worth trying next\n\n---\n\nHi there,\n\nThree features worth trying once your first requests are landing. Each one is a single parameter change. Each one earns its place in production code and none of them require a new integration or a different endpoint.\n\n### Streaming\n\nSet `stream=True` and tokens arrive as they generate. Same endpoint, same auth, one parameter. Perceived latency drops from seconds to the first token \u2014 the difference between a chat UI that feels alive and one that feels broken. Agents that stream partial results to a frontend get a noticeable UX lift for zero code cost.\n\n### Structured Outputs\n\nPass a JSON schema via `response_format` and OpenRouter enforces it at the API level. No regex parsing, no retry loops when the model returns malformed JSON, no \"please respond in valid JSON\" prompt engineering. Works on every model that supports the format, and the router respects it when you use `openrouter/auto`.\n\n### Provider Preferences\n\nPin specific providers, exclude others, set latency floors and throughput minimums. When a model has multiple providers behind it, you decide which backend serves each request. Set `{\"sort\": \"price\"}` to always pick the cheapest, or an allowlist to lock routing to providers you trust.\n\n### All Three at Once\n\n```python\nresponse = client.chat.completions.create(\n    model=\"openrouter/auto\",\n    stream=True,\n    response_format={\"type\": \"json_schema\", \"json_schema\": schema},\n    extra_body={\"provider\": {\"sort\": \"price\"}},\n    messages=[{\"role\": \"user\", \"content\": \"...\"}],\n)\n```\n\n**Pages worth bookmarking:**\n- [openrouter.ai/models](https://openrouter.ai/models) \u2014 browsing and pricing\n- [openrouter.ai/rankings](https://openrouter.ai/rankings) \u2014 real usage volume data\n- [openrouter.ai/activity](https://openrouter.ai/activity) \u2014 usage and costs\n- [discord.gg/openrouter](https://discord.gg/openrouter) \u2014 support\n\n---\n\n*Onboarding email from OpenRouter, received 2026-06-18.*",
       "tags": [],
+      "links_out": [
+        {
+          "to": "companies/openrouter",
+          "type": "wikilink",
+          "text": "OpenRouter"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
+      "inbound_count": 0
+    },
+    {
+      "slug": "newsletters/openrouter-three-features-next-2026-06-18",
+      "title": "Three features worth trying next on OpenRouter",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# Three features worth trying next on [[OpenRouter]]\n\n**Source:** email from OpenRouter Team, 2026-06-18\n**Source URI:** gmail://msg_19edb0e0abd83fb0\n\n## Summary\n\nThree [[OpenRouter]] features that are each a single parameter change, don't require a new integration or endpoint, and each earns its place in production code.\n\n## Key Features\n\n### 1. Streaming\n\nSet `stream=True` and tokens arrive as they generate. Same endpoint, same auth, one parameter. Perceived latency drops from seconds to first-token time \u2014 the difference between a chat UI that feels alive and one that feels broken. Agents that stream partial results to a frontend get a noticeable UX lift for zero code cost.\n\n### 2. Structured Outputs\n\nPass a JSON schema via `response_format` and [[OpenRouter]] enforces it at the API level. No regex parsing, no retry loops when the model returns malformed JSON, no \"please respond in valid JSON\" prompt engineering. Works on every model that supports the parameter.\n\n### 3. Provider Preferences\n\nUse the `provider` parameter to control which providers handle a request: set `ignore=`` to skip specific providers, set `order` to prioritize by latency or cost, or set `allow_fallbacks` to keep the request reliable even when preferred providers are down.",
+      "tags": [
+        "ai-providers",
+        "openrouter",
+        "provider-routing",
+        "streaming",
+        "structured-outputs"
+      ],
       "links_out": [
         {
           "to": "companies/openrouter",
@@ -3325,11 +4196,35 @@
       "inbound_count": 0
     },
     {
+      "slug": "newsletters/openrouter-three-features-try-next",
+      "title": "Openrouter Three Features Try Next",
+      "type": "concept",
+      "updated": "",
+      "body": "",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "newsletters/secret-architecture-behind-ai-data-centers-2026-06-20",
       "title": "Secret Architecture Behind Ai Data Centers 2026 06 20",
       "type": "newsletter",
       "updated": "",
       "body": "# The Secret Architecture Behind AI Data Centers\n\n**Source:** System Design Newsletter (Neo Kim & Ashish Prajapati)\n**Published:** Jun 19, 2026\n**Ingested:** 2026-06-20T07:35:22+08:00\n\n#155: Why AI breakthroughs are really infrastructure breakthroughs\n\n*Guest author: Ashish Prajapati \u2014 AI infrastructure specialist, technology educator. Training programs have reached 39,000+ learners. Free mentoring initiative \"Become a Solutions Architect (BeSA)\" has helped 23,000+ professionals. NVIDIA-Certified Associate: AI Infrastructure and Operations (NCA-AIIO) bootcamp instructor.*\n\n## Mental Model: AI Data Center as a Factory\n- AI Data Center = Factory\n- Data = Raw material\n- GPUs = Machines on the factory floor\n- Network = Internal transport system\n- Storage = Warehouse holding raw materials\n- Software = Assembly line logic\n- Output = Trained intelligence\n\nRemove any one ingredient, and the entire system stalls.\n\n## First Problem: Physics\n\n### 1. Power\nA single GPU server rack draws 80-120 kW \u2014 roughly equivalent to 40 homes at full load. Limited by how much electricity the facility can physically receive and distribute.\n\n### 2. Cooling\nMore power = more heat. Without removal: hardware fails, performance throttles, systems shut down. Modern data centers use **liquid cooling** \u2014 coolant circulated through cold plates attached directly to GPUs. Enables higher rack densities, lower cooling power consumption, consistent performance.\n\n### 3. Space\nUnlimited chips and power still need racks and floor space. Scaling AI is real estate, energy infrastructure, and thermodynamics combined.\n\nTakeaway: A data center is a power plant combined with a massive, precisely controlled air-conditioning system.\n\n## Compute: Why GPUs Took Over\n- **CPU** = manager (decision-making) \u2014 a few powerful cores, handles complex sequential tasks\n- **GPU** = factory workers (mass production) \u2014 thousands of smaller cores, designed for parallel matrix multiplications\n- **DPU** (Data Processing Unit) = logistics and operations \u2014 handles networking, storage I/O, security so CPU and GPU aren't interrupted\n\n## Hidden Bottleneck: Memory and Storage\nGPUs don't fail because they're slow. They fail because they're hungry \u2014 constantly starved for data.\n\nMemory hierarchy: GPU Memory (HBM \u2014 fastest, tiny, tens of GB) \u2192 CPU RAM (hundreds of GB, slower) \u2192 SSD/NVMe (enormous) \u2192 Network/Object Storage (nearly unlimited, slowest).\n\n**AI performance is determined by how fast data can be fed into the GPU, not by how fast the GPU computes.**\n\nTiered storage: hot (NVMe SSDs for active datasets/checkpoints), warm (parallel file systems like Lustre/GPFS for shared access), cold (object storage like S3 for raw datasets).\n\n## Networking: Hidden Bottleneck\nWhen training large models with thousands of GPUs, they must constantly share what they've learned. Every second a GPU waits for data or synchronization is wasted investment.\n\n- **Leaf-spine architecture**: every server can reach every other server in at most two hops\n- **NVLink**: intra-node fabric, fastest path, direct GPU-to-GPU within a server\n- **InfiniBand/RoCE**: inter-node fabric, \"bullet train\" between servers\n- **Ethernet**: general-purpose, not designed for AI's extreme bandwidth/latency demands\n\n**Amdahl's Law**: parts of the system must wait \u2014 adding more workers eventually stops helping. More GPUs = more computing power but also more communication overhead.\n\nSmarter data movement: RDMA (low-latency direct memory transfers between servers), RDMA kernel bypass, GPUDirect (GPUs read/write to storage/network bypassing CPU), zero-copy pipelines.\n\nGoal: make thousands of GPUs behave like one giant, unified processor.",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "newsletters/stripe-online-apac-on-demand",
+      "title": "Stripe Online Apac On Demand",
+      "type": "concept",
+      "updated": "",
+      "body": "",
       "tags": [],
       "links_out": [],
       "backlinks": [],
@@ -3520,15 +4415,9 @@
           "text": "Zaim Mohzani"
         }
       ],
-      "backlinks": [
-        {
-          "from": "people/liyana",
-          "type": "wikilink",
-          "text": "Aisyah Rahim"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 3,
-      "inbound_count": 1
+      "inbound_count": 0
     },
     {
       "slug": "people/ashish-prajapati",
@@ -3774,6 +4663,11 @@
           "text": "Dex Horthy"
         },
         {
+          "from": "concepts/humanlayer-launch-announcement-2026-06-19",
+          "type": "wikilink",
+          "text": "Dex Horthy"
+        },
+        {
           "from": "humanlayer-launch-2026-06-19",
           "type": "wikilink",
           "text": "Dex Horthy"
@@ -3804,13 +4698,18 @@
           "text": "Dex Horthy"
         },
         {
+          "from": "newsletters/msg-19edfd1054c17600",
+          "type": "wikilink",
+          "text": "Dex Horthy"
+        },
+        {
           "from": "people/kyle",
           "type": "wikilink",
           "text": "Dex Horthy"
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 8
+      "inbound_count": 10
     },
     {
       "slug": "people/dexter-horthy",
@@ -3821,7 +4720,7 @@
       "tags": [],
       "links_out": [
         {
-          "to": "concepts/humanlayer-launch-newsletter",
+          "to": "concepts/humanlayer-launch-newsletter-2026-06-19",
           "type": "wikilink",
           "text": "HumanLayer Launch Newsletter"
         }
@@ -3887,17 +4786,17 @@
       ],
       "backlinks": [
         {
+          "from": "concepts/humanlayer-launch-announcement-2026-06-19",
+          "type": "wikilink",
+          "text": "Kyle"
+        },
+        {
           "from": "humanlayer-launch-announcement-2026-06-19",
           "type": "wikilink",
           "text": "Kyle"
         },
         {
           "from": "newsletters/humanlayer-launch-2026-06-19-sayf",
-          "type": "wikilink",
-          "text": "Kyle"
-        },
-        {
-          "from": "newsletters/humanlayer-launch-2026-06-19",
           "type": "wikilink",
           "text": "Kyle"
         }
@@ -3916,7 +4815,7 @@
       ],
       "links_out": [
         {
-          "to": "people/aisyah-rahim",
+          "to": "concepts/zaim/coaching-client-aisyah-rahim",
           "type": "wikilink",
           "text": "Aisyah Rahim"
         },
@@ -4399,7 +5298,7 @@
           "text": "2026-06-03#VPS Hardening"
         },
         {
-          "to": "google-workspace-setup",
+          "to": "concepts/google-workspace-setup",
           "type": "wikilink",
           "text": "Google Workspace Setup"
         },
@@ -4409,35 +5308,14 @@
           "text": "2026-06-03"
         },
         {
-          "to": "gateway-infrastructure",
+          "to": "concepts/gateway-infrastructure",
           "type": "wikilink",
           "text": "Gateway Infrastructure"
         }
       ],
-      "backlinks": [
-        {
-          "from": "2026-06-03",
-          "type": "wikilink",
-          "text": "VPS Hardening"
-        },
-        {
-          "from": "2026-06-03",
-          "type": "wikilink",
-          "text": "VPS Hardening#fail2ban"
-        },
-        {
-          "from": "gateway-infrastructure",
-          "type": "wikilink",
-          "text": "VPS Hardening"
-        },
-        {
-          "from": "gbrain",
-          "type": "wikilink",
-          "text": "VPS Hardening"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 4,
-      "inbound_count": 4
+      "inbound_count": 0
     },
     {
       "slug": "zaim-15min-gap-method",
@@ -4567,17 +5445,22 @@
   "graph_links": [
     {
       "source": "2026-06-03",
-      "target": "vps-hardening",
+      "target": "concepts/vps-hardening",
       "type": "wikilink"
     },
     {
       "source": "2026-06-03",
-      "target": "google-workspace-setup",
+      "target": "concepts/google-workspace-setup",
       "type": "wikilink"
     },
     {
       "source": "2026-06-03",
       "target": "gbrain",
+      "type": "wikilink"
+    },
+    {
+      "source": "articles/humanlayer-launch-forward-2026-06-19",
+      "target": "companies/humanlayer",
       "type": "wikilink"
     },
     {
@@ -4696,6 +5579,21 @@
       "type": "wikilink"
     },
     {
+      "source": "concepts/2026-06-03",
+      "target": "concepts/vps-hardening",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/2026-06-03",
+      "target": "concepts/google-workspace-setup",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/2026-06-03",
+      "target": "gbrain",
+      "type": "wikilink"
+    },
+    {
       "source": "concepts/3-month-career-pivot-framework-2026-06-15",
       "target": "concepts/skills-inventory",
       "type": "wikilink"
@@ -4771,6 +5669,16 @@
       "type": "wikilink"
     },
     {
+      "source": "concepts/brand/maloha-coast-brand-identity",
+      "target": "maloha-coast",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/brand/maloha-coast-brand-identity",
+      "target": "google-workspace-setup",
+      "type": "wikilink"
+    },
+    {
       "source": "concepts/claude-code-10x-skill-newsletter",
       "target": "people/carson",
       "type": "wikilink"
@@ -4836,6 +5744,46 @@
       "type": "wikilink"
     },
     {
+      "source": "concepts/gateway-infrastructure",
+      "target": "concepts/vps-hardening",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/gbrain",
+      "target": "2026-06-03",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/gbrain",
+      "target": "concepts/google-workspace-setup",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/gbrain",
+      "target": "concepts/vps-hardening",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/google-workspace-setup",
+      "target": "gbrain",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/humanlayer-launch-announcement-2026-06-19",
+      "target": "companies/humanlayer",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/humanlayer-launch-announcement-2026-06-19",
+      "target": "people/dex-horthy",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/humanlayer-launch-announcement-2026-06-19",
+      "target": "people/kyle",
+      "type": "wikilink"
+    },
+    {
       "source": "concepts/humanlayer-launch-newsletter",
       "target": "people/dexter-horthy",
       "type": "wikilink"
@@ -4853,6 +5801,11 @@
     {
       "source": "concepts/knowledge-graph-as-moat",
       "target": "concepts/company-memory-os-ph1-prd",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/maloha-coast",
+      "target": "brand/maloha-coast-brand-identity",
       "type": "wikilink"
     },
     {
@@ -4891,6 +5844,11 @@
       "type": "wikilink"
     },
     {
+      "source": "concepts/sayf/maloha-coast-navigator-test-edition",
+      "target": "concepts/claude-code-10x-skill-newsletter",
+      "type": "wikilink"
+    },
+    {
       "source": "concepts/side-project-strategy",
       "target": "concepts/skills-inventory",
       "type": "wikilink"
@@ -4926,6 +5884,11 @@
       "type": "wikilink"
     },
     {
+      "source": "concepts/vps-hardening",
+      "target": "concepts/google-workspace-setup",
+      "type": "wikilink"
+    },
+    {
       "source": "concepts/zaim-3month-career-pivot-framework",
       "target": "concepts/skills-inventory",
       "type": "wikilink"
@@ -4937,6 +5900,21 @@
     },
     {
       "source": "concepts/zaim-3month-career-pivot-framework",
+      "target": "concepts/salary-negotiation-playbook",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/zaim/3-month-career-pivot-framework",
+      "target": "concepts/skills-inventory",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/zaim/3-month-career-pivot-framework",
+      "target": "concepts/side-project-strategy",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/zaim/3-month-career-pivot-framework",
       "target": "concepts/salary-negotiation-playbook",
       "type": "wikilink"
     },
@@ -4972,7 +5950,7 @@
     },
     {
       "source": "digests/2026-06-10-business-brain-digest",
-      "target": "media/videos/graphify-solves-claude-code-problem",
+      "target": "concepts/media/videos/graphify-solves-claude-code-problem",
       "type": "wikilink"
     },
     {
@@ -5087,7 +6065,7 @@
     },
     {
       "source": "digests/2026-06-15-business-brain-digest",
-      "target": "media/videos/graphify-solves-claude-code-problem",
+      "target": "concepts/media/videos/graphify-solves-claude-code-problem",
       "type": "wikilink"
     },
     {
@@ -5217,17 +6195,22 @@
     },
     {
       "source": "gateway-infrastructure",
-      "target": "vps-hardening",
+      "target": "concepts/vps-hardening",
       "type": "wikilink"
     },
     {
       "source": "gbrain",
-      "target": "google-workspace-setup",
+      "target": "concepts/vps-hardening",
       "type": "wikilink"
     },
     {
-      "source": "gbrain",
-      "target": "vps-hardening",
+      "source": "google-workspace-setup",
+      "target": "2026-06-03",
+      "type": "wikilink"
+    },
+    {
+      "source": "google-workspace-setup",
+      "target": "gbrain",
       "type": "wikilink"
     },
     {
@@ -5416,13 +6399,28 @@
       "type": "wikilink"
     },
     {
-      "source": "newsletters/humanlayer-launch-2026-06-19",
-      "target": "people/kyle",
+      "source": "newsletters/maloha-coast-navigator-2026-06-15",
+      "target": "concepts/claude-code-10x-skill-newsletter",
       "type": "wikilink"
     },
     {
       "source": "newsletters/maloha-coast-navigator-test-edition-2026-06-15",
       "target": "concepts/claude-code-10x-skill-newsletter",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/msg-19edfd1054c17600",
+      "target": "companies/humanlayer",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/msg-19edfd1054c17600",
+      "target": "people/dex-horthy",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/msg-19ee03492356403f",
+      "target": "companies/openrouter",
       "type": "wikilink"
     },
     {
@@ -5436,12 +6434,27 @@
       "type": "wikilink"
     },
     {
+      "source": "newsletters/openrouter-data-policies-2026-06-19",
+      "target": "companies/openrouter",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/openrouter-provider-data-policies-2026-06-19",
+      "target": "companies/openrouter",
+      "type": "wikilink"
+    },
+    {
       "source": "newsletters/openrouter-three-cost-levers-2026-06-17",
       "target": "companies/openrouter",
       "type": "wikilink"
     },
     {
       "source": "newsletters/openrouter-three-features-2026-06-19",
+      "target": "companies/openrouter",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/openrouter-three-features-next-2026-06-18",
       "target": "companies/openrouter",
       "type": "wikilink"
     },
@@ -5486,6 +6499,11 @@
       "type": "wikilink"
     },
     {
+      "source": "people/dexter-horthy",
+      "target": "concepts/humanlayer-launch-newsletter-2026-06-19",
+      "type": "wikilink"
+    },
+    {
       "source": "people/kyle",
       "target": "companies/humanlayer",
       "type": "wikilink"
@@ -5493,6 +6511,16 @@
     {
       "source": "people/kyle",
       "target": "people/dex-horthy",
+      "type": "wikilink"
+    },
+    {
+      "source": "people/kyle",
+      "target": "newsletters/humanlayer-launch-2026-06-19",
+      "type": "wikilink"
+    },
+    {
+      "source": "people/liyana",
+      "target": "concepts/zaim/coaching-client-aisyah-rahim",
       "type": "wikilink"
     },
     {
@@ -5517,7 +6545,17 @@
     },
     {
       "source": "vps-hardening",
-      "target": "google-workspace-setup",
+      "target": "2026-06-03",
+      "type": "wikilink"
+    },
+    {
+      "source": "vps-hardening",
+      "target": "concepts/google-workspace-setup",
+      "type": "wikilink"
+    },
+    {
+      "source": "vps-hardening",
+      "target": "concepts/gateway-infrastructure",
       "type": "wikilink"
     },
     {
@@ -5639,9 +6677,9 @@
       {
         "name": "extract_atoms_backlog",
         "status": "ok",
-        "message": "7 page(s) eligible (below warn threshold; pack does not run extract_atoms)",
+        "message": "10 page(s) eligible (below warn threshold; pack does not run extract_atoms)",
         "details": {
-          "backlog": 7,
+          "backlog": 10,
           "pack_declares_phase": false,
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
@@ -5650,7 +6688,7 @@
       {
         "name": "conversation_format_coverage",
         "status": "warn",
-        "message": "1/5 conversation pages (20.0%) match NO built-in pattern. Breakdown: bold-name-no-time=4, _no_match=1. Investigate: gbrain conversation-parser scan <slug> | Enable LLM fallback (opt-in): gbrain config set conversation_parser.llm_fallback_enabled true",
+        "message": "1/6 conversation pages (16.7%) match NO built-in pattern. Breakdown: bold-name-no-time=5, _no_match=1. Investigate: gbrain conversation-parser scan <slug> | Enable LLM fallback (opt-in): gbrain config set conversation_parser.llm_fallback_enabled true",
         "category": "brain"
       },
       {
@@ -5674,7 +6712,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 136 pages",
+        "message": "Connected, 176 pages",
         "category": "ops"
       },
       {
@@ -5710,7 +6748,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 640ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 519ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -5728,25 +6766,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 93%, timeline 55%",
+        "message": "Entity link coverage 93%, timeline 56%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 84/100 (embed 35/35, links 25/25, timeline 3/15, orphans 11/15, dead-links 10/10)",
+        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 2/15, orphans 10/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 41 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 42 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 136 pages; 18 external link(s) (no bare tweets).",
+        "message": "Sampled 176 pages; 33 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -5907,11 +6945,11 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction current: 17/136 pages (13%) stale",
+        "message": "Extraction current: 0/176 pages (0%) stale",
         "details": {
-          "total": 136,
-          "stale": 17,
-          "pct": 13,
+          "total": 176,
+          "stale": 0,
+          "pct": 0,
           "warn_pct": 20,
           "fail_pct": null,
           "source_id": null
@@ -5939,7 +6977,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "98 reranker failure(s) in last 7 days (below threshold)",
+        "message": "101 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -5951,7 +6989,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "55.9% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "50.0% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -6054,13 +7092,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 95% \u00b1 3.4%",
+        "message": "Coverage 95% \u00b1 3.3%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
         "status": "warn",
-        "message": "Coverage 56% \u00b1 7.8% (target 90%)",
+        "message": "Coverage 57% \u00b1 7.6% (target 90%)",
         "category": "meta"
       },
       {
