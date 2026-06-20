@@ -48,7 +48,7 @@ The main interactive dashboard — a single self-contained HTML file (~2700 line
 
 **Graph:** Force-directed physics on a `<canvas>`. `initGraph()` builds node/edge arrays from `DATA.pages` and `DATA.graph_links`. `runPhysics()` runs spring/repulsion simulation. Supports pan/zoom/drag, touch, fullscreen.
 
-**Themes:** 5 CSS variable sets toggled by `applyTheme(name)` — `dark` (Tokyo Night), `light`, `catppuccin-mocha`, `catppuccin-latte`, `omarchy`. Persisted in `localStorage('gbrain-theme')`.
+**Themes:** 6 CSS variable sets toggled by `applyTheme(name)` — `library` (default, warm academic with Playfair Display serif headings + Crimson Text body), `dark` (Tokyo Night), `light`, `catppuccin-mocha`, `catppuccin-latte`, `tokyo-night`. Persisted in `localStorage('gbrain-theme')`.
 
 **Modals:** `openModal(title, subtitle, bodyHtml)` is the generic modal. `openPageModal(slug)` and `openCheckModal(name)` are the two callers.
 
@@ -68,7 +68,7 @@ The main interactive dashboard — a single self-contained HTML file (~2700 line
 All pages use consistent tokens:
 - **Colors:** teal `#2a6a8a`, champagne gold `#c4a86a`, dark slate `#020617` background
 - **Fonts:** Inter (body) + JetBrains Mono (code/numbers) — loaded from Google Fonts
-- **Exception:** `gbrain-dashboard.html` uses Tokyo Night tokens and adds Syne for headings
+- **Exception:** `gbrain-dashboard.html` uses the Library Design System (warm academic palette) as default. Serif headings (Playfair Display) + Crimson Text body. Also loads Syne, Inter, JetBrains Mono for other themes.
 
 ## The `.bak` file
 
