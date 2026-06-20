@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-06-20T04:21:14Z",
+  "updated_at": "2026-06-20T04:56:45Z",
   "summary": {
     "score": "83",
     "score_label": "/100",
     "score_breakdown": "score 83/100, embed 35/35, links 25/25, timeline 3/15, orphans 10/15, dead-links 10/10",
     "page_count": 199,
     "embed_coverage": "100% coverage, 0 missing",
-    "graph_coverage": "51.5% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
-    "entity_links": "Coverage 94% \u00b1 3.3%",
+    "graph_coverage": "51.3% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 92% \u00b1 3.8%",
     "concept_count": 91,
     "meeting_count": 6,
     "person_count": 31,
@@ -7607,7 +7607,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 198 pages",
+        "message": "Connected, 197 pages",
         "category": "ops"
       },
       {
@@ -7643,7 +7643,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 448ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 816ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -7661,7 +7661,7 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 92%, timeline 63%",
+        "message": "Entity link coverage 90%, timeline 63%",
         "category": "brain"
       },
       {
@@ -7679,7 +7679,7 @@
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 198 pages; 36 external link(s) (no bare tweets).",
+        "message": "Sampled 197 pages; 36 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -7840,9 +7840,9 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction current: 0/198 pages (0%) stale",
+        "message": "Extraction current: 0/197 pages (0%) stale",
         "details": {
-          "total": 198,
+          "total": 197,
           "stale": 0,
           "pct": 0,
           "warn_pct": 20,
@@ -7872,7 +7872,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "130 reranker failure(s) in last 7 days (below threshold)",
+        "message": "134 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -7884,7 +7884,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "51.5% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "51.3% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -7987,7 +7987,7 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 94% \u00b1 3.3%",
+        "message": "Coverage 92% \u00b1 3.8%",
         "category": "meta"
       },
       {
