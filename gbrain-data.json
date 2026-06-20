@@ -1,27 +1,27 @@
 {
-  "updated_at": "2026-06-20T02:33:10Z",
+  "updated_at": "2026-06-20T02:46:42Z",
   "summary": {
     "score": "82",
     "score_label": "/100",
     "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 2/15, orphans 10/15, dead-links 10/10",
-    "page_count": 185,
+    "page_count": 187,
     "embed_coverage": "100% coverage, 0 missing",
     "graph_coverage": "51.1% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
-    "entity_links": "Coverage 95% \u00b1 3.1%",
+    "entity_links": "Coverage 96% \u00b1 3.1%",
     "concept_count": 90,
     "meeting_count": 6,
     "person_count": 27,
-    "company_count": 17,
-    "newsletter_count": 37,
+    "company_count": 18,
+    "newsletter_count": 38,
     "video_count": 0,
     "article_count": 4,
     "bookmark_count": 1,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 235,
-    "outbound_count": 313,
-    "inbound_count": 278,
+    "total_links": 238,
+    "outbound_count": 316,
+    "inbound_count": 281,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -295,13 +295,18 @@
           "text": "AI Automation Society"
         },
         {
+          "from": "newsletters/claude-second-brain-levels-2026-06-20",
+          "type": "wikilink",
+          "text": "AI Automation Society"
+        },
+        {
           "from": "people/carson",
           "type": "link",
           "text": "AI Automation Society"
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 3
+      "inbound_count": 4
     },
     {
       "slug": "companies/anthropic",
@@ -617,6 +622,27 @@
       ],
       "outbound_count": 1,
       "inbound_count": 2
+    },
+    {
+      "slug": "companies/instantly",
+      "title": "Instantly",
+      "type": "company",
+      "updated": "",
+      "body": "# Instantly\n\n> Cold email outreach platform for sales campaigns.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [newsletters/claude-second-brain-levels-2026-06-20] as the tool Robert used to upload leads into ready-to-run campaigns\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-20** | Mentioned in \"Every Level of a Claude Second Brain Explained\" (AI Automation Society newsletter). Robert automated a client's lead-to-campaign pipeline using Instantly. [Source: gmail://msg_19ee2dfa87f86548]",
+      "tags": [
+        "automation",
+        "email"
+      ],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "newsletters/claude-second-brain-levels-2026-06-20",
+          "type": "wikilink",
+          "text": "Instantly"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 1
     },
     {
       "slug": "companies/js-mastery",
@@ -4014,6 +4040,34 @@
       "inbound_count": 0
     },
     {
+      "slug": "newsletters/claude-second-brain-levels-2026-06-20",
+      "title": "Claude Second Brain Levels 2026 06 20",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# Every Level of a Claude Second Brain Explained\n\n**Source:** email\n**Source URI:** gmail://msg_19ee2dfa87f86548\n**Ingested:** 2026-06-20T10:35:00Z\n**Provenance:** Forwarded by sayf on 2026-06-20 from [[AI Automation Society]] newsletter ([[Nate Herk]])\n\n**Forwarded by Sayf** \u2014 [[AI Automation Society]] newsletter, June 19, 2026. Covers Claude second brain levels, a client pipeline automation win, and Codex hitting 5M users.\n\n---\n\n> *The insight that changes how you build: Start from the end. Before you organize a single file, ask how you'll access this data later. The shape of the basketball determines the size of the hoop.*\n\n## Five Levels of a Claude Second Brain\n\n1. **Level 1** \u2014 Finding a file by searching an exact word. Most people are stuck here.\n2. **Level 5** \u2014 A fully autonomous system that knows your business, client relationships, and IP better than you do.\n- The difference isn't the tool \u2014 it's how the data is organized.\n- Jon shows his actual setup (a Herku project, just markdown files and folders) and walks through what separates each level, including semantic search (finding by meaning, not exact match) and full relationship mapping.\n- **Key insight for sayf:** Your moat is your data. This video shows how to organize it so agents can use it, not just find it.\n\n## Winning Is All We Do \u2014 Robert's Client Automation\n\n- **What happened:** Robert's client had a call center calling leads with no email follow-up. Sales managers emailed daily lead lists as Excel files.\n- **The automation:** When the file lands in his inbox, it extracts email, address, and name data, normalizes it, and uploads every contact into [[Instantly]] as a ready-to-run campaign. No manual cleanup. No copy-paste.\n- **Takeaway:** Businesses running call centers almost always have messy lead data and no email follow-up. An automation that converts a spreadsheet into a live campaign solves a problem they didn't know anyone could fix.\n\n## In the News \u2014 Codex Hits 5M Weekly Users\n\n- OpenAI Codex crossed 5 million weekly active users.\n- **Permanent feature:** Banked rate limit resets \u2014 save resets and use them when needed instead of a fixed timer.\n- **Limited offer (through June 24):** Plus and Pro users can invite up to three friends to try Codex. When a friend sends their first message, you both get a bonus reset.\n- **Signal:** Codex is growing through referral mechanics at 5M weekly users \u2014 a tool people are actively building with and recommending.",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "companies/ai-automation-society",
+          "type": "wikilink",
+          "text": "AI Automation Society"
+        },
+        {
+          "to": "people/nate-herk",
+          "type": "wikilink",
+          "text": "Nate Herk"
+        },
+        {
+          "to": "companies/instantly",
+          "type": "wikilink",
+          "text": "Instantly"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 3,
+      "inbound_count": 0
+    },
+    {
       "slug": "newsletters/humanlayer-launch-2026-06-19-sayf",
       "title": "Humanlayer Launch 2026 06 19 Sayf",
       "type": "newsletter",
@@ -5076,10 +5130,15 @@
           "from": "digests/2026-06-15-business-brain-digest",
           "type": "wikilink",
           "text": "Nate Herk"
+        },
+        {
+          "from": "newsletters/claude-second-brain-levels-2026-06-20",
+          "type": "wikilink",
+          "text": "Nate Herk"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 3
+      "inbound_count": 4
     },
     {
       "slug": "people/neo-kim",
@@ -6655,6 +6714,21 @@
       "type": "wikilink"
     },
     {
+      "source": "newsletters/claude-second-brain-levels-2026-06-20",
+      "target": "companies/ai-automation-society",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/claude-second-brain-levels-2026-06-20",
+      "target": "people/nate-herk",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/claude-second-brain-levels-2026-06-20",
+      "target": "companies/instantly",
+      "type": "wikilink"
+    },
+    {
       "source": "newsletters/humanlayer-launch-2026-06-19-sayf",
       "target": "people/dex-horthy",
       "type": "wikilink"
@@ -6899,6 +6973,7 @@
       "companies/global-ai-village",
       "companies/humanlayer",
       "companies/inclusive-ai-association",
+      "companies/instantly",
       "companies/js-mastery",
       "companies/ksi-strategic-institute",
       "companies/nation-building-school",
@@ -7000,7 +7075,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 184 pages",
+        "message": "Connected, 186 pages",
         "category": "ops"
       },
       {
@@ -7036,7 +7111,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 718ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 585ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -7054,7 +7129,7 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 93%, timeline 56%",
+        "message": "Entity link coverage 93%, timeline 57%",
         "category": "brain"
       },
       {
@@ -7066,13 +7141,13 @@
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 44 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 45 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 184 pages; 35 external link(s) (no bare tweets).",
+        "message": "Sampled 186 pages; 35 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -7233,11 +7308,11 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction current: 7/184 pages (4%) stale",
+        "message": "Extraction current: 9/186 pages (5%) stale",
         "details": {
-          "total": 184,
-          "stale": 7,
-          "pct": 4,
+          "total": 186,
+          "stale": 9,
+          "pct": 5,
           "warn_pct": 20,
           "fail_pct": null,
           "source_id": null
@@ -7265,7 +7340,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "102 reranker failure(s) in last 7 days (below threshold)",
+        "message": "103 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -7380,13 +7455,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 95% \u00b1 3.1%",
+        "message": "Coverage 96% \u00b1 3.1%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
         "status": "warn",
-        "message": "Coverage 57% \u00b1 7.5% (target 90%)",
+        "message": "Coverage 58% \u00b1 7.4% (target 90%)",
         "category": "meta"
       },
       {
