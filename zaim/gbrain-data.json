@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-06-20T03:43:04Z",
+  "updated_at": "2026-06-20T03:55:41Z",
   "summary": {
-    "page_count": 18,
+    "page_count": 19,
     "people_count": 4,
     "company_count": 0,
     "artifact_count": 0,
-    "total_links": 7,
-    "outbound_count": 21,
-    "inbound_count": 19,
-    "graph_coverage": "27.8% of pages have inbound links",
+    "total_links": 8,
+    "outbound_count": 22,
+    "inbound_count": 20,
+    "graph_coverage": "26.3% of pages have inbound links",
     "concept_count": 11,
     "meeting_count": 3,
     "person_count": 4,
-    "newsletter_count": 0,
+    "newsletter_count": 1,
     "video_count": 0,
     "article_count": 0,
     "bookmark_count": 0,
@@ -229,6 +229,26 @@
       "inbound_count": 0
     },
     {
+      "slug": "newsletters/zaim-career-goals-2026-06-16",
+      "title": "Zaim Career Goals 2026 06 16",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# Why Your 2026 Career Goals Are Already Dead\n\n**Source:** email\n**Source URI:** gmail://msg_19ece778ab23e039\n**Ingested:** 2026-06-20T03:50:00Z\n**Provenance:** Forwarded by Zaim Mohzani via info+zaim@malohacoast.com on 2026-06-16\n\n> Forwarded by [[Zaim Mohzani]] from Nation Building School newsletter.\n\nIt's June. How's that career goal from January going?\n\nIf you're being honest, probably: forgotten by March, barely remembered (and feeling guilty) in June and quietly dropped by the end of the year.\n\nIt's a timeframe problem, not a discipline problem.\n\n## The Annual Goal Trap\n\nA year is too long to create urgency and too vague to act on. \"Get a new job this year\" feels fine in January. There's time. So nothing happens. By June, the goal is still technically alive, but you haven't done anything that moves it forward. By December, you're setting the same goal again for next year.\n\n[[Zaim Mohzani]] went through this with weight, not career. In January 2025, set an annual goal: lose 6kg by December. Standard SMART goal. Then came across Brian Moran and Michael Lennington's book \"The 12 Week Year,\" which argues most people don't actually operate in years \u2014 they operate in the last few weeks before a deadline. The fix is to shrink the deadline.\n\nRewrote the goal: lose 6kg in 90 days, by 31 March. Hit it. The habits built in those 90 days kept running on their own for the rest of the year.\n\n## Why This Works for Your Career Too\n\nThe same applies to a job search, a promotion case or a pivot. \"Get promoted this year\" doesn't tell you what to do on Monday. \"By 30 September, I will have had 3 conversations with people in my target department, applied to 5 internal roles, and presented one project to leadership\" tells you exactly what to do on Monday. One is a wish. The other is a plan.\n\nZaim has worked with clients on exactly this. Those who set a 90-day goal like \"land 3 offers from MNCs by end of Q3\" with weekly actions attached mostly hit it or get close. Those with \"find a better job this year\" mostly don't, because there's no Monday task.\n\n## How to Set Yours\n\nPick ONE career goal for this quarter. Just one. Follow this format:\n\n- My 90-day career goal is...\n- This matters to me because...\n- To complete this, I commit that by 30 September 2026, I will have... (make it checkable \u2014 \"3 offers\" is checkable; \"more clarity\" is not)\n- To make sure I complete it, I'm going to... (weekly actions, not the outcome)\n\nWrite it down. One goal. One sentence you can check off or not, no grey area. Then build it into your week, not your year.\n\n**P.S.** Zaim is running a free workshop on setting this 90-day goal for Q3 2026. Early next month. Sign up: https://t.ly/getclearoncareer6\n\n## Key Ideas\n\n- The annual goal trap: a year is too long to create urgency and too vague to act on\n- Shrink the deadline: 90-day goals with checkable outcomes create Monday-level actions\n- Habits outlast goals \u2014 the 90-day sprint builds systems that persist\n- Format: one goal, checkable outcome, weekly actions\n\n## People Mentioned\n\n- [[Zaim Mohzani]] \u2014 career coach, Nation Building School\n- Brian Moran \u2014 co-author, \"The 12 Week Year\"\n- Michael Lennington \u2014 co-author, \"The 12 Week Year\"",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [
+        {
+          "to": "people/zaim-mohzani",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
+      "inbound_count": 0
+    },
+    {
       "slug": "people/aisyah-rahim",
       "title": "Aisyah Rahim",
       "type": "person",
@@ -406,6 +426,11 @@
           "text": "people/zaim-mohzani|Zaim"
         },
         {
+          "from": "newsletters/zaim-career-goals-2026-06-16",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
           "from": "people/aisyah-rahim",
           "type": "wikilink",
           "text": "Zaim Mohzani"
@@ -417,7 +442,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 9
+      "inbound_count": 10
     },
     {
       "slug": "zaim-career-goals-12-week-year-2026-06-16",
@@ -525,6 +550,11 @@
       "type": "wikilink"
     },
     {
+      "source": "newsletters/zaim-career-goals-2026-06-16",
+      "target": "people/zaim-mohzani",
+      "type": "wikilink"
+    },
+    {
       "source": "people/aisyah-rahim",
       "target": "people/liyana",
       "type": "wikilink"
@@ -558,11 +588,11 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-20T03:43:04Z",
+      "ts": "2026-06-20T03:55:41Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
-      "detail": "Dashboard refreshed \u2014 18 pages, 7 links",
+      "detail": "Dashboard refreshed \u2014 19 pages, 8 links",
       "level": "info"
     },
     {
@@ -609,8 +639,8 @@
       "ts": "2026-06-20T00:00:00Z",
       "source": "page",
       "stage": "updated",
-      "slug": "concepts/zaim/coaching-client-aisyah-rahim",
-      "detail": "Coaching Client Aisyah Rahim",
+      "slug": "newsletters/zaim-career-goals-2026-06-16",
+      "detail": "Zaim Career Goals 2026 06 16",
       "level": "info"
     }
   ]

@@ -1,27 +1,27 @@
 {
-  "updated_at": "2026-06-20T03:42:58Z",
+  "updated_at": "2026-06-20T03:55:34Z",
   "summary": {
     "score": "83",
     "score_label": "/100",
     "score_breakdown": "score 83/100, embed 35/35, links 25/25, timeline 3/15, orphans 10/15, dead-links 10/10",
-    "page_count": 193,
+    "page_count": 195,
     "embed_coverage": "100% coverage, 0 missing",
-    "graph_coverage": "52.1% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "graph_coverage": "51.5% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
     "entity_links": "Coverage 94% \u00b1 3.4%",
     "concept_count": 91,
     "meeting_count": 6,
     "person_count": 29,
     "company_count": 20,
-    "newsletter_count": 39,
+    "newsletter_count": 41,
     "video_count": 0,
     "article_count": 4,
     "bookmark_count": 1,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 248,
-    "outbound_count": 331,
-    "inbound_count": 295,
+    "total_links": 251,
+    "outbound_count": 332,
+    "inbound_count": 298,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -1827,7 +1827,7 @@
           "text": "VPS Hardening"
         },
         {
-          "to": "2026-06-04",
+          "to": "newsletters/openrouter-first-response-2026-06-04",
           "type": "wikilink",
           "text": "2026-06-04"
         }
@@ -3257,7 +3257,7 @@
           "text": "VPS Hardening"
         },
         {
-          "to": "2026-06-04",
+          "to": "newsletters/openrouter-first-response-2026-06-04",
           "type": "wikilink",
           "text": "2026-06-04"
         }
@@ -4460,6 +4460,29 @@
       "inbound_count": 0
     },
     {
+      "slug": "newsletters/openrouter-first-response-2026-06-04",
+      "title": "Openrouter First Response 2026 06 04",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# OpenRouter: 30 Seconds to Your First Response\n\n**Source:** email\n**Source URI:** gmail://msg_19e92f0ffcc95db9\n**Ingested:** 2026-06-20T03:50:00Z\n**Provenance:** OpenRouter Team welcome email to info@malohacoast.com on 2026-06-04\n\nOpenRouter onboarding email \u2014 fastest path from signup to a working API response.\n\n## Quickstart\n\nTwo code blocks (Python SDK or curl). Swap API key, run.\n\n**Python (OpenAI SDK):**\n```python\nfrom openai import OpenAI\nclient = OpenAI(\n    base_url=\"https://openrouter.ai/api/v1\",\n    api_key=\"YOUR_API_KEY\"\n)\nresponse = client.chat.completions.create(\n    model=\"openai/gpt-4o-mini\",\n    messages=[{\"role\": \"user\", \"content\": \"Hello\"}]\n)\nprint(response.choices[0].message.content)\n```\n\n**cURL:**\n```bash\ncurl https://openrouter.ai/api/v1/chat/completions \\\n  -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"openai/gpt-4o-mini\",\"messages\":[{\"role\":\"user\",\"content\":\"Hello\"}]}'\n```\n\n## Error Codes\n\n- **401** \u2014 almost always the API key header\n- **402** \u2014 free-tier daily cap hit or credits needed for paid model\n- **404** \u2014 model slug format: OpenRouter uses dots, so `claude-sonnet-4.6` not `claude-sonnet-4-6`\n\n## Free Tier\n\n10 requests per day across 29 free models. No credit card required.\n\n## Auto Routing\n\n`openrouter/auto` picks models per-request based on the prompt. ~63% of auto traffic routes to models under $1/M tokens \u2014 simple tasks stop hitting expensive models without any routing code.",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "concepts/gateway-infrastructure",
+          "type": "wikilink",
+          "text": "2026-06-04"
+        },
+        {
+          "from": "gateway-infrastructure",
+          "type": "wikilink",
+          "text": "2026-06-04"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 2
+    },
+    {
       "slug": "newsletters/openrouter-provider-data-policies-2026-06-19",
       "title": "How provider data policies work on OpenRouter",
       "type": "newsletter",
@@ -4687,6 +4710,26 @@
       ],
       "outbound_count": 2,
       "inbound_count": 3
+    },
+    {
+      "slug": "newsletters/zaim-career-goals-2026-06-16",
+      "title": "Zaim Career Goals 2026 06 16",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# Why Your 2026 Career Goals Are Already Dead\n\n**Source:** email\n**Source URI:** gmail://msg_19ece778ab23e039\n**Ingested:** 2026-06-20T03:50:00Z\n**Provenance:** Forwarded by Zaim Mohzani via info+zaim@malohacoast.com on 2026-06-16\n\n> Forwarded by [[Zaim Mohzani]] from Nation Building School newsletter.\n\nIt's June. How's that career goal from January going?\n\nIf you're being honest, probably: forgotten by March, barely remembered (and feeling guilty) in June and quietly dropped by the end of the year.\n\nIt's a timeframe problem, not a discipline problem.\n\n## The Annual Goal Trap\n\nA year is too long to create urgency and too vague to act on. \"Get a new job this year\" feels fine in January. There's time. So nothing happens. By June, the goal is still technically alive, but you haven't done anything that moves it forward. By December, you're setting the same goal again for next year.\n\n[[Zaim Mohzani]] went through this with weight, not career. In January 2025, set an annual goal: lose 6kg by December. Standard SMART goal. Then came across Brian Moran and Michael Lennington's book \"The 12 Week Year,\" which argues most people don't actually operate in years \u2014 they operate in the last few weeks before a deadline. The fix is to shrink the deadline.\n\nRewrote the goal: lose 6kg in 90 days, by 31 March. Hit it. The habits built in those 90 days kept running on their own for the rest of the year.\n\n## Why This Works for Your Career Too\n\nThe same applies to a job search, a promotion case or a pivot. \"Get promoted this year\" doesn't tell you what to do on Monday. \"By 30 September, I will have had 3 conversations with people in my target department, applied to 5 internal roles, and presented one project to leadership\" tells you exactly what to do on Monday. One is a wish. The other is a plan.\n\nZaim has worked with clients on exactly this. Those who set a 90-day goal like \"land 3 offers from MNCs by end of Q3\" with weekly actions attached mostly hit it or get close. Those with \"find a better job this year\" mostly don't, because there's no Monday task.\n\n## How to Set Yours\n\nPick ONE career goal for this quarter. Just one. Follow this format:\n\n- My 90-day career goal is...\n- This matters to me because...\n- To complete this, I commit that by 30 September 2026, I will have... (make it checkable \u2014 \"3 offers\" is checkable; \"more clarity\" is not)\n- To make sure I complete it, I'm going to... (weekly actions, not the outcome)\n\nWrite it down. One goal. One sentence you can check off or not, no grey area. Then build it into your week, not your year.\n\n**P.S.** Zaim is running a free workshop on setting this 90-day goal for Q3 2026. Early next month. Sign up: https://t.ly/getclearoncareer6\n\n## Key Ideas\n\n- The annual goal trap: a year is too long to create urgency and too vague to act on\n- Shrink the deadline: 90-day goals with checkable outcomes create Monday-level actions\n- Habits outlast goals \u2014 the 90-day sprint builds systems that persist\n- Format: one goal, checkable outcome, weekly actions\n\n## People Mentioned\n\n- [[Zaim Mohzani]] \u2014 career coach, Nation Building School\n- Brian Moran \u2014 co-author, \"The 12 Week Year\"\n- Michael Lennington \u2014 co-author, \"The 12 Week Year\"",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [
+        {
+          "to": "people/zaim-mohzani",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
+      "inbound_count": 0
     },
     {
       "slug": "notes/github-2fa-required-mc-hermes",
@@ -5763,6 +5806,11 @@
           "text": "people/zaim-mohzani|Zaim"
         },
         {
+          "from": "newsletters/zaim-career-goals-2026-06-16",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
           "from": "people/aisyah-rahim",
           "type": "wikilink",
           "text": "Zaim Mohzani"
@@ -5774,7 +5822,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 9
+      "inbound_count": 10
     },
     {
       "slug": "persons/tonbi",
@@ -6323,6 +6371,11 @@
       "type": "wikilink"
     },
     {
+      "source": "concepts/gateway-infrastructure",
+      "target": "newsletters/openrouter-first-response-2026-06-04",
+      "type": "wikilink"
+    },
+    {
       "source": "concepts/gbrain",
       "target": "2026-06-03",
       "type": "wikilink"
@@ -6788,6 +6841,11 @@
       "type": "wikilink"
     },
     {
+      "source": "gateway-infrastructure",
+      "target": "newsletters/openrouter-first-response-2026-06-04",
+      "type": "wikilink"
+    },
+    {
       "source": "gbrain",
       "target": "concepts/vps-hardening",
       "type": "wikilink"
@@ -7123,6 +7181,11 @@
       "type": "wikilink"
     },
     {
+      "source": "newsletters/zaim-career-goals-2026-06-16",
+      "target": "people/zaim-mohzani",
+      "type": "wikilink"
+    },
+    {
       "source": "people/addy-osmani",
       "target": "bookmarks/agent-skills-by-addy-osmani",
       "type": "wikilink"
@@ -7378,7 +7441,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 192 pages",
+        "message": "Connected, 194 pages",
         "category": "ops"
       },
       {
@@ -7414,7 +7477,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 666ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 419ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -7432,7 +7495,7 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 92%, timeline 60%",
+        "message": "Entity link coverage 92%, timeline 62%",
         "category": "brain"
       },
       {
@@ -7450,7 +7513,7 @@
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 192 pages; 35 external link(s) (no bare tweets).",
+        "message": "Sampled 194 pages; 35 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -7611,11 +7674,11 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction current: 0/192 pages (0%) stale",
+        "message": "Extraction current: 2/194 pages (1%) stale",
         "details": {
-          "total": 192,
-          "stale": 0,
-          "pct": 0,
+          "total": 194,
+          "stale": 2,
+          "pct": 1,
           "warn_pct": 20,
           "fail_pct": null,
           "source_id": null
@@ -7643,7 +7706,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "121 reranker failure(s) in last 7 days (below threshold)",
+        "message": "123 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -7655,7 +7718,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "52.1% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "51.5% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -7764,7 +7827,7 @@
       {
         "name": "timeline_coverage",
         "status": "warn",
-        "message": "Coverage 61% \u00b1 7.0% (target 90%)",
+        "message": "Coverage 63% \u00b1 6.9% (target 90%)",
         "category": "meta"
       },
       {
