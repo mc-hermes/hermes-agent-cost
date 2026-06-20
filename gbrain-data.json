@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-06-20T08:30:38Z",
+  "updated_at": "2026-06-20T08:45:05Z",
   "summary": {
-    "score": "83",
+    "score": "82",
     "score_label": "/100",
-    "score_breakdown": "score 83/100, embed 35/35, links 25/25, timeline 3/15, orphans 10/15, dead-links 10/10",
-    "page_count": 215,
+    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
+    "page_count": 217,
     "embed_coverage": "100% coverage, 0 missing",
-    "graph_coverage": "47.9% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "graph_coverage": "47.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
     "entity_links": "Coverage 91% \u00b1 3.9%",
     "concept_count": 93,
     "meeting_count": 6,
@@ -14,26 +14,26 @@
     "company_count": 23,
     "newsletter_count": 50,
     "video_count": 0,
-    "article_count": 6,
+    "article_count": 8,
     "bookmark_count": 3,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 280,
-    "outbound_count": 359,
-    "inbound_count": 330,
+    "total_links": 283,
+    "outbound_count": 358,
+    "inbound_count": 329,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
     },
-    "score_raw": "Brain score 83/100 (embed 35/35, links 25/25, timeline 3/15, orphans 10/15, dead-links 10/10)",
+    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
     "score_components": {
-      "score": "83/100",
+      "score": "82/100",
       "embed": "35/35",
       "links": "25/25",
       "timeline": "3/15",
-      "orphans": "10/15",
+      "orphans": "9/15",
       "dead-links": "10/10"
     },
     "checks_passed": 66,
@@ -151,22 +151,66 @@
       "inbound_count": 2
     },
     {
-      "slug": "articles/ai-data-center-architecture-2026-06-19",
-      "title": "The Secret Architecture Behind AI Data Centers",
+      "slug": "articles/agentic-engineering-concepts-2026-06-17",
+      "title": "Agentic Engineering Concepts 2026 06 17",
       "type": "article",
       "updated": "",
-      "body": "# The Secret Architecture Behind AI Data Centers (System Design One)\n\n**Source:** email\n**Source URI:** gmail://msg_19ee23d6478fc08e\n**Ingested:** 2026-06-20T05:44:15Z\n**Provenance:** Forwarded by sayf on 2026-06-20, originally from Neo Kim / System Design One (Substack #155)\n\n**Authors:** Neo Kim and Ashish Prajapati\n**Date:** June 19, 2026\n\nAshish Prajapati is an AI infrastructure specialist and technology educator. His training programs have reached 39,000+ learners. Runs \"Become a Solutions Architect (BeSA)\" mentoring initiative (23,000+ professionals helped).\n\n## Summary\n\n#155 of System Design One. Thesis: The biggest breakthroughs in AI are not coming from better models \u2014 they're coming from better infrastructure.\n\n### Key Topics (preview \u2014 subscriber-only post)\n1. **The hidden architecture behind AI** \u2014 Models are only the visible tip of a much larger infrastructure stack.\n2. **Physics that limit AI growth** \u2014 Power, cooling, and space shape every AI data center.\n3. **Why GPUs became the backbone** \u2014 Architectural advantages that made modern AI training possible.\n4. **Real bottlenecks** \u2014 Memory, networking, coordination at scale.\n5. **How thousands of GPUs work together** \u2014 Software, networking, and orchestration layers.\n\n### Partner Content\n- CodeRabbit Review: AI code review that reorganizes PRs into logical layer-by-layer walkthroughs with cohorts, layers, code peek, and semantic diff views.",
+      "body": "# 30 Core Agentic Engineering Concepts, Explained Simply\n\n**Source:** email forward from Sayf Codes via System Design One (Neo Kim, Substack)\n**Source URI:** gmail://msg_19ee2580f5fe7903\n**Ingested:** 2026-06-20T08:43:48Z\n**Provenance:** Forwarded by sayf on 2026-06-20\n\n30 Core Agentic Engineering Concepts, Explained Simply\n\nBy Neo Kim | System Design One\n\nCore Concepts:\n1. Agent - An autonomous AI system that perceives its environment, makes decisions, and takes actions to achieve goals. Like a smart factory worker who sees what material arrived, decides what to process next, and executes without needing a manager.\n2. Tool/Function Calling - LLMs can call external functions and APIs to perform actions outside text generation. Extends capabilities beyond just generating text. The agent becomes the operator, not just the writer.\n3. Chain-of-Thought (CoT) - Breaking down a complex problem into step-by-step reasoning before producing the final answer. Like a mechanic explaining each step while diagnosing a car: \"First I'll check the battery, then the alternator.\"\n4. ReAct (Reasoning + Acting) - Combines chain-of-thought reasoning with tool use in an interleaved pattern: think, act, observe, repeat. The agent thinks about what to do, executes an action, sees the result, then thinks again. Like a chef tasting the sauce, deciding to add salt, then tasting again.\n5. Thinking Models - Models trained to produce internal chain-of-thought before finalizing an answer. Different from regular models that generate answers immediately. The model has been trained to think before speaking, producing better reasoning at the cost of slower output.\n6. Planning - The agent creates a multi-step plan before executing, considering dependencies and alternatives. Like mapping a road trip before driving: checking routes, gas stations, and rest stops.\n7. Task Decomposition - Breaking big goals into smaller, manageable subtasks, often recursively. Instead of \"build a house\", the agent creates subtasks: foundation, framing, roofing, plumbing.\n8. Multi-Agent Systems - Multiple specialized agents working together, each with different roles and capabilities. Like a software team with a product manager, designer, and engineers.\n9. Orchestration - Coordinating multiple agents, tools, and systems to work together toward a goal. The conductor of the agent orchestra.\n10. Human-in-the-Loop (HITL) - Agents that pause for human approval before executing critical actions. Like a copilot who suggests maneuvers but lets the pilot make the final call.\n11. Memory/Context - How agents store and retrieve information across interactions. Short-term (current conversation), working (task context), long-term (persistent knowledge).\n12. Retrieval-Augmented Generation (RAG) - Combining retrieval from external knowledge bases with LLM generation. The agent searches a database before answering.\n13. Fine-Tuning - Training a base model on domain-specific data to improve performance on specific tasks.\n14. Prompt Engineering - Crafting effective instructions to guide agent behavior.\n15. Guardrails - Safety constraints and validation rules that prevent agents from taking harmful or unwanted actions.\n16. Observability - Monitoring agent behavior, decisions, and performance. Logging, tracing, and debugging for agent systems.\n17. Evaluation - Testing and measuring agent performance on specific tasks and benchmarks.\n18. Agentic Loop - The fundamental cycle: perceive \u2192 reason \u2192 act \u2192 observe \u2192 repeat.\n19. Autonomy Level - Degree of independence: fully autonomous (execute without human), semi-autonomous (human review at checkpoints), assisted (human makes decisions, agent executes).\n20. State Management - Tracking the current state of the agent's task, environment, and knowledge.\n21. Error Recovery - How agents detect, handle, and recover from failures.\n22. Rate Limiting/Throttling - Managing API call frequency to avoid hitting provider limits.\n23. Caching - Storing frequently-used results to reduce latency and cost.\n24. Batching - Combining multiple requests into one API call for efficiency.\n25. Streaming - Processing partial results as they arrive, enabling real-time responses.\n26. Structured Output - Getting LLMs to produce parseable structured data (JSON, XML) rather than free text.\n27. System Prompts - The foundational instruction set that defines the agent's behavior, constraints, and capabilities.\n28. Context Window Management - Strategies for fitting relevant information within the LLM's context window limit.\n29. Fallback Models - Alternative models when the primary model is unavailable or rate-limited.\n30. Agent Frameworks - Reusable libraries and patterns for building agents (LangChain, CrewAI, AutoGen, Semantic Kernel).\n\n## Topic Tags\n\nagentic-engineering, agents, llm, system-design, concepts, neo-kim, system-design-one",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "articles/ai-data-center-architecture-2026-06-19",
+      "title": "Ai Data Center Architecture 2026 06 19",
+      "type": "article",
+      "updated": "",
+      "body": "# The Secret Architecture Behind AI Data Centers\n\n**Source:** email forward from Sayf Codes via System Design One (Neo Kim, Substack)\n**Source URI:** gmail://msg_19ee23d6478fc08e\n**Ingested:** 2026-06-20T08:44:20Z\n**Provenance:** Forwarded by sayf on 2026-06-20\n\nThe Secret Architecture Behind AI Data Centers\n\nBy Neo Kim | System Design One\n\nWhen people talk about AI, they often refer to models such as GPTs, LLMs, and neural networks. It sounds like magic, software that thinks. But the biggest breakthroughs in AI are not coming from better models; they're coming from better infrastructure.\n\nIf AI were only about the models, there would be no need for huge, warehouse-sized data centers packed with specialized hardware and powered by massive amounts of electricity.\n\nThink of an AI Data Center as a Factory\n\nAI Data Center = Factory | Data = Raw material | GPUs = Machines on the factory floor | Network = Internal transport system | Storage = Warehouse | Software = Assembly line logic | Output = Trained intelligence\n\nFirst Problem: Physics\n\nBefore AI is a software problem, it's a physics problem:\n\n1. Power: A single server rack of GPUs can draw 80-120 kilowatts (roughly 40 homes at full load). You're limited by how much electricity your facility can physically receive and distribute.\n\n2. Cooling: More power means more heat. Modern data centers are increasingly adopting liquid cooling \u2014 coolant circulated through cold plates attached directly to GPUs and CPUs \u2014 which is far more effective than conventional air cooling.\n\n3. Space: Even if you had unlimited chips and power, you still need racks and floor space. Scaling AI is not just software \u2014 it's real estate, energy infrastructure, and thermodynamics combined.\n\nCompute: Why GPUs Took Over\n\nCPU = manager (decision-making) | GPU = factory workers (mass production) | DPU = logistics and operations\n\nCPUs have a few very powerful cores handling complex sequential tasks. GPUs have thousands of smaller cores handling the same operation repeated millions of times. AI training repeatedly performs matrix multiplications billions of times \u2014 GPUs are designed for this.\n\nHidden Bottleneck: Memory and Storage\n\nGPUs don't fail because they're slow. They fail because they're hungry \u2014 constantly starved for data.\n\nMemory hierarchy: GPU Memory (HBM) is blazingly fast but tiny (tens of GB). CPU RAM is larger but slower. SSD/NVMe storage is enormous capacity but slower still. Network/Object storage is nearly unlimited but the slowest.\n\nEvery time the GPU needs data that isn't already in its fast local memory, it must wait. A GPU sitting idle costs just as much as one doing useful work.\n\nNetworking: The Hidden Bottleneck\n\nWhen training a large AI model with thousands of GPUs working together, those thousands of GPUs must constantly communicate, sharing what they've learned at every step.\n\nEvery second a GPU waits for data or synchronization is a second of lost productivity.\n\nModern AI clusters use leaf-spine network architectures \u2014 every GPU server can reach every other in at most two hops. Within a node, GPUs talk over NVLink (intra-node). Between nodes, traffic flows over InfiniBand or RoCE.\n\nAmdahl's Law: if parts of your system must wait for other parts, adding more workers eventually stops helping.\n\nTechniques for smarter data movement: RDMA (remote direct memory access), RDMA kernel bypass, GPUDirect (GPUs read/write storage/network directly), zero-copy pipelines.\n\n## Topic Tags\n\nai-infrastructure, data-center, gpu, networking, system-design, neo-kim, system-design-one",
       "tags": [],
       "links_out": [],
       "backlinks": [
         {
-          "from": "concepts/ai-data-center-architecture-2026-06-20",
+          "from": "concepts/ai-data-centers",
           "type": "wikilink",
-          "text": "AI Data Centers"
+          "text": "AI Data Center Architecture"
+        },
+        {
+          "from": "concepts/distributed-training",
+          "type": "wikilink",
+          "text": "AI Data Center Architecture"
+        },
+        {
+          "from": "concepts/gpu-infrastructure",
+          "type": "wikilink",
+          "text": "AI Data Center Architecture"
+        },
+        {
+          "from": "concepts/liquid-cooling",
+          "type": "wikilink",
+          "text": "AI Data Center Architecture"
+        },
+        {
+          "from": "concepts/rdma",
+          "type": "wikilink",
+          "text": "AI Data Center Architecture"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 1
+      "inbound_count": 5
+    },
+    {
+      "slug": "articles/humanlayer-launch-2026-06-18",
+      "title": "Humanlayer Launch 2026 06 18",
+      "type": "article",
+      "updated": "",
+      "body": "# HumanLayer // We're live \u2014 come build with us\n\n**Source:** email forward from Sayf Codes via HumanLayer (Dexter)\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-20T08:44:20Z\n**Provenance:** Forwarded by sayf on 2026-06-19\n\nHumanLayer // We're live \u2014 come build with us\n\nHey there\u2014 you're getting this because you're on the HumanLayer waitlist. The wait is over: today we're opening up HumanLayer to everyone.\n\nhumanlayer.com \u2014 the Starter plan is free for teams of fewer than three, so you can jump in right now.\n\nThe year of no more slop\n\nFor the last year, Kyle and I have been pushing the limits of what coding agents can do \u2014 first with our open-source Research, Plan, Implement (RPI) framework (now running inside Fortune 500s like Block and Uber, where shipping slop is not an option), and now with the product we've been building on top of all of it.\n\nHumanLayer is an Agentic IDE, collaboration platform, and building blocks for your software factory \u2014 where engineering teams design complex systems with their AI agents before generating a single line of code. It lets engineers solving hard problems in complex codebases:\n\n- move 2-3x faster across the entire SDLC (not just the coding part)\n- maintain rigorous standards for system architecture and program design\n\nThe core idea: don't outsource the thinking. Great teams have run design reviews for decades because there's enormous leverage in collaborating on system design before you write the code. We bring that missing piece of the software factory into one place \u2014 and the results have been really impressive.\n\nBring your own subscription \u2014 plug in your Claude, Codex, and other AI subscriptions or API keys. No separate per-token bill to reason about.\n\n## Topic Tags\n\nhumanlayer, agentic-ide, collaboration, software-factory, coding-agents, rpi-framework, design-review",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
     },
     {
       "slug": "articles/humanlayer-launch-2026-06-19",
@@ -983,7 +1027,7 @@
       ],
       "links_out": [
         {
-          "to": "newsletters/ai-garage-weekly-2026-06-19",
+          "to": "newsletters/msg-19ee2c24d5819622",
           "type": "wikilink",
           "text": "AI Garage Weekly - June 19, 2026"
         }
@@ -1079,11 +1123,6 @@
           "text": "OpenRouter"
         },
         {
-          "from": "newsletters/openrouter-provider-data-policies-2026-06-19",
-          "type": "wikilink",
-          "text": "OpenRouter"
-        },
-        {
           "from": "newsletters/openrouter-three-cost-levers-2026-06-17",
           "type": "wikilink",
           "text": "OpenRouter"
@@ -1110,7 +1149,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 14
+      "inbound_count": 13
     },
     {
       "slug": "companies/passend",
@@ -1557,7 +1596,7 @@
           "text": "Ashish Prajapati"
         },
         {
-          "to": "articles/ai-data-center-architecture-2026-06-19",
+          "to": "concepts/ai-data-centers",
           "type": "wikilink",
           "text": "AI Data Centers"
         },
@@ -1582,35 +1621,9 @@
           "text": "Liquid Cooling"
         }
       ],
-      "backlinks": [
-        {
-          "from": "concepts/ai-data-centers",
-          "type": "wikilink",
-          "text": "AI Data Center Architecture"
-        },
-        {
-          "from": "concepts/distributed-training",
-          "type": "wikilink",
-          "text": "AI Data Center Architecture"
-        },
-        {
-          "from": "concepts/gpu-infrastructure",
-          "type": "wikilink",
-          "text": "AI Data Center Architecture"
-        },
-        {
-          "from": "concepts/liquid-cooling",
-          "type": "wikilink",
-          "text": "AI Data Center Architecture"
-        },
-        {
-          "from": "concepts/rdma",
-          "type": "wikilink",
-          "text": "AI Data Center Architecture"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 7,
-      "inbound_count": 5
+      "inbound_count": 0
     },
     {
       "slug": "concepts/ai-data-centers",
@@ -1624,14 +1637,20 @@
       ],
       "links_out": [
         {
-          "to": "concepts/ai-data-center-architecture-2026-06-20",
+          "to": "articles/ai-data-center-architecture-2026-06-19",
           "type": "wikilink",
           "text": "AI Data Center Architecture"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "concepts/ai-data-center-architecture-2026-06-20",
+          "type": "wikilink",
+          "text": "AI Data Centers"
+        }
+      ],
       "outbound_count": 1,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "concepts/architecture/agent-hierarchy",
@@ -1881,7 +1900,7 @@
       ],
       "links_out": [
         {
-          "to": "concepts/ai-data-center-architecture-2026-06-20",
+          "to": "articles/ai-data-center-architecture-2026-06-19",
           "type": "wikilink",
           "text": "AI Data Center Architecture"
         }
@@ -1905,7 +1924,7 @@
       "tags": [],
       "links_out": [
         {
-          "to": "newsletters/ai-garage-weekly-2026-06-19",
+          "to": "newsletters/msg-19ee2c24d5819622",
           "type": "wikilink",
           "text": "AI Garage Weekly - June 19, 2026"
         }
@@ -2243,7 +2262,7 @@
       ],
       "links_out": [
         {
-          "to": "concepts/ai-data-center-architecture-2026-06-20",
+          "to": "articles/ai-data-center-architecture-2026-06-19",
           "type": "wikilink",
           "text": "AI Data Center Architecture"
         }
@@ -2267,7 +2286,7 @@
       "tags": [],
       "links_out": [
         {
-          "to": "newsletters/ai-garage-weekly-2026-06-19",
+          "to": "newsletters/msg-19ee2c24d5819622",
           "type": "wikilink",
           "text": "AI Garage Weekly - June 19, 2026"
         }
@@ -2436,7 +2455,7 @@
       ],
       "links_out": [
         {
-          "to": "concepts/ai-data-center-architecture-2026-06-20",
+          "to": "articles/ai-data-center-architecture-2026-06-19",
           "type": "wikilink",
           "text": "AI Data Center Architecture"
         }
@@ -2652,7 +2671,7 @@
       ],
       "links_out": [
         {
-          "to": "concepts/ai-data-center-architecture-2026-06-20",
+          "to": "articles/ai-data-center-architecture-2026-06-19",
           "type": "wikilink",
           "text": "AI Data Center Architecture"
         }
@@ -4306,10 +4325,10 @@
     },
     {
       "slug": "newsletters/ai-garage-weekly-2026-06-19",
-      "title": "AI Garage Weekly - June 19, 2026",
+      "title": "Ai Garage Weekly 2026 06 19",
       "type": "newsletter",
       "updated": "",
-      "body": "# AI Garage Weekly - June 19, 2026\n\n**Source:** email from Sayf Codes, forwarded from AI Garage Weekly (Beehiiv)\n**Source URI:** gmail://msg_19ee2c24d5819622\n**Ingested:** 2026-06-20T12:30:00Z\n**Provenance:** Forwarded ai-garage-weekly@mail.beehiiv.com \u2192 sayfcodes@gmail.com \u2192 info@malohacoast.com\n\nSubtitle: Excel, Fable Ban, GLM-5.2, and DR-DCI\n\n## Summary\n\nCovers Hermes Agent in Excel integration, the Claude Fable 5 ban by US government, GLM-5.2 open weights release, and a DR-DCI research paper on scaling agent retrieval.\n\n## Key Points\n\n### Video of the Week: Hermes Agent in Excel\n- Author integrated Hermes Agent into Excel \u2014 a chat window inside Excel plus custom functions powered by Hermes\n- First attempt used a complicated technique; second attempt (after asking the agent for an easier way) was much simpler\n- Open source code available on GitHub: https://github.com/... (see link in email)\n- Directly relevant to Maloha Coast as Hermes Agent users\n\n### Claude Fable 5 Banned\n- Anthropic removed Fable 5 access due to a new directive from the US government\n- Many in the community were surprised and disappointed\n- Author's take: these models are so powerful the government won't let private companies/individuals have that power freely\n- Highlights the need for local and decentralized AI\n\n### GLM-5.2 Released\n- New open weights model from the GLM family\n- Author tested: feels only slightly behind Opus 4.8 / GPT-5.5 (about one generation behind)\n- Incredible for an open source model, though most people can't run it locally (needs serious hardware)\n\n### DR-DCI: Scaling Direct Corpus Interaction via Dynamic Workspace Expansion\n- Paper: https://arxiv.org/abs/2606.14885\n- Alternative to standard RAG: agent gets direct shell/file access to a corpus\n- Problem with DCI: breaks when corpus is huge (searching millions of files directly is slow)\n- DR-DCI fix: hide huge corpus behind a retriever; agent calls pull(query, topK) to bring relevant docs into a local workspace; then uses normal file tools\n- Results: increased accuracy, significantly improved wall time and costs\n- Directly applicable to Hermes Agent / gbrain retrieval patterns",
+      "body": "# AI Garage Weekly - June 19, 2026\n\n**Source:** email forward from Sayf Codes via AI Garage Weekly (Beehiiv)\n**Source URI:** gmail://msg_19ee2c24d5819622\n**Ingested:** 2026-06-20T08:43:48Z\n**Provenance:** Forwarded by sayf on 2026-06-20\n\nAI Garage Weekly - June 19, 2026\n\nExcel, Fable Ban, GLM-5.2, and DR-DCI\n\nBetween the Fable ban and the GLM-5.2 release, it was a pretty big week for the local LLM community. One showed why local AI is so important, the other showed that it was actually possible to have open weights models that approach the top closed frontier models. We just need to lower the hardware barrier somehow and I think local AI will really explode.\n\nVideo of the Week: Hermes Agent in Excel.\n\nSo my wife was talking about using Claude in Excel for her work, and I had the thought: Could I do that with Hermes Agent? I hadn't heard of that type of integration, I wasn't even sure if it was possible, but I started to research a way to do it.\n\nIn the end I recorded a video showing how to get a chat window right in Excel, plus create custom functions with Hermes Agent. It does require some prep work to start up, but the end result is pretty cool.\n\nAI News & Model Releases\n\nClaude Fable 5 banned. Anthropic removed Fable 5 access due to a new directive from the US government. Many people were surprised by this move. I've been convinced this was the direction we were headed anyway. These models are so powerful, the government isn't going to let private companies and individuals have power like that. This highlights the need for local and decentralized AI moving forward.\n\nGLM-5.2 released. This new open weights model impressed me. I gave it some tasks and it feels only slightly behind Opus 4.8/GPT5.5, maybe one generation behind. This is still an incredible feat for an open source model, and it makes me think we will get genuine frontier-level open source models sooner than we think.\n\nResearch & Experiments\n\nDr-DCI: Scaling Direct Corpus Interaction via Dynamic Workspace Expansion (arxiv.org/abs/2606.14885)\n\nThis paper describes an agent retrieval/workspace pattern that could be effective for Agent Wikis, or having any agent handle any large corpus.\n\nWith normal RAG, the agent asks a retriever, gets snippets, and answers from those snippets. With DCI, the agent gets direct shell/file access to the corpus. The problem: it breaks when the corpus is huge. So with DR-DCI, the huge corpus is hidden behind a retriever, but the agent can call pull(query, topK) to bring relevant documents into a local workspace, then use normal file tools on that smaller workspace. This gives RAG-like recall with filesystem agency from DCI. They found this method increased accuracy as well as improved wall time and cost.\n\n## Topic Tags\n\nlocal-llm, fable, glm-5.2, open-weights, hermes-agent, excel, dr-dci, agent-wikis, rag, retrieval",
       "tags": [
         "ai-garage",
         "hermes-agent",
@@ -4331,11 +4350,6 @@
           "text": "newsletters/ai-garage-weekly-2026-06-19"
         },
         {
-          "from": "companies/openai",
-          "type": "wikilink",
-          "text": "AI Garage Weekly - June 19, 2026"
-        },
-        {
           "from": "companies/stripe",
           "type": "wikilink",
           "text": "newsletters/ai-garage-weekly-2026-06-19"
@@ -4346,33 +4360,18 @@
           "text": "ai-garage-weekly-2026-06-19"
         },
         {
-          "from": "concepts/dr-dci",
-          "type": "wikilink",
-          "text": "AI Garage Weekly - June 19, 2026"
-        },
-        {
           "from": "concepts/glm-5-2",
           "type": "wikilink",
           "text": "ai-garage-weekly-2026-06-19"
         },
         {
-          "from": "concepts/hermes-agent",
-          "type": "wikilink",
-          "text": "AI Garage Weekly - June 19, 2026"
-        },
-        {
           "from": "people/tonbi",
           "type": "wikilink",
           "text": "newsletters/ai-garage-weekly-2026-06-19"
-        },
-        {
-          "from": "persons/tonbi",
-          "type": "wikilink",
-          "text": "AI Garage Weekly - June 19, 2026"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 10
+      "inbound_count": 6
     },
     {
       "slug": "newsletters/ai-garage-weekly-2026-06-20",
@@ -4455,10 +4454,10 @@
     },
     {
       "slug": "newsletters/claude-second-brain-levels-2026-06-20",
-      "title": "Every Level of a Claude Second Brain Explained",
+      "title": "Claude Second Brain Levels 2026 06 20",
       "type": "newsletter",
       "updated": "",
-      "body": "# Every Level of a Claude Second Brain Explained\n\n**Source:** email from Sayf Codes, forwarded from Nate Herk (AI Automation Society)\n**Source URI:** gmail://msg_19ee2dfa87f86548\n**Ingested:** 2026-06-20T12:30:00Z\n**Provenance:** Forwarded sayfti@gmail.com \u2192 sayfcodes@gmail.com \u2192 info@malohacoast.com\n\nOriginally from: AI Automation Society newsletter, June 19, 2026\nBy: Nate Herk\n\n## Summary\n\nA breakdown of five levels of building a Claude second brain, from basic file search to fully autonomous recall. Also covers a client pipeline automation success story and Codex hitting 5M weekly users.\n\n## Key Points\n\n### Five Levels of a Claude Second Brain\n1. Level one: find a file by exact word search\n2. Level five: fully autonomous system that knows your business, client relationships, and IP better than you do\n3. The difference between levels isn't the tool \u2014 it's how data is organized\n4. Insight: start from the end. Before organizing a single file, ask how you'll access data later\n5. Jon shows his actual setup (Herku project, markdown files and folders)\n6. Includes semantic search (finding by meaning, not exact match) and full relationship mapping\n\n### Client Pipeline Automation \u2014 Robert's Success Story\n- Robert automated a client's outbound email pipeline from scratch\n- Client's call center had leads but no email follow-up\n- Sales managers emailed daily lead lists as Excel files\n- Automation handles: extracts email, address, name data; normalizes addresses; uploads directly into Instantly as a ready campaign\n- Key takeaway: businesses running call centers almost always have messy lead data and no email follow-up\n\n### News: OpenAI Codex Hits 5M Weekly Users\n- Permanent feature: banked rate limit resets (save resets and use when needed, not on fixed timer)\n- Through June 24: Plus and Pro users can invite up to 3 friends; both get a bonus reset\n- Signal: Codex growing through referral mechanics at 5M weekly users",
+      "body": "# Every Level of a Claude Second Brain Explained\n\n**Source:** email forward from Sayf Codes via AI Automation Society (Nate Herk)\n**Source URI:** gmail://msg_19ee2dfa87f86548\n**Ingested:** 2026-06-20T08:43:48Z\n**Provenance:** Forwarded by sayf on 2026-06-20\n\n\n\nA Claude second brain breakdown, a client pipeline automated, and Codex hits 5M users with a free bonus through June 24.\n\nJune 19, 2026\nEvery Level of a Claude Second Brain Explained\n\nA Claude second brain breakdown, a client pipeline automated, and Codex hits 5M users with a free bonus through June 24.\n\nIn This Issue\n   - Five levels of building a Claude second brain, from basic file search to fully autonomous recall.\n   - Robert automated a client's outbound email pipeline and got their call center actually following up.\n   - OpenAI's Codex just crossed 5 million weekly users, and there's a free bonus available through June 24 if you use it.\n\nNew Video: Every Level of a Claude Second Brain Explained\n\nThere are five distinct levels to building a Claude second brain, and most people are stuck at level one.\n\nLevel one is just finding a file by searching an exact word. Level five is a fully autonomous system that knows your business, your client relationships, and your IP better than you do. The difference between them isn't the tool. It's how the data is organized.\n\n*The insight that changes how you build:* Start from the end. Before you organize a single file, ask how you'll access this data later. The shape of the basketball determines the size of the hoop. Jon shows his actual setup (a Herku project, just markdown files and folders) and walks through what separates each level, including semantic search (finding by meaning, not exact match) and full relationship mapping.\n\n*How this helps you:* Your moat is your data. This video shows you how to actually organize it so your agents can use it, not just find it.\n\nWinning Is All We Do\nRobert automated a client's outbound email pipeline from scratch\n\n*What happened:* Robert's client had a call center calling leads, but nothing was following up by email. Sales managers emailed Robert their daily lead lists as Excel files. He built an automation that handles the rest: when the file lands in his inbox, it extracts the email, address, and name data, normalizes it (no more \"N123 MAIN STREET\" showing up as a deliverable address), and uploads every contact directly into Instantly as a ready-to-run campaign. No manual cleanup. No copy-paste.\n\n*The opportunity for you:* Businesses running call centers almost always have messy lead data and no email follow-up. An automation that converts a spreadsheet into a live campaign solves a problem they didn't know anyone could fix.\n\nIn the News\nCodex just hit 5 million weekly users. If you use it, there's a free bonus through June 24.\n\n*The news:* OpenAI Codex has crossed 5 million weekly active users and launched two features alongside the milestone. One is permanent: banked rate limit resets. Instead of your weekly limit resetting on a fixed timer (whether you need it or not), you can now save resets and use them when you actually need them. The other runs through June 24. Plus and Pro users can invite up to three friends to try Codex. When a friend sends their first Codex message, you both get a bonus reset.\n\n*How it affects you:* If you've been hitting Codex rate limits at the wrong moment mid-build, the banked reset system fixes that. You decide when to use your reset, not the clock. And if you're not hitting limits yet, the referral is easy headroom to bank before the window closes. The bigger signal here: Codex is now growing through referral mechanics at 5 million weekly users. That's not hype. That's a tool people are actively building with and recommending.\n\n## Topic Tags\n\nclaude, second-brain, AI-automation, codex, agents, knowledge-management, client-automation",
       "tags": [
         "ai-automation-society",
         "claude",
@@ -4771,13 +4770,33 @@
           "text": "newsletters/msg-19ee2c24d5819622"
         },
         {
+          "from": "companies/openai",
+          "type": "wikilink",
+          "text": "AI Garage Weekly - June 19, 2026"
+        },
+        {
+          "from": "concepts/dr-dci",
+          "type": "wikilink",
+          "text": "AI Garage Weekly - June 19, 2026"
+        },
+        {
+          "from": "concepts/hermes-agent",
+          "type": "wikilink",
+          "text": "AI Garage Weekly - June 19, 2026"
+        },
+        {
           "from": "people/tonbi",
           "type": "wikilink",
           "text": "newsletters/msg-19ee2c24d5819622"
+        },
+        {
+          "from": "persons/tonbi",
+          "type": "wikilink",
+          "text": "AI Garage Weekly - June 19, 2026"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 2
+      "inbound_count": 6
     },
     {
       "slug": "newsletters/msg-19ee2dfa87f86548",
@@ -4950,24 +4969,18 @@
     },
     {
       "slug": "newsletters/openrouter-provider-data-policies-2026-06-19",
-      "title": "How provider data policies work on OpenRouter",
+      "title": "Openrouter Provider Data Policies 2026 06 19",
       "type": "newsletter",
       "updated": "",
-      "body": "# How provider data policies work on [[OpenRouter]]\n\n**Source:** email from OpenRouter Team, 2026-06-19\n**Source URI:** gmail://msg_19ee03492356403f\n\n## Summary\n\n[[OpenRouter]] provides structured data about each provider's retention and training policies, publishes a full table in their docs, and gives users three layers of control over which providers can process their prompts.\n\n## Key Content\n\nEvery provider behind [[OpenRouter]] has its own retention and training policy. [[OpenRouter]] reflects those policies as structured data on each endpoint and publishes the full table in the docs.\n\n### What You Control\n\n1. **Block routing to providers that train.** An account-wide toggle for whether routing may use providers that train on prompts, with separate switches for paid and free models. If you opt out, [[OpenRouter]] will not route to training providers.\n\n2. **Require a specific data policy per request.** Override your account default on any single call via data policy filtering in the provider routing docs.\n\n3. **Pick only zero-retention providers.** Many providers on [[OpenRouter]] are zero retention: Amazon Bedrock, Azure, Cerebras, DeepInfra, Google Vertex, Groq, NVIDIA, SambaNova, Together, and others.\n\n### Enterprise Options\n\n[[OpenRouter]] supports EU in-region routing for enterprise accounts. When enabled, prompts and completions are processed inside the European Union via `https://eu.openrouter.ai`.\n\n## Links\n\n- Provider policy table: https://openrouter.ai/docs/features/privacy-and-logging\n- Privacy settings: https://openrouter.ai/settings/privacy\n- Data policy filtering docs: https://openrouter.ai/docs/features/provider-routing\n- Enterprise: https://openrouter.ai/enterprise/form",
+      "body": "# How provider data policies work on OpenRouter\n\n**Source:** direct email from OpenRouter Team\n**Source URI:** gmail://msg_19ee03492356403f\n**Ingested:** 2026-06-20T08:44:20Z\n**Provenance:** Direct email to info@malohacoast.com on 2026-06-19\n\nOpenRouter - How provider data policies work on OpenRouter\n\nHi there,\n\nEvery provider behind OpenRouter has its own retention and training policy. OpenRouter reflects those policies as structured data on each endpoint, publishes the full table in the docs, and gives you controls to filter routing on them.\n\nWHAT YOU CONTROL\n\n1. Block routing to providers that train. Your privacy settings have an account-wide toggle for whether routing may use providers that train on prompts, with separate switches for paid and free models. If you opt out, OpenRouter will not route to training providers.\n\n2. Require a specific data policy per request. You can override your account default on any single call.\n\n3. Pick only zero-retention providers. Many providers on OpenRouter are zero retention: Amazon Bedrock, Azure, Cerebras, DeepInfra, Google Vertex, Groq, NVIDIA, SambaNova, Together, and others.\n\nIF YOU NEED STRICTER GUARANTEES\n\nOpenRouter supports EU in-region routing for enterprise accounts. When enabled, prompts and completions are processed inside the European Union via the eu.openrouter.ai base URL. Contact the enterprise team to enable it.\n\nOne API key, the same privacy controls across 300+ models.\n\n## Topic Tags\n\nopenrouter, privacy, data-policy, llm-providers, zero-retention, provider-routing",
       "tags": [
         "ai-providers",
         "data-privacy",
         "openrouter"
       ],
-      "links_out": [
-        {
-          "to": "companies/openrouter",
-          "type": "wikilink",
-          "text": "OpenRouter"
-        }
-      ],
+      "links_out": [],
       "backlinks": [],
-      "outbound_count": 1,
+      "outbound_count": 0,
       "inbound_count": 0
     },
     {
@@ -6435,7 +6448,7 @@
       "tags": [],
       "links_out": [
         {
-          "to": "newsletters/ai-garage-weekly-2026-06-19",
+          "to": "newsletters/msg-19ee2c24d5819622",
           "type": "wikilink",
           "text": "AI Garage Weekly - June 19, 2026"
         }
@@ -6809,7 +6822,7 @@
     },
     {
       "source": "companies/openai",
-      "target": "newsletters/ai-garage-weekly-2026-06-19",
+      "target": "newsletters/msg-19ee2c24d5819622",
       "type": "wikilink"
     },
     {
@@ -6954,7 +6967,7 @@
     },
     {
       "source": "concepts/ai-data-center-architecture-2026-06-20",
-      "target": "articles/ai-data-center-architecture-2026-06-19",
+      "target": "concepts/ai-data-centers",
       "type": "wikilink"
     },
     {
@@ -6979,7 +6992,7 @@
     },
     {
       "source": "concepts/ai-data-centers",
-      "target": "concepts/ai-data-center-architecture-2026-06-20",
+      "target": "articles/ai-data-center-architecture-2026-06-19",
       "type": "wikilink"
     },
     {
@@ -7043,8 +7056,13 @@
       "type": "wikilink"
     },
     {
+      "source": "concepts/distributed-training",
+      "target": "articles/ai-data-center-architecture-2026-06-19",
+      "type": "wikilink"
+    },
+    {
       "source": "concepts/dr-dci",
-      "target": "newsletters/ai-garage-weekly-2026-06-19",
+      "target": "newsletters/msg-19ee2c24d5819622",
       "type": "wikilink"
     },
     {
@@ -7113,8 +7131,13 @@
       "type": "wikilink"
     },
     {
+      "source": "concepts/gpu-infrastructure",
+      "target": "articles/ai-data-center-architecture-2026-06-19",
+      "type": "wikilink"
+    },
+    {
       "source": "concepts/hermes-agent",
-      "target": "newsletters/ai-garage-weekly-2026-06-19",
+      "target": "newsletters/msg-19ee2c24d5819622",
       "type": "wikilink"
     },
     {
@@ -7153,6 +7176,11 @@
       "type": "wikilink"
     },
     {
+      "source": "concepts/liquid-cooling",
+      "target": "articles/ai-data-center-architecture-2026-06-19",
+      "type": "wikilink"
+    },
+    {
       "source": "concepts/maloha-coast",
       "target": "brand/maloha-coast-brand-identity",
       "type": "wikilink"
@@ -7185,6 +7213,11 @@
     {
       "source": "concepts/pauls-pipeline",
       "target": "companies/system-design-one",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/rdma",
+      "target": "articles/ai-data-center-architecture-2026-06-19",
       "type": "wikilink"
     },
     {
@@ -7848,11 +7881,6 @@
       "type": "wikilink"
     },
     {
-      "source": "newsletters/openrouter-provider-data-policies-2026-06-19",
-      "target": "companies/openrouter",
-      "type": "wikilink"
-    },
-    {
       "source": "newsletters/openrouter-three-cost-levers-2026-06-17",
       "target": "companies/openrouter",
       "type": "wikilink"
@@ -8004,7 +8032,7 @@
     },
     {
       "source": "persons/tonbi",
-      "target": "newsletters/ai-garage-weekly-2026-06-19",
+      "target": "newsletters/msg-19ee2c24d5819622",
       "type": "wikilink"
     },
     {
@@ -8158,9 +8186,9 @@
       {
         "name": "extract_atoms_backlog",
         "status": "warn",
-        "message": "12 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
+        "message": "14 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 12,
+          "backlog": 14,
           "pack_declares_phase": false,
           "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
@@ -8194,7 +8222,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 213 pages",
+        "message": "Connected, 215 pages",
         "category": "ops"
       },
       {
@@ -8230,7 +8258,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 389ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 1399ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -8254,7 +8282,7 @@
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 83/100 (embed 35/35, links 25/25, timeline 3/15, orphans 10/15, dead-links 10/10)",
+        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
         "category": "brain"
       },
       {
@@ -8266,7 +8294,7 @@
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 213 pages; 32 external link(s) (no bare tweets).",
+        "message": "Sampled 215 pages; 32 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -8427,11 +8455,11 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction current: 6/213 pages (3%) stale",
+        "message": "Extraction current: 0/215 pages (0%) stale",
         "details": {
-          "total": 213,
-          "stale": 6,
-          "pct": 3,
+          "total": 215,
+          "stale": 0,
+          "pct": 0,
           "warn_pct": 20,
           "fail_pct": null,
           "source_id": null
@@ -8471,7 +8499,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "47.9% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "47.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
