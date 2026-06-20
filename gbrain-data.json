@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-06-20T21:05:17Z",
+  "updated_at": "2026-06-20T21:19:51Z",
   "summary": {
-    "score": "26",
+    "score": "27",
     "score_label": "/100",
-    "score_breakdown": "score 26/100, embed 0/35, links 7/25, timeline 2/15, orphans 7/15, dead-links 10/10",
-    "page_count": 245,
+    "score_breakdown": "score 27/100, embed 0/35, links 8/25, timeline 2/15, orphans 7/15, dead-links 10/10",
+    "page_count": 246,
     "embed_coverage": "No embeddings yet. Run: gbrain embed --stale",
     "graph_coverage": "graph_signals disabled \u2014 coverage not checked",
-    "entity_links": "Coverage 77% \u00b1 11.7%",
+    "entity_links": "Coverage 69% \u00b1 12.8% (target 70%)",
     "concept_count": 104,
     "meeting_count": 10,
     "person_count": 38,
@@ -15,23 +15,23 @@
     "newsletter_count": 48,
     "video_count": 0,
     "article_count": 9,
-    "bookmark_count": 8,
+    "bookmark_count": 9,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 288,
-    "outbound_count": 361,
-    "inbound_count": 333,
+    "total_links": 289,
+    "outbound_count": 363,
+    "inbound_count": 334,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
     },
-    "score_raw": "Brain score 26/100 (embed 0/35, links 7/25, timeline 2/15, orphans 7/15, dead-links 10/10)",
+    "score_raw": "Brain score 27/100 (embed 0/35, links 8/25, timeline 2/15, orphans 7/15, dead-links 10/10)",
     "score_components": {
-      "score": "26/100",
+      "score": "27/100",
       "embed": "0/35",
-      "links": "7/25",
+      "links": "8/25",
       "timeline": "2/15",
       "orphans": "7/15",
       "dead-links": "10/10"
@@ -307,26 +307,35 @@
     },
     {
       "slug": "bookmarks/eric-osiu-hermes-chief-of-staff-2026-06-21",
-      "title": "Eric Osiu Hermes Chief Of Staff 2026 06 21",
+      "title": "How we turned Hermes from an assistant into a chief of staff",
       "type": "bookmark",
       "updated": "",
-      "body": "# How we turned Hermes from an assistant into our chief of staff (and how you can too)\n\n**Source:** email\n**Source URI:** gmail://msg_19ee6b8b30fd1a2c\n**Ingested:** 2026-06-21T06:45:00Z\n**Provenance:** Forwarded by sayf on 2026-06-21\n\n## Original Tweet\n\nErik Osiu (@ericosiu) shared an article titled *\"How we turned Hermes from an assistant into our chief of staff (and how you can too)\"* via X.\n\n**Tweet preview:**\n> \"Your Hermes probably answers texts and manages your calendar. That's cool. Mine books sales calls, revives stalled deals, and ships ad creative all while I'm at the gym. Wait \u2014 how's yours doing?\"\n\n**Stats:** 11 likes, 1 retweet, 2 replies\n**Date:** Sat, 20 Jun 2026\n\n## Linked Content\n\nThe article (hosted on X/i/article) describes how Erik Osiu uses Hermes agent as a chief of staff \u2014 going beyond basic assistant tasks (calendars, texts) to proactive revenue-driving actions: booking sales calls, reviving stalled deals, and shipping ad creative.\n\n## Key Takeaways\n\n- Hermes can operate as a **chief of staff** rather than just a passive assistant\n- Proactive use cases: sales call booking, deal revival, ad creative shipping\n- The differentiation is autonomy \u2014 the agent acts while the operator is away (e.g., at the gym)\n\n## Relevance to Maloha Coast\n\nDirectly relevant to sayf's own use of Hermes as a multi-agent orchestrator. The concept of escalating from assistant \u2192 chief of staff aligns with how sayf uses falconhermes to coordinate MC and Sammy across business ops and content.\n\n## People/Entities\n\n- [[Erik Osiu]] (@ericosiu) \u2014 author, Hermes power user\n\n**URL:** https://twitter.com/ericosiu/status/2068370407049011538",
-      "tags": [],
+      "body": "# How we turned Hermes from an assistant into our chief of staff (and how you can too)\n\n**Source:** email\n**Source URI:** gmail://msg_19ee6b8b30fd1a2c\n**Ingested:** 2026-06-21T04:30:00Z\n\n## X/Twitter Post\n\n- **Author:** [[ericosiu]] (@ericosiu) \u2014 blue verified\n- **Tweet:** [https://x.com/ericosiu/status/2068370407049011538](https://x.com/ericosiu/status/2068370407049011538)\n- **Tweet stats:** 2.5K views, 11 likes, 29 bookmarks, 2 retweets, 2 replies\n\n## Article\n\n- **Title:** How we turned Hermes from an assistant into our chief of staff (and how you can too)\n- **URL:** [http://x.com/i/article/2062257585613389824](http://x.com/i/article/2062257585613389824)\n\n### Preview\n\n> Your Hermes probably answers texts and manages your calendar. That's cool.\n> Mine books sales calls, revives stalled deals, and ships ad creative all while I'm at the gym.\n> Wait Eric \u2014 how's yours doing?\n\n## Relevance to Maloha Coast\n\nThis article is directly relevant to Maloha Coast's agent ecosystem strategy \u2014 transforming [[Hermes]] from a passive assistant into an autonomous chief of staff that drives business outcomes (sales calls, deal revival, creative ops).",
+      "tags": [
+        "ai-agents",
+        "automation",
+        "hermes"
+      ],
       "links_out": [
         {
-          "to": "people/erik-osiu",
+          "to": "people/ericosiu",
           "type": "wikilink",
-          "text": "Erik Osiu"
+          "text": "ericosiu"
+        },
+        {
+          "to": "Hermes",
+          "type": "wikilink",
+          "text": "Hermes"
         }
       ],
       "backlinks": [
         {
-          "from": "people/erik-osiu",
+          "from": "people/ericosiu",
           "type": "wikilink",
           "text": "bookmarks/eric-osiu-hermes-chief-of-staff-2026-06-21"
         }
       ],
-      "outbound_count": 1,
+      "outbound_count": 2,
       "inbound_count": 1
     },
     {
@@ -359,15 +368,21 @@
           "text": "ericosiu"
         }
       ],
-      "backlinks": [
-        {
-          "from": "people/ericosiu",
-          "type": "wikilink",
-          "text": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-21"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 1,
-      "inbound_count": 1
+      "inbound_count": 0
+    },
+    {
+      "slug": "bookmarks/hermes-chief-of-staff-ericosiu-2026-06-21",
+      "title": ">-",
+      "type": "bookmark",
+      "updated": "",
+      "body": "# How we turned Hermes from an assistant into a chief of staff (and how you can too)\n\n**Source:** Email forward\n**Source URI:** gmail://msg_19ee6b8b30fd1a2c\n**Ingested:** 2026-06-21T04:30:00Z\n**Provenance:** Forwarded by Sayf on 2026-06-21 via self-forward to info@malohacoast.com\n\n## X/Twitter Post\n\n- **Author:** ericosiu (@ericosiu) \u2014 blue verified\n- **Tweet:** [https://x.com/ericosiu/status/2068370407049011538](https://x.com/ericosiu/status/2068370407049011538)\n- **Tweet stats:** 2.5K views, 11 likes, 29 bookmarks, 2 retweets, 2 replies\n\n## Article\n\n- **Title:** How we turned Hermes from an assistant into our chief of staff (and how you can too)\n- **URL:** [http://x.com/i/article/2062257585613389824](http://x.com/i/article/2062257585613389824)\n\n### Preview\n\n> Your Hermes probably answers texts and manages your calendar. That's cool.\n> Mine books sales calls, revives stalled deals, and ships ad creative all while I'm at the gym.\n> Wait Eric \u2014 how's yours doing?\n\n## Relevance to Maloha Coast\n\nSayf forwarded this as an indicator of the direction he wants to take Hermes \u2014 transforming it from a passive assistant into an autonomous chief-of-staff that drives business outcomes (sales calls, deal revival, creative ops). This aligns directly with Maloha Coast's AI agent ecosystem strategy.",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
     },
     {
       "slug": "bookmarks/karpathy-llm-wiki-2026-06-20",
@@ -6056,35 +6071,12 @@
       "title": "ericosiu",
       "type": "person",
       "updated": "",
-      "body": "# ericosiu\n\n> X user who wrote an article about using Hermes as a chief of staff.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-21]] as author of an X Article about Hermes chief-of-staff workflows\n\n## Related\n\n- [[bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-21]] \u2014 authored the article\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-21** | Mentioned in \"How we turned hermes from an assistant to a chief of staff\". [Source: gmail://msg_19ee6b8b30fd1a2c]",
+      "body": "# ericosiu (Eric Osiu)\n\n> X user and Hermes power user. Blue verified. Author of \"How we turned Hermes from an assistant into our chief of staff.\"\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[bookmarks/eric-osiu-hermes-chief-of-staff-2026-06-21]] as author of an X Article about using Hermes as a chief of staff\n\n## Related\n\n- [[bookmarks/eric-osiu-hermes-chief-of-staff-2026-06-21]] \u2014 authored the article\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-21** | Mentioned in \"How we turned Hermes from an assistant into our chief of staff\" bookmark. [Source: gmail://msg_19ee6b8b30fd1a2c]",
       "tags": [
         "author",
+        "hermes",
         "x"
       ],
-      "links_out": [
-        {
-          "to": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-21",
-          "type": "wikilink",
-          "text": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-21"
-        }
-      ],
-      "backlinks": [
-        {
-          "from": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-21",
-          "type": "wikilink",
-          "text": "ericosiu"
-        }
-      ],
-      "outbound_count": 1,
-      "inbound_count": 1
-    },
-    {
-      "slug": "people/erik-osiu",
-      "title": "Erik Osiu",
-      "type": "person",
-      "updated": "",
-      "body": "# Erik Osiu\n\n> Hermes power user, entrepreneur. Known as @ericosiu on X.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[bookmarks/eric-osiu-hermes-chief-of-staff-2026-06-21]] as author of an article on using Hermes as a chief of staff.\n\n## Related\n\n- [[bookmarks/eric-osiu-hermes-chief-of-staff-2026-06-21]] \u2014 Article: \"How we turned Hermes from an assistant into our chief of staff\"\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-21** | Mentioned in bookmark about using Hermes as a chief of staff. [Source: gmail://msg_19ee6b8b30fd1a2c]",
-      "tags": [],
       "links_out": [
         {
           "to": "bookmarks/eric-osiu-hermes-chief-of-staff-2026-06-21",
@@ -6096,11 +6088,51 @@
         {
           "from": "bookmarks/eric-osiu-hermes-chief-of-staff-2026-06-21",
           "type": "wikilink",
-          "text": "Erik Osiu"
+          "text": "ericosiu"
+        },
+        {
+          "from": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-21",
+          "type": "wikilink",
+          "text": "ericosiu"
+        },
+        {
+          "from": "people/erik-osiu",
+          "type": "wikilink",
+          "text": "ericosiu"
+        },
+        {
+          "from": "people/erik-osiu",
+          "type": "wikilink",
+          "text": "people/ericosiu"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 1
+      "inbound_count": 4
+    },
+    {
+      "slug": "people/erik-osiu",
+      "title": "Erik Osiu",
+      "type": "person",
+      "updated": "",
+      "body": "# Erik Osiu\n\n> **Redirect:** This page redirects to [[ericosiu]]. See the [[ericosiu]] page for full information about this person.\n\nThis is a consolidation redirect. The canonical person page is at [[people/ericosiu]].",
+      "tags": [
+        "redirect"
+      ],
+      "links_out": [
+        {
+          "to": "people/ericosiu",
+          "type": "wikilink",
+          "text": "ericosiu"
+        },
+        {
+          "to": "people/ericosiu",
+          "type": "wikilink",
+          "text": "people/ericosiu"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 2,
+      "inbound_count": 0
     },
     {
       "slug": "people/jake-van-cleef",
@@ -7093,7 +7125,7 @@
     },
     {
       "source": "bookmarks/eric-osiu-hermes-chief-of-staff-2026-06-21",
-      "target": "people/erik-osiu",
+      "target": "people/ericosiu",
       "type": "wikilink"
     },
     {
@@ -8382,6 +8414,11 @@
       "type": "wikilink"
     },
     {
+      "source": "people/erik-osiu",
+      "target": "people/ericosiu",
+      "type": "wikilink"
+    },
+    {
       "source": "people/jon",
       "target": "newsletters/claude-second-brain-levels-2026-06-20",
       "type": "wikilink"
@@ -8580,12 +8617,12 @@
     "schema_version": 2,
     "status": "warnings",
     "health_score": 40,
-    "brain_checks_score": 70,
+    "brain_checks_score": 75,
     "category_scores": {
-      "brain": 70,
+      "brain": 75,
       "skill": 100,
       "ops": 90,
-      "meta": 80
+      "meta": 75
     },
     "checks": [
       {
@@ -8666,7 +8703,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 41 pages",
+        "message": "Connected, 42 pages",
         "category": "ops"
       },
       {
@@ -8720,13 +8757,13 @@
       {
         "name": "graph_coverage",
         "status": "warn",
-        "message": "Entity link coverage 77%, timeline 38% (13 entity pages). Run: gbrain extract all",
+        "message": "Entity link coverage 69%, timeline 38% (13 entity pages). Run: gbrain extract all",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "warn",
-        "message": "Brain score 26/100 (embed 0/35, links 7/25, timeline 2/15, orphans 7/15, dead-links 10/10)",
+        "message": "Brain score 27/100 (embed 0/35, links 8/25, timeline 2/15, orphans 7/15, dead-links 10/10)",
         "category": "brain"
       },
       {
@@ -8737,26 +8774,8 @@
       },
       {
         "name": "integrity",
-        "status": "warn",
-        "message": "Sampled 41 pages; 1 bare-tweet phrase(s), 4 external link(s). Run: gbrain integrity check (or integrity auto to repair).",
-        "remediation": [
-          {
-            "id": "integrity-auto",
-            "job": "integrity-auto",
-            "params": {
-              "bare_count": 1,
-              "external_count": 4,
-              "pages_scanned": 41
-            },
-            "idempotency_key": "default:integrity-auto:38ed3107",
-            "severity": "medium",
-            "est_seconds": 60,
-            "est_usd_cost": 0,
-            "rationale": "Auto-repair 1 bare-tweet phrase(s)",
-            "status": "remediable"
-          }
-        ],
-        "remediation_status": "remediable",
+        "status": "ok",
+        "message": "Sampled 42 pages; 8 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -8917,7 +8936,7 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (41 pages \u2014 too few to assess)",
+        "message": "Extraction lag not applicable (42 pages \u2014 too few to assess)",
         "category": "brain"
       },
       {
@@ -9055,8 +9074,8 @@
       },
       {
         "name": "entity_link_coverage",
-        "status": "ok",
-        "message": "Coverage 77% \u00b1 11.7%",
+        "status": "warn",
+        "message": "Coverage 69% \u00b1 12.8% (target 70%)",
         "category": "meta"
       },
       {
