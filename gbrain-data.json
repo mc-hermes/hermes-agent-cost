@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-06-20T02:08:43Z",
+  "updated_at": "2026-06-20T02:20:36Z",
   "summary": {
     "score": "82",
     "score_label": "/100",
     "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 2/15, orphans 10/15, dead-links 10/10",
-    "page_count": 180,
+    "page_count": 181,
     "embed_coverage": "100% coverage, 0 missing",
-    "graph_coverage": "50.8% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "graph_coverage": "50.6% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
     "entity_links": "Coverage 95% \u00b1 3.2%",
     "concept_count": 88,
     "meeting_count": 6,
     "person_count": 26,
     "company_count": 17,
-    "newsletter_count": 35,
+    "newsletter_count": 36,
     "video_count": 0,
     "article_count": 4,
     "bookmark_count": 1,
@@ -3916,6 +3916,18 @@
       "inbound_count": 2
     },
     {
+      "slug": "newsletters/ai-garage-weekly-june-19-2026",
+      "title": "Ai Garage Weekly June 19 2026",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# AI Garage Weekly - June 19, 2026\n\n**Source:** email forward from Sayf Codes to Maloha Coast\n**Source URI:** gmail://msg_19ee2c24d5819622\n**Ingested:** 2026-06-20T02:10:00Z\n**Provenance:** Forwarded by Sayf Codes on 2026-06-20\n\n*Excel, Fable Ban, GLM-5.2, and DR-DCI*\n\nBetween the Fable ban and the GLM-5.2 release, it was a pretty big week for the local LLM community. One showed why local AI is so important, the other showed that it was actually possible to have open weights models that approach the top closed frontier models. We just need to lower the hardware barrier somehow and I think local AI will really explode.\n\n---\n\n## \ud83c\udfac Video of the Week: Hermes Agent in Excel\n\nSo my wife was talking about using Claude in Excel for her work, and I had the thought: Could I do that with Hermes Agent? I hadn't heard of that type of integration, I wasn't even sure if it was possible, but I started to research a way to do it. The first attempt I actually recorded a full video using a much more complicated, much more frustrating technique. I got to the end of it and asked my agent: Isn't there an easier way to do this? And after some extra research, they said yes! \"YOU SHOULD'VE TOLD ME THAT TO BEGIN WITH\" I screamed in my head, not wanting to upset my agent too much (lol). In the end that was the method I ended up recording for this video, it does require some prep work to start up, but the end result is pretty cool. You get a chat window right in Excel, plus you can create custom functions with your Hermes. I was excited for this video and while I got a lot of nice comments on it, it didn't go super viral as I had hoped (lol).\n\nVideo: [How I Put Hermes Agent Inside Excel (And Made It a Custom Function)](https://www.youtube.com/watch?v=...)\n\n---\n\n## \ud83d\udce1 AI News & Model Releases\n\n**Claude Fable 5 banned.** Last Friday the big news came out that Anthropic was removing Fable 5 access due to a new directive from the US government. It was really surprising news, a lot of people were really blown away by Fable and disappointed by this move. I was disappointed too, but I've been convinced this was the direction we were headed anyway. These models are so powerful, the government isn't going to let private companies and individuals have power like that. They'll want to control it. I think this specific case is just some weird Anthropic and the current administration negotiating in public and it will get cleared up eventually, but it still highlights the need for local and decentralized AI moving forward. You can't let all that power be handed to only the current administration, or 1-2 companies, people should have access to these tools.\n\n**GLM-5.2 released.** I've been impressed with GLM models before, so when I heard about this new open weights model release, I was excited to try. It was really impressive! I gave it some tasks in my first look video and I've been using it a bit since then, and it does feel like only slightly behind Opus 4.8/GPT5.5, maybe one generation behind. This is still an incredible feat for an open source model, and it does make me think that we will get genuine frontier-level open source models sooner than we think. Now of course most people won't be able to run them locally, it would take some serious hardware to be able to run it that isn't super slow and quality-degraded, but it just shows what is possible for the future.\n\n---\n\n## \ud83d\udcc4 Research & Experiments\n\n**Dr-DCI: Scaling Direct Corpus Interaction via Dynamic Workspace Expansion** (arXiv:2606.14885)\n\nWith Agent Wikis, one of the big things I've been researching is retrieval, how agents are able to collect and process information. I wanted to see if I could find a way to go beyond RAG, or enhance RAG in some way. This paper caught my eye. It describes an agent retrieval/workspace pattern that could be effective for Agent Wikis, or having any agent handle any large corpus.\n\nWith normal RAG, you have the agent ask a retriever, get snippets, and then answer from those snippets. With DCI, an earlier version of this method, the agent gets direct shell/file access to the corpus, and can use tools like find, read, compare files, inspect evidence. The problem with this is that it breaks when the corpus is huge. Search millions of files directly is slow and noisy. So with DR-DCI, that huge corpus is hidden behind a retriever, but the agent can call pull(query, topK), to bring relevant documents into a local workspace, then use normal file tools on that smaller workspace. So it actually gives you RAG-like recall with filesystem agency from DCI. They found that using this method increased accuracy as well as significantly improved wall time and costs.\n\nThe applications for Agent Wikis is pretty clear. I experimented with RAG over the wikis and found that to be one the best methods, but some of these wikis are quite large, so it could become challenging. Since these are specifically agent focused, I think having this smaller workspace to pull relevant chunks out could be useful, because I imagine people are using this knowledge not for just one-off questions, but for ongoing project work.\n\n---\n\n## \ud83d\udcad Random Brainstorming & Project Progress\n\n**Agent Wikis:** Nice release for Agent Wikis, people seemed to really like it and the first release day got nearly 10k visitors on the site (humans and agents), and we've been doing 5k-7k since then. Very large improvement from the last time I released a project before my YouTube channel (I was happy with 10 visitors, lol). I've been refining the pipeline to maintaining these wikis, trying to make it as autonomous as possible without ruining everything. The one thing I did was to create a loop so that missed topics will get researched and then autonomously added to the wikis. This will ensure that the wikis actually answer the questions that people have on these topics (without any extra work from me).\n\nI've been exploring other ways to allow agents to maintain and enhance the product. I think once I'm ready to do premium wikis with the stripe integration, that would be a good place for it. I may also explore doing some small ads after that to see how those can drive traffic. I would love to do an advertising pipeline where the agent develops all the ad material (so I can be lazy), releases the ads, then analyzes the results and hones the ads based on that. I've heard of people doing this, but that would be an amazing loop to have. The ads themselves would cost money though, so I'll need the site to be profitable before I try that.",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "newsletters/humanlayer-launch-2026-06-19-sayf",
       "title": "Humanlayer Launch 2026 06 19 Sayf",
       "type": "newsletter",
@@ -6863,7 +6875,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 179 pages",
+        "message": "Connected, 180 pages",
         "category": "ops"
       },
       {
@@ -6899,7 +6911,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 555ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 424ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -6935,7 +6947,7 @@
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 179 pages; 34 external link(s) (no bare tweets).",
+        "message": "Sampled 180 pages; 35 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -7096,11 +7108,11 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction current: 0/179 pages (0%) stale",
+        "message": "Extraction current: 1/180 pages (1%) stale",
         "details": {
-          "total": 179,
-          "stale": 0,
-          "pct": 0,
+          "total": 180,
+          "stale": 1,
+          "pct": 1,
           "warn_pct": 20,
           "fail_pct": null,
           "source_id": null
@@ -7140,7 +7152,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "50.8% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "50.6% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
