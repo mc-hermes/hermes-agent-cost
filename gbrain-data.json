@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-06-20T12:03:54Z",
+  "updated_at": "2026-06-20T12:27:48Z",
   "summary": {
     "score": "82",
     "score_label": "/100",
     "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
-    "page_count": 219,
+    "page_count": 221,
     "embed_coverage": "100% coverage, 0 missing",
-    "graph_coverage": "47.9% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "graph_coverage": "47.5% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
     "entity_links": "Coverage 93% \u00b1 3.6%",
     "concept_count": 94,
     "meeting_count": 6,
     "person_count": 31,
     "company_count": 23,
-    "newsletter_count": 50,
+    "newsletter_count": 51,
     "video_count": 0,
     "article_count": 8,
-    "bookmark_count": 4,
+    "bookmark_count": 5,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
@@ -363,6 +363,18 @@
       ],
       "backlinks": [],
       "outbound_count": 1,
+      "inbound_count": 0
+    },
+    {
+      "slug": "bookmarks/msg-19ee3343b6e5b9e9-karpathys-llm-wiki-gist",
+      "title": "karpathy's llm wiki gist",
+      "type": "bookmark",
+      "updated": "",
+      "body": "# Karpathy's LLM Wiki \u2014 A Pattern for Persistent Knowledge Bases\n\n**Source:** email (sayfcodes \u2192 info)\n**Source URI:** gmail://msg_19ee3343b6e5b9e9\n**Ingested:** 2026-06-20T12:10:00Z\n**Provenance:** Forwarded by sayf on 2026-06-20\n\n## Summary\n\nAndrej Karpathy's gist describes a pattern for building persistent, LLM-maintained knowledge bases (wikis) that compound over time \u2014 distinct from traditional RAG which re-derives answers from scratch on every query.\n\n## Key Ideas\n\n- **The core idea**: Instead of retrieving from raw documents at query time (RAG), the LLM incrementally builds and maintains a persistent wiki \u2014 interlinked markdown files that sit between you and raw sources. The wiki is a compounding artifact that gets richer with every source added.\n\n- **Three-layer architecture**: (1) Raw sources (immutable, curated collection), (2) The wiki (LLM-generated markdown files \u2014 summaries, entities, concepts, synthesis \u2014 LLM writes, you read), (3) The schema (a CLAUDE.md/AGENTS.md document that tells the LLM how the wiki is structured).\n\n- **Operations**: Ingest (drop source \u2192 LLM reads, discusses, writes 10-15 wiki pages), Query (LLM searches wiki, synthesizes answers with citations \u2014 good answers get filed back into the wiki), Lint (periodic health-check for contradictions, orphans, gaps).\n\n- **Indexing**: `index.md` (content catalog, updated on every ingest) and `log.md` (chronological record, parseable with grep/tail).\n\n- **Why it works**: Humans abandon wikis because maintenance burden grows faster than value. LLMs don't get bored, don't forget cross-references, and can touch 15 files in one pass. The cost of maintenance is near zero.\n\n## Relevance to Maloha Coast\n\nThis gist describes essentially the same pattern as gbrain \u2014 an LLM-maintained, interlinked wiki that compounds over time. Key differences: Karpathy's approach uses Obsidian as the IDE (human browses updates in real-time via graph view), while gbrain uses a CLI + dashboard. The concepts are directly applicable \u2014 the schema layer (CLAUDE.md/AGENTS.md) mirrors gbrain's skill system for instructing agents how to maintain the knowledge base.\n\n## Link\n\nhttps://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f\n\n## Entities\n\n- Andrej Karpathy \u2014 author of the gist, prominent AI researcher",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
       "inbound_count": 0
     },
     {
@@ -4887,6 +4899,18 @@
       "inbound_count": 6
     },
     {
+      "slug": "newsletters/msg-19ee2dfa87f86548-claude-second-brain-levels",
+      "title": "Every Level of a Claude Second Brain Explained",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# Every Level of a Claude Second Brain Explained\n\n**Source:** email (Nate Herk / AI Automation Society via sayf)\n**Source URI:** gmail://msg_19ee2dfa87f86548\n**Ingested:** 2026-06-20T12:10:00Z\n**Provenance:** Forwarded by sayf on 2026-06-20 (originally from Nate Herk via AI Automation Society newsletter, June 19, 2026)\n\n> A Claude second brain breakdown, a client pipeline automated, and Codex hits 5M users with a free bonus through June 24.\n\n## In This Issue\n\n- Five levels of building a Claude second brain, from basic file search to fully autonomous recall.\n- Robert automated a client's outbound email pipeline and got their call center actually following up.\n- OpenAI's Codex just crossed 5 million weekly users, with a free bonus available through June 24.\n\n## New Video: Every Level of a Claude Second Brain Explained\n\nThere are five distinct levels to building a Claude second brain, and most people are stuck at level one.\n\n- **Level one**: Finding a file by searching an exact word.\n- **Level five**: A fully autonomous system that knows your business, your client relationships, and your IP better than you do.\n\n*The insight that changes how you build:* Start from the end. Before you organize a single file, ask how you'll access this data later. The shape of the basketball determines the size of the hoop. Jon shows his actual setup (a Herku project, just markdown files and folders) and walks through what separates each level, including semantic search (finding by meaning, not exact match) and full relationship mapping.\n\n*How this helps you:* Your moat is your data. This video shows you how to actually organize it so your agents can use it, not just find it.\n\n## Winning Is All We Do \u2014 Robert's Client Pipeline\n\nRobert automated a client's outbound email pipeline from scratch:\n\n- The client's call center was calling leads but nothing followed up by email.\n- Sales managers emailed Robert their daily lead lists as Excel files.\n- He built an automation: when the file lands in his inbox, it extracts email, address, and name data, normalizes it, and uploads every contact directly into Instantly as a ready-to-run campaign.\n- No manual cleanup. No copy-paste. Just results.\n\n*The opportunity:* Businesses running call centers almost always have messy lead data and no email follow-up. An automation that converts a spreadsheet into a live campaign solves a problem they didn't know anyone could fix.\n\n## In the News \u2014 Codex Hits 5M Weekly Users\n\nOpenAI Codex has crossed 5 million weekly active users and launched two features:\n\n1. **Banked rate limit resets (permanent)**: Instead of your weekly limit resetting on a fixed timer, you can now save resets and use them when you need them.\n2. **Referral bonus (through June 24)**: Plus and Pro users can invite up to three friends to try Codex. When a friend sends their first Codex message, you both get a bonus reset.\n\n*The bigger signal:* Codex is growing through referral mechanics at 5M weekly users \u2014 a tool people are actively building with and recommending.\n\n## Entities\n\n- Nate Herk \u2014 author, AI Automation Society\n- Robert \u2014 AI Automation Society member who built the client pipeline automation\n- Jon \u2014 creator of the Claude second brain video (shown setup with Herku project)\n- OpenAI \u2014 company behind Codex\n- AI Automation Society \u2014 newsletter publisher\n- Herku \u2014 project/tool mentioned for second brain setup\n- Instantly \u2014 email campaign platform used in Robert's automation",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "newsletters/msg-19ee2dfa87f86548",
       "title": "Every Level of a Claude Second Brain Explained",
       "type": "newsletter",
@@ -8350,7 +8374,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 217 pages",
+        "message": "Connected, 219 pages",
         "category": "ops"
       },
       {
@@ -8386,7 +8410,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 531ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 643ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -8422,7 +8446,7 @@
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 217 pages; 32 external link(s) (no bare tweets).",
+        "message": "Sampled 219 pages; 32 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -8583,9 +8607,9 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction current: 0/217 pages (0%) stale",
+        "message": "Extraction current: 0/219 pages (0%) stale",
         "details": {
-          "total": 217,
+          "total": 219,
           "stale": 0,
           "pct": 0,
           "warn_pct": 20,
@@ -8627,7 +8651,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "47.9% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "47.5% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
