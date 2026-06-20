@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-20T21:00:42Z",
+  "updated_at": "2026-06-20T21:05:23Z",
   "summary": {
     "page_count": 20,
     "people_count": 4,
@@ -7,7 +7,7 @@
     "artifact_count": 0,
     "total_links": 8,
     "outbound_count": 22,
-    "inbound_count": 20,
+    "inbound_count": 19,
     "graph_coverage": "25.0% of pages have inbound links",
     "concept_count": 11,
     "meeting_count": 3,
@@ -361,15 +361,10 @@
           "from": "meetings/sayf-zaim-jun-12-2026",
           "type": "wikilink",
           "text": "people/sayf-codes|Sayf"
-        },
-        {
-          "from": "newsletters/msg-19ee2dfa87f86548",
-          "type": "wikilink",
-          "text": "Sayf Codes"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 4
+      "inbound_count": 3
     },
     {
       "slug": "people/zaim-mohzani",
@@ -602,11 +597,19 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-20T21:00:42Z",
+      "ts": "2026-06-20T21:05:23Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
       "detail": "Dashboard refreshed \u2014 20 pages, 8 links",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-20T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "articles/msg-19ece778ab23e039",
+      "detail": "Why your 2026 career goals are already dead",
       "level": "info"
     }
   ]
