@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-06-20T03:00:31Z",
+  "updated_at": "2026-06-20T03:13:02Z",
   "summary": {
-    "score": "92",
+    "score": "82",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
+    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 2/15, orphans 10/15, dead-links 10/10",
     "page_count": 188,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "44.7% of pages have inbound links",
-    "entity_links": "Coverage \u2014 27 people, 18 companies indexed",
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "49.7% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 93% \u00b1 3.7%",
     "concept_count": 90,
     "meeting_count": 6,
     "person_count": 27,
@@ -19,14 +19,26 @@
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 239,
-    "outbound_count": 311,
-    "inbound_count": 282,
+    "total_links": 238,
+    "outbound_count": 310,
+    "inbound_count": 281,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 2/15, orphans 10/15, dead-links 10/10)",
+    "score_components": {
+      "score": "82/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "2/15",
+      "orphans": "10/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 67,
+    "checks_warned": 6,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -617,15 +629,9 @@
         "email"
       ],
       "links_out": [],
-      "backlinks": [
-        {
-          "from": "newsletters/claude-second-brain-levels-2026-06-20",
-          "type": "wikilink",
-          "text": "Instantly"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 0,
-      "inbound_count": 1
+      "inbound_count": 0
     },
     {
       "slug": "companies/js-mastery",
@@ -4023,7 +4029,7 @@
       "title": "Claude Second Brain Levels 2026 06 20",
       "type": "newsletter",
       "updated": "",
-      "body": "# Every Level of a Claude Second Brain Explained\n\n**Source:** email\n**Source URI:** gmail://msg_19ee2dfa87f86548\n**Ingested:** 2026-06-20T10:35:00Z\n**Provenance:** Forwarded by sayf on 2026-06-20 from [[AI Automation Society]] newsletter ([[Nate Herk]])\n\n**Forwarded by Sayf** \u2014 [[AI Automation Society]] newsletter, June 19, 2026. Covers Claude second brain levels, a client pipeline automation win, and Codex hitting 5M users.\n\n---\n\n> *The insight that changes how you build: Start from the end. Before you organize a single file, ask how you'll access this data later. The shape of the basketball determines the size of the hoop.*\n\n## Five Levels of a Claude Second Brain\n\n1. **Level 1** \u2014 Finding a file by searching an exact word. Most people are stuck here.\n2. **Level 5** \u2014 A fully autonomous system that knows your business, client relationships, and IP better than you do.\n- The difference isn't the tool \u2014 it's how the data is organized.\n- Jon shows his actual setup (a Herku project, just markdown files and folders) and walks through what separates each level, including semantic search (finding by meaning, not exact match) and full relationship mapping.\n- **Key insight for sayf:** Your moat is your data. This video shows how to organize it so agents can use it, not just find it.\n\n## Winning Is All We Do \u2014 Robert's Client Automation\n\n- **What happened:** Robert's client had a call center calling leads with no email follow-up. Sales managers emailed daily lead lists as Excel files.\n- **The automation:** When the file lands in his inbox, it extracts email, address, and name data, normalizes it, and uploads every contact into [[Instantly]] as a ready-to-run campaign. No manual cleanup. No copy-paste.\n- **Takeaway:** Businesses running call centers almost always have messy lead data and no email follow-up. An automation that converts a spreadsheet into a live campaign solves a problem they didn't know anyone could fix.\n\n## In the News \u2014 Codex Hits 5M Weekly Users\n\n- OpenAI Codex crossed 5 million weekly active users.\n- **Permanent feature:** Banked rate limit resets \u2014 save resets and use them when needed instead of a fixed timer.\n- **Limited offer (through June 24):** Plus and Pro users can invite up to three friends to try Codex. When a friend sends their first message, you both get a bonus reset.\n- **Signal:** Codex is growing through referral mechanics at 5M weekly users \u2014 a tool people are actively building with and recommending.",
+      "body": "# Every Level of a Claude Second Brain Explained\n\n**Source:** email\n**Source URI:** gmail://msg_19ee2dfa87f86548\n**Ingested:** 2026-06-20T03:00:00Z\n**Provenance:** Forwarded by sayf on 2026-06-20 from AI Automation Society newsletter (Nate Herk)\n\n**Newsletter:** [[AI Automation Society]], June 19, 2026\n**From:** [[Nate Herk]] <nate@aiautomationsociety.ai>\n\n---\n\nA Claude second brain breakdown, a client pipeline automated, and Codex hits 5M users with a free bonus through June 24.\n\n## In This Issue\n\n- Five levels of building a Claude second brain, from basic file search to fully autonomous recall.\n- Robert automated a client's outbound email pipeline and got their call center actually following up.\n- OpenAI's Codex just crossed 5 million weekly users, with a free bonus available through June 24.\n\n---\n\n## New Video: Every Level of a Claude Second Brain Explained\n\nThere are five distinct levels to building a Claude second brain, and most people are stuck at level one.\n\nLevel one is just finding a file by searching an exact word. Level five is a fully autonomous system that knows your business, your client relationships, and your IP better than you do. The difference between them isn't the tool. It's how the data is organized.\n\n*The insight that changes how you build:* Start from the end. Before you organize a single file, ask how you'll access this data later. The shape of the basketball determines the size of the hoop. Jon shows his actual setup (a Herku project, just markdown files and folders) and walks through what separates each level, including semantic search (finding by meaning, not exact match) and full relationship mapping.\n\n*How this helps you:* Your moat is your data. This video shows you how to actually organize it so your agents can use it, not just find it.\n\n---\n\n## Winning Is All We Do \u2014 Robert automated a client's outbound email pipeline from scratch\n\n*What happened:* Robert's client had a call center calling leads, but nothing was following up by email. Sales managers emailed Robert their daily lead lists as Excel files. He built an automation that handles the rest: when the file lands in his inbox, it extracts the email, address, and name data, normalizes it (no more \"N123 MAIN STREET\" showing up as a deliverable address), and uploads every contact directly into Instantly as a ready-to-run campaign. No manual cleanup. No copy-paste.\n\n*The opportunity for you:* Businesses running call centers almost always have messy lead data and no email follow-up. An automation that converts a spreadsheet into a live campaign solves a problem they didn't know anyone could fix. Robert: \"Life got easier.\"\n\nThis is a success story from AI Automation Society Plus.\n\n---\n\n## In the News: Codex hits 5 million weekly users\n\nOpenAI Codex has crossed 5 million weekly active users and launched two features alongside the milestone. One is permanent: banked rate limit resets. Instead of your weekly limit resetting on a fixed timer (whether you need it or not), you can now save resets and use them when you actually need them. The other runs through June 24: Plus and Pro users can invite up to three friends to try Codex. When a friend sends their first Codex message, you both get a bonus reset.\n\n*How it affects you:* If you've been hitting Codex rate limits at the wrong moment mid-build, the banked reset system fixes that. And if you're not hitting limits yet, the referral is easy headroom to bank before the window closes. The bigger signal: Codex is now growing through referral mechanics at 5 million weekly users. That's a tool people are actively building with and recommending.",
       "tags": [],
       "links_out": [
         {
@@ -4035,15 +4041,10 @@
           "to": "people/nate-herk",
           "type": "wikilink",
           "text": "Nate Herk"
-        },
-        {
-          "to": "companies/instantly",
-          "type": "wikilink",
-          "text": "Instantly"
         }
       ],
       "backlinks": [],
-      "outbound_count": 3,
+      "outbound_count": 2,
       "inbound_count": 0
     },
     {
@@ -6703,11 +6704,6 @@
       "type": "wikilink"
     },
     {
-      "source": "newsletters/claude-second-brain-levels-2026-06-20",
-      "target": "companies/instantly",
-      "type": "wikilink"
-    },
-    {
       "source": "newsletters/humanlayer-launch-2026-06-19-sayf",
       "target": "people/dex-horthy",
       "type": "wikilink"
@@ -6972,13 +6968,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 70,
+    "brain_checks_score": 90,
     "category_scores": {
-      "brain": 95,
+      "brain": 90,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -7008,32 +7004,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -7046,9 +7020,9 @@
       {
         "name": "extract_atoms_backlog",
         "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "message": "10 page(s) eligible (below warn threshold; pack does not run extract_atoms)",
         "details": {
-          "backlog": 0,
+          "backlog": 10,
           "pack_declares_phase": false,
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
@@ -7056,8 +7030,8 @@
       },
       {
         "name": "conversation_format_coverage",
-        "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "status": "warn",
+        "message": "1/6 conversation pages (16.7%) match NO built-in pattern. Breakdown: bold-name-no-time=5, _no_match=1. Investigate: gbrain conversation-parser scan <slug> | Enable LLM fallback (opt-in): gbrain config set conversation_parser.llm_fallback_enabled true",
         "category": "brain"
       },
       {
@@ -7081,7 +7055,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 187 pages",
         "category": "ops"
       },
       {
@@ -7117,7 +7091,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 1254ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -7135,25 +7109,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 91%, timeline 57%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 2/15, orphans 10/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 45 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 187 pages; 35 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -7314,7 +7288,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 3/187 pages (2%) stale",
+        "details": {
+          "total": 187,
+          "stale": 3,
+          "pct": 2,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -7326,7 +7308,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -7338,7 +7320,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "110 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -7350,7 +7332,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "49.7% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -7453,13 +7435,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 93% \u00b1 3.7%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 58% \u00b1 7.4% (target 90%)",
         "category": "meta"
       },
       {
@@ -7477,7 +7459,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "9 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
