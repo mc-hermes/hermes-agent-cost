@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-06-20T23:33:57Z",
+  "updated_at": "2026-06-20T23:49:00Z",
   "summary": {
-    "score": "27",
+    "score": "26",
     "score_label": "/100",
-    "score_breakdown": "score 27/100, embed 0/35, links 8/25, timeline 2/15, orphans 7/15, dead-links 10/10",
-    "page_count": 250,
+    "score_breakdown": "score 26/100, embed 0/35, links 8/25, timeline 1/15, orphans 7/15, dead-links 10/10",
+    "page_count": 251,
     "embed_coverage": "No embeddings yet. Run: gbrain embed --stale",
     "graph_coverage": "graph_signals disabled \u2014 coverage not checked",
     "entity_links": "Coverage 69% \u00b1 12.8% (target 70%)",
@@ -14,25 +14,25 @@
     "company_count": 25,
     "newsletter_count": 50,
     "video_count": 0,
-    "article_count": 9,
+    "article_count": 10,
     "bookmark_count": 11,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 291,
-    "outbound_count": 368,
-    "inbound_count": 336,
+    "total_links": 294,
+    "outbound_count": 371,
+    "inbound_count": 339,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
     },
-    "score_raw": "Brain score 27/100 (embed 0/35, links 8/25, timeline 2/15, orphans 7/15, dead-links 10/10)",
+    "score_raw": "Brain score 26/100 (embed 0/35, links 8/25, timeline 1/15, orphans 7/15, dead-links 10/10)",
     "score_components": {
-      "score": "27/100",
+      "score": "26/100",
       "embed": "0/35",
       "links": "8/25",
-      "timeline": "2/15",
+      "timeline": "1/15",
       "orphans": "7/15",
       "dead-links": "10/10"
     },
@@ -199,6 +199,36 @@
       ],
       "outbound_count": 0,
       "inbound_count": 5
+    },
+    {
+      "slug": "articles/hermes-assistant-to-chief-of-staff-2026-06-21",
+      "title": "Hermes Assistant To Chief Of Staff 2026 06 21",
+      "type": "article",
+      "updated": "",
+      "body": "# How we turned Hermes from an assistant into our chief of staff (and how you can too)\n\n**Source:** Email from Sayf Codes\n**Source URI:** gmail://msg_19ee6b8b30fd1a2c\n**Ingested:** 2026-06-21T07:45:28Z\n**Provenance:** Forwarded by sayf on 2026-06-21\n**Original URL:** https://x.com/ericosiu/status/2068370407049011538\n\n## Summary\n\nAn X Article (long-form) by **[[ericosiu]]** (@ericosiu) titled \"How we turned Hermes from an assistant into our chief of staff (and how you can too)\". The post has 6.4K views, 47 bookmarks, and 18 likes. The preview text reads:\n\n> *\"Your Hermes probably answers texts and manages your calendar. That's cool. Mine books sales calls, revives stalled deals, and ships ad creative all while I'm at the gym. Wait Eric how's yours doing\"*\n\nThis is directly relevant to Maloha Coast \u2014 the post describes turning the Hermes agent (the same assistant framework sayf builds on) from a basic task-responder into an autonomous sales + operations chief of staff. This is the exact positioning sayf has been working toward.\n\n## Key Ideas\n\n- Hermes can be elevated from passive assistant to autonomous chief of staff\n- Beyond basic scheduling/texting \u2014 it can book sales calls, revive stalled deals, and ship creative\n- The X.com/@ericosiu handle is building with the Hermes agent ecosystem\n- The article format (X Article) suggests a detailed walkthrough/guide\n\n## Related\n\n- [[Maloha Coast]] \u2014 direct relevance to sayf's work\n- [[Hermes Agent]] \u2014 the framework being elevated\n\n## Entities\n\n- **ericosiu** (@ericosiu) \u2014 author, X user, building with Hermes Agent",
+      "tags": [
+        "sayf"
+      ],
+      "links_out": [
+        {
+          "to": "people/ericosiu",
+          "type": "wikilink",
+          "text": "ericosiu"
+        },
+        {
+          "to": "brand/maloha-coast-brand-identity",
+          "type": "wikilink",
+          "text": "Maloha Coast"
+        },
+        {
+          "to": "concepts/hermes-agent",
+          "type": "wikilink",
+          "text": "Hermes Agent"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 3,
+      "inbound_count": 0
     },
     {
       "slug": "articles/humanlayer-launch-2026-06-18",
@@ -575,6 +605,11 @@
       ],
       "backlinks": [
         {
+          "from": "articles/hermes-assistant-to-chief-of-staff-2026-06-21",
+          "type": "wikilink",
+          "text": "Maloha Coast"
+        },
+        {
           "from": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-21",
           "type": "wikilink",
           "text": "Maloha Coast"
@@ -601,7 +636,7 @@
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 5
+      "inbound_count": 6
     },
     {
       "slug": "companies/ai-automation-society",
@@ -2505,6 +2540,11 @@
       ],
       "backlinks": [
         {
+          "from": "articles/hermes-assistant-to-chief-of-staff-2026-06-21",
+          "type": "wikilink",
+          "text": "Hermes Agent"
+        },
+        {
           "from": "companies/ai-garage-weekly",
           "type": "wikilink",
           "text": "Hermes Agent"
@@ -2516,7 +2556,7 @@
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 2
+      "inbound_count": 3
     },
     {
       "slug": "concepts/hermes-profile-backup",
@@ -6166,6 +6206,11 @@
       ],
       "backlinks": [
         {
+          "from": "articles/hermes-assistant-to-chief-of-staff-2026-06-21",
+          "type": "wikilink",
+          "text": "ericosiu"
+        },
+        {
           "from": "bookmarks/eric-osiu-hermes-chief-of-staff-2026-06-21",
           "type": "wikilink",
           "text": "ericosiu"
@@ -6192,7 +6237,7 @@
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 5
+      "inbound_count": 6
     },
     {
       "slug": "people/erik-osiu",
@@ -7196,6 +7241,21 @@
     {
       "source": "2026-06-03",
       "target": "gbrain",
+      "type": "wikilink"
+    },
+    {
+      "source": "articles/hermes-assistant-to-chief-of-staff-2026-06-21",
+      "target": "people/ericosiu",
+      "type": "wikilink"
+    },
+    {
+      "source": "articles/hermes-assistant-to-chief-of-staff-2026-06-21",
+      "target": "brand/maloha-coast-brand-identity",
+      "type": "wikilink"
+    },
+    {
+      "source": "articles/hermes-assistant-to-chief-of-staff-2026-06-21",
+      "target": "concepts/hermes-agent",
       "type": "wikilink"
     },
     {
@@ -8763,9 +8823,9 @@
       {
         "name": "extract_atoms_backlog",
         "status": "ok",
-        "message": "4 page(s) eligible (below warn threshold; pack does not run extract_atoms)",
+        "message": "5 page(s) eligible (below warn threshold; pack does not run extract_atoms)",
         "details": {
-          "backlog": 4,
+          "backlog": 5,
           "pack_declares_phase": false,
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
@@ -8798,7 +8858,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 48 pages",
+        "message": "Connected, 49 pages",
         "category": "ops"
       },
       {
@@ -8858,7 +8918,7 @@
       {
         "name": "brain_score",
         "status": "warn",
-        "message": "Brain score 27/100 (embed 0/35, links 8/25, timeline 2/15, orphans 7/15, dead-links 10/10)",
+        "message": "Brain score 26/100 (embed 0/35, links 8/25, timeline 1/15, orphans 7/15, dead-links 10/10)",
         "category": "brain"
       },
       {
@@ -8870,7 +8930,7 @@
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 48 pages; 8 external link(s) (no bare tweets).",
+        "message": "Sampled 49 pages; 8 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -9031,7 +9091,7 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (48 pages \u2014 too few to assess)",
+        "message": "Extraction lag not applicable (49 pages \u2014 too few to assess)",
         "category": "brain"
       },
       {
@@ -9164,7 +9224,7 @@
       {
         "name": "embed_staleness",
         "status": "warn",
-        "message": "65 stale chunks (small backlog)",
+        "message": "66 stale chunks (small backlog)",
         "category": "meta"
       },
       {
