@@ -1,32 +1,44 @@
 {
-  "updated_at": "2026-06-20T02:00:28Z",
+  "updated_at": "2026-06-20T02:08:43Z",
   "summary": {
-    "score": "92",
+    "score": "82",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 177,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "44.1% of pages have inbound links",
-    "entity_links": "Coverage \u2014 25 people, 17 companies indexed",
-    "concept_count": 87,
+    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 2/15, orphans 10/15, dead-links 10/10",
+    "page_count": 180,
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "50.8% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 95% \u00b1 3.2%",
+    "concept_count": 88,
     "meeting_count": 6,
-    "person_count": 25,
+    "person_count": 26,
     "company_count": 17,
-    "newsletter_count": 34,
+    "newsletter_count": 35,
     "video_count": 0,
     "article_count": 4,
     "bookmark_count": 1,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 226,
-    "outbound_count": 298,
-    "inbound_count": 268,
+    "total_links": 231,
+    "outbound_count": 306,
+    "inbound_count": 275,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 2/15, orphans 10/15, dead-links 10/10)",
+    "score_components": {
+      "score": "82/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "2/15",
+      "orphans": "10/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 67,
+    "checks_warned": 6,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -324,10 +336,20 @@
           "from": "digests/2026-06-15-business-brain-digest",
           "type": "wikilink",
           "text": "Anthropic"
+        },
+        {
+          "from": "newsletters/ai-garage-weekly-2026-06-20",
+          "type": "wikilink",
+          "text": "Anthropic"
+        },
+        {
+          "from": "people/tonbi",
+          "type": "wikilink",
+          "text": "Anthropic"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 3
+      "inbound_count": 5
     },
     {
       "slug": "companies/blackgrid-digital",
@@ -1128,6 +1150,39 @@
       "backlinks": [],
       "outbound_count": 5,
       "inbound_count": 0
+    },
+    {
+      "slug": "concepts/agent-wikis",
+      "title": "Agent Wikis",
+      "type": "concept",
+      "updated": "",
+      "body": "# Agent Wikis\n\n> Autonomous agent-maintained knowledge wikis that combine agentic workflow with wiki content management. Created by [[Tonbi]].\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[ai-garage-weekly-2026-06-20]] \u2014 first release day got 10k visitors, 5k-7k daily sustained. Tonbi created autonomous loop for missed topic research and addition\n\n## Related\n\n- [[ai-garage-weekly-2026-06-20]] \u2014 Project progress update\n- [[Tonbi]] \u2014 Creator\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-19** | First release day reached 10k visitors; daily traffic 5k-7k. Tonbi building autonomous missed-topic research loop. Premium wikis with Stripe integration planned. [Source: gmail://msg_19ee2c24d5819622]",
+      "tags": [
+        "agents",
+        "ai",
+        "retrieval"
+      ],
+      "links_out": [
+        {
+          "to": "people/tonbi",
+          "type": "wikilink",
+          "text": "Tonbi"
+        },
+        {
+          "to": "newsletters/ai-garage-weekly-2026-06-20",
+          "type": "wikilink",
+          "text": "ai-garage-weekly-2026-06-20"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "newsletters/ai-garage-weekly-2026-06-20",
+          "type": "wikilink",
+          "text": "Agent Wikis"
+        }
+      ],
+      "outbound_count": 2,
+      "inbound_count": 1
     },
     {
       "slug": "concepts/ai-data-center-architecture-2026-06-20",
@@ -3817,6 +3872,50 @@
       "inbound_count": 0
     },
     {
+      "slug": "newsletters/ai-garage-weekly-2026-06-20",
+      "title": "Ai Garage Weekly 2026 06 20",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# AI Garage Weekly - June 19, 2026\n\n**Source:** email from Sayf (forwarded)\n**Source URI:** gmail://msg_19ee2c24d5819622\n**Ingested:** 2026-06-20T10:03:00Z\n**Provenance:** Forwarded by Sayf on 2026-06-20\n**Original Author:** [[Tonbi]] (AI Garage)\n**Original Publication Date:** 2026-06-19\n\n> Excel, Fable Ban, GLM-5.2, and DR-DCI\n\nBetween the Fable ban and the GLM-5.2 release, it was a pretty big week for the local LLM community. One showed why local AI is so important, the other showed that open weights models can approach the top closed frontier models. We just need to lower the hardware barrier.\n\n## Video of the Week: Hermes Agent in Excel\n\n[[Tonbi]]'s wife was using Claude in Excel, and he wondered if he could do it with [[Hermes Agent]]. After a false start with an overly complicated method, he found a simpler approach. The end result: a chat window inside Excel plus custom functions with Hermes. The video didn't go viral but got nice comments. He plans more integrations like this.\n\n[How I Put Hermes Agent Inside Excel](https://link.mail.beehiiv.com/ss/c/u001.maopPdr3OQftpzkXs5OR4-tDkO_ZYupC2QTCbId7IkHkiJxZzzIEuleA0Zxl07q_mIlFIjX1d-qo0fTV8ktpwzR6AzV7NOC9JaoERjTgGRKKpgQr8t9M6Ax6eRdxc2VS1KSZt9LH0au-x505YOJCIHODQTRnFuG4RF0Fca33iwrdB49JxH-Wpzn-QIBG9tCOiNcW0-lZMJIx8ziuwfUR4WLoyIC_B8CQQdw3BksEQ74jMfWREhLH2w5wWjK9POqQ/4rm/2_NJKj_3TB2RDv6Z_iUFxg/h2/h001.Uo1z3BXiQOSpNs0ZoYyWZCZTVSRrzmTQWvnIe6dPxT8)\n\n## AI News & Model Releases\n\n**Claude Fable 5 banned.** [[Anthropic]] removed Fable 5 access due to a new US government directive. [[Tonbi]] wasn't surprised \u2014 predicted this direction. Thinks it's some weird Anthropic/admin negotiating in public and will get cleared up eventually, but highlights the need for local and decentralized AI.\n\n**GLM-5.2 released.** Open weights model. [[Tonbi]] gave it tasks in a first look video and has been using it. Feels \"only slightly behind Opus 4.8/GPT5.5, maybe one generation behind.\" Incredible for an open source model, though most people won't be able to run it locally without serious hardware.\n\n## Research & Experiments\n\n**DR-DCI (Dynamic Retrieval-Direct Corpus Interaction).** Paper at arxiv.org/abs/2606.14885. Describes an agent retrieval/workspace pattern combining RAG recall with filesystem agency. Key insight: hide huge corpus behind a retriever, let agent call `pull(query, topK)` to bring relevant docs into a local workspace, then use normal file tools. Increases accuracy while improving wall time and costs. [[Tonbi]] sees clear applications for [[Agent Wikis]].\n\n## Random Brainstorming & Project Progress\n\n**[[Agent Wikis]]:** First release day got nearly 10k visitors (humans and agents), now doing 5k-7k daily. [[Tonbi]] created a loop for missed topics to be autonomously researched and added to wikis. Considering premium wikis with Stripe integration and an autonomous ad pipeline where the agent develops, releases, and optimizes ads.",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "people/tonbi",
+          "type": "wikilink",
+          "text": "Tonbi"
+        },
+        {
+          "to": "Hermes Agent",
+          "type": "wikilink",
+          "text": "Hermes Agent"
+        },
+        {
+          "to": "companies/anthropic",
+          "type": "wikilink",
+          "text": "Anthropic"
+        },
+        {
+          "to": "concepts/agent-wikis",
+          "type": "wikilink",
+          "text": "Agent Wikis"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "concepts/agent-wikis",
+          "type": "wikilink",
+          "text": "ai-garage-weekly-2026-06-20"
+        },
+        {
+          "from": "people/tonbi",
+          "type": "wikilink",
+          "text": "ai-garage-weekly-2026-06-20"
+        }
+      ],
+      "outbound_count": 4,
+      "inbound_count": 2
+    },
+    {
       "slug": "newsletters/humanlayer-launch-2026-06-19-sayf",
       "title": "Humanlayer Launch 2026 06 19 Sayf",
       "type": "newsletter",
@@ -5065,6 +5164,44 @@
       "inbound_count": 3
     },
     {
+      "slug": "people/tonbi",
+      "title": "Tonbi",
+      "type": "person",
+      "updated": "",
+      "body": "# Tonbi\n\n> Creator of AI Garage Weekly newsletter and Agent Wikis, Youtuber focused on local/DIY AI and open source LLMs.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[ai-garage-weekly-2026-06-20]] as author of AI Garage Weekly newsletter \u2014 covers local LLM community, open weights models, and agent tooling\n\n## Related\n\n- [[ai-garage-weekly-2026-06-20]] \u2014 June 19 issue: Excel, Fable Ban, GLM-5.2, DR-DCI\n- [[Anthropic]] \u2014 Discussed Fable 5 ban in context of government AI control\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-19** | Published AI Garage Weekly covering Hermes Agent in Excel integration, Claude Fable 5 ban, GLM-5.2 release, DR-DCI research, and Agent Wikis progress. [Source: gmail://msg_19ee2c24d5819622]",
+      "tags": [
+        "ai",
+        "content-creator",
+        "local-llm"
+      ],
+      "links_out": [
+        {
+          "to": "newsletters/ai-garage-weekly-2026-06-20",
+          "type": "wikilink",
+          "text": "ai-garage-weekly-2026-06-20"
+        },
+        {
+          "to": "companies/anthropic",
+          "type": "wikilink",
+          "text": "Anthropic"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "concepts/agent-wikis",
+          "type": "wikilink",
+          "text": "Tonbi"
+        },
+        {
+          "from": "newsletters/ai-garage-weekly-2026-06-20",
+          "type": "wikilink",
+          "text": "Tonbi"
+        }
+      ],
+      "outbound_count": 2,
+      "inbound_count": 2
+    },
+    {
       "slug": "people/yassif-n-m",
       "title": "Yassif N.M.",
       "type": "person",
@@ -5619,6 +5756,16 @@
     {
       "source": "concepts/3-month-career-pivot-framework",
       "target": "concepts/salary-negotiation-playbook",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/agent-wikis",
+      "target": "people/tonbi",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/agent-wikis",
+      "target": "newsletters/ai-garage-weekly-2026-06-20",
       "type": "wikilink"
     },
     {
@@ -6362,6 +6509,16 @@
       "type": "wikilink"
     },
     {
+      "source": "newsletters/ai-garage-weekly-2026-06-20",
+      "target": "people/tonbi",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/ai-garage-weekly-2026-06-20",
+      "target": "companies/anthropic",
+      "type": "wikilink"
+    },
+    {
       "source": "newsletters/humanlayer-launch-2026-06-19-sayf",
       "target": "people/dex-horthy",
       "type": "wikilink"
@@ -6522,6 +6679,11 @@
       "type": "wikilink"
     },
     {
+      "source": "people/tonbi",
+      "target": "companies/anthropic",
+      "type": "wikilink"
+    },
+    {
       "source": "people/yassif-n-m",
       "target": "companies/dynamics-orchard-farm-sdn-bhd",
       "type": "wikilink"
@@ -6586,6 +6748,7 @@
       "people/paul-hoekstra",
       "people/sayf-codes",
       "people/tj-vandermolen",
+      "people/tonbi",
       "people/yassif-n-m",
       "people/yaw-hog-ng",
       "people/zaim-mohzani"
@@ -6613,13 +6776,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 70,
+    "brain_checks_score": 90,
     "category_scores": {
-      "brain": 95,
+      "brain": 90,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -6649,32 +6812,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -6687,9 +6828,9 @@
       {
         "name": "extract_atoms_backlog",
         "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "message": "10 page(s) eligible (below warn threshold; pack does not run extract_atoms)",
         "details": {
-          "backlog": 0,
+          "backlog": 10,
           "pack_declares_phase": false,
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
@@ -6697,8 +6838,8 @@
       },
       {
         "name": "conversation_format_coverage",
-        "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "status": "warn",
+        "message": "1/6 conversation pages (16.7%) match NO built-in pattern. Breakdown: bold-name-no-time=5, _no_match=1. Investigate: gbrain conversation-parser scan <slug> | Enable LLM fallback (opt-in): gbrain config set conversation_parser.llm_fallback_enabled true",
         "category": "brain"
       },
       {
@@ -6722,7 +6863,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 179 pages",
         "category": "ops"
       },
       {
@@ -6758,7 +6899,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 555ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -6776,25 +6917,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 93%, timeline 57%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 2/15, orphans 10/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 43 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 179 pages; 34 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -6955,7 +7096,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 0/179 pages (0%) stale",
+        "details": {
+          "total": 179,
+          "stale": 0,
+          "pct": 0,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -6967,7 +7116,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -6979,7 +7128,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "102 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -6991,7 +7140,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "50.8% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -7094,13 +7243,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 95% \u00b1 3.2%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 58% \u00b1 7.5% (target 90%)",
         "category": "meta"
       },
       {
@@ -7118,7 +7267,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "9 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
