@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-06-20T06:00:31Z",
+  "updated_at": "2026-06-20T06:27:29Z",
   "summary": {
-    "score": "92",
+    "score": "83",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 201,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "44.3% of pages have inbound links",
-    "entity_links": "Coverage \u2014 31 people, 20 companies indexed",
-    "concept_count": 92,
+    "score_breakdown": "score 83/100, embed 35/35, links 25/25, timeline 3/15, orphans 10/15, dead-links 10/10",
+    "page_count": 203,
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "47.8% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 84% \u00b1 5.1%",
+    "concept_count": 93,
     "meeting_count": 6,
     "person_count": 31,
     "company_count": 20,
-    "newsletter_count": 41,
+    "newsletter_count": 42,
     "video_count": 0,
     "article_count": 6,
     "bookmark_count": 2,
@@ -26,7 +26,19 @@
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 83/100 (embed 35/35, links 25/25, timeline 3/15, orphans 10/15, dead-links 10/10)",
+    "score_components": {
+      "score": "83/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "3/15",
+      "orphans": "10/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 66,
+    "checks_warned": 7,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -2187,6 +2199,23 @@
       "inbound_count": 0
     },
     {
+      "slug": "concepts/karpathy-llm-wiki-pattern-2026-06-20",
+      "title": "Karpathy Llm Wiki Pattern 2026 06 20",
+      "type": "concept",
+      "updated": "",
+      "body": "# Karpathy's LLM Wiki Pattern\n\n**Source:** email\n**Source URI:** gmail://msg_19ee3343b6e5b9e9\n**Ingested:** 2026-06-20T12:00:00Z\n**Provenance:** Shared by sayf on 2026-06-20, gist by Andrej Karpathy\n\n## Link\n\nhttps://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f\n\n## Summary\n\nAndrej Karpathy's \"LLM Wiki\" describes a pattern for building personal knowledge bases using LLMs. Instead of using RAG (where an LLM re-discovers knowledge from raw documents on every query), the LLM incrementally builds and maintains a persistent wiki \u2014 a structured, interlinked collection of markdown files that sits between the user and the raw sources.\n\n## Core Idea\n\nMost people's experience with LLMs and documents looks like RAG: upload files, LLM retrieves chunks at query time. The LLM is rediscovering knowledge from scratch on every question. No accumulation.\n\nInstead, the LLM builds a **persistent wiki** \u2014 a structured, interlinked collection of markdown files. When you add a new source, the LLM reads it, extracts key information, and integrates it into the existing wiki \u2014 updating entity pages, revising topic summaries, noting where new data contradicts old claims. The knowledge is compiled once and kept current, not re-derived on every query.\n\nThis mirrors the gbrain architecture used in this very ecosystem. Key insight: *the wiki is a persistent, compounding artifact.*\n\n## Architecture \u2014 Three Layers\n\n1. **Raw sources** \u2014 immutable source documents (articles, papers, etc.)\n2. **The wiki** \u2014 LLM-generated markdown files (summaries, entity pages, concept pages)\n3. **The schema** \u2014 config document (like CLAUDE.md) telling the LLM how the wiki is structured\n\n## Operations\n\n- **Ingest** \u2014 Drop a new source, LLM reads it, writes summaries, updates index and entity pages\n- **Query** \u2014 Ask questions against the wiki; good answers can be filed back as new pages\n- **Lint** \u2014 Periodically health-check: contradictions, stale claims, orphans, missing cross-references\n\n## Relevance to Maloha Coast\n\nThis is highly relevant \u2014 the gbrain knowledge base at Maloha Coast follows essentially this same pattern. Karpathy's framing validates the architecture: persistent wiki (gbrain pages), LLM-maintained cross-references (wikilinks), source provenance tracking. The key difference: gbrain uses embedding-based search for query while Karpathy suggests an index.md file approach at moderate scale.\n\n## Related\n\n- gbrain \u2014 similar persistent wiki architecture\n- workspace-intake \u2014 ingestion pipeline that mirrors Karpathy's \"ingest\" operation\n- second-brain concept \u2014 overlaps with the Claude second-brain levels from the AI Automation Society newsletter",
+      "tags": [
+        "LLM",
+        "karpathy",
+        "knowledge-base",
+        "second-brain"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "concepts/knowledge-graph-as-moat",
       "title": "Knowledge Graph As Moat",
       "type": "concept",
@@ -4195,6 +4224,22 @@
       "updated": "",
       "body": "# AI Garage Weekly - June 19, 2026\n\n**Source:** email forward from Sayf Codes to Maloha Coast\n**Source URI:** gmail://msg_19ee2c24d5819622\n**Ingested:** 2026-06-20T02:10:00Z\n**Provenance:** Forwarded by Sayf Codes on 2026-06-20\n\n*Excel, Fable Ban, GLM-5.2, and DR-DCI*\n\nBetween the Fable ban and the GLM-5.2 release, it was a pretty big week for the local LLM community. One showed why local AI is so important, the other showed that it was actually possible to have open weights models that approach the top closed frontier models. We just need to lower the hardware barrier somehow and I think local AI will really explode.\n\n---\n\n## \ud83c\udfac Video of the Week: Hermes Agent in Excel\n\nSo my wife was talking about using Claude in Excel for her work, and I had the thought: Could I do that with Hermes Agent? I hadn't heard of that type of integration, I wasn't even sure if it was possible, but I started to research a way to do it. The first attempt I actually recorded a full video using a much more complicated, much more frustrating technique. I got to the end of it and asked my agent: Isn't there an easier way to do this? And after some extra research, they said yes! \"YOU SHOULD'VE TOLD ME THAT TO BEGIN WITH\" I screamed in my head, not wanting to upset my agent too much (lol). In the end that was the method I ended up recording for this video, it does require some prep work to start up, but the end result is pretty cool. You get a chat window right in Excel, plus you can create custom functions with your Hermes. I was excited for this video and while I got a lot of nice comments on it, it didn't go super viral as I had hoped (lol).\n\nVideo: [How I Put Hermes Agent Inside Excel (And Made It a Custom Function)](https://www.youtube.com/watch?v=...)\n\n---\n\n## \ud83d\udce1 AI News & Model Releases\n\n**Claude Fable 5 banned.** Last Friday the big news came out that Anthropic was removing Fable 5 access due to a new directive from the US government. It was really surprising news, a lot of people were really blown away by Fable and disappointed by this move. I was disappointed too, but I've been convinced this was the direction we were headed anyway. These models are so powerful, the government isn't going to let private companies and individuals have power like that. They'll want to control it. I think this specific case is just some weird Anthropic and the current administration negotiating in public and it will get cleared up eventually, but it still highlights the need for local and decentralized AI moving forward. You can't let all that power be handed to only the current administration, or 1-2 companies, people should have access to these tools.\n\n**GLM-5.2 released.** I've been impressed with GLM models before, so when I heard about this new open weights model release, I was excited to try. It was really impressive! I gave it some tasks in my first look video and I've been using it a bit since then, and it does feel like only slightly behind Opus 4.8/GPT5.5, maybe one generation behind. This is still an incredible feat for an open source model, and it does make me think that we will get genuine frontier-level open source models sooner than we think. Now of course most people won't be able to run them locally, it would take some serious hardware to be able to run it that isn't super slow and quality-degraded, but it just shows what is possible for the future.\n\n---\n\n## \ud83d\udcc4 Research & Experiments\n\n**Dr-DCI: Scaling Direct Corpus Interaction via Dynamic Workspace Expansion** (arXiv:2606.14885)\n\nWith Agent Wikis, one of the big things I've been researching is retrieval, how agents are able to collect and process information. I wanted to see if I could find a way to go beyond RAG, or enhance RAG in some way. This paper caught my eye. It describes an agent retrieval/workspace pattern that could be effective for Agent Wikis, or having any agent handle any large corpus.\n\nWith normal RAG, you have the agent ask a retriever, get snippets, and then answer from those snippets. With DCI, an earlier version of this method, the agent gets direct shell/file access to the corpus, and can use tools like find, read, compare files, inspect evidence. The problem with this is that it breaks when the corpus is huge. Search millions of files directly is slow and noisy. So with DR-DCI, that huge corpus is hidden behind a retriever, but the agent can call pull(query, topK), to bring relevant documents into a local workspace, then use normal file tools on that smaller workspace. So it actually gives you RAG-like recall with filesystem agency from DCI. They found that using this method increased accuracy as well as significantly improved wall time and costs.\n\nThe applications for Agent Wikis is pretty clear. I experimented with RAG over the wikis and found that to be one the best methods, but some of these wikis are quite large, so it could become challenging. Since these are specifically agent focused, I think having this smaller workspace to pull relevant chunks out could be useful, because I imagine people are using this knowledge not for just one-off questions, but for ongoing project work.\n\n---\n\n## \ud83d\udcad Random Brainstorming & Project Progress\n\n**Agent Wikis:** Nice release for Agent Wikis, people seemed to really like it and the first release day got nearly 10k visitors on the site (humans and agents), and we've been doing 5k-7k since then. Very large improvement from the last time I released a project before my YouTube channel (I was happy with 10 visitors, lol). I've been refining the pipeline to maintaining these wikis, trying to make it as autonomous as possible without ruining everything. The one thing I did was to create a loop so that missed topics will get researched and then autonomously added to the wikis. This will ensure that the wikis actually answer the questions that people have on these topics (without any extra work from me).\n\nI've been exploring other ways to allow agents to maintain and enhance the product. I think once I'm ready to do premium wikis with the stripe integration, that would be a good place for it. I may also explore doing some small ads after that to see how those can drive traffic. I would love to do an advertising pipeline where the agent develops all the ad material (so I can be lazy), releases the ads, then analyzes the results and hones the ads based on that. I've heard of people doing this, but that would be an amazing loop to have. The ads themselves would cost money though, so I'll need the site to be profitable before I try that.",
       "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "newsletters/claude-second-brain-explained-2026-06-20",
+      "title": "Claude Second Brain Explained 2026 06 20",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# Every Level of a Claude Second Brain Explained\n\n**Source:** email\n**Source URI:** gmail://msg_19ee2dfa87f86548\n**Ingested:** 2026-06-20T12:00:00Z\n**Provenance:** Forwarded by sayf on 2026-06-20, originally from Nate Herk (AI Automation Society)\n\n## Summary\n\nA breakdown of five levels of building a Claude second brain, a client email pipeline automation case study, and Codex hitting 5M weekly users with banked rate limit resets.\n\n## In This Issue\n\n- Five levels of building a Claude second brain, from basic file search to fully autonomous recall.\n- Robert automated a client's outbound email pipeline and got their call center actually following up.\n- OpenAI's Codex just crossed 5 million weekly users, and there's a free bonus available through June 24.\n\n## New Video: Every Level of a Claude Second Brain Explained\n\nThere are five distinct levels to building a Claude second brain, and most people are stuck at level one.\n\nLevel one is just finding a file by searching an exact word. Level five is a fully autonomous system that knows your business, your client relationships, and your IP better than you do. The difference between them isn't the tool. It's how the data is organized.\n\n*The insight that changes how you build:* Start from the end. Before you organize a single file, ask how you'll access this data later. The shape of the basketball determines the size of the hoop. Jon shows his actual setup (a Herku project, just markdown files and folders) and walks through what separates each level, including semantic search (finding by meaning, not exact match) and full relationship mapping.\n\n*How this helps you:* Your moat is your data. This video shows you how to actually organize it so your agents can use it, not just find it.\n\n## Winning Is All We Do\n\nRobert automated a client's outbound email pipeline from scratch.\n\n*What happened:* Robert's client had a call center calling leads, but nothing was following up by email. Sales managers emailed Robert their daily lead lists as Excel files. He built an automation that handles the rest: when the file lands in his inbox, it extracts the email, address, and name data, normalizes it, and uploads every contact directly into Instantly as a ready-to-run campaign. No manual cleanup. No copy-paste.\n\n*The opportunity for you:* Businesses running call centers almost always have messy lead data and no email follow-up. An automation that converts a spreadsheet into a live campaign solves a problem they didn't know anyone could fix.\n\n## In the News\n\nCodex just hit 5 million weekly users. If you use it, there's a free bonus through June 24.\n\n*The news:* OpenAI Codex has crossed 5 million weekly active users and launched two features alongside the milestone. One is permanent: banked rate limit resets. Instead of your weekly limit resetting on a fixed timer, you can now save resets and use them when you actually need them. The other runs through June 24: Plus and Pro users can invite up to three friends to try Codex. When a friend sends their first Codex message, you both get a bonus reset.\n\n*How it affects you:* If you've been hitting Codex rate limits at the wrong moment mid-build, the banked reset system fixes that. You decide when to use your reset, not the clock. If you're not hitting limits yet, the referral is easy headroom to bank before the window closes. The bigger signal here: Codex is now growing through referral mechanics at 5 million weekly users.",
+      "tags": [
+        "AI-Automation-Society",
+        "claude",
+        "second-brain"
+      ],
       "links_out": [],
       "backlinks": [],
       "outbound_count": 0,
@@ -7379,13 +7424,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 65,
+    "brain_checks_score": 85,
     "category_scores": {
-      "brain": 95,
+      "brain": 85,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -7415,32 +7460,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -7452,19 +7475,20 @@
       },
       {
         "name": "extract_atoms_backlog",
-        "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "status": "warn",
+        "message": "12 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 0,
+          "backlog": 12,
           "pack_declares_phase": false,
+          "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
         "category": "brain"
       },
       {
         "name": "conversation_format_coverage",
-        "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "status": "warn",
+        "message": "1/6 conversation pages (16.7%) match NO built-in pattern. Breakdown: bold-name-no-time=5, _no_match=1. Investigate: gbrain conversation-parser scan <slug> | Enable LLM fallback (opt-in): gbrain config set conversation_parser.llm_fallback_enabled true",
         "category": "brain"
       },
       {
@@ -7488,7 +7512,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 201 pages",
         "category": "ops"
       },
       {
@@ -7524,7 +7548,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 506ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -7542,25 +7566,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 83%, timeline 63%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 83/100 (embed 35/35, links 25/25, timeline 3/15, orphans 10/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 51 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 201 pages; 32 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -7721,7 +7745,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 2/201 pages (1%) stale",
+        "details": {
+          "total": 201,
+          "stale": 2,
+          "pct": 1,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -7733,7 +7765,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -7745,7 +7777,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "135 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -7757,7 +7789,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "47.8% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -7860,13 +7892,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 84% \u00b1 5.1%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 65% \u00b1 6.7% (target 90%)",
         "category": "meta"
       },
       {
@@ -7884,7 +7916,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "9 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
