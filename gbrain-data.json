@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-06-20T23:09:51Z",
+  "updated_at": "2026-06-20T23:33:57Z",
   "summary": {
     "score": "27",
     "score_label": "/100",
     "score_breakdown": "score 27/100, embed 0/35, links 8/25, timeline 2/15, orphans 7/15, dead-links 10/10",
-    "page_count": 248,
+    "page_count": 250,
     "embed_coverage": "No embeddings yet. Run: gbrain embed --stale",
     "graph_coverage": "graph_signals disabled \u2014 coverage not checked",
     "entity_links": "Coverage 69% \u00b1 12.8% (target 70%)",
@@ -12,16 +12,16 @@
     "meeting_count": 10,
     "person_count": 38,
     "company_count": 25,
-    "newsletter_count": 48,
+    "newsletter_count": 50,
     "video_count": 0,
     "article_count": 9,
     "bookmark_count": 11,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 292,
-    "outbound_count": 369,
-    "inbound_count": 337,
+    "total_links": 291,
+    "outbound_count": 368,
+    "inbound_count": 336,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -511,20 +511,18 @@
     },
     {
       "slug": "bookmarks/karpathys-llm-wiki-gist-2026-06-20",
-      "title": "Karpathy's LLM Wiki \u2014 Personal Knowledge Base Pattern",
+      "title": "Karpathys Llm Wiki Gist 2026 06 20",
       "type": "bookmark",
       "updated": "",
-      "body": "# Karpathy's LLM Wiki \u2014 Personal Knowledge Base Pattern\n\n**Source:** Email forward from Sayf Codes, 2026-06-20\n**Source URI:** gmail://msg_19ee3343b6e5b9e9\n**Original:** https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f\n**Ingested:** 2026-06-20T12:01:16Z\n\n## Summary\n\nAndrej Karpathy's \"LLM Wiki\" is a pattern for using LLMs to build and maintain a persistent, interlinked personal knowledge base. Instead of treating LLMs as retrieval engines over raw documents (RAG), the LLM incrementally constructs a wiki \u2014 structured markdown files \u2014 that sits between the user and source materials.\n\n## Key Ideas\n\n- **Persistent compounding artifact**: The wiki accumulates knowledge over time. Cross-references are pre-built, contradictions flagged, synthesis reflects everything read. Knowledge is compiled once and kept current, not re-derived per query.\n- **LLM as maintainer**: The LLM writes and maintains the wiki; the user curates sources, explores, and asks the right questions. \"Obsidian is the IDE; the LLM is the programmer; the wiki is the codebase.\"\n- **Three-layer architecture**:\n  1. **Raw sources** \u2014 immutable source documents (articles, papers, data)\n  2. **The wiki** \u2014 LLM-generated markdown files (summaries, entities, concepts, cross-references)\n  3. **The schema** \u2014 config file (e.g. CLAUDE.md) defining structure, conventions, and workflows\n- **Operations**: Ingest (drop sources \u2192 LLM processes, updates 10-15 pages), Query (ask questions \u2192 LLM synthesizes with citations, files answers back), Lint (periodic health-check for contradictions, orphans, gaps)\n- **Indexing**: `index.md` (content-oriented catalog) + `log.md` (chronological append-only record)\n- **Optional CLI tools**: qmd for local search (BM25/vector hybrid), Obsidian Web Clipper for ingestion\n\n## Why This Matters\n\n- The most valuable insight: \"The tedious part of maintaining a knowledge base is not the reading or thinking \u2014 it's the bookkeeping.\" LLMs eliminate the maintenance burden that causes humans to abandon wikis.\n- \"Your moat is your data\" \u2014 this pattern directly enables the kind of autonomous, compounding knowledge system described in the Claude Second Brain newsletter (Level 5: fully autonomous recall).\n- Related in spirit to Vannevar Bush's Memex (1945) \u2014 associative trails between documents, private and curated.\n\n## Relevance to Maloha Coast\n\nThis is the architectural foundation for gbrain itself \u2014 and a reference for how to evolve gbrain beyond basic RAG into a truly autonomous knowledge system. The schema concept (CLAUDE.md / AGENTS.md) maps to Hermes skills and resolver files.\n\n## Entities\n\n- [[Andrej Karpathy]] \u2014 Author of the LLM Wiki pattern. Former AI director at Tesla, AI researcher, creator of numerous influential educational resources.",
-      "tags": [],
-      "links_out": [
-        {
-          "to": "people/andrej-karpathy",
-          "type": "wikilink",
-          "text": "Andrej Karpathy"
-        }
+      "body": "# karpathy's llm wiki gist\n\n**Source:** email from sayf\n**Source URI:** gmail://msg_19ee3343b6e5b9e9\n**Ingested:** 2026-06-21T04:37:00Z\n**Provenance:** Forwarded by sayf on 2026-06-20\n\nSayf shared a link to Karpathy's LLM Wiki gist \u2014 a curated markdown knowledge base on LLMs.\n\n**URL:** https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
+      "tags": [
+        "karpathy",
+        "llm",
+        "wiki"
       ],
+      "links_out": [],
       "backlinks": [],
-      "outbound_count": 1,
+      "outbound_count": 0,
       "inbound_count": 0
     },
     {
@@ -4559,6 +4557,18 @@
       "inbound_count": 0
     },
     {
+      "slug": "newsletters/30-core-agentic-engineering-concepts-2026-06-17",
+      "title": "30 Core Agentic Engineering Concepts 2026 06 17",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# 30 Core Agentic Engineering Concepts, Explained Simply\n\n**Source:** email from sayf (forwarded from Neo Kim / System Design One)\n**Source URI:** gmail://msg_19ee2580f5fe7903\n**Ingested:** 2026-06-21T04:37:00Z\n**Provenance:** Forwarded by sayf on 2026-06-20\n\n## Summary\n\nSystem Design Newsletter #154 by Neo Kim and guest author Paul Hoekstra. A comprehensive framework of 30 core agentic engineering concepts organized into six layers: Foundations, Configuration, Capability, Orchestration, Guardrails, and Observability.\n\n## Key Content\n\n30 Core Agentic Engineering Concepts, Explained Simply\n\nBy Neo Kim and Paul Hoekstra\nJun 17, 2026\n\nHow do you keep up with agentic engineering when a new tool ships every week? You learn the ideas behind the tools, and let the tools come and go.\n\nBy the end of this newsletter, you can read any agent post or news drop and see which of these ideas it actually covers, instead of feeling behind every time something new ships.\n\nHere's what's inside:\n\nFoundations\n1. What is an agent? - An LLM that runs in a loop, has access to tools, and decides what to do next. Coding is the most obvious use case. Use an agent when the task is open-ended and the next step depends on the result of the last one.\n2. Execution model - Three steps repeated: think, act, observe. Two variations: parallelism and blocking vs non-blocking.\n3. Agent state - Context window vs everything outside it. Files are usually the right default for state.\n4. Common agent patterns - Planner/executor, router/specialist, map-reduce parallelism.\n\nConfiguration Layer\n5. Agent config files - Project-level markdown (CLAUDE.md, AGENTS.md) telling the agent your standards and limits.\n6. Reusable workflow files - On-demand markdown files with YAML frontmatter (skills, Cursor rules).\n7. Workflow frameworks - Superpowers, Get Shit Done, Compound Engineering.\n8. Prompt caching - Stores stable prefix of conversation. Changes the economics of long config files.\n9. Context rot - Model performance drops as context window fills up.\n\nCapability Layer\n10. Live documentation - The agent uses tools to fetch live docs (web_fetch, MCP).\n11. AI-native search - Semantic search as a tool.\n12. Knowledge graphing - Agents that build and update graphs.\n13. Long-term memory - Survives across sessions.\n\nGuest author: Paul Hoekstra, data engineer at Digital Power, writes Paul's Pipeline newsletter.",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "newsletters/30-core-agentic-engineering-concepts-2026-06-20",
       "title": "30 Core Agentic Engineering Concepts 2026 06 20",
       "type": "newsletter",
@@ -4809,12 +4819,8 @@
       "title": "Claude Second Brain Explained 2026 06 20",
       "type": "newsletter",
       "updated": "",
-      "body": "# Every Level of a Claude Second Brain Explained\n\n**Source:** email\n**Source URI:** gmail://msg_19ee2dfa87f86548\n**Ingested:** 2026-06-20T12:00:00Z\n**Provenance:** Forwarded by sayf on 2026-06-20, originally from Nate Herk (AI Automation Society)\n\n## Summary\n\nA breakdown of five levels of building a Claude second brain, a client email pipeline automation case study, and Codex hitting 5M weekly users with banked rate limit resets.\n\n## In This Issue\n\n- Five levels of building a Claude second brain, from basic file search to fully autonomous recall.\n- Robert automated a client's outbound email pipeline and got their call center actually following up.\n- OpenAI's Codex just crossed 5 million weekly users, and there's a free bonus available through June 24.\n\n## New Video: Every Level of a Claude Second Brain Explained\n\nThere are five distinct levels to building a Claude second brain, and most people are stuck at level one.\n\nLevel one is just finding a file by searching an exact word. Level five is a fully autonomous system that knows your business, your client relationships, and your IP better than you do. The difference between them isn't the tool. It's how the data is organized.\n\n*The insight that changes how you build:* Start from the end. Before you organize a single file, ask how you'll access this data later. The shape of the basketball determines the size of the hoop. Jon shows his actual setup (a Herku project, just markdown files and folders) and walks through what separates each level, including semantic search (finding by meaning, not exact match) and full relationship mapping.\n\n*How this helps you:* Your moat is your data. This video shows you how to actually organize it so your agents can use it, not just find it.\n\n## Winning Is All We Do\n\nRobert automated a client's outbound email pipeline from scratch.\n\n*What happened:* Robert's client had a call center calling leads, but nothing was following up by email. Sales managers emailed Robert their daily lead lists as Excel files. He built an automation that handles the rest: when the file lands in his inbox, it extracts the email, address, and name data, normalizes it, and uploads every contact directly into Instantly as a ready-to-run campaign. No manual cleanup. No copy-paste.\n\n*The opportunity for you:* Businesses running call centers almost always have messy lead data and no email follow-up. An automation that converts a spreadsheet into a live campaign solves a problem they didn't know anyone could fix.\n\n## In the News\n\nCodex just hit 5 million weekly users. If you use it, there's a free bonus through June 24.\n\n*The news:* OpenAI Codex has crossed 5 million weekly active users and launched two features alongside the milestone. One is permanent: banked rate limit resets. Instead of your weekly limit resetting on a fixed timer, you can now save resets and use them when you actually need them. The other runs through June 24: Plus and Pro users can invite up to three friends to try Codex. When a friend sends their first Codex message, you both get a bonus reset.\n\n*How it affects you:* If you've been hitting Codex rate limits at the wrong moment mid-build, the banked reset system fixes that. You decide when to use your reset, not the clock. If you're not hitting limits yet, the referral is easy headroom to bank before the window closes. The bigger signal here: Codex is now growing through referral mechanics at 5 million weekly users.",
-      "tags": [
-        "AI-Automation-Society",
-        "claude",
-        "second-brain"
-      ],
+      "body": "# Every Level of a Claude Second Brain Explained\n\n**Source:** email from sayf (forwarded from Nate Herk / AI Automation Society)\n**Source URI:** gmail://msg_19ee2dfa87f86548\n**Ingested:** 2026-06-21T04:37:00Z\n**Provenance:** Forwarded by sayf on 2026-06-20\n\n## Summary\n\nNewsletter from AI Automation Society (Nate Herk) covering three topics: a framework for building Claude second brains across five levels, a case study of automating a client's outbound email pipeline, and OpenAI Codex reaching 5M weekly users with banked rate limit resets.\n\n## Key Content\n\n---------- Forwarded message ---------\nFrom: Sayf <sayfti@gmail.com>\nDate: Sat, 20 Jun 2026, 10:25\nSubject: Fwd: Every Level of a Claude Second Brain Explained\nTo: Sayf Codes <sayfcodes@gmail.com>\n\n---------- Forwarded message ---------\nFrom: Nate Herk <nate@aiautomationsociety.ai>\nDate: Sat, 20 Jun 2026, 06:05\nSubject: Every Level of a Claude Second Brain Explained\nTo: sayfti@gmail.com <sayfti@gmail.com>\n\nA Claude second brain breakdown, a client pipeline automated, and Codex hits 5M users with a free bonus through June 24.\n\nJune 19, 2026\nEvery Level of a Claude Second Brain Explained\n\nA Claude second brain breakdown, a client pipeline automated, and Codex hits 5M users with a free bonus through June 24.\n\nIn This Issue\n\n- Five levels of building a Claude second brain, from basic file search to fully autonomous recall.\n- Robert automated a client's outbound email pipeline and got their call center actually following up.\n- OpenAI's Codex just crossed 5 million weekly users, and there's a free bonus available through June 24 if you use it.\n\nNew Video: Every Level of a Claude Second Brain Explained\n\nThere are five distinct levels to building a Claude second brain, and most people are stuck at level one.\n\nLevel one is just finding a file by searching an exact word. Level five is a fully autonomous system that knows your business, your client relationships, and your IP better than you do. The difference between them isn't the tool. It's how the data is organized.\n\nThe insight that changes how you build: Start from the end. Before you organize a single file, ask how you'll access this data later. The shape of the basketball determines the size of the hoop. Jon shows his actual setup (a Herku project, just markdown files and folders) and walks through what separates each level, including semantic search (finding by meaning, not exact match) and full relationship mapping.\n\nHow this helps you: Your moat is your data. This video shows you how to actually organize it so your agents can use it, not just find it.\n\nWinning Is All We Do\nRobert automated a client's outbound email pipeline from scratch\n\nWhat happened: Robert's client had a call center calling leads, but nothing was following up by email. Sales managers emailed Robert their daily lead lists as Excel files. He built an automation that handles the rest: when the file lands in his inbox, it extracts the email, address, and name data, normalizes it, and uploads every contact directly into Instantly as a ready-to-run campaign. No manual cleanup. No copy-paste.\n\nThe opportunity for you: Businesses running call centers almost always have messy lead data and no email follow-up. An automation that converts a spreadsheet into a live campaign solves a problem they didn't know anyone could fix.\n\nIn the News\nCodex just hit 5 million weekly users. If you use it, there's a free bonus through June 24.\n\nThe news: OpenAI Codex has crossed 5 million weekly active users and launched two features alongside the milestone. One is permanent: banked rate limit resets. Instead of your weekly limit resetting on a fixed timer, you can now save resets and use them when you actually need them. The other runs through June 24: Plus and Pro users can invite up to three friends to try Codex. When a friend sends their first Codex message, you both get a bonus reset.\n\nHow it affects you: If you've been hitting Codex rate limits at the wrong moment mid-build, the banked reset system fixes that. You decide when to use your reset, not the clock.",
+      "tags": [],
       "links_out": [],
       "backlinks": [
         {
@@ -5514,6 +5520,18 @@
       "inbound_count": 0
     },
     {
+      "slug": "newsletters/secret-architecture-ai-data-centers-2026-06-19",
+      "title": "Secret Architecture Ai Data Centers 2026 06 19",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# The Secret Architecture Behind AI Data Centers\n\n**Source:** email from sayf (forwarded from Neo Kim / System Design One)\n**Source URI:** gmail://msg_19ee23d6478fc08e\n**Ingested:** 2026-06-21T04:37:00Z\n**Provenance:** Forwarded by sayf on 2026-06-20\n\n## Summary\n\nSystem Design Newsletter #155 by Neo Kim and guest author Ashish Prajapati. Deep dive into AI data center infrastructure: the factory mental model, physical constraints (power, cooling, space), GPU architecture vs CPU, memory hierarchy bottlenecks, and networking at scale.\n\n## Key Content\n\nThe Secret Architecture Behind AI Data Centers\nBy Neo Kim and Ashish Prajapati\nJun 19, 2026\n\nWhen people talk about AI, they refer to models like GPTs, LLMs, and neural networks. But the biggest breakthroughs in AI are not coming from better models; they're coming from better infrastructure.\n\nMental Model: Think of an AI Data Center as a Factory\n- AI Data Center = Factory\n- Data = Raw material\n- GPUs = Machines on the factory floor\n- Network = Internal transport system\n- Storage = Warehouse\n- Software = Assembly line logic\n- Output = Trained intelligence\n\nFirst Problem: Physics\n1. Power - A single server rack of GPUs can draw 80-120 kilowatts (equivalent to 40 homes).\n2. Cooling - More power means more heat. Modern data centers adopt liquid cooling with cold plates.\n3. Space - Scaling AI is real estate, energy infrastructure, and thermodynamics combined.\n\nCompute: Why GPUs Took Over\n- CPU = manager (decision-making, few powerful cores)\n- GPU = factory workers (mass production, thousands of simpler cores for matrix multiplication)\n- DPU = logistics (networking, storage I/O, security)\n\nHidden Bottleneck: Memory and Storage\nMemory hierarchy: GPU Memory (HBM) -> CPU RAM -> SSD/NVMe -> Network/Object Storage\nAI performance is determined by how fast data can be fed into the GPU.\n\nNetworking: Bottleneck Nobody Talks About\nModern AI clusters use leaf-spine architectures. Within a node: NVLink. Between nodes: InfiniBand or RoCE. Goal: make thousands of GPUs behave like one giant processor.\n\nTechniques: RDMA for low-latency communication, GPUDirect for GPU-to-storage bypassing CPU, zero-copy pipelines.\n\nGuest author: Ashish Prajapati, AI infrastructure specialist, NVIDIA-Certified Associate trainer, has trained 39,000+ learners worldwide.",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "newsletters/secret-architecture-behind-ai-data-centers-2026-06-20",
       "title": "Secret Architecture Behind Ai Data Centers 2026 06 20",
       "type": "newsletter",
@@ -5786,15 +5804,10 @@
           "from": "bookmarks/karpathy-llm-wiki-gist",
           "type": "wikilink",
           "text": "Andrej Karpathy"
-        },
-        {
-          "from": "bookmarks/karpathys-llm-wiki-gist-2026-06-20",
-          "type": "wikilink",
-          "text": "Andrej Karpathy"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 2
+      "inbound_count": 1
     },
     {
       "slug": "people/ashish-prajapati",
@@ -7228,11 +7241,6 @@
     {
       "source": "bookmarks/karpathy-llm-wiki-gist",
       "target": "gbrain",
-      "type": "wikilink"
-    },
-    {
-      "source": "bookmarks/karpathys-llm-wiki-gist-2026-06-20",
-      "target": "people/andrej-karpathy",
       "type": "wikilink"
     },
     {
@@ -8790,7 +8798,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 44 pages",
+        "message": "Connected, 48 pages",
         "category": "ops"
       },
       {
@@ -8862,7 +8870,7 @@
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 44 pages; 8 external link(s) (no bare tweets).",
+        "message": "Sampled 48 pages; 8 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -9023,7 +9031,7 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (44 pages \u2014 too few to assess)",
+        "message": "Extraction lag not applicable (48 pages \u2014 too few to assess)",
         "category": "brain"
       },
       {
@@ -9156,7 +9164,7 @@
       {
         "name": "embed_staleness",
         "status": "warn",
-        "message": "60 stale chunks (small backlog)",
+        "message": "65 stale chunks (small backlog)",
         "category": "meta"
       },
       {
