@@ -1,27 +1,27 @@
 {
-  "updated_at": "2026-06-20T02:20:36Z",
+  "updated_at": "2026-06-20T02:33:10Z",
   "summary": {
     "score": "82",
     "score_label": "/100",
     "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 2/15, orphans 10/15, dead-links 10/10",
-    "page_count": 181,
+    "page_count": 185,
     "embed_coverage": "100% coverage, 0 missing",
-    "graph_coverage": "50.6% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
-    "entity_links": "Coverage 95% \u00b1 3.2%",
-    "concept_count": 88,
+    "graph_coverage": "51.1% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 95% \u00b1 3.1%",
+    "concept_count": 90,
     "meeting_count": 6,
-    "person_count": 26,
+    "person_count": 27,
     "company_count": 17,
-    "newsletter_count": 36,
+    "newsletter_count": 37,
     "video_count": 0,
     "article_count": 4,
     "bookmark_count": 1,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 231,
-    "outbound_count": 306,
-    "inbound_count": 275,
+    "total_links": 235,
+    "outbound_count": 313,
+    "inbound_count": 278,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -308,7 +308,7 @@
       "title": "Anthropic",
       "type": "company",
       "updated": "",
-      "body": "# Anthropic\n\n> AI research company behind Claude. Filed for IPO at $965 billion valuation (June 2026).\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[claude-code-10x-skill-newsletter]] \u2014 IPO filing at $965B\n\n## Related\n\n- [[claude-code-10x-skill-newsletter]] \u2014 Discussion of Anthropic's IPO and what it means for Claude users\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-05** | Reported IPO filing at $965 billion valuation. Source: Nate Herk / AI Automation Society newsletter.",
+      "body": "> Entity stub \u2014 created from inline mention in [[AI Garage Weekly - June 19, 2026]].\n\n> AI safety company behind Claude and the Fable model series.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[AI Garage Weekly - June 19, 2026]] regarding the Fable 5 ban by US government directive\n\n## Related\n\n- [[AI Garage Weekly - June 19, 2026]] \u2014 Fable 5 banned by government directive",
       "tags": [
         "ai",
         "claude",
@@ -316,17 +316,12 @@
       ],
       "links_out": [
         {
-          "to": "concepts/claude-code-10x-skill-newsletter",
+          "to": "AI Garage Weekly - June 19, 2026",
           "type": "wikilink",
-          "text": "claude-code-10x-skill-newsletter"
+          "text": "AI Garage Weekly - June 19, 2026"
         }
       ],
       "backlinks": [
-        {
-          "from": "companies/openai",
-          "type": "link",
-          "text": "Anthropic"
-        },
         {
           "from": "concepts/claude-code-10x-skill-newsletter",
           "type": "wikilink",
@@ -334,6 +329,11 @@
         },
         {
           "from": "digests/2026-06-15-business-brain-digest",
+          "type": "wikilink",
+          "text": "Anthropic"
+        },
+        {
+          "from": "newsletters/ai-garage-weekly-2026-06-19",
           "type": "wikilink",
           "text": "Anthropic"
         },
@@ -723,7 +723,7 @@
       "title": "OpenAI",
       "type": "company",
       "updated": "",
-      "body": "# OpenAI\n\n> AI research and deployment company behind ChatGPT and GPT model family. Valued at $852 billion after their last funding round, expected to go public in 2026.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [The Skill That 10x'd My Claude Code Projects](concepts/the-skill-that-10xd-my-claude-code-projects) as having a $852 billion valuation, competing with Anthropic and SpaceX in the race to go public in 2026\n\n## Related\n\n- [Anthropic](companies/anthropic) \u2014 Competitor\n- [concepts/the-skill-that-10xd-my-claude-code-projects] \u2014 Market context\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06** | Valued at $852 billion after latest funding round, expected to go public alongside Anthropic and SpaceX this year. [Source: AI Automation Society newsletter]",
+      "body": "> Entity stub \u2014 created from inline mention in [[AI Garage Weekly - June 19, 2026]].\n\n> AI research company behind GPT and Opus model series.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[AI Garage Weekly - June 19, 2026]] as comparison point for GLM-5.2 (slightly behind Opus 4.8/GPT-5.5)\n\n## Related\n\n- [[AI Garage Weekly - June 19, 2026]] \u2014 mentioned as frontier model benchmark",
       "tags": [
         "ai",
         "chatgpt",
@@ -732,14 +732,9 @@
       ],
       "links_out": [
         {
-          "to": "concepts/the-skill-that-10xd-my-claude-code-projects",
-          "type": "link",
-          "text": "The Skill That 10x'd My Claude Code Projects"
-        },
-        {
-          "to": "companies/anthropic",
-          "type": "link",
-          "text": "Anthropic"
+          "to": "AI Garage Weekly - June 19, 2026",
+          "type": "wikilink",
+          "text": "AI Garage Weekly - June 19, 2026"
         }
       ],
       "backlinks": [
@@ -754,7 +749,7 @@
           "text": "OpenAI"
         }
       ],
-      "outbound_count": 2,
+      "outbound_count": 1,
       "inbound_count": 2
     },
     {
@@ -1176,13 +1171,18 @@
       ],
       "backlinks": [
         {
+          "from": "newsletters/ai-garage-weekly-2026-06-19",
+          "type": "wikilink",
+          "text": "Agent Wikis"
+        },
+        {
           "from": "newsletters/ai-garage-weekly-2026-06-20",
           "type": "wikilink",
           "text": "Agent Wikis"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "concepts/ai-data-center-architecture-2026-06-20",
@@ -1389,11 +1389,6 @@
       ],
       "backlinks": [
         {
-          "from": "companies/anthropic",
-          "type": "wikilink",
-          "text": "claude-code-10x-skill-newsletter"
-        },
-        {
           "from": "concepts/sayf/maloha-coast-navigator-test-edition",
           "type": "wikilink",
           "text": "Claude Code 10x Skill"
@@ -1435,7 +1430,7 @@
         }
       ],
       "outbound_count": 5,
-      "inbound_count": 9
+      "inbound_count": 8
     },
     {
       "slug": "concepts/cold-lead-response-conference-events",
@@ -1553,6 +1548,30 @@
           "from": "concepts/ai-data-center-architecture-2026-06-20",
           "type": "wikilink",
           "text": "Distributed Training"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 1
+    },
+    {
+      "slug": "concepts/dr-dci",
+      "title": "DR-DCI",
+      "type": "concept",
+      "updated": "",
+      "body": "> Entity stub \u2014 created from inline mention in [[AI Garage Weekly - June 19, 2026]].\n\n> Scaling Direct Corpus Interaction via Dynamic Workspace Expansion. An agent retrieval/workspace pattern that goes beyond RAG: the agent gets direct shell/file access, but the huge corpus is hidden behind a retriever. The agent calls `pull(query, topK)` to bring relevant documents into a local workspace, then uses normal file tools.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[AI Garage Weekly - June 19, 2026]] as a potential technique for Agent Wikis\n\n## Related\n\n- [[AI Garage Weekly - June 19, 2026]] \u2014 research paper coverage",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "AI Garage Weekly - June 19, 2026",
+          "type": "wikilink",
+          "text": "AI Garage Weekly - June 19, 2026"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "newsletters/ai-garage-weekly-2026-06-19",
+          "type": "wikilink",
+          "text": "DR-DCI"
         }
       ],
       "outbound_count": 1,
@@ -1868,6 +1887,35 @@
       ],
       "outbound_count": 1,
       "inbound_count": 1
+    },
+    {
+      "slug": "concepts/hermes-agent",
+      "title": "Hermes Agent",
+      "type": "concept",
+      "updated": "",
+      "body": "> Entity stub \u2014 created from inline mention in [[AI Garage Weekly - June 19, 2026]].\n\n> Open-source AI agent framework by Tonbi / Nous Research. Featured in the \"Hermes Agent in Excel\" integration video.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[AI Garage Weekly - June 19, 2026]] as the subject of a video about Excel integration\n\n## Related\n\n- [[AI Garage Weekly - June 19, 2026]] \u2014 Hermes Agent in Excel video",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "AI Garage Weekly - June 19, 2026",
+          "type": "wikilink",
+          "text": "AI Garage Weekly - June 19, 2026"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "newsletters/ai-garage-weekly-2026-06-19",
+          "type": "wikilink",
+          "text": "Hermes Agent"
+        },
+        {
+          "from": "newsletters/ai-garage-weekly-2026-06-20",
+          "type": "wikilink",
+          "text": "Hermes Agent"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 2
     },
     {
       "slug": "concepts/hermes-profile-backup",
@@ -3872,6 +3920,44 @@
       "inbound_count": 0
     },
     {
+      "slug": "newsletters/ai-garage-weekly-2026-06-19",
+      "title": "Ai Garage Weekly 2026 06 19",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# AI Garage Weekly - June 19, 2026\n\n**Source:** email forward\n**Source URI:** gmail://msg_19ee2c24d5819622\n**Ingested:** 2026-06-20T02:30:00Z\n**Provenance:** Forwarded by sayf from AI Garage Weekly (Beehiiv newsletter)\n\nAI Garage Weekly - June 19, 2026\n\nExcel, Fable Ban, GLM-5.2, and [[DR-DCI]]\n\nBetween the Fable ban and the GLM-5.2 release, it was a pretty big week for the local LLM community I would say. One showed why local AI is so important, the other showed that it was actually possible to have open weights models that approach the top closed frontier models. We just need to lower the hardware barrier somehow and I think local AI will really explode.\n\nVideo of the Week: [[Hermes Agent]] in Excel. My wife was talking about using Claude in Excel for her work, and I had the thought: Could I do that with [[Hermes Agent]]? I started researching and found a cleaner way \u2014 a chat window right in Excel, plus custom functions with your [[Hermes Agent]].\n\nAI News & Model Releases\n\n[[[Anthropic]]|Claude Fable 5]] banned. Last Friday, [[Anthropic]] removed Fable 5 access due to a new directive from the US government. A lot of people were really blown away by Fable and disappointed. This highlights the need for local and decentralized AI moving forward \u2014 you can't let all that power be handed to only the current administration or 1-2 companies.\n\nGLM-5.2 released. An impressive new open weights model release. It feels like only slightly behind Opus 4.8/GPT-5.5, maybe one generation behind \u2014 an incredible feat for open source. Most people won't be able to run it locally (needs serious hardware), but it shows what's possible.\n\nResearch & Experiments\n\nDr-DCI: Scaling Direct Corpus Interaction via Dynamic Workspace Expansion (arxiv.org/abs/2606.14885). An agent retrieval/workspace pattern that could be effective for [[Agent Wikis]]. With normal RAG, the agent asks a retriever and gets snippets. With DCI, the agent gets direct shell/file access to the corpus. But this breaks on huge corpuses. [[DR-DCI]] hides the huge corpus behind a retriever but lets the agent call pull(query, topK) to bring relevant documents into a local workspace, then use normal file tools on that smaller workspace. Increased accuracy and significantly improved wall time and costs.\n\nRandom Brainstorming & Project Progress\n\n[[Agent Wikis]]: Nice release \u2014 nearly 10k visitors on release day (humans and agents), now 5k-7k daily. Refining the autonomous pipeline to maintain wikis. Created a loop so missed topics get researched and autonomously added to the wikis. Exploring ways to allow agents to maintain and enhance the product. May explore premium wikis with Stripe integration and automated ad pipelines.",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "concepts/dr-dci",
+          "type": "wikilink",
+          "text": "DR-DCI"
+        },
+        {
+          "to": "concepts/hermes-agent",
+          "type": "wikilink",
+          "text": "Hermes Agent"
+        },
+        {
+          "to": "[Anthropic",
+          "type": "wikilink",
+          "text": "[Anthropic"
+        },
+        {
+          "to": "companies/anthropic",
+          "type": "wikilink",
+          "text": "Anthropic"
+        },
+        {
+          "to": "concepts/agent-wikis",
+          "type": "wikilink",
+          "text": "Agent Wikis"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 5,
+      "inbound_count": 0
+    },
+    {
       "slug": "newsletters/ai-garage-weekly-2026-06-20",
       "title": "Ai Garage Weekly 2026 06 20",
       "type": "newsletter",
@@ -3885,7 +3971,7 @@
           "text": "Tonbi"
         },
         {
-          "to": "Hermes Agent",
+          "to": "concepts/hermes-agent",
           "type": "wikilink",
           "text": "Hermes Agent"
         },
@@ -5383,6 +5469,24 @@
       "inbound_count": 9
     },
     {
+      "slug": "persons/tonbi",
+      "title": "Tonbi",
+      "type": "person",
+      "updated": "",
+      "body": "> Entity stub \u2014 created from inline mention in [[AI Garage Weekly - June 19, 2026]].\n\n> Creator of AI Garage Weekly, Hermes Agent, and Agent Wikis. YouTube channel focused on local LLMs, agent frameworks, and open-source AI.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[AI Garage Weekly - June 19, 2026]] as the author/creator of AI Garage Weekly\n\n## Related\n\n- [[AI Garage Weekly - June 19, 2026]] \u2014 newsletter authored by Tonbi",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "AI Garage Weekly - June 19, 2026",
+          "type": "wikilink",
+          "text": "AI Garage Weekly - June 19, 2026"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
+      "inbound_count": 0
+    },
+    {
       "slug": "reference/cold-lead-response-conference-events",
       "title": "Cold Lead Response Conference Events",
       "type": "concept",
@@ -5626,11 +5730,6 @@
       "type": "link"
     },
     {
-      "source": "companies/anthropic",
-      "target": "concepts/claude-code-10x-skill-newsletter",
-      "type": "wikilink"
-    },
-    {
       "source": "companies/blackgrid-digital",
       "target": "people/nabil-jalil",
       "type": "link"
@@ -5684,11 +5783,6 @@
       "source": "companies/nation-building-school",
       "target": "people/zaim-mohzani",
       "type": "wikilink"
-    },
-    {
-      "source": "companies/openai",
-      "target": "companies/anthropic",
-      "type": "link"
     },
     {
       "source": "companies/openrouter",
@@ -5828,6 +5922,11 @@
     {
       "source": "concepts/claude-code-10x-skill-newsletter",
       "target": "people/carson",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/claude-code-10x-skill-newsletter",
+      "target": "companies/anthropic",
       "type": "wikilink"
     },
     {
@@ -6521,8 +6620,33 @@
       "type": "wikilink"
     },
     {
+      "source": "newsletters/ai-garage-weekly-2026-06-19",
+      "target": "concepts/dr-dci",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/ai-garage-weekly-2026-06-19",
+      "target": "concepts/hermes-agent",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/ai-garage-weekly-2026-06-19",
+      "target": "companies/anthropic",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/ai-garage-weekly-2026-06-19",
+      "target": "concepts/agent-wikis",
+      "type": "wikilink"
+    },
+    {
       "source": "newsletters/ai-garage-weekly-2026-06-20",
       "target": "people/tonbi",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/ai-garage-weekly-2026-06-20",
+      "target": "concepts/hermes-agent",
       "type": "wikilink"
     },
     {
@@ -6763,7 +6887,8 @@
       "people/tonbi",
       "people/yassif-n-m",
       "people/yaw-hog-ng",
-      "people/zaim-mohzani"
+      "people/zaim-mohzani",
+      "persons/tonbi"
     ],
     "companies": [
       "companies/ai-automation-society",
@@ -6875,7 +7000,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 180 pages",
+        "message": "Connected, 184 pages",
         "category": "ops"
       },
       {
@@ -6911,7 +7036,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 424ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 718ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -6929,7 +7054,7 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 93%, timeline 57%",
+        "message": "Entity link coverage 93%, timeline 56%",
         "category": "brain"
       },
       {
@@ -6941,13 +7066,13 @@
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 43 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 44 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 180 pages; 35 external link(s) (no bare tweets).",
+        "message": "Sampled 184 pages; 35 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -7108,11 +7233,11 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction current: 1/180 pages (1%) stale",
+        "message": "Extraction current: 7/184 pages (4%) stale",
         "details": {
-          "total": 180,
-          "stale": 1,
-          "pct": 1,
+          "total": 184,
+          "stale": 7,
+          "pct": 4,
           "warn_pct": 20,
           "fail_pct": null,
           "source_id": null
@@ -7152,7 +7277,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "50.6% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "51.1% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -7255,13 +7380,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 95% \u00b1 3.2%",
+        "message": "Coverage 95% \u00b1 3.1%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
         "status": "warn",
-        "message": "Coverage 58% \u00b1 7.5% (target 90%)",
+        "message": "Coverage 57% \u00b1 7.5% (target 90%)",
         "category": "meta"
       },
       {
