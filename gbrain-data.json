@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-06-19T23:57:33Z",
+  "updated_at": "2026-06-20T00:03:34Z",
   "summary": {
-    "score": "92",
+    "score": "83",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 129,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "55.8% of pages have inbound links",
-    "entity_links": "Coverage \u2014 24 people, 16 companies indexed",
+    "score_breakdown": "score 83/100, embed 35/35, links 25/25, timeline 2/15, orphans 11/15, dead-links 10/10",
+    "page_count": 130,
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "57.5% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 95% \u00b1 3.5%",
     "concept_count": 56,
     "meeting_count": 5,
     "person_count": 24,
     "company_count": 16,
-    "newsletter_count": 22,
+    "newsletter_count": 23,
     "video_count": 0,
     "article_count": 2,
     "bookmark_count": 1,
@@ -26,7 +26,19 @@
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 83/100 (embed 35/35, links 25/25, timeline 2/15, orphans 11/15, dead-links 10/10)",
+    "score_components": {
+      "score": "83/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "2/15",
+      "orphans": "11/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 66,
+    "checks_warned": 7,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -2882,6 +2894,18 @@
       "inbound_count": 0
     },
     {
+      "slug": "newsletters/ai-data-center-architecture-2026-06-20",
+      "title": "Ai Data Center Architecture 2026 06 20",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# The Secret Architecture Behind AI Data Centers\n\n**Original author:** Neo Kim (System Design Newsletter, issue #155)\n**Guest author:** Ashish Prajapati\n**Forwarded by:** Sayf Codes <sayfcodes@gmail.com>\n**Original date:** 2026-06-19\n**Source URI:** gmail://msg_19ee23d6478fc08e\n\n## Summary\n\nWhy AI breakthroughs are really infrastructure breakthroughs. The article builds a mental model of an AI data center as a factory, then explores the physical constraints (power, cooling, space), the compute hierarchy (CPU, GPU, DPU), memory and storage bottlenecks, and networking challenges at scale.\n\n## Key Ideas\n\n### Mental Model: AI Data Center as Factory\n- Data = Raw material\n- GPUs = Machines on the factory floor\n- Network = Internal transport system\n- Storage = Warehouse holding raw materials\n- Software = Assembly line logic\n- Output = Trained intelligence\n\n### First Problem: Physics\n1. **Power** \u2014 A single server rack of GPUs draws 80-120 kW (equivalent to ~40 homes). Limited by facility's ability to receive and distribute electricity.\n2. **Cooling** \u2014 Heat is the enemy. Modern centers adopt liquid cooling with cold plates attached directly to GPUs/CPUs, circulating coolant to heat exchangers.\n3. **Space** \u2014 Scaling AI is real estate, energy infrastructure, and thermodynamics combined, not just software.\n\n### Compute: Why GPUs Took Over\n- **CPU** = Manager (few powerful cores, complex sequential tasks)\n- **GPU** = Factory workers (thousands of simpler cores, parallel matrix multiplication)\n- **DPU** = Logistics (networking, storage I/O, security \u2014 keeps GPU/CPU focused)\n\n### Hidden Bottleneck: Memory & Storage\nGPUs fail not because they're slow \u2014 because they're starved for data. Memory hierarchy:\n- **GPU Memory (HBM)**: Blazing fast, tens of GB \u2014 the GPU's working memory\n- **CPU RAM**: Hundreds of GB, slower\n- **SSD/NVMe**: Enormous capacity\n- **Network/Object Storage**: Nearly unlimited, slowest\n\n**Key insight**: AI performance is determined by how fast data reaches the GPU, not just how fast the GPU computes.\n\nTiered storage: Hot (NVMe SSDs) \u2192 Warm (parallel file systems like Lustre, GPFS) \u2192 Cold (object storage like S3).\n\n### Networking: The Hidden Bottleneck\n- **Leaf-spine architecture** \u2014 every GPU reaches every other in at most 2 hops\n- **Speed hierarchy**: NVLink (intra-node) > InfiniBand/RoCE (inter-node) > Ethernet\n- **Amdahl's Law** \u2014 adding more GPUs eventually stops helping due to communication overhead\n- **Smarter data movement**: RDMA, kernel bypass, GPUDirect, zero-copy pipelines\n\n### Problem That Power-Guzzling Data Centers Face\n\"A data center is, at its core, a power plant combined with a massive, precisely controlled air-conditioning system.\"\n\n## Key People\n- **Neo Kim** \u2014 Author of System Design Newsletter (systemdesignone@substack.com)\n- **Ashish Prajapati** \u2014 AI infrastructure specialist, technology educator. Reached 39,000+ learners, helped 23,000+ professionals through BeSA (Become a Solutions Architect) initiative. NVIDIA-Certified Associate: AI Infrastructure and Operations (NCA-AIIO) bootcamp instructor.",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "newsletters/humanlayer-launch-2026-06-19-sayf",
       "title": "Humanlayer Launch 2026 06 19 Sayf",
       "type": "newsletter",
@@ -5222,13 +5246,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 65,
+    "brain_checks_score": 85,
     "category_scores": {
-      "brain": 95,
+      "brain": 85,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -5258,32 +5282,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -5296,9 +5298,9 @@
       {
         "name": "extract_atoms_backlog",
         "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "message": "7 page(s) eligible (below warn threshold; pack does not run extract_atoms)",
         "details": {
-          "backlog": 0,
+          "backlog": 7,
           "pack_declares_phase": false,
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
@@ -5306,8 +5308,8 @@
       },
       {
         "name": "conversation_format_coverage",
-        "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "status": "warn",
+        "message": "1/5 conversation pages (20.0%) match NO built-in pattern. Breakdown: bold-name-no-time=4, _no_match=1. Investigate: gbrain conversation-parser scan <slug> | Enable LLM fallback (opt-in): gbrain config set conversation_parser.llm_fallback_enabled true",
         "category": "brain"
       },
       {
@@ -5331,7 +5333,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 127 pages",
         "category": "ops"
       },
       {
@@ -5367,7 +5369,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 543ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -5384,26 +5386,26 @@
       },
       {
         "name": "graph_coverage",
-        "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "status": "warn",
+        "message": "Entity link coverage 93%, timeline 48% (40 entity pages). Run: gbrain extract all",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 83/100 (embed 35/35, links 25/25, timeline 2/15, orphans 11/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 39 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 127 pages; 18 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -5564,7 +5566,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 8/127 pages (6%) stale",
+        "details": {
+          "total": 127,
+          "stale": 8,
+          "pct": 6,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -5576,7 +5586,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -5588,7 +5598,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "98 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -5600,7 +5610,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "57.5% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -5703,13 +5713,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 95% \u00b1 3.5%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 49% \u00b1 8.0% (target 90%)",
         "category": "meta"
       },
       {
@@ -5727,7 +5737,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "9 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
