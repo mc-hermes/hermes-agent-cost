@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-20T04:07:33Z",
+  "updated_at": "2026-06-20T04:21:21Z",
   "summary": {
     "page_count": 19,
     "people_count": 4,
@@ -588,7 +588,7 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-20T04:07:33Z",
+      "ts": "2026-06-20T04:21:21Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
@@ -609,22 +609,6 @@
       "stage": "updated",
       "slug": "concepts/pipeline-e2e-test-2026-06-20",
       "detail": "Pipeline End-to-End Test \u2014 Jun 20 2026",
-      "level": "info"
-    },
-    {
-      "ts": "2026-06-20T00:00:00Z",
-      "source": "page",
-      "stage": "updated",
-      "slug": "concepts/zaim-career-goals-12-week-year-2026-06-16",
-      "detail": "Why Your 2026 Career Goals Are Already Dead (Zaim Newsletter)",
-      "level": "info"
-    },
-    {
-      "ts": "2026-06-20T00:00:00Z",
-      "source": "page",
-      "stage": "updated",
-      "slug": "concepts/zaim/15-minute-gap-method",
-      "detail": "15 Minute Gap Method",
       "level": "info"
     },
     {
