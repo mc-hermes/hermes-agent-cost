@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-06-20T20:33:29Z",
+  "updated_at": "2026-06-20T20:46:28Z",
   "summary": {
-    "score": "26",
+    "score": "25",
     "score_label": "/100",
-    "score_breakdown": "score 26/100, embed 0/35, links 7/25, timeline 2/15, orphans 7/15, dead-links 10/10",
-    "page_count": 242,
+    "score_breakdown": "score 25/100, embed 0/35, links 7/25, timeline 1/15, orphans 7/15, dead-links 10/10",
+    "page_count": 243,
     "embed_coverage": "No embeddings yet. Run: gbrain embed --stale",
     "graph_coverage": "graph_signals disabled \u2014 coverage not checked",
     "entity_links": "Coverage 75% \u00b1 12.5%",
@@ -15,7 +15,7 @@
     "newsletter_count": 48,
     "video_count": 0,
     "article_count": 9,
-    "bookmark_count": 6,
+    "bookmark_count": 7,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
@@ -27,12 +27,12 @@
       "image": 1,
       "spreadsheet": 1
     },
-    "score_raw": "Brain score 26/100 (embed 0/35, links 7/25, timeline 2/15, orphans 7/15, dead-links 10/10)",
+    "score_raw": "Brain score 25/100 (embed 0/35, links 7/25, timeline 1/15, orphans 7/15, dead-links 10/10)",
     "score_components": {
-      "score": "26/100",
+      "score": "25/100",
       "embed": "0/35",
       "links": "7/25",
-      "timeline": "2/15",
+      "timeline": "1/15",
       "orphans": "7/15",
       "dead-links": "10/10"
     },
@@ -304,6 +304,22 @@
       ],
       "outbound_count": 1,
       "inbound_count": 3
+    },
+    {
+      "slug": "bookmarks/hermes-assistant-to-chief-of-staff-2026-06-21",
+      "title": "Hermes Assistant To Chief Of Staff 2026 06 21",
+      "type": "bookmark",
+      "updated": "",
+      "body": "# How we turned Hermes from an assistant into our chief of staff (and how you can too)\n\n**Source:** X (Twitter)\n**Source URI:** https://x.com/ericosiu/status/2068370407049011538\n**Ingested:** 2026-06-21T04:30:00Z\n**Provenance:** Forwarded by Sayf on 2026-06-21\n\n## Overview\n\nA thread/article by **[ericosiu](https://x.com/ericosiu)** (@ericosiu, verified) about transforming Hermes (an AI assistant) from a basic text-answering/calendar-managing tool into a full chief of staff that books sales calls, revives stalled deals, and ships ad creative \u2014 all while the user is away (e.g., at the gym).\n\n### Key Thesis\n\n> \"Your Hermes probably answers texts and manages your calendar. That's cool.\n> Mine books sales calls, revives stalled deals, and ships ad creative all while I'm at the gym.\n> Wait \u2014 how's yours doing?\"\n\n[Source: X/@ericosiu, https://x.com/ericosiu/status/2068370407049011538, 2026-06-20]\n\n## Relevant Context for Maloha Coast\n\n- Directly relevant to how sayf is evolving Hermes from assistant \u2192 autonomous chief of staff\n- Ericosiu's approach mirrors sayf's own trajectory with Hermes (falconhermes orchestration, autonomous pipeline, cron-driven operations)\n- The \"how you can too\" framing suggests a playbook or guide for turning a generic AI assistant into a proactive, autonomous agent\n\n## Actions\n\n- [ ] Read the full article text (currently behind X login/JS render)\n- [ ] Extract specific automation patterns and compare with Maloha Coast setup\n- [ ] Consider reaching out to ericosiu for a conversation\n\n## References\n\n- Tweet: https://x.com/ericosiu/status/2068370407049011538\n- Article: https://x.com/i/article/2062257585613389824\n- Author: [ericosiu](https://x.com/ericosiu)",
+      "tags": [
+        "ai-agents",
+        "automation",
+        "hermes"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
     },
     {
       "slug": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-21",
@@ -8596,7 +8612,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 38 pages",
+        "message": "Connected, 39 pages",
         "category": "ops"
       },
       {
@@ -8656,7 +8672,7 @@
       {
         "name": "brain_score",
         "status": "warn",
-        "message": "Brain score 26/100 (embed 0/35, links 7/25, timeline 2/15, orphans 7/15, dead-links 10/10)",
+        "message": "Brain score 25/100 (embed 0/35, links 7/25, timeline 1/15, orphans 7/15, dead-links 10/10)",
         "category": "brain"
       },
       {
@@ -8668,7 +8684,7 @@
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 38 pages; 2 external link(s) (no bare tweets).",
+        "message": "Sampled 39 pages; 4 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -8829,7 +8845,7 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (38 pages \u2014 too few to assess)",
+        "message": "Extraction lag not applicable (39 pages \u2014 too few to assess)",
         "category": "brain"
       },
       {
@@ -8962,7 +8978,7 @@
       {
         "name": "embed_staleness",
         "status": "warn",
-        "message": "54 stale chunks (small backlog)",
+        "message": "55 stale chunks (small backlog)",
         "category": "meta"
       },
       {
