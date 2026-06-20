@@ -1,27 +1,27 @@
 {
-  "updated_at": "2026-06-20T05:00:30Z",
+  "updated_at": "2026-06-20T05:44:04Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
     "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
     "page_count": 199,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "47.2% of pages have inbound links",
+    "graph_coverage": "46.7% of pages have inbound links",
     "entity_links": "Coverage \u2014 31 people, 20 companies indexed",
-    "concept_count": 91,
+    "concept_count": 92,
     "meeting_count": 6,
     "person_count": 31,
     "company_count": 20,
     "newsletter_count": 41,
     "video_count": 0,
     "article_count": 4,
-    "bookmark_count": 3,
+    "bookmark_count": 2,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 255,
-    "outbound_count": 342,
-    "inbound_count": 304,
+    "total_links": 253,
+    "outbound_count": 338,
+    "inbound_count": 302,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -196,35 +196,14 @@
     },
     {
       "slug": "bookmarks/karpathy-llm-wiki-2026-06-20",
-      "title": "Karpathy's LLM Wiki \u2014 Persistent Knowledge Base Pattern",
-      "type": "bookmark",
+      "title": "Karpathy Llm Wiki 2026 06 20",
+      "type": "concept",
       "updated": "",
-      "body": "# Karpathy's LLM Wiki \u2014 Persistent Knowledge Base Pattern\n\n**Source:** email from Sayf Codes\n**Source URI:** gmail://msg_19ee3343b6e5b9e9\n**Ingested:** 2026-06-20T04:10:00Z\n**Provenance:** Forwarded by sayf on 2026-06-20\n\n[View original gist](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)\n\n## Executive Summary\n\nAndrej Karpathy's \"LLM Wiki\" is a pattern for using LLMs to incrementally build and maintain a persistent, interlinked knowledge base of markdown files. Unlike traditional RAG (which re-derives knowledge from raw documents on every query), the LLM Wiki **compiles knowledge once** and keeps it current \u2014 the LLM creates entity pages, revises topic summaries, flags contradictions, and updates cross-references as new sources arrive. The human curates sources and asks questions; the LLM handles all the bookkeeping that makes knowledge bases actually sustainable.\n\nThis pattern is essentially what sayf's **gbrain** system is modeled after \u2014 and this gist provides the canonical reference for the architecture.\n\n## Key Ideas\n\n1. **Persistent compounding** \u2014 The wiki is not re-derived on every query. Knowledge accumulates across sources like a living document.\n2. **Three-layer architecture:** Raw sources (immutable) \u2192 Wiki (LLM-generated markdown) \u2192 Schema (convention file like CLAUDE.md that tells the LLM how to maintain it).\n3. **Operations triad:** Ingest (read source, discuss, update ~10-15 wiki pages) \u2192 Query (search, synthesize, answer with citations) \u2192 Lint (periodic health-check for contradictions, orphans, stale claims).\n4. **Index + Log navigation:** `index.md` is a content-oriented catalog of all pages; `log.md` is a chronological append-only record of what happened.\n5. **The schema file** is the key configuration \u2014 it makes the LLM a disciplined maintainer rather than a generic chatbot. The human and LLM co-evolve it over time.\n6. **Results can be filed back** \u2014 good answers to queries (comparisons, analyses, connections) should be saved as new wiki pages, not lost in chat history.\n\n## Relevance to Maloha Coast\n\nThis gist is the closest canonical reference for the gbrain architecture that sayf has already built. The three-layer structure (raw sources \u2192 wiki/dashboard \u2192 schema) mirrors gbrain's design. Karpathy's framing around \"the LLM does the bookkeeping humans abandon\" is the same value proposition Maloha Coast delivers to clients. This bookmark should inform future development of the gbrain dashboard offering \u2014 particularly the \"schema/convention file\" concept, which gbrain currently lacks a formal equivalent for.\n\n## Entities Mentioned\n\n- [[Andrej Karpathy]] \u2014 Creator of this pattern; prominent AI researcher (ex-Director of AI at Tesla, founding member of OpenAI)\n- [[Obsidian]] \u2014 Referenced as the \"IDE\" for browsing the wiki, with graph view for navigating connections\n- [[Marp]] \u2014 Markdown-based slide deck tool, cited for generating presentations from wiki content\n\n## Tools Referenced\n\n- **Claude Code** (Anthropic) \u2014 Example LLM agent for wiki maintenance\n- **OpenAI Codex** \u2014 Example LLM agent\n- **OpenCode / Pi** \u2014 Community fork of Codex\n- **qmd** \u2014 Local search engine for markdown files with hybrid BM25/vector search (https://github.com/tobi/qmd)\n- **Obsidian Web Clipper** \u2014 Browser extension to convert articles to markdown\n- **Dataview** \u2014 Obsidian plugin for querying page frontmatter\n\n## Historical Reference\n\nThe idea is connected to Vannevar Bush's **Memex** (1945) \u2014 a personal, curated knowledge store with associative trails. Karpathy notes that Bush's vision was closer to this than to what the web became.\n\n## Related Brain Pages\n\n- gbrain architecture\n- [[Second Brain]] concept",
+      "body": "",
       "tags": [],
-      "links_out": [
-        {
-          "to": "people/andrej-karpathy",
-          "type": "wikilink",
-          "text": "Andrej Karpathy"
-        },
-        {
-          "to": "Obsidian",
-          "type": "wikilink",
-          "text": "Obsidian"
-        },
-        {
-          "to": "Marp",
-          "type": "wikilink",
-          "text": "Marp"
-        },
-        {
-          "to": "newsletters/claude-second-brain-levels-2026-06-19",
-          "type": "wikilink",
-          "text": "Second Brain"
-        }
-      ],
+      "links_out": [],
       "backlinks": [],
-      "outbound_count": 4,
+      "outbound_count": 0,
       "inbound_count": 0
     },
     {
@@ -4263,15 +4242,9 @@
       "body": "# Every Level of a Claude Second Brain Explained\n\n**Source:** AI Automation Society Newsletter (Nate Herk)\n**From:** Nate Herk <nate@aiautomationsociety.ai>\n**Forwarded by:** Sayf\n**Date:** June 19, 2026\n**Source URI:** gmail://msg_19ee2dfa87f86548\n\nA Claude second brain breakdown, a client pipeline automated, and Codex hits 5M users with a free bonus through June 24.\n\n## In This Issue\n\n- Five levels of building a Claude second brain, from basic file search to fully autonomous recall.\n- Robert automated a client's outbound email pipeline and got their call center actually following up.\n- OpenAI's Codex just crossed 5 million weekly users, with a free bonus through June 24.\n\n## New Video: Every Level of a Claude Second Brain Explained\n\nThere are five distinct levels to building a Claude second brain, and most people are stuck at level one.\n\nLevel one is just finding a file by searching an exact word. Level five is a fully autonomous system that knows your business, your client relationships, and your IP better than you do. The difference between them isn't the tool \u2014 it's how the data is organized.\n\n**The insight that changes how you build:** Start from the end. Before you organize a single file, ask how you'll access this data later. The shape of the basketball determines the size of the hoop. Jon shows his actual setup (a Herku project, just markdown files and folders) and walks through what separates each level, including semantic search (finding by meaning, not exact match) and full relationship mapping.\n\n**How this helps you:** Your moat is your data. This video shows you how to actually organize it so your agents can use it, not just find it.\n\n## Winning Is All We Do\n\nRobert automated a client's outbound email pipeline from scratch.\n\n**What happened:** Robert's client had a call center calling leads, but nothing was following up by email. Sales managers emailed Robert their daily lead lists as Excel files. He built an automation that handles the rest: when the file lands in his inbox, it extracts the email, address, and name data, normalizes it (no more \"N123 MAIN STREET\" showing up as a deliverable address), and uploads every contact directly into Instantly as a ready-to-run campaign. No manual cleanup. No copy-paste.\n\n**The opportunity:** Businesses running call centers almost always have messy lead data and no email follow-up. An automation that converts a spreadsheet into a live campaign solves a problem they didn't know anyone could fix.\n\nThis is one of many success stories from AI Automation Society Plus.\n\n## In the News: Codex Hits 5M Weekly Users\n\nOpenAI Codex has crossed 5 million weekly active users and launched two features alongside the milestone. One is permanent: banked rate limit resets. Instead of your weekly limit resetting on a fixed timer (whether you need it or not), you can now save resets and use them when you actually need them. The other runs through June 24: Plus and Pro users can invite up to three friends to try Codex. When a friend sends their first Codex message, you both get a bonus reset.\n\n**How it affects you:** If you've been hitting Codex rate limits at the wrong moment mid-build, the banked reset system fixes that. You decide when to use your reset, not the clock. And if you're not hitting limits yet, the referral is easy headroom to bank before the window closes. The bigger signal here: Codex is now growing through referral mechanics at 5 million weekly users. [Source: AI Automation Society Newsletter, 2026-06-19]\n\n## Key People Mentioned\n\n- **Jon** \u2014 Shows his actual Claude second brain setup (Herku project, markdown files and folders)\n- **Robert** \u2014 AI Automation Society student who automated a call center client's email pipeline\n- **Nate Herk** \u2014 Author, AI Automation Society",
       "tags": [],
       "links_out": [],
-      "backlinks": [
-        {
-          "from": "bookmarks/karpathy-llm-wiki-2026-06-20",
-          "type": "wikilink",
-          "text": "Second Brain"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 0,
-      "inbound_count": 1
+      "inbound_count": 0
     },
     {
       "slug": "newsletters/claude-second-brain-levels-2026-06-20",
@@ -4971,18 +4944,13 @@
       ],
       "backlinks": [
         {
-          "from": "bookmarks/karpathy-llm-wiki-2026-06-20",
-          "type": "wikilink",
-          "text": "Andrej Karpathy"
-        },
-        {
           "from": "bookmarks/karpathy-llm-wiki-gist-2026-06-20",
           "type": "wikilink",
           "text": "Andrej Karpathy"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 2
+      "inbound_count": 1
     },
     {
       "slug": "people/ashish-prajapati",
@@ -6195,16 +6163,6 @@
     {
       "source": "bookmarks/agent-skills-by-addy-osmani",
       "target": "bookmarks/agent-skills-by-addy-osmani",
-      "type": "wikilink"
-    },
-    {
-      "source": "bookmarks/karpathy-llm-wiki-2026-06-20",
-      "target": "people/andrej-karpathy",
-      "type": "wikilink"
-    },
-    {
-      "source": "bookmarks/karpathy-llm-wiki-2026-06-20",
-      "target": "newsletters/claude-second-brain-levels-2026-06-19",
       "type": "wikilink"
     },
     {
