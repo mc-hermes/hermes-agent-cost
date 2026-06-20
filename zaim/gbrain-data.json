@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-20T12:27:55Z",
+  "updated_at": "2026-06-20T13:00:31Z",
   "summary": {
     "page_count": 19,
     "people_count": 4,
@@ -588,19 +588,11 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-20T12:27:55Z",
+      "ts": "2026-06-20T13:00:31Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
       "detail": "Dashboard refreshed \u2014 19 pages, 8 links",
-      "level": "info"
-    },
-    {
-      "ts": "2026-06-20T00:00:00Z",
-      "source": "page",
-      "stage": "updated",
-      "slug": "newsletters/zaim-career-goals-2026-06-16",
-      "detail": "Zaim Career Goals 2026 06 16",
       "level": "info"
     }
   ]

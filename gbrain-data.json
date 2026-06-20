@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-06-20T12:27:48Z",
+  "updated_at": "2026-06-20T13:00:22Z",
   "summary": {
-    "score": "82",
+    "score": "92",
     "score_label": "/100",
-    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
-    "page_count": 221,
-    "embed_coverage": "100% coverage, 0 missing",
-    "graph_coverage": "47.5% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
-    "entity_links": "Coverage 93% \u00b1 3.6%",
+    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
+    "page_count": 231,
+    "embed_coverage": "100% coverage \u2014 all pages embedded",
+    "graph_coverage": "46.8% of pages have inbound links",
+    "entity_links": "Coverage \u2014 36 people, 25 companies indexed",
     "concept_count": 94,
-    "meeting_count": 6,
-    "person_count": 31,
-    "company_count": 23,
+    "meeting_count": 9,
+    "person_count": 36,
+    "company_count": 25,
     "newsletter_count": 51,
     "video_count": 0,
     "article_count": 8,
@@ -19,26 +19,14 @@
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 288,
-    "outbound_count": 365,
-    "inbound_count": 336,
+    "total_links": 293,
+    "outbound_count": 370,
+    "inbound_count": 341,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    },
-    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
-    "score_components": {
-      "score": "82/100",
-      "embed": "35/35",
-      "links": "25/25",
-      "timeline": "3/15",
-      "orphans": "9/15",
-      "dead-links": "10/10"
-    },
-    "checks_passed": 66,
-    "checks_warned": 7,
-    "checks_failed": 0
+    }
   },
   "pages": [
     {
@@ -745,6 +733,28 @@
       "inbound_count": 6
     },
     {
+      "slug": "companies/eduspark",
+      "title": "EduSpark",
+      "type": "company",
+      "updated": "",
+      "body": "**Website:** eduspark.io\n**Industry:** Education Technology\n**Size:** 20-50 employees\n**HQ:** Austin, TX\n\n## Overview\nAI-native education platform. Strategic partner of Maloha Coast.\n\n## Key Contacts\n- [[Aisha Patel]] - CTO\n\n## Partnership\n- Co-developing AI tutoring MVP\n- Revenue share model under discussion",
+      "tags": [
+        "education",
+        "linkedin-demo",
+        "partner-company"
+      ],
+      "links_out": [
+        {
+          "to": "people/aisha-patel",
+          "type": "wikilink",
+          "text": "Aisha Patel"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
+      "inbound_count": 0
+    },
+    {
       "slug": "companies/global-ai-village",
       "title": "Global Ai Village",
       "type": "company",
@@ -1339,13 +1349,17 @@
       "title": "Stripe",
       "type": "company",
       "updated": "",
-      "body": "# Stripe\n\n> Payment processing platform. Mentioned in context of potential premium wiki payment integration for Agent Wikis.\n\n## Related\n\n- [[newsletters/ai-garage-weekly-2026-06-19]] \u2014 Payment integration consideration",
-      "tags": [],
+      "body": "**Website:** stripe.com\n**Industry:** Financial Technology\n**Size:** 7,000+ employees\n**HQ:** San Francisco, CA\n\n## Overview\nGlobal payment infrastructure company. Developer tools division exploring \nAI-assisted development workflows.\n\n## Key Contacts\n- [[Sarah Chen]] - VP Engineering (decision maker)\n\n## Notes\n- Target: Developer tools AI initiative\n- Sarah Chen is the primary contact\n- Budget cycle: Q3 2026",
+      "tags": [
+        "fintech",
+        "linkedin-demo",
+        "prospect-company"
+      ],
       "links_out": [
         {
-          "to": "newsletters/ai-garage-weekly-2026-06-19",
+          "to": "interactions/call-sarah-chen-2026-06-15",
           "type": "wikilink",
-          "text": "newsletters/ai-garage-weekly-2026-06-19"
+          "text": "Sarah Chen"
         }
       ],
       "backlinks": [],
@@ -1440,6 +1454,28 @@
       ],
       "outbound_count": 6,
       "inbound_count": 8
+    },
+    {
+      "slug": "companies/thompson-legal",
+      "title": "Thompson Legal",
+      "type": "company",
+      "updated": "",
+      "body": "**Website:** thompsonlegal.com\n**Industry:** Legal Services\n**Size:** 50-200 employees\n**HQ:** Chicago, IL\n\n## Overview\nMid-size corporate law firm. Current client of Maloha Coast for AI-powered \ncontract review and document analysis.\n\n## Key Contacts\n- [[Marcus Thompson]] - Managing Partner\n\n## Active Projects\n- Contract analysis AI system (in development)\n- Document review automation (scoping)",
+      "tags": [
+        "client-company",
+        "legal",
+        "linkedin-demo"
+      ],
+      "links_out": [
+        {
+          "to": "people/marcus-thompson",
+          "type": "wikilink",
+          "text": "Marcus Thompson"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
+      "inbound_count": 0
     },
     {
       "slug": "companies/zhipu-ai",
@@ -3961,6 +3997,95 @@
       "inbound_count": 0
     },
     {
+      "slug": "interactions/call-sarah-chen-2026-06-15",
+      "title": "Call with Sarah Chen - AI Initiative Discussion",
+      "type": "meeting",
+      "updated": "",
+      "body": "**Date:** 2026-06-15\n**Type:** Discovery Call\n**Duration:** 45 minutes\n**With:** [[Sarah Chen]]\n\n## Summary\nSarah outlined Stripe's developer tools AI initiative. They're looking for external \nconsulting partners to help build internal AI-assisted development workflows. \nBudget is approved for Q3 2026.\n\n## Key Points\n- Need: AI code review assistant for internal tools\n- Timeline: 3-month pilot starting September\n- Budget: $80-120k for pilot phase\n- Decision process: Sarah + 2 technical leads\n\n## Action Items\n- Send technical proposal by June 22\n- Schedule follow-up with technical team\n- Share case studies from similar fintech projects",
+      "tags": [
+        "call",
+        "interaction",
+        "linkedin-demo"
+      ],
+      "links_out": [
+        {
+          "to": "interactions/call-sarah-chen-2026-06-15",
+          "type": "wikilink",
+          "text": "Sarah Chen"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "companies/stripe",
+          "type": "wikilink",
+          "text": "Sarah Chen"
+        },
+        {
+          "from": "interactions/call-sarah-chen-2026-06-15",
+          "type": "wikilink",
+          "text": "Sarah Chen"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 2
+    },
+    {
+      "slug": "interactions/email-david-park-2026-06-18",
+      "title": "Email from David Park - Proposal Status",
+      "type": "meeting",
+      "updated": "",
+      "body": "**Date:** 2026-06-18\n**Type:** Email\n**With:** [[David Park]]\n\n## Summary\nDavid confirmed receipt of our AI diagnostic assistant proposal. The compliance \nteam is reviewing it now. He estimates 1-2 weeks for their process.\n\n## Key Points\n- Proposal well-received by innovation team\n- Compliance review is the bottleneck\n- David is advocating internally\n- Wants to schedule demo for his team\n\n## Action Items\n- Prepare demo environment\n- Send compliance documentation\n- Follow up June 25 if no update",
+      "tags": [
+        "email",
+        "interaction",
+        "linkedin-demo"
+      ],
+      "links_out": [
+        {
+          "to": "interactions/email-david-park-2026-06-18",
+          "type": "wikilink",
+          "text": "David Park"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "interactions/email-david-park-2026-06-18",
+          "type": "wikilink",
+          "text": "David Park"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 1
+    },
+    {
+      "slug": "interactions/meeting-rachel-kim-2026-06-17",
+      "title": "Meeting with Rachel Kim - ShopStream AI Needs",
+      "type": "meeting",
+      "updated": "",
+      "body": "**Date:** 2026-06-17\n**Type:** Requirements Workshop\n**Duration:** 60 minutes\n**With:** [[Rachel Kim]]\n\n## Summary\nDetailed walkthrough of ShopStream's customer service and inventory challenges. \nRachel needs a phased approach starting with customer service chatbot.\n\n## Key Points\n- Phase 1: AI customer service chatbot (urgent)\n- Phase 2: Inventory prediction ML model\n- Current pain: 3-day response time on tickets\n- Target: under 2 hour automated resolution for 70% queries\n\n## Action Items\n- Draft proposal with phased pricing\n- Share chatbot demo\n- Decision expected within 2 weeks",
+      "tags": [
+        "interaction",
+        "linkedin-demo",
+        "meeting"
+      ],
+      "links_out": [
+        {
+          "to": "interactions/meeting-rachel-kim-2026-06-17",
+          "type": "wikilink",
+          "text": "Rachel Kim"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "interactions/meeting-rachel-kim-2026-06-17",
+          "type": "wikilink",
+          "text": "Rachel Kim"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 1
+    },
+    {
       "slug": "maloha-coast",
       "title": "Maloha Coast",
       "type": "concept",
@@ -4423,11 +4548,6 @@
           "text": "newsletters/ai-garage-weekly-2026-06-19"
         },
         {
-          "from": "companies/stripe",
-          "type": "wikilink",
-          "text": "newsletters/ai-garage-weekly-2026-06-19"
-        },
-        {
           "from": "companies/zhipu-ai",
           "type": "wikilink",
           "text": "ai-garage-weekly-2026-06-19"
@@ -4444,7 +4564,7 @@
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 6
+      "inbound_count": 5
     },
     {
       "slug": "newsletters/ai-garage-weekly-2026-06-20",
@@ -5395,6 +5515,28 @@
       "inbound_count": 0
     },
     {
+      "slug": "people/aisha-patel",
+      "title": "Aisha Patel",
+      "type": "person",
+      "updated": "",
+      "body": "**Role:** CTO at EduSpark\n**Location:** Austin, TX\n**LinkedIn:** linkedin.com/in/aishapatel\n**Email:** aisha@eduspark.io\n**Phone:** +1-512-555-0303\n\n## Bio\nAisha is building an AI-native education platform. Formerly at Duolingo and Khan Academy.\nStrategic partner for Maloha Coast's education sector expansion.\n\n## Notes\n- Connected via mutual contact (Sarah Chen)\n- Partnership discussions started April 2026\n- Co-developing AI tutoring system\n- Revenue share model being negotiated\n- Technical visionary, fast decision-maker",
+      "tags": [
+        "education",
+        "linkedin-demo",
+        "partner"
+      ],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "companies/eduspark",
+          "type": "wikilink",
+          "text": "Aisha Patel"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 1
+    },
+    {
       "slug": "people/aisyah-humaira-wan-aziz",
       "title": "Aisyah Humaira Wan Aziz (Maira)",
       "type": "person",
@@ -5730,6 +5872,22 @@
       "inbound_count": 2
     },
     {
+      "slug": "people/david-park",
+      "title": "David Park",
+      "type": "person",
+      "updated": "",
+      "body": "**Role:** Director of Innovation at MedCore Health\n**Location:** Boston, MA\n**LinkedIn:** linkedin.com/in/davidparkmd\n**Email:** dpark@medcore.com\n**Phone:** +1-617-555-0404\n\n## Bio\nDavid oversees digital transformation at MedCore, a regional healthcare network.\nInterested in AI for patient triage, medical records analysis, and operational\nefficiency. Currently evaluating vendors.\n\n## Notes\n- Inbound lead from LinkedIn outreach\n- Initial call completed - very interested\n- Sent proposal for AI diagnostic assistant\n- Waiting on compliance team review\n- Estimated deal: $45k for Phase 1",
+      "tags": [
+        "healthcare",
+        "lead",
+        "linkedin-demo"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "people/dex-horthy",
       "title": "Dex Horthy",
       "type": "person",
@@ -5969,6 +6127,28 @@
       "inbound_count": 1
     },
     {
+      "slug": "people/marcus-thompson",
+      "title": "Marcus Thompson",
+      "type": "person",
+      "updated": "",
+      "body": "**Role:** Managing Partner at Thompson Legal\n**Location:** Chicago, IL\n**LinkedIn:** linkedin.com/in/marcusthompson\n**Email:** marcus@thompsonlegal.com\n**Phone:** +1-312-555-0202\n**Website:** thompsonlegal.com\n\n## Bio\nMarcus runs a mid-size law firm specializing in corporate law. They're exploring AI \nfor document review and contract analysis. Current client of Maloha Coast.\n\n## Notes\n- Signed on as client Jan 2026\n- Current project: AI-powered contract review system\n- Next milestone: MVP demo scheduled for next month\n- Budget-conscious but values quality\n- Prefers phone calls over emails",
+      "tags": [
+        "client",
+        "legal",
+        "linkedin-demo"
+      ],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "companies/thompson-legal",
+          "type": "wikilink",
+          "text": "Marcus Thompson"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 1
+    },
+    {
       "slug": "people/nabil-jalil",
       "title": "Nabil Jalil",
       "type": "person",
@@ -6201,6 +6381,22 @@
       "inbound_count": 5
     },
     {
+      "slug": "people/rachel-kim",
+      "title": "Rachel Kim",
+      "type": "person",
+      "updated": "",
+      "body": "**Role:** COO at ShopStream\n**Location:** New York, NY\n**LinkedIn:** linkedin.com/in/rachelkim\n**Email:** rachel@shopstream.com\n**Phone:** +1-212-555-0505\n\n## Bio\nRachel runs operations at ShopStream, a mid-market e-commerce platform. Looking to \nimplement AI for customer service automation and inventory prediction.\n\n## Notes\n- Contacted us after reading LinkedIn article\n- Needs: customer service chatbot + inventory ML\n- 2 meetings completed\n- Draft proposal stage\n- Decision expected within 2 weeks",
+      "tags": [
+        "linkedin-demo",
+        "prospect",
+        "retail"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "people/robert",
       "title": "Robert",
       "type": "person",
@@ -6231,6 +6427,22 @@
       ],
       "outbound_count": 1,
       "inbound_count": 2
+    },
+    {
+      "slug": "people/sarah-chen",
+      "title": "Sarah Chen",
+      "type": "person",
+      "updated": "",
+      "body": "**Role:** VP Engineering at Stripe\n**Location:** San Francisco, CA\n**LinkedIn:** linkedin.com/in/sarahchen\n**Email:** sarah@example.com\n**Phone:** +1-415-555-0101\n**Website:** sarahchen.dev\n\n## Bio\nSarah leads the payments infrastructure team at Stripe. Previously at Square and Plaid. \nInterested in AI/ML for fintech applications.\n\n## Notes\n- Met at Stripe's developer conference (March 2026)\n- Very technical, prefers async communication\n- Budget approved for Q3 AI initiative\n- Key decision maker for tooling purchases\n- Follow up by end of month",
+      "tags": [
+        "linkedin-demo",
+        "prospect",
+        "tech"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
     },
     {
       "slug": "people/sayf-codes",
@@ -6913,6 +7125,11 @@
       "type": "wikilink"
     },
     {
+      "source": "companies/eduspark",
+      "target": "people/aisha-patel",
+      "type": "wikilink"
+    },
+    {
       "source": "companies/herku",
       "target": "newsletters/claude-second-brain-levels-2026-06-20",
       "type": "wikilink"
@@ -6989,7 +7206,7 @@
     },
     {
       "source": "companies/stripe",
-      "target": "newsletters/ai-garage-weekly-2026-06-19",
+      "target": "interactions/call-sarah-chen-2026-06-15",
       "type": "wikilink"
     },
     {
@@ -7015,6 +7232,11 @@
     {
       "source": "companies/system-design-one",
       "target": "people/paul-hoekstra",
+      "type": "wikilink"
+    },
+    {
+      "source": "companies/thompson-legal",
+      "target": "people/marcus-thompson",
       "type": "wikilink"
     },
     {
@@ -7788,6 +8010,21 @@
       "type": "wikilink"
     },
     {
+      "source": "interactions/call-sarah-chen-2026-06-15",
+      "target": "interactions/call-sarah-chen-2026-06-15",
+      "type": "wikilink"
+    },
+    {
+      "source": "interactions/email-david-park-2026-06-18",
+      "target": "interactions/email-david-park-2026-06-18",
+      "type": "wikilink"
+    },
+    {
+      "source": "interactions/meeting-rachel-kim-2026-06-17",
+      "target": "interactions/meeting-rachel-kim-2026-06-17",
+      "type": "wikilink"
+    },
+    {
       "source": "meetings/2026-06-05-tj-vandermolen",
       "target": "people/tj-vandermolen",
       "type": "link"
@@ -8227,6 +8464,7 @@
     "people": [
       "people/addy-osmani",
       "people/adrian-js-mastery",
+      "people/aisha-patel",
       "people/aisyah-humaira-wan-aziz",
       "people/aisyah-rahim",
       "people/andrej-karpathy",
@@ -8236,18 +8474,22 @@
       "people/bjarte",
       "people/bob-proctor",
       "people/carson",
+      "people/david-park",
       "people/dex-horthy",
       "people/dexter-horthy",
       "people/jake-van-cleef",
       "people/jon",
       "people/kyle",
       "people/liyana",
+      "people/marcus-thompson",
       "people/nabil-jalil",
       "people/nate-herk",
       "people/neo-kim",
       "people/nick-milo",
       "people/paul-hoekstra",
+      "people/rachel-kim",
       "people/robert",
+      "people/sarah-chen",
       "people/sayf-codes",
       "people/tj-vandermolen",
       "people/tonbi",
@@ -8265,6 +8507,7 @@
       "companies/blackgrid-digital",
       "companies/digital-power",
       "companies/dynamics-orchard-farm-sdn-bhd",
+      "companies/eduspark",
       "companies/global-ai-village",
       "companies/herku",
       "companies/humanlayer",
@@ -8280,19 +8523,20 @@
       "companies/solo-satoshi",
       "companies/stripe",
       "companies/system-design-one",
+      "companies/thompson-legal",
       "companies/zhipu-ai"
     ]
   },
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 65,
-    "brain_checks_score": 85,
+    "health_score": 80,
+    "brain_checks_score": 95,
     "category_scores": {
-      "brain": 85,
+      "brain": 95,
       "skill": 100,
       "ops": 95,
-      "meta": 85
+      "meta": 90
     },
     "checks": [
       {
@@ -8322,10 +8566,32 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "no extractions in last 7 days",
+        "message": "2 kind(s) tracked, all halt rates below 10%",
         "details": {
           "schema_version": 1,
-          "kinds": []
+          "kinds": [
+            {
+              "kind": "facts.fence",
+              "cost_7d_usd": 0,
+              "eval_pass_count": 0,
+              "eval_fail_count": 0,
+              "halt_count": 0,
+              "round_completed_count": 1,
+              "halt_rate": 0,
+              "last_updated_at": "2026-06-08T15:03:15.502Z"
+            },
+            {
+              "kind": "takes.proposed",
+              "cost_7d_usd": 0,
+              "eval_pass_count": 0,
+              "eval_fail_count": 0,
+              "halt_count": 0,
+              "round_completed_count": 1,
+              "halt_rate": 0,
+              "last_updated_at": "2026-06-08T15:03:16.068Z"
+            }
+          ],
+          "rollup_write_failures_7d": 0
         },
         "category": "brain"
       },
@@ -8337,20 +8603,19 @@
       },
       {
         "name": "extract_atoms_backlog",
-        "status": "warn",
-        "message": "14 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
+        "status": "ok",
+        "message": "no pages awaiting atom extraction",
         "details": {
-          "backlog": 14,
+          "backlog": 0,
           "pack_declares_phase": false,
-          "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
         "category": "brain"
       },
       {
         "name": "conversation_format_coverage",
-        "status": "warn",
-        "message": "1/6 conversation pages (16.7%) match NO built-in pattern. Breakdown: bold-name-no-time=5, _no_match=1. Investigate: gbrain conversation-parser scan <slug> | Enable LLM fallback (opt-in): gbrain config set conversation_parser.llm_fallback_enabled true",
+        "status": "ok",
+        "message": "No conversation-type pages \u2014 coverage check not applicable",
         "category": "brain"
       },
       {
@@ -8374,7 +8639,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 219 pages",
+        "message": "Connected, 43 pages",
         "category": "ops"
       },
       {
@@ -8410,7 +8675,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 643ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -8428,25 +8693,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 60%",
+        "message": "Entity link coverage 91%, timeline 100%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
+        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 54 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 219 pages; 32 external link(s) (no bare tweets).",
+        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
         "category": "brain"
       },
       {
@@ -8607,15 +8872,7 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction current: 0/219 pages (0%) stale",
-        "details": {
-          "total": 219,
-          "stale": 0,
-          "pct": 0,
-          "warn_pct": 20,
-          "fail_pct": null,
-          "source_id": null
-        },
+        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
         "category": "brain"
       },
       {
@@ -8627,7 +8884,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -8639,7 +8896,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "143 reranker failure(s) in last 7 days (below threshold)",
+        "message": "83 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -8651,7 +8908,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "47.5% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -8754,13 +9011,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 93% \u00b1 3.6%",
+        "message": "Coverage 91% \u00b1 6.1%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "warn",
-        "message": "Coverage 61% \u00b1 6.6% (target 90%)",
+        "status": "ok",
+        "message": "Coverage 100% \u00b1 0.0%",
         "category": "meta"
       },
       {
@@ -8778,7 +9035,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "9 distinct typed values (pack declares 25)",
+        "message": "4 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
