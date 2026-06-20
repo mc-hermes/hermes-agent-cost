@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-20T04:00:37Z",
+  "updated_at": "2026-06-20T04:07:33Z",
   "summary": {
     "page_count": 19,
     "people_count": 4,
@@ -588,7 +588,7 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-20T04:00:37Z",
+      "ts": "2026-06-20T04:07:33Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
@@ -625,14 +625,6 @@
       "stage": "updated",
       "slug": "concepts/zaim/15-minute-gap-method",
       "detail": "15 Minute Gap Method",
-      "level": "info"
-    },
-    {
-      "ts": "2026-06-20T00:00:00Z",
-      "source": "page",
-      "stage": "updated",
-      "slug": "concepts/zaim/3-month-career-pivot-framework",
-      "detail": "3 Month Career Pivot Framework",
       "level": "info"
     },
     {
