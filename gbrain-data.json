@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-06-20T05:44:04Z",
+  "updated_at": "2026-06-20T05:58:17Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
     "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 199,
+    "page_count": 201,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "46.7% of pages have inbound links",
+    "graph_coverage": "44.3% of pages have inbound links",
     "entity_links": "Coverage \u2014 31 people, 20 companies indexed",
     "concept_count": 92,
     "meeting_count": 6,
@@ -14,14 +14,14 @@
     "company_count": 20,
     "newsletter_count": 41,
     "video_count": 0,
-    "article_count": 4,
+    "article_count": 6,
     "bookmark_count": 2,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 253,
-    "outbound_count": 338,
-    "inbound_count": 302,
+    "total_links": 252,
+    "outbound_count": 325,
+    "inbound_count": 295,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -114,6 +114,52 @@
       "backlinks": [],
       "outbound_count": 0,
       "inbound_count": 0
+    },
+    {
+      "slug": "articles/30-agentic-engineering-concepts-2026-06-17",
+      "title": "30 Core Agentic Engineering Concepts, Explained Simply",
+      "type": "article",
+      "updated": "",
+      "body": "# 30 Core Agentic Engineering Concepts, Explained Simply (System Design One)\n\n**Source:** email\n**Source URI:** gmail://msg_19ee2580f5fe7903\n**Ingested:** 2026-06-20T05:44:15Z\n**Provenance:** Forwarded by sayf on 2026-06-20, originally from Neo Kim / System Design One (Substack #154)\n\n**Authors:** Neo Kim and Paul Hoekstra\n**Date:** June 17, 2026\n\nPaul Hoekstra is a data engineer at Digital Power (data and AI consultancy), writes Paul's Pipeline newsletter.\n\n## Summary\n\nA comprehensive guide to agentic engineering concepts organized into 6 layers: Foundations, Configuration, Capability, Orchestration, Guardrails, and Observability. The thesis: learn the ideas behind the tools, not the tools themselves \u2014 the pace of new tooling is too fast to chase.\n\n## The Six Layers\n\n### Foundations\n1. **What is an agent?** \u2014 An LLM that runs in a loop, has tool access, and decides what to do next. Produces chains of actions.\n2. **[More content in full article]**\n\n### Configuration\n- Config files, reusable workflows, prompt caching, context rot limits\n\n### Capability\n- Live documentation, AI-native search, long-term memory, knowledge the agent queries but never owns\n\n### Orchestration\n- Coordinating multiple agents without conflict\n\n### Guardrails\n- Sandboxing, permissions, hooks, commit gates\n\n### Observability\n- Tracing, logging, replay, metrics",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "companies/digital-power",
+          "type": "wikilink",
+          "text": "30 Core Agentic Engineering Concepts, Explained Simply"
+        },
+        {
+          "from": "concepts/pauls-pipeline",
+          "type": "wikilink",
+          "text": "30 Core Agentic Engineering Concepts, Explained Simply"
+        },
+        {
+          "from": "people/paul-hoekstra",
+          "type": "wikilink",
+          "text": "30 Core Agentic Engineering Concepts, Explained Simply"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 3
+    },
+    {
+      "slug": "articles/ai-data-center-architecture-2026-06-19",
+      "title": "The Secret Architecture Behind AI Data Centers",
+      "type": "article",
+      "updated": "",
+      "body": "# The Secret Architecture Behind AI Data Centers (System Design One)\n\n**Source:** email\n**Source URI:** gmail://msg_19ee23d6478fc08e\n**Ingested:** 2026-06-20T05:44:15Z\n**Provenance:** Forwarded by sayf on 2026-06-20, originally from Neo Kim / System Design One (Substack #155)\n\n**Authors:** Neo Kim and Ashish Prajapati\n**Date:** June 19, 2026\n\nAshish Prajapati is an AI infrastructure specialist and technology educator. His training programs have reached 39,000+ learners. Runs \"Become a Solutions Architect (BeSA)\" mentoring initiative (23,000+ professionals helped).\n\n## Summary\n\n#155 of System Design One. Thesis: The biggest breakthroughs in AI are not coming from better models \u2014 they're coming from better infrastructure.\n\n### Key Topics (preview \u2014 subscriber-only post)\n1. **The hidden architecture behind AI** \u2014 Models are only the visible tip of a much larger infrastructure stack.\n2. **Physics that limit AI growth** \u2014 Power, cooling, and space shape every AI data center.\n3. **Why GPUs became the backbone** \u2014 Architectural advantages that made modern AI training possible.\n4. **Real bottlenecks** \u2014 Memory, networking, coordination at scale.\n5. **How thousands of GPUs work together** \u2014 Software, networking, and orchestration layers.\n\n### Partner Content\n- CodeRabbit Review: AI code review that reorganizes PRs into logical layer-by-layer walkthroughs with cohorts, layers, code peek, and semantic diff views.",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "concepts/ai-data-center-architecture-2026-06-20",
+          "type": "wikilink",
+          "text": "AI Data Centers"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 1
     },
     {
       "slug": "articles/humanlayer-launch-2026-06-19",
@@ -339,18 +385,13 @@
           "text": "AI Automation Society"
         },
         {
-          "from": "newsletters/claude-second-brain-levels-2026-06-20",
-          "type": "wikilink",
-          "text": "AI Automation Society"
-        },
-        {
           "from": "people/carson",
           "type": "link",
           "text": "AI Automation Society"
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 4
+      "inbound_count": 3
     },
     {
       "slug": "companies/ai-garage-weekly",
@@ -381,15 +422,9 @@
           "text": "Agent Wikis"
         }
       ],
-      "backlinks": [
-        {
-          "from": "newsletters/ai-garage-weekly-2026-06-19",
-          "type": "wikilink",
-          "text": "AI Garage Weekly"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 3,
-      "inbound_count": 1
+      "inbound_count": 0
     },
     {
       "slug": "companies/anthropic",
@@ -404,7 +439,7 @@
       ],
       "links_out": [
         {
-          "to": "AI Garage Weekly - June 19, 2026",
+          "to": "newsletters/ai-garage-weekly-2026-06-19",
           "type": "wikilink",
           "text": "AI Garage Weekly - June 19, 2026"
         }
@@ -426,11 +461,6 @@
           "text": "Anthropic"
         },
         {
-          "from": "newsletters/ai-garage-weekly-2026-06-19",
-          "type": "wikilink",
-          "text": "Anthropic"
-        },
-        {
           "from": "newsletters/ai-garage-weekly-2026-06-20",
           "type": "wikilink",
           "text": "Anthropic"
@@ -442,7 +472,7 @@
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 6
+      "inbound_count": 5
     },
     {
       "slug": "companies/blackgrid-digital",
@@ -474,7 +504,7 @@
       ],
       "links_out": [
         {
-          "to": "newsletters/agentic-engineering-concepts-2026-06-20",
+          "to": "articles/30-agentic-engineering-concepts-2026-06-17",
           "type": "wikilink",
           "text": "30 Core Agentic Engineering Concepts, Explained Simply"
         },
@@ -840,7 +870,7 @@
       ],
       "links_out": [
         {
-          "to": "AI Garage Weekly - June 19, 2026",
+          "to": "newsletters/ai-garage-weekly-2026-06-19",
           "type": "wikilink",
           "text": "AI Garage Weekly - June 19, 2026"
         }
@@ -1184,15 +1214,10 @@
           "from": "concepts/glm-5-2",
           "type": "wikilink",
           "text": "Zhipu AI"
-        },
-        {
-          "from": "newsletters/ai-garage-weekly-2026-06-19",
-          "type": "wikilink",
-          "text": "Zhipu AI"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 2
+      "inbound_count": 1
     },
     {
       "slug": "concepts/2026-06-03",
@@ -1323,18 +1348,13 @@
           "text": "Agent Wikis"
         },
         {
-          "from": "newsletters/ai-garage-weekly-2026-06-19",
-          "type": "wikilink",
-          "text": "Agent Wikis"
-        },
-        {
           "from": "newsletters/ai-garage-weekly-2026-06-20",
           "type": "wikilink",
           "text": "Agent Wikis"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 3
+      "inbound_count": 2
     },
     {
       "slug": "concepts/ai-data-center-architecture-2026-06-20",
@@ -1355,7 +1375,7 @@
           "text": "Ashish Prajapati"
         },
         {
-          "to": "concepts/ai-data-centers",
+          "to": "articles/ai-data-center-architecture-2026-06-19",
           "type": "wikilink",
           "text": "AI Data Centers"
         },
@@ -1432,15 +1452,9 @@
           "text": "AI Data Center Architecture"
         }
       ],
-      "backlinks": [
-        {
-          "from": "concepts/ai-data-center-architecture-2026-06-20",
-          "type": "wikilink",
-          "text": "AI Data Centers"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 1,
-      "inbound_count": 1
+      "inbound_count": 0
     },
     {
       "slug": "concepts/architecture/agent-hierarchy",
@@ -1714,20 +1728,14 @@
       "tags": [],
       "links_out": [
         {
-          "to": "AI Garage Weekly - June 19, 2026",
+          "to": "newsletters/ai-garage-weekly-2026-06-19",
           "type": "wikilink",
           "text": "AI Garage Weekly - June 19, 2026"
         }
       ],
-      "backlinks": [
-        {
-          "from": "newsletters/ai-garage-weekly-2026-06-19",
-          "type": "wikilink",
-          "text": "DR-DCI"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 1,
-      "inbound_count": 1
+      "inbound_count": 0
     },
     {
       "slug": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
@@ -2082,17 +2090,12 @@
       "tags": [],
       "links_out": [
         {
-          "to": "AI Garage Weekly - June 19, 2026",
+          "to": "newsletters/ai-garage-weekly-2026-06-19",
           "type": "wikilink",
           "text": "AI Garage Weekly - June 19, 2026"
         }
       ],
       "backlinks": [
-        {
-          "from": "newsletters/ai-garage-weekly-2026-06-19",
-          "type": "wikilink",
-          "text": "Hermes Agent"
-        },
         {
           "from": "newsletters/ai-garage-weekly-2026-06-20",
           "type": "wikilink",
@@ -2100,7 +2103,7 @@
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 2
+      "inbound_count": 1
     },
     {
       "slug": "concepts/hermes-profile-backup",
@@ -2392,7 +2395,7 @@
       "tags": [],
       "links_out": [
         {
-          "to": "newsletters/agentic-engineering-concepts-2026-06-20",
+          "to": "articles/30-agentic-engineering-concepts-2026-06-17",
           "type": "wikilink",
           "text": "30 Core Agentic Engineering Concepts, Explained Simply"
         },
@@ -4054,25 +4057,9 @@
           "text": "Digital Power"
         }
       ],
-      "backlinks": [
-        {
-          "from": "companies/digital-power",
-          "type": "wikilink",
-          "text": "30 Core Agentic Engineering Concepts, Explained Simply"
-        },
-        {
-          "from": "concepts/pauls-pipeline",
-          "type": "wikilink",
-          "text": "30 Core Agentic Engineering Concepts, Explained Simply"
-        },
-        {
-          "from": "people/paul-hoekstra",
-          "type": "wikilink",
-          "text": "30 Core Agentic Engineering Concepts, Explained Simply"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 2,
-      "inbound_count": 3
+      "inbound_count": 0
     },
     {
       "slug": "newsletters/ai-data-center-architecture-19ee23d6",
@@ -4106,58 +4093,12 @@
     },
     {
       "slug": "newsletters/ai-garage-weekly-2026-06-19",
-      "title": "Ai Garage Weekly 2026 06 19",
+      "title": "AI Garage Weekly - June 19, 2026",
       "type": "newsletter",
       "updated": "",
-      "body": "# AI Garage Weekly - June 19, 2026\n\n**Source:** email\n**Source URI:** gmail://msg_19ee2c24d5819622\n**Ingested:** 2026-06-20T10:35:00Z\n**Provenance:** Forwarded by [[Sayf Codes]] on 2026-06-20 via sayfcodes@gmail.com to info@malohacoast.com\n\n*Newsletter from [[Tonbi]] / [[AI Garage Weekly]], June 19, 2026.*\n\nExcel, Fable Ban, [[GLM-5.2]], and [[DR-DCI]].\n\nBetween the Fable ban and the [[GLM-5.2]] release, it was a pretty big week for the local LLM community. One showed why local AI is so important, the other showed that open weights models can approach the top closed frontier models. We just need to lower the hardware barrier.\n\n---\n\n## Video of the Week: [[Hermes Agent]] in Excel\n\n[[Tonbi]]'s wife was talking about using Claude in Excel for her work, and he wondered: could he do that with [[Hermes Agent]]? After researching, he found a method that ended up working well \u2014 you get a chat window right in Excel, plus you can create custom functions with Hermes. It requires some prep work to start up, but the end result is pretty cool.\n\n---\n\n## AI News and Model Releases\n\n**Claude Fable 5 banned.** [[Anthropic]] removed Fable 5 access due to a new directive from the US government. Many were disappointed by this move. [[Tonbi]] notes that these models are so powerful the government is not going to let private companies and individuals have that power \u2014 this highlights the need for local and decentralized AI.\n\n**[[GLM-5.2]] released.** Open weights model release from [[Zhipu AI]] that feels only slightly behind Opus 4.8/GPT-5.5 \u2014 maybe one generation behind. Still an incredible feat for an open source model. Most people will not be able to run it locally without serious hardware, but it shows what is possible.\n\n---\n\n## Research and Experiments: [[DR-DCI]]\n\n**Dr-DCI: Scaling Direct Corpus Interaction via Dynamic Workspace Expansion** (arxiv.org/abs/2606.14885)\n\nA retrieval/workspace pattern relevant to [[Agent Wikis]]. With normal RAG, the agent asks a retriever, gets snippets, and answers from those. With DCI, the agent gets direct shell/file access to the corpus, using tools like find, read, compare files. The problem: it breaks on huge corpora. DR-DCI hides the huge corpus behind a retriever, but the agent can call pull(query, topK) to bring relevant documents into a local workspace, then use normal file tools on that smaller workspace. This gives RAG-like recall with filesystem agency from DCI. Increased accuracy and significantly improved wall time and costs.\n\n---\n\n## Random Brainstorming and Project Progress: [[Agent Wikis]]\n\n[[Agent Wikis]] release got nearly 10k visitors on the first day (humans and agents), doing 5k-7k since. [[Tonbi]] has been refining the pipeline to maintain these wikis autonomously \u2014 created a loop so missed topics get researched and autonomously added. Also exploring premium wikis with Stripe integration, and eventually an advertising pipeline where the agent develops all ad material, releases ads, analyzes results, and hones based on that.",
+      "body": "# AI Garage Weekly - June 19, 2026\n\n**Source:** email\n**Source URI:** gmail://msg_19ee2c24d5819622\n**Ingested:** 2026-06-20T05:44:15Z\n**Provenance:** Forwarded by sayf on 2026-06-20, originally from AI Garage Weekly (Beehiiv)\n\n## Summary\n\nTopics: Hermes Agent in Excel integration, Claude Fable 5 ban, GLM-5.2 release, Dr-DCI research paper.\n\n### Video of the Week: Hermes Agent in Excel\nThe author built a custom integration putting Hermes Agent inside Excel as a chat window with custom functions. First attempt used a complicated technique; found a simpler method after research. Enables a chat window right in Excel plus custom functions powered by Hermes. Open source on GitHub.\n\n### AI News & Model Releases\n- **Claude Fable 5 banned** \u2014 Anthropic removed Fable 5 access due to a US government directive. The author sees this as part of a broader trend of government control over powerful AI models.\n- **GLM-5.2 released** \u2014 Open weights model, impressive performance. Slightly behind Opus 4.8/GPT5.5 (one generation behind). Demonstrates that open-source frontier-level models are coming sooner than expected, though hardware requirements remain high.\n\n### Research & Experiments\n- **Dr-DCI: Scaling Direct Corpus Interaction via Dynamic Workspace Expansion** (arXiv:2606.14885) \u2014 An agent retrieval/workspace pattern that could go beyond RAG. Describes how agents collect and process information from large corpora, potentially applicable to Agent Wikis.",
       "tags": [],
-      "links_out": [
-        {
-          "to": "people/sayf-codes",
-          "type": "wikilink",
-          "text": "Sayf Codes"
-        },
-        {
-          "to": "people/tonbi",
-          "type": "wikilink",
-          "text": "Tonbi"
-        },
-        {
-          "to": "companies/ai-garage-weekly",
-          "type": "wikilink",
-          "text": "AI Garage Weekly"
-        },
-        {
-          "to": "GLM-5.2",
-          "type": "wikilink",
-          "text": "GLM-5.2"
-        },
-        {
-          "to": "concepts/dr-dci",
-          "type": "wikilink",
-          "text": "DR-DCI"
-        },
-        {
-          "to": "concepts/hermes-agent",
-          "type": "wikilink",
-          "text": "Hermes Agent"
-        },
-        {
-          "to": "companies/anthropic",
-          "type": "wikilink",
-          "text": "Anthropic"
-        },
-        {
-          "to": "companies/zhipu-ai",
-          "type": "wikilink",
-          "text": "Zhipu AI"
-        },
-        {
-          "to": "concepts/agent-wikis",
-          "type": "wikilink",
-          "text": "Agent Wikis"
-        }
-      ],
+      "links_out": [],
       "backlinks": [
         {
           "from": "companies/ai-garage-weekly",
@@ -4165,18 +4106,43 @@
           "text": "ai-garage-weekly-2026-06-19"
         },
         {
+          "from": "companies/anthropic",
+          "type": "wikilink",
+          "text": "AI Garage Weekly - June 19, 2026"
+        },
+        {
+          "from": "companies/openai",
+          "type": "wikilink",
+          "text": "AI Garage Weekly - June 19, 2026"
+        },
+        {
           "from": "companies/zhipu-ai",
           "type": "wikilink",
           "text": "ai-garage-weekly-2026-06-19"
         },
         {
+          "from": "concepts/dr-dci",
+          "type": "wikilink",
+          "text": "AI Garage Weekly - June 19, 2026"
+        },
+        {
           "from": "concepts/glm-5-2",
           "type": "wikilink",
           "text": "ai-garage-weekly-2026-06-19"
+        },
+        {
+          "from": "concepts/hermes-agent",
+          "type": "wikilink",
+          "text": "AI Garage Weekly - June 19, 2026"
+        },
+        {
+          "from": "persons/tonbi",
+          "type": "wikilink",
+          "text": "AI Garage Weekly - June 19, 2026"
         }
       ],
-      "outbound_count": 9,
-      "inbound_count": 3
+      "outbound_count": 0,
+      "inbound_count": 8
     },
     {
       "slug": "newsletters/ai-garage-weekly-2026-06-20",
@@ -4248,33 +4214,12 @@
     },
     {
       "slug": "newsletters/claude-second-brain-levels-2026-06-20",
-      "title": "Claude Second Brain Levels 2026 06 20",
+      "title": "Every Level of a Claude Second Brain Explained",
       "type": "newsletter",
       "updated": "",
-      "body": "# Every Level of a Claude Second Brain Explained\n\n**Source:** email\n**Source URI:** gmail://msg_19ee2dfa87f86548\n**Ingested:** 2026-06-20T10:34:00Z\n**Provenance:** Forwarded by Sayf on 2026-06-20 via sayfcodes@gmail.com \u2192 info@malohacoast.com\n\n*Newsletter from [[AI Automation Society]] ([[Nate Herk]]), June 19, 2026.*\n\nA Claude second brain breakdown, a client pipeline automated, and Codex hits 5M users with a free bonus through June 24.\n\n## In This Issue\n\n- Five levels of building a Claude second brain, from basic file search to fully autonomous recall.\n- [[Robert]] automated a client's outbound email pipeline and got their call center actually following up.\n- OpenAI's Codex just crossed 5 million weekly users, and there's a free bonus available through June 24 if you use it.\n\n---\n\n## New Video: Every Level of a Claude Second Brain Explained\n\nThere are five distinct levels to building a Claude second brain, and most people are stuck at level one.\n\nLevel one is just finding a file by searching an exact word. Level five is a fully autonomous system that knows your business, your client relationships, and your IP better than you do. The difference between them isn't the tool. It's how the data is organized.\n\n*The insight that changes how you build:* Start from the end. Before you organize a single file, ask how you'll access this data later. The shape of the basketball determines the size of the hoop. [[Jon]] shows his actual setup (a Herku project, just markdown files and folders) and walks through what separates each level, including semantic search (finding by meaning, not exact match) and full relationship mapping.\n\n*How this helps you:* Your moat is your data. This video shows you how to actually organize it so your agents can use it, not just find it.\n\n---\n\n## Winning Is All We Do: Robert Automated a Client's Outbound Email Pipeline\n\n*What happened:* [[Robert]]'s client had a call center calling leads, but nothing was following up by email. Sales managers emailed [[Robert]] their daily lead lists as Excel files. He built an automation that handles the rest: when the file lands in his inbox, it extracts the email, address, and name data, normalizes it (no more \"N123 MAIN STREET\" showing up as a deliverable address), and uploads every contact directly into Instantly as a ready-to-run campaign. No manual cleanup. No copy-paste. Just results.\n\n*The opportunity for you:* Businesses running call centers almost always have messy lead data and no email follow-up. An automation that converts a spreadsheet into a live campaign solves a problem they didn't know anyone could fix.\n\n---\n\n## In the News: Codex Hits 5M Weekly Users\n\nOpenAI Codex has crossed 5 million weekly active users and launched two features alongside the milestone. One is permanent: banked rate limit resets. Instead of your weekly limit resetting on a fixed timer, you can now save resets and use them when you actually need them. The other runs through June 24: Plus and Pro users can invite up to three friends to try Codex. When a friend sends their first Codex message, you both get a bonus reset.\n\n*How it affects you:* If you've been hitting Codex rate limits at the wrong moment mid-build, the banked reset system fixes that. You decide when to use your reset, not the clock. The bigger signal here: Codex is now growing through referral mechanics at 5 million weekly users. That's not hype. That's a tool people are actively building with and recommending.",
+      "body": "# Every Level of a Claude Second Brain Explained (AI Automation Society)\n\n**Source:** email\n**Source URI:** gmail://msg_19ee2dfa87f86548\n**Ingested:** 2026-06-20T05:44:15Z\n**Provenance:** Forwarded by sayf on 2026-06-20, originally from Nate Herk (AI Automation Society)\n\n## Summary\n\nNewsletter from AI Automation Society (Nate Herk) covering: five levels of building a Claude second brain, a client automation case study, and Codex hitting 5M weekly users.\n\n### Five Levels of a Claude Second Brain\n\n1. **Level 1:** Basic file search by exact word match.\n2. **Level 2:** Finding by meaning (semantic search).\n3. **Level 3:** Organized by business relationships and client data.\n4. **Level 4:** Cross-referencing IP and institutional knowledge.\n5. **Level 5:** Fully autonomous recall \u2014 the system knows your business, client relationships, and IP better than you.\n\nThe insight: Start from the end. Before organizing a single file, ask how you'll access this data later. The shape of the basketball determines the size of the hoop. Jon's setup uses a Herku project (just markdown files and folders).\n\n### Client Automation Win \u2014 Robert\n\nRobert automated a client's outbound email pipeline. The client's call center got daily lead lists as Excel files. Robert built an automation that extracts email/address/name data from inbox attachments, normalizes it, and uploads every contact directly into Instantly as ready-to-run campaigns. No manual cleanup needed.\n\n### In the News \u2014 Codex at 5M Weekly Users\n\nOpenAI Codex crossed 5M weekly active users. Two new features:\n- **Banked rate limit resets** (permanent): Save resets and use them when needed instead of losing them on a fixed timer.\n- **Referral bonus** (through June 24): Plus/Pro users can invite up to 3 friends. Both parties get a bonus reset when a friend sends their first message.\n\n## Key Takeaways\n\n- Your moat is your data. Organize it so agents can use it, not just find it.\n- The difference between levels isn't the tool \u2014 it's how the data is organized.\n- Client pipeline automation (Excel \u2192 Instantly) is a concrete, high-value service offering for call centers.",
       "tags": [],
-      "links_out": [
-        {
-          "to": "companies/ai-automation-society",
-          "type": "wikilink",
-          "text": "AI Automation Society"
-        },
-        {
-          "to": "people/nate-herk",
-          "type": "wikilink",
-          "text": "Nate Herk"
-        },
-        {
-          "to": "people/robert",
-          "type": "wikilink",
-          "text": "Robert"
-        },
-        {
-          "to": "people/jon",
-          "type": "wikilink",
-          "text": "Jon"
-        }
-      ],
+      "links_out": [],
       "backlinks": [
         {
           "from": "people/jon",
@@ -4287,7 +4232,7 @@
           "text": "Claude Second Brain Levels 2026 06 20"
         }
       ],
-      "outbound_count": 4,
+      "outbound_count": 0,
       "inbound_count": 2
     },
     {
@@ -4592,10 +4537,10 @@
     },
     {
       "slug": "newsletters/openrouter-three-features-2026-06-18",
-      "title": "Openrouter Three Features 2026 06 18",
+      "title": "Three features worth trying next \u2014 OpenRouter",
       "type": "newsletter",
       "updated": "",
-      "body": "# Three features worth trying next on OpenRouter\n\n**Source:** email\n**Source URI:** gmail://msg_19edb0e0abd83fb0\n**Ingested:** 2026-06-20T03:30:00Z\n\nOpenRouter onboarding email covering three features that are single-parameter changes with production value.\n\n## Key Points\n\n1. **Streaming** (`stream=True`): Tokens arrive as generated. Perceived latency drops from seconds to first-token time. Agents that stream partial results to a frontend get a noticeable UX lift for zero code cost.\n\n2. **Structured outputs** (`response_format` with JSON schema): OpenRouter enforces JSON schema at the API level. No regex parsing, no retry loops for malformed JSON, no \"please respond in valid JSON\" prompt engineering. Works on every model that supports the format; router respects it with `openrouter/auto`.\n\n3. **Provider preferences** (`provider` param in `extra_body`): Pin specific providers, exclude others, set latency floors and throughput minimums. Sort by `\"price\"` to always pick the cheapest, or use an allowlist to lock routing to trusted providers.\n\n## Combined Example\n\n```python\nresponse = client.chat.completions.create(\n    model=\"openrouter/auto\",\n    stream=True,\n    response_format={\"type\": \"json_schema\", \"json_schema\": schema},\n    extra_body={\"provider\": {\"sort\": \"price\"}},\n    messages=[{\"role\": \"user\", \"content\": \"...\"}],\n)\n```\n\n## Useful Pages\n\n- [Models & pricing](https://openrouter.ai/models)\n- [Rankings (real usage volume)](https://openrouter.ai/rankings)\n- [Usage & costs](https://openrouter.ai/activity)",
+      "body": "# Three features worth trying next \u2014 OpenRouter\n\n**Source:** email\n**Source URI:** gmail://msg_19edb0e0abd83fb0\n**Ingested:** 2026-06-20T05:44:15Z\n**Provenance:** Direct email from OpenRouter Team, received 2026-06-18\n\n**From:** OpenRouter Team <welcome@openrouter.ai>\n\n## Summary\n\nThree OpenRouter features accessible via single parameter changes, no new integration needed.\n\n### 1. Streaming\n`stream=True` \u2014 tokens arrive as they generate. Same endpoint, same auth. Perceived latency drops from seconds to first token. Agents that stream partial results to frontend get a noticeable UX lift.\n\n### 2. Structured Outputs\nPass a JSON schema via `response_format`. OpenRouter enforces it at the API level. No regex parsing, no retry loops for malformed JSON, no \"please respond in valid JSON\" prompt engineering. Works on every model that supports the format. Router respects it with `openrouter/auto`.\n\n### 3. Provider Preferences\nPin specific providers, exclude others, set latency floors and throughput minimums. Via `extra_body={\"provider\": {\"sort\": \"price\"}}` or allowlists to lock routing to trusted providers.\n\n### All Three At Once\n```python\nresponse = client.chat.completions.create(\n    model=\"openrouter/auto\",\n    stream=True,\n    response_format={\"type\": \"json_schema\", \"json_schema\": schema},\n    extra_body={\"provider\": {\"sort\": \"price\"}},\n    messages=[{\"role\": \"user\", \"content\": \"...\"}],\n)\n```\n\n### Reference Pages\n- openrouter.ai/models \u2014 browsing and pricing\n- openrouter.ai/rankings \u2014 real usage volume data\n- openrouter.ai/activity \u2014 usage and costs",
       "tags": [],
       "links_out": [],
       "backlinks": [],
@@ -5308,15 +5253,9 @@
           "text": "Claude Second Brain Levels 2026 06 20"
         }
       ],
-      "backlinks": [
-        {
-          "from": "newsletters/claude-second-brain-levels-2026-06-20",
-          "type": "wikilink",
-          "text": "Jon"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 1,
-      "inbound_count": 1
+      "inbound_count": 0
     },
     {
       "slug": "people/kyle",
@@ -5452,15 +5391,10 @@
           "from": "digests/2026-06-15-business-brain-digest",
           "type": "wikilink",
           "text": "Nate Herk"
-        },
-        {
-          "from": "newsletters/claude-second-brain-levels-2026-06-20",
-          "type": "wikilink",
-          "text": "Nate Herk"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 4
+      "inbound_count": 3
     },
     {
       "slug": "people/neo-kim",
@@ -5548,7 +5482,7 @@
       ],
       "links_out": [
         {
-          "to": "newsletters/agentic-engineering-concepts-2026-06-20",
+          "to": "articles/30-agentic-engineering-concepts-2026-06-17",
           "type": "wikilink",
           "text": "30 Core Agentic Engineering Concepts, Explained Simply"
         }
@@ -5590,15 +5524,9 @@
           "text": "Claude Second Brain Levels 2026 06 20"
         }
       ],
-      "backlinks": [
-        {
-          "from": "newsletters/claude-second-brain-levels-2026-06-20",
-          "type": "wikilink",
-          "text": "Robert"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 1,
-      "inbound_count": 1
+      "inbound_count": 0
     },
     {
       "slug": "people/sayf-codes",
@@ -5633,15 +5561,10 @@
           "from": "meetings/sayf-zaim-jun-12-2026",
           "type": "wikilink",
           "text": "people/sayf-codes|Sayf"
-        },
-        {
-          "from": "newsletters/ai-garage-weekly-2026-06-19",
-          "type": "wikilink",
-          "text": "Sayf Codes"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 4
+      "inbound_count": 3
     },
     {
       "slug": "people/tj-vandermolen",
@@ -5709,18 +5632,13 @@
           "text": "Tonbi"
         },
         {
-          "from": "newsletters/ai-garage-weekly-2026-06-19",
-          "type": "wikilink",
-          "text": "Tonbi"
-        },
-        {
           "from": "newsletters/ai-garage-weekly-2026-06-20",
           "type": "wikilink",
           "text": "Tonbi"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 4
+      "inbound_count": 3
     },
     {
       "slug": "people/vannevar-bush",
@@ -5933,7 +5851,7 @@
       "tags": [],
       "links_out": [
         {
-          "to": "AI Garage Weekly - June 19, 2026",
+          "to": "newsletters/ai-garage-weekly-2026-06-19",
           "type": "wikilink",
           "text": "AI Garage Weekly - June 19, 2026"
         }
@@ -6211,13 +6129,18 @@
       "type": "wikilink"
     },
     {
+      "source": "companies/anthropic",
+      "target": "newsletters/ai-garage-weekly-2026-06-19",
+      "type": "wikilink"
+    },
+    {
       "source": "companies/blackgrid-digital",
       "target": "people/nabil-jalil",
       "type": "link"
     },
     {
       "source": "companies/digital-power",
-      "target": "newsletters/agentic-engineering-concepts-2026-06-20",
+      "target": "articles/30-agentic-engineering-concepts-2026-06-17",
       "type": "wikilink"
     },
     {
@@ -6263,6 +6186,11 @@
     {
       "source": "companies/nation-building-school",
       "target": "people/zaim-mohzani",
+      "type": "wikilink"
+    },
+    {
+      "source": "companies/openai",
+      "target": "newsletters/ai-garage-weekly-2026-06-19",
       "type": "wikilink"
     },
     {
@@ -6372,7 +6300,7 @@
     },
     {
       "source": "concepts/ai-data-center-architecture-2026-06-20",
-      "target": "concepts/ai-data-centers",
+      "target": "articles/ai-data-center-architecture-2026-06-19",
       "type": "wikilink"
     },
     {
@@ -6393,6 +6321,11 @@
     {
       "source": "concepts/ai-data-center-architecture-2026-06-20",
       "target": "concepts/liquid-cooling",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/ai-data-centers",
+      "target": "concepts/ai-data-center-architecture-2026-06-20",
       "type": "wikilink"
     },
     {
@@ -6453,6 +6386,11 @@
     {
       "source": "concepts/dashboard-composer-test",
       "target": "concepts/company-memory-os-ph1-prd",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/dr-dci",
+      "target": "newsletters/ai-garage-weekly-2026-06-19",
       "type": "wikilink"
     },
     {
@@ -6521,6 +6459,11 @@
       "type": "wikilink"
     },
     {
+      "source": "concepts/hermes-agent",
+      "target": "newsletters/ai-garage-weekly-2026-06-19",
+      "type": "wikilink"
+    },
+    {
       "source": "concepts/humanlayer-launch-announcement-2026-06-19",
       "target": "companies/humanlayer",
       "type": "wikilink"
@@ -6577,7 +6520,7 @@
     },
     {
       "source": "concepts/pauls-pipeline",
-      "target": "newsletters/agentic-engineering-concepts-2026-06-20",
+      "target": "articles/30-agentic-engineering-concepts-2026-06-17",
       "type": "wikilink"
     },
     {
@@ -7126,41 +7069,16 @@
       "type": "wikilink"
     },
     {
+      "source": "newsletters/agentic-engineering-concepts-2026-06-20",
+      "target": "companies/digital-power",
+      "type": "wikilink"
+    },
+    {
       "source": "newsletters/ai-data-center-architecture-2026-06-20",
       "target": "companies/system-design-one",
       "type": "wikilink"
     },
     {
-      "source": "newsletters/ai-garage-weekly-2026-06-19",
-      "target": "people/sayf-codes",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/ai-garage-weekly-2026-06-19",
-      "target": "people/tonbi",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/ai-garage-weekly-2026-06-19",
-      "target": "concepts/dr-dci",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/ai-garage-weekly-2026-06-19",
-      "target": "concepts/hermes-agent",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/ai-garage-weekly-2026-06-19",
-      "target": "companies/anthropic",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/ai-garage-weekly-2026-06-19",
-      "target": "concepts/agent-wikis",
-      "type": "wikilink"
-    },
-    {
       "source": "newsletters/ai-garage-weekly-2026-06-20",
       "target": "people/tonbi",
       "type": "wikilink"
@@ -7173,26 +7091,6 @@
     {
       "source": "newsletters/ai-garage-weekly-2026-06-20",
       "target": "companies/anthropic",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/claude-second-brain-levels-2026-06-20",
-      "target": "companies/ai-automation-society",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/claude-second-brain-levels-2026-06-20",
-      "target": "people/nate-herk",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/claude-second-brain-levels-2026-06-20",
-      "target": "people/robert",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/claude-second-brain-levels-2026-06-20",
-      "target": "people/jon",
       "type": "wikilink"
     },
     {
@@ -7331,6 +7229,11 @@
       "type": "wikilink"
     },
     {
+      "source": "people/jon",
+      "target": "newsletters/claude-second-brain-levels-2026-06-20",
+      "type": "wikilink"
+    },
+    {
       "source": "people/kyle",
       "target": "companies/humanlayer",
       "type": "wikilink"
@@ -7357,7 +7260,12 @@
     },
     {
       "source": "people/paul-hoekstra",
-      "target": "newsletters/agentic-engineering-concepts-2026-06-20",
+      "target": "articles/30-agentic-engineering-concepts-2026-06-17",
+      "type": "wikilink"
+    },
+    {
+      "source": "people/robert",
+      "target": "newsletters/claude-second-brain-levels-2026-06-20",
       "type": "wikilink"
     },
     {
@@ -7368,6 +7276,11 @@
     {
       "source": "people/yassif-n-m",
       "target": "companies/dynamics-orchard-farm-sdn-bhd",
+      "type": "wikilink"
+    },
+    {
+      "source": "persons/tonbi",
+      "target": "newsletters/ai-garage-weekly-2026-06-19",
       "type": "wikilink"
     },
     {

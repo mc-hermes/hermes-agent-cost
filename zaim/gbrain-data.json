@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-20T05:44:11Z",
+  "updated_at": "2026-06-20T05:58:24Z",
   "summary": {
     "page_count": 19,
     "people_count": 4,
@@ -7,7 +7,7 @@
     "artifact_count": 0,
     "total_links": 8,
     "outbound_count": 22,
-    "inbound_count": 20,
+    "inbound_count": 19,
     "graph_coverage": "26.3% of pages have inbound links",
     "concept_count": 11,
     "meeting_count": 3,
@@ -347,15 +347,10 @@
           "from": "meetings/sayf-zaim-jun-12-2026",
           "type": "wikilink",
           "text": "people/sayf-codes|Sayf"
-        },
-        {
-          "from": "newsletters/ai-garage-weekly-2026-06-19",
-          "type": "wikilink",
-          "text": "Sayf Codes"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 4
+      "inbound_count": 3
     },
     {
       "slug": "people/zaim-mohzani",
@@ -588,7 +583,7 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-20T05:44:11Z",
+      "ts": "2026-06-20T05:58:24Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
@@ -609,14 +604,6 @@
       "stage": "updated",
       "slug": "concepts/pipeline-e2e-test-2026-06-20",
       "detail": "Pipeline End-to-End Test \u2014 Jun 20 2026",
-      "level": "info"
-    },
-    {
-      "ts": "2026-06-20T00:00:00Z",
-      "source": "page",
-      "stage": "updated",
-      "slug": "concepts/zaim-career-goals-12-week-year-2026-06-16",
-      "detail": "Why Your 2026 Career Goals Are Already Dead (Zaim Newsletter)",
       "level": "info"
     },
     {
