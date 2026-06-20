@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-06-20T03:25:50Z",
+  "updated_at": "2026-06-20T03:42:58Z",
   "summary": {
-    "score": "82",
+    "score": "83",
     "score_label": "/100",
-    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 2/15, orphans 10/15, dead-links 10/10",
-    "page_count": 188,
+    "score_breakdown": "score 83/100, embed 35/35, links 25/25, timeline 3/15, orphans 10/15, dead-links 10/10",
+    "page_count": 193,
     "embed_coverage": "100% coverage, 0 missing",
-    "graph_coverage": "49.7% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
-    "entity_links": "Coverage 93% \u00b1 3.7%",
-    "concept_count": 90,
+    "graph_coverage": "52.1% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 94% \u00b1 3.4%",
+    "concept_count": 91,
     "meeting_count": 6,
-    "person_count": 27,
-    "company_count": 18,
+    "person_count": 29,
+    "company_count": 20,
     "newsletter_count": 39,
     "video_count": 0,
     "article_count": 4,
@@ -19,20 +19,20 @@
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 238,
-    "outbound_count": 310,
-    "inbound_count": 281,
+    "total_links": 248,
+    "outbound_count": 331,
+    "inbound_count": 295,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
     },
-    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 2/15, orphans 10/15, dead-links 10/10)",
+    "score_raw": "Brain score 83/100 (embed 35/35, links 25/25, timeline 3/15, orphans 10/15, dead-links 10/10)",
     "score_components": {
-      "score": "82/100",
+      "score": "83/100",
       "embed": "35/35",
       "links": "25/25",
-      "timeline": "2/15",
+      "timeline": "3/15",
       "orphans": "10/15",
       "dead-links": "10/10"
     },
@@ -309,6 +309,45 @@
       "inbound_count": 4
     },
     {
+      "slug": "companies/ai-garage-weekly",
+      "title": "AI Garage Weekly",
+      "type": "company",
+      "updated": "",
+      "body": "# AI Garage Weekly\n\n> Weekly newsletter by Tonbi covering the local LLM community, open weights models, agent tooling, and AI Garage projects. Also known as Tonbi's AI Garage.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[ai-garage-weekly-2026-06-19]] as the newsletter covering Excel, Fable Ban, GLM-5.2, and DR-DCI\n- Authored by [[Tonbi]] who publishes under this brand\n\n## Related\n\n- [[ai-garage-weekly-2026-06-19]] \u2014 June 19 issue: Hermes Agent in Excel, Fable 5 ban, GLM-5.2 release, DR-DCI research, Agent Wikis progress\n- [[Tonbi]] \u2014 Creator and author of AI Garage Weekly\n- [[Agent Wikis]] \u2014 Tonbi's project featured in the newsletter\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-19** | Published issue covering Hermes Agent in Excel integration, Claude Fable 5 ban by US government, GLM-5.2 open weights release, DR-DCI research paper, and Agent Wikis progress update. [Source: gmail://msg_19ee2c24d5819622]",
+      "tags": [
+        "ai",
+        "local-llm",
+        "newsletter",
+        "tonbi"
+      ],
+      "links_out": [
+        {
+          "to": "newsletters/ai-garage-weekly-2026-06-19",
+          "type": "wikilink",
+          "text": "ai-garage-weekly-2026-06-19"
+        },
+        {
+          "to": "people/tonbi",
+          "type": "wikilink",
+          "text": "Tonbi"
+        },
+        {
+          "to": "concepts/agent-wikis",
+          "type": "wikilink",
+          "text": "Agent Wikis"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "newsletters/ai-garage-weekly-2026-06-19",
+          "type": "wikilink",
+          "text": "AI Garage Weekly"
+        }
+      ],
+      "outbound_count": 3,
+      "inbound_count": 1
+    },
+    {
       "slug": "companies/anthropic",
       "title": "Anthropic",
       "type": "company",
@@ -321,7 +360,7 @@
       ],
       "links_out": [
         {
-          "to": "newsletters/ai-garage-weekly-2026-06-19",
+          "to": "AI Garage Weekly - June 19, 2026",
           "type": "wikilink",
           "text": "AI Garage Weekly - June 19, 2026"
         }
@@ -333,7 +372,17 @@
           "text": "Anthropic"
         },
         {
+          "from": "concepts/glm-5-2",
+          "type": "wikilink",
+          "text": "Anthropic"
+        },
+        {
           "from": "digests/2026-06-15-business-brain-digest",
+          "type": "wikilink",
+          "text": "Anthropic"
+        },
+        {
+          "from": "newsletters/ai-garage-weekly-2026-06-19",
           "type": "wikilink",
           "text": "Anthropic"
         },
@@ -349,7 +398,7 @@
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 4
+      "inbound_count": 6
     },
     {
       "slug": "companies/blackgrid-digital",
@@ -747,7 +796,7 @@
       ],
       "links_out": [
         {
-          "to": "newsletters/ai-garage-weekly-2026-06-19",
+          "to": "AI Garage Weekly - June 19, 2026",
           "type": "wikilink",
           "text": "AI Garage Weekly - June 19, 2026"
         }
@@ -1063,6 +1112,45 @@
       "inbound_count": 6
     },
     {
+      "slug": "companies/zhipu-ai",
+      "title": "Zhipu AI",
+      "type": "company",
+      "updated": "",
+      "body": "# Zhipu AI\n\n> Chinese AI company (also known as Zhipu / \u667a\u8c31AI) that develops the GLM (General Language Model) series of open weights models. Their GLM-5.2 release represents open weights models approaching frontier closed models.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[ai-garage-weekly-2026-06-19]] as the company behind the GLM-5.2 open weights release\n- Compared favorably against Opus 4.8/GPT-5.5 frontier models\n\n## Related\n\n- [[ai-garage-weekly-2026-06-19]] \u2014 GLM-5.2 release coverage noting it's \"only slightly behind Opus 4.8/GPT-5.5\"\n- [[GLM-5.2]] \u2014 The specific model release from Zhipu AI\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-19** | GLM-5.2 released as open weights model; described as only slightly behind Opus 4.8/GPT-5.5. [Source: gmail://msg_19ee2c24d5819622]",
+      "tags": [
+        "ai",
+        "china",
+        "llm",
+        "open-weights"
+      ],
+      "links_out": [
+        {
+          "to": "newsletters/ai-garage-weekly-2026-06-19",
+          "type": "wikilink",
+          "text": "ai-garage-weekly-2026-06-19"
+        },
+        {
+          "to": "GLM-5.2",
+          "type": "wikilink",
+          "text": "GLM-5.2"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "concepts/glm-5-2",
+          "type": "wikilink",
+          "text": "Zhipu AI"
+        },
+        {
+          "from": "newsletters/ai-garage-weekly-2026-06-19",
+          "type": "wikilink",
+          "text": "Zhipu AI"
+        }
+      ],
+      "outbound_count": 2,
+      "inbound_count": 2
+    },
+    {
       "slug": "concepts/2026-06-03",
       "title": "2026 06 03",
       "type": "concept",
@@ -1186,13 +1274,23 @@
       ],
       "backlinks": [
         {
+          "from": "companies/ai-garage-weekly",
+          "type": "wikilink",
+          "text": "Agent Wikis"
+        },
+        {
+          "from": "newsletters/ai-garage-weekly-2026-06-19",
+          "type": "wikilink",
+          "text": "Agent Wikis"
+        },
+        {
           "from": "newsletters/ai-garage-weekly-2026-06-20",
           "type": "wikilink",
           "text": "Agent Wikis"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 1
+      "inbound_count": 3
     },
     {
       "slug": "concepts/ai-data-center-architecture-2026-06-20",
@@ -1572,14 +1670,20 @@
       "tags": [],
       "links_out": [
         {
-          "to": "newsletters/ai-garage-weekly-2026-06-19",
+          "to": "AI Garage Weekly - June 19, 2026",
           "type": "wikilink",
           "text": "AI Garage Weekly - June 19, 2026"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "newsletters/ai-garage-weekly-2026-06-19",
+          "type": "wikilink",
+          "text": "DR-DCI"
+        }
+      ],
       "outbound_count": 1,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
@@ -1808,6 +1912,39 @@
       "inbound_count": 0
     },
     {
+      "slug": "concepts/glm-5-2",
+      "title": "GLM-5.2",
+      "type": "concept",
+      "updated": "",
+      "body": "# GLM-5.2\n\n> Open weights language model released by [[Zhipu AI]] in June 2026. The release was notable for approaching frontier closed models (Opus 4.8/GPT-5.5) while being openly available, though requiring substantial hardware to run locally.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[ai-garage-weekly-2026-06-19]] as an open weights model release that feels only slightly behind Opus 4.8/GPT-5.5\n- Noted as showing what's possible with open source AI, even if most users can't run it locally without serious hardware\n\n## Related\n\n- [[ai-garage-weekly-2026-06-19]] \u2014 Newsletter coverage of GLM-5.2 release\n- [[Zhipu AI]] \u2014 Developer of GLM-5.2\n- [[Anthropic]] \u2014 Their Fable 5 ban was the other big story in local LLM community that week\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-19** | GLM-5.2 released by Zhipu AI as open weights model; described as approaching frontier model capability. [Source: gmail://msg_19ee2c24d5819622]",
+      "tags": [
+        "llm",
+        "model",
+        "open-weights",
+        "zhipu"
+      ],
+      "links_out": [
+        {
+          "to": "companies/zhipu-ai",
+          "type": "wikilink",
+          "text": "Zhipu AI"
+        },
+        {
+          "to": "newsletters/ai-garage-weekly-2026-06-19",
+          "type": "wikilink",
+          "text": "ai-garage-weekly-2026-06-19"
+        },
+        {
+          "to": "companies/anthropic",
+          "type": "wikilink",
+          "text": "Anthropic"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 3,
+      "inbound_count": 0
+    },
+    {
       "slug": "concepts/google-workspace-setup",
       "title": "Google Workspace Setup",
       "type": "concept",
@@ -1901,12 +2038,17 @@
       "tags": [],
       "links_out": [
         {
-          "to": "newsletters/ai-garage-weekly-2026-06-19",
+          "to": "AI Garage Weekly - June 19, 2026",
           "type": "wikilink",
           "text": "AI Garage Weekly - June 19, 2026"
         }
       ],
       "backlinks": [
+        {
+          "from": "newsletters/ai-garage-weekly-2026-06-19",
+          "type": "wikilink",
+          "text": "Hermes Agent"
+        },
         {
           "from": "newsletters/ai-garage-weekly-2026-06-20",
           "type": "wikilink",
@@ -1914,7 +2056,7 @@
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "concepts/hermes-profile-backup",
@@ -3920,41 +4062,77 @@
     },
     {
       "slug": "newsletters/ai-garage-weekly-2026-06-19",
-      "title": "AI Garage Weekly - June 19, 2026",
+      "title": "Ai Garage Weekly 2026 06 19",
       "type": "newsletter",
       "updated": "",
-      "body": "# AI Garage Weekly - June 19, 2026\n\n**Source:** AI Garage Weekly (Tonbi)\n**Forwarded by:** Sayf\n**Date:** June 19, 2026\n**Source URI:** gmail://msg_19ee2c24d5819622\n\nExcel, Fable Ban, GLM-5.2, and DR-DCI.\n\nBetween the Fable ban and the GLM-5.2 release, it was a pretty big week for the local LLM community. One showed why local AI is so important, the other showed that it was actually possible to have open weights models that approach the top closed frontier models.\n\n## Video of the Week: Hermes Agent in Excel\n\nTonbi's wife was talking about using Claude in Excel for her work, and he had the thought: could he do that with Hermes Agent? After researching, he found a method that requires some prep work to start up, but the end result is a chat window right in Excel, plus custom functions powered by Hermes. The method is open source on GitHub.\n\n## AI News & Model Releases\n\n**Claude Fable 5 banned.** Last Friday, Anthropic removed Fable 5 access due to a new directive from the US government. Tonbi was disappointed but notes this was the direction things were headed \u2014 these models are so powerful, the government isn't going to let private companies and individuals have power like that. He believes it's Anthropic and the current administration negotiating in public and will get cleared up eventually, but it highlights the need for local and decentralized AI.\n\n**GLM-5.2 released.** A new open weights model release that is only slightly behind Opus 4.8/GPT-5.5 \u2014 maybe one generation behind. An incredible feat for an open source model, suggesting genuine frontier-level open source models are coming sooner than expected. Most people won't be able to run it locally (heavy hardware requirements), but it shows what's possible.\n\n## Research & Experiments\n\n**DR-DCI: Scaling Direct Corpus Interaction via Dynamic Workspace Expansion** (arxiv.org/abs/2606.14885)\n\nA paper that caught Tonbi's eye for Agent Wikis work. Normal RAG: agent asks a retriever, gets snippets, answers from snippets. DCI (earlier version): agent gets direct shell/file access to the corpus with tools like find, read, compare files. Problem: breaks when corpus is huge.\n\nDR-DCI solves this: huge corpus is hidden behind a retriever, agent calls `pull(query, topK)` to bring relevant documents into a local workspace, then uses normal file tools on that smaller workspace. Gives RAG-like recall with filesystem-level agency. Increased accuracy and significantly improved wall time and costs.\n\nRelevance to Agent Wikis: Tonbi experimented with RAG over wikis and found it one of the best methods, but some wikis are quite large. Having a smaller workspace to pull relevant chunks into could be useful for ongoing project work.\n\n## Random Brainstorming & Project Progress\n\n**Agent Wikis:** First release day got nearly 10k visitors (humans and agents), doing 5k-7k since. Large improvement from the last project. Created a loop so missed topics get researched and autonomously added to the wikis. Exploring agent-maintained product enhancement, premium wikis with Stripe integration, and potentially small ads driven by an agent pipeline (develop ad material, release ads, analyze results, hone).\n\n## Key People and Companies\n\n- **Tonbi** \u2014 Creator of AI Garage Weekly, Agent Wikis, Hermes Agent/Excel integration\n- **Anthropic** \u2014 Claude Fable 5 ban\n- **GLM/Zhipu AI** \u2014 GLM-5.2 open weights model\n- **OpenAI** \u2014 Codex 5M users milestone [Source: AI Automation Society Newsletter, 2026-06-19]",
+      "body": "# AI Garage Weekly - June 19, 2026\n\n**Source:** email\n**Source URI:** gmail://msg_19ee2c24d5819622\n**Ingested:** 2026-06-20T10:35:00Z\n**Provenance:** Forwarded by [[Sayf Codes]] on 2026-06-20 via sayfcodes@gmail.com to info@malohacoast.com\n\n*Newsletter from [[Tonbi]] / [[AI Garage Weekly]], June 19, 2026.*\n\nExcel, Fable Ban, [[GLM-5.2]], and [[DR-DCI]].\n\nBetween the Fable ban and the [[GLM-5.2]] release, it was a pretty big week for the local LLM community. One showed why local AI is so important, the other showed that open weights models can approach the top closed frontier models. We just need to lower the hardware barrier.\n\n---\n\n## Video of the Week: [[Hermes Agent]] in Excel\n\n[[Tonbi]]'s wife was talking about using Claude in Excel for her work, and he wondered: could he do that with [[Hermes Agent]]? After researching, he found a method that ended up working well \u2014 you get a chat window right in Excel, plus you can create custom functions with Hermes. It requires some prep work to start up, but the end result is pretty cool.\n\n---\n\n## AI News and Model Releases\n\n**Claude Fable 5 banned.** [[Anthropic]] removed Fable 5 access due to a new directive from the US government. Many were disappointed by this move. [[Tonbi]] notes that these models are so powerful the government is not going to let private companies and individuals have that power \u2014 this highlights the need for local and decentralized AI.\n\n**[[GLM-5.2]] released.** Open weights model release from [[Zhipu AI]] that feels only slightly behind Opus 4.8/GPT-5.5 \u2014 maybe one generation behind. Still an incredible feat for an open source model. Most people will not be able to run it locally without serious hardware, but it shows what is possible.\n\n---\n\n## Research and Experiments: [[DR-DCI]]\n\n**Dr-DCI: Scaling Direct Corpus Interaction via Dynamic Workspace Expansion** (arxiv.org/abs/2606.14885)\n\nA retrieval/workspace pattern relevant to [[Agent Wikis]]. With normal RAG, the agent asks a retriever, gets snippets, and answers from those. With DCI, the agent gets direct shell/file access to the corpus, using tools like find, read, compare files. The problem: it breaks on huge corpora. DR-DCI hides the huge corpus behind a retriever, but the agent can call pull(query, topK) to bring relevant documents into a local workspace, then use normal file tools on that smaller workspace. This gives RAG-like recall with filesystem agency from DCI. Increased accuracy and significantly improved wall time and costs.\n\n---\n\n## Random Brainstorming and Project Progress: [[Agent Wikis]]\n\n[[Agent Wikis]] release got nearly 10k visitors on the first day (humans and agents), doing 5k-7k since. [[Tonbi]] has been refining the pipeline to maintain these wikis autonomously \u2014 created a loop so missed topics get researched and autonomously added. Also exploring premium wikis with Stripe integration, and eventually an advertising pipeline where the agent develops all ad material, releases ads, analyzes results, and hones based on that.",
       "tags": [],
-      "links_out": [],
-      "backlinks": [
+      "links_out": [
         {
-          "from": "companies/anthropic",
+          "to": "people/sayf-codes",
           "type": "wikilink",
-          "text": "AI Garage Weekly - June 19, 2026"
+          "text": "Sayf Codes"
         },
         {
-          "from": "companies/openai",
+          "to": "people/tonbi",
           "type": "wikilink",
-          "text": "AI Garage Weekly - June 19, 2026"
+          "text": "Tonbi"
         },
         {
-          "from": "concepts/dr-dci",
+          "to": "companies/ai-garage-weekly",
           "type": "wikilink",
-          "text": "AI Garage Weekly - June 19, 2026"
+          "text": "AI Garage Weekly"
         },
         {
-          "from": "concepts/hermes-agent",
+          "to": "GLM-5.2",
           "type": "wikilink",
-          "text": "AI Garage Weekly - June 19, 2026"
+          "text": "GLM-5.2"
         },
         {
-          "from": "persons/tonbi",
+          "to": "concepts/dr-dci",
           "type": "wikilink",
-          "text": "AI Garage Weekly - June 19, 2026"
+          "text": "DR-DCI"
+        },
+        {
+          "to": "concepts/hermes-agent",
+          "type": "wikilink",
+          "text": "Hermes Agent"
+        },
+        {
+          "to": "companies/anthropic",
+          "type": "wikilink",
+          "text": "Anthropic"
+        },
+        {
+          "to": "companies/zhipu-ai",
+          "type": "wikilink",
+          "text": "Zhipu AI"
+        },
+        {
+          "to": "concepts/agent-wikis",
+          "type": "wikilink",
+          "text": "Agent Wikis"
         }
       ],
-      "outbound_count": 0,
-      "inbound_count": 5
+      "backlinks": [
+        {
+          "from": "companies/ai-garage-weekly",
+          "type": "wikilink",
+          "text": "ai-garage-weekly-2026-06-19"
+        },
+        {
+          "from": "companies/zhipu-ai",
+          "type": "wikilink",
+          "text": "ai-garage-weekly-2026-06-19"
+        },
+        {
+          "from": "concepts/glm-5-2",
+          "type": "wikilink",
+          "text": "ai-garage-weekly-2026-06-19"
+        }
+      ],
+      "outbound_count": 9,
+      "inbound_count": 3
     },
     {
       "slug": "newsletters/ai-garage-weekly-2026-06-20",
@@ -4029,7 +4207,7 @@
       "title": "Claude Second Brain Levels 2026 06 20",
       "type": "newsletter",
       "updated": "",
-      "body": "# Every Level of a Claude Second Brain Explained\n\n**Forwarded by:** Sayf (sayfcodes@gmail.com \u2192 info@malohacoast.com)\n**Source URI:** gmail://msg_19ee2dfa87f86548\n**Ingested:** 2026-06-20T10:35:00Z\n**Original newsletter:** [[AI Automation Society]] ([[Nate Herk]]), June 19, 2026\n\n> A Claude second brain breakdown, a client pipeline automated, and Codex hits 5M users with a free bonus through June 24.\n\n## In This Issue\n\n- Five levels of building a Claude second brain, from basic file search to fully autonomous recall.\n- Robert automated a client's outbound email pipeline and got their call center actually following up.\n- OpenAI's Codex just crossed 5 million weekly users, with a free bonus available through June 24.\n\n---\n\n## Key Content\n\n### Five Levels of Claude Second Brain\n\n**The insight:** Start from the end. Before you organize a single file, ask how you'll access this data later. The shape of the basketball determines the size of the hoop.\n\nLevel one is just finding a file by searching an exact word. Level five is a fully autonomous system that knows your business, your client relationships, and your IP better than you do. The difference between them isn't the tool \u2014 it's how the data is organized.\n\nJon shows his actual setup (a Herku project, just markdown files and folders) and walks through what separates each level, including semantic search (finding by meaning, not exact match) and full relationship mapping.\n\n**Takeaway:** Your moat is your data. This framework shows how to organize it so your agents can use it, not just find it.\n\n### Winning Is All We Do \u2014 Robert's Client Pipeline\n\nRobert's client had a call center calling leads, but nothing was following up by email. Sales managers emailed Robert their daily lead lists as Excel files. He built an automation that handles the rest: when the file lands in his inbox, it extracts the email, address, and name data, normalizes it, and uploads every contact directly into Instantly as a ready-to-run campaign.\n\n**Opportunity:** Businesses running call centers almost always have messy lead data and no email follow-up. An automation that converts a spreadsheet into a live campaign solves a problem they didn't know anyone could fix.\n\n### In the News \u2014 Codex at 5M Weekly Users\n\nOpenAI Codex crossed 5 million weekly active users. Two new features:\n1. **Banked rate limit resets** (permanent) \u2014 save resets and use them when needed, rather than fixed-timer resets.\n2. **Referral bonus** (through June 24) \u2014 Plus and Pro users can invite up to 3 friends; both get a bonus reset when the friend sends their first Codex message.\n\n**Signal:** Codex growing through referral mechanics at 5M weekly users \u2014 a tool people are actively building with and recommending.\n\n## Sources\n\n- Original newsletter from AI Automation Society / Nate Herk, June 19, 2026\n- Forwarded by Sayf Codes on June 20, 2026",
+      "body": "# Every Level of a Claude Second Brain Explained\n\n**Source:** email\n**Source URI:** gmail://msg_19ee2dfa87f86548\n**Ingested:** 2026-06-20T10:34:00Z\n**Provenance:** Forwarded by Sayf on 2026-06-20 via sayfcodes@gmail.com \u2192 info@malohacoast.com\n\n*Newsletter from [[AI Automation Society]] ([[Nate Herk]]), June 19, 2026.*\n\nA Claude second brain breakdown, a client pipeline automated, and Codex hits 5M users with a free bonus through June 24.\n\n## In This Issue\n\n- Five levels of building a Claude second brain, from basic file search to fully autonomous recall.\n- [[Robert]] automated a client's outbound email pipeline and got their call center actually following up.\n- OpenAI's Codex just crossed 5 million weekly users, and there's a free bonus available through June 24 if you use it.\n\n---\n\n## New Video: Every Level of a Claude Second Brain Explained\n\nThere are five distinct levels to building a Claude second brain, and most people are stuck at level one.\n\nLevel one is just finding a file by searching an exact word. Level five is a fully autonomous system that knows your business, your client relationships, and your IP better than you do. The difference between them isn't the tool. It's how the data is organized.\n\n*The insight that changes how you build:* Start from the end. Before you organize a single file, ask how you'll access this data later. The shape of the basketball determines the size of the hoop. [[Jon]] shows his actual setup (a Herku project, just markdown files and folders) and walks through what separates each level, including semantic search (finding by meaning, not exact match) and full relationship mapping.\n\n*How this helps you:* Your moat is your data. This video shows you how to actually organize it so your agents can use it, not just find it.\n\n---\n\n## Winning Is All We Do: Robert Automated a Client's Outbound Email Pipeline\n\n*What happened:* [[Robert]]'s client had a call center calling leads, but nothing was following up by email. Sales managers emailed [[Robert]] their daily lead lists as Excel files. He built an automation that handles the rest: when the file lands in his inbox, it extracts the email, address, and name data, normalizes it (no more \"N123 MAIN STREET\" showing up as a deliverable address), and uploads every contact directly into Instantly as a ready-to-run campaign. No manual cleanup. No copy-paste. Just results.\n\n*The opportunity for you:* Businesses running call centers almost always have messy lead data and no email follow-up. An automation that converts a spreadsheet into a live campaign solves a problem they didn't know anyone could fix.\n\n---\n\n## In the News: Codex Hits 5M Weekly Users\n\nOpenAI Codex has crossed 5 million weekly active users and launched two features alongside the milestone. One is permanent: banked rate limit resets. Instead of your weekly limit resetting on a fixed timer, you can now save resets and use them when you actually need them. The other runs through June 24: Plus and Pro users can invite up to three friends to try Codex. When a friend sends their first Codex message, you both get a bonus reset.\n\n*How it affects you:* If you've been hitting Codex rate limits at the wrong moment mid-build, the banked reset system fixes that. You decide when to use your reset, not the clock. The bigger signal here: Codex is now growing through referral mechanics at 5 million weekly users. That's not hype. That's a tool people are actively building with and recommending.",
       "tags": [],
       "links_out": [
         {
@@ -4041,11 +4219,32 @@
           "to": "people/nate-herk",
           "type": "wikilink",
           "text": "Nate Herk"
+        },
+        {
+          "to": "people/robert",
+          "type": "wikilink",
+          "text": "Robert"
+        },
+        {
+          "to": "people/jon",
+          "type": "wikilink",
+          "text": "Jon"
         }
       ],
-      "backlinks": [],
-      "outbound_count": 2,
-      "inbound_count": 0
+      "backlinks": [
+        {
+          "from": "people/jon",
+          "type": "wikilink",
+          "text": "Claude Second Brain Levels 2026 06 20"
+        },
+        {
+          "from": "people/robert",
+          "type": "wikilink",
+          "text": "Claude Second Brain Levels 2026 06 20"
+        }
+      ],
+      "outbound_count": 4,
+      "inbound_count": 2
     },
     {
       "slug": "newsletters/humanlayer-launch-2026-06-19-sayf",
@@ -4977,6 +5176,34 @@
       "inbound_count": 1
     },
     {
+      "slug": "people/jon",
+      "title": "Jon",
+      "type": "person",
+      "updated": "",
+      "body": "# Jon\n\n> Claude second brain practitioner who demonstrates his setup using the Herku project \u2014 a markdown-based knowledge management system with multi-level organizational structure.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[Claude Second Brain Levels 2026 06 20]] as showing his actual Claude second brain setup (a Herku project, markdown files and folders) and explaining the five levels of building a Claude second brain, from basic file search to full autonomous recall.\n\n## Related\n\n- [[Claude Second Brain Levels 2026 06 20]] \u2014 Newsletter featuring Jon's second brain setup walkthrough\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-20** | Mentioned in \"Every Level of a Claude Second Brain Explained\" \u2014 demonstrated his Claude second brain setup using the Herku project, walking through five levels of organizational maturity. [Source: gmail://msg_19ee2dfa87f86548]",
+      "tags": [
+        "claude-second-brain",
+        "herku",
+        "knowledge-management"
+      ],
+      "links_out": [
+        {
+          "to": "newsletters/claude-second-brain-levels-2026-06-20",
+          "type": "wikilink",
+          "text": "Claude Second Brain Levels 2026 06 20"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "newsletters/claude-second-brain-levels-2026-06-20",
+          "type": "wikilink",
+          "text": "Jon"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 1
+    },
+    {
       "slug": "people/kyle",
       "title": "Kyle",
       "type": "person",
@@ -5232,6 +5459,33 @@
       "inbound_count": 3
     },
     {
+      "slug": "people/robert",
+      "title": "Robert",
+      "type": "person",
+      "updated": "",
+      "body": "# Robert\n\n> AI automation practitioner who automated a client's outbound email pipeline for a call center operation.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[Claude Second Brain Levels 2026 06 20]] as having automated a client's outbound email pipeline \u2014 converts daily lead Excel files into Instantly campaigns, handling data normalization and follow-up sequencing.\n\n## Related\n\n- [[Claude Second Brain Levels 2026 06 20]] \u2014 Newsletter featuring Robert's automation case study\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-20** | Mentioned in \"Every Level of a Claude Second Brain Explained\" \u2014 automated a client's outbound email pipeline using Instantly, handling lead data normalization and campaign launch. [Source: gmail://msg_19ee2dfa87f86548]",
+      "tags": [
+        "ai-automation",
+        "automation-practitioner"
+      ],
+      "links_out": [
+        {
+          "to": "newsletters/claude-second-brain-levels-2026-06-20",
+          "type": "wikilink",
+          "text": "Claude Second Brain Levels 2026 06 20"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "newsletters/claude-second-brain-levels-2026-06-20",
+          "type": "wikilink",
+          "text": "Robert"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 1
+    },
+    {
       "slug": "people/sayf-codes",
       "title": "Sayf Codes",
       "type": "person",
@@ -5264,10 +5518,15 @@
           "from": "meetings/sayf-zaim-jun-12-2026",
           "type": "wikilink",
           "text": "people/sayf-codes|Sayf"
+        },
+        {
+          "from": "newsletters/ai-garage-weekly-2026-06-19",
+          "type": "wikilink",
+          "text": "Sayf Codes"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 3
+      "inbound_count": 4
     },
     {
       "slug": "people/tj-vandermolen",
@@ -5325,7 +5584,17 @@
       ],
       "backlinks": [
         {
+          "from": "companies/ai-garage-weekly",
+          "type": "wikilink",
+          "text": "Tonbi"
+        },
+        {
           "from": "concepts/agent-wikis",
+          "type": "wikilink",
+          "text": "Tonbi"
+        },
+        {
+          "from": "newsletters/ai-garage-weekly-2026-06-19",
           "type": "wikilink",
           "text": "Tonbi"
         },
@@ -5336,7 +5605,7 @@
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 2
+      "inbound_count": 4
     },
     {
       "slug": "people/yassif-n-m",
@@ -5516,7 +5785,7 @@
       "tags": [],
       "links_out": [
         {
-          "to": "newsletters/ai-garage-weekly-2026-06-19",
+          "to": "AI Garage Weekly - June 19, 2026",
           "type": "wikilink",
           "text": "AI Garage Weekly - June 19, 2026"
         }
@@ -5769,8 +6038,18 @@
       "type": "link"
     },
     {
-      "source": "companies/anthropic",
+      "source": "companies/ai-garage-weekly",
       "target": "newsletters/ai-garage-weekly-2026-06-19",
+      "type": "wikilink"
+    },
+    {
+      "source": "companies/ai-garage-weekly",
+      "target": "people/tonbi",
+      "type": "wikilink"
+    },
+    {
+      "source": "companies/ai-garage-weekly",
+      "target": "concepts/agent-wikis",
       "type": "wikilink"
     },
     {
@@ -5829,11 +6108,6 @@
       "type": "wikilink"
     },
     {
-      "source": "companies/openai",
-      "target": "newsletters/ai-garage-weekly-2026-06-19",
-      "type": "wikilink"
-    },
-    {
       "source": "companies/openrouter",
       "target": "inbox/openrouter-provider-data-policies-2026-06-19",
       "type": "wikilink"
@@ -5856,6 +6130,11 @@
     {
       "source": "companies/system-design-one",
       "target": "people/neo-kim",
+      "type": "wikilink"
+    },
+    {
+      "source": "companies/zhipu-ai",
+      "target": "newsletters/ai-garage-weekly-2026-06-19",
       "type": "wikilink"
     },
     {
@@ -6019,11 +6298,6 @@
       "type": "wikilink"
     },
     {
-      "source": "concepts/dr-dci",
-      "target": "newsletters/ai-garage-weekly-2026-06-19",
-      "type": "wikilink"
-    },
-    {
       "source": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
       "target": "people/aisyah-humaira-wan-aziz",
       "type": "wikilink"
@@ -6064,13 +6338,23 @@
       "type": "wikilink"
     },
     {
-      "source": "concepts/google-workspace-setup",
-      "target": "gbrain",
+      "source": "concepts/glm-5-2",
+      "target": "companies/zhipu-ai",
       "type": "wikilink"
     },
     {
-      "source": "concepts/hermes-agent",
+      "source": "concepts/glm-5-2",
       "target": "newsletters/ai-garage-weekly-2026-06-19",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/glm-5-2",
+      "target": "companies/anthropic",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/google-workspace-setup",
+      "target": "gbrain",
       "type": "wikilink"
     },
     {
@@ -6679,6 +6963,36 @@
       "type": "wikilink"
     },
     {
+      "source": "newsletters/ai-garage-weekly-2026-06-19",
+      "target": "people/sayf-codes",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/ai-garage-weekly-2026-06-19",
+      "target": "people/tonbi",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/ai-garage-weekly-2026-06-19",
+      "target": "concepts/dr-dci",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/ai-garage-weekly-2026-06-19",
+      "target": "concepts/hermes-agent",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/ai-garage-weekly-2026-06-19",
+      "target": "companies/anthropic",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/ai-garage-weekly-2026-06-19",
+      "target": "concepts/agent-wikis",
+      "type": "wikilink"
+    },
+    {
       "source": "newsletters/ai-garage-weekly-2026-06-20",
       "target": "people/tonbi",
       "type": "wikilink"
@@ -6701,6 +7015,16 @@
     {
       "source": "newsletters/claude-second-brain-levels-2026-06-20",
       "target": "people/nate-herk",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/claude-second-brain-levels-2026-06-20",
+      "target": "people/robert",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/claude-second-brain-levels-2026-06-20",
+      "target": "people/jon",
       "type": "wikilink"
     },
     {
@@ -6874,11 +7198,6 @@
       "type": "wikilink"
     },
     {
-      "source": "persons/tonbi",
-      "target": "newsletters/ai-garage-weekly-2026-06-19",
-      "type": "wikilink"
-    },
-    {
       "source": "sayf/maloha-coast-navigator-test-edition",
       "target": "concepts/claude-code-10x-skill-newsletter",
       "type": "wikilink"
@@ -6929,6 +7248,7 @@
       "people/dex-horthy",
       "people/dexter-horthy",
       "people/jake-van-cleef",
+      "people/jon",
       "people/kyle",
       "people/liyana",
       "people/nabil-jalil",
@@ -6936,6 +7256,7 @@
       "people/neo-kim",
       "people/nick-milo",
       "people/paul-hoekstra",
+      "people/robert",
       "people/sayf-codes",
       "people/tj-vandermolen",
       "people/tonbi",
@@ -6946,6 +7267,7 @@
     ],
     "companies": [
       "companies/ai-automation-society",
+      "companies/ai-garage-weekly",
       "companies/anthropic",
       "companies/blackgrid-digital",
       "companies/digital-power",
@@ -6962,7 +7284,8 @@
       "companies/passend",
       "companies/posh-corporate",
       "companies/solo-satoshi",
-      "companies/system-design-one"
+      "companies/system-design-one",
+      "companies/zhipu-ai"
     ]
   },
   "doctor": {
@@ -7055,7 +7378,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 187 pages",
+        "message": "Connected, 192 pages",
         "category": "ops"
       },
       {
@@ -7091,7 +7414,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 414ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 666ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -7109,25 +7432,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 57%",
+        "message": "Entity link coverage 92%, timeline 60%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 2/15, orphans 10/15, dead-links 10/10)",
+        "message": "Brain score 83/100 (embed 35/35, links 25/25, timeline 3/15, orphans 10/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 45 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 49 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 187 pages; 35 external link(s) (no bare tweets).",
+        "message": "Sampled 192 pages; 35 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -7288,11 +7611,11 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction current: 3/187 pages (2%) stale",
+        "message": "Extraction current: 0/192 pages (0%) stale",
         "details": {
-          "total": 187,
-          "stale": 3,
-          "pct": 2,
+          "total": 192,
+          "stale": 0,
+          "pct": 0,
           "warn_pct": 20,
           "fail_pct": null,
           "source_id": null
@@ -7320,7 +7643,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "110 reranker failure(s) in last 7 days (below threshold)",
+        "message": "121 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -7332,7 +7655,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "49.7% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "52.1% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -7435,13 +7758,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 93% \u00b1 3.7%",
+        "message": "Coverage 94% \u00b1 3.4%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
         "status": "warn",
-        "message": "Coverage 58% \u00b1 7.4% (target 90%)",
+        "message": "Coverage 61% \u00b1 7.0% (target 90%)",
         "category": "meta"
       },
       {

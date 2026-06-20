@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-20T03:25:56Z",
+  "updated_at": "2026-06-20T03:43:04Z",
   "summary": {
     "page_count": 18,
     "people_count": 4,
@@ -7,7 +7,7 @@
     "artifact_count": 0,
     "total_links": 7,
     "outbound_count": 21,
-    "inbound_count": 18,
+    "inbound_count": 19,
     "graph_coverage": "27.8% of pages have inbound links",
     "concept_count": 11,
     "meeting_count": 3,
@@ -327,10 +327,15 @@
           "from": "meetings/sayf-zaim-jun-12-2026",
           "type": "wikilink",
           "text": "people/sayf-codes|Sayf"
+        },
+        {
+          "from": "newsletters/ai-garage-weekly-2026-06-19",
+          "type": "wikilink",
+          "text": "Sayf Codes"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 3
+      "inbound_count": 4
     },
     {
       "slug": "people/zaim-mohzani",
@@ -553,7 +558,7 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-20T03:25:56Z",
+      "ts": "2026-06-20T03:43:04Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
@@ -606,14 +611,6 @@
       "stage": "updated",
       "slug": "concepts/zaim/coaching-client-aisyah-rahim",
       "detail": "Coaching Client Aisyah Rahim",
-      "level": "info"
-    },
-    {
-      "ts": "2026-06-20T00:00:00Z",
-      "source": "page",
-      "stage": "updated",
-      "slug": "meetings/zaim/meeting-sayf-zaim-2026-06-12",
-      "detail": "Meeting Sayf Zaim 2026 06 12",
       "level": "info"
     }
   ]
