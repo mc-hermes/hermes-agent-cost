@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-20T01:15:59Z",
+  "updated_at": "2026-06-20T01:32:26Z",
   "summary": {
     "score": "84",
     "score_label": "/100",
@@ -19,9 +19,9 @@
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 189,
-    "outbound_count": 258,
-    "inbound_count": 231,
+    "total_links": 194,
+    "outbound_count": 261,
+    "inbound_count": 237,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -301,7 +301,7 @@
       ],
       "links_out": [
         {
-          "to": "30 Core Agentic Engineering Concepts, Explained Simply",
+          "to": "newsletters/agentic-engineering-concepts-2026-06-20",
           "type": "wikilink",
           "text": "30 Core Agentic Engineering Concepts, Explained Simply"
         },
@@ -316,10 +316,15 @@
           "from": "newsletters/agentic-engineering-concepts-2026-06-20-084511",
           "type": "wikilink",
           "text": "Digital Power"
+        },
+        {
+          "from": "newsletters/agentic-engineering-concepts-2026-06-20",
+          "type": "wikilink",
+          "text": "Digital Power"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "companies/dynamics-orchard-farm-sdn-bhd",
@@ -917,10 +922,20 @@
           "from": "newsletters/agentic-engineering-concepts-2026-06-20-084511",
           "type": "wikilink",
           "text": "System Design One"
+        },
+        {
+          "from": "newsletters/agentic-engineering-concepts-2026-06-20",
+          "type": "wikilink",
+          "text": "System Design One"
+        },
+        {
+          "from": "newsletters/ai-data-center-architecture-2026-06-20",
+          "type": "wikilink",
+          "text": "System Design One"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 4
+      "inbound_count": 6
     },
     {
       "slug": "concepts/3-month-career-pivot-framework-2026-06-15",
@@ -1649,7 +1664,7 @@
       "tags": [],
       "links_out": [
         {
-          "to": "30 Core Agentic Engineering Concepts, Explained Simply",
+          "to": "newsletters/agentic-engineering-concepts-2026-06-20",
           "type": "wikilink",
           "text": "30 Core Agentic Engineering Concepts, Explained Simply"
         },
@@ -3043,15 +3058,42 @@
     },
     {
       "slug": "newsletters/agentic-engineering-concepts-2026-06-20",
-      "title": "Agentic Engineering Concepts 2026 06 20",
+      "title": "30 Core Agentic Engineering Concepts, Explained Simply",
       "type": "newsletter",
       "updated": "",
-      "body": "# 30 Core Agentic Engineering Concepts, Explained Simply\n\n**Forwarded by:** Sayf Codes\n**Original from:** Neo Kim (System Design Newsletter)\n**Original date:** 2026-06-17\n**Source URI:** gmail://msg_19ee2580f5fe7903\n\n#154: What an agent is, how to configure one, when to use multiple, and how to keep them from doing damage.\n\n---\n\n\ud83d\udc4b Hey, it's Neo \u2014 This is a special free edition of this newsletter.\n\nI want to introduce **Paul Hoekstra** as the guest author. Paul is a data engineer at Digital Power, a data and AI consultancy, and writes *Paul's Pipeline*, a free newsletter on AI, data, and side projects.\n\n---\n\n## Foundations\n\n### 1. What is an agent?\nAn agent is an LLM that runs in a loop, has access to tools, and decides what to do next. Instead of a single answer to a prompt, the model produces a chain of actions. Each action builds on the result of the last.\n\nUse an agent when: task is open-ended, the next step depends on the last, and you cannot script the path in advance. Skip the agent when a single prompt or plain script will do.\n\n### 2. Execution model\nThree steps repeated: **Think** (model reads state, decides), **Act** (model emits tool call, harness validates and runs it), **Observe** (tool result joins conversation as new context). Known as ReAct, think-act-observe, agent loop. This is why an agent can recover from its own mistakes.\n\nTwo variations: parallelism (multiple tool calls in one act step) and blocking vs non-blocking (sync vs async).\n\n### 3. Agent state\nTwo halves: **Context window** (everything the model can see now \u2014 has hard token cap and soft context rot ceiling; gone when session ends) and **Everything outside it** (files, databases, memory that survives sessions). Files are the right default: diffable, versionable, easy to edit.\n\n### 4. Common agent patterns\n- **Planner/executor**: One plans, another executes\n- **Router/specialist**: Router dispatches to specialized agents with tight system prompts\n- **Map-reduce parallelism**: Fan-out across subagents, merge results\n- Real workflows combine all three\n\n---\n\n## Configuration Layer\n\n### 5. Agent config files\nProject-level Markdown loaded at session start (CLAUDE.md, AGENTS.md). Short (<100 lines), specific: hard limits, actual tooling stack, behavioral rules. Treat as code, not documentation.\n\n### 6. Reusable workflow files\nOn-demand Markdown with YAML frontmatter (skills, rules). SkillsBench showed Claude Haiku 27.7% with human-curated skills beat Opus 22.0% without. AI-generated skills actually made things worse.\n\n### 7. Workflow frameworks\nSuperpowers, Get Shit Done, Compound Engineering \u2014 chains of skills, hooks, commands wired into repeatable processes.\n\n### 8. Prompt caching\nStores stable prefix so model doesn't re-read every turn. First call pays premium to write cache; later turns get discount. Cache TTL matters \u2014 long pauses let it expire.\n\n### 9. Context rot\nModel performance drops as context fills up. GPT-5.5 scores 98.1% on short docs, 74.0% at 1M tokens. Claude Opus 4.7 drops from 59.2% at 256K to 32.2% at 1M.\n\n## People Mentioned\n- **Neo Kim** \u2014 Author of System Design Newsletter\n- **Paul Hoekstra** \u2014 Data engineer at Digital Power, guest author\n- Sayf Codes \u2014 Forwarded this to Maloha Coast brain\n\n## Related\n- System Design Newsletter (systemdesign.one)\n- Superpowers (agent workflow framework)\n- Get Shit Done (agent workflow framework)\n- Compound Engineering (agent workflow framework)",
+      "body": "# 30 Core Agentic Engineering Concepts, Explained Simply\n\n**Source:** email (sayf forward)\n**Source URI:** gmail://msg_19ee2580f5fe7903\n**Ingested:** 2026-06-20T08:15:00Z\n**Provenance:** Forwarded by sayf on 2026-06-20\n\n**From:** Neo Kim, System Design One (#154)\n**Original Date:** Wed, 17 Jun 2026\n**Forwarded by:** Sayf \u2192 info@malohacoast.com\n\n\ud83d\udc4b Hey, it's Neo \u2014 This is a special free edition of this newsletter.\n\n## Overview\n\nA guide to 30 core agentic engineering concepts, organized into six layers: Foundations, Configuration, Capability, Orchestration, Guardrails, and Observability. Guest author is Paul Hoekstra, data engineer at Digital Power.\n\nThe core thesis: learn the ideas behind the tools, not the tools themselves. Underneath the noise, it's the same few ideas every time.\n\n## Foundations\n\n**1. What is an agent?** An LLM that runs in a loop, has access to tools, and decides what to do next. Use when tasks are open-ended, the next step depends on the last, or you cannot script the path in advance. Skip when a single prompt or script will do \u2014 loops are not free.\n\n**2. Execution model** \u2014 Three steps (think \u2192 act \u2192 observe) repeated. Variations: parallelism (multiple tool calls per step) and blocking vs non-blocking (sync vs async).\n\n**3. Agent state** \u2014 Context window (everything the model sees, has hard and soft limits) vs everything outside it (files, databases, memory). Files are the right default \u2014 diffable, versionable, editable.\n\n**4. Common agent patterns** \u2014 Planner/executor, router/specialist, map-reduce parallelism. Real workflows combine them.\n\n## Configuration Layer\n\n**5. Agent config files** \u2014 Project-level Markdown (CLAUDE.md, AGENTS.md). Short, specific, under 100 lines.\n\n**6. Reusable workflow files** \u2014 On-demand Markdown with YAML frontmatter. SkillsBench showed Claude Haiku at 27.7% with human-curated skills beat Opus at 22.0% without them.\n\n**7. Workflow frameworks** \u2014 Superpowers, Get Shit Done, Compound Engineering provide documented processes.\n\n**8. Prompt caching** \u2014 Stores stable prefix. Cache TTL matters: longer windows stay warm through bigger activity gaps.\n\n**9. Context rot** \u2014 Model performance drops as context fills. GPT-5.5: 98.1% at short vs 74.0% at 1M tokens. Claude Opus 4.7: 59.2% at 256K to 32.2% at 1M.\n\n## Key People\n\n- **Neo Kim** \u2014 Author of System Design One newsletter\n- **Paul Hoekstra** \u2014 Guest author, data engineer at Digital Power, writes Paul's Pipeline\n\n## Related\n\n- [[System Design One]] \u2014 Publication\n- [[Digital Power]] \u2014 Paul's employer",
       "tags": [],
-      "links_out": [],
-      "backlinks": [],
-      "outbound_count": 0,
-      "inbound_count": 0
+      "links_out": [
+        {
+          "to": "companies/system-design-one",
+          "type": "wikilink",
+          "text": "System Design One"
+        },
+        {
+          "to": "companies/digital-power",
+          "type": "wikilink",
+          "text": "Digital Power"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "companies/digital-power",
+          "type": "wikilink",
+          "text": "30 Core Agentic Engineering Concepts, Explained Simply"
+        },
+        {
+          "from": "concepts/pauls-pipeline",
+          "type": "wikilink",
+          "text": "30 Core Agentic Engineering Concepts, Explained Simply"
+        },
+        {
+          "from": "people/paul-hoekstra",
+          "type": "wikilink",
+          "text": "30 Core Agentic Engineering Concepts, Explained Simply"
+        }
+      ],
+      "outbound_count": 2,
+      "inbound_count": 3
     },
     {
       "slug": "newsletters/ai-data-center-architecture-19ee23d6",
@@ -3067,14 +3109,20 @@
     },
     {
       "slug": "newsletters/ai-data-center-architecture-2026-06-20",
-      "title": "Ai Data Center Architecture 2026 06 20",
+      "title": "The Secret Architecture Behind AI Data Centers",
       "type": "newsletter",
       "updated": "",
-      "body": "# The Secret Architecture Behind AI Data Centers\n\n**Forwarded by:** Sayf Codes\n**Original from:** Neo Kim (System Design Newsletter)\n**Original date:** 2026-06-19\n**Source URI:** gmail://msg_19ee23d6478fc08e\n\n#155: Why AI breakthroughs are really infrastructure breakthroughs.\n\n---\n\n\ud83d\udc4b Neo here! This is a free preview of a subscriber-only post. Guest author: **Ashish Prajapati**.\n\n---\n\n## The Hidden Architecture Behind AI\n\nThe biggest breakthroughs in AI are not coming from better models \u2014 they're coming from better infrastructure. AI data centers are warehouse-sized facilities packed with specialized hardware.\n\n**Mental model: AI Data Center = Factory**\n- Data = Raw material\n- GPUs = Machines on the factory floor\n- Network = Internal transport system\n- Storage = Warehouse\n- Software = Assembly line logic\n- Output = Trained intelligence\n\n---\n\n## First Problem: Physics\n\nThree hard physical constraints:\n1. **Power** \u2014 A single server rack of GPUs draws 80-120kW (equivalent to ~40 homes at full load)\n2. **Cooling** \u2014 More power = more heat. Modern centers increasingly use liquid cooling (cold plates attached directly to GPUs/CPUs)\n3. **Space** \u2014 Racks need floor space. Scaling AI is real estate, energy infrastructure, and thermodynamics combined\n\n---\n\n## Compute: Why GPUs Took Over\n\n- **CPU** = Few powerful cores, handles complex sequential tasks (the \"manager\")\n- **GPU** = Thousands of smaller cores, massively parallel (the \"factory workers\")\n- **DPU** = Data Processing Unit \u2014 handles networking, storage I/O, security (logistics & operations)\n\nAI training is repeated matrix multiplication billions of times \u2014 GPUs are specifically designed for this.\n\n---\n\n## Hidden Bottleneck: Memory and Storage\n\nGPUs don't fail because they're slow \u2014 they fail because they're constantly starved for data.\n\n**Memory hierarchy:**\n- GPU Memory (HBM) \u2014 blazing fast, tens of GB\n- CPU RAM \u2014 hundreds of GB, slower\n- SSD/NVMe Storage \u2014 enormous capacity\n- Network/Object Storage \u2014 nearly unlimited, slowest link\n\n**Tiered storage:** Hot (NVMe SSDs) \u2192 Warm (parallel file systems like Lustre, GPFS) \u2192 Cold (object storage like S3)\n\n---\n\n## Networking: The Bottleneck Nobody Talks About\n\nThousands of GPUs must constantly communicate. Every second a GPU waits for data is wasted investment.\n\n**Network hierarchy:**\n- NVLink \u2014 fastest, within same server\n- InfiniBand/RoCE \u2014 between servers (\"bullet train\")\n- Ethernet \u2014 general purpose, not designed for AI's extreme demands\n\n**Techniques:** RDMA (direct memory-to-memory), GPUDirect (GPUs read/write storage/network bypassing CPU), zero-copy pipelines.\n\n**Amdahl's Law** \u2014 adding more GPUs eventually stops helping because communication overhead grows.\n\n## People Mentioned\n- **Neo Kim** \u2014 Author of System Design Newsletter\n- **Ashish Prajapati** \u2014 AI infrastructure specialist, guest author. Runs BeSA (Become a Solutions Architect) mentoring. Has trained 39,000+ learners, helped 23,000+ professionals\n- Sayf Codes \u2014 Forwarded this to Maloha Coast brain\n\n## Related\n- System Design Newsletter (systemdesign.one)\n- NVIDIA NCA-AIIO certification\n- CodeRabbit (partner, AI code review)",
+      "body": "# The Secret Architecture Behind AI Data Centers\n\n**Source:** email (sayf forward)\n**Source URI:** gmail://msg_19ee23d6478fc08e\n**Ingested:** 2026-06-20T08:15:00Z\n**Provenance:** Forwarded by sayf on 2026-06-20\n\n**From:** Neo Kim, System Design One (#155)\n**Original Date:** Fri, 19 Jun 2026\n**Forwarded by:** Sayf \u2192 info@malohacoast.com\n\n\ud83d\udc4b Neo here! A free preview of a subscriber-only post on AI infrastructure.\n\n## Core Thesis\n\nThe biggest breakthroughs in AI are not coming from better models \u2014 they're coming from better infrastructure. AI data centers are factories, not server rooms.\n\n## Mental Model: AI Data Center as Factory\n\n| Component | Analogy |\n|-----------|---------|\n| AI Data Center | Factory |\n| Data | Raw material |\n| GPUs | Machines on the factory floor |\n| Network | Internal transport system |\n| Storage | Warehouse |\n| Software | Assembly line logic |\n| Output | Trained intelligence |\n\n## Physical Constraints\n\n1. **Power** \u2014 A single GPU rack draws 80-120 kW (\u224840 homes). Limited by what the facility can physically receive.\n2. **Cooling** \u2014 More power = more heat. Liquid cooling via cold plates attached directly to GPUs is the modern approach.\n3. **Space** \u2014 Scaling AI requires real estate, energy infrastructure, and thermodynamics management.\n\n## Compute Architecture\n\n- **CPU** = Manager (decision-making, few powerful cores)\n- **GPU** = Factory workers (thousands of simpler cores, mass production of matrix multiplications)\n- **DPU** = Logistics (networking, storage I/O, security)\n\n## Memory & Storage Bottleneck\n\nGPUs are constantly starved for data. Memory hierarchy:\n- GPU Memory (HBM) \u2014 blazing fast but tiny (tens of GB)\n- CPU RAM \u2014 hundreds of GB\n- SSD/NVMe \u2014 enormous capacity\n- Object storage \u2014 nearly unlimited but slowest\n\nTiered storage: Hot (NVMe SSDs) \u2192 Warm (Lustre, GPFS) \u2192 Cold (Amazon S3)\n\n## Networking\n\nLeaf-spine architecture: every GPU server reaches every other in \u22642 hops.\n- NVLink = intra-node (private highway within server)\n- InfiniBand/RoCE = inter-node (bullet train between servers)\n- Ethernet = general-purpose (not designed for AI workloads)\n\n**Amdahl's Law:** Adding more GPUs eventually stops helping due to communication overhead.\n\n**Smarter data movement:** RDMA (direct memory-to-memory), GPUDirect (bypass CPU), zero-copy pipelines.\n\n## Key People\n\n- **Neo Kim** \u2014 Author of System Design One\n- **Ashish Prajapati** \u2014 AI infrastructure specialist, co-author of this post\n\n## Related\n\n- [[System Design One]] \u2014 Publication",
       "tags": [],
-      "links_out": [],
+      "links_out": [
+        {
+          "to": "companies/system-design-one",
+          "type": "wikilink",
+          "text": "System Design One"
+        }
+      ],
       "backlinks": [],
-      "outbound_count": 0,
+      "outbound_count": 1,
       "inbound_count": 0
     },
     {
@@ -4035,7 +4083,7 @@
       ],
       "links_out": [
         {
-          "to": "30 Core Agentic Engineering Concepts, Explained Simply",
+          "to": "newsletters/agentic-engineering-concepts-2026-06-20",
           "type": "wikilink",
           "text": "30 Core Agentic Engineering Concepts, Explained Simply"
         }
@@ -4569,6 +4617,11 @@
     },
     {
       "source": "companies/digital-power",
+      "target": "newsletters/agentic-engineering-concepts-2026-06-20",
+      "type": "wikilink"
+    },
+    {
+      "source": "companies/digital-power",
       "target": "people/paul-hoekstra",
       "type": "wikilink"
     },
@@ -4815,6 +4868,11 @@
     {
       "source": "concepts/openrouter-provider-data-policies-2026-06-19",
       "target": "companies/openrouter",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/pauls-pipeline",
+      "target": "newsletters/agentic-engineering-concepts-2026-06-20",
       "type": "wikilink"
     },
     {
@@ -5323,6 +5381,16 @@
       "type": "wikilink"
     },
     {
+      "source": "newsletters/agentic-engineering-concepts-2026-06-20",
+      "target": "companies/system-design-one",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/ai-data-center-architecture-2026-06-20",
+      "target": "companies/system-design-one",
+      "type": "wikilink"
+    },
+    {
       "source": "newsletters/humanlayer-launch-2026-06-19-sayf",
       "target": "people/dex-horthy",
       "type": "wikilink"
@@ -5430,6 +5498,11 @@
     {
       "source": "people/liyana",
       "target": "people/zaim-mohzani",
+      "type": "wikilink"
+    },
+    {
+      "source": "people/paul-hoekstra",
+      "target": "newsletters/agentic-engineering-concepts-2026-06-20",
       "type": "wikilink"
     },
     {
@@ -5637,7 +5710,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 456ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 385ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
