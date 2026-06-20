@@ -1,27 +1,27 @@
 {
-  "updated_at": "2026-06-20T00:03:34Z",
+  "updated_at": "2026-06-20T00:09:09Z",
   "summary": {
     "score": "83",
     "score_label": "/100",
     "score_breakdown": "score 83/100, embed 35/35, links 25/25, timeline 2/15, orphans 11/15, dead-links 10/10",
-    "page_count": 130,
+    "page_count": 133,
     "embed_coverage": "100% coverage, 0 missing",
-    "graph_coverage": "57.5% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
-    "entity_links": "Coverage 95% \u00b1 3.5%",
+    "graph_coverage": "56.9% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 93% \u00b1 4.1%",
     "concept_count": 56,
     "meeting_count": 5,
-    "person_count": 24,
-    "company_count": 16,
-    "newsletter_count": 23,
+    "person_count": 25,
+    "company_count": 17,
+    "newsletter_count": 24,
     "video_count": 0,
     "article_count": 2,
     "bookmark_count": 1,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 181,
-    "outbound_count": 246,
-    "inbound_count": 222,
+    "total_links": 185,
+    "outbound_count": 251,
+    "inbound_count": 227,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -36,8 +36,8 @@
       "orphans": "11/15",
       "dead-links": "10/10"
     },
-    "checks_passed": 66,
-    "checks_warned": 7,
+    "checks_passed": 67,
+    "checks_warned": 6,
     "checks_failed": 0
   },
   "pages": [
@@ -287,6 +287,32 @@
       ],
       "backlinks": [],
       "outbound_count": 1,
+      "inbound_count": 0
+    },
+    {
+      "slug": "companies/digital-power",
+      "title": "Digital Power",
+      "type": "company",
+      "updated": "",
+      "body": "# Digital Power\n\n> Data and AI consultancy. Employer of Paul Hoekstra.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[30 Core Agentic Engineering Concepts, Explained Simply]] as the employer of guest author Paul Hoekstra (data engineer)\n\n## Related\n\n- [[Paul Hoekstra]] \u2014 employee\n- [[30 Core Agentic Engineering Concepts, Explained Simply]] \u2014 source page\n\n## Timeline\n\n- **Jun 2026** | Mentioned as Paul Hoekstra's employer (data and AI consultancy). [Source: gmail://msg_19ee2580f5fe7903]",
+      "tags": [
+        "consultancy",
+        "data-ai"
+      ],
+      "links_out": [
+        {
+          "to": "newsletters/agentic-engineering-concepts-2026-06-20",
+          "type": "wikilink",
+          "text": "30 Core Agentic Engineering Concepts, Explained Simply"
+        },
+        {
+          "to": "people/paul-hoekstra",
+          "type": "wikilink",
+          "text": "Paul Hoekstra"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 2,
       "inbound_count": 0
     },
     {
@@ -2894,6 +2920,40 @@
       "inbound_count": 0
     },
     {
+      "slug": "newsletters/agentic-engineering-concepts-2026-06-20",
+      "title": "30 Core Agentic Engineering Concepts, Explained Simply",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# 30 Core Agentic Engineering Concepts, Explained Simply\n\n**Source:** email \u2014 Neo Kim (System Design One) via Sayf Codes\n**Source URI:** gmail://msg_19ee2580f5fe7903\n**Ingested:** 2026-06-20T08:06:00Z\n**Provenance:** Forwarded by Sayf on 2026-06-20 from Substack newsletter (System Design One #154)\n\n## Summary\n\nSystem Design One newsletter #154 by [[Neo Kim]] and guest author [[Paul Hoekstra]] covers 30 core agentic engineering concepts organized into six layers: Foundations, Configuration, Capability, Orchestration, Guardrails, and Observability. The key thesis: learn the ideas behind the tools, not the tools themselves.\n\n## Foundations\n\n### 1. What is an agent?\nAn LLM that runs in a loop, has access to tools, and decides what to do next. Use for open-ended tasks where the next step depends on the last. Skip when a single prompt or script will do \u2014 loops are not free.\n\n### 2. Execution model\nThink \u2192 Act \u2192 Observe (ReAct pattern). The loop replaces brute-force prediction with feedback, letting agents recover from their own mistakes. Two variations: parallelism (multiple tool calls in one step) and blocking vs non-blocking (sync vs async).\n\n### 3. Agent state\nTwo halves: context window (everything the model sees now, gone when session ends) and everything outside it (files, memory, databases). Files are the right default \u2014 diffable, versionable. Memory for cross-session facts. Databases for structured queries or shared state.\n\n### 4. Common agent patterns\n- **Planner/executor** \u2014 one plans, another executes\n- **Router/specialist** \u2014 dispatches to bounded specialists\n- **Map-reduce parallelism** \u2014 fan-out subagents, merge results\n- Real workflows combine patterns; handoffs are where things break\n\n## Configuration Layer\n\n### 5. Agent config files\nProject-level markdown (CLAUDE.md, AGENTS.md) loaded at session start. Under 100 lines, treated as code. Without one, agents default to whatever looked most plausible in training data.\n\n### 6. Reusable workflow files\nOn-demand markdown with YAML frontmatter (Claude skills, Cursor rules). SkillsBench showed Claude Haiku at 27.7% with human-curated skills beats Opus at 22.0% without them. AI-written skills made things worse.\n\n### 7. Workflow frameworks\nSuperpowers (skills + HARD-GATE), Get Shit Done (slash commands + hooks), Compound Engineering (Plan/Work/Review/Compound). Common thread: understand \u2192 work \u2192 check.\n\n### 8. Prompt caching\nStores stable prefix to avoid re-reading every turn. First call writes cache at premium; later turns read at discount. TTL matters \u2014 longer for active sessions, shorter for sporadic use.\n\n### 9. Context rot\nPerformance drops as context fills. GPT-5.5: 98.1% \u2192 74.0% (short \u2192 1M tokens). Claude Opus 4.7: 59.2% \u2192 32.2% (256K \u2192 1M).\n\n> **Note:** The remaining concepts (Capability layer through Observability layer, concepts 10-30) were truncated by the Gmail API response. Full content available at the original newsletter.\n\n## Key People Mentioned\n\n- **Neo Kim** \u2014 Author of System Design One newsletter\n- **Paul Hoekstra** \u2014 Guest author; data engineer at Digital Power, writes Paul's Pipeline newsletter on AI, data, and side projects\n\n## Key Concepts\n\n- Agent loop / ReAct pattern\n- Agent state (context window vs external)\n- Planner/executor, router/specialist, map-reduce patterns\n- Config files (CLAUDE.md, AGENTS.md)\n- Prompt caching and TTL\n- Context rot",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "people/neo-kim",
+          "type": "wikilink",
+          "text": "Neo Kim"
+        },
+        {
+          "to": "people/paul-hoekstra",
+          "type": "wikilink",
+          "text": "Paul Hoekstra"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "companies/digital-power",
+          "type": "wikilink",
+          "text": "30 Core Agentic Engineering Concepts, Explained Simply"
+        },
+        {
+          "from": "people/paul-hoekstra",
+          "type": "wikilink",
+          "text": "30 Core Agentic Engineering Concepts, Explained Simply"
+        }
+      ],
+      "outbound_count": 2,
+      "inbound_count": 2
+    },
+    {
       "slug": "newsletters/ai-data-center-architecture-2026-06-20",
       "title": "Ai Data Center Architecture 2026 06 20",
       "type": "newsletter",
@@ -3807,10 +3867,15 @@
           "from": "digests/2026-06-15-business-brain-digest",
           "type": "wikilink",
           "text": "Neo Kim"
+        },
+        {
+          "from": "newsletters/agentic-engineering-concepts-2026-06-20",
+          "type": "wikilink",
+          "text": "Neo Kim"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 5
+      "inbound_count": 6
     },
     {
       "slug": "people/nick-milo",
@@ -3833,6 +3898,38 @@
       ],
       "outbound_count": 0,
       "inbound_count": 1
+    },
+    {
+      "slug": "people/paul-hoekstra",
+      "title": "Paul Hoekstra",
+      "type": "person",
+      "updated": "",
+      "body": "# Paul Hoekstra\n\n> Data engineer at Digital Power (data and AI consultancy). Writes Paul's Pipeline, a free newsletter on AI, data, and side projects.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[30 Core Agentic Engineering Concepts, Explained Simply]] as guest author of System Design One #154\n\n## Related\n\n- [[30 Core Agentic Engineering Concepts, Explained Simply]] \u2014 guest-authored the newsletter\n- Neo Kim \u2014 co-author of this newsletter\n\n## Timeline\n\n- **Jun 2026** | Guest-authored \"30 Core Agentic Engineering Concepts, Explained Simply\" (System Design One #154) covering agentic engineering patterns. [Source: gmail://msg_19ee2580f5fe7903]",
+      "tags": [
+        "author",
+        "data-engineer"
+      ],
+      "links_out": [
+        {
+          "to": "newsletters/agentic-engineering-concepts-2026-06-20",
+          "type": "wikilink",
+          "text": "30 Core Agentic Engineering Concepts, Explained Simply"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "companies/digital-power",
+          "type": "wikilink",
+          "text": "Paul Hoekstra"
+        },
+        {
+          "from": "newsletters/agentic-engineering-concepts-2026-06-20",
+          "type": "wikilink",
+          "text": "Paul Hoekstra"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 2
     },
     {
       "slug": "people/sayf-codes",
@@ -4340,6 +4437,16 @@
       "source": "companies/blackgrid-digital",
       "target": "people/nabil-jalil",
       "type": "link"
+    },
+    {
+      "source": "companies/digital-power",
+      "target": "newsletters/agentic-engineering-concepts-2026-06-20",
+      "type": "wikilink"
+    },
+    {
+      "source": "companies/digital-power",
+      "target": "people/paul-hoekstra",
+      "type": "wikilink"
     },
     {
       "source": "companies/dynamics-orchard-farm-sdn-bhd",
@@ -5057,6 +5164,16 @@
       "type": "wikilink"
     },
     {
+      "source": "newsletters/agentic-engineering-concepts-2026-06-20",
+      "target": "people/neo-kim",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/agentic-engineering-concepts-2026-06-20",
+      "target": "people/paul-hoekstra",
+      "type": "wikilink"
+    },
+    {
       "source": "newsletters/humanlayer-launch-2026-06-19-sayf",
       "target": "people/dex-horthy",
       "type": "wikilink"
@@ -5218,6 +5335,7 @@
       "people/nate-herk",
       "people/neo-kim",
       "people/nick-milo",
+      "people/paul-hoekstra",
       "people/sayf-codes",
       "people/tj-vandermolen",
       "people/yassif-n-m",
@@ -5228,6 +5346,7 @@
       "companies/ai-automation-society",
       "companies/anthropic",
       "companies/blackgrid-digital",
+      "companies/digital-power",
       "companies/dynamics-orchard-farm-sdn-bhd",
       "companies/global-ai-village",
       "companies/humanlayer",
@@ -5246,10 +5365,10 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 65,
-    "brain_checks_score": 85,
+    "health_score": 70,
+    "brain_checks_score": 90,
     "category_scores": {
-      "brain": 85,
+      "brain": 90,
       "skill": 100,
       "ops": 95,
       "meta": 85
@@ -5333,7 +5452,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 127 pages",
+        "message": "Connected, 130 pages",
         "category": "ops"
       },
       {
@@ -5369,7 +5488,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 543ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 459ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -5386,8 +5505,8 @@
       },
       {
         "name": "graph_coverage",
-        "status": "warn",
-        "message": "Entity link coverage 93%, timeline 48% (40 entity pages). Run: gbrain extract all",
+        "status": "ok",
+        "message": "Entity link coverage 90%, timeline 50%",
         "category": "brain"
       },
       {
@@ -5399,13 +5518,13 @@
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 39 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 41 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 127 pages; 18 external link(s) (no bare tweets).",
+        "message": "Sampled 130 pages; 18 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -5566,11 +5685,11 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction current: 8/127 pages (6%) stale",
+        "message": "Extraction current: 11/130 pages (8%) stale",
         "details": {
-          "total": 127,
-          "stale": 8,
-          "pct": 6,
+          "total": 130,
+          "stale": 11,
+          "pct": 8,
           "warn_pct": 20,
           "fail_pct": null,
           "source_id": null
@@ -5610,7 +5729,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "57.5% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "56.9% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -5713,13 +5832,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 95% \u00b1 3.5%",
+        "message": "Coverage 93% \u00b1 4.1%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
         "status": "warn",
-        "message": "Coverage 49% \u00b1 8.0% (target 90%)",
+        "message": "Coverage 51% \u00b1 7.8% (target 90%)",
         "category": "meta"
       },
       {
