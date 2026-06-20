@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-06-20T00:09:09Z",
+  "updated_at": "2026-06-20T00:21:46Z",
   "summary": {
     "score": "83",
     "score_label": "/100",
     "score_breakdown": "score 83/100, embed 35/35, links 25/25, timeline 2/15, orphans 11/15, dead-links 10/10",
-    "page_count": 133,
+    "page_count": 135,
     "embed_coverage": "100% coverage, 0 missing",
-    "graph_coverage": "56.9% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "graph_coverage": "56.1% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
     "entity_links": "Coverage 93% \u00b1 4.1%",
-    "concept_count": 56,
+    "concept_count": 58,
     "meeting_count": 5,
     "person_count": 25,
     "company_count": 17,
@@ -2920,6 +2920,18 @@
       "inbound_count": 0
     },
     {
+      "slug": "newsletters/agentic-engineering-concepts-19ee2580",
+      "title": "Agentic Engineering Concepts 19ee2580",
+      "type": "concept",
+      "updated": "",
+      "body": "",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "newsletters/agentic-engineering-concepts-2026-06-20",
       "title": "30 Core Agentic Engineering Concepts, Explained Simply",
       "type": "newsletter",
@@ -2952,6 +2964,18 @@
       ],
       "outbound_count": 2,
       "inbound_count": 2
+    },
+    {
+      "slug": "newsletters/ai-data-center-architecture-19ee23d6",
+      "title": "Ai Data Center Architecture 19ee23d6",
+      "type": "concept",
+      "updated": "",
+      "body": "",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
     },
     {
       "slug": "newsletters/ai-data-center-architecture-2026-06-20",
@@ -5452,7 +5476,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 130 pages",
+        "message": "Connected, 132 pages",
         "category": "ops"
       },
       {
@@ -5488,7 +5512,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 459ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 421ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -5524,7 +5548,7 @@
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 130 pages; 18 external link(s) (no bare tweets).",
+        "message": "Sampled 132 pages; 18 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -5685,11 +5709,11 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction current: 11/130 pages (8%) stale",
+        "message": "Extraction current: 13/132 pages (10%) stale",
         "details": {
-          "total": 130,
-          "stale": 11,
-          "pct": 8,
+          "total": 132,
+          "stale": 13,
+          "pct": 10,
           "warn_pct": 20,
           "fail_pct": null,
           "source_id": null
@@ -5729,7 +5753,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "56.9% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "56.1% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
