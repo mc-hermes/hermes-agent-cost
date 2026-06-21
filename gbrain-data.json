@@ -1,32 +1,44 @@
 {
-  "updated_at": "2026-06-21T23:00:53Z",
+  "updated_at": "2026-06-21T23:37:44Z",
   "summary": {
-    "score": "92",
+    "score": "82",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 312,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "40.7% of pages have inbound links",
-    "entity_links": "Coverage \u2014 45 people, 30 companies indexed",
+    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
+    "page_count": 315,
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "46.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 93% \u00b1 2.9%",
     "concept_count": 114,
     "meeting_count": 13,
     "person_count": 45,
-    "company_count": 30,
+    "company_count": 32,
     "newsletter_count": 72,
     "video_count": 0,
     "article_count": 18,
-    "bookmark_count": 17,
+    "bookmark_count": 18,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 345,
-    "outbound_count": 434,
-    "inbound_count": 401,
+    "total_links": 350,
+    "outbound_count": 442,
+    "inbound_count": 407,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
+    "score_components": {
+      "score": "82/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "3/15",
+      "orphans": "9/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 66,
+    "checks_warned": 7,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -519,27 +531,28 @@
     },
     {
       "slug": "bookmarks/hermes-assistant-to-chief-of-staff-2026-06-22",
-      "title": "Hermes Assistant To Chief Of Staff 2026 06 22",
+      "title": "Hermes Assistant To Chief Of Staff 2026 06 22 (redirect)",
       "type": "bookmark",
       "updated": "",
-      "body": "# How we turned Hermes from an assistant into our chief of staff (and how you can too)\n\n**Source:** email\n**Source URI:** gmail://msg_19ee6b8b30fd1a2c\n**Ingested:** 2026-06-22T00:00:00Z\n**Provenance:** Forwarded by sayf on 2026-06-21\n\nX Article by [[ericosiu]] about how they turned Hermes from an assistant into a chief of staff \u2014 booking sales calls, reviving stale leads, and more.\n\n**URL:** https://x.com/ericosiu/status/2068370407049011538\n**Article:** https://x.com/i/article/2062257585613389824\n\n> Preview: \"Your Hermes probably answers texts and manages your calendar. That's cool. Mine books sales calls, revives stale leads...\"",
-      "tags": [],
+      "body": "# Hermes Assistant To Chief Of Staff 2026 06 22\n\n> **Redirect:** This page redirects to [[How we turned Hermes from an assistant into our chief of staff]]. See [[bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20]] for the full enriched page.\n\nThis is a consolidation redirect. The canonical page with enriched content is at [[bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20]].",
+      "tags": [
+        "redirect"
+      ],
       "links_out": [
         {
-          "to": "people/ericosiu",
+          "to": "How we turned Hermes from an assistant into our chief of staff",
           "type": "wikilink",
-          "text": "ericosiu"
-        }
-      ],
-      "backlinks": [
+          "text": "How we turned Hermes from an assistant into our chief of staff"
+        },
         {
-          "from": "people/ericosiu",
+          "to": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20",
           "type": "wikilink",
-          "text": "bookmarks/hermes-assistant-to-chief-of-staff-2026-06-22"
+          "text": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20"
         }
       ],
-      "outbound_count": 1,
-      "inbound_count": 1
+      "backlinks": [],
+      "outbound_count": 2,
+      "inbound_count": 0
     },
     {
       "slug": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-19ee6b8b30fd1a2c",
@@ -558,6 +571,49 @@
       "backlinks": [],
       "outbound_count": 1,
       "inbound_count": 0
+    },
+    {
+      "slug": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20",
+      "title": "Hermes Assistant To Chief Of Staff Ericosiu 2026 06 20",
+      "type": "bookmark",
+      "updated": "",
+      "body": "# How we turned Hermes from an assistant into our chief of staff\n\n**Source:** X Article by ericosiu (@ericosiu)\n**Source URI:** gmail://msg_19ee6b8b30fd1a2c\n**Ingested:** 2026-06-22T12:30:00Z\n**Provenance:** Forwarded by Sayf to info@malohacoast.com on 2026-06-21\n\n## Summary\n\nA comprehensive X Article by ericosiu (Founder @ Single Brain, Single Grain) detailing 12 jobs they give Hermes to turn it from a passive assistant into an autonomous operator that runs business workflows. The key insight: think of Hermes as a worker you *run*, not a chat window you *open*.\n\n## Original URL\n\nhttps://x.com/ericosiu/status/2068370407049011538\n\n## Key Ideas\n\n### 1. Branded artifacts on demand\nPoint Hermes at a Google design.md spec on GitHub and every visual comes out on-brand \u2014 carousels, one-pagers, case studies, ad concepts. Separate design files for separate brands.\n\n### 2. Run it inside Slack (or Telegram/WhatsApp)\nSlack gives threaded replies so multi-workstream collaboration stays organized. Knowledge moves faster between people when the agent lives where the work already happens.\n\n### 3. Give yourself an agent you *work in*\nMultiple threads running at once \u2014 each a self-contained workstream that progresses while you do something else. Your job shrinks to approving instead of doing.\n\n### 4. Wire it into Linear\nHermes plugs into Linear alongside Claude Code and Codex. Opens tickets as work happens, routes them back for review. Closed loop keeps projects moving without hourly check-ins.\n\n### 5. Use a /goal command\nDefine what \"done\" looks like, let the agent grind toward it while you work on something else. Running several harnesses in tandem \u2014 not one at a time.\n\n### 6. Give it memory with Obsidian\nBuilt-in memory isn't enough to run a business. Use Obsidian as the external memory store + QMD (Shopify's Tobi L\u00fctke's QMD setup on GitHub). Daily decisions get logged. The agent compounds rather than waking up cold every morning.\n\n### 7. Connect your APIs\nAPI-connected agent reasons against real business data. Call/CRM layer: Granola, Gong, HubSpot. Content layer: X API, YouTube API. Every API connection turns the agent from a guesser into something that thinks with your data.\n\n### 8. Build a content ingestor\nPoint it at everything published (X, YouTube, short form) plus meeting notes (Granola). Topics you get most fired up about internally are usually your best content.\n\n### 9. Let it draft your emails\nTwo modes: draft-approve-send vs send-on-own-with-closed-loop. Revenue agents operate at send level for sponsorship replies and booking customer development calls. Can revive stalled deals or run trigger-based outreach.\n\n### 10. Stack specialist agents underneath it\nBuild narrow specialists (cold outbound infrastructure, ad creatives at scale). Hermes sits on top and manages them. One person operates like a department.\n\n### 11. Use OAuth, not tokens\nMetered API tokens can climb to thousands/month. OAuth + Claude CLI \u2192 ~$200/month instead. This one change pays for the rest of the stack.\n\n### 12. Go multi-device with Tailscale\nAll machines on one private network. Can reach any from anywhere. Gateway restart from phone via Termius if Hermes freezes. Without this, a frozen process at home strands you.\n\n## Relevance to Maloha Coast\n\nSayf forwarded this because it directly mirrors how Maloha Coast uses Hermes \u2014 as an orchestrator agent that coordinates specialist sub-agents (MC for ops, Sammy for content). The article validates the approach and provides concrete implementation patterns (Obsidian memory, Linear integration, API wiring, multi-agent stacking) that could be applied or adapted.\n\n## Author\n\n**ericosiu** (@ericosiu) \u2014 Founder, Single Brain (MDR revenue agents with one unified brain). Also runs Single Grain (ad agency). Investor. YPO Beverly Hills. Podcasts: Marketing School, Leveling Up.\n\n## Metrics\n- 114 likes, 16 retweets, 6 replies, 363 bookmarks, 55k views\n- Published: Sat Jun 20 16:28:28 +0000 2026",
+      "tags": [
+        "ai-agents",
+        "ericosiu",
+        "hermes",
+        "single-brain"
+      ],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "bookmarks/hermes-assistant-to-chief-of-staff-2026-06-22",
+          "type": "wikilink",
+          "text": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20"
+        },
+        {
+          "from": "bookmarks/msg-19ee6b8b30fd1a2c",
+          "type": "wikilink",
+          "text": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20"
+        },
+        {
+          "from": "companies/single-brain",
+          "type": "wikilink",
+          "text": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20"
+        },
+        {
+          "from": "companies/single-grain",
+          "type": "wikilink",
+          "text": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20"
+        },
+        {
+          "from": "people/ericosiu",
+          "type": "wikilink",
+          "text": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 5
     },
     {
       "slug": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-21",
@@ -726,20 +782,27 @@
     },
     {
       "slug": "bookmarks/msg-19ee6b8b30fd1a2c",
-      "title": "Msg 19ee6b8b30fd1a2c",
+      "title": "Msg 19ee6b8b30fd1a2c (redirect)",
       "type": "bookmark",
       "updated": "",
-      "body": "# How we turned Hermes from an assistant into our chief of staff (and how you can too)\n\n**Source:** email from Sayf Codes\n**Source URI:** gmail://msg_19ee6b8b30fd1a2c\n**Ingested:** 2026-06-22T00:00:00Z\n**Provenance:** Forwarded by sayf on 2026-06-21\n\n## Summary\n\nSayf forwarded an X Article by [[ericosiu]] (@ericosiu) titled *\"How we turned Hermes from an assistant into our chief of staff (and how you can too)\"*. The article describes how ericosiu has supercharged his Hermes agent to operate at a chief-of-staff level \u2014 booking sales calls, reviving stalled deals, and shipping ad creative autonomously \u2014 far beyond basic text replies and calendar management.\n\n**Original post:** https://x.com/ericosiu/status/2068370407049011538\n\n**Engagement (as of posting):**\n- 48,430 views\n- 109 likes\n- 16 retweets\n- 5 replies\n- 343 bookmarks\n\n**Preview excerpt:**\n\n> Your Hermes probably answers texts and manages your calendar. That's cool.\n> Mine books sales calls, revives stalled deals, and ships ad creative all while I'm at the gym.\n> Wait \u2014 how's yours doing?\n\n## Relevance to Maloha Coast\n\nThis is directly relevant to how Maloha Coast positions and operates its own Hermes agent infrastructure. The concept of progressing an AI assistant from basic task management to proactive chief-of-staff operations mirrors the evolution FalconHermes has undergone for the Maloha Coast ecosystem. ericosiu's post validates the direction and provides real-world proof points for selling the Second Brain / AI-agent-as-a-service offering.\n\n## Entities\n\n- **[[ericosiu]]** \u2014 Author, X user @ericosiu, blue verified",
-      "tags": [],
+      "body": "# Msg 19ee6b8b30fd1a2c\n\n> **Redirect:** This page redirects to [[How we turned Hermes from an assistant into our chief of staff]]. See [[bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20]] for the full enriched page.\n\nThis is a consolidation redirect. The canonical page with enriched content is at [[bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20]].",
+      "tags": [
+        "redirect"
+      ],
       "links_out": [
         {
-          "to": "people/ericosiu",
+          "to": "How we turned Hermes from an assistant into our chief of staff",
           "type": "wikilink",
-          "text": "ericosiu"
+          "text": "How we turned Hermes from an assistant into our chief of staff"
+        },
+        {
+          "to": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20",
+          "type": "wikilink",
+          "text": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20"
         }
       ],
       "backlinks": [],
-      "outbound_count": 1,
+      "outbound_count": 2,
       "inbound_count": 0
     },
     {
@@ -1983,6 +2046,70 @@
       ],
       "outbound_count": 5,
       "inbound_count": 11
+    },
+    {
+      "slug": "companies/single-brain",
+      "title": "Single Brain",
+      "type": "company",
+      "updated": "",
+      "body": "# Single Brain\n\n> Revenue agent platform providing managed MDR (Meeting Demand/Revenue) agents unified by one brain that lives in Slack. Founded by [[ericosiu]].\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20]] as ericosiu's company building managed revenue agents unified by one brain in Slack\n\n## Related\n\n- [[ericosiu]] \u2014 Founder\n- [[bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20]] \u2014 Article mentioning Single Brain\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-20** | Mentioned in ericosiu's X Article about Hermes as a \"chief of staff\" \u2014 builds narrow specialist agents (cold outbound, ad creatives) with Hermes managing them. [Source: gmail://msg_19ee6b8b30fd1a2c]",
+      "tags": [
+        "ai-agents",
+        "revenue"
+      ],
+      "links_out": [
+        {
+          "to": "people/ericosiu",
+          "type": "wikilink",
+          "text": "ericosiu"
+        },
+        {
+          "to": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20",
+          "type": "wikilink",
+          "text": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "people/ericosiu",
+          "type": "wikilink",
+          "text": "companies/single-brain"
+        }
+      ],
+      "outbound_count": 2,
+      "inbound_count": 1
+    },
+    {
+      "slug": "companies/single-grain",
+      "title": "Single Grain",
+      "type": "company",
+      "updated": "",
+      "body": "# Single Grain\n\n> Digital ad agency founded by [[ericosiu]].\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20]] as ericosiu's ad agency\n\n## Related\n\n- [[ericosiu]] \u2014 Founder\n- [[bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20]] \u2014 Article mentioning Single Grain\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-20** | Mentioned in ericosiu's X Article branding section. [Source: gmail://msg_19ee6b8b30fd1a2c]",
+      "tags": [
+        "ad-agency",
+        "marketing"
+      ],
+      "links_out": [
+        {
+          "to": "people/ericosiu",
+          "type": "wikilink",
+          "text": "ericosiu"
+        },
+        {
+          "to": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20",
+          "type": "wikilink",
+          "text": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "people/ericosiu",
+          "type": "wikilink",
+          "text": "companies/single-grain"
+        }
+      ],
+      "outbound_count": 2,
+      "inbound_count": 1
     },
     {
       "slug": "companies/solo-satoshi",
@@ -7520,16 +7647,26 @@
       "title": "ericosiu",
       "type": "person",
       "updated": "",
-      "body": "# ericosiu\n\n> X user and Hermes/AI agent power user. Author of the viral article \"How we turned Hermes from an assistant into our chief of staff.\"\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[bookmarks/hermes-assistant-to-chief-of-staff-2026-06-22]] as the author of an X Article about transforming Hermes from assistant to chief of staff\n\n## Related\n\n- [[bookmarks/hermes-assistant-to-chief-of-staff-2026-06-22]] \u2014 ericosiu's article about Hermes agent evolution\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-21** | Published X Article: \"How we turned Hermes from an assistant into our chief of staff (and how you can too)\". Post had 48K+ views and 109 likes. [Source: gmail://msg_19ee6b8b30fd1a2c]",
+      "body": "# ericosiu\n\n> X user and Hermes/AI agent power user. Author of the viral article \"How we turned Hermes from an assistant into our chief of staff.\" Founder of Single Brain (MDR revenue agents) and Single Grain (ad agency). Investor. YPO Beverly Hills. Podcasts: Marketing School, Leveling Up.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20]] as the author of an X Article about transforming Hermes from assistant to chief of staff, detailing 12 jobs they give Hermes at Single Brain\n\n## Related\n\n- [[bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20]] \u2014 ericosiu's article about Hermes agent evolution\n- [[companies/single-brain]] \u2014 Founder, revenue agent platform\n- [[companies/single-grain]] \u2014 Founder, ad agency\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-21** | Published X Article: \"How we turned Hermes from an assistant into our chief of staff (and how you can too)\". Post had 55K+ views, 114 likes, 363 bookmarks. [Source: gmail://msg_19ee6b8b30fd1a2c]",
       "tags": [
         "agent-ecosystem",
         "x"
       ],
       "links_out": [
         {
-          "to": "bookmarks/hermes-assistant-to-chief-of-staff-2026-06-22",
+          "to": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20",
           "type": "wikilink",
-          "text": "bookmarks/hermes-assistant-to-chief-of-staff-2026-06-22"
+          "text": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20"
+        },
+        {
+          "to": "companies/single-brain",
+          "type": "wikilink",
+          "text": "companies/single-brain"
+        },
+        {
+          "to": "companies/single-grain",
+          "type": "wikilink",
+          "text": "companies/single-grain"
         }
       ],
       "backlinks": [
@@ -7544,11 +7681,6 @@
           "text": "ericosiu"
         },
         {
-          "from": "bookmarks/hermes-assistant-to-chief-of-staff-2026-06-22",
-          "type": "wikilink",
-          "text": "ericosiu"
-        },
-        {
           "from": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-21",
           "type": "wikilink",
           "text": "ericosiu"
@@ -7559,7 +7691,12 @@
           "text": "ericosiu"
         },
         {
-          "from": "bookmarks/msg-19ee6b8b30fd1a2c",
+          "from": "companies/single-brain",
+          "type": "wikilink",
+          "text": "ericosiu"
+        },
+        {
+          "from": "companies/single-grain",
           "type": "wikilink",
           "text": "ericosiu"
         },
@@ -7574,7 +7711,7 @@
           "text": "people/ericosiu"
         }
       ],
-      "outbound_count": 1,
+      "outbound_count": 3,
       "inbound_count": 8
     },
     {
@@ -8753,7 +8890,7 @@
     },
     {
       "source": "bookmarks/hermes-assistant-to-chief-of-staff-2026-06-22",
-      "target": "people/ericosiu",
+      "target": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20",
       "type": "wikilink"
     },
     {
@@ -8788,7 +8925,7 @@
     },
     {
       "source": "bookmarks/msg-19ee6b8b30fd1a2c",
-      "target": "people/ericosiu",
+      "target": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20",
       "type": "wikilink"
     },
     {
@@ -9039,6 +9176,26 @@
     {
       "source": "companies/posh-corporate",
       "target": "people/audrey-loh",
+      "type": "wikilink"
+    },
+    {
+      "source": "companies/single-brain",
+      "target": "people/ericosiu",
+      "type": "wikilink"
+    },
+    {
+      "source": "companies/single-brain",
+      "target": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20",
+      "type": "wikilink"
+    },
+    {
+      "source": "companies/single-grain",
+      "target": "people/ericosiu",
+      "type": "wikilink"
+    },
+    {
+      "source": "companies/single-grain",
+      "target": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20",
       "type": "wikilink"
     },
     {
@@ -10307,6 +10464,11 @@
       "type": "wikilink"
     },
     {
+      "source": "people/ericosiu",
+      "target": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20",
+      "type": "wikilink"
+    },
+    {
       "source": "people/erik-osiu",
       "target": "people/ericosiu",
       "type": "wikilink"
@@ -10505,6 +10667,8 @@
       "companies/openrouter",
       "companies/passend",
       "companies/posh-corporate",
+      "companies/single-brain",
+      "companies/single-grain",
       "companies/solo-satoshi",
       "companies/stripe",
       "companies/system-design-one",
@@ -10516,13 +10680,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 65,
+    "brain_checks_score": 85,
     "category_scores": {
-      "brain": 95,
+      "brain": 85,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -10552,32 +10716,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -10589,19 +10731,20 @@
       },
       {
         "name": "extract_atoms_backlog",
-        "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "status": "warn",
+        "message": "20 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 0,
+          "backlog": 20,
           "pack_declares_phase": false,
+          "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
         "category": "brain"
       },
       {
         "name": "conversation_format_coverage",
-        "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "status": "warn",
+        "message": "1/9 conversation pages (11.1%) match NO built-in pattern. Breakdown: bold-name-no-time=8, _no_match=1. Investigate: gbrain conversation-parser scan <slug> | Enable LLM fallback (opt-in): gbrain config set conversation_parser.llm_fallback_enabled true",
         "category": "brain"
       },
       {
@@ -10625,7 +10768,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 265 pages",
         "category": "ops"
       },
       {
@@ -10661,7 +10804,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 873ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -10679,25 +10822,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 92%, timeline 61%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 74 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 265 pages; 33 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -10858,7 +11001,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 22/265 pages (8%) stale",
+        "details": {
+          "total": 265,
+          "stale": 22,
+          "pct": 8,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -10870,7 +11021,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -10882,7 +11033,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "171 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -10894,7 +11045,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "46.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -10936,7 +11087,7 @@
       {
         "name": "oauth_confidential_client_health",
         "status": "ok",
-        "message": "No OAuth clients registered",
+        "message": "4 OAuth client(s) registered; all auth shapes consistent",
         "category": "ops"
       },
       {
@@ -10997,13 +11148,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 93% \u00b1 2.9%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 62% \u00b1 5.6% (target 90%)",
         "category": "meta"
       },
       {
@@ -11021,7 +11172,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "10 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
