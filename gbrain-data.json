@@ -1,32 +1,44 @@
 {
-  "updated_at": "2026-06-21T17:00:49Z",
+  "updated_at": "2026-06-21T17:32:51Z",
   "summary": {
-    "score": "92",
+    "score": "83",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 291,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "41.6% of pages have inbound links",
-    "entity_links": "Coverage \u2014 43 people, 27 companies indexed",
+    "score_breakdown": "score 83/100, embed 35/35, links 25/25, timeline 3/15, orphans 10/15, dead-links 10/10",
+    "page_count": 297,
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "49.0% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 93% \u00b1 3.0%",
     "concept_count": 106,
     "meeting_count": 13,
-    "person_count": 43,
-    "company_count": 27,
+    "person_count": 45,
+    "company_count": 30,
     "newsletter_count": 72,
     "video_count": 0,
     "article_count": 13,
-    "bookmark_count": 14,
+    "bookmark_count": 15,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 327,
-    "outbound_count": 404,
-    "inbound_count": 376,
+    "total_links": 343,
+    "outbound_count": 431,
+    "inbound_count": 399,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 83/100 (embed 35/35, links 25/25, timeline 3/15, orphans 10/15, dead-links 10/10)",
+    "score_components": {
+      "score": "83/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "3/15",
+      "orphans": "10/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 66,
+    "checks_warned": 7,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -641,6 +653,105 @@
       "inbound_count": 0
     },
     {
+      "slug": "bookmarks/stripe-online-ai-commerce-2026-06-22",
+      "title": "Stripe Online Ai Commerce 2026 06 22",
+      "type": "bookmark",
+      "updated": "",
+      "body": "# Stripe Online: The Future of Revenue \u2014 with [[Anthropic]], [[Google]], [[Thoughtworks]]\n\n**Source:** Email from [[Stripe]] <updates@e.stripe.com>\n**Source URI:** gmail://msg_19e6cffb38955e68\n**Ingested:** 2026-06-22T00:00:00Z\n**Provenance:** Forwarded from Stripe marketing email to info@malohacoast.com\n\n## Summary\n\nStripe Online was a free two-hour virtual event on 3 June 2026 featuring leaders from [[Stripe]], [[Anthropic]], [[Google]], and [[Thoughtworks]]. The event covered AI-powered commerce, agentic purchasing flows, monetisation strategies for AI products, and payment optimisation for APAC markets.\n\n## Keynote Themes\n\n- **New rules of APAC commerce** \u2014 AI is rewriting discovery, decision, and purchase processes\n- **Agentic commerce** \u2014 How AI agents entering purchase flows changes business requirements\n- **Monetisation for AI products** \u2014 Usage-based to hybrid pricing models that scale\n\n## Named Speakers & Topics\n\n- **[[Yunong Xiao]]**, Head of Engineering, Claude AI and Agentic Commerce, [[Anthropic]] \u2014 How AI agents change people's interactions, decisions, and buying behaviour, and implications for customer journeys\n- **[[Sapna Chadha]]**, Vice President, Southeast Asia, [[Google]] \u2014 AI transforming search into purchase, shortening the distance between discoverability and checkout\n- **[[Mara Cajar-Robinson]]**, Director, Strategic AI Transformation, [[Thoughtworks]] \u2014 Practical steps for transforming operations for agentic commerce\n- **[[Zac Liew]]**, Chief Commercial Officer, [[Coda Payments]] \u2014 Navigating payment complexity and scaling into new markets\n- **[[Ahmed Abubakar]]**, CEO and Cofounder, [[ImagineArt]] \u2014 Lessons from building and monetising an AI-native product\n\n## Breakout Track Sessions\n\n- Agentic commerce: What your business needs to know now\n- Monetisation strategies that work for AI products\n- Customer case study: Lessons learned from [[ImagineArt]]\n- The right payment method at the right time: How to test and win\n- The global growth playbook: Scaling revenue without complexity\n- Customer case study: Lessons learned from [[Coda Payments]]\n\n## Relevance to [[Maloha Coast]]\n\nMaloha Coast builds AI solutions for SMBs. The event content on agentic commerce, AI-native product monetisation, and APAC payment optimisation is directly relevant to consulting engagements. Named speakers and their companies are potential reference points for client positioning.",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "companies/anthropic",
+          "type": "wikilink",
+          "text": "Anthropic"
+        },
+        {
+          "to": "companies/google",
+          "type": "wikilink",
+          "text": "Google"
+        },
+        {
+          "to": "companies/thoughtworks",
+          "type": "wikilink",
+          "text": "Thoughtworks"
+        },
+        {
+          "to": "companies/stripe",
+          "type": "wikilink",
+          "text": "Stripe"
+        },
+        {
+          "to": "people/yunong-xiao",
+          "type": "wikilink",
+          "text": "Yunong Xiao"
+        },
+        {
+          "to": "people/sapna-chadha",
+          "type": "wikilink",
+          "text": "Sapna Chadha"
+        },
+        {
+          "to": "people/mara-cajar-robinson",
+          "type": "wikilink",
+          "text": "Mara Cajar-Robinson"
+        },
+        {
+          "to": "people/zac-liew",
+          "type": "wikilink",
+          "text": "Zac Liew"
+        },
+        {
+          "to": "companies/coda-payments",
+          "type": "wikilink",
+          "text": "Coda Payments"
+        },
+        {
+          "to": "people/ahmed-abubakar",
+          "type": "wikilink",
+          "text": "Ahmed Abubakar"
+        },
+        {
+          "to": "companies/imagineart",
+          "type": "wikilink",
+          "text": "ImagineArt"
+        },
+        {
+          "to": "brand/maloha-coast-brand-identity",
+          "type": "wikilink",
+          "text": "Maloha Coast"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "companies/coda-payments",
+          "type": "wikilink",
+          "text": "bookmarks/stripe-online-ai-commerce-2026-06-22"
+        },
+        {
+          "from": "companies/google",
+          "type": "wikilink",
+          "text": "bookmarks/stripe-online-ai-commerce-2026-06-22"
+        },
+        {
+          "from": "companies/imagineart",
+          "type": "wikilink",
+          "text": "bookmarks/stripe-online-ai-commerce-2026-06-22"
+        },
+        {
+          "from": "people/ahmed-abubakar",
+          "type": "wikilink",
+          "text": "bookmarks/stripe-online-ai-commerce-2026-06-22"
+        },
+        {
+          "from": "people/zac-liew",
+          "type": "wikilink",
+          "text": "bookmarks/stripe-online-ai-commerce-2026-06-22"
+        }
+      ],
+      "outbound_count": 12,
+      "inbound_count": 5
+    },
+    {
       "slug": "bookmarks/stripe-online-asia-pacific-2026-06-21",
       "title": "Stripe Online Asia Pacific 2026 06 21",
       "type": "bookmark",
@@ -683,6 +794,11 @@
           "text": "Maloha Coast"
         },
         {
+          "from": "bookmarks/stripe-online-ai-commerce-2026-06-22",
+          "type": "wikilink",
+          "text": "Maloha Coast"
+        },
+        {
           "from": "concepts/maloha-coast",
           "type": "wikilink",
           "text": "brand/maloha-coast-brand-identity"
@@ -709,7 +825,7 @@
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 6
+      "inbound_count": 7
     },
     {
       "slug": "companies/ai-automation-society",
@@ -848,6 +964,11 @@
       ],
       "backlinks": [
         {
+          "from": "bookmarks/stripe-online-ai-commerce-2026-06-22",
+          "type": "wikilink",
+          "text": "Anthropic"
+        },
+        {
           "from": "concepts/claude-code-10x-skill-newsletter",
           "type": "wikilink",
           "text": "Anthropic"
@@ -879,7 +1000,7 @@
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 6
+      "inbound_count": 7
     },
     {
       "slug": "companies/beehiiv",
@@ -930,6 +1051,48 @@
       "backlinks": [],
       "outbound_count": 1,
       "inbound_count": 0
+    },
+    {
+      "slug": "companies/coda-payments",
+      "title": "Coda Payments",
+      "type": "company",
+      "updated": "",
+      "body": "# Coda Payments\n\n> Payments company in Asia Pacific. A Stripe customer.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[Stripe Online: The Future of Revenue \u2014 with Anthropic, Google, Thoughtworks]] via CCO Zac Liew discussing navigating payment complexity and scaling into new markets.\n\n## Related\n\n- [[bookmarks/stripe-online-ai-commerce-2026-06-22]] \u2014 Customer case study mention\n- [[people/zac-liew]] \u2014 CCO of Coda Payments\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-22** | Referenced in Stripe Online bookmark. [Source: gmail://msg_19e6cffb38955e68]",
+      "tags": [
+        "apac",
+        "fintech"
+      ],
+      "links_out": [
+        {
+          "to": "Stripe Online: The Future of Revenue \u2014 with Anthropic, Google, Thoughtworks",
+          "type": "wikilink",
+          "text": "Stripe Online: The Future of Revenue \u2014 with Anthropic, Google, Thoughtworks"
+        },
+        {
+          "to": "bookmarks/stripe-online-ai-commerce-2026-06-22",
+          "type": "wikilink",
+          "text": "bookmarks/stripe-online-ai-commerce-2026-06-22"
+        },
+        {
+          "to": "people/zac-liew",
+          "type": "wikilink",
+          "text": "people/zac-liew"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "bookmarks/stripe-online-ai-commerce-2026-06-22",
+          "type": "wikilink",
+          "text": "Coda Payments"
+        },
+        {
+          "from": "people/zac-liew",
+          "type": "wikilink",
+          "text": "companies/coda-payments"
+        }
+      ],
+      "outbound_count": 3,
+      "inbound_count": 2
     },
     {
       "slug": "companies/digital-power",
@@ -1096,6 +1259,47 @@
       "inbound_count": 2
     },
     {
+      "slug": "companies/google",
+      "title": "Google",
+      "type": "company",
+      "updated": "",
+      "body": "# Google\n\n> Multinational technology company. Parent company: Alphabet Inc.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[Stripe Online: The Future of Revenue \u2014 with Anthropic, Google, Thoughtworks]] via speaker Sapna Chadha (VP, Southeast Asia) discussing how AI is transforming search into purchase.\n- Google Workspace is used by Maloha Coast for email and documents.\n\n## Related\n\n- [[bookmarks/stripe-online-ai-commerce-2026-06-22]] \u2014 Google speaker mentioned\n- [[people/sapna-chadha]] \u2014 VP, Southeast Asia, Google\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-22** | Referenced in Stripe Online bookmark. [Source: gmail://msg_19e6cffb38955e68]",
+      "tags": [
+        "technology"
+      ],
+      "links_out": [
+        {
+          "to": "Stripe Online: The Future of Revenue \u2014 with Anthropic, Google, Thoughtworks",
+          "type": "wikilink",
+          "text": "Stripe Online: The Future of Revenue \u2014 with Anthropic, Google, Thoughtworks"
+        },
+        {
+          "to": "bookmarks/stripe-online-ai-commerce-2026-06-22",
+          "type": "wikilink",
+          "text": "bookmarks/stripe-online-ai-commerce-2026-06-22"
+        },
+        {
+          "to": "people/sapna-chadha",
+          "type": "wikilink",
+          "text": "people/sapna-chadha"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "bookmarks/stripe-online-ai-commerce-2026-06-22",
+          "type": "wikilink",
+          "text": "Google"
+        },
+        {
+          "from": "concepts/stripe-ai-commerce-apac-2026-04-29",
+          "type": "wikilink",
+          "text": "Google"
+        }
+      ],
+      "outbound_count": 3,
+      "inbound_count": 2
+    },
+    {
       "slug": "companies/herku",
       "title": "Herku",
       "type": "company",
@@ -1215,6 +1419,48 @@
       ],
       "outbound_count": 3,
       "inbound_count": 13
+    },
+    {
+      "slug": "companies/imagineart",
+      "title": "ImagineArt",
+      "type": "company",
+      "updated": "",
+      "body": "# ImagineArt\n\n> AI-native startup. A Stripe customer.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[Stripe Online: The Future of Revenue \u2014 with Anthropic, Google, Thoughtworks]] via CEO Ahmed Abubakar sharing lessons from building and monetising an AI-native product.\n\n## Related\n\n- [[bookmarks/stripe-online-ai-commerce-2026-06-22]] \u2014 Customer case study mention\n- [[people/ahmed-abubakar]] \u2014 CEO of ImagineArt\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-22** | Referenced in Stripe Online bookmark. [Source: gmail://msg_19e6cffb38955e68]",
+      "tags": [
+        "ai-native",
+        "startup"
+      ],
+      "links_out": [
+        {
+          "to": "Stripe Online: The Future of Revenue \u2014 with Anthropic, Google, Thoughtworks",
+          "type": "wikilink",
+          "text": "Stripe Online: The Future of Revenue \u2014 with Anthropic, Google, Thoughtworks"
+        },
+        {
+          "to": "bookmarks/stripe-online-ai-commerce-2026-06-22",
+          "type": "wikilink",
+          "text": "bookmarks/stripe-online-ai-commerce-2026-06-22"
+        },
+        {
+          "to": "people/ahmed-abubakar",
+          "type": "wikilink",
+          "text": "people/ahmed-abubakar"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "bookmarks/stripe-online-ai-commerce-2026-06-22",
+          "type": "wikilink",
+          "text": "ImagineArt"
+        },
+        {
+          "from": "people/ahmed-abubakar",
+          "type": "wikilink",
+          "text": "companies/imagineart"
+        }
+      ],
+      "outbound_count": 3,
+      "inbound_count": 2
     },
     {
       "slug": "companies/inclusive-ai-association",
@@ -1697,13 +1943,18 @@
       ],
       "backlinks": [
         {
+          "from": "bookmarks/stripe-online-ai-commerce-2026-06-22",
+          "type": "wikilink",
+          "text": "Stripe"
+        },
+        {
           "from": "concepts/stripe-ai-commerce-apac-2026-04-29",
           "type": "wikilink",
           "text": "Stripe"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "companies/system-design-one",
@@ -1826,13 +2077,18 @@
       "links_out": [],
       "backlinks": [
         {
+          "from": "bookmarks/stripe-online-ai-commerce-2026-06-22",
+          "type": "wikilink",
+          "text": "Thoughtworks"
+        },
+        {
           "from": "concepts/stripe-ai-commerce-apac-2026-04-29",
           "type": "wikilink",
           "text": "Thoughtworks"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "companies/zhipu-ai",
@@ -3548,7 +3804,7 @@
           "text": "Thoughtworks"
         },
         {
-          "to": "Google",
+          "to": "companies/google",
           "type": "wikilink",
           "text": "Google"
         },
@@ -6489,6 +6745,47 @@
       "inbound_count": 0
     },
     {
+      "slug": "people/ahmed-abubakar",
+      "title": "Ahmed Abubakar",
+      "type": "person",
+      "updated": "",
+      "body": "# Ahmed Abubakar\n\n> CEO and Cofounder of ImagineArt.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[Stripe Online: The Future of Revenue \u2014 with Anthropic, Google, Thoughtworks]] as CEO of ImagineArt, sharing lessons from building and monetising an AI-native product \u2014 what worked, what didn't, and what comes next.\n\n## Related\n\n- [[bookmarks/stripe-online-ai-commerce-2026-06-22]] \u2014 Event where he was a customer speaker\n- [[companies/imagineart]] \u2014 His company\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-22** | Referenced in Stripe Online bookmark. [Source: gmail://msg_19e6cffb38955e68]",
+      "tags": [
+        "stripe-online-speaker"
+      ],
+      "links_out": [
+        {
+          "to": "Stripe Online: The Future of Revenue \u2014 with Anthropic, Google, Thoughtworks",
+          "type": "wikilink",
+          "text": "Stripe Online: The Future of Revenue \u2014 with Anthropic, Google, Thoughtworks"
+        },
+        {
+          "to": "bookmarks/stripe-online-ai-commerce-2026-06-22",
+          "type": "wikilink",
+          "text": "bookmarks/stripe-online-ai-commerce-2026-06-22"
+        },
+        {
+          "to": "companies/imagineart",
+          "type": "wikilink",
+          "text": "companies/imagineart"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "bookmarks/stripe-online-ai-commerce-2026-06-22",
+          "type": "wikilink",
+          "text": "Ahmed Abubakar"
+        },
+        {
+          "from": "companies/imagineart",
+          "type": "wikilink",
+          "text": "people/ahmed-abubakar"
+        }
+      ],
+      "outbound_count": 3,
+      "inbound_count": 2
+    },
+    {
       "slug": "people/aisha-patel",
       "title": "Aisha Patel",
       "type": "person",
@@ -7234,13 +7531,18 @@
       "links_out": [],
       "backlinks": [
         {
+          "from": "bookmarks/stripe-online-ai-commerce-2026-06-22",
+          "type": "wikilink",
+          "text": "Mara Cajar-Robinson"
+        },
+        {
           "from": "concepts/stripe-ai-commerce-apac-2026-04-29",
           "type": "wikilink",
           "text": "Mara Cajar-Robinson"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "people/marcus-thompson",
@@ -7528,13 +7830,23 @@
       "links_out": [],
       "backlinks": [
         {
+          "from": "bookmarks/stripe-online-ai-commerce-2026-06-22",
+          "type": "wikilink",
+          "text": "Sapna Chadha"
+        },
+        {
+          "from": "companies/google",
+          "type": "wikilink",
+          "text": "people/sapna-chadha"
+        },
+        {
           "from": "concepts/stripe-ai-commerce-apac-2026-04-29",
           "type": "wikilink",
           "text": "Sapna Chadha"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 1
+      "inbound_count": 3
     },
     {
       "slug": "people/sarah-chen",
@@ -7813,13 +8125,59 @@
       "links_out": [],
       "backlinks": [
         {
+          "from": "bookmarks/stripe-online-ai-commerce-2026-06-22",
+          "type": "wikilink",
+          "text": "Yunong Xiao"
+        },
+        {
           "from": "concepts/stripe-ai-commerce-apac-2026-04-29",
           "type": "wikilink",
           "text": "Yunong Xiao"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 1
+      "inbound_count": 2
+    },
+    {
+      "slug": "people/zac-liew",
+      "title": "Zac Liew",
+      "type": "person",
+      "updated": "",
+      "body": "# Zac Liew\n\n> Chief Commercial Officer at Coda Payments.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[Stripe Online: The Future of Revenue \u2014 with Anthropic, Google, Thoughtworks]] as CCO of Coda Payments, discussing navigating payment complexity and scaling into new markets.\n\n## Related\n\n- [[bookmarks/stripe-online-ai-commerce-2026-06-22]] \u2014 Event where he was a customer speaker\n- [[companies/coda-payments]] \u2014 His company\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-22** | Referenced in Stripe Online bookmark. [Source: gmail://msg_19e6cffb38955e68]",
+      "tags": [
+        "stripe-online-speaker"
+      ],
+      "links_out": [
+        {
+          "to": "Stripe Online: The Future of Revenue \u2014 with Anthropic, Google, Thoughtworks",
+          "type": "wikilink",
+          "text": "Stripe Online: The Future of Revenue \u2014 with Anthropic, Google, Thoughtworks"
+        },
+        {
+          "to": "bookmarks/stripe-online-ai-commerce-2026-06-22",
+          "type": "wikilink",
+          "text": "bookmarks/stripe-online-ai-commerce-2026-06-22"
+        },
+        {
+          "to": "companies/coda-payments",
+          "type": "wikilink",
+          "text": "companies/coda-payments"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "bookmarks/stripe-online-ai-commerce-2026-06-22",
+          "type": "wikilink",
+          "text": "Zac Liew"
+        },
+        {
+          "from": "companies/coda-payments",
+          "type": "wikilink",
+          "text": "people/zac-liew"
+        }
+      ],
+      "outbound_count": 3,
+      "inbound_count": 2
     },
     {
       "slug": "people/zaim-mohzani",
@@ -8205,6 +8563,66 @@
       "type": "wikilink"
     },
     {
+      "source": "bookmarks/stripe-online-ai-commerce-2026-06-22",
+      "target": "companies/anthropic",
+      "type": "wikilink"
+    },
+    {
+      "source": "bookmarks/stripe-online-ai-commerce-2026-06-22",
+      "target": "companies/google",
+      "type": "wikilink"
+    },
+    {
+      "source": "bookmarks/stripe-online-ai-commerce-2026-06-22",
+      "target": "companies/thoughtworks",
+      "type": "wikilink"
+    },
+    {
+      "source": "bookmarks/stripe-online-ai-commerce-2026-06-22",
+      "target": "companies/stripe",
+      "type": "wikilink"
+    },
+    {
+      "source": "bookmarks/stripe-online-ai-commerce-2026-06-22",
+      "target": "people/yunong-xiao",
+      "type": "wikilink"
+    },
+    {
+      "source": "bookmarks/stripe-online-ai-commerce-2026-06-22",
+      "target": "people/sapna-chadha",
+      "type": "wikilink"
+    },
+    {
+      "source": "bookmarks/stripe-online-ai-commerce-2026-06-22",
+      "target": "people/mara-cajar-robinson",
+      "type": "wikilink"
+    },
+    {
+      "source": "bookmarks/stripe-online-ai-commerce-2026-06-22",
+      "target": "people/zac-liew",
+      "type": "wikilink"
+    },
+    {
+      "source": "bookmarks/stripe-online-ai-commerce-2026-06-22",
+      "target": "companies/coda-payments",
+      "type": "wikilink"
+    },
+    {
+      "source": "bookmarks/stripe-online-ai-commerce-2026-06-22",
+      "target": "people/ahmed-abubakar",
+      "type": "wikilink"
+    },
+    {
+      "source": "bookmarks/stripe-online-ai-commerce-2026-06-22",
+      "target": "companies/imagineart",
+      "type": "wikilink"
+    },
+    {
+      "source": "bookmarks/stripe-online-ai-commerce-2026-06-22",
+      "target": "brand/maloha-coast-brand-identity",
+      "type": "wikilink"
+    },
+    {
       "source": "brand/maloha-coast-brand-identity",
       "target": "maloha-coast",
       "type": "wikilink"
@@ -8275,6 +8693,11 @@
       "type": "link"
     },
     {
+      "source": "companies/coda-payments",
+      "target": "people/zac-liew",
+      "type": "wikilink"
+    },
+    {
       "source": "companies/digital-power",
       "target": "articles/30-agentic-engineering-concepts-2026-06-17",
       "type": "wikilink"
@@ -8305,6 +8728,11 @@
       "type": "wikilink"
     },
     {
+      "source": "companies/google",
+      "target": "people/sapna-chadha",
+      "type": "wikilink"
+    },
+    {
       "source": "companies/herku",
       "target": "newsletters/claude-second-brain-levels-2026-06-20",
       "type": "wikilink"
@@ -8317,6 +8745,11 @@
     {
       "source": "companies/humanlayer",
       "target": "humanlayer-launch-2026-06-19",
+      "type": "wikilink"
+    },
+    {
+      "source": "companies/imagineart",
+      "target": "people/ahmed-abubakar",
       "type": "wikilink"
     },
     {
@@ -8837,6 +9270,11 @@
     {
       "source": "concepts/stripe-ai-commerce-apac-2026-04-29",
       "target": "companies/thoughtworks",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/stripe-ai-commerce-apac-2026-04-29",
+      "target": "companies/google",
       "type": "wikilink"
     },
     {
@@ -9769,6 +10207,7 @@
     "people": [
       "people/addy-osmani",
       "people/adrian-js-mastery",
+      "people/ahmed-abubakar",
       "people/aisha-patel",
       "people/aisyah-humaira-wan-aziz",
       "people/aisyah-rahim",
@@ -9808,6 +10247,7 @@
       "people/yassif-n-m",
       "people/yaw-hog-ng",
       "people/yunong-xiao",
+      "people/zac-liew",
       "people/zaim-mohzani",
       "persons/tonbi"
     ],
@@ -9817,13 +10257,16 @@
       "companies/anthropic",
       "companies/beehiiv",
       "companies/blackgrid-digital",
+      "companies/coda-payments",
       "companies/digital-power",
       "companies/dynamics-orchard-farm",
       "companies/dynamics-orchard-farm-sdn-bhd",
       "companies/eduspark",
       "companies/global-ai-village",
+      "companies/google",
       "companies/herku",
       "companies/humanlayer",
+      "companies/imagineart",
       "companies/inclusive-ai-association",
       "companies/instantly",
       "companies/js-mastery",
@@ -9844,13 +10287,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 65,
+    "brain_checks_score": 85,
     "category_scores": {
-      "brain": 95,
+      "brain": 85,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -9880,32 +10323,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -9917,19 +10338,20 @@
       },
       {
         "name": "extract_atoms_backlog",
-        "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "status": "warn",
+        "message": "16 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 0,
+          "backlog": 16,
           "pack_declares_phase": false,
+          "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
         "category": "brain"
       },
       {
         "name": "conversation_format_coverage",
-        "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "status": "warn",
+        "message": "1/9 conversation pages (11.1%) match NO built-in pattern. Breakdown: bold-name-no-time=8, _no_match=1. Investigate: gbrain conversation-parser scan <slug> | Enable LLM fallback (opt-in): gbrain config set conversation_parser.llm_fallback_enabled true",
         "category": "brain"
       },
       {
@@ -9953,7 +10375,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 245 pages",
         "category": "ops"
       },
       {
@@ -9989,7 +10411,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 470ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -10007,25 +10429,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 92%, timeline 60%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 83/100 (embed 35/35, links 25/25, timeline 3/15, orphans 10/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 71 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 245 pages; 33 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -10186,7 +10608,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 0/245 pages (0%) stale",
+        "details": {
+          "total": 245,
+          "stale": 0,
+          "pct": 0,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -10198,7 +10628,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -10210,7 +10640,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "165 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -10222,7 +10652,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "49.0% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -10264,7 +10694,7 @@
       {
         "name": "oauth_confidential_client_health",
         "status": "ok",
-        "message": "No OAuth clients registered",
+        "message": "4 OAuth client(s) registered; all auth shapes consistent",
         "category": "ops"
       },
       {
@@ -10325,13 +10755,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 93% \u00b1 3.0%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 61% \u00b1 5.8% (target 90%)",
         "category": "meta"
       },
       {
@@ -10349,7 +10779,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "9 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
