@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-06-21T12:00:41Z",
+  "updated_at": "2026-06-21T12:24:33Z",
   "summary": {
-    "score": "92",
+    "score": "83",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 282,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "40.8% of pages have inbound links",
-    "entity_links": "Coverage \u2014 39 people, 26 companies indexed",
+    "score_breakdown": "score 83/100, embed 35/35, links 25/25, timeline 3/15, orphans 10/15, dead-links 10/10",
+    "page_count": 283,
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "47.2% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 90% \u00b1 3.8%",
     "concept_count": 103,
     "meeting_count": 13,
     "person_count": 39,
@@ -15,7 +15,7 @@
     "newsletter_count": 72,
     "video_count": 0,
     "article_count": 13,
-    "bookmark_count": 13,
+    "bookmark_count": 14,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
@@ -26,7 +26,19 @@
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 83/100 (embed 35/35, links 25/25, timeline 3/15, orphans 10/15, dead-links 10/10)",
+    "score_components": {
+      "score": "83/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "3/15",
+      "orphans": "10/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 66,
+    "checks_warned": 7,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -634,6 +646,18 @@
       "type": "bookmark",
       "updated": "",
       "body": "# karpathy's llm wiki gist\n\n**Source:** Email from Sayf Codes\n**Source URI:** gmail://msg_19ee3343b6e5b9e9\n**Ingested:** 2026-06-20\n**Provenance:** Forwarded by sayf on 2026-06-20\n\n**URL:** https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f\n\n> Bookmark shared by sayf. Fetch content at: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "bookmarks/stripe-online-asia-pacific-2026-06-21",
+      "title": "Stripe Online Asia Pacific 2026 06 21",
+      "type": "bookmark",
+      "updated": "",
+      "body": "# Stripe Online for Asia Pacific \u2014 Now on Demand\n\n**Source:** email from Stripe (updates@e.stripe.com)\n**Source URI:** gmail://msg_19ed38e5f73a79af\n**Ingested:** 2026-06-21T12:00:00Z\n**Provenance:** Email delivered to info@malohacoast.com\n\nA free event from Stripe covering the shifts reshaping commerce in Asia Pacific. Features leaders from Stripe, Anthropic, Google, Thoughtworks, plus Stripe businesses Coda Payments and ImagineArt.\n\n## Key Topics\n\n- How AI agents are changing the way people discover, decide, and buy \u2014 implications for customer journeys\n- The shift from search to purchase and why the distance between discoverability and checkout is shrinking\n- Practical steps businesses are taking to transform operations in the age of agentic commerce\n- Structuring pricing for AI-native products: usage-based models to hybrid approaches that scale\n- Testing and prioritising payment methods to lift authorisation rates and reduce drop-off at checkout\n- Expanding into new markets without adding operational complexity at every border\n\n## Relevance to Maloha Coast\n\nDirectly relevant as Maloha Coast processes payments via Stripe and serves clients in the Asia Pacific region. The sessions on pricing models for AI-native products and market expansion without complexity are particularly actionable for the agency's service offerings.\n\n## Links\n\n- [Watch on demand](https://info-link.stripe.com/MDcyLU1ESy0yODMAAAGicoU5LJO8Gya4MTIcbjeJUodESEsf_lvUNpkcpWNqDwRO6Rm7L-gIFwqQcH_OWXGvfy6mluM=)",
       "tags": [],
       "links_out": [],
       "backlinks": [],
@@ -9598,13 +9622,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 65,
+    "brain_checks_score": 85,
     "category_scores": {
-      "brain": 95,
+      "brain": 85,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -9634,32 +9658,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -9671,19 +9673,20 @@
       },
       {
         "name": "extract_atoms_backlog",
-        "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "status": "warn",
+        "message": "16 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 0,
+          "backlog": 16,
           "pack_declares_phase": false,
+          "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
         "category": "brain"
       },
       {
         "name": "conversation_format_coverage",
-        "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "status": "warn",
+        "message": "1/9 conversation pages (11.1%) match NO built-in pattern. Breakdown: bold-name-no-time=8, _no_match=1. Investigate: gbrain conversation-parser scan <slug> | Enable LLM fallback (opt-in): gbrain config set conversation_parser.llm_fallback_enabled true",
         "category": "brain"
       },
       {
@@ -9707,7 +9710,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 231 pages",
         "category": "ops"
       },
       {
@@ -9743,7 +9746,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 439ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -9761,25 +9764,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 89%, timeline 53%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 83/100 (embed 35/35, links 25/25, timeline 3/15, orphans 10/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 61 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 231 pages; 33 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -9940,7 +9943,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 0/231 pages (0%) stale",
+        "details": {
+          "total": 231,
+          "stale": 0,
+          "pct": 0,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -9952,7 +9963,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -9964,7 +9975,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "152 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -9976,7 +9987,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "47.2% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -10018,7 +10029,7 @@
       {
         "name": "oauth_confidential_client_health",
         "status": "ok",
-        "message": "No OAuth clients registered",
+        "message": "4 OAuth client(s) registered; all auth shapes consistent",
         "category": "ops"
       },
       {
@@ -10079,13 +10090,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 90% \u00b1 3.8%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 54% \u00b1 6.4% (target 90%)",
         "category": "meta"
       },
       {
@@ -10103,7 +10114,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "9 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
