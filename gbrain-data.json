@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-06-21T21:05:50Z",
+  "updated_at": "2026-06-21T21:32:25Z",
   "summary": {
     "score": "82",
     "score_label": "/100",
     "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
-    "page_count": 311,
+    "page_count": 312,
     "embed_coverage": "100% coverage, 0 missing",
-    "graph_coverage": "46.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "graph_coverage": "46.2% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
     "entity_links": "Coverage 93% \u00b1 3.0%",
     "concept_count": 114,
     "meeting_count": 13,
@@ -15,13 +15,13 @@
     "newsletter_count": 72,
     "video_count": 0,
     "article_count": 18,
-    "bookmark_count": 16,
+    "bookmark_count": 17,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 344,
-    "outbound_count": 433,
-    "inbound_count": 400,
+    "total_links": 345,
+    "outbound_count": 434,
+    "inbound_count": 401,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -530,6 +530,30 @@
       "inbound_count": 1
     },
     {
+      "slug": "bookmarks/hermes-assistant-to-chief-of-staff-2026-06-22",
+      "title": "Hermes Assistant To Chief Of Staff 2026 06 22",
+      "type": "bookmark",
+      "updated": "",
+      "body": "# How we turned Hermes from an assistant into our chief of staff (and how you can too)\n\n**Source:** email\n**Source URI:** gmail://msg_19ee6b8b30fd1a2c\n**Ingested:** 2026-06-22T00:00:00Z\n**Provenance:** Forwarded by sayf on 2026-06-21\n\nX Article by [[ericosiu]] about how they turned Hermes from an assistant into a chief of staff \u2014 booking sales calls, reviving stale leads, and more.\n\n**URL:** https://x.com/ericosiu/status/2068370407049011538\n**Article:** https://x.com/i/article/2062257585613389824\n\n> Preview: \"Your Hermes probably answers texts and manages your calendar. That's cool. Mine books sales calls, revives stale leads...\"",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "people/ericosiu",
+          "type": "wikilink",
+          "text": "ericosiu"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "people/ericosiu",
+          "type": "wikilink",
+          "text": "bookmarks/hermes-assistant-to-chief-of-staff-2026-06-22"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 1
+    },
+    {
       "slug": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-19ee6b8b30fd1a2c",
       "title": "Hermes Assistant To Chief Of Staff Ericosiu 19ee6b8b30fd1a2c",
       "type": "bookmark",
@@ -726,15 +750,9 @@
           "text": "ericosiu"
         }
       ],
-      "backlinks": [
-        {
-          "from": "people/ericosiu",
-          "type": "wikilink",
-          "text": "bookmarks/msg-19ee6b8b30fd1a2c"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 1,
-      "inbound_count": 1
+      "inbound_count": 0
     },
     {
       "slug": "bookmarks/stripe-online-ai-commerce-2026-06-22",
@@ -7514,16 +7532,16 @@
       "title": "ericosiu",
       "type": "person",
       "updated": "",
-      "body": "# ericosiu\n\n> X user and Hermes/AI agent power user. Author of the viral article \"How we turned Hermes from an assistant into our chief of staff.\"\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[bookmarks/msg-19ee6b8b30fd1a2c]] as the author of an X Article about transforming Hermes from assistant to chief of staff\n\n## Related\n\n- [[bookmarks/msg-19ee6b8b30fd1a2c]] \u2014 ericosiu's article about Hermes agent evolution\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-21** | Published X Article: \"How we turned Hermes from an assistant into our chief of staff (and how you can too)\". Post had 48K+ views and 109 likes. [Source: gmail://msg_19ee6b8b30fd1a2c]",
+      "body": "# ericosiu\n\n> X user and Hermes/AI agent power user. Author of the viral article \"How we turned Hermes from an assistant into our chief of staff.\"\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[bookmarks/hermes-assistant-to-chief-of-staff-2026-06-22]] as the author of an X Article about transforming Hermes from assistant to chief of staff\n\n## Related\n\n- [[bookmarks/hermes-assistant-to-chief-of-staff-2026-06-22]] \u2014 ericosiu's article about Hermes agent evolution\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-21** | Published X Article: \"How we turned Hermes from an assistant into our chief of staff (and how you can too)\". Post had 48K+ views and 109 likes. [Source: gmail://msg_19ee6b8b30fd1a2c]",
       "tags": [
         "agent-ecosystem",
         "x"
       ],
       "links_out": [
         {
-          "to": "bookmarks/msg-19ee6b8b30fd1a2c",
+          "to": "bookmarks/hermes-assistant-to-chief-of-staff-2026-06-22",
           "type": "wikilink",
-          "text": "bookmarks/msg-19ee6b8b30fd1a2c"
+          "text": "bookmarks/hermes-assistant-to-chief-of-staff-2026-06-22"
         }
       ],
       "backlinks": [
@@ -7534,6 +7552,11 @@
         },
         {
           "from": "bookmarks/eric-osiu-hermes-chief-of-staff-2026-06-21",
+          "type": "wikilink",
+          "text": "ericosiu"
+        },
+        {
+          "from": "bookmarks/hermes-assistant-to-chief-of-staff-2026-06-22",
           "type": "wikilink",
           "text": "ericosiu"
         },
@@ -7564,7 +7587,7 @@
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 7
+      "inbound_count": 8
     },
     {
       "slug": "people/erik-osiu",
@@ -8737,6 +8760,11 @@
     },
     {
       "source": "bookmarks/eric-osiu-hermes-chief-of-staff-2026-06-21",
+      "target": "people/ericosiu",
+      "type": "wikilink"
+    },
+    {
+      "source": "bookmarks/hermes-assistant-to-chief-of-staff-2026-06-22",
       "target": "people/ericosiu",
       "type": "wikilink"
     },
@@ -10588,7 +10616,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 261 pages",
+        "message": "Connected, 262 pages",
         "category": "ops"
       },
       {
@@ -10624,7 +10652,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 424ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 425ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -10660,7 +10688,7 @@
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 261 pages; 33 external link(s) (no bare tweets).",
+        "message": "Sampled 262 pages; 33 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -10821,11 +10849,11 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction current: 16/261 pages (6%) stale",
+        "message": "Extraction current: 18/262 pages (7%) stale",
         "details": {
-          "total": 261,
-          "stale": 16,
-          "pct": 6,
+          "total": 262,
+          "stale": 18,
+          "pct": 7,
           "warn_pct": 20,
           "fail_pct": null,
           "source_id": null
@@ -10853,7 +10881,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "167 reranker failure(s) in last 7 days (below threshold)",
+        "message": "168 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -10865,7 +10893,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "46.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "46.2% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
