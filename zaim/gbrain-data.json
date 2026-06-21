@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-06-21T03:00:39Z",
+  "updated_at": "2026-06-21T03:09:20Z",
   "summary": {
-    "page_count": 20,
+    "page_count": 21,
     "people_count": 4,
     "company_count": 0,
     "artifact_count": 0,
-    "total_links": 8,
-    "outbound_count": 22,
-    "inbound_count": 20,
-    "graph_coverage": "25.0% of pages have inbound links",
+    "total_links": 5,
+    "outbound_count": 19,
+    "inbound_count": 16,
+    "graph_coverage": "23.8% of pages have inbound links",
     "concept_count": 11,
     "meeting_count": 3,
     "person_count": 4,
-    "newsletter_count": 1,
+    "newsletter_count": 2,
     "video_count": 0,
     "article_count": 1,
     "bookmark_count": 0,
@@ -188,44 +188,23 @@
           "from": "meetings/2026-06-08-bjarte-global-ai-village",
           "type": "link",
           "text": "Maloha Coast"
-        },
-        {
-          "from": "meetings/sayf-zaim-jun-12-2026",
-          "type": "wikilink",
-          "text": "maloha-coast|Maloha Coast"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 4
+      "inbound_count": 3
     },
     {
       "slug": "meetings/sayf-zaim-jun-12-2026",
-      "title": "Sayf Zaim Jun 12 2026",
+      "title": "Sayf x Zaim \u2014 Jun 12, 2026",
       "type": "meeting",
       "updated": "",
-      "body": "# Sayf x Zaim \u2014 Jun 12, 2026\n\n**From:** Sayf Codes <sayfcodes@gmail.com>\n**Date:** Fri, 12 Jun 2026 12:00:46 +0800\n**Source:** email forward + calendar acceptance\n**Source URI:** gmail://19eb6b5d19465acd\n\n**Sayf's note:** From my meeting with Zaim this morning.\n\n## Calendar Details\n\n- **Scheduled:** Fri, 12 Jun 2026, 10:30am \u2013 11:00am (MYT)\n- **Status:** Accepted by Sayf\n- **Google Meet:** https://meet.google.com/udx-niaz-esr\n- **Phone (US):** +1 402-588-0161, PIN: 507016250\n\n[Source: Calendar acceptance email, 2026-06-11]\n\n---\n\n## Summary\n\nDiscussion explored AI skepticism and market strategy alongside technical collaboration opportunities for business growth.\n\n### Differing AI Market Perspectives\n\n[[people/sayf-codes|Sayf]] and [[people/zaim-mohzani|Zaim]] debated the value of AI in business, contrasting skepticism about automation hype with the practical utility of AI for basic skills training.\n\n### Technical Tools and Infrastructure\n\nDiscussion shifted toward specific software tools, noting the efficiency of virtual private servers and the potential of data integration dashboards for business applications.\n\n### Collaboration and Service Models\n\nAgreement reached to build a technical solution for coaching services while prioritizing simple, revenue-focused strategies for future client engagement for [[maloha-coast|Maloha Coast]].\n\n## Suggested Next Steps\n\n- **[Maloha Coast]** Build Dashboard: Arrange a meeting to build the dashboard component. Perform the session either in person or over a call based on the preference of Zaim Mohzani.\n- **[Zaim Mohzani]** Provide Testimonial: Provide a testimonial in exchange for the assistance provided by Maloha Coast.\n- **[Maloha Coast]** Share Research Link: Send the Tencent Lighthouse promotion link for further research.\n- **[The group]** Schedule Followup Session: Coordinate a time for a meeting to continue the discussion.\n- **[Zaim Mohzani]** Send WhatsApp Message: Contact Maloha Coast via the provided phone number to initiate further communication.\n\n## Google Doc\n\nhttps://docs.google.com/document/d/1q3v6SbKF_PiEaTatPNvhZtoWd9T_n9v5HqMoxsLj3hQ/edit?usp=meet_tnfm_email",
+      "body": "# Sayf x Zaim \u2014 Jun 12, 2026\n\n**Date:** Friday, 12 June 2026, 10:30am \u2013 11:00am (MYT)\n**Google Meet:** https://meet.google.com/udx-niaz-esr\n\n## Summary\nDiscussion explored AI skepticism and market strategy alongside technical collaboration opportunities for business growth.\n\n### Differing AI Market Perspectives\nSayf and Zaim debated the value of AI in business, contrasting skepticism about automation hype with the practical utility of AI for the Maloha Coast market. Zaim expressed concerns about AI being overhyped. Sayf argued that AI tools are genuinely useful and represent a real shift.\n\n### Technical Collaboration\nDiscussed the gbrain ingestion pipeline setup and how it connects their shared knowledge base.\n\n### Business Development\nExplored how to position technical capability for the Malaysian market and identify segments where automation adds real value.\n\n## Action Items\n- Follow up on market positioning strategy\n- Continue gbrain pipeline iteration\n- Identify specific local business segments for automation",
       "tags": [
         "zaim"
       ],
-      "links_out": [
-        {
-          "to": "people/sayf-codes",
-          "type": "wikilink",
-          "text": "people/sayf-codes|Sayf"
-        },
-        {
-          "to": "people/zaim-mohzani",
-          "type": "wikilink",
-          "text": "people/zaim-mohzani|Zaim"
-        },
-        {
-          "to": "maloha-coast",
-          "type": "wikilink",
-          "text": "maloha-coast|Maloha Coast"
-        }
-      ],
+      "links_out": [],
       "backlinks": [],
-      "outbound_count": 3,
+      "outbound_count": 0,
       "inbound_count": 0
     },
     {
@@ -234,6 +213,20 @@
       "type": "meeting",
       "updated": "",
       "body": "# Sayf x Zaim \u2014 Jun 12, 2026\n\n**Source:** email forward\n**Source URI:** gmail://msg_19ecaa895ccb88af\n**Ingested:** 2026-06-20T04:00:00Z\n**Provenance:** Forwarded to Zaim's workspace via self-BCC\n\n**Date:** Friday, 12 June 2026, 10:30am \u2013 11:00am (MYT)\n**Google Meet:** https://meet.google.com/udx-niaz-esr\n\n## Summary\n\nDiscussion explored AI skepticism and market strategy alongside technical collaboration opportunities for business growth.\n\n### Differing AI Market Perspectives\nSayf and Zaim debated the value of AI in business, contrasting skepticism about automation hype with the practical utility of AI for basic skills training.\n\n### Technical Tools and Infrastructure\nDiscussion shifted toward specific software tools, noting the efficiency of virtual private servers and the potential of data integration dashboards for business applications.\n\n### Collaboration and Service Models\nAgreement reached to build a technical solution for coaching services while prioritizing simple, revenue-focused strategies for future client engagement for Maloha Coast.\n\n## Suggested Next Steps\n\n- **Maloha Coast** \u2014 Build Dashboard: Arrange a meeting to build the dashboard component. Perform the session either in person or over a call.\n- **Zaim Mohzani** \u2014 Provide Testimonial: Provide a testimonial in exchange for the assistance provided.\n- **Maloha Coast** \u2014 Share Research Link: Send the Tencent Lighthouse promotion link for further research.\n- **The group** \u2014 Schedule Followup Session: Coordinate a time for a meeting to continue the discussion.\n- **Zaim Mohzani** \u2014 Send WhatsApp Message: Contact Maloha Coast via the provided phone number.\n\n## Google Doc\nhttps://docs.google.com/document/d/1q3v6SbKF_PiEaTatPNvhZtoWdT9_n9v5HqMoxsLj3hQ/edit",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "newsletters/why-your-2026-career-goals-are-already-dead",
+      "title": "Why your 2026 career goals are already dead",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# Why your 2026 career goals are already dead\n\n> **Zaim's note:** From: Zaim Mohzani <zaim.mohzani90@gmail.com>\nTo: info+zaim@malohacoast.com\nSubject: Fwd: Why your 2026 career goals are already dead\nDate: Tue, 16 Jun 2026 11:26:00 +0800\nDelivered-To: info+zaim@malohacoast.com\n\nSincerely,\n\n*Zaim Mohzani*\n\n---\n\nAnd what to do about it? \n\nIt's June. How's that career goal from January going?\n\nIf you're being honest, probably: forgotten by March, barely remembered\n(and feeling guilty) in June and quietly dropped by...the end of the year.\n\nIt's a timeframe problem, not a discipline problem.\nThe annual goal trap\n\nA year is too long to create urgency and too vague to act on.\n\n\"Get a new job this year\" feels fine in January. There's time. So nothing\nhappens.\n\nBy June, the goal is still technically alive, but you haven't done anything\nthat moves it forward. By December, you're setting the same goal again for\nnext year.\n\nI went through this myself but with weight, not career. In January 2025, I\nset an annual goal: lose 6kg by December. Standard SMART goal. Looked fine\non paper.\n\nThen I came across Brian Moran and Michael Lennington's book \"The 12 Week\nYear,\" which argues most people don't actually operate in years. They\noperate in the last few weeks before a deadline, however long that deadline\nis. So the fix is to shrink the deadline.\n\nBtw, this book is available on Shopee!\n\nI rewrote the goal: lose 6kg in 90 days, by 31 March.\n\nI hit it!!\n\nThe best part was that I never had to set that goal again. The habits I\nbuilt in those 90 days kept running on their own for the rest of the year.\nWhy this works for your career too\n\nThe same applies to a job search, a promotion case or a pivot.\n\n\"Get promoted this year\" doesn't tell you what to do on Monday.\n\n\"By 30 September, I will have had 3 conversations with people in my target\ndepartment, applied to 5 internal roles, and presented one project to\nleadership\" tells you exactly what to do on Monday.\n\nOne of these is a wish. The other is a plan.\n\nI've worked with clients on exactly this. The ones who set a 90-day goal\nlike \"land 3 offers from MNCs by end of Q3\" with weekly actions attached,\nmostly hit it or get close. The ones with \"find a better job this year\"\nmostly don't, because there's no Monday task attached to it.\nHow to set yours\n\nPick ONE career goal for this quarter. Just one.\n\nFollow this format and write down:\n\n   - *My 90-day career goal is...*\n   - *This matters to me because...*\n   - *To complete this, I commit that by 30 September 2026, I will have...*\n   (make this checkable. \"3 offers\" is checkable. \"More clarity\" is not.)\n   - *To make sure I complete it, I'm going to...* (weekly actions, not the\n   outcome)\n\nYour homework this weekend\n\nWrite it down. One goal. One sentence you can check off or not, no grey\narea.\n\nThen build it into your week, not your year.\n------------------------------\n\nP.S. I'm running a free workshop exactly on setting this 90-day goal for Q3\n2026. If you're interested to join, it's happening early next month in\nJune. For more info or to sign up, head over to\nhttps://t.ly/getclearoncareer6\n<https://preview.kit-mail3.com/click/dpheh0hzhmh4/aHR0cHM6Ly90Lmx5L2dldGNsZWFyb25jYXJlZXI2>\n\nprofile <https://preview.kit-mail3.com/preferences> | I Write on LinkedIn\nEvery Day - Follow Me For Career, AI and Productivity Insights\n<https://preview.kit-mail3.com/click/dpheh0hzhmh4/aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2luL3phaW1tb2h6YW5pLw==>\n\nNation Building School - NBS Ventures - 202403343346 (003683654-H)\n\n<div dir=\"ltr\"><div><br clear=\"all\"></div><div><div dir=\"ltr\" class=\"gmail_signature\" data-smartmail=\"gmail_signature\"><div dir=\"ltr\"><font face=\"arial, helvetica, sans-serif\" size=\"2\"><br>Sincerely,<br><br><b>Zaim Mohzani</b></font><br></div></div></div><br><br><div class=\"gmail_quote gmail_quote_container\"><div dir=\"ltr\" class=\"gmail_attr\">---------- Forwarded message ---------<br>From: <strong class=\"gmail_sendername\" dir=\"auto\">Zaim Mohzani</strong> <span dir=\"auto\">&lt;<a href=\"mailto:zaim@nationbuildingschool.com\">zaim@nationbuildingschool.com</a>&gt;</span><br>\n\n<div style=\"margin:0;padding:0\">\n<div id=\"m_-3681858832185568095preview-text\">\n          <span style=\"display:none;max-height:0;overflow:hidden\">\n            And what to do about it?\n          </span>\n\n          <span style=\"display:none;max-height:0;overflow:hidden\">\n            \n          </span>\n        </div>\n<div style=\"background-color:#efeff3\"><table role=\"presentation\" cellpadding=\"0\" cellspacing=\"0\" class=\"m_-3681858832185568095email\" style=\"border-collapse:separate;background-color:#efeff3;width:100%\" bgcolor=\"#efeff3\"><tbody><tr>\n<td style=\"vertical-align:top\"><div style=\"margin:0 auto;padding:30px 0;padding-left:20px;padding-right:20px;max-width:100%;padding-top:30px;padding-left:20px;padding-bottom:30px;padding-right:20px;margin:0 auto;max-width:100%\">\n<div style=\"background-color:#ffffff;border-radius:4px;overflow:hidden;max-width:600;margin:0px auto\"><table bgcolor=\"#ffffff\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"border-collapse:separate;table-layout:fixed\"><tbody><tr><td style=\"vertical-align:top;padding:20px\"><div style=\"background-color:#ffffff\">\n<div><table cellpadding=\"0\" cellspacing=\"0\" style=\"border-collapse:separate;width:100%;margin:0 auto\"><tbody><tr><td style=\"vertical-align:top\">\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">It&#39;s June. How&#39;s that career goal from January going?</p>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">If you&#39;re being honest, probably: forgotten by March, barely remembered (and feeling guilty) in June and quietly dropped by...the end of the year. </p>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">It&#39;s a timeframe problem, not a discipline problem.</p>\n<h3 style=\"font-weight:bold;font-style:normal;font-size:1em;margin:0;font-size:1.17em;margin:1em 0;font-family:-apple-system,BlinkMacSystemFont,&#39;Segoe UI&#39;,Roboto,Oxygen-Sans,Ubuntu,Cantarell,&#39;Helvetica Neue&#39;,sans-serif;color:#000000;line-height:1.5\">The annual goal trap</h3>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">A year is too long to create urgency and too vague to act on.</p>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">&quot;Get a new job this year&quot; feels fine in January. There&#39;s time. So nothing happens.</p>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">By June, the goal is still technically alive, but you haven&#39;t done anything that moves it forward. By December, you&#39;re setting the same goal again for next year.</p>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">I went through this myself but with weight, not career. In January 2025, I set an annual goal: lose 6kg by December. Standard SMART goal. Looked fine on paper.</p>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">Then I came across Brian Moran and Michael Lennington&#39;s book &quot;The 12 Week Year,&quot; which argues most people don&#39;t actually operate in years. They operate in the last few weeks before a deadline, however long that deadline is. So the fix is to shrink the deadline.</p>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\"></p>\n<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" style=\"border-collapse:separate;text-align:center;table-layout:fixed;float:none\"><tbody><tr><td align=\"center\" style=\"vertical-align:top\"><div style=\"display:block\"></div>\nBtw, this book is available on Shopee!</td></tr></tbody></table>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">I rewrote the goal: lose 6kg in 90 days, by 31 March.</p>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">I hit it!!</p>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">The best part was that I never had to set that goal again. The habits I built in those 90 days kept running on their own for the rest of the year.</p>\n<h3 style=\"font-weight:bold;font-style:normal;font-size:1em;margin:0;font-size:1.17em;margin:1em 0;font-family:-apple-system,BlinkMacSystemFont,&#39;Segoe UI&#39;,Roboto,Oxygen-Sans,Ubuntu,Cantarell,&#39;Helvetica Neue&#39;,sans-serif;color:#000000;line-height:1.5\">Why this works for your career too</h3>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">The same applies to a job search, a promotion case or a pivot.</p>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">&quot;Get promoted this year&quot; doesn&#39;t tell you what to do on Monday.</p>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">&quot;By 30 September, I will have had 3 conversations with people in my target department, applied to 5 internal roles, and presented one project to leadership&quot; tells you exactly what to do on Monday.</p>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">One of these is a wish. The other is a plan.</p>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">I&#39;ve worked with clients on exactly this. The ones who set a 90-day goal like &quot;land 3 offers from MNCs by end of Q3&quot; with weekly actions attached, mostly hit it or get close. The ones with &quot;find a better job this year&quot; mostly don&#39;t, because there&#39;s no Monday task attached to it.</p>\n<h3 style=\"font-weight:bold;font-style:normal;font-size:1em;margin:0;font-size:1.17em;margin:1em 0;font-family:-apple-system,BlinkMacSystemFont,&#39;Segoe UI&#39;,Roboto,Oxygen-Sans,Ubuntu,Cantarell,&#39;Helvetica Neue&#39;,sans-serif;color:#000000;line-height:1.5\">How to set yours</h3>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">Pick ONE career goal for this quarter. Just one.</p>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">Follow this format and write down:</p>\n<ul style=\"margin:1em 0;margin-left:1em;padding:0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5;list-style-position:outside!important\">\n<li style=\"padding:0 0 0 1em;margin:0;margin-left:1em\"><span><em>My 90-day career goal is...</em></span></li>\n<li style=\"padding:0 0 0 1em;margin:0;margin-left:1em\"><span><em>This matters to me because...</em></span></li>\n<li style=\"padding:0 0 0 1em;margin:0;margin-left:1em\"><span><em>To complete this, I commit that by 30 September 2026, I will have...</em> (make this checkable. &quot;3 offers&quot; is checkable. &quot;More clarity&quot; is not.)</span></li>\n<li style=\"padding:0 0 0 1em;margin:0;margin-left:1em\"><span><em>To make sure I complete it, I&#39;m going to...</em> (weekly actions, not the outcome)</span></li>\n</ul>\n<h3 style=\"font-weight:bold;font-style:normal;font-size:1em;margin:0;font-size:1.17em;margin:1em 0;font-family:-apple-system,BlinkMacSystemFont,&#39;Segoe UI&#39;,Roboto,Oxygen-Sans,Ubuntu,Cantarell,&#39;Helvetica Neue&#39;,sans-serif;color:#000000;line-height:1.5\">Your homework this weekend</h3>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">Write it down. One goal. One sentence you can check off or not, no grey area.</p>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">Then build it into your week, not your year.</p>\n<hr style=\"margin-top:48px;margin-bottom:48px\">\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">P.S. I&#39;m running a free workshop exactly on setting this 90-day goal for Q3 2026. If you&#39;re interested to join, it&#39;s happening early next month in June. For more info or to sign up, head over to <a href=\"https://preview.kit-mail3.com/click/dpheh0hzhmh4/aHR0cHM6Ly90Lmx5L2dldGNsZWFyb25jYXJlZXI2\" class=\"m_-3681858832185568095ck-link\" rel=\"noopener noreferrer\" style=\"color:#0875c1\" target=\"_blank\">https://t.ly/getclearoncareer6</a></p>\n</td></tr></tbody></table></div>\n<div style=\"border-top:1px dotted #888;padding:20px;font-family:Helvetica,Arial,sans-serif;color:#aaa;font-size:12px\"><table cellpadding=\"0\" cellspacing=\"0\" style=\"border-collapse:separate;width:100%;margin:0 auto\"><tbody><tr><td style=\"vertical-align:top\">\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5;text-align:center\"><a href=\"https://preview.kit-mail3.com/unsubscribe\" class=\"m_-3681858832185568095ck-link\" rel=\"noopener noreferrer\" style=\"color:#0875c1\" target=\"_blank\"><p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5;text-align:center\">Nation Building School - NBS Ventures - 202403343346 (003683654-H)</p>\n</td></tr></tbody></table></div>\n</div></td></tr></tbody></table></div>\n\n</div></td>\n<td style=\"vertical-align:top\"></td>\n</tr></tbody></table></div>\n\n</div>\n\n</div></div></div>",
       "tags": [
         "zaim"
       ],
@@ -356,20 +349,10 @@
           "from": "digests/2026-06-10-business-brain-digest",
           "type": "wikilink",
           "text": "Sayf Codes"
-        },
-        {
-          "from": "meetings/sayf-zaim-jun-12-2026",
-          "type": "wikilink",
-          "text": "people/sayf-codes|Sayf"
-        },
-        {
-          "from": "newsletters/msg-19ee2dfa87f86548",
-          "type": "wikilink",
-          "text": "Sayf Codes"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 4
+      "inbound_count": 2
     },
     {
       "slug": "people/zaim-mohzani",
@@ -435,11 +418,6 @@
           "text": "Zaim Mohzani"
         },
         {
-          "from": "meetings/sayf-zaim-jun-12-2026",
-          "type": "wikilink",
-          "text": "people/zaim-mohzani|Zaim"
-        },
-        {
           "from": "newsletters/zaim-career-goals-2026-06-16",
           "type": "wikilink",
           "text": "Zaim Mohzani"
@@ -456,7 +434,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 10
+      "inbound_count": 9
     },
     {
       "slug": "zaim-career-goals-12-week-year-2026-06-16",
@@ -549,21 +527,6 @@
   ],
   "graph_links": [
     {
-      "source": "meetings/sayf-zaim-jun-12-2026",
-      "target": "people/sayf-codes",
-      "type": "wikilink"
-    },
-    {
-      "source": "meetings/sayf-zaim-jun-12-2026",
-      "target": "people/zaim-mohzani",
-      "type": "wikilink"
-    },
-    {
-      "source": "meetings/sayf-zaim-jun-12-2026",
-      "target": "maloha-coast",
-      "type": "wikilink"
-    },
-    {
       "source": "newsletters/zaim-career-goals-2026-06-16",
       "target": "people/zaim-mohzani",
       "type": "wikilink"
@@ -602,11 +565,35 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-21T03:00:39Z",
+      "ts": "2026-06-21T03:09:20Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
-      "detail": "Dashboard refreshed \u2014 20 pages, 8 links",
+      "detail": "Dashboard refreshed \u2014 21 pages, 5 links",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-21T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "meetings/sayf-zaim-jun-12-2026",
+      "detail": "Sayf x Zaim \u2014 Jun 12, 2026",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-21T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "newsletters/why-your-2026-career-goals-are-already-dead",
+      "detail": "Why your 2026 career goals are already dead",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-20T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "articles/msg-19ece778ab23e039",
+      "detail": "Why your 2026 career goals are already dead",
       "level": "info"
     }
   ]
