@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-06-21T03:09:15Z",
+  "updated_at": "2026-06-21T03:45:29Z",
   "summary": {
-    "score": "24",
+    "score": "22",
     "score_label": "/100",
-    "score_breakdown": "score 24/100, embed 0/35, links 7/25, timeline 1/15, orphans 6/15, dead-links 10/10",
-    "page_count": 258,
+    "score_breakdown": "score 22/100, embed 0/35, links 6/25, timeline 1/15, orphans 5/15, dead-links 10/10",
+    "page_count": 261,
     "embed_coverage": "No embeddings yet. Run: gbrain embed --stale",
     "graph_coverage": "graph_signals disabled \u2014 coverage not checked",
     "entity_links": "Coverage 69% \u00b1 12.8% (target 70%)",
@@ -12,28 +12,28 @@
     "meeting_count": 10,
     "person_count": 38,
     "company_count": 25,
-    "newsletter_count": 56,
+    "newsletter_count": 58,
     "video_count": 0,
-    "article_count": 10,
+    "article_count": 11,
     "bookmark_count": 12,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 290,
-    "outbound_count": 364,
-    "inbound_count": 335,
+    "total_links": 289,
+    "outbound_count": 363,
+    "inbound_count": 334,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
     },
-    "score_raw": "Brain score 24/100 (embed 0/35, links 7/25, timeline 1/15, orphans 6/15, dead-links 10/10)",
+    "score_raw": "Brain score 22/100 (embed 0/35, links 6/25, timeline 1/15, orphans 5/15, dead-links 10/10)",
     "score_components": {
-      "score": "24/100",
+      "score": "22/100",
       "embed": "0/35",
-      "links": "7/25",
+      "links": "6/25",
       "timeline": "1/15",
-      "orphans": "6/15",
+      "orphans": "5/15",
       "dead-links": "10/10"
     },
     "checks_passed": 61,
@@ -300,6 +300,29 @@
       "backlinks": [],
       "outbound_count": 0,
       "inbound_count": 0
+    },
+    {
+      "slug": "articles/nerdqaxe-revision-7-launch-2026-06-12",
+      "title": "Nerdqaxe Revision 7 Launch 2026 06 12",
+      "type": "article",
+      "updated": "",
+      "body": "# NerdQaxe++ Revision 7 Launches \u2014 Open-Source Bitcoin Solo Miner\n\n**Source:** email from Solo Satoshi (forwarded by Sayf)\n**Source URI:** gmail://msg_19eb9b8ff247d156\n**Ingested:** 2026-06-21T03:15:00Z\n\nThe NerdQaxe++ Revision 7, the newest evolution of the open-source quad-chip Bitcoin solo miner, launched. Production is 100% USA-based and assembled domestically.\n\n## Key Points\n\n- Fully open source \u2014 hardware design files and firmware source code are public\n- Repositories went public before a single unit shipped, as open-source licenses require\n- Claim denial about Revision 7 not being open source: \"That claim is false\"\n- Pre-release technical overview published on YouTube with complete benchmark data\n- Production will not stop until every miner who wants one has one\n- Competitors noted to be offering closed-source copies at lower prices\n\nThe email positions this as setting \"a new standard\" for open-source Bitcoin mining hardware.",
+      "tags": [
+        "bitcoin",
+        "bitcoin-mining",
+        "hardware",
+        "solo-satoshi"
+      ],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-06-15-business-brain-digest",
+          "type": "wikilink",
+          "text": "Nerdqaxe Revision 7 Launch"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 1
     },
     {
       "slug": "bookmarks/agent-skills-by-addy-osmani",
@@ -1356,18 +1379,13 @@
           "text": "OpenRouter"
         },
         {
-          "from": "newsletters/openrouter-three-features-save-money-2026-06-12",
-          "type": "wikilink",
-          "text": "OpenRouter"
-        },
-        {
           "from": "newsletters/openrouter-three-features-try-next-2026-06-18",
           "type": "wikilink",
           "text": "OpenRouter"
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 12
+      "inbound_count": 11
     },
     {
       "slug": "companies/passend",
@@ -3616,7 +3634,7 @@
           "text": "Zaim Mohzani"
         },
         {
-          "to": "newsletters/nerdqaxe-revision-7-launch",
+          "to": "articles/nerdqaxe-revision-7-launch-2026-06-12",
           "type": "wikilink",
           "text": "Nerdqaxe Revision 7 Launch"
         },
@@ -5274,15 +5292,9 @@
           "text": "Solo Satoshi"
         }
       ],
-      "backlinks": [
-        {
-          "from": "digests/2026-06-15-business-brain-digest",
-          "type": "wikilink",
-          "text": "Nerdqaxe Revision 7 Launch"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 1,
-      "inbound_count": 1
+      "inbound_count": 0
     },
     {
       "slug": "newsletters/openrouter-chain-models-2026-06-16",
@@ -5376,6 +5388,20 @@
       ],
       "outbound_count": 0,
       "inbound_count": 2
+    },
+    {
+      "slug": "newsletters/openrouter-paid-key-features-2026-06-11",
+      "title": "Openrouter Paid Key Features 2026 06 11",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# What comes with a paid key\n\n**Source:** email from OpenRouter Team\n**Source URI:** gmail://msg_19eb701d76b2923f\n**Ingested:** 2026-06-21T03:15:00Z\n\nA paid OpenRouter key gives access to 300+ models from 60+ providers, including every frontier model (Claude, GPT, Gemini, Llama). Same API, same code, same key.\n\n## Features\n\n- **Provider fallback** \u2014 When a provider goes down, the request re-routes to another provider serving the same model. No retry logic needed.\n- **Prompt caching** \u2014 Repeated context gets cached on supported models. Cuts repeated-context cost by up to 90%.\n- **Model variants** \u2014 Append `:nitro` for speed, `:floor` for the cheapest provider, or `:exacto` for precision routing. One string change.\n- **Dedicated rate limits** \u2014 Paid keys get their own limits; other users' traffic never touches yours.\n- **No daily request cap** \u2014 Free tier: 10 requests/day. Paid keys: no ceiling.\n- **No provider markup** \u2014 Pay the per-token rate each provider sets.\n- **Activity dashboard** \u2014 Shows every call with model, tokens, and cost in real time.\n- **openrouter/auto** \u2014 Selects the best model for each request from 26+ options. For minimal spend without micro-managing models.\n\nNo minimum purchase. Credits expire after one year.",
+      "tags": [
+        "openrouter"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
     },
     {
       "slug": "newsletters/openrouter-provider-data-policies-2026-06-19",
@@ -5503,20 +5529,16 @@
     },
     {
       "slug": "newsletters/openrouter-three-features-save-money-2026-06-12",
-      "title": "Three features that quietly save you money",
+      "title": "Openrouter Three Features Save Money 2026 06 12",
       "type": "newsletter",
       "updated": "",
-      "body": "# Three features that quietly save you money\n\n**Source:** email\n**Source URI:** gmail://msg_19ebc285fe5e7458\n**Ingested:** 2026-06-12\n**Provenance:** OpenRouter onboarding email to info@malohacoast.com\n\n## Summary\n\nOpenRouter onboarding newsletter covering three features that quietly save you money.\n\n## Key Content\n\nPrompt caching cuts repeat tokens by up to 90%. Fallback keeps you up. Healing fixes broken JSON. \u00a0\n\nOpenRouter\nOpenRouter (  )\n\n\u2003\n\nHi there,\n\nThree OpenRouter features quietly do work for you in production. They are off by default on most platforms and on or one-flag-away here. Each one pays for itself within the first week on any workload that hits real traffic.\n\nView the docs (  )\n\n\u2003\n\nPROMPT CACHING\n\nIf you send the same system prompt or context window repeatedly, OpenRouter caches the prefix and bills cached tokens at up to 90 percent off. It runs automatically on supported models with no setup. The savings show up in your usage report. Agents with long system prompts, RAG pipelines that reuse context, and multi-turn chat all benefit here without any code change.\n\n\u2003\n\nPROVIDER FALLBACK\n\nPass a list of models with route=\"fallback\" and OpenRouter retries the next one in the list when your primary fails. Same response shape, same cost as whichever model serves the request. Provider outages stop cascading to your app, and the only thing you added was one extra array entry.\n\n\u2003\n\nRESPONSE HEALING\n\nWhen a model returns malformed JSON, OpenRouter repairs it before sending the response back to your app. Enable it under Settings > Plugins (  ). Useful for any pipeline that parses model output downstream, which in practice is most production workloads.\n\n\u2003\n\nclient.chat.completions.create\n( \u00a0\u00a0model=\"openrouter/auto\",\n\u00a0\u00a0extra_body={\n\u00a0\u00a0\u00a0\u00a0\"models\": [\"openrouter/auto\", \"anthropic/claude-sonnet-4.6\"],\n\u00a0\u00a0\u00a0\u00a0\"route\": \"fallback\"\n\u00a0\u00a0},\n\u00a0\u00a0messages=[{\"role\": \"user\", \"content\": \"...\"}] )\n\n\n\u2003\n\nAuto-routing with a named fallback. The production pattern.\n\nWhy these three compound. Auto-routing picks a cheap model when the prompt does not need a frontier one. Prompt caching drops the per-call cost of whatever the router picks on repeat traffic. Provider fallback keeps you up when a backend misbehaves. Layered together, the cost curve stays flat as traffic grows and the uptime profile looks nothing like single-provider integration.\n\nThe next email walks through structured outputs: how to get valid JSON from any model on the catalog with one parameter.\n\nopenrouter.ai (  )\u00a0\u00a0\u00b7\u00a0\u00a0Discord (  )\u00a0\u00a0\u00b7\u00a0\u00a0X (  )\u00a0\u00a0\u00b7\u00a0\u00a0Docs (  )\n\nManage preferences (  )\n\u00a0\u00a0|\u00a0\u00a0\nUnsubscribe (  )\n\n## Related\n- [[OpenRouter]] \u2014 platform",
-      "tags": [],
-      "links_out": [
-        {
-          "to": "companies/openrouter",
-          "type": "wikilink",
-          "text": "OpenRouter"
-        }
+      "body": "# Three features that quietly save you money\n\n**Source:** email from OpenRouter Team\n**Source URI:** gmail://msg_19ebc285fe5e7458\n**Ingested:** 2026-06-21T03:15:00Z\n\nThree OpenRouter features that save money in production \u2014 all off by default on most platforms, each pay-for-itself within the first week.\n\n## Prompt Caching\n\nIf you send the same system prompt or context window repeatedly, OpenRouter caches the prefix and bills cached tokens at up to 90 percent off. Runs automatically on supported models with no setup. Agents with long system prompts, RAG pipelines that reuse context, and multi-turn chat benefit without any code change.\n\n## Provider Fallback\n\nPass a list of models with `route=\"fallback\"` and OpenRouter retries the next one when your primary fails. Same response shape, same cost as whichever model serves the request. Provider outages stop cascading to your app. One extra array entry.\n\n## Response Healing\n\nWhen a model returns malformed JSON, OpenRouter repairs it before sending the response back. Enable under Settings > Plugins. Useful for any pipeline that parses model output downstream.\n\n## Auto-routing Pattern\n\n```python\nclient.chat.completions.create(\n    model=\"openrouter/auto\",\n    extra_body={\n        \"models\": [\"openrouter/auto\", \"anthropic/claude-sonnet-4.6\"],\n        \"route\": \"fallback\"\n    },\n    messages=[{\"role\": \"user\", \"content\": \"...\"}]\n)\n```\n\nAuto-routing picks a cheap model when the prompt doesn't need a frontier one. Prompt caching drops the per-call cost of whatever the router picks on repeat traffic. Provider fallback keeps you up when a backend misbehaves. Layered together, the cost curve stays flat as traffic grows.",
+      "tags": [
+        "openrouter"
       ],
+      "links_out": [],
       "backlinks": [],
-      "outbound_count": 1,
+      "outbound_count": 0,
       "inbound_count": 0
     },
     {
@@ -5616,6 +5638,22 @@
       "updated": "",
       "body": "",
       "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "newsletters/three-features-three-claudes-2026-06-11",
+      "title": "Three Features Three Claudes 2026 06 11",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# Three Features. Three Claudes. One Afternoon.\n\n**Source:** email from Adrian | JS Mastery (forwarded by Sayf)\n**Source URI:** gmail://msg_19eb960b3c2b3ec2\n**Ingested:** 2026-06-21T03:15:00Z\n\nAdrian (JS Mastery) ran three Claude Code agents in parallel on the same project using Git worktrees, then merged everything.\n\n## The Setup\n\nGit worktrees allow checking out multiple branches of the same project into separate directories, each with its own Claude session, its own context window, and its own isolated set of files to modify. This solves the fundamental risk of parallel AI development: two agents writing to the same file simultaneously can't happen because they're in completely separate environments.\n\n## The Workflow\n\n- One Claude building a dark/light mode toggle\n- One writing API endpoint tests\n- One adding code quality tooling\n- None knew the others existed\n- When all three were done, a fourth Claude session pulled everything together and resolved conflicts\n\n## Key Insight\n\nThe only conflict found was a `pyproject.toml` modified by two branches \u2014 resolved in ~30 seconds.\n\nThe whole thing (three features built simultaneously, merged, tested) took an afternoon. The shift wasn't speed \u2014 it was that Adrian spent the afternoon thinking about architecture and how pieces fit together, not implementing. Directing, not doing.\n\n## Takeaway\n\nThe real value isn't faster execution \u2014 it's that the human shifts from implementer to architect/director, thinking at a higher level about what each feature needs and how they compose.",
+      "tags": [
+        "ai-development",
+        "claude-code",
+        "js-mastery"
+      ],
       "links_out": [],
       "backlinks": [],
       "outbound_count": 0,
@@ -8095,7 +8133,7 @@
     },
     {
       "source": "digests/2026-06-15-business-brain-digest",
-      "target": "newsletters/nerdqaxe-revision-7-launch",
+      "target": "articles/nerdqaxe-revision-7-launch-2026-06-12",
       "type": "wikilink"
     },
     {
@@ -8509,11 +8547,6 @@
       "type": "wikilink"
     },
     {
-      "source": "newsletters/openrouter-three-features-save-money-2026-06-12",
-      "target": "companies/openrouter",
-      "type": "wikilink"
-    },
-    {
       "source": "newsletters/openrouter-three-features-try-next-2026-06-18",
       "target": "companies/openrouter",
       "type": "wikilink"
@@ -8833,9 +8866,9 @@
       {
         "name": "extract_atoms_backlog",
         "status": "ok",
-        "message": "6 page(s) eligible (below warn threshold; pack does not run extract_atoms)",
+        "message": "7 page(s) eligible (below warn threshold; pack does not run extract_atoms)",
         "details": {
-          "backlog": 6,
+          "backlog": 7,
           "pack_declares_phase": false,
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
@@ -8868,7 +8901,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 58 pages",
+        "message": "Connected, 62 pages",
         "category": "ops"
       },
       {
@@ -8928,7 +8961,7 @@
       {
         "name": "brain_score",
         "status": "warn",
-        "message": "Brain score 24/100 (embed 0/35, links 7/25, timeline 1/15, orphans 6/15, dead-links 10/10)",
+        "message": "Brain score 22/100 (embed 0/35, links 6/25, timeline 1/15, orphans 5/15, dead-links 10/10)",
         "category": "brain"
       },
       {
@@ -8940,7 +8973,7 @@
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 58 pages; 8 external link(s) (no bare tweets).",
+        "message": "Sampled 62 pages; 8 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -9101,7 +9134,7 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (58 pages \u2014 too few to assess)",
+        "message": "Extraction lag not applicable (62 pages \u2014 too few to assess)",
         "category": "brain"
       },
       {
@@ -9234,7 +9267,7 @@
       {
         "name": "embed_staleness",
         "status": "warn",
-        "message": "116 stale chunks (small backlog)",
+        "message": "121 stale chunks (small backlog)",
         "category": "meta"
       },
       {
