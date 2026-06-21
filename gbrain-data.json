@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-06-21T19:00:50Z",
+  "updated_at": "2026-06-21T19:09:08Z",
   "summary": {
-    "score": "92",
+    "score": "83",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 297,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "42.8% of pages have inbound links",
-    "entity_links": "Coverage \u2014 45 people, 30 companies indexed",
+    "score_breakdown": "score 83/100, embed 35/35, links 25/25, timeline 3/15, orphans 10/15, dead-links 10/10",
+    "page_count": 298,
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "49.0% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 93% \u00b1 3.0%",
     "concept_count": 106,
     "meeting_count": 13,
     "person_count": 45,
@@ -15,18 +15,30 @@
     "newsletter_count": 72,
     "video_count": 0,
     "article_count": 13,
-    "bookmark_count": 15,
+    "bookmark_count": 16,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 343,
-    "outbound_count": 431,
-    "inbound_count": 399,
+    "total_links": 344,
+    "outbound_count": 432,
+    "inbound_count": 400,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 83/100 (embed 35/35, links 25/25, timeline 3/15, orphans 10/15, dead-links 10/10)",
+    "score_components": {
+      "score": "83/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "3/15",
+      "orphans": "10/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 66,
+    "checks_warned": 7,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -425,15 +437,9 @@
           "text": "Hermes"
         }
       ],
-      "backlinks": [
-        {
-          "from": "people/ericosiu",
-          "type": "wikilink",
-          "text": "bookmarks/eric-osiu-hermes-chief-of-staff-2026-06-21"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 2,
-      "inbound_count": 1
+      "inbound_count": 0
     },
     {
       "slug": "bookmarks/hermes-assistant-to-chief-of-staff-2026-06-21",
@@ -639,6 +645,30 @@
       "backlinks": [],
       "outbound_count": 0,
       "inbound_count": 0
+    },
+    {
+      "slug": "bookmarks/msg-19ee6b8b30fd1a2c",
+      "title": "Msg 19ee6b8b30fd1a2c",
+      "type": "bookmark",
+      "updated": "",
+      "body": "# How we turned Hermes from an assistant into our chief of staff (and how you can too)\n\n**Source:** email from Sayf Codes\n**Source URI:** gmail://msg_19ee6b8b30fd1a2c\n**Ingested:** 2026-06-22T00:00:00Z\n**Provenance:** Forwarded by sayf on 2026-06-21\n\n## Summary\n\nSayf forwarded an X Article by [[ericosiu]] (@ericosiu) titled *\"How we turned Hermes from an assistant into our chief of staff (and how you can too)\"*. The article describes how ericosiu has supercharged his Hermes agent to operate at a chief-of-staff level \u2014 booking sales calls, reviving stalled deals, and shipping ad creative autonomously \u2014 far beyond basic text replies and calendar management.\n\n**Original post:** https://x.com/ericosiu/status/2068370407049011538\n\n**Engagement (as of posting):**\n- 48,430 views\n- 109 likes\n- 16 retweets\n- 5 replies\n- 343 bookmarks\n\n**Preview excerpt:**\n\n> Your Hermes probably answers texts and manages your calendar. That's cool.\n> Mine books sales calls, revives stalled deals, and ships ad creative all while I'm at the gym.\n> Wait \u2014 how's yours doing?\n\n## Relevance to Maloha Coast\n\nThis is directly relevant to how Maloha Coast positions and operates its own Hermes agent infrastructure. The concept of progressing an AI assistant from basic task management to proactive chief-of-staff operations mirrors the evolution FalconHermes has undergone for the Maloha Coast ecosystem. ericosiu's post validates the direction and provides real-world proof points for selling the Second Brain / AI-agent-as-a-service offering.\n\n## Entities\n\n- **[[ericosiu]]** \u2014 Author, X user @ericosiu, blue verified",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "people/ericosiu",
+          "type": "wikilink",
+          "text": "ericosiu"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "people/ericosiu",
+          "type": "wikilink",
+          "text": "bookmarks/msg-19ee6b8b30fd1a2c"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 1
     },
     {
       "slug": "bookmarks/stripe-online-ai-commerce-2026-06-22",
@@ -7298,17 +7328,16 @@
       "title": "ericosiu",
       "type": "person",
       "updated": "",
-      "body": "# ericosiu (Eric Osiu)\n\n> X user and Hermes power user. Blue verified. Author of \"How we turned Hermes from an assistant into our chief of staff.\"\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[bookmarks/eric-osiu-hermes-chief-of-staff-2026-06-21]] as author of an X Article about using Hermes as a chief of staff\n\n## Related\n\n- [[bookmarks/eric-osiu-hermes-chief-of-staff-2026-06-21]] \u2014 authored the article\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-21** | Mentioned in \"How we turned Hermes from an assistant into our chief of staff\" bookmark. [Source: gmail://msg_19ee6b8b30fd1a2c]",
+      "body": "# ericosiu\n\n> X user and Hermes/AI agent power user. Author of the viral article \"How we turned Hermes from an assistant into our chief of staff.\"\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[bookmarks/msg-19ee6b8b30fd1a2c]] as the author of an X Article about transforming Hermes from assistant to chief of staff\n\n## Related\n\n- [[bookmarks/msg-19ee6b8b30fd1a2c]] \u2014 ericosiu's article about Hermes agent evolution\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-21** | Published X Article: \"How we turned Hermes from an assistant into our chief of staff (and how you can too)\". Post had 48K+ views and 109 likes. [Source: gmail://msg_19ee6b8b30fd1a2c]",
       "tags": [
-        "author",
-        "hermes",
+        "agent-ecosystem",
         "x"
       ],
       "links_out": [
         {
-          "to": "bookmarks/eric-osiu-hermes-chief-of-staff-2026-06-21",
+          "to": "bookmarks/msg-19ee6b8b30fd1a2c",
           "type": "wikilink",
-          "text": "bookmarks/eric-osiu-hermes-chief-of-staff-2026-06-21"
+          "text": "bookmarks/msg-19ee6b8b30fd1a2c"
         }
       ],
       "backlinks": [
@@ -7333,6 +7362,11 @@
           "text": "ericosiu"
         },
         {
+          "from": "bookmarks/msg-19ee6b8b30fd1a2c",
+          "type": "wikilink",
+          "text": "ericosiu"
+        },
+        {
           "from": "people/erik-osiu",
           "type": "wikilink",
           "text": "ericosiu"
@@ -7344,7 +7378,7 @@
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 6
+      "inbound_count": 7
     },
     {
       "slug": "people/erik-osiu",
@@ -8548,6 +8582,11 @@
     {
       "source": "bookmarks/karpathys-llm-wiki-gist-2026-06-20",
       "target": "people/andrej-karpathy",
+      "type": "wikilink"
+    },
+    {
+      "source": "bookmarks/msg-19ee6b8b30fd1a2c",
+      "target": "people/ericosiu",
       "type": "wikilink"
     },
     {
@@ -10275,13 +10314,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 65,
+    "brain_checks_score": 85,
     "category_scores": {
-      "brain": 95,
+      "brain": 85,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -10311,32 +10350,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -10348,19 +10365,20 @@
       },
       {
         "name": "extract_atoms_backlog",
-        "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "status": "warn",
+        "message": "16 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 0,
+          "backlog": 16,
           "pack_declares_phase": false,
+          "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
         "category": "brain"
       },
       {
         "name": "conversation_format_coverage",
-        "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "status": "warn",
+        "message": "1/9 conversation pages (11.1%) match NO built-in pattern. Breakdown: bold-name-no-time=8, _no_match=1. Investigate: gbrain conversation-parser scan <slug> | Enable LLM fallback (opt-in): gbrain config set conversation_parser.llm_fallback_enabled true",
         "category": "brain"
       },
       {
@@ -10384,7 +10402,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 247 pages",
         "category": "ops"
       },
       {
@@ -10420,7 +10438,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 1366ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -10438,25 +10456,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 92%, timeline 60%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 83/100 (embed 35/35, links 25/25, timeline 3/15, orphans 10/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 72 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 247 pages; 33 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -10617,7 +10635,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 0/247 pages (0%) stale",
+        "details": {
+          "total": 247,
+          "stale": 0,
+          "pct": 0,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -10629,7 +10655,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -10641,7 +10667,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "166 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -10653,7 +10679,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "49.0% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -10695,7 +10721,7 @@
       {
         "name": "oauth_confidential_client_health",
         "status": "ok",
-        "message": "No OAuth clients registered",
+        "message": "4 OAuth client(s) registered; all auth shapes consistent",
         "category": "ops"
       },
       {
@@ -10756,13 +10782,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 93% \u00b1 3.0%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 61% \u00b1 5.7% (target 90%)",
         "category": "meta"
       },
       {
@@ -10780,7 +10806,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "9 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
