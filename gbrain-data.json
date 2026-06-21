@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-06-21T12:24:33Z",
+  "updated_at": "2026-06-21T12:57:09Z",
   "summary": {
     "score": "83",
     "score_label": "/100",
     "score_breakdown": "score 83/100, embed 35/35, links 25/25, timeline 3/15, orphans 10/15, dead-links 10/10",
-    "page_count": 283,
+    "page_count": 291,
     "embed_coverage": "100% coverage, 0 missing",
-    "graph_coverage": "47.2% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
-    "entity_links": "Coverage 90% \u00b1 3.8%",
-    "concept_count": 103,
+    "graph_coverage": "48.1% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 92% \u00b1 3.3%",
+    "concept_count": 106,
     "meeting_count": 13,
-    "person_count": 39,
-    "company_count": 26,
+    "person_count": 43,
+    "company_count": 27,
     "newsletter_count": 72,
     "video_count": 0,
     "article_count": 13,
@@ -19,9 +19,9 @@
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 319,
-    "outbound_count": 395,
-    "inbound_count": 368,
+    "total_links": 327,
+    "outbound_count": 404,
+    "inbound_count": 376,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -870,6 +870,11 @@
           "text": "Anthropic"
         },
         {
+          "from": "concepts/stripe-ai-commerce-apac-2026-04-29",
+          "type": "wikilink",
+          "text": "Anthropic"
+        },
+        {
           "from": "digests/2026-06-15-business-brain-digest",
           "type": "wikilink",
           "text": "Anthropic"
@@ -886,7 +891,7 @@
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 5
+      "inbound_count": 6
     },
     {
       "slug": "companies/beehiiv",
@@ -1468,6 +1473,11 @@
           "text": "OpenRouter"
         },
         {
+          "from": "concepts/openrouter-welcome-2026-06-03",
+          "type": "wikilink",
+          "text": "OpenRouter"
+        },
+        {
           "from": "inbox/msg-19ee03492356403f",
           "type": "wikilink",
           "text": "OpenRouter"
@@ -1529,7 +1539,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 13
+      "inbound_count": 14
     },
     {
       "slug": "companies/passend",
@@ -1697,9 +1707,15 @@
           "text": "Sarah Chen"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "concepts/stripe-ai-commerce-apac-2026-04-29",
+          "type": "wikilink",
+          "text": "Stripe"
+        }
+      ],
       "outbound_count": 1,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "companies/system-design-one",
@@ -1811,6 +1827,24 @@
       "backlinks": [],
       "outbound_count": 1,
       "inbound_count": 0
+    },
+    {
+      "slug": "companies/thoughtworks",
+      "title": "Thoughtworks",
+      "type": "company",
+      "updated": "",
+      "body": "# Thoughtworks\n\n> Global technology consultancy specializing in digital strategy, design, and engineering.\n\n## In Maloha Coast Knowledge\n\n- Mara Cajar-Robinson from Thoughtworks was a speaker at Stripe Online 2026, discussing practical steps for business transformation in the age of agentic commerce.\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-04-29** | Mentioned in Stripe \"Four Conversations on AI\" email. [Source: gmail://msg_19ddc7579030b5e0]",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "concepts/stripe-ai-commerce-apac-2026-04-29",
+          "type": "wikilink",
+          "text": "Thoughtworks"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 1
     },
     {
       "slug": "companies/zhipu-ai",
@@ -2712,6 +2746,18 @@
       "inbound_count": 0
     },
     {
+      "slug": "concepts/google-workspace-intelligence-2026-04-22",
+      "title": "Google Workspace Intelligence 2026 04 22",
+      "type": "concept",
+      "updated": "",
+      "body": "# Google Workspace Intelligence \u2014 Product Update\n\n**Source:** email from The Google Workspace Team, 2026-04-22\n**Source URI:** gmail://msg_19db821143bc39be\n**Ingested:** 2026-06-21T12:45:00Z\n**Provenance:** Forwarded to info@malohacoast.com (Maloha Coast admin account)\n\nGoogle introduced **Workspace Intelligence**, an underlying AI system that provides Gemini with a real-time understanding of work across Google Workspace (Gmail, Chat, Calendar, Drive).\n\n## What It Does\n\nWorkspace Intelligence grounds all generative AI tasks in the user's Workspace data, eliminating the need to manually provide context to Gemini on every query. Example: asking Gemini in Docs to draft an update on \"Project X\" \u2014 it consults meeting notes, documentation, chat discussions, and produces a draft with full citations.\n\n## Admin Controls (Effective April 22, 2026)\n\n- New Admin Console settings allow control over which data sources (Gmail, Chat, Calendar, or Drive) Workspace Intelligence can use, at the organizational unit and group level.\n- **Default ON** for all users.\n- Data is never used to train generative AI models or for advertising.\n- AI features respect user-level content access \u2014 responses are grounded only in content the user already has permission to view.\n- Turning off a data source means Gemini won't actively search it, but users can still prompt about specific files from that source.\n- Turning off certain data sources may cause users to lose access to specific AI features.\n\n## Impact for Maloha Coast\n\nAs the Google Workspace admin for malohacoast.com, Sayf should review the new admin controls to decide whether to keep Workspace Intelligence default ON or restrict specific data sources.",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "concepts/google-workspace-setup",
       "title": "Google Workspace Setup",
       "type": "concept",
@@ -3210,6 +3256,24 @@
       "inbound_count": 0
     },
     {
+      "slug": "concepts/openrouter-welcome-2026-06-03",
+      "title": "Openrouter Welcome 2026 06 03",
+      "type": "concept",
+      "updated": "",
+      "body": "# Welcome to OpenRouter\n\n**Source:** email from OpenRouter Team, 2026-06-03\n**Source URI:** gmail://msg_19e8b97df0c0f20a\n**Ingested:** 2026-06-21T12:45:00Z\n**Provenance:** Forwarded to info@malohacoast.com\n\n[[OpenRouter]] provides a single API key that reaches 300+ models across OpenAI, Anthropic, Google, Meta, DeepSeek, xAI, Mistral, and every other major provider. It is drop-in compatible with the OpenAI SDK.\n\n## Key Features\n\n- **One key, one billing surface, one rate limit pool, one place to see usage.** No need to maintain separate accounts and SDKs for each provider.\n- **Automatic failover:** When a provider has an outage, OpenRouter falls over to the next provider serving the same model, preventing cascading failures.\n- **Easy model switching:** New models are a string change, not an integration project.\n- **openrouter/auto** \u2014 auto-routing that reads the prompt and picks a model per request. Roughly 63% of auto traffic routes to models under $1 per million tokens, keeping costs down for simple prompts.\n\n## Getting Started\n\n1. Create an API key at openrouter.ai/settings/keys\n2. Point the OpenAI SDK at openrouter.ai/api/v1\n3. Make the first request\n\nSwitching models: change one string from `openai/gpt-4o-mini` to `anthropic/claude-sonnet-4.6` to `openrouter/auto`.",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "companies/openrouter",
+          "type": "wikilink",
+          "text": "OpenRouter"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
+      "inbound_count": 0
+    },
+    {
       "slug": "concepts/pauls-pipeline",
       "title": "Paul's Pipeline",
       "type": "concept",
@@ -3471,6 +3535,59 @@
       ],
       "outbound_count": 2,
       "inbound_count": 6
+    },
+    {
+      "slug": "concepts/stripe-ai-commerce-apac-2026-04-29",
+      "title": "Stripe Ai Commerce Apac 2026 04 29",
+      "type": "concept",
+      "updated": "",
+      "body": "# Four Conversations on How AI is Reshaping Commerce in Asia Pacific\n\n**Source:** email from [[Stripe]] <updates@e.stripe.com>, 2026-04-29\n**Source URI:** gmail://msg_19ddc7579030b5e0\n**Ingested:** 2026-06-21T12:45:00Z\n**Provenance:** Forwarded to info@malohacoast.com\n\n[[Stripe]] Online event (3 June 2026) featuring a four-part conversation on how AI is changing commerce in APAC. Speakers from [[Stripe]], [[Anthropic]], [[Thoughtworks]], and [[Google]].\n\n## The Four Topics\n\n1. **The Data** \u2014 [[Emily Glassberg Sands]] (Stripe, head of data and AI): What the numbers reveal about the shift \u2014 from AI-native software to usage-based pricing and the rise of agentic commerce.\n\n2. **The Behaviour** \u2014 [[Yunong Xiao]] (Anthropic): How AI agents are changing the way people interact, decide, and buy \u2014 and what that means for customer journeys.\n\n3. **The Execution** \u2014 [[Mara Cajar-Robinson]] (Thoughtworks): Practical steps forward-looking businesses are taking to transform operations and unlock growth in the age of agentic commerce.\n\n4. **The Growth** \u2014 [[Sapna Chadha]] (Google): How AI is transforming search into purchase \u2014 shortening the distance between discoverability and checkout.\n\n## Key Theme\n\nAI isn't just changing how businesses operate \u2014 it's rewriting the rules of how customers discover, decide, and buy. The focus is on agentic commerce, usage-based pricing, and AI-native software in the APAC context.\n\n**Speakers:** [[Emily Glassberg Sands]] (Stripe), [[Yunong Xiao]] (Anthropic), [[Mara Cajar-Robinson]] (Thoughtworks), [[Sapna Chadha]] (Google)",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "companies/stripe",
+          "type": "wikilink",
+          "text": "Stripe"
+        },
+        {
+          "to": "companies/anthropic",
+          "type": "wikilink",
+          "text": "Anthropic"
+        },
+        {
+          "to": "companies/thoughtworks",
+          "type": "wikilink",
+          "text": "Thoughtworks"
+        },
+        {
+          "to": "Google",
+          "type": "wikilink",
+          "text": "Google"
+        },
+        {
+          "to": "people/emily-glassberg-sands",
+          "type": "wikilink",
+          "text": "Emily Glassberg Sands"
+        },
+        {
+          "to": "people/yunong-xiao",
+          "type": "wikilink",
+          "text": "Yunong Xiao"
+        },
+        {
+          "to": "people/mara-cajar-robinson",
+          "type": "wikilink",
+          "text": "Mara Cajar-Robinson"
+        },
+        {
+          "to": "people/sapna-chadha",
+          "type": "wikilink",
+          "text": "Sapna Chadha"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 8,
+      "inbound_count": 0
     },
     {
       "slug": "concepts/three-folder-system-head-hands-heart",
@@ -6886,6 +7003,24 @@
       "inbound_count": 1
     },
     {
+      "slug": "people/emily-glassberg-sands",
+      "title": "Emily Glassberg Sands",
+      "type": "person",
+      "updated": "",
+      "body": "# Emily Glassberg Sands\n\n> Head of Data and AI at Stripe.\n\n## In Maloha Coast Knowledge\n\n- Speaker at Stripe Online 2026 \u2014 presented on how AI is reshaping commerce in APAC, covering data on the shift toward AI-native software, usage-based pricing, and agentic commerce.\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-04-29** | Mentioned in Stripe \"Four Conversations on AI\" email. [Source: gmail://msg_19ddc7579030b5e0]",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "concepts/stripe-ai-commerce-apac-2026-04-29",
+          "type": "wikilink",
+          "text": "Emily Glassberg Sands"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 1
+    },
+    {
       "slug": "people/ericosiu",
       "title": "ericosiu",
       "type": "person",
@@ -7100,6 +7235,24 @@
       ],
       "outbound_count": 3,
       "inbound_count": 2
+    },
+    {
+      "slug": "people/mara-cajar-robinson",
+      "title": "Mara Cajar-Robinson",
+      "type": "person",
+      "updated": "",
+      "body": "# Mara Cajar-Robinson\n\n> Leader at Thoughtworks focused on business transformation.\n\n## In Maloha Coast Knowledge\n\n- Speaker at Stripe Online 2026 \u2014 discussed practical steps businesses are taking to transform operations and unlock growth in the age of agentic commerce.\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-04-29** | Mentioned in Stripe \"Four Conversations on AI\" email. [Source: gmail://msg_19ddc7579030b5e0]",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "concepts/stripe-ai-commerce-apac-2026-04-29",
+          "type": "wikilink",
+          "text": "Mara Cajar-Robinson"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 1
     },
     {
       "slug": "people/marcus-thompson",
@@ -7378,6 +7531,24 @@
       "inbound_count": 2
     },
     {
+      "slug": "people/sapna-chadha",
+      "title": "Sapna Chadha",
+      "type": "person",
+      "updated": "",
+      "body": "# Sapna Chadha\n\n> Leader at Google focused on AI and growth.\n\n## In Maloha Coast Knowledge\n\n- Speaker at Stripe Online 2026 \u2014 discussed how AI is transforming search into purchase, shortening the distance between discoverability and checkout.\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-04-29** | Mentioned in Stripe \"Four Conversations on AI\" email. [Source: gmail://msg_19ddc7579030b5e0]",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "concepts/stripe-ai-commerce-apac-2026-04-29",
+          "type": "wikilink",
+          "text": "Sapna Chadha"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 1
+    },
+    {
       "slug": "people/sarah-chen",
       "title": "Sarah Chen",
       "type": "person",
@@ -7643,6 +7814,24 @@
       ],
       "outbound_count": 2,
       "inbound_count": 4
+    },
+    {
+      "slug": "people/yunong-xiao",
+      "title": "Yunong Xiao",
+      "type": "person",
+      "updated": "",
+      "body": "# Yunong Xiao\n\n> Engineer at Anthropic, focused on AI agent behavior.\n\n## In Maloha Coast Knowledge\n\n- Speaker at Stripe Online 2026 \u2014 discussed how AI agents are changing how people interact, decide, and buy.\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-04-29** | Mentioned in Stripe \"Four Conversations on AI\" email. [Source: gmail://msg_19ddc7579030b5e0]",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "concepts/stripe-ai-commerce-apac-2026-04-29",
+          "type": "wikilink",
+          "text": "Yunong Xiao"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 1
     },
     {
       "slug": "people/zaim-mohzani",
@@ -8603,6 +8792,11 @@
       "type": "wikilink"
     },
     {
+      "source": "concepts/openrouter-welcome-2026-06-03",
+      "target": "companies/openrouter",
+      "type": "wikilink"
+    },
+    {
       "source": "concepts/pauls-pipeline",
       "target": "articles/30-agentic-engineering-concepts-2026-06-17",
       "type": "wikilink"
@@ -8640,6 +8834,41 @@
     {
       "source": "concepts/skills-inventory",
       "target": "people/zaim-mohzani",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/stripe-ai-commerce-apac-2026-04-29",
+      "target": "companies/stripe",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/stripe-ai-commerce-apac-2026-04-29",
+      "target": "companies/anthropic",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/stripe-ai-commerce-apac-2026-04-29",
+      "target": "companies/thoughtworks",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/stripe-ai-commerce-apac-2026-04-29",
+      "target": "people/emily-glassberg-sands",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/stripe-ai-commerce-apac-2026-04-29",
+      "target": "people/yunong-xiao",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/stripe-ai-commerce-apac-2026-04-29",
+      "target": "people/mara-cajar-robinson",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/stripe-ai-commerce-apac-2026-04-29",
+      "target": "people/sapna-chadha",
       "type": "wikilink"
     },
     {
@@ -9566,12 +9795,14 @@
       "people/david-park",
       "people/dex-horthy",
       "people/dexter-horthy",
+      "people/emily-glassberg-sands",
       "people/ericosiu",
       "people/erik-osiu",
       "people/jake-van-cleef",
       "people/jon",
       "people/kyle",
       "people/liyana",
+      "people/mara-cajar-robinson",
       "people/marcus-thompson",
       "people/nabil-jalil",
       "people/nate-herk",
@@ -9580,6 +9811,7 @@
       "people/paul-hoekstra",
       "people/rachel-kim",
       "people/robert",
+      "people/sapna-chadha",
       "people/sarah-chen",
       "people/sayf-codes",
       "people/tj-vandermolen",
@@ -9587,6 +9819,7 @@
       "people/vannevar-bush",
       "people/yassif-n-m",
       "people/yaw-hog-ng",
+      "people/yunong-xiao",
       "people/zaim-mohzani",
       "persons/tonbi"
     ],
@@ -9616,6 +9849,7 @@
       "companies/stripe",
       "companies/system-design-one",
       "companies/thompson-legal",
+      "companies/thoughtworks",
       "companies/zhipu-ai"
     ]
   },
@@ -9710,7 +9944,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 231 pages",
+        "message": "Connected, 239 pages",
         "category": "ops"
       },
       {
@@ -9746,7 +9980,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 439ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 404ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -9764,7 +9998,7 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 89%, timeline 53%",
+        "message": "Entity link coverage 91%, timeline 57%",
         "category": "brain"
       },
       {
@@ -9776,13 +10010,13 @@
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 61 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 66 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 231 pages; 33 external link(s) (no bare tweets).",
+        "message": "Sampled 239 pages; 33 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -9943,9 +10177,9 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction current: 0/231 pages (0%) stale",
+        "message": "Extraction current: 0/239 pages (0%) stale",
         "details": {
-          "total": 231,
+          "total": 239,
           "stale": 0,
           "pct": 0,
           "warn_pct": 20,
@@ -9975,7 +10209,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "152 reranker failure(s) in last 7 days (below threshold)",
+        "message": "160 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -9987,7 +10221,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "47.2% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "48.1% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -10090,13 +10324,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 90% \u00b1 3.8%",
+        "message": "Coverage 92% \u00b1 3.3%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
         "status": "warn",
-        "message": "Coverage 54% \u00b1 6.4% (target 90%)",
+        "message": "Coverage 58% \u00b1 6.1% (target 90%)",
         "category": "meta"
       },
       {
