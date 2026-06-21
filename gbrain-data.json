@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-21T06:19:15Z",
+  "updated_at": "2026-06-21T06:54:52Z",
   "summary": {
-    "score": "26",
+    "score": "25",
     "score_label": "/100",
-    "score_breakdown": "score 26/100, embed 0/35, links 8/25, timeline 2/15, orphans 6/15, dead-links 10/10",
-    "page_count": 279,
+    "score_breakdown": "score 25/100, embed 0/35, links 7/25, timeline 2/15, orphans 6/15, dead-links 10/10",
+    "page_count": 281,
     "embed_coverage": "No embeddings yet. Run: gbrain embed --stale",
     "graph_coverage": "graph_signals disabled \u2014 coverage not checked",
     "entity_links": "Coverage 57% \u00b1 10.8% (target 70%)",
-    "concept_count": 109,
-    "meeting_count": 12,
+    "concept_count": 110,
+    "meeting_count": 13,
     "person_count": 39,
     "company_count": 26,
     "newsletter_count": 65,
@@ -19,19 +19,19 @@
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 300,
-    "outbound_count": 364,
-    "inbound_count": 337,
+    "total_links": 296,
+    "outbound_count": 358,
+    "inbound_count": 331,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
     },
-    "score_raw": "Brain score 26/100 (embed 0/35, links 8/25, timeline 2/15, orphans 6/15, dead-links 10/10)",
+    "score_raw": "Brain score 25/100 (embed 0/35, links 7/25, timeline 2/15, orphans 6/15, dead-links 10/10)",
     "score_components": {
-      "score": "26/100",
+      "score": "25/100",
       "embed": "0/35",
-      "links": "8/25",
+      "links": "7/25",
       "timeline": "2/15",
       "orphans": "6/15",
       "dead-links": "10/10"
@@ -462,7 +462,7 @@
       "title": "Hermes Assistant To Chief Of Staff 2026 06 21",
       "type": "bookmark",
       "updated": "",
-      "body": "# How we turned Hermes from an assistant into our chief of staff (and how you can too)\n\n**Source:** X (Twitter)\n**Source URI:** https://x.com/ericosiu/status/2068370407049011538\n**Ingested:** 2026-06-21T04:30:00Z\n**Provenance:** Forwarded by Sayf on 2026-06-21\n\n## Overview\n\nA thread/article by **[ericosiu](https://x.com/ericosiu)** (@ericosiu, verified) about transforming Hermes (an AI assistant) from a basic text-answering/calendar-managing tool into a full chief of staff that books sales calls, revives stalled deals, and ships ad creative \u2014 all while the user is away (e.g., at the gym).\n\n### Key Thesis\n\n> \"Your Hermes probably answers texts and manages your calendar. That's cool.\n> Mine books sales calls, revives stalled deals, and ships ad creative all while I'm at the gym.\n> Wait \u2014 how's yours doing?\"\n\n[Source: X/@ericosiu, https://x.com/ericosiu/status/2068370407049011538, 2026-06-20]\n\n## Relevant Context for Maloha Coast\n\n- Directly relevant to how sayf is evolving Hermes from assistant \u2192 autonomous chief of staff\n- Ericosiu's approach mirrors sayf's own trajectory with Hermes (falconhermes orchestration, autonomous pipeline, cron-driven operations)\n- The \"how you can too\" framing suggests a playbook or guide for turning a generic AI assistant into a proactive, autonomous agent\n\n## Actions\n\n- [ ] Read the full article text (currently behind X login/JS render)\n- [ ] Extract specific automation patterns and compare with Maloha Coast setup\n- [ ] Consider reaching out to ericosiu for a conversation\n\n## References\n\n- Tweet: https://x.com/ericosiu/status/2068370407049011538\n- Article: https://x.com/i/article/2062257585613389824\n- Author: [ericosiu](https://x.com/ericosiu)",
+      "body": "# How we turned hermes from an assistant to a chief of staff\n\n**Source:** Email\n**Source URI:** gmail://msg_19ee6b8b30fd1a2c\n**Ingested:** 2026-06-21T06:19:23Z\n**Provenance:** Self-forward by sayf on 2026-06-21\n\nTweet about transforming the Hermes agent from a simple assistant into a chief-of-staff capability.\n\nURL: https://x.com/i/status/2068370407049011538",
       "tags": [
         "ai-agents",
         "automation",
@@ -571,26 +571,15 @@
     },
     {
       "slug": "bookmarks/karpathy-llm-wiki-gist-2026-06-20",
-      "title": "karpathy's LLM Wiki Gist",
+      "title": "Karpathy Llm Wiki Gist 2026 06 20",
       "type": "bookmark",
       "updated": "",
-      "body": "# karpathy's LLM Wiki \u2014 The Pattern for Building LLM-Powered Knowledge Bases\n\n**Source:** email (gist link forwarded by sayf)\n**Source URI:** gmail://msg_19ee3343b6e5b9e9\n**Ingested:** 2026-06-21T00:00:00Z\n**Provenance:** Forwarded by sayf to Maloha Coast, 2026-06-20\n\n**URL:** https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f\n\n## Summary\n\nAndrej Karpathy's LLM Wiki pattern describes building personal knowledge bases where the LLM **incrementally builds and maintains a persistent wiki** \u2014 a structured, interlinked collection of markdown files \u2014 rather than using traditional RAG (retrieve at query time, re-derive every time).\n\n## Core Idea\n\nMost RAG systems work like NotebookLM or ChatGPT file uploads \u2014 the LLM retrieves chunks at query time and generates answers from scratch. Nothing accumulates. The LLM Wiki approach flips this: the LLM reads each source, extracts key info, and integrates it into an evolving wiki \u2014 updating entity pages, revising topic summaries, flagging contradictions. **The wiki is a persistent, compounding artifact** rather than something re-derived on every query.\n\n## Three-Layer Architecture\n\n1. **Raw sources** \u2014 immutable curated collection of source documents (articles, papers, images)\n2. **The wiki** \u2014 LLM-generated markdown files (summaries, entity pages, concept pages, comparisons, synthesis). The LLM owns this layer \u2014 creates, updates, cross-references\n3. **The schema** \u2014 a config file (CLAUDE.md / AGENTS.md) telling the LLM wiki structure, conventions, and workflows\n\n## Key Operations\n\n- **Ingest:** Drop a source \u2192 LLM reads, discusses, writes summary, updates index + entity pages\n- **Query:** LLM searches wiki, synthesizes answers with citations. Good answers get filed back as new pages\n- **Lint:** Periodically health-check \u2014 contradictions, stale claims, orphans, missing cross-references\n\n## Special Files\n\n- `index.md` \u2014 content-oriented catalog of all pages with links and summaries\n- `log.md` \u2014 chronological append-only record of ingests/queries/lint passes\n\n## Why This Works\n\n\"The tedious part of maintaining a knowledge base is not the reading or the thinking \u2014 it's the bookkeeping.\" LLMs don't get bored, don't forget to update cross-references, and can touch 15 files in one pass. **The wiki stays maintained because the cost of maintenance is near zero.**\n\nThe human's job: curate sources, direct analysis, ask good questions. The LLM's job: everything else.\n\n## Relevance to Maloha Coast\n\nThis pattern is highly relevant to the gbrain system currently in use. Karpathy's LLM Wiki architecture mirrors gbrain's approach (pages \u2192 entities \u2192 backlinks \u2192 timeline). The key additions from Karpathy are:\n- The `index.md` concept for LLM-driven navigation without embedding search\n- The `log.md` for changelog tracking\n- The explicit schema document workflow for co-evolving conventions with the LLM",
+      "body": "# karpathy's llm wiki gist\n\n**Source:** Email\n**Source URI:** gmail://msg_19ee3343b6e5b9e9\n**Ingested:** 2026-06-21T06:19:23Z\n**Provenance:** Self-forward by sayf on 2026-06-20\n\nAndrej Karpathy's LLM Wiki gist \u2014 a reference on large language models.\n\nURL: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
       "tags": [],
       "links_out": [],
-      "backlinks": [
-        {
-          "from": "people/andrej-karpathy",
-          "type": "wikilink",
-          "text": "karpathy's llm wiki gist"
-        },
-        {
-          "from": "people/vannevar-bush",
-          "type": "wikilink",
-          "text": "Karpathy's LLM Wiki Gist"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 0,
-      "inbound_count": 2
+      "inbound_count": 0
     },
     {
       "slug": "bookmarks/karpathy-llm-wiki-gist",
@@ -616,9 +605,20 @@
           "text": "[[Andrej Karpathy"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "people/andrej-karpathy",
+          "type": "wikilink",
+          "text": "karpathy's llm wiki gist"
+        },
+        {
+          "from": "people/vannevar-bush",
+          "type": "wikilink",
+          "text": "Karpathy's LLM Wiki Gist"
+        }
+      ],
       "outbound_count": 3,
-      "inbound_count": 0
+      "inbound_count": 2
     },
     {
       "slug": "bookmarks/karpathys-llm-wiki-gist-2026-06-20",
@@ -764,18 +764,13 @@
           "text": "AI Automation Society"
         },
         {
-          "from": "newsletters/claude-second-brain-levels-2026-06-20",
-          "type": "wikilink",
-          "text": "AI Automation Society"
-        },
-        {
           "from": "people/carson",
           "type": "link",
           "text": "AI Automation Society"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 6
+      "inbound_count": 5
     },
     {
       "slug": "companies/ai-garage-weekly",
@@ -1082,15 +1077,9 @@
           "text": "newsletters/claude-second-brain-levels-2026-06-20"
         }
       ],
-      "backlinks": [
-        {
-          "from": "newsletters/claude-second-brain-levels-2026-06-20",
-          "type": "wikilink",
-          "text": "Herku"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 1,
-      "inbound_count": 1
+      "inbound_count": 0
     },
     {
       "slug": "companies/humanlayer",
@@ -1224,15 +1213,9 @@
           "text": "newsletters/claude-second-brain-levels-2026-06-20"
         }
       ],
-      "backlinks": [
-        {
-          "from": "newsletters/claude-second-brain-levels-2026-06-20",
-          "type": "wikilink",
-          "text": "Instantly"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 1,
-      "inbound_count": 1
+      "inbound_count": 0
     },
     {
       "slug": "companies/js-mastery",
@@ -2008,6 +1991,20 @@
       ],
       "outbound_count": 0,
       "inbound_count": 2
+    },
+    {
+      "slug": "concepts/career-coaching-3-month-pivot-framework-2026-06-15",
+      "title": "Career Coaching 3 Month Pivot Framework 2026 06 15",
+      "type": "concept",
+      "updated": "",
+      "body": "# Career Coaching: The 3-Month Pivot Framework\n\n**Source:** Email\n**Source URI:** gmail://msg_19eca58bcdb09c70\n**Ingested:** 2026-06-21T06:19:23Z\n**Provenance:** +zaim routed \u2014 Zaim's client coaching material\n\nShared by Zaim during a coaching session with a KSI senior analyst looking to move into product.\n\n## The 3-Month Career Pivot Framework\n\n### Phase 1: Audit (Month 1)\n- Skills Inventory \u2014 map current skills to target role requirements\n- Identify the 20% skill gap that blocks 80% of interviews\n- Don't learn everything \u2014 learn the gatekeepers\n\n### Phase 2: Signal (Month 2)\n- Side Project Strategy \u2014 build one public artifact, not ten private ones\n- Write 2 LinkedIn posts/week documenting the pivot journey\n- Engage with 3 target-company hiring managers\n\n### Phase 3: Convert (Month 3)\n- Salary Negotiation Playbook \u2014 comp bands for product roles in KL\n- Reference calls with 2 people who made the same pivot\n- First offer within 90 days\n\n### Key Insight\n> \"The career pivot gap isn't a skills problem \u2014 it's a positioning problem. You're not underqualified, you're framed wrong.\" \u2014 Zaim\n\n**Client:** KSI Senior Analyst \u2192 Product Manager\n**Engagement:** Weekly coaching, 12 sessions\n**Status:** Phase 2, on track\n\n[Source: Zaim's coaching material, 2026-06-15]",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
     },
     {
       "slug": "concepts/claude-code-10x-skill-newsletter",
@@ -2957,18 +2954,13 @@
           "text": "Nate Herk"
         },
         {
-          "from": "newsletters/claude-second-brain-levels-2026-06-20",
-          "type": "wikilink",
-          "text": "Nate Herk"
-        },
-        {
           "from": "newsletters/claude-second-brain-levels",
           "type": "wikilink",
           "text": "Nate Herk"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 6
+      "inbound_count": 5
     },
     {
       "slug": "concepts/openai-codex",
@@ -2993,15 +2985,9 @@
           "text": "OpenAI"
         }
       ],
-      "backlinks": [
-        {
-          "from": "newsletters/claude-second-brain-levels-2026-06-20",
-          "type": "wikilink",
-          "text": "OpenAI Codex"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 2,
-      "inbound_count": 1
+      "inbound_count": 0
     },
     {
       "slug": "concepts/openclaw-anatomy",
@@ -4634,6 +4620,20 @@
       "inbound_count": 1
     },
     {
+      "slug": "meetings/sayf-x-zaim-jun-12-2026-zaim-perspective",
+      "title": "Sayf X Zaim Jun 12 2026 Zaim Perspective",
+      "type": "meeting",
+      "updated": "",
+      "body": "# Sayf x Zaim \u2014 Jun 12, 2026 (Maloha Coast Meeting Summary)\n\n**Source:** Email\n**Source URI:** gmail://msg_19ecaa895ccb88af\n**Ingested:** 2026-06-21T06:19:23Z\n**Provenance:** +zaim routed \u2014 Maloha Coast meeting notes sent to Zaim\n\n**Date:** Friday, 12 June 2026, 10:30am \u2013 11:00am (MYT)\n**Google Meet:** https://meet.google.com/udx-niaz-esr\n\n## Summary\n\nDiscussion explored AI skepticism and market strategy alongside technical collaboration opportunities for business growth.\n\n### Differing AI Market Perspectives\nSayf and Zaim debated the value of AI in business, contrasting skepticism about automation hype with the practical utility of AI for basic skills training.\n\n### Technical Tools and Infrastructure\nDiscussion shifted toward specific software tools, noting the efficiency of virtual private servers and the potential of data integration dashboards for business applications.\n\n### Collaboration and Service Models\nAgreement reached to build a technical solution for coaching services while prioritizing simple, revenue-focused strategies for future client engagement for Maloha Coast.\n\n## Suggested Next Steps\n- **Maloha Coast** \u2014 Build Dashboard: Arrange a meeting to build the dashboard component.\n- **Zaim Mohzani** \u2014 Provide Testimonial: Provide a testimonial in exchange for the assistance provided.\n- **Maloha Coast** \u2014 Share Research Link: Send the Tencent Lighthouse promotion link for further research.\n- **The group** \u2014 Schedule Followup Session: Coordinate a time for a meeting to continue the discussion.\n- **Zaim Mohzani** \u2014 Send WhatsApp Message: Contact Maloha Coast via the provided phone number.\n\n## Google Doc\nhttps://docs.google.com/document/d/1q3v6SbKF_PiEaTatPNvhZtoWdT9_n9v5HqMoxsLj3hQ/edit\n\n[Source: Maloha Coast meeting summary, 2026-06-15]",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "meetings/sayf-zaim-gemini-notes-2026-06-12",
       "title": "Sayf Zaim Gemini Notes 2026 06 12",
       "type": "meeting",
@@ -4827,10 +4827,10 @@
     },
     {
       "slug": "newsletters/agentic-engineering-concepts-2026-06-17",
-      "title": "30 Core Agentic Engineering Concepts, Explained Simply (#154)",
+      "title": "Agentic Engineering Concepts 2026 06 17",
       "type": "newsletter",
       "updated": "",
-      "body": "# 30 Core Agentic Engineering Concepts, Explained Simply (#154)\n\n**Source:** email via System Design One (Substack)\n**Source URI:** gmail://msg_19ee2580f5fe7903\n**Ingested:** 2026-06-21T00:00:00Z\n**Provenance:** Forwarded by sayf to Maloha Coast, 2026-06-20\n\nBy Neo Kim and guest author Paul Hoekstra (data engineer at Digital Power, writes Paul's Pipeline newsletter). June 17, 2026.\n\n**Thesis:** Learn the ideas behind the tools, let the tools come and go. Beneath the noise, it's the same few ideas every time.\n\n## Foundations\n\n### 1. What is an agent?\nAn LLM that runs in a loop, has access to tools, and decides what to do next. Produces a chain of actions where each builds on the last.\n\n**Use an agent when:** task is open-ended, the next step depends on the last result, you cannot script the path in advance.\n**Skip the agent when:** a single prompt or plain script will do.\n\n### 2. Execution model (ReAct / Think-Act-Observe)\nThree steps repeated: **Think** (read state, decide) \u2192 **Act** (emit tool call, harness validates and runs it) \u2192 **Observe** (result joins conversation as new context).\n- This is why agents can recover from their own mistakes.\n- Two variations: Parallelism (multiple tool calls per act step) and Blocking vs non-blocking.\n\n### 3. Agent state\nTwo halves: **Context window** (everything model can see, hard ceiling, gone when session ends) vs **Everything outside it** (files, DB, memory, knowledge).\n- Files are usually the right default (diffable, versionable).\n- Two agents reading same file = fine. Two writing = race condition.\n\n### 4. Common agent patterns\n- **Planner/Executor:** One plans, another executes. Keeps context shapes separate.\n- **Router/Specialist:** Router dispatches to specialists with tighter prompts and smaller toolsets.\n- **Map-reduce parallelism:** Fan-out across subagents, merge results. Cost bounded by longest individual subagent.\n- **Combinations:** Real workflows combine all three.\n\n## Configuration Layer\n\n### 5. Agent config files\nProject-level markdown (CLAUDE.md / AGENTS.md) loaded at session start. Short, specific, under 100 lines. Treated as code, not documentation.\n\n### 6. Reusable workflow files\nOn-demand skills (e.g. .claude/skills/). YAML frontmatter controls when they load. SkillsBench showed Haiku + skills beat Opus without them (27.7% vs 22.0%).\n\n### 7. Workflow frameworks\nSuperpowers, Get Shit Done, Compound Engineering \u2014 curated skill libraries with processes for planning, TDD, debugging, review.\n\n### 8. Prompt caching\nStores stable prefix so model doesn't re-read every turn. First call pays a premium to write cache, later turns read at discount. TTL depends on provider.\n\n### 9. Context rot\nModel performance drops as context fills up. Even latest models show this: GPT-5.5 drops from 98.1% (short docs) to 74.0% (1M tokens). Claude Opus 4.7 drops from 59.2% (256K) to 32.2% (1M).",
+      "body": "# 30 Core Agentic Engineering Concepts, Explained Simply\n\n**Source:** Email\n**Source URI:** gmail://msg_19ee2580f5fe7903\n**Ingested:** 2026-06-21T06:19:23Z\n**Provenance:** Forwarded by sayf on 2026-06-20\n\nFrom: System Design One (Neo Kim) \u2014 Issue #154\nGuest author: Paul Hoekstra\nDate: June 17, 2026\n\n## Summary\n\nA comprehensive reference on agentic engineering, organized by layers: Foundations, Configuration, Capability, Orchestration, Guardrails, and Observability. Paul Hoekstra (data engineer at Digital Power) authored this edition.\n\n30 concepts spanning what an agent is, how to configure one, when to use multiple, and how to keep them from doing damage.\n\n## Key Concepts (Selected)\n\n### Foundations\n1. **What is an agent** \u2014 LLM running in a loop with tools, deciding what to do next. Coding is the most obvious use case. Use when: task is open-ended, next step depends on previous result, cannot script path in advance.\n2. **Execution model** \u2014 Think \u2192 Act \u2192 Observe (ReAct loop). Loop replaces upfront prediction with feedback from actual results. This is why agents recover from their own mistakes.\n3. **Agent state** \u2014 Context window (what model can see, hard ceiling) vs everything outside (files, DB, memory). Files are the right default\u2014diffable, versionable. Multiple agents writing to same file = race condition.\n4. **Common patterns** \u2014 Planner/executor, router/specialist, map-reduce parallelism. Real workflows combine them.\n\n### Configuration Layer\n5. **Agent config files** \u2014 Project-level markdown (CLAUDE.md / AGENTS.md). Keep under 100 lines. Treat as code, not documentation.\n6. **Reusable workflow files** \u2014 Skills with YAML frontmatter. SkillsBench: Haiku 27.7% with skills > Opus 22.0% without.\n7. **Workflow frameworks** \u2014 Superpowers, Get Shit Done, Compound Engineering.\n8. **Prompt caching** \u2014 Stable prefix caching changes economics of long config files.\n9. **Context rot** \u2014 Even top models degrade at long context. GPT-5.5: 98.1% short \u2192 74.0% at 1M tokens.\n\n[Source: System Design One #154, 2026-06-17]",
       "tags": [],
       "links_out": [],
       "backlinks": [],
@@ -5073,15 +5073,9 @@
       "body": "# Every Level of a Claude Second Brain Explained\n\n**Source:** email from sayf (forwarded from Nate Herk / AI Automation Society)\n**Source URI:** gmail://msg_19ee2dfa87f86548\n**Ingested:** 2026-06-21T04:37:00Z\n**Provenance:** Forwarded by sayf on 2026-06-20\n\n## Summary\n\nNewsletter from AI Automation Society (Nate Herk) covering three topics: a framework for building Claude second brains across five levels, a case study of automating a client's outbound email pipeline, and OpenAI Codex reaching 5M weekly users with banked rate limit resets.\n\n## Key Content\n\n---------- Forwarded message ---------\nFrom: Sayf <sayfti@gmail.com>\nDate: Sat, 20 Jun 2026, 10:25\nSubject: Fwd: Every Level of a Claude Second Brain Explained\nTo: Sayf Codes <sayfcodes@gmail.com>\n\n---------- Forwarded message ---------\nFrom: Nate Herk <nate@aiautomationsociety.ai>\nDate: Sat, 20 Jun 2026, 06:05\nSubject: Every Level of a Claude Second Brain Explained\nTo: sayfti@gmail.com <sayfti@gmail.com>\n\nA Claude second brain breakdown, a client pipeline automated, and Codex hits 5M users with a free bonus through June 24.\n\nJune 19, 2026\nEvery Level of a Claude Second Brain Explained\n\nA Claude second brain breakdown, a client pipeline automated, and Codex hits 5M users with a free bonus through June 24.\n\nIn This Issue\n\n- Five levels of building a Claude second brain, from basic file search to fully autonomous recall.\n- Robert automated a client's outbound email pipeline and got their call center actually following up.\n- OpenAI's Codex just crossed 5 million weekly users, and there's a free bonus available through June 24 if you use it.\n\nNew Video: Every Level of a Claude Second Brain Explained\n\nThere are five distinct levels to building a Claude second brain, and most people are stuck at level one.\n\nLevel one is just finding a file by searching an exact word. Level five is a fully autonomous system that knows your business, your client relationships, and your IP better than you do. The difference between them isn't the tool. It's how the data is organized.\n\nThe insight that changes how you build: Start from the end. Before you organize a single file, ask how you'll access this data later. The shape of the basketball determines the size of the hoop. Jon shows his actual setup (a Herku project, just markdown files and folders) and walks through what separates each level, including semantic search (finding by meaning, not exact match) and full relationship mapping.\n\nHow this helps you: Your moat is your data. This video shows you how to actually organize it so your agents can use it, not just find it.\n\nWinning Is All We Do\nRobert automated a client's outbound email pipeline from scratch\n\nWhat happened: Robert's client had a call center calling leads, but nothing was following up by email. Sales managers emailed Robert their daily lead lists as Excel files. He built an automation that handles the rest: when the file lands in his inbox, it extracts the email, address, and name data, normalizes it, and uploads every contact directly into Instantly as a ready-to-run campaign. No manual cleanup. No copy-paste.\n\nThe opportunity for you: Businesses running call centers almost always have messy lead data and no email follow-up. An automation that converts a spreadsheet into a live campaign solves a problem they didn't know anyone could fix.\n\nIn the News\nCodex just hit 5 million weekly users. If you use it, there's a free bonus through June 24.\n\nThe news: OpenAI Codex has crossed 5 million weekly active users and launched two features alongside the milestone. One is permanent: banked rate limit resets. Instead of your weekly limit resetting on a fixed timer, you can now save resets and use them when you actually need them. The other runs through June 24: Plus and Pro users can invite up to three friends to try Codex. When a friend sends their first Codex message, you both get a bonus reset.\n\nHow it affects you: If you've been hitting Codex rate limits at the wrong moment mid-build, the banked reset system fixes that. You decide when to use your reset, not the clock.",
       "tags": [],
       "links_out": [],
-      "backlinks": [
-        {
-          "from": "newsletters/claude-second-brain-levels-2026-06-20",
-          "type": "wikilink",
-          "text": "Claude Second Brain"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 0,
-      "inbound_count": 1
+      "inbound_count": 0
     },
     {
       "slug": "newsletters/claude-second-brain-levels-2026-06-19",
@@ -5113,45 +5107,14 @@
     },
     {
       "slug": "newsletters/claude-second-brain-levels-2026-06-20",
-      "title": "Every Level of a Claude Second Brain Explained",
+      "title": "Claude Second Brain Levels 2026 06 20",
       "type": "newsletter",
       "updated": "",
-      "body": "# Every Level of a Claude Second Brain Explained\n\n**Source:** email from Nate Herk / AI Automation Society (forwarded by Sayf), 2026-06-20\n**Source URI:** gmail://msg_19ee2dfa87f86548\n**Ingested:** 2026-06-21T00:00:00Z\n**Provenance:** Forwarded by Sayf via sayfti@gmail.com \u2192 sayfcodes@gmail.com\n\n---\n\n**June 19, 2026 \u2014 AI Automation Society Newsletter**\n\n## In This Issue\n\n- Five levels of building a Claude second brain, from basic file search to fully autonomous recall\n- Robert automated a client's outbound email pipeline and got their call center actually following up\n- OpenAI's Codex just crossed 5 million weekly users, with a free bonus through June 24\n\n---\n\n## Five Levels of a Claude Second Brain\n\nThere are five distinct levels to building a Claude second brain, and most people are stuck at level one.\n\nLevel one is just finding a file by searching an exact word. Level five is a fully autonomous system that knows your business, your client relationships, and your IP better than you do. The difference between them isn't the tool \u2014 it's how the data is organized.\n\n**The insight that changes how you build:** Start from the end. Before you organize a single file, ask how you'll access this data later. The shape of the basketball determines the size of the hoop.\n\nJon shows his actual setup (a Herku project, just markdown files and folders) and walks through what separates each level, including semantic search (finding by meaning, not exact match) and full relationship mapping.\n\n> **How this helps you:** Your moat is your data. This video shows you how to actually organize it so your agents can use it, not just find it.\n\n---\n\n## Client Win: Automated Outbound Email Pipeline\n\nRobert automated a client's outbound email pipeline from scratch. The client had a call center calling leads, but nothing was following up by email. Sales managers emailed Robert their daily lead lists as Excel files. He built an automation that:\n\n1. When the file lands in his inbox, extracts email, address, and name data\n2. Normalizes it (no \"N123 MAIN STREET\" showing up as a deliverable address)\n3. Uploads every contact directly into Instantly as a ready-to-run campaign\n\nNo manual cleanup. No copy-paste. Just results.\n\n> **The opportunity:** Businesses running call centers almost always have messy lead data and no email follow-up. An automation that converts a spreadsheet into a live campaign solves a problem they didn't know anyone could fix.\n\n---\n\n## In the News: Codex Hits 5M Weekly Users\n\nOpenAI Codex crossed 5 million weekly active users and launched two features:\n\n1. **Banked rate limit resets (permanent)** \u2014 Instead of weekly limits resetting on a fixed timer, users can now save resets and use them when needed.\n2. **Referral bonus (through June 24)** \u2014 Plus and Pro users can invite up to three friends; both get a bonus reset when a friend sends their first Codex message.\n\n> **Signal:** Codex is growing through referral mechanics at 5 million weekly users. That's a tool people are actively building with and recommending.\n\n---\n\n## Related Entities\n\n- [[Nate Herk]] \u2014 Author / AI Automation Society\n- [[AI Automation Society]] \u2014 Newsletter publisher\n- [[OpenAI Codex]] \u2014 Mentioned milestone\n- [[Claude Second Brain]] \u2014 Topic of the main feature\n- [[Herku]] \u2014 Jon's project setup tool\n- [[Instantly]] \u2014 Email campaign platform used by Robert",
+      "body": "# Every Level of a Claude Second Brain Explained\n\n**Source:** Email\n**Source URI:** gmail://msg_19ee2dfa87f86548\n**Ingested:** 2026-06-21T06:19:23Z\n**Provenance:** Forwarded by sayf on 2026-06-20\n\nFrom: AI Automation Society (Nate Herk)\nDate: June 19, 2026\n\n## Summary\n\nNewsletter from AI Automation Society breaking down five levels of building a Claude second brain\u2014from basic file search to fully autonomous recall.\n\n## Key Items\n\n1. **Five Levels of a Claude Second Brain**\n   - Level 1: Exact word file search\n   - Level 2: Pattern matching across files\n   - Level 3: Semantic search (finding by meaning)\n   - Level 4: Relationship mapping between entities\n   - Level 5: Fully autonomous system that knows your business, client relationships, and IP\n   - Core insight: Start from the end. Before organizing a single file, ask how you'll access this data later. The shape of the storage determines the capability.\n\n2. **Client Pipeline Automation (Robert's Win)**\n   - Robert automated a client's outbound email pipeline\n   - Call center leads \u2192 Excel \u2192 automatic extraction \u2192 Instantly campaign\n   - Solved: messy lead data with no email follow-up\n   - Key quote: \"Life got easier.\"\n\n3. **Codex Hits 5M Weekly Users**\n   - Banked rate limit resets: save resets and use when needed\n   - Referral campaign through June 24: invite 3 friends, both get bonus reset\n   - Signal: Codex growing through referral mechanics at 5M weekly users\n\n[Source: AI Automation Society newsletter, 2026-06-19]",
       "tags": [
         "ai-automation-society"
       ],
-      "links_out": [
-        {
-          "to": "concepts/nate-herk-technique-question-2026-06-09",
-          "type": "wikilink",
-          "text": "Nate Herk"
-        },
-        {
-          "to": "companies/ai-automation-society",
-          "type": "wikilink",
-          "text": "AI Automation Society"
-        },
-        {
-          "to": "concepts/openai-codex",
-          "type": "wikilink",
-          "text": "OpenAI Codex"
-        },
-        {
-          "to": "newsletters/claude-second-brain-explained-2026-06-20",
-          "type": "wikilink",
-          "text": "Claude Second Brain"
-        },
-        {
-          "to": "companies/herku",
-          "type": "wikilink",
-          "text": "Herku"
-        },
-        {
-          "to": "companies/instantly",
-          "type": "wikilink",
-          "text": "Instantly"
-        }
-      ],
+      "links_out": [],
       "backlinks": [
         {
           "from": "companies/ai-automation-society",
@@ -5179,7 +5142,7 @@
           "text": "Claude Second Brain Levels 2026 06 20"
         }
       ],
-      "outbound_count": 6,
+      "outbound_count": 0,
       "inbound_count": 5
     },
     {
@@ -6183,7 +6146,7 @@
       "tags": [],
       "links_out": [
         {
-          "to": "bookmarks/karpathy-llm-wiki-gist-2026-06-20",
+          "to": "bookmarks/karpathy-llm-wiki-gist",
           "type": "wikilink",
           "text": "karpathy's llm wiki gist"
         }
@@ -7147,7 +7110,7 @@
       ],
       "links_out": [
         {
-          "to": "bookmarks/karpathy-llm-wiki-gist-2026-06-20",
+          "to": "bookmarks/karpathy-llm-wiki-gist",
           "type": "wikilink",
           "text": "Karpathy's LLM Wiki Gist"
         }
@@ -8744,21 +8707,6 @@
       "type": "wikilink"
     },
     {
-      "source": "newsletters/claude-second-brain-levels-2026-06-20",
-      "target": "concepts/nate-herk-technique-question-2026-06-09",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/claude-second-brain-levels-2026-06-20",
-      "target": "concepts/openai-codex",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/claude-second-brain-levels-2026-06-20",
-      "target": "newsletters/claude-second-brain-explained-2026-06-20",
-      "type": "wikilink"
-    },
-    {
       "source": "newsletters/claude-second-brain-levels",
       "target": "concepts/nate-herk-technique-question-2026-06-09",
       "type": "wikilink"
@@ -8846,11 +8794,6 @@
     {
       "source": "people/aisyah-rahim",
       "target": "people/zaim-mohzani",
-      "type": "wikilink"
-    },
-    {
-      "source": "people/andrej-karpathy",
-      "target": "bookmarks/karpathy-llm-wiki-gist-2026-06-20",
       "type": "wikilink"
     },
     {
@@ -8970,7 +8913,7 @@
     },
     {
       "source": "people/vannevar-bush",
-      "target": "bookmarks/karpathy-llm-wiki-gist-2026-06-20",
+      "target": "bookmarks/karpathy-llm-wiki-gist",
       "type": "wikilink"
     },
     {
@@ -9155,9 +9098,9 @@
       {
         "name": "extract_atoms_backlog",
         "status": "warn",
-        "message": "11 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
+        "message": "12 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 11,
+          "backlog": 12,
           "pack_declares_phase": false,
           "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
@@ -9167,7 +9110,7 @@
       {
         "name": "conversation_format_coverage",
         "status": "ok",
-        "message": "7 pages: bold-name-no-time=7",
+        "message": "8 pages: bold-name-no-time=8",
         "category": "brain"
       },
       {
@@ -9191,7 +9134,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 86 pages",
+        "message": "Connected, 88 pages",
         "category": "ops"
       },
       {
@@ -9251,7 +9194,7 @@
       {
         "name": "brain_score",
         "status": "warn",
-        "message": "Brain score 26/100 (embed 0/35, links 8/25, timeline 2/15, orphans 6/15, dead-links 10/10)",
+        "message": "Brain score 25/100 (embed 0/35, links 7/25, timeline 2/15, orphans 6/15, dead-links 10/10)",
         "category": "brain"
       },
       {
@@ -9263,7 +9206,7 @@
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 86 pages; 13 external link(s) (no bare tweets).",
+        "message": "Sampled 88 pages; 11 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -9424,7 +9367,7 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (86 pages \u2014 too few to assess)",
+        "message": "Extraction lag not applicable (88 pages \u2014 too few to assess)",
         "category": "brain"
       },
       {
@@ -9557,7 +9500,7 @@
       {
         "name": "embed_staleness",
         "status": "warn",
-        "message": "153 stale chunks (small backlog)",
+        "message": "154 stale chunks (small backlog)",
         "category": "meta"
       },
       {
