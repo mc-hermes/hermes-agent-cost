@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-06-22T17:20:37Z",
+  "updated_at": "2026-06-22T17:45:46Z",
   "summary": {
     "score": "82",
     "score_label": "/100",
     "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
-    "page_count": 321,
+    "page_count": 323,
     "embed_coverage": "100% coverage, 0 missing",
-    "graph_coverage": "45.1% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "graph_coverage": "44.8% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
     "entity_links": "Coverage 93% \u00b1 2.9%",
     "concept_count": 114,
-    "meeting_count": 13,
+    "meeting_count": 14,
     "person_count": 46,
     "company_count": 32,
-    "newsletter_count": 73,
+    "newsletter_count": 74,
     "video_count": 0,
     "article_count": 18,
     "bookmark_count": 22,
@@ -36,8 +36,8 @@
       "orphans": "9/15",
       "dead-links": "10/10"
     },
-    "checks_passed": 66,
-    "checks_warned": 7,
+    "checks_passed": 67,
+    "checks_warned": 6,
     "checks_failed": 0
   },
   "pages": [
@@ -5695,6 +5695,18 @@
       "inbound_count": 0
     },
     {
+      "slug": "meetings/sayf-x-zaim-jun-12-2026",
+      "title": "Sayf X Zaim Jun 12 2026",
+      "type": "meeting",
+      "updated": "",
+      "body": "# Sayf x Zaim \u2014 Jun 12, 2026\n\n**Source:** Email\n**Source URI:** gmail://msg_19eb9fd8516965c3\n**Ingested:** 2026-06-22T18:00:00Z\n**Provenance:** Forwarded by sayf on 2026-06-11\n\nSayf's note: \"From my meeting with Zaim this morning\"\n\n---\n\n## Summary\n\nDiscussion explored AI skepticism and market strategy alongside technical collaboration opportunities for business growth.\n\n## Differing AI Market Perspectives\n\nParticipants debated the value of AI in business, contrasting skepticism about automation hype with the practical utility of AI for basic skills training.\n\n## Technical Tools and Infrastructure\n\nDiscussion shifted toward specific software tools, noting the efficiency of virtual private servers and the potential of data integration dashboards for business applications.\n\n## Collaboration and Service Models\n\nAgreement reached to build a technical solution for coaching services while prioritizing simple, revenue-focused strategies for future client engagement.\n\n## Suggested Next Steps\n\n- **[Maloha Coast] Build Dashboard:** Arrange a meeting to build the dashboard component. Perform the session either in person or over a call based on the preference of Zaim Mohzani.\n- **[Zaim Mohzani] Provide Testimonial:** Provide a testimonial in exchange for the assistance provided by Maloha Coast.\n- **[Maloha Coast] Share Research Link:** Send the Tencent Lighthouse promotion link for further research.\n- **[The group] Schedule Followup Session:** Coordinate a time for a meeting to continue the discussion.\n- **[Zaim Mohzani] Send WhatsApp Message:** Contact Maloha Coast via the provided phone number to initiate further communication.\n\n## Attendees\n\n- Sayf Codes (Maloha Coast)\n- Zaim Mohzani (Client)\n\n## References\n\n- [Google Doc: Meeting Notes](https://docs.google.com/document/d/1q3v6SbKF_PiEaTatPNvhZtoWd9T_n9v5HqMoxsLj3hQ/edit?usp=meet_tnfm_email)",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "meetings/sayf-zaim-gemini-notes-2026-06-12",
       "title": "Sayf Zaim Gemini Notes 2026 06 12",
       "type": "meeting",
@@ -6751,6 +6763,18 @@
       ],
       "outbound_count": 9,
       "inbound_count": 1
+    },
+    {
+      "slug": "newsletters/nerdqaxe-revision-7-launch-2026-06-12",
+      "title": "Nerdqaxe Revision 7 Launch 2026 06 12",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# NerdQaxe++ Revision 7 Launches \u2014 Bitcoin Solo Miner\n\n**Source:** Email\n**Source URI:** gmail://msg_19eb9b8ff247d156\n**Ingested:** 2026-06-22T18:00:00Z\n**Provenance:** Forwarded by sayf on 2026-06-11\n\n---\n\nSolo Satoshi announces the launch of the NerdQaxe++ Revision 7, an open-source quad-chip Bitcoin solo miner.\n\n## Key Points\n\n- **Revision 7** is a new evolution of the open-source quad-chip Bitcoin solo miner\n- **100% USA-based production** \u2014 units assembled domestically, supply remains consistent\n- **Fully open source** \u2014 hardware design files and firmware source code released publicly before any units ship\n- **Pre-release technical overview** on YouTube covering what's new\n- Company addresses rumors of closed-source copies \u2014 affirms open-source commitment\n- Production will not stop at initial supply; commitment to keep manufacturing until every miner who wants one has one\n\n## Company\n\n**Solo Satoshi** \u2014 \"The #1 place for Bitcoin hardware\" \u2014 Bitcoin mining hardware company focused on home/solo mining.",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
     },
     {
       "slug": "newsletters/nerdqaxe-revision-7-launch",
@@ -11153,10 +11177,10 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 65,
-    "brain_checks_score": 85,
+    "health_score": 70,
+    "brain_checks_score": 90,
     "category_scores": {
-      "brain": 85,
+      "brain": 90,
       "skill": 100,
       "ops": 95,
       "meta": 85
@@ -11205,9 +11229,9 @@
       {
         "name": "extract_atoms_backlog",
         "status": "warn",
-        "message": "20 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
+        "message": "21 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 20,
+          "backlog": 21,
           "pack_declares_phase": false,
           "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
@@ -11216,8 +11240,8 @@
       },
       {
         "name": "conversation_format_coverage",
-        "status": "warn",
-        "message": "1/9 conversation pages (11.1%) match NO built-in pattern. Breakdown: bold-name-no-time=8, _no_match=1. Investigate: gbrain conversation-parser scan <slug> | Enable LLM fallback (opt-in): gbrain config set conversation_parser.llm_fallback_enabled true",
+        "status": "ok",
+        "message": "10 pages: bold-name-no-time=9, _no_match=1",
         "category": "brain"
       },
       {
@@ -11241,7 +11265,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 275 pages",
+        "message": "Connected, 277 pages",
         "category": "ops"
       },
       {
@@ -11277,7 +11301,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 610ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 481ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -11313,7 +11337,7 @@
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 275 pages; 34 external link(s) (no bare tweets).",
+        "message": "Sampled 277 pages; 35 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -11474,11 +11498,11 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction current: 0/275 pages (0%) stale",
+        "message": "Extraction current: 2/277 pages (1%) stale",
         "details": {
-          "total": 275,
-          "stale": 0,
-          "pct": 0,
+          "total": 277,
+          "stale": 2,
+          "pct": 1,
           "warn_pct": 20,
           "fail_pct": null,
           "source_id": null
@@ -11518,7 +11542,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "45.1% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "44.8% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
