@@ -1,27 +1,27 @@
 {
-  "updated_at": "2026-06-22T17:45:46Z",
+  "updated_at": "2026-06-22T17:58:43Z",
   "summary": {
     "score": "82",
     "score_label": "/100",
     "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
-    "page_count": 323,
+    "page_count": 324,
     "embed_coverage": "100% coverage, 0 missing",
-    "graph_coverage": "44.8% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "graph_coverage": "44.6% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
     "entity_links": "Coverage 93% \u00b1 2.9%",
     "concept_count": 114,
     "meeting_count": 14,
     "person_count": 46,
     "company_count": 32,
-    "newsletter_count": 74,
+    "newsletter_count": 75,
     "video_count": 0,
     "article_count": 18,
     "bookmark_count": 22,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 374,
-    "outbound_count": 469,
-    "inbound_count": 434,
+    "total_links": 375,
+    "outbound_count": 471,
+    "inbound_count": 436,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -2407,11 +2407,6 @@
       ],
       "backlinks": [
         {
-          "from": "concepts/openclaw-anatomy",
-          "type": "wikilink",
-          "text": "System Design One"
-        },
-        {
           "from": "concepts/pauls-pipeline",
           "type": "wikilink",
           "text": "system-design-one"
@@ -2445,6 +2440,11 @@
           "from": "newsletters/msg-19ee2580f5fe7903",
           "type": "wikilink",
           "text": "companies/system-design-one|System Design One"
+        },
+        {
+          "from": "newsletters/openclaw-anatomy-2026-06-09",
+          "type": "wikilink",
+          "text": "System Design One"
         },
         {
           "from": "newsletters/secret-architecture-ai-data-centers-2026-06-19",
@@ -3893,18 +3893,18 @@
       "title": "Openclaw Anatomy",
       "type": "concept",
       "updated": "",
-      "body": "# Fwd: The Anatomy of OpenClaw\n**From:** Sayf Codes <sayfcodes@gmail.com>\n**Date:** Tue, 9 Jun 2026 00:11:45 +0800\n**Source:** email forward\n\nForwarded from **[[Neo Kim]]** ([[System Design One]]) \u2014 Issue #151.\n\n> **Understanding How OpenClaw Works**\n\nOpenClaw is an open-source autonomous AI agent that runs on your machine, connects to messaging apps, and executes tasks directly \u2014 no manual copy-paste needed. It bridges the \"thinking layer\" (LLMs like Claude, GPT, Gemini) and the \"act layer\" (tools, APIs, files).\n\n## What OpenClaw Offers\n\n- **Gateway**: Always-on Node.js server (port 18789) coordinating messaging apps, LLM, tools, and memory. Runs as a background daemon \u2014 persistence is the foundation of scheduled jobs, proactive alerts, and multi-channel messaging.\n- **Multi-channel messaging**: WhatsApp, Telegram, Slack \u2014 shared context and memory across all platforms.\n- **Skills platform (ClawHub, 5,400+ capabilities)**: Plain Markdown files that define specific tasks (check GitHub PRs, send Slack messages).\n- **Persistent memory**: Markdown files on disk \u2014 inspectable, version-controllable.\n- **Proactive scheduling**: Heartbeat + cron jobs that act without being prompted.\n- **Model-agnostic**: Claude, GPT, DeepSeek, Gemini, Grok, local via Ollama \u2014 mix and match.\n\n## How It Differs\n\n- ChatGPT/Claude/Gemini: browser-only, no access to email/scripts, no persistence.\n- Siri/Google Assistant: closed products, no custom skills or self-hosting.\n- LangChain/CrewAI/AutoGen: developer frameworks requiring Python code.\n- Claude Code/Codex CLI: terminal tools for coding sessions \u2014 not 24/7.\n- **OpenClaw runs 24/7** for everything, not just code.\n\n## Architecture Layers\n\n**Gateway** (Control Center): Orchestrates everything \u2014 authenticates senders, assembles context, passes to LLM, handles tool calls, routes replies. Sends command confirmation requests (e.g., `rm -rf ~/logs/*.log` needs approval). Serves Control UI at `http://localhost:18789` for real-time monitoring. Supports hot configuration reloads.\n\n**Channel Layer**: Translation adapters per platform \u2014 Telegram (bot token + polling/webhook), WhatsApp (reverse-engineered web protocol, QR auth), Slack (Socket Mode, two token types), Discord (gateway WebSocket). Normalizes messages into internal format. Security policies (allowlists, pairing) apply uniformly.\n\n**LLM Layer**: Assembles system prompt from agent personality + available skills + retrieved memory + conversation history. Calls the AI model. Tool calls execute and feed results back \u2014 loop continues until final response. Compaction triggers at context limit (summarizes history).\n\n**Plugin System**: Almost everything non-core is a plugin \u2014 Telegram, GitHub, memory. Plugins hook into lifecycle events (before/after tool calls, messages, session start/end). Enables audit logging, rate limiting, custom approval flows without touching core.\n\n**Memory System**: Three-layer approach \u2014 (1) short-term: session files on disk, loads recent context only; (2) long-term: all sessions indexed into local database, auto-searches before answering; (3) standing notes: Markdown files in `~/.openclaw/workspace/memory/` as permanent briefing documents.\n\n**Long-running tasks**: Agent acknowledges task, works in background, messages when done. State written to disk, not held in memory. Cron jobs in isolated session mode for truly long-running work.\n\n## Key Insights\n\n- The Gateway runs on your Mac Mini or VPS \u2014 accessible via Tailscale from any device.\n- Control UI shows every tool call, model response, and approval request in real time.\n- Model can be changed at any time without reconfiguration.\n- If a single tool call takes too long, Gateway times out \u2014 break large tasks into chunks.\n- DeepResearch runs long sessions but stops when done \u2014 OpenClaw never stops.\n\n*This was a preview of a subscriber-only post from Neo Kim's System Design Newsletter.*",
+      "body": "# OpenClaw Anatomy\n\n> **Redirect:** This page has been superseded by [[newsletters/openclaw-anatomy-2026-06-09 | The Anatomy of OpenClaw]]. See that page for the full ingested content.\n\nThis was a stale early-attempt page. The full newsletter content has been ingested at [[newsletters/openclaw-anatomy-2026-06-09]].",
       "tags": [],
       "links_out": [
         {
-          "to": "people/neo-kim",
+          "to": "newsletters/openclaw-anatomy-2026-06-09",
           "type": "wikilink",
-          "text": "Neo Kim"
+          "text": "newsletters/openclaw-anatomy-2026-06-09 | The Anatomy of OpenClaw"
         },
         {
-          "to": "companies/system-design-one",
+          "to": "newsletters/openclaw-anatomy-2026-06-09",
           "type": "wikilink",
-          "text": "System Design One"
+          "text": "newsletters/openclaw-anatomy-2026-06-09"
         }
       ],
       "backlinks": [],
@@ -6795,6 +6795,42 @@
       "inbound_count": 0
     },
     {
+      "slug": "newsletters/openclaw-anatomy-2026-06-09",
+      "title": "Openclaw Anatomy 2026 06 09",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# The Anatomy of OpenClaw\n\n**Source:** email (sayf forward)\n**Source URI:** gmail://msg_19ea8014fa960cb7\n**Ingested:** 2026-06-22T18:00:00Z\n**Provenance:** Forwarded by Sayf via System Design One (Neo Kim) #151, 2026-06-09\n\n## Summary\n\nA deep dive into OpenClaw, an open-source autonomous AI agent that runs on your machine, connects to messaging apps, and executes tasks end-to-end. The newsletter explains how OpenClaw differs from browser-based AI tools and covers its five-layer architecture.\n\n## Key Ideas\n\n- **OpenClaw as the \"hand\" to LLM's \"brain\":** LLMs (Claude, GPT, Gemini) provide reasoning; OpenClaw provides execution \u2014 connecting to files, messaging apps, shell, and APIs.\n- **Always-on Gateway:** A Node.js server running on port 18789 that orchestrates everything. This persistence is the foundation \u2014 scheduled jobs, proactive alerts, multi-channel messaging, and long-term memory all depend on a never-stopping process.\n- **Channel Layer abstraction:** Each messaging platform (Telegram, WhatsApp, Slack, Discord) is a plugin adapter that normalizes messages into a standard internal format. The agent is platform-agnostic.\n- **LLM-agnostic:** Swap models (Claude, GPT-4, DeepSeek, Gemini, local Ollama) without reconfiguration. System prompt is assembled dynamically from personality, available skills, memory, and conversation history.\n- **Tool-call loop:** Model signals tool calls \u2192 OpenClaw executes \u2192 captures output \u2192 feeds back to model. Loop continues until no more tool calls are needed.\n- **Three-tier memory:** Short-term (session files on disk), long-term (indexed DB for cross-session recall), and standing notes (persistent Markdown files).\n- **Plugin system:** Almost everything non-core is a plugin (Telegram, GitHub, memory). Hot-config reloads \u2014 change model/permissions/channels without restart.\n- **Long-running tasks:** Agent acknowledges, starts working, messages when done. Cron jobs in isolated sessions for truly background work.\n- **Security:** Shell commands are intercepted for approval before execution. Control UI at `http://localhost:18789` for real-time monitoring.\n\n## Architecture (5 Layers)\n\n1. **Gateway** \u2014 Control center, always-on server coordinating everything\n2. **Channel Layer** \u2014 Platform adapters (Telegram, WhatsApp, Slack, Discord) normalizing messages\n3. **LLM Layer** \u2014 Model-agnostic reasoning with dynamic context assembly\n4. **Plugin System** \u2014 Modular capabilities, hot-reloadable\n5. **Memory System** \u2014 Short-term + long-term + standing notes\n\n## People Mentioned\n\n- [[Neo Kim]] \u2014 Author of [[System Design One]] newsletter\n\n## Related Entities\n\n- MyClaw \u2014 Cloud-hosted OpenClaw service\n- ClawHub \u2014 Skill marketplace with 5,400+ capabilities",
+      "tags": [
+        "system-design"
+      ],
+      "links_out": [
+        {
+          "to": "people/neo-kim",
+          "type": "wikilink",
+          "text": "Neo Kim"
+        },
+        {
+          "to": "companies/system-design-one",
+          "type": "wikilink",
+          "text": "System Design One"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "concepts/openclaw-anatomy",
+          "type": "wikilink",
+          "text": "newsletters/openclaw-anatomy-2026-06-09 | The Anatomy of OpenClaw"
+        },
+        {
+          "from": "concepts/openclaw-anatomy",
+          "type": "wikilink",
+          "text": "newsletters/openclaw-anatomy-2026-06-09"
+        }
+      ],
+      "outbound_count": 2,
+      "inbound_count": 2
+    },
+    {
       "slug": "newsletters/openrouter-auto-routing-2026-06-10",
       "title": "Openrouter Auto Routing 2026 06 10",
       "type": "newsletter",
@@ -8367,11 +8403,6 @@
           "text": "Neo Kim"
         },
         {
-          "from": "concepts/openclaw-anatomy",
-          "type": "wikilink",
-          "text": "Neo Kim"
-        },
-        {
           "from": "concepts/virtual-machines-deep-dive",
           "type": "wikilink",
           "text": "Neo Kim"
@@ -8400,6 +8431,11 @@
           "from": "newsletters/msg-19ee2580f5fe7903",
           "type": "wikilink",
           "text": "people/neo-kim|Neo Kim"
+        },
+        {
+          "from": "newsletters/openclaw-anatomy-2026-06-09",
+          "type": "wikilink",
+          "text": "Neo Kim"
         },
         {
           "from": "newsletters/secret-architecture-ai-data-centers-2026-06-19",
@@ -10026,12 +10062,7 @@
     },
     {
       "source": "concepts/openclaw-anatomy",
-      "target": "people/neo-kim",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/openclaw-anatomy",
-      "target": "companies/system-design-one",
+      "target": "newsletters/openclaw-anatomy-2026-06-09",
       "type": "wikilink"
     },
     {
@@ -10845,6 +10876,16 @@
       "type": "wikilink"
     },
     {
+      "source": "newsletters/openclaw-anatomy-2026-06-09",
+      "target": "people/neo-kim",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/openclaw-anatomy-2026-06-09",
+      "target": "companies/system-design-one",
+      "type": "wikilink"
+    },
+    {
       "source": "newsletters/openrouter-chain-models-2026-06-16",
       "target": "companies/openrouter",
       "type": "wikilink"
@@ -11265,7 +11306,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 277 pages",
+        "message": "Connected, 278 pages",
         "category": "ops"
       },
       {
@@ -11301,7 +11342,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 481ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 616ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -11337,7 +11378,7 @@
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 277 pages; 35 external link(s) (no bare tweets).",
+        "message": "Sampled 278 pages; 35 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -11498,11 +11539,11 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction current: 2/277 pages (1%) stale",
+        "message": "Extraction current: 0/278 pages (0%) stale",
         "details": {
-          "total": 277,
-          "stale": 2,
-          "pct": 1,
+          "total": 278,
+          "stale": 0,
+          "pct": 0,
           "warn_pct": 20,
           "fail_pct": null,
           "source_id": null
@@ -11530,7 +11571,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "180 reranker failure(s) in last 7 days (below threshold)",
+        "message": "183 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -11542,7 +11583,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "44.8% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "44.6% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
