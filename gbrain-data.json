@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-06-22T05:00:31Z",
+  "updated_at": "2026-06-22T05:40:04Z",
   "summary": {
-    "score": "92",
+    "score": "82",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 315,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "41.0% of pages have inbound links",
-    "entity_links": "Coverage \u2014 45 people, 32 companies indexed",
+    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
+    "page_count": 317,
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "46.1% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 93% \u00b1 2.9%",
     "concept_count": 114,
     "meeting_count": 13,
     "person_count": 45,
@@ -15,18 +15,30 @@
     "newsletter_count": 72,
     "video_count": 0,
     "article_count": 18,
-    "bookmark_count": 18,
+    "bookmark_count": 20,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 350,
-    "outbound_count": 445,
-    "inbound_count": 410,
+    "total_links": 363,
+    "outbound_count": 458,
+    "inbound_count": 423,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
+    "score_components": {
+      "score": "82/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "3/15",
+      "orphans": "9/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 66,
+    "checks_warned": 7,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -921,6 +933,97 @@
       "inbound_count": 0
     },
     {
+      "slug": "bookmarks/stripe-online-choose-track-2026-05-13",
+      "title": "Stripe Online Choose Track 2026 05 13",
+      "type": "bookmark",
+      "updated": "",
+      "body": "# Stripe Online: Choose Your Track \u2014 Go Deeper\n\n**Source:** email from Stripe (updates@e.stripe.com)\n**Source URI:** gmail://msg_19e2476d24e3656e\n**Ingested:** 2026-06-22\n**Provenance:** Email from Stripe re: Stripe Online event details\n\n[[Stripe]] Online event announcement \u2014 **3 June 2026** \u2014 two breakout tracks: business innovation and business expansion.\n\n## Keynote\n\nFeaturing leaders from [[Stripe]], [[Anthropic]], [[Thoughtworks]], and [[Google]].\n\n## Breakout Tracks\n\n### Business Innovation Track\n- Agentic commerce: What your business needs to know now\n- Monetisation strategies that work for AI products\n- Customer case study: Lessons from [[ImagineArt]]\n- Preventing first-party fraud\n\n### Business Expansion Track\n- Payment-led growth strategies\n- Optimising conversion rates\n- Expanding globally across APAC\n- Scaling revenue without complexity\n- Customer case study: Lessons from [[Coda Payments]]\n\n## Relevance\n\nStripe is Maloha Coast's active payment processor. The two-track structure (AI-native innovation vs. payment-led growth) mirrors the strategic decisions Maloha Coast makes for clients. Topics on agentic commerce and AI product monetisation are directly applicable.",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "companies/stripe",
+          "type": "wikilink",
+          "text": "Stripe"
+        },
+        {
+          "to": "companies/anthropic",
+          "type": "wikilink",
+          "text": "Anthropic"
+        },
+        {
+          "to": "companies/thoughtworks",
+          "type": "wikilink",
+          "text": "Thoughtworks"
+        },
+        {
+          "to": "companies/google",
+          "type": "wikilink",
+          "text": "Google"
+        },
+        {
+          "to": "companies/imagineart",
+          "type": "wikilink",
+          "text": "ImagineArt"
+        },
+        {
+          "to": "companies/coda-payments",
+          "type": "wikilink",
+          "text": "Coda Payments"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 6,
+      "inbound_count": 0
+    },
+    {
+      "slug": "bookmarks/stripe-online-last-chance-2026-06-02",
+      "title": "Stripe Online Last Chance 2026 06 02",
+      "type": "bookmark",
+      "updated": "",
+      "body": "# Stripe Online: Last Chance to Join for Asia Pacific\n\n**Source:** email from Stripe (updates@e.stripe.com)\n**Source URI:** gmail://msg_19e8b403787dede8\n**Ingested:** 2026-06-22\n**Provenance:** Email from Stripe re: Stripe Online event\n\n[[Stripe]] Online \u2014 the free event focused on APAC commerce \u2014 took place on **3 June 2026**. This was the last-chance reminder email sent on June 2.\n\n## Key Speakers\n\n- [[Emily Glassberg Sands]] ([[Stripe]]) \u2014 Keynote\n- Leaders from [[Anthropic]], [[Google]], [[Thoughtworks]]\n- [[Coda Payments]] and [[ImagineArt]] \u2014 customer case studies\n\n## Agenda Topics\n\n1. **Keynote: The new rules of APAC commerce** \u2014 Emily Glassberg Sands with Anthropic, Google, and Thoughtworks on how AI is rewriting discovery, decision, and purchase.\n2. **Agentic commerce: What your business needs to know now** \u2014 AI agents entering purchase flows and how to prepare.\n3. **Monetisation strategies that work for AI products** \u2014 Pricing models from usage-based to hybrid approaches.\n4. **Customer case study: Lessons from ImagineArt** \u2014 AI-native startup monetisation engine.\n5. **The right payment method at the right time** \u2014 Framework for lifting authorisation rates and reducing checkout drop-off.\n6. **The global growth playbook: Scaling revenue without complexity** \u2014 Expanding across borders in APAC.\n7. **Customer case study: Lessons from Coda Payments** \u2014 Scaling payments across multiple markets.\n8. **Live Q&A with Stripe's payment architects** \u2014 Pricing models, authorisation rates.\n\n## Relevance\n\nStripe is Maloha Coast's active payment processor. Topics like APAC commerce optimisation, AI-native monetisation, and multi-market expansion are directly relevant to payment strategy and client advisory.",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "companies/stripe",
+          "type": "wikilink",
+          "text": "Stripe"
+        },
+        {
+          "to": "people/emily-glassberg-sands",
+          "type": "wikilink",
+          "text": "Emily Glassberg Sands"
+        },
+        {
+          "to": "companies/anthropic",
+          "type": "wikilink",
+          "text": "Anthropic"
+        },
+        {
+          "to": "companies/google",
+          "type": "wikilink",
+          "text": "Google"
+        },
+        {
+          "to": "companies/thoughtworks",
+          "type": "wikilink",
+          "text": "Thoughtworks"
+        },
+        {
+          "to": "companies/coda-payments",
+          "type": "wikilink",
+          "text": "Coda Payments"
+        },
+        {
+          "to": "companies/imagineart",
+          "type": "wikilink",
+          "text": "ImagineArt"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 7,
+      "inbound_count": 0
+    },
+    {
       "slug": "brand/maloha-coast-brand-identity",
       "title": "Maloha Coast \u2014 Brand Identity",
       "type": "concept",
@@ -1126,6 +1229,16 @@
           "text": "Anthropic"
         },
         {
+          "from": "bookmarks/stripe-online-choose-track-2026-05-13",
+          "type": "wikilink",
+          "text": "Anthropic"
+        },
+        {
+          "from": "bookmarks/stripe-online-last-chance-2026-06-02",
+          "type": "wikilink",
+          "text": "Anthropic"
+        },
+        {
           "from": "concepts/claude-code-10x-skill-newsletter",
           "type": "wikilink",
           "text": "Anthropic"
@@ -1157,7 +1270,7 @@
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 7
+      "inbound_count": 9
     },
     {
       "slug": "companies/beehiiv",
@@ -1243,13 +1356,23 @@
           "text": "Coda Payments"
         },
         {
+          "from": "bookmarks/stripe-online-choose-track-2026-05-13",
+          "type": "wikilink",
+          "text": "Coda Payments"
+        },
+        {
+          "from": "bookmarks/stripe-online-last-chance-2026-06-02",
+          "type": "wikilink",
+          "text": "Coda Payments"
+        },
+        {
           "from": "people/zac-liew",
           "type": "wikilink",
           "text": "companies/coda-payments"
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 2
+      "inbound_count": 4
     },
     {
       "slug": "companies/digital-power",
@@ -1448,13 +1571,23 @@
           "text": "Google"
         },
         {
+          "from": "bookmarks/stripe-online-choose-track-2026-05-13",
+          "type": "wikilink",
+          "text": "Google"
+        },
+        {
+          "from": "bookmarks/stripe-online-last-chance-2026-06-02",
+          "type": "wikilink",
+          "text": "Google"
+        },
+        {
           "from": "concepts/stripe-ai-commerce-apac-2026-04-29",
           "type": "wikilink",
           "text": "Google"
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 2
+      "inbound_count": 4
     },
     {
       "slug": "companies/herku",
@@ -1611,13 +1744,23 @@
           "text": "ImagineArt"
         },
         {
+          "from": "bookmarks/stripe-online-choose-track-2026-05-13",
+          "type": "wikilink",
+          "text": "ImagineArt"
+        },
+        {
+          "from": "bookmarks/stripe-online-last-chance-2026-06-02",
+          "type": "wikilink",
+          "text": "ImagineArt"
+        },
+        {
           "from": "people/ahmed-abubakar",
           "type": "wikilink",
           "text": "companies/imagineart"
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 2
+      "inbound_count": 4
     },
     {
       "slug": "companies/inclusive-ai-association",
@@ -2174,13 +2317,23 @@
           "text": "Stripe"
         },
         {
+          "from": "bookmarks/stripe-online-choose-track-2026-05-13",
+          "type": "wikilink",
+          "text": "Stripe"
+        },
+        {
+          "from": "bookmarks/stripe-online-last-chance-2026-06-02",
+          "type": "wikilink",
+          "text": "Stripe"
+        },
+        {
           "from": "concepts/stripe-ai-commerce-apac-2026-04-29",
           "type": "wikilink",
           "text": "Stripe"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 2
+      "inbound_count": 4
     },
     {
       "slug": "companies/system-design-one",
@@ -2308,13 +2461,23 @@
           "text": "Thoughtworks"
         },
         {
+          "from": "bookmarks/stripe-online-choose-track-2026-05-13",
+          "type": "wikilink",
+          "text": "Thoughtworks"
+        },
+        {
+          "from": "bookmarks/stripe-online-last-chance-2026-06-02",
+          "type": "wikilink",
+          "text": "Thoughtworks"
+        },
+        {
           "from": "concepts/stripe-ai-commerce-apac-2026-04-29",
           "type": "wikilink",
           "text": "Thoughtworks"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 2
+      "inbound_count": 4
     },
     {
       "slug": "companies/zhipu-ai",
@@ -7648,13 +7811,18 @@
       "links_out": [],
       "backlinks": [
         {
+          "from": "bookmarks/stripe-online-last-chance-2026-06-02",
+          "type": "wikilink",
+          "text": "Emily Glassberg Sands"
+        },
+        {
           "from": "concepts/stripe-ai-commerce-apac-2026-04-29",
           "type": "wikilink",
           "text": "Emily Glassberg Sands"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "people/ericosiu",
@@ -9020,6 +9188,71 @@
     {
       "source": "bookmarks/stripe-online-ai-commerce-2026-06-22",
       "target": "brand/maloha-coast-brand-identity",
+      "type": "wikilink"
+    },
+    {
+      "source": "bookmarks/stripe-online-choose-track-2026-05-13",
+      "target": "companies/stripe",
+      "type": "wikilink"
+    },
+    {
+      "source": "bookmarks/stripe-online-choose-track-2026-05-13",
+      "target": "companies/anthropic",
+      "type": "wikilink"
+    },
+    {
+      "source": "bookmarks/stripe-online-choose-track-2026-05-13",
+      "target": "companies/thoughtworks",
+      "type": "wikilink"
+    },
+    {
+      "source": "bookmarks/stripe-online-choose-track-2026-05-13",
+      "target": "companies/google",
+      "type": "wikilink"
+    },
+    {
+      "source": "bookmarks/stripe-online-choose-track-2026-05-13",
+      "target": "companies/imagineart",
+      "type": "wikilink"
+    },
+    {
+      "source": "bookmarks/stripe-online-choose-track-2026-05-13",
+      "target": "companies/coda-payments",
+      "type": "wikilink"
+    },
+    {
+      "source": "bookmarks/stripe-online-last-chance-2026-06-02",
+      "target": "companies/stripe",
+      "type": "wikilink"
+    },
+    {
+      "source": "bookmarks/stripe-online-last-chance-2026-06-02",
+      "target": "people/emily-glassberg-sands",
+      "type": "wikilink"
+    },
+    {
+      "source": "bookmarks/stripe-online-last-chance-2026-06-02",
+      "target": "companies/anthropic",
+      "type": "wikilink"
+    },
+    {
+      "source": "bookmarks/stripe-online-last-chance-2026-06-02",
+      "target": "companies/google",
+      "type": "wikilink"
+    },
+    {
+      "source": "bookmarks/stripe-online-last-chance-2026-06-02",
+      "target": "companies/thoughtworks",
+      "type": "wikilink"
+    },
+    {
+      "source": "bookmarks/stripe-online-last-chance-2026-06-02",
+      "target": "companies/coda-payments",
+      "type": "wikilink"
+    },
+    {
+      "source": "bookmarks/stripe-online-last-chance-2026-06-02",
+      "target": "companies/imagineart",
       "type": "wikilink"
     },
     {
@@ -10699,13 +10932,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 65,
+    "brain_checks_score": 85,
     "category_scores": {
-      "brain": 95,
+      "brain": 85,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -10735,32 +10968,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -10772,19 +10983,20 @@
       },
       {
         "name": "extract_atoms_backlog",
-        "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "status": "warn",
+        "message": "20 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 0,
+          "backlog": 20,
           "pack_declares_phase": false,
+          "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
         "category": "brain"
       },
       {
         "name": "conversation_format_coverage",
-        "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "status": "warn",
+        "message": "1/9 conversation pages (11.1%) match NO built-in pattern. Breakdown: bold-name-no-time=8, _no_match=1. Investigate: gbrain conversation-parser scan <slug> | Enable LLM fallback (opt-in): gbrain config set conversation_parser.llm_fallback_enabled true",
         "category": "brain"
       },
       {
@@ -10808,7 +11020,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 267 pages",
         "category": "ops"
       },
       {
@@ -10844,7 +11056,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 608ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -10862,25 +11074,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 92%, timeline 63%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 74 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 267 pages; 33 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -11041,7 +11253,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 0/267 pages (0%) stale",
+        "details": {
+          "total": 267,
+          "stale": 0,
+          "pct": 0,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -11053,7 +11273,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -11065,7 +11285,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "173 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -11077,7 +11297,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "46.1% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -11119,7 +11339,7 @@
       {
         "name": "oauth_confidential_client_health",
         "status": "ok",
-        "message": "No OAuth clients registered",
+        "message": "4 OAuth client(s) registered; all auth shapes consistent",
         "category": "ops"
       },
       {
@@ -11180,13 +11400,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 93% \u00b1 2.9%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 64% \u00b1 5.6% (target 90%)",
         "category": "meta"
       },
       {
@@ -11204,7 +11424,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "10 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
