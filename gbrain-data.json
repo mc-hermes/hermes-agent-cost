@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-06-22T21:00:40Z",
+  "updated_at": "2026-06-22T21:35:32Z",
   "summary": {
-    "score": "92",
+    "score": "82",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 330,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "39.7% of pages have inbound links",
-    "entity_links": "Coverage \u2014 46 people, 32 companies indexed",
-    "concept_count": 117,
+    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
+    "page_count": 334,
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "44.1% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 91% \u00b1 3.3%",
+    "concept_count": 120,
     "meeting_count": 14,
     "person_count": 46,
-    "company_count": 32,
+    "company_count": 33,
     "newsletter_count": 77,
     "video_count": 0,
     "article_count": 18,
@@ -19,14 +19,26 @@
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 375,
-    "outbound_count": 469,
-    "inbound_count": 435,
+    "total_links": 387,
+    "outbound_count": 484,
+    "inbound_count": 450,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
+    "score_components": {
+      "score": "82/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "3/15",
+      "orphans": "9/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 67,
+    "checks_warned": 6,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -710,12 +722,34 @@
       "title": "Humanlayer Launch 2026 06 19",
       "type": "bookmark",
       "updated": "",
-      "body": "# HumanLayer // We're live \u2014 come build with us\n\n**Source:** email from dex at humanlayer re: HumanLayer launch, 2026-06-19\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-23T02:00:00Z\n**Provenance:** Forwarded by Sayf Codes on 2026-06-19 to Maloha Coast\n\nHumanLayer is an Agentic IDE and collaboration platform for engineering teams. Launched publicly on June 18, 2026 by Kyle and Dex (previously built the open-source RPI framework used at Block and Uber).\n\nKey points:\n- **Core philosophy:** Don't outsource the thinking. Design review before code generation.\n- **Pricing:** Starter plan free for teams of fewer than 3. Bring your own AI subscription (Claude, Codex, etc.) \u2014 no separate per-token bill.\n- **Differentiator:** Lets engineers move 2-3x faster across the full SDLC, not just the coding part, while maintaining architecture standards.\n- **Approach:** Design complex systems with AI agents *before* generating code. Brings the software factory design review into one platform.\n\nLaunch links:\n- X launch post: https://x.com/dexhorthy/status/2067286892786454855\n- LinkedIn post: https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U\n- Product: https://humanlayer.com",
+      "body": "# HumanLayer // We're live \u2014 come build with us\n\n**Source:** email from Sayf Codes re: HumanLayer launch, 2026-06-19\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-23T00:00:00Z\n**Provenance:** Forwarded by sayf on 2026-06-19\n\n## Summary\n\n[[companies/humanlayer|HumanLayer]], an Agentic IDE and collaboration platform for engineering teams, launched publicly. Founded by [[people/dexter-horthy|Dexter Horthy]] and Kyle (creators of the [[concepts/rpi-framework|Research-Plan-Implement (RPI) framework]], running inside Fortune 500s like Block and Uber). The platform lets teams design complex systems with AI agents before writing code, aiming to move 2-3x faster across the full SDLC while maintaining rigorous architectural standards.\n\n## Key Points\n\n- **Product**: Agentic IDE + collaboration platform + software factory building blocks\n- **Core philosophy**: \"Don't outsource the thinking\" \u2014 design reviews before code generation\n- **Use your own AI**: Bring your own Claude, Codex, or API keys (no separate per-token bill)\n- **Target audience**: Engineering teams solving hard problems in complex codebases\n- **Pricing**: Starter plan free for teams of fewer than three\n- **Launch posts**: [X](https://x.com/dexhorthy/status/2067286892786454855) | [LinkedIn](https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U)\n\n## Relevance to Maloha Coast\n\nRelevant for understanding the evolving Agentic IDE landscape \u2014 HumanLayer's approach (design-first, bring-your-own-models) positions differently from Cursor, Codex CLI, and Claude Code. The RPI framework lineage suggests serious engineering pedigree.",
       "tags": [],
-      "links_out": [],
-      "backlinks": [],
-      "outbound_count": 0,
-      "inbound_count": 0
+      "links_out": [
+        {
+          "to": "companies/humanlayer",
+          "type": "wikilink",
+          "text": "companies/humanlayer|HumanLayer"
+        },
+        {
+          "to": "people/dexter-horthy",
+          "type": "wikilink",
+          "text": "people/dexter-horthy|Dexter Horthy"
+        },
+        {
+          "to": "concepts/rpi-framework",
+          "type": "wikilink",
+          "text": "concepts/rpi-framework|Research-Plan-Implement (RPI) framework"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "concepts/rpi-framework",
+          "type": "wikilink",
+          "text": "bookmarks/humanlayer-launch-2026-06-19"
+        }
+      ],
+      "outbound_count": 3,
+      "inbound_count": 1
     },
     {
       "slug": "bookmarks/karpathy-llm-wiki-2026-06-20",
@@ -1673,6 +1707,11 @@
           "text": "HumanLayer"
         },
         {
+          "from": "bookmarks/humanlayer-launch-2026-06-19",
+          "type": "wikilink",
+          "text": "companies/humanlayer|HumanLayer"
+        },
+        {
           "from": "concepts/humanlayer-launch-announcement-2026-06-19",
           "type": "wikilink",
           "text": "HumanLayer"
@@ -1681,6 +1720,11 @@
           "from": "concepts/humanlayer-launch-newsletter",
           "type": "wikilink",
           "text": "HumanLayer"
+        },
+        {
+          "from": "concepts/rpi-framework",
+          "type": "wikilink",
+          "text": "companies/humanlayer"
         },
         {
           "from": "humanlayer-launch-2026-06-19",
@@ -1734,7 +1778,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 13
+      "inbound_count": 15
     },
     {
       "slug": "companies/imagineart",
@@ -2520,6 +2564,32 @@
       "inbound_count": 4
     },
     {
+      "slug": "companies/unilever-malaysia",
+      "title": "Unilever Malaysia",
+      "type": "company",
+      "updated": "",
+      "body": "# Unilever Malaysia\n\n> Malaysian subsidiary of Unilever, global FMCG corporation. Aisyah Rahim's current employer (Senior Brand Manager).\n\n## In Maloha Coast Knowledge\n\n- [[people/aisyah-rahim]] \u2014 Senior Brand Manager, career coaching client of Zaim Mohzani",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [
+        {
+          "to": "people/aisyah-rahim",
+          "type": "wikilink",
+          "text": "people/aisyah-rahim"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "concepts/aisyah-rahim-client-profile-2026-06-15",
+          "type": "wikilink",
+          "text": "companies/unilever-malaysia|Unilever Malaysia"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 1
+    },
+    {
       "slug": "companies/zhipu-ai",
       "title": "Zhipu AI",
       "type": "company",
@@ -2558,14 +2628,26 @@
       "title": "15 Minute Gap Method 2026 06 14",
       "type": "concept",
       "updated": "",
-      "body": "# Coaching Insight \u2014 The 15-Minute Gap Method\n\n**Source:** email from Zaim Mohzani re: Coaching insight, 2026-06-14\n**Source URI:** gmail://msg_19eca04daacc7a09\n**Ingested:** 2026-06-23T02:00:00Z\n**Provenance:** Self-forward from info+zaim@malohacoast.com\n\nZaim discovered a pattern while coaching: using 15-minute gaps between KSI sessions to jot down one observation per student.\n\n## The Method\n\nNever let a gap go empty. Even one sentence per student compounds over a month.\n\n## Three Student Buckets that Emerged\n\n1. **Career pivoters** \u2014 stuck on \"what if I fail\" not \"what do I want\"\n2. **Fresh grads** \u2014 over-indexing on salary, under-indexing on growth trajectory\n3. **Mid-career** \u2014 all variations of \"is this it?\"\n\n## Insight\n\nAfter a month of consistently capturing one observation per gap, patterns emerged that wouldn't have been spotted otherwise. The 15-minute rule acts as a forcing function for reflection.",
+      "body": "# Coaching Insight \u2014 The 15-Minute Gap Method\n\n**Source:** email from Zaim, 2026-06-14\n**Source URI:** gmail://msg_19eca04daacc7a09\n**Ingested:** 2026-06-23T00:00:00Z\n**Provenance:** Self-forward by Zaim via +zaim alias\n\n## Summary\n\nZaim discovered a pattern during his [[concepts/ksi-workshop|KSI]] coaching sessions: using 15-minute gaps between sessions to jot down one observation per student. After a month, clear student archetypes emerged.\n\n## The 15-Minute Rule\n\n\"Never let a gap go empty. Even one sentence per student compounds.\"\n\n## Three Student Archetypes\n\n1. **Career pivoters** \u2014 stuck on \"what if I fail\" not \"what do I want\"\n2. **Fresh grads** \u2014 over-indexing on salary, under-indexing on growth trajectory\n3. **Mid-career** \u2014 all variations of \"is this it?\"\n\n## Key Insight\n\nThe method is a practice in observational compounding \u2014 small, consistent notes across time reveal patterns invisible to ad-hoc reflection. Applicable beyond coaching (management, product research, team dynamics).",
       "tags": [
         "zaim"
       ],
-      "links_out": [],
-      "backlinks": [],
-      "outbound_count": 0,
-      "inbound_count": 0
+      "links_out": [
+        {
+          "to": "concepts/ksi-workshop",
+          "type": "wikilink",
+          "text": "concepts/ksi-workshop|KSI"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "concepts/ksi-workshop",
+          "type": "wikilink",
+          "text": "concepts/15-minute-gap-method-2026-06-14"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 1
     },
     {
       "slug": "concepts/2026-06-03",
@@ -2793,6 +2875,47 @@
       "inbound_count": 0
     },
     {
+      "slug": "concepts/aisyah-rahim-client-profile-2026-06-15",
+      "title": "Aisyah Rahim Client Profile 2026 06 15",
+      "type": "concept",
+      "updated": "",
+      "body": "# Coaching Client Profile \u2014 Aisyah Rahim\n\n**Source:** email from Zaim, 2026-06-15\n**Source URI:** gmail://msg_19eca0a8dc4888c3\n**Ingested:** 2026-06-23T00:00:00Z\n**Provenance:** Self-forward by Zaim via +zaim alias\n\n## Client Snapshot\n\n- **Name:** [[people/aisyah-rahim|Aisyah Rahim]]\n- **Role:** Senior Brand Manager at [[companies/unilever-malaysia|Unilever Malaysia]]\n- **Referred by:** [[people/liyana|Liyana]] ([[concepts/ksi-workshop|KSI workshop]])\n- **First session:** Next Tuesday from intro call date\n- **Salary anchor:** RM 18k/month\n\n## Key Observations\n\nAisyah is a classic mid-career pivot case \u2014 8 years in FMCG brand management, feeling stagnant, wants to move into tech but believes \"I don't have a technical background\" is the blocker. In reality, she has substantial data-driven experience (consumer analytics for 3 product launches). The real problem is confidence and narrative, not skills.\n\n**Zaim's read:** needs help reframing \"brand manager\" as \"growth strategist who uses data.\" Tech companies would value someone who bridges consumer insights and product.\n\n## Session 1 Plan\n\n- Audit her last 2 years of work through a tech lens\n- Find 3-5 specific examples where she already demonstrated \"product thinking\" without calling it that",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [
+        {
+          "to": "people/aisyah-rahim",
+          "type": "wikilink",
+          "text": "people/aisyah-rahim|Aisyah Rahim"
+        },
+        {
+          "to": "companies/unilever-malaysia",
+          "type": "wikilink",
+          "text": "companies/unilever-malaysia|Unilever Malaysia"
+        },
+        {
+          "to": "people/liyana",
+          "type": "wikilink",
+          "text": "people/liyana|Liyana"
+        },
+        {
+          "to": "concepts/ksi-workshop",
+          "type": "wikilink",
+          "text": "concepts/ksi-workshop|KSI workshop"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "people/liyana",
+          "type": "wikilink",
+          "text": "Aisyah Rahim"
+        }
+      ],
+      "outbound_count": 4,
+      "inbound_count": 1
+    },
+    {
       "slug": "concepts/architecture/agent-hierarchy",
       "title": "Agent Hierarchy",
       "type": "concept",
@@ -2973,15 +3096,9 @@
       "body": "# Aisyah Rahim \u2014 Client Profile (Zaim)\n\n**Source:** Email\n**Source URI:** gmail://msg_19eca0a8dc4888c3\n**Ingested:** 2026-06-22T16:55:00Z\n**Provenance:** Zaim's note to shared inbox, 2026-06-15\n\nZaim here. Adding a quick profile on a new client.\n\nName: Aisyah Rahim\nRole: Senior Brand Manager at Unilever Malaysia\nContext: Referred by Liyana from the KSI workshop last month. First session next Tuesday.\n\nKey points from our intro call:\n- 8 years in FMCG brand management, feeling stagnant\n- Wants to pivot into tech but unsure where to start\n- Main blocker: \"I don't have a technical background\"\n- Has actually done more data-driven work than she realises \u2014 ran consumer analytics for 3 product launches, managed A/B testing on packaging redesigns\n\n[Source: Zaim's note to shared inbox, 2026-06-15]",
       "tags": [],
       "links_out": [],
-      "backlinks": [
-        {
-          "from": "people/liyana",
-          "type": "wikilink",
-          "text": "Aisyah Rahim"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 0,
-      "inbound_count": 1
+      "inbound_count": 0
     },
     {
       "slug": "concepts/coaching-client-aisyah-rahim-2026-06-15",
@@ -3734,6 +3851,47 @@
       "inbound_count": 3
     },
     {
+      "slug": "concepts/ksi-workshop",
+      "title": "KSI Workshop",
+      "type": "concept",
+      "updated": "",
+      "body": "# KSI Workshop\n\n> Coaching/public speaking workshop program run by Zaim Mohzani. Source of coaching client referrals.\n\n## In Maloha Coast Knowledge\n\n- [[people/liyana]] attended and referred [[people/aisyah-rahim]] to Zaim\n- Between-session insight: Zaim's [[concepts/15-minute-gap-method-2026-06-14]] emerged from observations during KSI sessions",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [
+        {
+          "to": "people/liyana",
+          "type": "wikilink",
+          "text": "people/liyana"
+        },
+        {
+          "to": "people/aisyah-rahim",
+          "type": "wikilink",
+          "text": "people/aisyah-rahim"
+        },
+        {
+          "to": "concepts/15-minute-gap-method-2026-06-14",
+          "type": "wikilink",
+          "text": "concepts/15-minute-gap-method-2026-06-14"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "concepts/15-minute-gap-method-2026-06-14",
+          "type": "wikilink",
+          "text": "concepts/ksi-workshop|KSI"
+        },
+        {
+          "from": "concepts/aisyah-rahim-client-profile-2026-06-15",
+          "type": "wikilink",
+          "text": "concepts/ksi-workshop|KSI workshop"
+        }
+      ],
+      "outbound_count": 3,
+      "inbound_count": 2
+    },
+    {
       "slug": "concepts/liquid-cooling",
       "title": "Liquid Cooling",
       "type": "concept",
@@ -4145,6 +4303,40 @@
         }
       ],
       "outbound_count": 1,
+      "inbound_count": 1
+    },
+    {
+      "slug": "concepts/rpi-framework",
+      "title": "Research Plan Implement (RPI) Framework",
+      "type": "concept",
+      "updated": "",
+      "body": "# Research Plan Implement (RPI) Framework\n\n> Open-source framework for AI coding agents developed by Dexter Horthy and Kyle (HumanLayer co-founders). Uses a structured design-review-first approach: Research, Plan, then Implement.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[bookmarks/humanlayer-launch-2026-06-19]] \u2014 described as running inside Fortune 500s like Block and Uber\n- Foundation for the HumanLayer Agentic IDE platform\n\n## Related\n\n- [[people/dexter-horthy]] \u2014 co-creator\n- [[companies/humanlayer]] \u2014 product built on this framework",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "bookmarks/humanlayer-launch-2026-06-19",
+          "type": "wikilink",
+          "text": "bookmarks/humanlayer-launch-2026-06-19"
+        },
+        {
+          "to": "people/dexter-horthy",
+          "type": "wikilink",
+          "text": "people/dexter-horthy"
+        },
+        {
+          "to": "companies/humanlayer",
+          "type": "wikilink",
+          "text": "companies/humanlayer"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "bookmarks/humanlayer-launch-2026-06-19",
+          "type": "wikilink",
+          "text": "concepts/rpi-framework|Research-Plan-Implement (RPI) framework"
+        }
+      ],
+      "outbound_count": 3,
       "inbound_count": 1
     },
     {
@@ -7614,9 +7806,25 @@
           "text": "Zaim Mohzani"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "companies/unilever-malaysia",
+          "type": "wikilink",
+          "text": "people/aisyah-rahim"
+        },
+        {
+          "from": "concepts/aisyah-rahim-client-profile-2026-06-15",
+          "type": "wikilink",
+          "text": "people/aisyah-rahim|Aisyah Rahim"
+        },
+        {
+          "from": "concepts/ksi-workshop",
+          "type": "wikilink",
+          "text": "people/aisyah-rahim"
+        }
+      ],
       "outbound_count": 3,
-      "inbound_count": 0
+      "inbound_count": 3
     },
     {
       "slug": "people/andrej-karpathy",
@@ -8047,13 +8255,23 @@
       ],
       "backlinks": [
         {
+          "from": "bookmarks/humanlayer-launch-2026-06-19",
+          "type": "wikilink",
+          "text": "people/dexter-horthy|Dexter Horthy"
+        },
+        {
           "from": "concepts/humanlayer-launch-newsletter",
           "type": "wikilink",
           "text": "Dexter Horthy"
+        },
+        {
+          "from": "concepts/rpi-framework",
+          "type": "wikilink",
+          "text": "people/dexter-horthy"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 1
+      "inbound_count": 3
     },
     {
       "slug": "people/emily-glassberg-sands",
@@ -8288,7 +8506,7 @@
       ],
       "links_out": [
         {
-          "to": "concepts/client-aisyah-rahim-2026-06-15",
+          "to": "concepts/aisyah-rahim-client-profile-2026-06-15",
           "type": "wikilink",
           "text": "Aisyah Rahim"
         },
@@ -8305,13 +8523,23 @@
       ],
       "backlinks": [
         {
+          "from": "concepts/aisyah-rahim-client-profile-2026-06-15",
+          "type": "wikilink",
+          "text": "people/liyana|Liyana"
+        },
+        {
+          "from": "concepts/ksi-workshop",
+          "type": "wikilink",
+          "text": "people/liyana"
+        },
+        {
           "from": "people/aisyah-rahim",
           "type": "wikilink",
           "text": "Liyana"
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 1
+      "inbound_count": 3
     },
     {
       "slug": "people/mara-cajar-robinson",
@@ -9385,6 +9613,21 @@
       "type": "wikilink"
     },
     {
+      "source": "bookmarks/humanlayer-launch-2026-06-19",
+      "target": "companies/humanlayer",
+      "type": "wikilink"
+    },
+    {
+      "source": "bookmarks/humanlayer-launch-2026-06-19",
+      "target": "people/dexter-horthy",
+      "type": "wikilink"
+    },
+    {
+      "source": "bookmarks/humanlayer-launch-2026-06-19",
+      "target": "concepts/rpi-framework",
+      "type": "wikilink"
+    },
+    {
       "source": "bookmarks/karpathy-llm-wiki-gist",
       "target": "people/andrej-karpathy",
       "type": "wikilink"
@@ -9770,8 +10013,18 @@
       "type": "wikilink"
     },
     {
+      "source": "companies/unilever-malaysia",
+      "target": "people/aisyah-rahim",
+      "type": "wikilink"
+    },
+    {
       "source": "companies/zhipu-ai",
       "target": "newsletters/ai-garage-weekly-2026-06-19",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/15-minute-gap-method-2026-06-14",
+      "target": "concepts/ksi-workshop",
       "type": "wikilink"
     },
     {
@@ -9877,6 +10130,26 @@
     {
       "source": "concepts/ai-data-centers",
       "target": "articles/ai-data-center-architecture-2026-06-19",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/aisyah-rahim-client-profile-2026-06-15",
+      "target": "people/aisyah-rahim",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/aisyah-rahim-client-profile-2026-06-15",
+      "target": "companies/unilever-malaysia",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/aisyah-rahim-client-profile-2026-06-15",
+      "target": "people/liyana",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/aisyah-rahim-client-profile-2026-06-15",
+      "target": "concepts/ksi-workshop",
       "type": "wikilink"
     },
     {
@@ -10085,6 +10358,16 @@
       "type": "wikilink"
     },
     {
+      "source": "concepts/ksi-workshop",
+      "target": "people/liyana",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/ksi-workshop",
+      "target": "people/aisyah-rahim",
+      "type": "wikilink"
+    },
+    {
       "source": "concepts/liquid-cooling",
       "target": "articles/ai-data-center-architecture-2026-06-19",
       "type": "wikilink"
@@ -10137,6 +10420,16 @@
     {
       "source": "concepts/rdma",
       "target": "articles/ai-data-center-architecture-2026-06-19",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/rpi-framework",
+      "target": "people/dexter-horthy",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/rpi-framework",
+      "target": "companies/humanlayer",
       "type": "wikilink"
     },
     {
@@ -11076,11 +11369,6 @@
     },
     {
       "source": "people/liyana",
-      "target": "concepts/client-aisyah-rahim-2026-06-15",
-      "type": "wikilink"
-    },
-    {
-      "source": "people/liyana",
       "target": "people/zaim-mohzani",
       "type": "wikilink"
     },
@@ -11261,19 +11549,20 @@
       "companies/system-design-one",
       "companies/thompson-legal",
       "companies/thoughtworks",
+      "companies/unilever-malaysia",
       "companies/zhipu-ai"
     ]
   },
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 70,
+    "brain_checks_score": 90,
     "category_scores": {
-      "brain": 95,
+      "brain": 90,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -11303,32 +11592,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -11340,11 +11607,12 @@
       },
       {
         "name": "extract_atoms_backlog",
-        "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "status": "warn",
+        "message": "21 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 0,
+          "backlog": 21,
           "pack_declares_phase": false,
+          "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
         "category": "brain"
@@ -11352,7 +11620,7 @@
       {
         "name": "conversation_format_coverage",
         "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "message": "10 pages: bold-name-no-time=9, _no_match=1",
         "category": "brain"
       },
       {
@@ -11376,7 +11644,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 288 pages",
         "category": "ops"
       },
       {
@@ -11412,7 +11680,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 692ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -11430,25 +11698,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 90%, timeline 68%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 76 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 288 pages; 37 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -11609,7 +11877,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 0/288 pages (0%) stale",
+        "details": {
+          "total": 288,
+          "stale": 0,
+          "pct": 0,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -11621,7 +11897,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -11633,7 +11909,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "192 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -11645,7 +11921,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "44.1% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -11687,7 +11963,7 @@
       {
         "name": "oauth_confidential_client_health",
         "status": "ok",
-        "message": "No OAuth clients registered",
+        "message": "4 OAuth client(s) registered; all auth shapes consistent",
         "category": "ops"
       },
       {
@@ -11748,13 +12024,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 91% \u00b1 3.3%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 68% \u00b1 5.3% (target 90%)",
         "category": "meta"
       },
       {
@@ -11772,7 +12048,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "10 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
