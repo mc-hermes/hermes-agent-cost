@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-06-22T18:00:38Z",
+  "updated_at": "2026-06-22T19:00:39Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
     "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 324,
+    "page_count": 327,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "40.7% of pages have inbound links",
+    "graph_coverage": "40.4% of pages have inbound links",
     "entity_links": "Coverage \u2014 46 people, 32 companies indexed",
-    "concept_count": 114,
+    "concept_count": 116,
     "meeting_count": 14,
     "person_count": 46,
     "company_count": 32,
     "newsletter_count": 75,
     "video_count": 0,
     "article_count": 18,
-    "bookmark_count": 22,
+    "bookmark_count": 23,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
@@ -699,6 +699,18 @@
       "type": "bookmark",
       "updated": "",
       "body": "# HumanLayer \u2014 Agentic IDE Launch\n\n**Source:** Email (Dex at HumanLayer)\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-22T16:55:00Z\n**Provenance:** Forwarded by sayf on 2026-06-19\n\nHumanLayer launched publicly \u2014 an Agentic IDE, collaboration platform, and building blocks for a software factory. Built by Dex and Kyle, based on their open-source RPI (Research, Plan, Implement) framework running inside Block and Uber.\n\nKey points:\n- Lets engineering teams design complex systems with AI agents before generating code\n- Claims 2-3x faster across the entire SDLC (not just coding)\n- Focus on system architecture and program design before writing code \u2014 like design reviews brought into one place\n- Bring your own subscription (Claude, Codex, API keys) \u2014 no separate per-token bill\n- Starter plan is free for teams of fewer than three\n- Public launch on X and LinkedIn\n\nLinks:\n- X launch: https://x.com/dexhorthy/status/2067286892786454855\n- LinkedIn: https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U\n- Product: https://humanlayer.com\n- Launch blurb: https://humanlayer.com/launch/blurb.md\n\n[Source: email from Dex at HumanLayer, \"HumanLayer // We're live \u2014 come build with us\", 2026-06-18]",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "bookmarks/humanlayer-launch-2026-06-19",
+      "title": "Humanlayer Launch 2026 06 19",
+      "type": "bookmark",
+      "updated": "",
+      "body": "# HumanLayer // We're live \u2014 come build with us\n\n**Source:** email from dex at humanlayer re: HumanLayer launch, 2026-06-19\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-23T02:00:00Z\n**Provenance:** Forwarded by Sayf Codes on 2026-06-19 to Maloha Coast\n\nHumanLayer is an Agentic IDE and collaboration platform for engineering teams. Launched publicly on June 18, 2026 by Kyle and Dex (previously built the open-source RPI framework used at Block and Uber).\n\nKey points:\n- **Core philosophy:** Don't outsource the thinking. Design review before code generation.\n- **Pricing:** Starter plan free for teams of fewer than 3. Bring your own AI subscription (Claude, Codex, etc.) \u2014 no separate per-token bill.\n- **Differentiator:** Lets engineers move 2-3x faster across the full SDLC, not just the coding part, while maintaining architecture standards.\n- **Approach:** Design complex systems with AI agents *before* generating code. Brings the software factory design review into one platform.\n\nLaunch links:\n- X launch post: https://x.com/dexhorthy/status/2067286892786454855\n- LinkedIn post: https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U\n- Product: https://humanlayer.com",
       "tags": [],
       "links_out": [],
       "backlinks": [],
@@ -2548,6 +2560,20 @@
       "inbound_count": 1
     },
     {
+      "slug": "concepts/15-minute-gap-method-2026-06-14",
+      "title": "15 Minute Gap Method 2026 06 14",
+      "type": "concept",
+      "updated": "",
+      "body": "# Coaching Insight \u2014 The 15-Minute Gap Method\n\n**Source:** email from Zaim Mohzani re: Coaching insight, 2026-06-14\n**Source URI:** gmail://msg_19eca04daacc7a09\n**Ingested:** 2026-06-23T02:00:00Z\n**Provenance:** Self-forward from info+zaim@malohacoast.com\n\nZaim discovered a pattern while coaching: using 15-minute gaps between KSI sessions to jot down one observation per student.\n\n## The Method\n\nNever let a gap go empty. Even one sentence per student compounds over a month.\n\n## Three Student Buckets that Emerged\n\n1. **Career pivoters** \u2014 stuck on \"what if I fail\" not \"what do I want\"\n2. **Fresh grads** \u2014 over-indexing on salary, under-indexing on growth trajectory\n3. **Mid-career** \u2014 all variations of \"is this it?\"\n\n## Insight\n\nAfter a month of consistently capturing one observation per gap, patterns emerged that wouldn't have been spotted otherwise. The 15-minute rule acts as a forcing function for reflection.",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "concepts/2026-06-03",
       "title": "2026 06 03",
       "type": "concept",
@@ -2962,6 +2988,20 @@
       ],
       "outbound_count": 0,
       "inbound_count": 1
+    },
+    {
+      "slug": "concepts/coaching-client-aisyah-rahim-2026-06-15",
+      "title": "Coaching Client Aisyah Rahim 2026 06 15",
+      "type": "concept",
+      "updated": "",
+      "body": "# Coaching Client Profile \u2014 Aisyah Rahim\n\n**Source:** email from Zaim Mohzani re: Coaching client profile, 2026-06-15\n**Source URI:** gmail://msg_19eca0a8dc4888c3\n**Ingested:** 2026-06-23T02:00:00Z\n**Provenance:** Self-forward from info+zaim@malohacoast.com\n\n## Client Profile\n\n- **Name:** Aisyah Rahim\n- **Role:** Senior Brand Manager at Unilever Malaysia\n- **Referred by:** Liyana (KSI workshop)\n- **First session:** Next Tuesday from intro call\n\n## Key Points from Intro Call\n\n- 8 years in FMCG brand management, feeling stagnant\n- Wants to pivot into tech but unsure where to start\n- Main blocker: \"I don't have a technical background\"\n- Has actually done more data-driven work than she realises \u2014 ran consumer analytics for 3 product launches\n- Salary anchor: RM 18k/month, worried about resetting to junior level\n\n## Zaim's Read\n\nClassic mid-career pivot case. The real problem isn't skills \u2014 it's confidence and narrative. She needs help reframing \"brand manager\" as \"growth strategist who uses data.\" Tech companies would kill for someone who can bridge consumer insights and product.\n\n## Plan for Session 1\n\nAudit her last 2 years of work through a tech lens. Find 3-5 specific examples where she already did \"product thinking\" without calling it that.",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
     },
     {
       "slug": "concepts/cold-lead-response-conference-events",
