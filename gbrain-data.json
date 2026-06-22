@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-06-22T16:00:38Z",
+  "updated_at": "2026-06-22T16:38:32Z",
   "summary": {
-    "score": "92",
+    "score": "82",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 319,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "41.1% of pages have inbound links",
-    "entity_links": "Coverage \u2014 46 people, 32 companies indexed",
+    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
+    "page_count": 320,
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "45.6% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 93% \u00b1 2.9%",
     "concept_count": 114,
     "meeting_count": 13,
     "person_count": 46,
@@ -15,7 +15,7 @@
     "newsletter_count": 73,
     "video_count": 0,
     "article_count": 18,
-    "bookmark_count": 20,
+    "bookmark_count": 21,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
@@ -26,7 +26,19 @@
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
+    "score_components": {
+      "score": "82/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "3/15",
+      "orphans": "9/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 66,
+    "checks_warned": 7,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -662,6 +674,20 @@
       "updated": "",
       "body": "# How we turned Hermes from an assistant into a chief of staff (and how you can too)\n\n**Source:** Email forward\n**Source URI:** gmail://msg_19ee6b8b30fd1a2c\n**Ingested:** 2026-06-21T04:30:00Z\n**Provenance:** Forwarded by Sayf on 2026-06-21 via self-forward to info@malohacoast.com\n\n## X/Twitter Post\n\n- **Author:** ericosiu (@ericosiu) \u2014 blue verified\n- **Tweet:** [https://x.com/ericosiu/status/2068370407049011538](https://x.com/ericosiu/status/2068370407049011538)\n- **Tweet stats:** 2.5K views, 11 likes, 29 bookmarks, 2 retweets, 2 replies\n\n## Article\n\n- **Title:** How we turned Hermes from an assistant into our chief of staff (and how you can too)\n- **URL:** [http://x.com/i/article/2062257585613389824](http://x.com/i/article/2062257585613389824)\n\n### Preview\n\n> Your Hermes probably answers texts and manages your calendar. That's cool.\n> Mine books sales calls, revives stalled deals, and ships ad creative all while I'm at the gym.\n> Wait Eric \u2014 how's yours doing?\n\n## Relevance to Maloha Coast\n\nSayf forwarded this as an indicator of the direction he wants to take Hermes \u2014 transforming it from a passive assistant into an autonomous chief-of-staff that drives business outcomes (sales calls, deal revival, creative ops). This aligns directly with Maloha Coast's AI agent ecosystem strategy.",
       "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "bookmarks/humanlayer-agentic-ide-launch-2026-06-18",
+      "title": "Humanlayer Agentic Ide Launch 2026 06 18",
+      "type": "bookmark",
+      "updated": "",
+      "body": "# HumanLayer // We're Live \u2014 Come Build With Us\n\n**Source:** Email from dex at humanlayer, forwarded by Sayf\n**Source URI:** gmail://msg_19edfd1054c17600\n**Original:** [HumanLayer](https://humanlayer.com)\n**Ingested:** 2026-06-22T16:10:20Z\n\n## Summary\n\nHumanLayer is an Agentic IDE and collaboration platform for software engineering teams, built by Dex and Kyle. It lets teams design complex systems with AI agents before generating code, with a focus on design reviews and system architecture up front.\n\n**The core idea:** Don't outsource the thinking. Great teams run design reviews because collaborating on system design before writing code has enormous leverage.\n\nKey capabilities:\n- Move 2-3x faster across the full SDLC\n- Maintain rigorous system architecture and program design standards\n- Bring your own AI subscriptions (Claude, Codex, API keys) \u2014 no separate per-token bill\n- Built on the RPI (Research, Plan, Implement) framework already running inside Block and Uber\n\n## Relevance\n\n- Directly relevant to Maloha Coast's agentic development workflow\n- RPI framework provenance is notable \u2014 running inside Fortune 500s\n- BYO subscription model avoids vendor lock-in\n- Design-review-first approach aligns with how sayf works with agents\n\n## Links\n\n- Product: https://humanlayer.com\n- Launch post: https://x.com/dexhorthy/status/2067286892786454855\n- LinkedIn: https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U\n- Blurb for writing: https://humanlayer.com/launch/blurb.md\n\n> Forwarded by Sayf from dex at humanlayer on 2026-06-19. Original date: 2026-06-18.",
+      "tags": [
+        "sayf"
+      ],
       "links_out": [],
       "backlinks": [],
       "outbound_count": 0,
@@ -11126,13 +11152,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 65,
+    "brain_checks_score": 85,
     "category_scores": {
-      "brain": 95,
+      "brain": 85,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -11162,32 +11188,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -11199,19 +11203,20 @@
       },
       {
         "name": "extract_atoms_backlog",
-        "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "status": "warn",
+        "message": "20 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 0,
+          "backlog": 20,
           "pack_declares_phase": false,
+          "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
         "category": "brain"
       },
       {
         "name": "conversation_format_coverage",
-        "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "status": "warn",
+        "message": "1/9 conversation pages (11.1%) match NO built-in pattern. Breakdown: bold-name-no-time=8, _no_match=1. Investigate: gbrain conversation-parser scan <slug> | Enable LLM fallback (opt-in): gbrain config set conversation_parser.llm_fallback_enabled true",
         "category": "brain"
       },
       {
@@ -11235,7 +11240,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 272 pages",
         "category": "ops"
       },
       {
@@ -11271,7 +11276,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 550ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -11289,25 +11294,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 92%, timeline 64%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 75 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 272 pages; 34 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -11468,7 +11473,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 1/272 pages (0%) stale",
+        "details": {
+          "total": 272,
+          "stale": 1,
+          "pct": 0,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -11480,7 +11493,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -11492,7 +11505,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "180 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -11504,7 +11517,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "45.6% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -11546,7 +11559,7 @@
       {
         "name": "oauth_confidential_client_health",
         "status": "ok",
-        "message": "No OAuth clients registered",
+        "message": "4 OAuth client(s) registered; all auth shapes consistent",
         "category": "ops"
       },
       {
@@ -11607,13 +11620,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 93% \u00b1 2.9%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 65% \u00b1 5.5% (target 90%)",
         "category": "meta"
       },
       {
@@ -11631,7 +11644,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "10 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
