@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-06-22T17:00:38Z",
+  "updated_at": "2026-06-22T17:20:37Z",
   "summary": {
-    "score": "92",
+    "score": "82",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 320,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "40.9% of pages have inbound links",
-    "entity_links": "Coverage \u2014 46 people, 32 companies indexed",
+    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
+    "page_count": 321,
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "45.1% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 93% \u00b1 2.9%",
     "concept_count": 114,
     "meeting_count": 13,
     "person_count": 46,
@@ -15,18 +15,30 @@
     "newsletter_count": 73,
     "video_count": 0,
     "article_count": 18,
-    "bookmark_count": 21,
+    "bookmark_count": 22,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
     "total_links": 374,
-    "outbound_count": 470,
-    "inbound_count": 435,
+    "outbound_count": 469,
+    "inbound_count": 434,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
+    "score_components": {
+      "score": "82/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "3/15",
+      "orphans": "9/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 66,
+    "checks_warned": 7,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -687,6 +699,18 @@
       "type": "bookmark",
       "updated": "",
       "body": "# HumanLayer // We're live \u2014 come build with us\n\nFrom: Sayf Codes <sayfcodes@gmail.com>\nTo: Maloha Coast <info@malohacoast.com>\nSubject: Fwd: HumanLayer // We're live \u2014 come build with us\nDate: Fri, 19 Jun 2026 20:17:44 +0800\nDelivered-To: info@malohacoast.com\n\n---------- Forwarded message ---------\nFrom: dex at humanlayer <dexter@hey.humanlayer.dev>\nDate: Thu, 18 Jun 2026, 01:14\nSubject: HumanLayer // We're live \u2014 come build with us\nTo: <sayfcodes@gmail.com>\n\nHey there\u2014\n\nYou're getting this because you're on the HumanLayer waitlist. The wait is\nover: today we're opening up HumanLayer to everyone.\n\nTry it today\n\nhumanlayer.com \u2014 the Starter plan is free for teams of fewer than three, so\nyou can jump in right now.\n\nThe year of no more slop\n\nFor the last year, Kyle and I have been pushing the limits of what coding\nagents can do \u2014 first with our open-source Research, Plan, Implement (RPI)\nframework (now running inside Fortune 500s like Block and Uber, where\nshipping slop is not an option), and now with the product we've been\nbuilding on top of all of it.\n\nHumanLayer is an Agentic IDE, collaboration platform, and building blocks\nfor your software factory \u2014 where engineering teams design complex systems\nwith their AI agents before generating a single line of code. It lets\nengineers solving hard problems in complex codebases:\n\n   - move 2-3x faster across the entire SDLC (not just the coding part)\n\n   - maintain rigorous standards for system architecture and program design\n\nThe core idea: don't outsource the thinking. Great teams have run design\nreviews for decades because there's enormous leverage in collaborating on\nsystem design before you write the code. We bring that missing piece of the\nsoftware factory into one place \u2014 and the results have been really\nimpressive.\n\nBring your own subscription \u2014 plug in your Claude, Codex, and other AI\nsubscriptions or API keys. No separate per-token bill to reason about.\n\nHelp us spread the word\nWe're launching publicly on X and LinkedIn today. If HumanLayer resonates,\na repost or a quick shout-out would mean the world:\n\n   - X: https://x.com/dexhorthy/status/2067286892786454855\n\n   - LinkedIn:\n   https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U\n\nWanna write your own post? Point your agent at\nhttps://humanlayer.com/launch/blurb.md and it can help you write one in\nyour own voice.\n\nrun curl https://humanlayer.com/launch/blurb.md and help me write a post\nabout how stoked I am for the humanlayer launch\n\nKyle and I are deeply grateful to everyone who's followed along, given us\nfeedback, and waited for this. Let's make this the year of no more slop.\n\nSee you in there,\n\nDex\n\n<div dir=\"auto\"></div><br><div class=\"gmail_quote gmail_quote_container\"><div dir=\"ltr\" class=\"gmail_attr\">---------- Forwarded message ---------<br>From: <strong class=\"gmail_sendername\" dir=\"auto\">dex at humanlayer</strong> <span dir=\"auto\">&lt;<a href=\"mailto:dexter@hey.humanlayer.dev\">dexter@hey.humanlayer.dev</a>&gt;</span><br>Date: Thu, 18 Jun 2026, 01:14<br>Subject: HumanLayer // We&#39;re live \u2014 come build with us<br>To:  &lt;<a href=\"mailto:sayfcodes@gmail.com\">sayfcodes@gmail.com</a>&gt;<br></div><br><br><u></u>\n\n  \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n  \n    \n    \n     \n    \n    \n\n          \n  \n  \n      <div style=\"word-spacing:normal;background-color:transparent\">\n        \n    <div style=\"display:none;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden\"></div>\n  \n        <div aria-label=\"HumanLayer // We&#39;re live \u2014 come build with us\" role=\"article\" lang=\"en\" dir=\"auto\" style=\"word-spacing:normal;background-color:transparent\">\n        \n        \n    \n      \n      <div class=\"m_-4229011107123273619wfix\" style=\"margin:0px auto;max-width:600px\">\n        \n        <table align=\"middle\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"width:100%\">\n          <tbody>\n            <tr>\n              <td style=\"direction:ltr;font-size:0px;padding:20px 0;padding-top:0;text-align:center\">\n                \n    \n      \n      <div class=\"m_-4229011107123273619wfix\" style=\"margin:0px auto;max-width:600px\">\n        \n        <table align=\"middle\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"width:100%\">\n          <tbody>\n            <tr>\n              <td style=\"direction:ltr;font-size:0px;padding:20px 0;padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;text-align:center\">\n                \n            \n      <div class=\"m_-4229011107123273619mj-column-per-100 m_-4229011107123273619wfix\" style=\"font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%\">\n        \n      <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" width=\"100%\" style=\"border-collapse:separate\">\n        <tbody>\n          <tr>\n            <td style=\"background-color:transparent;border-radius:4px;vertical-align:top;border-collapse:separate;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px\">\n              \n      <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" width=\"100%\">\n        <tbody>\n          \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14px;letter-spacing:0px;line-height:21px!important;text-align:left;color:inherit\"><span style=\"line-height:21px!important;font-size:14px;font-size:14px!important;white-space:pre-wrap\">Hey </span><span style=\"line-height:21px!important;font-size:14px;font-size:14px!important;white-space:pre-wrap\">there</span><span style=\"line-height:21px!important;font-size:14px;font-size:14px!important;white-space:pre-wrap\">\u2014</span></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14px;letter-spacing:0px;line-height:21px!important;text-align:left;color:inherit\"><span>\u00a0</span></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14px;letter-spacing:0px;line-height:21px!important;text-align:left;color:inherit\"><span style=\"line-height:21px!important;font-size:14px;font-size:14px!important;white-space:pre-wrap\">You&#39;re getting this because you&#39;re on the HumanLayer waitlist. The wait is over: </span><span style=\"font-weight:600;font-size:14px;white-space:pre-wrap;line-height:21px!important;font-size:14px!important\">today we&#39;re opening up HumanLayer to everyone.</span></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14px;letter-spacing:0px;line-height:21px!important;text-align:left;color:inherit\"><span>\u00a0</span></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:12px;padding-right:0px;padding-bottom:4px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:20px;letter-spacing:0px;line-height:25px!important;text-align:left;color:inherit\"><h3 style=\"padding:0;margin:0;font-weight:500;color:inherit;font-size:20px;line-height:25px!important;font-size:20px!important\"><span style=\"line-height:25px!important;font-size:20px;font-size:20px!important;white-space:pre-wrap\">Try it today</span></h3></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14px;letter-spacing:0px;line-height:21px!important;text-align:left;color:inherit\"><span>\u00a0</span></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14px;letter-spacing:0px;line-height:21px!important;text-align:left;color:inherit\"><a rel=\"noopener noreferrer noreferrer\" href=\"https://humanlayer.com\" style=\"text-decoration:none;color:inherit\" target=\"_blank\"><span style=\"font-size:14px;white-space:pre-wrap;text-decoration:underline!important;line-height:21px!important;font-size:14px!important\">humanlayer.com</span></a><span style=\"line-height:21px!important;font-size:14px;font-size:14px!important;white-space:pre-wrap\"> \u2014 the Starter plan is free for teams of fewer than three, so you can jump in right now.</span></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14px;letter-spacing:0px;line-height:21px!important;text-align:left;color:inherit\"><span>\u00a0</span></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:12px;padding-right:0px;padding-bottom:4px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:20px;letter-spacing:0px;line-height:25px!important;text-align:left;color:inherit\"><h3 style=\"padding:0;margin:0;font-weight:500;color:inherit;font-size:20px;line-height:25px!important;font-size:20px!important\"><span style=\"line-height:25px!important;font-size:20px;font-size:20px!important;white-space:pre-wrap\">The year of no more slop</span></h3></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14px;letter-spacing:0px;line-height:21px!important;text-align:left;color:inherit\"><span>\u00a0</span></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14px;letter-spacing:0px;line-height:21px!important;text-align:left;color:inherit\"><span style=\"line-height:21px!important;font-size:14px;font-size:14px!important;white-space:pre-wrap\">For the last year, Kyle and I have been pushing the limits of what coding agents can do \u2014 first with our open-source </span><span style=\"font-weight:600;font-size:14px;white-space:pre-wrap;line-height:21px!important;font-size:14px!important\">Research, Plan, Implement (RPI)</span><span style=\"line-height:21px!important;font-size:14px;font-size:14px!important;white-space:pre-wrap\"> framework (now running inside Fortune 500s like Block and Uber, where shipping slop is not an option), and now with the product we&#39;ve been building on top of all of it.</span></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14px;letter-spacing:0px;line-height:21px!important;text-align:left;color:inherit\"><span>\u00a0</span></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14px;letter-spacing:0px;line-height:21px!important;text-align:left;color:inherit\"><span style=\"font-weight:600;font-size:14px;white-space:pre-wrap;line-height:21px!important;font-size:14px!important\">HumanLayer is an Agentic IDE, collaboration platform, and building blocks for your software factory</span><span style=\"line-height:21px!important;font-size:14px;font-size:14px!important;white-space:pre-wrap\"> \u2014 where engineering teams design complex systems </span><span style=\"font-style:italic;font-size:14px;white-space:pre-wrap;line-height:21px!important;font-size:14px!important\">with</span><span style=\"line-height:21px!important;font-size:14px;font-size:14px!important;white-space:pre-wrap\"> their AI agents before generating a single line of code. It lets engineers solving hard problems in complex codebases:</span></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14px;letter-spacing:0px;line-height:21px!important;text-align:left;color:inherit\"><span>\u00a0</span></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:0;padding-top:0px;padding-right:0px;padding-left:6px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14.4px;letter-spacing:0px;line-height:23.04px;text-align:left;color:inherit\"><u></u>\n  <ul style=\"list-style-type:disc;text-align:left;padding:0;margin:0px 0px 2px 26px\">\n    <li value=\"1\" style=\"line-height:21px!important;font-size:14px;font-size:14px!important;margin:0\">\n    <span style=\"line-height:21px!important;font-size:14px;font-size:14px!important;white-space:pre-wrap\">move </span><span style=\"font-weight:600;font-size:14px;white-space:pre-wrap;line-height:21px!important;font-size:14px!important\">2-3x faster</span><span style=\"line-height:21px!important;font-size:14px;font-size:14px!important;white-space:pre-wrap\"> across the entire SDLC (not just the coding part)</span>\n    </li>\n  </ul>\n  <u></u></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:0;padding-top:0px;padding-right:0px;padding-left:6px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14.4px;letter-spacing:0px;line-height:23.04px;text-align:left;color:inherit\"><u></u>\n  <ul style=\"list-style-type:disc;text-align:left;padding:0;margin:0px 0px 2px 26px\">\n    <li value=\"2\" style=\"line-height:21px!important;font-size:14px;font-size:14px!important;margin:0\">\n    <span style=\"line-height:21px!important;font-size:14px;font-size:14px!important;white-space:pre-wrap\">maintain </span><span style=\"font-weight:600;font-size:14px;white-space:pre-wrap;line-height:21px!important;font-size:14px!important\">rigorous standards</span><span style=\"line-height:21px!important;font-size:14px;font-size:14px!important;white-space:pre-wrap\"> for system architecture and program design</span>\n    </li>\n  </ul>\n  <u></u></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14px;letter-spacing:0px;line-height:21px!important;text-align:left;color:inherit\"><span>\u00a0</span></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14px;letter-spacing:0px;line-height:21px!important;text-align:left;color:inherit\"><span style=\"line-height:21px!important;font-size:14px;font-size:14px!important;white-space:pre-wrap\">The core idea: don&#39;t outsource the thinking. Great teams have run design reviews for decades because there&#39;s enormous leverage in collaborating on system design </span><span style=\"font-style:italic;font-size:14px;white-space:pre-wrap;line-height:21px!important;font-size:14px!important\">before</span><span style=\"line-height:21px!important;font-size:14px;font-size:14px!important;white-space:pre-wrap\"> you write the code. We bring that missing piece of the software factory into one place \u2014 and the results have been really impressive.</span></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14px;letter-spacing:0px;line-height:21px!important;text-align:left;color:inherit\"><span>\u00a0</span></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14px;letter-spacing:0px;line-height:21px!important;text-align:left;color:inherit\"><span style=\"font-weight:600;font-size:14px;white-space:pre-wrap;line-height:21px!important;font-size:14px!important\">Bring your own subscription</span><span style=\"line-height:21px!important;font-size:14px;font-size:14px!important;white-space:pre-wrap\"> \u2014 plug in your Claude, Codex, and other AI subscriptions or API keys. No separate per-token bill to reason about.</span></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14px;letter-spacing:0px;line-height:21px!important;text-align:left;color:inherit\"><span>\u00a0</span></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:12px;padding-right:0px;padding-bottom:4px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:20px;letter-spacing:0px;line-height:25px!important;text-align:left;color:inherit\"><h3 style=\"padding:0;margin:0;font-weight:500;color:inherit;font-size:20px;line-height:25px!important;font-size:20px!important\"><span style=\"line-height:25px!important;font-size:20px;font-size:20px!important;white-space:pre-wrap\">Help us spread the word</span></h3></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14px;letter-spacing:0px;line-height:21px!important;text-align:left;color:inherit\"><span style=\"line-height:21px!important;font-size:14px;font-size:14px!important;white-space:pre-wrap\">We&#39;re launching publicly on X and LinkedIn today. If HumanLayer resonates, a repost or a quick shout-out would mean the world:</span></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14px;letter-spacing:0px;line-height:21px!important;text-align:left;color:inherit\"><span>\u00a0</span></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:0;padding-top:0px;padding-right:0px;padding-left:6px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14.4px;letter-spacing:0px;line-height:23.04px;text-align:left;color:inherit\"><u></u>\n  <ul style=\"list-style-type:disc;text-align:left;padding:0;margin:0px 0px 2px 26px\">\n    <li value=\"1\" style=\"line-height:21px!important;font-size:14px;font-size:14px!important;margin:0\">\n    <span style=\"line-height:21px!important;font-size:14px;font-size:14px!important;white-space:pre-wrap\">X: </span><a rel=\"noopener noreferrer noreferrer\" href=\"https://x.com/dexhorthy/status/2067286892786454855\" style=\"text-decoration:none;color:inherit\" target=\"_blank\"><span style=\"font-size:14px;white-space:pre-wrap;text-decoration:underline!important;line-height:21px!important;font-size:14px!important\">https://x.com/dexhorthy/status/2067286892786454855</span></a>\n    </li>\n  </ul>\n  <u></u></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:0;padding-top:0px;padding-right:0px;padding-left:6px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14.4px;letter-spacing:0px;line-height:23.04px;text-align:left;color:inherit\"><u></u>\n  <ul style=\"list-style-type:disc;text-align:left;padding:0;margin:0px 0px 2px 26px\">\n    <li value=\"2\" style=\"line-height:21px!important;font-size:14px;font-size:14px!important;margin:0\">\n    <span style=\"line-height:21px!important;font-size:14px;font-size:14px!important;white-space:pre-wrap\">LinkedIn: </span><a rel=\"noopener noreferrer noreferrer\" href=\"https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U\" style=\"text-decoration:none;color:inherit\" target=\"_blank\"><span style=\"font-size:14px;white-space:pre-wrap;text-decoration:underline!important;line-height:21px!important;font-size:14px!important\">https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U</span></a>\n    </li>\n  </ul>\n  <u></u></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14px;letter-spacing:0px;line-height:21px!important;text-align:left;color:inherit\"><span>\u00a0</span></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14px;letter-spacing:0px;line-height:21px!important;text-align:left;color:inherit\"><span style=\"line-height:21px!important;font-size:14px;font-size:14px!important;white-space:pre-wrap\">Wanna write your own post? Point your agent at <a href=\"https://humanlayer.com/launch/blurb.md\" target=\"_blank\" rel=\"noreferrer\">https://humanlayer.com/launch/blurb.md</a> and it can help you write one in your own voice.</span></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14px;letter-spacing:0px;line-height:21px!important;text-align:left;color:inherit\"><span>\u00a0</span></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:4px;padding-right:0px;padding-bottom:4px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14.4px;letter-spacing:0px;line-height:23.04px;text-align:left;color:inherit\"><blockquote style=\"margin:0;margin-left:20px;padding-left:16px;font-size:14px;border-left:none!important;background-image:none!important;line-height:21px!important;font-size:14px!important\"><div style=\"display:inline-block;border-left-color:#d1d5db;border-left-width:3px;border-left-style:solid;padding-left:16px\"><span style=\"line-height:21px!important;font-size:14px;font-size:14px!important;white-space:pre-wrap\">run curl </span><a rel=\"noopener noreferrer noreferrer\" href=\"https://humanlayer.com/launch/blurb.md\" style=\"text-decoration:none;color:inherit\" target=\"_blank\"><span style=\"font-size:14px;white-space:pre-wrap;text-decoration:underline!important;line-height:21px!important;font-size:14px!important\">https://humanlayer.com/launch/blurb.md</span></a><span style=\"line-height:21px!important;font-size:14px;font-size:14px!important;white-space:pre-wrap\"> and help me write a post about how stoked I am for the humanlayer launch</span></div></blockquote></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14px;letter-spacing:0px;line-height:21px!important;text-align:left;color:inherit\"><span>\u00a0</span></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14px;letter-spacing:0px;line-height:21px!important;text-align:left;color:inherit\"><span style=\"line-height:21px!important;font-size:14px;font-size:14px!important;white-space:pre-wrap\">Kyle and I are deeply grateful to everyone who&#39;s followed along, given us feedback, and waited for this. Let&#39;s make this the year of no more slop.</span></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14px;letter-spacing:0px;line-height:21px!important;text-align:left;color:inherit\"><span>\u00a0</span></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14px;letter-spacing:0px;line-height:21px!important;text-align:left;color:inherit\"><span style=\"line-height:21px!important;font-size:14px;font-size:14px!important;white-space:pre-wrap\">See you in there,</span></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14px;letter-spacing:0px;line-height:21px!important;text-align:left;color:inherit\"><span>\u00a0</span></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14px;letter-spacing:0px;line-height:21px!important;text-align:left;color:inherit\"><span style=\"line-height:21px!important;font-size:14px;font-size:14px!important;white-space:pre-wrap\">Dex</span></div>\n    \n                </td>\n              </tr>\n            \n              <tr>\n                <td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word\">\n                  \n      <div style=\"font-family:ui-sans-serif,sans-serif;font-size:14px;letter-spacing:0px;line-height:21px!important;text-align:left;color:inherit\"><span>\u00a0</span></div>\n    \n                </td>\n              </tr>\n            \n        </tbody>\n      </table>\n    \n            </td>\n          </tr>\n        </tbody>\n      </table>\n    \n      </div>\n    \n          \n              </td>\n            </tr>\n          </tbody>\n        </table>\n        \n      </div>\n    \n      \n      \n              </td>\n            </tr>\n          </tbody>\n        </table>\n        \n      </div>\n    \n      \n      \n    \n    \n      </div>\n      </div>\n    \n\n  \n</div>",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "bookmarks/humanlayer-ide-launch-2026-06-18",
+      "title": "Humanlayer Ide Launch 2026 06 18",
+      "type": "bookmark",
+      "updated": "",
+      "body": "# HumanLayer \u2014 Agentic IDE Launch\n\n**Source:** Email (Dex at HumanLayer)\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-22T16:55:00Z\n**Provenance:** Forwarded by sayf on 2026-06-19\n\nHumanLayer launched publicly \u2014 an Agentic IDE, collaboration platform, and building blocks for a software factory. Built by Dex and Kyle, based on their open-source RPI (Research, Plan, Implement) framework running inside Block and Uber.\n\nKey points:\n- Lets engineering teams design complex systems with AI agents before generating code\n- Claims 2-3x faster across the entire SDLC (not just coding)\n- Focus on system architecture and program design before writing code \u2014 like design reviews brought into one place\n- Bring your own subscription (Claude, Codex, API keys) \u2014 no separate per-token bill\n- Starter plan is free for teams of fewer than three\n- Public launch on X and LinkedIn\n\nLinks:\n- X launch: https://x.com/dexhorthy/status/2067286892786454855\n- LinkedIn: https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U\n- Product: https://humanlayer.com\n- Launch blurb: https://humanlayer.com/launch/blurb.md\n\n[Source: email from Dex at HumanLayer, \"HumanLayer // We're live \u2014 come build with us\", 2026-06-18]",
       "tags": [],
       "links_out": [],
       "backlinks": [],
@@ -2938,15 +2962,9 @@
       "title": "Client Aisyah Rahim 2026 06 15",
       "type": "concept",
       "updated": "",
-      "body": "# Aisyah Rahim \u2014 Coaching Client Profile\n\n**Source:** email\n**Source URI:** gmail://msg_19eca0a8dc4888c3\n**Ingested:** 2026-06-21T04:30:00Z\n**Provenance:** Zaim (via info@malohacoast.com self-forward), 2026-06-15\n\n## Profile\n\n- **Name:** Aisyah Rahim\n- **Role:** Senior Brand Manager at Unilever Malaysia\n- **Referral:** Referred by [[Liyana]] from the KSI workshop\n- **Status:** First session scheduled next Tuesday\n\n## Key Points from Intro Call\n\n- 8 years in FMCG brand management, feeling stagnant\n- Wants to pivot into tech but unsure where to start\n- Main blocker: \"I don't have a technical background\"\n- Has actually done more data-driven work than she realises \u2014 ran consumer analytics for 3 product launches\n- Salary anchor: RM 18k/month, worried about resetting to junior level\n\n## Zaim's Assessment\n\n\"Classic mid-career pivot case. The real problem isn't skills \u2014 it's confidence and narrative. She needs help reframing 'brand manager' as 'growth strategist who uses data.' Tech companies would kill for someone who can bridge consumer insights and product.\"\n\n## Plan for Session 1\n\nAudit her last 2 years of work through a tech lens. Find 3-5 specific examples where she already did \"product thinking\" without calling it that.\n\n[Source: email from Zaim via Maloha Coast, 2026-06-15]",
+      "body": "# Aisyah Rahim \u2014 Client Profile (Zaim)\n\n**Source:** Email\n**Source URI:** gmail://msg_19eca0a8dc4888c3\n**Ingested:** 2026-06-22T16:55:00Z\n**Provenance:** Zaim's note to shared inbox, 2026-06-15\n\nZaim here. Adding a quick profile on a new client.\n\nName: Aisyah Rahim\nRole: Senior Brand Manager at Unilever Malaysia\nContext: Referred by Liyana from the KSI workshop last month. First session next Tuesday.\n\nKey points from our intro call:\n- 8 years in FMCG brand management, feeling stagnant\n- Wants to pivot into tech but unsure where to start\n- Main blocker: \"I don't have a technical background\"\n- Has actually done more data-driven work than she realises \u2014 ran consumer analytics for 3 product launches, managed A/B testing on packaging redesigns\n\n[Source: Zaim's note to shared inbox, 2026-06-15]",
       "tags": [],
-      "links_out": [
-        {
-          "to": "people/liyana",
-          "type": "wikilink",
-          "text": "Liyana"
-        }
-      ],
+      "links_out": [],
       "backlinks": [
         {
           "from": "people/liyana",
@@ -2954,7 +2972,7 @@
           "text": "Aisyah Rahim"
         }
       ],
-      "outbound_count": 1,
+      "outbound_count": 0,
       "inbound_count": 1
     },
     {
@@ -4494,7 +4512,7 @@
       "title": "Zaim 15 Minute Gap Method 2026 06 14",
       "type": "concept",
       "updated": "",
-      "body": "# Zaim's 15-Minute Gap Method\n\n**Source:** email\n**Source URI:** gmail://msg_19eca04daacc7a09\n**Ingested:** 2026-06-21T04:30:00Z\n**Provenance:** Zaim (via info@malohacoast.com self-forward), 2026-06-14\n\nZaim's insight from using short gaps between KSI coaching sessions. Between KSI sessions, Zaim had 15-minute gaps and started using them to jot down one thing they noticed about each student \u2014 what they're stuck on, what lit them up. After a month, patterns emerged.\n\n## Three Student Buckets\n\n1. **Career pivoters** \u2014 stuck on \"what if I fail\" not \"what do I want\"\n2. **Fresh grads** \u2014 over-indexing on salary, under-indexing on growth trajectory\n3. **Mid-career** \u2014 all variations of \"is this it?\"\n\n## The 15-Minute Rule\n\nNever let a gap go empty. Even one sentence per student compounds.\n\n[Source: email from Zaim via Maloha Coast, 2026-06-14]",
+      "body": "# Zaim's 15-Minute Gap Method\n\n**Source:** Email\n**Source URI:** gmail://msg_19eca04daacc7a09\n**Ingested:** 2026-06-22T16:55:00Z\n**Provenance:** Zaim's note to shared inbox, 2026-06-14\n\nZaim here. Wanted to capture this before I forget.\n\nBetween KSI sessions I have these 15-minute gaps. Started using them to jot down one thing I noticed about each student \u2014 what they're stuck on, what lit them up. After a month of this, patterns emerged that I'd never have spotted otherwise.\n\nThree buckets emerged:\n\n1. **Career pivoters** \u2014 stuck on \"what if I fail\" not \"what do I want\"\n2. **Fresh grads** \u2014 over-indexing on salary, under-indexing on growth trajectory\n3. **Mid-career** \u2014 all variations of\n\n[Source: Zaim's note to shared inbox, 2026-06-14]",
       "tags": [],
       "links_out": [],
       "backlinks": [],
@@ -8178,18 +8196,13 @@
       ],
       "backlinks": [
         {
-          "from": "concepts/client-aisyah-rahim-2026-06-15",
-          "type": "wikilink",
-          "text": "Liyana"
-        },
-        {
           "from": "people/aisyah-rahim",
           "type": "wikilink",
           "text": "Liyana"
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 2
+      "inbound_count": 1
     },
     {
       "slug": "people/mara-cajar-robinson",
@@ -9793,11 +9806,6 @@
       "type": "wikilink"
     },
     {
-      "source": "concepts/client-aisyah-rahim-2026-06-15",
-      "target": "people/liyana",
-      "type": "wikilink"
-    },
-    {
       "source": "concepts/company-memory-os-ph1-prd-2026-06-09",
       "target": "concepts/sayf/maloha-coast-navigator-test-edition",
       "type": "wikilink"
@@ -10954,6 +10962,11 @@
     },
     {
       "source": "people/liyana",
+      "target": "concepts/client-aisyah-rahim-2026-06-15",
+      "type": "wikilink"
+    },
+    {
+      "source": "people/liyana",
       "target": "people/zaim-mohzani",
       "type": "wikilink"
     },
@@ -11140,13 +11153,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 65,
+    "brain_checks_score": 85,
     "category_scores": {
-      "brain": 95,
+      "brain": 85,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -11176,32 +11189,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -11213,19 +11204,20 @@
       },
       {
         "name": "extract_atoms_backlog",
-        "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "status": "warn",
+        "message": "20 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 0,
+          "backlog": 20,
           "pack_declares_phase": false,
+          "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
         "category": "brain"
       },
       {
         "name": "conversation_format_coverage",
-        "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "status": "warn",
+        "message": "1/9 conversation pages (11.1%) match NO built-in pattern. Breakdown: bold-name-no-time=8, _no_match=1. Investigate: gbrain conversation-parser scan <slug> | Enable LLM fallback (opt-in): gbrain config set conversation_parser.llm_fallback_enabled true",
         "category": "brain"
       },
       {
@@ -11249,7 +11241,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 275 pages",
         "category": "ops"
       },
       {
@@ -11285,7 +11277,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 610ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -11303,25 +11295,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 92%, timeline 64%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 75 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 275 pages; 34 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -11482,7 +11474,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 0/275 pages (0%) stale",
+        "details": {
+          "total": 275,
+          "stale": 0,
+          "pct": 0,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -11494,7 +11494,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -11506,7 +11506,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "180 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -11518,7 +11518,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "45.1% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -11560,7 +11560,7 @@
       {
         "name": "oauth_confidential_client_health",
         "status": "ok",
-        "message": "No OAuth clients registered",
+        "message": "4 OAuth client(s) registered; all auth shapes consistent",
         "category": "ops"
       },
       {
@@ -11621,13 +11621,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 93% \u00b1 2.9%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 65% \u00b1 5.5% (target 90%)",
         "category": "meta"
       },
       {
@@ -11645,7 +11645,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "10 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {

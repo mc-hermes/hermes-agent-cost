@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-22T17:00:45Z",
+  "updated_at": "2026-06-22T17:20:44Z",
   "summary": {
     "page_count": 25,
     "people_count": 4,
@@ -7,7 +7,7 @@
     "artifact_count": 0,
     "total_links": 7,
     "outbound_count": 22,
-    "inbound_count": 23,
+    "inbound_count": 22,
     "graph_coverage": "16.0% of pages have inbound links",
     "concept_count": 14,
     "meeting_count": 4,
@@ -384,18 +384,13 @@
       ],
       "backlinks": [
         {
-          "from": "concepts/client-aisyah-rahim-2026-06-15",
-          "type": "wikilink",
-          "text": "Liyana"
-        },
-        {
           "from": "people/aisyah-rahim",
           "type": "wikilink",
           "text": "Liyana"
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 2
+      "inbound_count": 1
     },
     {
       "slug": "people/sayf-codes",
@@ -681,7 +676,7 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-22T17:00:45Z",
+      "ts": "2026-06-22T17:20:44Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
