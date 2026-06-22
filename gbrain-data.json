@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-06-22T19:04:47Z",
+  "updated_at": "2026-06-22T19:30:08Z",
   "summary": {
     "score": "82",
     "score_label": "/100",
     "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
-    "page_count": 327,
+    "page_count": 330,
     "embed_coverage": "100% coverage, 0 missing",
-    "graph_coverage": "44.5% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
-    "entity_links": "Coverage 93% \u00b1 2.9%",
-    "concept_count": 116,
+    "graph_coverage": "43.3% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 91% \u00b1 3.4%",
+    "concept_count": 117,
     "meeting_count": 14,
     "person_count": 46,
     "company_count": 32,
-    "newsletter_count": 75,
+    "newsletter_count": 77,
     "video_count": 0,
     "article_count": 18,
     "bookmark_count": 23,
@@ -20,8 +20,8 @@
     "dataset_count": 1,
     "digest_count": 2,
     "total_links": 375,
-    "outbound_count": 471,
-    "inbound_count": 436,
+    "outbound_count": 469,
+    "inbound_count": 435,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -1874,15 +1874,9 @@
           "text": "newsletters/three-features-three-claudes-one-afternoon"
         }
       ],
-      "backlinks": [
-        {
-          "from": "newsletters/three-features-three-claudes-one-afternoon",
-          "type": "wikilink",
-          "text": "JS Mastery"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 1,
-      "inbound_count": 1
+      "inbound_count": 0
     },
     {
       "slug": "companies/ksi-strategic-institute",
@@ -3261,6 +3255,18 @@
       ],
       "outbound_count": 6,
       "inbound_count": 9
+    },
+    {
+      "slug": "concepts/dynamics-orchard-farm-mgmt-accounts-2025",
+      "title": "Dynamics Orchard Farm Mgmt Accounts 2025",
+      "type": "concept",
+      "updated": "",
+      "body": "# Dynamics Orchard Farm Sdn Bhd \u2014 Management Accounts FYE 2025\n\n**Source:** email\n**Source URI:** gmail://msg_19eafe1ebcc99c48\n**Ingested:** 2026-06-22T19:05:00Z\n**For:** sayf\n\n\n**Sayf's note:** I will start sending my company secretary requests for Gbrain to file into memory and postgres\n\n---\n\n**Subject:** Dynamics Orchard Farm Sdn Bhd - Preparation of Management Accounts FYE 2025\n**Date:** Wed, 10 Jun 2026\n**Forwarded from:** Sayf <sayfti@gmail.com>\n\n**Conversation:**\n\nSayf responded to Aisyah Humaira Wan Aziz (Maira) at Posh Corporate, providing bank statements via a shared Google Drive for the preparation of management accounts for FY ending 2025.\n\n**Key People:**\n- **Aisyah Humaira Wan Aziz (Maira)** \u2014 Senior Executive, Accounting at Posh Corporate (poshcorporate.com). Requested bank statements (Jul-Dec 2025) and supporting documents (Aug-Dec 2025).\n- **Yassif N. M.** \u2014 CC'd; should furnish supporting documents.\n- **Yaw Hog, Ng** \u2014 CC'd, at Posh Corporate.\n- **Audrey Loh** \u2014 CC'd, at Posh Corporate.\n\n**Documents Requested:**\n1. Bank statements (July 2025 \u2013 December 2025)\n2. Supporting documents (August 2025 \u2013 December 2025)\n\n**Sayf's Response:** Provided Google Drive link with bank statements. Yassif to handle supporting docs.\n\n**Google Drive:** https://drive.google.com/drive/folders/13lfy_i99qD5fWkk0czMjheiCz92WCDCO",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
     },
     {
       "slug": "concepts/dynamics-orchard-farm-mgmt-accounts-2026-06-10",
@@ -7292,6 +7298,18 @@
       "inbound_count": 0
     },
     {
+      "slug": "newsletters/skill-that-10x-claude-code-projects",
+      "title": "Skill That 10x Claude Code Projects",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# The Skill That 10x'd My Claude Code Projects\n\n**Source:** email\n**Source URI:** gmail://msg_19ea7ed35e42c6aa\n**Ingested:** 2026-06-22T19:05:00Z\n**For:** sayf\n\n\n---------- Forwarded message ---------\nFrom: Nate Herk <nate@aiautomationsociety.ai>\nDate: Sat, 6 Jun 2026 at 05:37\nSubject: The Skill That 10x'd My Claude Code Projects\nTo: sayfcodes@gmail.com <sayfcodes@gmail.com>\n\n\nSharper Claude context, Carson's first automation win, and Anthropic's\n$965B IPO filing\n                                   \n                                  \n                                  \n                                  \n                                  \n                        \n\n\nJune 05, 2026\nThe Skill That 10x'd My Claude Code Projects\n\nSharper Claude context, Carson's first automation win, and Anthropic's\n$965B IPO filing\nIn This Issue\n\n   - The single technique that makes every Claude project sound less like\n   everyone else and more like you\n   - Carson landed his first automation client with a free pilot \u2014 here's\n   the exact move\n   - Anthropic just filed for IPO at $965 billion \u2014 what it means if Claude\n   is your primary tool\n\n------------------------------\n\nNew Video:\nThe Skill That 10x'd My Claude Code Projects[image: The Skill That 10x'd My\nClaude Code Projects]\n\nIf your Claude outputs feel generic \u2014 technically correct but missing your\nvoice \u2014 the problem is not the model. Everyone using Claude Opus 4.8 starts\nfrom the same foundation. The difference between outputs that sound like\nyou and ones that sound like everyone else is context.\n\nThe Grill Me skill fixes that. Instead of a five-minute brain dump before\nyou start building, it interviews you until it actually understands how you\nthink. It asks one question at a time, checkpoints your answers to a\nmarkdown file in your project, and keeps going until there are no gaps. By\nthe end, you have reusable context your AI pulls from every time you touch\nthat skill or project.\n\n*The mistake most people make:* Starting with a brain dump and calling it\ngood enough. Five minutes of info-dumping gets your output quality to about\n70% on iteration one. The Grill Me approach gets you to 90% from the start\n\u2014 fewer revision cycles, faster time to a deliverable clients actually like.\n\n*How this helps you:* When Claude knows your voice, your decisions, and\nyour process, it stops generating generic output. Your projects feel like\nyours. Clients notice. You spend less time fixing what the AI got wrong.\nWatch and Discuss\n------------------------------\n\nWinning Is All We Do\nOff the sidelines \u2014 Carson landed his first automation client[image: Carson\nBates win]\n\n*What happened:* Carson built a lead automation for a local aesthetics\nclinic as a free pilot. The workflow routes contact data and handles\nfollow-ups automatically. He's waiting on Facebook credentials to go live,\nbut the clinic owner is already highly receptive. His plan: deliver the\npilot, then position for a paid monthly retainer.\n\n*The opportunity for you:* Local service businesses (clinics, salons,\nstudios) are some of the easiest first clients to land. They have real lead\nproblems, a low technology bar, and if you deliver, they talk to other\nbusiness owners. A free pilot with a clear upsell path is one of the\ncleanest ways to get your first paying automation client.\n\nStories like this happen every week inside AIS+. AIS Live (July 11-12) is\nwhere you see exactly how: practitioners walking through real projects on\nstage, from first outreach to signed invoice. Early bird GA tickets are $97\nthrough June 7. That price goes up after this weekend.\nGet Your Ticket\n------------------------------\n\nIn the News\nAnthropic filed for IPO at $965 billion\n\n*The news:* On June 1, Anthropic \u2014 the company behind Claude \u2014\nconfidentially submitted an S-1 to the SEC for a proposed initial public\noffering. Valuation: $965 billion, putting it ahead of OpenAI ($852 billion\nafter their last funding round). Anthropic joins SpaceX and OpenAI in what\nanalysts are already calling a race to go public \u2014 all three expected to\nlist this year.\n\n*How it affects automation:* When your primary AI tool's parent company\ngoes public, two things typically follow: more capital to build better\nmodels (good for you), and quarterly earnings pressure that tends to push\nenterprise-first roadmaps and price adjustments upward. This is not a\nreason to panic. It is a reason to build your skills and client base now,\nbefore the landscape shifts again. The practitioners who get in early\nalways have the advantage.\nactually paying for (July 11-12, 2026)\n\n*Who it's for:* You're building AI skills but haven't made the leap to\nincome yet. You want to see the full picture: what practitioners sell, what\nclients pay, and how the deals close.\n\n*How it helps:* AIS Live is a two-day event where real practitioners walk\nthrough real client engagements on stage. Day 1, you see the exact projects\nbeing sold right now and build one live. Day 2 covers exactly how to get\nclients, even if you're a beginner with no credibility yet. General\nAdmission starts at $97 (early bird ends June 7, then the price goes up).\nGet Your Ticket",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "newsletters/stripe-online-apac-on-demand",
       "title": "Stripe Online Apac On Demand",
       "type": "concept",
@@ -7324,20 +7342,9 @@
       "title": "Three Features Three Claudes One Afternoon",
       "type": "newsletter",
       "updated": "",
-      "body": "# Three Features. Three Claudes. One Afternoon.\n\n**Source:** email forward\n**Source URI:** gmail://msg_19eb960b3c2b3ec2\n**Ingested:** 2026-06-12T09:09:30Z\n**Provenance:** Forwarded by sayf on 2026-06-12\n\n---\n\nSayf's note: newsletter shared\n\n---\n\n**From:** [[Adrian (JS Mastery)]] | [[JS Mastery]]\n**Subject:** Three Features. Three Claudes. One Afternoon.\n**Date:** Thu, 11 Jun 2026\n\nFebruary 5th is in my diary. I'm looking at three terminal windows, all running Claude Code simultaneously, all working on the same project.\n\nOne is building a dark/light mode toggle. One is writing API endpoint tests. One is adding code quality tooling. None of them knows the others exist.\n\nI watched all three work at the same time and remember thinking, \"This is genuinely new.\" This isn't a faster way to do what I was already doing. This is a different thing entirely.\n\nHere's the setup. Git has a feature called worktrees, you to check out multiple branches of the same project into separate directories and work on them independently. Each directory gets its own Claude session, its own context window, its own isolated set of files to modify.\n\nWhat this solves is the thing that makes parallel AI development feel risky: two agents writing to the same file at the same time. With worktrees, that can't happen.\n\nThey're operating in completely separate environments.\n\nWhen all three were done, I committed each branch with a descriptive message. Claude wrote those too, which matters more than it sounds when you're about to merge three sets of changes, and then asked a fourth Claude session to pull everything together and resolve any conflicts.\n\nIt found one. A pyproject.toml that two branches had both modified. Resolved it in about thirty seconds.\n\nThe whole thing, three features built simultaneously, merged, tested, took an afternoon. Features that would have been sequential, each requiring their own setup, their own context, their own careful hand-holding through implementation.\n\nBut here's what actually stuck with me. It wasn't the speed. It was that I spent that afternoon thinking, about architecture, about what each feature needed to know, about how the pieces would fit together after the merge. Not implementing. Directing.\n\nThat's the shift I keep coming back to.\n\nHave you ever tried running more than one AI session in parallel on the same project? Did it work, or did it create more problems than it solved?\n\nTalk soon,\n[[Adrian (JS Mastery)]]\n[[JS Mastery]]",
+      "body": "# Three Features. Three Claudes. One Afternoon.\n\n**Source:** email\n**Source URI:** gmail://msg_19eb960b3c2b3ec2\n**Ingested:** 2026-06-22T19:05:00Z\n**For:** sayf\n\n\nnewsletter shared\n\n---------- Forwarded message ---------\nFrom: Adrian | JS Mastery <contact@jsmastery.pro>\nDate: Thu, 11 Jun 2026 at 23:58\nSubject: Three Features. Three Claudes. One Afternoon.\nTo: <sayfcodes@gmail.com>\n\n\nI ran three agents in parallel...Then merged everything.\n                 \n                 \n                \n                 \n                \n                 \n                \n                 \n                \n                 \n    \nFebruary 5th is in my diary. I'm looking at three terminal windows, all\nrunning Claude Code simultaneously, all working on the same project.\n\nOne is building a dark/light mode toggle. One is writing API endpoint\ntests. One is adding code quality tooling. None of them knows the others\nexist.\n\nI watched all three work at the same time and remember thinking, \"This is\ngenuinely new.\" This isn't a faster way to do what I was already doing.\nThis is a different thing entirely.\n\nHere's the setup. Git has a feature called worktrees, you to check out\nmultiple branches of the same project into separate directories and work on\nthem independently. Each directory gets its own Claude session, its own\ncontext window, its own isolated set of files to modify.\n\nWhat this solves is the thing that makes parallel AI development feel\nrisky: two agents writing to the same file at the same time. With\nworktrees, that can't happen.\n\nThey're operating in completely separate environments.\n\nWhen all three were done, I committed each branch with a descriptive\nmessage. Claude wrote those too, which matters more than it sounds when\nyou're about to merge three sets of changes, and then asked a fourth Claude\nsession to pull everything together and resolve any conflicts.\n\nIt found one. A pyproject.toml that two branches had both modified.\nResolved it in about thirty seconds.\n\nThe whole thing, three features built simultaneously, merged, tested, took\nan afternoon. Features that would have been sequential, each requiring\ntheir own setup, their own context, their own careful hand-holding through\nimplementation.\n\nBut here's what actually stuck with me. It wasn't the speed. It was that I\nspent that afternoon thinking, about architecture, about what each feature\nneeded to know, about how the pieces would fit together after the merge.\nNot implementing. Directing.\n\nThat's the shift I keep coming back to.\n\nHave you ever tried running more than one AI session in parallel on the\nsame project? Did it work, or did it create more problems than it solved?\n\nTalk soon,\nAdrian\nJSM\n\nP.S. Next email, I want to talk about something I noticed when I spoke to a\nbusiness owner with 30 developers on his team.\n\nAlmost none of them were using AI seriously. What he said next is the\nreason this course needs an enterprise angle, and why the timing right now\nis unlike anything we've seen before.\nYou are receiving this email because you opted in to receive email from the\nlist AI course waitlist from JS Mastery\nJS Mastery, Mladenici 14, Viskovo, 51216, Rijeka, Croatia",
       "tags": [],
-      "links_out": [
-        {
-          "to": "Adrian (JS Mastery)",
-          "type": "wikilink",
-          "text": "Adrian (JS Mastery)"
-        },
-        {
-          "to": "companies/js-mastery",
-          "type": "wikilink",
-          "text": "JS Mastery"
-        }
-      ],
+      "links_out": [],
       "backlinks": [
         {
           "from": "companies/js-mastery",
@@ -7355,7 +7362,7 @@
           "text": "newsletters/three-features-three-claudes-one-afternoon"
         }
       ],
-      "outbound_count": 2,
+      "outbound_count": 0,
       "inbound_count": 3
     },
     {
@@ -7364,6 +7371,20 @@
       "type": "newsletter",
       "updated": "",
       "body": "# Why your 2026 career goals are already dead\n\n> **Zaim's note:** From: Zaim Mohzani <zaim.mohzani90@gmail.com>\nTo: info+zaim@malohacoast.com\nSubject: Fwd: Why your 2026 career goals are already dead\nDate: Tue, 16 Jun 2026 11:26:00 +0800\nDelivered-To: info+zaim@malohacoast.com\n\nSincerely,\n\n*Zaim Mohzani*\n\n---\n\nAnd what to do about it? \n\nIt's June. How's that career goal from January going?\n\nIf you're being honest, probably: forgotten by March, barely remembered\n(and feeling guilty) in June and quietly dropped by...the end of the year.\n\nIt's a timeframe problem, not a discipline problem.\nThe annual goal trap\n\nA year is too long to create urgency and too vague to act on.\n\n\"Get a new job this year\" feels fine in January. There's time. So nothing\nhappens.\n\nBy June, the goal is still technically alive, but you haven't done anything\nthat moves it forward. By December, you're setting the same goal again for\nnext year.\n\nI went through this myself but with weight, not career. In January 2025, I\nset an annual goal: lose 6kg by December. Standard SMART goal. Looked fine\non paper.\n\nThen I came across Brian Moran and Michael Lennington's book \"The 12 Week\nYear,\" which argues most people don't actually operate in years. They\noperate in the last few weeks before a deadline, however long that deadline\nis. So the fix is to shrink the deadline.\n\nBtw, this book is available on Shopee!\n\nI rewrote the goal: lose 6kg in 90 days, by 31 March.\n\nI hit it!!\n\nThe best part was that I never had to set that goal again. The habits I\nbuilt in those 90 days kept running on their own for the rest of the year.\nWhy this works for your career too\n\nThe same applies to a job search, a promotion case or a pivot.\n\n\"Get promoted this year\" doesn't tell you what to do on Monday.\n\n\"By 30 September, I will have had 3 conversations with people in my target\ndepartment, applied to 5 internal roles, and presented one project to\nleadership\" tells you exactly what to do on Monday.\n\nOne of these is a wish. The other is a plan.\n\nI've worked with clients on exactly this. The ones who set a 90-day goal\nlike \"land 3 offers from MNCs by end of Q3\" with weekly actions attached,\nmostly hit it or get close. The ones with \"find a better job this year\"\nmostly don't, because there's no Monday task attached to it.\nHow to set yours\n\nPick ONE career goal for this quarter. Just one.\n\nFollow this format and write down:\n\n   - *My 90-day career goal is...*\n   - *This matters to me because...*\n   - *To complete this, I commit that by 30 September 2026, I will have...*\n   (make this checkable. \"3 offers\" is checkable. \"More clarity\" is not.)\n   - *To make sure I complete it, I'm going to...* (weekly actions, not the\n   outcome)\n\nYour homework this weekend\n\nWrite it down. One goal. One sentence you can check off or not, no grey\narea.\n\nThen build it into your week, not your year.\n------------------------------\n\nP.S. I'm running a free workshop exactly on setting this 90-day goal for Q3\n2026. If you're interested to join, it's happening early next month in\nJune. For more info or to sign up, head over to\nhttps://t.ly/getclearoncareer6\n<https://preview.kit-mail3.com/click/dpheh0hzhmh4/aHR0cHM6Ly90Lmx5L2dldGNsZWFyb25jYXJlZXI2>\n\nprofile <https://preview.kit-mail3.com/preferences> | I Write on LinkedIn\nEvery Day - Follow Me For Career, AI and Productivity Insights\n<https://preview.kit-mail3.com/click/dpheh0hzhmh4/aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2luL3phaW1tb2h6YW5pLw==>\n\nNation Building School - NBS Ventures - 202403343346 (003683654-H)\n\n<div dir=\"ltr\"><div><br clear=\"all\"></div><div><div dir=\"ltr\" class=\"gmail_signature\" data-smartmail=\"gmail_signature\"><div dir=\"ltr\"><font face=\"arial, helvetica, sans-serif\" size=\"2\"><br>Sincerely,<br><br><b>Zaim Mohzani</b></font><br></div></div></div><br><br><div class=\"gmail_quote gmail_quote_container\"><div dir=\"ltr\" class=\"gmail_attr\">---------- Forwarded message ---------<br>From: <strong class=\"gmail_sendername\" dir=\"auto\">Zaim Mohzani</strong> <span dir=\"auto\">&lt;<a href=\"mailto:zaim@nationbuildingschool.com\">zaim@nationbuildingschool.com</a>&gt;</span><br>\n\n<div style=\"margin:0;padding:0\">\n<div id=\"m_-3681858832185568095preview-text\">\n          <span style=\"display:none;max-height:0;overflow:hidden\">\n            And what to do about it?\n          </span>\n\n          <span style=\"display:none;max-height:0;overflow:hidden\">\n            \n          </span>\n        </div>\n<div style=\"background-color:#efeff3\"><table role=\"presentation\" cellpadding=\"0\" cellspacing=\"0\" class=\"m_-3681858832185568095email\" style=\"border-collapse:separate;background-color:#efeff3;width:100%\" bgcolor=\"#efeff3\"><tbody><tr>\n<td style=\"vertical-align:top\"><div style=\"margin:0 auto;padding:30px 0;padding-left:20px;padding-right:20px;max-width:100%;padding-top:30px;padding-left:20px;padding-bottom:30px;padding-right:20px;margin:0 auto;max-width:100%\">\n<div style=\"background-color:#ffffff;border-radius:4px;overflow:hidden;max-width:600;margin:0px auto\"><table bgcolor=\"#ffffff\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"border-collapse:separate;table-layout:fixed\"><tbody><tr><td style=\"vertical-align:top;padding:20px\"><div style=\"background-color:#ffffff\">\n<div><table cellpadding=\"0\" cellspacing=\"0\" style=\"border-collapse:separate;width:100%;margin:0 auto\"><tbody><tr><td style=\"vertical-align:top\">\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">It&#39;s June. How&#39;s that career goal from January going?</p>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">If you&#39;re being honest, probably: forgotten by March, barely remembered (and feeling guilty) in June and quietly dropped by...the end of the year. </p>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">It&#39;s a timeframe problem, not a discipline problem.</p>\n<h3 style=\"font-weight:bold;font-style:normal;font-size:1em;margin:0;font-size:1.17em;margin:1em 0;font-family:-apple-system,BlinkMacSystemFont,&#39;Segoe UI&#39;,Roboto,Oxygen-Sans,Ubuntu,Cantarell,&#39;Helvetica Neue&#39;,sans-serif;color:#000000;line-height:1.5\">The annual goal trap</h3>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">A year is too long to create urgency and too vague to act on.</p>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">&quot;Get a new job this year&quot; feels fine in January. There&#39;s time. So nothing happens.</p>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">By June, the goal is still technically alive, but you haven&#39;t done anything that moves it forward. By December, you&#39;re setting the same goal again for next year.</p>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">I went through this myself but with weight, not career. In January 2025, I set an annual goal: lose 6kg by December. Standard SMART goal. Looked fine on paper.</p>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">Then I came across Brian Moran and Michael Lennington&#39;s book &quot;The 12 Week Year,&quot; which argues most people don&#39;t actually operate in years. They operate in the last few weeks before a deadline, however long that deadline is. So the fix is to shrink the deadline.</p>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\"></p>\n<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" style=\"border-collapse:separate;text-align:center;table-layout:fixed;float:none\"><tbody><tr><td align=\"center\" style=\"vertical-align:top\"><div style=\"display:block\"></div>\nBtw, this book is available on Shopee!</td></tr></tbody></table>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">I rewrote the goal: lose 6kg in 90 days, by 31 March.</p>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">I hit it!!</p>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">The best part was that I never had to set that goal again. The habits I built in those 90 days kept running on their own for the rest of the year.</p>\n<h3 style=\"font-weight:bold;font-style:normal;font-size:1em;margin:0;font-size:1.17em;margin:1em 0;font-family:-apple-system,BlinkMacSystemFont,&#39;Segoe UI&#39;,Roboto,Oxygen-Sans,Ubuntu,Cantarell,&#39;Helvetica Neue&#39;,sans-serif;color:#000000;line-height:1.5\">Why this works for your career too</h3>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">The same applies to a job search, a promotion case or a pivot.</p>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">&quot;Get promoted this year&quot; doesn&#39;t tell you what to do on Monday.</p>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">&quot;By 30 September, I will have had 3 conversations with people in my target department, applied to 5 internal roles, and presented one project to leadership&quot; tells you exactly what to do on Monday.</p>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">One of these is a wish. The other is a plan.</p>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">I&#39;ve worked with clients on exactly this. The ones who set a 90-day goal like &quot;land 3 offers from MNCs by end of Q3&quot; with weekly actions attached, mostly hit it or get close. The ones with &quot;find a better job this year&quot; mostly don&#39;t, because there&#39;s no Monday task attached to it.</p>\n<h3 style=\"font-weight:bold;font-style:normal;font-size:1em;margin:0;font-size:1.17em;margin:1em 0;font-family:-apple-system,BlinkMacSystemFont,&#39;Segoe UI&#39;,Roboto,Oxygen-Sans,Ubuntu,Cantarell,&#39;Helvetica Neue&#39;,sans-serif;color:#000000;line-height:1.5\">How to set yours</h3>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">Pick ONE career goal for this quarter. Just one.</p>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">Follow this format and write down:</p>\n<ul style=\"margin:1em 0;margin-left:1em;padding:0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5;list-style-position:outside!important\">\n<li style=\"padding:0 0 0 1em;margin:0;margin-left:1em\"><span><em>My 90-day career goal is...</em></span></li>\n<li style=\"padding:0 0 0 1em;margin:0;margin-left:1em\"><span><em>This matters to me because...</em></span></li>\n<li style=\"padding:0 0 0 1em;margin:0;margin-left:1em\"><span><em>To complete this, I commit that by 30 September 2026, I will have...</em> (make this checkable. &quot;3 offers&quot; is checkable. &quot;More clarity&quot; is not.)</span></li>\n<li style=\"padding:0 0 0 1em;margin:0;margin-left:1em\"><span><em>To make sure I complete it, I&#39;m going to...</em> (weekly actions, not the outcome)</span></li>\n</ul>\n<h3 style=\"font-weight:bold;font-style:normal;font-size:1em;margin:0;font-size:1.17em;margin:1em 0;font-family:-apple-system,BlinkMacSystemFont,&#39;Segoe UI&#39;,Roboto,Oxygen-Sans,Ubuntu,Cantarell,&#39;Helvetica Neue&#39;,sans-serif;color:#000000;line-height:1.5\">Your homework this weekend</h3>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">Write it down. One goal. One sentence you can check off or not, no grey area.</p>\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">Then build it into your week, not your year.</p>\n<hr style=\"margin-top:48px;margin-bottom:48px\">\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5\">P.S. I&#39;m running a free workshop exactly on setting this 90-day goal for Q3 2026. If you&#39;re interested to join, it&#39;s happening early next month in June. For more info or to sign up, head over to <a href=\"https://preview.kit-mail3.com/click/dpheh0hzhmh4/aHR0cHM6Ly90Lmx5L2dldGNsZWFyb25jYXJlZXI2\" class=\"m_-3681858832185568095ck-link\" rel=\"noopener noreferrer\" style=\"color:#0875c1\" target=\"_blank\">https://t.ly/getclearoncareer6</a></p>\n</td></tr></tbody></table></div>\n<div style=\"border-top:1px dotted #888;padding:20px;font-family:Helvetica,Arial,sans-serif;color:#aaa;font-size:12px\"><table cellpadding=\"0\" cellspacing=\"0\" style=\"border-collapse:separate;width:100%;margin:0 auto\"><tbody><tr><td style=\"vertical-align:top\">\n<p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5;text-align:center\"><a href=\"https://preview.kit-mail3.com/unsubscribe\" class=\"m_-3681858832185568095ck-link\" rel=\"noopener noreferrer\" style=\"color:#0875c1\" target=\"_blank\"><p style=\"margin:1em 0;font-size:18px;line-height:1.5em;font-family:Georgia,Times,&#39;Times New Roman&#39;,serif;color:#3d3d3d;font-size:16px;line-height:1.5;text-align:center\">Nation Building School - NBS Ventures - 202403343346 (003683654-H)</p>\n</td></tr></tbody></table></div>\n</div></td></tr></tbody></table></div>\n\n</div></td>\n<td style=\"vertical-align:top\"></td>\n</tr></tbody></table></div>\n\n</div>\n\n</div></div></div>",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "newsletters/why-your-2026-career-goals-are-dead",
+      "title": "Why Your 2026 Career Goals Are Dead",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# Why Your 2026 Career Goals Are Already Dead\n\n**Source:** email\n**Source URI:** gmail://msg_19ece778ab23e039\n**Ingested:** 2026-06-22T19:05:00Z\n**For:** zaim\n\n\nSincerely,\n\n*Zaim Mohzani*\n\n\n---------- Forwarded message ---------\nFrom: Zaim Mohzani <zaim@nationbuildingschool.com>\nDate: Fri, Jun 12, 2026 at 4:46\u202fPM\nSubject: Why your 2026 career goals are already dead\nTo: <zaim.mohzani90@gmail.com>\n\n\nAnd what to do about it? \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIt's June. How's that career goal from January going?\n\nIf you're being honest, probably: forgotten by March, barely remembered\n(and feeling guilty) in June and quietly dropped by...the end of the year.\n\nIt's a timeframe problem, not a discipline problem.\nThe annual goal trap\n\nA year is too long to create urgency and too vague to act on.\n\n\"Get a new job this year\" feels fine in January. There's time. So nothing\nhappens.\n\nBy June, the goal is still technically alive, but you haven't done anything\nthat moves it forward. By December, you're setting the same goal again for\nnext year.\n\nI went through this myself but with weight, not career. In January 2025, I\nset an annual goal: lose 6kg by December. Standard SMART goal. Looked fine\non paper.\n\nThen I came across Brian Moran and Michael Lennington's book \"The 12 Week\nYear,\" which argues most people don't actually operate in years. They\noperate in the last few weeks before a deadline, however long that deadline\nis. So the fix is to shrink the deadline.\n\nBtw, this book is available on Shopee!\n\nI rewrote the goal: lose 6kg in 90 days, by 31 March.\n\nI hit it!!\n\nThe best part was that I never had to set that goal again. The habits I\nbuilt in those 90 days kept running on their own for the rest of the year.\nWhy this works for your career too\n\nThe same applies to a job search, a promotion case or a pivot.\n\n\"Get promoted this year\" doesn't tell you what to do on Monday.\n\n\"By 30 September, I will have had 3 conversations with people in my target\ndepartment, applied to 5 internal roles, and presented one project to\nleadership\" tells you exactly what to do on Monday.\n\nOne of these is a wish. The other is a plan.\n\nI've worked with clients on exactly this. The ones who set a 90-day goal\nlike \"land 3 offers from MNCs by end of Q3\" with weekly actions attached,\nmostly hit it or get close. The ones with \"find a better job this year\"\nmostly don't, because there's no Monday task attached to it.\nHow to set yours\n\nPick ONE career goal for this quarter. Just one.\n\nFollow this format and write down:\n\n   - *My 90-day career goal is...*\n   - *This matters to me because...*\n   - *To complete this, I commit that by 30 September 2026, I will have...*\n   (make this checkable. \"3 offers\" is checkable. \"More clarity\" is not.)\n   - *To make sure I complete it, I'm going to...* (weekly actions, not the\n   outcome)\n\nYour homework this weekend\n\nWrite it down. One goal. One sentence you can check off or not, no grey\narea.\n\nThen build it into your week, not your year.\n------------------------------\n\nP.S. I'm running a free workshop exactly on setting this 90-day goal for Q3\n2026. If you're interested to join, it's happening early next month in\nJune. For more info or to sign up, head over to\nhttps://t.ly/getclearoncareer6\n<https://preview.kit-mail3.com/click/dpheh0hzhmh4/aHR0cHM6Ly90Lmx5L2dldGNsZWFyb25jYXJlZXI2>\n\nprofile <https://preview.kit-mail3.com/preferences> | I Write on LinkedIn\nEvery Day - Follow Me For Career, AI and Productivity Insights\n<https://preview.kit-mail3.com/click/dpheh0hzhmh4/aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2luL3phaW1tb2h6YW5pLw==>\n\nNation Building School - NBS Ventures - 202403343346 (003683654-H)",
       "tags": [
         "zaim"
       ],
@@ -11346,7 +11367,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 281 pages",
+        "message": "Connected, 284 pages",
         "category": "ops"
       },
       {
@@ -11382,7 +11403,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 478ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 516ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -11400,7 +11421,7 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 92%, timeline 64%",
+        "message": "Entity link coverage 89%, timeline 67%",
         "category": "brain"
       },
       {
@@ -11418,7 +11439,7 @@
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 281 pages; 35 external link(s) (no bare tweets).",
+        "message": "Sampled 284 pages; 35 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -11579,9 +11600,9 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction current: 0/281 pages (0%) stale",
+        "message": "Extraction current: 0/284 pages (0%) stale",
         "details": {
-          "total": 281,
+          "total": 284,
           "stale": 0,
           "pct": 0,
           "warn_pct": 20,
@@ -11611,7 +11632,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "184 reranker failure(s) in last 7 days (below threshold)",
+        "message": "192 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -11623,7 +11644,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "44.5% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "43.3% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -11726,13 +11747,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 93% \u00b1 2.9%",
+        "message": "Coverage 91% \u00b1 3.4%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
         "status": "warn",
-        "message": "Coverage 65% \u00b1 5.5% (target 90%)",
+        "message": "Coverage 68% \u00b1 5.4% (target 90%)",
         "category": "meta"
       },
       {
