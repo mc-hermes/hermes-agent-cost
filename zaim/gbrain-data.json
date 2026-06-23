@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-23T20:01:01Z",
+  "updated_at": "2026-06-23T20:10:33Z",
   "summary": {
-    "page_count": 35,
+    "page_count": 36,
     "people_count": 4,
     "company_count": 1,
     "artifact_count": 0,
     "total_links": 14,
     "outbound_count": 28,
     "inbound_count": 27,
-    "graph_coverage": "22.9% of pages have inbound links",
-    "concept_count": 22,
+    "graph_coverage": "22.2% of pages have inbound links",
+    "concept_count": 23,
     "meeting_count": 4,
     "person_count": 4,
     "newsletter_count": 3,
@@ -108,7 +108,7 @@
       "title": "Aisyah Rahim Client Profile 2026 06 15",
       "type": "concept",
       "updated": "",
-      "body": "# Aisyah Rahim \u2014 Client Profile\n\n**Source:** email from Zaim Mohzani re: Coaching client profile \u2014 Aisyah Rahim\n**Source URI:** gmail://msg_19eca0a8dc4888c3\n**Ingested:** 2026-06-24T00:00:00Z\n**Provenance:** Self-forward from Zaim to info+zaim@malohacoast.com on 2026-06-15\n\n## Role\n\nSenior Brand Manager at Unilever Malaysia\n\n## Context\n\nReferred by Liyana from the KSI workshop. First session scheduled for next Tuesday.\n\n## Key Points from Intro Call\n\n- 8 years in FMCG brand management, feeling stagnant\n- Wants to pivot into tech but unsure where to start\n- Main blocker: \"I don't have a technical background\"\n- Has actually done more data-driven work than she realises \u2014 ran consumer analytics for 3 product launches\n- Salary anchor: RM 18k/month, worried about resetting to junior level\n\n## Zaim's Assessment\n\nClassic mid-career pivot case. The real problem isn't skills \u2014 it's confidence and narrative. She needs help reframing \"brand manager\" as \"growth strategist who uses data.\" Tech companies would kill for someone who can bridge consumer insights and product.\n\n## Plan for Session 1\n\nAudit her last 2 years of work through a tech lens. Find 3-5 specific examples where she already did \"product thinking\" without calling it that.",
+      "body": "# Aisyah Rahim - Client Profile (Brand Manager at Unilever)\n\nZaim here. Adding a quick profile on a new client.\n\nName: Aisyah Rahim\nRole: Senior Brand Manager at Unilever Malaysia\nContext: Referred by Liyana from the KSI workshop last month. First session next Tuesday.\n\nKey points from our intro call:\n- 8 years in FMCG brand management, feeling stagnant\n- Wants to pivot into tech but unsure where to start\n- Main blocker: 'I don't have a technical background'\n- Has actually done more data-driven work than she realises \u2014 ran consumer analytics for 3 product launches\n- Salary anchor: RM 18k/month, worried about resetting to junior level\n\nMy read: Classic mid-career pivot case. The real problem isn't skills \u2014 it's confidence and narrative. She needs help reframing 'brand manager' as 'growth strategist who uses data.' Tech companies would kill for someone who can bridge consumer insights and product.\n\nPlan for session 1: Audit her last 2 years of work through a tech lens. Find 3-5 specific examples where she already did 'product thinking' without calling it that.\n\n\u2014 Zaim",
       "tags": [
         "zaim"
       ],
@@ -302,6 +302,20 @@
       "tags": [
         "career-coaching",
         "newsletter",
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "concepts/zaim-ksi-15-minute-rule-2026-06-14",
+      "title": "Zaim Ksi 15 Minute Rule 2026 06 14",
+      "type": "concept",
+      "updated": "",
+      "body": "# Zaim's KSI 15-Minute Rule - Student Observation Patterns\n\nZaim here. Wanted to capture this before I forget.\n\nBetween KSI sessions I have these 15-minute gaps. Started using them to jot down one thing I noticed about each student \u2014 what they're stuck on, what lit them up. After a month of this, patterns emerged that I'd never have spotted otherwise.\n\nThree buckets emerged:\n1. Career pivoters \u2014 stuck on 'what if I fail' not 'what do I want'\n2. Fresh grads \u2014 over-indexing on salary, under-indexing on growth trajectory  \n3. Mid-career \u2014 all variations of 'is this it?'\n\nThe 15-minute rule: never let a gap go empty. Even one sentence per student compounds.\n\n\u2014 Zaim",
+      "tags": [
         "zaim"
       ],
       "links_out": [],
@@ -915,11 +929,11 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-23T20:01:01Z",
+      "ts": "2026-06-23T20:10:33Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
-      "detail": "Dashboard refreshed \u2014 35 pages, 14 links",
+      "detail": "Dashboard refreshed \u2014 36 pages, 14 links",
       "level": "info"
     },
     {
@@ -976,6 +990,14 @@
       "stage": "updated",
       "slug": "concepts/zaim-15-minute-gap-method-2026-06-15",
       "detail": "Zaim 15 Minute Gap Method 2026 06 15",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-23T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "concepts/zaim-ksi-15-minute-rule-2026-06-14",
+      "detail": "Zaim Ksi 15 Minute Rule 2026 06 14",
       "level": "info"
     },
     {
