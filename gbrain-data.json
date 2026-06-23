@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-06-23T02:00:43Z",
+  "updated_at": "2026-06-23T02:03:30Z",
   "summary": {
-    "score": "92",
+    "score": "82",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 336,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "41.1% of pages have inbound links",
-    "entity_links": "Coverage \u2014 46 people, 33 companies indexed",
+    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
+    "page_count": 337,
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "43.8% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 92% \u00b1 3.1%",
     "concept_count": 119,
     "meeting_count": 14,
     "person_count": 46,
     "company_count": 33,
-    "newsletter_count": 80,
+    "newsletter_count": 81,
     "video_count": 0,
     "article_count": 18,
     "bookmark_count": 23,
@@ -20,13 +20,25 @@
     "dataset_count": 1,
     "digest_count": 2,
     "total_links": 392,
-    "outbound_count": 490,
-    "inbound_count": 455,
+    "outbound_count": 489,
+    "inbound_count": 454,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
+    "score_components": {
+      "score": "82/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "3/15",
+      "orphans": "9/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 67,
+    "checks_warned": 6,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -2632,17 +2644,11 @@
       "title": "15 Minute Gap Method 2026 06 14",
       "type": "concept",
       "updated": "",
-      "body": "# Coaching Insight \u2014 The 15-Minute Gap Method\n\n**Source:** email from Zaim, 2026-06-14\n**Source URI:** gmail://msg_19eca04daacc7a09\n**Ingested:** 2026-06-23T00:00:00Z\n**Provenance:** Self-forward by Zaim via +zaim alias\n\n## Summary\n\nZaim discovered a pattern during his [[concepts/ksi-workshop|KSI]] coaching sessions: using 15-minute gaps between sessions to jot down one observation per student. After a month, clear student archetypes emerged.\n\n## The 15-Minute Rule\n\n\"Never let a gap go empty. Even one sentence per student compounds.\"\n\n## Three Student Archetypes\n\n1. **Career pivoters** \u2014 stuck on \"what if I fail\" not \"what do I want\"\n2. **Fresh grads** \u2014 over-indexing on salary, under-indexing on growth trajectory\n3. **Mid-career** \u2014 all variations of \"is this it?\"\n\n## Key Insight\n\nThe method is a practice in observational compounding \u2014 small, consistent notes across time reveal patterns invisible to ad-hoc reflection. Applicable beyond coaching (management, product research, team dynamics).",
+      "body": "# The 15-Minute Gap Method\n\n**Source:** Zaim's self-forward, 2026-06-14\n**Source URI:** gmail://msg_19eca04daacc7a09\n**Ingested:** 2026-06-23T00:00:00Z\n**Provenance:** Self-forwarded by Zaim to info+zaim@malohacoast.com\n\nZaim's coaching practice insight: using 15-minute gaps between KSI sessions to observe and document one thing about each student.\n\n## The Practice\n\nBetween KSI sessions, Zaim has 15-minute gaps. Started using them to jot down one thing he noticed about each student \u2014 what they're stuck on, what lit them up. After a month, patterns emerged that would never have been caught otherwise.\n\n## Three Student Buckets\n\n1. **Career pivoters** \u2014 stuck on \"what if I fail\" not \"what do I want\"\n2. **Fresh grads** \u2014 over-indexing on salary, under-indexing on growth trajectory\n3. **Mid-career** \u2014 all variations of \"is this it?\"\n\n## The 15-Minute Rule\n\nNever let a gap go empty. Even one sentence per student compounds.",
       "tags": [
         "zaim"
       ],
-      "links_out": [
-        {
-          "to": "concepts/ksi-workshop",
-          "type": "wikilink",
-          "text": "concepts/ksi-workshop|KSI"
-        }
-      ],
+      "links_out": [],
       "backlinks": [
         {
           "from": "concepts/ksi-workshop",
@@ -2650,7 +2656,7 @@
           "text": "concepts/15-minute-gap-method-2026-06-14"
         }
       ],
-      "outbound_count": 1,
+      "outbound_count": 0,
       "inbound_count": 1
     },
     {
@@ -3109,7 +3115,7 @@
       "title": "Coaching Client Aisyah Rahim 2026 06 15",
       "type": "concept",
       "updated": "",
-      "body": "# Coaching Client Profile \u2014 Aisyah Rahim\n\n**Source:** email from Zaim Mohzani re: Coaching client profile, 2026-06-15\n**Source URI:** gmail://msg_19eca0a8dc4888c3\n**Ingested:** 2026-06-23T02:00:00Z\n**Provenance:** Self-forward from info+zaim@malohacoast.com\n\n## Client Profile\n\n- **Name:** Aisyah Rahim\n- **Role:** Senior Brand Manager at Unilever Malaysia\n- **Referred by:** Liyana (KSI workshop)\n- **First session:** Next Tuesday from intro call\n\n## Key Points from Intro Call\n\n- 8 years in FMCG brand management, feeling stagnant\n- Wants to pivot into tech but unsure where to start\n- Main blocker: \"I don't have a technical background\"\n- Has actually done more data-driven work than she realises \u2014 ran consumer analytics for 3 product launches\n- Salary anchor: RM 18k/month, worried about resetting to junior level\n\n## Zaim's Read\n\nClassic mid-career pivot case. The real problem isn't skills \u2014 it's confidence and narrative. She needs help reframing \"brand manager\" as \"growth strategist who uses data.\" Tech companies would kill for someone who can bridge consumer insights and product.\n\n## Plan for Session 1\n\nAudit her last 2 years of work through a tech lens. Find 3-5 specific examples where she already did \"product thinking\" without calling it that.",
+      "body": "# Coaching Client Profile \u2014 Aisyah Rahim\n\n**Source:** Zaim's self-forward, 2026-06-15\n**Source URI:** gmail://msg_19eca0a8dc4888c3\n**Ingested:** 2026-06-23T00:00:00Z\n**Provenance:** Self-forwarded by Zaim to info+zaim@malohacoast.com\n\nZaim's client onboarding notes for a new coaching engagement.\n\n## Client Profile\n\n- **Name:** Aisyah Rahim\n- **Role:** Senior Brand Manager at Unilever Malaysia\n- **Referral:** Liyana from the KSI workshop (last month)\n- **First session:** Next Tuesday\n\n## Background\n\n- 8 years in FMCG brand management, feeling stagnant\n- Wants to pivot into tech but unsure where to start\n- Main blocker: \"I don't have a technical background\"\n- Actually done more data-driven work than she realises \u2014 ran consumer analytics for 3 product launches\n- Salary anchor: RM 18k/month, worried about resetting to junior level\n\n## Zaim's Assessment\n\nClassic mid-career pivot case. The real problem isn't skills \u2014 it's confidence and narrative. Needs help reframing \"brand manager\" as \"growth strategist who uses data.\" Tech companies would value someone who can bridge consumer insights and product.\n\n## Session 1 Plan\n\nAudit her last 2 years of work through a tech lens. Find 3-5 specific examples where she already did \"product thinking\" without calling it that.",
       "tags": [
         "zaim"
       ],
@@ -3882,18 +3888,13 @@
       ],
       "backlinks": [
         {
-          "from": "concepts/15-minute-gap-method-2026-06-14",
-          "type": "wikilink",
-          "text": "concepts/ksi-workshop|KSI"
-        },
-        {
           "from": "concepts/aisyah-rahim-client-profile-2026-06-15",
           "type": "wikilink",
           "text": "concepts/ksi-workshop|KSI workshop"
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 2
+      "inbound_count": 1
     },
     {
       "slug": "concepts/liquid-cooling",
@@ -6562,6 +6563,20 @@
       ],
       "backlinks": [],
       "outbound_count": 3,
+      "inbound_count": 0
+    },
+    {
+      "slug": "newsletters/humanlayer-launch-2026-06-18",
+      "title": "Humanlayer Launch 2026 06 18",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# HumanLayer // We're live \u2014 come build with us\n\n**Source:** email from dex at humanlayer re: HumanLayer launch, 2026-06-18\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-23T00:00:00Z\n**Provenance:** Forwarded by sayf on 2026-06-19\n\nHumanLayer has opened up to everyone. An Agentic IDE, collaboration platform, and building blocks for software factories \u2014 where engineering teams design complex systems with AI agents before generating code.\n\n## Key Points\n\n- **Core idea:** Don't outsource the thinking. Design reviews have enormous leverage \u2014 HumanLayer brings that into one place alongside AI agents.\n- **Speed:** Move 2-3x faster across the entire SDLC, not just coding.\n- **BYO subscription:** Plug in your Claude, Codex, or other API keys \u2014 no separate AI bill.\n- **RPI framework:** Built on the open-source Research, Plan, Implement framework now inside Fortune 500s (Block, Uber).\n- **Pricing:** Starter plan free for teams of < 3 people at humanlayer.com\n\n## Context\n\nFounded by Dex (dexter@hey.humanlayer.dev) and Kyle. Sayf was on their waitlist. Relevant to Maloha Coast's work on agentic workflows and AI-assisted development.\n\n## Links\n\n- X launch post: https://x.com/dexhorthy/status/2067286892786454855\n- LinkedIn: https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U\n- Launch blurb: https://humanlayer.com/launch/blurb.md",
+      "tags": [
+        "sayf"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
       "inbound_count": 0
     },
     {
@@ -10089,11 +10104,6 @@
       "type": "wikilink"
     },
     {
-      "source": "concepts/15-minute-gap-method-2026-06-14",
-      "target": "concepts/ksi-workshop",
-      "type": "wikilink"
-    },
-    {
       "source": "concepts/2026-06-03",
       "target": "concepts/vps-hardening",
       "type": "wikilink"
@@ -10431,6 +10441,11 @@
     {
       "source": "concepts/ksi-workshop",
       "target": "people/aisyah-rahim",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/ksi-workshop",
+      "target": "concepts/15-minute-gap-method-2026-06-14",
       "type": "wikilink"
     },
     {
@@ -11647,13 +11662,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 70,
+    "brain_checks_score": 90,
     "category_scores": {
-      "brain": 95,
+      "brain": 90,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -11683,32 +11698,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -11720,11 +11713,12 @@
       },
       {
         "name": "extract_atoms_backlog",
-        "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "status": "warn",
+        "message": "21 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 0,
+          "backlog": 21,
           "pack_declares_phase": false,
+          "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
         "category": "brain"
@@ -11732,7 +11726,7 @@
       {
         "name": "conversation_format_coverage",
         "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "message": "10 pages: bold-name-no-time=9, _no_match=1",
         "category": "brain"
       },
       {
@@ -11756,7 +11750,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 292 pages",
         "category": "ops"
       },
       {
@@ -11792,7 +11786,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 492ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -11810,25 +11804,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 91%, timeline 68%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 76 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 292 pages; 38 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -11989,7 +11983,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 7/292 pages (2%) stale",
+        "details": {
+          "total": 292,
+          "stale": 7,
+          "pct": 2,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -12001,7 +12003,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -12013,7 +12015,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "193 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -12025,7 +12027,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "43.8% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -12067,7 +12069,7 @@
       {
         "name": "oauth_confidential_client_health",
         "status": "ok",
-        "message": "No OAuth clients registered",
+        "message": "4 OAuth client(s) registered; all auth shapes consistent",
         "category": "ops"
       },
       {
@@ -12128,13 +12130,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 92% \u00b1 3.1%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 68% \u00b1 5.3% (target 90%)",
         "category": "meta"
       },
       {
@@ -12152,7 +12154,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "10 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
