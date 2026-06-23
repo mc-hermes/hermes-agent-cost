@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-23T03:00:52Z",
+  "updated_at": "2026-06-23T03:45:17Z",
   "summary": {
     "page_count": 31,
     "people_count": 4,
@@ -895,7 +895,7 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-23T03:00:52Z",
+      "ts": "2026-06-23T03:45:17Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
@@ -948,14 +948,6 @@
       "stage": "updated",
       "slug": "newsletters/why-your-2026-career-goals-are-dead",
       "detail": "Why Your 2026 Career Goals Are Dead",
-      "level": "info"
-    },
-    {
-      "ts": "2026-06-21T00:00:00Z",
-      "source": "page",
-      "stage": "updated",
-      "slug": "concepts/3-month-pivot-framework-zaim",
-      "detail": "3 Month Pivot Framework Zaim",
       "level": "info"
     }
   ]
