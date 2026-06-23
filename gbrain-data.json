@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-06-23T17:00:51Z",
+  "updated_at": "2026-06-23T17:08:38Z",
   "summary": {
-    "score": "92",
+    "score": "82",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
+    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
     "page_count": 342,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "39.8% of pages have inbound links",
-    "entity_links": "Coverage \u2014 46 people, 33 companies indexed",
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "42.6% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 91% \u00b1 3.3%",
     "concept_count": 122,
     "meeting_count": 14,
     "person_count": 46,
@@ -26,7 +26,19 @@
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
+    "score_components": {
+      "score": "82/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "3/15",
+      "orphans": "9/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 67,
+    "checks_warned": 6,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -7850,7 +7862,7 @@
       "title": "Aisyah Rahim",
       "type": "person",
       "updated": "",
-      "body": "# Aisyah Rahim\n\nSenior Brand Manager at Unilever Malaysia. Referred by [[Liyana]] from a KSI workshop.\n\n## In Maloha Coast Knowledge\n\n- Coaching client of Zaim Mohzani \u2014 career pivot from brand management to tech\n- Referred by Liyana from the KSI workshop\n- First session scheduled for next Tuesday (week of June 15, 2026)\n- Salary anchor: RM 18k/month\n\n## Related\n\n- [[Coaching Client: Aisyah Rahim]] \u2014 client intake profile\n- [[Zaim Mohzani]] \u2014 coach\n\n## Timeline\n\n- **2026-06-14** | Client intake completed by Zaim. [Source: gmail://msg_19eca0a8dc4888c3]",
+      "body": "# Aisyah Rahim\n\nSenior Brand Manager at Unilever Malaysia. Referred by [[Liyana]] from a KSI workshop.\n\n## In Maloha Coast Knowledge\n\n- Coaching client of Zaim Mohzani \u2014 career pivot from brand management to tech\n- Referred by Liyana from the KSI workshop\n- First session scheduled for next Tuesday (week of June 15, 2026)\n- Salary anchor: RM 18k/month\n\nAssessment: Classic mid-career pivot case. The real problem isn't skills \u2014 it's confidence and narrative. Needs help reframing \"brand manager\" as \"growth strategist who uses data.\"\n\n## Related\n\n- [[Aisyah Rahim \u2014 Client Profile]] \u2014 client intake profile and session plan\n- [[Zaim Mohzani]] \u2014 coach\n\n## Timeline\n\n- **2026-06-14** | Client intake completed by Zaim. Session 1 plan: audit last 2 years through a tech lens, find 3-5 examples of \"product thinking.\" [Source: gmail://msg_19eca0a8dc4888c3]",
       "tags": [
         "zaim"
       ],
@@ -7861,9 +7873,9 @@
           "text": "Liyana"
         },
         {
-          "to": "Coaching Client: Aisyah Rahim",
+          "to": "Aisyah Rahim \u2014 Client Profile",
           "type": "wikilink",
-          "text": "Coaching Client: Aisyah Rahim"
+          "text": "Aisyah Rahim \u2014 Client Profile"
         },
         {
           "to": "people/zaim-mohzani",
@@ -11606,13 +11618,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 70,
+    "brain_checks_score": 90,
     "category_scores": {
-      "brain": 95,
+      "brain": 90,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -11642,32 +11654,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -11679,11 +11669,12 @@
       },
       {
         "name": "extract_atoms_backlog",
-        "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "status": "warn",
+        "message": "22 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 0,
+          "backlog": 22,
           "pack_declares_phase": false,
+          "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
         "category": "brain"
@@ -11691,7 +11682,7 @@
       {
         "name": "conversation_format_coverage",
         "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "message": "11 pages: bold-name-no-time=10, _no_match=1",
         "category": "brain"
       },
       {
@@ -11715,7 +11706,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 298 pages",
         "category": "ops"
       },
       {
@@ -11751,7 +11742,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 470ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -11769,25 +11760,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 90%, timeline 68%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 76 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 298 pages; 36 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -11948,7 +11939,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 10/298 pages (3%) stale",
+        "details": {
+          "total": 298,
+          "stale": 10,
+          "pct": 3,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -11960,7 +11959,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -11972,7 +11971,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "205 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -11984,7 +11983,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "42.6% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -12026,7 +12025,7 @@
       {
         "name": "oauth_confidential_client_health",
         "status": "ok",
-        "message": "No OAuth clients registered",
+        "message": "4 OAuth client(s) registered; all auth shapes consistent",
         "category": "ops"
       },
       {
@@ -12087,13 +12086,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 91% \u00b1 3.3%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 68% \u00b1 5.3% (target 90%)",
         "category": "meta"
       },
       {
@@ -12111,7 +12110,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "10 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {

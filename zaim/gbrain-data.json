@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-23T17:00:58Z",
+  "updated_at": "2026-06-23T17:08:46Z",
   "summary": {
     "page_count": 35,
     "people_count": 4,
@@ -522,7 +522,7 @@
       "title": "Aisyah Rahim",
       "type": "person",
       "updated": "",
-      "body": "# Aisyah Rahim\n\nSenior Brand Manager at Unilever Malaysia. Referred by [[Liyana]] from a KSI workshop.\n\n## In Maloha Coast Knowledge\n\n- Coaching client of Zaim Mohzani \u2014 career pivot from brand management to tech\n- Referred by Liyana from the KSI workshop\n- First session scheduled for next Tuesday (week of June 15, 2026)\n- Salary anchor: RM 18k/month\n\n## Related\n\n- [[Coaching Client: Aisyah Rahim]] \u2014 client intake profile\n- [[Zaim Mohzani]] \u2014 coach\n\n## Timeline\n\n- **2026-06-14** | Client intake completed by Zaim. [Source: gmail://msg_19eca0a8dc4888c3]",
+      "body": "# Aisyah Rahim\n\nSenior Brand Manager at Unilever Malaysia. Referred by [[Liyana]] from a KSI workshop.\n\n## In Maloha Coast Knowledge\n\n- Coaching client of Zaim Mohzani \u2014 career pivot from brand management to tech\n- Referred by Liyana from the KSI workshop\n- First session scheduled for next Tuesday (week of June 15, 2026)\n- Salary anchor: RM 18k/month\n\nAssessment: Classic mid-career pivot case. The real problem isn't skills \u2014 it's confidence and narrative. Needs help reframing \"brand manager\" as \"growth strategist who uses data.\"\n\n## Related\n\n- [[Aisyah Rahim \u2014 Client Profile]] \u2014 client intake profile and session plan\n- [[Zaim Mohzani]] \u2014 coach\n\n## Timeline\n\n- **2026-06-14** | Client intake completed by Zaim. Session 1 plan: audit last 2 years through a tech lens, find 3-5 examples of \"product thinking.\" [Source: gmail://msg_19eca0a8dc4888c3]",
       "tags": [
         "zaim"
       ],
@@ -533,9 +533,9 @@
           "text": "Liyana"
         },
         {
-          "to": "Coaching Client: Aisyah Rahim",
+          "to": "Aisyah Rahim \u2014 Client Profile",
           "type": "wikilink",
-          "text": "Coaching Client: Aisyah Rahim"
+          "text": "Aisyah Rahim \u2014 Client Profile"
         },
         {
           "to": "people/zaim-mohzani",
@@ -915,7 +915,7 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-23T17:00:58Z",
+      "ts": "2026-06-23T17:08:46Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
@@ -976,6 +976,14 @@
       "stage": "updated",
       "slug": "concepts/zaim-15-minute-gap-method-2026-06-15",
       "detail": "Zaim 15 Minute Gap Method 2026 06 15",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-23T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "people/aisyah-rahim",
+      "detail": "Aisyah Rahim",
       "level": "info"
     },
     {
