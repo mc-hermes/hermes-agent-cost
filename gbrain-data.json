@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-06-23T10:00:47Z",
+  "updated_at": "2026-06-23T10:23:34Z",
   "summary": {
-    "score": "92",
+    "score": "82",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 338,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "40.2% of pages have inbound links",
-    "entity_links": "Coverage \u2014 46 people, 33 companies indexed",
-    "concept_count": 119,
+    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
+    "page_count": 340,
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "42.6% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 91% \u00b1 3.3%",
+    "concept_count": 121,
     "meeting_count": 14,
     "person_count": 46,
     "company_count": 33,
@@ -19,14 +19,26 @@
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 391,
-    "outbound_count": 486,
-    "inbound_count": 451,
+    "total_links": 388,
+    "outbound_count": 483,
+    "inbound_count": 448,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
+    "score_components": {
+      "score": "82/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "3/15",
+      "orphans": "9/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 67,
+    "checks_warned": 6,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -1123,15 +1135,10 @@
           "from": "maloha-coast",
           "type": "wikilink",
           "text": "brand/maloha-coast-brand-identity"
-        },
-        {
-          "from": "meetings/sayf-x-zaim-2026-06-12",
-          "type": "wikilink",
-          "text": "Maloha Coast"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 7
+      "inbound_count": 6
     },
     {
       "slug": "companies/ai-automation-society",
@@ -2635,6 +2642,20 @@
       "inbound_count": 1
     },
     {
+      "slug": "concepts/15-minute-gap-method-zaim",
+      "title": "15 Minute Gap Method Zaim",
+      "type": "concept",
+      "updated": "",
+      "body": "# The 15-Minute Gap Method\n\n**Source:** Self-note from Zaim via Gmail\n**Source URI:** gmail://msg_19eca04daacc7a09\n**Ingested:** 2026-06-23\n**Provenance:** Zaim's observation note forwarded to info@malohacoast.com inbox\n\n## Zaim's Discovery\n\nBetween KSI sessions, Zaim has 15-minute gaps. He started using them to jot down one thing he noticed about each student \u2014 what they're stuck on, what lit them up. After a month of this, patterns emerged that he'd never have spotted otherwise.\n\n## Three Student Buckets Discovered\n\n1. **Career pivoters** \u2014 stuck on \"what if I fail\" not \"what do I want\"\n2. **Fresh grads** \u2014 over-indexing on salary, under-indexing on growth trajectory\n3. **Mid-career** \u2014 all variations of \"is this it?\"\n\n## The Rule\n\n> Never let a gap go empty. Even one sentence per student compounds.\n\n[Source: Zaim's self-note via email, 2026-06-14]",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "concepts/2026-06-03",
       "title": "2026 06 03",
       "type": "concept",
@@ -2889,6 +2910,20 @@
       ],
       "outbound_count": 2,
       "inbound_count": 1
+    },
+    {
+      "slug": "concepts/aisyah-rahim-client-profile",
+      "title": "Aisyah Rahim Client Profile",
+      "type": "concept",
+      "updated": "",
+      "body": "# Aisyah Rahim \u2014 Client Profile\n\n**Source:** Self-note from Zaim via Gmail\n**Source URI:** gmail://msg_19eca0a8dc4888c3\n**Ingested:** 2026-06-23\n**Provenance:** Zaim's note forwarded to info@malohacoast.com inbox\n\n## Profile\n\n- **Name:** Aisyah Rahim\n- **Role:** Senior Brand Manager at Unilever Malaysia\n- **Referred by:** Liyana from the KSI workshop\n- **First session:** Next Tuesday (week of Jun 15, 2026)\n\n## Key Points from Intro Call\n\n- 8 years in FMCG brand management, feeling stagnant\n- Wants to pivot into tech but unsure where to start\n- Main blocker: \"I don't have a technical background\"\n- Has actually done more data-driven work than she realises \u2014 ran consumer analytics for 3 product launches\n- Salary anchor: RM 18k/month, worried about resetting to junior level\n\n## Zaim's Assessment\n\n> Classic mid-career pivot case. The real problem isn't skills \u2014 it's confidence and narrative. She needs help reframing 'brand manager' as 'growth strategist who uses data.' Tech companies would kill for someone who can bridge consumer insights and product.\n\n## Session 1 Plan\n\nAudit her last 2 years of work through a tech lens. Find 3\u20135 specific examples where she already did \"product thinking\" without calling it that.\n\n[Source: Zaim's self-note via email to info@malohacoast.com, 2026-06-15]",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
     },
     {
       "slug": "concepts/architecture/agent-hierarchy",
@@ -5865,27 +5900,11 @@
       "title": "Sayf X Zaim 2026 06 12",
       "type": "meeting",
       "updated": "",
-      "body": "# Sayf x Zaim \u2014 Jun 12, 2026\n\n**Source:** email\n**Source URI:** gmail://msg_19eb9fd8516965c3\n**Ingested:** 2026-06-21T03:45:00Z\n**Provenance:** Forwarded by Sayf Codes on 2026-06-12\n\n**Attendees:** [[Sayf Codes]], [[Zaim Mohzani]]\n**Date:** 2026-06-12\n**Location:** Google Meet\n\n## Summary\n\nDiscussion explored AI skepticism and market strategy alongside technical collaboration opportunities for business growth.\n\n## Key Topics\n\n### Differing AI Market Perspectives\nParticipants debated the value of AI in business, contrasting skepticism about automation hype with the practical utility of AI for basic skills training.\n\n### Technical Tools and Infrastructure\nDiscussion shifted toward specific software tools, noting the efficiency of virtual private servers and the potential of data integration dashboards for business applications.\n\n### Collaboration and Service Models\nAgreement reached to build a technical solution for coaching services while prioritizing simple, revenue-focused strategies for future client engagement.\n\n## Action Items\n\n- **[[Maloha Coast]]** Build Dashboard \u2014 Arrange a meeting to build the dashboard component.\n- **[[Zaim Mohzani]]** Provide Testimonial \u2014 Provide a testimonial in exchange for assistance provided by Maloha Coast.\n- **[[Maloha Coast]]** Share Research Link \u2014 Send the Tencent Lighthouse promotion link.\n- **The group** Schedule Followup Session \u2014 Coordinate a time for a follow-up meeting.\n- **[[Zaim Mohzani]]** Send WhatsApp Message \u2014 Contact Maloha Coast via WhatsApp.\n\n## Original Notes\nAuto-generated by Google Gemini on June 12, 2026 (Google Meet integration).",
+      "body": "# Sayf x Zaim \u2014 Jun 12, 2026\n\n**Source:** Google Meet auto-notes (Gemini), forwarded by Sayf\n**Source URI:** gmail://msg_19eb9fd8516965c3\n**Ingested:** 2026-06-23\n**Provenance:** Forwarded by Sayf from his personal Gmail to info@malohacoast.com\n\n## Summary\n\nDiscussion explored AI skepticism and market strategy alongside technical collaboration opportunities for business growth.\n\n## Key Discussion Points\n\n### Differing AI Market Perspectives\nParticipants debated the value of AI in business, contrasting skepticism about automation hype with the practical utility of AI for basic skills training.\n\n### Technical Tools and Infrastructure\nDiscussion shifted toward specific software tools, noting the efficiency of virtual private servers and the potential of data integration dashboards for business applications.\n\n### Collaboration and Service Models\nAgreement reached to build a technical solution for coaching services while prioritizing simple, revenue-focused strategies for future client engagement.\n\n## Attendees\n\n- Sayf (Maloha Coast)\n- Zaim Mohzani\n\n## Action Items\n\n- **[Maloha Coast]** Build Dashboard: Arrange a meeting to build the dashboard component. Perform the session either in person or over a call.\n- **[Zaim Mohzani]** Provide Testimonial: Provide a testimonial in exchange for assistance provided by Maloha Coast.\n- **[Maloha Coast]** Share Research Link: Send the Tencent Lighthouse promotion link for further research.\n- **[The group]** Schedule Followup Session: Coordinate a time for a meeting to continue the discussion.\n- **[Zaim Mohzani]** Send WhatsApp Message: Contact Maloha Coast via the provided phone number.\n\n[Source: Google Meet auto-notes (Gemini), forwarded by Sayf, 2026-06-12]",
       "tags": [],
-      "links_out": [
-        {
-          "to": "people/sayf-codes",
-          "type": "wikilink",
-          "text": "Sayf Codes"
-        },
-        {
-          "to": "people/zaim-mohzani",
-          "type": "wikilink",
-          "text": "Zaim Mohzani"
-        },
-        {
-          "to": "brand/maloha-coast-brand-identity",
-          "type": "wikilink",
-          "text": "Maloha Coast"
-        }
-      ],
+      "links_out": [],
       "backlinks": [],
-      "outbound_count": 3,
+      "outbound_count": 0,
       "inbound_count": 0
     },
     {
@@ -8987,11 +9006,6 @@
           "text": "Sayf Codes"
         },
         {
-          "from": "meetings/sayf-x-zaim-2026-06-12",
-          "type": "wikilink",
-          "text": "Sayf Codes"
-        },
-        {
           "from": "meetings/sayf-zaim-jun-12-2026",
           "type": "wikilink",
           "text": "people/sayf-codes|Sayf"
@@ -9003,7 +9017,7 @@
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 6
+      "inbound_count": 5
     },
     {
       "slug": "people/tj-vandermolen",
@@ -9341,11 +9355,6 @@
           "text": "Zaim Mohzani"
         },
         {
-          "from": "meetings/sayf-x-zaim-2026-06-12",
-          "type": "wikilink",
-          "text": "Zaim Mohzani"
-        },
-        {
           "from": "meetings/sayf-zaim-jun-12-2026",
           "type": "wikilink",
           "text": "people/zaim-mohzani|Zaim"
@@ -9367,7 +9376,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 13
+      "inbound_count": 12
     },
     {
       "slug": "persons/tonbi",
@@ -11001,21 +11010,6 @@
       "type": "wikilink"
     },
     {
-      "source": "meetings/sayf-x-zaim-2026-06-12",
-      "target": "people/sayf-codes",
-      "type": "wikilink"
-    },
-    {
-      "source": "meetings/sayf-x-zaim-2026-06-12",
-      "target": "people/zaim-mohzani",
-      "type": "wikilink"
-    },
-    {
-      "source": "meetings/sayf-x-zaim-2026-06-12",
-      "target": "brand/maloha-coast-brand-identity",
-      "type": "wikilink"
-    },
-    {
       "source": "meetings/sayf-zaim-jun-12-2026",
       "target": "people/sayf-codes",
       "type": "wikilink"
@@ -11629,13 +11623,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 70,
+    "brain_checks_score": 90,
     "category_scores": {
-      "brain": 95,
+      "brain": 90,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -11665,32 +11659,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -11702,11 +11674,12 @@
       },
       {
         "name": "extract_atoms_backlog",
-        "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "status": "warn",
+        "message": "22 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 0,
+          "backlog": 22,
           "pack_declares_phase": false,
+          "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
         "category": "brain"
@@ -11714,7 +11687,7 @@
       {
         "name": "conversation_format_coverage",
         "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "message": "11 pages: bold-name-no-time=10, _no_match=1",
         "category": "brain"
       },
       {
@@ -11738,7 +11711,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 296 pages",
         "category": "ops"
       },
       {
@@ -11774,7 +11747,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 1357ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -11792,25 +11765,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 90%, timeline 68%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 76 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 296 pages; 36 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -11971,7 +11944,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 3/296 pages (1%) stale",
+        "details": {
+          "total": 296,
+          "stale": 3,
+          "pct": 1,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -11983,7 +11964,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -11995,7 +11976,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "202 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -12007,7 +11988,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "42.6% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -12049,7 +12030,7 @@
       {
         "name": "oauth_confidential_client_health",
         "status": "ok",
-        "message": "No OAuth clients registered",
+        "message": "4 OAuth client(s) registered; all auth shapes consistent",
         "category": "ops"
       },
       {
@@ -12110,13 +12091,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 91% \u00b1 3.3%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 68% \u00b1 5.3% (target 90%)",
         "category": "meta"
       },
       {
@@ -12134,7 +12115,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "10 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {

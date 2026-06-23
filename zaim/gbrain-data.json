@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-23T10:00:56Z",
+  "updated_at": "2026-06-23T10:23:42Z",
   "summary": {
-    "page_count": 32,
+    "page_count": 34,
     "people_count": 4,
     "company_count": 1,
     "artifact_count": 0,
     "total_links": 16,
     "outbound_count": 30,
-    "inbound_count": 31,
-    "graph_coverage": "25.0% of pages have inbound links",
-    "concept_count": 19,
+    "inbound_count": 29,
+    "graph_coverage": "23.5% of pages have inbound links",
+    "concept_count": 21,
     "meeting_count": 4,
     "person_count": 4,
     "newsletter_count": 3,
@@ -76,6 +76,20 @@
       "inbound_count": 1
     },
     {
+      "slug": "concepts/15-minute-gap-method-zaim",
+      "title": "15 Minute Gap Method Zaim",
+      "type": "concept",
+      "updated": "",
+      "body": "# The 15-Minute Gap Method\n\n**Source:** Self-note from Zaim via Gmail\n**Source URI:** gmail://msg_19eca04daacc7a09\n**Ingested:** 2026-06-23\n**Provenance:** Zaim's observation note forwarded to info@malohacoast.com inbox\n\n## Zaim's Discovery\n\nBetween KSI sessions, Zaim has 15-minute gaps. He started using them to jot down one thing he noticed about each student \u2014 what they're stuck on, what lit them up. After a month of this, patterns emerged that he'd never have spotted otherwise.\n\n## Three Student Buckets Discovered\n\n1. **Career pivoters** \u2014 stuck on \"what if I fail\" not \"what do I want\"\n2. **Fresh grads** \u2014 over-indexing on salary, under-indexing on growth trajectory\n3. **Mid-career** \u2014 all variations of \"is this it?\"\n\n## The Rule\n\n> Never let a gap go empty. Even one sentence per student compounds.\n\n[Source: Zaim's self-note via email, 2026-06-14]",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "concepts/3-month-pivot-framework-zaim",
       "title": "3 Month Pivot Framework Zaim",
       "type": "concept",
@@ -119,6 +133,20 @@
       ],
       "outbound_count": 2,
       "inbound_count": 1
+    },
+    {
+      "slug": "concepts/aisyah-rahim-client-profile",
+      "title": "Aisyah Rahim Client Profile",
+      "type": "concept",
+      "updated": "",
+      "body": "# Aisyah Rahim \u2014 Client Profile\n\n**Source:** Self-note from Zaim via Gmail\n**Source URI:** gmail://msg_19eca0a8dc4888c3\n**Ingested:** 2026-06-23\n**Provenance:** Zaim's note forwarded to info@malohacoast.com inbox\n\n## Profile\n\n- **Name:** Aisyah Rahim\n- **Role:** Senior Brand Manager at Unilever Malaysia\n- **Referred by:** Liyana from the KSI workshop\n- **First session:** Next Tuesday (week of Jun 15, 2026)\n\n## Key Points from Intro Call\n\n- 8 years in FMCG brand management, feeling stagnant\n- Wants to pivot into tech but unsure where to start\n- Main blocker: \"I don't have a technical background\"\n- Has actually done more data-driven work than she realises \u2014 ran consumer analytics for 3 product launches\n- Salary anchor: RM 18k/month, worried about resetting to junior level\n\n## Zaim's Assessment\n\n> Classic mid-career pivot case. The real problem isn't skills \u2014 it's confidence and narrative. She needs help reframing 'brand manager' as 'growth strategist who uses data.' Tech companies would kill for someone who can bridge consumer insights and product.\n\n## Session 1 Plan\n\nAudit her last 2 years of work through a tech lens. Find 3\u20135 specific examples where she already did \"product thinking\" without calling it that.\n\n[Source: Zaim's self-note via email to info@malohacoast.com, 2026-06-15]",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
     },
     {
       "slug": "concepts/career-coaching-3-month-pivot-framework-2026-06-15",
@@ -608,11 +636,6 @@
           "text": "Sayf Codes"
         },
         {
-          "from": "meetings/sayf-x-zaim-2026-06-12",
-          "type": "wikilink",
-          "text": "Sayf Codes"
-        },
-        {
           "from": "meetings/sayf-zaim-jun-12-2026",
           "type": "wikilink",
           "text": "people/sayf-codes|Sayf"
@@ -624,7 +647,7 @@
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 6
+      "inbound_count": 5
     },
     {
       "slug": "people/zaim-mohzani",
@@ -700,11 +723,6 @@
           "text": "Zaim Mohzani"
         },
         {
-          "from": "meetings/sayf-x-zaim-2026-06-12",
-          "type": "wikilink",
-          "text": "Zaim Mohzani"
-        },
-        {
           "from": "meetings/sayf-zaim-jun-12-2026",
           "type": "wikilink",
           "text": "people/zaim-mohzani|Zaim"
@@ -726,7 +744,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 13
+      "inbound_count": 12
     },
     {
       "slug": "zaim-career-goals-12-week-year-2026-06-16",
@@ -914,11 +932,11 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-23T10:00:56Z",
+      "ts": "2026-06-23T10:23:42Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
-      "detail": "Dashboard refreshed \u2014 32 pages, 16 links",
+      "detail": "Dashboard refreshed \u2014 34 pages, 16 links",
       "level": "info"
     },
     {
@@ -933,8 +951,24 @@
       "ts": "2026-06-23T00:00:00Z",
       "source": "page",
       "stage": "updated",
+      "slug": "concepts/15-minute-gap-method-zaim",
+      "detail": "15 Minute Gap Method Zaim",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-23T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
       "slug": "concepts/aisyah-rahim-client-profile-2026-06-15",
       "detail": "Aisyah Rahim Client Profile 2026 06 15",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-23T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "concepts/aisyah-rahim-client-profile",
+      "detail": "Aisyah Rahim Client Profile",
       "level": "info"
     },
     {
