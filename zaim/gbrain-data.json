@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-23T11:00:56Z",
+  "updated_at": "2026-06-23T11:51:56Z",
   "summary": {
-    "page_count": 34,
+    "page_count": 35,
     "people_count": 4,
     "company_count": 1,
     "artifact_count": 0,
     "total_links": 16,
     "outbound_count": 30,
     "inbound_count": 29,
-    "graph_coverage": "23.5% of pages have inbound links",
-    "concept_count": 21,
+    "graph_coverage": "22.9% of pages have inbound links",
+    "concept_count": 22,
     "meeting_count": 4,
     "person_count": 4,
     "newsletter_count": 3,
@@ -167,7 +167,7 @@
       "title": "Coaching Client Aisyah Rahim 2026 06 15",
       "type": "concept",
       "updated": "",
-      "body": "# Coaching Client Profile \u2014 Aisyah Rahim\n\n**Source:** Zaim's self-forward, 2026-06-15\n**Source URI:** gmail://msg_19eca0a8dc4888c3\n**Ingested:** 2026-06-23T00:00:00Z\n**Provenance:** Self-forwarded by Zaim to info+zaim@malohacoast.com\n\nZaim's client onboarding notes for a new coaching engagement.\n\n## Client Profile\n\n- **Name:** Aisyah Rahim\n- **Role:** Senior Brand Manager at Unilever Malaysia\n- **Referral:** Liyana from the KSI workshop (last month)\n- **First session:** Next Tuesday\n\n## Background\n\n- 8 years in FMCG brand management, feeling stagnant\n- Wants to pivot into tech but unsure where to start\n- Main blocker: \"I don't have a technical background\"\n- Actually done more data-driven work than she realises \u2014 ran consumer analytics for 3 product launches\n- Salary anchor: RM 18k/month, worried about resetting to junior level\n\n## Zaim's Assessment\n\nClassic mid-career pivot case. The real problem isn't skills \u2014 it's confidence and narrative. Needs help reframing \"brand manager\" as \"growth strategist who uses data.\" Tech companies would value someone who can bridge consumer insights and product.\n\n## Session 1 Plan\n\nAudit her last 2 years of work through a tech lens. Find 3-5 specific examples where she already did \"product thinking\" without calling it that.",
+      "body": "# Coaching Client Profile \u2014 Aisyah Rahim\n\n**Source:** Email from Zaim via info+zaim@malohacoast.com\n**Source URI:** gmail://msg_19eca0a8dc4888c3\n**Ingested:** 2026-06-23T19:15:00Z\n\nZaim's profile on a new KSI coaching client.\n\n- **Name:** Aisyah Rahim\n- **Role:** Senior Brand Manager at Unilever Malaysia\n- **Referred by:** Liyana from the KSI workshop\n- **First session:** Next Tuesday (circa mid-June 2026)\n\n**Intro call key points:**\n- 8 years in FMCG brand management, feeling stagnant\n- Wants to pivot into tech but unsure where to start\n- Main blocker: \"I don't have a technical background\"\n- Has actually done more data-driven work than she realises \u2014 ran consumer analytics for 3 product launches\n- Salary anchor: RM 18k/month, worried about resetting to junior level\n\n**Zaim's read:** Classic mid-career pivot case. Real problem isn't skills \u2014 it's confidence and narrative. Needs help reframing \"brand manager\" as \"growth strategist who uses data.\" Tech companies would value someone who bridges consumer insights and product.\n\n**Session 1 plan:** Audit last 2 years of work through a tech lens. Find 3-5 specific examples where she already did \"product thinking\" without calling it that.",
       "tags": [
         "zaim"
       ],
@@ -293,6 +293,20 @@
       ],
       "backlinks": [],
       "outbound_count": 2,
+      "inbound_count": 0
+    },
+    {
+      "slug": "concepts/zaim-15-minute-gap-method-2026-06-15",
+      "title": "Zaim 15 Minute Gap Method 2026 06 15",
+      "type": "concept",
+      "updated": "",
+      "body": "# Zaim's 15-Minute Gap Method\n\n**Source:** Email from Zaim via info+zaim@malohacoast.com\n**Source URI:** gmail://msg_19eca04daacc7a09\n**Ingested:** 2026-06-23T19:15:00Z\n\nZaim's coaching insight \u2014 using 15-minute gaps between KSI sessions to jot down one observation about each student.\n\n**The method:** Never let a gap go empty. Even one sentence per student compounds over time.\n\n**After a month,** three student buckets emerged:\n1. **Career pivoters** \u2014 stuck on \"what if I fail\" not \"what do I want\"\n2. **Fresh grads** \u2014 over-indexing on salary, under-indexing on growth trajectory\n3. **Mid-career** \u2014 all variations of \"is this it?\"\n\n**Relevance:** A structured reflection habit that generates pattern recognition over time. Could be applied to client work at Maloha Coast for insight accumulation.",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
       "inbound_count": 0
     },
     {
@@ -932,11 +946,11 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-23T11:00:56Z",
+      "ts": "2026-06-23T11:51:56Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
-      "detail": "Dashboard refreshed \u2014 34 pages, 16 links",
+      "detail": "Dashboard refreshed \u2014 35 pages, 16 links",
       "level": "info"
     },
     {
@@ -985,6 +999,14 @@
       "stage": "updated",
       "slug": "concepts/zaim-15-minute-gap-method-2026-06-14",
       "detail": "Zaim 15 Minute Gap Method 2026 06 14",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-23T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "concepts/zaim-15-minute-gap-method-2026-06-15",
+      "detail": "Zaim 15 Minute Gap Method 2026 06 15",
       "level": "info"
     },
     {
