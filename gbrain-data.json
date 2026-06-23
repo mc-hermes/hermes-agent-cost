@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-23T16:00:51Z",
+  "updated_at": "2026-06-23T17:00:51Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
@@ -19,9 +19,9 @@
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 388,
-    "outbound_count": 483,
-    "inbound_count": 448,
+    "total_links": 386,
+    "outbound_count": 481,
+    "inbound_count": 446,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -736,7 +736,7 @@
       "title": "Humanlayer Launch 2026 06 19",
       "type": "bookmark",
       "updated": "",
-      "body": "# HumanLayer // We're live \u2014 come build with us\n\n**Source:** Email from dex at humanlayer (dexter@hey.humanlayer.dev) via Sayf Codes\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-23T19:15:00Z\n\nHumanLayer launched publicly \u2014 an Agentic IDE, collaboration platform, and building blocks for a software factory. Started by Dex and Kyle, building on their open-source Research, Plan, Implement (RPI) framework (used inside Block and Uber).\n\n**The core insight:** don't outsource the thinking. Great teams run design reviews for decades \u2014 HumanLayer brings that missing piece of the software factory into one place. Engineers design complex systems with AI agents before generating code.\n\n**What it does:**\n- Move 2-3x faster across the entire SDLC (not just the coding part)\n- Maintain rigorous standards for system architecture and program design\n- Bring your own subscription (Claude, Codex, other API keys) \u2014 no separate per-token bill\n\n**Pricing:** Starter plan free for teams of fewer than three.\n\n**Source:** http://humanlayer.com\n\n**Relevance to Maloha Coast:** Relevant as an AI-native development tool. The design-before-code philosophy aligns with the Hermes agent ecosystem approach. Could be useful for client work where system design rigor matters.",
+      "body": "# HumanLayer \u2014 Agentic IDE for Engineering Teams\n\n**Source:** email from dex at humanlayer re: HumanLayer // We're live \u2014 come build with us\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-24T00:00:00Z\n**Provenance:** Forwarded by Sayf on 2026-06-19\n\n## Summary\n\nHumanLayer is an Agentic IDE and collaboration platform from Dex and Kyle (creators of the open-source RPI framework). It lets engineering teams design complex systems with AI agents before generating code, aiming to move 2-3x faster across the full SDLC while maintaining rigorous system architecture standards. The Starter plan is free for teams under 3.\n\n## Key Points\n\n- **Founders:** Dex (dexter@hey.humanlayer.dev) and Kyle \u2014 previously built the open-source Research, Plan, Implement (RPI) framework running inside Fortune 500s like Block and Uber\n- **Core idea:** Don't outsource the thinking. Teams have run design reviews for decades \u2014 HumanLayer brings that missing piece of the software factory into one place\n- **Bring your own subscription:** Plug in Claude, Codex, and other AI subscriptions or API keys \u2014 no separate per-token bill\n- **Target:** Engineering teams solving hard problems in complex codebases\n\n## What It Does\n\nHumanLayer provides:\n1. An Agentic IDE as the primary workspace\n2. Collaboration platform for design reviews\n3. Building blocks for a software factory \u2014 where system design happens before code generation\n\n## Links\n\n- Website: https://humanlayer.com\n- Dex's launch post on X: https://x.com/dexhorthy/status/2067286892786454855",
       "tags": [],
       "links_out": [],
       "backlinks": [
@@ -2626,7 +2626,7 @@
       "title": "15 Minute Gap Method 2026 06 14",
       "type": "concept",
       "updated": "",
-      "body": "# The 15-Minute Gap Method\n\n**Source:** Zaim's self-forward, 2026-06-14\n**Source URI:** gmail://msg_19eca04daacc7a09\n**Ingested:** 2026-06-23T00:00:00Z\n**Provenance:** Self-forwarded by Zaim to info+zaim@malohacoast.com\n\nZaim's coaching practice insight: using 15-minute gaps between KSI sessions to observe and document one thing about each student.\n\n## The Practice\n\nBetween KSI sessions, Zaim has 15-minute gaps. Started using them to jot down one thing he noticed about each student \u2014 what they're stuck on, what lit them up. After a month, patterns emerged that would never have been caught otherwise.\n\n## Three Student Buckets\n\n1. **Career pivoters** \u2014 stuck on \"what if I fail\" not \"what do I want\"\n2. **Fresh grads** \u2014 over-indexing on salary, under-indexing on growth trajectory\n3. **Mid-career** \u2014 all variations of \"is this it?\"\n\n## The 15-Minute Rule\n\nNever let a gap go empty. Even one sentence per student compounds.",
+      "body": "# The 15-Minute Gap Method \u2014 Coaching Insight\n\n**Source:** email from Zaim Mohzani re: Coaching insight \u2014 the 15-minute gap method\n**Source URI:** gmail://msg_19eca04daacc7a09\n**Ingested:** 2026-06-24T00:00:00Z\n**Provenance:** Self-forward from Zaim to info+zaim@malohacoast.com on 2026-06-14\n\n## Summary\n\nBetween KSI sessions, Zaim started using 15-minute gaps to jot down one observation about each student \u2014 what they're stuck on, what lit them up. After a month, clear patterns emerged.\n\n## The 15-Minute Rule\n\nNever let a gap go empty. Even one sentence per student compounds over time.\n\n## Three Student Buckets\n\n1. **Career pivoters** \u2014 stuck on \"what if I fail\" not \"what do I want\"\n2. **Fresh grads** \u2014 over-indexing on salary, under-indexing on growth trajectory\n3. **Mid-career** \u2014 all variations of \"is this it?\"\n\n## Key Insight\n\nPatterns emerged after a month that would never have been spotted otherwise. The method turns unstructured gap time into structural understanding of student archetypes.",
       "tags": [
         "zaim"
       ],
@@ -2885,22 +2885,11 @@
       "title": "Aisyah Rahim Client Profile 2026 06 15",
       "type": "concept",
       "updated": "",
-      "body": "# Coaching Client Profile \u2014 Aisyah Rahim (Unilever Malaysia)\n\n**Source:** email from Zaim Mohzani re: coaching client profile, 2026-06-15\n**Source URI:** gmail://msg_19eca0a8dc4888c3\n**Ingested:** 2026-06-23T10:00:00Z\n**Provenance:** Zaim's client intake note, sent to info+zaim@malohacoast.com\n\n## Profile\n\n**Name:** Aisyah Rahim\n**Role:** Senior Brand Manager at Unilever Malaysia\n**Referred by:** Liyana, from the KSI workshop last month\n**First session:** Next Tuesday\n\n## Key Points from Intro Call\n\n- 8 years in FMCG brand management, feeling stagnant\n- Wants to pivot into tech but unsure where to start\n- Main blocker: \"I don't have a technical background\"\n- Has actually done more data-driven work than she realises \u2014 ran consumer analytics for 3 product launches\n- Salary anchor: RM 18k/month, worried about resetting to junior level\n\n## Zaim's Assessment\n\nClassic mid-career pivot case. The real problem isn't skills \u2014 it's confidence and narrative. She needs help reframing \"brand manager\" as \"growth strategist who uses data.\" Tech companies would kill for someone who can bridge consumer insights and product.\n\n## Plan for Session 1\n\nAudit her last 2 years of work through a tech lens. Find 3-5 specific examples where she already did \"product thinking\" without calling it that.\n\n## Related\n\n- [[Zaim Mohzani]] \u2014 Career coach handling this engagement\n- [[KSI Workshop]] \u2014 Where the referral originated",
+      "body": "# Aisyah Rahim \u2014 Client Profile\n\n**Source:** email from Zaim Mohzani re: Coaching client profile \u2014 Aisyah Rahim\n**Source URI:** gmail://msg_19eca0a8dc4888c3\n**Ingested:** 2026-06-24T00:00:00Z\n**Provenance:** Self-forward from Zaim to info+zaim@malohacoast.com on 2026-06-15\n\n## Role\n\nSenior Brand Manager at Unilever Malaysia\n\n## Context\n\nReferred by Liyana from the KSI workshop. First session scheduled for next Tuesday.\n\n## Key Points from Intro Call\n\n- 8 years in FMCG brand management, feeling stagnant\n- Wants to pivot into tech but unsure where to start\n- Main blocker: \"I don't have a technical background\"\n- Has actually done more data-driven work than she realises \u2014 ran consumer analytics for 3 product launches\n- Salary anchor: RM 18k/month, worried about resetting to junior level\n\n## Zaim's Assessment\n\nClassic mid-career pivot case. The real problem isn't skills \u2014 it's confidence and narrative. She needs help reframing \"brand manager\" as \"growth strategist who uses data.\" Tech companies would kill for someone who can bridge consumer insights and product.\n\n## Plan for Session 1\n\nAudit her last 2 years of work through a tech lens. Find 3-5 specific examples where she already did \"product thinking\" without calling it that.",
       "tags": [
         "zaim"
       ],
-      "links_out": [
-        {
-          "to": "people/zaim-mohzani",
-          "type": "wikilink",
-          "text": "Zaim Mohzani"
-        },
-        {
-          "to": "concepts/ksi-workshop",
-          "type": "wikilink",
-          "text": "KSI Workshop"
-        }
-      ],
+      "links_out": [],
       "backlinks": [
         {
           "from": "people/liyana",
@@ -2908,7 +2897,7 @@
           "text": "Aisyah Rahim"
         }
       ],
-      "outbound_count": 2,
+      "outbound_count": 0,
       "inbound_count": 1
     },
     {
@@ -3888,18 +3877,13 @@
       ],
       "backlinks": [
         {
-          "from": "concepts/aisyah-rahim-client-profile-2026-06-15",
-          "type": "wikilink",
-          "text": "KSI Workshop"
-        },
-        {
           "from": "concepts/zaim-15-minute-gap-method-2026-06-14",
           "type": "wikilink",
           "text": "KSI Workshop"
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 2
+      "inbound_count": 1
     },
     {
       "slug": "concepts/liquid-cooling",
@@ -9349,11 +9333,6 @@
           "text": "Zaim Mohzani"
         },
         {
-          "from": "concepts/aisyah-rahim-client-profile-2026-06-15",
-          "type": "wikilink",
-          "text": "Zaim Mohzani"
-        },
-        {
           "from": "concepts/skills-inventory",
           "type": "wikilink",
           "text": "Zaim Mohzani"
@@ -9390,7 +9369,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 12
+      "inbound_count": 11
     },
     {
       "slug": "persons/tonbi",
@@ -10186,16 +10165,6 @@
     {
       "source": "concepts/ai-data-centers",
       "target": "articles/ai-data-center-architecture-2026-06-19",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/aisyah-rahim-client-profile-2026-06-15",
-      "target": "people/zaim-mohzani",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/aisyah-rahim-client-profile-2026-06-15",
-      "target": "concepts/ksi-workshop",
       "type": "wikilink"
     },
     {
