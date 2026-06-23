@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-06-23T13:00:49Z",
+  "updated_at": "2026-06-23T13:50:08Z",
   "summary": {
-    "score": "92",
+    "score": "82",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 341,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "39.9% of pages have inbound links",
-    "entity_links": "Coverage \u2014 46 people, 33 companies indexed",
+    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
+    "page_count": 342,
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "42.3% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 91% \u00b1 3.3%",
     "concept_count": 122,
     "meeting_count": 14,
     "person_count": 46,
@@ -15,7 +15,7 @@
     "newsletter_count": 81,
     "video_count": 0,
     "article_count": 18,
-    "bookmark_count": 24,
+    "bookmark_count": 25,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
@@ -26,7 +26,19 @@
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
+    "score_components": {
+      "score": "82/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "3/15",
+      "orphans": "9/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 67,
+    "checks_warned": 6,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -713,6 +725,18 @@
       "type": "bookmark",
       "updated": "",
       "body": "# HumanLayer \u2014 Agentic IDE Launch\n\n**Source:** Email (Dex at HumanLayer)\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-22T16:55:00Z\n**Provenance:** Forwarded by sayf on 2026-06-19\n\nHumanLayer launched publicly \u2014 an Agentic IDE, collaboration platform, and building blocks for a software factory. Built by Dex and Kyle, based on their open-source RPI (Research, Plan, Implement) framework running inside Block and Uber.\n\nKey points:\n- Lets engineering teams design complex systems with AI agents before generating code\n- Claims 2-3x faster across the entire SDLC (not just coding)\n- Focus on system architecture and program design before writing code \u2014 like design reviews brought into one place\n- Bring your own subscription (Claude, Codex, API keys) \u2014 no separate per-token bill\n- Starter plan is free for teams of fewer than three\n- Public launch on X and LinkedIn\n\nLinks:\n- X launch: https://x.com/dexhorthy/status/2067286892786454855\n- LinkedIn: https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U\n- Product: https://humanlayer.com\n- Launch blurb: https://humanlayer.com/launch/blurb.md\n\n[Source: email from Dex at HumanLayer, \"HumanLayer // We're live \u2014 come build with us\", 2026-06-18]",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "bookmarks/humanlayer-launch-2026-06-18",
+      "title": "Humanlayer Launch 2026 06 18",
+      "type": "bookmark",
+      "updated": "",
+      "body": "# HumanLayer // We're live \u2014 come build with us\n\n**Source:** Email from dex at humanlayer (via sayf forward)\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-23T19:55:00Z\n**Provenance:** Forwarded by sayf on 2026-06-19\n\nHumanLayer launches publicly. An Agentic IDE, collaboration platform, and building blocks for a software factory \u2014 where engineering teams design complex systems with AI agents before generating code.\n\n### Key details\n\n- **URL:** https://humanlayer.com\n- **Starter plan:** Free for teams of fewer than three\n- **Founded by:** Dex and Kyle\n- **Background:** Built on the open-source Research, Plan, Implement (RPI) framework, now running inside Fortune 500s like Block and Uber\n- **Pricing model:** Bring your own subscription \u2014 plug in Claude, Codex, and other AI subscriptions or API keys. No separate per-token bill.\n\n### How it works\n\nThe core idea: don't outsource the thinking. Great teams have run design reviews for decades because there's enormous leverage in collaborating on system design before you write the code. HumanLayer brings that missing piece of the software factory into one place.\n\n### Claims / outcomes\n\n- Move 2-3x faster across the entire SDLC (not just the coding part)\n- Maintain rigorous standards for system architecture and program design\n- Engineering teams solving hard problems in complex codebases\n\n### Relevance to Maloha Coast\n\nCould be relevant for sayf's agentic development workflows. The RPI framework (Research, Plan, Implement) parallels how Hermes agent skills are structured. The bring-your-own-subscription pricing avoids vendor lock-in.\n\n### Links\n\n- X: https://x.com/dexhorthy/status/2067286892786454855\n- LinkedIn: https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U\n- Launch blurb: https://humanlayer.com/launch/blurb.md\n\n[Source: Email from dex at humanlayer re: HumanLayer launch, 2026-06-18]",
       "tags": [],
       "links_out": [],
       "backlinks": [],
@@ -11625,13 +11649,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 70,
+    "brain_checks_score": 90,
     "category_scores": {
-      "brain": 95,
+      "brain": 90,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -11661,32 +11685,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -11698,11 +11700,12 @@
       },
       {
         "name": "extract_atoms_backlog",
-        "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "status": "warn",
+        "message": "22 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 0,
+          "backlog": 22,
           "pack_declares_phase": false,
+          "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
         "category": "brain"
@@ -11710,7 +11713,7 @@
       {
         "name": "conversation_format_coverage",
         "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "message": "11 pages: bold-name-no-time=10, _no_match=1",
         "category": "brain"
       },
       {
@@ -11734,7 +11737,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 298 pages",
         "category": "ops"
       },
       {
@@ -11770,7 +11773,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 334ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -11788,25 +11791,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 90%, timeline 68%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 76 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 298 pages; 36 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -11967,7 +11970,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 7/298 pages (2%) stale",
+        "details": {
+          "total": 298,
+          "stale": 7,
+          "pct": 2,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -11979,7 +11990,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -11991,7 +12002,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "203 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -12003,7 +12014,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "42.3% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -12045,7 +12056,7 @@
       {
         "name": "oauth_confidential_client_health",
         "status": "ok",
-        "message": "No OAuth clients registered",
+        "message": "4 OAuth client(s) registered; all auth shapes consistent",
         "category": "ops"
       },
       {
@@ -12106,13 +12117,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 91% \u00b1 3.3%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 68% \u00b1 5.3% (target 90%)",
         "category": "meta"
       },
       {
@@ -12130,7 +12141,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "10 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
