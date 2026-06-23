@@ -1,32 +1,44 @@
 {
-  "updated_at": "2026-06-23T19:00:52Z",
+  "updated_at": "2026-06-23T19:38:11Z",
   "summary": {
-    "score": "92",
+    "score": "82",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 342,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "39.8% of pages have inbound links",
-    "entity_links": "Coverage \u2014 46 people, 33 companies indexed",
-    "concept_count": 122,
+    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
+    "page_count": 346,
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "42.7% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 91% \u00b1 3.3%",
+    "concept_count": 124,
     "meeting_count": 14,
     "person_count": 46,
     "company_count": 33,
-    "newsletter_count": 81,
+    "newsletter_count": 83,
     "video_count": 0,
     "article_count": 18,
     "bookmark_count": 25,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 386,
-    "outbound_count": 481,
-    "inbound_count": 446,
+    "total_links": 396,
+    "outbound_count": 492,
+    "inbound_count": 457,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
+    "score_components": {
+      "score": "82/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "3/15",
+      "orphans": "9/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 67,
+    "checks_warned": 6,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -215,6 +227,16 @@
           "text": "The Anatomy of OpenClaw"
         },
         {
+          "from": "concepts/clawhub",
+          "type": "wikilink",
+          "text": "The Anatomy of OpenClaw"
+        },
+        {
+          "from": "concepts/openclaw",
+          "type": "wikilink",
+          "text": "The Anatomy of OpenClaw"
+        },
+        {
           "from": "digests/2026-06-10-business-brain-digest",
           "type": "wikilink",
           "text": "OpenClaw Anatomy"
@@ -231,7 +253,7 @@
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 4
+      "inbound_count": 6
     },
     {
       "slug": "articles/every-level-claude-second-brain-2026-06-20",
@@ -2347,13 +2369,18 @@
       ],
       "backlinks": [
         {
+          "from": "newsletters/nerdqaxe-r7-launch-2026-06-12",
+          "type": "wikilink",
+          "text": "Solo Satoshi"
+        },
+        {
           "from": "newsletters/nerdqaxe-revision-7-launch",
           "type": "wikilink",
           "text": "Solo Satoshi"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "companies/stripe",
@@ -2444,6 +2471,11 @@
       ],
       "backlinks": [
         {
+          "from": "concepts/openclaw",
+          "type": "wikilink",
+          "text": "System Design One"
+        },
+        {
           "from": "concepts/pauls-pipeline",
           "type": "wikilink",
           "text": "system-design-one"
@@ -2465,6 +2497,11 @@
         },
         {
           "from": "newsletters/agentic-engineering-concepts-2026-06-20",
+          "type": "wikilink",
+          "text": "System Design One"
+        },
+        {
+          "from": "newsletters/anatomy-of-openclaw-2026-06-08",
           "type": "wikilink",
           "text": "System Design One"
         },
@@ -2510,7 +2547,7 @@
         }
       ],
       "outbound_count": 6,
-      "inbound_count": 13
+      "inbound_count": 15
     },
     {
       "slug": "companies/thompson-legal",
@@ -3086,6 +3123,45 @@
       ],
       "outbound_count": 5,
       "inbound_count": 9
+    },
+    {
+      "slug": "concepts/clawhub",
+      "title": "ClawHub",
+      "type": "concept",
+      "updated": "",
+      "body": "# ClawHub\n\n> Modular skill marketplace for [[OpenClaw]], hosting 5,400+ community-contributed skills. Skills plug into the OpenClaw agent framework via lifecycle hooks (before/after tool calls, messages, session start/end).\n\n## Overview\n\nClawHub is the ecosystem of modular, composable skills that extend [[OpenClaw]]'s\ncapabilities. Skills are published and shared by the community, covering use\ncases from automation and scraping to integration with external services.\n\n## Architecture\n\nSkills hook into OpenClaw's plugin system at lifecycle events:\n- Before/after tool calls\n- Before/after messages\n- Session start/end\n\nThis enables audit logging, rate limiting, custom approval flows, and any\nother extension without modifying core OpenClaw code.\n\n## Related\n\n- [[OpenClaw]] \u2014 the open-source AI agent framework ClawHub extends\n- [[The Anatomy of OpenClaw]] \u2014 newsletter issue profiling OpenClaw and mentioning ClawHub's 5,400+ skills\n\n## Timeline\n\n- **2026-06-08** | Mentioned as having 5,400+ modular skills in \"The Anatomy of OpenClaw\" (System Design Newsletter #151). [Source: gmail://msg_19ea8014fa960cb7]",
+      "tags": [
+        "ai-agents",
+        "marketplace",
+        "openclaw",
+        "skills"
+      ],
+      "links_out": [
+        {
+          "to": "concepts/openclaw",
+          "type": "wikilink",
+          "text": "OpenClaw"
+        },
+        {
+          "to": "articles/anatomy-of-openclaw-2026-06-08",
+          "type": "wikilink",
+          "text": "The Anatomy of OpenClaw"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "concepts/openclaw",
+          "type": "wikilink",
+          "text": "ClawHub"
+        },
+        {
+          "from": "newsletters/anatomy-of-openclaw-2026-06-08",
+          "type": "wikilink",
+          "text": "ClawHub"
+        }
+      ],
+      "outbound_count": 2,
+      "inbound_count": 2
     },
     {
       "slug": "concepts/client-aisyah-rahim-2026-06-15",
@@ -4096,6 +4172,54 @@
       "backlinks": [],
       "outbound_count": 2,
       "inbound_count": 0
+    },
+    {
+      "slug": "concepts/openclaw",
+      "title": "OpenClaw",
+      "type": "concept",
+      "updated": "",
+      "body": "# OpenClaw\n\n> Open-source autonomous AI agent framework that bridges LLM reasoning (thinking layer) with real-world execution (act layer). Developed as an always-on daemon with multi-channel messaging support, plugin architecture, and layered memory system.\n\n## Architecture Layers\n\n### Gateway\nAlways-on Node.js server on port 18789. Coordinates messaging apps, LLM, tools,\nand memory. Intercepts destructive commands for approval. Serves Control UI at\nlocalhost:18789. Supports hot config reloads. Accessible via Tailscale from any\ndevice.\n\n### Channel Layer\nPlugin-based messaging abstraction \u2014 each platform (Telegram, WhatsApp, Slack,\nDiscord) gets a translation adapter. Standardised internal format makes everything\nafter this boundary platform-agnostic.\n\n### LLM Layer\nModel-agnostic (\"brain socket\"). System prompt assembled from agent personality +\nskills + memory + conversation history. Tool call loop with context compaction at\nlimit.\n\n### Plugin System\nAlmost everything non-core is a plugin. Hooks into lifecycle events\n(before/after tool calls, messages, session start/end). Enables audit logging,\nrate limiting, custom approval flows without touching core.\n\n### Memory System\nThree-layer architecture: short-term (session files on disk), long-term (indexed\nlocal DB searched before every answer), standing notes (permanent briefing\nMarkdown files).\n\n### Long-Running Tasks\nLong tasks acknowledged immediately, worked on asynchronously, state persisted to\ndisk. Cron jobs in isolated session mode for recurring background work.\n\n## Key Differentiators\n\n- Always-on daemon, not browser-tab-reliant\n- 5,400+ modular skills on [[ClawHub]]\n- Multi-channel with shared context\n- Proactive via Heartbeat + cron\n- Model-agnostic (any LLM provider)\n\n## Related\n\n- [[The Anatomy of OpenClaw]] \u2014 deep-dive newsletter article describing the architecture\n- [[ClawHub]] \u2014 skill marketplace with 5,400+ modular skills\n- [[Neo Kim]] \u2014 author of the System Design Newsletter issue profiling OpenClaw\n- [[System Design One]] \u2014 Substack publication that published the architecture deep-dive\n\n## Timeline\n\n- **2026-06-08** | Profiled in System Design Newsletter #151 \"The Anatomy of OpenClaw\" by Neo Kim. [Source: gmail://msg_19ea8014fa960cb7]",
+      "tags": [
+        "ai-agents",
+        "architecture",
+        "open-source"
+      ],
+      "links_out": [
+        {
+          "to": "concepts/clawhub",
+          "type": "wikilink",
+          "text": "ClawHub"
+        },
+        {
+          "to": "articles/anatomy-of-openclaw-2026-06-08",
+          "type": "wikilink",
+          "text": "The Anatomy of OpenClaw"
+        },
+        {
+          "to": "people/neo-kim",
+          "type": "wikilink",
+          "text": "Neo Kim"
+        },
+        {
+          "to": "companies/system-design-one",
+          "type": "wikilink",
+          "text": "System Design One"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "concepts/clawhub",
+          "type": "wikilink",
+          "text": "OpenClaw"
+        },
+        {
+          "from": "newsletters/anatomy-of-openclaw-2026-06-08",
+          "type": "wikilink",
+          "text": "OpenClaw"
+        }
+      ],
+      "outbound_count": 4,
+      "inbound_count": 2
     },
     {
       "slug": "concepts/openrouter-auto-model-routing-2026-06-10",
@@ -6393,6 +6517,43 @@
       "inbound_count": 0
     },
     {
+      "slug": "newsletters/anatomy-of-openclaw-2026-06-08",
+      "title": "Anatomy Of Openclaw 2026 06 08",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# The Anatomy of OpenClaw\n\n**Source:** Email ([[System Design One]] / [[Neo Kim]] newsletter forwarded by Sayf)\n**Source URI:** gmail://msg_19ea8014fa960cb7\n**Ingested:** 2026-06-24T12:30:00Z\n**Provenance:** Forwarded by Sayf on 2026-06-09\n\n## Summary\n\nDeep dive into [[OpenClaw]], an open-source autonomous AI agent that bridges the gap between\nLLM reasoning (thinking layer) and real-world execution (act layer). Published in The\nSystem Design Newsletter #151 by [[Neo Kim]].\n\n## Key Architecture Layers\n\n### Gateway\nAlways-on Node.js server on port 18789. Coordinates messaging apps, LLM, tools, and memory.\nIntercepts destructive commands for approval. Serves Control UI at localhost:18789. Supports\nhot config reloads. Accessible via Tailscale from any device.\n\n### Channel Layer\nPlugin-based abstraction: each messaging platform (Telegram, WhatsApp, Slack, Discord) gets\na translation adapter. Standardised internal format (identity key, content, metadata,\nattachments) makes everything after this boundary platform-agnostic.\n\n### LLM Layer\nModel-agnostic (\"brain socket\"). System prompt assembled from agent personality + skills +\nmemory + conversation history. Tool call loop: model signals action \u2192 [[OpenClaw]] executes \u2192\nresult fed back \u2192 model decides next step. Compaction auto-triggers at context limit.\n\n### Plugin System\nAlmost everything non-core is a plugin. Hooks into lifecycle events (before/after tool calls,\nmessages, session start/end). Enables audit logging, rate limiting, custom approval flows\nwithout touching core.\n\n### Memory System\nThree-layer architecture: short-term (session files on disk), long-term (indexed local DB\nsearched before every answer), standing notes (permanent briefing Markdown files).\n\n### Long-Running Tasks\nLong tasks (scraping, test suites) acknowledged immediately, worked on asynchronously, result\ndelivered when done. State persisted to disk, not held in memory. Cron jobs in isolated\nsession mode for recurring background work.\n\n## What Makes It Different\n- Always-on daemon, not browser-tab-reliant\n- 5,400+ modular skills on [[ClawHub]]\n- Multi-channel with shared context\n- Proactive via Heartbeat + cron\n- Model-agnostic (any LLM provider)",
+      "tags": [
+        "ai-agents",
+        "architecture",
+        "openclaw"
+      ],
+      "links_out": [
+        {
+          "to": "companies/system-design-one",
+          "type": "wikilink",
+          "text": "System Design One"
+        },
+        {
+          "to": "people/neo-kim",
+          "type": "wikilink",
+          "text": "Neo Kim"
+        },
+        {
+          "to": "concepts/openclaw",
+          "type": "wikilink",
+          "text": "OpenClaw"
+        },
+        {
+          "to": "concepts/clawhub",
+          "type": "wikilink",
+          "text": "ClawHub"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 4,
+      "inbound_count": 0
+    },
+    {
       "slug": "newsletters/claude-second-brain-explained-2026-06-20",
       "title": "Claude Second Brain Explained 2026 06 20",
       "type": "newsletter",
@@ -7019,6 +7180,28 @@
       ],
       "outbound_count": 9,
       "inbound_count": 1
+    },
+    {
+      "slug": "newsletters/nerdqaxe-r7-launch-2026-06-12",
+      "title": "Nerdqaxe R7 Launch 2026 06 12",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# NerdQaxe++ Revision 7 Launch\n\n**Source:** Email ([[Solo Satoshi]] VIP newsletter forwarded by Sayf)\n**Source URI:** gmail://msg_19eb9b8ff247d156\n**Ingested:** 2026-06-24T12:30:00Z\n**Provenance:** Forwarded by Sayf on 2026-06-12\n\nNerdQaxe++ Revision 7 \u2014 the newest evolution of the open-source quad-chip Bitcoin solo miner,\nlaunching June 12, 2026.\n\nKey points:\n- Production is 100% USA-based\n- Fully open-source \u2014 hardware design files and firmware published before any units ship\n- Competitors criticized for closed-source copies and pre-orders\n- Pre-release technical overview on YouTube available\n- Commitment to consistent availability and quality standards\n\nVendor: [[Solo Satoshi]] \u2014 \"The #1 place for Bitcoin hardware\"",
+      "tags": [
+        "bitcoin",
+        "mining",
+        "open-source"
+      ],
+      "links_out": [
+        {
+          "to": "companies/solo-satoshi",
+          "type": "wikilink",
+          "text": "Solo Satoshi"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
+      "inbound_count": 0
     },
     {
       "slug": "newsletters/nerdqaxe-revision-7-launch-2026-06-12",
@@ -8735,6 +8918,11 @@
           "text": "Neo Kim"
         },
         {
+          "from": "concepts/openclaw",
+          "type": "wikilink",
+          "text": "Neo Kim"
+        },
+        {
           "from": "concepts/virtual-machines-deep-dive",
           "type": "wikilink",
           "text": "Neo Kim"
@@ -8751,6 +8939,11 @@
         },
         {
           "from": "newsletters/agentic-engineering-concepts-2026-06-20-084511",
+          "type": "wikilink",
+          "text": "Neo Kim"
+        },
+        {
+          "from": "newsletters/anatomy-of-openclaw-2026-06-08",
           "type": "wikilink",
           "text": "Neo Kim"
         },
@@ -8796,7 +8989,7 @@
         }
       ],
       "outbound_count": 6,
-      "inbound_count": 14
+      "inbound_count": 16
     },
     {
       "slug": "people/nick-milo",
@@ -10203,6 +10396,16 @@
       "type": "wikilink"
     },
     {
+      "source": "concepts/clawhub",
+      "target": "concepts/openclaw",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/clawhub",
+      "target": "articles/anatomy-of-openclaw-2026-06-08",
+      "type": "wikilink"
+    },
+    {
       "source": "concepts/company-memory-os-ph1-prd-2026-06-09",
       "target": "concepts/sayf/maloha-coast-navigator-test-edition",
       "type": "wikilink"
@@ -10415,6 +10618,21 @@
     {
       "source": "concepts/openclaw-anatomy",
       "target": "newsletters/openclaw-anatomy-2026-06-09",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/openclaw",
+      "target": "articles/anatomy-of-openclaw-2026-06-08",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/openclaw",
+      "target": "people/neo-kim",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/openclaw",
+      "target": "companies/system-design-one",
       "type": "wikilink"
     },
     {
@@ -11098,6 +11316,26 @@
       "type": "wikilink"
     },
     {
+      "source": "newsletters/anatomy-of-openclaw-2026-06-08",
+      "target": "companies/system-design-one",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/anatomy-of-openclaw-2026-06-08",
+      "target": "people/neo-kim",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/anatomy-of-openclaw-2026-06-08",
+      "target": "concepts/openclaw",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/anatomy-of-openclaw-2026-06-08",
+      "target": "concepts/clawhub",
+      "type": "wikilink"
+    },
+    {
       "source": "newsletters/claude-second-brain-levels-2026-06-20",
       "target": "concepts/nate-herk-technique-question-2026-06-09",
       "type": "wikilink"
@@ -11235,6 +11473,11 @@
     {
       "source": "newsletters/msg-19ee2dfa87f86548",
       "target": "companies/instantly",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/nerdqaxe-r7-launch-2026-06-12",
+      "target": "companies/solo-satoshi",
       "type": "wikilink"
     },
     {
@@ -11606,13 +11849,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 70,
+    "brain_checks_score": 90,
     "category_scores": {
-      "brain": 95,
+      "brain": 90,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -11642,32 +11885,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -11679,11 +11900,12 @@
       },
       {
         "name": "extract_atoms_backlog",
-        "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "status": "warn",
+        "message": "22 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 0,
+          "backlog": 22,
           "pack_declares_phase": false,
+          "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
         "category": "brain"
@@ -11691,7 +11913,7 @@
       {
         "name": "conversation_format_coverage",
         "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "message": "11 pages: bold-name-no-time=10, _no_match=1",
         "category": "brain"
       },
       {
@@ -11715,7 +11937,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 302 pages",
         "category": "ops"
       },
       {
@@ -11751,7 +11973,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 531ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -11769,25 +11991,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 90%, timeline 68%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 76 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 302 pages; 39 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -11948,7 +12170,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 14/302 pages (5%) stale",
+        "details": {
+          "total": 302,
+          "stale": 14,
+          "pct": 5,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -11960,7 +12190,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -11972,7 +12202,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "205 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -11984,7 +12214,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "42.7% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -12026,7 +12256,7 @@
       {
         "name": "oauth_confidential_client_health",
         "status": "ok",
-        "message": "No OAuth clients registered",
+        "message": "4 OAuth client(s) registered; all auth shapes consistent",
         "category": "ops"
       },
       {
@@ -12087,13 +12317,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 91% \u00b1 3.3%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 68% \u00b1 5.3% (target 90%)",
         "category": "meta"
       },
       {
@@ -12111,7 +12341,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "10 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
