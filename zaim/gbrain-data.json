@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-06-23T20:10:33Z",
+  "updated_at": "2026-06-23T20:24:55Z",
   "summary": {
-    "page_count": 36,
+    "page_count": 37,
     "people_count": 4,
     "company_count": 1,
     "artifact_count": 0,
-    "total_links": 14,
-    "outbound_count": 28,
-    "inbound_count": 27,
-    "graph_coverage": "22.2% of pages have inbound links",
+    "total_links": 15,
+    "outbound_count": 32,
+    "inbound_count": 30,
+    "graph_coverage": "24.3% of pages have inbound links",
     "concept_count": 23,
     "meeting_count": 4,
     "person_count": 4,
     "newsletter_count": 3,
     "video_count": 0,
-    "article_count": 1,
+    "article_count": 2,
     "bookmark_count": 0,
     "quote_count": 0,
     "dataset_count": 0,
@@ -34,6 +34,52 @@
       "backlinks": [],
       "outbound_count": 0,
       "inbound_count": 0
+    },
+    {
+      "slug": "articles/why-your-2026-career-goals-are-already-dead-2026-06-16",
+      "title": "Why Your 2026 Career Goals Are Already Dead 2026 06 16",
+      "type": "article",
+      "updated": "",
+      "body": "# Why Your 2026 Career Goals Are Already Dead \u2014 And What to Do About It\n\n**Source:** [[Zaim Mohzani]]'s career newsletter ([[Nation Building School]])\n**Source URI:** gmail://msg_19ece778ab23e039\n**Ingested:** 2026-06-23T20:11:00Z\n**Provenance:** Self-forwarded by [[Zaim Mohzani]] from zaim@nationbuildingschool.com to info+zaim@malohacoast.com on 2026-06-16\n\nIt's June. How's that career goal from January going?\n\nIf you're being honest, probably: forgotten by March, barely remembered (and feeling guilty) in June and quietly dropped by the end of the year.\n\nIt's a timeframe problem, not a discipline problem.\n\n## The Annual Goal Trap\n\nA year is too long to create urgency and too vague to act on. \"Get a new job this year\" feels fine in January. There's time. So nothing happens. By June, the goal is still technically alive, but you haven't done anything that moves it forward. By December, you're setting the same goal again for next year.\n\nZaim's personal story: In January 2025, he set an annual goal: lose 6kg by December. Standard SMART goal. Then he came across [[Brian Moran]] and [[Michael Lennington]]'s book \"The 12 Week Year,\" which argues most people don't actually operate in years. They operate in the last few weeks before a deadline. So the fix is to shrink the deadline.\n\nHe rewrote the goal: lose 6kg in 90 days, by 31 March. He hit it. The best part was that he never had to set that goal again \u2014 the habits built in those 90 days kept running on their own.\n\n## Why This Works for Career Too\n\n\"Get promoted this year\" doesn't tell you what to do on Monday.\n\n\"By 30 September, I will have had 3 conversations with people in my target department, applied to 5 internal roles, and presented one project to leadership\" tells you exactly what to do on Monday.\n\nOne is a wish. The other is a plan.\n\nZaim's clients who set a 90-day goal like \"land 3 offers from MNCs by end of Q3\" with weekly actions attached mostly hit it or get close. The ones with \"find a better job this year\" mostly don't, because there's no Monday task attached.\n\n## How to Set Yours\n\nPick ONE career goal for this quarter. Just one.\n\nWrite down:\n- **My 90-day career goal is...**\n- **This matters to me because...**\n- **To complete this, I commit that by 30 September 2026, I will have...** (make this checkable. \"3 offers\" is checkable. \"More clarity\" is not.)\n- **To make sure I complete it, I'm going to...** (weekly actions, not the outcome)\n\n[Source: [[Zaim Mohzani]]'s email to info+zaim@malohacoast.com, 2026-06-16]",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [
+        {
+          "to": "people/zaim-mohzani",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
+          "to": "companies/nation-building-school",
+          "type": "wikilink",
+          "text": "Nation Building School"
+        },
+        {
+          "to": "people/brian-moran",
+          "type": "wikilink",
+          "text": "Brian Moran"
+        },
+        {
+          "to": "people/michael-lennington",
+          "type": "wikilink",
+          "text": "Michael Lennington"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "people/brian-moran",
+          "type": "wikilink",
+          "text": "articles/why-your-2026-career-goals-are-already-dead-2026-06-16"
+        },
+        {
+          "from": "people/michael-lennington",
+          "type": "wikilink",
+          "text": "articles/why-your-2026-career-goals-are-already-dead-2026-06-16"
+        }
+      ],
+      "outbound_count": 4,
+      "inbound_count": 2
     },
     {
       "slug": "companies/unilever-malaysia",
@@ -695,6 +741,11 @@
       ],
       "backlinks": [
         {
+          "from": "articles/why-your-2026-career-goals-are-already-dead-2026-06-16",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
           "from": "companies/inclusive-ai-association",
           "type": "wikilink",
           "text": "Zaim Mohzani"
@@ -751,7 +802,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 11
+      "inbound_count": 12
     },
     {
       "slug": "zaim-career-goals-12-week-year-2026-06-16",
@@ -844,6 +895,11 @@
   ],
   "graph_links": [
     {
+      "source": "articles/why-your-2026-career-goals-are-already-dead-2026-06-16",
+      "target": "people/zaim-mohzani",
+      "type": "wikilink"
+    },
+    {
       "source": "companies/unilever-malaysia",
       "target": "people/aisyah-rahim",
       "type": "wikilink"
@@ -929,11 +985,19 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-23T20:10:33Z",
+      "ts": "2026-06-23T20:24:55Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
-      "detail": "Dashboard refreshed \u2014 36 pages, 14 links",
+      "detail": "Dashboard refreshed \u2014 37 pages, 15 links",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-23T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "articles/why-your-2026-career-goals-are-already-dead-2026-06-16",
+      "detail": "Why Your 2026 Career Goals Are Already Dead 2026 06 16",
       "level": "info"
     },
     {

@@ -1,27 +1,27 @@
 {
-  "updated_at": "2026-06-23T20:10:26Z",
+  "updated_at": "2026-06-23T20:24:48Z",
   "summary": {
     "score": "82",
     "score_label": "/100",
     "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
-    "page_count": 348,
+    "page_count": 351,
     "embed_coverage": "100% coverage, 0 missing",
-    "graph_coverage": "42.3% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
-    "entity_links": "Coverage 91% \u00b1 3.3%",
+    "graph_coverage": "42.5% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 91% \u00b1 3.2%",
     "concept_count": 125,
     "meeting_count": 14,
-    "person_count": 46,
+    "person_count": 48,
     "company_count": 33,
     "newsletter_count": 83,
     "video_count": 0,
-    "article_count": 19,
+    "article_count": 20,
     "bookmark_count": 25,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 396,
-    "outbound_count": 492,
-    "inbound_count": 457,
+    "total_links": 401,
+    "outbound_count": 499,
+    "inbound_count": 464,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -467,6 +467,52 @@
       "backlinks": [],
       "outbound_count": 0,
       "inbound_count": 0
+    },
+    {
+      "slug": "articles/why-your-2026-career-goals-are-already-dead-2026-06-16",
+      "title": "Why Your 2026 Career Goals Are Already Dead 2026 06 16",
+      "type": "article",
+      "updated": "",
+      "body": "# Why Your 2026 Career Goals Are Already Dead \u2014 And What to Do About It\n\n**Source:** [[Zaim Mohzani]]'s career newsletter ([[Nation Building School]])\n**Source URI:** gmail://msg_19ece778ab23e039\n**Ingested:** 2026-06-23T20:11:00Z\n**Provenance:** Self-forwarded by [[Zaim Mohzani]] from zaim@nationbuildingschool.com to info+zaim@malohacoast.com on 2026-06-16\n\nIt's June. How's that career goal from January going?\n\nIf you're being honest, probably: forgotten by March, barely remembered (and feeling guilty) in June and quietly dropped by the end of the year.\n\nIt's a timeframe problem, not a discipline problem.\n\n## The Annual Goal Trap\n\nA year is too long to create urgency and too vague to act on. \"Get a new job this year\" feels fine in January. There's time. So nothing happens. By June, the goal is still technically alive, but you haven't done anything that moves it forward. By December, you're setting the same goal again for next year.\n\nZaim's personal story: In January 2025, he set an annual goal: lose 6kg by December. Standard SMART goal. Then he came across [[Brian Moran]] and [[Michael Lennington]]'s book \"The 12 Week Year,\" which argues most people don't actually operate in years. They operate in the last few weeks before a deadline. So the fix is to shrink the deadline.\n\nHe rewrote the goal: lose 6kg in 90 days, by 31 March. He hit it. The best part was that he never had to set that goal again \u2014 the habits built in those 90 days kept running on their own.\n\n## Why This Works for Career Too\n\n\"Get promoted this year\" doesn't tell you what to do on Monday.\n\n\"By 30 September, I will have had 3 conversations with people in my target department, applied to 5 internal roles, and presented one project to leadership\" tells you exactly what to do on Monday.\n\nOne is a wish. The other is a plan.\n\nZaim's clients who set a 90-day goal like \"land 3 offers from MNCs by end of Q3\" with weekly actions attached mostly hit it or get close. The ones with \"find a better job this year\" mostly don't, because there's no Monday task attached.\n\n## How to Set Yours\n\nPick ONE career goal for this quarter. Just one.\n\nWrite down:\n- **My 90-day career goal is...**\n- **This matters to me because...**\n- **To complete this, I commit that by 30 September 2026, I will have...** (make this checkable. \"3 offers\" is checkable. \"More clarity\" is not.)\n- **To make sure I complete it, I'm going to...** (weekly actions, not the outcome)\n\n[Source: [[Zaim Mohzani]]'s email to info+zaim@malohacoast.com, 2026-06-16]",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [
+        {
+          "to": "people/zaim-mohzani",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
+          "to": "companies/nation-building-school",
+          "type": "wikilink",
+          "text": "Nation Building School"
+        },
+        {
+          "to": "people/brian-moran",
+          "type": "wikilink",
+          "text": "Brian Moran"
+        },
+        {
+          "to": "people/michael-lennington",
+          "type": "wikilink",
+          "text": "Michael Lennington"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "people/brian-moran",
+          "type": "wikilink",
+          "text": "articles/why-your-2026-career-goals-are-already-dead-2026-06-16"
+        },
+        {
+          "from": "people/michael-lennington",
+          "type": "wikilink",
+          "text": "articles/why-your-2026-career-goals-are-already-dead-2026-06-16"
+        }
+      ],
+      "outbound_count": 4,
+      "inbound_count": 2
     },
     {
       "slug": "bookmarks/agent-skills-by-addy-osmani",
@@ -2006,6 +2052,11 @@
       ],
       "backlinks": [
         {
+          "from": "articles/why-your-2026-career-goals-are-already-dead-2026-06-16",
+          "type": "wikilink",
+          "text": "Nation Building School"
+        },
+        {
           "from": "digests/2026-06-15-business-brain-digest",
           "type": "wikilink",
           "text": "Nation Building School"
@@ -2017,7 +2068,7 @@
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 2
+      "inbound_count": 3
     },
     {
       "slug": "companies/openai",
@@ -8361,6 +8412,38 @@
       "inbound_count": 1
     },
     {
+      "slug": "people/brian-moran",
+      "title": "Brian Moran",
+      "type": "person",
+      "updated": "",
+      "body": "# Brian Moran\n\n> Co-author of \"The 12 Week Year\" \u2014 a productivity framework arguing that annual goals are too long to create urgency, and that shrinking timelines to 90 days produces better results.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[articles/why-your-2026-career-goals-are-already-dead-2026-06-16]] as co-author of \"The 12 Week Year,\" which Zaim Mohzani credits for his own 6kg weight loss in 90 days.\n\n## Related\n\n- [[articles/why-your-2026-career-goals-are-already-dead-2026-06-16]] \u2014 source of this mention\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-16** | Mentioned in Zaim Mohzani's career newsletter about 90-day goal setting. [Source: Zaim Mohzani email to info+zaim@malohacoast.com, 2026-06-16]",
+      "tags": [
+        "author",
+        "productivity"
+      ],
+      "links_out": [
+        {
+          "to": "articles/why-your-2026-career-goals-are-already-dead-2026-06-16",
+          "type": "wikilink",
+          "text": "articles/why-your-2026-career-goals-are-already-dead-2026-06-16"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "articles/why-your-2026-career-goals-are-already-dead-2026-06-16",
+          "type": "wikilink",
+          "text": "Brian Moran"
+        },
+        {
+          "from": "people/michael-lennington",
+          "type": "wikilink",
+          "text": "Brian Moran"
+        }
+      ],
+      "outbound_count": 1,
+      "inbound_count": 2
+    },
+    {
       "slug": "people/carson-bates",
       "title": "Carson Bates",
       "type": "person",
@@ -8848,6 +8931,38 @@
         }
       ],
       "outbound_count": 0,
+      "inbound_count": 1
+    },
+    {
+      "slug": "people/michael-lennington",
+      "title": "Michael Lennington",
+      "type": "person",
+      "updated": "",
+      "body": "# Michael Lennington\n\n> Co-author of \"The 12 Week Year\" \u2014 a productivity framework that advocates for 90-day execution cycles instead of annual goal-setting.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[articles/why-your-2026-career-goals-are-already-dead-2026-06-16]] as co-author of \"The 12 Week Year,\" alongside Brian Moran.\n\n## Related\n\n- [[articles/why-your-2026-career-goals-are-already-dead-2026-06-16]] \u2014 source of this mention\n- [[Brian Moran]] \u2014 co-author\n\n<!-- timeline -->\n\n## Timeline\n\n- **2026-06-16** | Mentioned in Zaim Mohzani's career newsletter about 90-day goal setting. [Source: Zaim Mohzani email to info+zaim@malohacoast.com, 2026-06-16]",
+      "tags": [
+        "author",
+        "productivity"
+      ],
+      "links_out": [
+        {
+          "to": "articles/why-your-2026-career-goals-are-already-dead-2026-06-16",
+          "type": "wikilink",
+          "text": "articles/why-your-2026-career-goals-are-already-dead-2026-06-16"
+        },
+        {
+          "to": "people/brian-moran",
+          "type": "wikilink",
+          "text": "Brian Moran"
+        }
+      ],
+      "backlinks": [
+        {
+          "from": "articles/why-your-2026-career-goals-are-already-dead-2026-06-16",
+          "type": "wikilink",
+          "text": "Michael Lennington"
+        }
+      ],
+      "outbound_count": 2,
       "inbound_count": 1
     },
     {
@@ -9532,6 +9647,11 @@
       ],
       "backlinks": [
         {
+          "from": "articles/why-your-2026-career-goals-are-already-dead-2026-06-16",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
           "from": "companies/inclusive-ai-association",
           "type": "wikilink",
           "text": "Zaim Mohzani"
@@ -9588,7 +9708,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 11
+      "inbound_count": 12
     },
     {
       "slug": "persons/tonbi",
@@ -9839,6 +9959,26 @@
     {
       "source": "articles/humanlayer-launch-forward-2026-06-19",
       "target": "companies/humanlayer",
+      "type": "wikilink"
+    },
+    {
+      "source": "articles/why-your-2026-career-goals-are-already-dead-2026-06-16",
+      "target": "people/zaim-mohzani",
+      "type": "wikilink"
+    },
+    {
+      "source": "articles/why-your-2026-career-goals-are-already-dead-2026-06-16",
+      "target": "companies/nation-building-school",
+      "type": "wikilink"
+    },
+    {
+      "source": "articles/why-your-2026-career-goals-are-already-dead-2026-06-16",
+      "target": "people/brian-moran",
+      "type": "wikilink"
+    },
+    {
+      "source": "articles/why-your-2026-career-goals-are-already-dead-2026-06-16",
+      "target": "people/michael-lennington",
       "type": "wikilink"
     },
     {
@@ -11692,6 +11832,11 @@
       "type": "wikilink"
     },
     {
+      "source": "people/michael-lennington",
+      "target": "people/brian-moran",
+      "type": "wikilink"
+    },
+    {
       "source": "people/nate-herk",
       "target": "concepts/claude-code-10x-skill-newsletter",
       "type": "wikilink"
@@ -11802,6 +11947,7 @@
       "people/ayaan",
       "people/bjarte",
       "people/bob-proctor",
+      "people/brian-moran",
       "people/carson",
       "people/carson-bates",
       "people/david-park",
@@ -11816,6 +11962,7 @@
       "people/liyana",
       "people/mara-cajar-robinson",
       "people/marcus-thompson",
+      "people/michael-lennington",
       "people/nabil-jalil",
       "people/nate-herk",
       "people/neo-kim",
@@ -11927,9 +12074,9 @@
       {
         "name": "extract_atoms_backlog",
         "status": "warn",
-        "message": "23 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
+        "message": "24 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 23,
+          "backlog": 24,
           "pack_declares_phase": false,
           "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
@@ -11963,7 +12110,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 305 pages",
+        "message": "Connected, 308 pages",
         "category": "ops"
       },
       {
@@ -11999,7 +12146,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 438ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 456ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -12029,13 +12176,13 @@
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 76 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 78 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 305 pages; 39 external link(s) (no bare tweets).",
+        "message": "Sampled 308 pages; 39 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -12196,10 +12343,10 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction current: 17/305 pages (6%) stale",
+        "message": "Extraction current: 20/308 pages (6%) stale",
         "details": {
-          "total": 305,
-          "stale": 17,
+          "total": 308,
+          "stale": 20,
           "pct": 6,
           "warn_pct": 20,
           "fail_pct": null,
@@ -12228,7 +12375,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "205 reranker failure(s) in last 7 days (below threshold)",
+        "message": "208 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -12240,7 +12387,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "42.3% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "42.5% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -12343,13 +12490,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 3.3%",
+        "message": "Coverage 91% \u00b1 3.2%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
         "status": "warn",
-        "message": "Coverage 68% \u00b1 5.3% (target 90%)",
+        "message": "Coverage 69% \u00b1 5.2% (target 90%)",
         "category": "meta"
       },
       {
