@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-24T14:15:18Z",
+  "updated_at": "2026-06-24T14:49:48Z",
   "summary": {
     "score": "82",
     "score_label": "/100",
@@ -12307,7 +12307,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 437ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 1912ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
