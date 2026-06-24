@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-06-24T01:00:56Z",
+  "updated_at": "2026-06-24T01:32:26Z",
   "summary": {
-    "score": "92",
+    "score": "82",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
+    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
     "page_count": 354,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "40.4% of pages have inbound links",
-    "entity_links": "Coverage \u2014 48 people, 33 companies indexed",
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "42.1% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 91% \u00b1 3.2%",
     "concept_count": 128,
     "meeting_count": 14,
     "person_count": 48,
@@ -19,14 +19,26 @@
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 408,
-    "outbound_count": 506,
-    "inbound_count": 471,
+    "total_links": 406,
+    "outbound_count": 504,
+    "inbound_count": 470,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
+    "score_components": {
+      "score": "82/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "3/15",
+      "orphans": "9/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 67,
+    "checks_warned": 6,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -792,7 +804,7 @@
       "title": "Humanlayer Launch 2026 06 18",
       "type": "bookmark",
       "updated": "",
-      "body": "# HumanLayer // We're live \u2014 come build with us\n\n**Source:** email from dex at humanlayer via sayf, 2026-06-19  \n**Source URI:** gmail://msg_19edfd1054c17600  \n**Ingested:** 2026-06-24T12:00:00Z  \n\n## Summary\n\nHumanLayer (by Dex and Kyle) is a public launch of their Agentic IDE \u2014 a collaboration platform where engineering teams design complex systems with AI agents before generating code. The product combines the Research-Plan-Implement (RPI) framework (already used at Block and Uber) with a full IDE and software factory tooling. Bring-your-own-subscription model (Claude, Codex, etc.).\n\n## Key Details\n\n- **Product:** Agentic IDE + collaboration platform + software factory building blocks\n- **Pricing:** Starter plan free for teams <3\n- **Differentiation:** Focus on system design review before code generation (don't outsource the thinking)\n- **Track record:** RPI framework running inside Block and Uber\n- **BYO AI:** Bring your own AI subscriptions, no separate per-token billing\n- **Notable links:**\n  - [X Launch Post](https://x.com/dexhorthy/status/2067286892786454855)\n  - [LinkedIn Post](https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U)\n  - [Launch blurb.md](https://humanlayer.com/launch/blurb.md)\n\n## Relevance to Maloha Coast\n\n- Directly relevant to Maloha Coast's focus on AI agent development and tooling\n- RPI framework (Research, Plan, Implement) aligned with agentic software development workflows\n- Bring-your-own-subscription model removes lock-in concerns\n- System-design-first approach before code generation is a novel positioning\n\n## People Mentioned\n\n- **Dex** (dex at humanlayer, dexter@hey.humanlayer.dev) \u2014 co-founder, building HumanLayer\n- **Kyle** \u2014 co-founder, built RPI framework",
+      "body": "# HumanLayer Launch \u2014 Agentic IDE and Software Factory\n\n**Source:** HumanLayer (Dex), forwarded by Sayf\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-24T04:30:00Z\n**Provenance:** Forwarded by sayf on 2026-06-19\n\nHumanLayer is an Agentic IDE, collaboration platform, and building blocks for your software factory \u2014 where engineering teams design complex systems with their AI agents before generating a single line of code.\n\n**Website:** https://humanlayer.com\n**X Launch Post:** https://x.com/dexhorthy/status/2067286892786454855\n**LinkedIn:** https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U\n\n## What It Does\n\n- Lets engineers solving hard problems in complex codebases move **2-3x faster across the entire SDLC** (not just the coding part)\n- Maintains rigorous standards for system architecture and program design\n- Engineers design complex systems with AI agents **before generating a single line of code**\n\n## Core Philosophy\n\n\"Don't outsource the thinking.\" Great teams have run design reviews for decades because there's enormous leverage in collaborating on system design before you write the code. HumanLayer brings that missing piece of the software factory into one place.\n\n## Background\n\nFor the last year, Dex and Kyle have been pushing the limits of what coding agents can do \u2014 first with their open-source **Research, Plan, Implement (RPI)** framework (now running inside Fortune 500s like Block and Uber, where shipping slop is not an option), and now with HumanLayer.\n\n## Pricing\n\n- **Starter plan:** Free for teams of fewer than three\n- **BYO subscription:** Plug in your Claude, Codex, and other AI subscriptions or API keys \u2014 no separate per-token bill",
       "tags": [],
       "links_out": [],
       "backlinks": [],
@@ -1985,15 +1997,9 @@
           "text": "newsletters/three-features-three-claudes-one-afternoon"
         }
       ],
-      "backlinks": [
-        {
-          "from": "newsletters/three-features-three-claudes-2026-06-11",
-          "type": "wikilink",
-          "text": "JS Mastery"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 1,
-      "inbound_count": 1
+      "inbound_count": 0
     },
     {
       "slug": "companies/ksi-strategic-institute",
@@ -2090,7 +2096,7 @@
       ],
       "links_out": [
         {
-          "to": "newsletters/ai-garage-weekly-2026-06-19",
+          "to": "newsletters/msg-19ee2c24d5819622",
           "type": "wikilink",
           "text": "AI Garage Weekly - June 19, 2026"
         }
@@ -3459,7 +3465,7 @@
       "tags": [],
       "links_out": [
         {
-          "to": "newsletters/ai-garage-weekly-2026-06-19",
+          "to": "newsletters/msg-19ee2c24d5819622",
           "type": "wikilink",
           "text": "AI Garage Weekly - June 19, 2026"
         }
@@ -3897,7 +3903,7 @@
       "tags": [],
       "links_out": [
         {
-          "to": "newsletters/ai-garage-weekly-2026-06-19",
+          "to": "newsletters/msg-19ee2c24d5819622",
           "type": "wikilink",
           "text": "AI Garage Weekly - June 19, 2026"
         }
@@ -4274,7 +4280,7 @@
       ],
       "links_out": [
         {
-          "to": "newsletters/claude-second-brain-levels-2026-06-19",
+          "to": "newsletters/claude-second-brain-levels-2026-06-20",
           "type": "wikilink",
           "text": "Every Level of a Claude Second Brain Explained"
         },
@@ -6580,10 +6586,10 @@
     },
     {
       "slug": "newsletters/ai-garage-weekly-2026-06-19",
-      "title": "AI Garage Weekly - June 19, 2026",
+      "title": "Ai Garage Weekly 2026 06 19",
       "type": "newsletter",
       "updated": "",
-      "body": "# AI Garage Weekly - June 19, 2026\n\n**Source:** email\n**Source URI:** gmail://msg_19ee2c24d5819622\n**Ingested:** 2026-06-23T22:32:12Z\n**For:** sayf\n\nExcel, Fable Ban, GLM-5.2, and DR-DCI\n                                   \n                                  \n                                  \n                                  \n                                  \n                        \n\nAI Garage Weekly - June 19, 2026\n\nExcel, Fable Ban, GLM-5.2, and DR-DCI\n\nRead online\n\nBetween the Fable ban and the GLM-5.2 release, it was a pretty big week for\nthe local LLM community I would say. One showed why local AI is so\nimportant, the other showed that it was actually possible to have open\nweights models that approach the top closed frontier models. We just need\nto lower the hardware barrier somehow and I think local AI will really\nexplode.\n\nconsider joining Team Garage\nThank you!*\n\n\n*\ud83c\udfac Video of the Week: Hermes Agent in Excel.* So my wife was talking about\nusing Claude in Excel for her work, and I had the thought: Could I do that\nwith Hermes Agent? I hadn\u2019t heard of that type of integration, I wasn\u2019t\neven sure if it was possible, but I started to research a way to do it. The\nfirst attempt I actually recorded a full video using a much more\ncomplicated, much more frustrating technique. I got to the end of it and\nasked my agent: Isn\u2019t there an easier way to do this? And after some extra\nresearch, they said yes! \"YOU SHOULD'VE TOLD ME THAT TO BEGIN WITH\u201d I\nscreamed in my head, not wanting to upset my agent too much (lol). In the\nend that was the method I ended up recording for this video, it does\nrequire some prep work to start up, but the end result is pretty cool. You\nget a chat window right in Excel, plus you can create custom functions with\nyour Hermes. I was excited for this video and while I got a lot of nice\ncomments on it, it didn\u2019t go super viral as I had hoped (lol). I would\nstill like to try more integrations like this, I think this would be\ngenuinely useful for a lot of people.\n\nHow I Put Hermes Agent Inside Excel (And Made It a Custom Function)\n\nIf you want to try it out yourself, check out my open source github.\n\n\n\ud83d\udce1* AI News & Model Releases*\n\n*Claude Fable 5 banned. *So last Friday after I had sent out my newsletter,\nthe big news came out that Anthropic was removing Fable 5 access due to a\nnew directive from the US government. It was really surprising news, a lot\nof people were really blown away by Fable and disappointed by this move. I\nwas disappointed too, but I\u2019ve been convinced this was the direction we\nwere headed anyway. These models are so powerful, the government isn\u2019t\ngoing to let private companies and individuals have power like that.\nThey\u2019ll want to control it. I think this specific case is just some weird\nAnthropic and the current administration negotiating in public and it will\nget cleared up eventually, but it still highlights the need for local and\ndecentralized AI moving forward. You can\u2019t let all that power be handed to\nonly the current administration, or 1-2 companies, people should have\naccess to these tools.\n\n*GLM-5.2 released.* I\u2019ve been impressed with GLM models before, so when I\nheard about this new open weights model release, I was excited to try. It\nwas really impressive! I gave it some tasks in my first look video\nand I\u2019ve been using it a bit since then, and it does feel like only\nslightly behind Opus 4.8/GPT5.5, maybe one generation behind. This is still\nan incredible feat for an open source model, and it does make me think that\nwe will get genuine frontier-level open source models sooner than we think.\nNow of course most people won\u2019t be able to run them locally, it would take\nsome serious hardware to be able to run it that isn\u2019t super slow and\nquality-degraded, but it just shows what is possible for the future.\n\n\n\ud83d\udcc4* Research & Experiments*\n\n*Dr-DCI: Scaling Direct Corpus Interaction via Dynamic Workspace Expansion *\n(https://arxiv.org/abs/2606.14885\nWith Agent Wikis, one of the big things I\u2019ve been researching is retrieval,\nhow agents are able to collect and process information. I wanted to see if\nI could find a way to go beyond RAG, or enhance RAG in some way. This paper\ncaught my eye. It describes an agent retrieval/workspace pattern that could\nbe effective for Agent Wikis, or having any agent handle any large corpus.\n\nWith normal RAG, you have the agent ask a retriever, get snippets, and then\nanswer from those snippets. With DCI, and earlier version of this method,\nthe agent gets direct shell/file access to the corpus, and can use tools\nlike find, read, compare files, inspect evidence. The problem with this is\nthat it breaks when the corpus is huge. Search millions of files directly\nis slow and noisy. So with DR-DCI, that huge corpus is hidden behind a\nretriever, but the agent can call pull(query, topK), to bring relevant\ndocuments into a local workspace, then use normal file tools on that\nsmaller workspace. So it actually gives you RAG-like recall with filesystem\nagency from DCI. They found that using this method increased accuracy as\nwell as significantly improved wall time and costs.\n\nSo the applications for Agent Wikis is pretty clear, I experimented with\nRAG over the wikis and found that to be one the best methods, but some of\nthese wikis are quite large, so it could become challenging. Since these\nare specifically agent focused, I think having this smaller workspace to\npull relevant chunks out could be useful, because I imagine people are\nusing this knowledge not for just one-off questions, but for ongoing\nproject work. Still need to figure out how or if I can even do this, but I\nthought it was interesting.\n\n\n \ud83d\udcad* Random Brainstorming & Project Progress*\n\n*Agents Wikis: *Nice release for Agent Wikis\npeople seemed to really like it and the first release day got nearly 10k\nvisitors on the site (humans and agents), and we\u2019ve been doing 5k-7k since\nthen. Very large improvement from the last time I released a project before\nmy YouTube channel (I was happy with 10 visitors, lol). I\u2019ve been refining\nthe pipeline to maintaining these wikis, trying to make it as autonomous as\npossible without ruining everything. The one thing I did was to create a\nloop so that missed topics will get researched and then autonomously added\nto the wikis. This will ensure that the wikis actually answer the questions\nthat people have on these topics (without any extra work from me).\nYesterday\u2019s video showed this in action.\n\nI\u2019ve been exploring other ways to allow agents to maintain and enhance the\nproduct. I think once I\u2019m ready to do premium wikis with the stripe\nintegration, that would be a good place for it. I may also explore doing\nsome small ads after that to see how those can drive traffic. I would love\nto do an advertising pipeline where the agent develops all the ad material\n(so I can be lazy), releases the ads, then analyzes the results and hones\nthe ads based on that. I\u2019ve heard of people doing this, but that would be\nan amazing loop to have. The ads themselves would cost money though, so\nI\u2019ll need the site to be profitable before I try that.\n\n\n*AI Garage Weekly publishes every Friday.*\n\n*Tonbi\u2019s AI Garage\n|Threads\n|X\n|LinkedIn\n\n\n\n\n<https://www.google.com/maps/search/228+Park+Ave+S,+%2329976,+New+York,+New+York+10003,+United+States?entry=gmail&source=g>",
+      "body": "# AI Garage Weekly \u2014 June 19, 2026\n\n**Source:** AI Garage Weekly (Tonbi, Beehiiv), forwarded by Sayf\n**Source URI:** gmail://msg_19ee2c24d5819622\n**Ingested:** 2026-06-24T04:30:00Z\n**Provenance:** Forwarded by sayf on 2026-06-20\n\nExcel, Fable Ban, GLM-5.2, and DR-DCI\n\nBetween the Fable ban and the GLM-5.2 release, it was a pretty big week for the local LLM community.\n\n## \ud83c\udfac Video of the Week: Hermes Agent in Excel\n\nTonbi's wife was talking about using Claude in Excel for her work, and he wondered: Could he do that with Hermes Agent? He researched a way to do it, and after some iteration, found a method that works. You get a chat window right in Excel, plus you can create custom functions with your Hermes.\n\n- [How I Put Hermes Agent Inside Excel (And Made It a Custom Function)](https://link.mail.beehiiv.com/ss/c/u001.maopPdr3OQftpzkXs5OR4-tDkO_ZYupC2QTCbId7IkHkiJxZzzIEuleA0Zxl07q_mIlFIjX1d-qo0fTV8ktpwzR6AzV7NOC9JaoERjTgGRKKpgQr8t9M6Ax6eRdxc2VS1KSZt9LH0au-x505YOJCIHODQTRnFuG4RF0Fca33iwrdB49JxH-Wpzn-QIBG9tCOiNcW0-lZMJIx8ziuwfUR4WLoyIC_B8CQQdw3BksEQ74jMfWREhLH2w5wWjK9POqQ/4rm/2_NJKj_3TB2RDv6Z_iUFxg/h2/h001.Uo1z3BXiQOSpNs0ZoYyWZCZTVSRrzmTQWvnIe6dPxT8)\n- [Open source GitHub code](https://link.mail.beehiiv.com/ss/c/u001.qJ5Rzv1y5w9Ogi8ibfVtWgZcfXE2VG8Vw54KSfDWY6h70LFeL-Q7Hx42sHfgOTOHMfMA8Tvh0i2lXuut8kk0h-HXg9zZbozz-7x3AickIscmvoz47v_X2unfOY-IPfm5OqSPCBDoJ7W6GB2UFlen122VfcEGkssl7vh2JO8LNdhT5quXBuoVWvc_bqV3T5MZ0ZZSS0xTlNNgdAuBmngLXc6nngpFV3y34Goi5ri2vNdx-hdK2WRft7oI-HEsR61LRab8ztti1FMpsJDIdZ8pXA/4rm/2_NJKj_3TB2RDv6Z_iUFxg/h3/h001.0XFq9A22xcSOelVpwn2BUywwViPilIFy83_G8h69g1U)\n\n## \ud83d\udce1 AI News & Model Releases\n\n**Claude Fable 5 banned.** Anthropic removed Fable 5 access due to a new directive from the US government. Many people were blown away by Fable and disappointed by this move. Tonbi thinks this specific case is some weird Anthropic/administration negotiation happening in public and will get cleared up eventually, but it highlights the need for local and decentralized AI moving forward.\n\n**GLM-5.2 released.** New open weights model release. It feels only slightly behind Opus 4.8/GPT-5.5 \u2014 maybe one generation behind. An incredible feat for an open source model, showing we'll get genuine frontier-level open source models sooner than expected.\n\n## \ud83d\udcc4 Research & Experiments\n\n**DR-DCI: Scaling Direct Corpus Interaction via Dynamic Workspace Expansion** (arxiv.org/abs/2606.14885)\n\nA retrieval/workspace pattern that goes beyond RAG. With normal RAG, the agent asks a retriever, gets snippets, then answers. With earlier DCI, the agent gets direct shell/file access to the corpus. The problem: it breaks when the corpus is huge. DR-DCI hides the huge corpus behind a retriever, lets the agent call `pull(query, topK)` to bring relevant docs into a local workspace, then use normal file tools on that smaller workspace. Increases accuracy while improving wall time and costs.\n\nRelevant to Agent Wikis and any agent handling large corpora.\n\n## \ud83d\udcad Random Brainstorming & Project Progress\n\n**Agent Wikis:** First release day got nearly 10k visitors. Maintaining 5k-7k daily since. Tonbi created a loop so missed topics get researched and autonomously added to the wikis. Exploring premium wikis with Stripe integration, possibly small ads after that \u2014 an advertising pipeline where the agent develops, releases, and analyzes ad material autonomously.",
       "tags": [
         "ai-garage",
         "hermes-agent",
@@ -6605,19 +6611,9 @@
           "text": "newsletters/ai-garage-weekly-2026-06-19"
         },
         {
-          "from": "companies/openai",
-          "type": "wikilink",
-          "text": "AI Garage Weekly - June 19, 2026"
-        },
-        {
           "from": "companies/zhipu-ai",
           "type": "wikilink",
           "text": "ai-garage-weekly-2026-06-19"
-        },
-        {
-          "from": "concepts/dr-dci",
-          "type": "wikilink",
-          "text": "AI Garage Weekly - June 19, 2026"
         },
         {
           "from": "concepts/glm-5-2",
@@ -6625,23 +6621,13 @@
           "text": "ai-garage-weekly-2026-06-19"
         },
         {
-          "from": "concepts/hermes-agent",
-          "type": "wikilink",
-          "text": "AI Garage Weekly - June 19, 2026"
-        },
-        {
           "from": "people/tonbi",
           "type": "wikilink",
           "text": "newsletters/ai-garage-weekly-2026-06-19"
-        },
-        {
-          "from": "persons/tonbi",
-          "type": "wikilink",
-          "text": "AI Garage Weekly - June 19, 2026"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 9
+      "inbound_count": 5
     },
     {
       "slug": "newsletters/ai-garage-weekly-2026-06-20",
@@ -6749,21 +6735,15 @@
     },
     {
       "slug": "newsletters/claude-second-brain-levels-2026-06-19",
-      "title": "Every Level of a Claude Second Brain Explained",
+      "title": "Claude Second Brain Levels 2026 06 19",
       "type": "newsletter",
       "updated": "",
-      "body": "# Every Level of a Claude Second Brain Explained\n\n**Source:** email\n**Source URI:** gmail://msg_19ee2dfa87f86548\n**Ingested:** 2026-06-23T22:32:11Z\n**For:** sayf\n\nIn This Issue\n\n   - Five levels of building a Claude second brain, from basic file search\n   to fully autonomous recall.\n   - Robert automated a client's outbound email pipeline and got their call\n   center actually following up.\n   - OpenAI's Codex just crossed 5 million weekly users, and there's a free\n   bonus available through June 24 if you use it.\n\n------------------------------\n\nNew Video:\nEvery Level of a Claude Second Brain Explained[image: Every Level of a\nClaude Second Brain Explained]\n\nThere are five distinct levels to building a Claude second brain, and most\npeople are stuck at level one.\n\nLevel one is just finding a file by searching an exact word. Level five is\na fully autonomous system that knows your business, your client\nrelationships, and your IP better than you do. The difference between them\nisn't the tool. It's how the data is organized.\n\n*The insight that changes how you build:* Start from the end. Before you\norganize a single file, ask how you'll access this data later. The shape of\nthe basketball determines the size of the hoop. Jon shows his actual setup\n(a Herku project, just markdown files and folders) and walks through what\nseparates each level, including semantic search (finding by meaning, not\nexact match) and full relationship mapping.\n\n*How this helps you:* Your moat is your data. This video shows you how to\nactually organize it so your agents can use it, not just find it.\nWatch and Discuss\n------------------------------\n\nWinning Is All We Do\nRobert automated a client's outbound email pipeline from scratch[image:\nStudent win screenshot]\n\n*What happened:* Robert's client had a call center calling leads, but\nnothing was following up by email. Sales managers emailed Robert their\ndaily lead lists as Excel files. He built an automation that handles the\nrest: when the file lands in his inbox, it extracts the email, address, and\nname data, normalizes it (no more \"N123 MAIN STREET\" showing up as a\ndeliverable address), and uploads every contact directly into Instantly as\na ready-to-run campaign. No manual cleanup. No copy-paste. Just results.\n\n*The opportunity for you:* Businesses running call centers almost always\nhave messy lead data and no email follow-up. An automation that converts a\nspreadsheet into a live campaign solves a problem they didn't know anyone\ncould fix. Robert's words say it best: \"Life got easier.\"\n\nThis is one of many success stories from AI Automation Society Plus. If\nyou're not a member, you're missing out.\nJoin the Fun\n------------------------------\n\nIn the News\nCodex just hit 5 million weekly users. If you use it, there's a free bonus\nthrough June 24.\n\n*The news:* OpenAI Codex has crossed 5 million weekly active users and\nlaunched two features alongside the milestone. One is permanent: banked\nrate limit resets. Instead of your weekly limit resetting on a fixed timer\n(whether you need it or not), you can now save resets and use them when you\nactually need them. The other runs through June 24. Plus and Pro users can\ninvite up to three friends to try Codex. When a friend sends their first\nCodex message, you both get a bonus reset.\n\n*How it affects you:* If you've been hitting Codex rate limits at the wrong\nmoment mid-build, the banked reset system fixes that. You decide when to\nuse your reset, not the clock. And if you're not hitting limits yet, the\nreferral is easy headroom to bank before the window closes. The bigger\nsignal here: Codex is now growing through referral mechanics at 5 million\nweekly users. That's not hype. That's a tool people are actively building\nwith and recommending. Read more here.\n------------------------------\n\n\n\n\n<https://www.google.com/maps/search/228+Park+Ave+S,+%2329976,+New+York,+New+York+10003,+United+States?entry=gmail&source=g>",
+      "body": "# Every Level of a Claude Second Brain Explained\n\n**Source:** AI Automation Society (Nate Herk), forwarded by Sayf\n**Source URI:** gmail://msg_19ee2dfa87f86548\n**Ingested:** 2026-06-24T04:30:00Z\n**Provenance:** Forwarded by sayf on 2026-06-20\n\nA Claude second brain breakdown, a client pipeline automated, and Codex hits 5M users with a free bonus through June 24.\n\n## Five Levels of a Claude Second Brain\n\nThere are five distinct levels to building a Claude second brain, and most people are stuck at level one.\n\n- **Level one:** Just finding a file by searching an exact word\n- **Level five:** A fully autonomous system that knows your business, your client relationships, and your IP better than you do\n\nThe difference between them isn't the tool \u2014 it's how the data is organized.\n\n**Key insight:** Start from the end. Before you organize a single file, ask how you'll access this data later. The shape of the basketball determines the size of the hoop.\n\nJon shows his actual setup (a Herku project, just markdown files and folders) and walks through what separates each level, including semantic search (finding by meaning, not exact match) and full relationship mapping.\n\n**How this helps you:** Your moat is your data. This video shows you how to actually organize it so your agents can use it, not just find it.\n\n## Winning Is All We Do \u2014 Client Pipeline Automation\n\nRobert automated a client's outbound email pipeline from scratch:\n- Client's call center was calling leads but nothing was following up by email\n- Sales managers emailed Robert daily lead lists as Excel files\n- He built an automation: when the file lands in his inbox, it extracts emails/addresses/names, normalizes the data (no more \"N123 MAIN STREET\"), and uploads every contact directly into Instantly as a ready-to-run campaign\n- No manual cleanup, no copy-paste\n\n**The opportunity:** Businesses running call centers almost always have messy lead data and no email follow-up. An automation that converts a spreadsheet into a live campaign solves a problem they didn't know anyone could fix.\n\n## In the News \u2014 Codex Hits 5M Weekly Users\n\nOpenAI Codex crossed 5 million weekly active users with two new features:\n1. **Banked rate limit resets (permanent):** Save resets and use them when you actually need them instead of a fixed timer\n2. **Referral bonus (through June 24):** Plus and Pro users can invite up to three friends to try Codex; both get a bonus reset when a friend sends their first message",
       "tags": [],
       "links_out": [],
-      "backlinks": [
-        {
-          "from": "concepts/openai-codex",
-          "type": "wikilink",
-          "text": "Every Level of a Claude Second Brain Explained"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 0,
-      "inbound_count": 1
+      "inbound_count": 0
     },
     {
       "slug": "newsletters/claude-second-brain-levels-2026-06-20",
@@ -6822,6 +6802,11 @@
           "text": "newsletters/claude-second-brain-levels-2026-06-20"
         },
         {
+          "from": "concepts/openai-codex",
+          "type": "wikilink",
+          "text": "Every Level of a Claude Second Brain Explained"
+        },
+        {
           "from": "people/jon",
           "type": "wikilink",
           "text": "Claude Second Brain Levels 2026 06 20"
@@ -6833,7 +6818,7 @@
         }
       ],
       "outbound_count": 4,
-      "inbound_count": 6
+      "inbound_count": 7
     },
     {
       "slug": "newsletters/claude-second-brain-levels",
@@ -7255,13 +7240,33 @@
           "text": "newsletters/msg-19ee2c24d5819622"
         },
         {
+          "from": "companies/openai",
+          "type": "wikilink",
+          "text": "AI Garage Weekly - June 19, 2026"
+        },
+        {
+          "from": "concepts/dr-dci",
+          "type": "wikilink",
+          "text": "AI Garage Weekly - June 19, 2026"
+        },
+        {
+          "from": "concepts/hermes-agent",
+          "type": "wikilink",
+          "text": "AI Garage Weekly - June 19, 2026"
+        },
+        {
           "from": "people/tonbi",
           "type": "wikilink",
           "text": "newsletters/msg-19ee2c24d5819622"
+        },
+        {
+          "from": "persons/tonbi",
+          "type": "wikilink",
+          "text": "AI Garage Weekly - June 19, 2026"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 2
+      "inbound_count": 6
     },
     {
       "slug": "newsletters/msg-19ee2dfa87f86548-claude-second-brain-levels",
@@ -7889,22 +7894,11 @@
       "title": "Three Features Three Claudes 2026 06 11",
       "type": "newsletter",
       "updated": "",
-      "body": "# Three Features. Three Claudes. One Afternoon.\n\n**Source:** email\n**Source URI:** gmail://msg_19eb960b3c2b3ec2\n**Ingested:** 2026-06-23T00:00:00Z\n**Provenance:** Forwarded by sayf on 2026-06-12\n\n[[JS Mastery]] newsletter by [[Adrian]].\n\nA practical experiment in running three Claude Code agents in parallel on the same project using Git worktrees.\n\n## Key Insights\n\n- **Setup:** Git worktrees allow checking out multiple branches of the same project into separate directories. Each directory gets its own Claude session, its own context window, its own isolated files.\n- **What ran:** Agent 1 \u2014 dark/light mode toggle. Agent 2 \u2014 API endpoint tests. Agent 3 \u2014 code quality tooling. None aware of the others.\n- **The critical problem it solves:** Two agents writing to the same file simultaneously. With worktrees, that can't happen \u2014 they operate in completely separate environments.\n- **Merge:** A fourth Claude session pulled everything together and resolved conflicts. Found one conflict (pyproject.toml modified by two branches), resolved in ~30 seconds.\n- **Result:** Three features, built simultaneously, merged, tested \u2014 one afternoon.\n\n## The Real Shift\n\n[[Adrian]]'s key observation: He spent that afternoon *thinking* \u2014 about architecture, about what each feature needed to know, about how pieces fit together after the merge. Not implementing. Directing.\n\n> \"That's the shift I keep coming back to.\"\n\n## Relevance\n\nDirectly applicable to how MC (ops) and Sammy (content) work as parallel agents in the Maloha Coast ecosystem. The worktree pattern is a concrete implementation of task isolation for multi-agent coding.\n\n## Author\n\n[[Adrian]] \u2014 runs [[JS Mastery]] (contact@jsmastery.pro). Building an AI course with an enterprise angle.",
+      "body": "# Three Features. Three Claudes. One Afternoon.\n\n**Source:** JS Mastery (Adrian), forwarded by Sayf\n**Source URI:** gmail://msg_19eb960b3c2b3ec2\n**Ingested:** 2026-06-24T04:30:00Z\n**Provenance:** Forwarded by sayf on 2026-06-12\n\n## Parallel Agent Development with Git Worktrees\n\nAdrian ran three Claude Code sessions in parallel, all working on the same project simultaneously:\n- One building a dark/light mode toggle\n- One writing API endpoint tests\n- One adding code quality tooling\n\nNone of them knew the others existed.\n\n**The setup:** Git worktrees \u2014 check out multiple branches of the same project into separate directories and work on them independently. Each directory gets its own Claude session, its own context window, its own isolated set of files to modify.\n\n**What it solves:** Two agents writing to the same file at the same time. With worktrees, that can't happen \u2014 they're operating in completely separate environments.\n\n## The Merge\n\nWhen all three were done:\n1. Each branch was committed with a descriptive message (Claude wrote those)\n2. A fourth Claude session pulled everything together and resolved conflicts\n3. Found one conflict (pyproject.toml modified by two branches) \u2014 resolved in ~30 seconds\n\n## The Real Insight\n\nIt wasn't the speed that stuck with Adrian \u2014 it was that he spent the afternoon thinking about architecture, what each feature needed to know, how the pieces would fit together after the merge. Not implementing. Directing.\n\n\"That's the shift I keep coming back to.\"",
       "tags": [],
-      "links_out": [
-        {
-          "to": "companies/js-mastery",
-          "type": "wikilink",
-          "text": "JS Mastery"
-        },
-        {
-          "to": "Adrian",
-          "type": "wikilink",
-          "text": "Adrian"
-        }
-      ],
+      "links_out": [],
       "backlinks": [],
-      "outbound_count": 2,
+      "outbound_count": 0,
       "inbound_count": 0
     },
     {
@@ -9822,7 +9816,7 @@
       "tags": [],
       "links_out": [
         {
-          "to": "newsletters/ai-garage-weekly-2026-06-19",
+          "to": "newsletters/msg-19ee2c24d5819622",
           "type": "wikilink",
           "text": "AI Garage Weekly - June 19, 2026"
         }
@@ -10441,7 +10435,7 @@
     },
     {
       "source": "companies/openai",
-      "target": "newsletters/ai-garage-weekly-2026-06-19",
+      "target": "newsletters/msg-19ee2c24d5819622",
       "type": "wikilink"
     },
     {
@@ -10746,7 +10740,7 @@
     },
     {
       "source": "concepts/dr-dci",
-      "target": "newsletters/ai-garage-weekly-2026-06-19",
+      "target": "newsletters/msg-19ee2c24d5819622",
       "type": "wikilink"
     },
     {
@@ -10841,7 +10835,7 @@
     },
     {
       "source": "concepts/hermes-agent",
-      "target": "newsletters/ai-garage-weekly-2026-06-19",
+      "target": "newsletters/msg-19ee2c24d5819622",
       "type": "wikilink"
     },
     {
@@ -10911,7 +10905,7 @@
     },
     {
       "source": "concepts/openai-codex",
-      "target": "newsletters/claude-second-brain-levels-2026-06-19",
+      "target": "newsletters/claude-second-brain-levels-2026-06-20",
       "type": "wikilink"
     },
     {
@@ -11646,11 +11640,6 @@
     },
     {
       "source": "newsletters/claude-second-brain-levels-2026-06-20",
-      "target": "concepts/openai-codex",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/claude-second-brain-levels-2026-06-20",
       "target": "people/robert",
       "type": "wikilink"
     },
@@ -11845,11 +11834,6 @@
       "type": "wikilink"
     },
     {
-      "source": "newsletters/three-features-three-claudes-2026-06-11",
-      "target": "companies/js-mastery",
-      "type": "wikilink"
-    },
-    {
       "source": "newsletters/vm-deep-dive-system-design-2026-05-25",
       "target": "companies/system-design-one",
       "type": "wikilink"
@@ -12031,7 +12015,7 @@
     },
     {
       "source": "persons/tonbi",
-      "target": "newsletters/ai-garage-weekly-2026-06-19",
+      "target": "newsletters/msg-19ee2c24d5819622",
       "type": "wikilink"
     },
     {
@@ -12160,13 +12144,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 70,
+    "brain_checks_score": 90,
     "category_scores": {
-      "brain": 95,
+      "brain": 90,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -12196,32 +12180,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -12233,11 +12195,12 @@
       },
       {
         "name": "extract_atoms_backlog",
-        "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "status": "warn",
+        "message": "24 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 0,
+          "backlog": 24,
           "pack_declares_phase": false,
+          "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
         "category": "brain"
@@ -12245,7 +12208,7 @@
       {
         "name": "conversation_format_coverage",
         "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "message": "11 pages: bold-name-no-time=10, _no_match=1",
         "category": "brain"
       },
       {
@@ -12269,7 +12232,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 311 pages",
         "category": "ops"
       },
       {
@@ -12305,7 +12268,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 444ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -12323,25 +12286,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 90%, timeline 68%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 78 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 311 pages; 39 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -12502,7 +12465,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 26/311 pages (8%) stale",
+        "details": {
+          "total": 311,
+          "stale": 26,
+          "pct": 8,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -12514,7 +12485,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -12526,7 +12497,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "213 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -12538,7 +12509,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "42.1% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -12580,7 +12551,7 @@
       {
         "name": "oauth_confidential_client_health",
         "status": "ok",
-        "message": "No OAuth clients registered",
+        "message": "4 OAuth client(s) registered; all auth shapes consistent",
         "category": "ops"
       },
       {
@@ -12641,13 +12612,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 91% \u00b1 3.2%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 69% \u00b1 5.2% (target 90%)",
         "category": "meta"
       },
       {
@@ -12665,7 +12636,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "10 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
