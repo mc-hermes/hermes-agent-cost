@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-25T04:00:24Z",
+  "updated_at": "2026-06-25T04:55:36Z",
   "summary": {
-    "page_count": 39,
+    "page_count": 40,
     "people_count": 4,
     "company_count": 1,
     "artifact_count": 0,
     "total_links": 18,
     "outbound_count": 35,
     "inbound_count": 33,
-    "graph_coverage": "25.6% of pages have inbound links",
-    "concept_count": 25,
+    "graph_coverage": "25.0% of pages have inbound links",
+    "concept_count": 26,
     "meeting_count": 4,
     "person_count": 4,
     "newsletter_count": 3,
@@ -160,7 +160,7 @@
       "title": "Aisyah Rahim Client Profile 2026 06 15",
       "type": "concept",
       "updated": "",
-      "body": "# Aisyah Rahim - Client Profile (Brand Manager at Unilever)\n\nZaim here. Adding a quick profile on a new client.\n\nName: Aisyah Rahim\nRole: Senior Brand Manager at Unilever Malaysia\nContext: Referred by Liyana from the KSI workshop last month. First session next Tuesday.\n\nKey points from our intro call:\n- 8 years in FMCG brand management, feeling stagnant\n- Wants to pivot into tech but unsure where to start\n- Main blocker: 'I don't have a technical background'\n- Has actually done more data-driven work than she realises \u2014 ran consumer analytics for 3 product launches\n- Salary anchor: RM 18k/month, worried about resetting to junior level\n\nMy read: Classic mid-career pivot case. The real problem isn't skills \u2014 it's confidence and narrative. She needs help reframing 'brand manager' as 'growth strategist who uses data.' Tech companies would kill for someone who can bridge consumer insights and product.\n\nPlan for session 1: Audit her last 2 years of work through a tech lens. Find 3-5 specific examples where she already did 'product thinking' without calling it that.\n\n\u2014 Zaim",
+      "body": "# Aisyah Rahim \u2014 Client Profile (Zaim)\n\n**Source:** email (Zaim self-send to info@malohacoast.com)\n**Source URI:** gmail://msg_19eca0a8dc4888c3\n**Ingested:** 2026-06-25T04:20:00Z\n**Provenance:** Written by Zaim, 2026-06-15\n\n## Profile\n\n- **Name:** Aisyah Rahim\n- **Role:** Senior Brand Manager at Unilever Malaysia\n- **Referred by:** Liyana from the KSI workshop (last month)\n- **First session:** Next Tuesday\n\n## Intro Call Summary\n\n- 8 years in FMCG brand management, feeling stagnant\n- Wants to pivot into tech but unsure where to start\n- Main blocker: \"I don't have a technical background\"\n- Has actually done more data-driven work than she realises \u2014 ran consumer analytics for 3 product launches\n- Salary anchor: RM 18k/month, worried about resetting to junior level\n\n## Zaim's Read\n\nClassic mid-career pivot case. The real problem isn't skills \u2014 it's confidence and narrative. She needs help reframing \"brand manager\" as \"growth strategist who uses data.\" Tech companies would kill for someone who can bridge consumer insights and product.\n\n## Session 1 Plan\n\n- Audit her last 2 years of work through a tech lens\n- Find 3-5 specific examples where she already did \"product thinking\" without calling it that",
       "tags": [
         "zaim"
       ],
@@ -421,6 +421,20 @@
       "type": "concept",
       "updated": "",
       "body": "# Zaim's KSI 15-Minute Rule - Student Observation Patterns\n\nZaim here. Wanted to capture this before I forget.\n\nBetween KSI sessions I have these 15-minute gaps. Started using them to jot down one thing I noticed about each student \u2014 what they're stuck on, what lit them up. After a month of this, patterns emerged that I'd never have spotted otherwise.\n\nThree buckets emerged:\n1. Career pivoters \u2014 stuck on 'what if I fail' not 'what do I want'\n2. Fresh grads \u2014 over-indexing on salary, under-indexing on growth trajectory  \n3. Mid-career \u2014 all variations of 'is this it?'\n\nThe 15-minute rule: never let a gap go empty. Even one sentence per student compounds.\n\n\u2014 Zaim",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "concepts/zaim-ksi-observation-patterns-2026-06-14",
+      "title": "Zaim Ksi Observation Patterns 2026 06 14",
+      "type": "concept",
+      "updated": "",
+      "body": "# Zaim's KSI Observation Patterns\n\n**Source:** email (Zaim self-send to info@malohacoast.com)\n**Source URI:** gmail://msg_19eca04daacc7a09\n**Ingested:** 2026-06-25T04:20:00Z\n**Provenance:** Written by Zaim, 2026-06-14\n\n## The 15-Minute Rule\n\nBetween KSI sessions, Zaim uses 15-minute gaps to jot down one observation about each student \u2014 what they're stuck on, what lit them up. After a month of this, patterns emerged.\n\n## Three Student Buckets\n\n1. **Career pivoters** \u2014 stuck on \"what if I fail\" not \"what do I want\"\n2. **Fresh grads** \u2014 over-indexing on salary, under-indexing on growth trajectory\n3. **Mid-career** \u2014 all variations of \"is this it?\"\n\n## Key Insight\n\n> \"Never let a gap go empty. Even one sentence per student compounds.\"",
       "tags": [
         "zaim"
       ],
@@ -1060,11 +1074,19 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-25T04:00:24Z",
+      "ts": "2026-06-25T04:55:36Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
-      "detail": "Dashboard refreshed \u2014 39 pages, 18 links",
+      "detail": "Dashboard refreshed \u2014 40 pages, 18 links",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-25T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "concepts/aisyah-rahim-client-profile-2026-06-15",
+      "detail": "Aisyah Rahim Client Profile 2026 06 15",
       "level": "info"
     },
     {
@@ -1081,6 +1103,14 @@
       "stage": "updated",
       "slug": "concepts/coaching-client-profile-aisyah-rahim-2026-06-15",
       "detail": "Coaching Client Profile Aisyah Rahim 2026 06 15",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-25T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "concepts/zaim-ksi-observation-patterns-2026-06-14",
+      "detail": "Zaim Ksi Observation Patterns 2026 06 14",
       "level": "info"
     },
     {
@@ -1105,14 +1135,6 @@
       "stage": "updated",
       "slug": "concepts/15-minute-gap-method-zaim",
       "detail": "15 Minute Gap Method Zaim",
-      "level": "info"
-    },
-    {
-      "ts": "2026-06-23T00:00:00Z",
-      "source": "page",
-      "stage": "updated",
-      "slug": "concepts/aisyah-rahim-client-profile-2026-06-15",
-      "detail": "Aisyah Rahim Client Profile 2026 06 15",
       "level": "info"
     },
     {

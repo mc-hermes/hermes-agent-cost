@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-06-25T04:00:13Z",
+  "updated_at": "2026-06-25T04:55:29Z",
   "summary": {
-    "score": "92",
+    "score": "82",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 360,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "39.2% of pages have inbound links",
-    "entity_links": "Coverage \u2014 48 people, 33 companies indexed",
-    "concept_count": 130,
+    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
+    "page_count": 361,
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "41.1% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 91% \u00b1 3.2%",
+    "concept_count": 131,
     "meeting_count": 14,
     "person_count": 48,
     "company_count": 33,
@@ -26,7 +26,19 @@
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
+    "score_components": {
+      "score": "82/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "3/15",
+      "orphans": "9/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 67,
+    "checks_warned": 6,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -792,7 +804,7 @@
       "title": "Humanlayer Launch 2026 06 18",
       "type": "bookmark",
       "updated": "",
-      "body": "# HumanLayer Launch \u2014 Agentic IDE and Software Factory\n\n**Source:** HumanLayer (Dex), forwarded by Sayf\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-24T04:30:00Z\n**Provenance:** Forwarded by sayf on 2026-06-19\n\nHumanLayer is an Agentic IDE, collaboration platform, and building blocks for your software factory \u2014 where engineering teams design complex systems with their AI agents before generating a single line of code.\n\n**Website:** https://humanlayer.com\n**X Launch Post:** https://x.com/dexhorthy/status/2067286892786454855\n**LinkedIn:** https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U\n\n## What It Does\n\n- Lets engineers solving hard problems in complex codebases move **2-3x faster across the entire SDLC** (not just the coding part)\n- Maintains rigorous standards for system architecture and program design\n- Engineers design complex systems with AI agents **before generating a single line of code**\n\n## Core Philosophy\n\n\"Don't outsource the thinking.\" Great teams have run design reviews for decades because there's enormous leverage in collaborating on system design before you write the code. HumanLayer brings that missing piece of the software factory into one place.\n\n## Background\n\nFor the last year, Dex and Kyle have been pushing the limits of what coding agents can do \u2014 first with their open-source **Research, Plan, Implement (RPI)** framework (now running inside Fortune 500s like Block and Uber, where shipping slop is not an option), and now with HumanLayer.\n\n## Pricing\n\n- **Starter plan:** Free for teams of fewer than three\n- **BYO subscription:** Plug in your Claude, Codex, and other AI subscriptions or API keys \u2014 no separate per-token bill",
+      "body": "# HumanLayer // We're live \u2014 come build with us\n\n**Source:** email (sayf forward of dex at humanlayer launch email)\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-25T04:20:00Z\n**Provenance:** Forwarded by sayf from dexter@hey.humanlayer.dev, 2026-06-19\n\nHumanLayer is an Agentic IDE and collaboration platform where engineering teams design complex systems with their AI agents **before** generating a single line of code. Built by Dex and Kyle (creators of the open-source RPI framework now running inside Block and Uber).\n\n## Key Points\n\n- **The problem:** Teams were shipping \"slop\" \u2014 code without design review. RPI addressed this.\n- **The solution:** HumanLayer brings the missing design-review phase into a single platform \u2014 an Agentic IDE + collaboration layer.\n- **Claims 2-3x speed** across the full SDLC, not just coding.\n- **Bring your own subscription** \u2014 plug in Claude, Codex, or other API keys. No separate token billing.\n- **Starter plan is free** for teams < 3.\n\n## Core Idea\n\n> \"Don't outsource the thinking. Great teams have run design reviews for decades because there's enormous leverage in collaborating on system design before you write the code.\"\n\n## Founders\n\n- **Dex** (dex at humanlayer) \u2014 open-source RPI framework creator\n- **Kyle** \u2014 co-founder",
       "tags": [],
       "links_out": [],
       "backlinks": [],
@@ -2992,7 +3004,7 @@
       "title": "Aisyah Rahim Client Profile 2026 06 15",
       "type": "concept",
       "updated": "",
-      "body": "# Aisyah Rahim - Client Profile (Brand Manager at Unilever)\n\nZaim here. Adding a quick profile on a new client.\n\nName: Aisyah Rahim\nRole: Senior Brand Manager at Unilever Malaysia\nContext: Referred by Liyana from the KSI workshop last month. First session next Tuesday.\n\nKey points from our intro call:\n- 8 years in FMCG brand management, feeling stagnant\n- Wants to pivot into tech but unsure where to start\n- Main blocker: 'I don't have a technical background'\n- Has actually done more data-driven work than she realises \u2014 ran consumer analytics for 3 product launches\n- Salary anchor: RM 18k/month, worried about resetting to junior level\n\nMy read: Classic mid-career pivot case. The real problem isn't skills \u2014 it's confidence and narrative. She needs help reframing 'brand manager' as 'growth strategist who uses data.' Tech companies would kill for someone who can bridge consumer insights and product.\n\nPlan for session 1: Audit her last 2 years of work through a tech lens. Find 3-5 specific examples where she already did 'product thinking' without calling it that.\n\n\u2014 Zaim",
+      "body": "# Aisyah Rahim \u2014 Client Profile (Zaim)\n\n**Source:** email (Zaim self-send to info@malohacoast.com)\n**Source URI:** gmail://msg_19eca0a8dc4888c3\n**Ingested:** 2026-06-25T04:20:00Z\n**Provenance:** Written by Zaim, 2026-06-15\n\n## Profile\n\n- **Name:** Aisyah Rahim\n- **Role:** Senior Brand Manager at Unilever Malaysia\n- **Referred by:** Liyana from the KSI workshop (last month)\n- **First session:** Next Tuesday\n\n## Intro Call Summary\n\n- 8 years in FMCG brand management, feeling stagnant\n- Wants to pivot into tech but unsure where to start\n- Main blocker: \"I don't have a technical background\"\n- Has actually done more data-driven work than she realises \u2014 ran consumer analytics for 3 product launches\n- Salary anchor: RM 18k/month, worried about resetting to junior level\n\n## Zaim's Read\n\nClassic mid-career pivot case. The real problem isn't skills \u2014 it's confidence and narrative. She needs help reframing \"brand manager\" as \"growth strategist who uses data.\" Tech companies would kill for someone who can bridge consumer insights and product.\n\n## Session 1 Plan\n\n- Audit her last 2 years of work through a tech lens\n- Find 3-5 specific examples where she already did \"product thinking\" without calling it that",
       "tags": [
         "zaim"
       ],
@@ -5095,6 +5107,20 @@
       "type": "concept",
       "updated": "",
       "body": "# Zaim's KSI 15-Minute Rule - Student Observation Patterns\n\nZaim here. Wanted to capture this before I forget.\n\nBetween KSI sessions I have these 15-minute gaps. Started using them to jot down one thing I noticed about each student \u2014 what they're stuck on, what lit them up. After a month of this, patterns emerged that I'd never have spotted otherwise.\n\nThree buckets emerged:\n1. Career pivoters \u2014 stuck on 'what if I fail' not 'what do I want'\n2. Fresh grads \u2014 over-indexing on salary, under-indexing on growth trajectory  \n3. Mid-career \u2014 all variations of 'is this it?'\n\nThe 15-minute rule: never let a gap go empty. Even one sentence per student compounds.\n\n\u2014 Zaim",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "concepts/zaim-ksi-observation-patterns-2026-06-14",
+      "title": "Zaim Ksi Observation Patterns 2026 06 14",
+      "type": "concept",
+      "updated": "",
+      "body": "# Zaim's KSI Observation Patterns\n\n**Source:** email (Zaim self-send to info@malohacoast.com)\n**Source URI:** gmail://msg_19eca04daacc7a09\n**Ingested:** 2026-06-25T04:20:00Z\n**Provenance:** Written by Zaim, 2026-06-14\n\n## The 15-Minute Rule\n\nBetween KSI sessions, Zaim uses 15-minute gaps to jot down one observation about each student \u2014 what they're stuck on, what lit them up. After a month of this, patterns emerged.\n\n## Three Student Buckets\n\n1. **Career pivoters** \u2014 stuck on \"what if I fail\" not \"what do I want\"\n2. **Fresh grads** \u2014 over-indexing on salary, under-indexing on growth trajectory\n3. **Mid-career** \u2014 all variations of \"is this it?\"\n\n## Key Insight\n\n> \"Never let a gap go empty. Even one sentence per student compounds.\"",
       "tags": [
         "zaim"
       ],
@@ -12163,13 +12189,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 70,
+    "brain_checks_score": 90,
     "category_scores": {
-      "brain": 95,
+      "brain": 90,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -12199,32 +12225,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -12236,11 +12240,12 @@
       },
       {
         "name": "extract_atoms_backlog",
-        "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "status": "warn",
+        "message": "24 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 0,
+          "backlog": 24,
           "pack_declares_phase": false,
+          "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
         "category": "brain"
@@ -12248,7 +12253,7 @@
       {
         "name": "conversation_format_coverage",
         "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "message": "11 pages: bold-name-no-time=10, _no_match=1",
         "category": "brain"
       },
       {
@@ -12272,7 +12277,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 319 pages",
         "category": "ops"
       },
       {
@@ -12308,7 +12313,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 435ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -12326,25 +12331,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 90%, timeline 68%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 78 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 319 pages; 37 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -12505,7 +12510,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 6/319 pages (2%) stale",
+        "details": {
+          "total": 319,
+          "stale": 6,
+          "pct": 2,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -12517,7 +12530,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -12529,7 +12542,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "219 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -12541,7 +12554,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "41.1% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -12583,7 +12596,7 @@
       {
         "name": "oauth_confidential_client_health",
         "status": "ok",
-        "message": "No OAuth clients registered",
+        "message": "4 OAuth client(s) registered; all auth shapes consistent",
         "category": "ops"
       },
       {
@@ -12644,13 +12657,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 91% \u00b1 3.2%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 69% \u00b1 5.2% (target 90%)",
         "category": "meta"
       },
       {
@@ -12668,7 +12681,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "10 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
