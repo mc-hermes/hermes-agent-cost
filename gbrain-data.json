@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-06-25T05:00:13Z",
+  "updated_at": "2026-06-25T05:57:21Z",
   "summary": {
-    "score": "92",
+    "score": "82",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 361,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "39.1% of pages have inbound links",
-    "entity_links": "Coverage \u2014 48 people, 33 companies indexed",
+    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
+    "page_count": 363,
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "40.8% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 91% \u00b1 3.2%",
     "concept_count": 131,
     "meeting_count": 14,
     "person_count": 48,
     "company_count": 33,
-    "newsletter_count": 86,
+    "newsletter_count": 87,
     "video_count": 0,
     "article_count": 20,
-    "bookmark_count": 26,
+    "bookmark_count": 27,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
@@ -26,7 +26,19 @@
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
+    "score_components": {
+      "score": "82/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "3/15",
+      "orphans": "9/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 67,
+    "checks_warned": 6,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -959,6 +971,18 @@
       ],
       "backlinks": [],
       "outbound_count": 2,
+      "inbound_count": 0
+    },
+    {
+      "slug": "bookmarks/nerdqaxe-revision7-launch-2026-06-12",
+      "title": "Nerdqaxe Revision7 Launch 2026 06 12",
+      "type": "bookmark",
+      "updated": "",
+      "body": "# NerdQaxe++ Revision 7 Launch \u2014 Open-Source Bitcoin Solo Miner\n\n---------- Forwarded message ---------\nFrom: Solo Satoshi <VIP@solosatoshi.com>\nDate: Fri, 12 Jun 2026 at 02:27\nSubject: NerdQaxe++ Revision 7 launches tomorrow afternoon\nTo: <sayfcodes@gmail.com>\n\n## NerdQaxe++ Revision 7 Launches Tomorrow\n\n*From the Solo Satoshi Team*\n\nBefore the world hears it, we wanted you to hear it from us. Tomorrow afternoon, we launch the NerdQaxe++ Revision 7, the newest evolution of the open-source quad-chip Bitcoin solo miner.\n\n- **Demand:** Initial supply will move quickly, but production is 100% USA-based and will not stop\n- **Open source:** Fully open-source \u2014 hardware design files and firmware source code are public\n- **Pre-release:** Technical overview on YouTube with benchmark data\n- **Rumor refuted:** Revision 7 IS fully open source, repos went public before units ship\n- **Integrity:** Competitors slashing prices on closed-source copies; Solo Satoshi ships ready product\n\n---\n\n**Source:** Solo Satoshi VIP announcement email",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
       "inbound_count": 0
     },
     {
@@ -6454,7 +6478,7 @@
       "title": "Agentic Engineering Concepts 2026 06 17",
       "type": "newsletter",
       "updated": "",
-      "body": "# 30 Core Agentic Engineering Concepts, Explained Simply\n\n---------- Forwarded message ---------\nFrom: Neo Kim <systemdesignone@substack.com>\nDate: Wed, 17 Jun 2026, 17:38\nSubject: 30 Core Agentic Engineering Concepts, Explained Simply\nTo: <sayfcodes@gmail.com>\n#154: What an agent is, how to configure one, when to use multiple, and how\nto keep them from doing damage.\nfor more\n===\n\ud83d\udc4b Hey, it\u2019s Neo\nis a special free edition of this newsletter. To get every post and other\npaid subscriber benefits, upgrade your subscription right now\n.\n------------------------------\n30 Core Agentic Engineering Concepts, Explained Simply\n<https://substack.com/app-link/post?publication_id=1511845&post_id=200995493&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2k46ui&token=eyJ1c2VyX2lkIjoxNTQ3MjAxNzAsInBvc3RfaWQiOjIwMDk5NTQ5MywiaWF0IjoxNzgxNjg5MTE2LCJleHAiOjE3ODQyODExMTYsImlzcyI6InB1Yi0xNTExODQ1Iiwic3ViIjoicG9zdC1yZWFjdGlvbiJ9.CZcfri6GGTQ8GfxA0BTPLT6si-x5-T-85JKeMZi7ABE>#154:\nWhat an agent is, how to configure one, when to use multiple, and how to\nkeep them from doing damage.\nNeo Kim <https://substack.com/@systemdesignone> and Paul Hoekstra\n<https://substack.com/@paulhoekstra>\nJun 17\n<https://substack.com/@systemdesignone> <https://substack.com/@paulhoekstra>\n<https://substack.com/app-link/post?publication_id=1511845&post_id=200995493&utm_source=substack&isFreemail=true&submitLike=true&token=eyJ1c2VyX2lkIjoxNTQ3MjAxNzAsInBvc3RfaWQiOjIwMDk5NTQ5MywicmVhY3Rpb24iOiLinaQiLCJpYXQiOjE3ODE2ODkxMTYsImV4cCI6MTc4NDI4MTExNiwiaXNzIjoicHViLTE1MTE4NDUiLCJzdWIiOiJyZWFjdGlvbiJ9.P-ZPnH12XKKCNIbPo2vVXfIXqCv19kdU37j4G6Xmfk4&utm_medium=email&utm_campaign=email-reaction&r=2k46ui>\n<https://substack.com/app-link/post?publication_id=1511845&post_id=200995493&utm_source=substack&utm_medium=email&isFreemail=true&comments=true&token=eyJ1c2VyX2lkIjoxNTQ3MjAxNzAsInBvc3RfaWQiOjIwMDk5NTQ5MywiaWF0IjoxNzgxNjg5MTE2LCJleHAiOjE3ODQyODExMTYsImlzcyI6InB1Yi0xNTExODQ1Iiwic3ViIjoicG9zdC1yZWFjdGlvbiJ9.CZcfri6GGTQ8GfxA0BTPLT6si-x5-T-85JKeMZi7ABE&r=2k46ui&utm_campaign=email-half-magic-comments&action=post-comment&utm_source=substack&utm_medium=email>\n<https://substack.com/app-link/post?publication_id=1511845&post_id=200995493&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2k46ui&token=eyJ1c2VyX2lkIjoxNTQ3MjAxNzAsInBvc3RfaWQiOjIwMDk5NTQ5MywiaWF0IjoxNzgxNjg5MTE2LCJleHAiOjE3ODQyODExMTYsImlzcyI6InB1Yi0xNTExODQ1Iiwic3ViIjoicG9zdC1yZWFjdGlvbiJ9.CZcfri6GGTQ8GfxA0BTPLT6si-x5-T-85JKeMZi7ABE>\nREAD IN APP\n<https://open.substack.com/pub/systemdesignone/p/agentic-engineering?utm_source=email&redirect=app-store&utm_campaign=email-read-in-app>\n-\n*Share this post\n& I'll send you some rewards for the referrals.*\n------------------------------\nHow do you keep up with agentic engineering when a new tool ships every\nweek?\nYou do not\u2026\nYou learn the ideas behind the tools, and let the tools come and go.\nThe pace will not slow down. New models, new frameworks, a new *\u201cthis\nchanges everything*\u201d launch every few days. Chase all of it, and you spend\nmore time switching tools than using them.\nBut underneath the noise, it is the same few ideas every time.\nOne calls it a skill, the next calls it a rule; it's the same job\nunderneath.\nLearn the idea, and it stops mattering which tool you pick.\nBy the end of this newsletter, you can read any agent post or news drop and\nsee which of these ideas it actually covers, instead of feeling behind\nevery time something new ships.\nOnward.\n------------------------------\n\u201dHow to adopt externalized authorization: step-by-step roadmap\u201d eBook by\n------------------------------\nI want to introduce *Paul Hoekstra\nas the guest author.\nPaul is a data engineer at Digital Power, a data and AI consultancy, and\nwrites *Paul\u2019s Pipeline\na free newsletter on AI, data, and side projects.\nThis newsletter pulls out the ideas that keep mattering, whichever tool you\npick. If it leaves you wanting more, he has a four-part series on the\nlayers covered in this newsletter: configuration, capability,\norchestration, and guardrails.\n------------------------------\n*Here\u2019s what you\u2019ll find inside this newsletter:*\n-\n*Foundations.* What an agent is, how it runs, where its state lives, and\nthe patterns you build once you have more than one.\n-\n*Configuration.* How you shape the agent\u2019s behavior before it writes a\nline of code: config files, reusable workflows, prompt caching, and the\ncontext rot that limits all of it.\n-\n*Capability.* What the agent can reach for once it is running: live\ndocumentation, AI-native search, long-term memory, and knowledge it queries\nbut never owns.\n-\n*Orchestration.* How you coordinate multiple agents without letting them\nstep on each other.\n-\n*Guardrails.* What stops the agents from doing damage: sandboxing,\npermissions, hooks, and the commit gates that catch the rest.\n-\n*Observability.* How you see what an agent actually did after it stopped\ntyping: tracing, logging, replay, and metrics.\n------------------------------\n*Foundations*\nLet\u2019s dive in!\n*1. What is an agent?*\n\u201cAgent\u201d gets used for almost anything these days.\nLet us pin it down:\nAn agent is a large language model (*LLM*) that runs in a loop, has access\nto tools\u00b9, and decides what to do next. Instead of a single answer to a\nprompt, the model produces a chain of actions. And each action builds on\nthe result of the last.\nCoding is the most obvious use case so far.\nThe loop fits naturally there. Small building blocks. Fast feedback from\ntests and errors. Files the agent can edit directly. The same shape works\nfor research agents, ops automation, customer support, and content\nworkflows.\nUse an agent when:\n-\nTask is open-ended (\u201ddebug this failing test\u201d, not \u201cformat this date\u201d)\n-\nThe next step depends on the result of the last one\n-\nYou cannot script the path in advance\nBut skip the agent when a single prompt or a plain script will do.\nLoops are not free.\nEvery time round the loop costs time and money, and they add up fast. The\nagent gets less predictable. And it gets harder to debug: the runs are\nlonger, and the agent does not always make the same choices twice.\nYou do not have to pick one mode for everything.\nUse a single prompt or a plain script for easy problems. Reserve the agent\nfor tasks where its flexibility earns the cost.\n------------------------------\n*2. Execution model*\nAn agent loop has a recognizable shape.\nThree steps, repeated until something says we are done:\n-\nFirst, the model *thinks*. It reads the current state of the\nconversation and decides what to do next.\n-\nThe model then *acts*. It emits a tool call. The harness\u00b2 around the\nmodel receives the call, validates it, and runs it: file read, shell\ncommand, MCP request, whatever fits.\n-\nFinally, the model *observes*. The tool result joins the conversation as\nnew context. The next iteration starts with that result in scope.\nThis pattern goes by a few names.\nReAct (from the original paper\nThink-act-observe, agent loop.\nThe name changes, but the loop does not.\nA single model call has to predict the entire path up front and commit to\nit. The loop replaces that prediction with feedback. The model takes one\nstep, observes what actually happened, and decides the next step based on\nthe actual result rather than a guess.\nThis is why an agent can recover from its own mistakes.\nA failing test returns a stack trace. A blocked command returns an error.\nEach one is just the next observation, and the next iteration plans against\nit. The loop catches a wrong first step on the next pass, instead of\nletting it poison everything after it.\nTwo variations sit on top of this basic loop:\n-\n*Parallelism*. Modern agents can fire several tool calls inside a single\nact step. That cuts wall-clock time on read-heavy work. It also causes\nconflicts when two parallel calls try to edit the same thing. We will come\nback to ways of handling that when we get to subagents (concept 17).\n-\n*Blocking vs non-blocking*. Most agents run synchronously: conversation\nwaits while a tool runs, then the result comes back as the observation.\nSome run asynchronously and fire off long-running jobs in the background.\nAsync unlocks fan-out, at the cost of more complexity.\n------------------------------\n*3. Agent state*\n\u201cState\u201d gets used in two senses.\nOne is *workflow progress*: which step the agent is on and what is left. *Agent\nloops* carry that sense across iterations (concept 17). This concept is the\nother sense: everything the agent knows at any moment.\nIt breaks into two halves with very different properties:\n-\n*Context window*: everything the model can see right now. Your latest\nmessage, the system prompt, the agent\u2019s previous tool calls, and the\nresults of those calls. It has a hard ceiling (the token cap) and a soft\none (concept 9, context rot). When a session ends, the context window is\ngone.\n-\n*Everything outside it*: what the model cannot see until it fetches it.\nFiles on disk, database entries. Memory that survives across sessions\n(concept 14). Knowledge the agent only queries and never owns (concept 15).\nThe model cannot reason over any of it directly, but the agent can pull\npieces into context on demand.\nSo, where should your state actually live?\nFiles are usually the right default. They are diffable, versionable, and\neasy for both you and the agent to edit. Memory works well for facts that\nsurvive across sessions but do not need git history. Databases earn their\nplace when the state needs to be queried by structure or shared across\nprocesses.\nMultiple agents make the state harder.\nTwo agents reading the same file is fine. Two agents writing to it is the\ncanonical race condition. Git worktrees (concept 16) give each agent its\nown working copy.\nSubagents are friendlier: each starts with a fresh context window, and the\nparent passes in only what it needs. If the parent has to pass more than a\nfew paragraphs, the split between the two is probably wrong.\n------------------------------\n*4. Common agent patterns*\nOnce you have multiple agents to work with, the question is how to compose\nthem.\nThere are a handful of useful patterns to know:\nThe simplest is *planner/executor*.\nOne agent plans, another executes. The split keeps each agent in a context\nshape that suits it: open-ended thinking on one side, tight execution on\nthe other. Useful for long tasks where you want planning quality separate\nfrom how the implementation goes.\n*Router/specialist* sits one level above.\nA router agent takes the incoming request and dispatches it to one of\nseveral specialists. Each specialist has a tighter system prompt and a\nsmaller toolset: a security reviewer, a debug specialist, a docs writer, a\ntest author. Cheaper, because most calls hit a smaller model. Easier to\nreason about, because each specialist\u2019s behavior is bounded.\n*Map-reduce parallelism* is the workhorse for read-heavy fan-out.\nSend a single task out across many subagents and merge their results. *\u201cReview\nthis pull request\u201d *splits into one subagent per file, and the results\nmerge into a single summary. Cost is bounded by the longest individual\nsubagent. Quality is bounded by how well the aggregator merges.\nThese patterns are not exclusive.\nReal workflows combine them: a planner spawns a router, the router fans out\nwork map-reduce style, and the merged result comes back for review.\nEvery pattern relies on handoffs between agents.\nEach handoff carries a compressed summary, so the next agent does not start\nfrom scratch. That is what makes the patterns useful: they define where one\nagent\u2019s job ends and the next one\u2019s begins. Those seams are where work\ntends to break.\nThat\u2019s the foundation done.\nNext come the four practical layers, starting with how you shape the\nagent\u2019s behavior before it touches any code.\n------------------------------\n*Get 1+ referral & I\u2019ll send you my Leetcode Master Template!*\nShare\n<https://substack.com/app-link/post?publication_id=1511845&post_id=200995493&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2k46ui&token=eyJ1c2VyX2lkIjoxNTQ3MjAxNzAsInBvc3RfaWQiOjIwMDk5NTQ5MywiaWF0IjoxNzgxNjg5MTE2LCJleHAiOjE3ODQyODExMTYsImlzcyI6InB1Yi0xNTExODQ1Iiwic3ViIjoicG9zdC1yZWFjdGlvbiJ9.CZcfri6GGTQ8GfxA0BTPLT6si-x5-T-85JKeMZi7ABE>\n------------------------------\n*Configuration Layer*\nLet\u2019s dive in!\n*5. Agent config files*\nEvery agent starts with a system prompt.\nThe harness builder bakes in a block of instructions that covers tool use\nand the harness\u2019s own conventions. The system prompt does not know anything\nabout your project.\nAgent config files are the layer above.\nThe agent loads a project-level Markdown file at the start of every\nsession, and the file remains in the context window for each subsequent\nstep. The file tells the agent your standards, limits, conventions, and\nbehavioral rules.\nClaude Code calls this file CLAUDE.md.\nMost other tools have settled on AGENTS.md. A bit like Apple and USB-C: the\nindustry wants a standard, but not everyone follows it.\nIt matters because agents default to whatever looked most plausible in\ntheir training data. Without a config file, you get pip install when your\nproject uses uv, black when you use ruff, and defensive sludge wrapped\naround every change.\nWith one, the agent reads a set of hard rules before it writes a line of\ncode.\nA useful config is short and specific:\n-\nHard limits on function length\n-\nThe package manager and tooling stack you actually use\n-\nA few behavioral rules like \u201cnever commit secrets\u201d or \u201calways read a\nfile before editing it.\u201d\nAnything generic or AI-generated dilutes the file and makes the rest harder\nfor the model to attend to.\nKeep it under 100 lines. Cut anything that is not consistently improving\noutcomes. Treat it the way you would treat a Makefile: as code, not\ndocumentation, reviewed when it changes.\n------------------------------\n*6. Reusable workflow files*\nIf config files are always on, reusable workflow files are on demand.\nThey are still just Markdown, but with YAML frontmatter that controls when\nthe agent loads them. Examples are Claude Code skills (in .claude/skills/)\nand Cursor rules.\nThe frontmatter\u00b3 does most of the work. A name and description tell the\nagent when the skill is relevant. An optional globs field narrows it\nfurther by file type or path pattern. Whether the skill actually helps\ndepends on the quality of the instructions inside it.\nResearchers built SkillsBench\na benchmark of 86 tasks across 11 domains, and provided models with brief\nwritten workflows for approaching each task.\nClaude Haiku scored 27.7% with human-curated skills. That beat the 22.0%\nOpus scored without them. The cheapest model with good instructions\noutperformed the flagship without.\nThere is a second lesson in the data.\nWhen the researchers let the model write its own skills, the gains\ndisappeared. Given everything we know about context rot, that should\nsurprise no one. Generic AI-generated boilerplate makes things worse, not\nbetter.\nThe rough division of labor is simple: *config files* for always-relevant\nproject rules, *skills* for reusable task-specific procedures.\nThe live prompt for what is unique about the current task.\n------------------------------\n*7. Workflow frameworks*\nIf you are using an agent for coding, a framework on top helps.\nThe agent follows a documented process for planning, test-driven\ndevelopment (*TDD*), debugging, and code review. No more falling back on\nwhatever it remembers from training. The mechanism is a chain of skills,\nhooks, and slash commands\u2074 wired together into a repeatable process.\n*Here are a few options worth knowing:*\n-\nSuperpowers\nships a curated library of skills for common workflows: brainstorming, TDD,\ndebugging, and code review. It also adds HARD-GATE directives and\nanti-rationalization tables. These push the agent to use the skills rather\nthan skip them.\n-\nGet Shit Done\ndoes something similar, but through slash commands, hooks, and\nmeta-prompting instead of skills.\n-\nCompound Engineering\nsplits work into Plan, Work, Review, and Compound phases. The last phase\ncaptures patterns and solutions into a searchable knowledge base, so each\nfeature makes the next one easier.\nThey differ in shape but share a thread: get the agent to understand what\nit is building, tell it how to go to work, and check the result against\nwhat you actually wanted.\n------------------------------\n*8. Prompt caching*\nPrompt caching stores the *stable prefix* of the conversation so the model\ndoes not pay the full price to re-read it every turn.\nMost agentic tools handle this in the background, but it is worth\nunderstanding because it changes the economics of long config files.\nThe mechanism is the same across providers:\nThe first call sends the full prefix, including the config file and any\nreusable workflows the agent has loaded, and pays a small premium to write\nthat prefix into the cache. Later turns re-read it at a steep discount.\nLatency improves, too, because the model does not reprocess the same tokens.\nThe catch is the cache time to live (*TTL*).\nCaches expire after a period of inactivity, somewhere between a few minutes\nand an hour, depending on the provider. An active session keeps the cache\nwarm. A long pause (coffee, Slack, a spec to read) lets it expire and\nforces a rewrite on the next call.\nIf your tooling lets you configure the TTL, longer windows cost more to\nwrite but stay warm through bigger gaps in activity. The choice depends on\nhow active you expect to be. Longer TTL when you will keep coming back.\nShorter TTL when you might not.\nWithout prompt caching, you would think carefully about the size of your\nconfig file. With it, the cost is closer to a rounding error.\n------------------------------\n*9. Context rot*\nModel performance drops as the context window fills up.\nPrompt caching saves your wallet, but those tokens still sit there, and the\nmodel has to look past each one to get to what you want it to focus on.\n*Even the latest models show this:*\n-\nDrop a few specific facts into a long document and ask a model to find\nthem. GPT-5.5\nscores 98.1% on short documents and 74.0% on documents stretching to a\nmillion tokens.\n-\nClaude Opus 4.7\ndrops from 59.2% at 256K to 32.2% at 1M.\nA",
+      "body": "# 30 Core Agentic Engineering Concepts, Explained Simply\n\n---------- Forwarded message ---------\nFrom: Neo Kim <systemdesignone@substack.com>\nDate: Wed, 17 Jun 2026, 17:38\nSubject: 30 Core Agentic Engineering Concepts, Explained Simply\nTo: <sayfcodes@gmail.com>\n\n#154: What an agent is, how to configure one, when to use multiple, and how to keep them from doing damage.\n\n\ud83d\udc4b Hey, it's Neo \u2014 this is a special free edition of this newsletter.\n\n## 30 Core Agentic Engineering Concepts, Explained Simply\n\n*By Neo Kim and Paul Hoekstra*\n*Jun 17, 2026*\n\nHow do you keep up with agentic engineering when a new tool ships every week? You do not \u2014 you learn the ideas behind the tools, and let the tools come and go.\n\nBut underneath the noise, it is the same few ideas every time. Learn the idea, and it stops mattering which tool you pick.\n\n### Foundations\n\n**1. What is an agent?** An agent is an LLM that runs in a loop, has access to tools, and decides what to do next. Use when: task is open-ended, next step depends on last result, you cannot script the path in advance. Skip when a single prompt or plain script will do.\n\n**2. Execution model (ReAct).** Think \u2192 Act \u2192 Observe. Three steps repeated. The loop replaces single-shot prediction with feedback. This is why an agent can recover from its own mistakes.\n\n**3. Agent state.** Two senses: (a) workflow progress, (b) everything the agent knows. Breaks into context window (hard ceiling, soft ceiling via context rot) and everything outside it (files, database, memory).\n\n**4. Common agent patterns** \u2014 planner/executor, router/specialist, map-reduce parallelism. Real workflows combine them.\n\n### Configuration Layer\n\n**5. Agent config files** \u2014 project-level Markdown loaded at session start (CLAUDE.md, AGENTS.md). Short (<100 lines), specific, treated as code.\n\n**6. Reusable workflow files** \u2014 Markdown + YAML frontmatter loaded on demand (skills, rules). SkillsBench: Claude Haiku 27.7% with skills beat Opus 22.0% without.\n\n**7. Workflow frameworks** \u2014 Superpowers, Get Shit Done, Compound Engineering. Repeatable processes for planning, TDD, debugging, review.\n\n**8. Prompt caching** \u2014 stores stable prefix to avoid re-reading every turn. TTL matters: active sessions keep cache warm; long pauses force rewrite.\n\n**9. Context rot** \u2014 model performance drops as context fills. GPT-5.5: 98.1% short docs \u2192 74.0% at 1M tokens.\n\n### Capability Layer\n\n*(concepts 10-15 covered in paid section)*\n\n### Orchestration & Guardrails\n\n*(concepts 16-30 covered in paid section)*\n\n---\n\n**Source:** System Design One #154 by Neo Kim, guest author Paul Hoekstra (data engineer at Digital Power, writes Paul's Pipeline)",
       "tags": [],
       "links_out": [],
       "backlinks": [],
@@ -7407,6 +7431,18 @@
       ],
       "backlinks": [],
       "outbound_count": 1,
+      "inbound_count": 0
+    },
+    {
+      "slug": "newsletters/openclaw-anatomy-2026-06-08",
+      "title": "Openclaw Anatomy 2026 06 08",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# The Anatomy of OpenClaw\n\n---------- Forwarded message ---------\nFrom: Neo Kim <systemdesignone@substack.com>\nDate: Mon, 8 Jun 2026 at 19:51\nSubject: The Anatomy of OpenClaw\nTo: <sayfcodes@gmail.com>\n\n#151: Understanding How OpenClaw Works\n\n\ud83d\udc4b Neo here! This is a free preview of a subscriber-only post.\n\n## The Anatomy of OpenClaw\n\n*By Neo Kim*\n*Jun 8, 2026*\n\n### What Is OpenClaw\n\nOpenClaw is an open-source autonomous AI agent that runs on your machine, connects to your messaging apps, and does the work itself. It bridges the gap between the thinking layer (LLMs like Claude, GPT, Gemini) and the act layer.\n\nKey features:\n- **Gateway** \u2014 always-on server (Node.js, port 18789) running on your machine that coordinates everything\n- **Multi-channel messaging** \u2014 WhatsApp, Telegram, Slack, Discord with shared context\n- **5,400+ skills on ClawHub** \u2014 modular capabilities as plain Markdown files\n- **Persistent memory** in plain Markdown files you own\n- **Proactive scheduling** \u2014 Heartbeat + cron jobs that act without being prompted\n- **Model-agnostic** \u2014 plug in Claude, GPT, DeepSeek, Gemini, Grok, or local models via Ollama\n\n### Architecture\n\n**Gateway** sits between messaging apps, LLM, and tools. Authenticates senders, assembles context, passes to LLM, handles tool calls, routes replies. Intercepts dangerous commands (e.g., rm -rf) for approval. Serves Control UI at http://localhost:18789. Supports hot config reloads.\n\n**Channel Layer** \u2014 each platform (Telegram, WhatsApp, Slack, Discord) is a plugin adapter that normalizes messages into a standard internal format.\n\n**LLM Layer** \u2014 brain socket. Assembles system prompt from agent personality, available skills, relevant memory, and conversation history. Compaction triggers at context limit.\n\n**Plugin System** \u2014 almost everything non-core is a plugin. Plugs into lifecycle events (before/after tool calls, messages, sessions).\n\n**Memory System** \u2014 three layers: short-term (session files on disk), long-term (indexed DB), standing notes (~/.openclaw/workspace/memory/).\n\n### How OpenClaw Handles Long Tasks\n\nAcknowledges the task, starts working, messages you when done. For multi-session tasks, writes state to disk and resumes. Cron jobs in isolated session mode for truly long-running work.\n\n---\n\n**Source:** System Design One #151 by Neo Kim",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
       "inbound_count": 0
     },
     {
@@ -12177,13 +12213,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 70,
+    "brain_checks_score": 90,
     "category_scores": {
-      "brain": 95,
+      "brain": 90,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -12213,32 +12249,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -12250,11 +12264,12 @@
       },
       {
         "name": "extract_atoms_backlog",
-        "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "status": "warn",
+        "message": "24 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 0,
+          "backlog": 24,
           "pack_declares_phase": false,
+          "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
         "category": "brain"
@@ -12262,7 +12277,7 @@
       {
         "name": "conversation_format_coverage",
         "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "message": "11 pages: bold-name-no-time=10, _no_match=1",
         "category": "brain"
       },
       {
@@ -12286,7 +12301,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 321 pages",
         "category": "ops"
       },
       {
@@ -12322,7 +12337,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 572ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -12340,25 +12355,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 90%, timeline 68%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 78 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 321 pages; 37 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -12519,7 +12534,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 0/321 pages (0%) stale",
+        "details": {
+          "total": 321,
+          "stale": 0,
+          "pct": 0,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -12531,7 +12554,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -12543,7 +12566,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "219 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -12555,7 +12578,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "40.8% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -12597,7 +12620,7 @@
       {
         "name": "oauth_confidential_client_health",
         "status": "ok",
-        "message": "No OAuth clients registered",
+        "message": "4 OAuth client(s) registered; all auth shapes consistent",
         "category": "ops"
       },
       {
@@ -12658,13 +12681,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 91% \u00b1 3.2%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 69% \u00b1 5.2% (target 90%)",
         "category": "meta"
       },
       {
@@ -12682,7 +12705,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "10 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
