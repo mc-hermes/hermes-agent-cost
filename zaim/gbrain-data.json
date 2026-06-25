@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-25T01:00:22Z",
+  "updated_at": "2026-06-25T01:35:38Z",
   "summary": {
-    "page_count": 38,
+    "page_count": 39,
     "people_count": 4,
     "company_count": 1,
     "artifact_count": 0,
-    "total_links": 20,
-    "outbound_count": 37,
-    "inbound_count": 35,
-    "graph_coverage": "26.3% of pages have inbound links",
-    "concept_count": 24,
+    "total_links": 18,
+    "outbound_count": 35,
+    "inbound_count": 33,
+    "graph_coverage": "25.6% of pages have inbound links",
+    "concept_count": 25,
     "meeting_count": 4,
     "person_count": 4,
     "newsletter_count": 3,
@@ -213,24 +213,13 @@
       "title": "Coaching 15 Minute Gap Method 2026 06 14",
       "type": "concept",
       "updated": "",
-      "body": "# Coaching Insight \u2014 The 15-Minute Gap Method\n\n**Source:** email\n**Source URI:** gmail://msg_19eca04daacc7a09\n**Ingested:** 2026-06-24T02:30:00Z\n**Provenance:** Zaim's coaching observation notes\n\n[[Zaim Mohzani|Zaim]]'s observation: Between [[KSI Workshop]] sessions there are 15-minute gaps. Started using them to jot down one thing noticed about each student \u2014 what they're stuck on, what lit them up. After a month, patterns emerged that wouldn't have been spotted otherwise.\n\n**Three student buckets emerged:**\n\n1. **Career pivoters** \u2014 stuck on \"what if I fail\" not \"what do I want\"\n2. **Fresh grads** \u2014 over-indexing on salary, under-indexing on growth trajectory\n3. **Mid-career** \u2014 all variations of \"is this it?\"\n\n**The 15-minute rule:** never let a gap go empty. Even one sentence per student compounds.",
+      "body": "# Coaching Insight \u2014 The 15-Minute Gap Method\n\n**Source:** email from Zaim Mohzani\n**Source URI:** gmail://msg_19eca04daacc7a09\n**Ingested:** 2026-06-25T14:00:00Z\n**Provenance:** Self-forwarded by Zaim from info+zaim@malohacoast.com on 2026-06-14\n\n## Summary\n\nZaim's coaching practice discovery: using the 15-minute gaps between KSI sessions to jot down one observation per student. After a month, patterns emerged that wouldn't have been visible otherwise.\n\n## The Method\n\n- **Rule:** Never let a gap go empty. Even one sentence per student compounds.\n- **What to capture:** What they're stuck on, what lit them up\n- **Timeframe:** 15-minute gaps between KSI sessions\n- **Material:** One sentence per student per gap\n\n## Patterns That Emerged (3 Buckets)\n\n1. **Career pivoters** \u2014 stuck on \"what if I fail\" not \"what do I want\"\n2. **Fresh grads** \u2014 over-indexing on salary, under-indexing on growth trajectory\n3. **Mid-career** \u2014 all variations of \"is this it?\"\n\n## Relevance\n\nThis is a lightweight but structured observation method that compounds into real pattern recognition. Could be applicable to coaching practice management at Maloha Coast.",
       "tags": [
         "zaim"
       ],
-      "links_out": [
-        {
-          "to": "people/zaim-mohzani",
-          "type": "wikilink",
-          "text": "Zaim Mohzani|Zaim"
-        },
-        {
-          "to": "concepts/ksi-workshop",
-          "type": "wikilink",
-          "text": "KSI Workshop"
-        }
-      ],
+      "links_out": [],
       "backlinks": [],
-      "outbound_count": 2,
+      "outbound_count": 0,
       "inbound_count": 0
     },
     {
@@ -264,6 +253,20 @@
       "inbound_count": 0
     },
     {
+      "slug": "concepts/coaching-client-profile-aisyah-rahim-2026-06-15",
+      "title": "Coaching Client Profile Aisyah Rahim 2026 06 15",
+      "type": "concept",
+      "updated": "",
+      "body": "# Coaching Client Profile \u2014 Aisyah Rahim\n\n**Source:** email from Zaim Mohzani\n**Source URI:** gmail://msg_19eca0a8dc4888c3\n**Ingested:** 2026-06-25T14:00:00Z\n**Provenance:** Self-forwarded by Zaim from info+zaim@malohacoast.com on 2026-06-15\n\n## Summary\n\nZaim's notes on a new coaching client, Aisyah Rahim \u2014 a Senior Brand Manager at Unilever Malaysia looking to pivot into tech.\n\n## Key Details\n\n- **Name:** Aisyah Rahim\n- **Role:** Senior Brand Manager at Unilever Malaysia\n- **Referral:** Liyana from the KSI workshop last month\n- **First session:** Next Tuesday from intro call date\n- **Experience:** 8 years in FMCG brand management\n- **Salary anchor:** RM 18k/month\n\n## Zaim's Assessment\n\n- **Status:** Feeling stagnant, wants to pivot into tech but unsure where to start\n- **Main blocker:** \"I don't have a technical background\" (perceived, not actual)\n- **Hidden assets:** Has run consumer analytics for 3 product launches \u2014 more data-driven work than she recognises\n- **Core problem:** Classic mid-career pivot case. The real issue isn't skills \u2014 it's confidence and narrative.\n- **The reframe needed:** \"Brand manager\" \u2192 \"Growth strategist who uses data.\" Tech companies would value someone who bridges consumer insights and product.\n\n## Session 1 Plan\n\n- Audit her last 2 years of work through a tech lens\n- Find 3-5 specific examples where she already did \"product thinking\" without calling it that\n\n## Zaim's Coaching Method\n\nFrames the client's value in terms tech companies understand, focuses on narrative reframing over skills acquisition.",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "concepts/ksi-workshop",
       "title": "KSI Workshop",
       "type": "concept",
@@ -291,11 +294,6 @@
       ],
       "backlinks": [
         {
-          "from": "concepts/coaching-15-minute-gap-method-2026-06-14",
-          "type": "wikilink",
-          "text": "KSI Workshop"
-        },
-        {
           "from": "concepts/coaching-client-aisyah-rahim-2026-06-15",
           "type": "wikilink",
           "text": "KSI Workshop"
@@ -307,7 +305,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 3
+      "inbound_count": 2
     },
     {
       "slug": "concepts/maloha-coast",
@@ -828,11 +826,6 @@
           "text": "Zaim Mohzani"
         },
         {
-          "from": "concepts/coaching-15-minute-gap-method-2026-06-14",
-          "type": "wikilink",
-          "text": "Zaim Mohzani|Zaim"
-        },
-        {
           "from": "concepts/skills-inventory",
           "type": "wikilink",
           "text": "Zaim Mohzani"
@@ -869,7 +862,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 13
+      "inbound_count": 12
     },
     {
       "slug": "zaim-career-goals-12-week-year-2026-06-16",
@@ -972,16 +965,6 @@
       "type": "wikilink"
     },
     {
-      "source": "concepts/coaching-15-minute-gap-method-2026-06-14",
-      "target": "people/zaim-mohzani",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/coaching-15-minute-gap-method-2026-06-14",
-      "target": "concepts/ksi-workshop",
-      "type": "wikilink"
-    },
-    {
       "source": "concepts/coaching-client-aisyah-rahim-2026-06-15",
       "target": "companies/unilever-malaysia",
       "type": "wikilink"
@@ -1077,11 +1060,27 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-25T01:00:22Z",
+      "ts": "2026-06-25T01:35:38Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
-      "detail": "Dashboard refreshed \u2014 38 pages, 20 links",
+      "detail": "Dashboard refreshed \u2014 39 pages, 18 links",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-25T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "concepts/coaching-15-minute-gap-method-2026-06-14",
+      "detail": "Coaching 15 Minute Gap Method 2026 06 14",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-25T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "concepts/coaching-client-profile-aisyah-rahim-2026-06-15",
+      "detail": "Coaching Client Profile Aisyah Rahim 2026 06 15",
       "level": "info"
     },
     {
@@ -1122,14 +1121,6 @@
       "stage": "updated",
       "slug": "concepts/aisyah-rahim-client-profile",
       "detail": "Aisyah Rahim Client Profile",
-      "level": "info"
-    },
-    {
-      "ts": "2026-06-23T00:00:00Z",
-      "source": "page",
-      "stage": "updated",
-      "slug": "concepts/coaching-15-minute-gap-method-2026-06-14",
-      "detail": "Coaching 15 Minute Gap Method 2026 06 14",
       "level": "info"
     },
     {
