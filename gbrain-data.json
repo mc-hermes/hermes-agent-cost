@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-25T09:07:17Z",
+  "updated_at": "2026-06-25T09:50:48Z",
   "summary": {
     "score": "82",
     "score_label": "/100",
@@ -12339,7 +12339,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 403ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 1019ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -12568,7 +12568,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "225 reranker failure(s) in last 7 days (below threshold)",
+        "message": "226 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
