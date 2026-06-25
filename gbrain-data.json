@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-06-25T21:00:24Z",
+  "updated_at": "2026-06-25T21:05:42Z",
   "summary": {
-    "score": "92",
+    "score": "82",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 364,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "39.0% of pages have inbound links",
-    "entity_links": "Coverage \u2014 48 people, 33 companies indexed",
+    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
+    "page_count": 365,
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "40.7% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 91% \u00b1 3.2%",
     "concept_count": 131,
     "meeting_count": 14,
     "person_count": 48,
@@ -15,7 +15,7 @@
     "newsletter_count": 87,
     "video_count": 0,
     "article_count": 20,
-    "bookmark_count": 28,
+    "bookmark_count": 29,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
@@ -26,7 +26,19 @@
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
+    "score_components": {
+      "score": "82/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "3/15",
+      "orphans": "9/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 67,
+    "checks_warned": 6,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -825,6 +837,18 @@
       "type": "bookmark",
       "updated": "",
       "body": "# HumanLayer // We're live \u2014 come build with us\n\n**Source:** email\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-24T13:00:00Z\n**Provenance:** Forwarded by sayf on 2026-06-19\n\nHumanLayer is an Agentic IDE and collaboration platform for engineering teams, built by Dex and Kyle (creators of the open-source Research, Plan, Implement / RPI framework now running inside Fortune 500s like Block and Uber).\n\n## What it is\n\n- An Agentic IDE + collaboration platform + building blocks for a \"software factory\"\n- Lets engineering teams design complex systems with AI agents BEFORE generating code\n- Brings the \"design review\" phase (that great teams have used for decades) into one platform\n\n## Key differentiators\n\n- **Move 2-3x faster across the full SDLC**, not just the coding part\n- Maintain rigorous standards for system architecture and program design\n- **Don't outsource the thinking** \u2014 collaborate on system design before writing code\n- **Bring your own subscription** \u2014 plug in Claude, Codex, or other AI subscriptions/API keys. No separate per-token bill\n- Starter plan is free for teams of fewer than three\n\n## Founders\n\n- **Dex** (Dexter) \u2014 X: @dexhorthy \u2014 built RPI framework\n- **Kyle** \u2014 co-founder\n\n## Links\n\n- Product: https://humanlayer.com\n- Launch post: https://x.com/dexhorthy/status/2067286892786454855\n- LinkedIn: https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U\n- Launch blurb (for writing): https://humanlayer.com/launch/blurb.md\n\n## Relevance to Maloha Coast\n\nHumanLayer's approach \u2014 bringing design review into the AI-assisted development workflow \u2014 aligns with how Maloha Coast thinks about agentic systems. The \"don't outsource the thinking\" philosophy mirrors the emphasis on human-in-the-loop architecture. Worth watching as an alternative to pure agent-driven code generation.",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "bookmarks/humanlayer-live-launch-2026-06-19",
+      "title": "Humanlayer Live Launch 2026 06 19",
+      "type": "bookmark",
+      "updated": "",
+      "body": "# HumanLayer // We're live \u2014 come build with us\n\n**Source:** email\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-26T05:30:00Z\n**Provenance:** Forwarded by sayf on 2026-06-19\n\nHumanLayer launched publicly \u2014 an Agentic IDE and collaboration platform for engineering teams to design complex systems with AI agents before writing code.\n\n## Overview\n\n- **Product:** HumanLayer \u2014 Agentic IDE, collaboration platform, and building blocks for a software factory\n- **Founders:** Dex (Dexter Horthy) and Kyle \u2014 previously built the open-source Research, Plan, Implement (RPI) framework\n- **RPI Framework:** Running inside Fortune 500s like Block and Uber\n- **Pricing:** Starter plan free for teams of fewer than three\n- **Core philosophy:** \"The year of no more slop\" \u2014 don't outsource the thinking\n\n## Key Architecture Philosophy\n\nHumanLayer brings design reviews back into the software factory \u2014 engineers design complex systems with AI agents before generating a single line of code. The core idea is that great teams have run design reviews for decades because there's enormous leverage in collaborating on system design *before* writing the code.\n\n## Key Differentiators\n\n- BYO subscription \u2014 plug in Claude, Codex, and other AI subscriptions or API keys; no separate per-token bill\n- Moves teams 2-3x faster across the entire SDLC (not just coding)\n- Maintains rigorous standards for system architecture and program design\n\n## Launch Context\n\n- Announced publicly on X and LinkedIn on June 18, 2026\n- X launch post: https://x.com/dexhorthy/status/2067286892786454855\n- LinkedIn: Dexter Horthy's post about solving the software factory problem\n- Teams can point their agent at https://humanlayer.com/launch/blurb.md for launch copy\n\n## Relevance to Maloha Coast\n\nRepresents a new category of AI-assisted development tooling \u2014 the Agentic IDE space. Worth watching as it directly competes with/branches from the coding agent tools (Claude Code, Codex, Cursor) that Sayf uses daily. The design-review-first philosophy aligns with Sayf's approach to system architecture.",
       "tags": [],
       "links_out": [],
       "backlinks": [],
@@ -12215,13 +12239,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 70,
+    "brain_checks_score": 90,
     "category_scores": {
-      "brain": 95,
+      "brain": 90,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -12251,32 +12275,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -12288,11 +12290,12 @@
       },
       {
         "name": "extract_atoms_backlog",
-        "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "status": "warn",
+        "message": "23 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 0,
+          "backlog": 23,
           "pack_declares_phase": false,
+          "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
         "category": "brain"
@@ -12300,7 +12303,7 @@
       {
         "name": "conversation_format_coverage",
         "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "message": "10 pages: bold-name-no-time=9, _no_match=1",
         "category": "brain"
       },
       {
@@ -12324,7 +12327,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 322 pages",
         "category": "ops"
       },
       {
@@ -12360,7 +12363,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 663ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -12378,25 +12381,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 90%, timeline 68%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 78 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 322 pages; 37 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -12557,7 +12560,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 1/322 pages (0%) stale",
+        "details": {
+          "total": 322,
+          "stale": 1,
+          "pct": 0,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -12569,7 +12580,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -12581,7 +12592,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "232 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -12593,7 +12604,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "40.7% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -12635,7 +12646,7 @@
       {
         "name": "oauth_confidential_client_health",
         "status": "ok",
-        "message": "No OAuth clients registered",
+        "message": "4 OAuth client(s) registered; all auth shapes consistent",
         "category": "ops"
       },
       {
@@ -12696,13 +12707,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 91% \u00b1 3.2%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 69% \u00b1 5.2% (target 90%)",
         "category": "meta"
       },
       {
@@ -12720,7 +12731,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "10 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
