@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-06-25T09:00:16Z",
+  "updated_at": "2026-06-25T09:07:17Z",
   "summary": {
-    "score": "92",
+    "score": "82",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
+    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
     "page_count": 363,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "38.8% of pages have inbound links",
-    "entity_links": "Coverage \u2014 48 people, 33 companies indexed",
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "40.9% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 91% \u00b1 3.2%",
     "concept_count": 131,
     "meeting_count": 14,
     "person_count": 48,
@@ -26,7 +26,19 @@
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
+    "score_components": {
+      "score": "82/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "3/15",
+      "orphans": "9/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 67,
+    "checks_warned": 6,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -2198,11 +2210,6 @@
           "text": "OpenRouter"
         },
         {
-          "from": "newsletters/openrouter-model-fusion-frontier-deep-research-2026-06-24",
-          "type": "wikilink",
-          "text": "OpenRouter"
-        },
-        {
           "from": "newsletters/openrouter-three-cost-levers-2026-06-17",
           "type": "wikilink",
           "text": "OpenRouter"
@@ -2229,7 +2236,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 14
+      "inbound_count": 13
     },
     {
       "slug": "companies/passend",
@@ -7627,16 +7634,17 @@
       "title": "OpenRouter Model Fusion Frontier Deep Research 2026 06 24",
       "type": "newsletter",
       "updated": "",
-      "body": "# Model Fusion shows frontier-level deep research performance at half the cost\n\n**Source:** email\n**Source URI:** gmail://msg_19ef9f9bd5c77629\n**Ingested:** 2026-06-24T22:15:00Z\n**Provenance:** [[OpenRouter]] newsletter, June 2026\n\n## Summary\n\n[[OpenRouter]]'s June 2026 newsletter covering three major feature launches (Fusion multi-model deep research, Advisor/Subagent server tools, sharper Models API), six new models, and the 11-model battle royale benchmark analysis.\n\n## Key Features\n\n### Fusion: Multi-Model Deep Research\n- Experimental multi-model research workflow\n- Fans one API call across a panel of up to 8 models, returns synthesized best answer\n- On deep-research benchmarks: lower cost than single frontier model with strong results\n- Each panel model + judge runs with web search by default\n- Judge maps agreement points, conflicts, unique catches, and gaps \u2014 not majority vote\n- Call as `openrouter/fusion` model slug or let any model invoke it as server tool\n- Best for research-heavy work, not coding agents or general chat\n\n### Server Tools: Advisor and Subagent\n- **Advisor**: model consults a stronger one only when stuck; now with multiple named advisors, memory across requests, streaming\n- **Subagent**: hands self-contained subtasks to a smaller, faster worker mid-generation \u2014 expensive model doesn't do routine work\n- Both push work onto cheaper models\n\n### Sharper Models API\n- Filter catalog by price, modality, context, provider\n- Benchmark scores on every model page\n- Pull single model's full details by author and slug\n\n## New Models (since May recap)\n\n| Model | Provider | Context | Pricing (in/out per M tokens) | Notes |\n|-------|----------|---------|-------------------------------|-------|\n| GLM 5.2 | Z.ai | 1M | $1.40 / $4.40 | Flagship reasoning, long-horizon agent work |\n| Kimi K2.7 Code | Moonshot AI | 262K | $0.74 / $3.50 | Coding agent, long context without long-context pricing |\n| Qwen3.7-Plus | Qwen | 1M | $0.32 / $1.28 | Generalist, cheap workhorse |\n| Nemotron-3 Ultra 550B | NVIDIA | 1M | $0.50 / $2.20 | Open-weight 550B, free eval endpoint |\n| Nemotron-3.5 Content Safety | NVIDIA | \u2014 | Free | Guardrail model, moderates inputs/responses |\n\n## Key Insight: Battle Royale\n\n11 models through 30 rounds. The cheapest model won the most games, and the model you'd actually ship was a different one. Benchmark rank and real-task fit come apart \u2014 a recurring theme that reinforces the importance of task-specific evaluation over leaderboard chasing.\n\n## BYOK Pricing Update (effective July 1, 2026)\n- Free tier changes from 1M requests/month \u2192 $25K of list-price inference/month\n- 5% fee above free tier unchanged",
+      "body": "# Model Fusion shows frontier-level deep research performance at half the cost\n\n> **Redirect:** This page is a consolidation redirect. See [[newsletters/openrouter-model-fusion-mid-june-2026]] for the full newsletter content.\n\nThis duplicate was created from a pipeline log gap (gbrain put succeeded but log wasn't written). The canonical page is at [[newsletters/openrouter-model-fusion-mid-june-2026]] which has the more complete rendering with Maloha Coast takeaways.\n\n**Source URI:** gmail://msg_19ef9f9bd5c77629",
       "tags": [
         "ai",
-        "infrastructure"
+        "infrastructure",
+        "redirect"
       ],
       "links_out": [
         {
-          "to": "companies/openrouter",
+          "to": "newsletters/openrouter-model-fusion-mid-june-2026",
           "type": "wikilink",
-          "text": "OpenRouter"
+          "text": "newsletters/openrouter-model-fusion-mid-june-2026"
         }
       ],
       "backlinks": [],
@@ -7651,9 +7659,15 @@
       "body": "# OpenRouter Mid-June 2026: Model Fusion, New Server Tools, Six New Models\n\n**Source:** email from OpenRouter Team\n**Source URI:** gmail://msg_19ef9f9bd5c77629\n**Ingested:** 2026-06-25T14:30:00Z\n\n## Overview\n\nOpenRouter's mid-June 2026 newsletter covers three feature launches (Fusion, Advisor/Subagent server tools, improved models API) and six new models. Key theme: lowering cost per answer through multi-model orchestration.\n\n## Fusion: Multi-Model Deep Research\n\nAn early experiment where one API call fans a prompt across a panel of models and synthesizes the best answer. On deep-research benchmarks, this approach produced strong results at lower cost than a single frontier model.\n\n- Call it as `openrouter/fusion` model slug, or let any model invoke it as a server tool\n- Every panel model and the judge run with web search by default\n- Choose up to eight models and the judge that synthesizes them\n- The judge maps where models agree, where they conflict, what only one caught, what all missed \u2014 not a majority vote\n- Built for research-heavy work, not coding agents or general chat (experimental)\n\nUsage example:\n```\n{ \"model\": \"openrouter/fusion\",\n  \"messages\": [{ \"role\": \"user\", \"content\": \"What changed in EU AI Act enforcement this year?\" }],\n  \"plugins\": [{ \"id\": \"fusion\", \"preset\": \"general-budget\" }] }\n```\n\n## Server Tools: Advisor and Subagent\n\nTwo tools that push work onto cheaper models:\n\n- **Advisor** \u2014 lets your model consult a stronger one only when stuck, now with multiple named advisors, memory across requests, and streaming\n- **Subagent** \u2014 hands self-contained subtasks to a smaller, faster worker model mid-generation, so the expensive model is not doing routine work\n\n## Sharper Models API\n\nFind models by price, modality, context, and provider. Benchmark scores on every model page. Pull a single model's full details by author and slug.\n\n## New Models\n\n- **GLM 5.2** (z-ai/glm-5.2) \u2014 Z.ai's flagship reasoning model with 1M-token context window, $1.40 in / $4.40 out per M tokens\n- **Kimi K2.7 Code** (moonshotai/kimi-k2.7-code) \u2014 Moonshot AI's coding model, 262K context, $0.74 in / $3.50 out\n- **Qwen 3.7 Plus** (qwen/qwen3.7-plus) \u2014 1M-context generalist at $0.32 in / $1.28 out\n- **NVIDIA Nemotron-3 Ultra 550B** (nvidia/nemotron-3-ultra-550b-a55b) \u2014 550B open-weight, $0.50 in / $2.20 out, 1M context, free eval endpoint\n- **NVIDIA Nemotron-3.5 Content Safety** (nvidia/nemotron-3.5-content-safety:free) \u2014 compact guardrail model, free to run\n- Additional models mentioned in full catalog\n\n## Notable Blog Posts\n\n- **Battle Royale** \u2014 Eleven models in 30 rounds. Cheapest model won most games; the model you'd actually ship was different. Benchmark rank vs real-task fit come apart.\n- **Dinner is Served** \u2014 Case against standardizing on one LLM; \"going family style\" with multi-model orchestration\n- **Model Routing Diagram** \u2014 How OpenRouter spreads requests across 60+ providers: default load balancing, :nitro/:floor shortcuts, model fallbacks, Auto Router\n\n## BYOK Pricing Update (Effective July 1, 2026)\n\nFree tier changes from 1M requests/month to $25,000 of list-price inference per month. 5% fee above free tier unchanged.\n\n## Key Takeaways for Maloha Coast\n\n- Fusion's multi-model approach aligns with the multi-agent orchestration direction\n- Advisor and Subagent server tools are directly applicable to agent cost optimization\n- GLM 5.2 (1M context, $1.40/M in) and Qwen 3.7 Plus ($0.32/M in) are worth evaluating for long-context agent workloads\n- The battle royale conclusion \u2014 benchmark rank != task fit \u2014 reinforces the need for real-world agent evaluation",
       "tags": [],
       "links_out": [],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "newsletters/openrouter-model-fusion-frontier-deep-research-2026-06-24",
+          "type": "wikilink",
+          "text": "newsletters/openrouter-model-fusion-mid-june-2026"
+        }
+      ],
       "outbound_count": 0,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "newsletters/openrouter-paid-key-features-2026-06-11",
@@ -11847,7 +11861,7 @@
     },
     {
       "source": "newsletters/openrouter-model-fusion-frontier-deep-research-2026-06-24",
-      "target": "companies/openrouter",
+      "target": "newsletters/openrouter-model-fusion-mid-june-2026",
       "type": "wikilink"
     },
     {
@@ -12201,13 +12215,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 70,
+    "brain_checks_score": 90,
     "category_scores": {
-      "brain": 95,
+      "brain": 90,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -12237,32 +12251,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -12274,11 +12266,12 @@
       },
       {
         "name": "extract_atoms_backlog",
-        "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "status": "warn",
+        "message": "23 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 0,
+          "backlog": 23,
           "pack_declares_phase": false,
+          "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
         "category": "brain"
@@ -12286,7 +12279,7 @@
       {
         "name": "conversation_format_coverage",
         "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "message": "10 pages: bold-name-no-time=9, _no_match=1",
         "category": "brain"
       },
       {
@@ -12310,7 +12303,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 320 pages",
         "category": "ops"
       },
       {
@@ -12346,7 +12339,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 403ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -12364,25 +12357,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 90%, timeline 68%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 78 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 320 pages; 37 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -12543,7 +12536,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 0/320 pages (0%) stale",
+        "details": {
+          "total": 320,
+          "stale": 0,
+          "pct": 0,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -12555,7 +12556,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -12567,7 +12568,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "225 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -12579,7 +12580,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "40.9% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -12621,7 +12622,7 @@
       {
         "name": "oauth_confidential_client_health",
         "status": "ok",
-        "message": "No OAuth clients registered",
+        "message": "4 OAuth client(s) registered; all auth shapes consistent",
         "category": "ops"
       },
       {
@@ -12682,13 +12683,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 91% \u00b1 3.2%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 69% \u00b1 5.2% (target 90%)",
         "category": "meta"
       },
       {
@@ -12706,7 +12707,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "10 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
