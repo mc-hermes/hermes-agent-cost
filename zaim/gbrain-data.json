@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-25T14:00:30Z",
+  "updated_at": "2026-06-25T14:35:58Z",
   "summary": {
     "page_count": 40,
     "people_count": 4,
@@ -1074,7 +1074,7 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-25T14:00:30Z",
+      "ts": "2026-06-25T14:35:58Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
@@ -1199,14 +1199,6 @@
       "stage": "updated",
       "slug": "concepts/ksi-workshop",
       "detail": "KSI Workshop",
-      "level": "info"
-    },
-    {
-      "ts": "2026-06-22T00:00:00Z",
-      "source": "page",
-      "stage": "updated",
-      "slug": "newsletters/why-your-2026-career-goals-are-dead",
-      "detail": "Why Your 2026 Career Goals Are Dead",
       "level": "info"
     }
   ]
