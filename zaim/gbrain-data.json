@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-26T16:23:38Z",
+  "updated_at": "2026-06-26T16:38:22Z",
   "summary": {
     "page_count": 44,
     "people_count": 4,
@@ -1156,7 +1156,7 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-26T16:23:38Z",
+      "ts": "2026-06-26T16:38:22Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
@@ -1249,14 +1249,6 @@
       "stage": "updated",
       "slug": "concepts/15-minute-gap-method-zaim",
       "detail": "15 Minute Gap Method Zaim",
-      "level": "info"
-    },
-    {
-      "ts": "2026-06-23T00:00:00Z",
-      "source": "page",
-      "stage": "updated",
-      "slug": "concepts/aisyah-rahim-client-profile",
-      "detail": "Aisyah Rahim Client Profile",
       "level": "info"
     },
     {

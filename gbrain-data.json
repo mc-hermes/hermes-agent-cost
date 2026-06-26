@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-06-26T16:23:30Z",
+  "updated_at": "2026-06-26T16:38:13Z",
   "summary": {
-    "score": "81",
+    "score": "82",
     "score_label": "/100",
-    "score_breakdown": "score 81/100, embed 35/35, links 25/25, timeline 3/15, orphans 8/15, dead-links 10/10",
+    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
     "page_count": 375,
     "embed_coverage": "100% coverage, 0 missing",
-    "graph_coverage": "39.5% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "graph_coverage": "40.1% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
     "entity_links": "Coverage 91% \u00b1 3.2%",
     "concept_count": 134,
     "meeting_count": 15,
@@ -19,21 +19,21 @@
     "quote_count": 0,
     "dataset_count": 2,
     "digest_count": 2,
-    "total_links": 396,
-    "outbound_count": 495,
-    "inbound_count": 460,
+    "total_links": 398,
+    "outbound_count": 499,
+    "inbound_count": 464,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
     },
-    "score_raw": "Brain score 81/100 (embed 35/35, links 25/25, timeline 3/15, orphans 8/15, dead-links 10/10)",
+    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
     "score_components": {
-      "score": "81/100",
+      "score": "82/100",
       "embed": "35/35",
       "links": "25/25",
       "timeline": "3/15",
-      "orphans": "8/15",
+      "orphans": "9/15",
       "dead-links": "10/10"
     },
     "checks_passed": 67,
@@ -3552,6 +3552,16 @@
       "links_out": [],
       "backlinks": [
         {
+          "from": "concepts/dynamics-orchard-farm-mgmt-accounts-2025",
+          "type": "wikilink",
+          "text": "Dynamics Orchard Farm Sdn Bhd \u2014 Preparation of Management Accounts FYE 2025"
+        },
+        {
+          "from": "concepts/dynamics-orchard-farm-mgmt-accounts-2025",
+          "type": "wikilink",
+          "text": "concepts/dynamics-orchard-farm-management-accounts-2025-2026-06-10"
+        },
+        {
           "from": "digests/2026-06-10-business-brain-digest",
           "type": "wikilink",
           "text": "Dynamics Orchard Farm Management Accounts FYE 2025"
@@ -3568,7 +3578,7 @@
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 3
+      "inbound_count": 5
     },
     {
       "slug": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
@@ -3646,14 +3656,27 @@
     },
     {
       "slug": "concepts/dynamics-orchard-farm-mgmt-accounts-2025",
-      "title": "Dynamics Orchard Farm Mgmt Accounts 2025",
+      "title": "Dynamics Orchard Farm Mgmt Accounts 2025 (redirect)",
       "type": "concept",
       "updated": "",
-      "body": "# Dynamics Orchard Farm Sdn Bhd \u2014 Management Accounts FYE 2025\n\n**Source:** email\n**Source URI:** gmail://msg_19eafe1ebcc99c48\n**Ingested:** 2026-06-22T19:05:00Z\n**For:** sayf\n\n\n**Sayf's note:** I will start sending my company secretary requests for Gbrain to file into memory and postgres\n\n---\n\n**Subject:** Dynamics Orchard Farm Sdn Bhd - Preparation of Management Accounts FYE 2025\n**Date:** Wed, 10 Jun 2026\n**Forwarded from:** Sayf <sayfti@gmail.com>\n\n**Conversation:**\n\nSayf responded to Aisyah Humaira Wan Aziz (Maira) at Posh Corporate, providing bank statements via a shared Google Drive for the preparation of management accounts for FY ending 2025.\n\n**Key People:**\n- **Aisyah Humaira Wan Aziz (Maira)** \u2014 Senior Executive, Accounting at Posh Corporate (poshcorporate.com). Requested bank statements (Jul-Dec 2025) and supporting documents (Aug-Dec 2025).\n- **Yassif N. M.** \u2014 CC'd; should furnish supporting documents.\n- **Yaw Hog, Ng** \u2014 CC'd, at Posh Corporate.\n- **Audrey Loh** \u2014 CC'd, at Posh Corporate.\n\n**Documents Requested:**\n1. Bank statements (July 2025 \u2013 December 2025)\n2. Supporting documents (August 2025 \u2013 December 2025)\n\n**Sayf's Response:** Provided Google Drive link with bank statements. Yassif to handle supporting docs.\n\n**Google Drive:** https://drive.google.com/drive/folders/13lfy_i99qD5fWkk0czMjheiCz92WCDCO",
-      "tags": [],
-      "links_out": [],
+      "body": "# Dynamics Orchard Farm Sdn Bhd (Redirect)\n\n> **Redirect:** This page is consolidated into [[Dynamics Orchard Farm Sdn Bhd \u2014 Preparation of Management Accounts FYE 2025]].\n> See the [[concepts/dynamics-orchard-farm-management-accounts-2025-2026-06-10]] page for the complete information.\n\nThis is a consolidation redirect from an earlier duplicate ingestion.",
+      "tags": [
+        "redirect"
+      ],
+      "links_out": [
+        {
+          "to": "concepts/dynamics-orchard-farm-management-accounts-2025-2026-06-10",
+          "type": "wikilink",
+          "text": "Dynamics Orchard Farm Sdn Bhd \u2014 Preparation of Management Accounts FYE 2025"
+        },
+        {
+          "to": "concepts/dynamics-orchard-farm-management-accounts-2025-2026-06-10",
+          "type": "wikilink",
+          "text": "concepts/dynamics-orchard-farm-management-accounts-2025-2026-06-10"
+        }
+      ],
       "backlinks": [],
-      "outbound_count": 0,
+      "outbound_count": 2,
       "inbound_count": 0
     },
     {
@@ -4087,20 +4110,44 @@
         "sayf"
       ],
       "links_out": [],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "concepts/invoices-safekeeping-2026-06-26",
+          "type": "wikilink",
+          "text": "Invoices - RapidScreen & Beard Brothers BBQ (June 2026)"
+        },
+        {
+          "from": "concepts/invoices-safekeeping-2026-06-26",
+          "type": "wikilink",
+          "text": "concepts/invoice-mc-2026-003-2026-06-26"
+        }
+      ],
       "outbound_count": 0,
-      "inbound_count": 0
+      "inbound_count": 2
     },
     {
       "slug": "concepts/invoices-safekeeping-2026-06-26",
-      "title": "Invoices Safekeeping 2026 06 26",
+      "title": "Invoices Safekeeping (redirect)",
       "type": "concept",
       "updated": "",
-      "body": "# Invoices for Safekeeping \u2014 June 2026\n\n**Source:** Email from Sayf <sayfti@gmail.com> re: invoices for safekeeping, 2026-06-26\n**Source URI:** gmail://msg_19f043c6fa8031b9\n**Ingested:** 2026-06-26T15:30:00Z\n**Provenance:** Forwarded by sayf from sayfti@gmail.com to info@malohacoast.com\n\n## Attachments\n\n| File | Size | Path |\n|------|------|------|\n| invoice-MC-2026-003.pdf | 98 KB | `~/.workspace/inbox/invoices/invoice-MC-2026-003.pdf` |\n| MC-2026-001_Invoice_BBB (1).pdf | 63 KB | `~/.workspace/inbox/invoices/MC-2026-001_Invoice_BBB (1).pdf` |\n\nBoth invoices received from sayf for safekeeping. PDFs preserved at workspace paths above.",
-      "tags": [],
-      "links_out": [],
+      "body": "# Invoices for Safekeeping (Redirect)\n\n> **Redirect:** This page is consolidated into [[Invoices - RapidScreen & Beard Brothers BBQ (June 2026)]].\n> See the [[concepts/invoice-mc-2026-003-2026-06-26]] page for the complete invoice information.\n\nThis is a consolidation redirect from an earlier duplicate ingestion.",
+      "tags": [
+        "redirect"
+      ],
+      "links_out": [
+        {
+          "to": "concepts/invoice-mc-2026-003-2026-06-26",
+          "type": "wikilink",
+          "text": "Invoices - RapidScreen & Beard Brothers BBQ (June 2026)"
+        },
+        {
+          "to": "concepts/invoice-mc-2026-003-2026-06-26",
+          "type": "wikilink",
+          "text": "concepts/invoice-mc-2026-003-2026-06-26"
+        }
+      ],
       "backlinks": [],
-      "outbound_count": 0,
+      "outbound_count": 2,
       "inbound_count": 0
     },
     {
@@ -10943,6 +10990,11 @@
       "type": "wikilink"
     },
     {
+      "source": "concepts/dynamics-orchard-farm-mgmt-accounts-2025",
+      "target": "concepts/dynamics-orchard-farm-management-accounts-2025-2026-06-10",
+      "type": "wikilink"
+    },
+    {
       "source": "concepts/dynamics-orchard-farm-mgmt-accounts-2026-06-10",
       "target": "companies/dynamics-orchard-farm-sdn-bhd",
       "type": "wikilink"
@@ -11040,6 +11092,11 @@
     {
       "source": "concepts/humanlayer-launch-newsletter",
       "target": "companies/humanlayer",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/invoices-safekeeping-2026-06-26",
+      "target": "concepts/invoice-mc-2026-003-2026-06-26",
       "type": "wikilink"
     },
     {
@@ -12407,7 +12464,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 467ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 1012ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -12431,7 +12488,7 @@
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 81/100 (embed 35/35, links 25/25, timeline 3/15, orphans 8/15, dead-links 10/10)",
+        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
         "category": "brain"
       },
       {
@@ -12604,11 +12661,11 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction current: 3/332 pages (1%) stale",
+        "message": "Extraction current: 0/332 pages (0%) stale",
         "details": {
           "total": 332,
-          "stale": 3,
-          "pct": 1,
+          "stale": 0,
+          "pct": 0,
           "warn_pct": 20,
           "fail_pct": null,
           "source_id": null
@@ -12648,7 +12705,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "39.5% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "40.1% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
