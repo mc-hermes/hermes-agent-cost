@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-06-26T16:00:48Z",
+  "updated_at": "2026-06-26T16:23:38Z",
   "summary": {
-    "page_count": 43,
+    "page_count": 44,
     "people_count": 4,
     "company_count": 1,
     "artifact_count": 0,
     "total_links": 19,
     "outbound_count": 37,
     "inbound_count": 35,
-    "graph_coverage": "23.3% of pages have inbound links",
+    "graph_coverage": "22.7% of pages have inbound links",
     "concept_count": 28,
     "meeting_count": 4,
     "person_count": 4,
-    "newsletter_count": 4,
+    "newsletter_count": 5,
     "video_count": 0,
     "article_count": 2,
     "bookmark_count": 0,
@@ -648,6 +648,20 @@
       "inbound_count": 0
     },
     {
+      "slug": "newsletters/why-2026-career-goals-already-dead-2026-06-16",
+      "title": "Why 2026 Career Goals Already Dead 2026 06 16",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# Why your 2026 career goals are already dead\n\n**Source:** email (Zaim Mohzani via Nation Building School)\n**Source URI:** gmail://msg_19ece778ab23e039\n**Ingested:** 2026-06-27T00:00:00Z\n**Provenance:** Forwarded by Zaim on 2026-06-16\n\nIt's June. How's that career goal from January going?\n\nIf you're being honest, probably: forgotten by March, barely remembered (and feeling guilty) in June and quietly dropped by the end of the year.\n\nIt's a timeframe problem, not a discipline problem.\n\n## The annual goal trap\n\nA year is too long to create urgency and too vague to act on. \"Get a new job this year\" feels fine in January. There's time. So nothing happens. By June, the goal is still technically alive, but you haven't done anything that moves it forward. By December, you're setting the same goal again for next year.\n\nZaim went through this with weight loss, not career. In January 2025, he set an annual goal: lose 6kg by December. Then he came across Brian Moran and Michael Lennington's book \"The 12 Week Year,\" which argues people don't actually operate in years \u2014 they operate in the last few weeks before a deadline. The fix: shrink the deadline.\n\nHe rewrote the goal: lose 6kg in 90 days, by 31 March. He hit it, and never had to set that goal again \u2014 the habits he built kept running on their own.\n\n## Why this works for career too\n\n\"Get promoted this year\" doesn't tell you what to do on Monday. \"By 30 September, I will have had 3 conversations with people in my target department, applied to 5 internal roles, and presented one project to leadership\" tells you exactly what to do on Monday.\n\nOne is a wish. The other is a plan.\n\n## How to set your 90-day goal\n\nPick ONE career goal for this quarter. Write down:\n\n- *My 90-day career goal is...*\n- *This matters to me because...*\n- *To complete this, I commit that by 30 September 2026, I will have...* (make this checkable \u2014 \"3 offers\" is checkable, \"more clarity\" is not)\n- *To make sure I complete it, I'm going to...* (weekly actions, not the outcome)\n\nOne goal. One sentence you can check off or not, no grey area. Then build it into your week, not your year.\n\nBook reference: *The 12 Week Year* by Brian Moran and Michael Lennington.\n\n## Key People\n\n- **Zaim Mohzani** \u2014 career coach, Nation Building School\n- **Brian Moran** \u2014 co-author of The 12 Week Year\n- **Michael Lennington** \u2014 co-author of The 12 Week Year",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "newsletters/why-2026-career-goals-dead-2026-06-12",
       "title": "Why 2026 Career Goals Dead 2026 06 12",
       "type": "newsletter",
@@ -1142,11 +1156,11 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-26T16:00:48Z",
+      "ts": "2026-06-26T16:23:38Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
-      "detail": "Dashboard refreshed \u2014 43 pages, 19 links",
+      "detail": "Dashboard refreshed \u2014 44 pages, 19 links",
       "level": "info"
     },
     {
@@ -1163,6 +1177,14 @@
       "stage": "updated",
       "slug": "concepts/zaim-aisyah-rahim-client-profile-2026-06-15",
       "detail": "Zaim Aisyah Rahim Client Profile 2026 06 15",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-26T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "newsletters/why-2026-career-goals-already-dead-2026-06-16",
+      "detail": "Why 2026 Career Goals Already Dead 2026 06 16",
       "level": "info"
     },
     {
@@ -1243,14 +1265,6 @@
       "stage": "updated",
       "slug": "concepts/coaching-client-aisyah-rahim-2026-06-15",
       "detail": "Coaching Client Aisyah Rahim 2026 06 15",
-      "level": "info"
-    },
-    {
-      "ts": "2026-06-23T00:00:00Z",
-      "source": "page",
-      "stage": "updated",
-      "slug": "concepts/zaim-15-minute-gap-method-2026-06-14",
-      "detail": "Zaim 15 Minute Gap Method 2026 06 14",
       "level": "info"
     },
     {
