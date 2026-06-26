@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-26T07:00:41Z",
+  "updated_at": "2026-06-26T07:10:57Z",
   "summary": {
-    "page_count": 41,
+    "page_count": 43,
     "people_count": 4,
     "company_count": 1,
     "artifact_count": 0,
-    "total_links": 18,
-    "outbound_count": 35,
-    "inbound_count": 33,
-    "graph_coverage": "24.4% of pages have inbound links",
-    "concept_count": 26,
+    "total_links": 19,
+    "outbound_count": 37,
+    "inbound_count": 35,
+    "graph_coverage": "23.3% of pages have inbound links",
+    "concept_count": 28,
     "meeting_count": 4,
     "person_count": 4,
     "newsletter_count": 4,
@@ -172,13 +172,18 @@
           "text": "Aisyah Rahim"
         },
         {
+          "from": "concepts/zaim-aisyah-rahim-client-profile-2026-06-15",
+          "type": "wikilink",
+          "text": "Aisyah Rahim"
+        },
+        {
           "from": "people/liyana",
           "type": "wikilink",
           "text": "Aisyah Rahim"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 2
+      "inbound_count": 3
     },
     {
       "slug": "concepts/aisyah-rahim-client-profile",
@@ -400,6 +405,45 @@
       "inbound_count": 0
     },
     {
+      "slug": "concepts/zaim-15-minute-rule-student-buckets-2026-06-14",
+      "title": "Zaim 15 Minute Rule Student Buckets 2026 06 14",
+      "type": "concept",
+      "updated": "",
+      "body": "# Zaim: The 15-Minute Rule and Student Observation Buckets\n\n**Source:** email (self-send from Maloha Coast account by Zaim)\n**Source URI:** gmail://msg_19eca04daacc7a09\n**Ingested:** 2026-06-26T06:00:00Z\n**Provenance:** Self-sent by Zaim via Maloha Coast account on 2026-06-14\n\nZaim's observation practice: using 15-minute gaps between KSI sessions to jot down one thing about each student.\n\n## The Method\n\n- Between KSI sessions, Zaim has 15-minute gaps\n- Started using them to note one thing per student: what they're stuck on, what lit them up\n- After a month of this, patterns emerged that he'd never have spotted otherwise\n\n## Three Student Buckets\n\n1. **Career pivoters** \u2014 stuck on \"what if I fail\" not \"what do I want\"\n2. **Fresh grads** \u2014 over-indexing on salary, under-indexing on growth trajectory\n3. **Mid-career** \u2014 all variations of \"is this it?\"\n\n## The Rule\n\n> Never let a gap go empty. Even one sentence per student compounds.\n\n**Source:** email self-send by Zaim, 2026-06-14",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "concepts/zaim-aisyah-rahim-client-profile-2026-06-15",
+      "title": "Zaim Aisyah Rahim Client Profile 2026 06 15",
+      "type": "concept",
+      "updated": "",
+      "body": "# Zaim: [[Aisyah Rahim]] \u2014 Client Profile\n\n**Source:** email (self-send from Maloha Coast account by Zaim)\n**Source URI:** gmail://msg_19eca0a8dc4888c3\n**Ingested:** 2026-06-26T06:00:00Z\n**Provenance:** Self-sent by Zaim via Maloha Coast account on 2026-06-15\n\nClient profile for a new coaching client of Zaim's.\n\n## Client Details\n\n- **Name:** [[Aisyah Rahim]]\n- **Role:** Senior Brand Manager at [[Unilever]] Malaysia\n- **Referral:** Liyana from KSI workshop\n- **First session:** Next Tuesday (as of June 15, 2026)\n\n## Key Points from Intro Call\n\n- 8 years in FMCG brand management, feeling stagnant\n- Wants to pivot into tech but unsure where to start\n- Main blocker: \"I don't have a technical background\"\n- Has actually done more data-driven work than she realises \u2014 ran consumer analytics for 3 product launches\n- Salary anchor: RM 18k/month, worried about resetting to junior level\n\n## Zaim's Assessment\n\nClassic mid-career pivot case. The real problem isn't skills \u2014 it's confidence and narrative. Needs help reframing 'brand manager' as 'growth strategist who uses data.'\n\n## Plan for Session 1\n\n- Audit her last 2 years of work through a tech lens\n- Find 3-5 specific examples where she already did 'product thinking'\n\n**Source:** email self-send by Zaim, 2026-06-15",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [
+        {
+          "to": "concepts/aisyah-rahim-client-profile-2026-06-15",
+          "type": "wikilink",
+          "text": "Aisyah Rahim"
+        },
+        {
+          "to": "Unilever",
+          "type": "wikilink",
+          "text": "Unilever"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 2,
+      "inbound_count": 0
+    },
+    {
       "slug": "concepts/zaim-career-goals-12-week-year-2026-06-16",
       "title": "Why Your 2026 Career Goals Are Already Dead (Zaim Newsletter)",
       "type": "concept",
@@ -608,7 +652,7 @@
       "title": "Why 2026 Career Goals Dead 2026 06 12",
       "type": "newsletter",
       "updated": "",
-      "body": "# Why Your 2026 Career Goals Are Already Dead\n\n**Source:** email\n**Source URI:** gmail://msg_19ece778ab23e039\n**Ingested:** 2026-06-26T03:00:00Z\n**Provenance:** Forwarded by Zaim Mohzani on 2026-06-16\n\n> *From Zaim's career newsletter (Nation Building School), forwarded to Maloha Coast.*\n\nIt's June. How's that career goal from January going?\n\nIf you're being honest, probably: forgotten by March, barely remembered (and feeling guilty) in June and quietly dropped by... the end of the year.\n\nIt's a timeframe problem, not a discipline problem.\n\n## The annual goal trap\n\nA year is too long to create urgency and too vague to act on.\n\n\"Get a new job this year\" feels fine in January. There's time. So nothing happens.\n\nBy June, the goal is still technically alive, but you haven't done anything that moves it forward. By December, you're setting the same goal again for next year.\n\nZaim went through this himself with weight, not career. In January 2025, he set an annual goal: lose 6kg by December. Standard SMART goal.\n\nThen he came across Brian Moran and Michael Lennington's book \"The 12 Week Year,\" which argues most people don't actually operate in years. They operate in the last few weeks before a deadline. So the fix is to shrink the deadline.\n\nHe rewrote the goal: lose 6kg in 90 days, by 31 March. He hit it. The habits he built kept running on their own for the rest of the year.\n\n## Why this works for your career too\n\nThe same applies to a job search, a promotion case or a pivot.\n\n\"Get promoted this year\" doesn't tell you what to do on Monday.\n\n\"By 30 September, I will have had 3 conversations with people in my target department, applied to 5 internal roles, and presented one project to leadership\" tells you exactly what to do on Monday.\n\nOne of these is a wish. The other is a plan.\n\n## How to set yours\n\nPick ONE career goal for this quarter. Just one. Follow this format:\n\n- *My 90-day career goal is...*\n- *This matters to me because...*\n- *To complete this, I commit that by 30 September 2026, I will have...* (make this checkable \u2014 \"3 offers\" is checkable, \"more clarity\" is not)\n- *To make sure I complete it, I'm going to...* (weekly actions, not the outcome)\n\n## Key Takeaways\n\n- The 12-week year framework solves the annual goal trap by shrinking the deadline\n- Specific 90-day goals with weekly actions outperform vague annual wishes\n- Checkable outcomes (\"3 offers\", \"applied to 5 internal roles\") create accountability\n- Habits built in a 90-day sprint persist beyond the deadline\n- Zaim offers a free workshop on 90-day goal setting for Q3 2026",
+      "body": "# Why your 2026 career goals are already dead (and what to do about it)\n\n**Source:** email (Nation Building School / Zaim Mohzani)\n**Source URI:** gmail://msg_19ece778ab23e039\n**Ingested:** 2026-06-26T06:00:00Z\n**Provenance:** Forwarded by Zaim Mohzani on 2026-06-16 via info+zaim@malohacoast.com\n\nZaim's Nation Building School newsletter on why annual career goals fail and how to fix them with the 12-week year framework.\n\n## Key Ideas\n\n- **The annual goal trap:** A year is too long to create urgency and too vague to act on.\n- **The 12 Week Year** (Brian Moran & Michael Lennington): People operate in the last few weeks before a deadline. Shrink the deadline.\n- **Zaim's personal example:** Lost 6kg in 90 days using this framework (Jan-Mar 2025). Never had to set the goal again \u2014 habits persisted.\n- **Career application:** \"Get promoted this year\" becomes \"By 30 Sept, I will have had 3 conversations in my target department, applied to 5 internal roles, and presented one project to leadership.\"\n- **Q3 2026 workshop** \u2014 free workshop on setting 90-day career goals. t.ly/getclearoncareer6\n\n## Format for 90-Day Goals\n1. My 90-day career goal is...\n2. This matters to me because...\n3. To complete this, I commit that by [date], I will have... (must be checkable)\n4. To make sure I complete it, I'm going to... (weekly actions)\n\n**Source:** email from Zaim Mohzani / Nation Building School newsletter, 2026-06-12",
       "tags": [
         "zaim"
       ],
@@ -869,6 +913,11 @@
           "text": "Zaim Mohzani"
         },
         {
+          "from": "meetings/sayf-zaim-jun-12-2026-gemini",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
           "from": "meetings/sayf-zaim-jun-12-2026",
           "type": "wikilink",
           "text": "people/zaim-mohzani|Zaim"
@@ -890,7 +939,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 12
+      "inbound_count": 13
     },
     {
       "slug": "zaim-career-goals-12-week-year-2026-06-16",
@@ -1033,6 +1082,11 @@
       "type": "wikilink"
     },
     {
+      "source": "concepts/zaim-aisyah-rahim-client-profile-2026-06-15",
+      "target": "concepts/aisyah-rahim-client-profile-2026-06-15",
+      "type": "wikilink"
+    },
+    {
       "source": "meetings/sayf-zaim-jun-12-2026",
       "target": "people/sayf-codes",
       "type": "wikilink"
@@ -1088,11 +1142,27 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-26T07:00:41Z",
+      "ts": "2026-06-26T07:10:57Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
-      "detail": "Dashboard refreshed \u2014 41 pages, 18 links",
+      "detail": "Dashboard refreshed \u2014 43 pages, 19 links",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-26T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "concepts/zaim-15-minute-rule-student-buckets-2026-06-14",
+      "detail": "Zaim 15 Minute Rule Student Buckets 2026 06 14",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-26T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "concepts/zaim-aisyah-rahim-client-profile-2026-06-15",
+      "detail": "Zaim Aisyah Rahim Client Profile 2026 06 15",
       "level": "info"
     },
     {
@@ -1205,22 +1275,6 @@
       "stage": "updated",
       "slug": "people/aisyah-rahim",
       "detail": "Aisyah Rahim",
-      "level": "info"
-    },
-    {
-      "ts": "2026-06-22T00:00:00Z",
-      "source": "page",
-      "stage": "updated",
-      "slug": "companies/unilever-malaysia",
-      "detail": "Unilever Malaysia",
-      "level": "info"
-    },
-    {
-      "ts": "2026-06-22T00:00:00Z",
-      "source": "page",
-      "stage": "updated",
-      "slug": "concepts/ksi-workshop",
-      "detail": "KSI Workshop",
       "level": "info"
     }
   ]

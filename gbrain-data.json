@@ -1,32 +1,44 @@
 {
-  "updated_at": "2026-06-26T07:00:31Z",
+  "updated_at": "2026-06-26T07:10:48Z",
   "summary": {
-    "score": "92",
+    "score": "82",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 366,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "39.1% of pages have inbound links",
-    "entity_links": "Coverage \u2014 48 people, 33 companies indexed",
-    "concept_count": 131,
-    "meeting_count": 14,
+    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
+    "page_count": 371,
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "39.9% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 91% \u00b1 3.2%",
+    "concept_count": 133,
+    "meeting_count": 15,
     "person_count": 48,
     "company_count": 33,
     "newsletter_count": 88,
     "video_count": 0,
     "article_count": 20,
-    "bookmark_count": 29,
+    "bookmark_count": 31,
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 404,
-    "outbound_count": 502,
-    "inbound_count": 468,
+    "total_links": 402,
+    "outbound_count": 501,
+    "inbound_count": 466,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
+    "score_components": {
+      "score": "82/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "3/15",
+      "orphans": "9/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 67,
+    "checks_warned": 6,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -832,6 +844,20 @@
       "inbound_count": 0
     },
     {
+      "slug": "bookmarks/humanlayer-live-launch-2026-06-18",
+      "title": "Humanlayer Live Launch 2026 06 18",
+      "type": "bookmark",
+      "updated": "",
+      "body": "# HumanLayer // We're live \u2014 come build with us\n\n**Source:** email (HumanLayer / Dexter)\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-26T06:00:00Z\n**Provenance:** Forwarded by Sayf Codes on 2026-06-19\n\nHumanLayer is an Agentic IDE, collaboration platform, and building blocks for a software factory. From the team behind the open-source Research, Plan, Implement (RPI) framework. Now used inside Fortune 500s (Block, Uber).\n\n## Key Details\n\n- **Core idea:** Don't outsource the thinking. Design complex systems with AI agents before generating a single line of code.\n- **Pricing:** Starter plan free for teams <3. BYO subscriptions (Claude, Codex, API keys) \u2014 no separate per-token bill.\n- **Team:** Dex (Dexter) and Kyle. Previously built open-source RPI framework.\n\n## Features\n- Move 2-3x faster across the full SDLC (not just coding)\n- Maintain rigorous standards for system architecture and program design\n- Design reviews with AI agents before writing code\n\n## Links\n- Website: humanlayer.com\n- Launch blurb: humanlayer.com/launch/blurb.md\n- X: @dexhorthy\n\n**Source:** email from HumanLayer launch announcement, 2026-06-18",
+      "tags": [
+        "sayf"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "bookmarks/humanlayer-live-launch-2026-06-19",
       "title": "Humanlayer Live Launch 2026 06 19",
       "type": "bookmark",
@@ -997,6 +1023,26 @@
       ],
       "backlinks": [],
       "outbound_count": 2,
+      "inbound_count": 0
+    },
+    {
+      "slug": "bookmarks/nerdqaxe-revision-7-launch-2026-06-12",
+      "title": "Nerdqaxe Revision 7 Launch 2026 06 12",
+      "type": "bookmark",
+      "updated": "",
+      "body": "# NerdQaxe++ Revision 7 \u2014 [[Solo Satoshi]] Bitcoin Solo Miner Launch\n\n**Source:** email (Solo Satoshi)\n**Source URI:** gmail://msg_19eb9b8ff247d156\n**Ingested:** 2026-06-26T06:00:00Z\n**Provenance:** Forwarded by Sayf Codes on 2026-06-12\n\n[[Solo Satoshi]]'s launch of the NerdQaxe++ Revision 7, the newest evolution of the open-source quad-chip Bitcoin solo miner.\n\n## Key Details\n\n- **Product:** NerdQaxe++ Revision 7 \u2014 open-source quad-chip Bitcoin solo miner\n- **Manufacturing:** 100% USA-based production\n- **Open source:** Fully open source. Repos public before shipping.\n- **Pre-release:** YouTube technical overview available\n\n**Source:** Solo Satoshi VIP email, 2026-06-12",
+      "tags": [
+        "sayf"
+      ],
+      "links_out": [
+        {
+          "to": "companies/solo-satoshi",
+          "type": "wikilink",
+          "text": "Solo Satoshi"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
       "inbound_count": 0
     },
     {
@@ -1583,11 +1629,6 @@
       ],
       "backlinks": [
         {
-          "from": "newsletters/30-core-agentic-engineering-concepts-2026-06-17",
-          "type": "wikilink",
-          "text": "Digital Power"
-        },
-        {
           "from": "newsletters/agentic-engineering-concepts-2026-06-20-084511",
           "type": "wikilink",
           "text": "Digital Power"
@@ -1599,7 +1640,7 @@
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 3
+      "inbound_count": 2
     },
     {
       "slug": "companies/dynamics-orchard-farm-sdn-bhd",
@@ -2478,6 +2519,11 @@
       ],
       "backlinks": [
         {
+          "from": "bookmarks/nerdqaxe-revision-7-launch-2026-06-12",
+          "type": "wikilink",
+          "text": "Solo Satoshi"
+        },
+        {
           "from": "newsletters/nerdqaxe-r7-launch-2026-06-12",
           "type": "wikilink",
           "text": "Solo Satoshi"
@@ -2489,7 +2535,7 @@
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 2
+      "inbound_count": 3
     },
     {
       "slug": "companies/stripe",
@@ -2595,11 +2641,6 @@
           "text": "System Design One"
         },
         {
-          "from": "newsletters/30-core-agentic-engineering-concepts-2026-06-17",
-          "type": "wikilink",
-          "text": "System Design One"
-        },
-        {
           "from": "newsletters/agentic-engineering-concepts-2026-06-20-084511",
           "type": "wikilink",
           "text": "System Design One"
@@ -2611,11 +2652,6 @@
         },
         {
           "from": "newsletters/anatomy-of-openclaw-2026-06-08",
-          "type": "wikilink",
-          "text": "System Design One"
-        },
-        {
-          "from": "newsletters/how-virtual-machines-work-deep-dive-2026-05-25",
           "type": "wikilink",
           "text": "System Design One"
         },
@@ -2656,7 +2692,7 @@
         }
       ],
       "outbound_count": 6,
-      "inbound_count": 15
+      "inbound_count": 13
     },
     {
       "slug": "companies/thompson-legal",
@@ -3049,13 +3085,18 @@
           "text": "Aisyah Rahim"
         },
         {
+          "from": "concepts/zaim-aisyah-rahim-client-profile-2026-06-15",
+          "type": "wikilink",
+          "text": "Aisyah Rahim"
+        },
+        {
           "from": "people/liyana",
           "type": "wikilink",
           "text": "Aisyah Rahim"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 2
+      "inbound_count": 3
     },
     {
       "slug": "concepts/aisyah-rahim-client-profile",
@@ -5067,6 +5108,20 @@
       "inbound_count": 0
     },
     {
+      "slug": "concepts/zaim-15-minute-rule-student-buckets-2026-06-14",
+      "title": "Zaim 15 Minute Rule Student Buckets 2026 06 14",
+      "type": "concept",
+      "updated": "",
+      "body": "# Zaim: The 15-Minute Rule and Student Observation Buckets\n\n**Source:** email (self-send from Maloha Coast account by Zaim)\n**Source URI:** gmail://msg_19eca04daacc7a09\n**Ingested:** 2026-06-26T06:00:00Z\n**Provenance:** Self-sent by Zaim via Maloha Coast account on 2026-06-14\n\nZaim's observation practice: using 15-minute gaps between KSI sessions to jot down one thing about each student.\n\n## The Method\n\n- Between KSI sessions, Zaim has 15-minute gaps\n- Started using them to note one thing per student: what they're stuck on, what lit them up\n- After a month of this, patterns emerged that he'd never have spotted otherwise\n\n## Three Student Buckets\n\n1. **Career pivoters** \u2014 stuck on \"what if I fail\" not \"what do I want\"\n2. **Fresh grads** \u2014 over-indexing on salary, under-indexing on growth trajectory\n3. **Mid-career** \u2014 all variations of \"is this it?\"\n\n## The Rule\n\n> Never let a gap go empty. Even one sentence per student compounds.\n\n**Source:** email self-send by Zaim, 2026-06-14",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "concepts/zaim-15min-gap-method",
       "title": "The 15-Minute Gap Method",
       "type": "concept",
@@ -5116,6 +5171,31 @@
       ],
       "backlinks": [],
       "outbound_count": 3,
+      "inbound_count": 0
+    },
+    {
+      "slug": "concepts/zaim-aisyah-rahim-client-profile-2026-06-15",
+      "title": "Zaim Aisyah Rahim Client Profile 2026 06 15",
+      "type": "concept",
+      "updated": "",
+      "body": "# Zaim: [[Aisyah Rahim]] \u2014 Client Profile\n\n**Source:** email (self-send from Maloha Coast account by Zaim)\n**Source URI:** gmail://msg_19eca0a8dc4888c3\n**Ingested:** 2026-06-26T06:00:00Z\n**Provenance:** Self-sent by Zaim via Maloha Coast account on 2026-06-15\n\nClient profile for a new coaching client of Zaim's.\n\n## Client Details\n\n- **Name:** [[Aisyah Rahim]]\n- **Role:** Senior Brand Manager at [[Unilever]] Malaysia\n- **Referral:** Liyana from KSI workshop\n- **First session:** Next Tuesday (as of June 15, 2026)\n\n## Key Points from Intro Call\n\n- 8 years in FMCG brand management, feeling stagnant\n- Wants to pivot into tech but unsure where to start\n- Main blocker: \"I don't have a technical background\"\n- Has actually done more data-driven work than she realises \u2014 ran consumer analytics for 3 product launches\n- Salary anchor: RM 18k/month, worried about resetting to junior level\n\n## Zaim's Assessment\n\nClassic mid-career pivot case. The real problem isn't skills \u2014 it's confidence and narrative. Needs help reframing 'brand manager' as 'growth strategist who uses data.'\n\n## Plan for Session 1\n\n- Audit her last 2 years of work through a tech lens\n- Find 3-5 specific examples where she already did 'product thinking'\n\n**Source:** email self-send by Zaim, 2026-06-15",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [
+        {
+          "to": "concepts/aisyah-rahim-client-profile-2026-06-15",
+          "type": "wikilink",
+          "text": "Aisyah Rahim"
+        },
+        {
+          "to": "Unilever",
+          "type": "wikilink",
+          "text": "Unilever"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 2,
       "inbound_count": 0
     },
     {
@@ -6278,6 +6358,26 @@
       "inbound_count": 0
     },
     {
+      "slug": "meetings/sayf-zaim-jun-12-2026-gemini",
+      "title": "Sayf Zaim Jun 12 2026 Gemini",
+      "type": "meeting",
+      "updated": "",
+      "body": "# Sayf x [[Zaim Mohzani]] \u2014 Jun 12, 2026\n\n**Source:** email (Gemini auto-notes from Google Meet)\n**Source URI:** gmail://msg_19eb9fd8516965c3\n**Ingested:** 2026-06-26T06:00:00Z\n**Provenance:** Forwarded by Sayf Codes on 2026-06-12\n\nAuto-generated notes from the meeting between Sayf and [[Zaim Mohzani]] on June 12, 2026.\n\n## Summary\n\nDiscussion explored AI skepticism and market strategy alongside technical collaboration opportunities for business growth.\n\n## Key Discussion Points\n\n### Differing AI Market Perspectives\nParticipants debated the value of AI in business, contrasting skepticism about automation hype with the practical utility of AI for basic skills training.\n\n### Technical Tools and Infrastructure\nDiscussion shifted toward specific software tools, noting the efficiency of virtual private servers and the potential of data integration dashboards.\n\n### Collaboration and Service Models\nAgreement reached to build a technical solution for coaching services while prioritizing simple, revenue-focused strategies for future client engagement.\n\n## Next Steps\n- [Maloha Coast] Build Dashboard: Arrange a meeting to build the dashboard component\n- [[Zaim Mohzani]] Provide Testimonial\n- [Maloha Coast] Share Research Link\n- [The group] Schedule Follow-up Session\n\n## Attendees\n- Sayf\n- [[Zaim Mohzani]]\n\n**Source:** Google Meet Gemini auto-notes, 2026-06-12",
+      "tags": [
+        "sayf"
+      ],
+      "links_out": [
+        {
+          "to": "people/zaim-mohzani",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
+      "inbound_count": 0
+    },
+    {
       "slug": "meetings/sayf-zaim-jun-12-2026",
       "title": "Sayf Zaim Jun 12 2026",
       "type": "meeting",
@@ -6442,14 +6542,11 @@
       "title": "30 Core Agentic Engineering Concepts 2026 06 17",
       "type": "newsletter",
       "updated": "",
-      "body": "# 30 Core Agentic Engineering Concepts, Explained Simply\n\n**Source:** email\n**Source URI:** gmail://msg_19ee2580f5fe7903\n**Ingested:** 2026-06-23T00:00:00Z\n**Provenance:** Forwarded by sayf on 2026-06-20\n\n[[System Design One]] #154 by [[Neo Kim]] and [[Paul Hoekstra]] (guest author).\n\nA comprehensive breakdown of agentic engineering into 30 fundamental concepts across 6 layers: Foundations, Configuration, Capability, Orchestration, Guardrails, and Observability. The thesis: learn the ideas behind the tools, and let the tools come and go.\n\n## Key Concepts\n\n### Foundations (1-5)\n\n1. **What is an agent?** \u2014 An LLM that runs in a loop, has access to tools, and decides what to do next. Coding is the most natural use case because of fast feedback from tests and errors. Use agents for open-ended tasks, not simple scripts.\n\n2. **Execution model** \u2014 Think \u2192 Act \u2192 Observe (ReAct pattern). The loop replaces upfront prediction with feedback. This is why agents can recover from their own mistakes.\n\n3. **Agent state** \u2014 Everything the agent knows at any moment. Two halves: context window (conversation history + tool results) and persistent state (files, databases, long-term memory).\n\n4. **Tools** \u2014 Functions the agent can call: file read/write, shell commands, MCP requests, API calls. The tool interface is the agent's interface to the world.\n\n5. **Tool-use permissions** \u2014 Not all tools should be available at all times. Permission boundaries control what the agent can reach.\n\n### Configuration (6-10)\n\n6. **System prompt** \u2014 The base instructions that shape agent behavior before it writes any code. Like a constitution for the agent.\n7. **Configuration files** \u2014 Declarative settings (`.claude.json`, `rules/`) that encode workflow patterns without code changes.\n8. **Reusable workflows** \u2014 Pre-defined agent processes that can be invoked with different parameters.\n9. **Prompt caching** \u2014 Keeping recent context in fast memory to reduce latency and cost on repeated patterns.\n10. **Context rot** \u2014 The degradation of agent performance as the context window fills with irrelevant or stale information.\n\n### Capability (11-15)\n\n11. **Live documentation** \u2014 Agents that read docs at runtime rather than at training time, enabling them to work with tools they've never seen before.\n12. **AI-native search** \u2014 Semantic search as a tool the agent can call during execution.\n13. **Long-term memory** \u2014 Persistent storage that survives between agent sessions.\n14. **Knowledge retrieval** \u2014 Querying external knowledge bases without storing the data locally.\n15. **Trust boundaries** \u2014 What data the agent can read vs. what requires human approval.\n\n### Orchestration (16-20)\n\n16. **Multi-agent coordination** \u2014 Multiple agents working on different parts of the same problem.\n17. **Subagents** \u2014 Child agents spawned by a parent agent to handle specific subtasks. Subagents solve the state-isolation problem that parallel tool calls create.\n18. **Task decomposition** \u2014 Breaking a complex task into smaller, independent subtasks that can be parallelized.\n19. **Handoff protocols** \u2014 How one agent transfers context to another.\n20. **Merge strategies** \u2014 How to combine outputs from parallel agents (git worktrees, structured merge, manual review).\n\n### Guardrails (21-25)\n\n21. **Sandboxing** \u2014 Running agents in isolated environments so they can't affect the host system.\n22. **Permission hooks** \u2014 Interceptors that gate every agent action against a policy before it executes.\n23. **Commit gates** \u2014 Checks that block problematic changes before they're persisted.\n24. **Rate limiting** \u2014 Preventing an agent from exhausting API quotas or compute resources.\n25. **Audit trails** \u2014 Every action logged for review.\n\n### Observability (26-30)\n\n26. **Tracing** \u2014 Following the agent's decision chain through each loop iteration.\n27. **Logging** \u2014 Structured logs of every tool call, result, and decision.\n28. **Replay** \u2014 Re-running an agent's session to debug or audit its behavior.\n29. **Metrics** \u2014 Cost per task, success rate, latency, loops per completion.\n30. **Human-in-the-loop** \u2014 Checkpoints where the agent pauses and waits for approval before proceeding.\n\n## Guest Author\n\n[[Paul Hoekstra]] \u2014 data engineer at [[Digital Power]] (data and AI consultancy). Writes Paul's Pipeline newsletter on AI, data, and side projects. Has a four-part series on the layers covered here.\n\n## Relevance\n\nThis directly maps to how Hermes agents (falconhermes, MC, Sammy) work. The subagent pattern (concept 17) is how delegate_task works. The tool-use permissions (concept 5) map to toolset configuration. Context rot (concept 10) is the fundamental limitation of long-running agents.",
-      "tags": [],
+      "body": "# 30 Core Agentic Engineering Concepts, Explained Simply\n\n**Source:** email (System Design One / Neo Kim)\n**Source URI:** gmail://msg_19ee2580f5fe7903\n**Ingested:** 2026-06-26T06:00:00Z\n**Provenance:** Forwarded by Sayf Codes on 2026-06-20\n\nSystem Design One #154: What an agent is, how to configure one, when to use multiple, and how to keep them from doing damage. By [[Neo Kim]] with guest author [[Paul Hoekstra]] (data engineer at Digital Power).\n\n## Key Ideas\n\n- **Learn ideas, not tools.** The pace of AI tooling is unsustainable. Learn frameworks underneath.\n- **An agent is an LLM that runs in a loop, has tool access, and decides what to do next.**\n- **Think-Act-Observe loop** (ReAct pattern): read state \u2192 emit tool call \u2192 observe result \u2192 iterate.\n- **State:** context window (temporary) vs everything outside it (files, DB, memory). Files = right default.\n- **Common patterns:** Planner/Executor, Router/Specialist, Map-Reduce parallelism.\n\n## Configuration Layer\n- Agent config files (CLAUDE.md/AGENTS.md): Keep under 100 lines, specific not generic.\n- Reusable workflow files (skills/rules): YAML frontmatter + markdown. SkillsBench: Haiku+skills (27.7%) beat Opus without (22.0%).\n- Workflow frameworks: Superpowers, Get Shit Done, Compound Engineering.\n- Prompt caching & Context rot: Model performance drops at high token counts.\n\n**Source:** email from Sayf Codes forwarding System Design One newsletter, 2026-06-20",
+      "tags": [
+        "sayf"
+      ],
       "links_out": [
-        {
-          "to": "companies/system-design-one",
-          "type": "wikilink",
-          "text": "System Design One"
-        },
         {
           "to": "people/neo-kim",
           "type": "wikilink",
@@ -6459,15 +6556,10 @@
           "to": "people/paul-hoekstra",
           "type": "wikilink",
           "text": "Paul Hoekstra"
-        },
-        {
-          "to": "companies/digital-power",
-          "type": "wikilink",
-          "text": "Digital Power"
         }
       ],
       "backlinks": [],
-      "outbound_count": 4,
+      "outbound_count": 2,
       "inbound_count": 0
     },
     {
@@ -6906,27 +6998,13 @@
       "title": "How Virtual Machines Work Deep Dive 2026 05 25",
       "type": "newsletter",
       "updated": "",
-      "body": "# How Virtual Machines Work - A Deep Dive\n\n**Source:** email\n**Source URI:** gmail://msg_19eaf5f74a25b3c5\n**Ingested:** 2026-06-22T14:41:57Z\n**Provenance:** Forwarded by sayf on 2026-05-25\n\n#148: Part 1 - DevOps Mastermind\n                                        \n                                        \n                                         \n                                       \n                                        \n                                         \n                                       \n                                        \n                                         \n                                       \n                                        \n                                         \n                                       \n                                        \n                                         \n                                       \n                                        \n                                         \n                               \n\n<https://substack.com/redirect/2/eyJlIj...GF2c?>\nfor more\n<https://substack.com/redirect/6375839c-b2b1-4c34-9404-f2e58eee6f76?j=eyJ1Ij...Z-GI>\n\n\ud83d\udc4b Neo\n<https://substack.com/redirect/e6b42bec-3941-4221-a191-365c531841ac?j=eyJ1Ij...Z-GI>\nhere! This is a free preview of a subscriber-only post, exclusive to my\ngolden members. For the full experience, upgrade your subscription\n<https://substack.com/redirect/f3966046-8eb3-453e-8c7f-033325d9459a?j=eyJ1Ij...Z-GI>\n.\n------------------------------\nHow Virtual Machines Work - A Deep Dive\n<https://substack.com/app-link/post?publication_id=1511845&post_id=198581056&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2k46ui&token=eyJ1c2...PBso>#148:\nPart 1 - DevOps Mastermind\n\nNeo Kim <https://substack.com/@systemdesignone> and Ayaan\n<https://substack.com/@ayaan49>\nMay 25\n\u2219\nPreview\n<https://substack.com/@systemdesignone> <https://substack.com/@ayaan49>\n\n<https://substack.com/app-link/post?publication_id=1511845&post_id=198581056&utm_source=substack&isFreemail=true&submitLike=true&token=eyJ1c2...PeHI&utm_medium=email&utm_campaign=email-reaction&r=2k46ui>\n<https://substack.com/app-link/post?publication_id=1511845&post_id=198581056&utm_source=substack&utm_medium=email&isFreemail=true&comments=true&token=eyJ1c2...PBso&r=2k46ui&utm_campaign=email-half-magic-comments&action=post-comment&utm_source=substack&utm_medium=email>\n<https://substack.com/app-link/post?publication_id=1511845&post_id=198581056&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2k46ui&token=eyJ1c2...PBso>\n<https://substack.com/redirect/2/eyJlIj...O-qs?&utm_source=substack&utm_medium=email>\n\nREAD IN APP\n<https://open.substack.com/pub/systemdesignone/p/virtualization-architecture?utm_source=email&redirect=app-store&utm_campaign=email-read-in-app>\n\n\nGet my system design playbook for FREE on newsletter signup:\nUpgrade to paid\n<https://substack.com/redirect/2/eyJlIj...ItTY?&utm_medium=email&utm_source=subscribe-widget-preamble&utm_content=198581056>\n\n   -\n\n   *Share this post\n   <https://substack.com/redirect/349d5210-3a29-4e4e-9043-ba97b535bcff?j=eyJ1Ij...Z-GI>\n\n\nI have a huge huge huge announcement for everyone\u2026\n\nINTRODUCING: *DevOps Mastermind*\n\nThis newsletter series will help you become a fast-growing and high-paying\nengineer.\n\nIf you\u2019ve ever thought:\n\n*\u201cI use Docker & Kubernetes, but I still don\u2019t fully understand how they\nwork.\u201d*\n\n*\u201cI want to master DevOps fundamentals instead of just memorizing\ncommands.\u201d*\n\n*\u201cI should learn how modern infrastructure & real-world systems actually\nwork.\u201d*\n\nThen this is for you.\n\nHere\u2019s what you\u2019ll get inside DevOps Mastermind:\n\n   -\n\n   *Architecture breakdown of core DevOps systems.*\n   -\n\n   Deep dives into Docker, Kubernetes, Terraform, and so on.\n   -\n\n   *Practical insights into how real-world systems achieve scalability,\n   automation, and reliability.*\n\nOnward.\n------------------------------\n\nYour laptop is already running an operating system.\n\nNow imagine starting another one on the same machine. A completely separate\nsystem with its own files, memory, and processes. You can run Linux inside\nWindows, or Windows inside a Mac. It boots independently, runs programs,\nand behaves as if it has full control over the hardware.\n\nBut it doesn\u2019t.\n\nUnderneath, there is still only one physical machine. One CPU, one pool of\nmemory, one disk. Yet multiple such systems can run at the same time, each\nisolated from the others and each functioning as if it were the only system\npresent.\n\nThis idea changed computing\u2026\n\nInstead of buying a new server each time, you could split one powerful\nmachine into many smaller ones. Each workload gets its own space. Nothing\ninterferes with anything else.\n\nThat shift is what made cloud computing possible\u2026\n\nWhen you run an app on Amazon Web Services, Microsoft Azure, or Google\nCloud Platform, it runs inside a virtual machine. The entire cloud\ninfrastructure is built on this foundation.\n\n*But how does it actually work? How can one machine present itself as many?\nHow are resources shared without breaking isolation?*\n------------------------------\nBuild strong data foundations for agentic AI at scale (Partner)\n<https://substack.com/redirect/6375839c-b2b1-4c34-9404-f2e58eee6f76?j=eyJ1Ij...Z-GI>\n<https://substack.com/redirect/6375839c-b2b1-4c34-9404-f2e58eee6f76?j=eyJ1Ij...Z-GI>\n\nAI experiments are easy.\n\nBut building trusted AI systems that scale across an enterprise is hard.\nThat\u2019s exactly what leaders from Mercedes-Benz, Yahoo, Regeneron, and AWS\ndiscuss in this on-demand virtual panel on agentic AI.\n\n*Here\u2019s what you\u2019ll learn inside:*\n\n   -\n\n   *Practical strategies from enterprise leaders:* See how teams move from\n   isolated AI experiments to production-scale systems.\n   -\n\n   *Real-world guidance on governance and architecture:* Learn how industry\n   experts approach analytics, unified governance, and continuous learning.\n   -\n\n   *Frameworks for scaling intelligent systems:* Discover how to build AI\n   systems that drive business value.\n   -\n\n   *Pragmatic infrastructure decisions:* Learn how to select the right\n   databases and data foundations for AI-based applications.\n\nWatch the *AWS panel\n<https://substack.com/redirect/6375839c-b2b1-4c34-9404-f2e58eee6f76?j=eyJ1Ij...Z-GI>*\nand see how enterprise teams are building trusted AI systems with speed,\ngovernance, and control.\n\nWatch the AWS Virtual Panel\n<https://substack.com/redirect/6375839c-b2b1-4c34-9404-f2e58eee6f76?j=eyJ1Ij...Z-GI>\n\n(Thanks to AWS\n<https://substack.com/redirect/6375839c-b2b1-4c34-9404-f2e58eee6f76?j=eyJ1Ij...Z-GI>\nfor partnering on this post.)\n------------------------------\n\nI want to introduce *Ayaan\n<https://substack.com/redirect/e667f9ad-a51f-478c-a0ca-74caad3890cd?j=eyJ1Ij...Z-GI>*\nas a guest author.\n<https://substack.com/redirect/e667f9ad-a51f-478c-a0ca-74caad3890cd?j=eyJ1Ij...Z-GI>\n\nHe\u2019s a self-taught DevOps engineer focused on Kubernetes & cloud\ninfrastructure. He builds in public and writes about cloud-native systems,\nsharing daily technical tips and projects.\n\nCheck out his work and socials:\n\n   -\n\n   *Twitter\n   <https://substack.com/redirect/e667f9ad-a51f-478c-a0ca-74caad3890cd?j=eyJ1Ij...Z-GI>*\n   -\n\n   *Github\n   <https://substack.com/redirect/018c5ea2-4296-4d44-855e-0f59b5eab786?j=eyJ1Ij...Z-GI>*\n\n------------------------------\n\n*Here\u2019s what\u2019s inside this newsletter:*\n\n   -\n\n   *The difference between emulation and virtualization, and why one\n   simulates hardware while the other shares it.*\n   -\n\n   What a virtual machine actually is, how it presents itself as a full\n   computer, and why the guest operating system believes it owns the hardware.\n   -\n\n   *How the hypervisor works, the different types it comes in, and how it\n   controls access to CPU, memory, storage, and networking.*\n   -\n\n   What happens under the hood when a virtual machine boots, from resource\n   allocation and virtual hardware setup to kernel startup and runtime\n   execution.\n   -\n\n   *How features like live migration, isolation, and resource controls make\n   virtual machines practical for modern infrastructure.*\n   -\n\n   Where virtual machines fit today, why cloud platforms depend on them,\n   and how they differ from containers.\n\nGolden members get all posts like these!\u2026\nUpgrade to paid\n<https://substack.com/redirect/2/eyJlIj...ItTY?&utm_medium=email&utm_source=subscribe-widget-preamble&utm_content=198581056>\n------------------------------\nEmulation vs Virtualization\n\nBefore we get into how virtual machines work, there is one distinction\nworth getting clear early.\n<https://substack.com/redirect/c9e3a68f-5e54-426f-becf-9dec4e757162?j=eyJ1Ij...Z-GI>\n\nEmulation is when software pretends to be completely different hardware.\nRetro gaming emulators work this way. Your laptop takes each instruction\nfrom the old console and turns it into something your modern chip\nunderstands.\n\nIt works, but it is slow\u2026\n\nVirtualization is different. Instead of pretending to be different\nhardware, it creates a version of the same hardware your machine already\nhas. Most instructions run directly on the real processor with no\ntranslation needed.\n\nThe result is near-native speed.\n\n*Think of it this way:*\n\n   -\n\n   Emulation is like hiring a translator for every sentence in a\n   conversation.\n   -\n\n   Virtualization is like realizing that both people already speak the same\n   language.\n\nThis distinction matters because speed is what made virtualization\npractical at scale. You cannot run thousands of emulated systems on a\nsingle server. With virtualization, you can.\n\nAnd that is exactly what cloud providers do\u2026\n------------------------------\nWhat a Virtual Machine Actually Is\n\nA virtual machine is a complete computer abstraction built on top of a\nphysical machine.\n<https://substack.com/redirect/ff06b8cb-8ef0-485b-9a7f-fa7010a1f1ba?j=eyJ1Ij...Z-GI>\n\nIt\u2019s presented with a CPU, memory, storage, and a network interface, just\nlike a physical system. The operating system inside it interacts with these\ncomponents as if they were real hardware. It has no awareness that it is\nsharing the underlying machine with anything else.\n\nFrom its perspective, it owns the system.\n\nThis behavior is made possible by a layered design.\n\nAt the bottom is the physical hardware, which provides the actual compute,\nmemory, and storage resources. Above it sits the hypervisor, which controls\nhow those resources are allocated and accessed. On top of that, each\nvirtual machine runs its own operating system in isolation.\n\nThe hypervisor is the layer that makes the illusion possible.\n\nBecause the operating system never interacts with the hardware directly.\n\nInstead, every request for CPU time, memory access, disk I/O, or network\ncommunication is handled through the hypervisor. It decides how resources\nare shared and ensures that each virtual machine remains isolated from the\nothers.\n\nThis abstraction enables three key capabilities:\n\n   -\n\n   *Isolation:* Each virtual machine runs independently, so a failure in\n   one doesn\u2019t affect others.\n   -\n\n   *Portability:* Virtual machines can move between physical systems with\n   minimal changes.\n   -\n\n   *Efficient resource use:* Multiple workloads share the same hardware\n   instead of leaving it idle.\n\nThese properties are what made modern infrastructure possible.\n\nNext, let\u2019s look at the hypervisor: what it is, the different types, and\nhow it powers virtual machines\u2026\n------------------------------\nHypervisor: Brain Behind the Illusion\n\nThe hypervisor is the software layer that enables virtualization.\n\nIt sits between the physical hardware and the virtual machines running\nabove it. Every request a virtual machine makes, whether for CPU time,\nmemory, or storage, goes through the hypervisor. It\u2019s responsible for\nmapping those requests to the underlying hardware resources.\n\nThis layer controls all access to the hardware.\nType 1 vs Type 2\n\nNot all hypervisors follow the same structure. The main difference comes\nfrom where they run.\n<https://substack.com/redirect/d59c51d4-eaa5-457c-841f-4183fbbb63ea?j=eyJ1Ij...Z-GI>\n\n   -\n\n   *Type 1 (bare-metal):* It runs on the physical hardware, with no host\n   operating system in between. Examples include VMware ESXi, Microsoft\n   Hyper-V, and Kernel-based Virtual Machine (*KVM*). Cloud environments\n   and data centers use these because they provide direct hardware access and\n   minimal overhead.\n   -\n\n   *Type 2 (hosted):* Runs on top of an existing operating system, like a\n   regular application. Tools such as VirtualBox and VMware Workstation fall\n   into this category. They are easier to use but introduce additional\n   overhead.\n\nThe difference lies in how the hypervisor accesses hardware and the number\nof extra layers it adds\u2026\nFull Virtualization vs Paravirtualization\n\nThere are also different ways a hypervisor presents hardware to a virtual\nmachine.\n<https://substack.com/redirect/93b2f0ef-de9b-46e3-9daa-e84133c62304?j=eyJ1Ij...Z-GI>\n\nIn *full virtualization*, guest operating system runs without modification\nand behaves as if it were on real hardware. The hypervisor handles all the\nwork required to maintain that abstraction.\n\nIn *paravirtualization*, the guest operating system is aware that it is\nrunning in a virtual environment. Instead of relying only on emulated\nhardware, it asks the hypervisor to handle some tasks, which reduces\noverhead.\n\nThe trade-off is between compatibility and performance.\n\nFull virtualization runs any unmodified operating system.\nParavirtualization is faster because the guest works with the hypervisor.\nHardware-Assisted Virtualization\n\nEarly hypervisors relied on software, making virtualization complex and\ninefficient. This changed when processor manufacturers introduced hardware\nsupport such as Intel VT-x (Intel Virtualization Technology for x86) and\nAMD-V (AMD Virtualization).\n\nWith these features, CPU itself can differentiate between virtual machines\nand the hypervisor. Sensitive operations pass control to the hypervisor\nwhen needed. It manages access and keeps everything secure.\n\nThis made virtualization practical at scale.\nNested Virtualization\n\nIt is also possible to run a virtual machine inside another virtual\nmachine, a setup known as *nested virtualization*. You use this for\ntesting, development, and running tools like Kubernetes locally in virtual\nmachines (*VMs*).\n\nBut each additional layer introduces overhead and increases complexity. As\nyou add more virtualization layers, performance drops. This makes the\napproach unsuitable for most production workloads.\n\nIt is useful in controlled scenarios, but not a general-purpose design.\n\nNow you know what the hypervisor does. The next question is how it shares\nthe CPU across multiple virtual machines. The answer is CPU virtualization.\n\nLet\u2019s look at how it works\u2026\n------------------------------\nCPU Virtualization\n\nThe CPU is the brain of any computer.\n\nEvery instruction, process, and calculation goes through the CPU. So when\nyou create a virtual machine, the question becomes: *how do different\noperating systems share one CPU without getting in each other\u2019s way?*\n\nThat is what CPU virtualization solves\u2026\nThe Privilege Model\n\nOperating systems are designed to be in charge.\n\nWhen your OS needs to access hardware, manage memory, or control processes,\nit does so with full authority. The processor has a concept called *privilege\nlevels* to enforce this.\n\nThink of it like levels of trust, where the most trusted software gets the\nmost access.\n<https://substack.com/redirect/738da4fc-c00b-41a0-94df-c835ccc83b24?j=eyJ1Ij...Z-GI>\n\nIn a normal system, the operating system sits at the highest privilege\nlevel.\n\nBut in a virtual environment, the hypervisor needs to sit above the\noperating system. It needs to intercept certain instructions and control\nwhat the guest OS can and cannot do. So the guest OS gets moved down to a\nlower privilege level, even though it still believes it is fully in charge.\n\nThe guest OS never knows the hypervisor demoted it.\n\nThis is the fundamental trick behind CPU virtualization. The guest OS\ncontinues to behave as if it owns the processor. But when it tries to do\nsomething that needs high-level access, the processor steps in and hands\ncontrol to the hypervisor.\n\nEverything continues smoothly, just one level deeper\u2026\nvCPU and Scheduling\n\nWhen you create a virtual machine, you assign it CPUs, but these are not\nphysical cores. They\u2019re virtual CPUs (*vCPUs*) that represent processing\ncapacity managed by the hypervisor.\n\nThe hypervisor schedules vCPUs onto physical cores in the same way an\noperating system schedules processes.\n\nAt any given moment, a physical core can execute only one thread of work.\nThe hypervisor switches between virtual machines, giving each one a slice\nof CPU time. This switching happens fast enough that each virtual machine\nappears to have continuous access to the processor.\n\n*Modern CPUs may expose multiple logical threads per core through\ntechnologies like Intel Hyper-Threading or AMD SMT (Simultaneous\nMultithreading), but CPU time is still shared and scheduled across\nworkloads.*\n\nIn reality, all virtual machines share it.\n\nThis is called *time-slicing*. It\u2019s the same idea your operating system\nuses to run multiple applications at once.\n\nHypervisors can also assign more vCPUs than there are physical cores, a\npractice known as *CPU overcommit*. For example, a machine with 16 cores\nmight run virtual machines totaling 32 or more vCPUs.\n\nThis works as long as not all virtual machines are busy at the same time.\n\nWhen demand rises across multiple VMs, they compete for CPU time. This\ncauses contention and reduces performance.\n\nOvercommit is a useful tool, but it depends on workload behavior.\nVM-exit and VM-entry\n\nLet\u2019s go one level deeper into what actually happens when a guest OS tries\nto do something it is not allowed to do on its own.\n<https://substack.com/redirect/9a26b39f-2661-498a-8b8f-f69d679d63b4?j=eyJ1Ij...Z-GI>\n\nWhen a virtual machine tries to run a privileged instruction, the processor\nstops it. Control is immediately transferred to the hypervisor. This event\nis called a *VM-exit*.\n\nThe hypervisor then figures out what the guest was trying to do and handles\nit safely.\n\nOnce the hypervisor has dealt with the request, it hands control back to\nthe virtual machine exactly where it left off. This is called a *VM-entry*.\nFrom the guest OS\u2019s perspective, nothing unusual happened. The CPU executed\nthe instruction and continued running.\n\nThe entire handoff takes microseconds.\n\nThis mechanism is what makes isolation possible. The guest OS cannot access\nhardware it shouldn\u2019t. Every sensitive operation triggers a VM-exit, which\nthe hypervisor controls. But it also introduces overhead. Every VM-exit and\nVM-entry takes time, and if they happen too frequently, performance suffers.\n\nKeeping VM exits to a minimum is one of the core challenges of CPU\nvirtualization.\nNUMA Awareness and CPU Topology\n\nThis matters more in large systems and performance-sensitive workloads, but\nit\u2019s still worth understanding at a high level\u2026\n\nModern servers often have more than one physical processor. Each processor\nhas its own local memory. Accessing memory that belongs to a different\nprocessor is slower than accessing your own. This architecture is called\nNon-Uniform Memory Access (*NUMA*).\n\nThe name describes the problem exactly. Not all memory accesses are equal.\n\nIn a virtual environment, this creates a subtle issue. A virtual machine\nmight run on cores from one processor but end up accessing memory that\nbelongs to another. The guest OS does not know this is happening. But the\nperformance hit is real.\n\nThe solution is NUMA-aware scheduling.\n\nThe hypervisor tries to keep a virtual machine\u2019s vCPUs and its memory on\nthe same NUMA node. When it succeeds, the VM runs faster. When workloads\ngrow and resources get spread across nodes, the performance gap becomes\nnoticeable.\n\nFor most small deployments, this never comes up. For high-performance\ndatabases or real-time systems running on large servers, it matters a lot.\n\nPutting it together, CPU virtualization is not a single mechanism but a\ncombination of coordinated techniques.\n\nThe privilege model restricts direct hardware access. vCPU scheduling\ncreates the illusion of dedicated processing power. VM-exits and VM-entries\nenforce safe boundaries for sensitive operations. NUMA awareness ensures\nthat physical hardware layout does not introduce hidden performance\npenalties.\n\nEach part addresses a specific challenge.\n\nTogether, they allow multiple virtual machines to share a single physical\nCPU while operating independently and efficiently.\n\nNext, let\u2019s look at how memory is virtualized and how virtual machines\nmanage their view of system memory\u2026\n------------------------------\n\n*Reminder: this is a teaser of the subscriber-only newsletter, exclusive to\nmy golden members.*\n\nWhen you upgrade, you\u2019ll get:\n\n   -\n\n   *Architecture breakdown of core DevOps systems.*\n   -\n\n   Deep dives into Docker, Kubernetes, Terraform, and so on.\n   -\n\n   *Practical insights into how real-world systems achieve scalability,\n   automation, and reliability.*\n\nUnlock Full Access\n<https://substack.com/redirect/f3966046-8eb3-453e-8c7f-033325d9459a?j=eyJ1Ij...Z-GI>\n\nLet\u2019s keep going!\n------------------------------\nMemory Virtualization...\nKeep reading with a 7-day free trial\n\n\n7 days of free access to the full post archives.\nStart trial\n<https://substack.com/redirect/2/eyJlIj...ItTY?simple=true&utm_source=paywall&utm_medium=email&utm_content=198581056&next=https://newsletter.systemdesign.one/p/virtualization-architecture&coupon=3731af38>\nA subscription gets you:\nAccess to Design, Build, Scale\nAccess to Interview Academy\nAccess to Deep Dives\n\nLike\n<https://substack.com/app-link/post?publication_id=1511845&post_id=198581056&utm_source=substack&isFreemail=true&submitLike=true&token=eyJ1c2...PeHI&utm_medium=email&utm_campaign=email-reaction&r=2k46ui>\nComment\n<https://substack.com/app-link/post?publication_id=1511845&post_id=198581056&utm_source=substack&utm_medium=email&isFreemail=true&comments=true&token=eyJ1c2...PBso&r=2k46ui&utm_campaign=email-half-magic-comments&action=post-comment&utm_source=substack&utm_medium=email>\nRestack\n<https://substack.com/redirect/2/eyJlIj...O-qs?&utm_source=substack&utm_medium=email>\n\n\n\u00a9 2026 Neo Kim\n548 Market Street PMB 72296, San Francisco, CA 94104\n\n<https://substack.com/redirect/2/eyJlIj...ixNI?>\n\n[image: Get the app]\n<https://substack.com/redirect/dbff666e-1208-4112-b852-b88426ee4459?j=eyJ1Ij...Z-GI>[image:\nStart writing]\n<https://substack.com/redirect/2/eyJlIj...TIgM?>\n\n## People & Companies\n\n- Author: [[Neo Kim]]\n- Co-author: [[Ayaan]]\n- Publication: [[System Design One]]\n\n\n<!-- Updated with wikilinks: 2026-06-22T14:43:28Z -->",
-      "tags": [],
-      "links_out": [
-        {
-          "to": "people/neo-kim",
-          "type": "wikilink",
-          "text": "Neo Kim"
-        },
-        {
-          "to": "people/ayaan",
-          "type": "wikilink",
-          "text": "Ayaan"
-        },
-        {
-          "to": "companies/system-design-one",
-          "type": "wikilink",
-          "text": "System Design One"
-        }
+      "body": "# How Virtual Machines Work - A Deep Dive\n\n**Source:** email (System Design One / Neo Kim)\n**Source URI:** gmail://msg_19eaf5f74a25b3c5\n**Ingested:** 2026-06-26T06:00:00Z\n**Provenance:** Forwarded by Sayf Codes on 2026-06-10\n\nSystem Design One deep dive into virtual machine architecture and internals. Comprehensive explanation of how VMs work at the hardware and software level.\n\n## Key Topics\n- VM architecture and hypervisor types\n- Hardware virtualization (Intel VT-x / AMD-V)\n- Memory virtualization (shadow page tables, nested paging)\n- I/O virtualization (passthrough, paravirtualized, emulated)\n- Performance considerations and overhead analysis\n- Container vs VM comparison\n\n**Source:** email from Sayf Codes forwarding System Design One newsletter, 2026-05-25",
+      "tags": [
+        "sayf"
       ],
+      "links_out": [],
       "backlinks": [],
-      "outbound_count": 3,
+      "outbound_count": 0,
       "inbound_count": 0
     },
     {
@@ -8084,7 +8162,7 @@
       "title": "Why 2026 Career Goals Dead 2026 06 12",
       "type": "newsletter",
       "updated": "",
-      "body": "# Why Your 2026 Career Goals Are Already Dead\n\n**Source:** email\n**Source URI:** gmail://msg_19ece778ab23e039\n**Ingested:** 2026-06-26T03:00:00Z\n**Provenance:** Forwarded by Zaim Mohzani on 2026-06-16\n\n> *From Zaim's career newsletter (Nation Building School), forwarded to Maloha Coast.*\n\nIt's June. How's that career goal from January going?\n\nIf you're being honest, probably: forgotten by March, barely remembered (and feeling guilty) in June and quietly dropped by... the end of the year.\n\nIt's a timeframe problem, not a discipline problem.\n\n## The annual goal trap\n\nA year is too long to create urgency and too vague to act on.\n\n\"Get a new job this year\" feels fine in January. There's time. So nothing happens.\n\nBy June, the goal is still technically alive, but you haven't done anything that moves it forward. By December, you're setting the same goal again for next year.\n\nZaim went through this himself with weight, not career. In January 2025, he set an annual goal: lose 6kg by December. Standard SMART goal.\n\nThen he came across Brian Moran and Michael Lennington's book \"The 12 Week Year,\" which argues most people don't actually operate in years. They operate in the last few weeks before a deadline. So the fix is to shrink the deadline.\n\nHe rewrote the goal: lose 6kg in 90 days, by 31 March. He hit it. The habits he built kept running on their own for the rest of the year.\n\n## Why this works for your career too\n\nThe same applies to a job search, a promotion case or a pivot.\n\n\"Get promoted this year\" doesn't tell you what to do on Monday.\n\n\"By 30 September, I will have had 3 conversations with people in my target department, applied to 5 internal roles, and presented one project to leadership\" tells you exactly what to do on Monday.\n\nOne of these is a wish. The other is a plan.\n\n## How to set yours\n\nPick ONE career goal for this quarter. Just one. Follow this format:\n\n- *My 90-day career goal is...*\n- *This matters to me because...*\n- *To complete this, I commit that by 30 September 2026, I will have...* (make this checkable \u2014 \"3 offers\" is checkable, \"more clarity\" is not)\n- *To make sure I complete it, I'm going to...* (weekly actions, not the outcome)\n\n## Key Takeaways\n\n- The 12-week year framework solves the annual goal trap by shrinking the deadline\n- Specific 90-day goals with weekly actions outperform vague annual wishes\n- Checkable outcomes (\"3 offers\", \"applied to 5 internal roles\") create accountability\n- Habits built in a 90-day sprint persist beyond the deadline\n- Zaim offers a free workshop on 90-day goal setting for Q3 2026",
+      "body": "# Why your 2026 career goals are already dead (and what to do about it)\n\n**Source:** email (Nation Building School / Zaim Mohzani)\n**Source URI:** gmail://msg_19ece778ab23e039\n**Ingested:** 2026-06-26T06:00:00Z\n**Provenance:** Forwarded by Zaim Mohzani on 2026-06-16 via info+zaim@malohacoast.com\n\nZaim's Nation Building School newsletter on why annual career goals fail and how to fix them with the 12-week year framework.\n\n## Key Ideas\n\n- **The annual goal trap:** A year is too long to create urgency and too vague to act on.\n- **The 12 Week Year** (Brian Moran & Michael Lennington): People operate in the last few weeks before a deadline. Shrink the deadline.\n- **Zaim's personal example:** Lost 6kg in 90 days using this framework (Jan-Mar 2025). Never had to set the goal again \u2014 habits persisted.\n- **Career application:** \"Get promoted this year\" becomes \"By 30 Sept, I will have had 3 conversations in my target department, applied to 5 internal roles, and presented one project to leadership.\"\n- **Q3 2026 workshop** \u2014 free workshop on setting 90-day career goals. t.ly/getclearoncareer6\n\n## Format for 90-Day Goals\n1. My 90-day career goal is...\n2. This matters to me because...\n3. To complete this, I commit that by [date], I will have... (must be checkable)\n4. To make sure I complete it, I'm going to... (weekly actions)\n\n**Source:** email from Zaim Mohzani / Nation Building School newsletter, 2026-06-12",
       "tags": [
         "zaim"
       ],
@@ -8571,18 +8649,13 @@
           "text": "Ayaan"
         },
         {
-          "from": "newsletters/how-virtual-machines-work-deep-dive-2026-05-25",
-          "type": "wikilink",
-          "text": "Ayaan"
-        },
-        {
           "from": "newsletters/vm-deep-dive-system-design-2026-05-25",
           "type": "wikilink",
           "text": "Ayaan"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 4
+      "inbound_count": 3
     },
     {
       "slug": "people/bjarte",
@@ -9312,11 +9385,6 @@
           "text": "Neo Kim"
         },
         {
-          "from": "newsletters/how-virtual-machines-work-deep-dive-2026-05-25",
-          "type": "wikilink",
-          "text": "Neo Kim"
-        },
-        {
           "from": "newsletters/msg-19ee2580f5fe7903",
           "type": "wikilink",
           "text": "people/neo-kim|Neo Kim"
@@ -9353,7 +9421,7 @@
         }
       ],
       "outbound_count": 6,
-      "inbound_count": 16
+      "inbound_count": 15
     },
     {
       "slug": "people/nick-milo",
@@ -9910,6 +9978,11 @@
           "text": "Zaim Mohzani"
         },
         {
+          "from": "meetings/sayf-zaim-jun-12-2026-gemini",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
           "from": "meetings/sayf-zaim-jun-12-2026",
           "type": "wikilink",
           "text": "people/zaim-mohzani|Zaim"
@@ -9931,7 +10004,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 12
+      "inbound_count": 13
     },
     {
       "slug": "persons/tonbi",
@@ -10272,6 +10345,11 @@
     {
       "source": "bookmarks/msg-19ee6b8b30fd1a2c",
       "target": "bookmarks/hermes-assistant-to-chief-of-staff-ericosiu-2026-06-20",
+      "type": "wikilink"
+    },
+    {
+      "source": "bookmarks/nerdqaxe-revision-7-launch-2026-06-12",
+      "target": "companies/solo-satoshi",
       "type": "wikilink"
     },
     {
@@ -11200,6 +11278,11 @@
       "type": "wikilink"
     },
     {
+      "source": "concepts/zaim-aisyah-rahim-client-profile-2026-06-15",
+      "target": "concepts/aisyah-rahim-client-profile-2026-06-15",
+      "type": "wikilink"
+    },
+    {
       "source": "concepts/zaim/3-month-career-pivot-framework",
       "target": "concepts/skills-inventory",
       "type": "wikilink"
@@ -11620,6 +11703,11 @@
       "type": "wikilink"
     },
     {
+      "source": "meetings/sayf-zaim-jun-12-2026-gemini",
+      "target": "people/zaim-mohzani",
+      "type": "wikilink"
+    },
+    {
       "source": "meetings/sayf-zaim-jun-12-2026",
       "target": "people/sayf-codes",
       "type": "wikilink"
@@ -11656,22 +11744,12 @@
     },
     {
       "source": "newsletters/30-core-agentic-engineering-concepts-2026-06-17",
-      "target": "companies/system-design-one",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/30-core-agentic-engineering-concepts-2026-06-17",
       "target": "people/neo-kim",
       "type": "wikilink"
     },
     {
       "source": "newsletters/30-core-agentic-engineering-concepts-2026-06-17",
       "target": "people/paul-hoekstra",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/30-core-agentic-engineering-concepts-2026-06-17",
-      "target": "companies/digital-power",
       "type": "wikilink"
     },
     {
@@ -11762,21 +11840,6 @@
     {
       "source": "newsletters/claude-second-brain-levels",
       "target": "companies/openai",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/how-virtual-machines-work-deep-dive-2026-05-25",
-      "target": "people/neo-kim",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/how-virtual-machines-work-deep-dive-2026-05-25",
-      "target": "people/ayaan",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/how-virtual-machines-work-deep-dive-2026-05-25",
-      "target": "companies/system-design-one",
       "type": "wikilink"
     },
     {
@@ -12260,13 +12323,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 70,
+    "brain_checks_score": 90,
     "category_scores": {
-      "brain": 95,
+      "brain": 90,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -12296,32 +12359,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -12333,11 +12374,12 @@
       },
       {
         "name": "extract_atoms_backlog",
-        "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "status": "warn",
+        "message": "24 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 0,
+          "backlog": 24,
           "pack_declares_phase": false,
+          "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
         "category": "brain"
@@ -12345,7 +12387,7 @@
       {
         "name": "conversation_format_coverage",
         "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "message": "11 pages: bold-name-no-time=10, _no_match=1",
         "category": "brain"
       },
       {
@@ -12369,7 +12411,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 328 pages",
         "category": "ops"
       },
       {
@@ -12405,7 +12447,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 568ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -12423,25 +12465,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 90%, timeline 68%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 78 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 328 pages; 37 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -12602,7 +12644,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 8/328 pages (2%) stale",
+        "details": {
+          "total": 328,
+          "stale": 8,
+          "pct": 2,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -12614,7 +12664,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -12626,7 +12676,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "239 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -12638,7 +12688,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "39.9% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -12680,7 +12730,7 @@
       {
         "name": "oauth_confidential_client_health",
         "status": "ok",
-        "message": "No OAuth clients registered",
+        "message": "4 OAuth client(s) registered; all auth shapes consistent",
         "category": "ops"
       },
       {
@@ -12741,13 +12791,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 91% \u00b1 3.2%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 69% \u00b1 5.2% (target 90%)",
         "category": "meta"
       },
       {
@@ -12765,7 +12815,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "10 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
