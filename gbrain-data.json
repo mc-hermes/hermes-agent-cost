@@ -1,32 +1,44 @@
 {
-  "updated_at": "2026-06-26T23:00:42Z",
+  "updated_at": "2026-06-26T23:46:57Z",
   "summary": {
-    "score": "92",
+    "score": "82",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 382,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "38.2% of pages have inbound links",
-    "entity_links": "Coverage \u2014 48 people, 35 companies indexed",
-    "concept_count": 136,
+    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
+    "page_count": 387,
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "38.5% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 89% \u00b1 3.5%",
+    "concept_count": 140,
     "meeting_count": 16,
     "person_count": 48,
     "company_count": 35,
-    "newsletter_count": 90,
+    "newsletter_count": 91,
     "video_count": 0,
     "article_count": 20,
     "bookmark_count": 31,
     "quote_count": 0,
     "dataset_count": 4,
     "digest_count": 2,
-    "total_links": 405,
-    "outbound_count": 505,
-    "inbound_count": 469,
+    "total_links": 409,
+    "outbound_count": 509,
+    "inbound_count": 473,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
+    "score_components": {
+      "score": "82/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "3/15",
+      "orphans": "9/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 67,
+    "checks_warned": 6,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -276,7 +288,7 @@
           "text": "Maloha Coast"
         },
         {
-          "to": "concepts/hermes-agent",
+          "to": "concept/hermes-agent-ingest-instructions-2026-06-09",
           "type": "wikilink",
           "text": "Hermes Agent"
         }
@@ -1415,7 +1427,7 @@
           "text": "Agent Wikis"
         },
         {
-          "to": "concepts/hermes-agent",
+          "to": "concept/hermes-agent-ingest-instructions-2026-06-09",
           "type": "wikilink",
           "text": "Hermes Agent"
         }
@@ -2846,6 +2858,39 @@
       "inbound_count": 1
     },
     {
+      "slug": "concept/hermes-agent-ingest-instructions-2026-06-09",
+      "title": "Hermes Agent Ingest Instructions 2026 06 09",
+      "type": "concept",
+      "updated": "",
+      "body": "# Re: Hermes Agent to Ingest \u2014 Nate Herk Technique Question\n\n**Source:** email\n**Source URI:** gmail://msg_19eaa7109497948c\n**Ingested:** 2026-06-27T07:45:00Z\n**Provenance:** Sayf Codes <sayfcodes@gmail.com> to Maloha Coast <info@malohacoast.com>, Tue, 9 Jun 2026 11:33:03 +0800\n\n## Raw Body\n\nWhat technique did nate hero recommend for improving Claude code output?\n\n---\n\n*On Tue, 9 Jun 2026, 10:51 Maloha Coast, <info@malohacoast.com> wrote:*\n\n> Got it \u2014 added to your brain as concepts/company-memory-os-ph1-prd.\n> Reply to ask anything about this content.\n\n## Notes\n\n- This is a reply to the Company Memory OS PRD thread.\n- Sayf is asking about the technique that Nate Herk (from AI Automation Society) recommended for improving Claude Code output quality.\n- \"nate hero\" in the raw body is a typo for \"Nate Herk\" (as confirmed by the gbrain entity).\n- Email labels: IMPORTANT, CATEGORY_PERSONAL, INBOX\n- Thread ID: 19eaa49d639a6a73",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "articles/hermes-assistant-to-chief-of-staff-2026-06-21",
+          "type": "wikilink",
+          "text": "Hermes Agent"
+        },
+        {
+          "from": "companies/ai-garage-weekly",
+          "type": "wikilink",
+          "text": "Hermes Agent"
+        },
+        {
+          "from": "concepts/company-memory-os-prd-msg-19eaa49d639a6a73",
+          "type": "wikilink",
+          "text": "Hermes Agent"
+        },
+        {
+          "from": "newsletters/ai-garage-weekly-2026-06-20",
+          "type": "wikilink",
+          "text": "Hermes Agent"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 4
+    },
+    {
       "slug": "concepts/15-minute-gap-method-2026-06-14",
       "title": "15 Minute Gap Method 2026 06 14",
       "type": "concept",
@@ -3541,7 +3586,7 @@
       ],
       "links_out": [
         {
-          "to": "concepts/hermes-agent",
+          "to": "concept/hermes-agent-ingest-instructions-2026-06-09",
           "type": "wikilink",
           "text": "Hermes Agent"
         },
@@ -3985,6 +4030,18 @@
       "inbound_count": 0
     },
     {
+      "slug": "concepts/google-cloud-upgrade-notice-2026-05-02",
+      "title": "Google Cloud Upgrade Notice 2026 05 02",
+      "type": "concept",
+      "updated": "",
+      "body": "",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "concepts/google-workspace-intelligence-2026-04-22",
       "title": "Google Workspace Intelligence 2026 04 22",
       "type": "concept",
@@ -4095,30 +4152,9 @@
           "text": "AI Garage Weekly - June 19, 2026"
         }
       ],
-      "backlinks": [
-        {
-          "from": "articles/hermes-assistant-to-chief-of-staff-2026-06-21",
-          "type": "wikilink",
-          "text": "Hermes Agent"
-        },
-        {
-          "from": "companies/ai-garage-weekly",
-          "type": "wikilink",
-          "text": "Hermes Agent"
-        },
-        {
-          "from": "concepts/company-memory-os-prd-msg-19eaa49d639a6a73",
-          "type": "wikilink",
-          "text": "Hermes Agent"
-        },
-        {
-          "from": "newsletters/ai-garage-weekly-2026-06-20",
-          "type": "wikilink",
-          "text": "Hermes Agent"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 1,
-      "inbound_count": 4
+      "inbound_count": 0
     },
     {
       "slug": "concepts/hermes-profile-backup",
@@ -5969,6 +6005,24 @@
       "inbound_count": 2
     },
     {
+      "slug": "googledrive/gbrain-raw-notes-share-2026-06-06",
+      "title": "Gbrain Raw Notes Share 2026 06 06",
+      "type": "concept",
+      "updated": "",
+      "body": "# gbrain-raw-notes \u2014 Google Drive Folder Shared\n\n**Source:** Google Drive sharing notification\n**Source URI:** gmail://msg_19e9ced799ccc7ba\n**Ingested:** 2026-06-27\n**Provenance:** Maloha Coast (via Google Drive) shared folder 'gbrain-raw-notes' with info@malohacoast.com on 2026-06-06\n\nMaloha Coast shared a folder with you.\n\n---\n\n**Maloha Coast** has shared the folder **gbrain-raw-notes** with **info@malohacoast.com**.\n\n[Open in Google Drive](https://drive.google.com/drive/folders/14SniynIf18GqCB_Ix8RYbEAuOYQVxsDL)\n\n---\n\nThis folder appears to be a raw notes intake point for the gbrain knowledge pipeline. New files dropped here should be monitored and ingested into gbrain periodically.\n\n## Folder Details\n\n- **Folder name:** gbrain-raw-notes\n- **Shared by:** Maloha Coast (info@malohacoast.com)\n- **Shared with:** info@malohacoast.com\n- **Date shared:** Saturday, 6 June 2026\n- **Folder URL:** https://drive.google.com/drive/folders/14SniynIf18GqCB_Ix8RYbEAuOYQVxsDL\n\n## Purpose\n\nLikely an intake folder where raw markdown notes, meeting transcripts, and knowledge artifacts are dropped before being ingested into the gbrain knowledge base. Should be polled for new content.",
+      "tags": [
+        "gbrain",
+        "googledrive",
+        "maloha-coast",
+        "raw-notes",
+        "share"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "hermes-profile-backup",
       "title": "Hermes Profile Backup",
       "type": "concept",
@@ -6980,7 +7034,7 @@
           "text": "Tonbi"
         },
         {
-          "to": "concepts/hermes-agent",
+          "to": "concept/hermes-agent-ingest-instructions-2026-06-09",
           "type": "wikilink",
           "text": "Hermes Agent"
         },
@@ -7035,30 +7089,55 @@
     },
     {
       "slug": "newsletters/claude-second-brain-explained-2026-06-20",
-      "title": "Claude Second Brain Explained 2026 06 20",
+      "title": "Claude Second Brain Explained (redirect)",
       "type": "newsletter",
       "updated": "",
-      "body": "# Every Level of a Claude Second Brain Explained\n\n**Source:** email\n**Source URI:** gmail://msg_19ee2dfa87f86548\n**Ingested:** 2026-06-20T12:00:00Z\n**Provenance:** Forwarded by sayf on 2026-06-20, originally from Nate Herk (AI Automation Society)\n\n## Summary\n\nA breakdown of five levels of building a Claude second brain, a client email pipeline automation case study, and Codex hitting 5M weekly users with banked rate limit resets.\n\n## In This Issue\n\n- Five levels of building a Claude second brain, from basic file search to fully autonomous recall.\n- Robert automated a client's outbound email pipeline and got their call center actually following up.\n- OpenAI's Codex just crossed 5 million weekly users, and there's a free bonus available through June 24.\n\n## New Video: Every Level of a Claude Second Brain Explained\n\nThere are five distinct levels to building a Claude second brain, and most people are stuck at level one.\n\nLevel one is just finding a file by searching an exact word. Level five is a fully autonomous system that knows your business, your client relationships, and your IP better than you do. The difference between them isn't the tool. It's how the data is organized.\n\n*The insight that changes how you build:* Start from the end. Before you organize a single file, ask how you'll access this data later. The shape of the basketball determines the size of the hoop. Jon shows his actual setup (a Herku project, just markdown files and folders) and walks through what separates each level, including semantic search (finding by meaning, not exact match) and full relationship mapping.\n\n*How this helps you:* Your moat is your data. This video shows you how to actually organize it so your agents can use it, not just find it.\n\n## Winning Is All We Do\n\nRobert automated a client's outbound email pipeline from scratch.\n\n*What happened:* Robert's client had a call center calling leads, but nothing was following up by email. Sales managers emailed Robert their daily lead lists as Excel files. He built an automation that handles the rest: when the file lands in his inbox, it extracts the email, address, and name data, normalizes it, and uploads every contact directly into Instantly as a ready-to-run campaign. No manual cleanup. No copy-paste.\n\n*The opportunity for you:* Businesses running call centers almost always have messy lead data and no email follow-up. An automation that converts a spreadsheet into a live campaign solves a problem they didn't know anyone could fix.\n\n## In the News\n\nCodex just hit 5 million weekly users. If you use it, there's a free bonus through June 24.\n\n*The news:* OpenAI Codex has crossed 5 million weekly active users and launched two features alongside the milestone. One is permanent: banked rate limit resets. Instead of your weekly limit resetting on a fixed timer, you can now save resets and use them when you actually need them. The other runs through June 24: Plus and Pro users can invite up to three friends to try Codex. When a friend sends their first Codex message, you both get a bonus reset.\n\n*How it affects you:* If you've been hitting Codex rate limits at the wrong moment mid-build, the banked reset system fixes that. You decide when to use your reset, not the clock. If you're not hitting limits yet, the referral is easy headroom to bank before the window closes. The bigger signal here: Codex is now growing through referral mechanics at 5 million weekly users.",
+      "body": "> **Redirect:** This page redirects to [[Every Level of a Claude Second Brain Explained]]. See the [[newsletters/claude-second-brain-levels-2026-06-20]] page for full content.\n\nThis is a consolidation redirect from an older slug variant.",
       "tags": [
         "AI-Automation-Society",
         "claude",
+        "redirect",
         "second-brain"
       ],
-      "links_out": [],
+      "links_out": [
+        {
+          "to": "newsletters/claude-second-brain-levels",
+          "type": "wikilink",
+          "text": "Every Level of a Claude Second Brain Explained"
+        },
+        {
+          "to": "newsletters/claude-second-brain-levels-2026-06-20",
+          "type": "wikilink",
+          "text": "newsletters/claude-second-brain-levels-2026-06-20"
+        }
+      ],
       "backlinks": [],
-      "outbound_count": 0,
+      "outbound_count": 2,
       "inbound_count": 0
     },
     {
       "slug": "newsletters/claude-second-brain-levels-2026-06-19",
-      "title": "Claude Second Brain Levels 2026 06 19",
+      "title": "Claude Second Brain Levels 2026 06 19 (redirect)",
       "type": "newsletter",
       "updated": "",
-      "body": "# Every Level of a Claude Second Brain Explained\n\n**Source:** AI Automation Society (Nate Herk), forwarded by Sayf\n**Source URI:** gmail://msg_19ee2dfa87f86548\n**Ingested:** 2026-06-24T04:30:00Z\n**Provenance:** Forwarded by sayf on 2026-06-20\n\nA Claude second brain breakdown, a client pipeline automated, and Codex hits 5M users with a free bonus through June 24.\n\n## Five Levels of a Claude Second Brain\n\nThere are five distinct levels to building a Claude second brain, and most people are stuck at level one.\n\n- **Level one:** Just finding a file by searching an exact word\n- **Level five:** A fully autonomous system that knows your business, your client relationships, and your IP better than you do\n\nThe difference between them isn't the tool \u2014 it's how the data is organized.\n\n**Key insight:** Start from the end. Before you organize a single file, ask how you'll access this data later. The shape of the basketball determines the size of the hoop.\n\nJon shows his actual setup (a Herku project, just markdown files and folders) and walks through what separates each level, including semantic search (finding by meaning, not exact match) and full relationship mapping.\n\n**How this helps you:** Your moat is your data. This video shows you how to actually organize it so your agents can use it, not just find it.\n\n## Winning Is All We Do \u2014 Client Pipeline Automation\n\nRobert automated a client's outbound email pipeline from scratch:\n- Client's call center was calling leads but nothing was following up by email\n- Sales managers emailed Robert daily lead lists as Excel files\n- He built an automation: when the file lands in his inbox, it extracts emails/addresses/names, normalizes the data (no more \"N123 MAIN STREET\"), and uploads every contact directly into Instantly as a ready-to-run campaign\n- No manual cleanup, no copy-paste\n\n**The opportunity:** Businesses running call centers almost always have messy lead data and no email follow-up. An automation that converts a spreadsheet into a live campaign solves a problem they didn't know anyone could fix.\n\n## In the News \u2014 Codex Hits 5M Weekly Users\n\nOpenAI Codex crossed 5 million weekly active users with two new features:\n1. **Banked rate limit resets (permanent):** Save resets and use them when you actually need them instead of a fixed timer\n2. **Referral bonus (through June 24):** Plus and Pro users can invite up to three friends to try Codex; both get a bonus reset when a friend sends their first message",
-      "tags": [],
-      "links_out": [],
+      "body": "> **Redirect:** This page redirects to [[Every Level of a Claude Second Brain Explained]]. See the [[newsletters/claude-second-brain-levels-2026-06-20]] page for full content.\n\nThis is a consolidation redirect from an earlier date slug variant.",
+      "tags": [
+        "redirect"
+      ],
+      "links_out": [
+        {
+          "to": "newsletters/claude-second-brain-levels",
+          "type": "wikilink",
+          "text": "Every Level of a Claude Second Brain Explained"
+        },
+        {
+          "to": "newsletters/claude-second-brain-levels-2026-06-20",
+          "type": "wikilink",
+          "text": "newsletters/claude-second-brain-levels-2026-06-20"
+        }
+      ],
       "backlinks": [],
-      "outbound_count": 0,
+      "outbound_count": 2,
       "inbound_count": 0
     },
     {
@@ -7066,7 +7145,7 @@
       "title": "Claude Second Brain Levels 2026 06 20",
       "type": "newsletter",
       "updated": "",
-      "body": "# Every Level of a Claude Second Brain Explained\n\n**Source:** email\n**Source URI:** gmail://msg_19ee2dfa87f86548\n**Ingested:** 2026-06-27T00:00:00Z\n**Provenance:** Forwarded by sayf from AI Automation Society (Nate Herk), Jun 20 2026\n\nA Claude second brain breakdown, a client pipeline automated, and Codex hits 5M users with a free bonus through June 24.\n\n## In This Issue\n\n- Five levels of building a Claude second brain, from basic file search to fully autonomous recall.\n- Robert automated a client's outbound email pipeline and got their call center actually following up.\n- OpenAI's Codex just crossed 5 million weekly users, with a free bonus available through June 24.\n\n## New Video: Every Level of a Claude Second Brain Explained\n\nThere are five distinct levels to building a Claude second brain, and most people are stuck at level one.\n\nLevel one is just finding a file by searching an exact word. Level five is a fully autonomous system that knows your business, your client relationships, and your IP better than you do. The difference between them isn't the tool \u2014 it's how the data is organized.\n\n**The insight that changes how you build:** Start from the end. Before you organize a single file, ask how you'll access this data later. The shape of the basketball determines the size of the hoop. Jon shows his actual setup (a Herku project, just markdown files and folders) and walks through what separates each level, including semantic search (finding by meaning, not exact match) and full relationship mapping.\n\n**How this helps you:** Your moat is your data. This video shows you how to actually organize it so your agents can use it, not just find it.\n\n## Winning Is All We Do: Robert's Client Pipeline Automation\n\nRobert automated a client's outbound email pipeline from scratch.\n\n**What happened:** Robert's client had a call center calling leads, but nothing was following up by email. Sales managers emailed Robert their daily lead lists as Excel files. He built an automation that handles the rest: when the file lands in his inbox, it extracts the email, address, and name data, normalizes it, and uploads every contact directly into Instantly as a ready-to-run campaign. No manual cleanup. No copy-paste.\n\n**The opportunity:** Businesses running call centers almost always have messy lead data and no email follow-up. An automation that converts a spreadsheet into a live campaign solves a problem they didn't know anyone could fix.\n\n## In the News: Codex Hits 5M Weekly Users\n\nOpenAI Codex has crossed 5 million weekly active users and launched two features alongside the milestone. One is permanent: banked rate limit resets \u2014 you can now save resets and use them when you actually need them. The other runs through June 24: Plus and Pro users can invite up to three friends to try Codex, and both get a bonus reset when a friend sends their first message.\n\n**How it affects you:** If you've been hitting Codex rate limits at the wrong moment mid-build, the banked reset system fixes that. You decide when to use your reset, not the clock. The bigger signal: Codex is growing through referral mechanics at 5 million weekly users \u2014 a tool people are actively building with and recommending.",
+      "body": "# Every Level of a Claude Second Brain Explained\n\n**Source:** AI Automation Society (Nate Herk), forwarded by Sayf\n**Source URI:** gmail://msg_19ee2dfa87f86548\n**Ingested:** 2026-06-27T00:00:00Z\n**Provenance:** Forwarded by sayf on 2026-06-20\n\nA Claude second brain breakdown, a client pipeline automated, and Codex hits 5M users with a free bonus through June 24.\n\n## In This Issue\n\n- Five levels of building a Claude second brain, from basic file search to fully autonomous recall.\n- Robert automated a client's outbound email pipeline and got their call center actually following up.\n- OpenAI's Codex just crossed 5 million weekly users, with a free bonus available through June 24.\n\n---\n\n## New Video: Every Level of a Claude Second Brain Explained\n\nThere are five distinct levels to building a Claude second brain, and most people are stuck at level one.\n\nLevel one is just finding a file by searching an exact word. Level five is a fully autonomous system that knows your business, your client relationships, and your IP better than you do. The difference between them isn't the tool \u2014 it's how the data is organized.\n\n**The insight that changes how you build:** Start from the end. Before you organize a single file, ask how you'll access this data later. The shape of the basketball determines the size of the hoop. Jon shows his actual setup (a Herku project, just markdown files and folders) and walks through what separates each level, including semantic search (finding by meaning, not exact match) and full relationship mapping.\n\n**How this helps you:** Your moat is your data. This video shows you how to actually organize it so your agents can use it, not just find it.\n\n---\n\n## Winning Is All We Do\n\nRobert automated a client's outbound email pipeline from scratch.\n\n**What happened:** Robert's client had a call center calling leads, but nothing was following up by email. Sales managers emailed Robert their daily lead lists as Excel files. He built an automation that handles the rest: when the file lands in his inbox, it extracts the email, address, and name data, normalizes it (no more \"N123 MAIN STREET\" showing up as a deliverable address), and uploads every contact directly into Instantly as a ready-to-run campaign. No manual cleanup. No copy-paste. Just results.\n\n**The opportunity for you:** Businesses running call centers almost always have messy lead data and no email follow-up. An automation that converts a spreadsheet into a live campaign solves a problem they didn't know anyone could fix.\n\n---\n\n## In the News\n\nCodex just hit 5 million weekly users. If you use it, there's a free bonus through June 24.\n\n**The news:** OpenAI Codex has crossed 5 million weekly active users and launched two features alongside the milestone. One is permanent: banked rate limit resets. Instead of your weekly limit resetting on a fixed timer (whether you need it or not), you can now save resets and use them when you actually need them. The other runs through June 24. Plus and Pro users can invite up to three friends to try Codex. When a friend sends their first Codex message, you both get a bonus reset.\n\n**How it affects you:** If you've been hitting Codex rate limits at the wrong moment mid-build, the banked reset system fixes that. You decide when to use your reset, not the clock. And if you're not hitting limits yet, the referral is easy headroom to bank before the window closes. The bigger signal here: Codex is now growing through referral mechanics at 5 million weekly users. That's not hype \u2014 that's a tool people are actively building with and recommending.",
       "tags": [
         "ai-automation-society",
         "claude",
@@ -7097,6 +7176,16 @@
           "text": "newsletters/claude-second-brain-levels-2026-06-20"
         },
         {
+          "from": "newsletters/claude-second-brain-explained-2026-06-20",
+          "type": "wikilink",
+          "text": "newsletters/claude-second-brain-levels-2026-06-20"
+        },
+        {
+          "from": "newsletters/claude-second-brain-levels-2026-06-19",
+          "type": "wikilink",
+          "text": "newsletters/claude-second-brain-levels-2026-06-20"
+        },
+        {
           "from": "people/jon",
           "type": "wikilink",
           "text": "Claude Second Brain Levels 2026 06 20"
@@ -7108,7 +7197,7 @@
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 6
+      "inbound_count": 8
     },
     {
       "slug": "newsletters/claude-second-brain-levels",
@@ -7134,10 +7223,20 @@
           "from": "concepts/openai-codex",
           "type": "wikilink",
           "text": "Every Level of a Claude Second Brain Explained"
+        },
+        {
+          "from": "newsletters/claude-second-brain-explained-2026-06-20",
+          "type": "wikilink",
+          "text": "Every Level of a Claude Second Brain Explained"
+        },
+        {
+          "from": "newsletters/claude-second-brain-levels-2026-06-19",
+          "type": "wikilink",
+          "text": "Every Level of a Claude Second Brain Explained"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 1
+      "inbound_count": 3
     },
     {
       "slug": "newsletters/every-level-claude-second-brain-2026-06-19",
@@ -7342,6 +7441,34 @@
       "type": "newsletter",
       "updated": "",
       "body": "# The Maloha Coast Navigator \u2014 Why Most AI Pilots Fail\n\n**Source:** email (self-forward)\n**Source URI:** gmail://msg_19eca4c3e7e0cefc\n**Ingested:** 2026-06-21T04:30:00Z\n**Provenance:** Sayf via Maloha Coast info@ self-forward, 2026-06-15\n\nWeekly guide to AI strategy for SMBs from Maloha Coast.\n\n## This Week: Why Most AI Pilots Fail\n\n80% of AI proofs-of-concept never reach production. The pattern:\n1. **Scope creep** \u2014 POCs that try to boil the ocean\n2. **Data rot** \u2014 Models trained on stale data that's 6 months old\n3. **No owner** \u2014 AI sits in IT without a business sponsor\n\n**The fix:** Start with a single workflow, not a platform. Pick the one manual process your team hates most. Automate that. Measure the time saved. Then expand.\n\n## Client Spotlight\n\nA 12-person accounting firm deployed an email triage agent. Result: 14 hours/week saved. ROI in week one.\n\n## What We're Reading\n\n- Claude Code 10x Skill \u2014 The skill pattern that changed everything\n- Second Brain Architecture \u2014 How we structure knowledge for SMBs\n\n## Upcoming\n\nNext week: Pricing models that work for SMB AI consulting.\n\n[Source: Maloha Coast Navigator newsletter by Sayf, 2026-06-15]",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "newsletters/msg-19e92f0ffcc95db9",
+      "title": "30 seconds to your first response",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# 30 seconds to your first response\n\n**Source:** OpenRouter Team <welcome@openrouter.ai>\n**Source URI:** gmail://msg_19e92f0ffcc95db9\n**Ingested:** 2026-06-27\n**Date:** Thu, 04 Jun 2026 14:02:00 +0000\n\nTwo code blocks. Pick Python or curl. Done in 30 seconds.\n\n[OpenRouter](https://openrouter.ai)\n\nHi there,\n\nThe fastest path from signup to a working response is two code blocks. Copy one, swap your key, run it. If you already use the OpenAI SDK, the only line that changes is base_url.\n\n[Open the quickstart](https://openrouter.ai/docs/quickstart)\n\nPYTHON\n\n```\nfrom openai import OpenAI\n\nclient = OpenAI(\n    base_url=\"https://openrouter.ai/api/v1\",\n    api_key=\"YOUR_API_KEY\"\n)\n\nresponse = client.chat.completions.create(\n    model=\"openai/gpt-4o-mini\",\n    messages=[{\"role\": \"user\", \"content\": \"Hello\"}]\n)\n\nprint(response.choices[0].message.content)\n```\n\nCURL\n\n```\ncurl https://openrouter.ai/api/v1/chat/completions \\\n  -H \"Authorization: Bearer ***\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"openai/gpt-4o-mini\",\"messages\":[{\"role\":\"user\",\"content\":\"Hello\"}]}'\n```\n\nWhat the response looks like. A standard OpenAI chat completion object. `choices[0].message.content` holds the text. `usage` has token counts. `model` shows which model actually served the request, which matters when you use `openrouter/auto` and want to see what the router picked. If you already read OpenAI responses, you already know how to read these.\n\nIf the first call fails. A 401 is almost always the key header. A 402 means the free-tier daily cap was hit or credits are needed for a paid model. A 404 on a model string usually means dots vs hyphens; OpenRouter slugs use dots, so `claude-sonnet-4.6` not `claude-sonnet-4-6`. [the models](https://openrouter.ai/models) page has every valid slug.\n\nFree tier: 10 requests per day across 29 free models. No credit card to start.\n\n## Getting Started\n\n1. [Create your API key](https://openrouter.ai/settings/keys)\n2. Point the OpenAI SDK at `openrouter.ai/api/v1`\n3. [Make your first request](https://openrouter.ai/docs/quickstart)\n\n## PICK MODELS LATER\n\nOnce a single request works, you can let the router choose models for you. `openrouter/auto` picks per-request based on the prompt. The only change is the model string. Roughly 63 percent of auto traffic routes to models under $1 per million tokens, so simple tasks stop hitting expensive models without any routing code on your side.\n\n```\nresponse = client.chat.completions.create(\n    model=\"openrouter/auto\",\n    messages=[{\"role\": \"user\", \"content\": \"Hello\"}],\n)\n```\n\n## Key Takeaways\n\n- OpenRouter is a drop-in OpenAI SDK replacement \u2014 just change `base_url` to `https://openrouter.ai/api/v1`\n- Free tier: 10 requests/day across 29 free models, no credit card required\n- `openrouter/auto` routes requests to optimal model per-prompt; 63% of traffic goes to sub-$1/1M models\n- Error codes: 401 (bad key), 402 (cap/credits), 404 (model slug format \u2014 use dots not hyphens)\n- Complete OpenAI-compatible response format (`choices[0].message.content`, `usage`, `model`)",
+      "tags": [
+        "ai-api",
+        "llm-routing",
+        "openrouter"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "newsletters/msg-19e94ddbf92825b4",
+      "title": "What shipped in May: Workspace Guardrails, Speech APIs, Model Fusion",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# What Shipped in May: Workspace Guardrails, Speech APIs, Model Fusion\n\n**Source:** email (OpenRouter Team)\n**Source URI:** gmail://msg_19e94ddbf92825b4\n**Ingested:** 2026-06-27\n**Provenance:** OpenRouter Team newsletter to info@malohacoast.com, 2026-06-04\n\nSpend limits, prompt-injection blocking, voice in and out, and one answer from many models.\n\nWorkspace Guardrails, Speech and Transcription APIs, Model Fusion, and 20 new models shipped in May.\n\nCentralized security and governance for every request, voice in and out through the API key you already use, parallel model queries synthesized into one answer, and Private Models. We also announced our Series B fundraising and crossed over 100 trillion tokens a month. Here is everything that shipped.\n\n## Platform Features\n\n### Workspace Guardrails\nCentralized security and governance for every request routed through your workspace. Set per-member and per-key spend limits, lock traffic to a model and provider allowlist, enforce zero data retention, block prompt injection against 30+ OWASP-derived patterns, and redact PII before it reaches a provider. Layer the rules into one guardrail or scope them to specific keys and members, with no code changes.\n\n### Speech and Transcription APIs\nAdd text-to-speech and speech-to-text to any application through the same API key and billing you already use. Speech-to-text is live with Whisper, GPT-4o Mini Transcribe, and Voxtral; text-to-speech exposes supported_voices in the models API. Provider failover and upstream error passthrough are built into both.\n\n### Model Fusion\nRoute one prompt to multiple models in parallel and synthesize their responses into a single, higher-quality answer. Model Fusion runs as an API plugin, a server tool, and in the chatroom composer. You get an ensemble of models in one call instead of betting on a single one.\n\n### Private Models (Enterprise)\nRoute to your own custom, fine-tuned, or dedicated endpoints through the standard completions and responses API. Your private models get the same routing, guardrails, observability, and billing as any public model on the platform. Available exclusively on the Enterprise plan.\n\n### Pareto Code Router\nSet `min_coding_score` and route to the cheapest code-capable model that clears your bar. Configure a default coding-quality tier per workspace in plugin settings.\n\n## Workspace Controls\n- **IP allowlist enforcement** \u2014 API keys with an allowlist now block unauthorized requests with a 403, upgraded from observe-only.\n- **BYOK management API** \u2014 List, create, update, and delete provider keys across workspaces, grouped by priority with drag-and-drop reordering.\n- **Observability destinations API** \u2014 CRUD endpoints for Datadog, Langfuse, LangSmith, and other integrations via management key.\n- **Per-provider ZDR** \u2014 Separate Zero Data Retention toggles for non-frontier, Anthropic, OpenAI, and Google providers.\n- **Copy guardrails across workspaces** \u2014 Standardize safety policies in a few clicks.\n\n## Also Shipped\n- **Model comparison page** \u2014 Compare up to five models side by side on pricing, context length, and benchmarks, with a Highlight best toggle and provider-coded charts for Intelligence, Coding, and Agentic metrics.\n- **Presets API** \u2014 Version a preset straight from a request body, now with Anthropic Messages and Responses skins, plus TypeScript and Python SDKs.\n- **Human-in-the-loop tools** \u2014 An SDK tool type that pauses execution and waits for human input, for agents that need judgment mid-task.\n- **Session stickiness** \u2014 Requests sharing a session_id pin to the same provider and model across turns for better cache hits.\n- **Auto router cost_quality_tradeoff** \u2014 A 0 to 10 dial replacing the old binary toggle for finer cost-versus-quality control.\n- **Requests tab in logs** \u2014 Request-level drill-down with request-ID filtering and time-picker shorthand.\n\n## New Models\n20 launched in May, across text, speech, image, video, and code, including Claude Opus 4.8, Gemini 3.5 Flash, Grok 4.3, Qwen3.7 Max, Grok Imagine Video, and Recraft V3, V4, and V4 Pro.\n\n## Latest from the Blog\n- **OpenRouter Raises $113M Series B** \u2014 A $113M round led by CapitalG to invest in reliability, new modalities, and the enterprise features teams keep asking for.\n- **Human-in-the-Loop Tools for the Agent SDK** \u2014 A new Agent SDK tool type that pauses for human input on high-stakes decisions and auto-resolves the routine ones.\n- **Consistent Web Search and Fetch Across Every Model** \u2014 Give any tool-calling model web search and page fetch on its own, with multiple search and fetch engines to choose from.",
       "tags": [],
       "links_out": [],
       "backlinks": [],
@@ -7823,9 +7950,9 @@
     {
       "slug": "newsletters/openrouter-editor-integrations-2026-06-06",
       "title": "Openrouter Editor Integrations 2026 06 06",
-      "type": "newsletter",
+      "type": "concept",
       "updated": "",
-      "body": "# OpenRouter: Use OpenRouter in Cursor, Continue, or Cline\n\n**Source:** email\n**Source URI:** gmail://msg_19e9d3c7f616e13b\n**Ingested:** 2026-06-21T04:30:00Z\n**Provenance:** OpenRouter Team newsletter to info@malohacoast.com, 2026-06-06\n\nAn OpenRouter key works inside editors and agents most developers already have open. No SDK to wire up.\n\n**Integrations:**\n- **Cursor:** Settings > Models > OpenRouter. Paste key \u2014 every model in the OpenRouter catalog becomes available\n- **Continue:** Add OpenRouter as a provider in config.json. One block, one key\n- **Cline:** Set OpenRouter as API provider. Auto-routing picks the right model per request\n- **Claude Code:** Use OpenRouter as backend to centralize usage across a team\n\n**Why multi-model swap matters:** Coding agents make 20-50 model calls per task. Routing structured steps to a small model and writing steps to a frontier model cuts total cost by 5-10x on realistic workloads.\n\n[Source: OpenRouter Team newsletter, 2026-06-06](https://openrouter.ai/docs/frameworks)",
+      "body": "# OpenRouter: Use OpenRouter in Cursor, Continue, or Cline\n\n**Source:** email\n**Source URI:** gmail://msg_19e9d3c7f616e13b\n**Ingested:** 2026-06-27T16:00:00Z\n**Provenance:** OpenRouter Team newsletter to info@malohacoast.com, 2026-06-06\n\nAn OpenRouter key works inside editors and agents most developers already have open. No SDK to wire up.\n\n**Integrations:**\n- **Cursor:** Settings > Models > OpenRouter. Paste key \u2014 every model in the OpenRouter catalog becomes available\n- **Continue:** Add OpenRouter as a provider in config.json. One block, one key\n- **Cline:** Set OpenRouter as API provider. Auto-routing picks the right model per request\n- **Claude Code:** Use OpenRouter as backend to centralize usage across a team\n\n**Why multi-model swap matters:** Coding agents make 20-50 model calls per task. Routing structured steps to a small model and writing steps to a frontier model cuts total cost by 5-10x on realistic workloads.\n\n[Source: OpenRouter Team newsletter, 2026-06-06](https://openrouter.ai/docs/frameworks)",
       "tags": [],
       "links_out": [],
       "backlinks": [],
@@ -7834,10 +7961,10 @@
     },
     {
       "slug": "newsletters/openrouter-fallback-models-2026-06-09",
-      "title": "Openrouter Fallback Models 2026 06 09",
+      "title": "Add fallback models in one line",
       "type": "newsletter",
       "updated": "",
-      "body": "# OpenRouter: Add Fallback Models in One Line\n\n**Source:** email\n**Source URI:** gmail://msg_19eacb4dc07cd44c\n**Ingested:** 2026-06-21T04:30:00Z\n**Provenance:** OpenRouter Team newsletter to info@malohacoast.com, 2026-06-09\n\nPass a list of models. OpenRouter retries the next one if your primary fails. No app changes.\n\n**Key points:**\n- OpenRouter accepts a list of models on every request via `extra_body.models`\n- If first choice fails or rate-limits, the request runs against the next in the list automatically\n- Same response shape, same SDK, no changes to app code\n- List order = priority order\n- No extra fee for fallback routing\n- Rate limits, 5xx errors, content refusals, and context-length errors all count as failures\n- Can mix providers in the same chain (Anthropic, OpenAI, Google together)\n\n[Source: OpenRouter Team newsletter, 2026-06-09](https://openrouter.ai/docs/features/provider-routing)",
+      "body": "Pass a list of models. OpenRouter retries the next one if your primary fails. No app changes.\n\nHi there,\n\nProvider outages and rate limits are the reason most LLM apps end up with a queue, a retry layer, and an oncall rotation. They do not have to be.\n\nOpenRouter accepts a list of models on every request. If your first choice fails or rate-limits, the request runs against the next one in the list automatically. Same response shape, same SDK, no changes to your app code.\n\nA few things worth knowing:\n\n- The list order is the priority order. OpenRouter walks it top to bottom.\n- There is no extra fee for fallback routing. You pay the price of whichever model actually serves the request.\n- Rate limits, 5xx errors, content refusals, and context-length errors all count as failures. The next model picks up automatically.\n- You can mix providers in the same chain. Anthropic, OpenAI, and Google together is fine.\n\nThe next email covers openrouter/auto, which picks the model for you based on the request shape. Useful when you do not want to maintain your own list.",
       "tags": [],
       "links_out": [],
       "backlinks": [],
@@ -10428,7 +10555,7 @@
     },
     {
       "source": "articles/hermes-assistant-to-chief-of-staff-2026-06-21",
-      "target": "concepts/hermes-agent",
+      "target": "concept/hermes-agent-ingest-instructions-2026-06-09",
       "type": "wikilink"
     },
     {
@@ -10708,7 +10835,7 @@
     },
     {
       "source": "companies/ai-garage-weekly",
-      "target": "concepts/hermes-agent",
+      "target": "concept/hermes-agent-ingest-instructions-2026-06-09",
       "type": "wikilink"
     },
     {
@@ -11113,7 +11240,7 @@
     },
     {
       "source": "concepts/company-memory-os-prd-msg-19eaa49d639a6a73",
-      "target": "concepts/hermes-agent",
+      "target": "concept/hermes-agent-ingest-instructions-2026-06-09",
       "type": "wikilink"
     },
     {
@@ -12013,12 +12140,32 @@
     },
     {
       "source": "newsletters/ai-garage-weekly-2026-06-20",
-      "target": "concepts/hermes-agent",
+      "target": "concept/hermes-agent-ingest-instructions-2026-06-09",
       "type": "wikilink"
     },
     {
       "source": "newsletters/ai-garage-weekly-2026-06-20",
       "target": "companies/anthropic",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/claude-second-brain-explained-2026-06-20",
+      "target": "newsletters/claude-second-brain-levels",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/claude-second-brain-explained-2026-06-20",
+      "target": "newsletters/claude-second-brain-levels-2026-06-20",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/claude-second-brain-levels-2026-06-19",
+      "target": "newsletters/claude-second-brain-levels",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/claude-second-brain-levels-2026-06-19",
+      "target": "newsletters/claude-second-brain-levels-2026-06-20",
       "type": "wikilink"
     },
     {
@@ -12519,13 +12666,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 70,
+    "brain_checks_score": 90,
     "category_scores": {
-      "brain": 95,
+      "brain": 90,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -12555,32 +12702,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -12592,11 +12717,12 @@
       },
       {
         "name": "extract_atoms_backlog",
-        "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "status": "warn",
+        "message": "25 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 0,
+          "backlog": 25,
           "pack_declares_phase": false,
+          "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
         "category": "brain"
@@ -12604,7 +12730,7 @@
       {
         "name": "conversation_format_coverage",
         "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "message": "12 pages: bold-name-no-time=11, _no_match=1",
         "category": "brain"
       },
       {
@@ -12628,7 +12754,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 348 pages",
         "category": "ops"
       },
       {
@@ -12664,7 +12790,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 235ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -12682,25 +12808,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 88%, timeline 69%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 80 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 348 pages; 44 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -12861,7 +12987,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 0/348 pages (0%) stale",
+        "details": {
+          "total": 348,
+          "stale": 0,
+          "pct": 0,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -12873,7 +13007,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -12885,7 +13019,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "167 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -12897,7 +13031,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "38.5% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -12939,7 +13073,7 @@
       {
         "name": "oauth_confidential_client_health",
         "status": "ok",
-        "message": "No OAuth clients registered",
+        "message": "4 OAuth client(s) registered; all auth shapes consistent",
         "category": "ops"
       },
       {
@@ -13000,13 +13134,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 89% \u00b1 3.5%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 70% \u00b1 5.1% (target 90%)",
         "category": "meta"
       },
       {
@@ -13024,7 +13158,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "10 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {

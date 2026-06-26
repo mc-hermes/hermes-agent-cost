@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-26T23:00:52Z",
+  "updated_at": "2026-06-26T23:47:06Z",
   "summary": {
     "page_count": 46,
     "people_count": 4,
@@ -1215,7 +1215,7 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-26T23:00:52Z",
+      "ts": "2026-06-26T23:47:06Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
@@ -1300,22 +1300,6 @@
       "stage": "updated",
       "slug": "concepts/zaim-ksi-observation-patterns-2026-06-14",
       "detail": "Zaim Ksi Observation Patterns 2026 06 14",
-      "level": "info"
-    },
-    {
-      "ts": "2026-06-23T00:00:00Z",
-      "source": "page",
-      "stage": "updated",
-      "slug": "articles/why-your-2026-career-goals-are-already-dead-2026-06-16",
-      "detail": "Why Your 2026 Career Goals Are Already Dead 2026 06 16",
-      "level": "info"
-    },
-    {
-      "ts": "2026-06-23T00:00:00Z",
-      "source": "page",
-      "stage": "updated",
-      "slug": "concepts/coaching-client-aisyah-rahim-2026-06-15",
-      "detail": "Coaching Client Aisyah Rahim 2026 06 15",
       "level": "info"
     }
   ]
