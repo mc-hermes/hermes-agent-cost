@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-26T21:00:49Z",
+  "updated_at": "2026-06-26T21:47:11Z",
   "summary": {
-    "page_count": 45,
+    "page_count": 46,
     "people_count": 4,
     "company_count": 1,
     "artifact_count": 0,
-    "total_links": 19,
-    "outbound_count": 38,
-    "inbound_count": 35,
-    "graph_coverage": "22.2% of pages have inbound links",
-    "concept_count": 28,
+    "total_links": 20,
+    "outbound_count": 40,
+    "inbound_count": 36,
+    "graph_coverage": "21.7% of pages have inbound links",
+    "concept_count": 29,
     "meeting_count": 5,
     "person_count": 4,
     "newsletter_count": 5,
@@ -139,6 +139,34 @@
       "links_out": [],
       "backlinks": [],
       "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "concepts/3-month-career-pivot-framework-msg-19eca58bcdb09c70",
+      "title": "3 Month Career Pivot Framework Msg 19eca58bcdb09c70",
+      "type": "concept",
+      "updated": "",
+      "body": "# The 3-Month Career Pivot Framework\n\n**Source:** Email\n**Source URI:** gmail://msg_19eca58bcdb09c70\n**Ingested:** 2026-06-27T00:00:00Z\n**Provenance:** Self-sent by Zaim to info+zaim@malohacoast.com\n\nZaim shared this during a coaching session with a KSI senior analyst looking to move into product.\n\n## Phase 1: Audit (Month 1)\n\n- **Skills Inventory** \u2014 map current skills to target role requirements\n- Identify the 20% skill gap that blocks 80% of interviews\n- Don't learn everything \u2014 learn the gatekeepers\n\n## Phase 2: Signal (Month 2)\n\n- **Side Project Strategy** \u2014 build one public artifact, not ten private ones\n- Write 2 LinkedIn posts/week documenting the pivot journey\n- Engage with 3 target-company hiring managers\n\n## Phase 3: Convert (Month 3)\n\n- **Salary Negotiation Playbook** \u2014 comp bands for product roles in KL\n- Reference calls with 2 people who made the same pivot\n- First offer within 90 days\n\n## Key Insight\n\n> \"The career pivot gap isn't a skills problem \u2014 it's a positioning problem. You're not underqualified, you're framed wrong.\" \u2014 Zaim\n\n**Client:** KSI Senior Analyst \u2192 Product Manager\n**Engagement:** Weekly coaching, 12 sessions\n**Status:** Phase 2, on track\n\n## Related\n\n- [[Zaim Mohzani]] \u2014 Career coach and KSI facilitator\n- [[KSI Strategic Institute for Asia Pacific]] \u2014 Client engagement partner\n\n<!-- force reresolve: 2026-06-26T21:46:27Z -->",
+      "tags": [
+        "career",
+        "coaching",
+        "framework",
+        "zaim"
+      ],
+      "links_out": [
+        {
+          "to": "people/zaim-mohzani",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
+          "to": "companies/ksi-strategic-institute",
+          "type": "wikilink",
+          "text": "KSI Strategic Institute for Asia Pacific"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 2,
       "inbound_count": 0
     },
     {
@@ -928,6 +956,11 @@
           "text": "Zaim Mohzani"
         },
         {
+          "from": "concepts/3-month-career-pivot-framework-msg-19eca58bcdb09c70",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
           "from": "concepts/3-month-career-pivot-framework",
           "type": "wikilink",
           "text": "Zaim Mohzani"
@@ -974,7 +1007,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 13
+      "inbound_count": 14
     },
     {
       "slug": "zaim-career-goals-12-week-year-2026-06-16",
@@ -1074,6 +1107,11 @@
     {
       "source": "companies/unilever-malaysia",
       "target": "people/aisyah-rahim",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/3-month-career-pivot-framework-msg-19eca58bcdb09c70",
+      "target": "people/zaim-mohzani",
       "type": "wikilink"
     },
     {
@@ -1177,11 +1215,19 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-26T21:00:49Z",
+      "ts": "2026-06-26T21:47:11Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
-      "detail": "Dashboard refreshed \u2014 45 pages, 19 links",
+      "detail": "Dashboard refreshed \u2014 46 pages, 20 links",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-26T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "concepts/3-month-career-pivot-framework-msg-19eca58bcdb09c70",
+      "detail": "3 Month Career Pivot Framework Msg 19eca58bcdb09c70",
       "level": "info"
     },
     {
@@ -1270,14 +1316,6 @@
       "stage": "updated",
       "slug": "concepts/coaching-client-aisyah-rahim-2026-06-15",
       "detail": "Coaching Client Aisyah Rahim 2026 06 15",
-      "level": "info"
-    },
-    {
-      "ts": "2026-06-23T00:00:00Z",
-      "source": "page",
-      "stage": "updated",
-      "slug": "concepts/zaim-ksi-15-minute-rule-2026-06-14",
-      "detail": "Zaim Ksi 15 Minute Rule 2026 06 14",
       "level": "info"
     }
   ]

@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-06-26T21:00:40Z",
+  "updated_at": "2026-06-26T21:47:03Z",
   "summary": {
-    "score": "92",
+    "score": "82",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 380,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "38.4% of pages have inbound links",
-    "entity_links": "Coverage \u2014 48 people, 35 companies indexed",
-    "concept_count": 134,
+    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
+    "page_count": 382,
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "39.6% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 89% \u00b1 3.5%",
+    "concept_count": 136,
     "meeting_count": 16,
     "person_count": 48,
     "company_count": 35,
@@ -19,14 +19,26 @@
     "quote_count": 0,
     "dataset_count": 4,
     "digest_count": 2,
-    "total_links": 402,
-    "outbound_count": 505,
-    "inbound_count": 469,
+    "total_links": 406,
+    "outbound_count": 509,
+    "inbound_count": 473,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
+    "score_components": {
+      "score": "82/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "3/15",
+      "orphans": "9/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 67,
+    "checks_warned": 6,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -2119,6 +2131,11 @@
       ],
       "backlinks": [
         {
+          "from": "concepts/3-month-career-pivot-framework-msg-19eca58bcdb09c70",
+          "type": "wikilink",
+          "text": "KSI Strategic Institute for Asia Pacific"
+        },
+        {
           "from": "concepts/3-month-career-pivot-framework",
           "type": "wikilink",
           "text": "KSI Strategic Institute for Asia Pacific"
@@ -2140,7 +2157,7 @@
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 4
+      "inbound_count": 5
     },
     {
       "slug": "companies/nation-building-school",
@@ -2941,6 +2958,34 @@
       "inbound_count": 0
     },
     {
+      "slug": "concepts/3-month-career-pivot-framework-msg-19eca58bcdb09c70",
+      "title": "3 Month Career Pivot Framework Msg 19eca58bcdb09c70",
+      "type": "concept",
+      "updated": "",
+      "body": "# The 3-Month Career Pivot Framework\n\n**Source:** Email\n**Source URI:** gmail://msg_19eca58bcdb09c70\n**Ingested:** 2026-06-27T00:00:00Z\n**Provenance:** Self-sent by Zaim to info+zaim@malohacoast.com\n\nZaim shared this during a coaching session with a KSI senior analyst looking to move into product.\n\n## Phase 1: Audit (Month 1)\n\n- **Skills Inventory** \u2014 map current skills to target role requirements\n- Identify the 20% skill gap that blocks 80% of interviews\n- Don't learn everything \u2014 learn the gatekeepers\n\n## Phase 2: Signal (Month 2)\n\n- **Side Project Strategy** \u2014 build one public artifact, not ten private ones\n- Write 2 LinkedIn posts/week documenting the pivot journey\n- Engage with 3 target-company hiring managers\n\n## Phase 3: Convert (Month 3)\n\n- **Salary Negotiation Playbook** \u2014 comp bands for product roles in KL\n- Reference calls with 2 people who made the same pivot\n- First offer within 90 days\n\n## Key Insight\n\n> \"The career pivot gap isn't a skills problem \u2014 it's a positioning problem. You're not underqualified, you're framed wrong.\" \u2014 Zaim\n\n**Client:** KSI Senior Analyst \u2192 Product Manager\n**Engagement:** Weekly coaching, 12 sessions\n**Status:** Phase 2, on track\n\n## Related\n\n- [[Zaim Mohzani]] \u2014 Career coach and KSI facilitator\n- [[KSI Strategic Institute for Asia Pacific]] \u2014 Client engagement partner\n\n<!-- force reresolve: 2026-06-26T21:46:27Z -->",
+      "tags": [
+        "career",
+        "coaching",
+        "framework",
+        "zaim"
+      ],
+      "links_out": [
+        {
+          "to": "people/zaim-mohzani",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
+          "to": "companies/ksi-strategic-institute",
+          "type": "wikilink",
+          "text": "KSI Strategic Institute for Asia Pacific"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 2,
+      "inbound_count": 0
+    },
+    {
       "slug": "concepts/3-month-career-pivot-framework",
       "title": "3 Month Career Pivot Framework",
       "type": "concept",
@@ -3501,6 +3546,33 @@
       "inbound_count": 1
     },
     {
+      "slug": "concepts/company-memory-os-prd-msg-19eaa49d639a6a73",
+      "title": "Company Memory Os Prd Msg 19eaa49d639a6a73",
+      "type": "concept",
+      "updated": "",
+      "body": "# Company Memory OS (Phase 1) \u2014 PRD\n\n**Source:** Email\n**Source URI:** gmail://msg_19eaa49d639a6a73\n**Ingested:** 2026-06-27T00:00:00Z\n**Provenance:** Sent by sayf to info@malohacoast.com\n\n## Vision\n\nBuild a Company Memory Operating System that transforms fragmented communication into a searchable institutional memory. Initial delivery is service-first, software-second. The goal is not to sell software access \u2014 the goal is to deliver the outcome: \"Never lose important decisions, context, relationships, or knowledge again.\"\n\n## Problem\n\nSmall businesses, consultants, agencies, and founders lose critical knowledge because it is scattered across email, meeting transcripts, documents, chat conversations, and notes. Knowledge becomes unrecoverable after weeks or months. Current solutions focus on storage; users need retrieval and context.\n\n## Target Customer\n\n**Primary:** Consultants (20-100 clients, high email volume, multiple projects, knowledge-intensive work, decisions buried in communications).\n\n**Secondary:** Agency owners, startup founders, fractional executives, professional services firms.\n\n## Core Value Proposition\n\nTransform company communications into a searchable memory system.\n\n**Input:** Emails, meeting transcripts, documents.\n**Output:** Searchable knowledge base, decision history, relationship intelligence, project memory, AI-assisted retrieval.\n\n## Initial Offer \u2014 Productized Service (Not SaaS)\n\nHuman-assisted onboarding. Knowledge Audit where customer provides emails, documents, meeting notes and the system generates: executive summary, project map, key decisions, action items, stakeholder map, recurring themes, knowledge gaps. Deliverable: interactive dashboard + report.\n\n## Success Metric\n\nCustomer says: \"I found something valuable that I would not have found otherwise.\"\n\n## MVP Scope\n\n**Ingestion:** Email forwarding, Gmail export, meeting transcripts, markdown documents, PDFs.\n\n**Processing:** Extract people, companies, projects, decisions, tasks, dates, relationships. Generate summaries, tags, backlinks, knowledge graph connections.\n\n**Retrieval:** Natural language Q&A \u2014 \"What was decided about Project X?\", \"What commitments were made to Client Y?\", \"Show all discussions involving Person Z.\"\n\n**Dashboard views:** Decision Timeline, Relationship Graph, Project Knowledge Base, Open Actions, Search.\n\n## Go-To-Market\n\nAcquire first 3 paying customers. Free Knowledge Audit offer. Target existing network \u2014 founders, consultants, agency owners.\n\n**Message:** \"I've built a system that turns emails, meetings, and documents into a searchable company memory. Looking for 3 companies to test it with.\"\n\n## Pricing Experiments\n\n- **Stage 1 \u2014 Knowledge Audit:** RM300-RM1000 (one-time)\n- **Stage 2 \u2014 Continuous Memory Service:** RM300-RM1000/month\n- **Stage 3 \u2014 SaaS:** Only after 10+ paying customers, clear repeatable workflow, proven retention.\n\n## Strategic Principle\n\nDo not optimize for software. Optimize for customer outcomes. Use Hermes + GBrain internally as operational infrastructure. The platform emerges from repeated customer success, not from building features first.\n\n## North Star\n\nBecome the memory layer for small organizations. Long-term vision: Communication \u2192 Knowledge Graph \u2192 Institutional Memory \u2192 Organizational Intelligence.\n\n## Related\n\n- [[Hermes Agent]] \u2014 Operational infrastructure for the service\n- [[gbrain]] \u2014 Knowledge base platform powering the service",
+      "tags": [
+        "memory-os",
+        "prd",
+        "product"
+      ],
+      "links_out": [
+        {
+          "to": "concepts/hermes-agent",
+          "type": "wikilink",
+          "text": "Hermes Agent"
+        },
+        {
+          "to": "gbrain",
+          "type": "wikilink",
+          "text": "gbrain"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 2,
+      "inbound_count": 0
+    },
+    {
       "slug": "concepts/dashboard-composer-test",
       "title": "Dashboard Composer Test",
       "type": "concept",
@@ -4052,13 +4124,18 @@
           "text": "Hermes Agent"
         },
         {
+          "from": "concepts/company-memory-os-prd-msg-19eaa49d639a6a73",
+          "type": "wikilink",
+          "text": "Hermes Agent"
+        },
+        {
           "from": "newsletters/ai-garage-weekly-2026-06-20",
           "type": "wikilink",
           "text": "Hermes Agent"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 3
+      "inbound_count": 4
     },
     {
       "slug": "concepts/hermes-profile-backup",
@@ -5863,6 +5940,11 @@
           "text": "gbrain"
         },
         {
+          "from": "concepts/company-memory-os-prd-msg-19eaa49d639a6a73",
+          "type": "wikilink",
+          "text": "gbrain"
+        },
+        {
           "from": "concepts/google-workspace-setup",
           "type": "wikilink",
           "text": "gbrain"
@@ -5874,7 +5956,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 5
+      "inbound_count": 6
     },
     {
       "slug": "google-workspace-setup",
@@ -10103,6 +10185,11 @@
           "text": "Zaim Mohzani"
         },
         {
+          "from": "concepts/3-month-career-pivot-framework-msg-19eca58bcdb09c70",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
           "from": "concepts/3-month-career-pivot-framework",
           "type": "wikilink",
           "text": "Zaim Mohzani"
@@ -10149,7 +10236,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 13
+      "inbound_count": 14
     },
     {
       "slug": "persons/tonbi",
@@ -10923,6 +11010,16 @@
       "type": "wikilink"
     },
     {
+      "source": "concepts/3-month-career-pivot-framework-msg-19eca58bcdb09c70",
+      "target": "people/zaim-mohzani",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/3-month-career-pivot-framework-msg-19eca58bcdb09c70",
+      "target": "companies/ksi-strategic-institute",
+      "type": "wikilink"
+    },
+    {
       "source": "concepts/3-month-career-pivot-framework",
       "target": "people/zaim-mohzani",
       "type": "wikilink"
@@ -11065,6 +11162,16 @@
     {
       "source": "concepts/company-memory-os-ph1-prd",
       "target": "people/sayf-codes",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/company-memory-os-prd-msg-19eaa49d639a6a73",
+      "target": "concepts/hermes-agent",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/company-memory-os-prd-msg-19eaa49d639a6a73",
+      "target": "gbrain",
       "type": "wikilink"
     },
     {
@@ -12470,13 +12577,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 70,
+    "brain_checks_score": 90,
     "category_scores": {
-      "brain": 95,
+      "brain": 90,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -12506,32 +12613,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -12543,11 +12628,12 @@
       },
       {
         "name": "extract_atoms_backlog",
-        "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "status": "warn",
+        "message": "25 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 0,
+          "backlog": 25,
           "pack_declares_phase": false,
+          "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
         "category": "brain"
@@ -12555,7 +12641,7 @@
       {
         "name": "conversation_format_coverage",
         "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "message": "12 pages: bold-name-no-time=11, _no_match=1",
         "category": "brain"
       },
       {
@@ -12579,7 +12665,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 341 pages",
         "category": "ops"
       },
       {
@@ -12615,7 +12701,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 397ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -12633,25 +12719,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 88%, timeline 69%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 80 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 341 pages; 37 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -12812,7 +12898,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 9/341 pages (3%) stale",
+        "details": {
+          "total": 341,
+          "stale": 9,
+          "pct": 3,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -12824,7 +12918,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -12836,7 +12930,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "184 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -12848,7 +12942,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "39.6% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -12890,7 +12984,7 @@
       {
         "name": "oauth_confidential_client_health",
         "status": "ok",
-        "message": "No OAuth clients registered",
+        "message": "4 OAuth client(s) registered; all auth shapes consistent",
         "category": "ops"
       },
       {
@@ -12951,13 +13045,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 89% \u00b1 3.5%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 70% \u00b1 5.1% (target 90%)",
         "category": "meta"
       },
       {
@@ -12975,7 +13069,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "10 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
