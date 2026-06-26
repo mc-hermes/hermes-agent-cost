@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-06-26T15:06:36Z",
+  "updated_at": "2026-06-26T15:32:23Z",
   "summary": {
     "score": "81",
     "score_label": "/100",
     "score_breakdown": "score 81/100, embed 35/35, links 25/25, timeline 3/15, orphans 8/15, dead-links 10/10",
-    "page_count": 372,
+    "page_count": 374,
     "embed_coverage": "100% coverage, 0 missing",
-    "graph_coverage": "39.8% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "graph_coverage": "39.6% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
     "entity_links": "Coverage 91% \u00b1 3.2%",
-    "concept_count": 133,
+    "concept_count": 134,
     "meeting_count": 15,
     "person_count": 48,
     "company_count": 33,
-    "newsletter_count": 88,
+    "newsletter_count": 89,
     "video_count": 0,
     "article_count": 20,
     "bookmark_count": 31,
@@ -4092,6 +4092,18 @@
       "inbound_count": 0
     },
     {
+      "slug": "concepts/invoices-safekeeping-2026-06-26",
+      "title": "Invoices Safekeeping 2026 06 26",
+      "type": "concept",
+      "updated": "",
+      "body": "# Invoices for Safekeeping \u2014 June 2026\n\n**Source:** Email from Sayf <sayfti@gmail.com> re: invoices for safekeeping, 2026-06-26\n**Source URI:** gmail://msg_19f043c6fa8031b9\n**Ingested:** 2026-06-26T15:30:00Z\n**Provenance:** Forwarded by sayf from sayfti@gmail.com to info@malohacoast.com\n\n## Attachments\n\n| File | Size | Path |\n|------|------|------|\n| invoice-MC-2026-003.pdf | 98 KB | `~/.workspace/inbox/invoices/invoice-MC-2026-003.pdf` |\n| MC-2026-001_Invoice_BBB (1).pdf | 63 KB | `~/.workspace/inbox/invoices/MC-2026-001_Invoice_BBB (1).pdf` |\n\nBoth invoices received from sayf for safekeeping. PDFs preserved at workspace paths above.",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "concepts/karpathy-llm-wiki-pattern-2026-06-20",
       "title": "Karpathy Llm Wiki Pattern 2026 06 20",
       "type": "concept",
@@ -7682,6 +7694,18 @@
       "type": "newsletter",
       "updated": "",
       "body": "# OpenRouter: What Shipped in May 2026\n\n**Source:** email\n**Source URI:** gmail://msg_19e94ddbf92825b4\n**Ingested:** 2026-06-21T04:30:00Z\n**Provenance:** OpenRouter Team newsletter to info@malohacoast.com, 2026-06-04\n\nSpend limits, prompt-injection blocking, voice in/out, and one answer from many models. Major May 2026 release recap.\n\n## Platform Features\n\n1. **Workspace Guardrails** \u2014 Centralized security and governance. Set per-member and per-key spend limits, lock traffic to model/provider allowlist, enforce zero data retention, block prompt injection (30+ OWASP patterns), redact PII. Layer rules into one guardrail or scope to specific keys/members.\n2. **Speech and Transcription APIs** \u2014 Text-to-speech and speech-to-text through the same API key. Speech-to-text: Whisper, GPT-4o Mini Transcribe, Voxtral. Provider failover built in.\n3. **Model Fusion** \u2014 Route one prompt to multiple models in parallel and synthesize responses into a single, higher-quality answer. Runs as API plugin, server tool, and in chatroom composer.\n4. **Private Models (Enterprise)** \u2014 Route to custom, fine-tuned, or dedicated endpoints through standard completions/responses API.\n5. **Pareto Code Router** \u2014 Set `min_coding_score` and route to the cheapest code-capable model clearing your bar.\n\n## Also Shipped\n\n- IP allowlist enforcement (403 on unauthorized requests)\n- BYOK management API for provider keys\n- Observability destinations API (Datadog, Langfuse, LangSmith)\n- Per-provider ZDR toggles\n- Copy guardrails across workspaces\n- Model comparison page (up to 5 models side-by-side)\n- Presets API with Anthropic Messages and Responses skins\n- Human-in-the-loop tools (SDK tool type that pauses for human input)\n- Session stickiness (same provider/model across turns for cache hits)\n- Auto router `cost_quality_tradeoff` dial (0-10)\n\n## New Models\n\n20 launched in May: Claude Opus 4.8, Gemini 3.5 Flash, Grok 4.3, Qwen3.7 Max, Grok Imagine Video, Recraft V3/V4/V4 Pro, and more.\n\n## Business\n\nOpenRouter raised $113M Series B led by CapitalG. Crossed 100 trillion tokens/month.\n\n[Source: OpenRouter Team newsletter, 2026-06-04](https://openrouter.ai/announcements/may-release-spotlight)",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "newsletters/openrouter-model-fusion-2026-06-24",
+      "title": "Openrouter Model Fusion 2026 06 24",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# OpenRouter Model Fusion: Multi-Model Deep Research at Half the Cost\n\n**Source:** Email (OpenRouter Team)\n**Source URI:** gmail://msg_19ef9f9bd5c77629\n**Ingested:** 2026-06-26T15:30:00Z\n**Provenance:** Forwarded to info@malohacoast.com\n\nOpenRouter's mid-June 2026 newsletter covers three major feature launches and six new models, all aimed at lower cost per answer.\n\n## Key Features\n\n### 1. Fusion: Multi-Model Deep Research\nFans a single API call across a panel of up to 8 models and synthesizes the answers. On deep-research benchmarks, produces strong results at lower cost than a single frontier model. Each panel model and the judge run with web search by default. The judge maps agreement/conflict/catch points rather than majority-voting.\n\nCall as the `openrouter/fusion` model slug, or let any model invoke it as a server tool. Still experimental for coding agents and general chat \u2014 best for research-heavy use cases.\n\n### 2. Server Tools: Advisor and Subagent\n- **Advisor:** Lets your model consult a stronger one only when stuck. Now supports multiple named advisors, memory across requests, and streaming.\n- **Subagent:** Hands self-contained subtasks to a smaller, faster worker model mid-generation, so the expensive model doesn't do routine work.\n\n### 3. Sharper Models API\nFilter catalog by price, modality, context, and provider. Compare benchmark scores on every model page. Single-model detail by author and slug.\n\n## New Models\n\n| Model | Context | Price/1M in | Price/1M out | Notes |\n|-------|---------|-------------|--------------|-------|\n| GLM 5.2 (z-ai/glm-5.2) | 1M tokens | $1.40 | $4.40 | Flagship reasoning model for long-horizon agent work |\n| Kimi K2.7 Code (moonshotai/kimi-k2.7-code) | 262K | $0.74 | $3.50 | Coding model, long context without long-context pricing |\n| Qwen 3.7 Plus (qwen/qwen3.7-plus) | 1M | $0.32 | $1.28 | Cheap workhorse generalist |\n| Nemotron-3 Ultra 550B (nvidia/nemotron-3-ultra-550b-a55b) | 1M | $0.50 | $2.20 | NVIDIA open-weight, free endpoint available |\n| Nemotron 3.5 Content Safety (nvidia/nemotron-3.5-content-safety:free) | - | Free | Free | Guardrail model, moderate inputs/responses |\n\n## Battle Royale Insight\nEleven models in 30 rounds: the cheapest model won the most games, and the model you'd actually ship was a different one. Benchmarks and real-task fit are different things.\n\n## Blog Posts\n- \"Eleven LLMs in a battle royale simulation\" \u2014 why benchmark rank and real-task fit come apart\n- \"Dinner is Served\" \u2014 case for multi-model routing over single-model standardization\n- \"How OpenRouter model routing works\" \u2014 load balancing, shortcuts, Auto Router\n\n## BYOK Pricing Update\nEffective July 1, 2026: Free tier changes from 1M requests/month to $25,000 of list-price inference/month. 5% fee above free tier unchanged.\n\n## Relevance to Maloha Coast\nOpenRouter is a key provider for Hermes Agent operations. Fusion is directly relevant for sayf's research workflows. The new models (especially Qwen 3.7 Plus at $0.32/$1.28 for 1M context) and the Advisor/Subagent server tools mirror Hermes' own delegation patterns.",
       "tags": [],
       "links_out": [],
       "backlinks": [],
@@ -12333,7 +12357,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 329 pages",
+        "message": "Connected, 331 pages",
         "category": "ops"
       },
       {
@@ -12369,7 +12393,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 2728ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 585ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -12405,7 +12429,7 @@
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 329 pages; 37 external link(s) (no bare tweets).",
+        "message": "Sampled 331 pages; 37 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -12566,11 +12590,11 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction current: 0/329 pages (0%) stale",
+        "message": "Extraction current: 2/331 pages (1%) stale",
         "details": {
-          "total": 329,
-          "stale": 0,
-          "pct": 0,
+          "total": 331,
+          "stale": 2,
+          "pct": 1,
           "warn_pct": 20,
           "fail_pct": null,
           "source_id": null
@@ -12598,7 +12622,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "221 reranker failure(s) in last 7 days (below threshold)",
+        "message": "218 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -12610,7 +12634,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "39.8% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "39.6% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
