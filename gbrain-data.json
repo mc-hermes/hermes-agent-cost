@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-06-26T01:00:26Z",
+  "updated_at": "2026-06-26T01:23:25Z",
   "summary": {
-    "score": "92",
+    "score": "82",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
+    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
     "page_count": 365,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "39.2% of pages have inbound links",
-    "entity_links": "Coverage \u2014 48 people, 33 companies indexed",
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "40.7% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 91% \u00b1 3.2%",
     "concept_count": 131,
     "meeting_count": 14,
     "person_count": 48,
@@ -26,7 +26,19 @@
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
+    "score_components": {
+      "score": "82/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "3/15",
+      "orphans": "9/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 67,
+    "checks_warned": 6,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -12246,13 +12258,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 70,
+    "brain_checks_score": 90,
     "category_scores": {
-      "brain": 95,
+      "brain": 90,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -12282,32 +12294,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -12319,11 +12309,12 @@
       },
       {
         "name": "extract_atoms_backlog",
-        "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "status": "warn",
+        "message": "23 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 0,
+          "backlog": 23,
           "pack_declares_phase": false,
+          "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
         "category": "brain"
@@ -12331,7 +12322,7 @@
       {
         "name": "conversation_format_coverage",
         "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "message": "10 pages: bold-name-no-time=9, _no_match=1",
         "category": "brain"
       },
       {
@@ -12355,7 +12346,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 322 pages",
         "category": "ops"
       },
       {
@@ -12391,7 +12382,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 957ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -12409,25 +12400,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 90%, timeline 68%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 78 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 322 pages; 37 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -12588,7 +12579,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 2/322 pages (1%) stale",
+        "details": {
+          "total": 322,
+          "stale": 2,
+          "pct": 1,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -12600,7 +12599,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -12612,7 +12611,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "232 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -12624,7 +12623,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "40.7% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -12666,7 +12665,7 @@
       {
         "name": "oauth_confidential_client_health",
         "status": "ok",
-        "message": "No OAuth clients registered",
+        "message": "4 OAuth client(s) registered; all auth shapes consistent",
         "category": "ops"
       },
       {
@@ -12727,13 +12726,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 91% \u00b1 3.2%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 69% \u00b1 5.2% (target 90%)",
         "category": "meta"
       },
       {
@@ -12751,7 +12750,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "10 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
