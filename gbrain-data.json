@@ -1,32 +1,44 @@
 {
-  "updated_at": "2026-06-26T17:00:38Z",
+  "updated_at": "2026-06-26T17:19:46Z",
   "summary": {
-    "score": "92",
+    "score": "82",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 375,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "38.4% of pages have inbound links",
-    "entity_links": "Coverage \u2014 48 people, 33 companies indexed",
+    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
+    "page_count": 379,
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "40.1% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 89% \u00b1 3.5%",
     "concept_count": 134,
     "meeting_count": 15,
     "person_count": 48,
-    "company_count": 33,
+    "company_count": 35,
     "newsletter_count": 90,
     "video_count": 0,
     "article_count": 20,
     "bookmark_count": 31,
     "quote_count": 0,
-    "dataset_count": 2,
+    "dataset_count": 4,
     "digest_count": 2,
-    "total_links": 400,
-    "outbound_count": 502,
-    "inbound_count": 467,
+    "total_links": 402,
+    "outbound_count": 504,
+    "inbound_count": 469,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
+    "score_components": {
+      "score": "82/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "3/15",
+      "orphans": "9/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 67,
+    "checks_warned": 6,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -1509,6 +1521,24 @@
       "inbound_count": 9
     },
     {
+      "slug": "companies/beard-brothers-bbq",
+      "title": "Beard Brothers BBQ",
+      "type": "company",
+      "updated": "",
+      "body": "# Beard Brothers BBQ\n\n> AI consultancy client of Maloha Coast Sdn Bhd \u2014 operational audit and dashboard prototype project.\n\n## In Maloha Coast Knowledge\n\n- [[Invoice Mc 2026 001 Bbb]] \u2014 Invoice MC-2026-001 for RM 10,000 (Phase 0 milestone)\n\n## Related\n\n- [[Invoice Mc 2026 001 Bbb]] \u2014 RM 10,000 invoice for Phase 0 milestone\n\n## Timeline\n\n- **2026-06-16** | Invoice MC-2026-001 issued for RM 10,000 \u2014 Phase 0 (Operational Audit & Dashboard Prototype) completed. First milestone of RM40,000 build scope. Due June 30, 2026. [Source: gmail://msg_19f043c6fa8031b9]",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "datasets/invoice-mc-2026-001-bbb",
+          "type": "wikilink",
+          "text": "Invoice Mc 2026 001 Bbb"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
+      "inbound_count": 0
+    },
+    {
       "slug": "companies/beehiiv",
       "title": "beehiiv",
       "type": "company",
@@ -2433,6 +2463,24 @@
       ],
       "outbound_count": 5,
       "inbound_count": 11
+    },
+    {
+      "slug": "companies/rapidscreen-sdn-bhd",
+      "title": "RapidScreen Sdn Bhd",
+      "type": "company",
+      "updated": "",
+      "body": "# RapidScreen Sdn Bhd\n\n> Client of Maloha Coast Sdn Bhd \u2014 purchased a 2.5-hour teaching session.\n\n## In Maloha Coast Knowledge\n\n- [[Invoice Mc 2026 003 Rapidscreen]] \u2014 Invoice MC-2026-003 for RM 250 (teaching session)\n\n## Related\n\n- [[Invoice Mc 2026 003 Rapidscreen]] \u2014 RM 250 invoice for teaching session\n\n## Timeline\n\n- **2026-06-26** | Invoiced for 2.5-hour teaching session (parking & petrol inclusive), RM 250. Total due by July 10, 2026. [Source: gmail://msg_19f043c6fa8031b9]",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "datasets/invoice-mc-2026-003-rapidscreen",
+          "type": "wikilink",
+          "text": "Invoice Mc 2026 003 Rapidscreen"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
+      "inbound_count": 0
     },
     {
       "slug": "companies/single-brain",
@@ -5414,6 +5462,42 @@
         }
       ],
       "outbound_count": 2,
+      "inbound_count": 1
+    },
+    {
+      "slug": "datasets/invoice-mc-2026-001-bbb",
+      "title": "Invoice Mc 2026 001 Bbb",
+      "type": "dataset",
+      "updated": "",
+      "body": "# Invoice MC-2026-001 \u2014 Beard Brothers BBQ\n\n**Source:** Email\n**Source URI:** gmail://msg_19f043c6fa8031b9\n**Ingested:** 2026-06-27T00:00:00Z\n**Provenance:** Forwarded by sayf from sayfti@gmail.com on 2026-06-26\n\n## Invoice Details\n\n- **Invoice #:** MC-2026-001\n- **Issue Date:** June 16, 2026\n- **Due Date:** June 30, 2026\n- **Terms:** Net 14\n- **Bill To:** Beard Brothers BBQ, Attn: Accounts / Owner, Kuala Lumpur, Malaysia\n- **From:** Maloha Coast Sdn Bhd, Sayf Ismail, sayfti@gmail.com\n\n## Project: Beard Brothers BBQ \u00d7 Maloha Coast \u2014 Going AI-First\n\n**Billing basis:** Milestone-based \u2014 Phase 0 (25% of RM40,000 build)\n\n| # | Description | Qty | Unit Price (MYR) | Amount (MYR) |\n|---|---|---|---|---|\n| 1 | Phase 0 \u2014 Operational Audit & Dashboard Prototype. Weeks 1\u20134. Root-cause diagnosis, checkout/reservation review, dashboard prototype, implementation roadmap. Milestone billing: 25% of RM40,000 build scope. | 1 | 10,000.00 | 10,000.00 |\n\n- **Subtotal:** RM 10,000.00\n- **SST (0%):** RM 0.00\n- **Amount Due:** RM 10,000.00\n\n## Payment Details\n\n- **Beneficiary:** Maloha Coast Sdn Bhd\n- **Bank:** Maybank\n- **Account No:** 5628 6115 7195\n- **Reference:** MC-2026-001 / BBB\n\n## Notes\n\n- This invoice covers completed Phase 0 milestone work (operational audit + dashboard prototype)\n- Remaining build balance will be invoiced against Phase 1\u20133 milestones per the signed proposal\n\n## Raw Source\n\nInvoice PDF saved at `~/.workspace/inbox/datasets/MC-2026-001_Invoice_BBB (1).pdf`",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "companies/beard-brothers-bbq",
+          "type": "wikilink",
+          "text": "Invoice Mc 2026 001 Bbb"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 1
+    },
+    {
+      "slug": "datasets/invoice-mc-2026-003-rapidscreen",
+      "title": "Invoice Mc 2026 003 Rapidscreen",
+      "type": "dataset",
+      "updated": "",
+      "body": "# Invoice MC-2026-003 \u2014 RapidScreen Sdn Bhd\n\n**Source:** Email\n**Source URI:** gmail://msg_19f043c6fa8031b9\n**Ingested:** 2026-06-27T00:00:00Z\n**Provenance:** Forwarded by sayf from sayfti@gmail.com on 2026-06-26\n\n## Invoice Details\n\n- **Invoice #:** MC-2026-003\n- **Issue Date:** June 26, 2026\n- **Due Date:** July 10, 2026\n- **Bill To:** RapidScreen Sdn Bhd, Level 6, 12 Jalan Pinang, Danial@rapidscreen.io, +44 7948 234472\n- **From:** Maloha Coast Sdn Bhd, Kuala Lumpur, Malaysia\n\n## Line Items\n\n| Description | Qty | Rate (RM) | Amount (RM) |\n|---|---|---|---|\n| Teaching Session \u2014 2.5 hours (parking & petrol inclusive) | 1 | 250 | 250 |\n\n**Total Due:** RM 250.00\n\n## Payment Details\n\n- **Beneficiary:** Maloha Coast Sdn Bhd\n- **Bank:** Maybank\n- **Account No:** 5628 6115 7195\n- **Reference:** MC-2026-003 / RAP\n\n## Raw Source\n\nInvoice PDF saved at `~/.workspace/inbox/datasets/invoice-MC-2026-003.pdf`",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "companies/rapidscreen-sdn-bhd",
+          "type": "wikilink",
+          "text": "Invoice Mc 2026 003 Rapidscreen"
+        }
+      ],
+      "outbound_count": 0,
       "inbound_count": 1
     },
     {
@@ -10595,6 +10679,11 @@
       "type": "wikilink"
     },
     {
+      "source": "companies/beard-brothers-bbq",
+      "target": "datasets/invoice-mc-2026-001-bbb",
+      "type": "wikilink"
+    },
+    {
       "source": "companies/beehiiv",
       "target": "companies/ai-automation-society",
       "type": "wikilink"
@@ -10727,6 +10816,11 @@
     {
       "source": "companies/posh-corporate",
       "target": "people/audrey-loh",
+      "type": "wikilink"
+    },
+    {
+      "source": "companies/rapidscreen-sdn-bhd",
+      "target": "datasets/invoice-mc-2026-003-rapidscreen",
       "type": "wikilink"
     },
     {
@@ -12330,6 +12424,7 @@
       "companies/ai-automation-society",
       "companies/ai-garage-weekly",
       "companies/anthropic",
+      "companies/beard-brothers-bbq",
       "companies/beehiiv",
       "companies/blackgrid-digital",
       "companies/coda-payments",
@@ -12351,6 +12446,7 @@
       "companies/openrouter",
       "companies/passend",
       "companies/posh-corporate",
+      "companies/rapidscreen-sdn-bhd",
       "companies/single-brain",
       "companies/single-grain",
       "companies/solo-satoshi",
@@ -12365,13 +12461,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 70,
+    "brain_checks_score": 90,
     "category_scores": {
-      "brain": 95,
+      "brain": 90,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -12401,32 +12497,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -12438,11 +12512,12 @@
       },
       {
         "name": "extract_atoms_backlog",
-        "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "status": "warn",
+        "message": "24 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 0,
+          "backlog": 24,
           "pack_declares_phase": false,
+          "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
         "category": "brain"
@@ -12450,7 +12525,7 @@
       {
         "name": "conversation_format_coverage",
         "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "message": "11 pages: bold-name-no-time=10, _no_match=1",
         "category": "brain"
       },
       {
@@ -12474,7 +12549,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 337 pages",
         "category": "ops"
       },
       {
@@ -12510,7 +12585,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 879ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -12528,25 +12603,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 88%, timeline 69%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 80 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 337 pages; 37 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -12707,7 +12782,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 5/337 pages (1%) stale",
+        "details": {
+          "total": 337,
+          "stale": 5,
+          "pct": 1,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -12719,7 +12802,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -12731,7 +12814,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "206 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -12743,7 +12826,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "40.1% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -12785,7 +12868,7 @@
       {
         "name": "oauth_confidential_client_health",
         "status": "ok",
-        "message": "No OAuth clients registered",
+        "message": "4 OAuth client(s) registered; all auth shapes consistent",
         "category": "ops"
       },
       {
@@ -12846,13 +12929,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 89% \u00b1 3.5%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 70% \u00b1 5.1% (target 90%)",
         "category": "meta"
       },
       {
@@ -12870,7 +12953,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "10 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {

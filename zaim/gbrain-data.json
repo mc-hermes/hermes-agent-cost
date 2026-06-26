@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-26T17:00:47Z",
+  "updated_at": "2026-06-26T17:19:55Z",
   "summary": {
     "page_count": 44,
     "people_count": 4,
@@ -1156,7 +1156,7 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-26T17:00:47Z",
+      "ts": "2026-06-26T17:19:55Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
@@ -1239,14 +1239,6 @@
       "ts": "2026-06-23T00:00:00Z",
       "source": "page",
       "stage": "updated",
-      "slug": "concepts/15-minute-gap-method-2026-06-14",
-      "detail": "15 Minute Gap Method 2026 06 14",
-      "level": "info"
-    },
-    {
-      "ts": "2026-06-23T00:00:00Z",
-      "source": "page",
-      "stage": "updated",
       "slug": "concepts/coaching-client-aisyah-rahim-2026-06-15",
       "detail": "Coaching Client Aisyah Rahim 2026 06 15",
       "level": "info"
@@ -1255,24 +1247,8 @@
       "ts": "2026-06-23T00:00:00Z",
       "source": "page",
       "stage": "updated",
-      "slug": "concepts/zaim-15-minute-gap-method-2026-06-15",
-      "detail": "Zaim 15 Minute Gap Method 2026 06 15",
-      "level": "info"
-    },
-    {
-      "ts": "2026-06-23T00:00:00Z",
-      "source": "page",
-      "stage": "updated",
       "slug": "concepts/zaim-ksi-15-minute-rule-2026-06-14",
       "detail": "Zaim Ksi 15 Minute Rule 2026 06 14",
-      "level": "info"
-    },
-    {
-      "ts": "2026-06-23T00:00:00Z",
-      "source": "page",
-      "stage": "updated",
-      "slug": "people/aisyah-rahim",
-      "detail": "Aisyah Rahim",
       "level": "info"
     }
   ]
