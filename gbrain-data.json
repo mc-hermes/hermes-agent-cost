@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-06-26T13:00:36Z",
+  "updated_at": "2026-06-26T13:08:33Z",
   "summary": {
-    "score": "92",
+    "score": "81",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
+    "score_breakdown": "score 81/100, embed 35/35, links 25/25, timeline 3/15, orphans 8/15, dead-links 10/10",
     "page_count": 371,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "38.5% of pages have inbound links",
-    "entity_links": "Coverage \u2014 48 people, 33 companies indexed",
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "39.9% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 91% \u00b1 3.2%",
     "concept_count": 133,
     "meeting_count": 15,
     "person_count": 48,
@@ -19,14 +19,26 @@
     "quote_count": 0,
     "dataset_count": 1,
     "digest_count": 2,
-    "total_links": 402,
-    "outbound_count": 501,
-    "inbound_count": 466,
+    "total_links": 396,
+    "outbound_count": 495,
+    "inbound_count": 460,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 81/100 (embed 35/35, links 25/25, timeline 3/15, orphans 8/15, dead-links 10/10)",
+    "score_components": {
+      "score": "81/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "3/15",
+      "orphans": "8/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 67,
+    "checks_warned": 6,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -792,7 +804,7 @@
       "title": "Humanlayer Launch 2026 06 18",
       "type": "bookmark",
       "updated": "",
-      "body": "# HumanLayer // We're live \u2014 come build with us\n\n**Source:** email (sayf forward of dex at humanlayer launch email)\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-25T04:20:00Z\n**Provenance:** Forwarded by sayf from dexter@hey.humanlayer.dev, 2026-06-19\n\nHumanLayer is an Agentic IDE and collaboration platform where engineering teams design complex systems with their AI agents **before** generating a single line of code. Built by Dex and Kyle (creators of the open-source RPI framework now running inside Block and Uber).\n\n## Key Points\n\n- **The problem:** Teams were shipping \"slop\" \u2014 code without design review. RPI addressed this.\n- **The solution:** HumanLayer brings the missing design-review phase into a single platform \u2014 an Agentic IDE + collaboration layer.\n- **Claims 2-3x speed** across the full SDLC, not just coding.\n- **Bring your own subscription** \u2014 plug in Claude, Codex, or other API keys. No separate token billing.\n- **Starter plan is free** for teams < 3.\n\n## Core Idea\n\n> \"Don't outsource the thinking. Great teams have run design reviews for decades because there's enormous leverage in collaborating on system design before you write the code.\"\n\n## Founders\n\n- **Dex** (dex at humanlayer) \u2014 open-source RPI framework creator\n- **Kyle** \u2014 co-founder",
+      "body": "# HumanLayer // We're Live \u2014 Come Build With Us\n\n**Source:** email\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-26T14:00:00Z\n**Provenance:** Forwarded by sayf on 2026-06-19\n\nHey there\u2014 you're getting this because you're on the HumanLayer waitlist. The wait is over: today we're opening up HumanLayer to everyone.\n\nhumanlayer.com \u2014 the Starter plan is free for teams of fewer than three.\n\nThe year of no more slop.\n\nFor the last year, Kyle and I have been pushing the limits of what coding agents can do \u2014 first with our open-source Research, Plan, Implement (RPI) framework (now running inside Fortune 500s like Block and Uber), and now with the product we've been building on top of all of it.\n\nHumanLayer is an Agentic IDE, collaboration platform, and building blocks for your software factory \u2014 where engineering teams design complex systems with their AI agents before generating a single line of code. It lets engineers:\n- move 2-3x faster across the entire SDLC (not just the coding part)\n- maintain rigorous standards for system architecture and program design\n\nThe core idea: don't outsource the thinking. Great teams have run design reviews for decades because there's enormous leverage in collaborating on system design before you write the code. We bring that missing piece of the software factory into one place.\n\nBring your own subscription \u2014 plug in your Claude, Codex, and other AI subscriptions or API keys. No separate per-token bill.\n\nLaunch post on X: https://x.com/dexhorthy/status/2067286892786454855\nLaunch post on LinkedIn: https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U\n\nBlurb URL for others: https://humanlayer.com/launch/blurb.md",
       "tags": [],
       "links_out": [],
       "backlinks": [],
@@ -2639,11 +2651,6 @@
           "text": "System Design One"
         },
         {
-          "from": "newsletters/anatomy-of-openclaw-2026-06-08",
-          "type": "wikilink",
-          "text": "System Design One"
-        },
-        {
           "from": "newsletters/msg-19ee2580f5fe7903",
           "type": "wikilink",
           "text": "companies/system-design-one|System Design One"
@@ -2680,7 +2687,7 @@
         }
       ],
       "outbound_count": 6,
-      "inbound_count": 13
+      "inbound_count": 12
     },
     {
       "slug": "companies/thompson-legal",
@@ -3302,15 +3309,10 @@
           "from": "concepts/openclaw",
           "type": "wikilink",
           "text": "ClawHub"
-        },
-        {
-          "from": "newsletters/anatomy-of-openclaw-2026-06-08",
-          "type": "wikilink",
-          "text": "ClawHub"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 2
+      "inbound_count": 1
     },
     {
       "slug": "concepts/client-aisyah-rahim-2026-06-15",
@@ -4422,15 +4424,10 @@
           "from": "concepts/clawhub",
           "type": "wikilink",
           "text": "OpenClaw"
-        },
-        {
-          "from": "newsletters/anatomy-of-openclaw-2026-06-08",
-          "type": "wikilink",
-          "text": "OpenClaw"
         }
       ],
       "outbound_count": 4,
-      "inbound_count": 2
+      "inbound_count": 1
     },
     {
       "slug": "concepts/openrouter-auto-model-routing-2026-06-10",
@@ -6530,24 +6527,13 @@
       "title": "30 Core Agentic Engineering Concepts 2026 06 17",
       "type": "newsletter",
       "updated": "",
-      "body": "# 30 Core Agentic Engineering Concepts, Explained Simply\n\n**Source:** email (System Design One / Neo Kim)\n**Source URI:** gmail://msg_19ee2580f5fe7903\n**Ingested:** 2026-06-26T06:00:00Z\n**Provenance:** Forwarded by Sayf Codes on 2026-06-20\n\nSystem Design One #154: What an agent is, how to configure one, when to use multiple, and how to keep them from doing damage. By [[Neo Kim]] with guest author [[Paul Hoekstra]] (data engineer at Digital Power).\n\n## Key Ideas\n\n- **Learn ideas, not tools.** The pace of AI tooling is unsustainable. Learn frameworks underneath.\n- **An agent is an LLM that runs in a loop, has tool access, and decides what to do next.**\n- **Think-Act-Observe loop** (ReAct pattern): read state \u2192 emit tool call \u2192 observe result \u2192 iterate.\n- **State:** context window (temporary) vs everything outside it (files, DB, memory). Files = right default.\n- **Common patterns:** Planner/Executor, Router/Specialist, Map-Reduce parallelism.\n\n## Configuration Layer\n- Agent config files (CLAUDE.md/AGENTS.md): Keep under 100 lines, specific not generic.\n- Reusable workflow files (skills/rules): YAML frontmatter + markdown. SkillsBench: Haiku+skills (27.7%) beat Opus without (22.0%).\n- Workflow frameworks: Superpowers, Get Shit Done, Compound Engineering.\n- Prompt caching & Context rot: Model performance drops at high token counts.\n\n**Source:** email from Sayf Codes forwarding System Design One newsletter, 2026-06-20",
+      "body": "# 30 Core Agentic Engineering Concepts, Explained Simply\n\n**Source:** email\n**Source URI:** gmail://msg_19ee2580f5fe7903\n**Ingested:** 2026-06-26T14:00:00Z\n**Provenance:** Forwarded by sayf on 2026-06-20\n\n#154: What an agent is, how to configure one, when to use multiple, and how to keep them from doing damage.\n\n\ud83d\udc4b Hey, it's Neo\u2026 This is a special free edition of this newsletter. To get every post and other paid subscriber benefits, upgrade your subscription right now.\n\n30 Core Agentic Engineering Concepts, Explained Simply\n\nNeo Kim and Paul Hoekstra\nJun 17\n\nHow do you keep up with agentic engineering when a new tool ships every week?\nYou do not\u2026 You learn the ideas behind the tools, and let the tools come and go.\n\nBy the end of this newsletter, you can read any agent post or news drop and see which of these ideas it actually covers.\n\nFoundations:\n1. What is an agent? An LLM that runs in a loop, has access to tools, and decides what to do next. Use when: task is open-ended, the next step depends on the last result, you cannot script the path in advance. Skip when a single prompt or script will do.\n2. Execution model: Three steps repeated \u2014 think, act, observe (ReAct pattern). The model reads state, emits a tool call, observes the result. This is why an agent can recover from its own mistakes.\n3. Agent state: Context window (everything the model can see) vs everything outside it (files, memory, knowledge the agent queries but never owns). Files are the right default for state.\n4. Common agent patterns: Planner/executor, router/specialist, map-reduce parallelism. Patterns can be combined.\n\nConfiguration Layer:\n5. Agent config files (CLAUDE.md / AGENTS.md) \u2014 project-level markdown loaded every session. Short and specific, under 100 lines, treated as code.\n6. Reusable workflow files \u2014 on-demand skills with YAML frontmatter. SkillsBench showed Haiku with curated skills beat Opus without them (27.7% vs 22.0%).\n7. Workflow frameworks \u2014 Superpowers (skills library + HARD-GATE), Get Shit Done (slash commands), Compound Engineering (Plan/Work/Review/Compound phases).\n8. Prompt caching \u2014 stores stable prefix for cheap re-read in later turns. Changes the economics of long config files.\n9. Context rot \u2014 model performance drops as context fills. GPT-5.5 drops from 98.1% to 74.0% at 1M tokens.\n\nCapability Layer (10-15): Live documentation, AI-native search, long-term memory, query-only knowledge, context window management, testing/validation strategies.\nOrchestration Layer (16-20): Multi-agent coordination, worktrees for conflict avoidance, subagents with fresh context, routing, cost governance.\nGuardrails Layer (21-25): Sandboxing, permissions, hooks, commit gates, rate limits, tool governance.\nObservability Layer (26-30): Tracing, logging, replay, token usage tracking, custom dashboards, feedback loops for continuous improvement.\n\nBy the end: you can read any agent post and see which ideas it covers.",
       "tags": [
         "sayf"
       ],
-      "links_out": [
-        {
-          "to": "people/neo-kim",
-          "type": "wikilink",
-          "text": "Neo Kim"
-        },
-        {
-          "to": "people/paul-hoekstra",
-          "type": "wikilink",
-          "text": "Paul Hoekstra"
-        }
-      ],
+      "links_out": [],
       "backlinks": [],
-      "outbound_count": 2,
+      "outbound_count": 0,
       "inbound_count": 0
     },
     {
@@ -6811,36 +6797,15 @@
       "title": "Anatomy Of Openclaw 2026 06 08",
       "type": "newsletter",
       "updated": "",
-      "body": "# The Anatomy of OpenClaw\n\n**Source:** Email ([[System Design One]] / [[Neo Kim]] newsletter forwarded by Sayf)\n**Source URI:** gmail://msg_19ea8014fa960cb7\n**Ingested:** 2026-06-24T12:30:00Z\n**Provenance:** Forwarded by Sayf on 2026-06-09\n\n## Summary\n\nDeep dive into [[OpenClaw]], an open-source autonomous AI agent that bridges the gap between\nLLM reasoning (thinking layer) and real-world execution (act layer). Published in The\nSystem Design Newsletter #151 by [[Neo Kim]].\n\n## Key Architecture Layers\n\n### Gateway\nAlways-on Node.js server on port 18789. Coordinates messaging apps, LLM, tools, and memory.\nIntercepts destructive commands for approval. Serves Control UI at localhost:18789. Supports\nhot config reloads. Accessible via Tailscale from any device.\n\n### Channel Layer\nPlugin-based abstraction: each messaging platform (Telegram, WhatsApp, Slack, Discord) gets\na translation adapter. Standardised internal format (identity key, content, metadata,\nattachments) makes everything after this boundary platform-agnostic.\n\n### LLM Layer\nModel-agnostic (\"brain socket\"). System prompt assembled from agent personality + skills +\nmemory + conversation history. Tool call loop: model signals action \u2192 [[OpenClaw]] executes \u2192\nresult fed back \u2192 model decides next step. Compaction auto-triggers at context limit.\n\n### Plugin System\nAlmost everything non-core is a plugin. Hooks into lifecycle events (before/after tool calls,\nmessages, session start/end). Enables audit logging, rate limiting, custom approval flows\nwithout touching core.\n\n### Memory System\nThree-layer architecture: short-term (session files on disk), long-term (indexed local DB\nsearched before every answer), standing notes (permanent briefing Markdown files).\n\n### Long-Running Tasks\nLong tasks (scraping, test suites) acknowledged immediately, worked on asynchronously, result\ndelivered when done. State persisted to disk, not held in memory. Cron jobs in isolated\nsession mode for recurring background work.\n\n## What Makes It Different\n- Always-on daemon, not browser-tab-reliant\n- 5,400+ modular skills on [[ClawHub]]\n- Multi-channel with shared context\n- Proactive via Heartbeat + cron\n- Model-agnostic (any LLM provider)",
+      "body": "# The Anatomy of OpenClaw\n\n**Source:** email\n**Source URI:** gmail://msg_19ea8014fa960cb7\n**Ingested:** 2026-06-26T14:00:00Z\n**Provenance:** Forwarded by sayf on 2026-06-09\n\n#151: Understanding How OpenClaw Works\n\n\ud83d\udc4b Neo here! This is a free preview of a subscriber-only post.\n\nThe Anatomy of OpenClaw\n\nNeo Kim\nJun 8 \u00b7 Preview\n\nWhat OpenClaw actually does: It's the orchestration layer between an LLM and real-world tools. The LLM is the brain (reasons, plans, decides). OpenClaw is the hand (executes across files, messaging apps, shell, and APIs).\n\nHow it differs from other AI tools: ChatGPT/Claude/Gemini have no access to your email, no ability to run scripts, no memory once you close the tab. LangChain/CrewAI/AutoGen are developer frameworks where you write Python from scratch. Claude Code/Codex CLI are terminal tools for coding sessions. OpenClaw runs 24/7 for everything.\n\nKey components:\n- Gateway: always-on Node.js server on port 18789. Coordinates messaging apps, LLM, tools, and memory. Intercepts shell commands for approval. Serves Control UI at http://localhost:18789.\n- Channel Layer: platform-agnostic adapters for Telegram, WhatsApp, Slack, Discord. Normalizes messages into standard internal format.\n- LLM Layer: model-agnostic \u2014 Claude, GPT, DeepSeek, Gemini, or local via Ollama. System prompt combines personality, skills, memory, conversation history.\n- Plugin System: almost everything is a plugin (Telegram, GitHub, memory). Lifecycle hooks at every point.\n- Memory System: short-term (current session on disk), long-term (indexed DB for cross-session recall), standing notes (~/.openclaw/workspace/memory/).\n- Skills Platform: 5,400+ modular capabilities on ClawHub as plain Markdown files.\n- Proactive Scheduling: Heartbeat + cron jobs that act without being prompted.\n- Long-running tasks: acknowledges, starts working, messages when done. Cron jobs in isolated session mode.\n\nThe Gateway is the fundamental difference \u2014 it runs 24/7 even when you're away. Hot config reloads without restarting.",
       "tags": [
         "ai-agents",
         "architecture",
         "openclaw"
       ],
-      "links_out": [
-        {
-          "to": "companies/system-design-one",
-          "type": "wikilink",
-          "text": "System Design One"
-        },
-        {
-          "to": "people/neo-kim",
-          "type": "wikilink",
-          "text": "Neo Kim"
-        },
-        {
-          "to": "concepts/openclaw",
-          "type": "wikilink",
-          "text": "OpenClaw"
-        },
-        {
-          "to": "concepts/clawhub",
-          "type": "wikilink",
-          "text": "ClawHub"
-        }
-      ],
+      "links_out": [],
       "backlinks": [],
-      "outbound_count": 4,
+      "outbound_count": 0,
       "inbound_count": 0
     },
     {
@@ -6986,7 +6951,7 @@
       "title": "How Virtual Machines Work Deep Dive 2026 05 25",
       "type": "newsletter",
       "updated": "",
-      "body": "# How Virtual Machines Work - A Deep Dive\n\n**Source:** email (System Design One / Neo Kim)\n**Source URI:** gmail://msg_19eaf5f74a25b3c5\n**Ingested:** 2026-06-26T06:00:00Z\n**Provenance:** Forwarded by Sayf Codes on 2026-06-10\n\nSystem Design One deep dive into virtual machine architecture and internals. Comprehensive explanation of how VMs work at the hardware and software level.\n\n## Key Topics\n- VM architecture and hypervisor types\n- Hardware virtualization (Intel VT-x / AMD-V)\n- Memory virtualization (shadow page tables, nested paging)\n- I/O virtualization (passthrough, paravirtualized, emulated)\n- Performance considerations and overhead analysis\n- Container vs VM comparison\n\n**Source:** email from Sayf Codes forwarding System Design One newsletter, 2026-05-25",
+      "body": "# How Virtual Machines Work - A Deep Dive\n\n**Source:** email\n**Source URI:** gmail://msg_19eaf5f74a25b3c5\n**Ingested:** 2026-06-26T14:00:00Z\n**Provenance:** Forwarded by sayf on 2026-06-10\n\n#148: Part 1 - DevOps Mastermind\n\n\ud83d\udc4b Neo here! This is a free preview of a subscriber-only post, exclusive to my golden members.\n\nHow Virtual Machines Work - A Deep Dive\n\nNeo Kim and Ayaan\nMay 25 \u00b7 Preview\n\nINTRODUCING: DevOps Mastermind \u2014 This newsletter series will help you become a fast-growing and high-paying engineer. Architecture breakdown of core DevOps systems. Deep dives into Docker, Kubernetes, Terraform. Practical insights into scalability, automation, and reliability.\n\nWhat's inside:\n- The difference between emulation and virtualization\n- What a virtual machine actually is, how it presents itself as a full computer\n- How the hypervisor works, the different types (Type 1 bare-metal vs Type 2 hosted), and how it controls access to CPU, memory, storage, networking\n- Full virtualization vs paravirtualization \u2014 tradeoff between compatibility and performance\n- Hardware-assisted virtualization (Intel VT-x, AMD-V) \u2014 made virtualization practical at scale\n- Nested virtualization \u2014 useful for testing, but each layer adds overhead\n- CPU virtualization: privilege model (guest OS demoted to lower level without knowing), vCPU and scheduling (time-slicing, CPU overcommit), VM-exit and VM-entry (microsecond handoffs)\n- NUMA awareness and CPU topology\n- Memory virtualization\n- What happens when a VM boots\n- Live migration, isolation, resource controls\n- Where VMs fit today vs containers",
       "tags": [
         "sayf"
       ],
@@ -7748,7 +7713,7 @@
       "title": "Openrouter Model Fusion Mid June 2026",
       "type": "newsletter",
       "updated": "",
-      "body": "# OpenRouter Mid-June 2026: Model Fusion, New Server Tools, Six New Models\n\n**Source:** email from OpenRouter Team\n**Source URI:** gmail://msg_19ef9f9bd5c77629\n**Ingested:** 2026-06-25T14:30:00Z\n\n## Overview\n\nOpenRouter's mid-June 2026 newsletter covers three feature launches (Fusion, Advisor/Subagent server tools, improved models API) and six new models. Key theme: lowering cost per answer through multi-model orchestration.\n\n## Fusion: Multi-Model Deep Research\n\nAn early experiment where one API call fans a prompt across a panel of models and synthesizes the best answer. On deep-research benchmarks, this approach produced strong results at lower cost than a single frontier model.\n\n- Call it as `openrouter/fusion` model slug, or let any model invoke it as a server tool\n- Every panel model and the judge run with web search by default\n- Choose up to eight models and the judge that synthesizes them\n- The judge maps where models agree, where they conflict, what only one caught, what all missed \u2014 not a majority vote\n- Built for research-heavy work, not coding agents or general chat (experimental)\n\nUsage example:\n```\n{ \"model\": \"openrouter/fusion\",\n  \"messages\": [{ \"role\": \"user\", \"content\": \"What changed in EU AI Act enforcement this year?\" }],\n  \"plugins\": [{ \"id\": \"fusion\", \"preset\": \"general-budget\" }] }\n```\n\n## Server Tools: Advisor and Subagent\n\nTwo tools that push work onto cheaper models:\n\n- **Advisor** \u2014 lets your model consult a stronger one only when stuck, now with multiple named advisors, memory across requests, and streaming\n- **Subagent** \u2014 hands self-contained subtasks to a smaller, faster worker model mid-generation, so the expensive model is not doing routine work\n\n## Sharper Models API\n\nFind models by price, modality, context, and provider. Benchmark scores on every model page. Pull a single model's full details by author and slug.\n\n## New Models\n\n- **GLM 5.2** (z-ai/glm-5.2) \u2014 Z.ai's flagship reasoning model with 1M-token context window, $1.40 in / $4.40 out per M tokens\n- **Kimi K2.7 Code** (moonshotai/kimi-k2.7-code) \u2014 Moonshot AI's coding model, 262K context, $0.74 in / $3.50 out\n- **Qwen 3.7 Plus** (qwen/qwen3.7-plus) \u2014 1M-context generalist at $0.32 in / $1.28 out\n- **NVIDIA Nemotron-3 Ultra 550B** (nvidia/nemotron-3-ultra-550b-a55b) \u2014 550B open-weight, $0.50 in / $2.20 out, 1M context, free eval endpoint\n- **NVIDIA Nemotron-3.5 Content Safety** (nvidia/nemotron-3.5-content-safety:free) \u2014 compact guardrail model, free to run\n- Additional models mentioned in full catalog\n\n## Notable Blog Posts\n\n- **Battle Royale** \u2014 Eleven models in 30 rounds. Cheapest model won most games; the model you'd actually ship was different. Benchmark rank vs real-task fit come apart.\n- **Dinner is Served** \u2014 Case against standardizing on one LLM; \"going family style\" with multi-model orchestration\n- **Model Routing Diagram** \u2014 How OpenRouter spreads requests across 60+ providers: default load balancing, :nitro/:floor shortcuts, model fallbacks, Auto Router\n\n## BYOK Pricing Update (Effective July 1, 2026)\n\nFree tier changes from 1M requests/month to $25,000 of list-price inference per month. 5% fee above free tier unchanged.\n\n## Key Takeaways for Maloha Coast\n\n- Fusion's multi-model approach aligns with the multi-agent orchestration direction\n- Advisor and Subagent server tools are directly applicable to agent cost optimization\n- GLM 5.2 (1M context, $1.40/M in) and Qwen 3.7 Plus ($0.32/M in) are worth evaluating for long-context agent workloads\n- The battle royale conclusion \u2014 benchmark rank != task fit \u2014 reinforces the need for real-world agent evaluation",
+      "body": "# OpenRouter: Model Fusion \u2014 Mid-June 2026\n\n**Source:** email\n**Source URI:** gmail://msg_19ef9f9bd5c77629\n**Ingested:** 2026-06-26T14:00:00Z\n**Provenance:** Direct from OpenRouter Team\n\nHi there,\n\nThree feature launches this month, all aimed at a lower cost per answer: Fusion, an expanded set of server tools, and a sharper models API. Six new models landed alongside them.\n\nFusion: an early experiment in multi-model deep research. On deep-research benchmarks, fanning one API call across a panel of models and synthesizing the answers produced strong results at lower cost than a single frontier model.\n\nSix new models since the May recap. From a 550B open-weight model to a 1M-context generalist, each priced to do real work without frontier-tier token cost.\n\nA benchmark that defies benchmarks. Eleven models into a 30-game battle royale. The model you would least expect won the most games, and the one you would actually ship was a different one.\n\nPlatform: 400+ models, 60+ providers, 100T monthly tokens processed.\n\nNew features:\n01 Fusion: Multi-model deep research. Call openrouter/fusion as a model slug. Panel of up to 8 models + judge. The judge maps where models agree/conflict, what only one caught, what they all missed. Web search on by default. Open for research-heavy use cases, not coding agents or general chat.\n02 Server tools: Advisor (your model consults a stronger one when stuck, with multiple named advisors and memory across requests) and Subagent (hands self-contained subtasks to smaller worker mid-generation).\n03 Sharper models API: Filter catalog by price, modality, context, provider. Compare benchmark scores on every model page.\n\nNew models:\n- GLM 5.2 (z-ai/glm-5.2): 1M context, $1.40/$4.40, built for long-horizon agent work.\n- Kimi K2.7 Code (moonshotai/kimi-k2.7-code): 262K context, $0.74/$3.50, coding model for agents needing long context without long-context pricing.\n- Qwen 3.7 Plus (qwen/qwen3.7-plus): 1M context, $0.32/$1.28, cheap workhorse.\n- NVIDIA Nemotron-3 Ultra 550B (nvidia/nemotron-3-ultra-550b-a55b): 550B open-weight, $0.50/$2.20, 1M context. Free eval endpoint.\n- NVIDIA Nemotron 3.5 Content Safety (nvidia/nemotron-3.5-content-safety:free): free guardrail model.\n\nBYOK pricing update (July 1, 2026): Free tier changes from 1M requests/month to $25,000 of list-price inference per month. 5% fee above free tier unchanged.",
       "tags": [],
       "links_out": [],
       "backlinks": [
@@ -9358,17 +9323,7 @@
           "text": "Neo Kim"
         },
         {
-          "from": "newsletters/30-core-agentic-engineering-concepts-2026-06-17",
-          "type": "wikilink",
-          "text": "Neo Kim"
-        },
-        {
           "from": "newsletters/agentic-engineering-concepts-2026-06-20-084511",
-          "type": "wikilink",
-          "text": "Neo Kim"
-        },
-        {
-          "from": "newsletters/anatomy-of-openclaw-2026-06-08",
           "type": "wikilink",
           "text": "Neo Kim"
         },
@@ -9409,7 +9364,7 @@
         }
       ],
       "outbound_count": 6,
-      "inbound_count": 15
+      "inbound_count": 13
     },
     {
       "slug": "people/nick-milo",
@@ -9472,11 +9427,6 @@
           "text": "paul-hoekstra"
         },
         {
-          "from": "newsletters/30-core-agentic-engineering-concepts-2026-06-17",
-          "type": "wikilink",
-          "text": "Paul Hoekstra"
-        },
-        {
           "from": "newsletters/agentic-engineering-concepts-2026-06-20-084511",
           "type": "wikilink",
           "text": "Paul Hoekstra"
@@ -9488,7 +9438,7 @@
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 6
+      "inbound_count": 5
     },
     {
       "slug": "people/rachel-kim",
@@ -11731,16 +11681,6 @@
       "type": "wikilink"
     },
     {
-      "source": "newsletters/30-core-agentic-engineering-concepts-2026-06-17",
-      "target": "people/neo-kim",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/30-core-agentic-engineering-concepts-2026-06-17",
-      "target": "people/paul-hoekstra",
-      "type": "wikilink"
-    },
-    {
       "source": "newsletters/agentic-engineering-concepts-2026-06-20-084511",
       "target": "people/neo-kim",
       "type": "wikilink"
@@ -11788,26 +11728,6 @@
     {
       "source": "newsletters/ai-garage-weekly-2026-06-20",
       "target": "companies/anthropic",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/anatomy-of-openclaw-2026-06-08",
-      "target": "companies/system-design-one",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/anatomy-of-openclaw-2026-06-08",
-      "target": "people/neo-kim",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/anatomy-of-openclaw-2026-06-08",
-      "target": "concepts/openclaw",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/anatomy-of-openclaw-2026-06-08",
-      "target": "concepts/clawhub",
       "type": "wikilink"
     },
     {
@@ -12311,13 +12231,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 70,
+    "brain_checks_score": 90,
     "category_scores": {
-      "brain": 95,
+      "brain": 90,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -12347,32 +12267,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -12384,11 +12282,12 @@
       },
       {
         "name": "extract_atoms_backlog",
-        "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "status": "warn",
+        "message": "24 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 0,
+          "backlog": 24,
           "pack_declares_phase": false,
+          "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
         "category": "brain"
@@ -12396,7 +12295,7 @@
       {
         "name": "conversation_format_coverage",
         "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "message": "11 pages: bold-name-no-time=10, _no_match=1",
         "category": "brain"
       },
       {
@@ -12420,7 +12319,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 328 pages",
         "category": "ops"
       },
       {
@@ -12456,7 +12355,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 1113ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -12474,25 +12373,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 90%, timeline 68%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 81/100 (embed 35/35, links 25/25, timeline 3/15, orphans 8/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 78 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 328 pages; 37 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -12653,7 +12552,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 0/328 pages (0%) stale",
+        "details": {
+          "total": 328,
+          "stale": 0,
+          "pct": 0,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -12665,7 +12572,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -12677,7 +12584,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "241 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -12689,7 +12596,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "39.9% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -12731,7 +12638,7 @@
       {
         "name": "oauth_confidential_client_health",
         "status": "ok",
-        "message": "No OAuth clients registered",
+        "message": "4 OAuth client(s) registered; all auth shapes consistent",
         "category": "ops"
       },
       {
@@ -12792,13 +12699,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 91% \u00b1 3.2%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 69% \u00b1 5.2% (target 90%)",
         "category": "meta"
       },
       {
@@ -12816,7 +12723,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "10 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
