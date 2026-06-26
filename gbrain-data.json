@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-26T14:24:22Z",
+  "updated_at": "2026-06-26T14:37:55Z",
   "summary": {
     "score": "81",
     "score_label": "/100",
@@ -8,7 +8,7 @@
     "embed_coverage": "100% coverage, 0 missing",
     "graph_coverage": "39.8% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
     "entity_links": "Coverage 91% \u00b1 3.2%",
-    "concept_count": 134,
+    "concept_count": 133,
     "meeting_count": 15,
     "person_count": 48,
     "company_count": 33,
@@ -17,7 +17,7 @@
     "article_count": 20,
     "bookmark_count": 31,
     "quote_count": 0,
-    "dataset_count": 1,
+    "dataset_count": 2,
     "digest_count": 2,
     "total_links": 396,
     "outbound_count": 495,
@@ -4079,11 +4079,13 @@
     },
     {
       "slug": "concepts/invoice-mc-2026-003-2026-06-26",
-      "title": "Invoice MC-2026-003",
-      "type": "concept",
+      "title": "Invoices \u2014 RapidScreen & Beard Brothers BBQ (June 2026)",
+      "type": "dataset",
       "updated": "",
-      "body": "# Invoice MC-2026-003 \u2014 Maloha Coast Sdn Bhd\n\n**Source:** email\n**Source URI:** gmail://msg_19f043c6fa8031b9\n**Ingested:** 2026-06-26T22:10:00Z\n**Provenance:** Self-forwarded by sayf from sayfti@gmail.com to info@malohacoast.com\n\n## Invoices\n\nTwo invoices were forwarded from sayfti@gmail.com to info@malohacoast.com for safekeeping.\n\n### Invoice MC-2026-003 (Maloha Coast)\n- **File:** invoice-MC-2026-003.pdf (98 KB)\n- **Created:** 2026-06-26\n- **Generated via:** HeadlessChrome\n- **Raw copy:** `~/.workspace/inbox/concepts/invoices-2026-06-26/invoice-MC-2026-003.pdf`\n\n### Invoice MC-2026-001 BBB\n- **File:** MC-2026-001_Invoice_BBB (1).pdf (63 KB)\n- **Notes:** Invoice from a vendor/contractor (\"BBB\") to Maloha Coast, invoice #001 for 2026\n- **Raw copy:** `~/.workspace/inbox/concepts/invoices-2026-06-26/MC-2026-001_Invoice_BBB (1).pdf`\n\n## Notes\n\n- Sayf forwarded these invoices to info@malohacoast.com with the note \"here you go\"\n- This is one of a series of Maloha Coast invoices for record-keeping\n- The raw PDF invoices are preserved in the workspace inbox for reference",
-      "tags": [],
+      "body": "# Invoices \u2014 RapidScreen & Beard Brothers BBQ (June 2026)\n\n**Source:** Email\n**Source URI:** gmail://msg_19f043c6fa8031b9\n**Ingested:** 2026-06-26T22:30:00Z\n**Provenance:** Self-forwarded by sayf from sayfti@gmail.com to info@malohacoast.com\n\n## Invoice #MC-2026-003 \u2014 RapidScreen Sdn Bhd\n\n| Field | Value |\n|-------|-------|\n| **Invoice #** | MC-2026-003 |\n| **Date** | June 26, 2026 |\n| **Due** | July 10, 2026 |\n| **Bill To** | RapidScreen Sdn Bhd (Level 6, 12 Jalan Pinang; Danial@rapidscreen.io) |\n| **From** | Maloha Coast Sdn Bhd |\n| **Description** | Teaching Session \u2014 2.5 hours (parking & petrol inclusive) |\n| **Amount** | RM 250 |\n| **Bank** | Maybank, Account 5628 6115 7195, Ref: MC-2026-003 / RAP |\n\n## Invoice #MC-2026-001 \u2014 Beard Brothers BBQ\n\n| Field | Value |\n|-------|-------|\n| **Invoice #** | MC-2026-001 |\n| **Date** | June 16, 2026 |\n| **Due** | June 30, 2026 (Net 14) |\n| **Bill To** | Beard Brothers BBQ, Kuala Lumpur |\n| **From** | Maloha Coast Sdn Bhd |\n| **Project** | Beard Brothers BBQ \u00d7 Maloha Coast \u2014 Going AI-First |\n| **Phase** | Phase 0 \u2014 Operational Audit & Dashboard Prototype (Weeks 1\u20134) |\n| **Amount** | RM 10,000 (25% of RM 40,000 build scope) |\n| **Notes** | Covers completed Phase 0 milestone. Remaining build invoiced against Phase 1\u20133 milestones per signed proposal. |\n| **Bank** | Maybank, Account 5628 6115 7195, Ref: MC-2026-001 / BBB |\n\n## Raw Files\n\n- `invoice-MC-2026-003.pdf` (98 KB) \u2014 Maloha Coast invoice to RapidScreen\n- `MC-2026-001_Invoice_BBB (1).pdf` (63 KB) \u2014 Maloha Coast invoice to Beard Brothers BBQ\n\n## Notes\n\n- Sayf forwarded these invoices to info@malohacoast.com with the note \"here you go\"\n- Both invoices are stored as raw PDFs in the workspace inbox for record-keeping\n- The Beard Brothers BBQ project total scope is RM 40,000 across 4 phases (Phase 0 @ 25% = RM 10,000)",
+      "tags": [
+        "sayf"
+      ],
       "links_out": [],
       "backlinks": [],
       "outbound_count": 0,
@@ -12367,7 +12369,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1197ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 488ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -12596,7 +12598,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "228 reranker failure(s) in last 7 days (below threshold)",
+        "message": "227 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
