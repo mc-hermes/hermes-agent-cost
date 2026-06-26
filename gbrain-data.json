@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-06-26T16:38:13Z",
+  "updated_at": "2026-06-26T16:52:46Z",
   "summary": {
     "score": "82",
     "score_label": "/100",
     "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
     "page_count": 375,
     "embed_coverage": "100% coverage, 0 missing",
-    "graph_coverage": "40.1% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "graph_coverage": "39.9% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
     "entity_links": "Coverage 91% \u00b1 3.2%",
     "concept_count": 134,
     "meeting_count": 15,
@@ -580,12 +580,8 @@
       "title": "Hermes Assistant To Chief Of Staff 2026 06 21",
       "type": "bookmark",
       "updated": "",
-      "body": "# How we turned hermes from an assistant to a chief of staff\n\n**Source:** Email\n**Source URI:** gmail://msg_19ee6b8b30fd1a2c\n**Ingested:** 2026-06-21T06:19:23Z\n**Provenance:** Self-forward by sayf on 2026-06-21\n\nTweet about transforming the Hermes agent from a simple assistant into a chief-of-staff capability.\n\nURL: https://x.com/i/status/2068370407049011538",
-      "tags": [
-        "ai-agents",
-        "automation",
-        "hermes"
-      ],
+      "body": "# How we turned Hermes from an assistant into a chief of staff (and how you can too)\n\n**Source:** email (self-forward)\n**Source URI:** gmail://msg_19ee6b8b30fd1a2c\n**Ingested:** 2026-06-27T00:50:00Z\n**Provenance:** Forwarded by sayf on 2026-06-21\n\n## Summary\n\nX Article by **ericosiu** (@ericosiu, verified) about turning an AI assistant (Hermes) into a fully autonomous chief of staff that books sales calls, revives stalled deals, and ships ad creative. The preview teases a capability gap between basic assistants and sayf's own Hermes setup.\n\n## Post Details\n\n- **Author:** ericosiu (@ericosiu) \u2014 verified\n- **Platform:** X Article\n- **Article URL:** https://x.com/i/article/2062257585613389824\n- **Status URL:** https://x.com/ericosiu/status/2068370407049011538\n- **Posted:** 2026-06-21\n- **Metrics:** 113K views \u00b7 622 bookmarks \u00b7 181 likes \u00b7 23 retweets\n\n## Relevance to Maloha Coast\n\nDirectly relevant to sayf's work on Hermes agent orchestration, the FalconHermes ecosystem, and agent-as-chief-of-staff positioning. This is the exact use case sayf is building.\n\n## Link\n\nhttps://x.com/ericosiu/status/2068370407049011538",
+      "tags": [],
       "links_out": [],
       "backlinks": [
         {
@@ -12428,7 +12424,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 332 pages",
+        "message": "Connected, 333 pages",
         "category": "ops"
       },
       {
@@ -12464,7 +12460,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1012ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 492ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -12500,7 +12496,7 @@
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 332 pages; 37 external link(s) (no bare tweets).",
+        "message": "Sampled 333 pages; 37 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -12661,10 +12657,10 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction current: 0/332 pages (0%) stale",
+        "message": "Extraction current: 1/333 pages (0%) stale",
         "details": {
-          "total": 332,
-          "stale": 0,
+          "total": 333,
+          "stale": 1,
           "pct": 0,
           "warn_pct": 20,
           "fail_pct": null,
@@ -12693,7 +12689,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "210 reranker failure(s) in last 7 days (below threshold)",
+        "message": "205 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -12705,7 +12701,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "40.1% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "39.9% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {

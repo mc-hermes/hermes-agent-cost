@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-26T16:38:22Z",
+  "updated_at": "2026-06-26T16:52:54Z",
   "summary": {
     "page_count": 44,
     "people_count": 4,
@@ -1156,7 +1156,7 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-26T16:38:22Z",
+      "ts": "2026-06-26T16:52:54Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
@@ -1241,14 +1241,6 @@
       "stage": "updated",
       "slug": "concepts/15-minute-gap-method-2026-06-14",
       "detail": "15 Minute Gap Method 2026 06 14",
-      "level": "info"
-    },
-    {
-      "ts": "2026-06-23T00:00:00Z",
-      "source": "page",
-      "stage": "updated",
-      "slug": "concepts/15-minute-gap-method-zaim",
-      "detail": "15 Minute Gap Method Zaim",
       "level": "info"
     },
     {
