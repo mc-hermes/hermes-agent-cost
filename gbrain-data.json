@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-06-26T22:00:42Z",
+  "updated_at": "2026-06-26T22:57:44Z",
   "summary": {
-    "score": "92",
+    "score": "82",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
+    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
     "page_count": 382,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "38.2% of pages have inbound links",
-    "entity_links": "Coverage \u2014 48 people, 35 companies indexed",
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "39.3% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 89% \u00b1 3.5%",
     "concept_count": 136,
     "meeting_count": 16,
     "person_count": 48,
@@ -19,14 +19,26 @@
     "quote_count": 0,
     "dataset_count": 4,
     "digest_count": 2,
-    "total_links": 406,
-    "outbound_count": 509,
-    "inbound_count": 473,
+    "total_links": 405,
+    "outbound_count": 505,
+    "inbound_count": 469,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
+    "score_components": {
+      "score": "82/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "3/15",
+      "orphans": "9/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 67,
+    "checks_warned": 6,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -1368,11 +1380,6 @@
           "text": "AI Automation Society"
         },
         {
-          "from": "newsletters/claude-second-brain-levels-2026-06-20",
-          "type": "wikilink",
-          "text": "AI Automation Society"
-        },
-        {
           "from": "newsletters/msg-19ee2dfa87f86548",
           "type": "wikilink",
           "text": "AI Automation Society"
@@ -1384,7 +1391,7 @@
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 7
+      "inbound_count": 6
     },
     {
       "slug": "companies/ai-garage-weekly",
@@ -4491,11 +4498,6 @@
           "text": "Nate Herk"
         },
         {
-          "from": "newsletters/claude-second-brain-levels-2026-06-20",
-          "type": "wikilink",
-          "text": "Nate Herk"
-        },
-        {
           "from": "newsletters/claude-second-brain-levels",
           "type": "wikilink",
           "text": "Nate Herk"
@@ -4507,7 +4509,7 @@
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 7
+      "inbound_count": 6
     },
     {
       "slug": "concepts/openai-codex",
@@ -4522,7 +4524,7 @@
       ],
       "links_out": [
         {
-          "to": "newsletters/claude-second-brain-levels-2026-06-20",
+          "to": "newsletters/claude-second-brain-levels",
           "type": "wikilink",
           "text": "Every Level of a Claude Second Brain Explained"
         },
@@ -4532,15 +4534,9 @@
           "text": "OpenAI"
         }
       ],
-      "backlinks": [
-        {
-          "from": "newsletters/claude-second-brain-levels-2026-06-20",
-          "type": "wikilink",
-          "text": "OpenAI Codex"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 2,
-      "inbound_count": 1
+      "inbound_count": 0
     },
     {
       "slug": "concepts/openclaw-anatomy",
@@ -7079,10 +7075,10 @@
     },
     {
       "slug": "newsletters/claude-second-brain-levels-2026-06-20",
-      "title": "Every Level of a Claude Second Brain Explained",
+      "title": "Claude Second Brain Levels 2026 06 20",
       "type": "newsletter",
       "updated": "",
-      "body": "# Every Level of a Claude Second Brain Explained\n\n**Source:** AI Automation Society newsletter (Nate Herk), forwarded by Sayf, 2026-06-20\n**Source URI:** gmail://msg_19ee2dfa87f86548\n**Ingested:** 2026-06-20T12:01:16Z\n**Sayf's note:** Forwarded from sayfti@gmail.com on 2026-06-20\n\nJune 19, 2026\n\nA Claude second brain breakdown, a client pipeline automated, and Codex hits 5M users with a free bonus through June 24.\n\n## In This Issue\n\n- Five levels of building a Claude second brain, from basic file search to fully autonomous recall.\n- Robert automated a client's outbound email pipeline and got their call center actually following up.\n- OpenAI's Codex just crossed 5 million weekly users, and there's a free bonus available through June 24 if you use it.\n\n---\n\n## New Video: Every Level of a Claude Second Brain Explained\n\nThere are five distinct levels to building a Claude second brain, and most people are stuck at level one.\n\n- **Level one**: Finding a file by searching an exact word.\n- **Level five**: A fully autonomous system that knows your business, client relationships, and IP better than you do.\n\nThe difference between them isn't the tool \u2014 it's how the data is organized.\n\n*\"The insight that changes how you build: Start from the end. Before you organize a single file, ask how you'll access this data later. The shape of the basketball determines the size of the hoop.\"*\n\nJon shows his actual setup (a Herku project, just markdown files and folders) and walks through what separates each level, including semantic search (finding by meaning, not exact match) and full relationship mapping.\n\n**How this helps**: Your moat is your data. This video shows how to organize it so your agents can use it, not just find it.\n\n---\n\n## Winning Is All We Do\n\nRobert automated a client's outbound email pipeline from scratch.\n\n**What happened**: Robert's client had a call center calling leads, but nothing was following up by email. Sales managers emailed Robert their daily lead lists as Excel files. He built an automation that handles the rest: when the file lands in his inbox, it extracts email, address, and name data, normalizes it, and uploads every contact directly into Instantly as a ready-to-run campaign.\n\n*\"Life got easier.\"* \u2014 Robert\n\n**Opportunity**: Businesses running call centers almost always have messy lead data and no email follow-up. An automation that converts a spreadsheet into a live campaign solves a problem they didn't know anyone could fix.\n\n---\n\n## In the News: OpenAI Codex at 5M Weekly Users\n\nOpenAI Codex has crossed 5 million weekly active users and launched two features:\n\n1. **Banked rate limit resets** (permanent) \u2014 Instead of weekly limits resetting on a fixed timer, users can save resets and use them when needed.\n2. **Referral bonus** (through June 24) \u2014 Plus and Pro users can invite up to three friends. When a friend sends their first Codex message, both get a bonus reset.\n\n**Signal**: Codex is growing through referral mechanics at 5M weekly users. \"That's not hype. That's a tool people are actively building with and recommending.\"\n\n## Entities\n\n- [[Nate Herk]] \u2014 AI Automation Society, newsletter author\n- [[OpenAI Codex]] \u2014 AI coding tool at 5M weekly users\n- [[Robert]] \u2014 AI Automation Society student, automated outbound email pipeline\n- [[AI Automation Society]] \u2014 Newsletter publisher, AI automation training community",
+      "body": "# Every Level of a Claude Second Brain Explained\n\n**Source:** email\n**Source URI:** gmail://msg_19ee2dfa87f86548\n**Ingested:** 2026-06-27T00:00:00Z\n**Provenance:** Forwarded by sayf from AI Automation Society (Nate Herk), Jun 20 2026\n\nA Claude second brain breakdown, a client pipeline automated, and Codex hits 5M users with a free bonus through June 24.\n\n## In This Issue\n\n- Five levels of building a Claude second brain, from basic file search to fully autonomous recall.\n- Robert automated a client's outbound email pipeline and got their call center actually following up.\n- OpenAI's Codex just crossed 5 million weekly users, with a free bonus available through June 24.\n\n## New Video: Every Level of a Claude Second Brain Explained\n\nThere are five distinct levels to building a Claude second brain, and most people are stuck at level one.\n\nLevel one is just finding a file by searching an exact word. Level five is a fully autonomous system that knows your business, your client relationships, and your IP better than you do. The difference between them isn't the tool \u2014 it's how the data is organized.\n\n**The insight that changes how you build:** Start from the end. Before you organize a single file, ask how you'll access this data later. The shape of the basketball determines the size of the hoop. Jon shows his actual setup (a Herku project, just markdown files and folders) and walks through what separates each level, including semantic search (finding by meaning, not exact match) and full relationship mapping.\n\n**How this helps you:** Your moat is your data. This video shows you how to actually organize it so your agents can use it, not just find it.\n\n## Winning Is All We Do: Robert's Client Pipeline Automation\n\nRobert automated a client's outbound email pipeline from scratch.\n\n**What happened:** Robert's client had a call center calling leads, but nothing was following up by email. Sales managers emailed Robert their daily lead lists as Excel files. He built an automation that handles the rest: when the file lands in his inbox, it extracts the email, address, and name data, normalizes it, and uploads every contact directly into Instantly as a ready-to-run campaign. No manual cleanup. No copy-paste.\n\n**The opportunity:** Businesses running call centers almost always have messy lead data and no email follow-up. An automation that converts a spreadsheet into a live campaign solves a problem they didn't know anyone could fix.\n\n## In the News: Codex Hits 5M Weekly Users\n\nOpenAI Codex has crossed 5 million weekly active users and launched two features alongside the milestone. One is permanent: banked rate limit resets \u2014 you can now save resets and use them when you actually need them. The other runs through June 24: Plus and Pro users can invite up to three friends to try Codex, and both get a bonus reset when a friend sends their first message.\n\n**How it affects you:** If you've been hitting Codex rate limits at the wrong moment mid-build, the banked reset system fixes that. You decide when to use your reset, not the clock. The bigger signal: Codex is growing through referral mechanics at 5 million weekly users \u2014 a tool people are actively building with and recommending.",
       "tags": [
         "ai-automation-society",
         "claude",
@@ -7090,28 +7086,7 @@
         "newsletter",
         "second-brain"
       ],
-      "links_out": [
-        {
-          "to": "concepts/nate-herk-technique-question-2026-06-09",
-          "type": "wikilink",
-          "text": "Nate Herk"
-        },
-        {
-          "to": "concepts/openai-codex",
-          "type": "wikilink",
-          "text": "OpenAI Codex"
-        },
-        {
-          "to": "people/robert",
-          "type": "wikilink",
-          "text": "Robert"
-        },
-        {
-          "to": "companies/ai-automation-society",
-          "type": "wikilink",
-          "text": "AI Automation Society"
-        }
-      ],
+      "links_out": [],
       "backlinks": [
         {
           "from": "companies/ai-automation-society",
@@ -7134,11 +7109,6 @@
           "text": "newsletters/claude-second-brain-levels-2026-06-20"
         },
         {
-          "from": "concepts/openai-codex",
-          "type": "wikilink",
-          "text": "Every Level of a Claude Second Brain Explained"
-        },
-        {
           "from": "people/jon",
           "type": "wikilink",
           "text": "Claude Second Brain Levels 2026 06 20"
@@ -7149,8 +7119,8 @@
           "text": "Claude Second Brain Levels 2026 06 20"
         }
       ],
-      "outbound_count": 4,
-      "inbound_count": 7
+      "outbound_count": 0,
+      "inbound_count": 6
     },
     {
       "slug": "newsletters/claude-second-brain-levels",
@@ -7171,9 +7141,15 @@
           "text": "OpenAI"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "concepts/openai-codex",
+          "type": "wikilink",
+          "text": "Every Level of a Claude Second Brain Explained"
+        }
+      ],
       "outbound_count": 2,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "newsletters/every-level-claude-second-brain-2026-06-19",
@@ -9752,18 +9728,13 @@
       ],
       "backlinks": [
         {
-          "from": "newsletters/claude-second-brain-levels-2026-06-20",
-          "type": "wikilink",
-          "text": "Robert"
-        },
-        {
           "from": "newsletters/msg-19ee2dfa87f86548",
           "type": "wikilink",
           "text": "Robert"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 2
+      "inbound_count": 1
     },
     {
       "slug": "people/sapna-chadha",
@@ -11364,7 +11335,7 @@
     },
     {
       "source": "concepts/openai-codex",
-      "target": "newsletters/claude-second-brain-levels-2026-06-20",
+      "target": "newsletters/claude-second-brain-levels",
       "type": "wikilink"
     },
     {
@@ -12063,16 +12034,6 @@
       "type": "wikilink"
     },
     {
-      "source": "newsletters/claude-second-brain-levels-2026-06-20",
-      "target": "concepts/nate-herk-technique-question-2026-06-09",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/claude-second-brain-levels-2026-06-20",
-      "target": "people/robert",
-      "type": "wikilink"
-    },
-    {
       "source": "newsletters/claude-second-brain-levels",
       "target": "concepts/nate-herk-technique-question-2026-06-09",
       "type": "wikilink"
@@ -12403,6 +12364,11 @@
       "type": "wikilink"
     },
     {
+      "source": "people/robert",
+      "target": "newsletters/claude-second-brain-levels-2026-06-20",
+      "type": "wikilink"
+    },
+    {
       "source": "people/sayf-codes",
       "target": "concepts/company-memory-os-ph1-prd-2026-06-09",
       "type": "wikilink"
@@ -12565,13 +12531,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 70,
+    "brain_checks_score": 90,
     "category_scores": {
-      "brain": 95,
+      "brain": 90,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -12601,32 +12567,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -12638,11 +12582,12 @@
       },
       {
         "name": "extract_atoms_backlog",
-        "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "status": "warn",
+        "message": "25 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 0,
+          "backlog": 25,
           "pack_declares_phase": false,
+          "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
         "category": "brain"
@@ -12650,7 +12595,7 @@
       {
         "name": "conversation_format_coverage",
         "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "message": "12 pages: bold-name-no-time=11, _no_match=1",
         "category": "brain"
       },
       {
@@ -12674,7 +12619,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 341 pages",
         "category": "ops"
       },
       {
@@ -12710,7 +12655,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 588ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -12728,25 +12673,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 88%, timeline 69%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 80 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 341 pages; 37 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -12907,7 +12852,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 10/341 pages (3%) stale",
+        "details": {
+          "total": 341,
+          "stale": 10,
+          "pct": 3,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -12919,7 +12872,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -12931,7 +12884,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "174 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -12943,7 +12896,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "39.3% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -12985,7 +12938,7 @@
       {
         "name": "oauth_confidential_client_health",
         "status": "ok",
-        "message": "No OAuth clients registered",
+        "message": "4 OAuth client(s) registered; all auth shapes consistent",
         "category": "ops"
       },
       {
@@ -13046,13 +12999,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 89% \u00b1 3.5%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 70% \u00b1 5.1% (target 90%)",
         "category": "meta"
       },
       {
@@ -13070,7 +13023,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "10 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
