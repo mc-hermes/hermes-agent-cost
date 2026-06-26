@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-26T19:00:40Z",
+  "updated_at": "2026-06-26T19:07:10Z",
   "summary": {
-    "score": "92",
+    "score": "82",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 379,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "38.5% of pages have inbound links",
-    "entity_links": "Coverage \u2014 48 people, 35 companies indexed",
+    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
+    "page_count": 380,
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "39.8% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 89% \u00b1 3.5%",
     "concept_count": 134,
-    "meeting_count": 15,
+    "meeting_count": 16,
     "person_count": 48,
     "company_count": 35,
     "newsletter_count": 90,
@@ -20,13 +20,25 @@
     "dataset_count": 4,
     "digest_count": 2,
     "total_links": 402,
-    "outbound_count": 504,
+    "outbound_count": 505,
     "inbound_count": 469,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
+    "score_components": {
+      "score": "82/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "3/15",
+      "orphans": "9/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 67,
+    "checks_warned": 6,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -6431,6 +6443,27 @@
       "inbound_count": 0
     },
     {
+      "slug": "meetings/2026-06-12-sayf-zaim-gemini-notes",
+      "title": "Gemini Auto-Notes \u2014 Sayf x Zaim (12 Jun 2026)",
+      "type": "meeting",
+      "updated": "",
+      "body": "# Gemini Auto-Notes \u2014 Sayf x Zaim (12 Jun 2026)\n\n**Source:** Email (Gemini auto-generated meeting notes)\n**Source URI:** gmail://msg_19eb9d44d3366c24\n**Ingested:** 2026-06-27T10:30:00Z\n**Provenance:** Auto-generated meeting notes from Google Meet, forwarded to info@malohacoast.com\n\nSupplements: [[Sayf x Zaim \u2014 12 Jun 2026]]\n\n## Summary\n\nDiscussion explored AI skepticism and market strategy alongside technical collaboration opportunities for business growth.\n\n## Discussion Points\n\n### Differing AI Market Perspectives\nParticipants debated the value of AI in business, contrasting skepticism about automation hype with the practical utility of AI for basic skills training.\n\n### Technical Tools and Infrastructure\nDiscussion shifted toward specific software tools, noting the efficiency of virtual private servers and the potential of data integration dashboards for business applications.\n\n### Collaboration and Service Models\nAgreement reached to build a technical solution for coaching services while prioritizing simple, revenue-focused strategies for future client engagement.\n\n## Suggested Next Steps\n\n- **[Maloha Coast]** Build Dashboard: Arrange a meeting to build the dashboard component. Perform the session either in person or over a call based on the preference of Zaim Mohzani.\n- **[Zaim Mohzani]** Provide Testimonial: Provide a testimonial in exchange for the assistance provided by Maloha Coast.\n- **[Maloha Coast]** Share Research Link: Send the Tencent Lighthouse promotion link for further research.\n- **[The group]** Schedule Followup Session: Coordinate a time for a meeting to continue the discussion.\n- **[Zaim Mohzani]** Send WhatsApp Message: Contact Maloha Coast via the provided phone number.\n\n## Raw Machine-Generated Notes\n\nThe content was auto-generated on June 12, 2026, 11:14 AM GMT+08:00, and may contain errors.\n\nWe've updated the Decisions section based on your feedback.\n\n[Source: Google Meet auto-generated notes (Gemini), 2026-06-12]",
+      "tags": [
+        "sayf",
+        "zaim"
+      ],
+      "links_out": [
+        {
+          "to": "Sayf x Zaim \u2014 12 Jun 2026",
+          "type": "wikilink",
+          "text": "Sayf x Zaim \u2014 12 Jun 2026"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
+      "inbound_count": 0
+    },
+    {
       "slug": "meetings/msg-19ecaa895ccb88af",
       "title": "Sayf x Zaim \u2014 Jun 12, 2026",
       "type": "meeting",
@@ -7890,12 +7923,12 @@
     },
     {
       "slug": "newsletters/openrouter-paid-key-features-2026-06-11",
-      "title": "Openrouter Paid Key Features 2026 06 11",
+      "title": "What Comes With a Paid Key \u2014 OpenRouter",
       "type": "newsletter",
       "updated": "",
-      "body": "# What comes with a paid key\n\n**Source:** email from OpenRouter Team\n**Source URI:** gmail://msg_19eb701d76b2923f\n**Ingested:** 2026-06-21T03:15:00Z\n\nA paid OpenRouter key gives access to 300+ models from 60+ providers, including every frontier model (Claude, GPT, Gemini, Llama). Same API, same code, same key.\n\n## Features\n\n- **Provider fallback** \u2014 When a provider goes down, the request re-routes to another provider serving the same model. No retry logic needed.\n- **Prompt caching** \u2014 Repeated context gets cached on supported models. Cuts repeated-context cost by up to 90%.\n- **Model variants** \u2014 Append `:nitro` for speed, `:floor` for the cheapest provider, or `:exacto` for precision routing. One string change.\n- **Dedicated rate limits** \u2014 Paid keys get their own limits; other users' traffic never touches yours.\n- **No daily request cap** \u2014 Free tier: 10 requests/day. Paid keys: no ceiling.\n- **No provider markup** \u2014 Pay the per-token rate each provider sets.\n- **Activity dashboard** \u2014 Shows every call with model, tokens, and cost in real time.\n- **openrouter/auto** \u2014 Selects the best model for each request from 26+ options. For minimal spend without micro-managing models.\n\nNo minimum purchase. Credits expire after one year.",
+      "body": "# What Comes With a Paid Key \u2014 OpenRouter\n\n**Source:** Email newsletter\n**Source URI:** gmail://msg_19eb701d76b2923f\n**Ingested:** 2026-06-27T10:30:00Z\n**Provenance:** OpenRouter onboarding email, forwarded to info@malohacoast.com\n\n## Key Features of a Paid OpenRouter Key\n\nA paid key gives you the full OpenRouter catalog \u2014 300+ models from 60+ providers, including every frontier model: Claude, GPT, Gemini, Llama, and more. Same API, same code, same key.\n\n### What Ships With a Paid Key\n\n- **Provider fallback** \u2014 When a provider goes down, requests re-route to another provider serving the same model. No retry logic on your end, no downtime for users.\n- **Prompt caching** \u2014 Repeated context gets cached on supported models. Cuts repeated-context cost by up to 90%.\n\n### And More\n\n- **Model variants** \u2014 Append `:nitro` for speed, `:floor` for the cheapest provider, or `:exacto` for precision routing. Same model, different optimization, one string change.\n- **Dedicated rate limits** \u2014 Free-tier keys share a pool. Paid keys get their own limits, so other users' traffic never touches yours.\n- **No daily request cap** \u2014 Free tier limits you to 10 requests per day. Paid keys have no ceiling.\n- **No provider markup** \u2014 You pay the per-token rate each provider sets. Activity dashboard shows every call with model, tokens, and cost in real time.\n- **openrouter/auto** \u2014 Selects the best model for each request from a pool of 26+ options for lowest possible spend.\n\n[Source: OpenRouter onboarding email, 2026-06-11]",
       "tags": [
-        "openrouter"
+        "sayf"
       ],
       "links_out": [],
       "backlinks": [],
@@ -12449,13 +12482,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 70,
+    "brain_checks_score": 90,
     "category_scores": {
-      "brain": 95,
+      "brain": 90,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -12485,32 +12518,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -12522,11 +12533,12 @@
       },
       {
         "name": "extract_atoms_backlog",
-        "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "status": "warn",
+        "message": "25 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 0,
+          "backlog": 25,
           "pack_declares_phase": false,
+          "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
         "category": "brain"
@@ -12534,7 +12546,7 @@
       {
         "name": "conversation_format_coverage",
         "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "message": "12 pages: bold-name-no-time=11, _no_match=1",
         "category": "brain"
       },
       {
@@ -12558,7 +12570,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 339 pages",
         "category": "ops"
       },
       {
@@ -12594,7 +12606,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 511ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -12612,25 +12624,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 88%, timeline 69%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 80 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 339 pages; 37 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -12791,7 +12803,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 7/339 pages (2%) stale",
+        "details": {
+          "total": 339,
+          "stale": 7,
+          "pct": 2,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -12803,7 +12823,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -12815,7 +12835,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "202 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -12827,7 +12847,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "39.8% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -12869,7 +12889,7 @@
       {
         "name": "oauth_confidential_client_health",
         "status": "ok",
-        "message": "No OAuth clients registered",
+        "message": "4 OAuth client(s) registered; all auth shapes consistent",
         "category": "ops"
       },
       {
@@ -12930,13 +12950,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 89% \u00b1 3.5%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 70% \u00b1 5.1% (target 90%)",
         "category": "meta"
       },
       {
@@ -12954,7 +12974,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "10 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {

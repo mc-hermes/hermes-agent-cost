@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-06-26T19:00:51Z",
+  "updated_at": "2026-06-26T19:07:19Z",
   "summary": {
-    "page_count": 44,
+    "page_count": 45,
     "people_count": 4,
     "company_count": 1,
     "artifact_count": 0,
     "total_links": 19,
-    "outbound_count": 37,
+    "outbound_count": 38,
     "inbound_count": 35,
-    "graph_coverage": "22.7% of pages have inbound links",
+    "graph_coverage": "22.2% of pages have inbound links",
     "concept_count": 28,
-    "meeting_count": 4,
+    "meeting_count": 5,
     "person_count": 4,
     "newsletter_count": 5,
     "video_count": 0,
@@ -590,6 +590,27 @@
       "inbound_count": 4
     },
     {
+      "slug": "meetings/2026-06-12-sayf-zaim-gemini-notes",
+      "title": "Gemini Auto-Notes \u2014 Sayf x Zaim (12 Jun 2026)",
+      "type": "meeting",
+      "updated": "",
+      "body": "# Gemini Auto-Notes \u2014 Sayf x Zaim (12 Jun 2026)\n\n**Source:** Email (Gemini auto-generated meeting notes)\n**Source URI:** gmail://msg_19eb9d44d3366c24\n**Ingested:** 2026-06-27T10:30:00Z\n**Provenance:** Auto-generated meeting notes from Google Meet, forwarded to info@malohacoast.com\n\nSupplements: [[Sayf x Zaim \u2014 12 Jun 2026]]\n\n## Summary\n\nDiscussion explored AI skepticism and market strategy alongside technical collaboration opportunities for business growth.\n\n## Discussion Points\n\n### Differing AI Market Perspectives\nParticipants debated the value of AI in business, contrasting skepticism about automation hype with the practical utility of AI for basic skills training.\n\n### Technical Tools and Infrastructure\nDiscussion shifted toward specific software tools, noting the efficiency of virtual private servers and the potential of data integration dashboards for business applications.\n\n### Collaboration and Service Models\nAgreement reached to build a technical solution for coaching services while prioritizing simple, revenue-focused strategies for future client engagement.\n\n## Suggested Next Steps\n\n- **[Maloha Coast]** Build Dashboard: Arrange a meeting to build the dashboard component. Perform the session either in person or over a call based on the preference of Zaim Mohzani.\n- **[Zaim Mohzani]** Provide Testimonial: Provide a testimonial in exchange for the assistance provided by Maloha Coast.\n- **[Maloha Coast]** Share Research Link: Send the Tencent Lighthouse promotion link for further research.\n- **[The group]** Schedule Followup Session: Coordinate a time for a meeting to continue the discussion.\n- **[Zaim Mohzani]** Send WhatsApp Message: Contact Maloha Coast via the provided phone number.\n\n## Raw Machine-Generated Notes\n\nThe content was auto-generated on June 12, 2026, 11:14 AM GMT+08:00, and may contain errors.\n\nWe've updated the Decisions section based on your feedback.\n\n[Source: Google Meet auto-generated notes (Gemini), 2026-06-12]",
+      "tags": [
+        "sayf",
+        "zaim"
+      ],
+      "links_out": [
+        {
+          "to": "Sayf x Zaim \u2014 12 Jun 2026",
+          "type": "wikilink",
+          "text": "Sayf x Zaim \u2014 12 Jun 2026"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
+      "inbound_count": 0
+    },
+    {
       "slug": "meetings/sayf-x-zaim-jun-12-2026-zaim-perspective",
       "title": "Sayf X Zaim Jun 12 2026 Zaim Perspective",
       "type": "meeting",
@@ -1156,11 +1177,11 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-26T19:00:51Z",
+      "ts": "2026-06-26T19:07:19Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
-      "detail": "Dashboard refreshed \u2014 44 pages, 19 links",
+      "detail": "Dashboard refreshed \u2014 45 pages, 19 links",
       "level": "info"
     },
     {
@@ -1177,6 +1198,14 @@
       "stage": "updated",
       "slug": "concepts/zaim-aisyah-rahim-client-profile-2026-06-15",
       "detail": "Zaim Aisyah Rahim Client Profile 2026 06 15",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-26T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "meetings/2026-06-12-sayf-zaim-gemini-notes",
+      "detail": "Gemini Auto-Notes \u2014 Sayf x Zaim (12 Jun 2026)",
       "level": "info"
     },
     {
