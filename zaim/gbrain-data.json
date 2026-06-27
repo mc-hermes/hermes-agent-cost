@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-06-27T00:00:53Z",
+  "updated_at": "2026-06-27T00:14:01Z",
   "summary": {
-    "page_count": 46,
+    "page_count": 48,
     "people_count": 4,
     "company_count": 1,
     "artifact_count": 0,
-    "total_links": 20,
-    "outbound_count": 40,
-    "inbound_count": 36,
-    "graph_coverage": "21.7% of pages have inbound links",
-    "concept_count": 29,
+    "total_links": 21,
+    "outbound_count": 42,
+    "inbound_count": 37,
+    "graph_coverage": "20.8% of pages have inbound links",
+    "concept_count": 30,
     "meeting_count": 5,
     "person_count": 4,
-    "newsletter_count": 5,
+    "newsletter_count": 6,
     "video_count": 0,
     "article_count": 2,
     "bookmark_count": 0,
@@ -330,15 +330,10 @@
           "from": "concepts/coaching-client-aisyah-rahim-2026-06-15",
           "type": "wikilink",
           "text": "KSI Workshop"
-        },
-        {
-          "from": "concepts/zaim-15-minute-gap-method-2026-06-14",
-          "type": "wikilink",
-          "text": "KSI Workshop"
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 2
+      "inbound_count": 1
     },
     {
       "slug": "concepts/maloha-coast",
@@ -398,7 +393,7 @@
       "title": "Zaim 15 Minute Gap Method 2026 06 14",
       "type": "concept",
       "updated": "",
-      "body": "# Zaim's 15-Minute Gap Method\n\n**Source:** email from Zaim Mohzani re: coaching insight, 2026-06-14\n**Source URI:** gmail://msg_19eca04daacc7a09\n**Ingested:** 2026-06-23T10:00:00Z\n**Provenance:** Zaim's coaching reflection note, sent to info+zaim@malohacoast.com\n\n## The Method\n\nBetween KSI coaching sessions, Zaim started using 15-minute gaps to jot down one thing he noticed about each student \u2014 what they're stuck on, what lit them up. After a month of this, patterns emerged that he'd never have spotted otherwise.\n\n**The 15-minute rule:** Never let a gap go empty. Even one sentence per student compounds.\n\n## Three Student Buckets\n\n1. **Career pivoters** \u2014 stuck on \"what if I fail\" not \"what do I want\"\n2. **Fresh grads** \u2014 over-indexing on salary, under-indexing on growth trajectory\n3. **Mid-career** \u2014 all variations of \"is this it?\"\n\n## Relevance\n\nThis is a meta-coaching insight \u2014 it's not about any single student but about how Zaim discovered a pattern-recognition system through micro-observation. The 15-minute gap is the mechanism; the three buckets are the output.\n\n## Related\n\n- [[Zaim Mohzani]] \u2014 Coach and originator of this method\n- [[KSI Workshop]] \u2014 Context for the coaching sessions",
+      "body": "# Zaim's 15-Minute Gap Method\n\n**Source:** email\n**Source URI:** gmail://msg_19eca04daacc7a09\n**Ingested:** 2026-06-27T00:00:00Z\n**Provenance:** Forwarded by Zaim on 2026-06-14\n**For:** Zaim\n\n## The Insight\n\nBetween KSI sessions, Zaim has 15-minute gaps. Started using them to jot down one thing he noticed about each student \u2014 what they're stuck on, what lit them up. After a month, patterns emerged.\n\n## Three Student Buckets\n\n1. **Career pivoters** \u2014 stuck on \"what if I fail\" not \"what do I want\"\n2. **Fresh grads** \u2014 over-indexing on salary, under-indexing on growth trajectory\n3. **Mid-career** \u2014 all variations of \"is this it?\"\n\n## The Rule\n\nNever let a gap go empty. Even one sentence per student compounds.\n\n## Related\n\n- [[Zaim Mohzani]]",
       "tags": [
         "zaim"
       ],
@@ -407,15 +402,10 @@
           "to": "people/zaim-mohzani",
           "type": "wikilink",
           "text": "Zaim Mohzani"
-        },
-        {
-          "to": "concepts/ksi-workshop",
-          "type": "wikilink",
-          "text": "KSI Workshop"
         }
       ],
       "backlinks": [],
-      "outbound_count": 2,
+      "outbound_count": 1,
       "inbound_count": 0
     },
     {
@@ -485,6 +475,26 @@
       "links_out": [],
       "backlinks": [],
       "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "concepts/zaim-client-aisyah-rahim-2026-06-15",
+      "title": "Zaim Client Aisyah Rahim 2026 06 15",
+      "type": "concept",
+      "updated": "",
+      "body": "# Coaching Client Profile \u2014 Aisyah Rahim\n\n**Source:** email\n**Source URI:** gmail://msg_19eca0a8dc4888c3\n**Ingested:** 2026-06-27T00:00:00Z\n**Provenance:** Forwarded by Zaim on 2026-06-15\n**For:** Zaim\n\n## Profile\n\n- **Name:** Aisyah Rahim\n- **Role:** Senior Brand Manager at Unilever Malaysia\n- **Context:** Referred by Liyana from the KSI workshop\n- **First session:** Next Tuesday (as of June 15)\n\n## Key Takeaways from Intro Call\n\n- 8 years in FMCG brand management, feeling stagnant\n- Wants to pivot into tech but unsure where to start\n- Main blocker: \"I don't have a technical background\"\n- Has actually done more data-driven work than she realises \u2014 ran consumer analytics for 3 product launches\n- Salary anchor: RM 18k/month, worried about resetting to junior level\n\n## Zaim's Assessment\n\nClassic mid-career pivot case. The real problem isn't skills \u2014 it's confidence and narrative. Needs help reframing \"brand manager\" as \"growth strategist who uses data.\" Tech companies would value someone who can bridge consumer insights and product.\n\n## Session 1 Plan\n\nAudit her last 2 years of work through a tech lens. Find 3-5 specific examples where she already did \"product thinking\" without calling it that.\n\n## Related\n\n- [[Zaim Mohzani]]",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [
+        {
+          "to": "people/zaim-mohzani",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
       "inbound_count": 0
     },
     {
@@ -773,6 +783,31 @@
       "inbound_count": 0
     },
     {
+      "slug": "newsletters/zaim-why-2026-career-goals-dead-2026-06-16",
+      "title": "Zaim Why 2026 Career Goals Dead 2026 06 16",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# Why Your 2026 Career Goals Are Already Dead\n\n**Source:** email\n**Source URI:** gmail://msg_19ece778ab23e039\n**Ingested:** 2026-06-27T00:00:00Z\n**Provenance:** Forwarded by Zaim on 2026-06-16\n**For:** Zaim\n\n*From Nation Building School / Zaim Mohzani*\n\n## The Annual Goal Trap\n\nA year is too long to create urgency and too vague to act on. \"Get a new job this year\" feels fine in January \u2014 there's time, so nothing happens. By June the goal is technically alive but nothing has moved. By December, you're setting the same goal again.\n\n## The 12 Week Year\n\nZaim applied Brian Moran and Michael Lennington's \"The 12 Week Year\" framework. Instead of \"lose 6kg by December,\" he rewrote: \"lose 6kg in 90 days, by 31 March.\" He hit it. The habits built in those 90 days kept running on their own.\n\n## Career Application\n\n\"Get promoted this year\" doesn't tell you what to do on Monday. \"By 30 September, I will have had 3 conversations with people in my target department, applied to 5 internal roles, and presented one project to leadership\" tells you exactly what to do on Monday.\n\n## How to Set Yours\n\nPick ONE career goal for this quarter. Follow this format:\n- My 90-day career goal is...\n- This matters to me because...\n- To complete this, I commit that by 30 September 2026, I will have... (make this checkable)\n- To make sure I complete it, I'm going to... (weekly actions, not just the outcome)\n\n## Related\n\n- [[Zaim Mohzani]]\n- [[Nation Building School]]",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [
+        {
+          "to": "people/zaim-mohzani",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
+          "to": "companies/nation-building-school",
+          "type": "wikilink",
+          "text": "Nation Building School"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 2,
+      "inbound_count": 0
+    },
+    {
       "slug": "people/aisyah-rahim",
       "title": "Aisyah Rahim",
       "type": "person",
@@ -976,6 +1011,11 @@
           "text": "Zaim Mohzani"
         },
         {
+          "from": "concepts/zaim-client-aisyah-rahim-2026-06-15",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
           "from": "digests/2026-06-15-business-brain-digest",
           "type": "wikilink",
           "text": "Zaim Mohzani"
@@ -996,6 +1036,11 @@
           "text": "Zaim Mohzani"
         },
         {
+          "from": "newsletters/zaim-why-2026-career-goals-dead-2026-06-16",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
           "from": "people/aisyah-rahim",
           "type": "wikilink",
           "text": "Zaim Mohzani"
@@ -1007,7 +1052,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 14
+      "inbound_count": 16
     },
     {
       "slug": "zaim-career-goals-12-week-year-2026-06-16",
@@ -1150,13 +1195,13 @@
       "type": "wikilink"
     },
     {
-      "source": "concepts/zaim-15-minute-gap-method-2026-06-14",
-      "target": "concepts/ksi-workshop",
+      "source": "concepts/zaim-aisyah-rahim-client-profile-2026-06-15",
+      "target": "concepts/aisyah-rahim-client-profile-2026-06-15",
       "type": "wikilink"
     },
     {
-      "source": "concepts/zaim-aisyah-rahim-client-profile-2026-06-15",
-      "target": "concepts/aisyah-rahim-client-profile-2026-06-15",
+      "source": "concepts/zaim-client-aisyah-rahim-2026-06-15",
+      "target": "people/zaim-mohzani",
       "type": "wikilink"
     },
     {
@@ -1176,6 +1221,11 @@
     },
     {
       "source": "newsletters/zaim-career-goals-2026-06-16",
+      "target": "people/zaim-mohzani",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/zaim-why-2026-career-goals-dead-2026-06-16",
       "target": "people/zaim-mohzani",
       "type": "wikilink"
     },
@@ -1215,11 +1265,35 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-27T00:00:53Z",
+      "ts": "2026-06-27T00:14:01Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
-      "detail": "Dashboard refreshed \u2014 46 pages, 20 links",
+      "detail": "Dashboard refreshed \u2014 48 pages, 21 links",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-27T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "concepts/zaim-15-minute-gap-method-2026-06-14",
+      "detail": "Zaim 15 Minute Gap Method 2026 06 14",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-27T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "concepts/zaim-client-aisyah-rahim-2026-06-15",
+      "detail": "Zaim Client Aisyah Rahim 2026 06 15",
+      "level": "info"
+    },
+    {
+      "ts": "2026-06-27T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "newsletters/zaim-why-2026-career-goals-dead-2026-06-16",
+      "detail": "Zaim Why 2026 Career Goals Dead 2026 06 16",
       "level": "info"
     },
     {
@@ -1268,30 +1342,6 @@
       "stage": "updated",
       "slug": "newsletters/why-2026-career-goals-dead-2026-06-12",
       "detail": "Why 2026 Career Goals Dead 2026 06 12",
-      "level": "info"
-    },
-    {
-      "ts": "2026-06-25T00:00:00Z",
-      "source": "page",
-      "stage": "updated",
-      "slug": "concepts/aisyah-rahim-client-profile-2026-06-15",
-      "detail": "Aisyah Rahim Client Profile 2026 06 15",
-      "level": "info"
-    },
-    {
-      "ts": "2026-06-25T00:00:00Z",
-      "source": "page",
-      "stage": "updated",
-      "slug": "concepts/coaching-15-minute-gap-method-2026-06-14",
-      "detail": "Coaching 15 Minute Gap Method 2026 06 14",
-      "level": "info"
-    },
-    {
-      "ts": "2026-06-25T00:00:00Z",
-      "source": "page",
-      "stage": "updated",
-      "slug": "concepts/coaching-client-profile-aisyah-rahim-2026-06-15",
-      "detail": "Coaching Client Profile Aisyah Rahim 2026 06 15",
       "level": "info"
     },
     {

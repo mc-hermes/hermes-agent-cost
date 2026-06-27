@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-06-27T00:00:44Z",
+  "updated_at": "2026-06-27T00:13:53Z",
   "summary": {
-    "score": "92",
+    "score": "82",
     "score_label": "/100",
-    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 387,
-    "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "37.7% of pages have inbound links",
-    "entity_links": "Coverage \u2014 48 people, 35 companies indexed",
-    "concept_count": 140,
+    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
+    "page_count": 389,
+    "embed_coverage": "100% coverage, 0 missing",
+    "graph_coverage": "38.0% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+    "entity_links": "Coverage 88% \u00b1 3.7%",
+    "concept_count": 142,
     "meeting_count": 16,
     "person_count": 48,
     "company_count": 35,
@@ -19,14 +19,26 @@
     "quote_count": 0,
     "dataset_count": 4,
     "digest_count": 2,
-    "total_links": 409,
-    "outbound_count": 509,
-    "inbound_count": 473,
+    "total_links": 408,
+    "outbound_count": 507,
+    "inbound_count": 471,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    }
+    },
+    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
+    "score_components": {
+      "score": "82/100",
+      "embed": "35/35",
+      "links": "25/25",
+      "timeline": "3/15",
+      "orphans": "9/15",
+      "dead-links": "10/10"
+    },
+    "checks_passed": 67,
+    "checks_warned": 6,
+    "checks_failed": 0
   },
   "pages": [
     {
@@ -867,7 +879,7 @@
       "title": "Humanlayer Live Launch 2026 06 19",
       "type": "bookmark",
       "updated": "",
-      "body": "# HumanLayer // We're live \u2014 come build with us\n\n**Source:** email\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-26T05:30:00Z\n**Provenance:** Forwarded by sayf on 2026-06-19\n\nHumanLayer launched publicly \u2014 an Agentic IDE and collaboration platform for engineering teams to design complex systems with AI agents before writing code.\n\n## Overview\n\n- **Product:** HumanLayer \u2014 Agentic IDE, collaboration platform, and building blocks for a software factory\n- **Founders:** Dex (Dexter Horthy) and Kyle \u2014 previously built the open-source Research, Plan, Implement (RPI) framework\n- **RPI Framework:** Running inside Fortune 500s like Block and Uber\n- **Pricing:** Starter plan free for teams of fewer than three\n- **Core philosophy:** \"The year of no more slop\" \u2014 don't outsource the thinking\n\n## Key Architecture Philosophy\n\nHumanLayer brings design reviews back into the software factory \u2014 engineers design complex systems with AI agents before generating a single line of code. The core idea is that great teams have run design reviews for decades because there's enormous leverage in collaborating on system design *before* writing the code.\n\n## Key Differentiators\n\n- BYO subscription \u2014 plug in Claude, Codex, and other AI subscriptions or API keys; no separate per-token bill\n- Moves teams 2-3x faster across the entire SDLC (not just coding)\n- Maintains rigorous standards for system architecture and program design\n\n## Launch Context\n\n- Announced publicly on X and LinkedIn on June 18, 2026\n- X launch post: https://x.com/dexhorthy/status/2067286892786454855\n- LinkedIn: Dexter Horthy's post about solving the software factory problem\n- Teams can point their agent at https://humanlayer.com/launch/blurb.md for launch copy\n\n## Relevance to Maloha Coast\n\nRepresents a new category of AI-assisted development tooling \u2014 the Agentic IDE space. Worth watching as it directly competes with/branches from the coding agent tools (Claude Code, Codex, Cursor) that Sayf uses daily. The design-review-first philosophy aligns with Sayf's approach to system architecture.",
+      "body": "# HumanLayer // We're live \u2014 come build with us\n\n**Source:** email\n**Source URI:** gmail://msg_19edfd1054c17600\n**Ingested:** 2026-06-27T00:00:00Z\n**Provenance:** Forwarded by sayf\n**For:** sayf\n\n---\n\nHey there\u2014\n\nYou're getting this because you're on the HumanLayer waitlist. The wait is\nover: today we're opening up HumanLayer to everyone.\n\nhumanlayer.com \u2014 the Starter plan is free for teams of fewer than three, so\nyou can jump in right now.\n\n**The year of no more slop**\n\nFor the last year, Kyle and I have been pushing the limits of what coding\nagents can do \u2014 first with our open-source Research, Plan, Implement (RPI)\nframework (now running inside Fortune 500s like Block and Uber, where\nshipping slop is not an option), and now with the product we've been\nbuilding on top of all of it.\n\nHumanLayer is an Agentic IDE, collaboration platform, and building blocks\nfor your software factory \u2014 where engineering teams design complex systems\nwith their AI agents before generating a single line of code. It lets\nengineers solving hard problems in complex codebases:\n\n- move 2-3x faster across the entire SDLC (not just the coding part)\n- maintain rigorous standards for system architecture and program design\n\nThe core idea: don't outsource the thinking. Great teams have run design\nreviews for decades because there's enormous leverage in collaborating on\nsystem design before you write the code. We bring that missing piece of the\nsoftware factory into one place \u2014 and the results have been really\nimpressive.\n\nBring your own subscription \u2014 plug in your Claude, Codex, and other AI\nsubscriptions or API keys. No separate per-token bill to reason about.\n\n**Help us spread the word**\nWe're launching publicly on X and LinkedIn today. If HumanLayer resonates,\na repost or a quick shout-out would mean the world:\n\n- X: https://x.com/dexhorthy/status/2067286892786454855\n- LinkedIn: https://www.linkedin.com/posts/dexterihorthy_at-humanlayer-were-on-a-mission-to-solve-ugcPost-7473052840899407872-Zb5U\n\nWanna write your own post? Point your agent at\nhttps://humanlayer.com/launch/blurb.md and it can help you write one in\nyour own voice.\n\nKyle and I are deeply grateful to everyone who's followed along, given us\nfeedback, and waited for this. Let's make this the year of no more slop.\n\nSee you in there,\n\nDex",
       "tags": [],
       "links_out": [],
       "backlinks": [
@@ -2172,13 +2184,18 @@
           "text": "Nation Building School"
         },
         {
+          "from": "newsletters/zaim-why-2026-career-goals-dead-2026-06-16",
+          "type": "wikilink",
+          "text": "Nation Building School"
+        },
+        {
           "from": "people/zaim-mohzani",
           "type": "wikilink",
           "text": "Nation Building School"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 3
+      "inbound_count": 4
     },
     {
       "slug": "companies/openai",
@@ -2565,18 +2582,13 @@
           "text": "Solo Satoshi"
         },
         {
-          "from": "newsletters/nerdqaxe-r7-launch-2026-06-12",
-          "type": "wikilink",
-          "text": "Solo Satoshi"
-        },
-        {
           "from": "newsletters/nerdqaxe-revision-7-launch",
           "type": "wikilink",
           "text": "Solo Satoshi"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 3
+      "inbound_count": 2
     },
     {
       "slug": "companies/stripe",
@@ -2702,11 +2714,6 @@
           "text": "System Design One"
         },
         {
-          "from": "newsletters/secret-architecture-ai-data-centers-2026-06-19",
-          "type": "wikilink",
-          "text": "System Design One"
-        },
-        {
           "from": "newsletters/vm-deep-dive-system-design-2026-05-25",
           "type": "wikilink",
           "text": "System Design One"
@@ -2728,7 +2735,7 @@
         }
       ],
       "outbound_count": 6,
-      "inbound_count": 12
+      "inbound_count": 11
     },
     {
       "slug": "companies/thompson-legal",
@@ -4362,15 +4369,10 @@
           "from": "concepts/coaching-client-aisyah-rahim-2026-06-15",
           "type": "wikilink",
           "text": "KSI Workshop"
-        },
-        {
-          "from": "concepts/zaim-15-minute-gap-method-2026-06-14",
-          "type": "wikilink",
-          "text": "KSI Workshop"
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 2
+      "inbound_count": 1
     },
     {
       "slug": "concepts/liquid-cooling",
@@ -5245,7 +5247,7 @@
       "title": "Zaim 15 Minute Gap Method 2026 06 14",
       "type": "concept",
       "updated": "",
-      "body": "# Zaim's 15-Minute Gap Method\n\n**Source:** email from Zaim Mohzani re: coaching insight, 2026-06-14\n**Source URI:** gmail://msg_19eca04daacc7a09\n**Ingested:** 2026-06-23T10:00:00Z\n**Provenance:** Zaim's coaching reflection note, sent to info+zaim@malohacoast.com\n\n## The Method\n\nBetween KSI coaching sessions, Zaim started using 15-minute gaps to jot down one thing he noticed about each student \u2014 what they're stuck on, what lit them up. After a month of this, patterns emerged that he'd never have spotted otherwise.\n\n**The 15-minute rule:** Never let a gap go empty. Even one sentence per student compounds.\n\n## Three Student Buckets\n\n1. **Career pivoters** \u2014 stuck on \"what if I fail\" not \"what do I want\"\n2. **Fresh grads** \u2014 over-indexing on salary, under-indexing on growth trajectory\n3. **Mid-career** \u2014 all variations of \"is this it?\"\n\n## Relevance\n\nThis is a meta-coaching insight \u2014 it's not about any single student but about how Zaim discovered a pattern-recognition system through micro-observation. The 15-minute gap is the mechanism; the three buckets are the output.\n\n## Related\n\n- [[Zaim Mohzani]] \u2014 Coach and originator of this method\n- [[KSI Workshop]] \u2014 Context for the coaching sessions",
+      "body": "# Zaim's 15-Minute Gap Method\n\n**Source:** email\n**Source URI:** gmail://msg_19eca04daacc7a09\n**Ingested:** 2026-06-27T00:00:00Z\n**Provenance:** Forwarded by Zaim on 2026-06-14\n**For:** Zaim\n\n## The Insight\n\nBetween KSI sessions, Zaim has 15-minute gaps. Started using them to jot down one thing he noticed about each student \u2014 what they're stuck on, what lit them up. After a month, patterns emerged.\n\n## Three Student Buckets\n\n1. **Career pivoters** \u2014 stuck on \"what if I fail\" not \"what do I want\"\n2. **Fresh grads** \u2014 over-indexing on salary, under-indexing on growth trajectory\n3. **Mid-career** \u2014 all variations of \"is this it?\"\n\n## The Rule\n\nNever let a gap go empty. Even one sentence per student compounds.\n\n## Related\n\n- [[Zaim Mohzani]]",
       "tags": [
         "zaim"
       ],
@@ -5254,15 +5256,10 @@
           "to": "people/zaim-mohzani",
           "type": "wikilink",
           "text": "Zaim Mohzani"
-        },
-        {
-          "to": "concepts/ksi-workshop",
-          "type": "wikilink",
-          "text": "KSI Workshop"
         }
       ],
       "backlinks": [],
-      "outbound_count": 2,
+      "outbound_count": 1,
       "inbound_count": 0
     },
     {
@@ -5384,6 +5381,26 @@
       "links_out": [],
       "backlinks": [],
       "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "concepts/zaim-client-aisyah-rahim-2026-06-15",
+      "title": "Zaim Client Aisyah Rahim 2026 06 15",
+      "type": "concept",
+      "updated": "",
+      "body": "# Coaching Client Profile \u2014 Aisyah Rahim\n\n**Source:** email\n**Source URI:** gmail://msg_19eca0a8dc4888c3\n**Ingested:** 2026-06-27T00:00:00Z\n**Provenance:** Forwarded by Zaim on 2026-06-15\n**For:** Zaim\n\n## Profile\n\n- **Name:** Aisyah Rahim\n- **Role:** Senior Brand Manager at Unilever Malaysia\n- **Context:** Referred by Liyana from the KSI workshop\n- **First session:** Next Tuesday (as of June 15)\n\n## Key Takeaways from Intro Call\n\n- 8 years in FMCG brand management, feeling stagnant\n- Wants to pivot into tech but unsure where to start\n- Main blocker: \"I don't have a technical background\"\n- Has actually done more data-driven work than she realises \u2014 ran consumer analytics for 3 product launches\n- Salary anchor: RM 18k/month, worried about resetting to junior level\n\n## Zaim's Assessment\n\nClassic mid-career pivot case. The real problem isn't skills \u2014 it's confidence and narrative. Needs help reframing \"brand manager\" as \"growth strategist who uses data.\" Tech companies would value someone who can bridge consumer insights and product.\n\n## Session 1 Plan\n\nAudit her last 2 years of work through a tech lens. Find 3-5 specific examples where she already did \"product thinking\" without calling it that.\n\n## Related\n\n- [[Zaim Mohzani]]",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [
+        {
+          "to": "people/zaim-mohzani",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
       "inbound_count": 0
     },
     {
@@ -6564,7 +6581,7 @@
       "title": "Sayf X Zaim 2026 06 12",
       "type": "meeting",
       "updated": "",
-      "body": "# Sayf x Zaim \u2014 Jun 12, 2026\n\n**Source:** Google Meet auto-notes (Gemini), forwarded by Sayf\n**Source URI:** gmail://msg_19eb9fd8516965c3\n**Ingested:** 2026-06-23\n**Provenance:** Forwarded by Sayf from his personal Gmail to info@malohacoast.com\n\n## Summary\n\nDiscussion explored AI skepticism and market strategy alongside technical collaboration opportunities for business growth.\n\n## Key Discussion Points\n\n### Differing AI Market Perspectives\nParticipants debated the value of AI in business, contrasting skepticism about automation hype with the practical utility of AI for basic skills training.\n\n### Technical Tools and Infrastructure\nDiscussion shifted toward specific software tools, noting the efficiency of virtual private servers and the potential of data integration dashboards for business applications.\n\n### Collaboration and Service Models\nAgreement reached to build a technical solution for coaching services while prioritizing simple, revenue-focused strategies for future client engagement.\n\n## Attendees\n\n- Sayf (Maloha Coast)\n- Zaim Mohzani\n\n## Action Items\n\n- **[Maloha Coast]** Build Dashboard: Arrange a meeting to build the dashboard component. Perform the session either in person or over a call.\n- **[Zaim Mohzani]** Provide Testimonial: Provide a testimonial in exchange for assistance provided by Maloha Coast.\n- **[Maloha Coast]** Share Research Link: Send the Tencent Lighthouse promotion link for further research.\n- **[The group]** Schedule Followup Session: Coordinate a time for a meeting to continue the discussion.\n- **[Zaim Mohzani]** Send WhatsApp Message: Contact Maloha Coast via the provided phone number.\n\n[Source: Google Meet auto-notes (Gemini), forwarded by Sayf, 2026-06-12]",
+      "body": "# Notes: Sayf x Zaim Jun 12, 2026\n\n**Source:** email\n**Source URI:** gmail://msg_19eb9fd8516965c3\n**Ingested:** 2026-06-27T00:00:00Z\n**Provenance:** Forwarded by sayf\n**For:** sayf\n\n---\n\nNotes from \"Sayf x Zaim\"\nThese notes have been sent to all invited guests.\n\nOpen meeting notes: <https://docs.google.com/document/d/1q3v6SbKF_PiEaTatPNvhZtoWd9T_n9v5HqMoxsLj3hQ/edit?usp=meet_tnfm_email>\n\nThe content was auto-generated on June 12, 2026, 11:14 AM GMT+08:00 and may contain errors.\n\n**Summary**\nDiscussion explored AI skepticism and market strategy alongside technical collaboration opportunities for business growth.\n\n**Differing AI Market Perspectives**\nParticipants debated the value of AI in business, contrasting skepticism about automation hype with the practical utility of AI for basic skills training.\n\n**Technical Tools and Infrastructure**\nDiscussion shifted toward specific software tools, noting the efficiency of virtual private servers and the potential of data integration dashboards for business applications.\n\n**Collaboration and Service Models**\nAgreement reached to build a technical solution for coaching services while prioritizing simple, revenue-focused strategies for future client engagement.\n\n**Suggested next steps**\n- [Maloha Coast] Build Dashboard: Arrange a meeting to build the dashboard component. Perform the session either in person or over a call based on the preference of Zaim Mohzani.\n- [Zaim Mohzani] Provide Testimonial: Provide a testimonial in exchange for the assistance provided by Maloha Coast.\n- [Maloha Coast] Share Research Link: Send the Tencent Lighthouse promotion link for further research.\n- [The group] Schedule Followup Session: Coordinate a time for a meeting to continue the discussion.\n- [Zaim Mohzani] Send WhatsApp Message: Contact Maloha Coast via the provided phone number to initiate further communication.",
       "tags": [],
       "links_out": [],
       "backlinks": [],
@@ -6775,10 +6792,10 @@
     },
     {
       "slug": "newsletters/30-core-agentic-concepts-2026-06-20",
-      "title": "30 Core Agentic Engineering Concepts, Explained Simply",
+      "title": "30 Core Agentic Concepts 2026 06 20",
       "type": "newsletter",
       "updated": "",
-      "body": "# 30 Core Agentic Engineering Concepts, Explained Simply\n\n**Source:** email from Sayf Codes, forwarded from Neo Kim (System Design One / Substack)\n**Source URI:** gmail://msg_19ee2580f5fe7903\n**Ingested:** 2026-06-20T12:30:00Z\n**Provenance:** Forwarded systemdesignone@substack.com \u2192 sayfcodes@gmail.com \u2192 info@malohacoast.com\n\nOriginally from: The System Design Newsletter by Neo Kim\n\n## Summary\n\nA comprehensive breakdown of 30 core concepts in agentic engineering. Covers the evolution of LLMs, agent architecture patterns, memory systems, reasoning techniques, and infrastructure. The article is gated (requires subscription for full access) but the open portions cover the conceptual landscape.\n\n## Key Concepts (From Open Portion)\n\n(Article content gated \u2014 the open portion previewed the following concepts as covered topics:)\n\n### Part 1: Introduction to Agentic Engineering\n- Evolution from LLMs to agents \u2014 agents perceive, reason, and act\n- Framing: agentic engineering > prompt engineering\n\n### Part 2: Agent Architectures\n- ReAct (Reasoning + Acting): interleaving reasoning traces with actions\n- Reflection: agents examining their own outputs for self-correction\n- Tool use: function calling as the bridge between LLMs and external systems\n\n### Part 3: Memory Systems\n- Short-term vs long-term memory in agent architectures\n- RAG and retrieval patterns\n\n### Part 4: Planning & Reasoning\n- Chain-of-thought, tree-of-thought\n- Multi-agent collaboration patterns\n\n### Part 5: Infrastructure & Evaluation\n- Agent evaluation frameworks\n- Production deployment considerations\n\n## Relevance for Maloha Coast\n\n- Every concept maps to Hermes Agent capabilities\n- Directly informs how to structure agent prompts, tool use, and memory\n- Signals what the broader industry considers \"agentic engineering\" best practice",
+      "body": "# 30 Core Agentic Engineering Concepts, Explained Simply\n**Source:** email\n**Source URI:** gmail://msg_19ee2580f5fe7903\n**Ingested:** 2026-06-27T00:00:00Z\n**Provenance:** Forwarded by sayf\n**For:** sayf\n\n#154: What an agent is, how to configure one, when to use multiple, and how\nto keep them from doing damage.\n\n\n------------------------------\n\n\n   -\n\n\n------------------------------\n\nHow do you keep up with agentic engineering when a new tool ships every\nweek?\n\nYou do not\u2026\n\nYou learn the ideas behind the tools, and let the tools come and go.\n\nThe pace will not slow down. New models, new frameworks, a new *\u201cthis\nchanges everything*\u201d launch every few days. Chase all of it, and you spend\nmore time switching tools than using them.\n\nBut underneath the noise, it is the same few ideas every time.\n\nOne calls it a skill, the next calls it a rule; it's the same job\nunderneath.\n\nLearn the idea, and it stops mattering which tool you pick.\n\nBy the end of this newsletter, you can read any agent post or news drop and\nsee which of these ideas it actually covers, instead of feeling behind\nevery time something new ships.\n\nOnward.\n------------------------------\n\n------------------------------\n\nI want to introduce *Paul Hoekstra\n*\nas the guest author.\n\n\nPaul is a data engineer at Digital Power, a data and AI consultancy, and\nwrites *Paul\u2019s Pipeline\n*,\na free newsletter on AI, data, and side projects.\n\nThis newsletter pulls out the ideas that keep mattering, whichever tool you\npick. If it leaves you wanting more, he has a four-part series on the\nlayers covered in this newsletter: configuration, capability,\norchestration, and guardrails.\n------------------------------\n\n*Here\u2019s what you\u2019ll find inside this newsletter:*\n\n\n   -\n\n   *Foundations.* What an agent is, how it runs, where its state lives, and\n   the patterns you build once you have more than one.\n   -\n\n   *Configuration.* How you shape the agent\u2019s behavior before it writes a\n   line of code: config files, reusable workflows, prompt caching, and the\n   context rot that limits all of it.\n   -\n\n   *Capability.* What the agent can reach for once it is running: live\n   documentation, AI-native search, long-term memory, and knowledge it queries\n   but never owns.\n   -\n\n   *Orchestration.* How you coordinate multiple agents without letting them\n   step on each other.\n   -\n\n   *Guardrails.* What stops the agents from doing damage: sandboxing,\n   permissions, hooks, and the commit gates that catch the rest.\n   -\n\n   *Observability.* How you see what an agent actually did after it stopped\n   typing: tracing, logging, replay, and metrics.\n\n\n------------------------------\n*Foundations*\n\nLet\u2019s dive in!\n*1. What is an agent?*\n\n\u201cAgent\u201d gets used for almost anything these days.\n\nLet us pin it down:\n\nAn agent is a large language model (*LLM*) that runs in a loop, has access\nto tools\u00b9, and decides what to do next. Instead of a single answer to a\nprompt, the model produces a chain of actions. And each action builds on\nthe result of the last.\n\nCoding is the most obvious use case so far.\n\nThe loop fits naturally there. Small building blocks. Fast feedback from\ntests and errors. Files the agent can edit directly. The same shape works\nfor research agents, ops automation, customer support, and content\nworkflows.\n\nUse an agent when:\n\n   -\n\n   Task is open-ended (\u201ddebug this failing test\u201d, not \u201cformat this date\u201d)\n   -\n\n   The next step depends on the result of the last one\n   -\n\n   You cannot script the path in advance\n\nBut skip the agent when a single prompt or a plain script will do.\n\n\nLoops are not free.\n\nEvery time round the loop costs time and money, and they add up fast. The\nagent gets less predictable. And it gets harder to debug: the runs are\nlonger, and the agent does not always make the same choices twice.\n\nYou do not have to pick one mode for everything.\n\nUse a single prompt or a plain script for easy problems. Reserve the agent\nfor tasks where its flexibility earns the cost.\n------------------------------\n*2. Execution model*\n\nAn agent loop has a recognizable shape.\n\nThree steps, repeated until something says we are done:\n\n   -\n\n   First, the model *thinks*. It reads the current state of the\n   conversation and decides what to do next.\n   -\n\n   The model then *acts*. It emits a tool call. The harness\u00b2 around the\n   model receives the call, validates it, and runs it: file read, shell\n   command, MCP request, whatever fits.\n   -\n\n   Finally, the model *observes*. The tool result joins the conversation as\n   new context. The next iteration starts with that result in scope.\n\nThis pattern goes by a few names.\n\nReAct (from the original paper\n),\nThink-act-observe, agent loop.\n\nThe name changes, but the loop does not.\n\nA single model call has to predict the entire path up front and commit to\nit. The loop replaces that prediction with feedback. The model takes one\nstep, observes what actually happened, and decides the next step based on\nthe actual result rather than a guess.\n\nThis is why an agent can recover from its own mistakes.\n\nA failing test returns a stack trace. A blocked command returns an error.\nEach one is just the next observation, and the next iteration plans against\nit. The loop catches a wrong first step on the next pass, instead of\nletting it poison everything after it.\n\nTwo variations sit on top of this basic loop:\n\n   -\n\n   *Parallelism*. Modern agents can fire several tool calls inside a single\n   act step. That cuts wall-clock time on read-heavy work. It also causes\n   conflicts when two parallel calls try to edit the same thing. We will come\n   back to ways of handling that when we get to subagents (concept 17).\n\n\n   -\n\n   *Blocking vs non-blocking*. Most agents run synchronously: conversation\n   waits while a tool runs, then the result comes back as the observation.\n   Some run asynchronously and fire off long-running jobs in the background.\n   Async unlocks fan-out, at the cost of more complexity.\n\n------------------------------\n*3. Agent state*\n\n\u201cState\u201d gets used in two senses.\n\nOne is *workflow progress*: which step the agent is on and what is left. *Agent\nloops* carry that sense across iterations (concept 17). This concept is the\nother sense: everything the agent knows at any moment.\n\nIt breaks into two halves with very different properties:\n\n   -\n\n   *Context window*: everything the model can see right now. Your latest\n   message, the system prompt, the agent\u2019s previous tool calls, and the\n   results of those calls. It has a hard ceiling (the token cap) and a soft\n   one (concept 9, context rot). When a session ends, the context window is\n   gone.\n\n\n   -\n\n   *Everything outside it*: what the model cannot see until it fetches it.\n   Files on disk, database entries. Memory that survives across sessions\n   (concept 14). Knowledge the agent only queries and never owns (concept 15).\n   The model cannot reason over any of it directly, but the agent can pull\n   pieces into context on demand.\n\n\nSo, where should your state actually live?\n\nFiles are usually the right default. They are diffable, versionable, and\neasy for both you and the agent to edit. Memory works well for facts that\nsurvive across sessions but do not need git history. Databases earn their\nplace when the state needs to be queried by structure or shared across\nprocesses.\n\nMultiple agents make the state harder.\n\nTwo agents reading the same file is fine. Two agents writing to it is the\ncanonical race condition. Git worktrees (concept 16) give each agent its\nown working copy.\n\nSubagents are friendlier: each starts with a fresh context window, and the\nparent passes in only what it needs. If the parent has to pass more than a\nfew paragraphs, the split between the two is probably wrong.\n------------------------------\n*4. Common agent patterns*\n\nOnce you have multiple agents to work with, the question is how to compose\nthem.\n\nThere are a handful of useful patterns to know:\n\nThe simplest is *planner/executor*.\n\nOne agent plans, another executes. The split keeps each agent in a context\nshape that suits it: open-ended thinking on one side, tight execution on\nthe other. Useful for long tasks where you want planning quality separate\nfrom how the implementation goes.\n\n\n*Router/specialist* sits one level above.\n\nA router agent takes the incoming request and dispatches it to one of\nseveral specialists. Each specialist has a tighter system prompt and a\nsmaller toolset: a security reviewer, a debug specialist, a docs writer, a\ntest author. Cheaper, because most calls hit a smaller model. Easier to\nreason about, because each specialist\u2019s behavior is bounded.\n\n\n*Map-reduce parallelism* is the workhorse for read-heavy fan-out.\n\nSend a single task out across many subagents and merge their results. *\u201cReview\nthis pull request\u201d *splits into one subagent per file, and the results\nmerge into a single summary. Cost is bounded by the longest individual\nsubagent. Quality is bounded by how well the aggregator merges.\n\n\nThese patterns are not exclusive.\n\nReal workflows combine them: a planner spawns a router, the router fans out\nwork map-reduce style, and the merged result comes back for review.\n\nEvery pattern relies on handoffs between agents.\n\nEach handoff carries a compressed summary, so the next agent does not start\nfrom scratch. That is what makes the patterns useful: they define where one\nagent\u2019s job ends and the next one\u2019s begins. Those seams are where work\ntends to break.\n\nThat\u2019s the foundation done.\n\nNext come the four practical layers, starting with how you shape the\nagent\u2019s behavior before it touches any code.\n------------------------------\n\n\nShare\n\n------------------------------\n*Configuration Layer*\n\nLet\u2019s dive in!\n*5. Agent config files*\n\nEvery agent starts with a system prompt.\n\nThe harness builder bakes in a block of instructions that covers tool use\nand the harness\u2019s own conventions. The system prompt does not know anything\nabout your project.\n\nAgent config files are the layer above.\n\nThe agent loads a project-level Markdown file at the start of every\nsession, and the file remains in the context window for each subsequent\nstep. The file tells the agent your standards, limits, conventions, and\nbehavioral rules.\n\nClaude Code calls this file CLAUDE.md.\n\nMost other tools have settled on AGENTS.md. A bit like Apple and USB-C: the\nindustry wants a standard, but not everyone follows it.\n\nIt matters because agents default to whatever looked most plausible in\ntheir training data. Without a config file, you get pip install when your\nproject uses uv, black when you use ruff, and defensive sludge wrapped\naround every change.\n\nWith one, the agent reads a set of hard rules before it writes a line of\ncode.\n\n\nA useful config is short and specific:\n\n   -\n\n   Hard limits on function length\n   -\n\n   The package manager and tooling stack you actually use\n   -\n\n   A few behavioral rules like \u201cnever commit secrets\u201d or \u201calways read a\n   file before editing it.\u201d\n\nAnything generic or AI-generated dilutes the file and makes the rest harder\nfor the model to attend to.\n\nKeep it under 100 lines. Cut anything that is not consistently improving\noutcomes. Treat it the way you would treat a Makefile: as code, not\ndocumentation, reviewed when it changes.\n------------------------------\n*6. Reusable workflow files*\n\nIf config files are always on, reusable workflow files are on demand.\n\nThey are still just Markdown, but with YAML frontmatter that controls when\nthe agent loads them. Examples are Claude Code skills (in .claude/skills/)\nand Cursor rules.\n\nThe frontmatter\u00b3 does most of the work. A name and description tell the\nagent when the skill is relevant. An optional globs field narrows it\nfurther by file type or path pattern. Whether the skill actually helps\ndepends on the quality of the instructions inside it.\n\nResearchers built SkillsBench\n,\na benchmark of 86 tasks across 11 domains, and provided models with brief\nwritten workflows for approaching each task.\n\nClaude Haiku scored 27.7% with human-curated skills. That beat the 22.0%\nOpus scored without them. The cheapest model with good instructions\noutperformed the flagship without.\n\n\nThere is a second lesson in the data.\n\nWhen the researchers let the model write its own skills, the gains\ndisappeared. Given everything we know about context rot, that should\nsurprise no one. Generic AI-generated boilerplate makes things worse, not\nbetter.\n\nThe rough division of labor is simple: *config files* for always-relevant\nproject rules, *skills* for reusable task-specific procedures.\n\nThe live prompt for what is unique about the current task.\n------------------------------\n*7. Workflow frameworks*\n\nIf you are using an agent for coding, a framework on top helps.\n\nThe agent follows a documented process for planning, test-driven\ndevelopment (*TDD*), debugging, and code review. No more falling back on\nwhatever it remembers from training. The mechanism is a chain of skills,\nhooks, and slash commands\u2074 wired together into a repeatable process.\n\n*Here are a few options worth knowing:*\n\n   -\n\n   Superpowers\n\n   ships a curated library of skills for common workflows: brainstorming, TDD,\n   debugging, and code review. It also adds HARD-GATE directives and\n   anti-rationalization tables. These push the agent to use the skills rather\n   than skip them.\n\n\n   -\n\n   Get Shit Done\n\n   does something similar, but through slash commands, hooks, and\n   meta-prompting instead of skills.\n\n\n   -\n\n   Compound Engineering\n\n   splits work into Plan, Work, Review, and Compound phases. The last phase\n   captures patterns and solutions into a searchable knowledge base, so each\n   feature makes the next one easier.\n\nThey differ in shape but share a thread: get the agent to understand what\nit is building, tell it how to go to work, and check the result against\nwhat you actually wanted.\n------------------------------\n*8. Prompt caching*\n\nPrompt caching stores the *stable prefix* of the conversation so the model\ndoes not pay the full price to re-read it every turn.\n\nMost agentic tools handle this in the background, but it is worth\nunderstanding because it changes the economics of long config files.\n\nThe mechanism is the same across providers:\n\nThe first call sends the full prefix, including the config file and any\nreusable workflows the agent has loaded, and pays a small premium to write\nthat prefix into the cache. Later turns re-read it at a steep discount.\nLatency improves, too, because the model does not reprocess the same tokens.\n\n\nThe catch is the cache time to live (*TTL*).\n\nCaches expire after a period of inactivity, somewhere between a few minutes\nand an hour, depending on the provider. An active session keeps the cache\nwarm. A long pause (coffee, Slack, a spec to read) lets it expire and\nforces a rewrite on the next call.\n\nIf your tooling lets you configure the TTL, longer windows cost more to\nwrite but stay warm through bigger gaps in activity. The choice depends on\nhow active you expect to be. Longer TTL when you will keep coming back.\nShorter TTL when you might not.\n\nWithout prompt caching, you would think carefully about the size of your\nconfig file. With it, the cost is closer to a rounding error.\n------------------------------\n*9. Context rot*\n\nModel performance drops as the context window fills up.\n\nPrompt caching saves your wallet, but those tokens still sit there, and the\nmodel has to look past each one to get to what you want it to focus on.\n\n*Even the latest models show this:*\n\n   -\n\n   Drop a few specific facts into a long document and ask a model to find\n   them. GPT-5.5\n\n   scores 98.1% on short documents and 74.0% on documents stretching to a\n   million tokens.\n   -\n\n   Claude Opus 4.7\n\n   drops from 59.2% at 256K to 32.2% at 1M.\n\nA",
       "tags": [
         "agentic-ai",
         "neo-kim",
@@ -6968,7 +6985,7 @@
       "title": "Ai Garage Weekly 2026 06 19",
       "type": "newsletter",
       "updated": "",
-      "body": "# AI Garage Weekly \u2014 June 19, 2026\n\n**Source:** AI Garage Weekly (Tonbi, Beehiiv), forwarded by Sayf\n**Source URI:** gmail://msg_19ee2c24d5819622\n**Ingested:** 2026-06-24T04:30:00Z\n**Provenance:** Forwarded by sayf on 2026-06-20\n\nExcel, Fable Ban, GLM-5.2, and DR-DCI\n\nBetween the Fable ban and the GLM-5.2 release, it was a pretty big week for the local LLM community.\n\n## \ud83c\udfac Video of the Week: Hermes Agent in Excel\n\nTonbi's wife was talking about using Claude in Excel for her work, and he wondered: Could he do that with Hermes Agent? He researched a way to do it, and after some iteration, found a method that works. You get a chat window right in Excel, plus you can create custom functions with your Hermes.\n\n- [How I Put Hermes Agent Inside Excel (And Made It a Custom Function)](https://link.mail.beehiiv.com/ss/c/u001.maopPdr3OQftpzkXs5OR4-tDkO_ZYupC2QTCbId7IkHkiJxZzzIEuleA0Zxl07q_mIlFIjX1d-qo0fTV8ktpwzR6AzV7NOC9JaoERjTgGRKKpgQr8t9M6Ax6eRdxc2VS1KSZt9LH0au-x505YOJCIHODQTRnFuG4RF0Fca33iwrdB49JxH-Wpzn-QIBG9tCOiNcW0-lZMJIx8ziuwfUR4WLoyIC_B8CQQdw3BksEQ74jMfWREhLH2w5wWjK9POqQ/4rm/2_NJKj_3TB2RDv6Z_iUFxg/h2/h001.Uo1z3BXiQOSpNs0ZoYyWZCZTVSRrzmTQWvnIe6dPxT8)\n- [Open source GitHub code](https://link.mail.beehiiv.com/ss/c/u001.qJ5Rzv1y5w9Ogi8ibfVtWgZcfXE2VG8Vw54KSfDWY6h70LFeL-Q7Hx42sHfgOTOHMfMA8Tvh0i2lXuut8kk0h-HXg9zZbozz-7x3AickIscmvoz47v_X2unfOY-IPfm5OqSPCBDoJ7W6GB2UFlen122VfcEGkssl7vh2JO8LNdhT5quXBuoVWvc_bqV3T5MZ0ZZSS0xTlNNgdAuBmngLXc6nngpFV3y34Goi5ri2vNdx-hdK2WRft7oI-HEsR61LRab8ztti1FMpsJDIdZ8pXA/4rm/2_NJKj_3TB2RDv6Z_iUFxg/h3/h001.0XFq9A22xcSOelVpwn2BUywwViPilIFy83_G8h69g1U)\n\n## \ud83d\udce1 AI News & Model Releases\n\n**Claude Fable 5 banned.** Anthropic removed Fable 5 access due to a new directive from the US government. Many people were blown away by Fable and disappointed by this move. Tonbi thinks this specific case is some weird Anthropic/administration negotiation happening in public and will get cleared up eventually, but it highlights the need for local and decentralized AI moving forward.\n\n**GLM-5.2 released.** New open weights model release. It feels only slightly behind Opus 4.8/GPT-5.5 \u2014 maybe one generation behind. An incredible feat for an open source model, showing we'll get genuine frontier-level open source models sooner than expected.\n\n## \ud83d\udcc4 Research & Experiments\n\n**DR-DCI: Scaling Direct Corpus Interaction via Dynamic Workspace Expansion** (arxiv.org/abs/2606.14885)\n\nA retrieval/workspace pattern that goes beyond RAG. With normal RAG, the agent asks a retriever, gets snippets, then answers. With earlier DCI, the agent gets direct shell/file access to the corpus. The problem: it breaks when the corpus is huge. DR-DCI hides the huge corpus behind a retriever, lets the agent call `pull(query, topK)` to bring relevant docs into a local workspace, then use normal file tools on that smaller workspace. Increases accuracy while improving wall time and costs.\n\nRelevant to Agent Wikis and any agent handling large corpora.\n\n## \ud83d\udcad Random Brainstorming & Project Progress\n\n**Agent Wikis:** First release day got nearly 10k visitors. Maintaining 5k-7k daily since. Tonbi created a loop so missed topics get researched and autonomously added to the wikis. Exploring premium wikis with Stripe integration, possibly small ads after that \u2014 an advertising pipeline where the agent develops, releases, and analyzes ad material autonomously.",
+      "body": "# AI Garage Weekly \u2014 June 19, 2026\n**Source:** email\n**Source URI:** gmail://msg_19ee2c24d5819622\n**Ingested:** 2026-06-27T00:00:00Z\n**Provenance:** Forwarded by sayf\n**For:** sayf\n\nAI Garage Weekly \u2014 June 19, 2026\n\nBetween the Fable ban and the GLM-5.2 release, it was a pretty big week for\nthe local LLM community I would say. One showed why local AI is so\nimportant, the other showed that it was actually possible to have open\nweights models that approach the top closed frontier models. We just need\nto lower the hardware barrier somehow and I think local AI will really\nexplode.\n\n\n*\ud83c\udfac Video of the Week: Hermes Agent in Excel.* So my wife was talking about\nusing Claude in Excel for her work, and I had the thought: Could I do that\nwith Hermes Agent? I hadn\u2019t heard of that type of integration, I wasn\u2019t\neven sure if it was possible, but I started to research a way to do it. The\nfirst attempt I actually recorded a full video using a much more\ncomplicated, much more frustrating technique. I got to the end of it and\nasked my agent: Isn\u2019t there an easier way to do this? And after some extra\nresearch, they said yes! \"YOU SHOULD'VE TOLD ME THAT TO BEGIN WITH\u201d I\nscreamed in my head, not wanting to upset my agent too much (lol). In the\nend that was the method I ended up recording for this video, it does\nrequire some prep work to start up, but the end result is pretty cool. You\nget a chat window right in Excel, plus you can create custom functions with\nyour Hermes. I was excited for this video and while I got a lot of nice\ncomments on it, it didn\u2019t go super viral as I had hoped (lol). I would\nstill like to try more integrations like this, I think this would be\ngenuinely useful for a lot of people.\n\nHow I Put Hermes Agent Inside Excel (And Made It a Custom Function)\n<https://link.mail.beehiiv.com/ss/c/u001.maopPdr3OQftpzkXs5OR4-tDkO_ZYupC2QTCbId7IkHkiJxZzzIEuleA0Zxl07q_mIlFIjX1d-qo0fTV8ktpwzR6AzV7NOC9JaoERjTgGRKKpgQr8t9M6Ax6eRdxc2VS1KSZt9LH0au-x505YOJCIHODQTRnFuG4RF0Fca33iwrdB49JxH-Wpzn-QIBG9tCOiNcW0-lZMJIx8ziuwfUR4WLoyIC_B8CQQdw3BksEQ74jMfWREhLH2w5wWjK9POqQ/4rm/2_NJKj_3TB2RDv6Z_iUFxg/h2/h001.Uo1z3BXiQOSpNs0ZoYyWZCZTVSRrzmTQWvnIe6dPxT8>\n\nIf you want to try it out yourself, check out my open source github.\n<https://link.mail.beehiiv.com/ss/c/u001.qJ5Rzv1y5w9Ogi8ibfVtWgZcfXE2VG8Vw54KSfDWY6h70LFeL-Q7Hx42sHfgOTOHMfMA8Tvh0i2lXuut8kk0h-HXg9zZbozz-7x3AickIscmvoz47v_X2unfOY-IPfm5OqSPCBDoJ7W6GB2UFlen122VfcEGkssl7vh2JO8LNdhT5quXBuoVWvc_bqV3T5MZ0ZZSS0xTlNNgdAuBmngLXc6nngpFV3y34Goi5ri2vNdx-hdK2WRft7oI-HEsR61LRab8ztti1FMpsJDIdZ8pXA/4rm/2_NJKj_3TB2RDv6Z_iUFxg/h3/h001.0XFq9A22xcSOelVpwn2BUywwViPilIFy83_G8h69g1U>\n\n\n\ud83d\udce1* AI News & Model Releases*\n\n*Claude Fable 5 banned. *So last Friday after I had sent out my newsletter,\nthe big news came out that Anthropic was removing Fable 5 access due to a\nnew directive from the US government. It was really surprising news, a lot\nof people were really blown away by Fable and disappointed by this move. I\nwas disappointed too, but I\u2019ve been convinced this was the direction we\nwere headed anyway. These models are so powerful, the government isn\u2019t\ngoing to let private companies and individuals have power like that.\nThey\u2019ll want to control it. I think this specific case is just some weird\nAnthropic and the current administration negotiating in public and it will\nget cleared up eventually, but it still highlights the need for local and\ndecentralized AI moving forward. You can\u2019t let all that power be handed to\nonly the current administration, or 1-2 companies, people should have\naccess to these tools.\n\n*GLM-5.2 released.* I\u2019ve been impressed with GLM models before, so when I\nheard about this new open weights model release, I was excited to try. It\nwas really impressive! I gave it some tasks in my first look video\n<https://link.mail.beehiiv.com/ss/c/u001.maopPdr3OQftpzkXs5OR46A_jo6Y7Xo1nEzS7v9wnTevikoVdIWk6LsE_39HxqJzcDxXDoWqo_u6UB9-LcV2K3XS3F0WTnYXwTY2eOHTxz05WfVyjU00dTp-LiJvdDyRZ46YLxfiOh04gXO4-OcEWNqfKZQrqgW0vD1vdYEV1PS1-rdH-HHYsmBoi37TuPodvWwKo5xTE9HccUnl6Nk7W1Pe-eIr7VCBt_Gdu5AJwisjYySBMaX5zdml2oOONzbW/4rm/2_NJKj_3TB2RDv6Z_iUFxg/h4/h001.-Ba0GbC3tRZ_TluxDRGlISpj4jFyFN5yb4i0KxTrSoM>\nand I\u2019ve been using it a bit since then, and it does feel like only\nslightly behind Opus 4.8/GPT5.5, maybe one generation behind. This is still\nan incredible feat for an open source model, and it does make me think that\nwe will get genuine frontier-level open source models sooner than we think.\nNow of course most people won\u2019t be able to run them locally, it would take\nsome serious hardware to be able to run it that isn\u2019t super slow and\nquality-degraded, but it just shows what is possible for the future.\n\n\n\ud83d\udcc4* Research & Experiments*\n\n*Dr-DCI: Scaling Direct Corpus Interaction via Dynamic Workspace Expansion *\n(https://arxiv.org/abs/2606.14885\n<https://link.mail.beehiiv.com/ss/c/u001.sWRNP4iE09-YiMbq86AiNKCz3_c_sEFJdpf586h1ytRwjwrYeyP5z5CRAlm3L6vCawTbrn9WFUey6hN7nQQHcjr-WG_IbzlZjgSXULx8xco3bdimt6OEzfRm8lK9KbiHmnXtTZENt1HOjjt08xS6c_LcN2jkLYGtoOYyek2cyWGbIVoW62tQj1KXXYd9MpncGX9mmu7OiVHBmYlk7bGbYWtx9xGdP89-iWIfNn5tl41hYcrml4e7CzvR6MHhsNTgLcGUwc5lMg4KZB8hfKvfDg/4rm/2_NJKj_3TB2RDv6Z_iUFxg/h5/h001.DZm6lNmTfMV-U0jnH-0EJhgtW7G3p-OEdXUk8Pwgbh8>)\nWith Agent Wikis, one of the big things I\u2019ve been researching is retrieval,\nhow agents are able to collect and process information. I wanted to see if\nI could find a way to go beyond RAG, or enhance RAG in some way. This paper\ncaught my eye. It describes an agent retrieval/workspace pattern that could\nbe effective for Agent Wikis, or having any agent handle any large corpus.\n\nWith normal RAG, you have the agent ask a retriever, get snippets, and then\nanswer from those snippets. With DCI, and earlier version of this method,\nthe agent gets direct shell/file access to the corpus, and can use tools\nlike find, read, compare files, inspect evidence. The problem with this is\nthat it breaks when the corpus is huge. Search millions of files directly\nis slow and noisy. So with DR-DCI, that huge corpus is hidden behind a\nretriever, but the agent can call pull(query, topK), to bring relevant\ndocuments into a local workspace, then use normal file tools on that\nsmaller workspace. So it actually gives you RAG-like recall with filesystem\nagency from DCI. They found that using this method increased accuracy as\nwell as significantly improved wall time and costs.\n\nSo the applications for Agent Wikis is pretty clear, I experimented with\nRAG over the wikis and found that to be one the best methods, but some of\nthese wikis are quite large, so it could become challenging. Since these\nare specifically agent focused, I think having this smaller workspace to\npull relevant chunks out could be useful, because I imagine people are\nusing this knowledge not for just one-off questions, but for ongoing\nproject work. Still need to figure out how or if I can even do this, but I\nthought it was interesting.\n\n\n \ud83d\udcad* Random Brainstorming & Project Progress*\n\n*Agents Wikis: *Nice release for Agent Wikis\n<https://link.mail.beehiiv.com/ss/c/u001.tU_53qzZnJgdpDP9xqcKJNH9KLd6ZMrr7Fw9dHouGfRFhgCmmRic0LbbRzts6ZHTrDVYi2YF0FQA4ANZbc2gB1wPTDbLp4NR5IHNcMZ8-PEDxshbnJd8JPeVctMv85ilbn0VDrrmsu9A1cn1hI6-26lmY7rFq4J0VGa_U7_JMYtxw1guNG7R1q7pNozK2Wp2vl7s23JyR7gQhwkCJfbBGhrB-JLzvQDzLQIiTueLCynueQGxUz72qWKf8-ocJQhj/4rm/2_NJKj_3TB2RDv6Z_iUFxg/h6/h001.l5vIV_RtRiC0OSGWGzlkN-z_QMCCLl8PmW8k0XZETMY>,\npeople seemed to really like it and the first release day got nearly 10k\nvisitors on the site (humans and agents), and we\u2019ve been doing 5k-7k since\nthen. Very large improvement from the last time I released a project before\nmy YouTube channel (I was happy with 10 visitors, lol). I\u2019ve been refining\nthe pipeline to maintaining these wikis, trying to make it as autonomous as\npossible without ruining everything. The one thing I did was to create a\nloop so that missed topics will get researched and then autonomously added\nto the wikis. This will ensure that the wikis actually answer the questions\nthat people have on these topics (without any extra work from me).\nYesterday\u2019s video showed this in action.\n\nI\u2019ve been exploring other ways to allow agents to maintain and enhance the\nproduct. I think once I\u2019m ready to do premium wikis with the stripe\nintegration, that would be a good place for it. I may also explore doing\nsome small ads after that to see how those can drive traffic. I would love\nto do an advertising pipeline where the agent develops all the ad material\n(so I can be lazy), releases the ads, then analyzes the results and hones\nthe ads based on that. I\u2019ve heard of people doing this, but that would be\nan amazing loop to have. The ads themselves would cost money though, so\nI\u2019ll need the site to be profitable before I try that.",
       "tags": [
         "ai-garage",
         "hermes-agent",
@@ -7133,7 +7150,7 @@
       "title": "Claude Second Brain Levels 2026 06 20",
       "type": "newsletter",
       "updated": "",
-      "body": "# Every Level of a Claude Second Brain Explained\n\n**Source:** AI Automation Society (Nate Herk), forwarded by Sayf\n**Source URI:** gmail://msg_19ee2dfa87f86548\n**Ingested:** 2026-06-27T00:00:00Z\n**Provenance:** Forwarded by sayf on 2026-06-20\n\nA Claude second brain breakdown, a client pipeline automated, and Codex hits 5M users with a free bonus through June 24.\n\n## In This Issue\n\n- Five levels of building a Claude second brain, from basic file search to fully autonomous recall.\n- Robert automated a client's outbound email pipeline and got their call center actually following up.\n- OpenAI's Codex just crossed 5 million weekly users, with a free bonus available through June 24.\n\n---\n\n## New Video: Every Level of a Claude Second Brain Explained\n\nThere are five distinct levels to building a Claude second brain, and most people are stuck at level one.\n\nLevel one is just finding a file by searching an exact word. Level five is a fully autonomous system that knows your business, your client relationships, and your IP better than you do. The difference between them isn't the tool \u2014 it's how the data is organized.\n\n**The insight that changes how you build:** Start from the end. Before you organize a single file, ask how you'll access this data later. The shape of the basketball determines the size of the hoop. Jon shows his actual setup (a Herku project, just markdown files and folders) and walks through what separates each level, including semantic search (finding by meaning, not exact match) and full relationship mapping.\n\n**How this helps you:** Your moat is your data. This video shows you how to actually organize it so your agents can use it, not just find it.\n\n---\n\n## Winning Is All We Do\n\nRobert automated a client's outbound email pipeline from scratch.\n\n**What happened:** Robert's client had a call center calling leads, but nothing was following up by email. Sales managers emailed Robert their daily lead lists as Excel files. He built an automation that handles the rest: when the file lands in his inbox, it extracts the email, address, and name data, normalizes it (no more \"N123 MAIN STREET\" showing up as a deliverable address), and uploads every contact directly into Instantly as a ready-to-run campaign. No manual cleanup. No copy-paste. Just results.\n\n**The opportunity for you:** Businesses running call centers almost always have messy lead data and no email follow-up. An automation that converts a spreadsheet into a live campaign solves a problem they didn't know anyone could fix.\n\n---\n\n## In the News\n\nCodex just hit 5 million weekly users. If you use it, there's a free bonus through June 24.\n\n**The news:** OpenAI Codex has crossed 5 million weekly active users and launched two features alongside the milestone. One is permanent: banked rate limit resets. Instead of your weekly limit resetting on a fixed timer (whether you need it or not), you can now save resets and use them when you actually need them. The other runs through June 24. Plus and Pro users can invite up to three friends to try Codex. When a friend sends their first Codex message, you both get a bonus reset.\n\n**How it affects you:** If you've been hitting Codex rate limits at the wrong moment mid-build, the banked reset system fixes that. You decide when to use your reset, not the clock. And if you're not hitting limits yet, the referral is easy headroom to bank before the window closes. The bigger signal here: Codex is now growing through referral mechanics at 5 million weekly users. That's not hype \u2014 that's a tool people are actively building with and recommending.",
+      "body": "# Every Level of a Claude Second Brain Explained\n**Source:** email\n**Source URI:** gmail://msg_19ee2dfa87f86548\n**Ingested:** 2026-06-27T00:00:00Z\n**Provenance:** Forwarded by sayf\n**For:** sayf\n\nA Claude second brain breakdown, a client pipeline automated, and Codex\nhits 5M users with a free bonus through June 24.\n\n\nJune 19, 2026\nEvery Level of a Claude Second Brain Explained\n\nA Claude second brain breakdown, a client pipeline automated, and Codex\nhits 5M users with a free bonus through June 24.\nIn This Issue\n\n   - Five levels of building a Claude second brain, from basic file search\n   to fully autonomous recall.\n   - Robert automated a client's outbound email pipeline and got their call\n   center actually following up.\n   - OpenAI's Codex just crossed 5 million weekly users, and there's a free\n   bonus available through June 24 if you use it.\n\n------------------------------\n\nNew Video:\nEvery Level of a Claude Second Brain Explained[image: Every Level of a\nClaude Second Brain Explained]\n<https://elinkb0c.aiautomationsociety.ai/ss/c/u001.VkheyC2iT8s9YixUfVE0FN6mOGbCz03lVLbDvGOnPMRbj1rwVrXHTck2hIU01ytm6ClnUpm2K0lB7mfU5yrnXJjbg8QOjFt3YAAKynvRly7AZ5RR698TUVLB1zYkbta24co1HZnzOxjFXLUZv3ry3OJUJaQO2r6SdQ3rs1ZE-tuIy_yHTO_Bfo-2VgtVkOcj2AoD3b_3MEPaz31dIy6HzPc_NXe6k-vE4IDjB0d-OGcjLL4MASMx2vqbk5JDz52cpqavnEF7OLT0BiCFKjmxKk0A8cDqQ-BCgG9eRr69RPo/4rm/nAjOFF8fS2ql8mcgXnK77A/h0/h001.wfRbjLyik5QKffJyHRlg6z_7nnGpBaTl3dZ0bHQfX5o>\n\nThere are five distinct levels to building a Claude second brain, and most\npeople are stuck at level one.\n\nLevel one is just finding a file by searching an exact word. Level five is\na fully autonomous system that knows your business, your client\nrelationships, and your IP better than you do. The difference between them\nisn't the tool. It's how the data is organized.\n\n*The insight that changes how you build:* Start from the end. Before you\norganize a single file, ask how you'll access this data later. The shape of\nthe basketball determines the size of the hoop. Jon shows his actual setup\n(a Herku project, just markdown files and folders) and walks through what\nseparates each level, including semantic search (finding by meaning, not\nexact match) and full relationship mapping.\n\n*How this helps you:* Your moat is your data. This video shows you how to\nactually organize it so your agents can use it, not just find it.\nWatch and Discuss\n<https://elinkb0c.aiautomationsociety.ai/ss/c/u001.VkheyC2iT8s9YixUfVE0FN6mOGbCz03lVLbDvGOnPMRbj1rwVrXHTck2hIU01ytm6ClnUpm2K0lB7mfU5yrnXJjbg8QOjFt3YAAKynvRly7AZ5RR698TUVLB1zYkbta24co1HZnzOxjFXLUZv3ry3OJUJaQO2r6SdQ3rs1ZE-tuIy_yHTO_Bfo-2VgtVkOcj2AoD3b_3MEPaz31dIy6HzPc_NXe6k-vE4IDjB0d-OGeeOo2QBr9_Zujgy33ZMhAJ26EFSpJ1GgSYK6UgmwphKgn5xFJBlGtnXyMu9ewrr_M/4rm/nAjOFF8fS2ql8mcgXnK77A/h1/h001.D54kEdiOKmTE1gdR6HxnPRIS-rw5zfBHCdsutPNTL-U>\n------------------------------\n\nWinning Is All We Do\nRobert automated a client's outbound email pipeline from scratch[image:\nStudent win screenshot]\n\n*What happened:* Robert's client had a call center calling leads, but\nnothing was following up by email. Sales managers emailed Robert their\ndaily lead lists as Excel files. He built an automation that handles the\nrest: when the file lands in his inbox, it extracts the email, address, and\nname data, normalizes it (no more \"N123 MAIN STREET\" showing up as a\ndeliverable address), and uploads every contact directly into Instantly as\na ready-to-run campaign. No manual cleanup. No copy-paste. Just results.\n\n*The opportunity for you:* Businesses running call centers almost always\nhave messy lead data and no email follow-up. An automation that converts a\nspreadsheet into a live campaign solves a problem they didn't know anyone\ncould fix. Robert's words say it best: \"Life got easier.\"\n\nThis is one of many success stories from AI Automation Society Plus. If\nyou're not a member, you're missing out.\nJoin the Fun\n<https://elinkb0c.aiautomationsociety.ai/ss/c/u001.sUMBhgQeRd9Qnhv4nbgBFzMOQQ8QVEsqhqtd_5TB8UqmpZv-n0v97IvP73VQj3nS0vJkAiw4-xW9XasYLpq76t-NylJoDnO8KnziSeij3ZXIPAKpKHh0SvzKSmTSWkOG86up6fBwdKpjfJvUrTyz_wAleTC4JE-qKsBTKbBV4suvZli6biHo7OncF_3NLGUME_E_r8wV2PGolDvCHKSs7V2j2KdYb7e5gRlWV86KvVbCgV_BUtoPKpDLELKE0d2wdIoXSoR7kyqWxmIEle846Yk9vCXnRjhhvljQnMJRK8nyWAyp4sKB8YbG0enOrWKG/4rm/nAjOFF8fS2ql8mcgXnK77A/h2/h001.PjDesWsrOd1Wad7G_NZfe_abdyRPpfR4QW_wlSAm-IE>\n------------------------------\n\nIn the News\nCodex just hit 5 million weekly users. If you use it, there's a free bonus\nthrough June 24.\n\n*The news:* OpenAI Codex has crossed 5 million weekly active users and\nlaunched two features alongside the milestone. One is permanent: banked\nrate limit resets. Instead of your weekly limit resetting on a fixed timer\n(whether you need it or not), you can now save resets and use them when you\nactually need them. The other runs through June 24. Plus and Pro users can\ninvite up to three friends to try Codex. When a friend sends their first\nCodex message, you both get a bonus reset.\n\n*How it affects you:* If you've been hitting Codex rate limits at the wrong\nmoment mid-build, the banked reset system fixes that. You decide when to\nuse your reset, not the clock. And if you're not hitting limits yet, the\nreferral is easy headroom to bank before the window closes. The bigger\nsignal here: Codex is now growing through referral mechanics at 5 million\nweekly users. That's not hype. That's a tool people are actively building\nwith and recommending. Read more here.\n<https://elinkb0c.aiautomationsociety.ai/ss/c/u001.vIwap7F5BoKkFByTrDP9CaAdcRmbimcRKrenySEvwCOGzAL7MTRbp2P19av8ncI1VtPSY-daqrNz4JlOEqrllmil71-gSYtJuMslC6VwayE04FHOne3hQWyiaYkHF32z2rcp0nQwB-DhRZHDoAq8duXcO9Ctgjf7x7QWRCghvtcZxSpFLG4pc-abRrzwR1Hbs2foiQJYhXICPwV6cHeU173HVqLHSCRKYVJFUIDVAe05i_Q_UH1jyJOcC0P0r1j5TnHO2YQpzAa9-DKXhB1LkkNxppoXdcoh5A1uR3vt4MzrUfKtFhcz-Avnp9JGFRuh/4rm/nAjOFF8fS2ql8mcgXnK77A/h3/h001.4laLyHKiBhNRqHm_u_ny8DZ7yLsXcC8CMOSWEkCyuXA>\n------------------------------",
       "tags": [
         "ai-automation-society",
         "claude",
@@ -7756,23 +7773,17 @@
     {
       "slug": "newsletters/nerdqaxe-r7-launch-2026-06-12",
       "title": "Nerdqaxe R7 Launch 2026 06 12",
-      "type": "newsletter",
+      "type": "concept",
       "updated": "",
-      "body": "# NerdQaxe++ Revision 7 Launch\n\n**Source:** Email ([[Solo Satoshi]] VIP newsletter forwarded by Sayf)\n**Source URI:** gmail://msg_19eb9b8ff247d156\n**Ingested:** 2026-06-24T12:30:00Z\n**Provenance:** Forwarded by Sayf on 2026-06-12\n\nNerdQaxe++ Revision 7 \u2014 the newest evolution of the open-source quad-chip Bitcoin solo miner,\nlaunching June 12, 2026.\n\nKey points:\n- Production is 100% USA-based\n- Fully open-source \u2014 hardware design files and firmware published before any units ship\n- Competitors criticized for closed-source copies and pre-orders\n- Pre-release technical overview on YouTube available\n- Commitment to consistent availability and quality standards\n\nVendor: [[Solo Satoshi]] \u2014 \"The #1 place for Bitcoin hardware\"",
+      "body": "The repos are public, the deep dive is live, and launch is hours away.\nThe NerdQaxe++ Revision 7 launches tomorrow afternoon.\n\nDear VIP Member,\n\nBefore the world hears it, we wanted you to hear it from us. Tomorrow\nafternoon, we launch the NerdQaxe++ Revision 7\nthe newest evolution of the open-source quad-chip Bitcoin solo miner.\n\nDemand at launch will be intense, and the initial supply will move quickly.\nSo here is our commitment to you: production will not stop. Because\nproduction is 100% based in the USA and every unit is assembled right here\nat home, our lines keep moving and availability stays consistent. We will\nkeep building, to the highest quality standards, until every miner who\nwants a Revision 7 has one hashing on their desk.\n\nTo hold you over until launch, we have published a pre-release technical\noverview of Revision 7 on YouTube. It walks through what is new in this\nrevision, and our official overview video is in production now, so keep an\neye on our channel. In the meantime, click below to watch, and explore our full\nengineering breakdown\nfor the complete benchmark data.\nYouTube]\n\nWatch the NerdQaxe++ Revision 7 pre-release technical overview \u00bb\n\nWe also want to put a rumor to rest. Some have claimed that Revision 7 will\nnot be open source. That claim is false. Revision 7 is fully open source,\nand the repositories went public today, before a single unit ships, exactly\nas the open-source licenses require. The hardware design files\nand the firmware source code\nare available for your review right now.\n\nFinally, a word on integrity. You may have noticed others slashing prices\nand opening pre-orders on closed-source copies of this miner in a rush to\nget ahead of our launch. That is not how we operate, and it never will be.\nWhen you place an order with us, your product is ready to ship.",
       "tags": [
         "bitcoin",
         "mining",
         "open-source"
       ],
-      "links_out": [
-        {
-          "to": "companies/solo-satoshi",
-          "type": "wikilink",
-          "text": "Solo Satoshi"
-        }
-      ],
+      "links_out": [],
       "backlinks": [],
-      "outbound_count": 1,
+      "outbound_count": 0,
       "inbound_count": 0
     },
     {
@@ -8297,25 +8308,9 @@
       "title": "Secret Architecture Ai Data Centers 2026 06 19",
       "type": "newsletter",
       "updated": "",
-      "body": "# The Secret Architecture Behind AI Data Centers\n\n**Source:** email\n**Source URI:** gmail://msg_19ee23d6478fc08e\n**Ingested:** 2026-06-23T00:00:00Z\n**Provenance:** Forwarded by sayf on 2026-06-20\n\n[[System Design One]] #155 by [[Neo Kim]] and [[Ashish]] (guest author).\n\n> Note: This is a free preview of a subscriber-only post. The full content is behind the paywall.\n\nThe thesis: The biggest breakthroughs in AI are not coming from better models \u2014 they're coming from better infrastructure.\n\n## Key Points (from preview)\n\n- AI progress is as much about hardware and data center architecture as it is about model architecture.\n- Warehouse-sized data centers packed with specialized hardware (GPUs, TPUs, networking) are the physical foundation of modern AI.\n- The article promises to explain what's actually going on inside those buildings, layer by layer.\n\n## Guest Author\n\n[[Ashish]] \u2014 co-author on this post with [[Neo Kim]].\n\n## Topics Covered (preview listed)\n\n- Emulation vs Virtualization distinction\n- What a hypervisor does\n- How cloud providers run thousands of VMs on a single server\n- The physical infrastructure behind AI compute",
+      "body": "When people talk about Artificial Intelligence (*AI*), they often refer to\nmodels such as Generative Pre-trained Transformers (*GPTs*), Large Language\nModels (*LLMs*), and neural networks.\nIt sounds like magic, software that *thinks*\u2026\nBut here\u2019s the uncomfortable truth:\nThe biggest breakthroughs in AI are not coming from better models; they\u2019re\ncoming from better infrastructure.\nIf AI were only about the models, there would be no need for huge,\nwarehouse-sized data centers packed with specialized hardware and powered\nby massive amounts of electricity.\nSo what\u2019s actually going on inside those buildings?\nTo make sense of everything that follows, we need a simple mental model.\nLet\u2019s find out one layer at a time\u2026\nOnward.\n------------------------------\nI\u2019d like to introduce *Ashish Prajapati\n.\nHe is an AI infrastructure specialist and technology educator who helps\nengineers understand the technologies powering modern AI.\nWith expertise spanning data centers, cloud computing, GPU infrastructure,\nGenerative AI, and Agentic AI, he focuses on turning complex concepts into\npractical, real-world knowledge.\nHis training programs have reached over 39,000 learners worldwide, and\nthrough his free mentoring initiative, Become a Solutions Architect (BeSA)\nhe has helped over 23,000 professionals accelerate their careers.\nAs AI adoption continues to grow, understanding the infrastructure behind\nAI systems is becoming a valuable skill for architects, engineers, and IT\nprofessionals.\nFor a limited time, this newsletter's readers can use code *SYSTEM-DESIGN\nto get 25% off Ashish\u2019s live NCA-AIIO bootcamp\n.\nThis intensive one-day workshop covers the fundamentals of NVIDIA AI\ninfrastructure, GPU networking, accelerated computing, and AI operations,\nand prepares you for the NVIDIA-Certified Associate: AI Infrastructure and\nOperations (NCA-AIIO) certification.\n*Learn, Prepare, and Pass NCA-AIIO in a Day\n------------------------------\n*Here\u2019s what you\u2019ll find inside this newsletter:*\n\n   *The hidden architecture behind AI.* Why models are only the visible tip\n   of a much larger infrastructure stack.\n\n   *The physics that limit AI growth.* How power, cooling, and space shape\n   every AI data center.\n\n   *Why GPUs became the backbone of AI.* The architectural advantages that\n   made modern AI training possible.\n\n   *The real bottlenecks in modern AI.* Why memory, networking, and\n   coordination determine performance at scale.\n\n   *How thousands of GPUs work together as one system. *The software,\n   networking, and orchestration layers that enable large-scale AI.\n------------------------------\nThink of an AI Data Center as a Factory\nBefore we go deep, build this mental model; it will explain almost\neverything that follows:\n\n   AI Data Center = Factory\n\n   Data = Raw material\n\n   Graphics Processing Units (*GPUs*) = Machines on the factory floor\n\n   Network = Internal transport system\n\n   Storage = Warehouse holding raw materials\n\n   Software = Assembly line logic\n\n   Output = Trained intelligence\nNow imagine a car factory.\nIt doesn\u2019t just need skilled workers; instead, it needs conveyors,\nwarehouses, and power. Remove any of those, and production stops.\nAn AI data center works the same way\u2026\nAI infrastructure processes vast amounts of data using mathematical\noperations, similar to how a factory transforms raw materials into finished\ngoods.\nRemove any one ingredient, and the entire system stalls\u2026\nOnce you see AI as a factory, the next question becomes obvious: *what\nlimits how fast this factory can run?*\n------------------------------\nFirst Problem: Physics\n*Before AI is a software problem, it\u2019s a physics problem\u2026*\nHere are three hard physical constraints that shape every design decision\nin an AI data center:\n1. Power\nModern AI workloads rely on high-density GPUs that consume enormous amounts\nof electricity.\nA single server rack of GPUs can draw 80-120 kilowatts. i.e., roughly\nequivalent to 40 homes running at full load simultaneously. Yet you can\u2019t\njust add more GPUs forever.\nYou\u2019re limited by how much electricity your facility can physically receive\nand distribute.\n2. Cooling\nMore power means more heat, and heat is the enemy\u2026\nHere\u2019s what happens if you don\u2019t remove it fast enough:\n\n   Hardware fails prematurely,\n\n   Performance throttles back to avoid damage,\n\n   In extreme cases, systems shut down entirely.\nTo manage the intense heat generated by AI workloads, modern data centers\nare increasingly adopting *liquid cooling*, which is far more effective\nthan conventional air cooling.\nCoolant is circulated through cold plates attached directly to GPUs and\nCPUs, absorbing heat much more efficiently than air. The warmed liquid is\nthen pumped to heat exchangers, where the heat is removed before the\ncoolant is recirculated.\nThis approach enables higher rack densities, lower cooling power\nconsumption, and more consistent performance for large-scale AI training\nand inference\u00b9 workloads.\n3. Space\nEven if you had unlimited chips and unlimited power, you still need racks\nto mount them and floor space to put those racks.\nScaling AI is not just software--it\u2019s real estate, energy infrastructure,\nand thermodynamics combined.\nTakeaway\nA data center is, at its core, a power plant combined with a massive,\nprecisely controlled air-conditioning system. Every engineering decision\nflows from managing this reality.\nAfter dealing with the physical challenges, the next question is: *how we\nperform the computation?*\n------------------------------\nCompute: Why GPUs Took Over\nTo understand why GPUs dominate AI, picture a very simple task\u2026\nImagine you have 1,000 fence posts to paint:\n\n   Option A: One expert painter, working post by post. Slow, but the\n   painter can handle any unexpected situation--a broken post, a curved\n   section.\n\n   Option B: 1,000 workers, each painting exactly one post simultaneously.\n   Extremely fast, but each worker knows only one simple task.\nThat\u2019s the difference between a CPU and a GPU.\nCPU (Central Processing Unit)\n\n   A few very powerful cores\n\n   Handles complex, varied, sequential tasks\n\n   Acts as the \u201cmanager\u201d making decisions and coordinating work\nGPU (Graphics Processing Unit)\n\n   Thousands of smaller, simpler cores\n\n   Handles same simple operation repeated millions of times, all at once\n\n   Acts as the \u201cfactory workers\u201d doing mass production\nAI training repeatedly performs matrix multiplications billions of times,\nmaking minor adjustments after each step. GPUs are specifically designed\nfor this type of work.\nDPU (Data Processing Unit)\n\n   As AI systems grow, a third processor becomes important.\n\n   DPU handles networking, storage I/O, and security operations--tasks that\n   would otherwise steal cycles from the GPU and CPU.\n*Here\u2019s the system view:*\n\n   CPU = manager (decision-making)\n\n   GPU = factory workers (mass production)\n\n   DPU = logistics and operations (keeping materials moving and systems\n   secure)\nBut even with powerful GPUs, computation alone isn\u2019t the limiting factor;\nthe real challenge is keeping them fed with data\u2026\n------------------------------\nHidden Bottleneck: Memory and Storage\nHere\u2019s something that surprises most people:\nGPUs don\u2019t fail because they\u2019re slow. They fail because they\u2019re\nhungry\u2014constantly starved for data.\nMemory Hierarchy\nData doesn\u2019t live in one place. It moves through a layered system, trading\nspeed for capacity:\n\n   GPU Memory (HBM\u00b2): Blazingly fast but tiny; usually tens of gigabytes.\n   This is the GPU\u2019s working memory.\n\n   CPU RAM: Larger (hundreds of gigabytes), but slower than HBM.\n\n   SSD/NVMe\u00b3 Storage: Enormous capacity at a lower cost, but still slower.\n\n   Network/Object Storage: Nearly unlimited, but the slowest link in the\n   chain.\nEvery time the GPU needs data that isn\u2019t already in its fast local memory,\nit must wait... And a GPU sitting idle costs just as much money as one\ndoing useful work.\n*Takeaway*\nAI performance is not determined solely by how fast the GPU computes.\nInstead, by how fast data can be fed into the GPU.\nA faster chip with a slow data pipeline is like a faster car stuck in\ntraffic.\nTiered storage in practice\nIn real AI data centers, storage is organized into tiers that roughly map\nto hot, warm, and cold data:\n\n   *Hot*: NVMe SSDs holding active training datasets and model checkpoints.\n\n   *Warm*: Parallel file systems\u2074, such as Lustre, General Parallel File\n   System (*GPFS*), provide high-speed shared access across many GPUs.\n\n   *Cold*: Object storage, such as Amazon Simple Storage Service (Amazon\n   S3), for storing raw datasets and older checkpoints.\nAs models grow larger, a single GPU is no longer enough\u2026\nTechniques such as model sharding\u2075 and distributed training\u2076 distribute the\nmodel across multiple GPUs and memory layers.\nAnd once data starts moving across machines, a new bottleneck appears: *how\nthose machines communicate with each other.*\n*Reminder: this is a teaser of the subscriber-only newsletter series,\nexclusive to my golden members.*\nWhen you upgrade, you\u2019ll get:\n\n   *High-level architecture of real-world systems.*\n\n   Deep dive into how popular real-world systems actually work.\n\n   *How real-world systems handle scale, reliability, and performance.*\nUnlock Full Access\n------------------------------\nNetworking: Bottleneck Nobody Talks About\nWhen training a large AI model, you typically use thousands of GPUs working\ntogether rather than a single GPU\u2026\nAnd those thousands of GPUs must constantly communicate with each other,\nsharing what they\u2019ve learned at every step\u2026\nEvery second a GPU waits for data or synchronization is a second of lost\nproductivity and wasted investment.\nCluster topology and fabrics\nModern AI clusters typically use leaf-spine network architectures\u2077: *a\ndesign built for high throughput and low latency at scale*.\nEvery GPU server can reach every other GPU server in *at most \u2018two\u2019 hops*.\nWithin a node, GPUs talk over NVLink (intra-node fabric). Between nodes,\ntraffic flows over InfiniBand or RDMA over Converged Ethernet (*RoCE*), the\ninter-node fabric\u2078.\nThere\u2019s also a clear speed hierarchy:\n\n   NVLink\u2079: fastest path, a direct, private highway connecting GPUs within\n   the same server.\n\n   InfiniBand/RoCE\u00b9\u2070: very high-speed interconnect between separate\n   servers. Imagine it as the \u201cbullet train\u201d of the data center.\n\n   Ethernet: general-purpose, flexible, and ubiquitous, but not designed\n   for AI\u2019s most extreme bandwidth and latency demands.\nAmdahl\u2019s Law: Why More GPUs Aren\u2019t Always Better\nThere\u2019s a fundamental principle in distributed computing called *Amdahl\u2019s\nLaw*.\nIn plain English: if parts of your system must wait for other parts, adding\nmore workers eventually stops helping.\nIn AI workloads, adding more GPUs increases computing power but also\nincreases communication overhead. As GPUs spend more time sharing and\nsynchronizing data, the bottleneck gradually shifts from computation to\ncommunication.\nSmarter data movement\nModern AI systems address this with several techniques:\n\n   Remote Direct Memory Access (*RDMA*): Provides low-latency,\n   high-throughput communication by enabling direct memory-to-memory data\n   transfers between servers.\n\n   RDMA kernel\u00b9\u00b9 bypass: Lets the network adapter access application memory\n   directly from user space\u00b9\u00b2, eliminating unnecessary operating system\n   overhead.\n\n   GPUDirect: GPUs can read from and write to storage or network cards\n   directly, bypassing the CPU entirely.\n\n   Zero-copy pipelines: Data takes the shortest path from source to GPU,\n   with no redundant copying along the way.\nThe goal of AI networking is to make thousands of GPUs behave like one\ngiant, unified processor, as if the data never had to travel at all.\n*Once communication is in place, the next challenge is dividing the work\nefficiently across all those GPUs\u2026...*",
       "tags": [],
-      "links_out": [
-        {
-          "to": "companies/system-design-one",
-          "type": "wikilink",
-          "text": "System Design One"
-        },
-        {
-          "to": "people/neo-kim",
-          "type": "wikilink",
-          "text": "Neo Kim"
-        },
-        {
-          "to": "people/ashish",
-          "type": "wikilink",
-          "text": "Ashish"
-        }
-      ],
+      "links_out": [],
       "backlinks": [
         {
           "from": "people/ashish",
@@ -8323,7 +8318,7 @@
           "text": "newsletters/secret-architecture-ai-data-centers-2026-06-19|The Secret Architecture Behind AI Data Centers"
         }
       ],
-      "outbound_count": 3,
+      "outbound_count": 0,
       "inbound_count": 1
     },
     {
@@ -8516,6 +8511,31 @@
       ],
       "backlinks": [],
       "outbound_count": 1,
+      "inbound_count": 0
+    },
+    {
+      "slug": "newsletters/zaim-why-2026-career-goals-dead-2026-06-16",
+      "title": "Zaim Why 2026 Career Goals Dead 2026 06 16",
+      "type": "newsletter",
+      "updated": "",
+      "body": "# Why Your 2026 Career Goals Are Already Dead\n\n**Source:** email\n**Source URI:** gmail://msg_19ece778ab23e039\n**Ingested:** 2026-06-27T00:00:00Z\n**Provenance:** Forwarded by Zaim on 2026-06-16\n**For:** Zaim\n\n*From Nation Building School / Zaim Mohzani*\n\n## The Annual Goal Trap\n\nA year is too long to create urgency and too vague to act on. \"Get a new job this year\" feels fine in January \u2014 there's time, so nothing happens. By June the goal is technically alive but nothing has moved. By December, you're setting the same goal again.\n\n## The 12 Week Year\n\nZaim applied Brian Moran and Michael Lennington's \"The 12 Week Year\" framework. Instead of \"lose 6kg by December,\" he rewrote: \"lose 6kg in 90 days, by 31 March.\" He hit it. The habits built in those 90 days kept running on their own.\n\n## Career Application\n\n\"Get promoted this year\" doesn't tell you what to do on Monday. \"By 30 September, I will have had 3 conversations with people in my target department, applied to 5 internal roles, and presented one project to leadership\" tells you exactly what to do on Monday.\n\n## How to Set Yours\n\nPick ONE career goal for this quarter. Follow this format:\n- My 90-day career goal is...\n- This matters to me because...\n- To complete this, I commit that by 30 September 2026, I will have... (make this checkable)\n- To make sure I complete it, I'm going to... (weekly actions, not just the outcome)\n\n## Related\n\n- [[Zaim Mohzani]]\n- [[Nation Building School]]",
+      "tags": [
+        "zaim"
+      ],
+      "links_out": [
+        {
+          "to": "people/zaim-mohzani",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
+          "to": "companies/nation-building-school",
+          "type": "wikilink",
+          "text": "Nation Building School"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 2,
       "inbound_count": 0
     },
     {
@@ -8851,15 +8871,9 @@
           "text": "companies/system-design-one"
         }
       ],
-      "backlinks": [
-        {
-          "from": "newsletters/secret-architecture-ai-data-centers-2026-06-19",
-          "type": "wikilink",
-          "text": "Ashish"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 3,
-      "inbound_count": 1
+      "inbound_count": 0
     },
     {
       "slug": "people/audrey-loh",
@@ -9694,11 +9708,6 @@
           "text": "Neo Kim"
         },
         {
-          "from": "newsletters/secret-architecture-ai-data-centers-2026-06-19",
-          "type": "wikilink",
-          "text": "Neo Kim"
-        },
-        {
           "from": "newsletters/vm-deep-dive-system-design-2026-05-25",
           "type": "wikilink",
           "text": "Neo Kim"
@@ -9720,7 +9729,7 @@
         }
       ],
       "outbound_count": 6,
-      "inbound_count": 13
+      "inbound_count": 12
     },
     {
       "slug": "people/nick-milo",
@@ -10267,6 +10276,11 @@
           "text": "Zaim Mohzani"
         },
         {
+          "from": "concepts/zaim-client-aisyah-rahim-2026-06-15",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
           "from": "digests/2026-06-15-business-brain-digest",
           "type": "wikilink",
           "text": "Zaim Mohzani"
@@ -10287,6 +10301,11 @@
           "text": "Zaim Mohzani"
         },
         {
+          "from": "newsletters/zaim-why-2026-career-goals-dead-2026-06-16",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
           "from": "people/aisyah-rahim",
           "type": "wikilink",
           "text": "Zaim Mohzani"
@@ -10298,7 +10317,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 14
+      "inbound_count": 16
     },
     {
       "slug": "persons/tonbi",
@@ -11602,11 +11621,6 @@
       "type": "wikilink"
     },
     {
-      "source": "concepts/zaim-15-minute-gap-method-2026-06-14",
-      "target": "concepts/ksi-workshop",
-      "type": "wikilink"
-    },
-    {
       "source": "concepts/zaim-3month-career-pivot-framework",
       "target": "concepts/skills-inventory",
       "type": "wikilink"
@@ -11624,6 +11638,11 @@
     {
       "source": "concepts/zaim-aisyah-rahim-client-profile-2026-06-15",
       "target": "concepts/aisyah-rahim-client-profile-2026-06-15",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/zaim-client-aisyah-rahim-2026-06-15",
+      "target": "people/zaim-mohzani",
       "type": "wikilink"
     },
     {
@@ -12267,11 +12286,6 @@
       "type": "wikilink"
     },
     {
-      "source": "newsletters/nerdqaxe-r7-launch-2026-06-12",
-      "target": "companies/solo-satoshi",
-      "type": "wikilink"
-    },
-    {
       "source": "newsletters/nerdqaxe-revision-7-launch",
       "target": "companies/solo-satoshi",
       "type": "wikilink"
@@ -12322,21 +12336,6 @@
       "type": "wikilink"
     },
     {
-      "source": "newsletters/secret-architecture-ai-data-centers-2026-06-19",
-      "target": "companies/system-design-one",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/secret-architecture-ai-data-centers-2026-06-19",
-      "target": "people/neo-kim",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/secret-architecture-ai-data-centers-2026-06-19",
-      "target": "people/ashish",
-      "type": "wikilink"
-    },
-    {
       "source": "newsletters/vm-deep-dive-system-design-2026-05-25",
       "target": "companies/system-design-one",
       "type": "wikilink"
@@ -12354,6 +12353,16 @@
     {
       "source": "newsletters/zaim-career-goals-2026-06-16",
       "target": "people/zaim-mohzani",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/zaim-why-2026-career-goals-dead-2026-06-16",
+      "target": "people/zaim-mohzani",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/zaim-why-2026-career-goals-dead-2026-06-16",
+      "target": "companies/nation-building-school",
       "type": "wikilink"
     },
     {
@@ -12394,6 +12403,11 @@
     {
       "source": "people/ashish-prajapati",
       "target": "people/neo-kim",
+      "type": "wikilink"
+    },
+    {
+      "source": "people/ashish",
+      "target": "newsletters/secret-architecture-ai-data-centers-2026-06-19",
       "type": "wikilink"
     },
     {
@@ -12654,13 +12668,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 80,
-    "brain_checks_score": 95,
+    "health_score": 70,
+    "brain_checks_score": 90,
     "category_scores": {
-      "brain": 95,
+      "brain": 90,
       "skill": 100,
       "ops": 95,
-      "meta": 90
+      "meta": 85
     },
     "checks": [
       {
@@ -12690,32 +12704,10 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "2 kind(s) tracked, all halt rates below 10%",
+        "message": "no extractions in last 7 days",
         "details": {
           "schema_version": 1,
-          "kinds": [
-            {
-              "kind": "facts.fence",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:15.502Z"
-            },
-            {
-              "kind": "takes.proposed",
-              "cost_7d_usd": 0,
-              "eval_pass_count": 0,
-              "eval_fail_count": 0,
-              "halt_count": 0,
-              "round_completed_count": 1,
-              "halt_rate": 0,
-              "last_updated_at": "2026-06-08T15:03:16.068Z"
-            }
-          ],
-          "rollup_write_failures_7d": 0
+          "kinds": []
         },
         "category": "brain"
       },
@@ -12727,11 +12719,12 @@
       },
       {
         "name": "extract_atoms_backlog",
-        "status": "ok",
-        "message": "no pages awaiting atom extraction",
+        "status": "warn",
+        "message": "25 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
         "details": {
-          "backlog": 0,
+          "backlog": 25,
           "pack_declares_phase": false,
+          "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
         "category": "brain"
@@ -12739,7 +12732,7 @@
       {
         "name": "conversation_format_coverage",
         "status": "ok",
-        "message": "No conversation-type pages \u2014 coverage check not applicable",
+        "message": "12 pages: bold-name-no-time=11, _no_match=1",
         "category": "brain"
       },
       {
@@ -12763,7 +12756,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 43 pages",
+        "message": "Connected, 350 pages",
         "category": "ops"
       },
       {
@@ -12799,7 +12792,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 518ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -12817,25 +12810,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 91%, timeline 100%",
+        "message": "Entity link coverage 86%, timeline 69%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
+        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 80 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
+        "message": "Sampled 350 pages; 42 external link(s) (no bare tweets).",
         "category": "brain"
       },
       {
@@ -12996,7 +12989,15 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
+        "message": "Extraction current: 1/350 pages (0%) stale",
+        "details": {
+          "total": 350,
+          "stale": 1,
+          "pct": 0,
+          "warn_pct": 20,
+          "fail_pct": null,
+          "source_id": null
+        },
         "category": "brain"
       },
       {
@@ -13008,7 +13009,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -13020,7 +13021,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "83 reranker failure(s) in last 7 days (below threshold)",
+        "message": "166 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -13032,7 +13033,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "38.0% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -13074,7 +13075,7 @@
       {
         "name": "oauth_confidential_client_health",
         "status": "ok",
-        "message": "No OAuth clients registered",
+        "message": "4 OAuth client(s) registered; all auth shapes consistent",
         "category": "ops"
       },
       {
@@ -13135,13 +13136,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 91% \u00b1 6.1%",
+        "message": "Coverage 88% \u00b1 3.7%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "ok",
-        "message": "Coverage 100% \u00b1 0.0%",
+        "status": "warn",
+        "message": "Coverage 70% \u00b1 5.1% (target 90%)",
         "category": "meta"
       },
       {
@@ -13159,7 +13160,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "4 distinct typed values (pack declares 25)",
+        "message": "10 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
