@@ -850,6 +850,10 @@
     <div class="view-panel" id="view-logs">
       <div class="section">
         <div class="section-header"><h2>Activity</h2></div>
+        <div class="tabs" id="logTabs" style="margin-bottom:12px">
+          <button class="tab active" data-ltab="recent" onclick="switchLogTab('recent')">Recent</button>
+          <button class="tab" data-ltab="all" onclick="switchLogTab('all')">All</button>
+        </div>
         <div class="log-feed" id="logFeed"><div class="log-empty">No activity recorded yet.</div></div>
       </div>
     </div>
@@ -1037,6 +1041,7 @@ let entitiesRendered = false;
 let healthRendered = false;
 let artifactsRendered = false;
 let logsRendered = false;
+let activeLogTab = 'recent';
 
 async function loadData() {
   document.getElementById('loading').style.display = 'flex';
@@ -2855,6 +2860,16 @@ document.addEventListener('keydown', function(e) {
 });
 
 // ─── LOGS VIEW (static, from DATA.logs — no live API) ───
+function switchLogTab(tab) {
+  activeLogTab = tab;
+  // Update tab buttons
+  document.querySelectorAll('#logTabs .tab').forEach(function(t) { t.classList.remove('active'); });
+  var btn = document.querySelector('#logTabs .tab[data-ltab="' + tab + '"]');
+  if (btn) btn.classList.add('active');
+  // Re-render
+  renderLogs();
+}
+
 function renderLogs() {
   var feed = document.getElementById('logFeed');
   if (!feed) return;
@@ -2863,7 +2878,23 @@ function renderLogs() {
     feed.innerHTML = '<div class="log-empty">No activity recorded yet — content events appear here after each export.</div>';
     return;
   }
-  feed.innerHTML = logs.map(function(ev) {
+
+  // Filter by active tab
+  var filtered = logs;
+  if (activeLogTab === 'recent') {
+    var cutoff = new Date();
+    cutoff.setDate(cutoff.getDate() - 7);
+    filtered = logs.filter(function(ev) {
+      try { return new Date(ev.ts) >= cutoff; } catch(e) { return true; }
+    });
+  }
+
+  if (!filtered.length) {
+    feed.innerHTML = '<div class="log-empty">No activity in the last 7 days. <a href="#" onclick="switchLogTab(\'all\');return false" style="color:var(--primary)">View all</a>.</div>';
+    return;
+  }
+
+  feed.innerHTML = filtered.map(function(ev) {
     var ts = '';
     try {
       var d = new Date(ev.ts);

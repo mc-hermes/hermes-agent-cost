@@ -101,7 +101,7 @@ summary = {
 }
 
 # ── Build Zaim-scoped activity log ─────────────────────────────────────
-# Use real dates from gbrain list (slug\ttype\tdate\ttitle format).
+# Accumulate logs across runs — read existing, add new, deduplicate.
 # No fabricated timestamps — every event carries its actual date.
 now = datetime.now(timezone.utc)
 now_ts = now.strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -119,7 +119,23 @@ try:
 except Exception:
     pass  # best-effort; fall back to empty dates
 
-logs = []
+# ── Load existing logs to preserve history ──
+existing_logs = []
+existing_keys = set()
+try:
+    with open("$OUTPUT") as f:
+        old = json.load(f)
+        for ev in old.get("logs", []):
+            key = (ev.get("ts",""), ev.get("source",""), ev.get("stage",""), ev.get("slug"))
+            if key not in existing_keys:
+                existing_keys.add(key)
+                existing_logs.append(ev)
+    print(f"  Loaded {len(existing_logs)} existing log entries")
+except Exception:
+    print("  No existing logs (fresh export)")
+
+# ── Generate new log entries ──
+new_logs = []
 
 # Page events: use the real gbrain modification date if available,
 # otherwise fall back to enrichment frontmatter date.
@@ -130,27 +146,38 @@ for p in zaim_pages:
     fm_date = p.get("updated", "")
     real_date = gb_date or fm_date
     if real_date:
-        logs.append({
+        ev = {
             "ts": f"{real_date}T00:00:00Z",
             "source": "page",
             "stage": "updated",
             "slug": slug,
             "detail": title,
             "level": "info",
-        })
+        }
+        key = (ev["ts"], ev["source"], ev["stage"], ev["slug"])
+        if key not in existing_keys:
+            existing_keys.add(key)
+            new_logs.append(ev)
 
 # Export pipeline event — this timestamp IS real.
-logs.append({
+export_ev = {
     "ts": now_ts,
     "source": "export",
     "stage": "deployed",
     "slug": None,
     "detail": f"Dashboard refreshed — {len(zaim_pages)} pages, {len(zaim_links)} links",
     "level": "info",
-})
+}
+# Export events always get a new entry (timestamp changes each run)
+new_logs.append(export_ev)
+
+# ── Merge: existing first, then new on top ──
+logs = existing_logs + new_logs
 
 # Sort newest first, then by source for stable ordering
 logs.sort(key=lambda e: (e["ts"], e["source"]), reverse=True)
+
+print(f"  Logs: {len(new_logs)} new + {len(existing_logs)} existing = {len(logs)} total")
 
 # ── Assemble and write ─────────────────────────────────────────────────
 output = {
