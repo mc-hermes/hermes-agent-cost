@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-27T00:14:01Z",
+  "updated_at": "2026-06-27T00:58:44Z",
   "summary": {
     "page_count": 48,
     "people_count": 4,
@@ -1265,7 +1265,7 @@
   "artifacts": [],
   "logs": [
     {
-      "ts": "2026-06-27T00:14:01Z",
+      "ts": "2026-06-27T00:58:44Z",
       "source": "export",
       "stage": "deployed",
       "slug": null,
@@ -1308,22 +1308,6 @@
       "ts": "2026-06-26T00:00:00Z",
       "source": "page",
       "stage": "updated",
-      "slug": "concepts/zaim-15-minute-rule-student-buckets-2026-06-14",
-      "detail": "Zaim 15 Minute Rule Student Buckets 2026 06 14",
-      "level": "info"
-    },
-    {
-      "ts": "2026-06-26T00:00:00Z",
-      "source": "page",
-      "stage": "updated",
-      "slug": "concepts/zaim-aisyah-rahim-client-profile-2026-06-15",
-      "detail": "Zaim Aisyah Rahim Client Profile 2026 06 15",
-      "level": "info"
-    },
-    {
-      "ts": "2026-06-26T00:00:00Z",
-      "source": "page",
-      "stage": "updated",
       "slug": "meetings/2026-06-12-sayf-zaim-gemini-notes",
       "detail": "Gemini Auto-Notes \u2014 Sayf x Zaim (12 Jun 2026)",
       "level": "info"
@@ -1334,22 +1318,6 @@
       "stage": "updated",
       "slug": "newsletters/why-2026-career-goals-already-dead-2026-06-16",
       "detail": "Why 2026 Career Goals Already Dead 2026 06 16",
-      "level": "info"
-    },
-    {
-      "ts": "2026-06-26T00:00:00Z",
-      "source": "page",
-      "stage": "updated",
-      "slug": "newsletters/why-2026-career-goals-dead-2026-06-12",
-      "detail": "Why 2026 Career Goals Dead 2026 06 12",
-      "level": "info"
-    },
-    {
-      "ts": "2026-06-25T00:00:00Z",
-      "source": "page",
-      "stage": "updated",
-      "slug": "concepts/zaim-ksi-observation-patterns-2026-06-14",
-      "detail": "Zaim Ksi Observation Patterns 2026 06 14",
       "level": "info"
     }
   ]
