@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Maloha Coast</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #020617; --surface: #0f172a; --surface2: #1e293b; --border: #334155;
+    --primary: #2a6a8a; --primary-light: #22d3ee; --accent: #c4a86a; --accent-light: #fbbf24;
+    --text: #f1f5f9; --text-muted: #94a3b8;
+    --radius: 14px;
+  }
+  body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; padding: 40px 20px 80px; }
+  .container { max-width: 720px; margin: 0 auto; }
+
+  .back { display: inline-block; color: var(--text-muted); text-decoration: none; font-size: 0.8rem; margin-bottom: 32px; transition: color 0.2s; }
+  .back:hover { color: var(--accent); }
+  .back::before { content: '← '; }
+
+  h1 { font-size: clamp(1.5rem, 3vh, 2rem); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 4px; }
+  h1 span { color: var(--accent); }
+  .updated { color: var(--text-muted); font-size: 0.75rem; margin-bottom: 28px; }
+
+  .divider { width: 40px; height: 2px; background: var(--accent); border-radius: 2px; margin-bottom: 28px; }
+
+  h2 { font-size: 1.1rem; font-weight: 700; margin-top: 28px; margin-bottom: 10px; color: var(--accent-light); }
+  p, li { font-size: 0.88rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 12px; }
+  ul { padding-left: 20px; margin-bottom: 12px; }
+  li { margin-bottom: 6px; }
+  strong { color: var(--text); font-weight: 600; }
+  a { color: var(--primary-light); text-decoration: underline; }
+
+  .data-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 0.82rem; }
+  .data-table th { text-align: left; padding: 8px 12px; background: var(--surface2); color: var(--accent-light); font-weight: 600; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; border-radius: 4px 4px 0 0; }
+  .data-table td { padding: 8px 12px; border-bottom: 1px solid var(--border); color: var(--text-muted); }
+  .data-table tr:last-child td { border-bottom: none; }
+
+  .footer { font-size: 0.65rem; color: rgba(148,163,184,0.25); margin-top: 48px; }
+  .footer a { color: rgba(148,163,184,0.4); }
+</style>
+</head>
+<body>
+<div class="container">
+  <a href="index.html" class="back">Home</a>
+
+  <h1>Privacy <span>Policy</span></h1>
+  <p class="updated">Last updated: June 27, 2026</p>
+  <div class="divider"></div>
+
+  <h2>1. Who We Are</h2>
+  <p><strong>Maloha Coast Sdn Bhd</strong> ("we", "us", "our") operates a Discord application ("the Bot") that provides AI-powered assistance. We are committed to protecting your privacy and being transparent about how we handle data. This policy explains what information we collect, how we use it, and your rights.</p>
+
+  <h2>2. Data We Collect</h2>
+  <p>When you interact with the Bot, we may collect the following:</p>
+
+  <table class="data-table">
+    <thead>
+      <tr><th>Data</th><th>Purpose</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Discord User ID</strong></td><td>To identify users, track usage limits, and personalise responses.</td></tr>
+      <tr><td><strong>Discord Server ID</strong></td><td>To associate the Bot with the correct server and its configuration.</td></tr>
+      <tr><td><strong>Channel ID</strong></td><td>To route responses to the correct conversation.</td></tr>
+      <tr><td><strong>Message Content</strong></td><td>To generate AI responses. Messages directed at the Bot (mentions, commands) are processed in real time.</td></tr>
+      <tr><td><strong>Command & Usage Logs</strong></td><td>To monitor performance, debug issues, and improve the service.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>3. How We Use Data</h2>
+  <ul>
+    <li><strong>Service Delivery</strong> — Processing your messages to generate AI responses is the core function of the Bot.</li>
+    <li><strong>Improvement</strong> — Aggregated, anonymised usage patterns help us improve the Bot's performance and reliability.</li>
+    <li><strong>Security & Abuse Prevention</strong> — We monitor for misuse, spam, and violations of our Terms of Service.</li>
+  </ul>
+  <p>We do <strong>not</strong> sell your data. We do <strong>not</strong> use your data for advertising. We do <strong>not</strong> build user profiles for commercial purposes.</p>
+
+  <h2>4. Data Storage & Retention</h2>
+  <p>Data is stored on secure servers and retained only as long as necessary:</p>
+  <ul>
+    <li><strong>Message content</strong> — Processed in real time; not stored beyond the session unless required for debugging.</li>
+    <li><strong>User & Server IDs</strong> — Retained while the Bot is active on your server.</li>
+    <li><strong>Usage logs</strong> — Retained for up to 90 days for operational purposes.</li>
+  </ul>
+
+  <h2>5. Third-Party Services</h2>
+  <p>The Bot uses <strong>AI model providers</strong> (such as DeepSeek) to generate responses. Your messages and Discord IDs may be transmitted to these providers solely for the purpose of generating a response. We select providers that do not use API-submitted data for model training. You can request details about our current providers at any time.</p>
+  <p>We do <strong>not</strong> share your data with any other third parties except as required by law.</p>
+
+  <h2>6. Your Rights</h2>
+  <p>You have the right to:</p>
+  <ul>
+    <li>Request a copy of any personal data we hold about you.</li>
+    <li>Request deletion of your data.</li>
+    <li>Withdraw consent by removing the Bot from your server.</li>
+  </ul>
+  <p>To exercise these rights, contact us at <a href="mailto:info@malohacoast.com">info@malohacoast.com</a>. We will respond within 30 days.</p>
+
+  <h2>7. Children's Privacy</h2>
+  <p>The Bot is not intended for users under 13 years of age. We do not knowingly collect data from children under 13. If you believe a child has provided us with personal data, please contact us immediately.</p>
+
+  <h2>8. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. Material changes will be communicated via our Discord server or other channels. Continued use after changes are posted constitutes acceptance.</p>
+
+  <h2>9. Contact</h2>
+  <p>For privacy-related inquiries: <a href="mailto:info@malohacoast.com">info@malohacoast.com</a><br>
+  Maloha Coast Sdn Bhd · Malaysia</p>
+
+  <div class="footer">
+    © 2026 Maloha Coast Sdn Bhd · <a href="tos.html">Terms of Service</a>
+  </div>
+</div>
+</body>
+</html>
