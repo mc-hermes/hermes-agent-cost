@@ -3038,8 +3038,8 @@ function renderMonthly() {
         // Split body into non-table and table sections.
         // renderMarkdownPreview() calls esc() internally which would corrupt pre-built <table> HTML,
         // so we keep table regions separate and stitch them back after rendering.
-        var parts = body.split(/(^(\|.+\|\n\|[-:| ]+\|\n(?:\|.+\|\n?)*))/m);
-        // parts[0] = before first table, parts[2] = table, parts[3] = after table, etc.
+        var parts = body.split(/^(\|.+\|\n\|[-:| ]+\|\n(?:\|.+\|\n?)*)/m);
+        // parts[0] = before first table, parts[1] = table, parts[2] = after table, etc.
         var h = '';
         for (var i = 0; i < parts.length; i++) {
           if (!parts[i] || parts[i].trim() === '') continue;
@@ -3091,7 +3091,7 @@ function renderMonthly() {
             var titleMatch = front.match(/title:\s*["']?(.+?)["']?\s*$/m);
             if (titleMatch) title = titleMatch[1];
             // Same table-splitting logic as primary path
-            var parts = body.split(/(^(\|.+\|\n\|[-:| ]+\|\n(?:\|.+\|\n?)*))/m);
+            var parts = body.split(/^(\|.+\|\n\|[-:| ]+\|\n(?:\|.+\|\n?)*)/m);
             var h = '';
             for (var i = 0; i < parts.length; i++) {
               if (!parts[i] || parts[i].trim() === '') continue;

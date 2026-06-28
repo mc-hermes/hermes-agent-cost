@@ -13,6 +13,10 @@ tags: [monthly-log, achievements, 2026]
 - **gbrain operational** — Local instance at `~/.bun/bin/gbrain` with OpenAI embeddings. 399+ pages ingested across people, companies, meetings, articles, and concepts.
 - **gbrain dashboard deployed** — Interactive dashboard on GitHub Pages (`mc-hermes.github.io/hermes-agent-cost`) with knowledge graph, browse, entities, health, ask, and activity views. 6 themes, 0 dependencies.
 
+### 🎓 Training & Workshops
+- **Lead Instructor — Deploying AI Agents with Microsoft Foundry** — Hands-on lab delivered at Cradle Fund with KrackedDevs, in partnership with Microsoft.
+- **Vibe101 Workshop — Sunway DealFlow Club, Sunway College** — Took beginners from setup to a live-deployed project in one evening with KrackedDevs / Danial Alias.
+
 ### 📊 Client-Specific Dashboards
 - **Zaim dashboard** — Isolated gbrain dashboard for career coach Zaim Mohzani at `/zaim/`. Knowledge graph + entity views + activity log.
 - **Certava dashboard** — Full gbrain setup for Certava team. 15 pages (6 people, 3 companies, 4 meetings, 2 concepts) with 27 cross-references, 26 action items. OCR'd Excel/Word/PNG attachments into structured data.
@@ -40,6 +44,7 @@ This file lives at `logs/achievements-2026-06.md` in the `hermes-agent-cost-page
 | gbrain pages | 399 | Tracking knowledge base growth |
 | Cron jobs running | 10 | Automation infrastructure |
 | Client dashboards | 2 (Zaim, Certava) | Billable deliverables |
+| Workshops delivered | 2 (Cradle Fund, Sunway) | Training engagements |
 | Meetings ingested | 4+ | Certava: Ventris, AL Pine, Weekly Sync |
 | GitHub deploys (auto) | ~720 | Hourly auto-refresh |
 | News digests delivered | ~25 | Daily weekday news |
