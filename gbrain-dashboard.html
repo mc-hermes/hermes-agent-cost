@@ -286,6 +286,27 @@
   }
   .log-offline { color: var(--text-muted); font-style: italic; padding: 6px 0; }
 
+  /* ─── Monthly Report ─── */
+  .monthly-log { font-size: 0.82rem; line-height: 1.65; }
+  .monthly-log-fetching { color: var(--text-muted); padding: 12px 0; display: flex; align-items: center; gap: 8px; }
+  .monthly-log-error { color: var(--rose); padding: 12px 0; }
+  .monthly-entry { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 24px; margin-bottom: 16px; }
+  .monthly-entry-title { font-family: 'Playfair Display', 'Georgia', serif; font-size: 1.15rem; font-weight: 600; margin-bottom: 12px; color: var(--primary); letter-spacing: -0.005em; }
+  .monthly-entry h2 { font-family: 'Playfair Display', 'Georgia', serif; font-size: 0.95rem; font-weight: 600; margin: 16px 0 8px; color: var(--accent); }
+  .monthly-entry h3 { font-family: 'Playfair Display', 'Georgia', serif; font-size: 0.88rem; font-weight: 600; margin: 12px 0 6px; color: var(--primary-light); }
+  .monthly-entry p { margin: 4px 0; }
+  .monthly-entry ul { margin: 4px 0 4px 16px; padding: 0; list-style: none; }
+  .monthly-entry ul li { position: relative; padding-left: 14px; margin: 2px 0; }
+  .monthly-entry ul li::before { content: '•'; position: absolute; left: 0; color: var(--accent); }
+  .monthly-entry hr { border: none; border-top: 1px solid var(--border); margin: 12px 0; }
+  .monthly-entry table { width: 100%; margin: 8px 0; font-size: 0.75rem; border-collapse: collapse; }
+  .monthly-entry th { background: var(--surface2); padding: 6px 10px; text-align: left; border: 1px solid var(--border); font-weight: 600; font-size: 0.65rem; color: var(--text-muted); }
+  .monthly-entry td { padding: 5px 10px; border: 1px solid var(--border); }
+  .monthly-entry strong { color: var(--text); font-weight: 600; }
+  .monthly-gap { height: 6px; }
+  body.library .monthly-entry { box-shadow: 0 1px 2px rgba(44,24,16,0.04); }
+  body.light .monthly-entry { box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
+
   /* ─── Table ─── */
   .table-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
   table { width: 100%; border-collapse: collapse; font-size: 0.78rem; }
@@ -835,6 +856,7 @@
   <button class="sidebar-item" data-view="graph" onclick="showView('graph')"><span class="s-icon"><svg viewBox="0 0 16 16"><circle cx="5" cy="5" r="2" stroke="currentColor" fill="none"/><circle cx="11" cy="4" r="1.5" stroke="currentColor" fill="none"/><circle cx="8" cy="11" r="2.5" stroke="currentColor" fill="none"/><path d="M6 6l2 4M10 5l-1 4" stroke="currentColor"/></svg></span><span class="s-label">Graph</span></button>
   <button class="sidebar-item" data-view="ask" onclick="showView('ask')"><span class="s-icon"><svg viewBox="0 0 16 16"><path d="M2 2h12v9H6l-4 3V2z" stroke="currentColor" fill="none"/></svg></span><span class="s-label">Ask</span></button>
   <button class="sidebar-item" data-view="logs" onclick="showView('logs')"><span class="s-icon"><svg viewBox="0 0 16 16"><path d="M3 3h10M3 6.5h10M3 10h7M3 13h5" stroke="currentColor" stroke-linecap="round"/></svg></span><span class="s-label">Activity</span></button>
+  <button class="sidebar-item" data-view="monthly" onclick="showView('monthly')"><span class="s-icon"><svg viewBox="0 0 16 16"><rect x="1" y="3" width="14" height="11" rx="2" stroke="currentColor" fill="none"/><path d="M4 1v3M12 1v3M1 7h14" stroke="currentColor"/><circle cx="5" cy="10" r=".8" fill="currentColor"/><circle cx="8" cy="10" r=".8" fill="currentColor"/><circle cx="11" cy="10" r=".8" fill="currentColor"/></svg></span><span class="s-label">Monthly</span></button>
   <div class="sidebar-spacer"></div>
   <button class="sidebar-item write-btn" onclick="openWrite()"><span class="s-icon"><svg viewBox="0 0 16 16"><path d="M3 13h10M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><span class="s-label">Write</span></button>
   <button class="sidebar-item" onclick="event.stopPropagation();toggleSettings()"><span class="s-icon"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="2.5" stroke="currentColor" fill="none"/><path d="M8 2v1.5M8 12.5v1.5M2 8h1.5M12.5 8h1.5" stroke="currentColor"/></svg></span><span class="s-label">Settings</span></button>
@@ -988,6 +1010,15 @@
         <div class="log-feed" id="logFeed"><div class="log-offline">Loading activity…</div></div>
       </div>
     </div>
+    <!-- === VIEW: Monthly Report === -->
+    <div class="view-panel" id="view-monthly">
+      <div class="section">
+        <div class="section-header"><h2>Monthly Report</h2><span class="count" id="monthlyLogCount"></span></div>
+        <div class="monthly-log-fetching" id="monthlyLoading"><span class="spinner"></span> Loading monthly report...</div>
+        <div class="monthly-log-error" id="monthlyError" style="display:none">Could not load monthly report.</div>
+        <div class="monthly-log" id="monthlyLog"></div>
+      </div>
+    </div>
   </div>
 
   <div class="footer">gbrain · The Library · Maloha Coast Sdn Bhd · Press <span style="font-family:'JetBrains Mono',monospace">?</span> for help</div>
@@ -1020,7 +1051,8 @@
   <div class="settings-row" style="cursor:pointer" onclick="showView('browse');document.querySelector('[data-btab=entities]').click();toggleMoreMenu()">Entities</div>
   <div class="settings-row" style="cursor:pointer" onclick="showView('browse');document.querySelector('[data-btab=health]').click();toggleMoreMenu()">Health</div>
   <div class="settings-row" style="cursor:pointer" onclick="showView('browse');document.querySelector('[data-btab=artifacts]').click();toggleMoreMenu()">Artifacts</div>
-  <div class="settings-row" style="cursor:pointer" onclick="showView('logs');toggleMoreMenu()">Logs</div>
+  <div class="settings-row" style="cursor:pointer" onclick="showView('logs');toggleMoreMenu()">Activity Log</div>
+  <div class="settings-row" style="cursor:pointer" onclick="showView('monthly');toggleMoreMenu()">Monthly Report</div>
   <div class="settings-row" style="cursor:pointer" onclick="event.stopPropagation();toggleSettings();toggleMoreMenu()">Settings</div>
   <div class="settings-row" style="cursor:pointer" onclick="openDocs();toggleMoreMenu()">Help</div>
 </div>
@@ -1171,6 +1203,7 @@ let entitiesRendered = false;
 let healthRendered = false;
 let artifactsRendered = false;
 let logsRendered = false;
+let monthlyRendered = false;
 
 async function loadData() {
   document.getElementById('loading').style.display = 'flex';
@@ -1233,6 +1266,7 @@ function showView(name) {
   } else {
     stopLogsPoll();
   }
+  if (name === 'monthly' && !monthlyRendered) { renderMonthly(); monthlyRendered = true; }
   if (name === 'browse') {
     if (!pagesRendered) { renderPages(); pagesRendered = true; }
     if (!entitiesRendered) { renderEntities(); entitiesRendered = true; }
@@ -2961,6 +2995,153 @@ var _logPollTimer = null;
 var _logLastTs = null;
 var _logScrollPinned = true;
 var _logHover = false;
+
+function renderMonthly() {
+  var el = document.getElementById('monthlyLog');
+  var loading = document.getElementById('monthlyLoading');
+  var error = document.getElementById('monthlyError');
+  loading.style.display = 'block';
+  error.style.display = 'none';
+  // Fetch monthly achievement logs from the repo
+  var logFiles = [
+    'logs/achievements-2026-06.md'
+  ];
+  var html = '';
+  function fetchLog(index) {
+    if (index >= logFiles.length) {
+      loading.style.display = 'none';
+      el.innerHTML = html || '<div class=\"log-offline\">No monthly reports yet.</div>';
+      return;
+    }
+    var url = logFiles[index];
+    // Try raw GitHub first, fallback to relative
+    fetch(url)
+      .then(function(r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.text();
+      })
+      .then(function(text) {
+        // Parse frontmatter
+        var body = text;
+        var front = '';
+        if (text.startsWith('---')) {
+          var end = text.indexOf('---', 3);
+          if (end > 0) {
+            front = text.substring(3, end);
+            body = text.substring(end + 3);
+          }
+        }
+        body = body.replace(/^\\n+/, '');
+
+        // Extract title from frontmatter
+        var title = 'Monthly Report';
+        var titleMatch = front.match(/title:\\s*[\"']?(.+?)[\"']?\\s*$/m);
+        if (titleMatch) title = titleMatch[1];
+
+        // Simple markdown to HTML rendering
+        var lines = body.split('\\n');
+        var h = '';
+        var inList = false;
+        var inTable = false;
+        var tableHtml = '';
+
+        for (var i = 0; i < lines.length; i++) {
+          var line = lines[i];
+
+          // Close list if not a list item
+          if (inList && !line.match(/^[-*]\\s/) && !line.match(/^\\s{2}/)) {
+            h += '</ul>';
+            inList = false;
+          }
+
+          // Headings
+          if (line.match(/^###\\s/)) { h += '<h3>' + esc(line.replace(/^###\\s+/, '')) + '</h3>'; }
+          else if (line.match(/^##\\s/)) { h += '<h2>' + esc(line.replace(/^##\\s+/, '')) + '</h2>'; }
+          // Horizontal rule
+          else if (line.match(/^---+$/)) { h += '<hr>'; }
+          // Table row
+          else if (line.match(/^\\|/)) {
+            if (!inTable) { inTable = true; tableHtml = '<table>'; }
+            // Skip separator rows (|----|----|)
+            if (line.match(/^\\|[-:|\\s]+\\|$/)) continue;
+            var isHeader = (i + 1 < lines.length && lines[i+1].match(/^\\|[-:|\\s]+\\|$/));
+            var cells = line.split('|').filter(function(c){ return c.trim(); });
+            var tag = isHeader ? 'th' : 'td';
+            tableHtml += '<tr>';
+            for (var c = 0; c < cells.length; c++) {
+              tableHtml += '<' + tag + '>' + cells[c].trim() + '</' + tag + '>';
+            }
+            tableHtml += '</tr>';
+            if (isHeader) { /* skip separator on next iteration */ }
+          }
+          else {
+            if (inTable) { h += tableHtml + '</table>'; inTable = false; tableHtml = ''; }
+          }
+
+          // Bold markers
+          line = line.replace(/\\*\\*(.+?)\\*\\*/g, '<strong>$1</strong>');
+
+          // Normal paragraph
+          if (line.match(/^[-*]\\s/)) {
+            if (!inList) { h += '<ul>'; inList = true; }
+            h += '<li>' + line.replace(/^[-*]\\s+/, '') + '</li>';
+          } else if (line.trim()) {
+            h += '<p>' + line + '</p>';
+          } else {
+            h += '<div class=\"monthly-gap\"></div>';
+          }
+        }
+        if (inList) h += '</ul>';
+        if (inTable) h += tableHtml + '</table>';
+
+        html += '<div class=\"monthly-entry\">';
+        html += '<div class=\"monthly-entry-title\">' + esc(title) + '</div>';
+        html += h;
+        html += '</div>';
+
+        fetchLog(index + 1);
+      })
+      .catch(function() {
+        // Fallback to raw.githubusercontent.com
+        var fallbackUrl = 'https://raw.githubusercontent.com/mc-hermes/hermes-agent-cost/main/' + url;
+        fetch(fallbackUrl)
+          .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+          .then(function(text) {
+            var body = text;
+            var front = '';
+            if (text.startsWith('---')) {
+              var end = text.indexOf('---', 3);
+              if (end > 0) {
+                front = text.substring(3, end);
+                body = text.substring(end + 3);
+              }
+            }
+            body = body.replace(/^\\n+/, '');
+            var title = 'Monthly Report';
+            var titleMatch = front.match(/title:\\s*[\"']?(.+?)[\"']?\\s*$/m);
+            if (titleMatch) title = titleMatch[1];
+            var lines = body.split('\\n');
+            var h = '';
+            for (var i = 0; i < lines.length; i++) {
+              var line = lines[i];
+              if (line.match(/^###\\s/)) { h += '<h3>' + esc(line.replace(/^###\\s+/, '')) + '</h3>'; }
+              else if (line.match(/^##\\s/)) { h += '<h2>' + esc(line.replace(/^##\\s+/, '')) + '</h2>'; }
+              else if (line.match(/^---+$/)) { h += '<hr>'; }
+              line = line.replace(/\\*\\*(.+?)\\*\\*/g, '<strong>$1</strong>');
+              if (line.trim()) h += '<p>' + line + '</p>';
+              else h += '<div class=\"monthly-gap\"></div>';
+            }
+            html += '<div class=\"monthly-entry\"><div class=\"monthly-entry-title\">' + esc(title) + '</div>' + h + '</div>';
+            fetchLog(index + 1);
+          })
+          .catch(function() {
+            loading.style.display = 'none';
+            error.style.display = 'block';
+          });
+      });
+  }
+  fetchLog(0);
+}
 
 function renderLogs() {
   var feed = document.getElementById('logFeed');
