@@ -17,6 +17,9 @@ tags: [monthly-log, achievements, 2026]
 - **Lead Instructor — Deploying AI Agents with Microsoft Foundry** — Hands-on lab delivered at Cradle Fund with KrackedDevs, in partnership with Microsoft.
 - **Vibe101 Workshop — Sunway DealFlow Club, Sunway College** — Took beginners from setup to a live-deployed project in one evening with KrackedDevs / Danial Alias.
 
+### 🍖 Client Engagements
+- **Beard Brothers BBQ — Phase 0 Delivered** — Operational audit + dashboard prototype completed. Root-cause diagnosis, checkout/reservation review, dashboard prototype, and implementation roadmap. Invoiced MC-2026-001 (RM 10,000 / 25% of RM40,000 build). First AI-first restaurant consulting engagement.
+
 ### 📊 Client-Specific Dashboards
 - **Zaim dashboard** — Isolated gbrain dashboard for career coach Zaim Mohzani at `/zaim/`. Knowledge graph + entity views + activity log.
 - **Certava dashboard** — Full gbrain setup for Certava team. 15 pages (6 people, 3 companies, 4 meetings, 2 concepts) with 27 cross-references, 26 action items. OCR'd Excel/Word/PNG attachments into structured data.
@@ -44,6 +47,7 @@ This file lives at `logs/achievements-2026-06.md` in the `hermes-agent-cost-page
 | gbrain pages | 399 | Tracking knowledge base growth |
 | Cron jobs running | 10 | Automation infrastructure |
 | Client dashboards | 2 (Zaim, Certava) | Billable deliverables |
+| Consulting engagements | 1 (Beard Brothers BBQ) | RM 10,000 invoiced (Phase 0) |
 | Workshops delivered | 2 (Cradle Fund, Sunway) | Training engagements |
 | Meetings ingested | 4+ | Certava: Ventris, AL Pine, Weekly Sync |
 | GitHub deploys (auto) | ~720 | Hourly auto-refresh |
