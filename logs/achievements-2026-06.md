@@ -19,6 +19,7 @@ tags: [monthly-log, achievements, 2026]
 
 ### 🍖 Client Engagements
 - **Beard Brothers BBQ — Phase 0 Delivered** — Operational audit + dashboard prototype completed. Root-cause diagnosis, checkout/reservation review, dashboard prototype, and implementation roadmap. Invoiced MC-2026-001 (RM 10,000 / 25% of RM40,000 build). First AI-first restaurant consulting engagement.
+- **RapidScreen Sdn Bhd — 2 Teaching Sessions** — Delivered two 2.5-hour AI teaching sessions. Invoiced MC-2026-002 (Jun 18) and MC-2026-003 (Jun 26) at RM 250 each (RM 500 total).
 
 ### 📊 Client-Specific Dashboards
 - **Zaim dashboard** — Isolated gbrain dashboard for career coach Zaim Mohzani at `/zaim/`. Knowledge graph + entity views + activity log.
@@ -47,7 +48,7 @@ This file lives at `logs/achievements-2026-06.md` in the `hermes-agent-cost-page
 | gbrain pages | 399 | Tracking knowledge base growth |
 | Cron jobs running | 10 | Automation infrastructure |
 | Client dashboards | 2 (Zaim, Certava) | Billable deliverables |
-| Consulting engagements | 1 (Beard Brothers BBQ) | RM 10,000 invoiced (Phase 0) |
+| Consulting engagements | 2 clients (BBB, RapidScreen) | RM 10,500 invoiced (3 invoices) |
 | Workshops delivered | 2 (Cradle Fund, Sunway) | Training engagements |
 | Meetings ingested | 4+ | Certava: Ventris, AL Pine, Weekly Sync |
 | GitHub deploys (auto) | ~720 | Hourly auto-refresh |
