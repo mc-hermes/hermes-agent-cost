@@ -3078,13 +3078,48 @@ function renderMonthly() {
           .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
           .then(function(text) {
             var body = text;
+            var front = '';
             if (text.startsWith('---')) {
               var end = text.indexOf('---', 3);
-              if (end > 0) body = text.substring(end + 3);
+              if (end > 0) {
+                front = text.substring(3, end);
+                body = text.substring(end + 3);
+              }
             }
             body = body.replace(/^\n+/, '');
-            var h = renderMarkdownPreview(body);
-            html += '<div class=\"monthly-entry\">' + h + '</div>';
+            var title = 'Monthly Report';
+            var titleMatch = front.match(/title:\s*["']?(.+?)["']?\s*$/m);
+            if (titleMatch) title = titleMatch[1];
+            // Same table-splitting logic as primary path
+            var parts = body.split(/(^(\|.+\|\n\|[-:| ]+\|\n(?:\|.+\|\n?)*))/m);
+            var h = '';
+            for (var i = 0; i < parts.length; i++) {
+              if (!parts[i] || parts[i].trim() === '') continue;
+              if (parts[i].match(/^\|.+\|/)) {
+                var lines = parts[i].split('\n').filter(function(l){ return l.trim(); });
+                var tbl = '<table>';
+                var isFirst = true;
+                for (var j = 0; j < lines.length; j++) {
+                  if (lines[j].match(/^\|[-:| ]+\|$/)) continue;
+                  var tag = isFirst ? 'th' : 'td';
+                  tbl += '<tr>';
+                  var cells = lines[j].split('|').filter(function(c){ return c.trim(); });
+                  for (var c = 0; c < cells.length; c++) {
+                    tbl += '<' + tag + '>' + cells[c].trim() + '</' + tag + '>';
+                  }
+                  tbl += '</tr>';
+                  isFirst = false;
+                }
+                tbl += '</table>';
+                h += tbl;
+              } else {
+                h += renderMarkdownPreview(parts[i]);
+              }
+            }
+            html += '<div class=\"monthly-entry\">';
+            html += '<div class=\"monthly-entry-title\">' + esc(title) + '</div>';
+            html += h;
+            html += '</div>';
             fetchLog(index + 1);
           })
           .catch(function() {
