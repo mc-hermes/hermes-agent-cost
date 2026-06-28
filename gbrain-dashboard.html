@@ -3035,27 +3035,36 @@ function renderMonthly() {
         var title = 'Monthly Report';
         var titleMatch = front.match(/title:\s*["']?(.+?)["']?\s*$/m);
         if (titleMatch) title = titleMatch[1];
-        // Pre-process tables before markdown rendering
-        body = body.replace(/^(\|.+\|)\n(\|[-:| ]+\|)\n((?:\|.+\|\n?)*)/gm, function(match) {
-          var lines = match.split('\n').filter(function(l){ return l.trim(); });
-          if (lines.length < 2) return match;
-          var tbl = '<table>';
-          var isFirst = true;
-          for (var i = 0; i < lines.length; i++) {
-            if (lines[i].match(/^\|[-:| ]+\|$/)) continue;
-            var tag = isFirst ? 'th' : 'td';
-            tbl += '<tr>';
-            var cells = lines[i].split('|').filter(function(c){ return c.trim(); });
-            for (var c = 0; c < cells.length; c++) {
-              tbl += '<' + tag + '>' + cells[c].trim() + '</' + tag + '>';
+        // Split body into non-table and table sections.
+        // renderMarkdownPreview() calls esc() internally which would corrupt pre-built <table> HTML,
+        // so we keep table regions separate and stitch them back after rendering.
+        var parts = body.split(/(^(\|.+\|\n\|[-:| ]+\|\n(?:\|.+\|\n?)*))/m);
+        // parts[0] = before first table, parts[2] = table, parts[3] = after table, etc.
+        var h = '';
+        for (var i = 0; i < parts.length; i++) {
+          if (!parts[i] || parts[i].trim() === '') continue;
+          if (parts[i].match(/^\|.+\|/)) {
+            // Convert this chunk's table to HTML
+            var lines = parts[i].split('\n').filter(function(l){ return l.trim(); });
+            var tbl = '<table>';
+            var isFirst = true;
+            for (var j = 0; j < lines.length; j++) {
+              if (lines[j].match(/^\|[-:| ]+\|$/)) continue;
+              var tag = isFirst ? 'th' : 'td';
+              tbl += '<tr>';
+              var cells = lines[j].split('|').filter(function(c){ return c.trim(); });
+              for (var c = 0; c < cells.length; c++) {
+                tbl += '<' + tag + '>' + cells[c].trim() + '</' + tag + '>';
+              }
+              tbl += '</tr>';
+              isFirst = false;
             }
-            tbl += '</tr>';
-            isFirst = false;
+            tbl += '</table>';
+            h += tbl;
+          } else {
+            h += renderMarkdownPreview(parts[i]);
           }
-          return tbl + '</table>';
-        });
-        // Use the dashboard's existing markdown renderer
-        var h = renderMarkdownPreview(body);
+        }
         html += '<div class=\"monthly-entry\">';
         html += '<div class=\"monthly-entry-title\">' + esc(title) + '</div>';
         html += h;
