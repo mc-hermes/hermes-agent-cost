@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-06-29T01:13:18Z",
+  "updated_at": "2026-06-29T01:15:38Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
     "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 400,
+    "page_count": 416,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "38.2% of pages have inbound links",
-    "entity_links": "Coverage \u2014 48 people, 35 companies indexed",
-    "concept_count": 153,
-    "meeting_count": 16,
-    "person_count": 48,
-    "company_count": 35,
+    "graph_coverage": "40.9% of pages have inbound links",
+    "entity_links": "Coverage \u2014 54 people, 38 companies indexed",
+    "concept_count": 156,
+    "meeting_count": 20,
+    "person_count": 54,
+    "company_count": 38,
     "newsletter_count": 91,
     "video_count": 0,
     "article_count": 20,
@@ -19,9 +19,9 @@
     "quote_count": 0,
     "dataset_count": 4,
     "digest_count": 2,
-    "total_links": 428,
-    "outbound_count": 542,
-    "inbound_count": 502,
+    "total_links": 486,
+    "outbound_count": 607,
+    "inbound_count": 561,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -102,6 +102,99 @@
       ],
       "outbound_count": 4,
       "inbound_count": 8
+    },
+    {
+      "slug": "action-tracker",
+      "title": "Certava Action Tracker \u2014 Weekly Minutes",
+      "type": "meeting",
+      "updated": "",
+      "body": "# Certava Action Tracker \u2014 Weekly Minutes Action Progress\n\nGenerated from weekly minutes action progress for [[certava-company]].\n\n## Key In-Progress Items\n- ISO Domain Logic Validation ([[irsyad-danish|Danish]])\n- Clarify MVP Phase 2 scope ([[amirul]] / [[luqman]])\n- Document Library module (Danish & Technical team)\n- Evidence Upload module (Danish & Technical team)\n- Security explanation (Technical Team)\n- Scorpion paid pilot readiness (Danish & [[fazli-ridzuan|Fazli]])\n- Build proper costing model (Fazli)\n- Rework pricing based on standards/users/margin (Fazli)\n- Refocus target market on 200+ employee or multi-ISO companies (Danish & Fazli)\n- Position Certava around ISO 9001, 14001, 45001\n\n## Key Pending Items\n- Group-level access control\n- Customer support model\n- Legal register module ([[ventris]] discussion)\n- Management review module\n- Dashboard widgets and security hardening",
+      "tags": [
+        "certava",
+        "weekly"
+      ],
+      "links_out": [
+        {
+          "to": "certava-company",
+          "type": "wikilink",
+          "text": "certava-company"
+        },
+        {
+          "to": "irsyad-danish",
+          "type": "wikilink",
+          "text": "irsyad-danish|Danish"
+        },
+        {
+          "to": "amirul",
+          "type": "wikilink",
+          "text": "amirul"
+        },
+        {
+          "to": "luqman",
+          "type": "wikilink",
+          "text": "luqman"
+        },
+        {
+          "to": "fazli-ridzuan",
+          "type": "wikilink",
+          "text": "fazli-ridzuan|Fazli"
+        },
+        {
+          "to": "ventris",
+          "type": "wikilink",
+          "text": "ventris"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 6,
+      "inbound_count": 0
+    },
+    {
+      "slug": "al-pine-meeting-16-june-2026",
+      "title": "Minutes of Meeting \u2014 AL Pine Pilot Discussion with Rina (16 June 2026)",
+      "type": "meeting",
+      "updated": "",
+      "body": "# Minutes of Meeting \u2014 Certava Pilot Discussion with Rina (AL Pine)\n**Date:** 16 June 2026\n\n**Attendees:**\n- Certava Team: Fazli Ridzuan (CEO), Irsyad Danish (ISO Practitioner)\n- Client: Rina (Designation/Company representative)\n\n## Background\nFazli explained that Certava is being positioned to support organisations in managing ISO readiness, evidence tracking, document review, clause alignment and compliance visibility. Rina shared that the organisation had previously obtained ISO 9001 certification but did not continue due to workload and time constraints. The organisation is also exploring ISO/IEC 17020 (inspection bodies).\n\n## Current ISO Process\n- Daily operational checklists used by operations team before going to site\n- Documents reviewed daily, monthly, half-yearly or periodically\n- Some records maintained in PDF format\n- Existing operational forms and checklists are already part of the current workflow\n- Rina expressed concern about operations team readiness for online system adoption\n\n## Certava Demonstration\nThe team explained Certava can support:\n- Uploading of existing PDF records and documents\n- Review of uploaded documents against ISO requirements\n- Identification of gaps or missing information\n- Evidence organisation through an \"Evidence Locker\" or structured folder concept\n- Linking ISO clauses to action, evidence and responsible parties\n- Dashboard visibility for management\n- Reminder and due-date monitoring\n- Tracking of submitted documents and outstanding gaps\n- Role-based access control\n\nThe pilot would NOT require Rina's team to immediately replace their current operational forms or re-key information.\n\n## Pilot Pricing\n- Paid pilot subscription for six months\n- Reason for charging: operational costs including system usage, AI processing and implementation support\n- Rina acknowledged that paid software subscriptions are common and understood\n\n## Key Observations\n- Rina understood the value proposition of Certava\n- The organisation already has existing ISO-related operational documents and checklists\n- Main concern was not the concept, but whether the operations team would be ready for online adoption\n- The pilot should be positioned as low-disruption\n\n## Next Steps\n- Share Certava pilot deck with Rina via Google Drive (Fazli)\n- Rina to review pilot deck internally and discuss with bosses\n- Danish to check possible support options for ISO/IEC 17020\n- If Rina agrees, proceed with sign-up, pilot agreement and implementation planning",
+      "tags": [
+        "al-pine",
+        "certava",
+        "meeting"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "amirul",
+      "title": "Amirul",
+      "type": "person",
+      "updated": "",
+      "body": "Amirul is a backend and automation developer at Certava. He works on backend development, automation, and technical infrastructure. He is responsible for fixing bugs, completing pending features, and assessing feasibility of new module requirements including the legal register workflow.",
+      "tags": [
+        "certava",
+        "team"
+      ],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "action-tracker",
+          "type": "wikilink",
+          "text": "amirul"
+        },
+        {
+          "from": "certava-overview",
+          "type": "wikilink",
+          "text": "amirul"
+        },
+        {
+          "from": "weekly-sync-21-june-2026",
+          "type": "wikilink",
+          "text": "amirul"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 3
     },
     {
       "slug": "architecture/agent-hierarchy",
@@ -230,13 +323,18 @@
           "text": "Openclaw Anatomy"
         },
         {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "The Anatomy of OpenClaw"
+        },
+        {
           "from": "people/neo-kim",
           "type": "wikilink",
           "text": "The Anatomy of OpenClaw"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 6
+      "inbound_count": 7
     },
     {
       "slug": "articles/every-level-claude-second-brain-2026-06-20",
@@ -365,9 +463,15 @@
         "zaim"
       ],
       "links_out": [],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "Why Your 2026 Career Goals Are Already Dead"
+        }
+      ],
       "outbound_count": 0,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "articles/nerdqaxe-revision-7-launch-2026-06-12",
@@ -1319,6 +1423,102 @@
       "inbound_count": 6
     },
     {
+      "slug": "certava-company",
+      "title": "Certava",
+      "type": "company",
+      "updated": "",
+      "body": "Certava is a clause intelligence platform for ISO compliance and regulatory management. The company is developing a deterministic clause intelligence engine that enforces compliance logic structurally rather than probabilistically.\n\n**Team:** Fazli Ridzuan (CEO), Irsyad Danish (ISO Practitioner), Amirul (Backend/Automation), Luqman (Architecture/Full-Stack)\n\n**Product:** Certava helps organisations manage ISO readiness, evidence tracking, document review, clause alignment and compliance visibility. It supports ISO 9001, ISO 14001, ISO 45001 and is exploring legal register and regulatory compliance capabilities.\n\n**Target Market:** Companies with 200+ employees or multiple ISO standards.\n\n**Funding:** Cradle grant (up to RM 150,000) across 4 milestones.\n\n**Pilot:** 6-month paid pilot at RM 6,000 for up to 10 users.\n\n**Technical Stack:** MongoDB (Singapore), Vercel (US), Gemini (AI), Resend (email), Sentry (monitoring).\n\n**Pilot Prospects:** Ventris (legal register), Scorpion/Scorpio (paid pilot), AL Pine/Rina (ISO 9001 + ISO/IEC 17020 exploration).",
+      "tags": [
+        "certava"
+      ],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "action-tracker",
+          "type": "wikilink",
+          "text": "certava-company"
+        },
+        {
+          "from": "certava-overview",
+          "type": "wikilink",
+          "text": "certava-company|Certava"
+        },
+        {
+          "from": "weekly-sync-21-june-2026",
+          "type": "wikilink",
+          "text": "certava-company|Certava"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 3
+    },
+    {
+      "slug": "certava-overview",
+      "title": "Certava Platform Overview",
+      "type": "concept",
+      "updated": "",
+      "body": "# Certava Platform Overview\n\n[[certava-company|Certava]] is a deterministic clause intelligence engine for ISO compliance and regulatory management. The platform enforces compliance logic structurally rather than generating it probabilistically.\n\n## Core Value Proposition\n- Reduce manual compliance work by mapping clauses and requirements to documents, controls, and evidence\n- Review uploaded evidence against requirements\n- Identify gaps or missing documentation\n- Link ISO clauses, legal obligations, risks, controls, and evidence\n- Support audit readiness and monitoring\n\n## Team\n- [[fazli-ridzuan]] \u2014 CEO, leads business development and strategic direction\n- [[irsyad-danish]] \u2014 ISO Practitioner, domain expert\n- [[amirul]] \u2014 Backend and automation developer\n- [[luqman]] \u2014 Architecture and full-stack lead\n- [[sayf]] \u2014 Contributor (tech project management, QA/QC)\n\n## Target Market\nCompanies with 200+ employees or multiple ISO standards.\n\n## Technical Stack\nMongoDB (Singapore), Vercel (US), Gemini (AI), Resend, Sentry.\n\n## Development Milestones\nFunded by [[cradle-milestone]] grant (up to RM 150,000).\n\n## Key Prospects\n- [[ventris]] \u2014 Legal register compliance pilot\n- [[rina]] (AL Pine) \u2014 ISO 9001 / ISO/IEC 17020 interest\n- [[scorpion]] \u2014 Paid pilot prospect",
+      "tags": [
+        "certava",
+        "product"
+      ],
+      "links_out": [
+        {
+          "to": "certava-company",
+          "type": "wikilink",
+          "text": "certava-company|Certava"
+        },
+        {
+          "to": "fazli-ridzuan",
+          "type": "wikilink",
+          "text": "fazli-ridzuan"
+        },
+        {
+          "to": "irsyad-danish",
+          "type": "wikilink",
+          "text": "irsyad-danish"
+        },
+        {
+          "to": "amirul",
+          "type": "wikilink",
+          "text": "amirul"
+        },
+        {
+          "to": "luqman",
+          "type": "wikilink",
+          "text": "luqman"
+        },
+        {
+          "to": "sayf",
+          "type": "wikilink",
+          "text": "sayf"
+        },
+        {
+          "to": "cradle-milestone",
+          "type": "wikilink",
+          "text": "cradle-milestone"
+        },
+        {
+          "to": "ventris",
+          "type": "wikilink",
+          "text": "ventris"
+        },
+        {
+          "to": "rina",
+          "type": "wikilink",
+          "text": "rina"
+        },
+        {
+          "to": "scorpion",
+          "type": "wikilink",
+          "text": "scorpion"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 10,
+      "inbound_count": 0
+    },
+    {
       "slug": "companies/ai-automation-society",
       "title": "AI Automation Society",
       "type": "company",
@@ -1363,6 +1563,11 @@
           "text": "AI Automation Society"
         },
         {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "AI Automation Society"
+        },
+        {
           "from": "newsletters/claude-second-brain-levels-2026-06-20",
           "type": "wikilink",
           "text": "AI Automation Society"
@@ -1379,7 +1584,7 @@
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 7
+      "inbound_count": 8
     },
     {
       "slug": "companies/ai-garage-weekly",
@@ -1532,9 +1737,15 @@
           "text": "Invoice Mc 2026 001 Bbb"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "Beard Brothers BBQ"
+        }
+      ],
       "outbound_count": 1,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "companies/beehiiv",
@@ -1662,6 +1873,11 @@
       ],
       "backlinks": [
         {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "Digital Power"
+        },
+        {
           "from": "newsletters/30-core-agentic-concepts-2026-06-20",
           "type": "wikilink",
           "text": "Digital Power"
@@ -1678,7 +1894,7 @@
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 3
+      "inbound_count": 4
     },
     {
       "slug": "companies/dynamics-orchard-farm-sdn-bhd",
@@ -2192,6 +2408,11 @@
           "text": "Nation Building School"
         },
         {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "Nation Building School"
+        },
+        {
           "from": "newsletters/zaim-why-2026-career-goals-dead-2026-06-16",
           "type": "wikilink",
           "text": "Nation Building School"
@@ -2203,7 +2424,7 @@
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 4
+      "inbound_count": 5
     },
     {
       "slug": "companies/openai",
@@ -2474,6 +2695,11 @@
           "text": "Posh Corporate"
         },
         {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "Posh Corporate"
+        },
+        {
           "from": "meetings/2026-06-10-business-brain-with-audrey",
           "type": "wikilink",
           "text": "Posh Corporate"
@@ -2495,7 +2721,7 @@
         }
       ],
       "outbound_count": 5,
-      "inbound_count": 11
+      "inbound_count": 12
     },
     {
       "slug": "companies/rapidscreen-sdn-bhd",
@@ -2511,9 +2737,15 @@
           "text": "Invoice Mc 2026 003 Rapidscreen"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "RapidScreen Sdn Bhd"
+        }
+      ],
       "outbound_count": 1,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "companies/single-brain",
@@ -2544,13 +2776,18 @@
           "text": "Single Brain"
         },
         {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "Single Brain"
+        },
+        {
           "from": "people/ericosiu",
           "type": "wikilink",
           "text": "companies/single-brain"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 2
+      "inbound_count": 3
     },
     {
       "slug": "companies/single-grain",
@@ -2581,13 +2818,18 @@
           "text": "Single Grain"
         },
         {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "Single Grain"
+        },
+        {
           "from": "people/ericosiu",
           "type": "wikilink",
           "text": "companies/single-grain"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 2
+      "inbound_count": 3
     },
     {
       "slug": "companies/solo-satoshi",
@@ -2722,6 +2964,11 @@
           "text": "System Design One"
         },
         {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "System Design One"
+        },
+        {
           "from": "newsletters/agentic-engineering-concepts-2026-06-20-084511",
           "type": "wikilink",
           "text": "System Design One"
@@ -2763,7 +3010,7 @@
         }
       ],
       "outbound_count": 6,
-      "inbound_count": 11
+      "inbound_count": 12
     },
     {
       "slug": "companies/thompson-legal",
@@ -2841,10 +3088,15 @@
           "from": "concepts/coaching-client-aisyah-rahim-2026-06-15",
           "type": "wikilink",
           "text": "Unilever Malaysia"
+        },
+        {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "Unilever Malaysia"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "companies/zhipu-ai",
@@ -2948,9 +3200,15 @@
         "zaim"
       ],
       "links_out": [],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "Zaim 15-Minute Gap Method"
+        }
+      ],
       "outbound_count": 0,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "concepts/2026-06-03",
@@ -3009,9 +3267,15 @@
           "text": "Salary Negotiation Playbook"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "3-Month Career Pivot Framework"
+        }
+      ],
       "outbound_count": 3,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "concepts/3-month-career-pivot-framework-msg-19eca58bcdb09c70",
@@ -3232,13 +3496,18 @@
           "text": "Aisyah Rahim"
         },
         {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "Aisyah Rahim"
+        },
+        {
           "from": "people/liyana",
           "type": "wikilink",
           "text": "Aisyah Rahim"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 3
+      "inbound_count": 4
     },
     {
       "slug": "concepts/aisyah-rahim-client-profile",
@@ -3446,13 +3715,18 @@
       ],
       "backlinks": [
         {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "Claude Opus 4.7"
+        },
+        {
           "from": "newsletters/30-core-agentic-concepts-2026-06-20",
           "type": "wikilink",
           "text": "Claude Opus 4.7"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "concepts/clawhub",
@@ -3679,13 +3953,18 @@
       ],
       "backlinks": [
         {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "Compound Engineering"
+        },
+        {
           "from": "newsletters/30-core-agentic-concepts-2026-06-20",
           "type": "wikilink",
           "text": "Compound Engineering"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "concepts/dashboard-composer-test",
@@ -3803,10 +4082,15 @@
           "from": "digests/2026-06-15-business-brain-digest",
           "type": "wikilink",
           "text": "Dynamics Orchard Farm Management Accounts Fye 2025"
+        },
+        {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "Dynamics Orchard Management Accounts FYE 2025"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 5
+      "inbound_count": 6
     },
     {
       "slug": "concepts/dynamics-orchard-farm-management-accounts-fye-2025",
@@ -4078,13 +4362,18 @@
       ],
       "backlinks": [
         {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "Get Shit Done"
+        },
+        {
           "from": "newsletters/30-core-agentic-concepts-2026-06-20",
           "type": "wikilink",
           "text": "Get Shit Done"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "concepts/github-2fa-required-2026-06-17",
@@ -4709,6 +4998,11 @@
           "text": "Nate Herk"
         },
         {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "Nate Herk Technique"
+        },
+        {
           "from": "newsletters/claude-second-brain-levels",
           "type": "wikilink",
           "text": "Nate Herk"
@@ -4720,7 +5014,7 @@
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 6
+      "inbound_count": 7
     },
     {
       "slug": "concepts/openai-codex",
@@ -5328,13 +5622,18 @@
       ],
       "backlinks": [
         {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "SkillsBench"
+        },
+        {
           "from": "newsletters/30-core-agentic-concepts-2026-06-20",
           "type": "wikilink",
           "text": "SkillsBench"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "concepts/stripe-ai-commerce-apac-2026-04-29",
@@ -5408,13 +5707,18 @@
       ],
       "backlinks": [
         {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "Superpowers"
+        },
+        {
           "from": "newsletters/30-core-agentic-concepts-2026-06-20",
           "type": "wikilink",
           "text": "Superpowers"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "concepts/three-folder-system-head-hands-heart",
@@ -5848,6 +6152,28 @@
       "inbound_count": 0
     },
     {
+      "slug": "cradle-milestone",
+      "title": "Certava Cradle Grant \u2014 Milestone Structure",
+      "type": "concept",
+      "updated": "",
+      "body": "# Certava Cradle Grant \u2014 Milestone Structure\n\n## Grant Overview\n- **Funding allocation:** Up to RM 150,000 (including legal due diligence fee of RM 17,000)\n- **Maximum per milestone:** RM 37,500\n- **Each milestone period:** 3 months\n- **Minimum funding duration:** 2 milestones (6 months)\n- **Maximum duration:** Up to 6 milestones (18 months)\n- **Related-party transactions:** Not allowed\n\n## Development Focus\nA deterministic clause intelligence engine comprising schema modeling, rule validation, and cross-clause dependency mapping.\n\n### Milestone 1 \u2014 Foundation (Backend & Frontend)\n- Authentication & user invitation\n- Onboarding workflow integrated with clause schema initiation\n- User management (admin portal)\n- Account Management\n- Gap analysis structured output generation\n- Structured ISO document repository linked to clause schema\n\n### Milestone 2 \u2014 Core ISO Modules (Rule-Based Engine)\nModule alignment to ISO clauses:\n- Document Control\n- Evidence Supporting\n- Risk & Opportunities\n- Objectives & Planning\n- Planning of Changes\n- Leadership\n- Cross-clause dependency graph for context: control and evidence relationships\n\n### Milestone 3 \u2014 Advanced Modules (Rule-Based Engine)\n- Legal & Environmental Register\n- Management Review\n- Corrective Action\n- Support (Resources, Competence, Awareness, Communication)\n- Internal Audit\n- Validation layer to enforce clause completeness, consistency, and audit readiness\n\n### Milestone 4 \u2014 Dashboard & Security\n- Main dashboard overview\n- Main dashboard insights\n- UI/UX Design System\n- Security Controls\n- Landing page refinement\n- User guide documentation\n- Compliance lifecycle of clauses, controls, and evidence\n\n## Product Commercialisation & Certification\n- Market Outreach & Pilot Test\n- POC with clients\n- Certification filing\n- Monthly progress reports and technical documents\n- Technical Architecture Document\n- Build & Test Reports\n- Plan & Design Report\n- MVP Demo to Cradle\n- Final Report & Demo",
+      "tags": [
+        "certava",
+        "cradle",
+        "funding"
+      ],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "certava-overview",
+          "type": "wikilink",
+          "text": "cradle-milestone"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 1
+    },
+    {
       "slug": "datasets/dynamics-orchard-management-accounts-fye-2025",
       "title": "Dynamics Orchard Management Accounts Fye 2025",
       "type": "dataset",
@@ -6212,6 +6538,240 @@
       "backlinks": [],
       "outbound_count": 34,
       "inbound_count": 0
+    },
+    {
+      "slug": "digests/2026-06-29-business-brain-digest",
+      "title": "2026 06 29 Business Brain Digest",
+      "type": "concept",
+      "updated": "",
+      "body": "# Your Business Brain \u2014 Week of June 22\u201329, 2026\n\n\ud83d\udce5 **This week's intake: 100 items**\n- 29 newsletters\n- 40 concepts (many from agentic engineering deep-dives)\n- 3 meetings (all Sayf \u00d7 Zaim, June 12)\n- 10 bookmarks / ideas\n- 7 companies\n- 5 people\n- 3 datasets (invoices + farm accounts)\n- 2 articles\n- 1 monthly achievement log\n\n\ud83d\udd17 **New connections found**\n\n- **[[30 Core Agentic Concepts 2026 06 20]]** \u2014 System Design One issue #154 authored by [[Neo Kim]] with guest [[Paul Hoekstra]] (data engineer at [[Digital Power]]). This single newsletter spawned 6 linked concept pages: [[GPT-5.5]], [[Claude Opus 4.7]], [[SkillsBench]], [[Compound Engineering]], [[Get Shit Done]], and [[Superpowers]] \u2014 each extracted and cross-linked back to the source.\n\n- **[[Neo Kim]]** \u2192 [[System Design One]]** \u2014 Neo also authored [[The Anatomy of OpenClaw]], an earlier deep-dive on agentic coding architecture. His publication is now tracked as both a person and company entity.\n\n- **[[Paul Hoekstra]]** \u2192 [[Digital Power]]** \u2014 Paul writes Paul's Pipeline, a data and AI newsletter. Guest-authored the 30 Concepts piece.\n\n- **[[Aisyah Rahim]]** \u2014 Senior Brand Manager at [[Unilever Malaysia]], referred by Liyana from a KSI workshop, now a coaching client of [[Zaim Mohzani]]. First session next week. Client profile page created: [[Aisyah Rahim \u2014 Client Profile]].\n\n- **[[Zaim Mohzani]]** coaching pipeline is building: 3 meeting notes captured ([[Sayf x Zaim \u2014 12 Jun 2026]], [[Gemini Auto-Notes \u2014 Sayf x Zaim (12 Jun 2026)]], [[Sayf Zaim Jun 12 2026 Gemini]]), plus methodology pages for the [[Zaim 15-Minute Gap Method]] and [[3-Month Career Pivot Framework]] (originally shared with a KSI senior analyst).\n\n- **[[Why Your 2026 Career Goals Are Already Dead]]** \u2014 article citing [[Michael Lennington]] and [[Brian Moran]], co-authors of *The 12 Week Year*. Connected to [[Zaim Mohzani]] and [[Nation Building School]].\n\n- **[[Hermes as Chief of Staff]]** \u2014 bookmark from [[Eric Osiu]] (@ericosiu) showing Hermes operating as autonomous chief of staff: books sales calls, revives stalled deals, ships ad creative. Connected to [[Single Brain]] and [[Single Grain]] companies.\n\n- **[[AI Automation Society]]** \u2192 [[Claude Second Brain Levels]]** \u2014 the automation community newsletter links to the Claude-as-second-brain framework breakdown, plus [[Nate Herk Technique]].\n\n\ud83d\udcc8 **Data updates**\n\n- **Invoice MC-2026-001** \u2014 [[Beard Brothers BBQ]]: issued June 16, due June 30, Net 14. Linked from company page.\n- **Invoice MC-2026-003** \u2014 [[RapidScreen Sdn Bhd]]: issued June 26, due July 10. Linked from company page.\n- **[[Dynamics Orchard Management Accounts FYE 2025]]** \u2014 farm management accounts dataset linked to [[Posh Corporate]] and [[Audrey Loh]].\n\n\ud83d\udca1 **Insight**\n\nThe 30 Core Agentic Concepts newsletter illustrates a repeatable content processing pattern: one long-form source \u2192 multiple atomic concept pages \u2192 each concept linked back to its source. [[GPT-5.5]], [[Claude Opus 4.7]], [[SkillsBench]], [[Compound Engineering]], [[Get Shit Done]], and [[Superpowers]] all trace to a single [[30 Core Agentic Concepts 2026 06 20]] newsletter by [[Neo Kim]] at [[System Design One]]. This creates a navigable knowledge graph where any future mention of \"SkillsBench\" or \"Compound Engineering\" in a meeting or email automatically connects back to the original source \u2014 the brain becomes self-referencing. The Zaim coaching pipeline shows the same pattern forming: [[Zaim Mohzani]] now connects to 3 meetings, 2 methodology pages, 1 client profile ([[Aisyah Rahim]]), and 1 career framework \u2014 all traceable through a single person entity.",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "newsletters/30-core-agentic-concepts-2026-06-20",
+          "type": "wikilink",
+          "text": "30 Core Agentic Concepts 2026 06 20"
+        },
+        {
+          "to": "people/neo-kim",
+          "type": "wikilink",
+          "text": "Neo Kim"
+        },
+        {
+          "to": "people/paul-hoekstra",
+          "type": "wikilink",
+          "text": "Paul Hoekstra"
+        },
+        {
+          "to": "companies/digital-power",
+          "type": "wikilink",
+          "text": "Digital Power"
+        },
+        {
+          "to": "GPT-5.5",
+          "type": "wikilink",
+          "text": "GPT-5.5"
+        },
+        {
+          "to": "concepts/claude-opus-47",
+          "type": "wikilink",
+          "text": "Claude Opus 4.7"
+        },
+        {
+          "to": "concepts/skillsbench",
+          "type": "wikilink",
+          "text": "SkillsBench"
+        },
+        {
+          "to": "concepts/compound-engineering",
+          "type": "wikilink",
+          "text": "Compound Engineering"
+        },
+        {
+          "to": "concepts/get-shit-done",
+          "type": "wikilink",
+          "text": "Get Shit Done"
+        },
+        {
+          "to": "concepts/superpowers",
+          "type": "wikilink",
+          "text": "Superpowers"
+        },
+        {
+          "to": "companies/system-design-one",
+          "type": "wikilink",
+          "text": "System Design One"
+        },
+        {
+          "to": "articles/anatomy-of-openclaw-2026-06-08",
+          "type": "wikilink",
+          "text": "The Anatomy of OpenClaw"
+        },
+        {
+          "to": "concepts/aisyah-rahim-client-profile-2026-06-15",
+          "type": "wikilink",
+          "text": "Aisyah Rahim"
+        },
+        {
+          "to": "companies/unilever-malaysia",
+          "type": "wikilink",
+          "text": "Unilever Malaysia"
+        },
+        {
+          "to": "people/zaim-mohzani",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
+          "to": "Aisyah Rahim \u2014 Client Profile",
+          "type": "wikilink",
+          "text": "Aisyah Rahim \u2014 Client Profile"
+        },
+        {
+          "to": "Sayf x Zaim \u2014 12 Jun 2026",
+          "type": "wikilink",
+          "text": "Sayf x Zaim \u2014 12 Jun 2026"
+        },
+        {
+          "to": "Gemini Auto-Notes \u2014 Sayf x Zaim (12 Jun 2026)",
+          "type": "wikilink",
+          "text": "Gemini Auto-Notes \u2014 Sayf x Zaim (12 Jun 2026)"
+        },
+        {
+          "to": "meetings/sayf-zaim-jun-12-2026-gemini",
+          "type": "wikilink",
+          "text": "Sayf Zaim Jun 12 2026 Gemini"
+        },
+        {
+          "to": "concepts/15-minute-gap-method-zaim",
+          "type": "wikilink",
+          "text": "Zaim 15-Minute Gap Method"
+        },
+        {
+          "to": "concepts/3-month-career-pivot-framework-2026-06-15",
+          "type": "wikilink",
+          "text": "3-Month Career Pivot Framework"
+        },
+        {
+          "to": "articles/msg-19ece778ab23e039",
+          "type": "wikilink",
+          "text": "Why Your 2026 Career Goals Are Already Dead"
+        },
+        {
+          "to": "people/michael-lennington",
+          "type": "wikilink",
+          "text": "Michael Lennington"
+        },
+        {
+          "to": "people/brian-moran",
+          "type": "wikilink",
+          "text": "Brian Moran"
+        },
+        {
+          "to": "companies/nation-building-school",
+          "type": "wikilink",
+          "text": "Nation Building School"
+        },
+        {
+          "to": "Hermes as Chief of Staff",
+          "type": "wikilink",
+          "text": "Hermes as Chief of Staff"
+        },
+        {
+          "to": "Eric Osiu",
+          "type": "wikilink",
+          "text": "Eric Osiu"
+        },
+        {
+          "to": "companies/single-brain",
+          "type": "wikilink",
+          "text": "Single Brain"
+        },
+        {
+          "to": "companies/single-grain",
+          "type": "wikilink",
+          "text": "Single Grain"
+        },
+        {
+          "to": "companies/ai-automation-society",
+          "type": "wikilink",
+          "text": "AI Automation Society"
+        },
+        {
+          "to": "newsletters/claude-second-brain-levels-2026-06-19",
+          "type": "wikilink",
+          "text": "Claude Second Brain Levels"
+        },
+        {
+          "to": "concepts/nate-herk-technique-question-2026-06-09",
+          "type": "wikilink",
+          "text": "Nate Herk Technique"
+        },
+        {
+          "to": "companies/beard-brothers-bbq",
+          "type": "wikilink",
+          "text": "Beard Brothers BBQ"
+        },
+        {
+          "to": "companies/rapidscreen-sdn-bhd",
+          "type": "wikilink",
+          "text": "RapidScreen Sdn Bhd"
+        },
+        {
+          "to": "concepts/dynamics-orchard-farm-management-accounts-2025-2026-06-10",
+          "type": "wikilink",
+          "text": "Dynamics Orchard Management Accounts FYE 2025"
+        },
+        {
+          "to": "companies/posh-corporate",
+          "type": "wikilink",
+          "text": "Posh Corporate"
+        },
+        {
+          "to": "people/audrey-loh",
+          "type": "wikilink",
+          "text": "Audrey Loh"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 37,
+      "inbound_count": 0
+    },
+    {
+      "slug": "fazli-ridzuan",
+      "title": "Fazli Ridzuan",
+      "type": "person",
+      "updated": "",
+      "body": "Fazli Ridzuan is the CEO of Certava. He leads business development, prospect engagement, and strategic direction. He manages pilot discussions, pricing strategy, and GTM execution. Fazli introduced Sayf to the Certava team to help bridge business, product and technical execution. He is focused on transitioning Certava from free-trial positioning to enterprise paid pilot model.",
+      "tags": [
+        "certava",
+        "team"
+      ],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "action-tracker",
+          "type": "wikilink",
+          "text": "fazli-ridzuan|Fazli"
+        },
+        {
+          "from": "certava-overview",
+          "type": "wikilink",
+          "text": "fazli-ridzuan"
+        },
+        {
+          "from": "ventris-meeting-15-june-2026",
+          "type": "wikilink",
+          "text": "fazli-ridzuan|Fazli"
+        },
+        {
+          "from": "weekly-sync-21-june-2026",
+          "type": "wikilink",
+          "text": "fazli-ridzuan|Fazli"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 4
     },
     {
       "slug": "gateway-infrastructure",
@@ -6720,6 +7280,78 @@
       "inbound_count": 1
     },
     {
+      "slug": "irsyad-danish",
+      "title": "Irsyad Danish",
+      "type": "person",
+      "updated": "",
+      "body": "Irsyad Danish is an ISO Practitioner / ISO Consultant at Certava. He serves as the ISO/domain expert and is responsible for validating clause logic, testing the system, and ensuring ISO and industry practice alignment. Danish leads webinar content and supports prospect-facing communication. He estimated the system is around 80% ready for what has been built and 70% compared to a complete ISO management system.",
+      "tags": [
+        "certava",
+        "team"
+      ],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "action-tracker",
+          "type": "wikilink",
+          "text": "irsyad-danish|Danish"
+        },
+        {
+          "from": "certava-overview",
+          "type": "wikilink",
+          "text": "irsyad-danish"
+        },
+        {
+          "from": "ventris-meeting-15-june-2026",
+          "type": "wikilink",
+          "text": "irsyad-danish|Danish"
+        },
+        {
+          "from": "weekly-sync-21-june-2026",
+          "type": "wikilink",
+          "text": "irsyad-danish|Danish"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 4
+    },
+    {
+      "slug": "luqman",
+      "title": "Luqman (Lokman)",
+      "type": "person",
+      "updated": "",
+      "body": "Luqman (also referred to as Lokman) is the architecture and full-stack lead at Certava. He handles system architecture, full-stack development, and technical leadership. He is responsible for mapping workflows into system modules and UI, assessing integration feasibility, and designing the legal register data structure.",
+      "tags": [
+        "certava",
+        "team"
+      ],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "action-tracker",
+          "type": "wikilink",
+          "text": "luqman"
+        },
+        {
+          "from": "certava-overview",
+          "type": "wikilink",
+          "text": "luqman"
+        },
+        {
+          "from": "ventris-meeting-15-june-2026",
+          "type": "wikilink",
+          "text": "luqman"
+        },
+        {
+          "from": "weekly-sync-21-june-2026",
+          "type": "wikilink",
+          "text": "luqman"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 4
+    },
+    {
       "slug": "maloha-coast",
       "title": "Maloha Coast",
       "type": "concept",
@@ -6976,9 +7608,15 @@
           "text": "Zaim Mohzani"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "Sayf Zaim Jun 12 2026 Gemini"
+        }
+      ],
       "outbound_count": 1,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "meetings/sayf-zaim-jun-12-2026",
@@ -7241,6 +7879,11 @@
           "text": "30 Core Agentic Concepts 2026 06 20"
         },
         {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "30 Core Agentic Concepts 2026 06 20"
+        },
+        {
           "from": "people/neo-kim",
           "type": "wikilink",
           "text": "30 Core Agentic Concepts 2026 06 20"
@@ -7252,7 +7895,7 @@
         }
       ],
       "outbound_count": 9,
-      "inbound_count": 10
+      "inbound_count": 11
     },
     {
       "slug": "newsletters/30-core-agentic-engineering-concepts-2026-06-17",
@@ -7625,9 +8268,15 @@
           "text": "newsletters/claude-second-brain-levels-2026-06-20"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "Claude Second Brain Levels"
+        }
+      ],
       "outbound_count": 2,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "newsletters/claude-second-brain-levels-2026-06-20",
@@ -9427,13 +10076,18 @@
           "text": "Audrey Loh"
         },
         {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "Audrey Loh"
+        },
+        {
           "from": "meetings/2026-06-10-business-brain-with-audrey",
           "type": "wikilink",
           "text": "Audrey Loh"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 7
+      "inbound_count": 8
     },
     {
       "slug": "people/ayaan",
@@ -9543,13 +10197,18 @@
           "text": "Brian Moran"
         },
         {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "Brian Moran"
+        },
+        {
           "from": "people/michael-lennington",
           "type": "wikilink",
           "text": "Brian Moran"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 2
+      "inbound_count": 3
     },
     {
       "slug": "people/carson-bates",
@@ -10078,10 +10737,15 @@
           "from": "articles/why-your-2026-career-goals-are-already-dead-2026-06-16",
           "type": "wikilink",
           "text": "Michael Lennington"
+        },
+        {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "Michael Lennington"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "people/nabil-jalil",
@@ -10192,6 +10856,11 @@
           "text": "Neo Kim"
         },
         {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "Neo Kim"
+        },
+        {
           "from": "newsletters/agentic-engineering-concepts-2026-06-20-084511",
           "type": "wikilink",
           "text": "Neo Kim"
@@ -10228,7 +10897,7 @@
         }
       ],
       "outbound_count": 6,
-      "inbound_count": 12
+      "inbound_count": 13
     },
     {
       "slug": "people/nick-milo",
@@ -10291,6 +10960,11 @@
           "text": "paul-hoekstra"
         },
         {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "Paul Hoekstra"
+        },
+        {
           "from": "newsletters/30-core-agentic-concepts-2026-06-20",
           "type": "wikilink",
           "text": "Paul Hoekstra"
@@ -10307,7 +10981,7 @@
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 6
+      "inbound_count": 7
     },
     {
       "slug": "people/rachel-kim",
@@ -10790,6 +11464,11 @@
           "text": "Zaim Mohzani"
         },
         {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
           "from": "meetings/sayf-zaim-jun-12-2026-gemini",
           "type": "wikilink",
           "text": "Zaim Mohzani"
@@ -10821,7 +11500,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 16
+      "inbound_count": 17
     },
     {
       "slug": "persons/tonbi",
@@ -10854,6 +11533,59 @@
       "inbound_count": 0
     },
     {
+      "slug": "rina",
+      "title": "Rina (AL Pine)",
+      "type": "person",
+      "updated": "",
+      "body": "Rina is a representative from an organisation (AL Pine) that previously obtained ISO 9001 certification but did not continue due to workload constraints. The organisation is also exploring ISO/IEC 17020 (inspection bodies). She engaged with Certava for a potential paid pilot.\n\n**Concerns:** Whether the operations team would be ready for online system adoption.\n\n**Status:** Reviewing Certava pilot deck internally with bosses.",
+      "tags": [
+        "certava",
+        "prospect"
+      ],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "certava-overview",
+          "type": "wikilink",
+          "text": "rina"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 1
+    },
+    {
+      "slug": "sayf",
+      "title": "Sayf",
+      "type": "person",
+      "updated": "",
+      "body": "Sayf was introduced to the Certava team on 21 June 2026 as a potential contributor to help bridge business, product and technical execution. He brings experience in tech project management, software delivery, AI/ML operations and business operations. Sayf was asked to help QA/QC test the platform, review scenarios, identify bugs, and provide assurance before pilot demonstrations. He also advised on CI/CD, GitHub setup, product management process, and security documentation.",
+      "tags": [
+        "certava",
+        "maloha-coast",
+        "team"
+      ],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "certava-overview",
+          "type": "wikilink",
+          "text": "sayf"
+        },
+        {
+          "from": "weekly-sync-21-june-2026",
+          "type": "wikilink",
+          "text": "sayf"
+        },
+        {
+          "from": "weekly-sync-21-june-2026",
+          "type": "wikilink",
+          "text": "sayf|Sayf"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 3
+    },
+    {
       "slug": "sayf/maloha-coast-navigator-test-edition",
       "title": "Maloha Coast Navigator Test Edition",
       "type": "concept",
@@ -10875,6 +11607,100 @@
       "backlinks": [],
       "outbound_count": 2,
       "inbound_count": 0
+    },
+    {
+      "slug": "scorpion",
+      "title": "Scorpion / Scorpio",
+      "type": "company",
+      "updated": "",
+      "body": "Scorpion (also referred to as Scorpio) is a Certava pilot prospect. The team agreed that Scorpion should be treated as a paid pilot, not a free test. System readiness, security, and explanation must be strong before onboarding.",
+      "tags": [
+        "certava",
+        "prospect"
+      ],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "certava-overview",
+          "type": "wikilink",
+          "text": "scorpion"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 1
+    },
+    {
+      "slug": "ventris-meeting-15-june-2026",
+      "title": "Minutes of Meeting \u2014 Ventris Legal Register Pilot (15 June 2026)",
+      "type": "meeting",
+      "updated": "",
+      "body": "# Minutes of Meeting \u2014 Certava Pilot / Legal Register & ISO Compliance Discussion\n**Date:** 15 June 2026\n**Participants:** [[fazli-ridzuan|Fazli]], [[irsyad-danish|Danish]], [[luqman]] (Certava); Group Quality / QHSE / E&S / IT representatives ([[ventris]])\n\n## Key Points\n- Client's main pain point is legal register compliance across business units, countries, and projects\n- ISO requirements are manageable; regulatory obligations change more frequently\n- Legal register needs: master list, mapping by country/unit/project, evidence, ownership, review, dashboard\n- Regulatory update monitoring is desired but Certava doesn't have API integration with statutory bodies yet\n- Client's environment: ISO 9001, 14001, 45001, QHSE, legal register, IFRS S1/S2\n- Current systems: TMS, Synergy, Speed\n\n## Pilot Proposal\n- 6 months / RM 6,000 / 10 users\n- Focus: legal register workflow, not full customisation\n- Human review still required\n\n## Next Steps\n- Client to share legal register template and process flow\n- Certava to review and propose focused pilot scope\n- IT/security review before onboarding",
+      "tags": [
+        "certava",
+        "meeting",
+        "ventris"
+      ],
+      "links_out": [
+        {
+          "to": "fazli-ridzuan",
+          "type": "wikilink",
+          "text": "fazli-ridzuan|Fazli"
+        },
+        {
+          "to": "irsyad-danish",
+          "type": "wikilink",
+          "text": "irsyad-danish|Danish"
+        },
+        {
+          "to": "luqman",
+          "type": "wikilink",
+          "text": "luqman"
+        },
+        {
+          "to": "ventris",
+          "type": "wikilink",
+          "text": "ventris"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 4,
+      "inbound_count": 0
+    },
+    {
+      "slug": "ventris",
+      "title": "Ventris",
+      "type": "company",
+      "updated": "",
+      "body": "Ventris is a Certava pilot prospect. Their main pain point is legal register and regulatory compliance monitoring across business units, projects, countries and international regulations \u2014 not primarily ISO certification. They need a system to centralise applicable laws, obligations, evidence, review status and compliance monitoring.\n\n**Key Requirements:**\n- Legal register management\n- Applicability mapping by country, business unit, project\n- Compliance evidence tracking\n- Dashboard monitoring\n- Regulatory update monitoring\n\n**Current Systems:** TMS (document management), Synergy (incidents/quality), Speed (risk), Excel (manual tracking)\n\n**Pilot Status:** Exploring a 6-month paid pilot. They shared legal register template and process flow for Certava to assess.",
+      "tags": [
+        "certava",
+        "prospect"
+      ],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "action-tracker",
+          "type": "wikilink",
+          "text": "ventris"
+        },
+        {
+          "from": "certava-overview",
+          "type": "wikilink",
+          "text": "ventris"
+        },
+        {
+          "from": "ventris-meeting-15-june-2026",
+          "type": "wikilink",
+          "text": "ventris"
+        },
+        {
+          "from": "weekly-sync-21-june-2026",
+          "type": "wikilink",
+          "text": "ventris"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 4
     },
     {
       "slug": "vps-hardening",
@@ -10911,6 +11737,63 @@
       ],
       "backlinks": [],
       "outbound_count": 4,
+      "inbound_count": 0
+    },
+    {
+      "slug": "weekly-sync-21-june-2026",
+      "title": "Certava Team Introduction & Weekly Sync (21 June 2026)",
+      "type": "meeting",
+      "updated": "",
+      "body": "# Certava Weekly Sync \u2014 21 June 2026\n\n## Introduction of [[sayf]] to Certava Team\n[[sayf|Sayf]] was introduced to the [[certava-company|Certava]] team as a potential contributor. The team shared individual backgrounds: [[irsyad-danish|Danish]] as ISO/domain expert, [[amirul]] as backend/automation developer, [[luqman]] as architecture/full-stack lead, and Sayf with experience in tech project management, software delivery, AI/ML operations.\n\n## MVP Readiness and Pilot Delivery Risk\n[[fazli-ridzuan|Fazli]] highlighted the tension between pushing prospects toward pilot while Danish still felt the system was not fully ready. Danish estimated the system was around 80% ready.\n\n## Key Topics\n- Product/project management process (WhatsApp/Excel currently used)\n- Business-to-tech visibility gap\n- Security and data governance readiness\n- Technical stack and infrastructure\n- QA/QC bottleneck\n- CI/CD, GitHub and automated testing\n- [[ventris]] Legal Register scope creep risk\n- GTM channels and lead generation\n- Demo gap between mock-up and live product",
+      "tags": [
+        "certava",
+        "meeting",
+        "weekly"
+      ],
+      "links_out": [
+        {
+          "to": "sayf",
+          "type": "wikilink",
+          "text": "sayf"
+        },
+        {
+          "to": "sayf",
+          "type": "wikilink",
+          "text": "sayf|Sayf"
+        },
+        {
+          "to": "certava-company",
+          "type": "wikilink",
+          "text": "certava-company|Certava"
+        },
+        {
+          "to": "irsyad-danish",
+          "type": "wikilink",
+          "text": "irsyad-danish|Danish"
+        },
+        {
+          "to": "amirul",
+          "type": "wikilink",
+          "text": "amirul"
+        },
+        {
+          "to": "luqman",
+          "type": "wikilink",
+          "text": "luqman"
+        },
+        {
+          "to": "fazli-ridzuan",
+          "type": "wikilink",
+          "text": "fazli-ridzuan|Fazli"
+        },
+        {
+          "to": "ventris",
+          "type": "wikilink",
+          "text": "ventris"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 8,
       "inbound_count": 0
     },
     {
@@ -11052,6 +11935,36 @@
     {
       "source": "2026-06-03",
       "target": "gbrain",
+      "type": "wikilink"
+    },
+    {
+      "source": "action-tracker",
+      "target": "certava-company",
+      "type": "wikilink"
+    },
+    {
+      "source": "action-tracker",
+      "target": "irsyad-danish",
+      "type": "wikilink"
+    },
+    {
+      "source": "action-tracker",
+      "target": "amirul",
+      "type": "wikilink"
+    },
+    {
+      "source": "action-tracker",
+      "target": "luqman",
+      "type": "wikilink"
+    },
+    {
+      "source": "action-tracker",
+      "target": "fazli-ridzuan",
+      "type": "wikilink"
+    },
+    {
+      "source": "action-tracker",
+      "target": "ventris",
       "type": "wikilink"
     },
     {
@@ -11312,6 +12225,56 @@
     {
       "source": "brand/maloha-coast-brand-identity",
       "target": "google-workspace-setup",
+      "type": "wikilink"
+    },
+    {
+      "source": "certava-overview",
+      "target": "certava-company",
+      "type": "wikilink"
+    },
+    {
+      "source": "certava-overview",
+      "target": "fazli-ridzuan",
+      "type": "wikilink"
+    },
+    {
+      "source": "certava-overview",
+      "target": "irsyad-danish",
+      "type": "wikilink"
+    },
+    {
+      "source": "certava-overview",
+      "target": "amirul",
+      "type": "wikilink"
+    },
+    {
+      "source": "certava-overview",
+      "target": "luqman",
+      "type": "wikilink"
+    },
+    {
+      "source": "certava-overview",
+      "target": "sayf",
+      "type": "wikilink"
+    },
+    {
+      "source": "certava-overview",
+      "target": "cradle-milestone",
+      "type": "wikilink"
+    },
+    {
+      "source": "certava-overview",
+      "target": "ventris",
+      "type": "wikilink"
+    },
+    {
+      "source": "certava-overview",
+      "target": "rina",
+      "type": "wikilink"
+    },
+    {
+      "source": "certava-overview",
+      "target": "scorpion",
       "type": "wikilink"
     },
     {
@@ -12505,6 +13468,161 @@
       "type": "wikilink"
     },
     {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "newsletters/30-core-agentic-concepts-2026-06-20",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "people/neo-kim",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "people/paul-hoekstra",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "companies/digital-power",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "concepts/claude-opus-47",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "concepts/skillsbench",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "concepts/compound-engineering",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "concepts/get-shit-done",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "concepts/superpowers",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "companies/system-design-one",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "articles/anatomy-of-openclaw-2026-06-08",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "concepts/aisyah-rahim-client-profile-2026-06-15",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "companies/unilever-malaysia",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "people/zaim-mohzani",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "meetings/sayf-zaim-jun-12-2026-gemini",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "concepts/15-minute-gap-method-zaim",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "concepts/3-month-career-pivot-framework-2026-06-15",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "articles/msg-19ece778ab23e039",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "people/michael-lennington",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "people/brian-moran",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "companies/nation-building-school",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "companies/single-brain",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "companies/single-grain",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "companies/ai-automation-society",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "newsletters/claude-second-brain-levels-2026-06-19",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "concepts/nate-herk-technique-question-2026-06-09",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "companies/beard-brothers-bbq",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "companies/rapidscreen-sdn-bhd",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "concepts/dynamics-orchard-farm-management-accounts-2025-2026-06-10",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "companies/posh-corporate",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-06-29-business-brain-digest",
+      "target": "people/audrey-loh",
+      "type": "wikilink"
+    },
+    {
       "source": "gateway-infrastructure",
       "target": "concepts/vps-hardening",
       "type": "wikilink"
@@ -13150,6 +14268,26 @@
       "type": "wikilink"
     },
     {
+      "source": "ventris-meeting-15-june-2026",
+      "target": "fazli-ridzuan",
+      "type": "wikilink"
+    },
+    {
+      "source": "ventris-meeting-15-june-2026",
+      "target": "irsyad-danish",
+      "type": "wikilink"
+    },
+    {
+      "source": "ventris-meeting-15-june-2026",
+      "target": "luqman",
+      "type": "wikilink"
+    },
+    {
+      "source": "ventris-meeting-15-june-2026",
+      "target": "ventris",
+      "type": "wikilink"
+    },
+    {
       "source": "vps-hardening",
       "target": "2026-06-03",
       "type": "wikilink"
@@ -13162,6 +14300,41 @@
     {
       "source": "vps-hardening",
       "target": "concepts/gateway-infrastructure",
+      "type": "wikilink"
+    },
+    {
+      "source": "weekly-sync-21-june-2026",
+      "target": "sayf",
+      "type": "wikilink"
+    },
+    {
+      "source": "weekly-sync-21-june-2026",
+      "target": "certava-company",
+      "type": "wikilink"
+    },
+    {
+      "source": "weekly-sync-21-june-2026",
+      "target": "irsyad-danish",
+      "type": "wikilink"
+    },
+    {
+      "source": "weekly-sync-21-june-2026",
+      "target": "amirul",
+      "type": "wikilink"
+    },
+    {
+      "source": "weekly-sync-21-june-2026",
+      "target": "luqman",
+      "type": "wikilink"
+    },
+    {
+      "source": "weekly-sync-21-june-2026",
+      "target": "fazli-ridzuan",
+      "type": "wikilink"
+    },
+    {
+      "source": "weekly-sync-21-june-2026",
+      "target": "ventris",
       "type": "wikilink"
     },
     {
@@ -13182,6 +14355,10 @@
   ],
   "entities": {
     "people": [
+      "amirul",
+      "fazli-ridzuan",
+      "irsyad-danish",
+      "luqman",
       "people/addy-osmani",
       "people/adrian-js-mastery",
       "people/ahmed-abubakar",
@@ -13229,9 +14406,12 @@
       "people/yunong-xiao",
       "people/zac-liew",
       "people/zaim-mohzani",
-      "persons/tonbi"
+      "persons/tonbi",
+      "rina",
+      "sayf"
     ],
     "companies": [
+      "certava-company",
       "companies/ai-automation-society",
       "companies/ai-garage-weekly",
       "companies/anthropic",
@@ -13266,7 +14446,9 @@
       "companies/thompson-legal",
       "companies/thoughtworks",
       "companies/unilever-malaysia",
-      "companies/zhipu-ai"
+      "companies/zhipu-ai",
+      "scorpion",
+      "ventris"
     ]
   },
   "doctor": {
