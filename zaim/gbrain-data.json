@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-29T01:13:57Z",
+  "updated_at": "2026-06-29T02:00:24Z",
   "summary": {
     "page_count": 48,
     "people_count": 4,
@@ -7,8 +7,8 @@
     "artifact_count": 0,
     "total_links": 21,
     "outbound_count": 42,
-    "inbound_count": 37,
-    "graph_coverage": "20.8% of pages have inbound links",
+    "inbound_count": 42,
+    "graph_coverage": "25.0% of pages have inbound links",
     "concept_count": 30,
     "meeting_count": 5,
     "person_count": 4,
@@ -31,9 +31,15 @@
         "zaim"
       ],
       "links_out": [],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "Why Your 2026 Career Goals Are Already Dead"
+        }
+      ],
       "outbound_count": 0,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "articles/why-your-2026-career-goals-are-already-dead-2026-06-16",
@@ -102,10 +108,15 @@
           "from": "concepts/coaching-client-aisyah-rahim-2026-06-15",
           "type": "wikilink",
           "text": "Unilever Malaysia"
+        },
+        {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "Unilever Malaysia"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "concepts/15-minute-gap-method-2026-06-14",
@@ -137,9 +148,15 @@
         "zaim"
       ],
       "links_out": [],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "Zaim 15-Minute Gap Method"
+        }
+      ],
       "outbound_count": 0,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "concepts/3-month-career-pivot-framework-msg-19eca58bcdb09c70",
@@ -205,13 +222,18 @@
           "text": "Aisyah Rahim"
         },
         {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "Aisyah Rahim"
+        },
+        {
           "from": "people/liyana",
           "type": "wikilink",
           "text": "Aisyah Rahim"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 3
+      "inbound_count": 4
     },
     {
       "slug": "concepts/aisyah-rahim-client-profile",
@@ -1021,6 +1043,11 @@
           "text": "Zaim Mohzani"
         },
         {
+          "from": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
           "from": "meetings/sayf-zaim-jun-12-2026-gemini",
           "type": "wikilink",
           "text": "Zaim Mohzani"
@@ -1052,7 +1079,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 16
+      "inbound_count": 17
     },
     {
       "slug": "zaim-career-goals-12-week-year-2026-06-16",
@@ -1264,6 +1291,14 @@
   "doctor": {},
   "artifacts": [],
   "logs": [
+    {
+      "ts": "2026-06-29T02:00:24Z",
+      "source": "export",
+      "stage": "deployed",
+      "slug": null,
+      "detail": "Dashboard refreshed \u2014 48 pages, 21 links",
+      "level": "info"
+    },
     {
       "ts": "2026-06-29T01:13:57Z",
       "source": "export",
