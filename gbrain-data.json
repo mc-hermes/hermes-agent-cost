@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-06-27T20:00:51Z",
+  "updated_at": "2026-06-29T01:13:18Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
     "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 399,
+    "page_count": 400,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "38.3% of pages have inbound links",
+    "graph_coverage": "38.2% of pages have inbound links",
     "entity_links": "Coverage \u2014 48 people, 35 companies indexed",
-    "concept_count": 152,
+    "concept_count": 153,
     "meeting_count": 16,
     "person_count": 48,
     "company_count": 35,
@@ -7018,6 +7018,23 @@
       "body": "# Sayf x Zaim \u2014 Jun 12, 2026\n\n**Source:** email forward\n**Source URI:** gmail://msg_19ecaa895ccb88af\n**Ingested:** 2026-06-20T04:00:00Z\n**Provenance:** Forwarded to Zaim's workspace via self-BCC\n\n**Date:** Friday, 12 June 2026, 10:30am \u2013 11:00am (MYT)\n**Google Meet:** https://meet.google.com/udx-niaz-esr\n\n## Summary\n\nDiscussion explored AI skepticism and market strategy alongside technical collaboration opportunities for business growth.\n\n### Differing AI Market Perspectives\nSayf and Zaim debated the value of AI in business, contrasting skepticism about automation hype with the practical utility of AI for basic skills training.\n\n### Technical Tools and Infrastructure\nDiscussion shifted toward specific software tools, noting the efficiency of virtual private servers and the potential of data integration dashboards for business applications.\n\n### Collaboration and Service Models\nAgreement reached to build a technical solution for coaching services while prioritizing simple, revenue-focused strategies for future client engagement for Maloha Coast.\n\n## Suggested Next Steps\n\n- **Maloha Coast** \u2014 Build Dashboard: Arrange a meeting to build the dashboard component. Perform the session either in person or over a call.\n- **Zaim Mohzani** \u2014 Provide Testimonial: Provide a testimonial in exchange for the assistance provided.\n- **Maloha Coast** \u2014 Share Research Link: Send the Tencent Lighthouse promotion link for further research.\n- **The group** \u2014 Schedule Followup Session: Coordinate a time for a meeting to continue the discussion.\n- **Zaim Mohzani** \u2014 Send WhatsApp Message: Contact Maloha Coast via the provided phone number.\n\n## Google Doc\nhttps://docs.google.com/document/d/1q3v6SbKF_PiEaTatPNvhZtoWdT9_n9v5HqMoxsLj3hQ/edit",
       "tags": [
         "zaim"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "monthly-achievement-jun-2026",
+      "title": "June 2026 \u2014 Monthly Achievement Log",
+      "type": "concept",
+      "updated": "",
+      "body": "## June 2026 \u2014 What We Built\n\n**Maloha Coast Sdn Bhd \u2014 Month at a Glance**\n\n### \ud83e\udde0 Infrastructure & Tools\n- **Google Workspace configured** \u2014 OAuth set up for `info@malohacoast.com` with full Gmail/Calendar/Drive/Sheets/Docs/People API scopes. Token auto-refreshes.\n- **gbrain operational** \u2014 Local instance at `~/.bun/bin/gbrain` with OpenAI embeddings. 399+ pages ingested across people, companies, meetings, articles, and concepts.\n- **gbrain dashboard deployed** \u2014 Interactive dashboard on GitHub Pages (`mc-hermes.github.io/hermes-agent-cost`) with knowledge graph, browse, entities, health, ask, and activity views. 6 themes, 0 dependencies.\n\n### \ud83d\udcca Client-Specific Dashboards\n- **Zaim dashboard** \u2014 Isolated gbrain dashboard for career coach Zaim Mohzani at `/zaim/`. Knowledge graph + entity views + activity log.\n- **Certava dashboard** \u2014 Full gbrain setup for Certava team. 15 pages (6 people, 3 companies, 4 meetings, 2 concepts) with 27 cross-references, 26 action items. OCR'd Excel/Word/PNG attachments into structured data.\n\n### \ud83d\udcec Automations & Pipelines\n- **Email Ingest Pipeline** \u2014 Cron job runs twice daily (9 AM & 9 PM MYT). Every 2-minute watchdog checks for new emails.\n- **Daily Email Briefing** \u2014 7 AM MYT cron summaries unread emails from key contacts.\n- **Malaysia News Digest** \u2014 Daily 7:45 AM MYT fetch + curation of morning news.\n- **gbrain Dashboard Auto-Refresh** \u2014 Hourly export + deploy to GitHub Pages.\n- **gbrain Weekly Maintenance** \u2014 Monday 9 AM: doctor \u2192 extract \u2192 embed cycle.\n- **Agent Dashboard** \u2014 5-minute refresh for agent cost/usage tracking.\n- **Gateway Health Watchdog** \u2014 Daily 6 AM memory/crash threshold checks.\n- **Weekly Hermes Gateway Restart** \u2014 Sunday 4 AM to prevent memory bloat.\n\n### \ud83d\udcc5 Certava Project Operations\n- **Certava Weekly Digest cron** \u2014 Monday 9 AM MYT: queries certava brain and produces meeting summary digest for team.\n- **Certava Weekly Calendar Event** \u2014 Recurring Google Calendar event (Sundays 10-11 AM MYT) set up on `info@malohacoast.com`.\n\n### \ud83d\uddc4\ufe0f How To Read This Log\nThis file lives at `logs/achievements-2026-06.md` in the `hermes-agent-cost-pages` repo. Each month appends a new entry. The gbrain dashboard loads this file and displays it in the Monthly Report view.\n\n### \ud83d\udccf Metrics for Future Months\n| Metric | Jun 2026 | Notes |\n|--------|----------|-------|\n| gbrain pages | 399 | Tracking knowledge base growth |\n| Cron jobs running | 10 | Automation infrastructure |\n| Client dashboards | 2 (Zaim, Certava) | Billable deliverables |\n| Meetings ingested | 4+ | Certava: Ventris, AL Pine, Weekly Sync |\n| GitHub deploys (auto) | ~720 | Hourly auto-refresh |\n| News digests delivered | ~25 | Daily weekday news |",
+      "tags": [
+        "2026",
+        "achievement",
+        "achievements",
+        "monthly-log"
       ],
       "links_out": [],
       "backlinks": [],

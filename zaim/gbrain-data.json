@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-27T20:01:01Z",
+  "updated_at": "2026-06-29T01:13:57Z",
   "summary": {
     "page_count": 48,
     "people_count": 4,
@@ -1264,6 +1264,14 @@
   "doctor": {},
   "artifacts": [],
   "logs": [
+    {
+      "ts": "2026-06-29T01:13:57Z",
+      "source": "export",
+      "stage": "deployed",
+      "slug": null,
+      "detail": "Dashboard refreshed \u2014 48 pages, 21 links",
+      "level": "info"
+    },
     {
       "ts": "2026-06-27T20:01:01Z",
       "source": "export",
