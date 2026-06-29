@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>June 2026 · Maloha Coast Monthly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #020617;
+            --surface: #0f172a;
+            --surface2: #1e293b;
+            --border: #1e293b;
+            --border-light: #334155;
+            --primary: #2a6a8a;
+            --primary-light: #22d3ee;
+            --accent: #c4a86a;
+            --accent-light: #fbbf24;
+            --text: #f1f5f9;
+            --text-muted: #94a3b8;
+            --text-dim: #64748b;
+            --green: #34d399;
+            --violet: #a78bfa;
+            --rose: #fb7185;
+            --radius: 14px;
+            --radius-sm: 8px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background:
+                radial-gradient(ellipse 80% 60% at 50% -10%, rgba(42,106,138,0.08), transparent),
+                radial-gradient(ellipse 50% 40% at 80% 60%, rgba(196,168,106,0.04), transparent);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ── Header ── */
+        .header {
+            text-align: center;
+            padding: 40px 0 48px;
+        }
+
+        .header-badge {
+            display: inline-block;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--accent);
+            background: rgba(196,168,106,0.1);
+            border: 1px solid rgba(196,168,106,0.2);
+            border-radius: 100px;
+            padding: 6px 16px;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: clamp(1.8rem, 4vw, 2.6rem);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin-bottom: 8px;
+        }
+
+        .header h1 span { color: var(--accent); }
+
+        .header .subtitle {
+            color: var(--text-muted);
+            font-size: 1rem;
+            max-width: 560px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .divider {
+            width: 48px;
+            height: 3px;
+            background: var(--accent);
+            border-radius: 2px;
+            margin: 32px auto;
+        }
+
+        /* ── Section ── */
+        .section {
+            margin-bottom: 48px;
+        }
+
+        .section-label {
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section-label::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border);
+        }
+
+        .section h2 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            margin-bottom: 16px;
+            color: var(--text);
+        }
+
+        /* ── Achievement Cards ── */
+        .achievement-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 12px;
+        }
+
+        .achievement {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px 22px;
+            transition: border-color 0.2s;
+        }
+
+        .achievement:hover {
+            border-color: var(--border-light);
+        }
+
+        .achievement .icon-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .achievement .emoji {
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+
+        .achievement h4 {
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            color: var(--text);
+        }
+
+        .achievement p {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            line-height: 1.55;
+        }
+
+        .achievement .tag-row {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 100px;
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
+
+        .tag.gold { background: rgba(196,168,106,0.12); color: var(--accent); }
+        .tag.teal { background: rgba(42,106,138,0.15); color: var(--primary-light); }
+        .tag.green { background: rgba(52,211,153,0.12); color: var(--green); }
+        .tag.violet { background: rgba(167,139,250,0.12); color: var(--violet); }
+        .tag.rose { background: rgba(251,113,133,0.12); color: var(--rose); }
+
+        /* ── Client Highlight ── */
+        .client-highlight {
+            background: var(--surface);
+            border: 1px solid rgba(196,168,106,0.15);
+            border-radius: var(--radius);
+            padding: 24px 26px;
+            margin-bottom: 12px;
+        }
+
+        .client-highlight.featured {
+            border-color: rgba(196,168,106,0.3);
+            background: linear-gradient(135deg, rgba(196,168,106,0.06) 0%, var(--surface) 40%);
+        }
+
+        .client-highlight .client-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .client-highlight .client-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .client-highlight .client-icon.bbq { background: rgba(251,113,133,0.15); }
+        .client-highlight .client-icon.edu { background: rgba(42,106,138,0.15); }
+        .client-highlight .client-icon.workshop { background: rgba(167,139,250,0.15); }
+
+        .client-highlight h4 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+
+        .client-highlight .client-role {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .client-highlight .deliverables {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 8px;
+        }
+
+        .client-highlight .deliverables li {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            padding-left: 16px;
+            position: relative;
+            line-height: 1.5;
+        }
+
+        .client-highlight .deliverables li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-size: 0.6rem;
+            top: 0.3em;
+        }
+
+        /* ── Pipeline List ── */
+        .pipeline-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 10px;
+        }
+
+        .pipeline-item {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 16px 18px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .pipeline-item .pipe-icon {
+            font-size: 1.1rem;
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+
+        .pipeline-item .pipe-text h5 {
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            margin-bottom: 3px;
+        }
+
+        .pipeline-item .pipe-text p {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            line-height: 1.45;
+        }
+
+        /* ── Metrics Table ── */
+        .metrics-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.82rem;
+        }
+
+        .metrics-table th {
+            text-align: left;
+            padding: 12px 16px;
+            color: var(--text-muted);
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .metrics-table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid rgba(30,41,59,0.5);
+        }
+
+        .metrics-table .metric-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+            color: var(--accent);
+            font-size: 0.85rem;
+        }
+
+        .metrics-table .metric-note {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+        }
+
+        /* ── Footer ── */
+        .footer {
+            text-align: center;
+            padding-top: 48px;
+            border-top: 1px solid var(--border);
+            margin-top: 32px;
+        }
+
+        .footer .logo {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            letter-spacing: -0.01em;
+            margin-bottom: 6px;
+        }
+
+        .footer .logo span { color: var(--accent); }
+
+        .footer .links {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .footer a {
+            font-size: 0.72rem;
+            color: var(--text-dim);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer a:hover { color: var(--accent); }
+
+        .footer .updated {
+            font-size: 0.62rem;
+            color: var(--text-dim);
+            margin-top: 12px;
+            opacity: 0.6;
+        }
+
+        @media (max-width: 500px) {
+            .achievement-grid { grid-template-columns: 1fr; }
+            .pipeline-list { grid-template-columns: 1fr; }
+            .client-highlight .deliverables { grid-template-columns: 1fr; }
+            .container { padding: 40px 16px 60px; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-badge">June 2026 · Monthly Report</div>
+        <h1>Maloha Coast · <span>Month One</span></h1>
+        <p class="subtitle">From zero to production. AI infrastructure, client dashboards, workshops, and automation pipelines — all built in June 2026.</p>
+    </header>
+
+    <div class="divider"></div>
+
+    <!-- Infrastructure -->
+    <section class="section">
+        <div class="section-label">Infrastructure</div>
+        <h2>🧠 AI Infrastructure &amp; Knowledge Tools</h2>
+
+        <div class="achievement-grid">
+            <div class="achievement">
+                <div class="icon-row">
+                    <span class="emoji">🧠</span>
+                    <h4>Business Knowledge Base (gbrain)</h4>
+                </div>
+                <p>Operational knowledge base with 399+ pages across people, companies, meetings, articles, and concepts. Full-text search, OpenAI embeddings, wikilink graph — all running locally with zero cloud dependency.</p>
+                <div class="tag-row">
+                    <span class="tag teal">PGLite</span>
+                    <span class="tag teal">Embeddings</span>
+                </div>
+            </div>
+
+            <div class="achievement">
+                <div class="icon-row">
+                    <span class="emoji">📊</span>
+                    <h4>Interactive Knowledge Dashboard</h4>
+                </div>
+                <p>Self-contained dashboard on GitHub Pages: knowledge graph visualization, browse-by-type, entity views, health checks, and activity logs. Six themes, zero dependencies, zero build step.</p>
+                <div class="tag-row">
+                    <span class="tag gold">Vanilla JS</span>
+                    <span class="tag gold">Canvas</span>
+                </div>
+            </div>
+
+            <div class="achievement">
+                <div class="icon-row">
+                    <span class="emoji">🔐</span>
+                    <h4>Google Workspace Integration</h4>
+                </div>
+                <p>Full OAuth integration with Gmail, Calendar, Drive, Sheets, Docs, and People API. Token auto-refresh, no manual auth. Powers email-to-knowledge ingestion and scheduling automation.</p>
+                <div class="tag-row">
+                    <span class="tag teal">OAuth 2.0</span>
+                    <span class="tag teal">REST APIs</span>
+                </div>
+            </div>
+
+            <div class="achievement">
+                <div class="icon-row">
+                    <span class="emoji">🛡️</span>
+                    <h4>VPS Security Hardening</h4>
+                </div>
+                <p>Full Linux server hardening: SSH key-only auth, UFW firewall, fail2ban intrusion prevention, kernel update. Production-grade security from day one.</p>
+                <div class="tag-row">
+                    <span class="tag green">SSH Hardening</span>
+                    <span class="tag green">Fail2Ban</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Engagements -->
+    <section class="section">
+        <div class="section-label">Client Work</div>
+        <h2>🍖 Client Engagements</h2>
+
+        <div class="client-highlight featured">
+            <div class="client-header">
+                <div class="client-icon bbq">🍖</div>
+                <div>
+                    <h4>Beard Brothers BBQ</h4>
+                    <div class="client-role">Phase 0 — Operational Audit &amp; AI Roadmap</div>
+                </div>
+            </div>
+            <ul class="deliverables">
+                <li>Operational audit &amp; root-cause diagnosis</li>
+                <li>Checkout &amp; reservation flow review</li>
+                <li>Interactive dashboard prototype</li>
+                <li>Implementation roadmap for AI-first operations</li>
+                <li>First consulting engagement — F&amp;B industry</li>
+            </ul>
+            <div class="tag-row" style="margin-top:12px;">
+                <span class="tag rose">F&amp;B</span>
+                <span class="tag gold">AI Consulting</span>
+                <span class="tag gold">Operational Audit</span>
+            </div>
+        </div>
+
+        <div class="client-highlight">
+            <div class="client-header">
+                <div class="client-icon edu">📡</div>
+                <div>
+                    <h4>RapidScreen Sdn Bhd</h4>
+                    <div class="client-role">AI Teaching Sessions</div>
+                </div>
+            </div>
+            <ul class="deliverables">
+                <li>Two 2.5-hour AI capability sessions for screening operations team</li>
+                <li>Practical AI tooling and workflow integration training</li>
+            </ul>
+            <div class="tag-row" style="margin-top:12px;">
+                <span class="tag violet">Training</span>
+                <span class="tag violet">Enterprise AI</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training & Workshops -->
+    <section class="section">
+        <div class="section-label">Community</div>
+        <h2>🎓 Training &amp; Workshops</h2>
+
+        <div class="achievement-grid">
+            <div class="achievement">
+                <div class="icon-row">
+                    <span class="emoji">🏛️</span>
+                    <h4>Lead Instructor — Deploying AI Agents with Microsoft Foundry</h4>
+                </div>
+                <p>Hands-on lab delivered at Cradle Fund with KrackedDevs, in partnership with Microsoft. Covered deploying production AI agents on Azure infrastructure.</p>
+                <div class="tag-row">
+                    <span class="tag violet">Microsoft</span>
+                    <span class="tag violet">Cradle Fund</span>
+                </div>
+            </div>
+
+            <div class="achievement">
+                <div class="icon-row">
+                    <span class="emoji">🎓</span>
+                    <h4>Vibe101 Workshop — Sunway DealFlow Club</h4>
+                </div>
+                <p>Took beginners from zero to a live-deployed project in one evening at Sunway College, in partnership with KrackedDevs / Danial Alias.</p>
+                <div class="tag-row">
+                    <span class="tag violet">Sunway College</span>
+                    <span class="tag violet">Beginner-Friendly</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboards -->
+    <section class="section">
+        <div class="section-label">Products</div>
+        <h2>📊 Client-Specific Dashboards</h2>
+
+        <div class="achievement-grid">
+            <div class="achievement">
+                <div class="icon-row">
+                    <span class="emoji">🎯</span>
+                    <h4>Career Coach Dashboard (Zaim Mohzani)</h4>
+                </div>
+                <p>Isolated knowledge dashboard for a career coaching practice. Custom knowledge graph, entity views, and activity log — deployed as a subdirectory with full data isolation.</p>
+                <div class="tag-row">
+                    <span class="tag green">Multi-Tenant</span>
+                    <span class="tag green">Career Coaching</span>
+                </div>
+            </div>
+
+            <div class="achievement">
+                <div class="icon-row">
+                    <span class="emoji">🏢</span>
+                    <h4>Certava Team Dashboard</h4>
+                </div>
+                <p>Full knowledge base setup for 6-person team. 15 pages (6 people, 3 companies, 4 meetings, 2 concepts) with 27 cross-references and 26 action items. OCR extracted from Excel, Word, and PNG attachments.</p>
+                <div class="tag-row">
+                    <span class="tag teal">Team KB</span>
+                    <span class="tag teal">OCR Pipeline</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Automations -->
+    <section class="section">
+        <div class="section-label">Operations</div>
+        <h2>📬 Automations &amp; Pipelines</h2>
+
+        <div class="pipeline-list">
+            <div class="pipeline-item">
+                <div class="pipe-icon">📧</div>
+                <div class="pipe-text">
+                    <h5>Email-to-Knowledge Pipeline</h5>
+                    <p>Automated email ingestion into the knowledge base. Watchdog monitors inbox, extracts entities, embeds content — fully hands-off.</p>
+                </div>
+            </div>
+
+            <div class="pipeline-item">
+                <div class="pipe-icon">📋</div>
+                <div class="pipe-text">
+                    <h5>Daily Email Briefing</h5>
+                    <p>Morning summary of unread emails from key contacts, delivered to Telegram. No inbox checking needed.</p>
+                </div>
+            </div>
+
+            <div class="pipeline-item">
+                <div class="pipe-icon">📰</div>
+                <div class="pipe-text">
+                    <h5>Malaysia News Digest</h5>
+                    <p>Daily morning fetch and curation of Malaysian business and tech news, auto-delivered.</p>
+                </div>
+            </div>
+
+            <div class="pipeline-item">
+                <div class="pipe-icon">🔄</div>
+                <div class="pipe-text">
+                    <h5>Dashboard Auto-Refresh</h5>
+                    <p>Knowledge dashboard redeploys hourly with fresh data. Always current, zero manual intervention.</p>
+                </div>
+            </div>
+
+            <div class="pipeline-item">
+                <div class="pipe-icon">🏥</div>
+                <div class="pipe-text">
+                    <h5>System Health Monitoring</h5>
+                    <p>Weekly knowledge base maintenance: health checks, entity extraction, and embedding refresh. Gateway watchdog with crash detection.</p>
+                </div>
+            </div>
+
+            <div class="pipeline-item">
+                <div class="pipe-icon">📅</div>
+                <div class="pipe-text">
+                    <h5>Certava Weekly Operations</h5>
+                    <p>Weekly digest summarizing team meetings and action items. Recurring calendar event for team sync.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- By the Numbers -->
+    <section class="section">
+        <div class="section-label">By The Numbers</div>
+        <h2>📏 June 2026 in Metrics</h2>
+
+        <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden;">
+            <table class="metrics-table">
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Jun 2026</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Knowledge base pages</td>
+                        <td class="metric-value">399</td>
+                        <td class="metric-note">People, companies, meetings, articles, concepts</td>
+                    </tr>
+                    <tr>
+                        <td>Automation pipelines</td>
+                        <td class="metric-value">10</td>
+                        <td class="metric-note">Email, dashboards, news, health, scheduling</td>
+                    </tr>
+                    <tr>
+                        <td>Client dashboards delivered</td>
+                        <td class="metric-value">2</td>
+                        <td class="metric-note">Multi-tenant: career coach + enterprise team</td>
+                    </tr>
+                    <tr>
+                        <td>Consulting engagements</td>
+                        <td class="metric-value">2</td>
+                        <td class="metric-note">F&amp;B operations + enterprise training</td>
+                    </tr>
+                    <tr>
+                        <td>Workshops delivered</td>
+                        <td class="metric-value">2</td>
+                        <td class="metric-note">Cradle Fund (Microsoft) + Sunway College</td>
+                    </tr>
+                    <tr>
+                        <td>Meetings processed</td>
+                        <td class="metric-value">4+</td>
+                        <td class="metric-note">Team syncs, client meetings, project briefs</td>
+                    </tr>
+                    <tr>
+                        <td>Automated deploys</td>
+                        <td class="metric-value">~720</td>
+                        <td class="metric-note">Hourly auto-refresh to GitHub Pages</td>
+                    </tr>
+                    <tr>
+                        <td>News digests delivered</td>
+                        <td class="metric-value">~25</td>
+                        <td class="metric-note">Daily weekday business &amp; tech news</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="logo">Maloha Coast <span>·</span> AI</div>
+        <div class="links">
+            <a href="index.html">← Main Site</a>
+            <a href="gbrain-dashboard.html">Dashboard</a>
+        </div>
+        <div class="updated">Last updated: June 28, 2026</div>
+    </footer>
+
+</div>
+</body>
+</html>
