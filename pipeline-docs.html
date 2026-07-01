@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Email to Brain Pipeline — Maloha Coast</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #020617; color: #e2e8f0; line-height: 1.7;
+    max-width: 820px; margin: 0 auto; padding: 2rem 1.5rem;
+  }
+  h1 { font-size: 2rem; color: #38bdf8; margin-bottom: 0.3rem; }
+  h2 { font-size: 1.3rem; color: #c4a86a; margin: 2.5rem 0 0.8rem; padding-bottom: 0.3rem; border-bottom: 1px solid #1e293b; }
+  h3 { font-size: 1.05rem; color: #e2e8f0; margin: 1.2rem 0 0.5rem; }
+  p, li { color: #94a3b8; margin-bottom: 0.8rem; }
+  a { color: #38bdf8; }
+  code { background: #1e293b; padding: 2px 6px; border-radius: 4px; font-size: 0.9rem; font-family: 'JetBrains Mono', 'Fira Code', monospace; }
+  pre { background: #1e293b; padding: 1rem; border-radius: 8px; overflow-x: auto; margin: 1rem 0; font-size: 0.85rem; }
+  pre code { background: none; padding: 0; }
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+  th, td { text-align: left; padding: 0.6rem 0.8rem; border-bottom: 1px solid #1e293b; font-size: 0.9rem; }
+  th { color: #c4a86a; font-weight: 600; }
+  td { color: #94a3b8; }
+  .ascii-diagram { background: #0f172a; border: 1px solid #1e293b; border-radius: 8px; padding: 1rem; margin: 1rem 0; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; line-height: 1.4; overflow-x: auto; white-space: pre; color: #c4a86a; }
+  .emoji-bullet { margin-right: 0.4rem; }
+  hr { border: none; border-top: 1px solid #1e293b; margin: 2rem 0; }
+  .back-link { font-size: 0.85rem; margin-bottom: 2rem; }
+  .tag { display: inline-block; background: #1e293b; color: #94a3b8; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; margin-right: 0.3rem; }
+</style>
+</head>
+<body>
+
+<div class="back-link"><a href="index.html">← Maloha Coast</a></div>
+
+<h1>Email to Brain Pipeline</h1>
+<p>A system that lets you forward any email to a special address, review it on a dashboard, and decide whether to add it to your permanent knowledge base — before it ever touches the database.</p>
+
+<h2>How it works</h2>
+
+<div class="ascii-diagram">┌─────────────┐     ┌──────────────┐     ┌───────────────┐     ┌──────────┐
+│  You forward │ ──▶ │  Pipeline     │ ──▶ │  Dashboard    │ ──▶ │  You     │
+│  an email    │     │  saves it as  │     │  shows it in  │     │  approve │
+│              │     │  "pending"    │     │  the Inbox    │     │  or reject│
+└─────────────┘     └──────────────┘     └───────────────┘     └────┬─────┘
+                                                                    │
+                                              ┌─────────────────────┤
+                                              ▼                     ▼
+                                         ✅ APPROVED            ❌ REJECTED
+                                         Goes into your         Goes to trash
+                                         knowledge base         (never touches
+                                         (searchable,           your brain)
+                                          linkable)</div>
+
+<h2>Email Addresses</h2>
+
+<table>
+  <tr><th>Address</th><th>Workspace</th><th>Dashboard</th></tr>
+  <tr><td><code>info@malohacoast.com</code></td><td>Sayf (main brain)</td><td><a href="gbrain-dashboard.html">Open</a></td></tr>
+  <tr><td><code>info+certava@malohacoast.com</code></td><td>Certava</td><td><a href="certava/">Open</a></td></tr>
+  <tr><td><code>info+zaim@malohacoast.com</code></td><td>Zaim</td><td><a href="zaim/">Open</a></td></tr>
+  <tr><td><code>info+&lt;name&gt;@malohacoast.com</code></td><td>Any new workspace</td><td>Setup needed</td></tr>
+</table>
+
+<p><strong>How +aliases work:</strong> Gmail delivers <code>info+anything@malohacoast.com</code> to the same <code>info@</code> inbox — for free. The <code>+anything</code> suffix tells the system which workspace the email belongs to. No new accounts, no extra cost.</p>
+
+<h2>The Four Stages</h2>
+
+<h3>1. Forward an Email</h3>
+<p>Forward any email to one of the addresses above. That's it. The system picks it up automatically.</p>
+
+<h3>2. Pipeline Processes It</h3>
+<p>A background process runs twice daily (9 AM and 9 PM) plus whenever new mail arrives (max once every 3 hours). It:</p>
+<ul>
+  <li>Reads the email and classifies it (newsletter, meeting notes, article, etc.)</li>
+  <li>Creates a clean markdown file with the content</li>
+  <li>Scans for entity names (people, companies, concepts) mentioned in the email</li>
+  <li>Checks which entities already exist in the knowledge base</li>
+  <li>Saves everything as a <strong>pending item</strong> — NOT yet in the brain</li>
+</ul>
+
+<h3>3. Review on the Dashboard</h3>
+<p>Open your dashboard and click the <strong>Inbox</strong> tab. Each item shows:</p>
+<ul>
+  <li>📧 Subject and sender</li>
+  <li>🏷️ Type classification</li>
+  <li>📄 The page that will be created</li>
+  <li>🆕 New entities (people/companies) that will be created</li>
+  <li>🔗 Links to existing pages already in the brain</li>
+</ul>
+<p><strong>You see exactly what will happen before you click anything.</strong></p>
+
+<h3>4. Approve or Reject</h3>
+<p><strong>Approve:</strong> The content is written into the knowledge base, links are created, and the dashboard updates. The page is now searchable and linkable.</p>
+<p><strong>Reject:</strong> The content is moved to a rejected folder. It <strong>never</strong> enters the brain. It cannot be searched, linked, or found by accident.</p>
+
+<h2>The Knowledge Base</h2>
+<p>Under the hood, the brain is a system called <strong>gbrain</strong> — think of it as a personal Wikipedia:</p>
+<ul>
+  <li><strong>Pages</strong> — each approved item becomes a page</li>
+  <li><strong>Links</strong> — <code>[[Ventris]]</code> in any page auto-links to the Ventris page</li>
+  <li><strong>Types</strong> — pages are tagged as person, company, meeting, newsletter, etc.</li>
+  <li><strong>Search</strong> — ask natural questions like "What do we know about the Cradle grant?"</li>
+</ul>
+
+<h2>The Database (for technical readers)</h2>
+<p>The brain uses <strong>PGLite</strong> — PostgreSQL compiled to WebAssembly, stored as a single file. No database server, no Docker, no connection strings. Each approved page creates rows in the pages table, chunks table, and vector embeddings for semantic search.</p>
+<p>Rejected items never touch PGLite. The markdown file is simply moved to a rejected folder. This keeps the database clean and fast.</p>
+
+<h2>Cost</h2>
+<table>
+  <tr><th>Component</th><th>Cost</th></tr>
+  <tr><td>Email forwarding</td><td>Free (Gmail +alias)</td></tr>
+  <tr><td>Pipeline processing</td><td>~pennies per email (DeepSeek Flash)</td></tr>
+  <tr><td>Dashboard hosting</td><td>Free (GitHub Pages)</td></tr>
+  <tr><td>Knowledge base</td><td>Free (runs on existing VPS)</td></tr>
+</table>
+
+<h2>New Workspace Setup</h2>
+<p>Adding a new client or project workspace:</p>
+<ol>
+  <li>Give them the address: <code>info+newname@malohacoast.com</code></li>
+  <li>Add one line to the pipeline configuration</li>
+  <li>Copy the dashboard template, change the workspace name</li>
+</ol>
+<p><strong>That's it.</strong> No new accounts, no new servers, no extra cost.</p>
+
+<hr>
+<p style="font-size:0.8rem;color:#64748b">Last updated: 1 July 2026 · Built on Maloha Coast VPS with gbrain, Hermes Agent, and DeepSeek · <a href="index.html">Home</a></p>
+
+</body>
+</html>
