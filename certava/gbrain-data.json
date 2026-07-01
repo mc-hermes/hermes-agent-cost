@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-07-01T09:08:53Z",
+  "updated_at": "2026-07-01T11:54:53Z",
   "summary": {
-    "page_count": 16,
+    "page_count": 18,
     "people_count": 6,
     "company_count": 3,
     "artifact_count": 0,
-    "total_links": 27,
-    "outbound_count": 27,
-    "inbound_count": 27,
-    "graph_coverage": "62.5% of pages have inbound links",
-    "concept_count": 3,
-    "meeting_count": 4,
+    "total_links": 30,
+    "outbound_count": 30,
+    "inbound_count": 30,
+    "graph_coverage": "55.6% of pages have inbound links",
+    "concept_count": 4,
+    "meeting_count": 5,
     "person_count": 6
   },
   "pages": [
@@ -27,11 +27,19 @@
       ],
       "links_out": [
         {
-          "to": "amirul",
+          "to": "fazli-ridzuan",
+          "type": "wikilink"
+        },
+        {
+          "to": "irsyad-danish",
           "type": "wikilink"
         },
         {
           "to": "luqman",
+          "type": "wikilink"
+        },
+        {
+          "to": "ventris",
           "type": "wikilink"
         },
         {
@@ -43,15 +51,7 @@
           "type": "wikilink"
         },
         {
-          "to": "ventris",
-          "type": "wikilink"
-        },
-        {
-          "to": "fazli-ridzuan",
-          "type": "wikilink"
-        },
-        {
-          "to": "irsyad-danish",
+          "to": "amirul",
           "type": "wikilink"
         }
       ],
@@ -86,10 +86,14 @@
         {
           "from": "ventris-meeting-15-june-2026",
           "type": "wikilink"
+        },
+        {
+          "from": "pending-tag-test-v2",
+          "type": "wikilink"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 4
+      "inbound_count": 5
     },
     {
       "slug": "cradle-milestone",
@@ -125,19 +129,19 @@
       "links_out": [],
       "backlinks": [
         {
-          "from": "certava-overview",
-          "type": "wikilink"
-        },
-        {
-          "from": "ventris-meeting-15-june-2026",
-          "type": "wikilink"
-        },
-        {
           "from": "action-tracker",
           "type": "wikilink"
         },
         {
           "from": "weekly-sync-21-june-2026",
+          "type": "wikilink"
+        },
+        {
+          "from": "certava-overview",
+          "type": "wikilink"
+        },
+        {
+          "from": "ventris-meeting-15-june-2026",
           "type": "wikilink"
         }
       ],
@@ -156,20 +160,24 @@
       "links_out": [],
       "backlinks": [
         {
+          "from": "certava-uat-discussion-2026-07-01",
+          "type": "wikilink"
+        },
+        {
+          "from": "action-tracker",
+          "type": "wikilink"
+        },
+        {
           "from": "weekly-sync-21-june-2026",
           "type": "wikilink"
         },
         {
           "from": "certava-overview",
           "type": "wikilink"
-        },
-        {
-          "from": "action-tracker",
-          "type": "wikilink"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 3
+      "inbound_count": 4
     },
     {
       "slug": "fazli-ridzuan",
@@ -184,19 +192,19 @@
       "links_out": [],
       "backlinks": [
         {
-          "from": "certava-overview",
-          "type": "wikilink"
-        },
-        {
-          "from": "ventris-meeting-15-june-2026",
-          "type": "wikilink"
-        },
-        {
           "from": "action-tracker",
           "type": "wikilink"
         },
         {
           "from": "weekly-sync-21-june-2026",
+          "type": "wikilink"
+        },
+        {
+          "from": "certava-overview",
+          "type": "wikilink"
+        },
+        {
+          "from": "ventris-meeting-15-june-2026",
           "type": "wikilink"
         }
       ],
@@ -256,11 +264,11 @@
       ],
       "links_out": [
         {
-          "to": "irsyad-danish",
+          "to": "fazli-ridzuan",
           "type": "wikilink"
         },
         {
-          "to": "fazli-ridzuan",
+          "to": "irsyad-danish",
           "type": "wikilink"
         },
         {
@@ -314,20 +322,24 @@
       "links_out": [],
       "backlinks": [
         {
+          "from": "pending-tag-test-v2",
+          "type": "wikilink"
+        },
+        {
+          "from": "action-tracker",
+          "type": "wikilink"
+        },
+        {
           "from": "weekly-sync-21-june-2026",
           "type": "wikilink"
         },
         {
           "from": "certava-overview",
           "type": "wikilink"
-        },
-        {
-          "from": "action-tracker",
-          "type": "wikilink"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 3
+      "inbound_count": 4
     },
     {
       "slug": "al-pine-meeting-16-june-2026",
@@ -357,10 +369,6 @@
       ],
       "links_out": [
         {
-          "to": "ventris",
-          "type": "wikilink"
-        },
-        {
           "to": "fazli-ridzuan",
           "type": "wikilink"
         },
@@ -369,15 +377,19 @@
           "type": "wikilink"
         },
         {
-          "to": "amirul",
-          "type": "wikilink"
-        },
-        {
           "to": "luqman",
           "type": "wikilink"
         },
         {
+          "to": "ventris",
+          "type": "wikilink"
+        },
+        {
           "to": "certava-company",
+          "type": "wikilink"
+        },
+        {
+          "to": "amirul",
           "type": "wikilink"
         }
       ],
@@ -398,6 +410,10 @@
       "links_out": [],
       "backlinks": [
         {
+          "from": "action-tracker",
+          "type": "wikilink"
+        },
+        {
           "from": "weekly-sync-21-june-2026",
           "type": "wikilink"
         },
@@ -407,10 +423,6 @@
         },
         {
           "from": "ventris-meeting-15-june-2026",
-          "type": "wikilink"
-        },
-        {
-          "from": "action-tracker",
           "type": "wikilink"
         }
       ],
@@ -429,10 +441,6 @@
       ],
       "links_out": [
         {
-          "to": "rina",
-          "type": "wikilink"
-        },
-        {
           "to": "fazli-ridzuan",
           "type": "wikilink"
         },
@@ -441,7 +449,7 @@
           "type": "wikilink"
         },
         {
-          "to": "amirul",
+          "to": "scorpion",
           "type": "wikilink"
         },
         {
@@ -449,15 +457,7 @@
           "type": "wikilink"
         },
         {
-          "to": "sayf",
-          "type": "wikilink"
-        },
-        {
-          "to": "scorpion",
-          "type": "wikilink"
-        },
-        {
-          "to": "certava-company",
+          "to": "cradle-milestone",
           "type": "wikilink"
         },
         {
@@ -465,12 +465,47 @@
           "type": "wikilink"
         },
         {
-          "to": "cradle-milestone",
+          "to": "rina",
+          "type": "wikilink"
+        },
+        {
+          "to": "sayf",
+          "type": "wikilink"
+        },
+        {
+          "to": "certava-company",
+          "type": "wikilink"
+        },
+        {
+          "to": "amirul",
           "type": "wikilink"
         }
       ],
       "backlinks": [],
       "outbound_count": 10,
+      "inbound_count": 0
+    },
+    {
+      "slug": "pending-tag-test-v2",
+      "title": "Pending Tag Test v2",
+      "type": "concept",
+      "updated": "2026-07-01",
+      "body": "# Pending Tag Test v2\n\nTesting that tags survive gbrain export.\n\n## Linked entities\n- [[Ventris]]\n- [[Amirul]]\n- [[New Research Topic]]",
+      "tags": [
+        "certava"
+      ],
+      "links_out": [
+        {
+          "to": "amirul",
+          "type": "wikilink"
+        },
+        {
+          "to": "ventris",
+          "type": "wikilink"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 2,
       "inbound_count": 0
     },
     {
@@ -486,12 +521,157 @@
       "backlinks": [],
       "outbound_count": 0,
       "inbound_count": 0
+    },
+    {
+      "slug": "certava-uat-discussion-2026-07-01",
+      "title": "'Certava UAT Discussion - July 1, 2026'",
+      "type": "meeting",
+      "updated": "2026-07-01",
+      "body": "# Certava UAT Discussion - July 1, 2026\n\n**Source:** Email forward from Sayf Codes\n**Source URI:** gmail://msg_19f1d688ed9d249e\n**Ingested:** 2026-07-01T11:23:26Z\n\n## Summary\n\nThe meeting focused on onboarding a UAT contributor ([[Naresh]]/Narish) and resolving AI determinism and validation for an upcoming paid pilot for [[Certava]].\n\n## Key Decisions\n\n- Sayf will teach Naresh to use Linear for tickets\n- Fallback: document-based checklist with comments column\n- Team will introduce Naresh in the ",
+      "tags": [
+        "certava"
+      ],
+      "links_out": [
+        {
+          "to": "certava-company",
+          "type": "wikilink"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
+      "inbound_count": 0
     }
   ],
   "graph_links": [
     {
       "source": "action-tracker",
+      "target": "fazli-ridzuan",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "action-tracker",
+      "target": "irsyad-danish",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "weekly-sync-21-june-2026",
+      "target": "fazli-ridzuan",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "weekly-sync-21-june-2026",
+      "target": "irsyad-danish",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "certava-uat-discussion-2026-07-01",
+      "target": "certava-company",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "action-tracker",
+      "target": "luqman",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "pending-tag-test-v2",
+      "target": "amirul",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "action-tracker",
       "target": "ventris",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "weekly-sync-21-june-2026",
+      "target": "luqman",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "weekly-sync-21-june-2026",
+      "target": "ventris",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "certava-overview",
+      "target": "fazli-ridzuan",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "action-tracker",
+      "target": "certava-company",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "certava-overview",
+      "target": "irsyad-danish",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "weekly-sync-21-june-2026",
+      "target": "sayf",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "weekly-sync-21-june-2026",
+      "target": "certava-company",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "certava-overview",
+      "target": "scorpion",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "certava-overview",
+      "target": "luqman",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "certava-overview",
+      "target": "cradle-milestone",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "certava-overview",
+      "target": "ventris",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "ventris-meeting-15-june-2026",
+      "target": "fazli-ridzuan",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "ventris-meeting-15-june-2026",
+      "target": "irsyad-danish",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "action-tracker",
+      "target": "amirul",
       "type": "wikilink",
       "context": ""
     },
@@ -503,97 +683,13 @@
     },
     {
       "source": "certava-overview",
-      "target": "fazli-ridzuan",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "certava-overview",
-      "target": "irsyad-danish",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "weekly-sync-21-june-2026",
-      "target": "amirul",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "ventris-meeting-15-june-2026",
-      "target": "irsyad-danish",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "ventris-meeting-15-june-2026",
-      "target": "fazli-ridzuan",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "weekly-sync-21-june-2026",
-      "target": "luqman",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "weekly-sync-21-june-2026",
       "target": "sayf",
       "type": "wikilink",
       "context": ""
     },
     {
-      "source": "action-tracker",
-      "target": "fazli-ridzuan",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "action-tracker",
-      "target": "irsyad-danish",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "weekly-sync-21-june-2026",
+      "source": "certava-overview",
       "target": "certava-company",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "certava-overview",
-      "target": "amirul",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "certava-overview",
-      "target": "luqman",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "certava-overview",
-      "target": "sayf",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "weekly-sync-21-june-2026",
-      "target": "ventris",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "certava-overview",
-      "target": "scorpion",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "action-tracker",
-      "target": "amirul",
       "type": "wikilink",
       "context": ""
     },
@@ -604,50 +700,26 @@
       "context": ""
     },
     {
-      "source": "certava-overview",
-      "target": "certava-company",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "action-tracker",
-      "target": "luqman",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "certava-overview",
-      "target": "ventris",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "certava-overview",
-      "target": "cradle-milestone",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
       "source": "weekly-sync-21-june-2026",
-      "target": "fazli-ridzuan",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "weekly-sync-21-june-2026",
-      "target": "irsyad-danish",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "action-tracker",
-      "target": "certava-company",
+      "target": "amirul",
       "type": "wikilink",
       "context": ""
     },
     {
       "source": "ventris-meeting-15-june-2026",
       "target": "ventris",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "pending-tag-test-v2",
+      "target": "ventris",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "certava-overview",
+      "target": "amirul",
       "type": "wikilink",
       "context": ""
     }
@@ -670,6 +742,38 @@
   "doctor": {},
   "artifacts": [],
   "logs": [
+    {
+      "ts": "2026-07-01T11:54:53Z",
+      "source": "export",
+      "stage": "deployed",
+      "slug": null,
+      "detail": "Dashboard refreshed \u2014 18 pages, 30 links",
+      "level": "info"
+    },
+    {
+      "ts": "2026-07-01T09:11:19Z",
+      "source": "export",
+      "stage": "deployed",
+      "slug": null,
+      "detail": "Dashboard refreshed \u2014 17 pages, 29 links",
+      "level": "info"
+    },
+    {
+      "ts": "2026-07-01T09:11:03Z",
+      "source": "export",
+      "stage": "deployed",
+      "slug": null,
+      "detail": "Dashboard refreshed \u2014 17 pages, 29 links",
+      "level": "info"
+    },
+    {
+      "ts": "2026-07-01T09:10:06Z",
+      "source": "export",
+      "stage": "deployed",
+      "slug": null,
+      "detail": "Dashboard refreshed \u2014 16 pages, 27 links",
+      "level": "info"
+    },
     {
       "ts": "2026-07-01T09:08:53Z",
       "source": "export",
@@ -812,6 +916,22 @@
       "stage": "updated",
       "slug": "pipeline-test-2026-07-01",
       "detail": "Pipeline Test 2026 07 01",
+      "level": "info"
+    },
+    {
+      "ts": "2026-07-01T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "pending-tag-test-v2",
+      "detail": "Pending Tag Test v2",
+      "level": "info"
+    },
+    {
+      "ts": "2026-07-01T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "certava-uat-discussion-2026-07-01",
+      "detail": "'Certava UAT Discussion - July 1, 2026'",
       "level": "info"
     },
     {
