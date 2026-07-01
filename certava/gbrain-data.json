@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-01T07:25:36Z",
+  "updated_at": "2026-07-01T09:08:53Z",
   "summary": {
     "page_count": 16,
     "people_count": 6,
@@ -27,11 +27,11 @@
       ],
       "links_out": [
         {
-          "to": "irsyad-danish",
+          "to": "amirul",
           "type": "wikilink"
         },
         {
-          "to": "amirul",
+          "to": "luqman",
           "type": "wikilink"
         },
         {
@@ -43,15 +43,15 @@
           "type": "wikilink"
         },
         {
+          "to": "ventris",
+          "type": "wikilink"
+        },
+        {
           "to": "fazli-ridzuan",
           "type": "wikilink"
         },
         {
-          "to": "luqman",
-          "type": "wikilink"
-        },
-        {
-          "to": "ventris",
+          "to": "irsyad-danish",
           "type": "wikilink"
         }
       ],
@@ -72,7 +72,11 @@
       "links_out": [],
       "backlinks": [
         {
-          "from": "ventris-meeting-15-june-2026",
+          "from": "action-tracker",
+          "type": "wikilink"
+        },
+        {
+          "from": "weekly-sync-21-june-2026",
           "type": "wikilink"
         },
         {
@@ -80,11 +84,7 @@
           "type": "wikilink"
         },
         {
-          "from": "action-tracker",
-          "type": "wikilink"
-        },
-        {
-          "from": "weekly-sync-21-june-2026",
+          "from": "ventris-meeting-15-june-2026",
           "type": "wikilink"
         }
       ],
@@ -125,11 +125,7 @@
       "links_out": [],
       "backlinks": [
         {
-          "from": "weekly-sync-21-june-2026",
-          "type": "wikilink"
-        },
-        {
-          "from": "action-tracker",
+          "from": "certava-overview",
           "type": "wikilink"
         },
         {
@@ -137,7 +133,11 @@
           "type": "wikilink"
         },
         {
-          "from": "certava-overview",
+          "from": "action-tracker",
+          "type": "wikilink"
+        },
+        {
+          "from": "weekly-sync-21-june-2026",
           "type": "wikilink"
         }
       ],
@@ -156,11 +156,11 @@
       "links_out": [],
       "backlinks": [
         {
-          "from": "certava-overview",
+          "from": "weekly-sync-21-june-2026",
           "type": "wikilink"
         },
         {
-          "from": "weekly-sync-21-june-2026",
+          "from": "certava-overview",
           "type": "wikilink"
         },
         {
@@ -184,19 +184,19 @@
       "links_out": [],
       "backlinks": [
         {
-          "from": "ventris-meeting-15-june-2026",
-          "type": "wikilink"
-        },
-        {
           "from": "certava-overview",
           "type": "wikilink"
         },
         {
-          "from": "weekly-sync-21-june-2026",
+          "from": "ventris-meeting-15-june-2026",
           "type": "wikilink"
         },
         {
           "from": "action-tracker",
+          "type": "wikilink"
+        },
+        {
+          "from": "weekly-sync-21-june-2026",
           "type": "wikilink"
         }
       ],
@@ -256,6 +256,10 @@
       ],
       "links_out": [
         {
+          "to": "irsyad-danish",
+          "type": "wikilink"
+        },
+        {
           "to": "fazli-ridzuan",
           "type": "wikilink"
         },
@@ -265,10 +269,6 @@
         },
         {
           "to": "ventris",
-          "type": "wikilink"
-        },
-        {
-          "to": "irsyad-danish",
           "type": "wikilink"
         }
       ],
@@ -290,11 +290,11 @@
       "links_out": [],
       "backlinks": [
         {
-          "from": "certava-overview",
+          "from": "weekly-sync-21-june-2026",
           "type": "wikilink"
         },
         {
-          "from": "weekly-sync-21-june-2026",
+          "from": "certava-overview",
           "type": "wikilink"
         }
       ],
@@ -318,11 +318,11 @@
           "type": "wikilink"
         },
         {
-          "from": "action-tracker",
+          "from": "certava-overview",
           "type": "wikilink"
         },
         {
-          "from": "certava-overview",
+          "from": "action-tracker",
           "type": "wikilink"
         }
       ],
@@ -357,6 +357,14 @@
       ],
       "links_out": [
         {
+          "to": "ventris",
+          "type": "wikilink"
+        },
+        {
+          "to": "fazli-ridzuan",
+          "type": "wikilink"
+        },
+        {
           "to": "irsyad-danish",
           "type": "wikilink"
         },
@@ -365,19 +373,11 @@
           "type": "wikilink"
         },
         {
-          "to": "certava-company",
-          "type": "wikilink"
-        },
-        {
-          "to": "fazli-ridzuan",
-          "type": "wikilink"
-        },
-        {
           "to": "luqman",
           "type": "wikilink"
         },
         {
-          "to": "ventris",
+          "to": "certava-company",
           "type": "wikilink"
         }
       ],
@@ -398,7 +398,7 @@
       "links_out": [],
       "backlinks": [
         {
-          "from": "ventris-meeting-15-june-2026",
+          "from": "weekly-sync-21-june-2026",
           "type": "wikilink"
         },
         {
@@ -406,7 +406,7 @@
           "type": "wikilink"
         },
         {
-          "from": "weekly-sync-21-june-2026",
+          "from": "ventris-meeting-15-june-2026",
           "type": "wikilink"
         },
         {
@@ -429,35 +429,11 @@
       ],
       "links_out": [
         {
-          "to": "sayf",
-          "type": "wikilink"
-        },
-        {
-          "to": "fazli-ridzuan",
-          "type": "wikilink"
-        },
-        {
-          "to": "certava-company",
-          "type": "wikilink"
-        },
-        {
-          "to": "luqman",
-          "type": "wikilink"
-        },
-        {
-          "to": "cradle-milestone",
-          "type": "wikilink"
-        },
-        {
           "to": "rina",
           "type": "wikilink"
         },
         {
-          "to": "ventris",
-          "type": "wikilink"
-        },
-        {
-          "to": "scorpion",
+          "to": "fazli-ridzuan",
           "type": "wikilink"
         },
         {
@@ -466,6 +442,30 @@
         },
         {
           "to": "amirul",
+          "type": "wikilink"
+        },
+        {
+          "to": "luqman",
+          "type": "wikilink"
+        },
+        {
+          "to": "sayf",
+          "type": "wikilink"
+        },
+        {
+          "to": "scorpion",
+          "type": "wikilink"
+        },
+        {
+          "to": "certava-company",
+          "type": "wikilink"
+        },
+        {
+          "to": "ventris",
+          "type": "wikilink"
+        },
+        {
+          "to": "cradle-milestone",
           "type": "wikilink"
         }
       ],
@@ -490,80 +490,8 @@
   ],
   "graph_links": [
     {
-      "source": "weekly-sync-21-june-2026",
-      "target": "irsyad-danish",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
       "source": "action-tracker",
-      "target": "irsyad-danish",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "weekly-sync-21-june-2026",
-      "target": "amirul",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "action-tracker",
-      "target": "amirul",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "ventris-meeting-15-june-2026",
-      "target": "fazli-ridzuan",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "ventris-meeting-15-june-2026",
-      "target": "luqman",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "certava-overview",
-      "target": "sayf",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "certava-overview",
-      "target": "fazli-ridzuan",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "ventris-meeting-15-june-2026",
       "target": "ventris",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "certava-overview",
-      "target": "certava-company",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "certava-overview",
-      "target": "luqman",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "certava-overview",
-      "target": "cradle-milestone",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "weekly-sync-21-june-2026",
-      "target": "sayf",
       "type": "wikilink",
       "context": ""
     },
@@ -574,14 +502,56 @@
       "context": ""
     },
     {
+      "source": "certava-overview",
+      "target": "fazli-ridzuan",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "certava-overview",
+      "target": "irsyad-danish",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "weekly-sync-21-june-2026",
+      "target": "amirul",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
       "source": "ventris-meeting-15-june-2026",
       "target": "irsyad-danish",
       "type": "wikilink",
       "context": ""
     },
     {
-      "source": "certava-overview",
-      "target": "ventris",
+      "source": "ventris-meeting-15-june-2026",
+      "target": "fazli-ridzuan",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "weekly-sync-21-june-2026",
+      "target": "luqman",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "weekly-sync-21-june-2026",
+      "target": "sayf",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "action-tracker",
+      "target": "fazli-ridzuan",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "action-tracker",
+      "target": "irsyad-danish",
       "type": "wikilink",
       "context": ""
     },
@@ -592,14 +562,26 @@
       "context": ""
     },
     {
-      "source": "weekly-sync-21-june-2026",
-      "target": "fazli-ridzuan",
+      "source": "certava-overview",
+      "target": "amirul",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "certava-overview",
+      "target": "luqman",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "certava-overview",
+      "target": "sayf",
       "type": "wikilink",
       "context": ""
     },
     {
       "source": "weekly-sync-21-june-2026",
-      "target": "luqman",
+      "target": "ventris",
       "type": "wikilink",
       "context": ""
     },
@@ -611,13 +593,19 @@
     },
     {
       "source": "action-tracker",
-      "target": "certava-company",
+      "target": "amirul",
       "type": "wikilink",
       "context": ""
     },
     {
-      "source": "action-tracker",
-      "target": "fazli-ridzuan",
+      "source": "ventris-meeting-15-june-2026",
+      "target": "luqman",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "certava-overview",
+      "target": "certava-company",
       "type": "wikilink",
       "context": ""
     },
@@ -629,24 +617,36 @@
     },
     {
       "source": "certava-overview",
-      "target": "irsyad-danish",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "certava-overview",
-      "target": "amirul",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "action-tracker",
       "target": "ventris",
       "type": "wikilink",
       "context": ""
     },
     {
+      "source": "certava-overview",
+      "target": "cradle-milestone",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
       "source": "weekly-sync-21-june-2026",
+      "target": "fazli-ridzuan",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "weekly-sync-21-june-2026",
+      "target": "irsyad-danish",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "action-tracker",
+      "target": "certava-company",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "ventris-meeting-15-june-2026",
       "target": "ventris",
       "type": "wikilink",
       "context": ""
@@ -670,6 +670,14 @@
   "doctor": {},
   "artifacts": [],
   "logs": [
+    {
+      "ts": "2026-07-01T09:08:53Z",
+      "source": "export",
+      "stage": "deployed",
+      "slug": null,
+      "detail": "Dashboard refreshed \u2014 16 pages, 27 links",
+      "level": "info"
+    },
     {
       "ts": "2026-07-01T07:25:36Z",
       "source": "export",
