@@ -918,6 +918,7 @@
 
 <!-- More menu popover -->
 <div class="settings-popover" id="moreMenu" style="bottom:80px;left:auto;right:12px;width:180px">
+  <div class="settings-row" style="cursor:pointer" onclick="showView('inbox');toggleMoreMenu()">📥 Inbox <span class="s-badge" id="mobileInboxBadge" style="display:none;margin-left:8px;font-size:0.6rem;min-width:16px;height:16px;border-radius:8px;background:#ef4444;color:#fff;text-align:center;line-height:16px;padding:0 3px">0</span></div>
   <div class="settings-row" style="cursor:pointer" onclick="showView('browse');document.querySelector('[data-btab=entities]').click();toggleMoreMenu()">People & Companies</div>
   <div class="settings-row" style="cursor:pointer" onclick="showView('browse');document.querySelector('[data-btab=health]').click();toggleMoreMenu()">Status</div>
   <div class="settings-row" style="cursor:pointer" onclick="showView('browse');document.querySelector('[data-btab=artifacts]').click();toggleMoreMenu()">Files</div>
@@ -2968,7 +2969,9 @@ function loadInbox() {
       l.style.display='none';
       var items=d.items||[];
       var b=document.getElementById('inboxBadge');
+      var mb=document.getElementById('mobileInboxBadge');
       if(b){b.textContent=items.length;b.style.display=items.length>0?'inline-flex':'none'}
+      if(mb){mb.textContent=items.length;mb.style.display=items.length>0?'inline-flex':'none'}
       document.getElementById('inboxSubtitle').textContent=items.length+' item'+(items.length!==1?'s':'')+' awaiting approval';
       if(!items.length){e.style.display='block';return}
       renderInboxItems(items);
@@ -3026,6 +3029,7 @@ function updateInboxCount(){
   var cards=document.querySelectorAll('.inbox-card'),v=0;
   cards.forEach(function(c){if(c.style.display!=='none'&&c.parentElement)v++});
   var b=document.getElementById('inboxBadge');if(b){b.textContent=v;b.style.display=v>0?'inline-flex':'none'}
+  var mb=document.getElementById('mobileInboxBadge');if(mb){mb.textContent=v;mb.style.display=v>0?'inline-flex':'none'}
   document.getElementById('inboxSubtitle').textContent=v+' item'+(v!==1?'s':'')+' awaiting approval';
   if(!v){document.getElementById('inboxEmpty').style.display='block';document.getElementById('inboxList').innerHTML=''}
 }
