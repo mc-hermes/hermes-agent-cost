@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-28T03:00:21Z",
+  "updated_at": "2026-07-01T07:25:36Z",
   "summary": {
-    "page_count": 15,
+    "page_count": 16,
     "people_count": 6,
     "company_count": 3,
     "artifact_count": 0,
     "total_links": 27,
     "outbound_count": 27,
     "inbound_count": 27,
-    "graph_coverage": "66.7% of pages have inbound links",
-    "concept_count": 2,
+    "graph_coverage": "62.5% of pages have inbound links",
+    "concept_count": 3,
     "meeting_count": 4,
     "person_count": 6
   },
@@ -18,7 +18,7 @@
       "slug": "weekly-sync-21-june-2026",
       "title": "Certava Team Introduction & Weekly Sync (21 June 2026)",
       "type": "meeting",
-      "updated": "2026-06-28",
+      "updated": "2026-07-01",
       "body": "# Certava Weekly Sync \u2014 21 June 2026\n\n## Introduction of [[sayf]] to Certava Team\n[[sayf|Sayf]] was introduced to the [[certava-company|Certava]] team as a potential contributor. The team shared individual backgrounds: [[irsyad-danish|Danish]] as ISO/domain expert, [[amirul]] as backend/automation developer, [[luqman]] as architecture/full-stack lead, and Sayf with experience in tech project management, software delivery, AI/ML operations.\n\n## MVP Readiness and Pilot Delivery Risk\n[[fazli-ridzua",
       "tags": [
         "certava",
@@ -27,7 +27,7 @@
       ],
       "links_out": [
         {
-          "to": "ventris",
+          "to": "irsyad-danish",
           "type": "wikilink"
         },
         {
@@ -35,7 +35,11 @@
           "type": "wikilink"
         },
         {
-          "to": "irsyad-danish",
+          "to": "sayf",
+          "type": "wikilink"
+        },
+        {
+          "to": "certava-company",
           "type": "wikilink"
         },
         {
@@ -47,11 +51,7 @@
           "type": "wikilink"
         },
         {
-          "to": "sayf",
-          "type": "wikilink"
-        },
-        {
-          "to": "certava-company",
+          "to": "ventris",
           "type": "wikilink"
         }
       ],
@@ -63,7 +63,7 @@
       "slug": "ventris",
       "title": "Ventris",
       "type": "company",
-      "updated": "2026-06-28",
+      "updated": "2026-07-01",
       "body": "Ventris is a Certava pilot prospect. Their main pain point is legal register and regulatory compliance monitoring across business units, projects, countries and international regulations \u2014 not primarily ISO certification. They need a system to centralise applicable laws, obligations, evidence, review status and compliance monitoring.\n\n**Key Requirements:**\n- Legal register management\n- Applicability mapping by country, business unit, project\n- Compliance evidence tracking\n- Dashboard monitoring\n",
       "tags": [
         "certava",
@@ -72,19 +72,19 @@
       "links_out": [],
       "backlinks": [
         {
-          "from": "certava-overview",
-          "type": "wikilink"
-        },
-        {
-          "from": "weekly-sync-21-june-2026",
-          "type": "wikilink"
-        },
-        {
           "from": "ventris-meeting-15-june-2026",
           "type": "wikilink"
         },
         {
+          "from": "certava-overview",
+          "type": "wikilink"
+        },
+        {
           "from": "action-tracker",
+          "type": "wikilink"
+        },
+        {
+          "from": "weekly-sync-21-june-2026",
           "type": "wikilink"
         }
       ],
@@ -95,7 +95,7 @@
       "slug": "cradle-milestone",
       "title": "Certava Cradle Grant \u2014 Milestone Structure",
       "type": "concept",
-      "updated": "2026-06-28",
+      "updated": "2026-07-01",
       "body": "# Certava Cradle Grant \u2014 Milestone Structure\n\n## Grant Overview\n- **Funding allocation:** Up to RM 150,000 (including legal due diligence fee of RM 17,000)\n- **Maximum per milestone:** RM 37,500\n- **Each milestone period:** 3 months\n- **Minimum funding duration:** 2 milestones (6 months)\n- **Maximum duration:** Up to 6 milestones (18 months)\n- **Related-party transactions:** Not allowed\n\n## Development Focus\nA deterministic clause intelligence engine comprising schema modeling, rule validation, ",
       "tags": [
         "certava",
@@ -116,7 +116,7 @@
       "slug": "irsyad-danish",
       "title": "Irsyad Danish",
       "type": "person",
-      "updated": "2026-06-28",
+      "updated": "2026-07-01",
       "body": "Irsyad Danish is an ISO Practitioner / ISO Consultant at Certava. He serves as the ISO/domain expert and is responsible for validating clause logic, testing the system, and ensuring ISO and industry practice alignment. Danish leads webinar content and supports prospect-facing communication. He estimated the system is around 80% ready for what has been built and 70% compared to a complete ISO management system.",
       "tags": [
         "certava",
@@ -129,7 +129,7 @@
           "type": "wikilink"
         },
         {
-          "from": "certava-overview",
+          "from": "action-tracker",
           "type": "wikilink"
         },
         {
@@ -137,7 +137,7 @@
           "type": "wikilink"
         },
         {
-          "from": "action-tracker",
+          "from": "certava-overview",
           "type": "wikilink"
         }
       ],
@@ -148,7 +148,7 @@
       "slug": "certava-company",
       "title": "Certava",
       "type": "company",
-      "updated": "2026-06-28",
+      "updated": "2026-07-01",
       "body": "Certava is a clause intelligence platform for ISO compliance and regulatory management. The company is developing a deterministic clause intelligence engine that enforces compliance logic structurally rather than probabilistically.\n\n**Team:** Fazli Ridzuan (CEO), Irsyad Danish (ISO Practitioner), Amirul (Backend/Automation), Luqman (Architecture/Full-Stack)\n\n**Product:** Certava helps organisations manage ISO readiness, evidence tracking, document review, clause alignment and compliance visibili",
       "tags": [
         "certava"
@@ -156,15 +156,15 @@
       "links_out": [],
       "backlinks": [
         {
-          "from": "action-tracker",
-          "type": "wikilink"
-        },
-        {
           "from": "certava-overview",
           "type": "wikilink"
         },
         {
           "from": "weekly-sync-21-june-2026",
+          "type": "wikilink"
+        },
+        {
+          "from": "action-tracker",
           "type": "wikilink"
         }
       ],
@@ -175,7 +175,7 @@
       "slug": "fazli-ridzuan",
       "title": "Fazli Ridzuan",
       "type": "person",
-      "updated": "2026-06-28",
+      "updated": "2026-07-01",
       "body": "Fazli Ridzuan is the CEO of Certava. He leads business development, prospect engagement, and strategic direction. He manages pilot discussions, pricing strategy, and GTM execution. Fazli introduced Sayf to the Certava team to help bridge business, product and technical execution. He is focused on transitioning Certava from free-trial positioning to enterprise paid pilot model.",
       "tags": [
         "certava",
@@ -184,7 +184,7 @@
       "links_out": [],
       "backlinks": [
         {
-          "from": "action-tracker",
+          "from": "ventris-meeting-15-june-2026",
           "type": "wikilink"
         },
         {
@@ -196,7 +196,7 @@
           "type": "wikilink"
         },
         {
-          "from": "ventris-meeting-15-june-2026",
+          "from": "action-tracker",
           "type": "wikilink"
         }
       ],
@@ -207,7 +207,7 @@
       "slug": "scorpion",
       "title": "Scorpion / Scorpio",
       "type": "company",
-      "updated": "2026-06-28",
+      "updated": "2026-07-01",
       "body": "Scorpion (also referred to as Scorpio) is a Certava pilot prospect. The team agreed that Scorpion should be treated as a paid pilot, not a free test. System readiness, security, and explanation must be strong before onboarding.",
       "tags": [
         "certava",
@@ -227,7 +227,7 @@
       "slug": "rina",
       "title": "Rina (AL Pine)",
       "type": "person",
-      "updated": "2026-06-28",
+      "updated": "2026-07-01",
       "body": "Rina is a representative from an organisation (AL Pine) that previously obtained ISO 9001 certification but did not continue due to workload constraints. The organisation is also exploring ISO/IEC 17020 (inspection bodies). She engaged with Certava for a potential paid pilot.\n\n**Concerns:** Whether the operations team would be ready for online system adoption.\n\n**Status:** Reviewing Certava pilot deck internally with bosses.",
       "tags": [
         "certava",
@@ -247,7 +247,7 @@
       "slug": "ventris-meeting-15-june-2026",
       "title": "Minutes of Meeting \u2014 Ventris Legal Register Pilot (15 June 2026)",
       "type": "meeting",
-      "updated": "2026-06-28",
+      "updated": "2026-07-01",
       "body": "# Minutes of Meeting \u2014 Certava Pilot / Legal Register & ISO Compliance Discussion\n**Date:** 15 June 2026\n**Participants:** [[fazli-ridzuan|Fazli]], [[irsyad-danish|Danish]], [[luqman]] (Certava); Group Quality / QHSE / E&S / IT representatives ([[ventris]])\n\n## Key Points\n- Client's main pain point is legal register compliance across business units, countries, and projects\n- ISO requirements are manageable; regulatory obligations change more frequently\n- Legal register needs: master list, mappin",
       "tags": [
         "certava",
@@ -255,6 +255,10 @@
         "ventris"
       ],
       "links_out": [
+        {
+          "to": "fazli-ridzuan",
+          "type": "wikilink"
+        },
         {
           "to": "luqman",
           "type": "wikilink"
@@ -266,10 +270,6 @@
         {
           "to": "irsyad-danish",
           "type": "wikilink"
-        },
-        {
-          "to": "fazli-ridzuan",
-          "type": "wikilink"
         }
       ],
       "backlinks": [],
@@ -280,7 +280,7 @@
       "slug": "sayf",
       "title": "Sayf",
       "type": "person",
-      "updated": "2026-06-28",
+      "updated": "2026-07-01",
       "body": "Sayf was introduced to the Certava team on 21 June 2026 as a potential contributor to help bridge business, product and technical execution. He brings experience in tech project management, software delivery, AI/ML operations and business operations. Sayf was asked to help QA/QC test the platform, review scenarios, identify bugs, and provide assurance before pilot demonstrations. He also advised on CI/CD, GitHub setup, product management process, and security documentation.",
       "tags": [
         "certava",
@@ -305,7 +305,7 @@
       "slug": "amirul",
       "title": "Amirul",
       "type": "person",
-      "updated": "2026-06-28",
+      "updated": "2026-07-01",
       "body": "Amirul is a backend and automation developer at Certava. He works on backend development, automation, and technical infrastructure. He is responsible for fixing bugs, completing pending features, and assessing feasibility of new module requirements including the legal register workflow.",
       "tags": [
         "certava",
@@ -318,11 +318,11 @@
           "type": "wikilink"
         },
         {
-          "from": "certava-overview",
+          "from": "action-tracker",
           "type": "wikilink"
         },
         {
-          "from": "action-tracker",
+          "from": "certava-overview",
           "type": "wikilink"
         }
       ],
@@ -333,7 +333,7 @@
       "slug": "al-pine-meeting-16-june-2026",
       "title": "Minutes of Meeting \u2014 AL Pine Pilot Discussion with Rina (16 June 2026)",
       "type": "meeting",
-      "updated": "2026-06-28",
+      "updated": "2026-07-01",
       "body": "# Minutes of Meeting \u2014 Certava Pilot Discussion with Rina (AL Pine)\n**Date:** 16 June 2026\n\n**Attendees:**\n- Certava Team: Fazli Ridzuan (CEO), Irsyad Danish (ISO Practitioner)\n- Client: Rina (Designation/Company representative)\n\n## Background\nFazli explained that Certava is being positioned to support organisations in managing ISO readiness, evidence tracking, document review, clause alignment and compliance visibility. Rina shared that the organisation had previously obtained ISO 9001 certific",
       "tags": [
         "al-pine",
@@ -349,13 +349,25 @@
       "slug": "action-tracker",
       "title": "Certava Action Tracker \u2014 Weekly Minutes",
       "type": "meeting",
-      "updated": "2026-06-28",
+      "updated": "2026-07-01",
       "body": "# Certava Action Tracker \u2014 Weekly Minutes Action Progress\n\nGenerated from weekly minutes action progress for [[certava-company]].\n\n## Key In-Progress Items\n- ISO Domain Logic Validation ([[irsyad-danish|Danish]])\n- Clarify MVP Phase 2 scope ([[amirul]] / [[luqman]])\n- Document Library module (Danish & Technical team)\n- Evidence Upload module (Danish & Technical team)\n- Security explanation (Technical Team)\n- Scorpion paid pilot readiness (Danish & [[fazli-ridzuan|Fazli]])\n- Build proper costing ",
       "tags": [
         "certava",
         "weekly"
       ],
       "links_out": [
+        {
+          "to": "irsyad-danish",
+          "type": "wikilink"
+        },
+        {
+          "to": "amirul",
+          "type": "wikilink"
+        },
+        {
+          "to": "certava-company",
+          "type": "wikilink"
+        },
         {
           "to": "fazli-ridzuan",
           "type": "wikilink"
@@ -365,19 +377,7 @@
           "type": "wikilink"
         },
         {
-          "to": "certava-company",
-          "type": "wikilink"
-        },
-        {
           "to": "ventris",
-          "type": "wikilink"
-        },
-        {
-          "to": "amirul",
-          "type": "wikilink"
-        },
-        {
-          "to": "irsyad-danish",
           "type": "wikilink"
         }
       ],
@@ -389,7 +389,7 @@
       "slug": "luqman",
       "title": "Luqman (Lokman)",
       "type": "person",
-      "updated": "2026-06-28",
+      "updated": "2026-07-01",
       "body": "Luqman (also referred to as Lokman) is the architecture and full-stack lead at Certava. He handles system architecture, full-stack development, and technical leadership. He is responsible for mapping workflows into system modules and UI, assessing integration feasibility, and designing the legal register data structure.",
       "tags": [
         "certava",
@@ -402,15 +402,15 @@
           "type": "wikilink"
         },
         {
-          "from": "action-tracker",
-          "type": "wikilink"
-        },
-        {
           "from": "certava-overview",
           "type": "wikilink"
         },
         {
           "from": "weekly-sync-21-june-2026",
+          "type": "wikilink"
+        },
+        {
+          "from": "action-tracker",
           "type": "wikilink"
         }
       ],
@@ -421,7 +421,7 @@
       "slug": "certava-overview",
       "title": "Certava Platform Overview",
       "type": "concept",
-      "updated": "2026-06-28",
+      "updated": "2026-07-01",
       "body": "# Certava Platform Overview\n\n[[certava-company|Certava]] is a deterministic clause intelligence engine for ISO compliance and regulatory management. The platform enforces compliance logic structurally rather than generating it probabilistically.\n\n## Core Value Proposition\n- Reduce manual compliance work by mapping clauses and requirements to documents, controls, and evidence\n- Review uploaded evidence against requirements\n- Identify gaps or missing documentation\n- Link ISO clauses, legal obligat",
       "tags": [
         "certava",
@@ -429,19 +429,7 @@
       ],
       "links_out": [
         {
-          "to": "ventris",
-          "type": "wikilink"
-        },
-        {
-          "to": "amirul",
-          "type": "wikilink"
-        },
-        {
-          "to": "irsyad-danish",
-          "type": "wikilink"
-        },
-        {
-          "to": "cradle-milestone",
+          "to": "sayf",
           "type": "wikilink"
         },
         {
@@ -449,15 +437,15 @@
           "type": "wikilink"
         },
         {
+          "to": "certava-company",
+          "type": "wikilink"
+        },
+        {
           "to": "luqman",
           "type": "wikilink"
         },
         {
-          "to": "sayf",
-          "type": "wikilink"
-        },
-        {
-          "to": "scorpion",
+          "to": "cradle-milestone",
           "type": "wikilink"
         },
         {
@@ -465,42 +453,68 @@
           "type": "wikilink"
         },
         {
-          "to": "certava-company",
+          "to": "ventris",
+          "type": "wikilink"
+        },
+        {
+          "to": "scorpion",
+          "type": "wikilink"
+        },
+        {
+          "to": "irsyad-danish",
+          "type": "wikilink"
+        },
+        {
+          "to": "amirul",
           "type": "wikilink"
         }
       ],
       "backlinks": [],
       "outbound_count": 10,
       "inbound_count": 0
+    },
+    {
+      "slug": "pipeline-test-2026-07-01",
+      "title": "Pipeline Test 2026 07 01",
+      "type": "concept",
+      "updated": "2026-07-01",
+      "body": "# Pipeline Test \u2014 Certava Ingestion\n\nThis is a test page to verify the certava email pipeline routing works.\n\n**Source:** Manual test from pipeline setup on 2026-07-01.\n\n## Verification\nIf this page appears on the certava dashboard, the ingestion path is working.",
+      "tags": [
+        "certava"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
     }
   ],
   "graph_links": [
     {
-      "source": "certava-overview",
-      "target": "ventris",
+      "source": "weekly-sync-21-june-2026",
+      "target": "irsyad-danish",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "action-tracker",
+      "target": "irsyad-danish",
       "type": "wikilink",
       "context": ""
     },
     {
       "source": "weekly-sync-21-june-2026",
-      "target": "ventris",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "weekly-sync-21-june-2026",
-      "target": "amirul",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "certava-overview",
       "target": "amirul",
       "type": "wikilink",
       "context": ""
     },
     {
       "source": "action-tracker",
+      "target": "amirul",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "ventris-meeting-15-june-2026",
       "target": "fazli-ridzuan",
       "type": "wikilink",
       "context": ""
@@ -512,20 +526,32 @@
       "context": ""
     },
     {
-      "source": "action-tracker",
-      "target": "luqman",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "weekly-sync-21-june-2026",
-      "target": "irsyad-danish",
+      "source": "certava-overview",
+      "target": "sayf",
       "type": "wikilink",
       "context": ""
     },
     {
       "source": "certava-overview",
-      "target": "irsyad-danish",
+      "target": "fazli-ridzuan",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "ventris-meeting-15-june-2026",
+      "target": "ventris",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "certava-overview",
+      "target": "certava-company",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "certava-overview",
+      "target": "luqman",
       "type": "wikilink",
       "context": ""
     },
@@ -536,80 +562,8 @@
       "context": ""
     },
     {
-      "source": "certava-overview",
-      "target": "fazli-ridzuan",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "weekly-sync-21-june-2026",
-      "target": "fazli-ridzuan",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "certava-overview",
-      "target": "luqman",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "weekly-sync-21-june-2026",
-      "target": "luqman",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "certava-overview",
-      "target": "sayf",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
       "source": "weekly-sync-21-june-2026",
       "target": "sayf",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "action-tracker",
-      "target": "certava-company",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "certava-overview",
-      "target": "scorpion",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "ventris-meeting-15-june-2026",
-      "target": "ventris",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "action-tracker",
-      "target": "ventris",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "action-tracker",
-      "target": "amirul",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "ventris-meeting-15-june-2026",
-      "target": "irsyad-danish",
-      "type": "wikilink",
-      "context": ""
-    },
-    {
-      "source": "action-tracker",
-      "target": "irsyad-danish",
       "type": "wikilink",
       "context": ""
     },
@@ -620,8 +574,14 @@
       "context": ""
     },
     {
+      "source": "ventris-meeting-15-june-2026",
+      "target": "irsyad-danish",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
       "source": "certava-overview",
-      "target": "certava-company",
+      "target": "ventris",
       "type": "wikilink",
       "context": ""
     },
@@ -632,8 +592,62 @@
       "context": ""
     },
     {
-      "source": "ventris-meeting-15-june-2026",
+      "source": "weekly-sync-21-june-2026",
       "target": "fazli-ridzuan",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "weekly-sync-21-june-2026",
+      "target": "luqman",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "certava-overview",
+      "target": "scorpion",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "action-tracker",
+      "target": "certava-company",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "action-tracker",
+      "target": "fazli-ridzuan",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "action-tracker",
+      "target": "luqman",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "certava-overview",
+      "target": "irsyad-danish",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "certava-overview",
+      "target": "amirul",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "action-tracker",
+      "target": "ventris",
+      "type": "wikilink",
+      "context": ""
+    },
+    {
+      "source": "weekly-sync-21-june-2026",
+      "target": "ventris",
       "type": "wikilink",
       "context": ""
     }
@@ -656,6 +670,142 @@
   "doctor": {},
   "artifacts": [],
   "logs": [
+    {
+      "ts": "2026-07-01T07:25:36Z",
+      "source": "export",
+      "stage": "deployed",
+      "slug": null,
+      "detail": "Dashboard refreshed \u2014 16 pages, 27 links",
+      "level": "info"
+    },
+    {
+      "ts": "2026-07-01T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "weekly-sync-21-june-2026",
+      "detail": "Certava Team Introduction & Weekly Sync (21 June 2026)",
+      "level": "info"
+    },
+    {
+      "ts": "2026-07-01T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "ventris",
+      "detail": "Ventris",
+      "level": "info"
+    },
+    {
+      "ts": "2026-07-01T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "cradle-milestone",
+      "detail": "Certava Cradle Grant \u2014 Milestone Structure",
+      "level": "info"
+    },
+    {
+      "ts": "2026-07-01T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "irsyad-danish",
+      "detail": "Irsyad Danish",
+      "level": "info"
+    },
+    {
+      "ts": "2026-07-01T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "certava-company",
+      "detail": "Certava",
+      "level": "info"
+    },
+    {
+      "ts": "2026-07-01T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "fazli-ridzuan",
+      "detail": "Fazli Ridzuan",
+      "level": "info"
+    },
+    {
+      "ts": "2026-07-01T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "scorpion",
+      "detail": "Scorpion / Scorpio",
+      "level": "info"
+    },
+    {
+      "ts": "2026-07-01T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "rina",
+      "detail": "Rina (AL Pine)",
+      "level": "info"
+    },
+    {
+      "ts": "2026-07-01T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "ventris-meeting-15-june-2026",
+      "detail": "Minutes of Meeting \u2014 Ventris Legal Register Pilot (15 June 2026)",
+      "level": "info"
+    },
+    {
+      "ts": "2026-07-01T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "sayf",
+      "detail": "Sayf",
+      "level": "info"
+    },
+    {
+      "ts": "2026-07-01T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "amirul",
+      "detail": "Amirul",
+      "level": "info"
+    },
+    {
+      "ts": "2026-07-01T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "al-pine-meeting-16-june-2026",
+      "detail": "Minutes of Meeting \u2014 AL Pine Pilot Discussion with Rina (16 June 2026)",
+      "level": "info"
+    },
+    {
+      "ts": "2026-07-01T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "action-tracker",
+      "detail": "Certava Action Tracker \u2014 Weekly Minutes",
+      "level": "info"
+    },
+    {
+      "ts": "2026-07-01T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "luqman",
+      "detail": "Luqman (Lokman)",
+      "level": "info"
+    },
+    {
+      "ts": "2026-07-01T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "certava-overview",
+      "detail": "Certava Platform Overview",
+      "level": "info"
+    },
+    {
+      "ts": "2026-07-01T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "pipeline-test-2026-07-01",
+      "detail": "Pipeline Test 2026 07 01",
+      "level": "info"
+    },
     {
       "ts": "2026-06-28T03:00:21Z",
       "source": "export",
