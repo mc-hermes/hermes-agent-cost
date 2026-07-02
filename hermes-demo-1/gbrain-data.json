@@ -1,0 +1,190 @@
+{
+  "updated_at": "2026-07-02T03:49:35Z",
+  "summary": {
+    "page_count": 5,
+    "people_count": 1,
+    "company_count": 1,
+    "artifact_count": 0,
+    "total_links": 2,
+    "outbound_count": 2,
+    "inbound_count": 2,
+    "graph_coverage": "20.0% of pages have inbound links",
+    "concept_count": 1,
+    "meeting_count": 1,
+    "person_count": 1,
+    "newsletter_count": 0,
+    "video_count": 0,
+    "article_count": 1,
+    "bookmark_count": 0,
+    "quote_count": 0,
+    "dataset_count": 0,
+    "digest_count": 0
+  },
+  "pages": [
+    {
+      "slug": "articles/why-every-smb-needs-second-brain",
+      "title": "Why Every SMB Needs a Second Brain",
+      "type": "article",
+      "updated": "",
+      "body": "# Why Every SMB Needs a Second Brain\n\n## The Problem\n\nSmall and medium businesses run on institutional knowledge \u2014 the stuff in people's heads, buried in email threads, scattered across chat tools. When someone leaves, the knowledge leaves with them. When you need to recall a client detail from 6 months ago, you're searching 3 different apps.\n\n## The Solution\n\nA second brain that:\n\n- **Ingests from email** \u2014 zero behavior change required\n- **Connects everything** \u2014 people, companies, meetings, decisions, all linked\n- **Surfaces patterns** \u2014 the knowledge graph shows connections you'd never see in a folder\n- **Survives turnover** \u2014 when someone leaves, their knowledge stays\n\n## The gbrain Advantage\n\nMost knowledge management tools fail because they ask people to change how they work. gbrain doesn't \u2014 it plugs into the one tool everyone already uses: email.\n\nForward a meeting note. BCC the brain on a client email. Send yourself a quick thought. The pipeline handles the rest.\n\n## Real Results\n\nCompanies using gbrain report:\n\n- **60% less time** searching for information\n- **Zero onboarding** for the email pipeline \u2014 it's already in their workflow\n- **Complete context** before every client call \u2014 open the dashboard, search the name, everything's there\n\n## Getting Started\n\n1. Set up your workspace (15 minutes)\n2. Configure your email address (5 minutes)\n3. Start forwarding \u2014 the brain builds itself",
+      "tags": [
+        "hermes-demo-1"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "companies/startupxyz-demo",
+      "title": "StartupXYZ",
+      "type": "company",
+      "updated": "",
+      "body": "# StartupXYZ\n\n**Industry:** Fintech (B2B payments infrastructure)\n**HQ:** Singapore\n**Size:** 35 employees, Series A\n**Founded:** 2023\n\n**Key people:** [[Alex Chen]] (CTO)\n\n**Why they matter:** Early-stage fintech exploring AI adoption. Perfect candidate for Maloha Coast's AI consulting services \u2014 they have the engineering talent but need guidance on AI strategy and implementation.\n\n**Opportunity:** Demo the gbrain email-to-dashboard pipeline as an internal knowledge management solution. If the CTO sees value, this opens a consulting engagement for broader AI adoption.",
+      "tags": [
+        "hermes-demo-1"
+      ],
+      "links_out": [
+        {
+          "to": "people/alex-chen-demo",
+          "type": "wikilink",
+          "text": "Alex Chen"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
+      "inbound_count": 0
+    },
+    {
+      "slug": "concepts/email-to-brain-pipeline",
+      "title": "The Email-to-Brain Pipeline",
+      "type": "concept",
+      "updated": "",
+      "body": "# The Email-to-Brain Pipeline\n\n## What It Is\n\nA fully automated system that turns emails into a searchable knowledge graph. Send an email \u2192 it appears in your gbrain dashboard within 2 minutes.\n\n## How It Works\n\n1. **Send** an email to your workspace address (e.g., `info+hermes@malohacoast.com`)\n2. **Pipeline polls** Gmail every 2 minutes via the watchdog\n3. **Content is extracted** \u2014 cleaned of email noise, classified by type (meeting, article, bookmark, newsletter)\n4. **Entities are detected** \u2014 people, companies, and concepts mentioned in the content get their own pages\n5. **Graph is wired** \u2014 wikilinks connect everything into a knowledge graph\n6. **Dashboard updates** \u2014 the gbrain dashboard refreshes with the new content\n\n## Why It Matters\n\nEmail is the universal inbox. Everyone uses it. The pipeline removes friction entirely \u2014 you don't need to open a new app, learn a new interface, or change your workflow. Just forward an email and your second brain updates itself.\n\n## Key Features\n\n- **2-minute turnaround** from send to dashboard\n- **Entity extraction** \u2014 people and companies auto-detected\n- **Tag routing** \u2014 `+hermes`, `+zaim`, `+certava` prefixes route to different dashboards\n- **Dedup protection** \u2014 same email never ingested twice\n- **Full-text search** \u2014 every word in every email is searchable",
+      "tags": [
+        "hermes-demo-1"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "meetings/demo-gbrain-pipeline-showcase",
+      "title": "Demo Meeting \u2014 gbrain Pipeline Showcase",
+      "type": "meeting",
+      "updated": "",
+      "body": "# Demo Meeting \u2014 gbrain Pipeline Showcase\n\n**Date:** 2026-07-02\n**Attendees:** [[Alex Chen]] (StartupXYZ), Sayf (Maloha Coast)\n**Duration:** 30 minutes\n\n## Agenda\n\n1. Walk through the gbrain architecture\n2. Live demo: send an email \u2192 watch it appear in the dashboard\n3. Discuss StartupXYZ's knowledge management needs\n4. Explore integration possibilities\n\n## Key Discussion Points\n\n- **Alex's pain point:** Engineering team documentation scattered across Slack, Notion, and email. No single source of truth.\n- **Sayf's demo:** Showed the email pipeline in action \u2014 sent a meeting note from phone, it appeared in the dashboard in under 2 minutes.\n- **Alex's reaction:** \"This is exactly what we need. The email entry point means zero adoption friction.\"\n\n## Action Items\n\n- [ ] Send Alex the gbrain setup guide\n- [ ] Schedule follow-up with StartupXYZ's engineering lead\n- [ ] Prepare a scoping document for pilot deployment\n\n## Next Steps\n\nIf StartupXYZ moves forward, this would be a 2-week pilot:\n- Week 1: Set up gbrain instance, configure email pipeline, train team\n- Week 2: Migrate existing docs, integrate with Slack, iterate on dashboard",
+      "tags": [
+        "hermes-demo-1"
+      ],
+      "links_out": [
+        {
+          "to": "people/alex-chen-demo",
+          "type": "wikilink",
+          "text": "Alex Chen"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
+      "inbound_count": 0
+    },
+    {
+      "slug": "people/alex-chen-demo",
+      "title": "Alex Chen",
+      "type": "person",
+      "updated": "",
+      "body": "# Alex Chen\n\n**Role:** CTO at StartupXYZ, an early-stage fintech in Singapore.\n\n**Background:** 12 years in distributed systems, previously at Grab and Stripe. Looking to adopt AI for internal developer tools.\n\n**Key interests:**\n- AI-assisted code review\n- Knowledge management for engineering teams\n- gbrain for team documentation\n\n**Last contact:** Q3 2026 \u2014 requested a demo of the gbrain pipeline.",
+      "tags": [
+        "hermes-demo-1"
+      ],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "companies/startupxyz-demo",
+          "type": "wikilink",
+          "text": "Alex Chen"
+        },
+        {
+          "from": "meetings/demo-gbrain-pipeline-showcase",
+          "type": "wikilink",
+          "text": "Alex Chen"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 2
+    }
+  ],
+  "graph_links": [
+    {
+      "source": "companies/startupxyz-demo",
+      "target": "people/alex-chen-demo",
+      "type": "wikilink"
+    },
+    {
+      "source": "meetings/demo-gbrain-pipeline-showcase",
+      "target": "people/alex-chen-demo",
+      "type": "wikilink"
+    }
+  ],
+  "entities": {
+    "people": [
+      "people/alex-chen-demo"
+    ],
+    "companies": [
+      "companies/startupxyz-demo"
+    ]
+  },
+  "doctor": {},
+  "artifacts": [],
+  "logs": [
+    {
+      "ts": "2026-07-02T03:49:35Z",
+      "source": "export",
+      "stage": "deployed",
+      "slug": null,
+      "detail": "Dashboard refreshed \u2014 5 pages, 2 links",
+      "level": "info"
+    },
+    {
+      "ts": "2026-07-02T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "articles/why-every-smb-needs-second-brain",
+      "detail": "Why Every SMB Needs a Second Brain",
+      "level": "info"
+    },
+    {
+      "ts": "2026-07-02T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "companies/startupxyz-demo",
+      "detail": "StartupXYZ",
+      "level": "info"
+    },
+    {
+      "ts": "2026-07-02T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "concepts/email-to-brain-pipeline",
+      "detail": "The Email-to-Brain Pipeline",
+      "level": "info"
+    },
+    {
+      "ts": "2026-07-02T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "meetings/demo-gbrain-pipeline-showcase",
+      "detail": "Demo Meeting \u2014 gbrain Pipeline Showcase",
+      "level": "info"
+    },
+    {
+      "ts": "2026-07-02T00:00:00Z",
+      "source": "page",
+      "stage": "updated",
+      "slug": "people/alex-chen-demo",
+      "detail": "Alex Chen",
+      "level": "info"
+    }
+  ]
+}
