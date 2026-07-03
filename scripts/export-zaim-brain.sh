@@ -29,6 +29,9 @@ gbrain list 2>&1 > /tmp/gbrain-list.tsv
 echo "       $(wc -l < /tmp/gbrain-list.tsv) pages listed"
 
 # Step 3: Filter by tag, build Zaim-scoped data, and write JSON
+# Keep entity rendering compatible with the main dashboard's workspace pattern.
+# Zaim uses the same pending-review / inbox architecture as Certava; this export
+# only scopes the already-approved brain to Zaim-tagged pages.
 echo "[3/4] Filtering by tag '$TAG'..."
 python3 << PYEOF
 """
