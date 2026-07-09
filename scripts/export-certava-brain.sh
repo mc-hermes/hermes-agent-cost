@@ -178,6 +178,36 @@ for source, target in link_set:
     if source in certava_slugs and target in certava_slugs:
         backlinks[target].append({"from": str(source), "type": "wikilink"})
 
+def smart_truncate(body, max_total=3000, transcript_snippet=200):
+    """Keep structured content intact; only truncate the raw transcript section."""
+    # Split at '## Raw Transcript' or '## Transcript' heading
+    transcript_patterns = [
+        r'\n## Raw Transcript\b',
+        r'\n## Transcript\b',
+        r'\n#+ Transcript\b',
+        r'\n#+ Raw Transcript\b',
+    ]
+    split_idx = len(body)
+    for pat in transcript_patterns:
+        m = re.search(pat, body)
+        if m:
+            split_idx = m.start()
+            break
+
+    if split_idx < len(body):
+        # Found a transcript section — keep everything before it, snippet after
+        pre = body[:split_idx].rstrip()
+        trans = body[split_idx:].lstrip()
+        snippet = trans[:transcript_snippet]
+        if len(trans) > transcript_snippet:
+            snippet += '\n\n*… transcript truncated for dashboard — view full source in gbrain *'
+        return pre + '\n\n' + snippet
+
+    # No transcript section — cap at max_total
+    if len(body) > max_total:
+        return body[:max_total] + '\n\n*… content truncated — view full source in gbrain *'
+    return body
+
 pages = []
 for p in certava_pages:
     pages.append({
@@ -185,7 +215,7 @@ for p in certava_pages:
         "title": p['title'],
         "type": p['type'],
         "updated": p.get('updated', ''),
-        "body": p['body'][:500],  # Truncate for dashboard
+        "body": smart_truncate(p['body']),
         "tags": p.get('tags', []),
         "links_out": links_out.get(p['slug'], []),
         "backlinks": backlinks.get(p['slug'], []),
