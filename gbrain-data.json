@@ -1,27 +1,27 @@
 {
-  "updated_at": "2026-07-09T00:36:56Z",
+  "updated_at": "2026-07-09T00:41:38Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
     "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 423,
+    "page_count": 424,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "40.7% of pages have inbound links",
+    "graph_coverage": "40.6% of pages have inbound links",
     "entity_links": "Coverage \u2014 55 people, 39 companies indexed",
     "concept_count": 158,
     "meeting_count": 21,
     "person_count": 55,
     "company_count": 39,
-    "newsletter_count": 92,
+    "newsletter_count": 93,
     "video_count": 0,
     "article_count": 21,
     "bookmark_count": 31,
     "quote_count": 0,
     "dataset_count": 4,
     "digest_count": 2,
-    "total_links": 483,
-    "outbound_count": 600,
-    "inbound_count": 554,
+    "total_links": 486,
+    "outbound_count": 603,
+    "inbound_count": 557,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -2988,6 +2988,11 @@
           "text": "System Design One"
         },
         {
+          "from": "newsletters/tale-of-two-young-software-engineers-2026-07-02",
+          "type": "wikilink",
+          "text": "System Design One"
+        },
+        {
           "from": "newsletters/vm-deep-dive-system-design-2026-05-25",
           "type": "wikilink",
           "text": "System Design One"
@@ -3004,7 +3009,7 @@
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 12
+      "inbound_count": 13
     },
     {
       "slug": "companies/thompson-legal",
@@ -5602,10 +5607,15 @@
           "from": "concepts/msg_19f210172996e3b4",
           "type": "wikilink",
           "text": "Simple Path to System Design"
+        },
+        {
+          "from": "newsletters/tale-of-two-young-software-engineers-2026-07-02",
+          "type": "wikilink",
+          "text": "Simple Path to System Design"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "concepts/skills-inventory",
@@ -9576,6 +9586,36 @@
       "inbound_count": 0
     },
     {
+      "slug": "newsletters/tale-of-two-young-software-engineers-2026-07-02",
+      "title": "Tale of Two Young Software Engineers",
+      "type": "newsletter",
+      "updated": "",
+      "body": "**Source:** Self-forward from sayfcodes@gmail.com (Substack newsletter: System Design One)\n**Source URI:** gmail://msg_19f210172996e3b4\n**Ingested:** 2026-07-02T21:03:00Z\n**Provenance:** Forwarded by Sayf Codes to info+hermes@malohacoast.com on 2026-07-02\n\n# Tale of Two Young Software Engineers\n\n**Author:** Neo Kim (System Design One / Substack)\n**Date:** June 30, 2026\n**Original Subject:** Tale of Two Young Software Engineers\n\n> *The doors to the Simple Path to System Design (2026 Q3 Edition) are closing tomorrow.*\n\nA promotional newsletter from Neo Kim of System Design One, using a narrative comparing two software engineers \u2014 Sarah (stuck, no direction) and Daniel (followed a systematic roadmap) \u2014 to pitch the Simple Path to System Design course.\n\n## Key Story\n\n- **Engineer #1 (Sarah):** Switched between YouTube videos & blogs, bookmarked GitHub repos, skipped difficult topics. After a year, still designing without confidence.\n- **Engineer #2 (Daniel):** Followed the Simple Path to System Design roadmap. Understood concepts in 3 months that once felt impossible. Built a strong foundation.\n\n## The Pitch\n\nThe *Simple Path to System Design (2026 Q3 Edition)* is described as a Google Sheet compiling 3 years of newsletter case studies. Pricing:\n- $124.50/year ($10.38/month, $0.34/day)\n- 2 months free for new subscribers\n- Includes: API Design Playbook, Cracking the Code Review (15 Mega Prompts), 15 Leetcode Patterns, The 2-Minute Email (GPT Tool)\n\n**NOTE:** Neo Kim states: *\"If you have read all my premium newsletters, you'll have to determine whether it's worth buying or not.\"*\n\n## Relevance to Maloha Coast (Hermes Demo)\n\nThis is illustrative of the Substack/email newsletter marketing pattern \u2014 narrative-driven course promotion with urgency tactics (\"doors close tomorrow\"). Good reference for understanding the creator economy funnel.\n\n## People Mentioned\n\n- [[Neo Kim]] \u2014 author, System Design One founder\n- Sarah (fictional) \u2014 illustrative engineer example\n- Daniel (fictional) \u2014 illustrative engineer example\n\n## Companies/Publications\n\n- [[System Design One]] \u2014 Substack newsletter by Neo Kim\n\n## Concepts\n\n- [[Simple Path to System Design]] \u2014 paid course/Q3 edition\n\n## Links\n\n- Simple Path to System Design: https://substack.com/redirect/1d4a248b-04f3-4a2d-81ee-3a5b5892e970",
+      "tags": [
+        "hermes-demo-1"
+      ],
+      "links_out": [
+        {
+          "to": "people/neo-kim",
+          "type": "wikilink",
+          "text": "Neo Kim"
+        },
+        {
+          "to": "companies/system-design-one",
+          "type": "wikilink",
+          "text": "System Design One"
+        },
+        {
+          "to": "concepts/simple-path-to-system-design",
+          "type": "wikilink",
+          "text": "Simple Path to System Design"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 3,
+      "inbound_count": 0
+    },
+    {
       "slug": "newsletters/three-features-three-claudes-2026-06-11",
       "title": "Three Features Three Claudes 2026 06 11",
       "type": "newsletter",
@@ -10919,6 +10959,11 @@
           "text": "Neo Kim"
         },
         {
+          "from": "newsletters/tale-of-two-young-software-engineers-2026-07-02",
+          "type": "wikilink",
+          "text": "Neo Kim"
+        },
+        {
           "from": "newsletters/vm-deep-dive-system-design-2026-05-25",
           "type": "wikilink",
           "text": "Neo Kim"
@@ -10940,7 +10985,7 @@
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 13
+      "inbound_count": 14
     },
     {
       "slug": "people/nick-milo",
@@ -14083,6 +14128,21 @@
     {
       "source": "newsletters/openrouter-three-features-try-next-2026-06-18",
       "target": "companies/openrouter",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/tale-of-two-young-software-engineers-2026-07-02",
+      "target": "people/neo-kim",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/tale-of-two-young-software-engineers-2026-07-02",
+      "target": "companies/system-design-one",
+      "type": "wikilink"
+    },
+    {
+      "source": "newsletters/tale-of-two-young-software-engineers-2026-07-02",
+      "target": "concepts/simple-path-to-system-design",
       "type": "wikilink"
     },
     {
