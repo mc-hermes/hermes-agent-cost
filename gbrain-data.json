@@ -1,27 +1,27 @@
 {
-  "updated_at": "2026-06-29T10:00:19Z",
+  "updated_at": "2026-07-09T00:36:56Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
     "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 416,
+    "page_count": 423,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "40.9% of pages have inbound links",
-    "entity_links": "Coverage \u2014 54 people, 38 companies indexed",
-    "concept_count": 156,
-    "meeting_count": 20,
-    "person_count": 54,
-    "company_count": 38,
-    "newsletter_count": 91,
+    "graph_coverage": "40.7% of pages have inbound links",
+    "entity_links": "Coverage \u2014 55 people, 39 companies indexed",
+    "concept_count": 158,
+    "meeting_count": 21,
+    "person_count": 55,
+    "company_count": 39,
+    "newsletter_count": 92,
     "video_count": 0,
-    "article_count": 20,
+    "article_count": 21,
     "bookmark_count": 31,
     "quote_count": 0,
     "dataset_count": 4,
     "digest_count": 2,
-    "total_links": 486,
-    "outbound_count": 607,
-    "inbound_count": 561,
+    "total_links": 483,
+    "outbound_count": 600,
+    "inbound_count": 554,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -298,11 +298,6 @@
       "links_out": [],
       "backlinks": [
         {
-          "from": "companies/system-design-one",
-          "type": "wikilink",
-          "text": "The Anatomy of OpenClaw"
-        },
-        {
           "from": "concepts/clawhub",
           "type": "wikilink",
           "text": "The Anatomy of OpenClaw"
@@ -326,15 +321,10 @@
           "from": "digests/2026-06-29-business-brain-digest",
           "type": "wikilink",
           "text": "The Anatomy of OpenClaw"
-        },
-        {
-          "from": "people/neo-kim",
-          "type": "wikilink",
-          "text": "The Anatomy of OpenClaw"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 7
+      "inbound_count": 5
     },
     {
       "slug": "articles/every-level-claude-second-brain-2026-06-20",
@@ -549,6 +539,20 @@
         "hypervisor",
         "system-design",
         "virtualization"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
+      "slug": "articles/why-every-smb-needs-second-brain",
+      "title": "Why Every SMB Needs a Second Brain",
+      "type": "article",
+      "updated": "",
+      "body": "# Why Every SMB Needs a Second Brain\n\n## The Problem\n\nSmall and medium businesses run on institutional knowledge \u2014 the stuff in people's heads, buried in email threads, scattered across chat tools. When someone leaves, the knowledge leaves with them. When you need to recall a client detail from 6 months ago, you're searching 3 different apps.\n\n## The Solution\n\nA second brain that:\n\n- **Ingests from email** \u2014 zero behavior change required\n- **Connects everything** \u2014 people, companies, meetings, decisions, all linked\n- **Surfaces patterns** \u2014 the knowledge graph shows connections you'd never see in a folder\n- **Survives turnover** \u2014 when someone leaves, their knowledge stays\n\n## The gbrain Advantage\n\nMost knowledge management tools fail because they ask people to change how they work. gbrain doesn't \u2014 it plugs into the one tool everyone already uses: email.\n\nForward a meeting note. BCC the brain on a client email. Send yourself a quick thought. The pipeline handles the rest.\n\n## Real Results\n\nCompanies using gbrain report:\n\n- **60% less time** searching for information\n- **Zero onboarding** for the email pipeline \u2014 it's already in their workflow\n- **Complete context** before every client call \u2014 open the dashboard, search the name, everything's there\n\n## Getting Started\n\n1. Set up your workspace (15 minutes)\n2. Configure your email address (5 minutes)\n3. Start forwarding \u2014 the brain builds itself",
+      "tags": [
+        "hermes-demo-1"
       ],
       "links_out": [],
       "backlinks": [],
@@ -2861,6 +2865,26 @@
       "inbound_count": 2
     },
     {
+      "slug": "companies/startupxyz-demo",
+      "title": "StartupXYZ",
+      "type": "company",
+      "updated": "",
+      "body": "# StartupXYZ\n\n**Industry:** Fintech (B2B payments infrastructure)\n**HQ:** Singapore\n**Size:** 35 employees, Series A\n**Founded:** 2023\n\n**Key people:** [[Alex Chen]] (CTO)\n\n**Why they matter:** Early-stage fintech exploring AI adoption. Perfect candidate for Maloha Coast's AI consulting services \u2014 they have the engineering talent but need guidance on AI strategy and implementation.\n\n**Opportunity:** Demo the gbrain email-to-dashboard pipeline as an internal knowledge management solution. If the CTO sees value, this opens a consulting engagement for broader AI adoption.",
+      "tags": [
+        "hermes-demo-1"
+      ],
+      "links_out": [
+        {
+          "to": "people/alex-chen-demo",
+          "type": "wikilink",
+          "text": "Alex Chen"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
+      "inbound_count": 0
+    },
+    {
       "slug": "companies/stripe",
       "title": "Stripe",
       "type": "company",
@@ -2908,46 +2932,21 @@
       "title": "System Design One",
       "type": "company",
       "updated": "",
-      "body": "# System Design One\n\n> Substack publication by [[Neo Kim]] covering real-world system architecture deep dives. Also known as \"The System Design Newsletter\".\n\n## In Maloha Coast Knowledge\n\n- Publication behind [[newsletters/msg-19ee23d6478fc08e]] \"The Secret Architecture Behind AI Data Centers\" (Issue #155) co-authored with [[Ashish Prajapati]]\n- Publication behind [[The Anatomy of OpenClaw]] (Issue #151)\n- Publication behind [[30 Core Agentic Concepts 2026 06 20]] \"30 Core Agentic Engineering Concepts, Explained Simply\" (Issue #154) co-authored with [[Paul Hoekstra]]\n\n## Related\n\n- [[Neo Kim]] \u2014 Creator and author\n- [[Ashish Prajapati]] \u2014 Guest co-author on Issue #155\n- [[Paul Hoekstra]] \u2014 Guest co-author on Issue #154\n- [[newsletters/msg-19ee23d6478fc08e]] \u2014 Issue #155 on AI infrastructure\n- [[30 Core Agentic Concepts 2026 06 20]] \u2014 Issue #154 on agentic engineering\n- [[The Anatomy of OpenClaw]] \u2014 Issue #151\n\n## Timeline\n\n- **Jun 2026** | Published Issue #151: \"The Anatomy of OpenClaw\". [Source: email forward]\n- **2026-06-17** | Published Issue #154: \"30 Core Agentic Engineering Concepts, Explained Simply\" (guest co-authored by Paul Hoekstra). Covered agentic engineering foundations, configuration, capability, orchestration, guardrails, and observability. [Source: gmail://msg_19ee2580f5fe7903]\n- **2026-06-19** | Published Issue #155: \"The Secret Architecture Behind AI Data Centers\" (co-authored with Ashish Prajapati). [Source: gmail://msg_19ee23d6478fc08e]",
+      "body": "# System Design One\n\nCompany mentioned in concepts/msg_19f210172996e3b4.",
       "tags": [
+        "hermes-demo-1",
         "newsletter",
         "publication",
         "substack",
         "system-design"
       ],
-      "links_out": [
-        {
-          "to": "people/neo-kim",
-          "type": "wikilink",
-          "text": "Neo Kim"
-        },
-        {
-          "to": "newsletters/msg-19ee23d6478fc08e",
-          "type": "wikilink",
-          "text": "newsletters/msg-19ee23d6478fc08e"
-        },
-        {
-          "to": "people/ashish-prajapati",
-          "type": "wikilink",
-          "text": "Ashish Prajapati"
-        },
-        {
-          "to": "articles/anatomy-of-openclaw-2026-06-08",
-          "type": "wikilink",
-          "text": "The Anatomy of OpenClaw"
-        },
-        {
-          "to": "newsletters/30-core-agentic-concepts-2026-06-20",
-          "type": "wikilink",
-          "text": "30 Core Agentic Concepts 2026 06 20"
-        },
-        {
-          "to": "people/paul-hoekstra",
-          "type": "wikilink",
-          "text": "Paul Hoekstra"
-        }
-      ],
+      "links_out": [],
       "backlinks": [
+        {
+          "from": "concepts/msg_19f210172996e3b4",
+          "type": "wikilink",
+          "text": "System Design One"
+        },
         {
           "from": "concepts/openclaw",
           "type": "wikilink",
@@ -3002,14 +3001,9 @@
           "from": "people/ashish",
           "type": "wikilink",
           "text": "companies/system-design-one"
-        },
-        {
-          "from": "people/neo-kim",
-          "type": "wikilink",
-          "text": "System Design One"
         }
       ],
-      "outbound_count": 6,
+      "outbound_count": 0,
       "inbound_count": 12
     },
     {
@@ -4231,6 +4225,20 @@
       "inbound_count": 1
     },
     {
+      "slug": "concepts/email-to-brain-pipeline",
+      "title": "The Email-to-Brain Pipeline",
+      "type": "concept",
+      "updated": "",
+      "body": "# The Email-to-Brain Pipeline\n\n## What It Is\n\nA fully automated system that turns emails into a searchable knowledge graph. Send an email \u2192 it appears in your gbrain dashboard within 2 minutes.\n\n## How It Works\n\n1. **Send** an email to your workspace address (e.g., `info+hermes@malohacoast.com`)\n2. **Pipeline polls** Gmail every 2 minutes via the watchdog\n3. **Content is extracted** \u2014 cleaned of email noise, classified by type (meeting, article, bookmark, newsletter)\n4. **Entities are detected** \u2014 people, companies, and concepts mentioned in the content get their own pages\n5. **Graph is wired** \u2014 wikilinks connect everything into a knowledge graph\n6. **Dashboard updates** \u2014 the gbrain dashboard refreshes with the new content\n\n## Why It Matters\n\nEmail is the universal inbox. Everyone uses it. The pipeline removes friction entirely \u2014 you don't need to open a new app, learn a new interface, or change your workflow. Just forward an email and your second brain updates itself.\n\n## Key Features\n\n- **2-minute turnaround** from send to dashboard\n- **Entity extraction** \u2014 people and companies auto-detected\n- **Tag routing** \u2014 `+hermes`, `+zaim`, `+certava` prefixes route to different dashboards\n- **Dedup protection** \u2014 same email never ingested twice\n- **Full-text search** \u2014 every word in every email is searchable",
+      "tags": [
+        "hermes-demo-1"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
+    },
+    {
       "slug": "concepts/embedding-cost-projection",
       "title": "Embedding Cost Projection",
       "type": "concept",
@@ -4958,6 +4966,36 @@
       "inbound_count": 2
     },
     {
+      "slug": "concepts/msg_19f210172996e3b4",
+      "title": "concepts/msg_19f210172996e3b4",
+      "type": "newsletter",
+      "updated": "",
+      "body": "**Source:** Self-forward from sayfcodes@gmail.com (Substack newsletter: System Design One)\n**Source URI:** gmail://msg_19f210172996e3b4\n**Ingested:** 2026-07-02T21:03:00Z\n**Provenance:** Forwarded by Sayf Codes to info+hermes@malohacoast.com on 2026-07-02\n\n# Tale of Two Young Software Engineers\n\n**Author:** Neo Kim (System Design One / Substack)\n**Date:** June 30, 2026\n**Original Subject:** Tale of Two Young Software Engineers\n\n> *The doors to the Simple Path to System Design (2026 Q3 Edition) are closing tomorrow.*\n\nA promotional newsletter from Neo Kim of System Design One, using a narrative comparing two software engineers \u2014 Sarah (stuck, no direction) and Daniel (followed a systematic roadmap) \u2014 to pitch the Simple Path to System Design course.\n\n## Key Story\n\n- **Engineer #1 (Sarah):** Switched between YouTube videos & blogs, bookmarked GitHub repos, skipped difficult topics. After a year, still designing without confidence.\n- **Engineer #2 (Daniel):** Followed the Simple Path to System Design roadmap. Understood concepts in 3 months that once felt impossible. Built a strong foundation.\n\n## The Pitch\n\nThe *Simple Path to System Design (2026 Q3 Edition)* is described as a Google Sheet compiling 3 years of newsletter case studies. Pricing:\n- $124.50/year ($10.38/month, $0.34/day)\n- 2 months free for new subscribers\n- Includes: API Design Playbook, Cracking the Code Review (15 Mega Prompts), 15 Leetcode Patterns, The 2-Minute Email (GPT Tool)\n\n**NOTE:** Neo Kim states: *\"If you have read all my premium newsletters, you'll have to determine whether it's worth buying or not.\"*\n\n## Relevance to Maloha Coast (Hermes Demo)\n\nThis is illustrative of the Substack/email newsletter marketing pattern \u2014 narrative-driven course promotion with urgency tactics (\"doors close tomorrow\"). Good reference for understanding the creator economy funnel.\n\n## People Mentioned\n\n- [[Neo Kim]] \u2014 author, System Design One founder\n- Sarah (fictional) \u2014 illustrative engineer example\n- Daniel (fictional) \u2014 illustrative engineer example\n\n## Companies/Publications\n\n- [[System Design One]] \u2014 Substack newsletter by Neo Kim\n\n## Concepts\n\n- [[Simple Path to System Design]] \u2014 paid course/Q3 edition\n\n## Links\n\n- Simple Path to System Design: https://substack.com/redirect/1d4a248b-04f3-4a2d-81ee-3a5b5892e970",
+      "tags": [
+        "hermes-demo-1"
+      ],
+      "links_out": [
+        {
+          "to": "people/neo-kim",
+          "type": "wikilink",
+          "text": "Neo Kim"
+        },
+        {
+          "to": "companies/system-design-one",
+          "type": "wikilink",
+          "text": "System Design One"
+        },
+        {
+          "to": "concepts/simple-path-to-system-design",
+          "type": "wikilink",
+          "text": "Simple Path to System Design"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 3,
+      "inbound_count": 0
+    },
+    {
       "slug": "concepts/nate-herk-technique-question-2026-06-09",
       "title": "Nate Herk Technique Question 2026 06 09",
       "type": "concept",
@@ -5548,6 +5586,26 @@
       ],
       "outbound_count": 2,
       "inbound_count": 5
+    },
+    {
+      "slug": "concepts/simple-path-to-system-design",
+      "title": "Simple Path to System Design",
+      "type": "concept",
+      "updated": "",
+      "body": "# Simple Path to System Design\n\nConcept referenced in concepts/msg_19f210172996e3b4.",
+      "tags": [
+        "hermes-demo-1"
+      ],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "concepts/msg_19f210172996e3b4",
+          "type": "wikilink",
+          "text": "Simple Path to System Design"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 1
     },
     {
       "slug": "concepts/skills-inventory",
@@ -7531,6 +7589,26 @@
       "inbound_count": 0
     },
     {
+      "slug": "meetings/demo-gbrain-pipeline-showcase",
+      "title": "Demo Meeting \u2014 gbrain Pipeline Showcase",
+      "type": "meeting",
+      "updated": "",
+      "body": "# Demo Meeting \u2014 gbrain Pipeline Showcase\n\n**Date:** 2026-07-02\n**Attendees:** [[Alex Chen]] (StartupXYZ), Sayf (Maloha Coast)\n**Duration:** 30 minutes\n\n## Agenda\n\n1. Walk through the gbrain architecture\n2. Live demo: send an email \u2192 watch it appear in the dashboard\n3. Discuss StartupXYZ's knowledge management needs\n4. Explore integration possibilities\n\n## Key Discussion Points\n\n- **Alex's pain point:** Engineering team documentation scattered across Slack, Notion, and email. No single source of truth.\n- **Sayf's demo:** Showed the email pipeline in action \u2014 sent a meeting note from phone, it appeared in the dashboard in under 2 minutes.\n- **Alex's reaction:** \"This is exactly what we need. The email entry point means zero adoption friction.\"\n\n## Action Items\n\n- [ ] Send Alex the gbrain setup guide\n- [ ] Schedule follow-up with StartupXYZ's engineering lead\n- [ ] Prepare a scoping document for pilot deployment\n\n## Next Steps\n\nIf StartupXYZ moves forward, this would be a 2-week pilot:\n- Week 1: Set up gbrain instance, configure email pipeline, train team\n- Week 2: Migrate existing docs, integrate with Slack, iterate on dashboard",
+      "tags": [
+        "hermes-demo-1"
+      ],
+      "links_out": [
+        {
+          "to": "people/alex-chen-demo",
+          "type": "wikilink",
+          "text": "Alex Chen"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 1,
+      "inbound_count": 0
+    },
+    {
       "slug": "meetings/msg-19ecaa895ccb88af",
       "title": "Sayf x Zaim \u2014 Jun 12, 2026",
       "type": "meeting",
@@ -7844,11 +7922,6 @@
           "text": "30 Core Agentic Concepts 2026 06 20"
         },
         {
-          "from": "companies/system-design-one",
-          "type": "wikilink",
-          "text": "30 Core Agentic Concepts 2026 06 20"
-        },
-        {
           "from": "concepts/claude-opus-47",
           "type": "wikilink",
           "text": "30 Core Agentic Concepts 2026 06 20"
@@ -7884,18 +7957,13 @@
           "text": "30 Core Agentic Concepts 2026 06 20"
         },
         {
-          "from": "people/neo-kim",
-          "type": "wikilink",
-          "text": "30 Core Agentic Concepts 2026 06 20"
-        },
-        {
           "from": "people/paul-hoekstra",
           "type": "wikilink",
           "text": "30 Core Agentic Concepts 2026 06 20"
         }
       ],
       "outbound_count": 9,
-      "inbound_count": 11
+      "inbound_count": 9
     },
     {
       "slug": "newsletters/30-core-agentic-engineering-concepts-2026-06-17",
@@ -8748,23 +8816,13 @@
       "links_out": [],
       "backlinks": [
         {
-          "from": "companies/system-design-one",
-          "type": "wikilink",
-          "text": "newsletters/msg-19ee23d6478fc08e"
-        },
-        {
           "from": "people/ashish-prajapati",
-          "type": "wikilink",
-          "text": "newsletters/msg-19ee23d6478fc08e"
-        },
-        {
-          "from": "people/neo-kim",
           "type": "wikilink",
           "text": "newsletters/msg-19ee23d6478fc08e"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 3
+      "inbound_count": 1
     },
     {
       "slug": "newsletters/msg-19ee2580f5fe7903",
@@ -9915,6 +9973,31 @@
       "inbound_count": 2
     },
     {
+      "slug": "people/alex-chen-demo",
+      "title": "Alex Chen",
+      "type": "person",
+      "updated": "",
+      "body": "# Alex Chen\n\n**Role:** CTO at StartupXYZ, an early-stage fintech in Singapore.\n\n**Background:** 12 years in distributed systems, previously at Grab and Stripe. Looking to adopt AI for internal developer tools.\n\n**Key interests:**\n- AI-assisted code review\n- Knowledge management for engineering teams\n- gbrain for team documentation\n\n**Last contact:** Q3 2026 \u2014 requested a demo of the gbrain pipeline.",
+      "tags": [
+        "hermes-demo-1"
+      ],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "companies/startupxyz-demo",
+          "type": "wikilink",
+          "text": "Alex Chen"
+        },
+        {
+          "from": "meetings/demo-gbrain-pipeline-showcase",
+          "type": "wikilink",
+          "text": "Alex Chen"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 2
+    },
+    {
       "slug": "people/andrej-karpathy",
       "title": "Andrej Karpathy",
       "type": "person",
@@ -9977,23 +10060,13 @@
       ],
       "backlinks": [
         {
-          "from": "companies/system-design-one",
-          "type": "wikilink",
-          "text": "Ashish Prajapati"
-        },
-        {
           "from": "concepts/ai-data-center-architecture-2026-06-20",
-          "type": "wikilink",
-          "text": "Ashish Prajapati"
-        },
-        {
-          "from": "people/neo-kim",
           "type": "wikilink",
           "text": "Ashish Prajapati"
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 3
+      "inbound_count": 1
     },
     {
       "slug": "people/ashish",
@@ -10792,51 +10865,21 @@
       "title": "Neo Kim",
       "type": "person",
       "updated": "",
-      "body": "# Neo Kim\n\n> Author of the System Design Newsletter (Substack publication). Writes deep-dive architecture analyses of real-world systems and agentic engineering concepts.\n\n## In Maloha Coast Knowledge\n\n- Referenced in [[The Anatomy of OpenClaw]] as the author of the System Design Newsletter (Issue #151).\n- Author of [[newsletters/msg-19ee23d6478fc08e]] \"The Secret Architecture Behind AI Data Centers\" (Issue #155) \u2014 a subscriber-only post about AI infrastructure covering data center physics, GPU architecture, memory hierarchy, and networking bottlenecks.\n- Author of [[30 Core Agentic Concepts 2026 06 20]] \"30 Core Agentic Engineering Concepts, Explained Simply\" (Issue #154) \u2014 co-authored with Paul Hoekstra.\n\n## Related\n\n- [[The Anatomy of OpenClaw]] \u2014 article forwarded by sayf with architectural details on OpenClaw\n- [[newsletters/msg-19ee23d6478fc08e]] \u2014 \"The Secret Architecture Behind AI Data Centers\" (Issue #155)\n- [[30 Core Agentic Concepts 2026 06 20]] \u2014 \"30 Core Agentic Engineering Concepts, Explained Simply\" (Issue #154)\n- [[Ashish Prajapati]] \u2014 co-author of Issue #155, AI infrastructure specialist\n- [[Paul Hoekstra]] \u2014 guest co-author of Issue #154, data engineer at Digital Power\n- [[System Design One]] \u2014 Neo Kim's Substack publication\n\n## Timeline\n\n- **Jun 2026** | Published \"The Anatomy of OpenClaw\" (Issue #151) about OpenClaw's architecture. [Source: email forward]\n- **2026-06-17** | Published \"30 Core Agentic Engineering Concepts, Explained Simply\" (Issue #154) with guest co-author Paul Hoekstra. Covered 30 concepts across foundations, configuration, capability, orchestration, guardrails, and observability. [Source: gmail://msg_19ee2580f5fe7903]\n- **2026-06-19** | Published \"The Secret Architecture Behind AI Data Centers\" (Issue #155) with Ashish Prajapati \u2014 a deep dive into AI infrastructure covering data center physics (power, cooling, space), GPU/CPU/DPU roles, memory hierarchy (HBM, RAM, SSD), tiered storage, leaf-spine networking topology, NVLink/InfiniBand/Ethernet interconnects, RDMA and GPUDirect. [Source: gmail://msg_19ee23d6478fc08e]",
+      "body": "# Neo Kim\n\nPerson mentioned in concepts/msg_19f210172996e3b4.",
       "tags": [
         "author",
+        "hermes-demo-1",
         "system-design"
       ],
-      "links_out": [
-        {
-          "to": "articles/anatomy-of-openclaw-2026-06-08",
-          "type": "wikilink",
-          "text": "The Anatomy of OpenClaw"
-        },
-        {
-          "to": "newsletters/msg-19ee23d6478fc08e",
-          "type": "wikilink",
-          "text": "newsletters/msg-19ee23d6478fc08e"
-        },
-        {
-          "to": "newsletters/30-core-agentic-concepts-2026-06-20",
-          "type": "wikilink",
-          "text": "30 Core Agentic Concepts 2026 06 20"
-        },
-        {
-          "to": "people/ashish-prajapati",
-          "type": "wikilink",
-          "text": "Ashish Prajapati"
-        },
-        {
-          "to": "people/paul-hoekstra",
-          "type": "wikilink",
-          "text": "Paul Hoekstra"
-        },
-        {
-          "to": "companies/system-design-one",
-          "type": "wikilink",
-          "text": "System Design One"
-        }
-      ],
+      "links_out": [],
       "backlinks": [
         {
-          "from": "companies/system-design-one",
+          "from": "concepts/ai-data-center-architecture-2026-06-20",
           "type": "wikilink",
           "text": "Neo Kim"
         },
         {
-          "from": "concepts/ai-data-center-architecture-2026-06-20",
+          "from": "concepts/msg_19f210172996e3b4",
           "type": "wikilink",
           "text": "Neo Kim"
         },
@@ -10896,7 +10939,7 @@
           "text": "Neo Kim"
         }
       ],
-      "outbound_count": 6,
+      "outbound_count": 0,
       "inbound_count": 13
     },
     {
@@ -10950,11 +10993,6 @@
           "text": "Paul Hoekstra"
         },
         {
-          "from": "companies/system-design-one",
-          "type": "wikilink",
-          "text": "Paul Hoekstra"
-        },
-        {
           "from": "concepts/pauls-pipeline",
           "type": "wikilink",
           "text": "paul-hoekstra"
@@ -10973,15 +11011,10 @@
           "from": "newsletters/agentic-engineering-concepts-2026-06-20-084511",
           "type": "wikilink",
           "text": "Paul Hoekstra"
-        },
-        {
-          "from": "people/neo-kim",
-          "type": "wikilink",
-          "text": "Paul Hoekstra"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 7
+      "inbound_count": 5
     },
     {
       "slug": "people/rachel-kim",
@@ -12488,38 +12521,13 @@
       "type": "wikilink"
     },
     {
+      "source": "companies/startupxyz-demo",
+      "target": "people/alex-chen-demo",
+      "type": "wikilink"
+    },
+    {
       "source": "companies/stripe",
       "target": "interactions/call-sarah-chen-2026-06-15",
-      "type": "wikilink"
-    },
-    {
-      "source": "companies/system-design-one",
-      "target": "people/neo-kim",
-      "type": "wikilink"
-    },
-    {
-      "source": "companies/system-design-one",
-      "target": "newsletters/msg-19ee23d6478fc08e",
-      "type": "wikilink"
-    },
-    {
-      "source": "companies/system-design-one",
-      "target": "people/ashish-prajapati",
-      "type": "wikilink"
-    },
-    {
-      "source": "companies/system-design-one",
-      "target": "articles/anatomy-of-openclaw-2026-06-08",
-      "type": "wikilink"
-    },
-    {
-      "source": "companies/system-design-one",
-      "target": "newsletters/30-core-agentic-concepts-2026-06-20",
-      "type": "wikilink"
-    },
-    {
-      "source": "companies/system-design-one",
-      "target": "people/paul-hoekstra",
       "type": "wikilink"
     },
     {
@@ -12960,6 +12968,21 @@
     {
       "source": "concepts/maloha-coast",
       "target": "brand/maloha-coast-brand-identity",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/msg_19f210172996e3b4",
+      "target": "people/neo-kim",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/msg_19f210172996e3b4",
+      "target": "companies/system-design-one",
+      "type": "wikilink"
+    },
+    {
+      "source": "concepts/msg_19f210172996e3b4",
+      "target": "concepts/simple-path-to-system-design",
       "type": "wikilink"
     },
     {
@@ -13753,6 +13776,11 @@
       "type": "wikilink"
     },
     {
+      "source": "meetings/demo-gbrain-pipeline-showcase",
+      "target": "people/alex-chen-demo",
+      "type": "wikilink"
+    },
+    {
       "source": "meetings/sayf-zaim-jun-12-2026-gemini",
       "target": "people/zaim-mohzani",
       "type": "wikilink"
@@ -14128,6 +14156,11 @@
       "type": "wikilink"
     },
     {
+      "source": "people/ashish-prajapati",
+      "target": "companies/system-design-one",
+      "type": "wikilink"
+    },
+    {
       "source": "people/ashish",
       "target": "newsletters/secret-architecture-ai-data-centers-2026-06-19",
       "type": "wikilink"
@@ -14203,23 +14236,8 @@
       "type": "wikilink"
     },
     {
-      "source": "people/neo-kim",
-      "target": "articles/anatomy-of-openclaw-2026-06-08",
-      "type": "wikilink"
-    },
-    {
-      "source": "people/neo-kim",
-      "target": "newsletters/msg-19ee23d6478fc08e",
-      "type": "wikilink"
-    },
-    {
-      "source": "people/neo-kim",
-      "target": "newsletters/30-core-agentic-concepts-2026-06-20",
-      "type": "wikilink"
-    },
-    {
-      "source": "people/neo-kim",
-      "target": "people/paul-hoekstra",
+      "source": "people/paul-hoekstra",
+      "target": "people/neo-kim",
       "type": "wikilink"
     },
     {
@@ -14365,6 +14383,7 @@
       "people/aisha-patel",
       "people/aisyah-humaira-wan-aziz",
       "people/aisyah-rahim",
+      "people/alex-chen-demo",
       "people/andrej-karpathy",
       "people/ashish",
       "people/ashish-prajapati",
@@ -14441,6 +14460,7 @@
       "companies/single-brain",
       "companies/single-grain",
       "companies/solo-satoshi",
+      "companies/startupxyz-demo",
       "companies/stripe",
       "companies/system-design-one",
       "companies/thompson-legal",
