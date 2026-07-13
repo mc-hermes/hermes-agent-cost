@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-07-09T00:41:38Z",
+  "updated_at": "2026-07-13T00:14:37Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
     "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 424,
+    "page_count": 428,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "40.6% of pages have inbound links",
-    "entity_links": "Coverage \u2014 55 people, 39 companies indexed",
-    "concept_count": 158,
+    "graph_coverage": "43.0% of pages have inbound links",
+    "entity_links": "Coverage \u2014 56 people, 40 companies indexed",
+    "concept_count": 160,
     "meeting_count": 21,
-    "person_count": 55,
-    "company_count": 39,
+    "person_count": 56,
+    "company_count": 40,
     "newsletter_count": 93,
     "video_count": 0,
     "article_count": 21,
@@ -19,9 +19,9 @@
     "quote_count": 0,
     "dataset_count": 4,
     "digest_count": 2,
-    "total_links": 486,
-    "outbound_count": 603,
-    "inbound_count": 557,
+    "total_links": 535,
+    "outbound_count": 657,
+    "inbound_count": 606,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -321,10 +321,15 @@
           "from": "digests/2026-06-29-business-brain-digest",
           "type": "wikilink",
           "text": "The Anatomy of OpenClaw"
+        },
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "The Anatomy of OpenClaw"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 5
+      "inbound_count": 6
     },
     {
       "slug": "articles/every-level-claude-second-brain-2026-06-20",
@@ -364,9 +369,15 @@
           "text": "Hermes Agent"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Hermes Assistant to Chief of Staff"
+        }
+      ],
       "outbound_count": 3,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "articles/how-virtual-machines-work-deep-dive-2026-05-25",
@@ -481,10 +492,15 @@
           "from": "digests/2026-06-15-business-brain-digest",
           "type": "wikilink",
           "text": "Nerdqaxe Revision 7 Launch"
+        },
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Nerdqaxe Revision 7 Launch"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "articles/secret-architecture-ai-data-centers-2026-06-19",
@@ -555,9 +571,15 @@
         "hermes-demo-1"
       ],
       "links_out": [],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Why Every SMB Needs a Second Brain"
+        }
+      ],
       "outbound_count": 0,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "articles/why-your-2026-career-goals-are-already-dead-2026-06-16",
@@ -961,9 +983,15 @@
         "sayf"
       ],
       "links_out": [],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "HumanLayer Live Launch"
+        }
+      ],
       "outbound_count": 0,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "bookmarks/humanlayer-live-launch-2026-06-19",
@@ -1572,6 +1600,11 @@
           "text": "AI Automation Society"
         },
         {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "AI Automation Society"
+        },
+        {
           "from": "newsletters/claude-second-brain-levels-2026-06-20",
           "type": "wikilink",
           "text": "AI Automation Society"
@@ -1588,7 +1621,7 @@
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 8
+      "inbound_count": 9
     },
     {
       "slug": "companies/ai-garage-weekly",
@@ -1709,6 +1742,11 @@
           "text": "Anthropic"
         },
         {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Anthropic"
+        },
+        {
           "from": "newsletters/ai-garage-weekly-2026-06-19",
           "type": "wikilink",
           "text": "Anthropic"
@@ -1725,7 +1763,7 @@
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 11
+      "inbound_count": 12
     },
     {
       "slug": "companies/beard-brothers-bbq",
@@ -1746,10 +1784,15 @@
           "from": "digests/2026-06-29-business-brain-digest",
           "type": "wikilink",
           "text": "Beard Brothers BBQ"
+        },
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Beard Brothers BBQ"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "companies/beehiiv",
@@ -1882,6 +1925,11 @@
           "text": "Digital Power"
         },
         {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Digital Power"
+        },
+        {
           "from": "newsletters/30-core-agentic-concepts-2026-06-20",
           "type": "wikilink",
           "text": "Digital Power"
@@ -1898,7 +1946,7 @@
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 4
+      "inbound_count": 5
     },
     {
       "slug": "companies/dynamics-orchard-farm-sdn-bhd",
@@ -2417,6 +2465,11 @@
           "text": "Nation Building School"
         },
         {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Nation Building School"
+        },
+        {
           "from": "newsletters/zaim-why-2026-career-goals-dead-2026-06-16",
           "type": "wikilink",
           "text": "Nation Building School"
@@ -2428,7 +2481,7 @@
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 5
+      "inbound_count": 6
     },
     {
       "slug": "companies/openai",
@@ -2481,6 +2534,11 @@
           "text": "OpenAI"
         },
         {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "OpenAI"
+        },
+        {
           "from": "newsletters/claude-second-brain-levels-2026-06-20",
           "type": "wikilink",
           "text": "OpenAI"
@@ -2497,7 +2555,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 7
+      "inbound_count": 8
     },
     {
       "slug": "companies/openrouter",
@@ -2746,10 +2804,15 @@
           "from": "digests/2026-06-29-business-brain-digest",
           "type": "wikilink",
           "text": "RapidScreen Sdn Bhd"
+        },
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "RapidScreen Sdn Bhd"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "companies/single-brain",
@@ -2880,9 +2943,15 @@
           "text": "Alex Chen"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "StartupXYZ"
+        }
+      ],
       "outbound_count": 1,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "companies/stripe",
@@ -2928,18 +2997,12 @@
       "inbound_count": 4
     },
     {
-      "slug": "companies/system-design-one",
-      "title": "System Design One",
+      "slug": "companies/system-design-one-sdo",
+      "title": "System Design One Sdo",
       "type": "company",
       "updated": "",
-      "body": "# System Design One\n\nCompany mentioned in concepts/msg_19f210172996e3b4.",
-      "tags": [
-        "hermes-demo-1",
-        "newsletter",
-        "publication",
-        "substack",
-        "system-design"
-      ],
+      "body": "",
+      "tags": [],
       "links_out": [],
       "backlinks": [
         {
@@ -2968,6 +3031,11 @@
           "text": "System Design One"
         },
         {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "System Design One"
+        },
+        {
           "from": "newsletters/agentic-engineering-concepts-2026-06-20-084511",
           "type": "wikilink",
           "text": "System Design One"
@@ -2976,11 +3044,6 @@
           "from": "newsletters/agentic-engineering-concepts-2026-06-20",
           "type": "wikilink",
           "text": "System Design One"
-        },
-        {
-          "from": "newsletters/msg-19ee2580f5fe7903",
-          "type": "wikilink",
-          "text": "companies/system-design-one|System Design One"
         },
         {
           "from": "newsletters/openclaw-anatomy-2026-06-09",
@@ -3001,6 +3064,30 @@
           "from": "people/ashish-prajapati",
           "type": "wikilink",
           "text": "System Design One"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 12
+    },
+    {
+      "slug": "companies/system-design-one",
+      "title": "System Design One",
+      "type": "company",
+      "updated": "",
+      "body": "# System Design One\n\nCompany mentioned in concepts/msg_19f210172996e3b4.",
+      "tags": [
+        "hermes-demo-1",
+        "newsletter",
+        "publication",
+        "substack",
+        "system-design"
+      ],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "newsletters/msg-19ee2580f5fe7903",
+          "type": "wikilink",
+          "text": "companies/system-design-one|System Design One"
         },
         {
           "from": "people/ashish",
@@ -3009,7 +3096,7 @@
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 13
+      "inbound_count": 2
     },
     {
       "slug": "companies/thompson-legal",
@@ -3092,10 +3179,15 @@
           "from": "digests/2026-06-29-business-brain-digest",
           "type": "wikilink",
           "text": "Unilever Malaysia"
+        },
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Unilever Malaysia"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 2
+      "inbound_count": 3
     },
     {
       "slug": "companies/zhipu-ai",
@@ -3126,10 +3218,15 @@
           "from": "concepts/glm-5-2",
           "type": "wikilink",
           "text": "Zhipu AI"
+        },
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Zhipu AI"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "concept/hermes-agent-ingest-instructions-2026-06-09",
@@ -3156,6 +3253,11 @@
           "text": "Hermes Agent"
         },
         {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Hermes Agent"
+        },
+        {
           "from": "newsletters/ai-garage-weekly-2026-06-19",
           "type": "wikilink",
           "text": "Hermes Agent"
@@ -3167,7 +3269,7 @@
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 5
+      "inbound_count": 6
     },
     {
       "slug": "concepts/15-minute-gap-method-2026-06-14",
@@ -3184,10 +3286,15 @@
           "from": "concepts/ksi-workshop",
           "type": "wikilink",
           "text": "concepts/15-minute-gap-method-2026-06-14"
+        },
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "15 Minute Gap Method"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "concepts/15-minute-gap-method-zaim",
@@ -3413,7 +3520,7 @@
       "tags": [],
       "links_out": [
         {
-          "to": "people/neo-kim",
+          "to": "people/neo-kim-sdo",
           "type": "wikilink",
           "text": "Neo Kim"
         },
@@ -3500,13 +3607,18 @@
           "text": "Aisyah Rahim"
         },
         {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Aisyah Rahim"
+        },
+        {
           "from": "people/liyana",
           "type": "wikilink",
           "text": "Aisyah Rahim"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 4
+      "inbound_count": 5
     },
     {
       "slug": "concepts/aisyah-rahim-client-profile",
@@ -3719,13 +3831,18 @@
           "text": "Claude Opus 4.7"
         },
         {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Claude Opus 4.7"
+        },
+        {
           "from": "newsletters/30-core-agentic-concepts-2026-06-20",
           "type": "wikilink",
           "text": "Claude Opus 4.7"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 2
+      "inbound_count": 3
     },
     {
       "slug": "concepts/clawhub",
@@ -3756,10 +3873,15 @@
           "from": "concepts/openclaw",
           "type": "wikilink",
           "text": "ClawHub"
+        },
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "ClawHub"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "concepts/client-aisyah-rahim-2026-06-15",
@@ -3813,9 +3935,15 @@
           "text": "Aisyah Rahim"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Coaching Client Aisyah Rahim"
+        }
+      ],
       "outbound_count": 3,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "concepts/coaching-client-profile-aisyah-rahim-2026-06-15",
@@ -3874,13 +4002,18 @@
           "text": "Company Memory Os Ph1 Prd"
         },
         {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Company Memory OS PRD"
+        },
+        {
           "from": "people/sayf-codes",
           "type": "wikilink",
           "text": "company-memory-os-ph1-prd"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 4
+      "inbound_count": 5
     },
     {
       "slug": "concepts/company-memory-os-ph1-prd",
@@ -3957,13 +4090,18 @@
           "text": "Compound Engineering"
         },
         {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Compound Engineering"
+        },
+        {
           "from": "newsletters/30-core-agentic-concepts-2026-06-20",
           "type": "wikilink",
           "text": "Compound Engineering"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 2
+      "inbound_count": 3
     },
     {
       "slug": "concepts/dashboard-composer-test",
@@ -4380,13 +4518,18 @@
           "text": "Get Shit Done"
         },
         {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Get Shit Done"
+        },
+        {
           "from": "newsletters/30-core-agentic-concepts-2026-06-20",
           "type": "wikilink",
           "text": "Get Shit Done"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 2
+      "inbound_count": 3
     },
     {
       "slug": "concepts/github-2fa-required-2026-06-17",
@@ -4868,10 +5011,15 @@
           "from": "concepts/coaching-client-aisyah-rahim-2026-06-15",
           "type": "wikilink",
           "text": "KSI Workshop"
+        },
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "KSI Workshop"
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "concepts/liquid-cooling",
@@ -4981,17 +5129,17 @@
       ],
       "links_out": [
         {
-          "to": "people/neo-kim",
+          "to": "people/neo-kim-sdo",
           "type": "wikilink",
           "text": "Neo Kim"
         },
         {
-          "to": "companies/system-design-one",
+          "to": "companies/system-design-one-sdo",
           "type": "wikilink",
           "text": "System Design One"
         },
         {
-          "to": "concepts/simple-path-to-system-design",
+          "to": "concepts/simple-path-to-system-design-sdo",
           "type": "wikilink",
           "text": "Simple Path to System Design"
         }
@@ -5143,12 +5291,12 @@
           "text": "The Anatomy of OpenClaw"
         },
         {
-          "to": "people/neo-kim",
+          "to": "people/neo-kim-sdo",
           "type": "wikilink",
           "text": "Neo Kim"
         },
         {
-          "to": "companies/system-design-one",
+          "to": "companies/system-design-one-sdo",
           "type": "wikilink",
           "text": "System Design One"
         }
@@ -5158,10 +5306,15 @@
           "from": "concepts/clawhub",
           "type": "wikilink",
           "text": "OpenClaw"
+        },
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "OpenClaw"
         }
       ],
       "outbound_count": 4,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "concepts/openrouter-auto-model-routing-2026-06-10",
@@ -5317,13 +5470,18 @@
           "text": "Opus 4.8"
         },
         {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Opus 4.8"
+        },
+        {
           "from": "newsletters/ai-garage-weekly-2026-06-19",
           "type": "wikilink",
           "text": "Opus 4.8"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 3
+      "inbound_count": 4
     },
     {
       "slug": "concepts/opus-48",
@@ -5369,12 +5527,17 @@
           "text": "paul-hoekstra"
         },
         {
-          "to": "companies/system-design-one",
+          "to": "companies/system-design-one-sdo",
           "type": "wikilink",
           "text": "system-design-one"
         }
       ],
       "backlinks": [
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Paul's Pipeline"
+        },
         {
           "from": "newsletters/30-core-agentic-concepts-2026-06-20",
           "type": "wikilink",
@@ -5392,7 +5555,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 3
+      "inbound_count": 4
     },
     {
       "slug": "concepts/pipeline-e2e-test-2026-06-20",
@@ -5593,18 +5756,21 @@
       "inbound_count": 5
     },
     {
-      "slug": "concepts/simple-path-to-system-design",
-      "title": "Simple Path to System Design",
+      "slug": "concepts/simple-path-to-system-design-sdo",
+      "title": "Simple Path To System Design Sdo",
       "type": "concept",
       "updated": "",
-      "body": "# Simple Path to System Design\n\nConcept referenced in concepts/msg_19f210172996e3b4.",
-      "tags": [
-        "hermes-demo-1"
-      ],
+      "body": "",
+      "tags": [],
       "links_out": [],
       "backlinks": [
         {
           "from": "concepts/msg_19f210172996e3b4",
+          "type": "wikilink",
+          "text": "Simple Path to System Design"
+        },
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
           "type": "wikilink",
           "text": "Simple Path to System Design"
         },
@@ -5615,7 +5781,21 @@
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 2
+      "inbound_count": 3
+    },
+    {
+      "slug": "concepts/simple-path-to-system-design",
+      "title": "Simple Path to System Design",
+      "type": "concept",
+      "updated": "",
+      "body": "# Simple Path to System Design\n\nConcept referenced in concepts/msg_19f210172996e3b4.",
+      "tags": [
+        "hermes-demo-1"
+      ],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
+      "inbound_count": 0
     },
     {
       "slug": "concepts/skills-inventory",
@@ -5695,13 +5875,18 @@
           "text": "SkillsBench"
         },
         {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "SkillsBench"
+        },
+        {
           "from": "newsletters/30-core-agentic-concepts-2026-06-20",
           "type": "wikilink",
           "text": "SkillsBench"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 2
+      "inbound_count": 3
     },
     {
       "slug": "concepts/stripe-ai-commerce-apac-2026-04-29",
@@ -5780,13 +5965,18 @@
           "text": "Superpowers"
         },
         {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Superpowers"
+        },
+        {
           "from": "newsletters/30-core-agentic-concepts-2026-06-20",
           "type": "wikilink",
           "text": "Superpowers"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 2
+      "inbound_count": 3
     },
     {
       "slug": "concepts/three-folder-system-head-hands-heart",
@@ -5836,7 +6026,7 @@
       "tags": [],
       "links_out": [
         {
-          "to": "people/neo-kim",
+          "to": "people/neo-kim-sdo",
           "type": "wikilink",
           "text": "Neo Kim"
         },
@@ -5944,9 +6134,15 @@
         "zaim"
       ],
       "links_out": [],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Zaim Why 2026 Career Goals Dead"
+        }
+      ],
       "outbound_count": 0,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "concepts/zaim-15-minute-gap-method-2026-06-14",
@@ -6283,10 +6479,15 @@
           "from": "companies/beard-brothers-bbq",
           "type": "wikilink",
           "text": "Invoice Mc 2026 001 Bbb"
+        },
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Invoice Mc 2026 001 Bbb"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "datasets/invoice-mc-2026-003-rapidscreen",
@@ -6301,10 +6502,15 @@
           "from": "companies/rapidscreen-sdn-bhd",
           "type": "wikilink",
           "text": "Invoice Mc 2026 003 Rapidscreen"
+        },
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Invoice Mc 2026 003 Rapidscreen"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "digests/2026-06-10-business-brain-digest",
@@ -6573,12 +6779,12 @@
           "text": "Openclaw Anatomy"
         },
         {
-          "to": "people/neo-kim",
+          "to": "people/neo-kim-sdo",
           "type": "wikilink",
           "text": "Neo Kim"
         },
         {
-          "to": "companies/system-design-one",
+          "to": "companies/system-design-one-sdo",
           "type": "wikilink",
           "text": "System Design One"
         },
@@ -6621,7 +6827,7 @@
           "text": "30 Core Agentic Concepts 2026 06 20"
         },
         {
-          "to": "people/neo-kim",
+          "to": "people/neo-kim-sdo",
           "type": "wikilink",
           "text": "Neo Kim"
         },
@@ -6666,7 +6872,7 @@
           "text": "Superpowers"
         },
         {
-          "to": "companies/system-design-one",
+          "to": "companies/system-design-one-sdo",
           "type": "wikilink",
           "text": "System Design One"
         },
@@ -6801,8 +7007,297 @@
           "text": "Audrey Loh"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "2026-06-29 Business Brain Digest"
+        }
+      ],
       "outbound_count": 37,
+      "inbound_count": 1
+    },
+    {
+      "slug": "digests/2026-07-13-business-brain-digest",
+      "title": "2026 07 13 Business Brain Digest",
+      "type": "concept",
+      "updated": "",
+      "body": "# Your Business Brain \u2014 Week of 2026-07-06 to 2026-07-13\n\n\ud83d\udce5 **This week's intake: 100 items**\n\n- **26 newsletters** \u2014 AI industry newsletters including [[AI Garage Weekly - June 19, 2026]], [[30 Core Agentic Concepts]], [[Claude Second Brain Levels]], OpenRouter updates, and HumanLayer launch coverage\n- **4 meetings** \u2014 [[Demo Meeting \u2014 gbrain Pipeline Showcase]] with Alex Chen (StartupXYZ), plus 3 records from the [[Sayf x Zaim \u2014 12 Jun 2026]] session including Gemini auto-notes\n- **10 bookmarks** \u2014 Tracking the [[HumanLayer Live Launch]] (June 18-19), [[Nerdqaxe Revision 7 Launch]], and [[Hermes Assistant to Chief of Staff]]\n- **3 datasets** \u2014 [[Invoice Mc 2026 001 Bbb]] (Beard Brothers BBQ) and [[Invoice Mc 2026 003 Rapidscreen]] (RapidScreen Sdn Bhd)\n- **40 concepts** \u2014 Spanning AI models, engineering practices, coaching frameworks, and pipeline architecture\n- **7 companies** \u2014 New: [[System Design One]] (SDO), [[StartupXYZ]]; Existing: [[Digital Power]], [[OpenAI]], [[AI Automation Society]], [[Beard Brothers BBQ]], [[RapidScreen Sdn Bhd]]\n- **6 people** \u2014 New: [[Neo Kim]], [[Alex Chen]]; Existing: [[Paul Hoekstra]], [[Aisyah Rahim]], [[Michael Lennington]], [[Brian Moran]]\n- **3 articles** \u2014 [[Why Every SMB Needs a Second Brain]], career goals deep-dive, VM architecture analysis\n- **1 log** \u2014 [[Monthly Achievement Jun 2026]]\n\n\ud83d\udd17 **New connections found**\n\n- **System Design One cluster** \u2014 [[Tale of Two Young Software Engineers]] (Substack newsletter by [[Neo Kim]]) connects three new pages: the [[System Design One]] company, its founder [[Neo Kim]], and his [[Simple Path to System Design]] course. Neo's newsletter contrasts two career paths in software engineering \u2014 the traditional CS-degree route versus the self-taught system design path.\n\n- **gbrain pipeline demo validated** \u2014 [[Demo Meeting \u2014 gbrain Pipeline Showcase]] connected [[Alex Chen]] (CTO, [[StartupXYZ]]) to the pipeline. Alex's pain point \u2014 engineering docs scattered across Slack, Notion, and email \u2014 validates the core value prop of [[The Email-to-Brain Pipeline]]. The companion article [[Why Every SMB Needs a Second Brain]] now exists as a reusable sales asset.\n\n- **30 Core Agentic Concepts is the week's hub** \u2014 This newsletter by [[Paul Hoekstra]] ([[Digital Power]]) is the most-linked page this period with 9 outgoing and 9 incoming links. It connects: [[SkillsBench]], [[Superpowers]], [[Get Shit Done]], [[Compound Engineering]], [[Claude Opus 4.7]], and [[GPT-5.5]] \u2014 forming a dense subgraph around agentic engineering practices and benchmarking.\n\n- **Paul Hoekstra / Digital Power anchor** \u2014 [[Digital Power]] links bidirectionally to [[Paul Hoekstra]] and the [[30 Core Agentic Concepts]] newsletter, with backlinks from two additional newsletters and the [[2026-06-29 Business Brain Digest]]. Paul's pipeline architecture concept ([[Paul's Pipeline]]) was also captured.\n\n- **AI Garage Weekly ecosystem** \u2014 The [[AI Garage Weekly - June 19, 2026]] edition connects [[Anthropic]] ([[Opus 4.8]]), [[Zhipu AI]] ([[GLM-5.2]]), and the [[Hermes Agent]] ingest pipeline \u2014 tracking the model release race and how it flows into the brain.\n\n- **Zaim coaching pipeline** \u2014 [[Coaching Client Aisyah Rahim]] links to [[Unilever Malaysia]] and [[KSI Workshop]], while the [[15 Minute Gap Method]] (referenced by [[KSI Workshop]]) has spawned multiple concept pages. The [[Zaim Why 2026 Career Goals Dead]] newsletter connects [[Zaim Mohzani]] to [[Nation Building School]].\n\n- **ClawHub \u2194 OpenClaw** \u2014 [[ClawHub]] and [[OpenClaw]] are bidirectionally linked, with [[The Anatomy of OpenClaw]] article providing the technical deep-dive. This pair captures the emerging open-source AI agent ecosystem.\n\n- **Invoice-to-company crosslinks** \u2014 [[Beard Brothers BBQ]] links to its [[Invoice Mc 2026 001 Bbb]], and [[RapidScreen Sdn Bhd]] links to [[Invoice Mc 2026 003 Rapidscreen]] \u2014 the first invoice-company connections in the graph.\n\n- **Company Memory OS concept** \u2014 [[Company Memory OS PRD]] connects [[Hermes Agent]] and [[gbrain]], forming a product-concept triangle that maps the vision for a business memory operating system.\n\n\ud83d\udcc8 **Data updates**\n\n- **Beard Brothers BBQ** \u2014 Invoice MC-2026-001: BBQ supply chain purchase order\n- **RapidScreen Sdn Bhd** \u2014 Invoice MC-2026-003: Health screening services\n- Both invoices are now linked to their respective company pages via verified [[wikilinks]]\n\n\ud83d\udca1 **Insight**\n\nThe brain is developing two distinct knowledge clusters that mirror Maloha Coast's service lines. The **agentic engineering cluster** \u2014 anchored by [[30 Core Agentic Concepts]], [[Digital Power]], [[SkillsBench]], and [[Superpowers]] \u2014 tracks the cutting edge of AI agent development, model releases ([[Opus 4.8]], [[GLM-5.2]], [[GPT-5.5]]), and benchmarking. The **business pipeline cluster** \u2014 anchored by [[Demo Meeting \u2014 gbrain Pipeline Showcase]], [[The Email-to-Brain Pipeline]], [[Why Every SMB Needs a Second Brain]], and the [[Company Memory OS PRD]] \u2014 captures the go-to-market validation and product thinking. The [[Tale of Two Young Software Engineers]] newsletter this week bridges both: Neo Kim's system design philosophy resonates with the pipeline's architecture thinking, while his [[System Design One]] company represents the kind of technical founder who could be a pipeline customer. [[StartupXYZ]] and [[Alex Chen]] already validated the core value prop in a live demo. The [[Zaim Mohzani]] coaching pipeline with [[Aisyah Rahim]] and the [[15 Minute Gap Method]] adds a third dimension \u2014 applied knowledge management for solopreneurs and coaches.",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "newsletters/msg-19ee2c24d5819622",
+          "type": "wikilink",
+          "text": "AI Garage Weekly - June 19, 2026"
+        },
+        {
+          "to": "newsletters/30-core-agentic-concepts-2026-06-20",
+          "type": "wikilink",
+          "text": "30 Core Agentic Concepts"
+        },
+        {
+          "to": "newsletters/claude-second-brain-levels-2026-06-19",
+          "type": "wikilink",
+          "text": "Claude Second Brain Levels"
+        },
+        {
+          "to": "meetings/demo-gbrain-pipeline-showcase",
+          "type": "wikilink",
+          "text": "Demo Meeting \u2014 gbrain Pipeline Showcase"
+        },
+        {
+          "to": "Sayf x Zaim \u2014 12 Jun 2026",
+          "type": "wikilink",
+          "text": "Sayf x Zaim \u2014 12 Jun 2026"
+        },
+        {
+          "to": "bookmarks/humanlayer-live-launch-2026-06-18",
+          "type": "wikilink",
+          "text": "HumanLayer Live Launch"
+        },
+        {
+          "to": "articles/nerdqaxe-revision-7-launch-2026-06-12",
+          "type": "wikilink",
+          "text": "Nerdqaxe Revision 7 Launch"
+        },
+        {
+          "to": "articles/hermes-assistant-to-chief-of-staff-2026-06-21",
+          "type": "wikilink",
+          "text": "Hermes Assistant to Chief of Staff"
+        },
+        {
+          "to": "datasets/invoice-mc-2026-001-bbb",
+          "type": "wikilink",
+          "text": "Invoice Mc 2026 001 Bbb"
+        },
+        {
+          "to": "datasets/invoice-mc-2026-003-rapidscreen",
+          "type": "wikilink",
+          "text": "Invoice Mc 2026 003 Rapidscreen"
+        },
+        {
+          "to": "companies/system-design-one-sdo",
+          "type": "wikilink",
+          "text": "System Design One"
+        },
+        {
+          "to": "companies/startupxyz-demo",
+          "type": "wikilink",
+          "text": "StartupXYZ"
+        },
+        {
+          "to": "companies/digital-power",
+          "type": "wikilink",
+          "text": "Digital Power"
+        },
+        {
+          "to": "companies/openai",
+          "type": "wikilink",
+          "text": "OpenAI"
+        },
+        {
+          "to": "companies/ai-automation-society",
+          "type": "wikilink",
+          "text": "AI Automation Society"
+        },
+        {
+          "to": "companies/beard-brothers-bbq",
+          "type": "wikilink",
+          "text": "Beard Brothers BBQ"
+        },
+        {
+          "to": "companies/rapidscreen-sdn-bhd",
+          "type": "wikilink",
+          "text": "RapidScreen Sdn Bhd"
+        },
+        {
+          "to": "people/neo-kim-sdo",
+          "type": "wikilink",
+          "text": "Neo Kim"
+        },
+        {
+          "to": "people/alex-chen-demo",
+          "type": "wikilink",
+          "text": "Alex Chen"
+        },
+        {
+          "to": "people/paul-hoekstra",
+          "type": "wikilink",
+          "text": "Paul Hoekstra"
+        },
+        {
+          "to": "concepts/aisyah-rahim-client-profile-2026-06-15",
+          "type": "wikilink",
+          "text": "Aisyah Rahim"
+        },
+        {
+          "to": "people/michael-lennington",
+          "type": "wikilink",
+          "text": "Michael Lennington"
+        },
+        {
+          "to": "people/brian-moran",
+          "type": "wikilink",
+          "text": "Brian Moran"
+        },
+        {
+          "to": "articles/why-every-smb-needs-second-brain",
+          "type": "wikilink",
+          "text": "Why Every SMB Needs a Second Brain"
+        },
+        {
+          "to": "monthly-achievement-jun-2026",
+          "type": "wikilink",
+          "text": "Monthly Achievement Jun 2026"
+        },
+        {
+          "to": "newsletters/tale-of-two-young-software-engineers-2026-07-02",
+          "type": "wikilink",
+          "text": "Tale of Two Young Software Engineers"
+        },
+        {
+          "to": "concepts/simple-path-to-system-design-sdo",
+          "type": "wikilink",
+          "text": "Simple Path to System Design"
+        },
+        {
+          "to": "The Email-to-Brain Pipeline",
+          "type": "wikilink",
+          "text": "The Email-to-Brain Pipeline"
+        },
+        {
+          "to": "concepts/skillsbench",
+          "type": "wikilink",
+          "text": "SkillsBench"
+        },
+        {
+          "to": "concepts/superpowers",
+          "type": "wikilink",
+          "text": "Superpowers"
+        },
+        {
+          "to": "concepts/get-shit-done",
+          "type": "wikilink",
+          "text": "Get Shit Done"
+        },
+        {
+          "to": "concepts/compound-engineering",
+          "type": "wikilink",
+          "text": "Compound Engineering"
+        },
+        {
+          "to": "concepts/claude-opus-47",
+          "type": "wikilink",
+          "text": "Claude Opus 4.7"
+        },
+        {
+          "to": "GPT-5.5",
+          "type": "wikilink",
+          "text": "GPT-5.5"
+        },
+        {
+          "to": "digests/2026-06-29-business-brain-digest",
+          "type": "wikilink",
+          "text": "2026-06-29 Business Brain Digest"
+        },
+        {
+          "to": "concepts/pauls-pipeline",
+          "type": "wikilink",
+          "text": "Paul's Pipeline"
+        },
+        {
+          "to": "companies/anthropic",
+          "type": "wikilink",
+          "text": "Anthropic"
+        },
+        {
+          "to": "concepts/opus-4-8",
+          "type": "wikilink",
+          "text": "Opus 4.8"
+        },
+        {
+          "to": "companies/zhipu-ai",
+          "type": "wikilink",
+          "text": "Zhipu AI"
+        },
+        {
+          "to": "GLM-5.2",
+          "type": "wikilink",
+          "text": "GLM-5.2"
+        },
+        {
+          "to": "concept/hermes-agent-ingest-instructions-2026-06-09",
+          "type": "wikilink",
+          "text": "Hermes Agent"
+        },
+        {
+          "to": "concepts/coaching-client-aisyah-rahim-2026-06-15",
+          "type": "wikilink",
+          "text": "Coaching Client Aisyah Rahim"
+        },
+        {
+          "to": "companies/unilever-malaysia",
+          "type": "wikilink",
+          "text": "Unilever Malaysia"
+        },
+        {
+          "to": "concepts/ksi-workshop",
+          "type": "wikilink",
+          "text": "KSI Workshop"
+        },
+        {
+          "to": "concepts/15-minute-gap-method-2026-06-14",
+          "type": "wikilink",
+          "text": "15 Minute Gap Method"
+        },
+        {
+          "to": "concepts/why-2026-career-goals-dead-zaim",
+          "type": "wikilink",
+          "text": "Zaim Why 2026 Career Goals Dead"
+        },
+        {
+          "to": "people/zaim-mohzani",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
+          "to": "companies/nation-building-school",
+          "type": "wikilink",
+          "text": "Nation Building School"
+        },
+        {
+          "to": "concepts/clawhub",
+          "type": "wikilink",
+          "text": "ClawHub"
+        },
+        {
+          "to": "concepts/openclaw",
+          "type": "wikilink",
+          "text": "OpenClaw"
+        },
+        {
+          "to": "articles/anatomy-of-openclaw-2026-06-08",
+          "type": "wikilink",
+          "text": "The Anatomy of OpenClaw"
+        },
+        {
+          "to": "concepts/company-memory-os-ph1-prd-2026-06-09",
+          "type": "wikilink",
+          "text": "Company Memory OS PRD"
+        },
+        {
+          "to": "gbrain",
+          "type": "wikilink",
+          "text": "gbrain"
+        },
+        {
+          "to": "wikilinks",
+          "type": "wikilink",
+          "text": "wikilinks"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 54,
       "inbound_count": 0
     },
     {
@@ -6925,13 +7420,18 @@
           "text": "gbrain"
         },
         {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "gbrain"
+        },
+        {
           "from": "google-workspace-setup",
           "type": "wikilink",
           "text": "gbrain"
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 6
+      "inbound_count": 7
     },
     {
       "slug": "google-workspace-setup",
@@ -7614,9 +8114,15 @@
           "text": "Alex Chen"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Demo Meeting \u2014 gbrain Pipeline Showcase"
+        }
+      ],
       "outbound_count": 1,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "meetings/msg-19ecaa895ccb88af",
@@ -7763,9 +8269,15 @@
         "monthly-log"
       ],
       "links_out": [],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Monthly Achievement Jun 2026"
+        }
+      ],
       "outbound_count": 0,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "newsletter/humanlayer-launch-2026-06-19",
@@ -7967,13 +8479,18 @@
           "text": "30 Core Agentic Concepts 2026 06 20"
         },
         {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "30 Core Agentic Concepts"
+        },
+        {
           "from": "people/paul-hoekstra",
           "type": "wikilink",
           "text": "30 Core Agentic Concepts 2026 06 20"
         }
       ],
       "outbound_count": 9,
-      "inbound_count": 9
+      "inbound_count": 10
     },
     {
       "slug": "newsletters/30-core-agentic-engineering-concepts-2026-06-17",
@@ -8034,12 +8551,12 @@
       "tags": [],
       "links_out": [
         {
-          "to": "people/neo-kim",
+          "to": "people/neo-kim-sdo",
           "type": "wikilink",
           "text": "Neo Kim"
         },
         {
-          "to": "companies/system-design-one",
+          "to": "companies/system-design-one-sdo",
           "type": "wikilink",
           "text": "System Design One"
         },
@@ -8077,7 +8594,7 @@
       "tags": [],
       "links_out": [
         {
-          "to": "companies/system-design-one",
+          "to": "companies/system-design-one-sdo",
           "type": "wikilink",
           "text": "System Design One"
         },
@@ -8351,10 +8868,15 @@
           "from": "digests/2026-06-29-business-brain-digest",
           "type": "wikilink",
           "text": "Claude Second Brain Levels"
+        },
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Claude Second Brain Levels"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "newsletters/claude-second-brain-levels-2026-06-20",
@@ -8897,6 +9419,11 @@
           "text": "AI Garage Weekly - June 19, 2026"
         },
         {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "AI Garage Weekly - June 19, 2026"
+        },
+        {
           "from": "people/tonbi",
           "type": "wikilink",
           "text": "newsletters/msg-19ee2c24d5819622"
@@ -8908,7 +9435,7 @@
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 8
+      "inbound_count": 9
     },
     {
       "slug": "newsletters/msg-19ee2dfa87f86548-claude-second-brain-levels",
@@ -9055,12 +9582,12 @@
       ],
       "links_out": [
         {
-          "to": "people/neo-kim",
+          "to": "people/neo-kim-sdo",
           "type": "wikilink",
           "text": "Neo Kim"
         },
         {
-          "to": "companies/system-design-one",
+          "to": "companies/system-design-one-sdo",
           "type": "wikilink",
           "text": "System Design One"
         }
@@ -9596,24 +10123,30 @@
       ],
       "links_out": [
         {
-          "to": "people/neo-kim",
+          "to": "people/neo-kim-sdo",
           "type": "wikilink",
           "text": "Neo Kim"
         },
         {
-          "to": "companies/system-design-one",
+          "to": "companies/system-design-one-sdo",
           "type": "wikilink",
           "text": "System Design One"
         },
         {
-          "to": "concepts/simple-path-to-system-design",
+          "to": "concepts/simple-path-to-system-design-sdo",
           "type": "wikilink",
           "text": "Simple Path to System Design"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Tale of Two Young Software Engineers"
+        }
+      ],
       "outbound_count": 3,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "newsletters/three-features-three-claudes-2026-06-11",
@@ -9664,12 +10197,12 @@
       "tags": [],
       "links_out": [
         {
-          "to": "companies/system-design-one",
+          "to": "companies/system-design-one-sdo",
           "type": "wikilink",
           "text": "System Design One"
         },
         {
-          "to": "people/neo-kim",
+          "to": "people/neo-kim-sdo",
           "type": "wikilink",
           "text": "Neo Kim"
         },
@@ -10029,13 +10562,18 @@
           "text": "Alex Chen"
         },
         {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Alex Chen"
+        },
+        {
           "from": "meetings/demo-gbrain-pipeline-showcase",
           "type": "wikilink",
           "text": "Alex Chen"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 2
+      "inbound_count": 3
     },
     {
       "slug": "people/andrej-karpathy",
@@ -10088,12 +10626,12 @@
           "text": "newsletters/msg-19ee23d6478fc08e"
         },
         {
-          "to": "people/neo-kim",
+          "to": "people/neo-kim-sdo",
           "type": "wikilink",
           "text": "Neo Kim"
         },
         {
-          "to": "companies/system-design-one",
+          "to": "companies/system-design-one-sdo",
           "type": "wikilink",
           "text": "System Design One"
         }
@@ -10315,13 +10853,18 @@
           "text": "Brian Moran"
         },
         {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Brian Moran"
+        },
+        {
           "from": "people/michael-lennington",
           "type": "wikilink",
           "text": "Brian Moran"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 3
+      "inbound_count": 4
     },
     {
       "slug": "people/carson-bates",
@@ -10855,10 +11398,15 @@
           "from": "digests/2026-06-29-business-brain-digest",
           "type": "wikilink",
           "text": "Michael Lennington"
+        },
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Michael Lennington"
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 2
+      "inbound_count": 3
     },
     {
       "slug": "people/nabil-jalil",
@@ -10901,16 +11449,12 @@
       "inbound_count": 0
     },
     {
-      "slug": "people/neo-kim",
-      "title": "Neo Kim",
+      "slug": "people/neo-kim-sdo",
+      "title": "Neo Kim Sdo",
       "type": "person",
       "updated": "",
-      "body": "# Neo Kim\n\nPerson mentioned in concepts/msg_19f210172996e3b4.",
-      "tags": [
-        "author",
-        "hermes-demo-1",
-        "system-design"
-      ],
+      "body": "",
+      "tags": [],
       "links_out": [],
       "backlinks": [
         {
@@ -10944,14 +11488,14 @@
           "text": "Neo Kim"
         },
         {
-          "from": "newsletters/agentic-engineering-concepts-2026-06-20-084511",
+          "from": "digests/2026-07-13-business-brain-digest",
           "type": "wikilink",
           "text": "Neo Kim"
         },
         {
-          "from": "newsletters/msg-19ee2580f5fe7903",
+          "from": "newsletters/agentic-engineering-concepts-2026-06-20-084511",
           "type": "wikilink",
-          "text": "people/neo-kim|Neo Kim"
+          "text": "Neo Kim"
         },
         {
           "from": "newsletters/openclaw-anatomy-2026-06-09",
@@ -10974,18 +11518,40 @@
           "text": "Neo Kim"
         },
         {
-          "from": "people/ashish",
-          "type": "wikilink",
-          "text": "people/neo-kim"
-        },
-        {
           "from": "people/paul-hoekstra",
           "type": "wikilink",
           "text": "Neo Kim"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 14
+      "inbound_count": 13
+    },
+    {
+      "slug": "people/neo-kim",
+      "title": "Neo Kim",
+      "type": "person",
+      "updated": "",
+      "body": "# Neo Kim\n\nPerson mentioned in concepts/msg_19f210172996e3b4.",
+      "tags": [
+        "author",
+        "hermes-demo-1",
+        "system-design"
+      ],
+      "links_out": [],
+      "backlinks": [
+        {
+          "from": "newsletters/msg-19ee2580f5fe7903",
+          "type": "wikilink",
+          "text": "people/neo-kim|Neo Kim"
+        },
+        {
+          "from": "people/ashish",
+          "type": "wikilink",
+          "text": "people/neo-kim"
+        }
+      ],
+      "outbound_count": 0,
+      "inbound_count": 2
     },
     {
       "slug": "people/nick-milo",
@@ -11026,7 +11592,7 @@
           "text": "30 Core Agentic Concepts 2026 06 20"
         },
         {
-          "to": "people/neo-kim",
+          "to": "people/neo-kim-sdo",
           "type": "wikilink",
           "text": "Neo Kim"
         }
@@ -11048,6 +11614,11 @@
           "text": "Paul Hoekstra"
         },
         {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Paul Hoekstra"
+        },
+        {
           "from": "newsletters/30-core-agentic-concepts-2026-06-20",
           "type": "wikilink",
           "text": "Paul Hoekstra"
@@ -11059,7 +11630,7 @@
         }
       ],
       "outbound_count": 2,
-      "inbound_count": 5
+      "inbound_count": 6
     },
     {
       "slug": "people/rachel-kim",
@@ -11547,6 +12118,11 @@
           "text": "Zaim Mohzani"
         },
         {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
           "from": "meetings/sayf-zaim-jun-12-2026-gemini",
           "type": "wikilink",
           "text": "Zaim Mohzani"
@@ -11578,7 +12154,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 17
+      "inbound_count": 18
     },
     {
       "slug": "persons/tonbi",
@@ -12667,7 +13243,7 @@
     },
     {
       "source": "concepts/ai-data-center-architecture-2026-06-20",
-      "target": "people/neo-kim",
+      "target": "people/neo-kim-sdo",
       "type": "wikilink"
     },
     {
@@ -13017,17 +13593,17 @@
     },
     {
       "source": "concepts/msg_19f210172996e3b4",
-      "target": "people/neo-kim",
+      "target": "people/neo-kim-sdo",
       "type": "wikilink"
     },
     {
       "source": "concepts/msg_19f210172996e3b4",
-      "target": "companies/system-design-one",
+      "target": "companies/system-design-one-sdo",
       "type": "wikilink"
     },
     {
       "source": "concepts/msg_19f210172996e3b4",
-      "target": "concepts/simple-path-to-system-design",
+      "target": "concepts/simple-path-to-system-design-sdo",
       "type": "wikilink"
     },
     {
@@ -13052,12 +13628,12 @@
     },
     {
       "source": "concepts/openclaw",
-      "target": "people/neo-kim",
+      "target": "people/neo-kim-sdo",
       "type": "wikilink"
     },
     {
       "source": "concepts/openclaw",
-      "target": "companies/system-design-one",
+      "target": "companies/system-design-one-sdo",
       "type": "wikilink"
     },
     {
@@ -13092,7 +13668,7 @@
     },
     {
       "source": "concepts/pauls-pipeline",
-      "target": "companies/system-design-one",
+      "target": "companies/system-design-one-sdo",
       "type": "wikilink"
     },
     {
@@ -13202,7 +13778,7 @@
     },
     {
       "source": "concepts/virtual-machines-deep-dive",
-      "target": "people/neo-kim",
+      "target": "people/neo-kim-sdo",
       "type": "wikilink"
     },
     {
@@ -13507,12 +14083,12 @@
     },
     {
       "source": "digests/2026-06-15-business-brain-digest",
-      "target": "people/neo-kim",
+      "target": "people/neo-kim-sdo",
       "type": "wikilink"
     },
     {
       "source": "digests/2026-06-15-business-brain-digest",
-      "target": "companies/system-design-one",
+      "target": "companies/system-design-one-sdo",
       "type": "wikilink"
     },
     {
@@ -13542,7 +14118,7 @@
     },
     {
       "source": "digests/2026-06-29-business-brain-digest",
-      "target": "people/neo-kim",
+      "target": "people/neo-kim-sdo",
       "type": "wikilink"
     },
     {
@@ -13582,7 +14158,7 @@
     },
     {
       "source": "digests/2026-06-29-business-brain-digest",
-      "target": "companies/system-design-one",
+      "target": "companies/system-design-one-sdo",
       "type": "wikilink"
     },
     {
@@ -13688,6 +14264,251 @@
     {
       "source": "digests/2026-06-29-business-brain-digest",
       "target": "people/audrey-loh",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "newsletters/msg-19ee2c24d5819622",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "newsletters/30-core-agentic-concepts-2026-06-20",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "newsletters/claude-second-brain-levels-2026-06-19",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "meetings/demo-gbrain-pipeline-showcase",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "bookmarks/humanlayer-live-launch-2026-06-18",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "articles/nerdqaxe-revision-7-launch-2026-06-12",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "articles/hermes-assistant-to-chief-of-staff-2026-06-21",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "datasets/invoice-mc-2026-001-bbb",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "datasets/invoice-mc-2026-003-rapidscreen",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "companies/system-design-one-sdo",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "companies/startupxyz-demo",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "companies/digital-power",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "companies/openai",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "companies/ai-automation-society",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "companies/beard-brothers-bbq",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "companies/rapidscreen-sdn-bhd",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "people/neo-kim-sdo",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "people/alex-chen-demo",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "people/paul-hoekstra",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "concepts/aisyah-rahim-client-profile-2026-06-15",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "people/michael-lennington",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "people/brian-moran",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "articles/why-every-smb-needs-second-brain",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "monthly-achievement-jun-2026",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "newsletters/tale-of-two-young-software-engineers-2026-07-02",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "concepts/simple-path-to-system-design-sdo",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "concepts/skillsbench",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "concepts/superpowers",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "concepts/get-shit-done",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "concepts/compound-engineering",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "concepts/claude-opus-47",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "digests/2026-06-29-business-brain-digest",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "concepts/pauls-pipeline",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "companies/anthropic",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "concepts/opus-4-8",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "companies/zhipu-ai",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "concept/hermes-agent-ingest-instructions-2026-06-09",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "concepts/coaching-client-aisyah-rahim-2026-06-15",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "companies/unilever-malaysia",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "concepts/ksi-workshop",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "concepts/15-minute-gap-method-2026-06-14",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "concepts/why-2026-career-goals-dead-zaim",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "people/zaim-mohzani",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "companies/nation-building-school",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "concepts/clawhub",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "concepts/openclaw",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "articles/anatomy-of-openclaw-2026-06-08",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "concepts/company-memory-os-ph1-prd-2026-06-09",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-13-business-brain-digest",
+      "target": "gbrain",
       "type": "wikilink"
     },
     {
@@ -13877,12 +14698,12 @@
     },
     {
       "source": "newsletters/agentic-engineering-concepts-2026-06-20-084511",
-      "target": "people/neo-kim",
+      "target": "people/neo-kim-sdo",
       "type": "wikilink"
     },
     {
       "source": "newsletters/agentic-engineering-concepts-2026-06-20-084511",
-      "target": "companies/system-design-one",
+      "target": "companies/system-design-one-sdo",
       "type": "wikilink"
     },
     {
@@ -13902,7 +14723,7 @@
     },
     {
       "source": "newsletters/agentic-engineering-concepts-2026-06-20",
-      "target": "companies/system-design-one",
+      "target": "companies/system-design-one-sdo",
       "type": "wikilink"
     },
     {
@@ -14087,12 +14908,12 @@
     },
     {
       "source": "newsletters/openclaw-anatomy-2026-06-09",
-      "target": "people/neo-kim",
+      "target": "people/neo-kim-sdo",
       "type": "wikilink"
     },
     {
       "source": "newsletters/openclaw-anatomy-2026-06-09",
-      "target": "companies/system-design-one",
+      "target": "companies/system-design-one-sdo",
       "type": "wikilink"
     },
     {
@@ -14132,27 +14953,27 @@
     },
     {
       "source": "newsletters/tale-of-two-young-software-engineers-2026-07-02",
-      "target": "people/neo-kim",
+      "target": "people/neo-kim-sdo",
       "type": "wikilink"
     },
     {
       "source": "newsletters/tale-of-two-young-software-engineers-2026-07-02",
-      "target": "companies/system-design-one",
+      "target": "companies/system-design-one-sdo",
       "type": "wikilink"
     },
     {
       "source": "newsletters/tale-of-two-young-software-engineers-2026-07-02",
-      "target": "concepts/simple-path-to-system-design",
+      "target": "concepts/simple-path-to-system-design-sdo",
       "type": "wikilink"
     },
     {
       "source": "newsletters/vm-deep-dive-system-design-2026-05-25",
-      "target": "companies/system-design-one",
+      "target": "companies/system-design-one-sdo",
       "type": "wikilink"
     },
     {
       "source": "newsletters/vm-deep-dive-system-design-2026-05-25",
-      "target": "people/neo-kim",
+      "target": "people/neo-kim-sdo",
       "type": "wikilink"
     },
     {
@@ -14212,12 +15033,12 @@
     },
     {
       "source": "people/ashish-prajapati",
-      "target": "people/neo-kim",
+      "target": "people/neo-kim-sdo",
       "type": "wikilink"
     },
     {
       "source": "people/ashish-prajapati",
-      "target": "companies/system-design-one",
+      "target": "companies/system-design-one-sdo",
       "type": "wikilink"
     },
     {
@@ -14297,7 +15118,7 @@
     },
     {
       "source": "people/paul-hoekstra",
-      "target": "people/neo-kim",
+      "target": "people/neo-kim-sdo",
       "type": "wikilink"
     },
     {
@@ -14470,6 +15291,7 @@
       "people/nabil-jalil",
       "people/nate-herk",
       "people/neo-kim",
+      "people/neo-kim-sdo",
       "people/nick-milo",
       "people/paul-hoekstra",
       "people/rachel-kim",
@@ -14523,6 +15345,7 @@
       "companies/startupxyz-demo",
       "companies/stripe",
       "companies/system-design-one",
+      "companies/system-design-one-sdo",
       "companies/thompson-legal",
       "companies/thoughtworks",
       "companies/unilever-malaysia",
