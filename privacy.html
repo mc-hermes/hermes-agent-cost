@@ -47,15 +47,16 @@
   <a href="index.html" class="back">Home</a>
 
   <h1>Privacy <span>Policy</span></h1>
-  <p class="updated">Last updated: June 27, 2026</p>
+  <p class="updated">Last updated: July 15, 2026</p>
   <div class="divider"></div>
 
   <h2>1. Who We Are</h2>
-  <p><strong>Maloha Coast Sdn Bhd</strong> ("we", "us", "our") operates a Discord application ("the Bot") that provides AI-powered assistance. We are committed to protecting your privacy and being transparent about how we handle data. This policy explains what information we collect, how we use it, and your rights.</p>
+  <p><strong>Maloha Coast Sdn Bhd</strong> ("we", "us", "our") operates AI-powered services including a Discord application and WhatsApp-based conversational assistants. We are committed to protecting your privacy and being transparent about how we handle data. This policy explains what information we collect across all our services, how we use it, and your rights.</p>
 
   <h2>2. Data We Collect</h2>
-  <p>When you interact with the Bot, we may collect the following:</p>
 
+  <h2 style="font-size: 0.95rem; color: var(--text-muted); margin-top: 20px; margin-bottom: 8px;">Discord Bot</h2>
+  <p>When you interact with our Discord application, we may collect:</p>
   <table class="data-table">
     <thead>
       <tr><th>Data</th><th>Purpose</th></tr>
@@ -69,42 +70,81 @@
     </tbody>
   </table>
 
+  <h2 style="font-size: 0.95rem; color: var(--text-muted); margin-top: 20px; margin-bottom: 8px;">WhatsApp Services</h2>
+  <p>When you interact with our WhatsApp-based services (such as restaurant reservation and ordering assistants), we access the following through the <strong>Meta Business / WhatsApp Cloud API</strong>:</p>
+  <table class="data-table">
+    <thead>
+      <tr><th>Data</th><th>Purpose</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>WhatsApp User Phone Number</strong></td><td>To identify your conversation session and associate your requests (bookings, orders) with you.</td></tr>
+      <tr><td><strong>Message Content</strong></td><td>To understand and fulfil your requests — such as reservation details, order items, and preferences. Messages are processed to extract booking or ordering information.</td></tr>
+      <tr><td><strong>WhatsApp Profile Name</strong></td><td>To personalise responses and confirm your identity during transactions.</td></tr>
+      <tr><td><strong>Message Timestamps</strong></td><td>To manage conversation state and enforce booking/payment time windows.</td></tr>
+    </tbody>
+  </table>
+  <p>We access this data solely through Meta's official WhatsApp Business API and only when you initiate a conversation with our business number. We do <strong>not</strong> access your contacts, media library, location, or any other data on your device.</p>
+
   <h2>3. How We Use Data</h2>
   <ul>
-    <li><strong>Service Delivery</strong> — Processing your messages to generate AI responses is the core function of the Bot.</li>
-    <li><strong>Improvement</strong> — Aggregated, anonymised usage patterns help us improve the Bot's performance and reliability.</li>
+    <li><strong>Service Delivery</strong> — Processing your messages to generate AI responses and fulfil requests (reservations, orders, customer support) is the core function of our services.</li>
+    <li><strong>Transaction Processing</strong> — For WhatsApp services, your data is used to create, modify, and confirm bookings or orders with the business you are contacting.</li>
+    <li><strong>Improvement</strong> — Aggregated, anonymised usage patterns help us improve our services' performance and reliability.</li>
     <li><strong>Security & Abuse Prevention</strong> — We monitor for misuse, spam, and violations of our Terms of Service.</li>
   </ul>
-  <p>We do <strong>not</strong> sell your data. We do <strong>not</strong> use your data for advertising. We do <strong>not</strong> build user profiles for commercial purposes.</p>
+  <p>We do <strong>not</strong> sell your data. We do <strong>not</strong> use your data for advertising. We do <strong>not</strong> build user profiles for commercial purposes. We do <strong>not</strong> use your WhatsApp data to contact you outside the context of your initiated conversation.</p>
 
   <h2>4. Data Storage & Retention</h2>
   <p>Data is stored on secure servers and retained only as long as necessary:</p>
   <ul>
-    <li><strong>Message content</strong> — Processed in real time; not stored beyond the session unless required for debugging.</li>
-    <li><strong>User & Server IDs</strong> — Retained while the Bot is active on your server.</li>
+    <li><strong>Message content</strong> — Processed in real time; not stored beyond the session unless required for transaction records or debugging.</li>
+    <li><strong>WhatsApp phone numbers & profile names</strong> — Retained for the duration of the active conversation and for up to 90 days to support follow-up inquiries and transaction verification.</li>
+    <li><strong>Booking & order records</strong> — Retained by the business you transact with according to their own data policies. Our systems retain transaction metadata (reservation ID, timestamp, status) for operational auditing.</li>
+    <li><strong>Discord User & Server IDs</strong> — Retained while the Bot is active on your server.</li>
     <li><strong>Usage logs</strong> — Retained for up to 90 days for operational purposes.</li>
   </ul>
 
   <h2>5. Third-Party Services</h2>
-  <p>The Bot uses <strong>AI model providers</strong> (such as DeepSeek) to generate responses. Your messages and Discord IDs may be transmitted to these providers solely for the purpose of generating a response. We select providers that do not use API-submitted data for model training. You can request details about our current providers at any time.</p>
+  <p>To deliver our services, we rely on the following third parties:</p>
+  <ul>
+    <li><strong>AI Model Providers</strong> (such as Anthropic and DeepSeek) — Your messages may be transmitted to these providers solely for the purpose of generating a response. We select providers that do not use API-submitted data for model training. You can request details about our current providers at any time.</li>
+    <li><strong>Meta Platforms, Inc.</strong> — Our WhatsApp services operate through Meta's WhatsApp Business API. By using these services, your data is also subject to <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" rel="noopener">WhatsApp's Privacy Policy</a>. Meta provides the underlying messaging infrastructure; we control how messages are processed once received.</li>
+    <li><strong>Business Clients</strong> — For WhatsApp services deployed on behalf of a business (e.g., a restaurant), your booking or order details are shared with that business to fulfil your request. The business's own privacy practices apply to data they retain.</li>
+  </ul>
   <p>We do <strong>not</strong> share your data with any other third parties except as required by law.</p>
 
-  <h2>6. Your Rights</h2>
+  <h2>6. Legal Basis for Processing</h2>
+  <p>We process your data on the following legal bases:</p>
+  <ul>
+    <li><strong>Consent</strong> — By initiating a conversation with our WhatsApp business number or adding our Discord Bot to your server, you consent to the processing described in this policy.</li>
+    <li><strong>Legitimate Interest</strong> — Processing necessary to deliver the service you requested, prevent fraud, and improve our systems.</li>
+  </ul>
+  <p>You may withdraw consent at any time — see Section 7.</p>
+
+  <h2>7. Your Rights</h2>
   <p>You have the right to:</p>
   <ul>
     <li>Request a copy of any personal data we hold about you.</li>
-    <li>Request deletion of your data.</li>
-    <li>Withdraw consent by removing the Bot from your server.</li>
+    <li>Request correction or deletion of your data.</li>
+    <li>Withdraw consent and object to processing.</li>
+    <li>For Discord: remove the Bot from your server to stop all data collection.</li>
+    <li>For WhatsApp: stop messaging our business number to end data collection. You may also block or report our number through WhatsApp.</li>
   </ul>
-  <p>To exercise these rights, contact us at <a href="mailto:info@malohacoast.com">info@malohacoast.com</a>. We will respond within 30 days.</p>
+  <p>To exercise these rights, contact us at <a href="mailto:info@malohacoast.com">info@malohacoast.com</a>. We will respond within 30 days. For WhatsApp-specific concerns, you may also contact Meta through the WhatsApp application.</p>
 
-  <h2>7. Children's Privacy</h2>
-  <p>The Bot is not intended for users under 13 years of age. We do not knowingly collect data from children under 13. If you believe a child has provided us with personal data, please contact us immediately.</p>
+  <h2>8. Data Security</h2>
+  <p>We implement appropriate technical and organisational measures to protect your data, including encryption in transit (HTTPS/TLS), encrypted storage of credentials, and restricted access controls. Our systems are self-hosted on secured infrastructure with access limited to authorised personnel.</p>
 
-  <h2>8. Changes to This Policy</h2>
-  <p>We may update this Privacy Policy from time to time. Material changes will be communicated via our Discord server or other channels. Continued use after changes are posted constitutes acceptance.</p>
+  <h2>9. Children's Privacy</h2>
+  <p>Our services are not intended for users under 13 years of age. We do not knowingly collect data from children under 13. If you believe a child has provided us with personal data, please contact us immediately.</p>
 
-  <h2>9. Contact</h2>
+  <h2>10. International Data Transfers</h2>
+  <p>Your data may be processed in servers located in Singapore, the United States, and Malaysia. We ensure appropriate safeguards are in place for any cross-border data transfers in compliance with applicable data protection laws, including Malaysia's Personal Data Protection Act 2010 (PDPA).</p>
+
+  <h2>11. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. Material changes will be communicated via our website or direct notification where feasible. Continued use after changes are posted constitutes acceptance.</p>
+
+  <h2>12. Contact</h2>
   <p>For privacy-related inquiries: <a href="mailto:info@malohacoast.com">info@malohacoast.com</a><br>
   Maloha Coast Sdn Bhd · Malaysia</p>
 
