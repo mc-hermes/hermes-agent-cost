@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-07-09T00:41:49Z",
+  "updated_at": "2026-07-15T17:36:54Z",
   "summary": {
     "page_count": 10,
     "people_count": 2,
     "company_count": 2,
     "artifact_count": 0,
-    "total_links": 8,
+    "total_links": 2,
     "outbound_count": 8,
-    "inbound_count": 31,
-    "graph_coverage": "40.0% of pages have inbound links",
+    "inbound_count": 11,
+    "graph_coverage": "70.0% of pages have inbound links",
     "concept_count": 2,
     "meeting_count": 1,
     "person_count": 2,
@@ -31,9 +31,15 @@
         "hermes-demo-1"
       ],
       "links_out": [],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Why Every SMB Needs a Second Brain"
+        }
+      ],
       "outbound_count": 0,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "companies/startupxyz-demo",
@@ -51,9 +57,15 @@
           "text": "Alex Chen"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "StartupXYZ"
+        }
+      ],
       "outbound_count": 1,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "companies/system-design-one",
@@ -71,64 +83,9 @@
       "links_out": [],
       "backlinks": [
         {
-          "from": "concepts/msg_19f210172996e3b4",
-          "type": "wikilink",
-          "text": "System Design One"
-        },
-        {
-          "from": "concepts/openclaw",
-          "type": "wikilink",
-          "text": "System Design One"
-        },
-        {
-          "from": "concepts/pauls-pipeline",
-          "type": "wikilink",
-          "text": "system-design-one"
-        },
-        {
-          "from": "digests/2026-06-15-business-brain-digest",
-          "type": "wikilink",
-          "text": "System Design One"
-        },
-        {
-          "from": "digests/2026-06-29-business-brain-digest",
-          "type": "wikilink",
-          "text": "System Design One"
-        },
-        {
-          "from": "newsletters/agentic-engineering-concepts-2026-06-20-084511",
-          "type": "wikilink",
-          "text": "System Design One"
-        },
-        {
-          "from": "newsletters/agentic-engineering-concepts-2026-06-20",
-          "type": "wikilink",
-          "text": "System Design One"
-        },
-        {
           "from": "newsletters/msg-19ee2580f5fe7903",
           "type": "wikilink",
           "text": "companies/system-design-one|System Design One"
-        },
-        {
-          "from": "newsletters/openclaw-anatomy-2026-06-09",
-          "type": "wikilink",
-          "text": "System Design One"
-        },
-        {
-          "from": "newsletters/tale-of-two-young-software-engineers-2026-07-02",
-          "type": "wikilink",
-          "text": "System Design One"
-        },
-        {
-          "from": "newsletters/vm-deep-dive-system-design-2026-05-25",
-          "type": "wikilink",
-          "text": "System Design One"
-        },
-        {
-          "from": "people/ashish-prajapati",
-          "type": "wikilink",
-          "text": "System Design One"
         },
         {
           "from": "people/ashish",
@@ -137,7 +94,7 @@
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 13
+      "inbound_count": 2
     },
     {
       "slug": "concepts/email-to-brain-pipeline",
@@ -164,17 +121,17 @@
       ],
       "links_out": [
         {
-          "to": "people/neo-kim",
+          "to": "people/neo-kim-sdo",
           "type": "wikilink",
           "text": "Neo Kim"
         },
         {
-          "to": "companies/system-design-one",
+          "to": "companies/system-design-one-sdo",
           "type": "wikilink",
           "text": "System Design One"
         },
         {
-          "to": "concepts/simple-path-to-system-design",
+          "to": "concepts/simple-path-to-system-design-sdo",
           "type": "wikilink",
           "text": "Simple Path to System Design"
         }
@@ -193,20 +150,9 @@
         "hermes-demo-1"
       ],
       "links_out": [],
-      "backlinks": [
-        {
-          "from": "concepts/msg_19f210172996e3b4",
-          "type": "wikilink",
-          "text": "Simple Path to System Design"
-        },
-        {
-          "from": "newsletters/tale-of-two-young-software-engineers-2026-07-02",
-          "type": "wikilink",
-          "text": "Simple Path to System Design"
-        }
-      ],
+      "backlinks": [],
       "outbound_count": 0,
-      "inbound_count": 2
+      "inbound_count": 0
     },
     {
       "slug": "meetings/demo-gbrain-pipeline-showcase",
@@ -224,9 +170,15 @@
           "text": "Alex Chen"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Demo Meeting \u2014 gbrain Pipeline Showcase"
+        }
+      ],
       "outbound_count": 1,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "newsletters/tale-of-two-young-software-engineers-2026-07-02",
@@ -239,24 +191,30 @@
       ],
       "links_out": [
         {
-          "to": "people/neo-kim",
+          "to": "people/neo-kim-sdo",
           "type": "wikilink",
           "text": "Neo Kim"
         },
         {
-          "to": "companies/system-design-one",
+          "to": "companies/system-design-one-sdo",
           "type": "wikilink",
           "text": "System Design One"
         },
         {
-          "to": "concepts/simple-path-to-system-design",
+          "to": "concepts/simple-path-to-system-design-sdo",
           "type": "wikilink",
           "text": "Simple Path to System Design"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Tale of Two Young Software Engineers"
+        }
+      ],
       "outbound_count": 3,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "people/alex-chen-demo",
@@ -275,13 +233,18 @@
           "text": "Alex Chen"
         },
         {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Alex Chen"
+        },
+        {
           "from": "meetings/demo-gbrain-pipeline-showcase",
           "type": "wikilink",
           "text": "Alex Chen"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 2
+      "inbound_count": 3
     },
     {
       "slug": "people/neo-kim",
@@ -297,78 +260,18 @@
       "links_out": [],
       "backlinks": [
         {
-          "from": "concepts/ai-data-center-architecture-2026-06-20",
-          "type": "wikilink",
-          "text": "Neo Kim"
-        },
-        {
-          "from": "concepts/msg_19f210172996e3b4",
-          "type": "wikilink",
-          "text": "Neo Kim"
-        },
-        {
-          "from": "concepts/openclaw",
-          "type": "wikilink",
-          "text": "Neo Kim"
-        },
-        {
-          "from": "concepts/virtual-machines-deep-dive",
-          "type": "wikilink",
-          "text": "Neo Kim"
-        },
-        {
-          "from": "digests/2026-06-15-business-brain-digest",
-          "type": "wikilink",
-          "text": "Neo Kim"
-        },
-        {
-          "from": "digests/2026-06-29-business-brain-digest",
-          "type": "wikilink",
-          "text": "Neo Kim"
-        },
-        {
-          "from": "newsletters/agentic-engineering-concepts-2026-06-20-084511",
-          "type": "wikilink",
-          "text": "Neo Kim"
-        },
-        {
           "from": "newsletters/msg-19ee2580f5fe7903",
           "type": "wikilink",
           "text": "people/neo-kim|Neo Kim"
         },
         {
-          "from": "newsletters/openclaw-anatomy-2026-06-09",
-          "type": "wikilink",
-          "text": "Neo Kim"
-        },
-        {
-          "from": "newsletters/tale-of-two-young-software-engineers-2026-07-02",
-          "type": "wikilink",
-          "text": "Neo Kim"
-        },
-        {
-          "from": "newsletters/vm-deep-dive-system-design-2026-05-25",
-          "type": "wikilink",
-          "text": "Neo Kim"
-        },
-        {
-          "from": "people/ashish-prajapati",
-          "type": "wikilink",
-          "text": "Neo Kim"
-        },
-        {
           "from": "people/ashish",
           "type": "wikilink",
           "text": "people/neo-kim"
-        },
-        {
-          "from": "people/paul-hoekstra",
-          "type": "wikilink",
-          "text": "Neo Kim"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 14
+      "inbound_count": 2
     }
   ],
   "graph_links": [
@@ -378,38 +281,8 @@
       "type": "wikilink"
     },
     {
-      "source": "concepts/msg_19f210172996e3b4",
-      "target": "people/neo-kim",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/msg_19f210172996e3b4",
-      "target": "companies/system-design-one",
-      "type": "wikilink"
-    },
-    {
-      "source": "concepts/msg_19f210172996e3b4",
-      "target": "concepts/simple-path-to-system-design",
-      "type": "wikilink"
-    },
-    {
       "source": "meetings/demo-gbrain-pipeline-showcase",
       "target": "people/alex-chen-demo",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/tale-of-two-young-software-engineers-2026-07-02",
-      "target": "people/neo-kim",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/tale-of-two-young-software-engineers-2026-07-02",
-      "target": "companies/system-design-one",
-      "type": "wikilink"
-    },
-    {
-      "source": "newsletters/tale-of-two-young-software-engineers-2026-07-02",
-      "target": "concepts/simple-path-to-system-design",
       "type": "wikilink"
     }
   ],
@@ -426,6 +299,14 @@
   "doctor": {},
   "artifacts": [],
   "logs": [
+    {
+      "ts": "2026-07-15T17:36:54Z",
+      "source": "export",
+      "stage": "deployed",
+      "slug": null,
+      "detail": "Dashboard refreshed \u2014 10 pages, 2 links",
+      "level": "info"
+    },
     {
       "ts": "2026-07-09T00:41:49Z",
       "source": "export",

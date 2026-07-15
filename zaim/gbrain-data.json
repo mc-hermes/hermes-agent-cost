@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-09T00:41:45Z",
+  "updated_at": "2026-07-15T17:36:47Z",
   "summary": {
     "page_count": 48,
     "people_count": 4,
@@ -7,8 +7,8 @@
     "artifact_count": 0,
     "total_links": 21,
     "outbound_count": 42,
-    "inbound_count": 42,
-    "graph_coverage": "25.0% of pages have inbound links",
+    "inbound_count": 49,
+    "graph_coverage": "29.2% of pages have inbound links",
     "concept_count": 30,
     "meeting_count": 5,
     "person_count": 4,
@@ -113,10 +113,15 @@
           "from": "digests/2026-06-29-business-brain-digest",
           "type": "wikilink",
           "text": "Unilever Malaysia"
+        },
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Unilever Malaysia"
         }
       ],
       "outbound_count": 1,
-      "inbound_count": 2
+      "inbound_count": 3
     },
     {
       "slug": "concepts/15-minute-gap-method-2026-06-14",
@@ -133,10 +138,15 @@
           "from": "concepts/ksi-workshop",
           "type": "wikilink",
           "text": "concepts/15-minute-gap-method-2026-06-14"
+        },
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "15 Minute Gap Method"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "concepts/15-minute-gap-method-zaim",
@@ -227,13 +237,18 @@
           "text": "Aisyah Rahim"
         },
         {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Aisyah Rahim"
+        },
+        {
           "from": "people/liyana",
           "type": "wikilink",
           "text": "Aisyah Rahim"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 4
+      "inbound_count": 5
     },
     {
       "slug": "concepts/aisyah-rahim-client-profile",
@@ -303,9 +318,15 @@
           "text": "Aisyah Rahim"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Coaching Client Aisyah Rahim"
+        }
+      ],
       "outbound_count": 3,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "concepts/coaching-client-profile-aisyah-rahim-2026-06-15",
@@ -352,10 +373,15 @@
           "from": "concepts/coaching-client-aisyah-rahim-2026-06-15",
           "type": "wikilink",
           "text": "KSI Workshop"
+        },
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "KSI Workshop"
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "concepts/maloha-coast",
@@ -406,9 +432,15 @@
         "zaim"
       ],
       "links_out": [],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Zaim Why 2026 Career Goals Dead"
+        }
+      ],
       "outbound_count": 0,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "concepts/zaim-15-minute-gap-method-2026-06-14",
@@ -1048,6 +1080,11 @@
           "text": "Zaim Mohzani"
         },
         {
+          "from": "digests/2026-07-13-business-brain-digest",
+          "type": "wikilink",
+          "text": "Zaim Mohzani"
+        },
+        {
           "from": "meetings/sayf-zaim-jun-12-2026-gemini",
           "type": "wikilink",
           "text": "Zaim Mohzani"
@@ -1079,7 +1116,7 @@
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 17
+      "inbound_count": 18
     },
     {
       "slug": "zaim-career-goals-12-week-year-2026-06-16",
@@ -1291,6 +1328,14 @@
   "doctor": {},
   "artifacts": [],
   "logs": [
+    {
+      "ts": "2026-07-15T17:36:47Z",
+      "source": "export",
+      "stage": "deployed",
+      "slug": null,
+      "detail": "Dashboard refreshed \u2014 48 pages, 21 links",
+      "level": "info"
+    },
     {
       "ts": "2026-07-09T00:41:45Z",
       "source": "export",
