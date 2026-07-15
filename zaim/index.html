@@ -971,8 +971,8 @@
     <h3>Assistant</h3>
     <div class="chat-header-actions">
       <select id="chatModel" onchange="switchModel()" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);color:var(--text-muted);border-radius:6px;padding:4px 8px;font-size:0.68rem;font-family:'Inter',sans-serif;cursor:pointer;outline:none">
-        <option value="deepseek">DeepSeek Flash</option>
-        <option value="claude-haiku">Claude Haiku</option>
+        <option value="deepseek-chat">DeepSeek V3 (fast)</option>
+        <option value="deepseek-reasoner">DeepSeek R1 (deep)</option>
       </select>
       <button class="chat-clear" onclick="clearChat()" title="Clear conversation">Clear</button>
       <button onclick="toggleChat()">✕</button>
@@ -2322,7 +2322,7 @@ function runMobileQuery() {
   thread.innerHTML += `<div style="text-align:right;margin-bottom:8px"><span style="background:rgba(34,211,238,0.1);padding:8px 14px;border-radius:14px;font-size:0.72rem">${esc(q)}</span></div>`;
 
   const API_BASE = 'https://signals-sunglasses-earnings-clock.trycloudflare.com';
-  fetch(API_BASE + '/api/query?q=' + encodeURIComponent(q))
+  fetch(API_BASE + '/api/query?q=' + encodeURIComponent(q) + '&brain=zaim')
     .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
     .then(data => {
       loading.style.display = 'none';
@@ -2365,7 +2365,7 @@ function runLiveQuery() {
   empty.style.display = 'none';
   loading.style.display = 'block';
   const API_BASE = 'https://signals-sunglasses-earnings-clock.trycloudflare.com';
-  fetch(API_BASE + '/api/query?q=' + encodeURIComponent(q))
+  fetch(API_BASE + '/api/query?q=' + encodeURIComponent(q) + '&brain=zaim')
     .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
     .then(data => {
       loading.style.display = 'none';
@@ -2489,7 +2489,7 @@ function switchModel() {
   try { localStorage.setItem('gbrain-chat-model', document.getElementById('chatModel').value); } catch(e) {}
 }
 (function() {
-  try { const saved = localStorage.getItem('gbrain-chat-model'); if (saved === 'claude-haiku' || saved === 'deepseek') document.getElementById('chatModel').value = saved; } catch(e) {}
+  try { const saved = localStorage.getItem('gbrain-chat-model'); if (saved === 'deepseek-chat' || saved === 'deepseek-reasoner' || saved === 'deepseek') document.getElementById('chatModel').value = saved; } catch(e) {}
 })();
 function sendChat() {
   const input = document.getElementById('chatInput');
@@ -2507,7 +2507,7 @@ function sendChat() {
   const dotInterval = setInterval(function() { dots = (dots + 1) % 4; typing.innerHTML = 'Thinking' + '.'.repeat(dots); }, 400);
   const API_BASE = 'https://signals-sunglasses-earnings-clock.trycloudflare.com';
   const model = document.getElementById('chatModel').value;
-  fetch(API_BASE + '/api/assistant?q=' + encodeURIComponent(q) + '&model=' + encodeURIComponent(model))
+  fetch(API_BASE + '/api/assistant?q=' + encodeURIComponent(q) + '&model=' + encodeURIComponent(model) + '&brain=zaim')
     .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
     .then(function(data) {
       clearInterval(dotInterval); typing.classList.remove('active');
