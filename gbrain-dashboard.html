@@ -2343,7 +2343,7 @@ function openPageModal(slug) {
   const page = (DATA.pages||[]).find(p => p.slug === slug);
   if (!page) {
     // API fallback: when a page isn't in the static JSON, fetch it live from the API
-    var apiBase = 'https://signals-sunglasses-earnings-clock.trycloudflare.com';
+    var apiBase = 'https://gbrain.malohacoast.com';
     var title = slug.split('/').pop().replace(/-/g, ' ').replace(/_/g, ' ');
     openModal('[loading…]', slug, '<div style="padding:20px;text-align:center;color:var(--muted)">Fetching page…</div>');
     fetch(apiBase + '/api/pages/' + encodeURIComponent(slug))
@@ -2548,7 +2548,7 @@ function runMobileQuery() {
   // Add question to thread
   thread.innerHTML += `<div style="text-align:right;margin-bottom:8px"><span style="background:rgba(34,211,238,0.1);padding:8px 14px;border-radius:14px;font-size:0.72rem">${esc(q)}</span></div>`;
 
-  const API_BASE = 'https://signals-sunglasses-earnings-clock.trycloudflare.com';
+  const API_BASE = 'https://gbrain.malohacoast.com';
   fetch(API_BASE + '/api/query?q=' + encodeURIComponent(q) + '&brain=sayf')
     .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
     .then(data => {
@@ -2591,7 +2591,7 @@ function runLiveQuery() {
   error.style.display = 'none';
   empty.style.display = 'none';
   loading.style.display = 'block';
-  const API_BASE = 'https://signals-sunglasses-earnings-clock.trycloudflare.com';
+  const API_BASE = 'https://gbrain.malohacoast.com';
   fetch(API_BASE + '/api/query?q=' + encodeURIComponent(q) + '&brain=sayf')
     .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
     .then(data => {
@@ -2732,7 +2732,7 @@ function sendChat() {
   typing.classList.add('active');
   let dots = 0;
   const dotInterval = setInterval(function() { dots = (dots + 1) % 4; typing.innerHTML = 'Thinking' + '.'.repeat(dots); }, 400);
-  const API_BASE = 'https://signals-sunglasses-earnings-clock.trycloudflare.com';
+  const API_BASE = 'https://gbrain.malohacoast.com';
   const model = document.getElementById('chatModel').value;
   fetch(API_BASE + '/api/assistant?q=' + encodeURIComponent(q) + '&model=' + encodeURIComponent(model) + '&brain=sayf')
     .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
@@ -3031,7 +3031,7 @@ function submitNote() {
   var payload = { title: title || 'Untitled thought', body: body };
   if (_activeTypeChip) payload.type_hint = _activeTypeChip;
 
-  var API_BASE = 'https://signals-sunglasses-earnings-clock.trycloudflare.com';
+  var API_BASE = 'https://gbrain.malohacoast.com';
   fetch(API_BASE + '/api/note', {
     method: 'POST',
     headers: {
@@ -3333,7 +3333,7 @@ function setLogsLive(state) {
 }
 
 function fetchActivity(initial) {
-  var API_BASE = 'https://signals-sunglasses-earnings-clock.trycloudflare.com';
+  var API_BASE = 'https://gbrain.malohacoast.com';
   var url = API_BASE + '/api/activity?limit=200' + (_logLastTs && !initial ? '&since=' + encodeURIComponent(_logLastTs) : '');
   fetch(url)
     .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
@@ -3378,7 +3378,7 @@ function stopLogsPoll() {
 // INBOX — Pending Review System
 // =====================================================================
 
-var INBOX_API = 'https://signals-sunglasses-earnings-clock.trycloudflare.com';
+var INBOX_API = 'https://gbrain.malohacoast.com';
 var INBOX_BRAIN = 'sayf';
 
 function loadInbox() {
