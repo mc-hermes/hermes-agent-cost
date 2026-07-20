@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-07-15T17:36:33Z",
+  "updated_at": "2026-07-20T00:16:09Z",
   "summary": {
-    "score": "82",
+    "score": "92",
     "score_label": "/100",
-    "score_breakdown": "score 82/100, embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10",
-    "page_count": 429,
-    "embed_coverage": "100% coverage, 0 missing",
-    "graph_coverage": "40.5% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
-    "entity_links": "Coverage 85% \u00b1 3.9%",
-    "concept_count": 161,
+    "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
+    "page_count": 430,
+    "embed_coverage": "100% coverage \u2014 all pages embedded",
+    "graph_coverage": "43.0% of pages have inbound links",
+    "entity_links": "Coverage \u2014 56 people, 40 companies indexed",
+    "concept_count": 162,
     "meeting_count": 21,
     "person_count": 56,
     "company_count": 40,
@@ -19,26 +19,14 @@
     "quote_count": 0,
     "dataset_count": 4,
     "digest_count": 2,
-    "total_links": 535,
-    "outbound_count": 657,
-    "inbound_count": 606,
+    "total_links": 538,
+    "outbound_count": 660,
+    "inbound_count": 609,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
       "spreadsheet": 1
-    },
-    "score_raw": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
-    "score_components": {
-      "score": "82/100",
-      "embed": "35/35",
-      "links": "25/25",
-      "timeline": "3/15",
-      "orphans": "9/15",
-      "dead-links": "10/10"
-    },
-    "checks_passed": 67,
-    "checks_warned": 6,
-    "checks_failed": 0
+    }
   },
   "pages": [
     {
@@ -4458,13 +4446,18 @@
           "text": "Gateway Infrastructure"
         },
         {
+          "from": "digests/2026-07-20-business-brain-digest",
+          "type": "wikilink",
+          "text": "Gateway Infrastructure"
+        },
+        {
           "from": "vps-hardening",
           "type": "wikilink",
           "text": "Gateway Infrastructure"
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 2
+      "inbound_count": 3
     },
     {
       "slug": "concepts/gbrain-raw-notes-folder",
@@ -6123,6 +6116,11 @@
           "text": "VPS Hardening"
         },
         {
+          "from": "digests/2026-07-20-business-brain-digest",
+          "type": "wikilink",
+          "text": "VPS Hardening"
+        },
+        {
           "from": "gateway-infrastructure",
           "type": "wikilink",
           "text": "VPS Hardening"
@@ -6134,7 +6132,7 @@
         }
       ],
       "outbound_count": 4,
-      "inbound_count": 8
+      "inbound_count": 9
     },
     {
       "slug": "concepts/why-2026-career-goals-dead-zaim",
@@ -7313,6 +7311,34 @@
       "inbound_count": 0
     },
     {
+      "slug": "digests/2026-07-20-business-brain-digest",
+      "title": "2026 07 20 Business Brain Digest",
+      "type": "concept",
+      "updated": "",
+      "body": "# Your Business Brain \u2014 Week of July 13\u201320, 2026\n\n\ud83d\udce5 This week's intake: 1 item\n\n- 1 concept\n\nA quiet week \u2014 the brain grew by just one new page documenting the [[infrastructure/malohacoast-domain-setup|Maloha Coast Domain & Hosting Setup]]. The domain was migrated from Squarespace to Cloudflare DNS, with Cloudflare Pages now serving the main site at https://www.malohacoast.com.\n\n## \ud83d\udd17 New connections found\n\n*No new cross-links were discovered this week. The new page is a standalone infrastructure reference with no connections to existing brain content yet.*\n\n## \ud83d\udcca Brain health snapshot\n\n- **429 pages** total across all types (161 concepts, 93 newsletters, 56 people, 40 companies, 21 meetings, 4 datasets)\n- **92/100** overall health score\n- **100%** embed coverage \u2014 all pages searchable\n- **42.9%** graph coverage \u2014 nearly half of pages have inbound links\n- **535** total connections\n\n\ud83d\udca1 **Insight:** The Maloha Coast infrastructure is now fully documented in the brain, covering the Cloudflare DNS migration, Pages hosting setup, DNS records (MX, DKIM, SPF), and API token inventory. This means domain-related questions \u2014 \"what nameservers are we using?\" or \"where is the privacy policy hosted?\" \u2014 can now be answered directly from the brain without hunting through configuration dashboards. Consider adding wikilinks from this page to related concepts like [[VPS Hardening]] and [[Gateway Infrastructure]] to surface it in the knowledge graph.",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "infrastructure/malohacoast-domain-setup",
+          "type": "wikilink",
+          "text": "infrastructure/malohacoast-domain-setup|Maloha Coast Domain & Hosting Setup"
+        },
+        {
+          "to": "concepts/vps-hardening",
+          "type": "wikilink",
+          "text": "VPS Hardening"
+        },
+        {
+          "to": "concepts/gateway-infrastructure",
+          "type": "wikilink",
+          "text": "Gateway Infrastructure"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 3,
+      "inbound_count": 0
+    },
+    {
       "slug": "fazli-ridzuan",
       "title": "Fazli Ridzuan",
       "type": "person",
@@ -7778,9 +7804,15 @@
       "body": "# Maloha Coast Domain & Hosting\n\n## Domain\n- Domain: malohacoast.com\n- DNS: Cloudflare (moved from Squarespace July 2026)\n- Zone ID: b44bdd234a52d58f1533f9fdc99be2fb\n- Nameservers: eugene.ns.cloudflare.com, ivy.ns.cloudflare.com\n\n## Hosting\n- Platform: Cloudflare Pages (project: malohacoast-site)\n- GitHub: Maloha-Coast/malohacoast-site (private, auto-deploys on push)\n- Live: https://www.malohacoast.com\n\n## DNS Records\n- www + @ CNAME to malohacoast-site.pages.dev (proxied)\n- Apex needs manual Pages dashboard addition (API rejects it)\n- app CNAME to notimon-web.netlify.app\n- Email MX: Google Workspace + Amazon SES\n- DKIM/SPF intact\n\n## API Tokens\nTwo Cloudflare tokens in Hermes memory:\n1. DNS token: zone DNS read/write only\n2. Pages token: tunnel + Pages project management\nNeither has PageRules or Zone Settings permissions.\n\n## Key URLs\n- Landing page: https://www.malohacoast.com\n- Privacy Policy: https://www.malohacoast.com/privacy\n- Meta App: https://developers.facebook.com/apps/2003166071079772\n\n## Notes\n- Meta developer form validator rejects github.io and pages.dev subdomains\n- Self-hosting on VPS blocked: port 443 occupied by Tailscale, port 80 blocked by Tencent Cloud security group\n- Cloudflare Pages provides automatic HTTPS via Google Trust Services SSL\n\nLast updated: 2026-07-15",
       "tags": [],
       "links_out": [],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-07-20-business-brain-digest",
+          "type": "wikilink",
+          "text": "infrastructure/malohacoast-domain-setup|Maloha Coast Domain & Hosting Setup"
+        }
+      ],
       "outbound_count": 0,
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "slug": "interactions/call-sarah-chen-2026-06-15",
@@ -14536,6 +14568,21 @@
       "type": "wikilink"
     },
     {
+      "source": "digests/2026-07-20-business-brain-digest",
+      "target": "infrastructure/malohacoast-domain-setup",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-20-business-brain-digest",
+      "target": "concepts/vps-hardening",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-20-business-brain-digest",
+      "target": "concepts/gateway-infrastructure",
+      "type": "wikilink"
+    },
+    {
       "source": "gateway-infrastructure",
       "target": "concepts/vps-hardening",
       "type": "wikilink"
@@ -15381,13 +15428,13 @@
   "doctor": {
     "schema_version": 2,
     "status": "warnings",
-    "health_score": 70,
-    "brain_checks_score": 90,
+    "health_score": 80,
+    "brain_checks_score": 95,
     "category_scores": {
-      "brain": 90,
+      "brain": 95,
       "skill": 100,
       "ops": 95,
-      "meta": 85
+      "meta": 90
     },
     "checks": [
       {
@@ -15417,10 +15464,32 @@
       {
         "name": "extract_health",
         "status": "ok",
-        "message": "no extractions in last 7 days",
+        "message": "2 kind(s) tracked, all halt rates below 10%",
         "details": {
           "schema_version": 1,
-          "kinds": []
+          "kinds": [
+            {
+              "kind": "facts.fence",
+              "cost_7d_usd": 0,
+              "eval_pass_count": 0,
+              "eval_fail_count": 0,
+              "halt_count": 0,
+              "round_completed_count": 1,
+              "halt_rate": 0,
+              "last_updated_at": "2026-06-08T15:03:15.502Z"
+            },
+            {
+              "kind": "takes.proposed",
+              "cost_7d_usd": 0,
+              "eval_pass_count": 0,
+              "eval_fail_count": 0,
+              "halt_count": 0,
+              "round_completed_count": 1,
+              "halt_rate": 0,
+              "last_updated_at": "2026-06-08T15:03:16.068Z"
+            }
+          ],
+          "rollup_write_failures_7d": 0
         },
         "category": "brain"
       },
@@ -15432,12 +15501,11 @@
       },
       {
         "name": "extract_atoms_backlog",
-        "status": "warn",
-        "message": "27 pages eligible for atom extraction but the active pack does not run extract_atoms \u2014 backlog growing. Fix: gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
+        "status": "ok",
+        "message": "no pages awaiting atom extraction",
         "details": {
-          "backlog": 27,
+          "backlog": 0,
           "pack_declares_phase": false,
-          "fix_hint": "gbrain dream --phase extract_atoms --drain --window 120 (or declare extract_atoms in your active schema pack)",
           "known_approximation": "page backlog only; transcript corpus not counted"
         },
         "category": "brain"
@@ -15445,7 +15513,7 @@
       {
         "name": "conversation_format_coverage",
         "status": "ok",
-        "message": "13 pages: bold-name-no-time=12, _no_match=1",
+        "message": "No conversation-type pages \u2014 coverage check not applicable",
         "category": "brain"
       },
       {
@@ -15469,7 +15537,7 @@
       {
         "name": "connection",
         "status": "ok",
-        "message": "Connected, 370 pages",
+        "message": "Connected, 43 pages",
         "category": "ops"
       },
       {
@@ -15505,7 +15573,7 @@
       {
         "name": "embedding_provider",
         "status": "ok",
-        "message": "openai:text-embedding-3-large \u2713 2880ms, 1536 dims, DB aligned",
+        "message": "openai:text-embedding-3-large \u2713 1183ms, 1536 dims, DB aligned",
         "category": "brain"
       },
       {
@@ -15523,25 +15591,25 @@
       {
         "name": "graph_coverage",
         "status": "ok",
-        "message": "Entity link coverage 85%, timeline 67%",
+        "message": "Entity link coverage 91%, timeline 100%",
         "category": "brain"
       },
       {
         "name": "brain_score",
         "status": "ok",
-        "message": "Brain score 82/100 (embed 35/35, links 25/25, timeline 3/15, orphans 9/15, dead-links 10/10)",
+        "message": "Brain score 93/100 (embed 35/35, links 25/25, timeline 9/15, orphans 14/15, dead-links 10/10)",
         "category": "brain"
       },
       {
         "name": "orphan_ratio",
         "status": "ok",
-        "message": "Vacuous: 82 entity pages (<100). Orphan ratio not meaningful at this scale.",
+        "message": "Vacuous: 22 entity pages (<100). Orphan ratio not meaningful at this scale.",
         "category": "brain"
       },
       {
         "name": "integrity",
         "status": "ok",
-        "message": "Sampled 370 pages; 42 external link(s) (no bare tweets).",
+        "message": "Sampled 43 pages; no bare-tweet phrases or external links.",
         "category": "brain"
       },
       {
@@ -15702,15 +15770,7 @@
       {
         "name": "links_extraction_lag",
         "status": "ok",
-        "message": "Extraction current: 1/370 pages (0%) stale",
-        "details": {
-          "total": 370,
-          "stale": 1,
-          "pct": 0,
-          "warn_pct": 20,
-          "fail_pct": null,
-          "source_id": null
-        },
+        "message": "Extraction lag not applicable (43 pages \u2014 too few to assess)",
         "category": "brain"
       },
       {
@@ -15722,7 +15782,7 @@
       {
         "name": "search_mode",
         "status": "ok",
-        "message": "Mode: balanced (no per-key overrides \u2014 mode bundle is canonical).",
+        "message": "Mode: tokenmax (no per-key overrides \u2014 mode bundle is canonical).",
         "category": "ops"
       },
       {
@@ -15734,7 +15794,7 @@
       {
         "name": "reranker_health",
         "status": "ok",
-        "message": "6 reranker failure(s) in last 7 days (below threshold)",
+        "message": "83 reranker failure(s) in last 7 days (below threshold)",
         "category": "ops"
       },
       {
@@ -15746,7 +15806,7 @@
       {
         "name": "graph_signals_coverage",
         "status": "ok",
-        "message": "40.5% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
+        "message": "74.4% of pages have inbound links (>=30% \u2014 graph signals fire on most queries)",
         "category": "brain"
       },
       {
@@ -15788,7 +15848,7 @@
       {
         "name": "oauth_confidential_client_health",
         "status": "ok",
-        "message": "4 OAuth client(s) registered; all auth shapes consistent",
+        "message": "No OAuth clients registered",
         "category": "ops"
       },
       {
@@ -15849,13 +15909,13 @@
       {
         "name": "entity_link_coverage",
         "status": "ok",
-        "message": "Coverage 85% \u00b1 3.9%",
+        "message": "Coverage 91% \u00b1 6.1%",
         "category": "meta"
       },
       {
         "name": "timeline_coverage",
-        "status": "warn",
-        "message": "Coverage 67% \u00b1 5.2% (target 90%)",
+        "status": "ok",
+        "message": "Coverage 100% \u00b1 0.0%",
         "category": "meta"
       },
       {
@@ -15873,7 +15933,7 @@
       {
         "name": "type_proliferation",
         "status": "ok",
-        "message": "11 distinct typed values (pack declares 25)",
+        "message": "4 distinct typed values (pack declares 25)",
         "category": "meta"
       },
       {
