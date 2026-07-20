@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-20T00:16:09Z",
+  "updated_at": "2026-07-20T00:19:16Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
@@ -8,17 +8,17 @@
     "embed_coverage": "100% coverage \u2014 all pages embedded",
     "graph_coverage": "43.0% of pages have inbound links",
     "entity_links": "Coverage \u2014 56 people, 40 companies indexed",
-    "concept_count": 162,
+    "concept_count": 146,
     "meeting_count": 21,
     "person_count": 56,
     "company_count": 40,
-    "newsletter_count": 93,
+    "newsletter_count": 105,
     "video_count": 0,
     "article_count": 21,
-    "bookmark_count": 31,
+    "bookmark_count": 32,
     "quote_count": 0,
     "dataset_count": 4,
-    "digest_count": 2,
+    "digest_count": 5,
     "total_links": 538,
     "outbound_count": 660,
     "inbound_count": 609,
@@ -1014,7 +1014,7 @@
     {
       "slug": "bookmarks/karpathy-llm-wiki-2026-06-20",
       "title": "Karpathy Llm Wiki 2026 06 20",
-      "type": "concept",
+      "type": "bookmark",
       "updated": "",
       "body": "",
       "tags": [],
@@ -6826,7 +6826,7 @@
     {
       "slug": "digests/2026-06-29-business-brain-digest",
       "title": "2026 06 29 Business Brain Digest",
-      "type": "concept",
+      "type": "digest",
       "updated": "",
       "body": "# Your Business Brain \u2014 Week of June 22\u201329, 2026\n\n\ud83d\udce5 **This week's intake: 100 items**\n- 29 newsletters\n- 40 concepts (many from agentic engineering deep-dives)\n- 3 meetings (all Sayf \u00d7 Zaim, June 12)\n- 10 bookmarks / ideas\n- 7 companies\n- 5 people\n- 3 datasets (invoices + farm accounts)\n- 2 articles\n- 1 monthly achievement log\n\n\ud83d\udd17 **New connections found**\n\n- **[[30 Core Agentic Concepts 2026 06 20]]** \u2014 System Design One issue #154 authored by [[Neo Kim]] with guest [[Paul Hoekstra]] (data engineer at [[Digital Power]]). This single newsletter spawned 6 linked concept pages: [[GPT-5.5]], [[Claude Opus 4.7]], [[SkillsBench]], [[Compound Engineering]], [[Get Shit Done]], and [[Superpowers]] \u2014 each extracted and cross-linked back to the source.\n\n- **[[Neo Kim]]** \u2192 [[System Design One]]** \u2014 Neo also authored [[The Anatomy of OpenClaw]], an earlier deep-dive on agentic coding architecture. His publication is now tracked as both a person and company entity.\n\n- **[[Paul Hoekstra]]** \u2192 [[Digital Power]]** \u2014 Paul writes Paul's Pipeline, a data and AI newsletter. Guest-authored the 30 Concepts piece.\n\n- **[[Aisyah Rahim]]** \u2014 Senior Brand Manager at [[Unilever Malaysia]], referred by Liyana from a KSI workshop, now a coaching client of [[Zaim Mohzani]]. First session next week. Client profile page created: [[Aisyah Rahim \u2014 Client Profile]].\n\n- **[[Zaim Mohzani]]** coaching pipeline is building: 3 meeting notes captured ([[Sayf x Zaim \u2014 12 Jun 2026]], [[Gemini Auto-Notes \u2014 Sayf x Zaim (12 Jun 2026)]], [[Sayf Zaim Jun 12 2026 Gemini]]), plus methodology pages for the [[Zaim 15-Minute Gap Method]] and [[3-Month Career Pivot Framework]] (originally shared with a KSI senior analyst).\n\n- **[[Why Your 2026 Career Goals Are Already Dead]]** \u2014 article citing [[Michael Lennington]] and [[Brian Moran]], co-authors of *The 12 Week Year*. Connected to [[Zaim Mohzani]] and [[Nation Building School]].\n\n- **[[Hermes as Chief of Staff]]** \u2014 bookmark from [[Eric Osiu]] (@ericosiu) showing Hermes operating as autonomous chief of staff: books sales calls, revives stalled deals, ships ad creative. Connected to [[Single Brain]] and [[Single Grain]] companies.\n\n- **[[AI Automation Society]]** \u2192 [[Claude Second Brain Levels]]** \u2014 the automation community newsletter links to the Claude-as-second-brain framework breakdown, plus [[Nate Herk Technique]].\n\n\ud83d\udcc8 **Data updates**\n\n- **Invoice MC-2026-001** \u2014 [[Beard Brothers BBQ]]: issued June 16, due June 30, Net 14. Linked from company page.\n- **Invoice MC-2026-003** \u2014 [[RapidScreen Sdn Bhd]]: issued June 26, due July 10. Linked from company page.\n- **[[Dynamics Orchard Management Accounts FYE 2025]]** \u2014 farm management accounts dataset linked to [[Posh Corporate]] and [[Audrey Loh]].\n\n\ud83d\udca1 **Insight**\n\nThe 30 Core Agentic Concepts newsletter illustrates a repeatable content processing pattern: one long-form source \u2192 multiple atomic concept pages \u2192 each concept linked back to its source. [[GPT-5.5]], [[Claude Opus 4.7]], [[SkillsBench]], [[Compound Engineering]], [[Get Shit Done]], and [[Superpowers]] all trace to a single [[30 Core Agentic Concepts 2026 06 20]] newsletter by [[Neo Kim]] at [[System Design One]]. This creates a navigable knowledge graph where any future mention of \"SkillsBench\" or \"Compound Engineering\" in a meeting or email automatically connects back to the original source \u2014 the brain becomes self-referencing. The Zaim coaching pipeline shows the same pattern forming: [[Zaim Mohzani]] now connects to 3 meetings, 2 methodology pages, 1 client profile ([[Aisyah Rahim]]), and 1 career framework \u2014 all traceable through a single person entity.",
       "tags": [],
@@ -7030,7 +7030,7 @@
     {
       "slug": "digests/2026-07-13-business-brain-digest",
       "title": "2026 07 13 Business Brain Digest",
-      "type": "concept",
+      "type": "digest",
       "updated": "",
       "body": "# Your Business Brain \u2014 Week of 2026-07-06 to 2026-07-13\n\n\ud83d\udce5 **This week's intake: 100 items**\n\n- **26 newsletters** \u2014 AI industry newsletters including [[AI Garage Weekly - June 19, 2026]], [[30 Core Agentic Concepts]], [[Claude Second Brain Levels]], OpenRouter updates, and HumanLayer launch coverage\n- **4 meetings** \u2014 [[Demo Meeting \u2014 gbrain Pipeline Showcase]] with Alex Chen (StartupXYZ), plus 3 records from the [[Sayf x Zaim \u2014 12 Jun 2026]] session including Gemini auto-notes\n- **10 bookmarks** \u2014 Tracking the [[HumanLayer Live Launch]] (June 18-19), [[Nerdqaxe Revision 7 Launch]], and [[Hermes Assistant to Chief of Staff]]\n- **3 datasets** \u2014 [[Invoice Mc 2026 001 Bbb]] (Beard Brothers BBQ) and [[Invoice Mc 2026 003 Rapidscreen]] (RapidScreen Sdn Bhd)\n- **40 concepts** \u2014 Spanning AI models, engineering practices, coaching frameworks, and pipeline architecture\n- **7 companies** \u2014 New: [[System Design One]] (SDO), [[StartupXYZ]]; Existing: [[Digital Power]], [[OpenAI]], [[AI Automation Society]], [[Beard Brothers BBQ]], [[RapidScreen Sdn Bhd]]\n- **6 people** \u2014 New: [[Neo Kim]], [[Alex Chen]]; Existing: [[Paul Hoekstra]], [[Aisyah Rahim]], [[Michael Lennington]], [[Brian Moran]]\n- **3 articles** \u2014 [[Why Every SMB Needs a Second Brain]], career goals deep-dive, VM architecture analysis\n- **1 log** \u2014 [[Monthly Achievement Jun 2026]]\n\n\ud83d\udd17 **New connections found**\n\n- **System Design One cluster** \u2014 [[Tale of Two Young Software Engineers]] (Substack newsletter by [[Neo Kim]]) connects three new pages: the [[System Design One]] company, its founder [[Neo Kim]], and his [[Simple Path to System Design]] course. Neo's newsletter contrasts two career paths in software engineering \u2014 the traditional CS-degree route versus the self-taught system design path.\n\n- **gbrain pipeline demo validated** \u2014 [[Demo Meeting \u2014 gbrain Pipeline Showcase]] connected [[Alex Chen]] (CTO, [[StartupXYZ]]) to the pipeline. Alex's pain point \u2014 engineering docs scattered across Slack, Notion, and email \u2014 validates the core value prop of [[The Email-to-Brain Pipeline]]. The companion article [[Why Every SMB Needs a Second Brain]] now exists as a reusable sales asset.\n\n- **30 Core Agentic Concepts is the week's hub** \u2014 This newsletter by [[Paul Hoekstra]] ([[Digital Power]]) is the most-linked page this period with 9 outgoing and 9 incoming links. It connects: [[SkillsBench]], [[Superpowers]], [[Get Shit Done]], [[Compound Engineering]], [[Claude Opus 4.7]], and [[GPT-5.5]] \u2014 forming a dense subgraph around agentic engineering practices and benchmarking.\n\n- **Paul Hoekstra / Digital Power anchor** \u2014 [[Digital Power]] links bidirectionally to [[Paul Hoekstra]] and the [[30 Core Agentic Concepts]] newsletter, with backlinks from two additional newsletters and the [[2026-06-29 Business Brain Digest]]. Paul's pipeline architecture concept ([[Paul's Pipeline]]) was also captured.\n\n- **AI Garage Weekly ecosystem** \u2014 The [[AI Garage Weekly - June 19, 2026]] edition connects [[Anthropic]] ([[Opus 4.8]]), [[Zhipu AI]] ([[GLM-5.2]]), and the [[Hermes Agent]] ingest pipeline \u2014 tracking the model release race and how it flows into the brain.\n\n- **Zaim coaching pipeline** \u2014 [[Coaching Client Aisyah Rahim]] links to [[Unilever Malaysia]] and [[KSI Workshop]], while the [[15 Minute Gap Method]] (referenced by [[KSI Workshop]]) has spawned multiple concept pages. The [[Zaim Why 2026 Career Goals Dead]] newsletter connects [[Zaim Mohzani]] to [[Nation Building School]].\n\n- **ClawHub \u2194 OpenClaw** \u2014 [[ClawHub]] and [[OpenClaw]] are bidirectionally linked, with [[The Anatomy of OpenClaw]] article providing the technical deep-dive. This pair captures the emerging open-source AI agent ecosystem.\n\n- **Invoice-to-company crosslinks** \u2014 [[Beard Brothers BBQ]] links to its [[Invoice Mc 2026 001 Bbb]], and [[RapidScreen Sdn Bhd]] links to [[Invoice Mc 2026 003 Rapidscreen]] \u2014 the first invoice-company connections in the graph.\n\n- **Company Memory OS concept** \u2014 [[Company Memory OS PRD]] connects [[Hermes Agent]] and [[gbrain]], forming a product-concept triangle that maps the vision for a business memory operating system.\n\n\ud83d\udcc8 **Data updates**\n\n- **Beard Brothers BBQ** \u2014 Invoice MC-2026-001: BBQ supply chain purchase order\n- **RapidScreen Sdn Bhd** \u2014 Invoice MC-2026-003: Health screening services\n- Both invoices are now linked to their respective company pages via verified [[wikilinks]]\n\n\ud83d\udca1 **Insight**\n\nThe brain is developing two distinct knowledge clusters that mirror Maloha Coast's service lines. The **agentic engineering cluster** \u2014 anchored by [[30 Core Agentic Concepts]], [[Digital Power]], [[SkillsBench]], and [[Superpowers]] \u2014 tracks the cutting edge of AI agent development, model releases ([[Opus 4.8]], [[GLM-5.2]], [[GPT-5.5]]), and benchmarking. The **business pipeline cluster** \u2014 anchored by [[Demo Meeting \u2014 gbrain Pipeline Showcase]], [[The Email-to-Brain Pipeline]], [[Why Every SMB Needs a Second Brain]], and the [[Company Memory OS PRD]] \u2014 captures the go-to-market validation and product thinking. The [[Tale of Two Young Software Engineers]] newsletter this week bridges both: Neo Kim's system design philosophy resonates with the pipeline's architecture thinking, while his [[System Design One]] company represents the kind of technical founder who could be a pipeline customer. [[StartupXYZ]] and [[Alex Chen]] already validated the core value prop in a live demo. The [[Zaim Mohzani]] coaching pipeline with [[Aisyah Rahim]] and the [[15 Minute Gap Method]] adds a third dimension \u2014 applied knowledge management for solopreneurs and coaches.",
       "tags": [],
@@ -7313,7 +7313,7 @@
     {
       "slug": "digests/2026-07-20-business-brain-digest",
       "title": "2026 07 20 Business Brain Digest",
-      "type": "concept",
+      "type": "digest",
       "updated": "",
       "body": "# Your Business Brain \u2014 Week of July 13\u201320, 2026\n\n\ud83d\udce5 This week's intake: 1 item\n\n- 1 concept\n\nA quiet week \u2014 the brain grew by just one new page documenting the [[infrastructure/malohacoast-domain-setup|Maloha Coast Domain & Hosting Setup]]. The domain was migrated from Squarespace to Cloudflare DNS, with Cloudflare Pages now serving the main site at https://www.malohacoast.com.\n\n## \ud83d\udd17 New connections found\n\n*No new cross-links were discovered this week. The new page is a standalone infrastructure reference with no connections to existing brain content yet.*\n\n## \ud83d\udcca Brain health snapshot\n\n- **429 pages** total across all types (161 concepts, 93 newsletters, 56 people, 40 companies, 21 meetings, 4 datasets)\n- **92/100** overall health score\n- **100%** embed coverage \u2014 all pages searchable\n- **42.9%** graph coverage \u2014 nearly half of pages have inbound links\n- **535** total connections\n\n\ud83d\udca1 **Insight:** The Maloha Coast infrastructure is now fully documented in the brain, covering the Cloudflare DNS migration, Pages hosting setup, DNS records (MX, DKIM, SPF), and API token inventory. This means domain-related questions \u2014 \"what nameservers are we using?\" or \"where is the privacy policy hosted?\" \u2014 can now be answered directly from the brain without hunting through configuration dashboards. Consider adding wikilinks from this page to related concepts like [[VPS Hardening]] and [[Gateway Infrastructure]] to surface it in the knowledge graph.",
       "tags": [],
@@ -8577,7 +8577,7 @@
     {
       "slug": "newsletters/agentic-engineering-concepts-19ee2580",
       "title": "Agentic Engineering Concepts 19ee2580",
-      "type": "concept",
+      "type": "newsletter",
       "updated": "",
       "body": "",
       "tags": [],
@@ -8685,7 +8685,7 @@
     {
       "slug": "newsletters/ai-data-center-architecture-19ee23d6",
       "title": "Ai Data Center Architecture 19ee23d6",
-      "type": "concept",
+      "type": "newsletter",
       "updated": "",
       "body": "",
       "tags": [],
@@ -9181,7 +9181,7 @@
     {
       "slug": "newsletters/maloha-coast-navigator-2026-06-15",
       "title": "Maloha Coast Navigator 2026 06 15",
-      "type": "concept",
+      "type": "newsletter",
       "updated": "",
       "body": "# The Maloha Coast Navigator\n\n*Your weekly guide to AI strategy for SMBs*\n\n---\n\n## This Week: Why Most AI Pilots Fail\n\n80% of AI proofs-of-concept never reach production. Here's the pattern:\n\n1. **Scope creep** \u2014 POCs that try to boil the ocean\n2. **Data rot** \u2014 Models trained on stale data that's 6 months old\n3. **No owner** \u2014 AI sits in IT without a business sponsor\n\n### The Fix\n\nStart with a **single workflow**, not a platform. Pick the one manual process your team hates most. Automate that. Measure the time saved. Then expand.\n\n---\n\n## Client Spotlight\n\nA 12-person accounting firm deployed an email triage agent. Result: 14 hours/week saved. ROI in week one.\n\n---\n\n## What We're Reading\n\n- [[Claude Code 10x Skill]] \u2014 The skill pattern that changed everything\n- [[Second Brain Architecture]] \u2014 How we structure knowledge for SMBs\n\n---\n\n## Upcoming\n\nNext week: Pricing models that work for SMB AI consulting.\n\n*\u2014 Sayf, Maloha Coast*\n\n**Source:** email\n**Source URI:** gmail://msg_19eca4c3e7e0cefc\n**Ingested:** 2026-06-15T16:05:00Z\n**Provenance:** Maloha Coast Navigator newsletter from info@malohacoast.com",
       "tags": [],
@@ -9305,7 +9305,7 @@
     {
       "slug": "newsletters/msg-19ed0c0b31514494",
       "title": "Msg 19ed0c0b31514494",
-      "type": "concept",
+      "type": "newsletter",
       "updated": "",
       "body": "",
       "tags": [],
@@ -9317,7 +9317,7 @@
     {
       "slug": "newsletters/msg-19ed5e7b3a86e916",
       "title": "Msg 19ed5e7b3a86e916",
-      "type": "concept",
+      "type": "newsletter",
       "updated": "",
       "body": "",
       "tags": [],
@@ -9572,7 +9572,7 @@
     {
       "slug": "newsletters/nerdqaxe-r7-launch-2026-06-12",
       "title": "Nerdqaxe R7 Launch 2026 06 12",
-      "type": "concept",
+      "type": "newsletter",
       "updated": "",
       "body": "The repos are public, the deep dive is live, and launch is hours away.\nThe NerdQaxe++ Revision 7 launches tomorrow afternoon.\n\nDear VIP Member,\n\nBefore the world hears it, we wanted you to hear it from us. Tomorrow\nafternoon, we launch the NerdQaxe++ Revision 7\nthe newest evolution of the open-source quad-chip Bitcoin solo miner.\n\nDemand at launch will be intense, and the initial supply will move quickly.\nSo here is our commitment to you: production will not stop. Because\nproduction is 100% based in the USA and every unit is assembled right here\nat home, our lines keep moving and availability stays consistent. We will\nkeep building, to the highest quality standards, until every miner who\nwants a Revision 7 has one hashing on their desk.\n\nTo hold you over until launch, we have published a pre-release technical\noverview of Revision 7 on YouTube. It walks through what is new in this\nrevision, and our official overview video is in production now, so keep an\neye on our channel. In the meantime, click below to watch, and explore our full\nengineering breakdown\nfor the complete benchmark data.\nYouTube]\n\nWatch the NerdQaxe++ Revision 7 pre-release technical overview \u00bb\n\nWe also want to put a rumor to rest. Some have claimed that Revision 7 will\nnot be open source. That claim is false. Revision 7 is fully open source,\nand the repositories went public today, before a single unit ships, exactly\nas the open-source licenses require. The hardware design files\nand the firmware source code\nare available for your review right now.\n\nFinally, a word on integrity. You may have noticed others slashing prices\nand opening pre-orders on closed-source copies of this miner in a rush to\nget ahead of our launch. That is not how we operate, and it never will be.\nWhen you place an order with us, your product is ready to ship.",
       "tags": [
@@ -9748,7 +9748,7 @@
     {
       "slug": "newsletters/openrouter-editor-integrations-2026-06-06",
       "title": "Openrouter Editor Integrations 2026 06 06",
-      "type": "concept",
+      "type": "newsletter",
       "updated": "",
       "body": "# OpenRouter: Use OpenRouter in Cursor, Continue, or Cline\n\n**Source:** email\n**Source URI:** gmail://msg_19e9d3c7f616e13b\n**Ingested:** 2026-06-27T16:00:00Z\n**Provenance:** OpenRouter Team newsletter to info@malohacoast.com, 2026-06-06\n\nAn OpenRouter key works inside editors and agents most developers already have open. No SDK to wire up.\n\n**Integrations:**\n- **Cursor:** Settings > Models > OpenRouter. Paste key \u2014 every model in the OpenRouter catalog becomes available\n- **Continue:** Add OpenRouter as a provider in config.json. One block, one key\n- **Cline:** Set OpenRouter as API provider. Auto-routing picks the right model per request\n- **Claude Code:** Use OpenRouter as backend to centralize usage across a team\n\n**Why multi-model swap matters:** Coding agents make 20-50 model calls per task. Routing structured steps to a small model and writing steps to a frontier model cuts total cost by 5-10x on realistic workloads.\n\n[Source: OpenRouter Team newsletter, 2026-06-06](https://openrouter.ai/docs/frameworks)",
       "tags": [],
@@ -9819,7 +9819,7 @@
     {
       "slug": "newsletters/openrouter-model-fusion-deep-research-2026-06-24",
       "title": "Openrouter Model Fusion Deep Research 2026 06 24",
-      "type": "concept",
+      "type": "newsletter",
       "updated": "",
       "body": "",
       "tags": [],
@@ -9955,7 +9955,7 @@
     {
       "slug": "newsletters/openrouter-three-cost-levers",
       "title": "Openrouter Three Cost Levers",
-      "type": "concept",
+      "type": "newsletter",
       "updated": "",
       "body": "",
       "tags": [],
@@ -10057,7 +10057,7 @@
     {
       "slug": "newsletters/openrouter-three-features-try-next",
       "title": "Openrouter Three Features Try Next",
-      "type": "concept",
+      "type": "newsletter",
       "updated": "",
       "body": "",
       "tags": [],
@@ -10135,7 +10135,7 @@
     {
       "slug": "newsletters/skill-10x-claude-code-projects-2026-06-05",
       "title": "Skill 10x Claude Code Projects 2026 06 05",
-      "type": "concept",
+      "type": "newsletter",
       "updated": "",
       "body": "",
       "tags": [],
@@ -10159,7 +10159,7 @@
     {
       "slug": "newsletters/stripe-online-apac-on-demand",
       "title": "Stripe Online Apac On Demand",
-      "type": "concept",
+      "type": "newsletter",
       "updated": "",
       "body": "",
       "tags": [],
