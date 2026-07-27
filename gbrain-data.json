@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-07-20T00:19:16Z",
+  "updated_at": "2026-07-27T00:13:34Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
     "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 430,
+    "page_count": 431,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "43.0% of pages have inbound links",
+    "graph_coverage": "43.2% of pages have inbound links",
     "entity_links": "Coverage \u2014 56 people, 40 companies indexed",
     "concept_count": 146,
     "meeting_count": 21,
@@ -18,10 +18,10 @@
     "bookmark_count": 32,
     "quote_count": 0,
     "dataset_count": 4,
-    "digest_count": 5,
-    "total_links": 538,
-    "outbound_count": 660,
-    "inbound_count": 609,
+    "digest_count": 6,
+    "total_links": 542,
+    "outbound_count": 664,
+    "inbound_count": 613,
     "artifact_count": 2,
     "artifact_types": {
       "image": 1,
@@ -4451,13 +4451,18 @@
           "text": "Gateway Infrastructure"
         },
         {
+          "from": "digests/2026-07-27-business-brain-digest",
+          "type": "wikilink",
+          "text": "concepts/gateway-infrastructure"
+        },
+        {
           "from": "vps-hardening",
           "type": "wikilink",
           "text": "Gateway Infrastructure"
         }
       ],
       "outbound_count": 3,
-      "inbound_count": 3
+      "inbound_count": 4
     },
     {
       "slug": "concepts/gbrain-raw-notes-folder",
@@ -6121,6 +6126,11 @@
           "text": "VPS Hardening"
         },
         {
+          "from": "digests/2026-07-27-business-brain-digest",
+          "type": "wikilink",
+          "text": "concepts/vps-hardening"
+        },
+        {
           "from": "gateway-infrastructure",
           "type": "wikilink",
           "text": "VPS Hardening"
@@ -6132,7 +6142,7 @@
         }
       ],
       "outbound_count": 4,
-      "inbound_count": 9
+      "inbound_count": 10
     },
     {
       "slug": "concepts/why-2026-career-goals-dead-zaim",
@@ -7334,8 +7344,47 @@
           "text": "Gateway Infrastructure"
         }
       ],
-      "backlinks": [],
+      "backlinks": [
+        {
+          "from": "digests/2026-07-27-business-brain-digest",
+          "type": "wikilink",
+          "text": "digests/2026-07-20-business-brain-digest"
+        }
+      ],
       "outbound_count": 3,
+      "inbound_count": 1
+    },
+    {
+      "slug": "digests/2026-07-27-business-brain-digest",
+      "title": "2026 07 27 Business Brain Digest",
+      "type": "digest",
+      "updated": "",
+      "body": "# Your Business Brain \u2014 Week of July 20\u201327, 2026\n\n\ud83d\udce5 This week's intake: 1 item\n- 0 newsletters\n- 0 meetings\n- 0 bookmarks/ideas\n- 0 datasets\n\n\ud83e\udd2b Quiet week \u2014 no new content was ingested outside of the previous digest. The July 20 digest [[digests/2026-07-20-business-brain-digest]] covered the domain migration to Cloudflare ([[infrastructure/malohacoast-domain-setup]]), VPS hardening status ([[concepts/vps-hardening]]), and gateway infrastructure work ([[concepts/gateway-infrastructure]]).\n\n\ud83d\udcca **Brain at a glance**: 430 pages, 538 links across 56 people and 40 companies. Health score holds at 92/100. 5 weekly digests now track the brain's evolution since June 10.",
+      "tags": [],
+      "links_out": [
+        {
+          "to": "digests/2026-07-20-business-brain-digest",
+          "type": "wikilink",
+          "text": "digests/2026-07-20-business-brain-digest"
+        },
+        {
+          "to": "infrastructure/malohacoast-domain-setup",
+          "type": "wikilink",
+          "text": "infrastructure/malohacoast-domain-setup"
+        },
+        {
+          "to": "concepts/vps-hardening",
+          "type": "wikilink",
+          "text": "concepts/vps-hardening"
+        },
+        {
+          "to": "concepts/gateway-infrastructure",
+          "type": "wikilink",
+          "text": "concepts/gateway-infrastructure"
+        }
+      ],
+      "backlinks": [],
+      "outbound_count": 4,
       "inbound_count": 0
     },
     {
@@ -7809,10 +7858,15 @@
           "from": "digests/2026-07-20-business-brain-digest",
           "type": "wikilink",
           "text": "infrastructure/malohacoast-domain-setup|Maloha Coast Domain & Hosting Setup"
+        },
+        {
+          "from": "digests/2026-07-27-business-brain-digest",
+          "type": "wikilink",
+          "text": "infrastructure/malohacoast-domain-setup"
         }
       ],
       "outbound_count": 0,
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "slug": "interactions/call-sarah-chen-2026-06-15",
@@ -14579,6 +14633,26 @@
     },
     {
       "source": "digests/2026-07-20-business-brain-digest",
+      "target": "concepts/gateway-infrastructure",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-27-business-brain-digest",
+      "target": "digests/2026-07-20-business-brain-digest",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-27-business-brain-digest",
+      "target": "infrastructure/malohacoast-domain-setup",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-27-business-brain-digest",
+      "target": "concepts/vps-hardening",
+      "type": "wikilink"
+    },
+    {
+      "source": "digests/2026-07-27-business-brain-digest",
       "target": "concepts/gateway-infrastructure",
       "type": "wikilink"
     },
