@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-07-27T00:13:34Z",
+  "updated_at": "2026-08-03T00:10:30Z",
   "summary": {
     "score": "92",
     "score_label": "/100",
     "score_breakdown": "embed \u2014/\u2014, links \u2014/\u2014, timeline \u2014/\u2014, orphans \u2014/\u2014, dead-links \u2014/\u2014",
-    "page_count": 431,
+    "page_count": 432,
     "embed_coverage": "100% coverage \u2014 all pages embedded",
-    "graph_coverage": "43.2% of pages have inbound links",
+    "graph_coverage": "43.1% of pages have inbound links",
     "entity_links": "Coverage \u2014 56 people, 40 companies indexed",
     "concept_count": 146,
     "meeting_count": 21,
@@ -18,7 +18,7 @@
     "bookmark_count": 32,
     "quote_count": 0,
     "dataset_count": 4,
-    "digest_count": 6,
+    "digest_count": 7,
     "total_links": 542,
     "outbound_count": 664,
     "inbound_count": 613,
@@ -7385,6 +7385,18 @@
       ],
       "backlinks": [],
       "outbound_count": 4,
+      "inbound_count": 0
+    },
+    {
+      "slug": "digests/2026-08-03-business-brain-digest",
+      "title": "2026 08 03 Business Brain Digest",
+      "type": "digest",
+      "updated": "",
+      "body": "# Your Business Brain \u2014 Week of 2026-07-27 to 2026-08-03\n\n\ud83d\udce5 This week's intake: 1 item\n\n- 1 digest (last week's brain summary)\n\nNo newsletters, meetings, articles, bookmarks, or datasets were ingested this week.\n\n\ud83d\udd17 New connections found\n\nNone \u2014 no new content to link.\n\n\ud83d\udca1 Insight\n\nOmitted \u2014 no new ingestion this week to synthesize.\n\n---\n\n*Generated 2026-08-03 \u00b7 gbrain dashboard: [mc-hermes.github.io/hermes-agent-cost/gbrain-dashboard.html](https://mc-hermes.github.io/hermes-agent-cost/gbrain-dashboard.html)*",
+      "tags": [],
+      "links_out": [],
+      "backlinks": [],
+      "outbound_count": 0,
       "inbound_count": 0
     },
     {
